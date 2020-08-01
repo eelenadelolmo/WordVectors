@@ -4,3 +4,4 @@ venv/lib/*
 venv/lib64/*
 venv/main/BETO_model/*
 venv/main/w2vec_models/*
+venv/main/BETO_pytorch/*

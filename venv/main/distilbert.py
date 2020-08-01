@@ -8,8 +8,8 @@ from transformers import BertForMaskedLM, BertTokenizer
 # !mv config.json pytorch/.
 # !mv vocab.txt pytorch/.
 
-tokenizer = BertTokenizer.from_pretrained("BETO_pytorch/pytorch/", do_lower_case=True)
-model = BertForMaskedLM.from_pretrained("BETO_pytorch/pytorch/")
+tokenizer = BertTokenizer.from_pretrained("pytorch/", do_lower_case=True)
+model = BertForMaskedLM.from_pretrained("pytorch/")
 model.eval()
 
 text = "[CLS] La [MASK] del problema nuclear actual es tirar bombas y se acabó porque no hay una respuesta clara. [SEP]"
@@ -39,3 +39,4 @@ for i,midx in enumerate(masked_indxs):
 
 indexed_predicted_tokens = tokenizer.convert_tokens_to_ids(predicted_token)
 print(indexed_predicted_tokens)
+z
