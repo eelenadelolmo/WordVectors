@@ -19,7 +19,9 @@ for sentence, embedding in zip(sentences, sentence_embeddings):
 # Corpus with example sentences
 corpus_embeddings = model.encode(sentences)
 
-queries = ['Es el mejor presidente de la escalera.', 'El presidente no ha encontrado una solución para la siguiente fase.', 'El presidente anunció las medidas para la siguiente fase.']
+queries = ['Es el mejor presidente de la escalera.',
+           'El presidente no ha encontrado una solución para la siguiente fase.',
+           'El presidente anunció las medidas para la siguiente fase.']
 query_embeddings = model.encode(queries)
 
 import scipy
