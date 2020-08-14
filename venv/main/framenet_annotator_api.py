@@ -1,4 +1,5 @@
 import io
+import shutil
 import os
 from googletrans import Translator
 from werkzeug.utils import secure_filename
@@ -9,6 +10,17 @@ import nltk
 import scipy
 import pprint
 nltk.download('punkt')
+
+
+def make_archive(source, destination):
+        base = os.path.basename(destination)
+        name = base.split('.')[0]
+        format = base.split('.')[1]
+        archive_from = os.path.dirname(source)
+        archive_to = os.path.basename(source.strip(os.sep))
+        shutil.make_archive(name, format, archive_from, archive_to)
+        shutil.move('%s.%s'%(name,format), destination)
+
 
 UPLOAD_FOLDER = '/home/elena/PycharmProjects/WordVectors/venv/main/uploads'
 DOWNLOAD_FOLDER = '/home/elena/PycharmProjects/WordVectors/venv/main/downloads'
@@ -46,18 +58,28 @@ def main():
             return redirect(request.url)
         if file and allowed_file(file.filename, ALLOWED_EXTENSIONS_txt):
             filename = secure_filename(file.filename)
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], 'es_sentences.txt'))
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             file.stream.seek(0)
 
-            with io.open(UPLOAD_FOLDER + "/" + 'es_sentences.txt', 'r', encoding='utf8') as f:
-                text = f.readlines()
-            translator = Translator()
-            with io.open(DOWNLOAD_FOLDER + '/en_' + filename, 'w', encoding='utf8') as f:
-                for sentence in text:
-                    translation = translator.translate(text=sentence, src='es', dest='en')
-                    f.write(translation.text + '\n')
+            new_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/uploads/en_' + filename[:-4]
 
-            return redirect(url_for('download_file', filename=filename))
+            shutil.rmtree(new_dir, ignore_errors=True)
+            os.makedirs(new_dir)
+
+            with io.open(UPLOAD_FOLDER + '/' + filename, 'r', encoding='utf8') as f:
+                lines = f.readlines()
+                n_lines = 0
+                translator = Translator()
+                for line in lines:
+                    n_lines += 1
+                    with io.open(new_dir + '/en_' + filename[:-4] + '_' + str(n_lines) + '.txt', 'w', encoding='utf8') as f_new:
+                        translation = translator.translate(text=line, src='es', dest='en')
+                        f_new.write(translation.text)
+                        f_new.close()
+
+            make_archive(new_dir, DOWNLOAD_FOLDER + '/' + 'en_' + filename[:-4] + '.zip')
+
+            return redirect(url_for('download_file', filename= filename[:-4] + '.zip'))
 
     return render_template('main.html')
 
