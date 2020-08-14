@@ -7,6 +7,7 @@ from sentence_transformers import SentenceTransformer
 from nltk.tokenize import word_tokenize
 import nltk
 import scipy
+import pprint
 nltk.download('punkt')
 
 UPLOAD_FOLDER = '/home/elena/PycharmProjects/WordVectors/venv/main/uploads'
@@ -173,8 +174,8 @@ def upload_frame_ann_en():
 
 
             with io.open(DOWNLOAD_FOLDER + '/annotated_es_' + filename, 'w', encoding='utf8') as f:
-                for sentence in texto_iter_lineas:
-                    f.write(str(SRL) + sentence + '\n')
+                SRL_es_pretty = pprint.pformat(SRL_es, indent=4, width=200)
+                f.write(SRL_es_pretty)
                 f.close()
 
 
