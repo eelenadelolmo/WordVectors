@@ -1,9 +1,13 @@
 import io
 import os
-import json
 from googletrans import Translator
 from werkzeug.utils import secure_filename
 from flask import Flask, flash, request, redirect, send_file, render_template, url_for
+from sentence_transformers import SentenceTransformer
+from nltk.tokenize import word_tokenize
+import nltk
+import scipy
+nltk.download('punkt')
 
 UPLOAD_FOLDER = '/home/elena/PycharmProjects/WordVectors/venv/main/uploads'
 DOWNLOAD_FOLDER = '/home/elena/PycharmProjects/WordVectors/venv/main/downloads'
@@ -87,19 +91,20 @@ def upload_frame_ann_en():
                 for anotacion in anotaciones:
                     lineas = anotacion.split('\n')
 
-                    # Getting the frame identificator of the anotacion, which may be after the first labelled role
+                    # Getting the frame identificator of the anotacion and the corresponding string, which may be after the first labelled role
                     for linea in lineas:
-                        if len(linea.split('\t')) > 3:
+                        if len(linea) > 1:
                             frame_id = linea.split('\t')[-3]
                             frame_type = linea.split('\t')[-2]
+                            frame_str = linea.split('\t')[1]
                             if frame_id != '_':
                                 anotacion_frame = frame_type
-                                SRL[anotacion_frame] = list()
+                                SRL[(anotacion_frame, frame_str)] = list()
                                 break
 
                     n_linea = 0
                     for linea in lineas:
-                        if len(linea.split('\t')) > 1:
+                        if len(linea) > 1:
                             n_linea += 1
                             iob = linea.split('\t')[-1]
                             SRL_tag = iob[2:]
@@ -114,8 +119,57 @@ def upload_frame_ann_en():
                                     if 'I-' in iob_sig:
                                         ann_tmp = ann_tmp + " " + str_sig
                                     else:
-                                        SRL[anotacion_frame].append((SRL_tag, ann_tmp))
+                                        SRL[(anotacion_frame, frame_str)].append((SRL_tag, ann_tmp))
                                         break
+
+            # Creating the embeddings for all the subphrases of the Spanish sentences
+            model = SentenceTransformer('distiluse-base-multilingual-cased')
+            sentence_original = 'Ahora voy a probar con algunas frases en castellano.'
+            sentence_original_tokens = word_tokenize(sentence_original)
+            sentences_original_all_subphrases = [sentence_original_tokens[i: j] for i in
+                range(len(sentence_original_tokens))
+                for j in range(i + 1, len(sentence_original_tokens) + 1)]
+
+            sentences = list()
+            for s in sentences_original_all_subphrases:
+                sentences.append(' '.join(s))
+
+            sentence_embeddings = model.encode(sentences)
+
+            # Creating the dictionary for the Spanish annotations
+            SRL_es = dict()
+
+            for frame in SRL:
+                query_frame_type = frame[0]
+                query_frame_str = [frame[1]]
+                query_frame_str_embedding = model.encode(query_frame_str)
+                closest_n = 1
+                distances = scipy.spatial.distance.cdist([query_frame_str_embedding[0]], sentence_embeddings, "cosine")[0]
+                results = zip(range(len(distances)), distances)
+                results = sorted(results, key=lambda x: x[1])
+                for idx, distance in results[0:closest_n]:
+                    query_frame_str_es = sentences[idx].strip()
+
+                SRL_es[(query_frame_type, query_frame_str_es)] = list()
+                for arg in SRL[frame]:
+                    arg_type = arg[0]
+                    arg_str = [arg[1]]
+                    arg_str_embedding = model.encode(arg_str)
+                    closest_n = 1
+                    distances = scipy.spatial.distance.cdist([arg_str_embedding[0]], sentence_embeddings, "cosine")[0]
+                    results = zip(range(len(distances)), distances)
+                    results = sorted(results, key=lambda x: x[1])
+                    for idx, distance in results[0:closest_n]:
+                        arg_str_es = sentences[idx].strip()
+                    SRL_es[(query_frame_type, query_frame_str_es)].append((arg_type, arg_str_es))
+
+            print(SRL_es)
+
+            with io.open(UPLOAD_FOLDER + '/es_sentences.txt', 'r', encoding='utf8') as f:
+                lines = f.readlines()
+                # for line in lines:
+                 #    print(line)
+
 
 
             with io.open(DOWNLOAD_FOLDER + '/annotated_es_' + filename, 'w', encoding='utf8') as f:
@@ -125,6 +179,8 @@ def upload_frame_ann_en():
 
 
             return redirect(url_for('download_file_frame_ann_en', filename = filename))
+
+
 
     return render_template('upload_frame_ann_en.html')
 

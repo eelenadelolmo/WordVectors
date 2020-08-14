@@ -12,14 +12,15 @@ with open(annotated_uploaded_path, "r+") as f:
     for anotacion in anotaciones:
         lineas = anotacion.split('\n')
 
-        # Getting the frame identificator of the anotacion, which may be after the first labelled role
+        # Getting the frame identificator of the anotacion and the corresponding string, which may be after the first labelled role
         for linea in lineas:
             if len(linea) > 1:
                 frame_id = linea.split('\t')[-3]
                 frame_type = linea.split('\t')[-2]
+                frame_str = linea.split('\t')[1]
                 if frame_id != '_':
                     anotacion_frame = frame_type
-                    SRL[anotacion_frame] = list()
+                    SRL[(anotacion_frame, frame_str)] = list()
                     break
 
         n_linea = 0
@@ -39,7 +40,7 @@ with open(annotated_uploaded_path, "r+") as f:
                         if 'I-' in iob_sig:
                             ann_tmp = ann_tmp + " " + str_sig
                         else:
-                            SRL[anotacion_frame].append((SRL_tag, ann_tmp))
+                            SRL[(anotacion_frame, frame_str)].append((SRL_tag, ann_tmp))
                             break
 
 print(SRL)
