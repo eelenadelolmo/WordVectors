@@ -81,6 +81,10 @@ def main():
                         translation = translator.translate(text=line, src='es', dest='en')
                         f_new.write(translation.text)
                         f_new.close()
+                    # Saving original files too
+                    with io.open(new_dir + '/' + filename[:-4] + '_' + str(n_lines) + '.txt', 'w', encoding='utf8') as f_new:
+                        f_new.write(line)
+                        f_new.close()
 
             make_archive(new_dir, DOWNLOAD_FOLDER + '/' + 'en_' + filename[:-4] + '.zip')
 
@@ -91,12 +95,15 @@ def main():
 
 @app.route('/upload-frame-ann-en')
 def upload_form():
+    shutil.rmtree(UPLOAD_FOLDER + '/', ignore_errors=True)
+    os.makedirs(UPLOAD_FOLDER + '/')
     return render_template('upload_frame_ann_en.html')
 
 
 @app.route('/upload-frame-ann-en', methods=['POST'])
 def upload_file():
     if request.method == 'POST':
+
         # check if the post request has the file part
         if 'files[]' not in request.files:
             flash('No file part')
@@ -118,6 +125,9 @@ def upload_file():
 
 @app.route('/mapping_SRL', methods=['POST'])
 def mappingsrl():
+
+    shutil.rmtree(DOWNLOAD_FOLDER + '/', ignore_errors=True)
+    os.makedirs(DOWNLOAD_FOLDER + '/')
 
     model = SentenceTransformer('distiluse-base-multilingual-cased')
 
@@ -214,14 +224,13 @@ def mappingsrl():
                     arg_str_es = subfrases[idx].strip()
                 SRL_es[(query_frame_type, query_frame_str_es)].append((arg_type, arg_str_es))
 
-        with io.open(DOWNLOAD_FOLDER + '/annotated_es_' + name, 'w', encoding='utf8') as f:
+        with io.open(DOWNLOAD_FOLDER + '/es_annotated_' + name, 'w', encoding='utf8') as f:
             SRL_es_pretty = pprint.pformat(SRL_es, indent=4, width=200)
             f.write(SRL_es_pretty)
             f.close()
 
-    make_archive(DOWNLOAD_FOLDER, DOWNLOAD_FOLDER + '/' + 'annotated_es.zip')
-    return redirect(url_for('download_file_frame_ann_en', filename='annotated_es.zip'))
-    # return redirect(url_for('download_file_frame_ann_en', filename='annotated_es' + name))
+    make_archive(DOWNLOAD_FOLDER, DOWNLOAD_FOLDER + '/' + 'es_annotated.zip')
+    return redirect(url_for('download_file_frame_ann_en', filename='es_annotated.zip'))
 
     # return render_template('upload_frame_ann_en.html')
 
@@ -241,7 +250,7 @@ def return_files_tut(filename):
 
 @app.route('/return-files-frame-ann-en/<filename>', methods = ['GET'])
 def return_files_tut_2(filename):
-    file_path = DOWNLOAD_FOLDER + '/annotated_es.zip'
+    file_path = DOWNLOAD_FOLDER + '/es_annotated.zip'
     return send_file(file_path, as_attachment=True, cache_timeout=0)
 
 

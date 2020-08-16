@@ -1,0 +1,6 @@
+{   ('Categorization', 'consideran'): [('Category', 'que el mejor pescado está en la costa cuando en realidad no es')],
+    ('Hunting', 'pescado'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'el mejor pescado está en la costa cuando'), ('Ground', 'en realidad no es')],
+    ('Relational_natural_features', 'la costa'): [],
+    ('Required_event', 'mejor'): [],
+    ('Spatial_contact', 'en'): [('Figure', 'el mejor pescado'), ('Ground', 'la costa')]}

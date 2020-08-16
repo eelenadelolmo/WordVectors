@@ -1,0 +1,9 @@
+{   ('Bringing', 'lleva'): [('Theme', 'pesca de salmón , por ejemplo , se'), ('Goal', 'a cabo mayoritariamente en Galicia')],
+    ('Hunting', 'pescado'): [],
+    ('Instance', 'ejemplo'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'pesca de salmón , por ejemplo , se lleva a cabo mayoritariamente')],
+    ('Political_locales', 'país'): [],
+    ('Proportional_quantity', 'casi la'): [('Mass', 'totalidad de lo pescado')],
+    ('Relational_political_locales', 'capital'): [('Name', 'del país')],
+    ('Sending', 'envía a'): [('Theme', 'casi la totalidad de lo pescado'), ('Goal', 'a la capital del país')],
+    ('Sleep', 'se'): [('Sleeper', 'pesca de salmón , por ejemplo , se lleva a cabo'), ('Place', 'en Galicia')]}
