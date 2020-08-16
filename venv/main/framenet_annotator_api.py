@@ -147,7 +147,7 @@ def upload_frame_ann_en():
 
             # Creating the embeddings for all the subphrases of the Spanish sentences
             model = SentenceTransformer('distiluse-base-multilingual-cased')
-            sentence_original = 'Ahora voy a probar con algunas frases en castellano.'
+            sentence_original = '"La recesión era inevitable, independientemente del signo del gobierno", declaró el responsable de comunicación del partido.'
             sentence_original_tokens = word_tokenize(sentence_original)
             sentences_original_all_subphrases = [sentence_original_tokens[i: j] for i in
                 range(len(sentence_original_tokens))
@@ -188,11 +188,12 @@ def upload_frame_ann_en():
 
             print(SRL_es)
 
+            """
             with io.open(UPLOAD_FOLDER + '/es_sentences.txt', 'r', encoding='utf8') as f:
                 lines = f.readlines()
                 # for line in lines:
                  #    print(line)
-
+            """
 
 
             with io.open(DOWNLOAD_FOLDER + '/annotated_es_' + filename, 'w', encoding='utf8') as f:
@@ -229,4 +230,4 @@ def return_files_tut_2(filename):
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port="5000")
+    app.run(host='0.0.0.0', port="5001")

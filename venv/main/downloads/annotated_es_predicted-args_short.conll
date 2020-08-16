@@ -1,0 +1,3 @@
+{   ('Attempt', 'probar'): [('Goal', 'algunas frases en castellano')],
+    ('Motion', 'voy'): [('Goal', 'probar con algunas frases en castellano')],
+    ('Temporal_collocation', 'Ahora'): [('Trajector_event', 'voy a probar con algunas frases en castellano')]}

@@ -1,9 +1,68 @@
+
 <!doctype html>
 
     <title>Mapping English Framenet annotations into Spanish</title>
 
-    <h1>Upload English annotated CoNLL file</h1>
+    <h1>Upload English annotated CoNLL files</h1>
     <form action="" method=post enctype=multipart/form-data>
       <p><input type=file name=file>
          <input type=submit value=Upload>
     </form>
+
+<!--
+<!doctype html>
+
+    <title>Mapping Framenet annotations for translated sentences</title>
+
+    <h1>Mapping English Framenet annotations into the Spanish translated corresponding sentences</h1>
+
+    <h2>Upload English annotated CoNLL files (one sentence per file)</h2>
+
+<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul class=flashes>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input type="file" name="files[]" multiple="true" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Submit">
+	</p>
+</form>
+
+<h2>Upload Spanish original sentences (one sentence per file)</h2>
+
+<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul class=flashes>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input type="file" name="files[]" multiple="true" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Submit">
+	</p>
+</form>
+
+<p>Corresponding sentences must share file name.</p>
+-->
