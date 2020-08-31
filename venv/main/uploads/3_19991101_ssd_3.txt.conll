@@ -1,0 +1,24 @@
+1	in	_	In	_	IN	0	_	_	_	_	_	_	_	O
+2	reality	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+3	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+4	four	_	four	_	CD	0	_	_	_	_	_	_	_	O
+5	fatal	_	fatal	_	JJ	0	_	_	_	_	_	fatal.a	Killing	O
+6	accidents	_	accident	_	NNS	0	_	_	_	_	_	_	_	S-Victim
+7	are	_	be	_	VBP	0	_	_	_	_	_	_	_	O
+8	attributed	_	attribute	_	VBN	0	_	_	_	_	_	_	_	O
+9	to	_	to	_	TO	0	_	_	_	_	_	_	_	O
+10	him	_	him	_	PRP	0	_	_	_	_	_	_	_	O
+11	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	in	_	In	_	IN	0	_	_	_	_	_	_	_	O
+2	reality	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+3	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+4	four	_	four	_	CD	0	_	_	_	_	_	_	_	O
+5	fatal	_	fatal	_	JJ	0	_	_	_	_	_	_	_	S-Manner
+6	accidents	_	accident	_	NNS	0	_	_	_	_	_	accident.n	Catastrophe	S-Undesirable_event
+7	are	_	be	_	VBP	0	_	_	_	_	_	_	_	O
+8	attributed	_	attribute	_	VBN	0	_	_	_	_	_	_	_	O
+9	to	_	to	_	TO	0	_	_	_	_	_	_	_	O
+10	him	_	him	_	PRP	0	_	_	_	_	_	_	_	O
+11	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

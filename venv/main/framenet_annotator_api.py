@@ -1,6 +1,7 @@
 import io
 import shutil
 import os
+import re
 from googletrans import Translator
 from werkzeug.utils import secure_filename
 from flask import Flask, flash, request, redirect, send_file, render_template, url_for
@@ -10,7 +11,25 @@ import nltk
 import scipy
 import pprint
 import secrets
+import pyconll as pc
 nltk.download('punkt')
+
+
+# Transforms a conllu sentence into the string with its forms
+# Takes a conllu file as input and returs a str with one sentence per line
+def txt_transformer(file_conllu):
+    s_list = list()
+    with open(file_conllu, 'r') as f:
+        ok = f.read()
+    conll = pc.load_from_string(ok)
+    for s in conll:
+        s_txt = ""
+        for word in s[:-1]:
+            s_txt = s_txt + " " + word.form
+        s_txt = s_txt.strip() + ".\n"
+        s_list.append(s_txt)
+    return u''.join(s_list).encode('utf-8')
+
 
 def make_archive(source, destination):
         base = os.path.basename(destination)
@@ -32,6 +51,8 @@ os.makedirs(DOWNLOAD_FOLDER + '/')
 
 ALLOWED_EXTENSIONS_txt = {'txt'}
 ALLOWED_EXTENSIONS_conll = {'conll'}
+ALLOWED_EXTENSIONS_conllu = {'conllu'}
+
 def allowed_file(filename, extension):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in extension
@@ -51,6 +72,7 @@ def add_header(response):
 @app.route('/', methods=['GET', 'POST'])
 def main():
     if request.method == 'POST':
+
         # check if the post request has the file part
         if 'file' not in request.files:
             flash('No file part')
@@ -66,29 +88,41 @@ def main():
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             file.stream.seek(0)
 
-            new_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/uploads/en_' + filename[:-4]
+        elif file and allowed_file(file.filename, ALLOWED_EXTENSIONS_conllu):
+            filename = secure_filename(file.filename)[:-7] + '.txt'
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            text_sentences = txt_transformer(UPLOAD_FOLDER + '/' + filename)
+            with io.open(UPLOAD_FOLDER + '/' + filename, 'w', encoding="utf-8") as f:
+                f.write(text_sentences.decode('utf-8'))
+                f.seek(0)
+                f.close()
 
-            shutil.rmtree(new_dir, ignore_errors=True)
-            os.makedirs(new_dir)
+        else:
+            print("Formato de archivo no válido.")
 
-            with io.open(UPLOAD_FOLDER + '/' + filename, 'r', encoding='utf8') as f:
-                lines = f.readlines()
-                n_lines = 0
-                translator = Translator()
-                for line in lines:
-                    n_lines += 1
-                    with io.open(new_dir + '/en_' + filename[:-4] + '_' + str(n_lines) + '.txt', 'w', encoding='utf8') as f_new:
-                        translation = translator.translate(text=line, src='es', dest='en')
-                        f_new.write(translation.text)
-                        f_new.close()
-                    # Saving original files too
-                    with io.open(new_dir + '/' + filename[:-4] + '_' + str(n_lines) + '.txt', 'w', encoding='utf8') as f_new:
-                        f_new.write(line)
-                        f_new.close()
+        new_dir = UPLOAD_FOLDER + '/en_' + filename[:-4]
 
-            make_archive(new_dir, DOWNLOAD_FOLDER + '/' + 'en_' + filename[:-4] + '.zip')
+        shutil.rmtree(new_dir, ignore_errors=True)
+        os.makedirs(new_dir)
 
-            return redirect(url_for('download_file', filename= filename[:-4] + '.zip'))
+        with io.open(UPLOAD_FOLDER + '/' + filename, 'r', encoding='utf8') as f:
+            lines = f.readlines()
+            n_lines = 0
+            translator = Translator()
+            for line in lines:
+                n_lines += 1
+                with io.open(new_dir + '/en_' + filename[:-4] + '_' + str(n_lines) + '.txt', 'w', encoding='utf8') as f_new_1:
+                    translation = translator.translate(text=re.sub('&quot;', '"', line), src='es', dest='en')
+                    f_new_1.write(translation.text)
+                    f_new_1.close()
+                # Saving original files too
+                with io.open(new_dir + '/' + filename[:-4] + '_' + str(n_lines) + '.txt', 'w', encoding='utf8') as f_new_2:
+                    f_new_2.write(line)
+                    f_new_2.close()
+
+        make_archive(new_dir, DOWNLOAD_FOLDER + '/' + 'en_' + filename[:-4] + '.zip')
+
+        return redirect(url_for('download_file', filename= filename[:-4] + '.zip'))
 
     return render_template('main.html')
 
@@ -103,6 +137,11 @@ def upload_form():
 @app.route('/upload-frame-ann-en', methods=['POST'])
 def upload_file():
     if request.method == 'POST':
+
+        shutil.rmtree(UPLOAD_FOLDER + '/', ignore_errors=True)
+        shutil.rmtree(DOWNLOAD_FOLDER + '/', ignore_errors=True)
+        os.makedirs(UPLOAD_FOLDER + '/')
+        os.makedirs(DOWNLOAD_FOLDER + '/')
 
         # check if the post request has the file part
         if 'files[]' not in request.files:

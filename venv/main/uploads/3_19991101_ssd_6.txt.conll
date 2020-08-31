@@ -1,0 +1,5 @@
+1	60	_	60	_	CD	0	_	_	_	_	_	_	_	B-Protagonist
+2	passengers	_	passenger	_	NNS	0	_	_	_	_	_	_	_	I-Protagonist
+3	died	_	die	_	VBD	0	_	_	_	_	_	die.v	Death	O
+4	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

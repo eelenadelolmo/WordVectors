@@ -1,0 +1,9 @@
+{   ('Abandonment', 'abandone'): [('Theme', 'propiedad estatal')],
+    ('Businesses', 'empresa'): [('Descriptor', 'con mano de hierro')],
+    ('Communication_response', 'reconocido'): [('Speaker', 'Rayan , un ex general que dirige la empresa con mano de hierro ,'), ('Trigger', 'errores en la forma en que se gestiona la aerolínea')],
+    ('Leadership', 'dirige'): [('Leader', 'la aerolínea'), ('Activity', 'abandone la propiedad estatal')],
+    ('Leadership', 'estatal'): [],
+    ('Means', 'forma en que'): [('Purpose', 'la aerolínea')],
+    ('Possession', 'propiedad'): [],
+    ('Self_motion', 'dirige'): [('Path', 'la empresa'), ('Goal', 'con mano de hierro')],
+    ('Self_motion', 'dirige la'): [('Self_mover', 'la aerolínea')]}
