@@ -1,4 +1,4 @@
-1	he	_	He	_	PRP	0	_	_	_	_	_	_	_	S-Patient
+1	it	_	It	_	PRP	0	_	_	_	_	_	_	_	S-Patient
 2	also	_	also	_	RB	0	_	_	_	_	_	_	_	O
 3	suffered	_	suffer	_	VBD	0	_	_	_	_	_	suffer.v	Catastrophe	O
 4	a	_	a	_	DT	0	_	_	_	_	_	_	_	B-Undesirable_event
@@ -19,7 +19,7 @@
 19	aircraft	_	aircraft	_	NN	0	_	_	_	_	_	_	_	I-Undesirable_event
 20	.	_	.	_	.	0	_	_	_	_	_	_	_	O
 
-1	he	_	He	_	PRP	0	_	_	_	_	_	_	_	O
+1	it	_	It	_	PRP	0	_	_	_	_	_	_	_	O
 2	also	_	also	_	RB	0	_	_	_	_	_	_	_	O
 3	suffered	_	suffer	_	VBD	0	_	_	_	_	_	_	_	O
 4	a	_	a	_	DT	0	_	_	_	_	_	_	_	O
@@ -40,7 +40,7 @@
 19	aircraft	_	aircraft	_	NN	0	_	_	_	_	_	_	_	O
 20	.	_	.	_	.	0	_	_	_	_	_	_	_	O
 
-1	he	_	He	_	PRP	0	_	_	_	_	_	_	_	O
+1	it	_	It	_	PRP	0	_	_	_	_	_	_	_	O
 2	also	_	also	_	RB	0	_	_	_	_	_	_	_	O
 3	suffered	_	suffer	_	VBD	0	_	_	_	_	_	_	_	O
 4	a	_	a	_	DT	0	_	_	_	_	_	_	_	O
@@ -61,7 +61,7 @@
 19	aircraft	_	aircraft	_	NN	0	_	_	_	_	_	_	_	O
 20	.	_	.	_	.	0	_	_	_	_	_	_	_	O
 
-1	he	_	He	_	PRP	0	_	_	_	_	_	_	_	O
+1	it	_	It	_	PRP	0	_	_	_	_	_	_	_	O
 2	also	_	also	_	RB	0	_	_	_	_	_	_	_	O
 3	suffered	_	suffer	_	VBD	0	_	_	_	_	_	_	_	O
 4	a	_	a	_	DT	0	_	_	_	_	_	_	_	O

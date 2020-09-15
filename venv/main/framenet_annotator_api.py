@@ -15,13 +15,28 @@ import pyconll as pc
 nltk.download('punkt')
 
 
+def to_conllu(sentence):
+    lines = sentence.split('\n')
+    ok = ""
+    for l in lines:
+        if len(l) > 1:
+            line_ok = l[:-1] + '\t_\t_\n'
+            ok += line_ok
+        else:
+            ok += (l + '\n')
+    return ok
+
+
 # Transforms a conllu sentence into the string with its forms
 # Takes a conllu file as input and returs a str with one sentence per line
 def txt_transformer(file_conllu):
     s_list = list()
     with open(file_conllu, 'r') as f:
         ok = f.read()
-    conll = pc.load_from_string(ok)
+    try:
+        conll = pc.load_from_string(ok)
+    except pc.exception.ParseError:
+        conll = pc.load_from_string(to_conllu(ok))
     for s in conll:
         s_txt = ""
         for word in s[:-1]:
