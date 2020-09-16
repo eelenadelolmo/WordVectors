@@ -6,3 +6,4 @@ venv/main/BETO_model/*
 venv/main/w2vec_models/*
 venv/main/BETO_pytorch/*
 venv/main/BERT_multiling_distiluse/*
+venv/main/FastText_models/*

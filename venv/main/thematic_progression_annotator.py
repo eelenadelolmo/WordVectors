@@ -2,11 +2,22 @@ import os
 import numpy as np
 import scipy
 import xml.etree.ElementTree as ET
+from gensim.models import KeyedVectors
 from sentence_transformers import SentenceTransformer
+from gensim.models.wrappers import FastText
 
+
+# Parameters for sentence transformed based on BETO
 np.set_printoptions(threshold=100)
 model = SentenceTransformer('BETO_model')
 
+# Loading Word2vec model for Spanish
+word_vectors = KeyedVectors.load('w2vec_models/complete.kv', mmap='r')
+
+# Loading FastText model for Spanish
+ft = FastText.load_fasttext_format('FastText_models/cc.es.300.bin')
+
+# Directory containing the output in XML of the feature generation module
 input_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/in_xml'
 
 for file_xml in os.listdir(input_dir):
@@ -53,6 +64,7 @@ for file_xml in os.listdir(input_dir):
 
         print("\n\n--------------------------------------------------------")
         print("** Matching themes to themes **")
+        print("\nSentence transformers with BETO as a model")
 
         theme_embeddings = model.encode(t_ord)
 
@@ -73,21 +85,51 @@ for file_xml in os.listdir(input_dir):
 
 
         print("\n\n--------------------------------------------------------")
-        print("** Matching rhemes to themes **")
+        print("** Matching themes to themes **")
+        print("\nWord2vec embeddings\n\n")
 
+        for idx, theme in enumerate(t_ord):
+            print("Theme:", theme)
+            print("Word Mover's distance from other themes:")
+
+            # Copying the list by values not by reference
+            others = t_ord[:]
+            del others[idx]
+            for other in others:
+                print("-", other + ":", word_vectors.wmdistance(theme, other))
+            print('\n\n')
+
+
+        print("\n\n--------------------------------------------------------")
+        print("** Matching themes to themes **")
+        print("\nFastText embeddings\n\n")
+
+        for idx, theme in enumerate(t_ord):
+            print("Theme:", theme)
+            print("Word Mover's distance from other themes:")
+
+            # Copying the list by values not by reference
+            others = t_ord[:]
+            del others[idx]
+            for other in others:
+                print("-", other + ":", ft.wv.wmdistance(theme, other))
+            print('\n\n')
+
+
+        """
+        print("\n\n--------------------------------------------------------")
+        print("** Matching rhemes to themes **")
 
         # sentences = t_ord + r_ord
         # sentence_embeddings = model.encode(sentences)
         theme_embeddings = model.encode(t_ord)
         rheme_embeddings = model.encode(r_ord)
 
-        """
         # The result is a list of sentence embeddings as numpy arrays
         for theme, theme_embedding in zip(t_ord, theme_embeddings):
             print("Sentence:", theme)
             print("Embedding:", theme_embedding)
             print("")
-        """
 
         # Find the closest 5 sentences of the corpus for each query sentence based on cosine similarity
         closest_n = 5
@@ -103,6 +145,27 @@ for file_xml in os.listdir(input_dir):
 
             for idx, distance in results[0:closest_n]:
                 print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
+        """
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 """

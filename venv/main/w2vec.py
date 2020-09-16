@@ -83,4 +83,4 @@ print("{:.4f}".format(sim))
 sim = word_vectors.n_similarity(['comprar', 'vender', 'alquilar', 'prestar'], ['alquilar', 'prestar'])
 print("{:.4f}".format(sim))
 
-word_vectors.most_similar_to_given("escuchar", ["percibir", "oír", "entender", "hablar", "auriculares", "escucha"])
+print(word_vectors.most_similar_to_given("escuchar", ["percibir", "oír", "entender", "hablar", "auriculares", "escucha"]))
