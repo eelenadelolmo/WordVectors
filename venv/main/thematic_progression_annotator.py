@@ -1,11 +1,18 @@
 import os
 import numpy as np
 import scipy
+import spacy
 import xml.etree.ElementTree as ET
 from gensim.models import KeyedVectors
 from sentence_transformers import SentenceTransformer
 from gensim.models.wrappers import FastText
 
+# Loading Spacy Spanish large model from path
+model_lg_path = "/home/elena/PycharmProjects/WordVectors/venv/main/Spacy_models/es_core_news_lg-2.3.1/es_core_news_lg/es_core_news_lg-2.3.1"
+model_md_path = "/home/elena/PycharmProjects/WordVectors/venv/main/Spacy_models/es_core_news_md-2.3.1/es_core_news_lg/es_core_news_md-2.3.1"
+model_sm_path = "/home/elena/PycharmProjects/WordVectors/venv/main/Spacy_models/es_core_news_sm-2.3.1/es_core_news_lg/es_core_news_sm-2.3.1"
+nlp = spacy.load(model_lg_path)
+# os.system("python -m spacy download es_core_news_sm")
 
 # Parameters for sentence transformed based on BETO
 np.set_printoptions(threshold=100)
