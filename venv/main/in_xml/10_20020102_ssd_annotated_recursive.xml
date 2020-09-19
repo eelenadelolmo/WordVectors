@@ -4,8 +4,10 @@
 	<!ELEMENT text (sentence+)>
 	    <!ATTLIST text id CDATA #REQUIRED>
 	<!ELEMENT sentence (theme, rheme, semantic_roles)>
-		<!ELEMENT theme (#PCDATA)>
-		<!ELEMENT rheme (#PCDATA)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame*)>
 		<!ELEMENT frame (argument*)>
             <!ATTLIST frame type CDATA #REQUIRED>
@@ -21,12 +23,13 @@
 
 	<sentence>
 		<theme>
-			El Gobierno de Portugal 
+			<token pos="da0ms0">El</token><token pos="np00000">Gobierno</token><token pos="sps00">de</token><token pos="np00000">Portugal</token>
 		</theme>
 		<rheme>
-			decidió abrir una cuenta de ahorro con 50 euros ( 8.319 pesetas ) a los bebés nacidos el 1 de enero del 2002 
+			<token pos="vmis3s0">decidió</token><token pos="vmn0000">abrir</token><token pos="di0fs0">una</token><token pos="ncfs000">cuenta</token><token pos="sps00">de</token><token pos="ncms000">ahorro</token><token pos="sps00">con</token><token pos="z">50</token><token pos="zm">euros</token><token pos="fpa">(</token><token pos="z">8.319</token><token pos="zm">pesetas</token><token pos="fpt">)</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="ncmp000">bebés</token><token pos="aq0mpp">nacidos</token><token pos="da0ms0">el</token><token pos="z">1</token><token pos="sps00">de</token><token pos="ncfp000">enero</token><token pos="sps00">del</token><token pos="z">2002</token>
 		</rheme>
 		<semantic_roles>
+			<frame type="Modality_Reporter" head="el ministro de Economía portugués, Guilherme d'Oliveira Martins "></frame>
 			<frame type="Bringing" head="nacidos el">
 				<argument type="Time" dependent="1 de enero"/></frame>
 			<frame type="Calendric_unit" head="lunes"></frame>
@@ -50,10 +53,10 @@
 
 	<sentence>
 		<theme>
-			El ministro 
+			<token pos="da0ms0">El</token><token pos="ncms000">ministro</token>
 		</theme>
 		<rheme>
-			con este gesto se pretendía destacar un momento histórico asociando para siempre a los recién nacidos del primer día del año con la construcción de una Europa de paz y solidaridad 
+			<token pos="sps00">con</token><token pos="dd0ms0">este</token><token pos="ncms000">gesto</token><token pos="p0000000">se</token><token pos="vmii3s0">pretendía</token><token pos="vmn0000">destacar</token><token pos="fe">&quot;</token><token pos="di0ms0">un</token><token pos="ncms000">momento</token><token pos="aq0ms0">histórico</token><token pos="fe">&quot;</token><token pos="vmg0000">asociando</token><token pos="sps00">para</token><token pos="rg">siempre</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="rg">recién</token><token pos="aq0mpp">nacidos</token><token pos="spcms">del</token><token pos="ao0ms0">primer</token><token pos="ncms000">día</token><token pos="spcms">del</token><token pos="ncms000">año</token><token pos="fe">&quot;</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="ncfs000">construcción</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="np00000">Europa</token><token pos="sps00">de</token><token pos="ncfs000">paz</token><token pos="cc">y</token><token pos="ncfs000">solidaridad</token><token pos="fe">&quot;</token>
 		</rheme>
 		<semantic_roles>
 			<frame type="Building" head="construcción">
@@ -76,10 +79,10 @@
 
 	<sentence>
 		<theme>
-			El Ejecutivo portugués 
+			<token pos="da0ms0">El</token><token pos="np00000">Ejecutivo</token><token pos="aq0ms0">portugués</token>
 		</theme>
 		<rheme>
-			quería saludar de esta forma el nacimiento de una generación euro 
+			<token pos="vmii3s0">quería</token><token pos="vmn0000">saludar</token><token pos="sps00">de</token><token pos="dd0fs0">esta</token><token pos="ncfs000">forma</token><token pos="da0ms0">el</token><token pos="ncms000">nacimiento</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="ncfs000">generación</token><token pos="ncms000">euro</token>
 		</rheme>
 		<semantic_roles>
 			<frame type="Desiring" head="quería">

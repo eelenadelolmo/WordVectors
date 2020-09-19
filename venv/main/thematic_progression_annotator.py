@@ -44,11 +44,17 @@ for file_xml in os.listdir(input_dir):
         root = ET.fromstring(xml)
 
         for sentence in root.iter('sentence'):
+
+            theme = ""
+            rheme = ""
+
             for child in sentence:
                 if child.tag == 'theme':
-                    theme = child.text.strip()
+                    for token in child:
+                        theme += token.text.strip() + ' '
                 elif child.tag == 'rheme':
-                    rheme = child.text.strip()
+                    for token in child:
+                        rheme += token.text.strip() + ' '
 
             t_r_ord.append((theme, rheme))
             t_ord.append(theme)

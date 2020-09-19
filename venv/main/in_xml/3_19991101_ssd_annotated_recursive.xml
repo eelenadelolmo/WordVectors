@@ -4,8 +4,10 @@
 	<!ELEMENT text (sentence+)>
 	    <!ATTLIST text id CDATA #REQUIRED>
 	<!ELEMENT sentence (theme, rheme, semantic_roles)>
-		<!ELEMENT theme (#PCDATA)>
-		<!ELEMENT rheme (#PCDATA)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame*)>
 		<!ELEMENT frame (argument*)>
             <!ATTLIST frame type CDATA #REQUIRED>
@@ -21,10 +23,10 @@
 
 	<sentence>
 		<theme>
-			Egypt Air, compañía estatal creada hace 67 años, 
+			<token pos="np0000l">Egypt</token><token pos="np0000l">Air</token><token pos="fc">,</token><token pos="ncfs000">compañía</token><token pos="aq0cs0">estatal</token><token pos="aq0fsp">creada</token><token pos="vmip3s0">hace</token><token pos="z">67</token><token pos="ncmp000">años</token><token pos="fc">,</token>
 		</theme>
 		<rheme>
-			nunca habían tenido un accidente fatal 
+			<token pos="rg">nunca</token><token pos="vaii3p0">habían</token><token pos="vmp00sm">tenido</token><token pos="di0ms0">un</token><token pos="ncms000">accidente</token><token pos="aq0cs0">fatal</token>
 		</rheme>
 		<semantic_roles>
 			<frame type="Appellations" head="presidente"></frame>
@@ -48,12 +50,13 @@
 
 	<sentence>
 		<theme>
-			eso 
+			<token pos="pd0ns000">eso</token>
 		</theme>
 		<rheme>
-			no es verdad 
+			<token pos="rn">no</token><token pos="vsip3s0">es</token><token pos="ncfs000">verdad</token>
 		</rheme>
 		<semantic_roles>
+			<frame type="Modality_Reporter" head="algunas informaciones Associated Press "></frame>
 			<frame type="Be_in_agreement_on_action" head="según">
 				<argument type="Obligation" dependent="según informa Associated Press"/></frame>
 			<frame type="Goal" head="según">
@@ -83,10 +86,10 @@
 
 	<sentence>
 		<theme>
-			El más grave y reciente 
+			<token pos="da0ms0">El</token><token pos="rg">más</token><token pos="aq0cs0">grave</token><token pos="cc">y</token><token pos="aq0cs0">reciente</token>
 		</theme>
 		<rheme>
-			ocurrió en 1976, 
+			<token pos="vmis3s0">ocurrió</token><token pos="sps00">en</token><token pos="z">1976</token><token pos="fc">,</token>
 		</rheme>
 		<semantic_roles>
 			<frame type="Architectural_part" head="aterrizaje"></frame>
@@ -147,10 +150,10 @@
 
 	<sentence>
 		<theme>
-			La compañía, una de las más antiguas de Oriente Próximo, 
+			<token pos="da0fs0">La</token><token pos="ncfs000">compañía</token><token pos="fc">,</token><token pos="pi0fs000">una</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="rg">más</token><token pos="aq0fp0">antiguas</token><token pos="sps00">de</token><token pos="np0000l">Oriente</token><token pos="np0000l">Próximo</token><token pos="fc">,</token>
 		</theme>
 		<rheme>
-			tiene numerosos críticos en su propio país 
+			<token pos="vmip3s0">tiene</token><token pos="aq0mp0">numerosos</token><token pos="ncmp000">críticos</token><token pos="sps00">en</token><token pos="dp3cs0">su</token><token pos="di0ms0">propio</token><token pos="ncms000">país</token>
 		</rheme>
 		<semantic_roles>
 			<frame type="Businesses" head="compañía"></frame>
@@ -176,10 +179,10 @@
 
 	<sentence>
 		<theme>
-			Rayan, un ex general que dirige la empresa con mano de hierro, 
+			<token pos="np00000">Rayan</token><token pos="fc">,</token><token pos="di0ms0">un</token><token pos="aq0cn0">ex</token><token pos="nccs000">general</token><token pos="pr0cn000">que</token><token pos="vmip3s0">dirige</token><token pos="da0fs0">la</token><token pos="ncfs000">empresa</token><token pos="sps00">con</token><token pos="ncfs000">mano</token><token pos="sps00">de</token><token pos="ncms000">hierro</token><token pos="fc">,</token>
 		</theme>
 		<rheme>
-			ha reconocido errores en la forma en que se gestiona la aerolínea, 
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">reconocido</token><token pos="ncmp000">errores</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">forma</token><token pos="sps00">en</token><token pos="pr0cn000">que</token><token pos="p0000000">se</token><token pos="vmip3s0">gestiona</token><token pos="da0fs0">la</token><token pos="ncfs000">aerolínea</token><token pos="fc">,</token>
 		</rheme>
 		<semantic_roles>
 			<frame type="Abandonment" head="abandone">
@@ -229,10 +232,10 @@
 
 	<sentence>
 		<theme>
-			Su flota 
+			<token pos="dp3cs0">Su</token><token pos="ncfs000">flota</token>
 		</theme>
 		<rheme>
-			tiene 38 aviones 
+			<token pos="vmip3s0">tiene</token><token pos="z">38</token><token pos="ncmp000">aviones</token>
 		</rheme>
 		<semantic_roles>
 		</semantic_roles>
