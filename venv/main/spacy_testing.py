@@ -17,8 +17,6 @@ nlp = spacy.load(model_lg_path)
 input_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/in_xml'
 
 
-
-
 for file_xml in os.listdir(input_dir):
 
     with open(input_dir + '/' + file_xml) as f_xml:
@@ -42,9 +40,10 @@ for file_xml in os.listdir(input_dir):
             doc_theme = nlp(theme)
             doc_rheme = nlp(rheme)
 
-            print("**** Sentence ****")
 
             # Morphological annotation (and much more...)
+            """
+            print("**** Sentence ****")
 
             print("---- Theme ----")
             for token in doc_theme:
@@ -56,8 +55,7 @@ for file_xml in os.listdir(input_dir):
             for token in doc_rheme:
                 print(token.text, token.lemma_, token.pos_, token.tag_, token.dep_,
                         token.shape_, token.is_alpha, token.is_stop)
-
-
+            """
 
 
             # Entity annotation
@@ -70,7 +68,6 @@ for file_xml in os.listdir(input_dir):
             ents = [(e.text, e.start_char, e.end_char, e.label_) for e in doc_rheme.ents]
             print(ents)
             """
-
 
 
             # EntityRuler (adding entities from rules)

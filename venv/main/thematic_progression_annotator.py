@@ -1,7 +1,7 @@
 import os
 import numpy as np
-import scipy
 import spacy
+import scipy.spatial
 import xml.etree.ElementTree as ET
 from gensim.models import KeyedVectors
 from sentence_transformers import SentenceTransformer
@@ -82,7 +82,7 @@ for file_xml in os.listdir(input_dir):
         theme_embeddings = model.encode(t_ord)
 
         # Find the closest 5 sentences of the corpus for each query sentence based on cosine similarity
-        closest_n = 5
+        closest_n = len(theme_embeddings)
         for theme, theme_embedding in zip(t_ord, theme_embeddings):
             distances = scipy.spatial.distance.cdist([theme_embedding], theme_embeddings, "cosine")[0]
 
@@ -91,7 +91,7 @@ for file_xml in os.listdir(input_dir):
 
             print("\n\n")
             print("Theme:", theme)
-            print("\nTop 5 most similar themes in the sentence:")
+            print("\nMost similar themes in the sentence:")
 
             for idx, distance in results[0:closest_n]:
                 print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
@@ -108,8 +108,21 @@ for file_xml in os.listdir(input_dir):
             # Copying the list by values not by reference
             others = t_ord[:]
             del others[idx]
+            print("-", theme + ":", word_vectors.wmdistance(theme, theme))
+
+            # List of normalized Word Movers Distance for every theme
+            WMD_others = list()
+
             for other in others:
-                print("-", other + ":", word_vectors.wmdistance(theme, other))
+                WMD = word_vectors.wmdistance(theme, other)
+                WMD_others.append(WMD)
+                print("-", other + ":", WMD)
+
+            # Normalizing the Word Movers Distance value to a 0-1 range
+            norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
+            for n, other in enumerate(others):
+                print("- (norm.)", other + ":", norm[n])
+
             print('\n\n')
 
 
@@ -124,8 +137,21 @@ for file_xml in os.listdir(input_dir):
             # Copying the list by values not by reference
             others = t_ord[:]
             del others[idx]
+            print("-", theme + ":", ft.wv.wmdistance(theme, theme))
+
+            # List of normalized Word Movers Distance for every theme
+            WMD_others = list()
+
             for other in others:
-                print("-", other + ":", ft.wv.wmdistance(theme, other))
+                WMD = ft.wv.wmdistance(theme, other)
+                WMD_others.append(WMD)
+                print("-", other + ":", WMD)
+
+            # Normalizing the Word Movers Distance value to a 0-1 range
+            norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
+            for n, other in enumerate(others):
+                print("- (norm.)", other + ":", norm[n])
+
             print('\n\n')
 
 
