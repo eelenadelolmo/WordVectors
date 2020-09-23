@@ -1,17 +1,28 @@
 import os
 import numpy as np
-import spacy
+# import spacy
 import scipy.spatial
 import xml.etree.ElementTree as ET
 from gensim.models import KeyedVectors
 from sentence_transformers import SentenceTransformer
 from gensim.models.wrappers import FastText
 
+
+# Pretty-printing a dictionary with a n-tabs indentation
+def pretty(d, indent=0):
+    for key, value in d.items():
+        print('\t' * indent + str(key))
+        if isinstance(value, dict):
+            pretty(value, indent+1)
+        else:
+            print('\t' * (indent+1) + str(value))
+
+
 # Loading Spacy Spanish large model from path
 model_lg_path = "/home/elena/PycharmProjects/WordVectors/venv/main/Spacy_models/es_core_news_lg-2.3.1/es_core_news_lg/es_core_news_lg-2.3.1"
 model_md_path = "/home/elena/PycharmProjects/WordVectors/venv/main/Spacy_models/es_core_news_md-2.3.1/es_core_news_lg/es_core_news_md-2.3.1"
 model_sm_path = "/home/elena/PycharmProjects/WordVectors/venv/main/Spacy_models/es_core_news_sm-2.3.1/es_core_news_lg/es_core_news_sm-2.3.1"
-nlp = spacy.load(model_lg_path)
+# nlp = spacy.load(model_lg_path)
 # os.system("python -m spacy download es_core_news_sm")
 
 # Parameters for sentence transformed based on BETO
@@ -74,6 +85,8 @@ for file_xml in os.listdir(input_dir):
 
         print('\n\n\n\n========================================================')
 
+        ids_corref = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z".split()
+        themes_ranking = dict()
 
         print("\n\n--------------------------------------------------------")
         print("** Matching themes to themes **")
@@ -93,9 +106,12 @@ for file_xml in os.listdir(input_dir):
             print("Theme:", theme)
             print("\nMost similar themes in the sentence:")
 
-            for idx, distance in results[0:closest_n]:
-                print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
+            themes_ranking[theme] = dict()
 
+            # Not considering the distance with the theme itself (i.e. selecting the list elements from the second one)
+            for idx, distance in results[1:closest_n]:
+                print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
+                themes_ranking[theme][t_ord[idx].strip()] = 1-distance
 
         print("\n\n--------------------------------------------------------")
         print("** Matching themes to themes **")
@@ -122,6 +138,7 @@ for file_xml in os.listdir(input_dir):
             norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
             for n, other in enumerate(others):
                 print("- (norm.)", other + ":", norm[n])
+                themes_ranking[theme][other.strip()] += norm[n]
 
             print('\n\n')
 
@@ -151,8 +168,24 @@ for file_xml in os.listdir(input_dir):
             norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
             for n, other in enumerate(others):
                 print("- (norm.)", other + ":", norm[n])
+                themes_ranking[theme][other.strip()] += norm[n]
 
             print('\n\n')
+
+
+
+        print("Ranking de correferencias:")
+        pretty(themes_ranking, indent=1)
+
+
+
+
+
+
+
+
+
+
 
 
         """
