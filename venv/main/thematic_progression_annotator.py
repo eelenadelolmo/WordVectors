@@ -3,6 +3,7 @@ import numpy as np
 # import spacy
 import scipy.spatial
 import xml.etree.ElementTree as ET
+from xml.etree.ElementTree import ElementTree
 from gensim.models import KeyedVectors
 from sentence_transformers import SentenceTransformer
 from gensim.models.wrappers import FastText
@@ -85,7 +86,6 @@ for file_xml in os.listdir(input_dir):
 
         print('\n\n\n\n========================================================')
 
-        ids_corref = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z".split()
         themes_ranking = dict()
 
         print("\n\n--------------------------------------------------------")
@@ -106,12 +106,12 @@ for file_xml in os.listdir(input_dir):
             print("Theme:", theme)
             print("\nMost similar themes in the sentence:")
 
-            themes_ranking[theme] = dict()
+            themes_ranking[theme.strip()] = dict()
 
             # Not considering the distance with the theme itself (i.e. selecting the list elements from the second one)
             for idx, distance in results[1:closest_n]:
                 print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
-                themes_ranking[theme][t_ord[idx].strip()] = 1-distance
+                themes_ranking[theme.strip()][t_ord[idx].strip()] = 1-distance
 
         print("\n\n--------------------------------------------------------")
         print("** Matching themes to themes **")
@@ -135,10 +135,11 @@ for file_xml in os.listdir(input_dir):
                 print("-", other + ":", WMD)
 
             # Normalizing the Word Movers Distance value to a 0-1 range
-            norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
+            # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
+            norm = [1 - (float(i) / 20) for i in WMD_others]
             for n, other in enumerate(others):
                 print("- (norm.)", other + ":", norm[n])
-                themes_ranking[theme][other.strip()] += norm[n]
+                themes_ranking[theme.strip()][other.strip()] += norm[n]
 
             print('\n\n')
 
@@ -165,17 +166,85 @@ for file_xml in os.listdir(input_dir):
                 print("-", other + ":", WMD)
 
             # Normalizing the Word Movers Distance value to a 0-1 range
-            norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
+            # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
+            norm = [1 - (float(i) / 3) for i in WMD_others]
             for n, other in enumerate(others):
                 print("- (norm.)", other + ":", norm[n])
-                themes_ranking[theme][other.strip()] += norm[n]
+                themes_ranking[theme.strip()][other.strip()] += norm[n]
 
             print('\n\n')
 
 
+        ## Including conceptual coreference information in the XML
 
         print("Ranking de correferencias:")
         pretty(themes_ranking, indent=1)
+
+        # Critival value for the weighted semantic similarity to consider two themes corefer to the same underlying concept
+        threshold = 1.6
+
+        # List of themes already included in a corefence set
+        coreferent_concepts = list()
+
+        # List of identifiers for coreference sets
+        ids_coref = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z".split()
+
+        # Number of coreference sets
+        n_sets = -1
+
+        # List of (theme, id) tuples
+        theme_id = list()
+
+        for t in themes_ranking:
+
+            # If the theme isn't yet in any coreference chain
+            if t not in coreferent_concepts:
+                # Assigning a new id with the next corresponding capital letter
+                n_sets += 1
+                id_c = ids_coref[n_sets]
+                theme_id.append((t, id_c))
+                coreferent_concepts.append(t)
+
+            # If the theme already is in a coreference chain
+            else:
+                # Getting the previously assigned id
+                for e in theme_id:
+                    if e[0] == t:
+                        id_c = e[1]
+                        break
+
+            # Assigning the coreference chain id of the current theme to the themes with a semantic similarity measure above the threshold
+            for t_c in themes_ranking[t]:
+                if t_c not in coreferent_concepts:
+                    if themes_ranking[t][t_c] > threshold:
+                        theme_id.append((t_c, id_c))
+                        coreferent_concepts.append(t_c)
+
+
+        print("Coreference analyzed", theme_id)
+
+
+
+        tree = ElementTree()
+        tree.parse(input_dir + '/' + file_xml)
+
+        for sentence in tree.iter('sentence'):
+
+            # Getting the theme string and the corresponding tag in the XML file
+            theme_xml = ""
+            for child in sentence:
+                if child.tag == 'theme':
+                    for token in child:
+                        theme_xml += token.text.strip() + ' '
+
+                    for e in theme_id:
+                        if e[0] == theme_xml.strip():
+                            child.set('concept_ref', e[1])
+
+        tree.write(input_dir + '/' + file_xml)
+
+
+
 
 
 
