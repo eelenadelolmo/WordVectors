@@ -1,4 +1,5 @@
 import os
+import shutil
 import numpy as np
 # import spacy
 import scipy.spatial
@@ -38,6 +39,12 @@ ft = FastText.load_fasttext_format('FastText_models/cc.es.300.bin')
 
 # Directory containing the output in XML of the feature generation module
 input_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/in_xml'
+
+# Directory containing the output in XML of the coreference annotation
+output_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/out_xml'
+shutil.rmtree(output_dir, ignore_errors=True)
+os.makedirs(output_dir)
+
 
 for file_xml in os.listdir(input_dir):
 
@@ -244,6 +251,63 @@ for file_xml in os.listdir(input_dir):
         tree.write(input_dir + '/' + file_xml)
 
 
+        # List of the concepts lines to add to the output XML file
+        concepts_xml = list()
+        id_added = list()
+
+        # Creating every concept tag
+        for x in theme_id:
+            if x[1] not in id_added:
+                id_added.append(x[1])
+                concept = '<concept id="' + x[1] + '">' + x[0] + '</concept>'
+                concepts_xml.append(concept)
+
+
+        with open(input_dir + '/' + file_xml) as in_xml:
+            xml_old = in_xml.read()
+
+        with open(output_dir + '/' + file_xml, 'w') as out:
+
+            xml_new = '''<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (theme, rheme, semantic_roles)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #REQUIRED>
+        <!ELEMENT rheme (token*)>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT semantic_roles (frame*)>
+        <!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+'''
+            # Getting the first and the rest of the lines of the original XML document in order to add the concepts block between them
+            xml_old_root = xml_old.split('\n')[0]
+            xml_old_rest = '\n'.join(xml_old.split('\n')[1:])
+
+            xml_new += xml_old_root
+
+            xml_new += '\n\n\t' + '<concepts>\n\t\t'
+
+            xml_new += '\n\t\t'.join(concepts_xml)
+
+            xml_new += '\n\t' + '</concepts>'
+
+            xml_new += xml_old_rest
+
+            out.write(xml_new)
 
 
 
@@ -253,9 +317,7 @@ for file_xml in os.listdir(input_dir):
 
 
 
-
-
-
+        ## Matching rhemes PENDING
 
         """
         print("\n\n--------------------------------------------------------")
@@ -307,7 +369,7 @@ for file_xml in os.listdir(input_dir):
 
 
 
-
+## Tesing unsupervised clustering algorithms
 
 """
 from sklearn.cluster import KMeans
