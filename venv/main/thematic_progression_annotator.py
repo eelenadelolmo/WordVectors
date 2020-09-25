@@ -1,4 +1,6 @@
 import os
+import re
+import html
 import shutil
 import numpy as np
 # import spacy
@@ -263,8 +265,12 @@ for file_xml in os.listdir(input_dir):
                 concepts_xml.append(concept)
 
 
+        # Getting the text of the original XML of the output of the previous module without the DTD
         with open(input_dir + '/' + file_xml) as in_xml:
             xml_old = in_xml.read()
+
+            from_tag = '(<text id=".+?".+)'
+            m = re.search(r'(<text id=".+?\n)((.*\n?)+)', xml_old)
 
         with open(output_dir + '/' + file_xml, 'w') as out:
 
@@ -294,8 +300,8 @@ for file_xml in os.listdir(input_dir):
 
 '''
             # Getting the first and the rest of the lines of the original XML document in order to add the concepts block between them
-            xml_old_root = xml_old.split('\n')[0]
-            xml_old_rest = '\n'.join(xml_old.split('\n')[1:])
+            xml_old_root = m.group(1)
+            xml_old_rest = m.group(2)
 
             xml_new += xml_old_root
 
@@ -307,7 +313,7 @@ for file_xml in os.listdir(input_dir):
 
             xml_new += xml_old_rest
 
-            out.write(xml_new)
+            out.write(html.unescape(xml_new))
 
 
 
