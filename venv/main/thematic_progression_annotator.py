@@ -103,7 +103,7 @@ for file_xml in os.listdir(input_dir):
 
         theme_embeddings = model.encode(t_ord)
 
-        # Find the closest 5 sentences of the corpus for each query sentence based on cosine similarity
+        # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
         closest_n = len(theme_embeddings)
         for theme, theme_embedding in zip(t_ord, theme_embeddings):
             distances = scipy.spatial.distance.cdist([theme_embedding], theme_embeddings, "cosine")[0]
@@ -118,7 +118,8 @@ for file_xml in os.listdir(input_dir):
             themes_ranking[theme.strip()] = dict()
 
             # Not considering the distance with the theme itself (i.e. selecting the list elements from the second one)
-            for idx, distance in results[1:closest_n]:
+            # Undone because caused problems when the same theme are literally repeated along the document
+            for idx, distance in results[:closest_n]:
                 print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
                 themes_ranking[theme.strip()][t_ord[idx].strip()] = 1-distance
 

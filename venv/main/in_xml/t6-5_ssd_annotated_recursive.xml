@@ -1,0 +1,171 @@
+<text id="t6-5_ssd_annotated_recursive">
+
+
+	<sentence>
+		<theme concept_ref="A">
+			<token pos="di0fs0">una</token><token pos="aq0cs0">gr&#225;cil</token><token pos="ncfs000">patinadora</token><token pos="aq0fs0">rubia</token>
+		</theme>
+		<rheme>
+			<token pos="vmii3s0">anunciaba</token><token pos="di0fs0">una</token><token pos="ncfs000">marca</token><token pos="sps00">de</token><token pos="ncmp000">chocolates</token><token pos="sps00">de</token><token pos="np0000l">Valladolid</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="vieja">
+				<argument type="Entity" dependent="publicitaria de hojalata" /></frame>
+			<frame type="Building_subparts" head="cuarto" />
+			<frame type="Dead_or_alive" head="estar" />
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Ground" dependent="el cuarto" /></frame>
+			<frame type="Locative_relation" head="de">
+				<argument type="Figure" dependent="las letras de" />
+				<argument type="Ground" dependent="inferior rotas y ara&#241;adas, ilegibles" /></frame>
+			<frame type="Part_orientational" head="inferior" />
+			<frame type="Text" head="letras" />
+			<frame type="Type" head="marca de">
+				<argument type="Category" dependent="chocolates de" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="viejo" />
+			<frame type="Architectural_part" head="la pared" />
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="pendientes de bisuter&#237;a barata" /></frame>
+			<frame type="Expensiveness" head="barata" />
+			<frame type="Part_orientational" head="fondo de un">
+				<argument type="Whole" dependent="de un caj&#243;n" /></frame>
+			<frame type="Removing" head="extrajo">
+				<argument type="Theme" dependent="viejo rollo de papel, dos pendientes de bisuter&#237;a barata y cuatro chinchetas" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="B">
+			<token pos="dp3cp0">sus</token><token pos="ncmp000">ojos</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3p0">distinguieron</token><token pos="di0fs0">una</token><token pos="ncfs000">mancha</token><token pos="aq0fs0">clara</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attempt" head="intentaba">
+				<argument type="Goal" dependent="vulgar cartel de propaganda de naranjas" /></frame>
+			<frame type="Body_parts" head="ojos" />
+			<frame type="Physical_artworks" head="cartel de">
+				<argument type="Descriptor" dependent="propaganda de naranjas" /></frame>
+			<frame type="Roadways" head="calle" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="C">
+			<token pos="da0ms0">El</token><token pos="ncms000">huerto</token>
+		</theme>
+		<rheme>
+			<token pos="vmii3s0">estaba</token><token pos="fc">,</token><token pos="aq0cs0">arrogante</token><token pos="cc">e</token><token pos="aq0cs0">imposible</token><token pos="sps00">como</token><token pos="rg">siempre</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Architectural_part" head="muro de" />
+			<frame type="Being_named" head="el nombre">
+				<argument type="Entity" dependent="empresa constructora" /></frame>
+			<frame type="Building" head="constructora" />
+			<frame type="Businesses" head="empresa" />
+			<frame type="Color" head="amarillo">
+				<argument type="Entity" dependent="cartel de metal" /></frame>
+			<frame type="Hiding_objects" head="escond&#237;a">
+				<argument type="Hidden_object" dependent="de los peatones, alguien hab&#237;a fijado un cartel de metal amarillo presidido por el nombre de una empresa constructora" /></frame>
+			<frame type="Locative_relation" head="all&#237;">
+				<argument type="Figure" dependent="huerto" /></frame>
+			<frame type="Occupy_rank" head="encima">
+				<argument type="Item" dependent="del muro de ladrillo" /></frame>
+			<frame type="Proportional_quantity" head="encima">
+				<argument type="Reference_quantity" dependent="por el nombre de una empresa constructora" /></frame>
+			<frame type="Sending" head="lo">
+				<argument type="Theme" dependent="un cartel de metal amarillo" /></frame>
+			<frame type="Sign" head="cartel" />
+			<frame type="Social_desirability" head="peatones" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_finish" head="terminar">
+				<argument type="Activity" dependent="esta obra" /></frame>
+			<frame type="Calendric_unit" head="d&#237;as" />
+			<frame type="Departing" head="faltan">
+				<argument type="Time" dependent="923 d&#237;as" />
+				<argument type="Goal" dependent="para terminar esta obra" /></frame>
+			<frame type="Locative_relation" head="se">
+				<argument type="Figure" dependent="un turbio mensaje" />
+				<argument type="Ground" dependent="faltan 923 d&#237;as para terminar esta obra" /></frame>
+			<frame type="Possibility" head="pod&#237;a">
+				<argument type="Possible_event" dependent="Debajo se" />
+				<argument type="Possible_event" dependent="leer un turbio mensaje" /></frame>
+			<frame type="Reading_activity" head="leer un">
+				<argument type="Reader" dependent="Debajo se" />
+				<argument type="Text" dependent="un turbio mensaje" /></frame>
+			<frame type="Work" head="obra" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="A">
+			<token pos="pr000000">cuando</token><token pos="da0fs0">la</token><token pos="ncfs000">amargura</token><token pos="sps00">de</token><token pos="dd0ms0">aquel</token><token pos="ncms000">descubrimiento</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vaii3s0">hab&#237;a</token><token pos="vmp00sm">diluido</token><token pos="rg">poco</token><token pos="sps00">a</token><token pos="pi0cs000">poco</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">transcurso</token><token pos="spcms">del</token><token pos="ncms000">tiempo</token><token pos="fc">,</token><token pos="rg">casi</token><token pos="dn0cp0">tres</token><token pos="ncmp000">a&#241;os</token><token pos="sps00">de</token><token pos="ncfs000">vida</token><token pos="aq0cs0">igual</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming" head="se">
+				<argument type="Final_category" dependent="acostumbrado ya a que las cosas siguieran ese orden del que se suele decir que es el curso l&#243;gico de los acontecimientos" /></frame>
+			<frame type="Becoming_aware" head="descubrimiento" />
+			<frame type="Calendric_unit" head="a&#241;os">
+				<argument type="Whole" dependent="de vida igual" /></frame>
+			<frame type="Cardinal_numbers" head="tres" />
+			<frame type="Contrition" head="culpable">
+				<argument type="Action" dependent="de la previsible destrucci&#243;n del prodigio" /></frame>
+			<frame type="Destroying" head="destrucci&#243;n">
+				<argument type="Patient" dependent="del prodigio" /></frame>
+			<frame type="Emotion_directed" head="amargura de">
+				<argument type="Stimulus" dependent="aquel descubrimiento se hab&#237;a diluido poco a poco en el transcurso del tiempo" /></frame>
+			<frame type="Event" head="acontecimientos" />
+			<frame type="Expectation" head="previsible">
+				<argument type="Phenomenon" dependent="destrucci&#243;n del prodigio" /></frame>
+			<frame type="Frequency" head="suele">
+				<argument type="Event" dependent="es" />
+				<argument type="Event" dependent="decir que es el curso l&#243;gico de los acontecimientos" /></frame>
+			<frame type="Proportional_quantity" head="en" />
+			<frame type="Relative_time" head="transcurso del">
+				<argument type="Focal_occasion" dependent="se hab&#237;a acostumbrado ya a que las cosas" />
+				<argument type="Focal_occasion" dependent="ese orden del que se suele decir que es el curso l&#243;gico de los acontecimientos" /></frame>
+			<frame type="Sequence" head="orden" />
+			<frame type="Statement" head="decir">
+				<argument type="Message" dependent="orden del que se suele" />
+				<argument type="Message" dependent="curso l&#243;gico de los acontecimientos" /></frame>
+			<frame type="Taking_time" head="transcurso">
+				<argument type="Activity" dependent="la amargura de aquel descubrimiento" />
+				<argument type="Time_length" dependent="transcurso del tiempo" />
+				<argument type="Activity" dependent="casi tres a&#241;os de vida igual" /></frame>
+			<frame type="Using" head="acostumbrado">
+				<argument type="Purpose" dependent="orden del que se suele decir que es el curso l&#243;gico de los acontecimientos" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

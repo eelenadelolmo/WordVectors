@@ -1,7 +1,0 @@
-{   ('Catastrophe', 'padeció'): [   ('Undesirable_event', 'secuestro violento'),
-                                    ('Time', 'en 1985'),
-                                    ('Degree', 'en Malta'),
-                                    ('Undesirable_event', 'que concluyó con tropas egipcias entrando con estrépito en')],
-    ('Impact', 'estrépito'): [('Impactor', 'tropas egipcias'), ('Impactee', 'en el')],
-    ('Kidnapping', 'secuestro'): [],
-    ('Process_end', 'concluyó'): [('Process', 'con tropas egipcias')]}

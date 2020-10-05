@@ -1,0 +1,231 @@
+<text id="t5-4_ssd_annotated_recursive">
+
+
+	<sentence>
+		<theme concept_ref="A">
+			<token pos="da0ms0">el</token><token pos="ncms000">calor</token>
+		</theme>
+		<rheme>
+			<token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">ciudad</token><token pos="vsii3s0">era</token><token pos="aq0cs0">peor</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="el calor" />
+				<argument type="Ground" dependent="la ciudad" /></frame>
+			<frame type="Political_locales" head="ciudad" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Increment" head="M&#225;s" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="B">
+			<token pos="da0mp0">los</token><token pos="ncmp000">muslos</token>
+		</theme>
+		<rheme>
+			<token pos="pp3csd00">le</token><token pos="vmii3p0">rebosaban</token><token pos="sps00">por</token><token pos="rg">encima</token><token pos="spcms">del</token><token pos="ncms000">encierro</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">medias</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="llegaban">
+				<argument type="Theme" dependent="estorbarse" /></frame>
+			<frame type="Breathing" head="Suspir&#243;" />
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="Suspir&#243; y se abri&#243; un poco de piernas" />
+				<argument type="Cause" dependent="con los primeros calores" /></frame>
+			<frame type="Color" head="blancas" />
+			<frame type="Directional_locative_relation" head="encima">
+				<argument type="Figure" dependent="piernas" />
+				<argument type="Ground" dependent="encierro de las" /></frame>
+			<frame type="Expansion" head="estorbarse" />
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="los primeros calores" /></frame>
+			<frame type="Increment" head="mutuamente" />
+			<frame type="Ordinal_numbers" head="primeros" />
+			<frame type="Statement" head="llegaban">
+				<argument type="Message" dependent="dos lorzas blancas que" />
+				<argument type="Message" dependent="en entrechocar" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="C">
+			<token pos="pd0ns000">Esto</token>
+		</theme>
+		<rheme>
+			<token pos="pp1cs000">me</token><token pos="vmip3s0">pasa</token><token pos="sps00">por</token><token pos="vmn0000">estar</token><token pos="rg">tan</token><token pos="aq0fs0">gorda</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="D">
+			<token pos="np0000p">Antonia</token>
+		</theme>
+		<rheme>
+			<token pos="vmii3s0">acababa</token><token pos="sps00">de</token><token pos="vmn0000">fregar</token><token pos="da0mp0">los</token><token pos="ncmp000">platos</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">comida</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_finish" head="acababa de">
+				<argument type="Activity" dependent="fregar los platos de la comida" /></frame>
+			<frame type="Removing" head="fregar">
+				<argument type="Goal" dependent="los platos de la comida" /></frame>
+			<frame type="Social_event" head="comida" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="C">
+			<token pos="np0000p">Antonio</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vaii3s0">hab&#237;a</token><token pos="vmp00sm">venido</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="as&#237;" />
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="ella sola ensuciaba siempre poco" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="es que acab&#243; en" />
+				<argument type="Ground" dependent="siempre" /></frame>
+			<frame type="Proportional_quantity" head="en" />
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="ella sola ensuciaba siempre poco" />
+				<argument type="Ground" dependent="ella sola" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="C">
+			<token pos="np0000p">Antonio</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="pp3csd00">le</token><token pos="vmii3s0">permit&#237;a</token><token pos="vmn0000">hacerlo</token><token pos="vmii3s0">dec&#237;a</token><token pos="cs">que</token><token pos="da0fp0">las</token><token pos="ncfp000">sartenes</token><token pos="rn">no</token><token pos="p0300000">se</token><token pos="vmip3p0">lavan</token><token pos="pi0cs000">que</token><token pos="p0300000">se</token><token pos="vmip3p0">restriegan</token><token pos="sps00">con</token><token pos="ncms000">papel</token><token pos="sps00">de</token><token pos="ncms000">peri&#243;dico</token><token pos="sps00">para</token><token pos="cs">que</token><token pos="vmsp3p0">queden</token><token pos="aq0fpp">engrasadas</token><token pos="fc">,</token><token pos="fg">-</token><token pos="rn">no</token><token pos="vmip2s0">ves</token><token pos="fc">,</token><token pos="aq0fs0">tonta</token><token pos="fc">,</token><token pos="cs">que</token><token pos="cs">si</token><token pos="pp3cpd00">les</token><token pos="vmip2s0">das</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">estropajo</token><token pos="rg">luego</token><token pos="p0300000">se</token><token pos="pp2cs000">te</token><token pos="vmip3s0">pega</token><token pos="pi0ms000">todo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="minutos" />
+			<frame type="Impact" head="sac&#243;" />
+			<frame type="Intentionally_act" head="de" />
+			<frame type="Locative_relation" head="entretuvo">
+				<argument type="Figure" dependent="pega" />
+				<argument type="Ground" dependent="del armario" /></frame>
+			<frame type="Manipulation" head="engrasadas">
+				<argument type="Agent" dependent="pega" /></frame>
+			<frame type="Perception_experience" head="no ves" />
+			<frame type="Preventing_or_letting" head="permit&#237;a">
+				<argument type="Event" dependent="hacerlo" /></frame>
+			<frame type="Quantified_mass" head="unos" />
+			<frame type="Removing" head="se lavan">
+				<argument type="Theme" dependent="pega" /></frame>
+			<frame type="Statement" head="dec&#237;a">
+				<argument type="Message" dependent="entretuvo en frotarlas con estropajo y denodado celo ; Antonio no le permit&#237;a hacerlo" />
+				<argument type="Message" dependent="que las sartenes no se lavan, sino que se restriegan con papel de peri&#243;dico para que queden engrasadas, - no ves ," /></frame>
+			<frame type="Taking_time" head="sac&#243;">
+				<argument type="Time_length" dependent="todas las sartenes del" />
+				<argument type="Activity" dependent="del armario" /></frame>
+			<frame type="Text" head="peri&#243;dico" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="E">
+			<token pos="pp3fs000">Ella</token>
+		</theme>
+		<rheme>
+			<token pos="pp3csa00">le</token><token pos="vmii3s0">obedec&#237;a</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="sab&#237;a">
+				<argument type="Content" dependent="d&#243;nde hab&#237;a sacado su hermano eso de que as&#237; no se pegaban" /></frame>
+			<frame type="Compliance" head="obedec&#237;a" />
+			<frame type="Impact" head="sacado" />
+			<frame type="Increment" head="aunque" />
+			<frame type="Kinship" head="hermano" />
+			<frame type="Locative_relation" head="d&#243;nde">
+				<argument type="Figure" dependent="hab&#237;a sacado su hermano eso de que as&#237; no se pegaban" /></frame>
+			<frame type="Perception_experience" head="visto">
+				<argument type="Phenomenon" dependent="nada" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Biological_area" head="detergente" />
+			<frame type="Change_of_leadership" head="rebeld&#237;a" />
+			<frame type="Departing" head="dejar">
+				<argument type="Path" dependent="de frituras" /></frame>
+			<frame type="Preventing_or_letting" head="permit&#237;a">
+				<argument type="Event" dependent="brizna de rebeld&#237;a fraternal y las frotaba y refrotaba bien con detergente hasta hacer" /></frame>
+			<frame type="Time_vector" head="hasta">
+				<argument type="Event" dependent="a Antonia le repugnaba un poco dejar las sartenes aceitosas, de vez en cuando se permit&#237;a una brizna de" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="F">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Apply_heat" head="cocinaba" />
+			<frame type="Relative_time" head="fin de">
+				<argument type="Focal_occasion" dependent="la que cocinaba era ella, qu&#233;" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Identicality" head="la misma" />
+			<frame type="Kinship" head="padre">
+				<argument type="Ego" dependent="la misma man&#237;a" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

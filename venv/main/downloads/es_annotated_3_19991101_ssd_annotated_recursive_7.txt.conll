@@ -1,9 +1,0 @@
-{   ('Businesses', 'compañía'): [],
-    ('Cardinal_numbers', 'una'): [('Entity', 'de las más antiguas de Oriente')],
-    ('Expressing_publicly', 'voces'): [('Content', 'su privatización')],
-    ('Interior_profile_relation', 'en'): [('Figure', 'numerosos críticos'), ('Ground', 'su propio país')],
-    ('Judgment_communication', 'críticos'): [('Place', 'en su propio país')],
-    ('Locative_relation', 'tiene'): [('Ground', 'muchas e insistentes las voces que reclaman su privatización')],
-    ('Political_locales', 'país'): [],
-    ('Quantified_mass', 'muchas'): [],
-    ('Referring_by_name', 'voces'): [('Name', 'muchas e insistentes las voces'), ('Name', 'su privatización')]}

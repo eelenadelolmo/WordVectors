@@ -1,9 +1,0 @@
-{   ('Architectural_part', 'aterrizaje'): [],
-    ('Buildings', 'aeropuerto'): [],
-    ('Death', 'fallecieron'): [('Protagonist', 'aeropuerto de Bangkok ( Tailandia ) y fallecieron 72 personas')],
-    ('Event', 'ocurrió'): [],
-    ('Impact', 'estrelló'): [('Impactor', 'un avión de la aerolínea'), ('Impactee', 'durante la maniobra de aterrizaje en el aeropuerto de Bangkok ( Tailandia ) y fallecieron 72 personas')],
-    ('Interior_profile_relation', 'en'): [('Figure', 'El más grave y reciente ocurrió en')],
-    ('Locative_relation', 'en'): [('Figure', 'la maniobra de aterrizaje'), ('Ground', 'aeropuerto de Bangkok ( Tailandia ) y fallecieron 72 personas')],
-    ('People', 'personas'): [],
-    ('Relative_time', 'reciente'): []}

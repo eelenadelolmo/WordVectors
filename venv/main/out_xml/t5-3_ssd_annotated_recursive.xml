@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (theme, rheme, semantic_roles)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #REQUIRED>
+        <!ELEMENT rheme (token*)>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT semantic_roles (frame*)>
+        <!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="t5-3_ssd_annotated_recursive">
+
+
+	<concepts>
+		<concept id="A">El sol</concept>
+		<concept id="B">Antonia</concept>
+		<concept id="C">ella</concept>
+	</concepts>
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Breathing" head="resuello" />
+			<frame type="Building_subparts" head="cocina" />
+			<frame type="Part_inner_outer" head="mitad">
+				<argument type="Whole" dependent="de la cocina" /></frame>
+			<frame type="Posture" head="pie en">
+				<argument type="Location" dependent="en mitad de la cocina" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="A">
+			<token pos="da0ms0">El</token><token pos="ncms000">sol</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vmii3s0">colaba</token><token pos="sps00">por</token><token pos="sps00">entre</token><token pos="da0fp0">las</token><token pos="ncfp000">rendijas</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">persiana</token><token pos="aq0fs0">metálica</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Fluidic_motion" head="se">
+				<argument type="Fluid" dependent="El sol" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="B">
+			<token pos="np0000p">Antonia</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">colocó</token><token pos="da0fs0">la</token><token pos="ncfs000">mano</token><token pos="sps00">a</token><token pos="nccs000">contraluz</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="mano" />
+			<frame type="Color" head="roja">
+				<argument type="Entity" dependent="la carne se" /></frame>
+			<frame type="Perception_active" head="observó">
+				<argument type="Phenomenon" dependent="carne se ponía roja y un poco transparente" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Kinship" head="hermano" />
+			<frame type="Kinship" head="pequeña" />
+			<frame type="Make_noise" head="jugar">
+				<argument type="Sound" dependent="esto con su hermano" /></frame>
+			<frame type="Using" head="con">
+				<argument type="Purpose" dependent="jugar a esto con su hermano" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Closure" head="establo">
+				<argument type="Container_portal" dependent="el portón" />
+				<argument type="Circumstances" dependent="sólo una chispa" /></frame>
+			<frame type="Hair_configuration" head="establo">
+				<argument type="Location" dependent="encerraban en el" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="el establo" /></frame>
+			<frame type="Process_end" head="pasara" />
+			<frame type="Proportional_quantity" head="algo de" />
+			<frame type="Sufficiency" head="lo">
+				<argument type="Enabled_situation" dependent="para que pasara algo de sol" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Antonio " />
+			<frame type="Body_parts" head="mano" />
+			<frame type="Perception_experience" head="ver">
+				<argument type="Phenomenon" dependent="los huesos de la mano" /></frame>
+			<frame type="Possibility" head="podían">
+				<argument type="Possible_event" dependent="ver los huesos de la mano" /></frame>
+			<frame type="Statement" head="decía">
+				<argument type="Message" dependent="que así se podían ver los huesos de la mano, el mismísimo esqueleto" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="C">
+			<token pos="pp3fs000">ella</token>
+		</theme>
+		<rheme>
+			<token pos="rg">nunca</token><token pos="pp3msa00">lo</token><token pos="vmis3s0">vio</token><token pos="aq0ms0">claro</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Removing" head="vio claro" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Scrutiny" head="mira" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="C">
+			<token pos="pp3fs000">ella</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vmii3s0">remiraba</token><token pos="da0fs0">la</token><token pos="ncfs000">manita</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="la manita" />
+			<frame type="Locative_relation" head="se">
+				<argument type="Ground" dependent="la manita y nada" /></frame>
+			<frame type="Perception_active" head="se">
+				<argument type="Phenomenon" dependent="la manita y nada" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="A">
+			<token pos="pd0ns000">Eso</token>
+		</theme>
+		<rheme>
+			<token pos="vsii3s0">era</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="ncmp000">veranos</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">hora</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">siesta</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="veranos" />
+			<frame type="Concessive" head="mientras">
+				<argument type="Main_assertion" dependent="Eso era en los veranos, a la hora de la siesta" />
+				<argument type="Main_assertion" dependent="el mundo dormía" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="los veranos" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="hora de la siesta" /></frame>
+			<frame type="Political_locales" head="mundo" />
+			<frame type="Sleep" head="siesta">
+				<argument type="Sleeper" dependent="el mundo" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="C">
+			<token pos="da0ms0">El</token><token pos="ncms000">establo</token>
+		</theme>
+		<rheme>
+			<token pos="vmii3s0">olía</token><token pos="sps00">a</token><token pos="ncms000">sudor</token><token pos="sps00">de</token><token pos="ncms000">ganado</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_silent" head="silencio" />
+			<frame type="Body_parts" head="garganta" />
+			<frame type="Breathing" head="aire" />
+			<frame type="Excreting" head="sudor">
+				<argument type="Excreta" dependent="sudor de ganado" /></frame>
+			<frame type="Fire_burning" head="quemaba">
+				<argument type="Fire" dependent="un aire gordo y áspero" />
+				<argument type="Fire" dependent="la garganta" /></frame>
+			<frame type="Give_impression" head="sudor de">
+				<argument type="Phenomenon" dependent="de ganado" />
+				<argument type="Characterization" dependent="sudor de ganado" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Similarity" head="Como" />
+		</semantic_roles>
+	</sentence>
+
+
+</text>

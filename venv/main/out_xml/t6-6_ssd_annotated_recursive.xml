@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (theme, rheme, semantic_roles)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #REQUIRED>
+        <!ELEMENT rheme (token*)>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT semantic_roles (frame*)>
+        <!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="t6-6_ssd_annotated_recursive">
+
+
+	<concepts>
+		<concept id="A">Ella , cómplice en aquel juego inocente que su marido desaprobaba con energía ,</concept>
+		<concept id="B">que</concept>
+	</concepts>
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="brazos" />
+			<frame type="Body_parts" head="sus pies" />
+			<frame type="Bringing" head="acercar">
+				<argument type="Theme" dependent="mejilla a sus" />
+				<argument type="Goal" dependent="a sus pies" /></frame>
+			<frame type="Change_position_on_a_scale" head="se tiraba">
+				<argument type="Final_value" dependent="Muchas veces" />
+				<argument type="Attribute" dependent="al suelo para rodear con los brazos los tobillos de su madre y acercar la mejilla a sus pies" /></frame>
+			<frame type="Kinship" head="madre" />
+			<frame type="Locative_relation" head="acercar">
+				<argument type="Figure" dependent="los brazos" />
+				<argument type="Ground" dependent="tobillos de su madre" /></frame>
+			<frame type="Quantified_mass" head="Muchas" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="cabeza" />
+			<frame type="Body_parts" head="piel" />
+			<frame type="Deciding" head="decidía">
+				<argument type="Decision" dependent="a resbalar sobre su piel" /></frame>
+			<frame type="Experiencer_focus" head="disfrutaba">
+				<argument type="Content" dependent="pluma casi invisible cuando se decidía a resbalar sobre su piel" /></frame>
+			<frame type="Manipulation" head="se" />
+			<frame type="Motion" head="movía">
+				<argument type="Path" dependent="su piel" /></frame>
+			<frame type="Motion" head="movía la">
+				<argument type="Theme" dependent="la cabeza" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="recibía" />
+			<frame type="Facial_expression" head="sonrisa" />
+			<frame type="Making_faces" head="sonrisa" />
+			<frame type="Receiving" head="recibía">
+				<argument type="Theme" dependent="una sonrisa" />
+				<argument type="Place" dependent="a cambio" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="A">
+			<token pos="pp3fs000">Ella</token><token pos="fc">,</token><token pos="nccs000">cómplice</token><token pos="sps00">en</token><token pos="dd0ms0">aquel</token><token pos="ncms000">juego</token><token pos="aq0cs0">inocente</token><token pos="pr0cn000">que</token><token pos="dp3cs0">su</token><token pos="ncms000">marido</token><token pos="vmii3s0">desaprobaba</token><token pos="sps00">con</token><token pos="ncfs000">energía</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmii3s0">iba</token><token pos="vmg0000">recogiendo</token><token pos="da0fp0">las</token><token pos="ncfp000">plumas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_ongoing" head="guardaba">
+				<argument type="Activity" dependent="para él" /></frame>
+			<frame type="Awareness" head="consciente">
+				<argument type="Time" dependent="en poco tiempo" /></frame>
+			<frame type="Body_parts" head="piel" />
+			<frame type="Boundary" head="frontera" />
+			<frame type="Coming_to_believe" head="iba">
+				<argument type="Content" dependent="plumas que se desprendían a su paso y las guardaba para él, para compensarle quizá de la" /></frame>
+			<frame type="Communication" head="compartían">
+				<argument type="Message" dependent=", hasta que el cambio de estación se encarnara en pretexto suficiente para estrenar otro par, siempre el mismo modelo" /></frame>
+			<frame type="Expectation" head="desaprobaba" />
+			<frame type="Experiencer_focus" head="placer que" />
+			<frame type="Guilt_or_innocence" head="inocente" />
+			<frame type="Identicality" head="el mismo" />
+			<frame type="Increment" head="otro" />
+			<frame type="Memory" head="el recuerdo">
+				<argument type="Content" dependent="las plumas sobre una sucia franja desmochada" /></frame>
+			<frame type="Natural_features" head="desmochada">
+				<argument type="Locale" dependent="iba" /></frame>
+			<frame type="Personal_relationship" head="marido" />
+			<frame type="Process_end" head="paso" />
+			<frame type="Processing_materials" head="teñida de">
+				<argument type="Place" dependent="de azul" /></frame>
+			<frame type="Shapes" head="teñida de" />
+			<frame type="Sufficiency" head="suficiente">
+				<argument type="Item" dependent="para estrenar otro par" /></frame>
+			<frame type="Undergo_change" head="cambio">
+				<argument type="Final_quality" dependent="estación se" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="B">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="vaii3s0">había</token><token pos="vmp00sm">resultado</token><token pos="vsn0000">ser</token><token pos="da0ms0">el</token><token pos="aq0ms0">único</token><token pos="ncms000">lujo</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="ncms000">alcance</token><token pos="sps00">de</token><token pos="sps00">entre</token><token pos="di0mp0">todos</token><token pos="pd0mp000">aquellos</token><token pos="sps00">con</token><token pos="da0mp0">los</token><token pos="pr0cn000">que</token><token pos="vmsi3s0">soñara</token><token pos="sps00">de</token><token pos="ncfs000">soltera</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nueva">
+				<argument type="Entity" dependent="fiesta de plumas y caricias" /></frame>
+			<frame type="Body_parts" head="sus pies">
+				<argument type="Descriptor" dependent="levemente hinchados" /></frame>
+			<frame type="Cause_change" head="paso">
+				<argument type="Final_category" dependent="ser el único lujo a su alcance de entre todos aquellos con los que soñara de soltera" /></frame>
+			<frame type="Intentionally_act" head="paso" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="se sentaba" />
+				<argument type="Ground" dependent="un sillón y embutía" />
+				<argument type="Figure" dependent="sus pies levemente hinchados en el que había resultado ser el único lujo a su alcance de entre todos" /></frame>
+			<frame type="Manipulation" head="caricias" />
+			<frame type="People" head="soltera" />
+			<frame type="Posture" head="sentaba" />
+			<frame type="Referring_by_name" head="llamaba">
+				<argument type="Name" dependent="a dar" /></frame>
+			<frame type="Sleep" head="se" />
+			<frame type="Sole_instance" head="un solo" />
+			<frame type="Sole_instance" head="único" />
+			<frame type="Time_vector" head="antes">
+				<argument type="Event" dependent="único lujo a su alcance de entre todos aquellos" />
+				<argument type="Landmark_event" dependent="haber llegado a dar siquiera un solo paso" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="A">
+			<token pos="da0fp0">Las</token><token pos="ncfp000">chinelas</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncfs000">madre</token>
+		</theme>
+		<rheme>
+			<token pos="fc">,</token><token pos="dp3cp0">sus</token><token pos="ncmp000">tobillos</token><token pos="rg">siempre</token><token pos="spcms">al</token><token pos="ncms000">aire</token><token pos="sps00">sobre</token><token pos="da0mp0">los</token><token pos="ncmp000">tacones</token><token pos="pp3csa00">le</token><token pos="vmii3p0">precedían</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Architectural_part" head="al aire" />
+			<frame type="Be_in_agreement_on_action" head="según">
+				<argument type="Party_2" dependent="su madre, sus tobillos siempre al aire sobre los tacones que ," />
+				<argument type="Obligation" dependent="convicción" />
+				<argument type="Obligation" dependent="precedían por la estrecha escalera de la azotea, iluminando para él los aterradores tramos que jamás habría" /></frame>
+			<frame type="Body_parts" head="sus tobillos" />
+			<frame type="Calendric_unit" head="la jornada" />
+			<frame type="Capability" head="capaz">
+				<argument type="Event" dependent="de coronar solo" /></frame>
+			<frame type="Change_of_leadership" head="coronar" />
+			<frame type="Change_position_on_a_scale" head="hasta">
+				<argument type="Item" dependent="estrecha escalera de la" /></frame>
+			<frame type="Experiencer_obj" head="peores">
+				<argument type="Stimulus" dependent="tramos que jamás habría sido capaz de coronar solo" /></frame>
+			<frame type="Foreign_or_domestic_country" head="doméstica" />
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="sus tobillos" />
+				<argument type="Event" dependent="al aire sobre" /></frame>
+			<frame type="Goal" head="para">
+				<argument type="Landmark" dependent="convicción" /></frame>
+			<frame type="Kinship" head="madre">
+				<argument type="Alter" dependent="su madre" /></frame>
+			<frame type="Measurable_attributes" head="estrecha" />
+			<frame type="Part_whole" head="tramos">
+				<argument type="Whole" dependent="que jamás habría sido capaz de coronar solo" /></frame>
+			<frame type="Relative_time" head="precedían">
+				<argument type="Focal_occasion" dependent="estrecha escalera de la" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

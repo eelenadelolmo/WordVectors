@@ -1,0 +1,236 @@
+<text id="t4-4_ssd_annotated_recursive">
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="noches" />
+			<frame type="Locative_relation" head="hay">
+				<argument type="Figure" dependent="Todas las noches" />
+				<argument type="Ground" dependent="hay llantos funerales y vagidos de beb&#233;s reci&#233;n" /></frame>
+			<frame type="People_by_age" head="beb&#233;s" />
+			<frame type="Vocalizations" head="llantos">
+				<argument type="Sound_source" dependent="de beb&#233;s reci&#233;n" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="A">
+			<token pos="da0fp0">Las</token><token pos="ncfp000">auroras</token>
+		</theme>
+		<rheme>
+			<token pos="pp3mpa00">los</token><token pos="vmip3p0">tienen</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="B">
+			<token pos="pi0mp000">todos</token>
+		</theme>
+		<rheme>
+			<token pos="vmip1p0">preferimos</token><token pos="dd0mp0">esos</token><token pos="ncmp000">silencios</token><token pos="aq0mp0">absolutos</token><token pos="sps00">durante</token><token pos="da0mp0">los</token><token pos="pr0cp000">cuales</token><token pos="np0000p">Dios</token><token pos="pp1cp000">nos</token><token pos="vmip3s0">habla</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_silent" head="silencios" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="B">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">sordos</token>
+		</theme>
+		<rheme>
+			<token pos="pp3msa00">lo</token><token pos="vmip3p0">oyen</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="People" head="Los" />
+			<frame type="Perception_experience" head="sordos lo">
+				<argument type="Perceiver_passive" dependent="sordos" />
+				<argument type="Phenomenon" dependent="lo oyen mejor que nosotros" /></frame>
+			<frame type="Required_event" head="mejor">
+				<argument type="Required_situation" dependent="que nosotros" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="C">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vmip3s0">llama</token><token pos="np0000p">Danaida</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appointing" head="se llama">
+				<argument type="Official" dependent="una amiga" /></frame>
+			<frame type="Personal_relationship" head="amiga" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="D">
+			<token pos="da0ms0">El</token><token pos="ncms000">origen</token><token pos="spcms">del</token><token pos="ncms000">nombre</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="np0000p">N&#225;yade</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_named" head="del nombre" />
+			<frame type="Origin" head="origen">
+				<argument type="Entity" dependent="nombre es N&#225;yade" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Mass_motion" head="en">
+				<argument type="Mass_theme" dependent="el agua" />
+				<argument type="Goal" dependent="en un gran vaso sin fondo" /></frame>
+			<frame type="Size" head="gran">
+				<argument type="Entity" dependent="vaso sin fondo" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="E">
+			<token pos="dp3cs0">Su</token><token pos="ncfs000">misi&#243;n</token>
+		</theme>
+		<rheme>
+			<token pos="vsii3s0">era</token><token pos="vmn0000">llenarlo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Filling" head="llenarlo">
+				<argument type="Cause" dependent="Su misi&#243;n" /></frame>
+			<frame type="Success_or_failure" head="consegu&#237;an" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="F">
+			<token pos="di0cs0">Cada</token><token pos="pr0cs000">cual</token>
+		</theme>
+		<rheme>
+			<token pos="pp3msa00">lo</token><token pos="vmip3s0">comprende</token><token pos="pd0ns000">eso</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="ncfs000">manera</token><token pos="cc">y</token><token pos="sps00">seg&#250;n</token><token pos="dp3cs0">su</token><token pos="ncms000">caso</token><token pos="aq0cs0">personal</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Be_in_agreement_on_action" head="seg&#250;n">
+				<argument type="Obligation" dependent="su caso personal" /></frame>
+			<frame type="Cardinal_numbers" head="cual" />
+			<frame type="Goal" head="lo">
+				<argument type="Landmark" dependent="su caso personal" /></frame>
+			<frame type="Means" head="manera" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Cause_harm" head="fatalmente">
+				<argument type="Victim" dependent="de T&#225;ntalo" /></frame>
+			<frame type="Cause_harm" head="suplicios" />
+			<frame type="People" head="mujeres" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="una" />
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Ground" dependent="el universo" />
+				<argument type="Figure" dependent="hay sino una presencia permanente, inmutable y eterna : la esfera" /></frame>
+			<frame type="Locative_relation" head="hay">
+				<argument type="Figure" dependent="En el universo" />
+				<argument type="Ground" dependent="hay sino una presencia permanente, inmutable y eterna : la esfera" /></frame>
+			<frame type="Presence" head="presencia" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="G">
+			<token pos="da0ns0">Lo</token><token pos="pi0cp000">dem&#225;s</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="ncfs000">existencia</token><token pos="fc">,</token><token pos="ncms000">simulacro</token><token pos="aq0ms0">transitorio</token><token pos="cc">y</token><token pos="aq0cs0">mudable</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Existence" head="existencia" />
+			<frame type="Rest" head="dem&#225;s" />
+			<frame type="Undergo_change" head="mudable" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Locative_relation" head="est&#225;">
+				<argument type="Ground" dependent="est&#225;" />
+				<argument type="Figure" dependent="- - la esfera - - en lo m&#225;s m&#237;nimo - - el tomo - - y en lo m&#225;s vasto" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>
