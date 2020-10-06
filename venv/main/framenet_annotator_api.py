@@ -89,55 +89,63 @@ def main():
     if request.method == 'POST':
 
         # check if the post request has the file part
-        if 'file' not in request.files:
+        # if 'file' not in request.files:
+        if 'files[]' not in request.files:
             flash('No file part')
             return redirect(request.url)
-        file = request.files['file']
-        # if user does not select file, browser also
-        # submit an empty part without filename
-        if file.filename == '':
-            flash('No selected file')
-            return redirect(request.url)
-        if file and allowed_file(file.filename, ALLOWED_EXTENSIONS_txt):
-            filename = secure_filename(file.filename)
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            file.stream.seek(0)
 
-        elif file and allowed_file(file.filename, ALLOWED_EXTENSIONS_conllu):
-            filename = secure_filename(file.filename)[:-7] + '.txt'
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            text_sentences = txt_transformer(UPLOAD_FOLDER + '/' + filename)
-            with io.open(UPLOAD_FOLDER + '/' + filename, 'w', encoding="utf-8") as f:
-                f.write(text_sentences.decode('utf-8'))
-                f.seek(0)
-                f.close()
+        # file = request.files['file']
+        files = request.files.getlist('files[]')
 
-        else:
-            print("Formato de archivo no válido.")
-
-        new_dir = UPLOAD_FOLDER + '/en_' + filename[:-4]
-
+        new_dir = UPLOAD_FOLDER + '/salida'
         shutil.rmtree(new_dir, ignore_errors=True)
         os.makedirs(new_dir)
 
-        with io.open(UPLOAD_FOLDER + '/' + filename, 'r', encoding='utf8') as f:
-            lines = f.readlines()
-            n_lines = 0
-            translator = Translator()
-            for line in lines:
-                n_lines += 1
-                with io.open(new_dir + '/en_' + filename[:-4] + '_' + str(n_lines) + '.txt', 'w', encoding='utf8') as f_new_1:
-                    translation = translator.translate(text=re.sub('&quot;', '"', line), src='es', dest='en')
-                    f_new_1.write(translation.text)
-                    f_new_1.close()
-                # Saving original files too
-                with io.open(new_dir + '/' + filename[:-4] + '_' + str(n_lines) + '.txt', 'w', encoding='utf8') as f_new_2:
-                    f_new_2.write(line)
-                    f_new_2.close()
+        for file in files:
+            # if user does not select file, browser also
+            # submit an empty part without filename
+            if file.filename == '':
+                flash('No selected file')
+                return redirect(request.url)
+            if file and allowed_file(file.filename, ALLOWED_EXTENSIONS_txt):
+                filename = secure_filename(file.filename)
+                file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+                file.stream.seek(0)
 
-        make_archive(new_dir, DOWNLOAD_FOLDER + '/' + 'en_' + filename[:-4] + '.zip')
+            elif file and allowed_file(file.filename, ALLOWED_EXTENSIONS_conllu):
+                filename = secure_filename(file.filename)[:-7] + '.txt'
+                file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+                text_sentences = txt_transformer(UPLOAD_FOLDER + '/' + filename)
+                with io.open(UPLOAD_FOLDER + '/' + filename, 'w', encoding="utf-8") as f:
+                    f.write(text_sentences.decode('utf-8'))
+                    f.seek(0)
+                    f.close()
 
-        return redirect(url_for('download_file', filename= filename[:-4] + '.zip'))
+            else:
+                print("Formato de archivo no válido.")
+
+            new_dir_sent = UPLOAD_FOLDER + '/salida/en_' + filename[:-4]
+            shutil.rmtree(new_dir_sent, ignore_errors=True)
+            os.makedirs(new_dir_sent)
+
+            with io.open(UPLOAD_FOLDER + '/' + filename, 'r', encoding='utf8') as f:
+                lines = f.readlines()
+                n_lines = 0
+                translator = Translator()
+                for line in lines:
+                    n_lines += 1
+                    with io.open(new_dir_sent + '/en_' + filename[:-4] + '_' + str(n_lines) + '.txt', 'w', encoding='utf8') as f_new_1:
+                        translation = translator.translate(text=re.sub('&quot;', '"', line), src='es', dest='en')
+                        f_new_1.write(translation.text)
+                        f_new_1.close()
+                    # Saving original files too
+                    with io.open(new_dir_sent + '/' + filename[:-4] + '_' + str(n_lines) + '.txt', 'w', encoding='utf8') as f_new_2:
+                        f_new_2.write(line)
+                        f_new_2.close()
+
+        make_archive(new_dir, DOWNLOAD_FOLDER + '/en_salida' + '.zip')
+
+        return redirect(url_for('download_file', filename='salida.zip'))
 
     return render_template('main.html')
 
