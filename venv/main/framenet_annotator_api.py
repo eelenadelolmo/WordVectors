@@ -135,7 +135,9 @@ def main():
                 for line in lines:
                     n_lines += 1
                     with io.open(new_dir_sent + '/en_' + filename[:-4] + '_' + str(n_lines) + '.txt', 'w', encoding='utf8') as f_new_1:
-                        translation = translator.translate(text=re.sub('&quot;', '"', line), src='es', dest='en')
+                        # translation = translator.translate(text=re.sub('&quot;', '"', line), src='es', dest='en')
+                        # DIFFERENT LANGUAGE
+                        translation = translator.translate(text=re.sub('&quot;', '"', line), src='fr', dest='en')
                         f_new_1.write(translation.text)
                         f_new_1.close()
                     # Saving original files too
@@ -230,6 +232,8 @@ def mappingsrl():
                         iob = linea.split('\t')[-1]
                         SRL_tag = iob[2:]
                         string = linea.split('\t')[1]
+                        if 'S-' in iob and linea.split('\t')[-3] == '_':
+                            SRL[(anotacion_frame, frame_str)].append((SRL_tag, string))
                         if 'B-' in iob:
                             ann_tmp = string
                             lineas_siguientes = lineas[n_linea:]
