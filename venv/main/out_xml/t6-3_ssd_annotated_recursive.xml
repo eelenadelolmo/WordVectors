@@ -26,15 +26,15 @@
 
 
 	<concepts>
-		<concept id="A">Los funcionarios municipales , sobre todo los que , como él , pertenecían a una gran ciudad donde las empresas de servicios son más de las necesarias ,</concept>
-		<concept id="B">Ella</concept>
-		<concept id="C">que</concept>
-		<concept id="D">sus huesos</concept>
-		<concept id="E">Su mirada</concept>
+		<concept id="c_0">Los funcionarios municipales , sobre todo los que , como él , pertenecían a una gran ciudad donde las empresas de servicios son más de las necesarias ,</concept>
+		<concept id="c_1">Ella</concept>
+		<concept id="c_2">que</concept>
+		<concept id="c_3">sus huesos</concept>
+		<concept id="c_4">Su mirada</concept>
 	</concepts>
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">funcionarios</token><token pos="aq0cp0">municipales</token><token pos="fc">,</token><token pos="sps00">sobre</token><token pos="pi0cs000">todo</token><token pos="da0mp0">los</token><token pos="pr0cn000">que</token><token pos="fc">,</token><token pos="sps00">como</token><token pos="pp3ms000">él</token><token pos="fc">,</token><token pos="vmii3p0">pertenecían</token><token pos="sps00">a</token><token pos="di0fs0">una</token><token pos="aq0cs0">gran</token><token pos="ncfs000">ciudad</token><token pos="pr000000">donde</token><token pos="da0fp0">las</token><token pos="ncfp000">empresas</token><token pos="sps00">de</token><token pos="ncmp000">servicios</token><token pos="vsip3p0">son</token><token pos="rg">más</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="aq0fp0">necesarias</token><token pos="fc">,</token>
 		</theme>
 		<rheme>
@@ -42,30 +42,87 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Being_necessary" head="necesarias" />
+			<frame type="Being_necessary" head="necesarias" />
+			<frame type="Being_necessary" head="necesarias" />
+			<frame type="Being_necessary" head="necesarias" />
 			<frame type="Businesses" head="empresas" />
+			<frame type="Businesses" head="empresas" />
+			<frame type="Businesses" head="empresas" />
+			<frame type="Businesses" head="empresas" />
+			<frame type="Goal" head="por">
+				<argument type="Trajector" dependent="funcionarios municipales, sobre todo los que, como él, pertenecían a" />
+				<argument type="Landmark" dependent="gran ciudad donde las empresas de servicios son más de las necesarias" /></frame>
+			<frame type="Goal" head="por">
+				<argument type="Trajector" dependent="funcionarios municipales, sobre todo los que, como él, pertenecían a" />
+				<argument type="Landmark" dependent="gran ciudad donde las empresas de servicios son más de las necesarias" /></frame>
+			<frame type="Goal" head="por">
+				<argument type="Trajector" dependent="funcionarios municipales, sobre todo los que, como él, pertenecían a" />
+				<argument type="Landmark" dependent="gran ciudad donde las empresas de servicios son más de las necesarias" /></frame>
 			<frame type="Goal" head="por">
 				<argument type="Trajector" dependent="funcionarios municipales, sobre todo los que, como él, pertenecían a" />
 				<argument type="Landmark" dependent="gran ciudad donde las empresas de servicios son más de las necesarias" /></frame>
 			<frame type="Increment" head="más">
 				<argument type="Class" dependent="necesarias" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="necesarias" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="necesarias" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="necesarias" /></frame>
+			<frame type="Leadership" head="funcionarios" />
+			<frame type="Leadership" head="funcionarios" />
+			<frame type="Leadership" head="funcionarios" />
 			<frame type="Leadership" head="funcionarios" />
 			<frame type="Locative_relation" head="donde">
 				<argument type="Figure" dependent="una gran ciudad" />
 				<argument type="Figure" dependent="empresas de servicios" /></frame>
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="una gran ciudad" />
+				<argument type="Figure" dependent="empresas de servicios" /></frame>
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="una gran ciudad" />
+				<argument type="Figure" dependent="empresas de servicios" /></frame>
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="una gran ciudad" />
+				<argument type="Figure" dependent="empresas de servicios" /></frame>
 			<frame type="Political_locales" head="ciudad" />
+			<frame type="Political_locales" head="ciudad" />
+			<frame type="Political_locales" head="ciudad" />
+			<frame type="Political_locales" head="ciudad" />
+			<main_frame type="Possession" head="pertenecían">
+				<argument type="Possession" dependent="funcionarios municipales, sobre todo los que, como él" />
+				<argument type="Possession" dependent="a una gran ciudad donde las empresas de servicios son más de las necesarias" /></main_frame>
+			<frame type="Possession" head="pertenecían">
+				<argument type="Possession" dependent="funcionarios municipales, sobre todo los que, como él" />
+				<argument type="Possession" dependent="a una gran ciudad donde las empresas de servicios son más de las necesarias" /></frame>
+			<frame type="Possession" head="pertenecían">
+				<argument type="Possession" dependent="funcionarios municipales, sobre todo los que, como él" />
+				<argument type="Possession" dependent="a una gran ciudad donde las empresas de servicios son más de las necesarias" /></frame>
 			<frame type="Possession" head="pertenecían">
 				<argument type="Possession" dependent="funcionarios municipales, sobre todo los que, como él" />
 				<argument type="Possession" dependent="a una gran ciudad donde las empresas de servicios son más de las necesarias" /></frame>
 			<frame type="Public_services" head="servicios" />
+			<frame type="Public_services" head="servicios" />
+			<frame type="Public_services" head="servicios" />
+			<frame type="Public_services" head="servicios" />
+			<frame type="Similarity" head="como" />
+			<frame type="Similarity" head="como" />
+			<frame type="Similarity" head="como" />
 			<frame type="Similarity" head="como" />
 			<frame type="Size" head="gran" />
+			<frame type="Size" head="gran" />
+			<frame type="Size" head="gran" />
+			<frame type="Size" head="gran" />
 			<frame type="Travel" head="viajar" />
+			<frame type="Travel" head="viajar" />
+			<frame type="Travel" head="viajar" />
+			<main_frame type="Travel" head="viajar" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="pp3fs000">Ella</token>
 		</theme>
 		<rheme>
@@ -73,33 +130,55 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Awareness" head="saberlo" />
+			<main_frame type="Awareness" head="saberlo" />
+			<frame type="Becoming" head="se hizo">
+				<argument type="Entity" dependent="la nostalgia" /></frame>
 			<frame type="Becoming" head="se hizo">
 				<argument type="Entity" dependent="la nostalgia" /></frame>
 			<frame type="Being_employed" head="trabajado">
 				<argument type="Place_of_employment" dependent="en el Ayuntamiento" /></frame>
+			<frame type="Being_employed" head="trabajado">
+				<argument type="Place_of_employment" dependent="en el Ayuntamiento" /></frame>
+			<frame type="Calendric_unit" head="semana" />
 			<frame type="Calendric_unit" head="semana" />
 			<frame type="Causation" head="porque">
 				<argument type="Effect" dependent="Ella debería saberlo" />
 				<argument type="Cause" dependent="había trabajado en el Ayuntamiento, y sin embargo nunca había mostrado extrañeza ante sus ausencias, Barcelona ," /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="Ella debería saberlo" />
+				<argument type="Cause" dependent="había trabajado en el Ayuntamiento, y sin embargo nunca había mostrado extrañeza ante sus ausencias, Barcelona ," /></frame>
+			<main_frame type="Desirable_event" head="debería" />
 			<frame type="Desirable_event" head="debería" />
 			<frame type="Evidence" head="mostrado">
 				<argument type="Proposition" dependent="extrañeza ante sus ausencias, Barcelona, Valencia, Vigo, incluso Frankfurt una vez, al principio, una semana entera ," /></frame>
+			<frame type="Evidence" head="mostrado">
+				<argument type="Proposition" dependent="extrañeza ante sus ausencias, Barcelona, Valencia, Vigo, incluso Frankfurt una vez, al principio, una semana entera ," /></frame>
+			<frame type="Experiencer_obj" head="extrañeza">
+				<argument type="Stimulus" dependent="ante sus ausencias, Barcelona, Valencia, Vigo, incluso Frankfurt una vez, al principio, una semana entera ," /></frame>
 			<frame type="Experiencer_obj" head="extrañeza">
 				<argument type="Stimulus" dependent="ante sus ausencias, Barcelona, Valencia, Vigo, incluso Frankfurt una vez, al principio, una semana entera ," /></frame>
 			<frame type="Locative_relation" head="en">
 				<argument type="Figure" dependent="nunca había mostrado extrañeza ante sus" />
 				<argument type="Ground" dependent="sus ausencias, Barcelona, Valencia, Vigo, incluso Frankfurt una vez, al principio, una semana entera ," /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="nunca había mostrado extrañeza ante sus" />
+				<argument type="Ground" dependent="sus ausencias, Barcelona, Valencia, Vigo, incluso Frankfurt una vez, al principio, una semana entera ," /></frame>
+			<frame type="Ordinal_numbers" head="al principio">
+				<argument type="Basis_of_order" dependent="ante sus ausencias, Barcelona, Valencia, Vigo, incluso Frankfurt una vez" /></frame>
 			<frame type="Ordinal_numbers" head="al principio">
 				<argument type="Basis_of_order" dependent="ante sus ausencias, Barcelona, Valencia, Vigo, incluso Frankfurt una vez" /></frame>
 			<frame type="Political_locales" head="Ayuntamiento" />
+			<frame type="Political_locales" head="Ayuntamiento" />
 			<frame type="Presence" head="ausencias" />
+			<frame type="Presence" head="ausencias" />
+			<frame type="Ranked_expectation" head="entera" />
 			<frame type="Ranked_expectation" head="entera" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -107,20 +186,37 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Abandonment" head="abandono" />
+			<frame type="Abandonment" head="abandono" />
+			<main_frame type="Activity_start" head="comenzaba">
+				<argument type="Activity" dependent="rancio aroma del" /></main_frame>
 			<frame type="Activity_start" head="comenzaba">
 				<argument type="Activity" dependent="rancio aroma del" /></frame>
 			<frame type="Buildings" head="casa" />
+			<frame type="Buildings" head="casa" />
+			<frame type="Calendric_unit" head="días" />
 			<frame type="Calendric_unit" head="días" />
 			<frame type="Cardinal_numbers" head="dos" />
+			<frame type="Cardinal_numbers" head="dos" />
+			<frame type="Give_impression" head="aroma" />
 			<frame type="Give_impression" head="aroma" />
 			<frame type="Intentionally_act" head="lo">
 				<argument type="Act" dependent="mejor" /></frame>
+			<frame type="Intentionally_act" head="lo">
+				<argument type="Act" dependent="mejor" /></frame>
 			<frame type="Required_event" head="mejor" />
+			<frame type="Required_event" head="mejor" />
+			<frame type="Sensation" head="aroma">
+				<argument type="Percept" dependent="del abandono" /></frame>
 			<frame type="Sensation" head="aroma">
 				<argument type="Percept" dependent="del abandono" /></frame>
 			<frame type="Sufficiency" head="bastaban">
 				<argument type="Item" dependent="uno, dos días" />
 				<argument type="Enabled_situation" dependent="en aquella casa sucia que comenzaba a oler a humedad, el rancio aroma del abandono" /></frame>
+			<frame type="Sufficiency" head="bastaban">
+				<argument type="Item" dependent="uno, dos días" />
+				<argument type="Enabled_situation" dependent="en aquella casa sucia que comenzaba a oler a humedad, el rancio aroma del abandono" /></frame>
+			<frame type="Temporal_collocation" head="Ahora">
+				<argument type="Trajector_event" dependent="llevaba mejor" /></frame>
 			<frame type="Temporal_collocation" head="Ahora">
 				<argument type="Trajector_event" dependent="llevaba mejor" /></frame>
 		</semantic_roles>
@@ -136,18 +232,6 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Modality_Reporter" head="él " />
-			<frame type="Awareness" head="saber" />
-			<frame type="Being_questionable" head="sospechar" />
-			<frame type="Body_parts" head="brazos" />
-			<frame type="Cause_change_of_position_on_a_scale" head="ascendido" />
-			<frame type="Collaboration" head="juntos" />
-			<frame type="Receiving" head="recibía" />
-			<frame type="Remembering_experience" head="recordaba">
-				<argument type="Experience" dependent="que le habían ascendido dos veces desde que estaban juntos, no tenía por qué saber, por qué sospechar" /></frame>
-			<frame type="Secrecy_status" head="abiertos" />
-			<frame type="Time_vector" head="desde que">
-				<argument type="Event" dependent="le habían ascendido dos veces" />
-				<argument type="Landmark_event" dependent="estaban juntos" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -165,7 +249,7 @@
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="dp3cp0">sus</token><token pos="ncmp000">huesos</token>
 		</theme>
 		<rheme>
@@ -193,7 +277,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -215,9 +299,9 @@
 				<argument type="Ground" dependent="el curso de una breve vida" /></frame>
 			<frame type="Manipulation" head="tomó">
 				<argument type="Place" dependent="tomó la taza de" /></frame>
-			<frame type="Self_motion" head="afloró">
+			<main_frame type="Self_motion" head="afloró">
 				<argument type="Time" dependent="de una breve vida, la sonrisa apenas consciente" />
-				<argument type="Goal" dependent="a sus labios" /></frame>
+				<argument type="Goal" dependent="a sus labios" /></main_frame>
 			<frame type="Self_motion" head="sostuvo">
 				<argument type="Source" dependent="En el" /></frame>
 		</semantic_roles>
@@ -225,19 +309,28 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="ncms000">cuarto</token><token pos="sps00">de</token><token pos="vmn0000">estar</token>
 		</theme>
 		<rheme>
 			<token pos="rn">no</token><token pos="vsii3s0">era</token><token pos="rg">más</token><token pos="cs">que</token><token pos="di0ms0">un</token><token pos="ncms000">hueco</token><token pos="aq0ms0">oscuro</token><token pos="fc">,</token><token pos="aq0ms0">tibio</token><token pos="cc">y</token><token pos="aq0cs0">familiar</token><token pos="sps00">como</token><token pos="da0ms0">el</token><token pos="ncms000">regazo</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="ncfs000">madre</token>
 		</rheme>
 		<semantic_roles>
+			<main_frame type="Ambient_temperature" head="estar" />
 			<frame type="Ambient_temperature" head="estar" />
 			<frame type="Building_subparts" head="cuarto" />
+			<frame type="Building_subparts" head="cuarto" />
+			<main_frame type="Dead_or_alive" head="estar" />
 			<frame type="Dead_or_alive" head="estar" />
 			<frame type="Expertise" head="familiar" />
+			<frame type="Expertise" head="familiar" />
+			<frame type="Increment" head="más" />
 			<frame type="Increment" head="más" />
 			<frame type="Kinship" head="madre" />
+			<frame type="Kinship" head="madre" />
+			<frame type="Similarity" head="como">
+				<argument type="Entity_1" dependent="familiar" />
+				<argument type="Entity_2" dependent="una madre" /></frame>
 			<frame type="Similarity" head="como">
 				<argument type="Entity_1" dependent="familiar" />
 				<argument type="Entity_2" dependent="una madre" /></frame>
@@ -253,30 +346,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Ambient_temperature" head="calentarle" />
-			<frame type="Avoiding" head="escasos">
-				<argument type="Undesirable_situation" dependent="escasos muebles" /></frame>
-			<frame type="Body_parts" head="cuerpo" />
-			<frame type="Fall_asleep" head="escasos" />
-			<frame type="Give_impression" head="parecía">
-				<argument type="Inference" dependent="calentarle por dentro" /></frame>
-			<frame type="Imprisonment" head="preso de">
-				<argument type="Prisoner" dependent="su cuerpo" />
-				<argument type="Offense" dependent="de un sol lejano que ya no parecía capaz de calentarle por dentro" /></frame>
-			<frame type="Kinship" head="hijos" />
-			<frame type="Location_of_light" head="luz" />
-			<frame type="Locative_relation" head="lejano" />
-			<frame type="Motion" head="se dirigió">
-				<argument type="Goal" dependent="directamente al balcón para desnudar el cristal con decisión y beber despacio, su cuerpo encharcado de luz, preso de la" /></frame>
-			<frame type="Part_inner_outer" head="dentro" />
-			<frame type="Taking_time" head="despacio">
-				<argument type="Activity" dependent="el cristal con decisión y beber" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="dp3cs0">Su</token><token pos="ncfs000">mirada</token>
 		</theme>
 		<rheme>

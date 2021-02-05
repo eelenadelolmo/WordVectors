@@ -2,22 +2,22 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="ncms000">Jorge</token><token pos="np00000">Manrique</token>
 		</theme>
 		<rheme>
 			<token pos="p0300000">se</token><token pos="vmip3s0">equivoca</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Correctness" head="equivoca">
+			<main_frame type="Correctness" head="equivoca">
 				<argument type="Communicative_act" dependent="En mi caso" />
-				<argument type="Information" dependent="Manrique" /></frame>
+				<argument type="Information" dependent="Manrique" /></main_frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="dp1fsp">Nuestra</token><token pos="ncfs000">sombra</token>
 		</theme>
 		<rheme>
@@ -36,18 +36,18 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0fs0">La</token><token pos="ncms000">iniciaci&#243;n</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">mal</token>
 		</theme>
 		<rheme>
 			<token pos="vsip3s0">es</token><token pos="rg">m&#225;s</token><token pos="aq0cs0">importante</token><token pos="cs">que</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">bien</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Buildings" head="iglesia" />
+			<main_frame type="Buildings" head="iglesia" />
 			<frame type="Desirability" head="bien" />
 			<frame type="Importance" head="importante" />
 			<frame type="Interior_profile_relation" head="en" />
-			<frame type="Locale_by_use" head="escuela" />
+			<main_frame type="Locale_by_use" head="escuela" />
 			<frame type="Locative_relation" head="hay">
 				<argument type="Ground" dependent="no hay mejor escuela" /></frame>
 			<frame type="Morality_evaluation" head="el mal" />
@@ -64,7 +64,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="People" head="hidalgo" />
 		</semantic_roles>
 	</sentence>
 
@@ -77,29 +76,21 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Causation" head="porque">
-				<argument type="Effect" dependent="su capa de esclavina desorientado" />
-				<argument type="Cause" dependent="ya no existen las brisas de la" />
-				<argument type="Effect" dependent="que la justificaban" /></frame>
-			<frame type="Existence" head="existen">
-				<argument type="Place" dependent="la justificaban" /></frame>
-			<frame type="Justifying" head="justificaban" />
-			<frame type="Process_continue" head="Sigue" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0fp0">Las</token><token pos="ncfp000">guerras</token><token pos="aq0fp0">destructoras</token>
 		</theme>
 		<rheme>
 			<token pos="vmip3p0">nacen</token><token pos="spcms">del</token><token pos="ncms000">odio</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">codicia</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Bringing" head="nacen">
+			<main_frame type="Bringing" head="nacen">
 				<argument type="Theme" dependent="guerras destructoras" />
-				<argument type="Theme" dependent="odio y la codicia" /></frame>
+				<argument type="Theme" dependent="odio y la codicia" /></main_frame>
 			<frame type="Competition" head="rivalidad" />
 			<frame type="Emergency" head="emergencias">
 				<argument type="Entity" dependent="de rivalidad doctrinaria social y pol&#237;tica" /></frame>
@@ -113,7 +104,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0ms0">El</token><token pos="ncms000">prestigio</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">aves</token><token pos="sps00">desde</token><token pos="da0fs0">la</token><token pos="ncfs000">paloma</token><token pos="sps00">hasta</token><token pos="da0ms0">el</token><token pos="ncfs000">&#225;guila</token><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="ncms000">quetzal</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncmn000">albatros</token>
 		</theme>
 		<rheme>
@@ -122,8 +113,20 @@
 		<semantic_roles>
 			<frame type="Capability" head="pueden">
 				<argument type="Event" dependent="vencer f&#225;cilmente la gravedad" /></frame>
+			<main_frame type="Capability" head="pueden">
+				<argument type="Event" dependent="vencer f&#225;cilmente la gravedad" /></main_frame>
+			<frame type="Capability" head="pueden">
+				<argument type="Event" dependent="vencer f&#225;cilmente la gravedad" /></frame>
+			<frame type="Capability" head="pueden">
+				<argument type="Event" dependent="vencer f&#225;cilmente la gravedad" /></frame>
 			<frame type="Residence" head="viven">
 				<argument type="Location" dependent="entre la tierra y el cielo" /></frame>
+			<frame type="Residence" head="viven">
+				<argument type="Location" dependent="entre la tierra y el cielo" /></frame>
+			<frame type="Residence" head="viven">
+				<argument type="Location" dependent="entre la tierra y el cielo" /></frame>
+			<main_frame type="Residence" head="viven">
+				<argument type="Location" dependent="entre la tierra y el cielo" /></main_frame>
 		</semantic_roles>
 	</sentence>
 
@@ -136,8 +139,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Opinion" head="Supongo que">
-				<argument type="Opinion" dependent="que desde &#233;l nos desprecian o nos compadecen" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -150,9 +151,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Affirm_or_deny" head="niega">
-				<argument type="Speaker" dependent="El que" />
-				<argument type="Message" dependent="nos afirma condicionalmente" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -165,7 +163,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Affirm_or_deny" head="sino" />
 		</semantic_roles>
 	</sentence>
 

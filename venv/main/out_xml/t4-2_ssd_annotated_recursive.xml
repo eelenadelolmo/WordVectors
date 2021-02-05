@@ -26,15 +26,15 @@
 
 
 	<concepts>
-		<concept id="A">el nacer</concept>
-		<concept id="B">El amor</concept>
-		<concept id="C">el agua y el fuego</concept>
-		<concept id="D">que</concept>
-		<concept id="E">El león</concept>
+		<concept id="c_0">el nacer</concept>
+		<concept id="c_1">El amor</concept>
+		<concept id="c_2">el agua y el fuego</concept>
+		<concept id="c_3">que</concept>
+		<concept id="c_4">El león</concept>
 	</concepts>
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0ms0">el</token><token pos="ncms000">nacer</token>
 		</theme>
 		<rheme>
@@ -61,14 +61,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Cardinal_numbers" head="tres" />
-			<frame type="Contingency" head="factores">
-				<argument type="Determinant" dependent="factores de eternidad : vacío, materia y movimiento" /></frame>
-			<frame type="Identicality" head="identidad" />
-			<frame type="Instance" head="ejemplo">
-				<argument type="Type" dependent="de la identidad" /></frame>
-			<frame type="Required_event" head="mejor">
-				<argument type="Required_situation" dependent="ejemplo de la identidad" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -81,21 +73,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Awareness" head="sabemos">
-				<argument type="Content" dependent="que no existe el éter en el espacio insondable" /></frame>
-			<frame type="Being_named" head="el nombre" />
-			<frame type="Cause_change" head="cambiar">
-				<argument type="Entity" dependent="el nombre" />
-				<argument type="Final_category" dependent="a la eternidad" /></frame>
-			<frame type="Desirable_event" head="debíamos">
-				<argument type="State_of_affairs" dependent="cambiar el nombre a la eternidad" /></frame>
-			<frame type="Interior_profile_relation" head="en">
-				<argument type="Figure" dependent="no" />
-				<argument type="Ground" dependent="espacio insondable" /></frame>
-			<frame type="Locative_relation" head="existe">
-				<argument type="Ground" dependent="no existe el éter en el espacio insondable" /></frame>
-			<frame type="Temporal_collocation" head="Ahora">
-				<argument type="Trajector_event" dependent="que sabemos que no existe el éter en el espacio insondable debíamos cambiar el nombre a la eternidad ." /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -108,13 +85,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Capability" head="podemos">
-				<argument type="Event" dependent="Sólo podemos querernos a nosotros mismos porque Dios" /></frame>
-			<frame type="Causation" head="porque">
-				<argument type="Effect" dependent="Sólo podemos querernos a nosotros mismos" />
-				<argument type="Cause" dependent="Dios nos" /></frame>
-			<frame type="Experiencer_focus" head="querernos" />
-			<frame type="Experiencer_focus" head="quiere" />
 		</semantic_roles>
 	</sentence>
 
@@ -127,18 +97,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Being_born" head="nacido" />
-			<frame type="Giving" head="dado" />
-			<frame type="Judgment_direct_address" head="Agradecemos" />
-			<frame type="Locative_relation" head="en">
-				<argument type="Figure" dependent="qué mal habría" />
-				<argument type="Ground" dependent="no haber nacido" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0ms0">El</token><token pos="ncms000">amor</token>
 		</theme>
 		<rheme>
@@ -156,7 +120,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0ms0">el</token><token pos="ncfs000">agua</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">fuego</token>
 		</theme>
 		<rheme>
@@ -184,19 +148,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Awareness" head="sabía">
-				<argument type="Cognizer" dependent="escribió su romántico - Pájaro Azul - no" />
-				<argument type="Content" dependent="que ese pájaro vive" /></frame>
-			<frame type="Being_named" head="se llama" />
-			<frame type="Body_parts" head="manos" />
-			<frame type="Interior_profile_relation" head="en">
-				<argument type="Ground" dependent="América y se llama" /></frame>
-			<frame type="Kinship" head="su" />
-			<frame type="Means" head="por" />
-			<frame type="Residence" head="vive" />
-			<frame type="Temporal_pattern" head="acude" />
-			<frame type="Text_creation" head="escribió">
-				<argument type="Text" dependent="su romántico - Pájaro Azul" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -209,18 +160,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Causation" head="porque">
-				<argument type="Cause" dependent="hombres hacemos algo parecido )" /></frame>
-			<frame type="Chatting" head="hablar" />
-			<frame type="Desirable_event" head="debía">
-				<argument type="State_of_affairs" dependent="No debía hablar así porque los hombres hacemos algo parecido )" /></frame>
-			<frame type="Similarity" head="parecido" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -230,8 +175,8 @@
 			<frame type="Aggregate" head="partido" />
 			<frame type="Cardinal_numbers" head="un" />
 			<frame type="Membership" head="partido" />
-			<frame type="Possession" head="tiene">
-				<argument type="Possession" dependent="partido que tiene un sólo" /></frame>
+			<main_frame type="Possession" head="tiene">
+				<argument type="Possession" dependent="partido que tiene un sólo" /></main_frame>
 		</semantic_roles>
 	</sentence>
 
@@ -244,14 +189,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Calendric_unit" head="día" />
-			<frame type="Quantified_mass" head="muchas" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="da0ms0">El</token><token pos="ncms000">león</token>
 		</theme>
 		<rheme>
@@ -282,16 +225,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Agriculture" head="cultivar" />
-			<frame type="Attention" head="atención" />
-			<frame type="Cause_change_of_position_on_a_scale" head="promover">
-				<argument type="Agent" dependent="único bueno que hacen las universidades" /></frame>
-			<frame type="Desirability" head="bueno">
-				<argument type="Evaluee" dependent="universidades" /></frame>
-			<frame type="Locale_by_use" head="universidades">
-				<argument type="Descriptor" dependent="bueno que" /></frame>
-			<frame type="Sole_instance" head="Lo único">
-				<argument type="Type" dependent="bueno que hacen las universidades" /></frame>
 		</semantic_roles>
 	</sentence>
 

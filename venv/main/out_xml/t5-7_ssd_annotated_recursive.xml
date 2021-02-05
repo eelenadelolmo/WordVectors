@@ -26,12 +26,12 @@
 
 
 	<concepts>
-		<concept id="A">los vecinos de enfrente</concept>
-		<concept id="B">Antonia</concept>
+		<concept id="c_0">los vecinos de enfrente</concept>
+		<concept id="c_1">Antonia</concept>
 	</concepts>
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0mp0">los</token><token pos="ncmp000">vecinos</token><token pos="sps00">de</token><token pos="rg">enfrente</token>
 		</theme>
 		<rheme>
@@ -56,7 +56,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="np0000p">Antonia</token>
 		</theme>
 		<rheme>
@@ -65,11 +65,29 @@
 		<semantic_roles>
 			<frame type="Locative_relation" head="había">
 				<argument type="Ground" dependent="había película" /></frame>
+			<frame type="Locative_relation" head="había">
+				<argument type="Ground" dependent="había película" /></frame>
+			<frame type="Locative_relation" head="había">
+				<argument type="Ground" dependent="había película" /></frame>
+			<frame type="Perception_active" head="ver">
+				<argument type="Phenomenon" dependent="al patio para ver de qué color era el traje de la protagonista" /></frame>
+			<main_frame type="Perception_active" head="ver">
+				<argument type="Phenomenon" dependent="al patio para ver de qué color era el traje de la protagonista" /></main_frame>
 			<frame type="Perception_active" head="ver">
 				<argument type="Phenomenon" dependent="al patio para ver de qué color era el traje de la protagonista" /></frame>
 			<frame type="Perception_experience" head="ver">
 				<argument type="Phenomenon" dependent="qué color era el traje de la protagonista" /></frame>
+			<main_frame type="Perception_experience" head="ver">
+				<argument type="Phenomenon" dependent="qué color era el traje de la protagonista" /></main_frame>
+			<frame type="Perception_experience" head="ver">
+				<argument type="Phenomenon" dependent="qué color era el traje de la protagonista" /></frame>
 			<frame type="Sleep" head="se" />
+			<frame type="Sleep" head="se" />
+			<frame type="Sleep" head="se" />
+			<frame type="Temporal_collocation" head="cuando">
+				<argument type="Trajector_event" dependent="había película, Antonia se asomaba al patio para ver de qué color era el traje de la protagonista" /></frame>
+			<frame type="Temporal_collocation" head="cuando">
+				<argument type="Trajector_event" dependent="había película, Antonia se asomaba al patio para ver de qué color era el traje de la protagonista" /></frame>
 			<frame type="Temporal_collocation" head="cuando">
 				<argument type="Trajector_event" dependent="había película, Antonia se asomaba al patio para ver de qué color era el traje de la protagonista" /></frame>
 		</semantic_roles>
@@ -77,7 +95,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="dp3cs0">su</token><token pos="ncms000">hermano</token>
 		</theme>
 		<rheme>
@@ -85,13 +103,22 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Age" head="nuevo" />
+			<frame type="Age" head="nuevo" />
 			<frame type="Commerce_buy" head="comprarle">
 				<argument type="Buyer" dependent="su hermano" />
 				<argument type="Goods" dependent="un aparato nuevo" /></frame>
+			<main_frame type="Commerce_buy" head="comprarle">
+				<argument type="Buyer" dependent="su hermano" />
+				<argument type="Goods" dependent="un aparato nuevo" /></main_frame>
+			<main_frame type="Desiring" head="quería">
+				<argument type="Experiencer" dependent="su hermano" />
+				<argument type="Event" dependent="comprarle un aparato nuevo" /></main_frame>
 			<frame type="Desiring" head="quería">
 				<argument type="Experiencer" dependent="su hermano" />
 				<argument type="Event" dependent="comprarle un aparato nuevo" /></frame>
 			<frame type="Gizmo" head="aparato" />
+			<frame type="Gizmo" head="aparato" />
+			<frame type="Kinship" head="hermano" />
 			<frame type="Kinship" head="hermano" />
 		</semantic_roles>
 	</sentence>
@@ -105,21 +132,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Causation" head="porque">
-				<argument type="Cause" dependent="qué pintas ! - - se dijo a sí misma" />
-				<argument type="Cause" dependent="acostumbraba hablar a solas" /></frame>
-			<frame type="Scrutiny" head="se" />
-			<frame type="Statement" head="dijo">
-				<argument type="Medium" dependent="pintas ! - - se" />
-				<argument type="Message" dependent="a sí misma" /></frame>
-			<frame type="Using" head="se">
-				<argument type="Purpose" dependent="hablar a solas" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="di0mp0">unos</token><token pos="ncmp000">muchachos</token><token pos="sps00">de</token><token pos="ncms000">pelo</token><token pos="aq0ms0">tieso</token><token pos="fc">,</token><token pos="sps00">como</token><token pos="rg">recién</token><token pos="aq0mpp">salidos</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">susto</token><token pos="fc">,</token>
 		</theme>
 		<rheme>
@@ -147,11 +165,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Aggregate" head="conjuntos de">
-				<argument type="Aggregate_property" dependent="chicos bárbaros y extraños" /></frame>
-			<frame type="People_by_age" head="chicos">
-				<argument type="Descriptor" dependent="extraños y feísimos" /></frame>
-			<frame type="Social_interaction_evaluation" head="bárbaros" />
 		</semantic_roles>
 	</sentence>
 
@@ -164,8 +177,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Political_locales" head="pueblo" />
-			<frame type="Similarity" head="igualitos a" />
 		</semantic_roles>
 	</sentence>
 
@@ -178,14 +189,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Political_locales" head="ciudad" />
-			<frame type="Progression" head="progreso" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="np0000p">Antonia</token>
 		</theme>
 		<rheme>
@@ -214,7 +223,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0ms0">el</token><token pos="ncms000">calor</token>
 		</theme>
 		<rheme>
@@ -233,15 +242,15 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="np0000p">Antonia</token>
 		</theme>
 		<rheme>
 			<token pos="vmis3s0">abrió</token><token pos="da0fs0">la</token><token pos="ncfs000">ventana</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Closure" head="abrió">
-				<argument type="Container_portal" dependent="la ventana de" /></frame>
+			<main_frame type="Closure" head="abrió">
+				<argument type="Container_portal" dependent="la ventana de" /></main_frame>
 			<frame type="Connecting_architecture" head="ventana" />
 			<frame type="Hit_or_miss" head="se" />
 		</semantic_roles>

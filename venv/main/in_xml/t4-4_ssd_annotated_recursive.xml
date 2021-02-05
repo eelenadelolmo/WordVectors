@@ -9,19 +9,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Calendric_unit" head="noches" />
-			<frame type="Locative_relation" head="hay">
-				<argument type="Figure" dependent="Todas las noches" />
-				<argument type="Ground" dependent="hay llantos funerales y vagidos de beb&#233;s reci&#233;n" /></frame>
-			<frame type="People_by_age" head="beb&#233;s" />
-			<frame type="Vocalizations" head="llantos">
-				<argument type="Sound_source" dependent="de beb&#233;s reci&#233;n" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0fp0">Las</token><token pos="ncfp000">auroras</token>
 		</theme>
 		<rheme>
@@ -45,7 +38,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="pi0mp000">todos</token>
 		</theme>
 		<rheme>
@@ -53,12 +46,13 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Becoming_silent" head="silencios" />
+			<frame type="Becoming_silent" head="silencios" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">sordos</token>
 		</theme>
 		<rheme>
@@ -76,22 +70,22 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
 			<token pos="p0300000">se</token><token pos="vmip3s0">llama</token><token pos="np0000p">Danaida</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Appointing" head="se llama">
-				<argument type="Official" dependent="una amiga" /></frame>
+			<main_frame type="Appointing" head="se llama">
+				<argument type="Official" dependent="una amiga" /></main_frame>
 			<frame type="Personal_relationship" head="amiga" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="da0ms0">El</token><token pos="ncms000">origen</token><token pos="spcms">del</token><token pos="ncms000">nombre</token>
 		</theme>
 		<rheme>
@@ -113,17 +107,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Mass_motion" head="en">
-				<argument type="Mass_theme" dependent="el agua" />
-				<argument type="Goal" dependent="en un gran vaso sin fondo" /></frame>
-			<frame type="Size" head="gran">
-				<argument type="Entity" dependent="vaso sin fondo" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="dp3cs0">Su</token><token pos="ncfs000">misi&#243;n</token>
 		</theme>
 		<rheme>
@@ -132,13 +121,16 @@
 		<semantic_roles>
 			<frame type="Filling" head="llenarlo">
 				<argument type="Cause" dependent="Su misi&#243;n" /></frame>
+			<main_frame type="Filling" head="llenarlo">
+				<argument type="Cause" dependent="Su misi&#243;n" /></main_frame>
+			<frame type="Success_or_failure" head="consegu&#237;an" />
 			<frame type="Success_or_failure" head="consegu&#237;an" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="F">
+		<theme concept_ref="c_5">
 			<token pos="di0cs0">Cada</token><token pos="pr0cs000">cual</token>
 		</theme>
 		<rheme>
@@ -163,30 +155,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Cause_harm" head="fatalmente">
-				<argument type="Victim" dependent="de T&#225;ntalo" /></frame>
-			<frame type="Cause_harm" head="suplicios" />
-			<frame type="People" head="mujeres" />
-		</semantic_roles>
-	</sentence>
-
-
-	<sentence>
-		<theme>
-			
-		</theme>
-		<rheme>
-			
-		</rheme>
-		<semantic_roles>
-			<frame type="Cardinal_numbers" head="una" />
-			<frame type="Interior_profile_relation" head="En">
-				<argument type="Ground" dependent="el universo" />
-				<argument type="Figure" dependent="hay sino una presencia permanente, inmutable y eterna : la esfera" /></frame>
-			<frame type="Locative_relation" head="hay">
-				<argument type="Figure" dependent="En el universo" />
-				<argument type="Ground" dependent="hay sino una presencia permanente, inmutable y eterna : la esfera" /></frame>
-			<frame type="Presence" head="presencia" />
 		</semantic_roles>
 	</sentence>
 
@@ -204,7 +172,19 @@
 
 
 	<sentence>
-		<theme concept_ref="G">
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_6">
 			<token pos="da0ns0">Lo</token><token pos="pi0cp000">dem&#225;s</token>
 		</theme>
 		<rheme>
@@ -226,9 +206,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Locative_relation" head="est&#225;">
-				<argument type="Ground" dependent="est&#225;" />
-				<argument type="Figure" dependent="- - la esfera - - en lo m&#225;s m&#237;nimo - - el tomo - - y en lo m&#225;s vasto" /></frame>
 		</semantic_roles>
 	</sentence>
 

@@ -26,14 +26,14 @@
 
 
 	<concepts>
-		<concept id="A">sociedades humanas como la nuestra</concept>
-		<concept id="B">todos los cínicos</concept>
-		<concept id="C">tal</concept>
-		<concept id="D">que</concept>
+		<concept id="c_0">sociedades humanas como la nuestra</concept>
+		<concept id="c_1">todos los cínicos</concept>
+		<concept id="c_2">tal</concept>
+		<concept id="c_3">que</concept>
 	</concepts>
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="ncfp000">sociedades</token><token pos="aq0fp0">humanas</token><token pos="cs">como</token><token pos="di0mp0">la</token><token pos="dn0cp0">nuestra</token>
 		</theme>
 		<rheme>
@@ -42,24 +42,46 @@
 		<semantic_roles>
 			<frame type="Modality_Reporter" head="Los sabios en ciencias cósmicas " />
 			<frame type="Biological_entity" head="humanas" />
+			<frame type="Biological_entity" head="humanas" />
 			<frame type="Conquering" head="vencido">
 				<argument type="Conqueror" dependent="sociedades humanas como la nuestra" /></frame>
+			<main_frame type="Conquering" head="vencido">
+				<argument type="Conqueror" dependent="sociedades humanas como la nuestra" /></main_frame>
+			<frame type="Craft" head="ciencias" />
 			<frame type="Craft" head="ciencias" />
 			<frame type="Death" head="muerte">
 				<argument type="Protagonist" dependent="sociedades humanas como la nuestra" /></frame>
+			<frame type="Death" head="muerte">
+				<argument type="Protagonist" dependent="sociedades humanas como la nuestra" /></frame>
+			<frame type="Increment" head="otros" />
 			<frame type="Increment" head="otros" />
 			<frame type="Interior_profile_relation" head="en">
 				<argument type="Ground" dependent="ciencias cósmicas" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="ciencias cósmicas" /></frame>
+			<frame type="Likelihood" head="posible">
+				<argument type="Hypothetical_event" dependent="que haya otros mundos donde sociedades humanas como la nuestra hayan vencido a la muerte y sean inmortales" /></frame>
 			<frame type="Likelihood" head="posible">
 				<argument type="Hypothetical_event" dependent="que haya otros mundos donde sociedades humanas como la nuestra hayan vencido a la muerte y sean inmortales" /></frame>
 			<frame type="Locative_relation" head="donde">
 				<argument type="Figure" dependent="otros mundos" />
 				<argument type="Figure" dependent="sociedades humanas como la nuestra hayan vencido a la muerte y sean inmortales" /></frame>
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="otros mundos" />
+				<argument type="Figure" dependent="sociedades humanas como la nuestra hayan vencido a la muerte y sean inmortales" /></frame>
+			<frame type="Locative_relation" head="haya">
+				<argument type="Figure" dependent="otros mundos donde sociedades humanas como la nuestra hayan vencido a la muerte y sean inmortales" /></frame>
 			<frame type="Locative_relation" head="haya">
 				<argument type="Figure" dependent="otros mundos donde sociedades humanas como la nuestra hayan vencido a la muerte y sean inmortales" /></frame>
 			<frame type="Political_locales" head="mundos" />
+			<frame type="Political_locales" head="mundos" />
 			<frame type="Similarity" head="como">
 				<argument type="Entity_1" dependent="sociedades humanas" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_1" dependent="sociedades humanas" /></frame>
+			<frame type="Statement" head="dicen">
+				<argument type="Speaker" dependent="sabios en ciencias cósmicas" />
+				<argument type="Message" dependent="es posible que haya otros mundos donde sociedades humanas como la nuestra hayan vencido a la muerte y sean inmortales" /></frame>
 			<frame type="Statement" head="dicen">
 				<argument type="Speaker" dependent="sabios en ciencias cósmicas" />
 				<argument type="Message" dependent="es posible que haya otros mundos donde sociedades humanas como la nuestra hayan vencido a la muerte y sean inmortales" /></frame>
@@ -68,7 +90,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0fs0">la</token><token pos="ncfs000">tecnología</token><token pos="pr0cn000">que</token><token pos="pp1cp000">nos</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">llevado</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">luna</token><token pos="cc">y</token><token pos="vmic3s0">podría</token><token pos="vmn0000">llevarnos</token><token pos="rg">allí</token>
 		</theme>
 		<rheme>
@@ -76,10 +98,42 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Artifact" head="tecnología" />
+			<frame type="Artifact" head="tecnología" />
+			<frame type="Artifact" head="tecnología" />
+			<frame type="Artifact" head="tecnología" />
+			<frame type="Artifact" head="tecnología" />
+			<frame type="Assistance" head="asistencia" />
+			<frame type="Assistance" head="asistencia" />
+			<frame type="Assistance" head="asistencia" />
+			<frame type="Assistance" head="asistencia" />
 			<frame type="Assistance" head="asistencia" />
 			<frame type="Awareness" head="conocidas" />
+			<frame type="Awareness" head="conocidas" />
+			<frame type="Awareness" head="conocidas" />
+			<frame type="Awareness" head="conocidas" />
+			<frame type="Awareness" head="conocidas" />
+			<frame type="Calendric_unit" head="hoy" />
+			<frame type="Calendric_unit" head="hoy" />
+			<frame type="Calendric_unit" head="hoy" />
+			<frame type="Calendric_unit" head="hoy" />
 			<frame type="Calendric_unit" head="hoy" />
 			<frame type="Increment" head="más" />
+			<frame type="Increment" head="más" />
+			<frame type="Increment" head="más" />
+			<frame type="Increment" head="más" />
+			<frame type="Increment" head="más" />
+			<frame type="Locative_relation" head="allí">
+				<argument type="Figure" dependent="la tecnología que nos ha llevado a la luna y podría llevarnos" />
+				<argument type="Figure" dependent="es una religión más positiva y merecedora de fe y de asistencia que todas las conocidas hasta hoy" /></frame>
+			<frame type="Locative_relation" head="allí">
+				<argument type="Figure" dependent="la tecnología que nos ha llevado a la luna y podría llevarnos" />
+				<argument type="Figure" dependent="es una religión más positiva y merecedora de fe y de asistencia que todas las conocidas hasta hoy" /></frame>
+			<frame type="Locative_relation" head="allí">
+				<argument type="Figure" dependent="la tecnología que nos ha llevado a la luna y podría llevarnos" />
+				<argument type="Figure" dependent="es una religión más positiva y merecedora de fe y de asistencia que todas las conocidas hasta hoy" /></frame>
+			<frame type="Locative_relation" head="allí">
+				<argument type="Figure" dependent="la tecnología que nos ha llevado a la luna y podría llevarnos" />
+				<argument type="Figure" dependent="es una religión más positiva y merecedora de fe y de asistencia que todas las conocidas hasta hoy" /></frame>
 			<frame type="Locative_relation" head="allí">
 				<argument type="Figure" dependent="la tecnología que nos ha llevado a la luna y podría llevarnos" />
 				<argument type="Figure" dependent="es una religión más positiva y merecedora de fe y de asistencia que todas las conocidas hasta hoy" /></frame>
@@ -87,6 +141,30 @@
 				<argument type="Time" dependent="Si es" />
 				<argument type="Possible_event" dependent="la tecnología que" />
 				<argument type="Possible_event" dependent="religión más positiva y merecedora de fe y de asistencia que todas las conocidas hasta hoy" /></frame>
+			<frame type="Possibility" head="podría">
+				<argument type="Time" dependent="Si es" />
+				<argument type="Possible_event" dependent="la tecnología que" />
+				<argument type="Possible_event" dependent="religión más positiva y merecedora de fe y de asistencia que todas las conocidas hasta hoy" /></frame>
+			<main_frame type="Possibility" head="podría">
+				<argument type="Time" dependent="Si es" />
+				<argument type="Possible_event" dependent="la tecnología que" />
+				<argument type="Possible_event" dependent="religión más positiva y merecedora de fe y de asistencia que todas las conocidas hasta hoy" /></main_frame>
+			<frame type="Possibility" head="podría">
+				<argument type="Time" dependent="Si es" />
+				<argument type="Possible_event" dependent="la tecnología que" />
+				<argument type="Possible_event" dependent="religión más positiva y merecedora de fe y de asistencia que todas las conocidas hasta hoy" /></frame>
+			<frame type="Possibility" head="podría">
+				<argument type="Time" dependent="Si es" />
+				<argument type="Possible_event" dependent="la tecnología que" />
+				<argument type="Possible_event" dependent="religión más positiva y merecedora de fe y de asistencia que todas las conocidas hasta hoy" /></frame>
+			<frame type="Taking_time" head="llevado">
+				<argument type="Activity" dependent="religión más positiva y merecedora de fe y de asistencia que todas las conocidas hasta hoy" /></frame>
+			<main_frame type="Taking_time" head="llevado">
+				<argument type="Activity" dependent="religión más positiva y merecedora de fe y de asistencia que todas las conocidas hasta hoy" /></main_frame>
+			<frame type="Taking_time" head="llevado">
+				<argument type="Activity" dependent="religión más positiva y merecedora de fe y de asistencia que todas las conocidas hasta hoy" /></frame>
+			<frame type="Taking_time" head="llevado">
+				<argument type="Activity" dependent="religión más positiva y merecedora de fe y de asistencia que todas las conocidas hasta hoy" /></frame>
 			<frame type="Taking_time" head="llevado">
 				<argument type="Activity" dependent="religión más positiva y merecedora de fe y de asistencia que todas las conocidas hasta hoy" /></frame>
 		</semantic_roles>
@@ -101,19 +179,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Continued_state_of_affairs" head="todavía">
-				<argument type="State_of_affairs" dependent="una pregunta" />
-				<argument type="State_of_affairs" dependent="todavía queda sin" /></frame>
-			<frame type="Questioning" head="pregunta">
-				<argument type="Topic" dependent="todavía queda" /></frame>
-			<frame type="State_continue" head="todavía queda">
-				<argument type="Entity" dependent="una pregunta" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="di0mp0">todos</token><token pos="da0mp0">los</token><token pos="ncmp000">cínicos</token>
 		</theme>
 		<rheme>
@@ -123,12 +194,23 @@
 			<frame type="Make_agreement_on_action" head="de acuerdo">
 				<argument type="Obligation" dependent="decimos - vivir para ver - todos los cínicos" />
 				<argument type="Obligation" dependent="pensando en la televisión" /></frame>
+			<frame type="Make_agreement_on_action" head="de acuerdo">
+				<argument type="Obligation" dependent="decimos - vivir para ver - todos los cínicos" />
+				<argument type="Obligation" dependent="pensando en la televisión" /></frame>
 			<frame type="Opinion" head="pensando">
 				<argument type="Cognizer" dependent="decimos - vivir para ver - todos los cínicos" />
 				<argument type="Opinion" dependent="la televisión" /></frame>
+			<main_frame type="Opinion" head="pensando">
+				<argument type="Cognizer" dependent="decimos - vivir para ver - todos los cínicos" />
+				<argument type="Opinion" dependent="la televisión" /></main_frame>
+			<frame type="Perception_active" head="ver">
+				<argument type="Phenomenon" dependent="todos los cínicos" /></frame>
 			<frame type="Perception_active" head="ver">
 				<argument type="Phenomenon" dependent="todos los cínicos" /></frame>
 			<frame type="Residence" head="vivir" />
+			<frame type="Residence" head="vivir" />
+			<frame type="Statement" head="decimos">
+				<argument type="Message" dependent="- vivir para ver - todos los cínicos están de acuerdo pensando en la televisión" /></frame>
 			<frame type="Statement" head="decimos">
 				<argument type="Message" dependent="- vivir para ver - todos los cínicos están de acuerdo pensando en la televisión" /></frame>
 		</semantic_roles>
@@ -136,7 +218,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">hombres</token><token pos="pr0cn000">que</token><token pos="vaip3p0">han</token><token pos="vmp00sm">usado</token><token pos="dp3cp0">sus</token><token pos="ncfp000">facultades</token><token pos="sps00">hasta</token><token pos="da0fs0">la</token><token pos="ncfs000">extenuación</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">agotamiento</token>
 		</theme>
 		<rheme>
@@ -145,9 +227,27 @@
 		<semantic_roles>
 			<frame type="Being_named" head="hasta">
 				<argument type="Entity" dependent="los únicos que" /></frame>
+			<frame type="Being_named" head="hasta">
+				<argument type="Entity" dependent="los únicos que" /></frame>
+			<frame type="Being_named" head="hasta">
+				<argument type="Entity" dependent="los únicos que" /></frame>
+			<frame type="Biological_urge" head="extenuación" />
+			<frame type="Biological_urge" head="extenuación" />
 			<frame type="Biological_urge" head="extenuación" />
 			<frame type="Electricity" head="sus facultades" />
+			<frame type="Electricity" head="sus facultades" />
+			<frame type="Electricity" head="sus facultades" />
 			<frame type="Sole_instance" head="únicos que" />
+			<frame type="Sole_instance" head="únicos que" />
+			<frame type="Sole_instance" head="únicos que" />
+			<frame type="Using" head="usado">
+				<argument type="Agent" dependent="hombres que" />
+				<argument type="Instrument" dependent="sus facultades" />
+				<argument type="Purpose" dependent="extenuación" /></frame>
+			<main_frame type="Using" head="usado">
+				<argument type="Agent" dependent="hombres que" />
+				<argument type="Instrument" dependent="sus facultades" />
+				<argument type="Purpose" dependent="extenuación" /></main_frame>
 			<frame type="Using" head="usado">
 				<argument type="Agent" dependent="hombres que" />
 				<argument type="Instrument" dependent="sus facultades" />
@@ -157,7 +257,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="pr0ms000">tal</token>
 		</theme>
 		<rheme>
@@ -169,7 +269,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="ncms000">murciélago</token><token pos="aq0ms0">nocturno</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">golondrina</token><token pos="aq0fs0">diurna</token>
 		</theme>
 		<rheme>
@@ -180,8 +280,8 @@
 				<argument type="Activity" dependent="sus bocas abiertas" /></frame>
 			<frame type="Becoming_aware" head="encuentran">
 				<argument type="Phenomenon" dependent="insectos flotantes que" /></frame>
-			<frame type="Communicate_categorization" head="representan">
-				<argument type="Item" dependent="dos extremos de belleza y fealdad" /></frame>
+			<main_frame type="Communicate_categorization" head="representan">
+				<argument type="Item" dependent="dos extremos de belleza y fealdad" /></main_frame>
 			<frame type="Increment" head="otros">
 				<argument type="Class" dependent="insectos flotantes" /></frame>
 			<frame type="Motion" head="volando" />
@@ -194,7 +294,7 @@
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -207,7 +307,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="pi0cs000">Algo</token><token pos="aq0msp">parecido</token>
 		</theme>
 		<rheme>
@@ -220,7 +320,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="dp1fsp">Nuestra</token><token pos="ncfs000">experiencia</token><token pos="aq0cs0">vital</token>
 		</theme>
 		<rheme>
@@ -229,9 +329,39 @@
 		<semantic_roles>
 			<frame type="Expertise" head="experiencia">
 				<argument type="Protagonist" dependent="Nuestra" /></frame>
+			<frame type="Expertise" head="experiencia">
+				<argument type="Protagonist" dependent="Nuestra" /></frame>
+			<frame type="Expertise" head="experiencia">
+				<argument type="Protagonist" dependent="Nuestra" /></frame>
+			<frame type="Expertise" head="experiencia">
+				<argument type="Protagonist" dependent="Nuestra" /></frame>
+			<frame type="Expertise" head="experiencia">
+				<argument type="Protagonist" dependent="Nuestra" /></frame>
+			<frame type="Expertise" head="experiencia">
+				<argument type="Protagonist" dependent="Nuestra" /></frame>
+			<frame type="Give_impression" head="oler" />
+			<frame type="Give_impression" head="oler" />
+			<frame type="Give_impression" head="oler" />
+			<main_frame type="Give_impression" head="oler" />
+			<frame type="Give_impression" head="oler" />
 			<frame type="Give_impression" head="oler" />
 			<frame type="Give_impression" head="tocar">
 				<argument type="Appraisal" dependent="- y en simulacros" /></frame>
+			<frame type="Give_impression" head="tocar">
+				<argument type="Appraisal" dependent="- y en simulacros" /></frame>
+			<frame type="Give_impression" head="tocar">
+				<argument type="Appraisal" dependent="- y en simulacros" /></frame>
+			<frame type="Give_impression" head="tocar">
+				<argument type="Appraisal" dependent="- y en simulacros" /></frame>
+			<frame type="Give_impression" head="tocar">
+				<argument type="Appraisal" dependent="- y en simulacros" /></frame>
+			<main_frame type="Give_impression" head="tocar">
+				<argument type="Appraisal" dependent="- y en simulacros" /></main_frame>
+			<frame type="Perception_experience" head="ver" />
+			<main_frame type="Perception_experience" head="ver" />
+			<frame type="Perception_experience" head="ver" />
+			<frame type="Perception_experience" head="ver" />
+			<frame type="Perception_experience" head="ver" />
 			<frame type="Perception_experience" head="ver" />
 		</semantic_roles>
 	</sentence>

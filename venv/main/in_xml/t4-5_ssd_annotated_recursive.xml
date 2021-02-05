@@ -9,16 +9,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Body_parts" head="cara" />
-			<frame type="Taking_time" head="adquiere">
-				<argument type="Activity" dependent="su cara" />
-				<argument type="Activity" dependent="expresi&#243;n tan sugeridora de sabidur&#237;a como la del mayor genio" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="pd0ms000">&#233;ste</token>
 		</theme>
 		<rheme>
@@ -26,12 +22,20 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Animals" head="gato" />
+			<frame type="Animals" head="gato" />
 			<frame type="Buildings" head="casas" />
+			<frame type="Buildings" head="casas" />
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="las casas" />
+				<argument type="Figure" dependent="vive alg&#250;n gato" /></frame>
 			<frame type="Locative_relation" head="donde">
 				<argument type="Figure" dependent="las casas" />
 				<argument type="Figure" dependent="vive alg&#250;n gato" /></frame>
 			<frame type="Process_end" head="Paso">
 				<argument type="Process" dependent="las casas" /></frame>
+			<frame type="Process_end" head="Paso">
+				<argument type="Process" dependent="las casas" /></frame>
+			<main_frame type="Sleep" head="sale a" />
 			<frame type="Sleep" head="sale a" />
 		</semantic_roles>
 	</sentence>
@@ -45,24 +49,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Referring_by_name" head="llamo">
-				<argument type="Name" dependent="en ingl&#233;s" /></frame>
-		</semantic_roles>
-	</sentence>
-
-
-	<sentence>
-		<theme>
-			
-		</theme>
-		<rheme>
-			
-		</rheme>
-		<semantic_roles>
-			<frame type="Referring_by_name" head="llamo">
-				<argument type="Name" dependent="con el siseo espa&#241;ol -" /></frame>
-			<frame type="Required_event" head="mejor">
-				<argument type="Required_situation" dependent="espa&#241;ol - bsss, - acude" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -80,7 +66,19 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">perros</token><token pos="sps00">en</token><token pos="ncmp000">cambio</token><token pos="fg">-</token><token pos="fg">-</token><token pos="nccp000">nacionalistas</token><token pos="aq0mp0">obtusos</token><token pos="fg">-</token><token pos="fg">-</token>
 		</theme>
 		<rheme>
@@ -92,7 +90,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0mp0">Los</token><token pos="nccp000">mayas</token>
 		</theme>
 		<rheme>
@@ -114,14 +112,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Statement" head="dicen">
-				<argument type="Message" dependent="As&#237;" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="pd0ns000">eso</token>
 		</theme>
 		<rheme>
@@ -130,15 +126,29 @@
 		<semantic_roles>
 			<frame type="Desiring" head="esperanza">
 				<argument type="Experiencer" dependent="en los corazones" /></frame>
+			<frame type="Desiring" head="esperanza">
+				<argument type="Experiencer" dependent="en los corazones" /></frame>
+			<frame type="Food" head="verdura" />
 			<frame type="Food" head="verdura" />
 			<frame type="Grasp" head="entenderse" />
+			<main_frame type="Grasp" head="entenderse" />
+			<frame type="Hostile_encounter" head="guerra" />
 			<frame type="Hostile_encounter" head="guerra" />
 			<frame type="Manufacturing" head="haci&#233;ndolo">
 				<argument type="Product" dependent="fraudulento, falaz y funerario ( tres efes ) o sacristanesco, sanguinario y saturniano ( tres" /></frame>
+			<frame type="Manufacturing" head="haci&#233;ndolo">
+				<argument type="Product" dependent="fraudulento, falaz y funerario ( tres efes ) o sacristanesco, sanguinario y saturniano ( tres" /></frame>
 			<frame type="Political_locales" head="aldea" />
+			<frame type="Political_locales" head="aldea" />
+			<main_frame type="Possibility" head="podr&#237;a">
+				<argument type="Possible_event" dependent="una aldea" />
+				<argument type="Possible_event" dependent="entenderse a toda" /></main_frame>
 			<frame type="Possibility" head="podr&#237;a">
 				<argument type="Possible_event" dependent="una aldea" />
 				<argument type="Possible_event" dependent="entenderse a toda" /></frame>
+			<frame type="Statement" head="dec&#237;a">
+				<argument type="Message" dependent="Ni verdura en la tierra ni esperanza en los corazones" />
+				<argument type="Message" dependent="Gasset hablando de una aldea y eso podr&#237;a entenderse a toda Castilla y a toda Espa&#241;a esquilmada f&#237;sica y moralmente por los patriotas de la guerra civil que pervirtieron el patriotismo haci&#233;ndolo fraudulento, falaz y funerario ( tres efes ) o sacristanesco, sanguinario y saturniano ( tres eses y que Saturno perdone )" /></frame>
 			<frame type="Statement" head="dec&#237;a">
 				<argument type="Message" dependent="Ni verdura en la tierra ni esperanza en los corazones" />
 				<argument type="Message" dependent="Gasset hablando de una aldea y eso podr&#237;a entenderse a toda Castilla y a toda Espa&#241;a esquilmada f&#237;sica y moralmente por los patriotas de la guerra civil que pervirtieron el patriotismo haci&#233;ndolo fraudulento, falaz y funerario ( tres efes ) o sacristanesco, sanguinario y saturniano ( tres eses y que Saturno perdone )" /></frame>
@@ -147,7 +157,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="np0000p">Lerroux</token><token pos="rg">ya</token><token pos="aq0ms0">viejo</token><token pos="cc">y</token><token pos="aq0ms0">valetudinario</token>
 		</theme>
 		<rheme>
@@ -195,8 +205,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Change_position_on_a_scale" head="alz&#225;ndose">
-				<argument type="Item" dependent="un poco m&#225;s grit&#243;" /></frame>
 		</semantic_roles>
 	</sentence>
 

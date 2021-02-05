@@ -2,7 +2,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0fs0">La</token><token pos="ncfs000">inteligencia</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">robots</token><token pos="pr0cn000">que</token><token pos="vmip3p0">responden</token><token pos="rg">l&#243;gicamente</token>
 		</theme>
 		<rheme>
@@ -10,13 +10,23 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Causation" head="causa" />
+			<main_frame type="Causation" head="causa" />
+			<frame type="Event" head="sucedido" />
 			<frame type="Event" head="sucedido" />
 			<frame type="Fear" head="miedo" />
+			<frame type="Fear" head="miedo" />
+			<frame type="Identicality" head="mismo" />
 			<frame type="Identicality" head="mismo" />
 			<frame type="Information" head="inteligencia" />
+			<frame type="Information" head="inteligencia" />
+			<main_frame type="Response" head="responden">
+				<argument type="Agent" dependent="inteligencia de los robots que" />
+				<argument type="Trigger" dependent="l&#243;gicamente nos causa al mismo tiempo risa y miedo" /></main_frame>
 			<frame type="Response" head="responden">
 				<argument type="Agent" dependent="inteligencia de los robots que" />
 				<argument type="Trigger" dependent="l&#243;gicamente nos causa al mismo tiempo risa y miedo" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Event" dependent="cosa que no le hab&#237;a sucedido antes a nadie" /></frame>
 			<frame type="Time_vector" head="antes">
 				<argument type="Event" dependent="cosa que no le hab&#237;a sucedido antes a nadie" /></frame>
 		</semantic_roles>
@@ -31,21 +41,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Desirability" head="buenos" />
-			<frame type="Desirability" head="malos" />
-			<frame type="Possibility" head="podr&#237;amos">
-				<argument type="Possible_event" dependent="los hombres" />
-				<argument type="Possible_event" dependent=": - Cuando somos buenos somos muy buenos, pero cuando somos malos somos mejores" /></frame>
-			<frame type="Proportional_quantity" head="de" />
-			<frame type="Required_event" head="mejores" />
-			<frame type="Statement" head="decirlo">
-				<argument type="Speaker" dependent="los hombres" />
-				<argument type="Message" dependent="mejores" /></frame>
-			<frame type="Statement" head="dec&#237;a">
-				<argument type="Speaker" dependent="Mae West" />
-				<argument type="Message" dependent="misma podr&#237;amos decirlo tambi&#233;n los hombres : - Cuando somos buenos somos muy buenos, pero cuando somos malos somos mejores" /></frame>
-			<frame type="Temporal_collocation" head="cuando">
-				<argument type="Landmark_event" dependent="somos malos somos mejores" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -75,7 +70,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="ncms000">murci&#233;lago</token><token pos="aq0ms0">nocturno</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">golondrina</token><token pos="aq0fs0">diurna</token>
 		</theme>
 		<rheme>
@@ -102,7 +97,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -118,7 +113,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="pi0cs000">Algo</token><token pos="aq0msp">parecido</token>
 		</theme>
 		<rheme>
@@ -133,20 +128,20 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">franceses</token>
 		</theme>
 		<rheme>
 			<token pos="vmip3p0">usan</token><token pos="da0fs0">la</token><token pos="ncfs000">palabra</token><token pos="fg">-</token><token pos="nc00000">toucher</token><token pos="fg">-</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Using" head="usan" />
+			<main_frame type="Using" head="usan" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="pp1mp000">Nosotros</token>
 		</theme>
 		<rheme>
@@ -162,17 +157,17 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0fs0">La</token><token pos="ncfs000">naci&#243;n</token><token pos="aq0fs0">espa&#241;ola</token>
 		</theme>
 		<rheme>
 			<token pos="vmip3s0">comienza</token><token pos="sps00">en</token><token pos="np0000l">Cervere</token><token pos="fpa">(</token><token pos="ncms000">can</token><token pos="np00000">Cerbero</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="dn0cp0">tres</token><token pos="ncfp000">cabezas</token><token pos="fpt">)</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Activity_start" head="comienza">
+			<main_frame type="Activity_start" head="comienza">
 				<argument type="Agent" dependent="naci&#243;n espa&#241;ola" />
 				<argument type="Activity" dependent="en la" />
-				<argument type="Activity" dependent="Cerbero de las" /></frame>
+				<argument type="Activity" dependent="Cerbero de las" /></main_frame>
 			<frame type="Body_parts" head="cabezas" />
 			<frame type="Cardinal_numbers" head="tres" />
 			<frame type="Interior_profile_relation" head="en">
@@ -186,7 +181,7 @@
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="pp1csn00">yo</token>
 		</theme>
 		<rheme>
@@ -198,7 +193,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">pol&#237;ticos</token>
 		</theme>
 		<rheme>
@@ -206,14 +201,25 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Aggregate" head="partido" />
+			<frame type="Aggregate" head="partido" />
+			<frame type="Attempt" head="tiro" />
 			<frame type="Attempt" head="tiro" />
 			<frame type="Getting" head="se" />
+			<frame type="Getting" head="se" />
+			<frame type="Locative_relation" head="se">
+				<argument type="Figure" dependent="pol&#237;ticos nos hacen re&#237;r" />
+				<argument type="Ground" dependent="su frivolidad de secuaces de un partido" /></frame>
 			<frame type="Locative_relation" head="se">
 				<argument type="Figure" dependent="pol&#237;ticos nos hacen re&#237;r" />
 				<argument type="Ground" dependent="su frivolidad de secuaces de un partido" /></frame>
 			<frame type="Make_noise" head="re&#237;r">
 				<argument type="Sound_source" dependent="su frivolidad de secuaces de un partido ," /></frame>
+			<main_frame type="Make_noise" head="re&#237;r">
+				<argument type="Sound_source" dependent="su frivolidad de secuaces de un partido ," /></main_frame>
+			<main_frame type="Manufacturing" head="hacen" />
 			<frame type="Manufacturing" head="hacen" />
+			<frame type="Revenge" head="vengan de">
+				<argument type="Injury" dependent="de nuestra risa a tiro limpio" /></frame>
 			<frame type="Revenge" head="vengan de">
 				<argument type="Injury" dependent="de nuestra risa a tiro limpio" /></frame>
 		</semantic_roles>

@@ -26,10 +26,10 @@
 
 
 	<concepts>
-		<concept id="A">éste</concept>
-		<concept id="B">Los perros en cambio - - nacionalistas obtusos - -</concept>
-		<concept id="C">Los mayas</concept>
-		<concept id="D">eso</concept>
+		<concept id="c_0">éste</concept>
+		<concept id="c_1">Los perros en cambio - - nacionalistas obtusos - -</concept>
+		<concept id="c_2">Los mayas</concept>
+		<concept id="c_3">eso</concept>
 	</concepts>
 
 	<sentence>
@@ -40,16 +40,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Body_parts" head="cara" />
-			<frame type="Taking_time" head="adquiere">
-				<argument type="Activity" dependent="su cara" />
-				<argument type="Activity" dependent="expresión tan sugeridora de sabiduría como la del mayor genio" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="pd0ms000">éste</token>
 		</theme>
 		<rheme>
@@ -57,12 +53,20 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Animals" head="gato" />
+			<frame type="Animals" head="gato" />
 			<frame type="Buildings" head="casas" />
+			<frame type="Buildings" head="casas" />
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="las casas" />
+				<argument type="Figure" dependent="vive algún gato" /></frame>
 			<frame type="Locative_relation" head="donde">
 				<argument type="Figure" dependent="las casas" />
 				<argument type="Figure" dependent="vive algún gato" /></frame>
 			<frame type="Process_end" head="Paso">
 				<argument type="Process" dependent="las casas" /></frame>
+			<frame type="Process_end" head="Paso">
+				<argument type="Process" dependent="las casas" /></frame>
+			<main_frame type="Sleep" head="sale a" />
 			<frame type="Sleep" head="sale a" />
 		</semantic_roles>
 	</sentence>
@@ -76,24 +80,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Referring_by_name" head="llamo">
-				<argument type="Name" dependent="en inglés" /></frame>
-		</semantic_roles>
-	</sentence>
-
-
-	<sentence>
-		<theme>
-			
-		</theme>
-		<rheme>
-			
-		</rheme>
-		<semantic_roles>
-			<frame type="Referring_by_name" head="llamo">
-				<argument type="Name" dependent="con el siseo español -" /></frame>
-			<frame type="Required_event" head="mejor">
-				<argument type="Required_situation" dependent="español - bsss, - acude" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -111,7 +97,19 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">perros</token><token pos="sps00">en</token><token pos="ncmp000">cambio</token><token pos="fg">-</token><token pos="fg">-</token><token pos="nccp000">nacionalistas</token><token pos="aq0mp0">obtusos</token><token pos="fg">-</token><token pos="fg">-</token>
 		</theme>
 		<rheme>
@@ -123,7 +121,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0mp0">Los</token><token pos="nccp000">mayas</token>
 		</theme>
 		<rheme>
@@ -145,14 +143,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Statement" head="dicen">
-				<argument type="Message" dependent="Así" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="pd0ns000">eso</token>
 		</theme>
 		<rheme>
@@ -161,15 +157,29 @@
 		<semantic_roles>
 			<frame type="Desiring" head="esperanza">
 				<argument type="Experiencer" dependent="en los corazones" /></frame>
+			<frame type="Desiring" head="esperanza">
+				<argument type="Experiencer" dependent="en los corazones" /></frame>
+			<frame type="Food" head="verdura" />
 			<frame type="Food" head="verdura" />
 			<frame type="Grasp" head="entenderse" />
+			<main_frame type="Grasp" head="entenderse" />
+			<frame type="Hostile_encounter" head="guerra" />
 			<frame type="Hostile_encounter" head="guerra" />
 			<frame type="Manufacturing" head="haciéndolo">
 				<argument type="Product" dependent="fraudulento, falaz y funerario ( tres efes ) o sacristanesco, sanguinario y saturniano ( tres" /></frame>
+			<frame type="Manufacturing" head="haciéndolo">
+				<argument type="Product" dependent="fraudulento, falaz y funerario ( tres efes ) o sacristanesco, sanguinario y saturniano ( tres" /></frame>
 			<frame type="Political_locales" head="aldea" />
+			<frame type="Political_locales" head="aldea" />
+			<main_frame type="Possibility" head="podría">
+				<argument type="Possible_event" dependent="una aldea" />
+				<argument type="Possible_event" dependent="entenderse a toda" /></main_frame>
 			<frame type="Possibility" head="podría">
 				<argument type="Possible_event" dependent="una aldea" />
 				<argument type="Possible_event" dependent="entenderse a toda" /></frame>
+			<frame type="Statement" head="decía">
+				<argument type="Message" dependent="Ni verdura en la tierra ni esperanza en los corazones" />
+				<argument type="Message" dependent="Gasset hablando de una aldea y eso podría entenderse a toda Castilla y a toda España esquilmada física y moralmente por los patriotas de la guerra civil que pervirtieron el patriotismo haciéndolo fraudulento, falaz y funerario ( tres efes ) o sacristanesco, sanguinario y saturniano ( tres eses y que Saturno perdone )" /></frame>
 			<frame type="Statement" head="decía">
 				<argument type="Message" dependent="Ni verdura en la tierra ni esperanza en los corazones" />
 				<argument type="Message" dependent="Gasset hablando de una aldea y eso podría entenderse a toda Castilla y a toda España esquilmada física y moralmente por los patriotas de la guerra civil que pervirtieron el patriotismo haciéndolo fraudulento, falaz y funerario ( tres efes ) o sacristanesco, sanguinario y saturniano ( tres eses y que Saturno perdone )" /></frame>
@@ -178,7 +188,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="np0000p">Lerroux</token><token pos="rg">ya</token><token pos="aq0ms0">viejo</token><token pos="cc">y</token><token pos="aq0ms0">valetudinario</token>
 		</theme>
 		<rheme>
@@ -226,8 +236,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Change_position_on_a_scale" head="alzándose">
-				<argument type="Item" dependent="un poco más gritó" /></frame>
 		</semantic_roles>
 	</sentence>
 

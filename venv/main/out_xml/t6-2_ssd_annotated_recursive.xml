@@ -26,35 +26,103 @@
 
 
 	<concepts>
-		<concept id="A">sus músculos</concept>
-		<concept id="B">los</concept>
-		<concept id="C">lo que</concept>
+		<concept id="c_0">sus músculos</concept>
+		<concept id="c_1">los</concept>
+		<concept id="c_2">lo que</concept>
 	</concepts>
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="dp3cp0">sus</token><token pos="ncmp000">músculos</token>
 		</theme>
 		<rheme>
 			<token pos="vmis3p0">comenzaron</token><token pos="sps00">a</token><token pos="vmn0000">temblar</token><token pos="sps00">sin</token><token pos="van0000">haber</token><token pos="vmp00sm">llegado</token><token pos="sps00">a</token><token pos="vmn0000">rectificar</token><token pos="sps00">en</token><token pos="pi0cs000">nada</token><token pos="da0ms0">el</token><token pos="aq0cs0">incomprensible</token><token pos="ncms000">vicio</token>
 		</rheme>
 		<semantic_roles>
+			<main_frame type="Activity_start" head="comenzaron">
+				<argument type="Agent" dependent="sus músculos" />
+				<argument type="Activity" dependent="temblar" />
+				<argument type="Time" dependent="sin haber llegado a rectificar en nada el incomprensible vicio que cunaba el codo hacia dentro" /></main_frame>
+			<frame type="Activity_start" head="comenzaron">
+				<argument type="Agent" dependent="sus músculos" />
+				<argument type="Activity" dependent="temblar" />
+				<argument type="Time" dependent="sin haber llegado a rectificar en nada el incomprensible vicio que cunaba el codo hacia dentro" /></frame>
+			<frame type="Activity_start" head="comenzaron">
+				<argument type="Agent" dependent="sus músculos" />
+				<argument type="Activity" dependent="temblar" />
+				<argument type="Time" dependent="sin haber llegado a rectificar en nada el incomprensible vicio que cunaba el codo hacia dentro" /></frame>
+			<frame type="Activity_start" head="comenzaron">
+				<argument type="Agent" dependent="sus músculos" />
+				<argument type="Activity" dependent="temblar" />
+				<argument type="Time" dependent="sin haber llegado a rectificar en nada el incomprensible vicio que cunaba el codo hacia dentro" /></frame>
 			<frame type="Activity_start" head="comenzaron">
 				<argument type="Agent" dependent="sus músculos" />
 				<argument type="Activity" dependent="temblar" />
 				<argument type="Time" dependent="sin haber llegado a rectificar en nada el incomprensible vicio que cunaba el codo hacia dentro" /></frame>
 			<frame type="Being_obligated" head="tarea de">
 				<argument type="Duty" dependent="de estirar su brazo izquierdo" /></frame>
+			<frame type="Being_obligated" head="tarea de">
+				<argument type="Duty" dependent="de estirar su brazo izquierdo" /></frame>
+			<frame type="Being_obligated" head="tarea de">
+				<argument type="Duty" dependent="de estirar su brazo izquierdo" /></frame>
+			<frame type="Being_obligated" head="tarea de">
+				<argument type="Duty" dependent="de estirar su brazo izquierdo" /></frame>
+			<frame type="Being_obligated" head="tarea de">
+				<argument type="Duty" dependent="de estirar su brazo izquierdo" /></frame>
+			<frame type="Body_parts" head="brazo" />
+			<frame type="Body_parts" head="brazo" />
+			<frame type="Body_parts" head="brazo" />
+			<frame type="Body_parts" head="brazo" />
 			<frame type="Body_parts" head="brazo" />
 			<frame type="Cause_motion" head="bruscamente">
 				<argument type="Goal" dependent="bruscamente del mueble" /></frame>
+			<frame type="Cause_motion" head="bruscamente">
+				<argument type="Goal" dependent="bruscamente del mueble" /></frame>
+			<frame type="Cause_motion" head="bruscamente">
+				<argument type="Goal" dependent="bruscamente del mueble" /></frame>
+			<frame type="Cause_motion" head="bruscamente">
+				<argument type="Goal" dependent="bruscamente del mueble" /></frame>
+			<frame type="Cause_motion" head="bruscamente">
+				<argument type="Goal" dependent="bruscamente del mueble" /></frame>
 			<frame type="Expansion" head="de estirar" />
+			<frame type="Expansion" head="de estirar" />
+			<frame type="Expansion" head="de estirar" />
+			<frame type="Expansion" head="de estirar" />
+			<frame type="Expansion" head="de estirar" />
+			<frame type="Level_of_force_exertion" head="fuerzas">
+				<argument type="Circumstances" dependent="en la absurda tarea de estirar su brazo izquierdo" /></frame>
+			<frame type="Level_of_force_exertion" head="fuerzas">
+				<argument type="Circumstances" dependent="en la absurda tarea de estirar su brazo izquierdo" /></frame>
+			<frame type="Level_of_force_exertion" head="fuerzas">
+				<argument type="Circumstances" dependent="en la absurda tarea de estirar su brazo izquierdo" /></frame>
+			<frame type="Level_of_force_exertion" head="fuerzas">
+				<argument type="Circumstances" dependent="en la absurda tarea de estirar su brazo izquierdo" /></frame>
 			<frame type="Level_of_force_exertion" head="fuerzas">
 				<argument type="Circumstances" dependent="en la absurda tarea de estirar su brazo izquierdo" /></frame>
 			<frame type="Mental_property" head="absurda">
 				<argument type="Behavior" dependent="tarea de estirar su brazo izquierdo" /></frame>
+			<frame type="Mental_property" head="absurda">
+				<argument type="Behavior" dependent="tarea de estirar su brazo izquierdo" /></frame>
+			<frame type="Mental_property" head="absurda">
+				<argument type="Behavior" dependent="tarea de estirar su brazo izquierdo" /></frame>
+			<frame type="Mental_property" head="absurda">
+				<argument type="Behavior" dependent="tarea de estirar su brazo izquierdo" /></frame>
+			<frame type="Mental_property" head="absurda">
+				<argument type="Behavior" dependent="tarea de estirar su brazo izquierdo" /></frame>
 			<frame type="Part_orientational" head="ante">
 				<argument type="Whole" dependent="su" /></frame>
+			<frame type="Part_orientational" head="ante">
+				<argument type="Whole" dependent="su" /></frame>
+			<frame type="Part_orientational" head="ante">
+				<argument type="Whole" dependent="su" /></frame>
+			<frame type="Part_orientational" head="ante">
+				<argument type="Whole" dependent="su" /></frame>
+			<frame type="Part_orientational" head="ante">
+				<argument type="Whole" dependent="su" /></frame>
+			<frame type="Part_orientational" head="izquierdo" />
+			<frame type="Part_orientational" head="izquierdo" />
+			<frame type="Part_orientational" head="izquierdo" />
+			<frame type="Part_orientational" head="izquierdo" />
 			<frame type="Part_orientational" head="izquierdo" />
 		</semantic_roles>
 	</sentence>
@@ -68,22 +136,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Artificiality" head="falso" />
-			<frame type="Body_parts" head="brazos" />
-			<frame type="Body_parts" head="ojos" />
-			<frame type="Intentionally_act" head="pasos">
-				<argument type="Result" dependent="con los brazos extendidos y cerró" /></frame>
-			<frame type="People" head="los" />
-			<frame type="Quantified_mass" head="unos" />
-			<frame type="Self_motion" head="Caminó">
-				<argument type="Source" dependent="unos pasos" />
-				<argument type="Manner" dependent="con los brazos extendidos y cerró los ojos" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="dp3cp0">sus</token><token pos="ncmp000">brazos</token>
 		</theme>
 		<rheme>
@@ -100,7 +158,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="pp3mpa00">los</token>
 		</theme>
 		<rheme>
@@ -108,13 +166,23 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Architectural_part" head="la pared" />
+			<frame type="Architectural_part" head="la pared" />
 			<frame type="Body_parts" head="cuerpo" />
-			<frame type="Change_position_on_a_scale" head="dejó caer">
+			<frame type="Body_parts" head="cuerpo" />
+			<main_frame type="Change_position_on_a_scale" head="dejó caer">
 				<argument type="Place" dependent="desplomándose contra la pared" />
-				<argument type="Final_value" dependent="de su cuerpo y sintió su peso" /></frame>
+				<argument type="Final_value" dependent="de su cuerpo y sintió su peso" /></main_frame>
+			<main_frame type="Change_position_on_a_scale" head="dejó caer">
+				<argument type="Place" dependent="desplomándose contra la pared" />
+				<argument type="Final_value" dependent="de su cuerpo y sintió su peso" /></main_frame>
+			<frame type="Dimension" head="peso" />
 			<frame type="Dimension" head="peso" />
 			<frame type="Locative_relation" head="a lo largo">
 				<argument type="Ground" dependent="su cuerpo" /></frame>
+			<frame type="Locative_relation" head="a lo largo">
+				<argument type="Ground" dependent="su cuerpo" /></frame>
+			<frame type="Taking_sides" head="contra">
+				<argument type="Side" dependent="la pared" /></frame>
 			<frame type="Taking_sides" head="contra">
 				<argument type="Side" dependent="la pared" /></frame>
 		</semantic_roles>
@@ -122,7 +190,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0ns0">lo</token><token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -144,7 +212,7 @@
 				<argument type="Topic" dependent="preludio de" /></frame>
 			<frame type="Destiny" head="destino" />
 			<frame type="Duration_description" head="mucho tiempo" />
-			<frame type="Expectation" head="inesperado" />
+			<main_frame type="Expectation" head="inesperado" />
 			<frame type="Increment" head="otra">
 				<argument type="Class" dependent="que reúma, o artrosis" /></frame>
 			<frame type="Preventing_or_letting" head="lo">
@@ -168,13 +236,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Cause_change" head="cumplir" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -182,26 +249,47 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Awareness" head="imaginaba" />
+			<frame type="Awareness" head="imaginaba" />
+			<frame type="Continued_state_of_affairs" head="todavía">
+				<argument type="State_of_affairs" dependent="que estaría" />
+				<argument type="State_of_affairs" dependent="en la cama" /></frame>
 			<frame type="Continued_state_of_affairs" head="todavía">
 				<argument type="State_of_affairs" dependent="que estaría" />
 				<argument type="State_of_affairs" dependent="en la cama" /></frame>
 			<frame type="Emotion_directed" head="feliz">
 				<argument type="Stimulus" dependent="ante la perspectiva de echar raíces entre las sábanas mientras le imaginaba en Salamanca" /></frame>
+			<frame type="Emotion_directed" head="feliz">
+				<argument type="Stimulus" dependent="ante la perspectiva de echar raíces entre las sábanas mientras le imaginaba en Salamanca" /></frame>
+			<frame type="Fire_burning" head="quemaron">
+				<argument type="Fire" dependent="tostadas" /></frame>
 			<frame type="Fire_burning" head="quemaron">
 				<argument type="Fire" dependent="tostadas" /></frame>
 			<frame type="Hostile_encounter" head="batallando">
 				<argument type="Side_2" dependent="alguna oscura contrata" /></frame>
+			<frame type="Hostile_encounter" head="batallando">
+				<argument type="Side_2" dependent="alguna oscura contrata" /></frame>
 			<frame type="Interior_profile_relation" head="en" />
+			<frame type="Interior_profile_relation" head="en" />
+			<frame type="Interior_profile_relation" head="entre">
+				<argument type="Figure" dependent="perspectiva de echar raíces" />
+				<argument type="Ground" dependent="las tostadas" /></frame>
 			<frame type="Interior_profile_relation" head="entre">
 				<argument type="Figure" dependent="perspectiva de echar raíces" />
 				<argument type="Ground" dependent="las tostadas" /></frame>
 			<frame type="Locative_relation" head="en">
 				<argument type="Figure" dependent="le quemaron las tostadas y pensó en Auri, que estaría todavía en la cama" />
 				<argument type="Ground" dependent="ante la perspectiva de echar raíces entre las sábanas mientras le imaginaba en Salamanca" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="le quemaron las tostadas y pensó en Auri, que estaría todavía en la cama" />
+				<argument type="Ground" dependent="ante la perspectiva de echar raíces entre las sábanas mientras le imaginaba en Salamanca" /></frame>
+			<frame type="Opinion" head="pensó">
+				<argument type="Opinion" dependent="pensó en Auri" /></frame>
 			<frame type="Opinion" head="pensó">
 				<argument type="Opinion" dependent="pensó en Auri" /></frame>
 			<frame type="Taking_time" head="echar">
 				<argument type="Activity" dependent="entre las sábanas mientras le imaginaba en Salamanca" /></frame>
+			<main_frame type="Taking_time" head="echar">
+				<argument type="Activity" dependent="entre las sábanas mientras le imaginaba en Salamanca" /></main_frame>
 		</semantic_roles>
 	</sentence>
 
@@ -214,7 +302,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Personal_relationship" head="su mujer" />
 		</semantic_roles>
 	</sentence>
 
@@ -227,18 +314,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Cardinal_numbers" head="un par de">
-				<argument type="Unit" dependent="cuando" /></frame>
-			<frame type="Deserving" head="vale">
-				<argument type="State_of_affairs" dependent="mucho más que tú" /></frame>
-			<frame type="Increment" head="más">
-				<argument type="Class" dependent="que tú" /></frame>
-			<frame type="Interior_profile_relation" head="en">
-				<argument type="Figure" dependent="había susurrado al oído su padre" />
-				<argument type="Ground" dependent="al oído su" /></frame>
-			<frame type="Kinship" head="padre" />
-			<frame type="Make_noise" head="susurrado">
-				<argument type="Sound_source" dependent="su padre" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -251,10 +326,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Categorization" head="respecto">
-				<argument type="Item" dependent="punto exacto del pan tostado" /></frame>
-			<frame type="Cause_to_make_progress" head="desarrollado">
-				<argument type="Project" dependent="una intuición de naturaleza casi sobrenatural con respecto al punto exacto del pan tostado" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -267,7 +338,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Success_or_failure" head="echaba de" />
 		</semantic_roles>
 	</sentence>
 
@@ -280,17 +350,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Awareness" head="sabía" />
-			<frame type="Causation" head="porque">
-				<argument type="Effect" dependent="sabía todo" />
-				<argument type="Cause" dependent="su impasibidad, tan pura, no podía ser natural" /></frame>
-			<frame type="Certainty" head="seguro de que">
-				<argument type="Content" dependent="que lo sabía todo, porque su impasibidad, tan pura, no podía ser natural" /></frame>
-			<frame type="Locative_relation" head="de">
-				<argument type="Figure" dependent="estaba seguro de que lo sabía todo, porque su impasibidad, tan pura, no podía ser natural" /></frame>
-			<frame type="Possibility" head="podía">
-				<argument type="Possible_event" dependent="su impasibidad" />
-				<argument type="Possible_event" dependent="ser natural" /></frame>
 		</semantic_roles>
 	</sentence>
 

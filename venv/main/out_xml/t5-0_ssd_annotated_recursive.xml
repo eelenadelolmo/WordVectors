@@ -26,15 +26,15 @@
 
 
 	<concepts>
-		<concept id="A">Los vecinos de la popular calle de La Reina de esta capital</concept>
-		<concept id="B">Los acontecimientos</concept>
-		<concept id="C">Una vecina</concept>
-		<concept id="D">El criminal</concept>
-		<concept id="E">don Antonio</concept>
+		<concept id="c_0">Los vecinos de la popular calle de La Reina de esta capital</concept>
+		<concept id="c_1">Los acontecimientos</concept>
+		<concept id="c_2">Una vecina</concept>
+		<concept id="c_3">El criminal</concept>
+		<concept id="c_4">don Antonio</concept>
 	</concepts>
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">vecinos</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="aq0cs0">popular</token><token pos="ncfs000">calle</token><token pos="sps00">de</token><token pos="da0fs0">La</token><token pos="ncfs000">Reina</token><token pos="sps00">de</token><token pos="dd0fs0">esta</token><token pos="ncfs000">capital</token>
 		</theme>
 		<rheme>
@@ -58,13 +58,13 @@
 			<frame type="Locative_relation" head="en">
 				<argument type="Figure" dependent="viernes día 16 en la finca sita en el" />
 				<argument type="Ground" dependent="número 17 de la citada calle" /></frame>
-			<frame type="Process_continue" head="continúan">
+			<main_frame type="Process_continue" head="continúan">
 				<argument type="Event" dependent="Los vecinos de la popular calle de La Reina de esta capital" />
-				<argument type="Event" dependent="extraño y salvaje suceso ocurrido el pasado viernes día 16 en la finca sita en el" /></frame>
+				<argument type="Event" dependent="extraño y salvaje suceso ocurrido el pasado viernes día 16 en la finca sita en el" /></main_frame>
 			<frame type="Quantified_mass" head="número">
 				<argument type="Individuals" dependent="17 de la citada calle" /></frame>
 			<frame type="Relational_political_locales" head="capital" />
-			<frame type="Relative_time" head="continúan" />
+			<main_frame type="Relative_time" head="continúan" />
 			<frame type="Residence" head="vecinos">
 				<argument type="Location" dependent="de la popular calle de La Reina de esta capital" /></frame>
 			<frame type="Roadways" head="calle" />
@@ -73,7 +73,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">acontecimientos</token>
 		</theme>
 		<rheme>
@@ -87,7 +87,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="ncfs000">Don</token><token pos="np0000l">Antonio</token><token pos="np0000l">Ortiz</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="z">49</token><token pos="ncmp000">años</token><token pos="sps00">de</token><token pos="ncfs000">edad</token><token pos="fc">,</token><token pos="aq0ms0">soltero</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="ncfs000">profesión</token><token pos="ncms000">funcionario</token><token pos="sps00">de</token><token pos="ncms000">ministerio</token><token pos="fc">,</token>
 		</theme>
 		<rheme>
@@ -112,7 +112,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">vecinos</token>
 		</theme>
 		<rheme>
@@ -120,23 +120,63 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Becoming_silent" head="callado" />
+			<frame type="Becoming_silent" head="callado" />
+			<frame type="Becoming_silent" head="callado" />
+			<frame type="Change_position_on_a_scale" head="callado">
+				<argument type="Item" dependent="a escándalos" /></frame>
+			<frame type="Change_position_on_a_scale" head="callado">
+				<argument type="Item" dependent="a escándalos" /></frame>
 			<frame type="Change_position_on_a_scale" head="callado">
 				<argument type="Item" dependent="a escándalos" /></frame>
 			<frame type="Compliance" head="contrario" />
+			<frame type="Compliance" head="contrario" />
+			<frame type="Compliance" head="contrario" />
 			<frame type="Education_teaching" head="educado" />
+			<frame type="Education_teaching" head="educado" />
+			<frame type="Education_teaching" head="educado" />
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="vecinos aseguran que don Antonio fue" />
+				<argument type="Event" dependent="callado" /></frame>
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="vecinos aseguran que don Antonio fue" />
+				<argument type="Event" dependent="callado" /></frame>
 			<frame type="Frequency" head="siempre">
 				<argument type="Event" dependent="vecinos aseguran que don Antonio fue" />
 				<argument type="Event" dependent="callado" /></frame>
 			<frame type="Giving" head="don">
 				<argument type="Theme" dependent="a escándalos" /></frame>
+			<frame type="Giving" head="don">
+				<argument type="Theme" dependent="a escándalos" /></frame>
+			<frame type="Giving" head="don">
+				<argument type="Theme" dependent="a escándalos" /></frame>
+			<frame type="Judgment" head="educado que">
+				<argument type="Cognizer" dependent="en un soltero" /></frame>
+			<frame type="Judgment" head="educado que">
+				<argument type="Cognizer" dependent="en un soltero" /></frame>
 			<frame type="Judgment" head="educado que">
 				<argument type="Cognizer" dependent="en un soltero" /></frame>
 			<frame type="People" head="hombre" />
+			<frame type="People" head="hombre" />
+			<frame type="People" head="hombre" />
 			<frame type="People_by_residence" head="vecinos" />
+			<frame type="People_by_residence" head="vecinos" />
+			<frame type="People_by_residence" head="vecinos" />
+			<frame type="Sole_instance" head="un soltero" />
+			<frame type="Sole_instance" head="un soltero" />
 			<frame type="Sole_instance" head="un soltero" />
 			<frame type="Spatial_contact" head="en">
 				<argument type="Figure" dependent="Los vecinos aseguran que don Antonio fue siempre un hombre callado y educado que nunca dio lugar a escándalos ," />
 				<argument type="Ground" dependent="contrario" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="Los vecinos aseguran que don Antonio fue siempre un hombre callado y educado que nunca dio lugar a escándalos ," />
+				<argument type="Ground" dependent="contrario" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="Los vecinos aseguran que don Antonio fue siempre un hombre callado y educado que nunca dio lugar a escándalos ," />
+				<argument type="Ground" dependent="contrario" /></frame>
+			<main_frame type="Telling" head="aseguran">
+				<argument type="Message" dependent="fue siempre un hombre callado y educado que nunca dio lugar a escándalos, antes al contrario" /></main_frame>
+			<frame type="Telling" head="aseguran">
+				<argument type="Message" dependent="fue siempre un hombre callado y educado que nunca dio lugar a escándalos, antes al contrario" /></frame>
 			<frame type="Telling" head="aseguran">
 				<argument type="Message" dependent="fue siempre un hombre callado y educado que nunca dio lugar a escándalos, antes al contrario" /></frame>
 		</semantic_roles>
@@ -144,7 +184,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="di0fs0">Una</token><token pos="ncfs000">vecina</token>
 		</theme>
 		<rheme>
@@ -152,8 +192,13 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="People_by_residence" head="vecina" />
+			<frame type="People_by_residence" head="vecina" />
 			<frame type="Perception_active" head="Parecía" />
+			<main_frame type="Perception_active" head="Parecía" />
 			<frame type="Similarity" head="así" />
+			<frame type="Similarity" head="así" />
+			<main_frame type="Telling" head="dijo">
+				<argument type="Speaker" dependent="vecina" /></main_frame>
 			<frame type="Telling" head="dijo">
 				<argument type="Speaker" dependent="vecina" /></frame>
 		</semantic_roles>
@@ -161,7 +206,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="di0mp0">Otros</token><token pos="ncmp000">inquilinos</token>
 		</theme>
 		<rheme>
@@ -171,19 +216,39 @@
 			<frame type="Causation" head="porque">
 				<argument type="Effect" dependent="era un poco misterioso" />
 				<argument type="Cause" dependent="nunca se le veía con nadie" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="era un poco misterioso" />
+				<argument type="Cause" dependent="nunca se le veía con nadie" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="era un poco misterioso" />
+				<argument type="Cause" dependent="nunca se le veía con nadie" /></frame>
 			<frame type="Increment" head="Otros" />
+			<frame type="Increment" head="Otros" />
+			<frame type="Increment" head="Otros" />
+			<main_frame type="Make_agreement_on_action" head="coincidieron">
+				<argument type="Party_1" dependent="Otros inquilinos" />
+				<argument type="Obligation" dependent="que era un poco misterioso" /></main_frame>
+			<frame type="Make_agreement_on_action" head="coincidieron">
+				<argument type="Party_1" dependent="Otros inquilinos" />
+				<argument type="Obligation" dependent="que era un poco misterioso" /></frame>
 			<frame type="Make_agreement_on_action" head="coincidieron">
 				<argument type="Party_1" dependent="Otros inquilinos" />
 				<argument type="Obligation" dependent="que era un poco misterioso" /></frame>
 			<frame type="Perception_experience" head="veía">
 				<argument type="Phenomenon" dependent="con nadie" /></frame>
+			<frame type="Perception_experience" head="veía">
+				<argument type="Phenomenon" dependent="con nadie" /></frame>
+			<main_frame type="Perception_experience" head="veía">
+				<argument type="Phenomenon" dependent="con nadie" /></main_frame>
+			<frame type="Residence" head="inquilinos" />
+			<frame type="Residence" head="inquilinos" />
 			<frame type="Residence" head="inquilinos" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="da0ms0">El</token><token pos="nccs000">criminal</token>
 		</theme>
 		<rheme>
@@ -192,17 +257,122 @@
 		<semantic_roles>
 			<frame type="Aesthetics" head="bella">
 				<argument type="Entity" dependent="joven" /></frame>
+			<frame type="Aesthetics" head="bella">
+				<argument type="Entity" dependent="joven" /></frame>
+			<frame type="Aesthetics" head="bella">
+				<argument type="Entity" dependent="joven" /></frame>
+			<frame type="Aesthetics" head="bella">
+				<argument type="Entity" dependent="joven" /></frame>
+			<frame type="Aesthetics" head="bella">
+				<argument type="Entity" dependent="joven" /></frame>
+			<frame type="Aesthetics" head="bella">
+				<argument type="Entity" dependent="joven" /></frame>
+			<frame type="Aesthetics" head="bella">
+				<argument type="Entity" dependent="joven" /></frame>
+			<frame type="Aesthetics" head="bella">
+				<argument type="Entity" dependent="joven" /></frame>
+			<frame type="Age" head="joven" />
+			<frame type="Age" head="joven" />
+			<frame type="Age" head="joven" />
+			<frame type="Age" head="joven" />
+			<frame type="Age" head="joven" />
+			<frame type="Age" head="joven" />
+			<frame type="Age" head="joven" />
 			<frame type="Age" head="joven" />
 			<frame type="Becoming_aware" head="localizar" />
+			<frame type="Becoming_aware" head="localizar" />
+			<frame type="Becoming_aware" head="localizar" />
+			<frame type="Becoming_aware" head="localizar" />
+			<frame type="Becoming_aware" head="localizar" />
+			<frame type="Becoming_aware" head="localizar" />
+			<frame type="Becoming_aware" head="localizar" />
+			<main_frame type="Becoming_aware" head="localizar" />
+			<frame type="Becoming_aware" head="saber">
+				<argument type="Cognizer" dependent="criminal" />
+				<argument type="Phenomenon" dependent="que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a" /></frame>
+			<frame type="Becoming_aware" head="saber">
+				<argument type="Cognizer" dependent="criminal" />
+				<argument type="Phenomenon" dependent="que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a" /></frame>
+			<main_frame type="Becoming_aware" head="saber">
+				<argument type="Cognizer" dependent="criminal" />
+				<argument type="Phenomenon" dependent="que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a" /></main_frame>
+			<frame type="Becoming_aware" head="saber">
+				<argument type="Cognizer" dependent="criminal" />
+				<argument type="Phenomenon" dependent="que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a" /></frame>
+			<frame type="Becoming_aware" head="saber">
+				<argument type="Cognizer" dependent="criminal" />
+				<argument type="Phenomenon" dependent="que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a" /></frame>
+			<frame type="Becoming_aware" head="saber">
+				<argument type="Cognizer" dependent="criminal" />
+				<argument type="Phenomenon" dependent="que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a" /></frame>
+			<frame type="Becoming_aware" head="saber">
+				<argument type="Cognizer" dependent="criminal" />
+				<argument type="Phenomenon" dependent="que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a" /></frame>
 			<frame type="Becoming_aware" head="saber">
 				<argument type="Cognizer" dependent="criminal" />
 				<argument type="Phenomenon" dependent="que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a" /></frame>
 			<frame type="Capability" head="imposible">
 				<argument type="Event" dependent="localizar" /></frame>
+			<frame type="Capability" head="imposible">
+				<argument type="Event" dependent="localizar" /></frame>
+			<frame type="Capability" head="imposible">
+				<argument type="Event" dependent="localizar" /></frame>
+			<frame type="Capability" head="imposible">
+				<argument type="Event" dependent="localizar" /></frame>
+			<frame type="Capability" head="imposible">
+				<argument type="Event" dependent="localizar" /></frame>
+			<frame type="Capability" head="imposible">
+				<argument type="Event" dependent="localizar" /></frame>
+			<frame type="Capability" head="imposible">
+				<argument type="Event" dependent="localizar" /></frame>
+			<frame type="Capability" head="imposible">
+				<argument type="Event" dependent="localizar" /></frame>
+			<frame type="Forming_relationships" head="matrimonio">
+				<argument type="Partner_2" dependent="una bella y honrada joven" /></frame>
+			<frame type="Forming_relationships" head="matrimonio">
+				<argument type="Partner_2" dependent="una bella y honrada joven" /></frame>
+			<frame type="Forming_relationships" head="matrimonio">
+				<argument type="Partner_2" dependent="una bella y honrada joven" /></frame>
+			<frame type="Forming_relationships" head="matrimonio">
+				<argument type="Partner_2" dependent="una bella y honrada joven" /></frame>
+			<frame type="Forming_relationships" head="matrimonio">
+				<argument type="Partner_2" dependent="una bella y honrada joven" /></frame>
+			<frame type="Forming_relationships" head="matrimonio">
+				<argument type="Partner_2" dependent="una bella y honrada joven" /></frame>
+			<frame type="Forming_relationships" head="matrimonio">
+				<argument type="Partner_2" dependent="una bella y honrada joven" /></frame>
 			<frame type="Forming_relationships" head="matrimonio">
 				<argument type="Partner_2" dependent="una bella y honrada joven" /></frame>
 			<frame type="Legality" head="criminal">
 				<argument type="Action" dependent="saber que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a la" /></frame>
+			<frame type="Legality" head="criminal">
+				<argument type="Action" dependent="saber que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a la" /></frame>
+			<frame type="Legality" head="criminal">
+				<argument type="Action" dependent="saber que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a la" /></frame>
+			<frame type="Legality" head="criminal">
+				<argument type="Action" dependent="saber que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a la" /></frame>
+			<frame type="Legality" head="criminal">
+				<argument type="Action" dependent="saber que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a la" /></frame>
+			<frame type="Legality" head="criminal">
+				<argument type="Action" dependent="saber que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a la" /></frame>
+			<frame type="Legality" head="criminal">
+				<argument type="Action" dependent="saber que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a la" /></frame>
+			<frame type="Legality" head="criminal">
+				<argument type="Action" dependent="saber que don Antonio iba a contraer matrimonio en breve con una bella y honrada joven, a la" /></frame>
+			<frame type="People" head="la">
+				<argument type="Descriptor" dependent="honrada joven" /></frame>
+			<frame type="People" head="la">
+				<argument type="Descriptor" dependent="honrada joven" /></frame>
+			<frame type="People" head="la">
+				<argument type="Descriptor" dependent="honrada joven" /></frame>
+			<frame type="People" head="la">
+				<argument type="Descriptor" dependent="honrada joven" /></frame>
+			<frame type="People" head="la">
+				<argument type="Descriptor" dependent="honrada joven" /></frame>
+			<frame type="People" head="la">
+				<argument type="Descriptor" dependent="honrada joven" /></frame>
+			<frame type="People" head="la">
+				<argument type="Descriptor" dependent="honrada joven" /></frame>
 			<frame type="People" head="la">
 				<argument type="Descriptor" dependent="honrada joven" /></frame>
 		</semantic_roles>
@@ -210,7 +380,7 @@
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="ncms000">don</token><token pos="np0000p">Antonio</token>
 		</theme>
 		<rheme>
@@ -238,38 +408,22 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Modality_Reporter" head="el infortunado " />
-			<frame type="Architectural_part" head="detenida" />
-			<frame type="Awareness" head="conocida">
-				<argument type="Content" dependent=", Isabel López, de 46" /></frame>
-			<frame type="Awareness" head="imaginaba">
-				<argument type="Content" dependent="infortunado que" /></frame>
-			<frame type="Desirability" head="infortunado que" />
-			<frame type="Detaining" head="detenida">
-				<argument type="Suspect" dependent="conocida con el alias de - La Bella -, cantante de boleros en un club nocturno cercano al barrio chino ," />
-				<argument type="Holding_location" dependent="detenida por la eficaz acción de los inspectores de Policía del Grupo de Homicidios" /></frame>
-			<frame type="Intentionally_act" head="acción">
-				<argument type="Act" dependent="los inspectores de Policía del Grupo de Homicidios" /></frame>
-			<frame type="People" head="los" />
-			<frame type="Required_event" head="más" />
-			<frame type="Spatial_contact" head="en">
-				<argument type="Ground" dependent="detenida" /></frame>
-			<frame type="Usefulness" head="eficaz">
-				<argument type="Entity" dependent="acción de los inspectores de Policía" /></frame>
-			<frame type="Waiting" head="esperaba">
-				<argument type="Protagonist" dependent="infortunado que" />
-				<argument type="Expected_event" dependent="por la" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0fs0">la</token><token pos="ncfs000">asesina</token>
 		</theme>
 		<rheme>
 			<token pos="vmis3s0">entró</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">casa</token><token pos="sps00">sin</token><token pos="vmn0000">encontrar</token><token pos="ncfs000">resistencia</token>
 		</rheme>
 		<semantic_roles>
+			<main_frame type="Activity_start" head="entró">
+				<argument type="Agent" dependent="la asesina" />
+				<argument type="Activity" dependent="la casa" />
+				<argument type="Time" dependent="sin encontrar resistencia" /></main_frame>
 			<frame type="Activity_start" head="entró">
 				<argument type="Agent" dependent="la asesina" />
 				<argument type="Activity" dependent="la casa" />
@@ -277,23 +431,37 @@
 			<frame type="Awareness" head="sabemos">
 				<argument type="Content" dependent="la mujer y la víctima" />
 				<argument type="Content" dependent="los" /></frame>
+			<frame type="Awareness" head="sabemos">
+				<argument type="Content" dependent="la mujer y la víctima" />
+				<argument type="Content" dependent="los" /></frame>
+			<frame type="Buildings" head="casa" />
 			<frame type="Buildings" head="casa" />
 			<frame type="Catastrophe" head="víctima" />
+			<frame type="Catastrophe" head="víctima" />
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="la mujer y la víctima se conocían" />
+				<argument type="Cause" dependent="asesina entró en la casa sin encontrar resistencia" /></frame>
 			<frame type="Causation" head="porque">
 				<argument type="Effect" dependent="la mujer y la víctima se conocían" />
 				<argument type="Cause" dependent="asesina entró en la casa sin encontrar resistencia" /></frame>
 			<frame type="Give_impression" head="parece">
 				<argument type="Inference" dependent="que la mujer y la víctima se conocían, porque la asesina entró en la casa sin encontrar resistencia" /></frame>
+			<frame type="Give_impression" head="parece">
+				<argument type="Inference" dependent="que la mujer y la víctima se conocían, porque la asesina entró en la casa sin encontrar resistencia" /></frame>
+			<frame type="Increment" head="se" />
 			<frame type="Increment" head="se" />
 			<frame type="Killing" head="asesina" />
+			<frame type="Killing" head="asesina" />
 			<frame type="Ordinal_numbers" head="primeros" />
+			<frame type="Ordinal_numbers" head="primeros" />
+			<frame type="People" head="mujer" />
 			<frame type="People" head="mujer" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0fs0">la</token><token pos="ncfs000">discusión</token>
 		</theme>
 		<rheme>
@@ -303,15 +471,45 @@
 			<frame type="Activity_start" head="empezar">
 				<argument type="Agent" dependent="la discusión" />
 				<argument type="Activity" dependent="cerrar" /></frame>
+			<main_frame type="Activity_start" head="empezar">
+				<argument type="Agent" dependent="la discusión" />
+				<argument type="Activity" dependent="cerrar" /></main_frame>
+			<frame type="Activity_start" head="empezar">
+				<argument type="Agent" dependent="la discusión" />
+				<argument type="Activity" dependent="cerrar" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="la discusión debió empezar en" />
+				<argument type="Cause" dependent="olvidaron cerrar la puerta" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="la discusión debió empezar en" />
+				<argument type="Cause" dependent="olvidaron cerrar la puerta" /></frame>
 			<frame type="Causation" head="porque">
 				<argument type="Effect" dependent="la discusión debió empezar en" />
 				<argument type="Cause" dependent="olvidaron cerrar la puerta" /></frame>
 			<frame type="Closure" head="cerrar">
 				<argument type="Container_portal" dependent="la puerta" /></frame>
+			<frame type="Closure" head="cerrar">
+				<argument type="Container_portal" dependent="la puerta" /></frame>
+			<frame type="Closure" head="cerrar">
+				<argument type="Container_portal" dependent="la puerta" /></frame>
 			<frame type="Connecting_architecture" head="puerta" />
+			<frame type="Connecting_architecture" head="puerta" />
+			<frame type="Connecting_architecture" head="puerta" />
+			<frame type="Discussion" head="discusión" />
+			<frame type="Discussion" head="discusión" />
 			<frame type="Discussion" head="discusión" />
 			<frame type="Remembering_experience" head="olvidaron">
 				<argument type="Experience" dependent="cerrar la puerta" /></frame>
+			<frame type="Remembering_experience" head="olvidaron">
+				<argument type="Experience" dependent="cerrar la puerta" /></frame>
+			<frame type="Remembering_experience" head="olvidaron">
+				<argument type="Experience" dependent="cerrar la puerta" /></frame>
+			<main_frame type="Required_event" head="debió">
+				<argument type="Required_situation" dependent="la discusión" />
+				<argument type="Required_situation" dependent="debió empezar" /></main_frame>
+			<frame type="Required_event" head="debió">
+				<argument type="Required_situation" dependent="la discusión" />
+				<argument type="Required_situation" dependent="debió empezar" /></frame>
 			<frame type="Required_event" head="debió">
 				<argument type="Required_situation" dependent="la discusión" />
 				<argument type="Required_situation" dependent="debió empezar" /></frame>

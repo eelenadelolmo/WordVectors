@@ -26,11 +26,11 @@
 
 
 	<concepts>
-		<concept id="A">el mochuelo</concept>
-		<concept id="B">Valle Inclán</concept>
-		<concept id="C">su pequeña hija Mariquiña</concept>
-		<concept id="D">que</concept>
-		<concept id="E">El misterio de los búhos</concept>
+		<concept id="c_0">el mochuelo</concept>
+		<concept id="c_1">Valle Inclán</concept>
+		<concept id="c_2">su pequeña hija Mariquiña</concept>
+		<concept id="c_3">que</concept>
+		<concept id="c_4">El misterio de los búhos</concept>
 	</concepts>
 
 	<sentence>
@@ -41,30 +41,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Departing" head="lo" />
-			<frame type="Likelihood" head="posible">
-				<argument type="Hypothetical_event" dependent="en la medida que a cada cual le parezca adecuado" /></frame>
-			<frame type="People" head="le" />
-			<frame type="Quantity" head="medida que" />
-			<frame type="Required_event" head="mejor">
-				<argument type="Required_situation" dependent="nuestra existencialidad y nuestra esencialidad en la medida que a" /></frame>
-			<frame type="Time_vector" head="antes">
-				<argument type="Landmark_event" dependent="expongamos lo mejor posible nuestra existencialidad y nuestra esencialidad en la medida que a" /></frame>
-		</semantic_roles>
-	</sentence>
-
-
-	<sentence>
-		<theme>
-			
-		</theme>
-		<rheme>
-			
-		</rheme>
-		<semantic_roles>
-			<frame type="Locative_relation" head="En esto">
-				<argument type="Figure" dependent="estamos" /></frame>
-			<frame type="Reading_perception" head="lector" />
 		</semantic_roles>
 	</sentence>
 
@@ -82,16 +58,28 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_0">
 			<token pos="da0ms0">el</token><token pos="ncms000">mochuelo</token>
 		</theme>
 		<rheme>
 			<token pos="vmip3s0">alcanza</token><token pos="di0fs0">cierta</token><token pos="ncfs000">edad</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Arriving" head="alcanza">
+			<main_frame type="Arriving" head="alcanza">
 				<argument type="Theme" dependent="el mochuelo" />
-				<argument type="Goal" dependent="cierta edad se" /></frame>
+				<argument type="Goal" dependent="cierta edad se" /></main_frame>
 			<frame type="Calendric_unit" head="edad" />
 			<frame type="Experiencer_obj" head="confunde" />
 			<frame type="Idiosyncrasy" head="cierta" />
@@ -111,18 +99,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Capability" head="puede" />
-			<frame type="Locative_relation" head="donde">
-				<argument type="Figure" dependent="dueño" />
-				<argument type="Figure" dependent="duerme si puede" /></frame>
-			<frame type="Possession" head="dueño">
-				<argument type="Possession" dependent="donde duerme si puede" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="ncms000">Valle</token><token pos="np00000">Inclán</token>
 		</theme>
 		<rheme>
@@ -130,9 +112,15 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Fire_burning" head="fuego" />
+			<frame type="Fire_burning" head="fuego" />
 			<frame type="Locative_relation" head="allí">
 				<argument type="Figure" dependent="el fuego" />
 				<argument type="Ground" dependent="allí está Dios" /></frame>
+			<frame type="Locative_relation" head="allí">
+				<argument type="Figure" dependent="el fuego" />
+				<argument type="Ground" dependent="allí está Dios" /></frame>
+			<main_frame type="Telling" head="decía">
+				<argument type="Speaker" dependent="Valle" /></main_frame>
 			<frame type="Telling" head="decía">
 				<argument type="Speaker" dependent="Valle" /></frame>
 		</semantic_roles>
@@ -140,7 +128,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="dp3cs0">su</token><token pos="aq0fs0">pequeña</token><token pos="ncfs000">hija</token><token pos="np0000p">Mariquiña</token>
 		</theme>
 		<rheme>
@@ -148,11 +136,38 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Ambient_temperature" head="friolero" />
+			<frame type="Ambient_temperature" head="friolero" />
+			<frame type="Ambient_temperature" head="friolero" />
+			<frame type="Ambient_temperature" head="friolero" />
 			<frame type="Kinship" head="hija" />
+			<frame type="Kinship" head="hija" />
+			<frame type="Kinship" head="hija" />
+			<frame type="Kinship" head="hija" />
+			<frame type="Likelihood" head="posible">
+				<argument type="Hypothetical_event" dependent="Dios sea tan friolero" /></frame>
+			<frame type="Likelihood" head="posible">
+				<argument type="Hypothetical_event" dependent="Dios sea tan friolero" /></frame>
+			<frame type="Likelihood" head="posible">
+				<argument type="Hypothetical_event" dependent="Dios sea tan friolero" /></frame>
 			<frame type="Likelihood" head="posible">
 				<argument type="Hypothetical_event" dependent="Dios sea tan friolero" /></frame>
 			<frame type="Opinion" head="pensando">
 				<argument type="Opinion" dependent="Es posible que Dios sea tan friolero" /></frame>
+			<main_frame type="Opinion" head="pensando">
+				<argument type="Opinion" dependent="Es posible que Dios sea tan friolero" /></main_frame>
+			<frame type="Opinion" head="pensando">
+				<argument type="Opinion" dependent="Es posible que Dios sea tan friolero" /></frame>
+			<frame type="Opinion" head="pensando">
+				<argument type="Opinion" dependent="Es posible que Dios sea tan friolero" /></frame>
+			<main_frame type="Perception_active" head="miraba">
+				<argument type="Phenomenon" dependent="su pequeña hija" />
+				<argument type="Place" dependent="su" /></main_frame>
+			<frame type="Perception_active" head="miraba">
+				<argument type="Phenomenon" dependent="su pequeña hija" />
+				<argument type="Place" dependent="su" /></frame>
+			<frame type="Perception_active" head="miraba">
+				<argument type="Phenomenon" dependent="su pequeña hija" />
+				<argument type="Place" dependent="su" /></frame>
 			<frame type="Perception_active" head="miraba">
 				<argument type="Phenomenon" dependent="su pequeña hija" />
 				<argument type="Place" dependent="su" /></frame>
@@ -161,7 +176,7 @@
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -174,9 +189,9 @@
 				<argument type="Ground" dependent="oscuridad : los gatos y los búhos" /></frame>
 			<frame type="Openness" head="oscuridad">
 				<argument type="Useful_location" dependent="gatos y los búhos" /></frame>
-			<frame type="Perception_experience" head="ven en">
+			<main_frame type="Perception_experience" head="ven en">
 				<argument type="Phenomenon" dependent="mis amigos" />
-				<argument type="State" dependent="en la oscuridad : los gatos y" /></frame>
+				<argument type="State" dependent="en la oscuridad : los gatos y" /></main_frame>
 			<frame type="Personal_relationship" head="amigos" />
 			<frame type="Required_event" head="mejor">
 				<argument type="Required_situation" dependent="amanecer" /></frame>
@@ -199,13 +214,16 @@
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="da0ms0">El</token><token pos="ncms000">misterio</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">búhos</token>
 		</theme>
 		<rheme>
 			<token pos="vmip3s0">comienza</token><token pos="sps00">a</token><token pos="vsn0000">ser</token><token pos="di0fs0">una</token><token pos="ncfs000">bruma</token><token pos="sps00">con</token><token pos="dp3cp0">sus</token><token pos="ncmp000">ponderativos</token><token pos="ncms000">uh</token><token pos="ncms000">uh</token>
 		</rheme>
 		<semantic_roles>
+			<main_frame type="Activity_start" head="comienza">
+				<argument type="Agent" dependent="misterio de los búhos" />
+				<argument type="Activity" dependent="a ser una bruma" /></main_frame>
 			<frame type="Activity_start" head="comienza">
 				<argument type="Agent" dependent="misterio de los búhos" />
 				<argument type="Activity" dependent="a ser una bruma" /></frame>
@@ -221,15 +239,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Grasp" head="entenderlos" />
-			<frame type="Taking_time" head="tiempo">
-				<argument type="Activity" dependent="entenderlos" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">sabios</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">antigüedad</token><token pos="aq0fs0">helena</token><token pos="cc">o</token><token pos="aq0fs0">romana</token>
 		</theme>
 		<rheme>

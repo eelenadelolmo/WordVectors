@@ -2,7 +2,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0fs0">La</token><token pos="ncfs000">mosca</token>
 		</theme>
 		<rheme>
@@ -12,7 +12,7 @@
 			<frame type="Architectural_part" head="la pared" />
 			<frame type="Emphasizing" head="&#233;nfasis">
 				<argument type="Consideration" dependent="durante unos segundos" /></frame>
-			<frame type="Lively_place" head="zumb&#243;" />
+			<main_frame type="Lively_place" head="zumb&#243;" />
 			<frame type="Measure_duration" head="segundos" />
 			<frame type="Quantified_mass" head="unos" />
 		</semantic_roles>
@@ -20,7 +20,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="np0000p">Antonio</token>
 		</theme>
 		<rheme>
@@ -28,7 +28,19 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Arriving" head="ven&#237;a" />
+			<frame type="Arriving" head="ven&#237;a" />
+			<frame type="Arriving" head="ven&#237;a" />
+			<main_frame type="Arriving" head="ven&#237;a" />
 			<frame type="Referring_by_name" head="llamado" />
+			<main_frame type="Referring_by_name" head="llamado" />
+			<frame type="Referring_by_name" head="llamado" />
+			<frame type="Referring_by_name" head="llamado" />
+			<frame type="Statement" head="decirle">
+				<argument type="Message" dependent="no ven&#237;a" /></frame>
+			<frame type="Statement" head="decirle">
+				<argument type="Message" dependent="no ven&#237;a" /></frame>
+			<main_frame type="Statement" head="decirle">
+				<argument type="Message" dependent="no ven&#237;a" /></main_frame>
 			<frame type="Statement" head="decirle">
 				<argument type="Message" dependent="no ven&#237;a" /></frame>
 		</semantic_roles>
@@ -36,14 +48,14 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="pd0ns000">Esto</token>
 		</theme>
 		<rheme>
 			<token pos="rn">no</token><token pos="pp3csd00">le</token><token pos="vmii3s0">preocupaba</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Emotion_active" head="preocupaba" />
+			<main_frame type="Emotion_active" head="preocupaba" />
 			<frame type="Kinship" head="hermano" />
 			<frame type="Using" head="le">
 				<argument type="Instrument" dependent="su hermano" />
@@ -60,7 +72,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Success_or_failure" head="falta" />
 		</semantic_roles>
 	</sentence>
 
@@ -73,55 +84,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Accoutrements" head="vigilar la hora" />
-			<frame type="Activity_prepare" head="prepararle">
-				<argument type="Activity" dependent="hierbas digestivas" /></frame>
-			<frame type="Assistance" head="servirle">
-				<argument type="Benefited_party" dependent="la comida" /></frame>
-			<frame type="Buildings" head="casa" />
-			<frame type="Calendric_unit" head="invierno" />
-			<frame type="Calendric_unit" head="verano">
-				<argument type="Relative_time" dependent="americano, en vaso, caliente en invierno y con hielo en" /></frame>
-			<frame type="Cause_to_wake" head="despertarle" />
-			<frame type="Clothing" head="zapatos" />
-			<frame type="Direction" head="levantarse" />
-			<frame type="Filling" head="solapas" />
-			<frame type="Food" head="caf&#233;" />
-			<frame type="Food" head="comida" />
-			<frame type="Food" head="hierbas" />
-			<frame type="Frequency" head="siempre">
-				<argument type="Event" dependent="que" />
-				<argument type="Event" dependent="tra&#237;a puercas de caspa" /></frame>
-			<frame type="Getting" head="dar" />
-			<frame type="Giving" head="dar">
-				<argument type="Recipient" dependent="los zapatos" />
-				<argument type="Theme" dependent="puercas de caspa" /></frame>
-			<frame type="Intentionally_act" head="de" />
-			<frame type="Interior_profile_relation" head="en">
-				<argument type="Figure" dependent="vaso, caliente" />
-				<argument type="Ground" dependent="invierno y con hielo" /></frame>
-			<frame type="Locative_relation" head="alg&#250;n">
-				<argument type="Ground" dependent="hab&#237;a" />
-				<argument type="Figure" dependent=": servirle la comida, prepararle las hierbas digestivas, abrirle la cama, vigilar la hora para despertarle puntualmente, hacerle" /></frame>
-			<frame type="Locative_relation" head="en" />
-			<frame type="People_by_origin" head="americano" />
-			<frame type="Placing" head="puercas de">
-				<argument type="Cause" dependent="americano, en vaso, caliente en invierno y con hielo en verano )" />
-				<argument type="Theme" dependent="puercas de" /></frame>
-			<frame type="Relative_time" head="despu&#233;s de">
-				<argument type="Focal_occasion" dependent="abrirle la cama, vigilar la hora para despertarle puntualmente, hacerle el caf&#233;" />
-				<argument type="Landmark_occasion" dependent="levantarse ( americano, en vaso, caliente en invierno y con hielo en verano ) ," />
-				<argument type="Focal_occasion" dependent="), cepillarle las solapas, que siempre las tra&#237;a puercas de caspa, y muchas veces, incluso, dar una mano de bet&#250;n a los zapatos" /></frame>
-			<frame type="Secrecy_status" head="abrirle">
-				<argument type="Phenomenon" dependent="la cama" /></frame>
-			<frame type="Spatial_contact" head="en">
-				<argument type="Figure" dependent="servirle la comida, prepararle las hierbas digestivas, abrirle la cama, vigilar la hora para despertarle" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="np0000p">Antonia</token>
 		</theme>
 		<rheme>
@@ -143,13 +111,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Capability" head="lo" />
-			<frame type="Direction" head="a la">
-				<argument type="Path" dependent="recogi&#243;" />
-				<argument type="Landmark" dependent="cad&#225;ver del mosc&#243;n suicida" /></frame>
-			<frame type="Idiosyncrasy" head="cierto" />
-			<frame type="Part_piece" head="lata">
-				<argument type="Substance" dependent="de cart&#243;n" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -162,17 +123,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Building_subparts" head="se" />
-			<frame type="Leadership" head="encamin&#243;">
-				<argument type="Governed" dependent="hacia el comedor" /></frame>
-			<frame type="Posture" head="encamin&#243;" />
-			<frame type="Vehicle_subpart" head="despatarrada" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="da0fs0">La</token><token pos="ncfs000">televisi&#243;n</token>
 		</theme>
 		<rheme>
@@ -181,9 +137,37 @@
 		<semantic_roles>
 			<frame type="Activity_ongoing" head="mantener el">
 				<argument type="Activity" dependent="en su" /></frame>
+			<frame type="Activity_ongoing" head="mantener el">
+				<argument type="Activity" dependent="en su" /></frame>
+			<main_frame type="Activity_ongoing" head="mantener el">
+				<argument type="Activity" dependent="en su" /></main_frame>
+			<frame type="Activity_ongoing" head="mantener el">
+				<argument type="Activity" dependent="en su" /></frame>
+			<frame type="Activity_ongoing" head="mantener el">
+				<argument type="Activity" dependent="en su" /></frame>
+			<frame type="Aggregate" head="estuviera" />
+			<frame type="Aggregate" head="estuviera" />
+			<frame type="Aggregate" head="estuviera" />
+			<main_frame type="Aggregate" head="estuviera" />
 			<frame type="Aggregate" head="estuviera" />
 			<frame type="Gizmo" head="mec&#225;nica" />
+			<frame type="Gizmo" head="mec&#225;nica" />
+			<frame type="Gizmo" head="mec&#225;nica" />
+			<frame type="Gizmo" head="mec&#225;nica" />
+			<frame type="Gizmo" head="mec&#225;nica" />
 			<frame type="Perception_active" head="viendo" />
+			<frame type="Perception_active" head="viendo" />
+			<frame type="Perception_active" head="viendo" />
+			<frame type="Perception_active" head="viendo" />
+			<main_frame type="Perception_active" head="viendo" />
+			<frame type="Similarity" head="gustaba">
+				<argument type="Entity_2" dependent="mantener el" /></frame>
+			<main_frame type="Similarity" head="gustaba">
+				<argument type="Entity_2" dependent="mantener el" /></main_frame>
+			<frame type="Similarity" head="gustaba">
+				<argument type="Entity_2" dependent="mantener el" /></frame>
+			<frame type="Similarity" head="gustaba">
+				<argument type="Entity_2" dependent="mantener el" /></frame>
 			<frame type="Similarity" head="gustaba">
 				<argument type="Entity_2" dependent="mantener el" /></frame>
 		</semantic_roles>
@@ -198,8 +182,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Color" head="blanco" />
-			<frame type="Color" head="negro" />
 		</semantic_roles>
 	</sentence>
 

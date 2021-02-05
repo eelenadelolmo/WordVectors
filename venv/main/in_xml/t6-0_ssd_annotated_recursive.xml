@@ -9,14 +9,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Breathing" head="aliento" />
-			<frame type="Businesses" head="firme" />
-			<frame type="Calendric_unit" head="aquella ma&#241;ana" />
-			<frame type="Cause_to_wake" head="se">
-				<argument type="Time" dependent="ma&#241;ana" />
-				<argument type="Sleeper" dependent="despert&#243; aquella ma&#241;ana, la lengua seca, y firme contra el paladar, se asust&#243; del sabor nauseabundo de su" /></frame>
-			<frame type="Sensation" head="sabor">
-				<argument type="Source" dependent="su propio aliento" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -29,22 +21,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Body_parts" head="boca" />
-			<frame type="Body_parts" head="cara la" />
-			<frame type="Body_parts" head="mano" />
-			<frame type="Breathing" head="aire">
-				<argument type="Instrument" dependent="de aire caliente" /></frame>
-			<frame type="Bringing" head="su">
-				<argument type="Theme" dependent="a su cara la palma de una mano y abri&#243; la boca para dejar escapar una bocanada de aire caliente" /></frame>
-			<frame type="Cardinal_numbers" head="una" />
-			<frame type="Taking_time" head="lentamente">
-				<argument type="Activity" dependent="a su cara la palma de una mano y abri&#243; la boca para dejar escapar una bocanada de aire caliente" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="ncms000">olor</token><token pos="sps00">a</token><token pos="aq0msp">podrido</token>
 		</theme>
 		<rheme>
@@ -67,10 +49,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Calendric_unit" head="noche" />
-			<frame type="Motion" head="acostado">
-				<argument type="Goal" dependent="acostado" /></frame>
-			<frame type="Remembering_experience" head="record&#243;" />
 		</semantic_roles>
 	</sentence>
 
@@ -83,9 +61,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Opinion" head="de">
-				<argument type="Opinion" dependent="apenas una fracci&#243;n de segundo" /></frame>
-			<frame type="Ordinal_numbers" head="segundo" />
 		</semantic_roles>
 	</sentence>
 
@@ -98,19 +73,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Building_subparts" head="ba&#241;o" />
-			<frame type="Buildings" head="cuarto" />
-			<frame type="Change_position_on_a_scale" head="hasta">
-				<argument type="Item" dependent="el cuarto" />
-				<argument type="Attribute" dependent="de ba&#241;o" /></frame>
-			<frame type="Continued_state_of_affairs" head="a&#250;n">
-				<argument type="State_of_affairs" dependent="la cama y atraves&#243; el pasillo" /></frame>
-			<frame type="Fleeing" head="atraves&#243;">
-				<argument type="Source" dependent="la cama" /></frame>
-			<frame type="Self_motion" head="corriendo">
-				<argument type="Path" dependent="hasta el cuarto" /></frame>
-			<frame type="Wearing" head="desnudo">
-				<argument type="Wearer" dependent="el cuarto" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -123,9 +85,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Quantified_mass" head="cantidad">
-				<argument type="Mass" dependent="de aquella blanda pomada ros&#225;cea" /></frame>
-			<frame type="Typicality" head="excesiva" />
 		</semantic_roles>
 	</sentence>
 
@@ -138,14 +97,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Animals" head="perro" />
-			<frame type="Idiosyncrasy" head="certeza">
-				<argument type="Entity" dependent="que su boca manar&#237;a espuma como las fauces de un perro" /></frame>
-			<frame type="Perception_active" head="ojos">
-				<argument type="Phenomenon" dependent="hacia el espejo" /></frame>
-			<frame type="Similarity" head="como">
-				<argument type="Entity_1" dependent="su boca manar&#237;a espuma como" />
-				<argument type="Entity_2" dependent="fauces de un perro rabioso" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -158,15 +109,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Body_parts" head="ojos" />
-			<frame type="Duration_description" head="largo" />
-			<frame type="Making_faces" head="sonri&#243;" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="dd0fs0">Aquella</token><token pos="ncfs000">sonrisa</token><token pos="aq0cs0">ritual</token><token pos="fc">,</token><token pos="di0fs0">una</token><token pos="ncfs000">mueca</token><token pos="aq0fsp">encausada</token><token pos="cc">y</token><token pos="aq0fs0">gratuita</token><token pos="fc">,</token><token pos="aq0fs0">rid&#237;cula</token><token pos="fc">,</token>
 		</theme>
 		<rheme>
@@ -175,14 +123,24 @@
 		<semantic_roles>
 			<frame type="Aggregate" head="propiciar">
 				<argument type="Individuals" dependent="burda trampa" /></frame>
+			<main_frame type="Aggregate" head="propiciar">
+				<argument type="Individuals" dependent="burda trampa" /></main_frame>
 			<frame type="Calendric_unit" head="ma&#241;ana" />
+			<frame type="Calendric_unit" head="ma&#241;ana" />
+			<frame type="Custom" head="ritual" />
 			<frame type="Custom" head="ritual" />
 			<frame type="Facial_expression" head="sonrisa">
 				<argument type="Conveyed_emotion" dependent="ritual" /></frame>
+			<frame type="Facial_expression" head="sonrisa">
+				<argument type="Conveyed_emotion" dependent="ritual" /></frame>
 			<frame type="Gizmo" head="propiciar" />
+			<main_frame type="Gizmo" head="propiciar" />
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="improbables presagios favorables" /></frame>
 			<frame type="Increment" head="otros">
 				<argument type="Class" dependent="improbables presagios favorables" /></frame>
 			<frame type="Jury_deliberation" head="propiciar" />
+			<main_frame type="Jury_deliberation" head="propiciar" />
 		</semantic_roles>
 	</sentence>
 

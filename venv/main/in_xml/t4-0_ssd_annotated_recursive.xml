@@ -9,16 +9,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Contacting" head="p&#225;ginas" />
-			<frame type="Ordinal_numbers" head="primera" />
-			<frame type="People" head="persona" />
-			<frame type="Quantified_mass" head="muchas" />
-			<frame type="Relative_time" head="siguientes" />
-			<frame type="Spatial_contact" head="en">
-				<argument type="Figure" dependent="muchas cosas" />
-				<argument type="Ground" dependent="las p&#225;ginas siguientes y en primera persona" /></frame>
-			<frame type="Statement" head="Digo">
-				<argument type="Message" dependent="muchas cosas en las p&#225;ginas siguientes y en primera persona" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -31,28 +21,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Awareness" head="saben">
-				<argument type="Cognizer" dependent="la mayor parte de los lectores" />
-				<argument type="Content" dependent="que es" /></frame>
-			<frame type="Being_necessary" head="necesario">
-				<argument type="Dependent" dependent="escribir un" /></frame>
-			<frame type="Degree" head="lo" />
-			<frame type="Explaining_the_facts" head="explicar">
-				<argument type="State_of_affairs" dependent="el t&#237;tulo" /></frame>
-			<frame type="Goal" head="para">
-				<argument type="Trajector" dependent="sea necesario" />
-				<argument type="Landmark" dependent="escribir un" /></frame>
-			<frame type="Opinion" head="creo">
-				<argument type="Opinion" dependent="sea necesario escribir un pr&#243;logo a no ser para explicar el t&#237;tulo aunque" /></frame>
-			<frame type="Reading_perception" head="lectores" />
-			<frame type="Text_creation" head="escribir">
-				<argument type="Text" dependent="un" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -82,14 +56,14 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0fs0">la</token><token pos="ncfs000">gente</token>
 		</theme>
 		<rheme>
 			<token pos="p0300000">se</token><token pos="vmip3s0">recoge</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Coming_to_believe" head="recoge" />
+			<main_frame type="Coming_to_believe" head="recoge" />
 			<frame type="Direction" head="se" />
 			<frame type="Motion" head="se">
 				<argument type="Goal" dependent="a dormir" /></frame>
@@ -105,7 +79,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0fs0">la</token><token pos="ncfs000">naturaleza</token>
 		</theme>
 		<rheme>
@@ -129,7 +103,7 @@
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="da0fs0">La</token><token pos="ncfs000">verdad</token>
 		</theme>
 		<rheme>
@@ -138,15 +112,27 @@
 		<semantic_roles>
 			<frame type="Affirm_or_deny" head="negar">
 				<argument type="Message" dependent="que cuando llega el turno todos mueren esa muerte ejemplar que nunca crea adeptos ni adictos ( excepto los suicidas )" /></frame>
+			<frame type="Affirm_or_deny" head="negar">
+				<argument type="Message" dependent="que cuando llega el turno todos mueren esa muerte ejemplar que nunca crea adeptos ni adictos ( excepto los suicidas )" /></frame>
 			<frame type="Becoming_aware" head="aprende">
 				<argument type="Cognizer" dependent="nadie" /></frame>
+			<main_frame type="Becoming_aware" head="aprende">
+				<argument type="Cognizer" dependent="nadie" /></main_frame>
+			<frame type="Bringing" head="llevan">
+				<argument type="Carrier" dependent="incluidos los suicidas" />
+				<argument type="Goal" dependent="a cabo con la mayor perfecci&#243;n" /></frame>
 			<frame type="Bringing" head="llevan">
 				<argument type="Carrier" dependent="incluidos los suicidas" />
 				<argument type="Goal" dependent="a cabo con la mayor perfecci&#243;n" /></frame>
 			<frame type="Death" head="muerte" />
+			<frame type="Death" head="muerte" />
+			<frame type="Inclusion" head="incluidos" />
 			<frame type="Inclusion" head="incluidos" />
 			<frame type="Intentionally_create" head="crea">
 				<argument type="Created_entity" dependent="adeptos ni adictos" /></frame>
+			<frame type="Intentionally_create" head="crea">
+				<argument type="Created_entity" dependent="adeptos ni adictos" /></frame>
+			<frame type="Killing" head="suicidas" />
 			<frame type="Killing" head="suicidas" />
 		</semantic_roles>
 	</sentence>
@@ -160,31 +146,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Accomplishment" head="lograr">
-				<argument type="Goal" dependent="alguna clase de perfecci&#243;n" /></frame>
-			<frame type="Amounting_to" head="total" />
-			<frame type="Awareness" head="consciente" />
-			<frame type="Death" head="muerte" />
-			<frame type="Desiring" head="deseo" />
-			<frame type="Opinion" head="piensa">
-				<argument type="Cognizer" dependent="nadie" />
-				<argument type="Opinion" dependent="que la &#250;nica indiscutible y total est&#225; en la muerte" /></frame>
-			<frame type="Rescuing" head="salva">
-				<argument type="Patient" dependent="lo &#250;nico que" />
-				<argument type="Asset" dependent="ante nosotros mismos y tal vez ante el orden supremo del universo" /></frame>
-			<frame type="Sequence" head="orden">
-				<argument type="Entities" dependent="del universo" /></frame>
-			<frame type="Sole_instance" head="&#250;nico que" />
-			<frame type="Type" head="tal">
-				<argument type="Category" dependent="de perfecci&#243;n" /></frame>
-			<frame type="Typicality" head="curioso">
-				<argument type="State_of_affairs" dependent="a pesar de que lo &#250;nico que nos salva ante nosotros mismos y tal vez ante el orden supremo del" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="pp1csn00">Yo</token>
 		</theme>
 		<rheme>
@@ -193,12 +160,14 @@
 		<semantic_roles>
 			<frame type="Telling" head="dec&#237;rmelo">
 				<argument type="Message" dependent="m&#237; mismo" /></frame>
+			<main_frame type="Telling" head="dec&#237;rmelo">
+				<argument type="Message" dependent="m&#237; mismo" /></main_frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="F">
+		<theme concept_ref="c_5">
 			<token pos="di0fs0">Una</token><token pos="ncfs000">convicci&#243;n</token><token pos="aq0fs0">axiom&#225;tica</token>
 		</theme>
 		<rheme>

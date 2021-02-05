@@ -9,15 +9,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Cause_motion" head="sacar">
-				<argument type="Theme" dependent="qu&#233; caj&#243;n" /></frame>
-			<frame type="Duration_description" head="durante" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -27,8 +24,8 @@
 			<frame type="Calendric_unit" head="a&#241;os" />
 			<frame type="Cardinal_numbers" head="aquel" />
 			<frame type="Cardinal_numbers" head="cinco" />
-			<frame type="Containing" head="que conten&#237;a">
-				<argument type="Contents" dependent="tesoros de los &#250;ltimos cinco a&#241;os" /></frame>
+			<main_frame type="Containing" head="que conten&#237;a">
+				<argument type="Contents" dependent="tesoros de los &#250;ltimos cinco a&#241;os" /></main_frame>
 			<frame type="Deciding" head="decidi&#243;">
 				<argument type="Time" dependent="de los &#250;ltimos" />
 				<argument type="Manner" dependent="el de arriba" /></frame>
@@ -52,12 +49,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Contingency" head="funci&#243;n" />
-			<frame type="Giving" head="regalo">
-				<argument type="Donor" dependent="de su abuela" /></frame>
-			<frame type="Motion" head="hab&#237;a">
-				<argument type="Theme" dependent="un regalo de su abuela cuya funci&#243;n" />
-				<argument type="Goal" dependent="de la dudosamente decorativa" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -70,11 +61,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Placing" head="coloc&#243;">
-				<argument type="Goal" dependent="en el" /></frame>
-			<frame type="Ranked_expectation" head="entero" />
-			<frame type="Spatial_contact" head="en">
-				<argument type="Ground" dependent="sac&#243; el" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -87,14 +73,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Awareness" head="saber">
-				<argument type="Content" dependent="cu&#225;l escoger primero" /></frame>
-			<frame type="Breathing" head="suspir&#243;">
-				<argument type="Goal" dependent="suspir&#243;, embelesada ante el esplendor de sus" /></frame>
-			<frame type="Choosing" head="escoger">
-				<argument type="Cognizer" dependent="cu&#225;l" /></frame>
-			<frame type="First_experience" head="primero">
-				<argument type="Experience" dependent="saber cu&#225;l" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -107,8 +85,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Manipulation" head="sob&#243;" />
-			<frame type="Statement" head="recont&#243;" />
 		</semantic_roles>
 	</sentence>
 
@@ -121,29 +97,24 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Closure" head="colilla de" />
-			<frame type="Color" head="rojo" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0ms0">El</token><token pos="ncms000">cigarro</token>
 		</theme>
 		<rheme>
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Becoming_dry" head="deshojado" />
-			<frame type="Manufacturing" head="de">
-				<argument type="Product" dependent="de papel" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="np0000p">Antonia</token>
 		</theme>
 		<rheme>
@@ -160,7 +131,7 @@
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="dp3cs0">su</token><token pos="ncfs000">saliva</token>
 		</theme>
 		<rheme>
@@ -182,7 +153,7 @@
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="pp3fs000">ella</token>
 		</theme>
 		<rheme>
@@ -194,9 +165,9 @@
 			<frame type="Cardinal_numbers" head="dos" />
 			<frame type="Importance" head="llaves" />
 			<frame type="People_by_residence" head="vecino" />
-			<frame type="Waiting" head="aguardaba">
+			<main_frame type="Waiting" head="aguardaba">
 				<argument type="Manner" dependent="cada d&#237;a" />
-				<argument type="Purpose" dependent="ruido de las llaves del vecino" /></frame>
+				<argument type="Purpose" dependent="ruido de las llaves del vecino" /></main_frame>
 		</semantic_roles>
 	</sentence>
 
@@ -209,13 +180,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Body_parts" head="hombros" />
-			<frame type="Conquering" head="capturar">
-				<argument type="Theme" dependent="un instante de su perfil" /></frame>
-			<frame type="Expansion" head="envergadura de">
-				<argument type="Item" dependent="de sus hombros" /></frame>
-			<frame type="Self_motion" head="corr&#237;a">
-				<argument type="Goal" dependent="a la mirilla para capturar as&#237; un instante de su perfil o la golosa envergadura de sus hombros" /></frame>
 		</semantic_roles>
 	</sentence>
 

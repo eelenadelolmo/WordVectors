@@ -26,10 +26,10 @@
 
 
 	<concepts>
-		<concept id="A">Un moscón verde y a todas luces moribundo</concept>
-		<concept id="B">La ropa</concept>
-		<concept id="C">la tarde</concept>
-		<concept id="D">Antonia</concept>
+		<concept id="c_0">Un moscón verde y a todas luces moribundo</concept>
+		<concept id="c_1">La ropa</concept>
+		<concept id="c_2">la tarde</concept>
+		<concept id="c_3">Antonia</concept>
 	</concepts>
 
 	<sentence>
@@ -40,20 +40,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Attempt" head="intentando">
-				<argument type="Goal" dependent="deshacer el agobio que tenía atravesado en el pecho de la misma manera que se atraviesa la espina de un pescado" /></frame>
-			<frame type="Breathing" head="Suspiró">
-				<argument type="Goal" dependent="intentando deshacer el agobio que tenía atravesado en el pecho de la misma manera que se atraviesa la espina de un pescado" /></frame>
-			<frame type="Identicality" head="la misma">
-				<argument type="Type" dependent="manera que se atraviesa la espina de un pescado" /></frame>
-			<frame type="Means" head="manera">
-				<argument type="Purpose" dependent="la espina de un pescado" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="di0ms0">Un</token><token pos="ncms000">moscón</token><token pos="aq0cs0">verde</token><token pos="cc">y</token><token pos="sps00">a</token><token pos="di0fp0">todas</token><token pos="ncfp000">luces</token><token pos="aq0ms0">moribundo</token>
 		</theme>
 		<rheme>
@@ -69,7 +61,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0fs0">La</token><token pos="ncfs000">ropa</token>
 		</theme>
 		<rheme>
@@ -99,7 +91,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0fs0">la</token><token pos="ncfs000">tarde</token>
 		</theme>
 		<rheme>
@@ -107,12 +99,19 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Calendric_unit" head="la tarde" />
+			<frame type="Calendric_unit" head="la tarde" />
+			<main_frame type="Commitment" head="amenazaba">
+				<argument type="Medium" dependent="la tarde" />
+				<argument type="Message" dependent="no acabar nunca" /></main_frame>
 			<frame type="Commitment" head="amenazaba">
 				<argument type="Medium" dependent="la tarde" />
 				<argument type="Message" dependent="no acabar nunca" /></frame>
 			<frame type="Intentionally_act" head="la" />
+			<frame type="Intentionally_act" head="la" />
 			<frame type="Process_end" head="acabar">
 				<argument type="Process" dependent="la tarde" /></frame>
+			<main_frame type="Process_end" head="acabar">
+				<argument type="Process" dependent="la tarde" /></main_frame>
 		</semantic_roles>
 	</sentence>
 
@@ -125,23 +124,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Excreting" head="sudor" />
-			<frame type="Possibility" head="pudiera">
-				<argument type="Possible_event" dependent="lo" />
-				<argument type="Possible_event" dependent="echarme la siesta" />
-				<argument type="Possible_event" dependent="la bata" /></frame>
-			<frame type="Similarity" head="como" />
-			<frame type="Taking_time" head="se">
-				<argument type="Agent" dependent="lo" />
-				<argument type="Time_length" dependent="la siesta" />
-				<argument type="Activity" dependent="la bata" /></frame>
-			<frame type="Telling" head="dijo" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="pp2fs000">ella</token>
 		</theme>
 		<rheme>
@@ -167,14 +155,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Needing" head="necesitaba">
-				<argument type="Requirement" dependent="despertador" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="ncms000">llanto</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">niño</token>
 		</theme>
 		<rheme>
@@ -182,16 +168,16 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Becoming_silent" head="silencio" />
-			<frame type="Cutting" head="cortó">
+			<main_frame type="Cutting" head="cortó">
 				<argument type="Item" dependent="un niño" />
-				<argument type="Item" dependent="el silencio" /></frame>
+				<argument type="Item" dependent="el silencio" /></main_frame>
 			<frame type="Interior_profile_relation" head="por">
 				<argument type="Figure" dependent="llanto de un niño cortó el silencio" />
 				<argument type="Ground" dependent="del patio vecinal" /></frame>
 			<frame type="Kinship" head="niño" />
-			<frame type="Self_motion" head="cortó">
+			<main_frame type="Self_motion" head="cortó">
 				<argument type="Source" dependent="un niño" />
-				<argument type="Direction" dependent="por la" /></frame>
+				<argument type="Direction" dependent="por la" /></main_frame>
 			<frame type="Vocalizations" head="llanto">
 				<argument type="Sound_source" dependent="un niño" /></frame>
 		</semantic_roles>
@@ -206,9 +192,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Bringing" head="los" />
-			<frame type="Possibility" head="los">
-				<argument type="Possible_event" dependent="No soportaba los domingos" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -221,62 +204,91 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Businesses" head="almacenes" />
-			<frame type="Calendric_unit" head="días" />
-			<frame type="Calendric_unit" head="hora" />
-			<frame type="Change_position_on_a_scale" head="bajar">
-				<argument type="Final_value" dependent="días de diario siempre" />
-				<argument type="Time" dependent="a última hora a" />
-				<argument type="Final_state" dependent="a comprar medio litro de leche" /></frame>
-			<frame type="Commerce_buy" head="comprar">
-				<argument type="Goods" dependent="de leche" /></frame>
-			<frame type="Food" head="leche" />
-			<frame type="Frequency" head="diario" />
-			<frame type="Frequency" head="siempre">
-				<argument type="Event" dependent="podía" /></frame>
-			<frame type="Interior_profile_relation" head="por">
-				<argument type="Figure" dependent="una vuelta por" />
-				<argument type="Ground" dependent="alguno de los grandes almacenes" /></frame>
-			<frame type="Locative_relation" head="se">
-				<argument type="Figure" dependent="siempre se podía bajar a" />
-				<argument type="Ground" dependent="última hora" /></frame>
-			<frame type="Motion" head="se">
-				<argument type="Time" dependent="a última hora a" /></frame>
-			<frame type="Possibility" head="podía">
-				<argument type="Time" dependent="días de diario" />
-				<argument type="Possible_event" dependent="bajar a última hora a comprar medio litro de leche, o una pizca de azafrán ," /></frame>
-			<frame type="Self_motion" head="vuelta">
-				<argument type="Place" dependent="alguno de los grandes almacenes" /></frame>
-			<frame type="Spatial_contact" head="se">
-				<argument type="Ground" dependent="días de diario" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="np0000p">Antonia</token>
 		</theme>
 		<rheme>
 			<token pos="fc">,</token><token pos="sps00">tras</token><token pos="vmn0000">regresar</token><token pos="sps00">de</token><token pos="ncfs000">misa</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">pan</token><token pos="fc">,</token><token pos="rn">no</token><token pos="vmii3s0">iba</token><token pos="sps00">a</token><token pos="vmn0000">volver</token><token pos="sps00">a</token><token pos="vmn0000">hablar</token><token pos="sps00">con</token><token pos="pi0cs000">nadie</token><token pos="sps00">hasta</token><token pos="da0ms0">el</token><token pos="ncms000">día</token><token pos="aq0cs0">siguiente</token>
 		</rheme>
 		<semantic_roles>
+			<main_frame type="Arriving" head="regresar">
+				<argument type="Goal" dependent="de misa con el pan" /></main_frame>
+			<frame type="Arriving" head="regresar">
+				<argument type="Goal" dependent="de misa con el pan" /></frame>
+			<frame type="Arriving" head="regresar">
+				<argument type="Goal" dependent="de misa con el pan" /></frame>
 			<frame type="Arriving" head="regresar">
 				<argument type="Goal" dependent="de misa con el pan" /></frame>
 			<frame type="Awareness" head="sabía">
 				<argument type="Content" dependent=", tras regresar de misa con el pan" /></frame>
+			<frame type="Awareness" head="sabía">
+				<argument type="Content" dependent=", tras regresar de misa con el pan" /></frame>
+			<frame type="Awareness" head="sabía">
+				<argument type="Content" dependent=", tras regresar de misa con el pan" /></frame>
+			<frame type="Awareness" head="sabía">
+				<argument type="Content" dependent=", tras regresar de misa con el pan" /></frame>
 			<frame type="Calendric_unit" head="día" />
+			<frame type="Calendric_unit" head="día" />
+			<frame type="Calendric_unit" head="día" />
+			<frame type="Calendric_unit" head="día" />
+			<frame type="Food" head="el pan" />
+			<frame type="Food" head="el pan" />
+			<frame type="Food" head="el pan" />
 			<frame type="Food" head="el pan" />
 			<frame type="Motion" head="tras">
 				<argument type="Goal" dependent="a volver a hablar con nadie hasta el día siguiente" /></frame>
+			<frame type="Motion" head="tras">
+				<argument type="Goal" dependent="a volver a hablar con nadie hasta el día siguiente" /></frame>
+			<frame type="Motion" head="tras">
+				<argument type="Goal" dependent="a volver a hablar con nadie hasta el día siguiente" /></frame>
+			<frame type="Motion" head="tras">
+				<argument type="Goal" dependent="a volver a hablar con nadie hasta el día siguiente" /></frame>
+			<frame type="Quantified_mass" head="misa">
+				<argument type="Individuals" dependent="con el pan" /></frame>
+			<frame type="Quantified_mass" head="misa">
+				<argument type="Individuals" dependent="con el pan" /></frame>
+			<frame type="Quantified_mass" head="misa">
+				<argument type="Individuals" dependent="con el pan" /></frame>
 			<frame type="Quantified_mass" head="misa">
 				<argument type="Individuals" dependent="con el pan" /></frame>
 			<frame type="Relative_time" head="siguiente">
 				<argument type="Landmark_occasion" dependent="regresar de misa con el pan" />
 				<argument type="Focal_occasion" dependent="no iba a volver a hablar con nadie hasta el día siguiente" /></frame>
+			<frame type="Relative_time" head="siguiente">
+				<argument type="Landmark_occasion" dependent="regresar de misa con el pan" />
+				<argument type="Focal_occasion" dependent="no iba a volver a hablar con nadie hasta el día siguiente" /></frame>
+			<frame type="Relative_time" head="siguiente">
+				<argument type="Landmark_occasion" dependent="regresar de misa con el pan" />
+				<argument type="Focal_occasion" dependent="no iba a volver a hablar con nadie hasta el día siguiente" /></frame>
+			<frame type="Relative_time" head="siguiente">
+				<argument type="Landmark_occasion" dependent="regresar de misa con el pan" />
+				<argument type="Focal_occasion" dependent="no iba a volver a hablar con nadie hasta el día siguiente" /></frame>
+			<frame type="Spatial_contact" head="de">
+				<argument type="Ground" dependent="los domingos Antonia" /></frame>
+			<frame type="Spatial_contact" head="de">
+				<argument type="Ground" dependent="los domingos Antonia" /></frame>
+			<frame type="Spatial_contact" head="de">
+				<argument type="Ground" dependent="los domingos Antonia" /></frame>
 			<frame type="Spatial_contact" head="de">
 				<argument type="Ground" dependent="los domingos Antonia" /></frame>
 			<frame type="Statement" head="hablar" />
+			<frame type="Statement" head="hablar" />
+			<frame type="Statement" head="hablar" />
+			<main_frame type="Statement" head="hablar" />
+			<frame type="Time_vector" head="hasta el">
+				<argument type="Event" dependent="no iba a volver a hablar con nadie" />
+				<argument type="Landmark_event" dependent="el día siguiente" /></frame>
+			<frame type="Time_vector" head="hasta el">
+				<argument type="Event" dependent="no iba a volver a hablar con nadie" />
+				<argument type="Landmark_event" dependent="el día siguiente" /></frame>
+			<frame type="Time_vector" head="hasta el">
+				<argument type="Event" dependent="no iba a volver a hablar con nadie" />
+				<argument type="Landmark_event" dependent="el día siguiente" /></frame>
 			<frame type="Time_vector" head="hasta el">
 				<argument type="Event" dependent="no iba a volver a hablar con nadie" />
 				<argument type="Landmark_event" dependent="el día siguiente" /></frame>

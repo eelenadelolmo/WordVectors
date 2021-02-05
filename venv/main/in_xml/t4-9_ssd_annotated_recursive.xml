@@ -9,11 +9,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Death" head="muerte" />
-			<frame type="Importance" head="importante">
-				<argument type="Factor" dependent="&#233;stos, la muerte" /></frame>
-			<frame type="Receiving" head="aceptamos">
-				<argument type="Recipient" dependent="en los dem&#225;s" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -62,13 +57,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Awareness" head="conocemos">
-				<argument type="Content" dependent="la" />
-				<argument type="Content" dependent="quiere repetir nadie" /></frame>
-			<frame type="Cardinal_numbers" head="la" />
-			<frame type="Desiring" head="quiere">
-				<argument type="Experiencer" dependent="nadie" />
-				<argument type="Event" dependent="repetir" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -81,16 +69,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Cardinal_numbers" head="La que" />
-			<frame type="Existence" head="existe">
-				<argument type="Entity" dependent="La que" /></frame>
-			<frame type="Similarity" head="que" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -127,7 +111,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0ms0">El</token><token pos="ncms000">sexo</token>
 		</theme>
 		<rheme>
@@ -146,14 +130,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Desirability" head="grandes" />
-			<frame type="Proportional_quantity" head="se" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="np0000l">Espa&#241;a</token>
 		</theme>
 		<rheme>
@@ -173,7 +155,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">boxeadores</token>
 		</theme>
 		<rheme>

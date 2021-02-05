@@ -2,7 +2,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="dp3cp0">sus</token><token pos="ncfp000">s&#250;plicas</token>
 		</theme>
 		<rheme>
@@ -39,29 +39,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Arriving" head="llegaba">
-				<argument type="Theme" dependent="el olor" />
-				<argument type="Goal" dependent="la puerta" /></frame>
-			<frame type="Be_in_agreement_on_action" head="seg&#250;n">
-				<argument type="Obligation" dependent=", seg&#250;n nos dijo do&#241;a MPG, el olor llegaba hasta la puerta" /></frame>
-			<frame type="Causation" head="porque">
-				<argument type="Effect" dependent="Deb&#237;an ser perfumes" />
-				<argument type="Cause" dependent=", seg&#250;n nos dijo do&#241;a MPG, el olor llegaba hasta la puerta" /></frame>
-			<frame type="Connecting_architecture" head="puerta" />
-			<frame type="Goal" head="hasta">
-				<argument type="Landmark" dependent="MPG" /></frame>
-			<frame type="Required_event" head="ser">
-				<argument type="Required_situation" dependent="ser perfumes" /></frame>
-			<frame type="Sensation" head="olor" />
-			<frame type="Telling" head="dijo">
-				<argument type="Speaker" dependent="MPG" />
-				<argument type="Message" dependent="el olor llegaba hasta la puerta" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0fs0">La</token><token pos="ncfs000">v&#237;ctima</token>
 		</theme>
 		<rheme>
@@ -74,31 +57,43 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="ncms000">don</token><token pos="np00000">Antonio</token>
 		</theme>
 		<rheme>
 			<token pos="vmis3s0">intent&#243;</token><token pos="vmn0000">huir</token>
 		</rheme>
 		<semantic_roles>
+			<main_frame type="Attempt" head="intent&#243;">
+				<argument type="Goal" dependent="entabl&#243;" /></main_frame>
 			<frame type="Attempt" head="intent&#243;">
 				<argument type="Goal" dependent="entabl&#243;" /></frame>
 			<frame type="Cardinal_numbers" head="dos" />
+			<frame type="Cardinal_numbers" head="dos" />
+			<frame type="Fleeing" head="entabl&#243;" />
 			<frame type="Fleeing" head="entabl&#243;" />
 			<frame type="Hostile_encounter" head="forcejeo" />
+			<frame type="Hostile_encounter" head="forcejeo" />
+			<frame type="Interior_profile_relation" head="entre">
+				<argument type="Figure" dependent="entabl&#243; un forcejeo" />
+				<argument type="Ground" dependent="los dos" /></frame>
 			<frame type="Interior_profile_relation" head="entre">
 				<argument type="Figure" dependent="entabl&#243; un forcejeo" />
 				<argument type="Ground" dependent="los dos" /></frame>
 			<frame type="Locative_relation" head="entabl&#243;">
 				<argument type="Figure" dependent="intent&#243; huir" />
 				<argument type="Ground" dependent="entre los dos" /></frame>
+			<frame type="Locative_relation" head="entabl&#243;">
+				<argument type="Figure" dependent="intent&#243; huir" />
+				<argument type="Ground" dependent="entre los dos" /></frame>
+			<frame type="Wealthiness" head="entabl&#243;" />
 			<frame type="Wealthiness" head="entabl&#243;" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="da0ms0">el</token><token pos="nccs000">homicida</token>
 		</theme>
 		<rheme>
@@ -106,16 +101,42 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Hostile_encounter" head="afrontamiento" />
+			<frame type="Hostile_encounter" head="afrontamiento" />
+			<frame type="Hostile_encounter" head="afrontamiento" />
+			<frame type="Killing" head="homicida" />
+			<frame type="Killing" head="homicida" />
 			<frame type="Killing" head="homicida" />
 			<frame type="Natural_features" head="cayeron" />
+			<frame type="Natural_features" head="cayeron" />
+			<frame type="Natural_features" head="cayeron" />
+			<frame type="Operating_a_system" head="se">
+				<argument type="System" dependent="el homicida" />
+				<argument type="System" dependent="sentarse sobre &#233;l" /></frame>
+			<frame type="Operating_a_system" head="se">
+				<argument type="System" dependent="el homicida" />
+				<argument type="System" dependent="sentarse sobre &#233;l" /></frame>
 			<frame type="Operating_a_system" head="se">
 				<argument type="System" dependent="el homicida" />
 				<argument type="System" dependent="sentarse sobre &#233;l" /></frame>
 			<frame type="Posture" head="sentarse">
 				<argument type="Agent" dependent="el homicida" />
 				<argument type="Location" dependent="sobre &#233;l" /></frame>
+			<main_frame type="Posture" head="sentarse">
+				<argument type="Agent" dependent="el homicida" />
+				<argument type="Location" dependent="sobre &#233;l" /></main_frame>
+			<frame type="Posture" head="sentarse">
+				<argument type="Agent" dependent="el homicida" />
+				<argument type="Location" dependent="sobre &#233;l" /></frame>
 			<frame type="Quantified_mass" head="ambos">
 				<argument type="Mass" dependent="al suelo" /></frame>
+			<frame type="Quantified_mass" head="ambos">
+				<argument type="Mass" dependent="al suelo" /></frame>
+			<frame type="Quantified_mass" head="ambos">
+				<argument type="Mass" dependent="al suelo" /></frame>
+			<frame type="Spatial_contact" head="se">
+				<argument type="Figure" dependent="el homicida" /></frame>
+			<frame type="Spatial_contact" head="se">
+				<argument type="Figure" dependent="el homicida" /></frame>
 			<frame type="Spatial_contact" head="se">
 				<argument type="Figure" dependent="el homicida" /></frame>
 		</semantic_roles>
@@ -123,7 +144,7 @@
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="pr0cs000">quien</token>
 		</theme>
 		<rheme>
@@ -131,39 +152,113 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Body_parts" head="cabeza" />
+			<frame type="Body_parts" head="cabeza" />
+			<frame type="Body_parts" head="cabeza" />
+			<frame type="Body_parts" head="cara de" />
+			<frame type="Body_parts" head="cara de" />
 			<frame type="Body_parts" head="cara de" />
 			<frame type="Capability" head="puedo">
 				<argument type="Event" dependent="m&#225;s -, aparentando grandes sufrimientos" /></frame>
+			<main_frame type="Capability" head="puedo">
+				<argument type="Event" dependent="m&#225;s -, aparentando grandes sufrimientos" /></main_frame>
+			<main_frame type="Capability" head="puedo">
+				<argument type="Event" dependent="m&#225;s -, aparentando grandes sufrimientos" /></main_frame>
+			<frame type="Cardinal_numbers" head="tres">
+				<argument type="Entity" dependent="de cigarrillos" /></frame>
+			<frame type="Cardinal_numbers" head="tres">
+				<argument type="Entity" dependent="de cigarrillos" /></frame>
 			<frame type="Cardinal_numbers" head="tres">
 				<argument type="Entity" dependent="de cigarrillos" /></frame>
 			<frame type="Catastrophe" head="v&#237;ctima" />
+			<frame type="Catastrophe" head="v&#237;ctima" />
+			<frame type="Catastrophe" head="v&#237;ctima" />
+			<frame type="Cause_change" head="dando">
+				<argument type="Entity" dependent="los pitillos de" /></frame>
+			<frame type="Cause_change" head="dando">
+				<argument type="Entity" dependent="los pitillos de" /></frame>
 			<frame type="Cause_change" head="dando">
 				<argument type="Entity" dependent="los pitillos de" /></frame>
 			<frame type="Clothing_parts" head="bolsillo" />
+			<frame type="Clothing_parts" head="bolsillo" />
+			<frame type="Clothing_parts" head="bolsillo" />
+			<frame type="Conduct" head="comportamiento">
+				<argument type="Manner" dependent="verdaderamente anormal" /></frame>
+			<frame type="Conduct" head="comportamiento">
+				<argument type="Manner" dependent="verdaderamente anormal" /></frame>
 			<frame type="Conduct" head="comportamiento">
 				<argument type="Manner" dependent="verdaderamente anormal" /></frame>
 			<frame type="Evidence" head="aparentando">
 				<argument type="Proposition" dependent="paquete de cigarrillos de su bolsillo y, dando muestras de un comportamiento verdaderamente anormal, se fum&#243; toda la cajetilla encendiendo los pitillos de tres en tres" /></frame>
+			<frame type="Evidence" head="aparentando">
+				<argument type="Proposition" dependent="paquete de cigarrillos de su bolsillo y, dando muestras de un comportamiento verdaderamente anormal, se fum&#243; toda la cajetilla encendiendo los pitillos de tres en tres" /></frame>
+			<frame type="Evidence" head="aparentando">
+				<argument type="Proposition" dependent="paquete de cigarrillos de su bolsillo y, dando muestras de un comportamiento verdaderamente anormal, se fum&#243; toda la cajetilla encendiendo los pitillos de tres en tres" /></frame>
+			<frame type="Feigning" head="dando">
+				<argument type="Original" dependent="grandes sufrimientos" /></frame>
+			<frame type="Feigning" head="dando">
+				<argument type="Original" dependent="grandes sufrimientos" /></frame>
 			<frame type="Feigning" head="dando">
 				<argument type="Original" dependent="grandes sufrimientos" /></frame>
 			<frame type="First_experience" head="Primero">
 				<argument type="Experience" dependent="le volc&#243; sobre la cabeza los frascos que a&#250;n no hab&#237;a vaciado, y despu&#233;s sac&#243; un paquete de" /></frame>
+			<frame type="First_experience" head="Primero">
+				<argument type="Experience" dependent="le volc&#243; sobre la cabeza los frascos que a&#250;n no hab&#237;a vaciado, y despu&#233;s sac&#243; un paquete de" /></frame>
+			<frame type="First_experience" head="Primero">
+				<argument type="Experience" dependent="le volc&#243; sobre la cabeza los frascos que a&#250;n no hab&#237;a vaciado, y despu&#233;s sac&#243; un paquete de" /></frame>
+			<frame type="Ingest_substance" head="fum&#243;">
+				<argument type="Substance" dependent="paquete de" /></frame>
+			<frame type="Ingest_substance" head="fum&#243;">
+				<argument type="Substance" dependent="paquete de" /></frame>
 			<frame type="Ingest_substance" head="fum&#243;">
 				<argument type="Substance" dependent="paquete de" /></frame>
 			<frame type="Locative_relation" head="en">
 				<argument type="Figure" dependent="cigarrillos de" />
 				<argument type="Ground" dependent="un" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="cigarrillos de" />
+				<argument type="Ground" dependent="un" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="cigarrillos de" />
+				<argument type="Ground" dependent="un" /></frame>
 			<frame type="Ranked_expectation" head="toda" />
+			<frame type="Ranked_expectation" head="toda" />
+			<frame type="Ranked_expectation" head="toda" />
+			<frame type="Removing" head="dando">
+				<argument type="Goal" dependent="sobre la cabeza" /></frame>
+			<frame type="Removing" head="dando">
+				<argument type="Goal" dependent="sobre la cabeza" /></frame>
 			<frame type="Removing" head="dando">
 				<argument type="Goal" dependent="sobre la cabeza" /></frame>
 			<frame type="Setting_fire" head="encendiendo">
 				<argument type="Cause" dependent="paquete de cigarrillos de su bolsillo y, dando muestras de un comportamiento verdaderamente anormal, se fum&#243; toda" />
 				<argument type="Flame" dependent="de tres en tres y echando grandes bocanadas de humo" /></frame>
+			<frame type="Setting_fire" head="encendiendo">
+				<argument type="Cause" dependent="paquete de cigarrillos de su bolsillo y, dando muestras de un comportamiento verdaderamente anormal, se fum&#243; toda" />
+				<argument type="Flame" dependent="de tres en tres y echando grandes bocanadas de humo" /></frame>
+			<frame type="Setting_fire" head="encendiendo">
+				<argument type="Cause" dependent="paquete de cigarrillos de su bolsillo y, dando muestras de un comportamiento verdaderamente anormal, se fum&#243; toda" />
+				<argument type="Flame" dependent="de tres en tres y echando grandes bocanadas de humo" /></frame>
+			<frame type="Sign" head="muestras">
+				<argument type="Indicated" dependent="comportamiento verdaderamente anormal" /></frame>
+			<frame type="Sign" head="muestras">
+				<argument type="Indicated" dependent="comportamiento verdaderamente anormal" /></frame>
 			<frame type="Sign" head="muestras">
 				<argument type="Indicated" dependent="comportamiento verdaderamente anormal" /></frame>
 			<frame type="Spatial_contact" head="en">
 				<argument type="Figure" dependent="pitillos de tres en tres y echando grandes bocanadas de humo" />
 				<argument type="Ground" dependent="la cara de" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="pitillos de tres en tres y echando grandes bocanadas de humo" />
+				<argument type="Ground" dependent="la cara de" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="pitillos de tres en tres y echando grandes bocanadas de humo" />
+				<argument type="Ground" dependent="la cara de" /></frame>
+			<frame type="Taking_time" head="dando">
+				<argument type="Time_length" dependent="grandes bocanadas de humo" />
+				<argument type="Activity" dependent="sobre la cara de la v&#237;ctima" /></frame>
+			<frame type="Taking_time" head="dando">
+				<argument type="Time_length" dependent="grandes bocanadas de humo" />
+				<argument type="Activity" dependent="sobre la cara de la v&#237;ctima" /></frame>
 			<frame type="Taking_time" head="dando">
 				<argument type="Time_length" dependent="grandes bocanadas de humo" />
 				<argument type="Activity" dependent="sobre la cara de la v&#237;ctima" /></frame>
@@ -172,7 +267,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0fs0">la</token><token pos="ncfs000">v&#237;ctima</token>
 		</theme>
 		<rheme>
@@ -181,19 +276,38 @@
 		<semantic_roles>
 			<frame type="Attempt" head="intentando">
 				<argument type="Goal" dependent="una huida desesperada" /></frame>
+			<frame type="Attempt" head="intentando">
+				<argument type="Goal" dependent="una huida desesperada" /></frame>
+			<frame type="Catastrophe" head="v&#237;ctima">
+				<argument type="Undesirable_event" dependent="v&#237;ctima logr&#243; escurrirse de debajo de la asesina fumadora" /></frame>
 			<frame type="Catastrophe" head="v&#237;ctima">
 				<argument type="Undesirable_event" dependent="v&#237;ctima logr&#243; escurrirse de debajo de la asesina fumadora" /></frame>
 			<frame type="Departing" head="descuido" />
+			<frame type="Departing" head="descuido" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="ve que en un descuido" /></frame>
 			<frame type="Interior_profile_relation" head="en">
 				<argument type="Ground" dependent="ve que en un descuido" /></frame>
 			<frame type="Killing" head="asesina" />
+			<frame type="Killing" head="asesina" />
+			<main_frame type="Operating_a_system" head="logr&#243;">
+				<argument type="System" dependent="la v&#237;ctima" />
+				<argument type="System" dependent="escurrirse de debajo de la asesina fumadora" /></main_frame>
 			<frame type="Operating_a_system" head="logr&#243;">
 				<argument type="System" dependent="la v&#237;ctima" />
 				<argument type="System" dependent="escurrirse de debajo de la asesina fumadora" /></frame>
 			<frame type="Perception_experience" head="se ve">
 				<argument type="Phenomenon" dependent="ve que en un descuido" /></frame>
+			<frame type="Perception_experience" head="se ve">
+				<argument type="Phenomenon" dependent="ve que en un descuido" /></frame>
 			<frame type="Posture" head="puso">
 				<argument type="Location" dependent="intentando una huida desesperada" /></frame>
+			<frame type="Posture" head="puso">
+				<argument type="Location" dependent="intentando una huida desesperada" /></frame>
+			<frame type="Self_motion" head="descuido">
+				<argument type="Time" dependent="en un descuido" />
+				<argument type="Goal" dependent="la v&#237;ctima" />
+				<argument type="Duration" dependent="de la asesina fumadora" /></frame>
 			<frame type="Self_motion" head="descuido">
 				<argument type="Time" dependent="en un descuido" />
 				<argument type="Goal" dependent="la v&#237;ctima" />
@@ -203,7 +317,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="dp2cs0">su</token><token pos="ncms000">destino</token>
 		</theme>
 		<rheme>
@@ -224,7 +338,7 @@
 
 
 	<sentence>
-		<theme concept_ref="F">
+		<theme concept_ref="c_5">
 			<token pos="da0ms0">La</token><token pos="np0000o">Bella</token>
 		</theme>
 		<rheme>
@@ -243,7 +357,7 @@
 
 
 	<sentence>
-		<theme concept_ref="G">
+		<theme concept_ref="c_6">
 			<token pos="da0fs0">la</token><token pos="aq0fs0">sanguinaria</token><token pos="ncfs000">mujerzuela</token>
 		</theme>
 		<rheme>
@@ -261,7 +375,7 @@
 
 
 	<sentence>
-		<theme concept_ref="H">
+		<theme concept_ref="c_7">
 			<token pos="da0fs0">la</token><token pos="ncfs000">casa</token>
 		</theme>
 		<rheme>
@@ -285,7 +399,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="pd0ns000">esto</token>
 		</theme>
 		<rheme>

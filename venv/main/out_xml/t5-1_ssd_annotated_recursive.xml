@@ -26,16 +26,16 @@
 
 
 	<concepts>
-		<concept id="A">Esto , y los gritos que se oían</concept>
-		<concept id="B">Doña MPG</concept>
-		<concept id="C">el sexo débil</concept>
-		<concept id="D">La mujerona</concept>
-		<concept id="E">La Bella</concept>
-		<concept id="F">Don Antonio</concept>
+		<concept id="c_0">Esto , y los gritos que se oían</concept>
+		<concept id="c_1">Doña MPG</concept>
+		<concept id="c_2">el sexo débil</concept>
+		<concept id="c_3">La mujerona</concept>
+		<concept id="c_4">La Bella</concept>
+		<concept id="c_5">Don Antonio</concept>
 	</concepts>
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="pd0ns000">Esto</token><token pos="fc">,</token><token pos="cc">y</token><token pos="da0mp0">los</token><token pos="ncmp000">gritos</token><token pos="pr0cn000">que</token><token pos="p0000000">se</token><token pos="vmii3p0">oían</token>
 		</theme>
 		<rheme>
@@ -43,17 +43,32 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Architectural_part" head="rendija" />
+			<frame type="Architectural_part" head="rendija" />
+			<frame type="Capability" head="pudo">
+				<argument type="Entity" dependent="Esto, y los gritos que se oían, alarmaron a doña MPG, vecina de la víctima ," />
+				<argument type="Event" dependent="seguir los acontecimientos desde el" /></frame>
 			<frame type="Capability" head="pudo">
 				<argument type="Entity" dependent="Esto, y los gritos que se oían, alarmaron a doña MPG, vecina de la víctima ," />
 				<argument type="Event" dependent="seguir los acontecimientos desde el" /></frame>
 			<frame type="Catastrophe" head="víctima">
 				<argument type="Undesirable_event" dependent="vecina de" /></frame>
+			<frame type="Catastrophe" head="víctima">
+				<argument type="Undesirable_event" dependent="vecina de" /></frame>
 			<frame type="Departing" head="se" />
+			<frame type="Departing" head="se" />
+			<frame type="Event" head="acontecimientos" />
 			<frame type="Event" head="acontecimientos" />
 			<frame type="Experiencer_obj" head="alarmaron">
 				<argument type="Experiencer" dependent="MPG" /></frame>
+			<main_frame type="Experiencer_obj" head="alarmaron">
+				<argument type="Experiencer" dependent="MPG" /></main_frame>
+			<frame type="Make_noise" head="gritos" />
 			<frame type="Make_noise" head="gritos" />
 			<frame type="People_by_residence" head="vecina" />
+			<frame type="People_by_residence" head="vecina" />
+			<main_frame type="Perception_experience" head="oían">
+				<argument type="Phenomenon" dependent="los gritos que" />
+				<argument type="Phenomenon" dependent="MPG" /></main_frame>
 			<frame type="Perception_experience" head="oían">
 				<argument type="Phenomenon" dependent="los gritos que" />
 				<argument type="Phenomenon" dependent="MPG" /></frame>
@@ -61,6 +76,12 @@
 				<argument type="Possible_event" dependent="los gritos que" />
 				<argument type="Possible_event" dependent="gritos que" />
 				<argument type="Possible_event" dependent="desde el descansillo, a través de una rendija" /></frame>
+			<frame type="Possibility" head="pudo">
+				<argument type="Possible_event" dependent="los gritos que" />
+				<argument type="Possible_event" dependent="gritos que" />
+				<argument type="Possible_event" dependent="desde el descansillo, a través de una rendija" /></frame>
+			<frame type="Relative_time" head="seguir">
+				<argument type="Landmark_occasion" dependent="acontecimientos desde el" /></frame>
 			<frame type="Relative_time" head="seguir">
 				<argument type="Landmark_occasion" dependent="acontecimientos desde el" /></frame>
 		</semantic_roles>
@@ -76,21 +97,12 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Modality_Reporter" head="quien " />
-			<frame type="Arriving" head="llegaría" />
-			<frame type="Being_named" head="nombre" />
-			<frame type="Causation" head="porque">
-				<argument type="Effect" dependent="su nombre" />
-				<argument type="Cause" dependent="creí que la cosa no llegaría a tanto y también por susto -" /></frame>
-			<frame type="Certainty" head="creí">
-				<argument type="Content" dependent="que la cosa no llegaría a tanto y también por susto -" /></frame>
-			<frame type="Desiring" head="quiere">
-				<argument type="Event" dependent="publiquemos su nombre" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="np0000l">Doña</token><token pos="np0000l">MPG</token>
 		</theme>
 		<rheme>
@@ -114,22 +126,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Arriving" head="llegó" />
-			<frame type="Killing" head="homicida" />
-			<frame type="Manipulation" head="sujetaba">
-				<argument type="Time" dependent="Cuando ella llegó" />
-				<argument type="Entity" dependent="la homicida" />
-				<argument type="Bodypart_of_agent" dependent="don" />
-				<argument type="Place" dependent="por las solapas" /></frame>
-			<frame type="Temporal_collocation" head="Cuando">
-				<argument type="Landmark_event" dependent="ella llegó" />
-				<argument type="Trajector_event" dependent="la homicida sujetaba a don Antonio por las solapas" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0ms0">el</token><token pos="ncms000">sexo</token><token pos="aq0cs0">débil</token>
 		</theme>
 		<rheme>
@@ -141,14 +143,14 @@
 				<argument type="Event" dependent="de todo tipo de ensañamiento" /></frame>
 			<frame type="Cardinal_numbers" head="una" />
 			<frame type="Desirability" head="infortunado" />
-			<frame type="Evidence" head="demuestra">
-				<argument type="Proposition" dependent="que no siempre el sexo débil es el débil, sobre todo cuando nos encontramos con una energúmena como La Bella ," /></frame>
+			<main_frame type="Evidence" head="demuestra">
+				<argument type="Proposition" dependent="que no siempre el sexo débil es el débil, sobre todo cuando nos encontramos con una energúmena como La Bella ," /></main_frame>
 			<frame type="Frequency" head="siempre">
 				<argument type="Event" dependent="el sexo débil es" />
 				<argument type="Event" dependent="el débil" /></frame>
 			<frame type="Make_acquaintance" head="encontramos">
 				<argument type="Individual_2" dependent="como La Bella" /></frame>
-			<frame type="Morality_evaluation" head="morales" />
+			<main_frame type="Morality_evaluation" head="morales" />
 			<frame type="Possibility" head="podía">
 				<argument type="Possible_event" dependent="como La Bella, sin principios morales y capaz de todo tipo de ensañamiento" /></frame>
 			<frame type="Similarity" head="como">
@@ -164,7 +166,7 @@
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="da0fs0">La</token><token pos="ncfs000">mujerona</token>
 		</theme>
 		<rheme>
@@ -172,21 +174,93 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Body_parts" head="boca" />
+			<frame type="Body_parts" head="boca" />
+			<frame type="Body_parts" head="boca" />
+			<frame type="Body_parts" head="boca" />
+			<frame type="Body_parts" head="boca" />
+			<frame type="Catastrophe" head="víctima">
+				<argument type="Patient" dependent="grandes" />
+				<argument type="Undesirable_event" dependent="insultándole a grandes gritos" /></frame>
+			<frame type="Catastrophe" head="víctima">
+				<argument type="Patient" dependent="grandes" />
+				<argument type="Undesirable_event" dependent="insultándole a grandes gritos" /></frame>
+			<frame type="Catastrophe" head="víctima">
+				<argument type="Patient" dependent="grandes" />
+				<argument type="Undesirable_event" dependent="insultándole a grandes gritos" /></frame>
+			<frame type="Catastrophe" head="víctima">
+				<argument type="Patient" dependent="grandes" />
+				<argument type="Undesirable_event" dependent="insultándole a grandes gritos" /></frame>
 			<frame type="Catastrophe" head="víctima">
 				<argument type="Patient" dependent="grandes" />
 				<argument type="Undesirable_event" dependent="insultándole a grandes gritos" /></frame>
 			<frame type="Cause_emotion" head="insultándole" />
+			<main_frame type="Cause_emotion" head="insultándole" />
+			<frame type="Cause_emotion" head="insultándole" />
+			<frame type="Cause_emotion" head="insultándole" />
+			<frame type="Cause_emotion" head="insultándole" />
+			<frame type="Completeness" head="llenas de">
+				<argument type="Whole" dependent="de rabia" /></frame>
+			<frame type="Completeness" head="llenas de">
+				<argument type="Whole" dependent="de rabia" /></frame>
+			<frame type="Completeness" head="llenas de">
+				<argument type="Whole" dependent="de rabia" /></frame>
+			<frame type="Completeness" head="llenas de">
+				<argument type="Whole" dependent="de rabia" /></frame>
 			<frame type="Completeness" head="llenas de">
 				<argument type="Whole" dependent="de rabia" /></frame>
 			<frame type="Fire_burning" head="rabia" />
+			<frame type="Fire_burning" head="rabia" />
+			<frame type="Fire_burning" head="rabia" />
+			<frame type="Fire_burning" head="rabia" />
+			<frame type="Fire_burning" head="rabia" />
+			<frame type="Give_impression" head="parecía">
+				<argument type="Inference" dependent="estar fuera de" /></frame>
+			<frame type="Give_impression" head="parecía">
+				<argument type="Inference" dependent="estar fuera de" /></frame>
+			<main_frame type="Give_impression" head="parecía">
+				<argument type="Inference" dependent="estar fuera de" /></main_frame>
+			<frame type="Give_impression" head="parecía">
+				<argument type="Inference" dependent="estar fuera de" /></frame>
 			<frame type="Give_impression" head="parecía">
 				<argument type="Inference" dependent="estar fuera de" /></frame>
 			<frame type="Moving_in_place" head="gritos">
 				<argument type="Theme" dependent="grandes" />
 				<argument type="Theme" dependent="la víctima" />
 				<argument type="Manner" dependent="insultándole a grandes gritos" /></frame>
+			<frame type="Moving_in_place" head="gritos">
+				<argument type="Theme" dependent="grandes" />
+				<argument type="Theme" dependent="la víctima" />
+				<argument type="Manner" dependent="insultándole a grandes gritos" /></frame>
+			<frame type="Moving_in_place" head="gritos">
+				<argument type="Theme" dependent="grandes" />
+				<argument type="Theme" dependent="la víctima" />
+				<argument type="Manner" dependent="insultándole a grandes gritos" /></frame>
+			<frame type="Moving_in_place" head="gritos">
+				<argument type="Theme" dependent="grandes" />
+				<argument type="Theme" dependent="la víctima" />
+				<argument type="Manner" dependent="insultándole a grandes gritos" /></frame>
+			<frame type="Moving_in_place" head="gritos">
+				<argument type="Theme" dependent="grandes" />
+				<argument type="Theme" dependent="la víctima" />
+				<argument type="Manner" dependent="insultándole a grandes gritos" /></frame>
+			<frame type="People" head="mujerona" />
+			<frame type="People" head="mujerona" />
+			<frame type="People" head="mujerona" />
+			<frame type="People" head="mujerona" />
 			<frame type="People" head="mujerona" />
 			<frame type="Size" head="grandes" />
+			<frame type="Size" head="grandes" />
+			<frame type="Size" head="grandes" />
+			<frame type="Size" head="grandes" />
+			<frame type="Size" head="grandes" />
+			<frame type="Sleep" head="fuera">
+				<argument type="Sleeper" dependent="de su" /></frame>
+			<frame type="Sleep" head="fuera">
+				<argument type="Sleeper" dependent="de su" /></frame>
+			<frame type="Sleep" head="fuera">
+				<argument type="Sleeper" dependent="de su" /></frame>
+			<frame type="Sleep" head="fuera">
+				<argument type="Sleeper" dependent="de su" /></frame>
 			<frame type="Sleep" head="fuera">
 				<argument type="Sleeper" dependent="de su" /></frame>
 		</semantic_roles>
@@ -194,7 +268,7 @@
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="da0ms0">La</token><token pos="np0000o">Bella</token>
 		</theme>
 		<rheme>
@@ -208,10 +282,10 @@
 			<frame type="Catastrophe" head="víctima">
 				<argument type="Patient" dependent="Bella" />
 				<argument type="Undesirable_event" dependent="al suelo" /></frame>
-			<frame type="Cause_motion" head="tiró">
+			<main_frame type="Cause_motion" head="tiró">
 				<argument type="Agent" dependent="Bella" />
 				<argument type="Theme" dependent="la víctima" />
-				<argument type="Goal" dependent="al suelo" /></frame>
+				<argument type="Goal" dependent="al suelo" /></main_frame>
 			<frame type="Destroying" head="destrozar">
 				<argument type="Destroyer" dependent="Bella" />
 				<argument type="Patient" dependent="toda la casa" /></frame>
@@ -225,17 +299,21 @@
 
 
 	<sentence>
-		<theme concept_ref="F">
+		<theme concept_ref="c_5">
 			<token pos="ncms000">Don</token><token pos="np00000">Antonio</token>
 		</theme>
 		<rheme>
 			<token pos="vmii3s0">intentaba</token><token pos="vmn0000">impedírselo</token>
 		</rheme>
 		<semantic_roles>
+			<main_frame type="Attempt" head="intentaba">
+				<argument type="Goal" dependent="impedírselo" /></main_frame>
 			<frame type="Attempt" head="intentaba">
 				<argument type="Goal" dependent="impedírselo" /></frame>
 			<frame type="Level_of_force_exertion" head="fuerzas" />
+			<frame type="Level_of_force_exertion" head="fuerzas" />
 			<frame type="Preventing_or_letting" head="impedírselo" />
+			<main_frame type="Preventing_or_letting" head="impedírselo" />
 		</semantic_roles>
 	</sentence>
 
@@ -248,17 +326,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Destroying" head="arrasó">
-				<argument type="Place" dependent="la bestial homicida" /></frame>
-			<frame type="Means" head="de los">
-				<argument type="Purpose" dependent="todo lo arrasó" />
-				<argument type="Means" dependent="la bestial homicida" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0ms0">El</token><token pos="ncms000">desdichado</token>
 		</theme>
 		<rheme>
@@ -281,7 +354,7 @@
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="da0ms0">La</token><token pos="np0000o">Bella</token>
 		</theme>
 		<rheme>

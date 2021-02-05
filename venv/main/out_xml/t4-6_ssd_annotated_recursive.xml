@@ -26,11 +26,11 @@
 
 
 	<concepts>
-		<concept id="A">Mi vecino</concept>
-		<concept id="B">Casi todos</concept>
-		<concept id="C">los búhos</concept>
-		<concept id="D">Eso</concept>
-		<concept id="E">el día más importante para cada cual</concept>
+		<concept id="c_0">Mi vecino</concept>
+		<concept id="c_1">Casi todos</concept>
+		<concept id="c_2">los búhos</concept>
+		<concept id="c_3">Eso</concept>
+		<concept id="c_4">el día más importante para cada cual</concept>
 	</concepts>
 
 	<sentence>
@@ -41,11 +41,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Impression" head="imagen" />
-			<frame type="Locative_relation" head="Allí">
-				<argument type="Figure" dependent="han ido los dos" />
-				<argument type="Figure" dependent="la persona y la imagen" /></frame>
-			<frame type="People" head="persona" />
 		</semantic_roles>
 	</sentence>
 
@@ -58,22 +53,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Being_named" head="apellido" />
-			<frame type="Intentionally_act" head="en">
-				<argument type="Agent" dependent="un hombre" />
-				<argument type="Act" dependent="con su apellido" /></frame>
-			<frame type="People" head="hombre" />
-			<frame type="Possibility" head="podía">
-				<argument type="Possible_event" dependent="la palabra fea en francés y era lo menos que podía hacer un hombre" />
-				<argument type="Possible_event" dependent="con su apellido" /></frame>
-			<frame type="Statement" head="lo">
-				<argument type="Message" dependent="la palabra fea en francés y era lo menos que podía hacer un hombre con su apellido" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="dp1css">Mi</token><token pos="ncms000">vecino</token>
 		</theme>
 		<rheme>
@@ -87,7 +72,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="rg">Casi</token><token pos="pi0mp000">todos</token>
 		</theme>
 		<rheme>
@@ -111,16 +96,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Locale_by_use" head="jardín" />
-			<frame type="Residence" head="vive">
-				<argument type="Resident" dependent="un búho" />
-				<argument type="Location" dependent="En su jardín" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0mp0">los</token><token pos="ncmp000">búhos</token>
 		</theme>
 		<rheme>
@@ -129,18 +110,26 @@
 		<semantic_roles>
 			<frame type="Locative_relation" head="Aquí">
 				<argument type="Figure" dependent="los búhos son pequeños y panzudos es decir mi amiga la náyade dice" /></frame>
+			<frame type="Locative_relation" head="Aquí">
+				<argument type="Figure" dependent="los búhos son pequeños y panzudos es decir mi amiga la náyade dice" /></frame>
+			<frame type="Personal_relationship" head="amiga" />
 			<frame type="Personal_relationship" head="amiga" />
 			<frame type="Size" head="pequeños" />
+			<frame type="Size" head="pequeños" />
+			<frame type="Statement" head="decir" />
 			<frame type="Statement" head="decir" />
 			<frame type="Statement" head="dice">
 				<argument type="Speaker" dependent="la náyade" />
 				<argument type="Message" dependent="pequeños" /></frame>
+			<main_frame type="Statement" head="dice">
+				<argument type="Speaker" dependent="la náyade" />
+				<argument type="Message" dependent="pequeños" /></main_frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="pd0ns000">Eso</token>
 		</theme>
 		<rheme>
@@ -148,17 +137,31 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Cardinal_numbers" head="uno" />
+			<frame type="Cardinal_numbers" head="uno" />
+			<frame type="Chatting" head="hablaba">
+				<argument type="Interlocutors" dependent="adulatorio" />
+				<argument type="Topic" dependent="antes me intimida" /></frame>
 			<frame type="Chatting" head="hablaba">
 				<argument type="Interlocutors" dependent="adulatorio" />
 				<argument type="Topic" dependent="antes me intimida" /></frame>
 			<frame type="Direction" head="en" />
+			<frame type="Direction" head="en" />
+			<main_frame type="Process_end" head="acaba">
+				<argument type="Process" dependent="quitarles la dimensión supersticiosa" /></main_frame>
 			<frame type="Process_end" head="acaba">
 				<argument type="Process" dependent="quitarles la dimensión supersticiosa" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_2" dependent="tener uno como pisapapel en mi mesa" /></frame>
 			<frame type="Similarity" head="como">
 				<argument type="Entity_2" dependent="tener uno como pisapapel en mi mesa" /></frame>
 			<frame type="Taking_time" head="tener">
 				<argument type="Activity" dependent="acaba por" />
 				<argument type="Time_length" dependent="dimensión supersticiosa" /></frame>
+			<frame type="Taking_time" head="tener">
+				<argument type="Activity" dependent="acaba por" />
+				<argument type="Time_length" dependent="dimensión supersticiosa" /></frame>
+			<frame type="Temporal_subregion" head="antes">
+				<argument type="Time_period" dependent="me intimida" /></frame>
 			<frame type="Temporal_subregion" head="antes">
 				<argument type="Time_period" dependent="me intimida" /></frame>
 		</semantic_roles>
@@ -173,15 +176,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Experiencer_obj" head="impresionar" />
-			<frame type="Similarity" head="gusta">
-				<argument type="Entity_2" dependent="impresionar" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="da0ms0">el</token><token pos="ncms000">día</token><token pos="rg">más</token><token pos="aq0cs0">importante</token><token pos="sps00">para</token><token pos="di0cs0">cada</token><token pos="pr0cs000">cual</token>
 		</theme>
 		<rheme>
@@ -206,7 +206,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Calendric_unit" head="es ayer" />
 		</semantic_roles>
 	</sentence>
 

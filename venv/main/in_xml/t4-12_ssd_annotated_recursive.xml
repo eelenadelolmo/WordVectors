@@ -2,7 +2,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0mp0">los</token><token pos="aq0cp0">mejores</token><token pos="ncmp000">guerreros</token><token pos="spcms">del</token><token pos="ncms000">mundo</token><token pos="fc">,</token><token pos="da0mp0">los</token><token pos="ncmp000">hunos</token>
 		</theme>
 		<rheme>
@@ -28,8 +28,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Text_creation" head="escrito">
-				<argument type="Text" dependent="algunas tonter&#237;as" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -47,7 +45,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="pi0mp000">Pocos</token>
 		</theme>
 		<rheme>
@@ -56,31 +54,93 @@
 		<semantic_roles>
 			<frame type="Daring" head="atrevido">
 				<argument type="Action" dependent="con un tema tan metaf&#237;sicamente imposible" /></frame>
+			<main_frame type="Daring" head="atrevido">
+				<argument type="Action" dependent="con un tema tan metaf&#237;sicamente imposible" /></main_frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0fs0">La</token><token pos="ncfs000">monarqu&#237;a</token><token pos="sps00">de</token><token pos="np0000l">Alfonso</token><token pos="np0000l">XIII</token><token pos="sps00">a</token><token pos="pr0cs000">quien</token><token pos="pi0mp000">todos</token><token pos="vmii3p0">consideraban</token><token pos="aq0cs0">gafe</token><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="aq0cs0">numeral</token><token pos="fg">-</token><token pos="fg">-</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmn000">idus</token><token pos="aq0mp0">romanos</token><token pos="fg">-</token><token pos="fg">-</token>
 		</theme>
 		<rheme>
 			<token pos="p0300000">se</token><token pos="vmis3s0">hundi&#243;</token><token pos="sps00">por</token><token pos="van0000">haberse</token><token pos="vmp00sm">atrevido</token><token pos="sps00">a</token><token pos="vmn0000">meter</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">c&#225;rcel</token><token pos="sps00">a</token><token pos="ncfp000">personas</token><token pos="rg">tan</token><token pos="rg">inocentemente</token><token pos="aq0cp0">nobles</token><token pos="cs">como</token><token pos="np00000">Fernando</token><token pos="sps00">de</token><token pos="da0fs0">los</token><token pos="np00000">R&#237;os</token><token pos="fc">,</token><token pos="rg">tan</token><token pos="rg">genialmente</token><token pos="aq0fp0">l&#237;ricas</token><token pos="cs">como</token><token pos="ncms000">Valle</token><token pos="np00000">Incl&#225;n</token><token pos="cc">y</token><token pos="rg">tan</token><token pos="rg">poco</token><token pos="aq0fp0">peligrosas</token><token pos="cs">como</token><token pos="pp1csn00">yo</token>
 		</rheme>
 		<semantic_roles>
+			<main_frame type="Categorization" head="consideraban" />
 			<frame type="Categorization" head="consideraban" />
+			<frame type="Categorization" head="consideraban" />
+			<frame type="Categorization" head="consideraban" />
+			<frame type="Categorization" head="consideraban" />
+			<frame type="Causation" head="por haberse">
+				<argument type="Effect" dependent="monarqu&#237;a de Alfonso XIII a quien todos consideraban" />
+				<argument type="Cause" dependent="numeral - - de los idus romanos - - se hundi&#243; por haberse atrevido a meter en la c&#225;rcel a personas tan inocentemente" /></frame>
+			<frame type="Causation" head="por haberse">
+				<argument type="Effect" dependent="monarqu&#237;a de Alfonso XIII a quien todos consideraban" />
+				<argument type="Cause" dependent="numeral - - de los idus romanos - - se hundi&#243; por haberse atrevido a meter en la c&#225;rcel a personas tan inocentemente" /></frame>
+			<main_frame type="Causation" head="por haberse">
+				<argument type="Effect" dependent="monarqu&#237;a de Alfonso XIII a quien todos consideraban" />
+				<argument type="Cause" dependent="numeral - - de los idus romanos - - se hundi&#243; por haberse atrevido a meter en la c&#225;rcel a personas tan inocentemente" /></main_frame>
+			<frame type="Causation" head="por haberse">
+				<argument type="Effect" dependent="monarqu&#237;a de Alfonso XIII a quien todos consideraban" />
+				<argument type="Cause" dependent="numeral - - de los idus romanos - - se hundi&#243; por haberse atrevido a meter en la c&#225;rcel a personas tan inocentemente" /></frame>
 			<frame type="Causation" head="por haberse">
 				<argument type="Effect" dependent="monarqu&#237;a de Alfonso XIII a quien todos consideraban" />
 				<argument type="Cause" dependent="numeral - - de los idus romanos - - se hundi&#243; por haberse atrevido a meter en la c&#225;rcel a personas tan inocentemente" /></frame>
 			<frame type="Daring" head="atrevido">
 				<argument type="Action" dependent="a meter en la c&#225;rcel a personas tan inocentemente nobles como" /></frame>
+			<frame type="Daring" head="atrevido">
+				<argument type="Action" dependent="a meter en la c&#225;rcel a personas tan inocentemente nobles como" /></frame>
+			<frame type="Daring" head="atrevido">
+				<argument type="Action" dependent="a meter en la c&#225;rcel a personas tan inocentemente nobles como" /></frame>
+			<main_frame type="Daring" head="atrevido">
+				<argument type="Action" dependent="a meter en la c&#225;rcel a personas tan inocentemente nobles como" /></main_frame>
+			<frame type="Daring" head="atrevido">
+				<argument type="Action" dependent="a meter en la c&#225;rcel a personas tan inocentemente nobles como" /></frame>
 			<frame type="People" head="personas" />
+			<frame type="People" head="personas" />
+			<frame type="People" head="personas" />
+			<frame type="People" head="personas" />
+			<frame type="People" head="personas" />
+			<frame type="Placing" head="se">
+				<argument type="Goal" dependent="tan inocentemente nobles como" /></frame>
+			<frame type="Placing" head="se">
+				<argument type="Goal" dependent="tan inocentemente nobles como" /></frame>
+			<frame type="Placing" head="se">
+				<argument type="Goal" dependent="tan inocentemente nobles como" /></frame>
+			<frame type="Placing" head="se">
+				<argument type="Goal" dependent="tan inocentemente nobles como" /></frame>
 			<frame type="Placing" head="se">
 				<argument type="Goal" dependent="tan inocentemente nobles como" /></frame>
 			<frame type="Possession" head="se">
 				<argument type="Possession" dependent="a meter en la c&#225;rcel a personas tan inocentemente nobles como" /></frame>
+			<frame type="Possession" head="se">
+				<argument type="Possession" dependent="a meter en la c&#225;rcel a personas tan inocentemente nobles como" /></frame>
+			<frame type="Possession" head="se">
+				<argument type="Possession" dependent="a meter en la c&#225;rcel a personas tan inocentemente nobles como" /></frame>
+			<frame type="Possession" head="se">
+				<argument type="Possession" dependent="a meter en la c&#225;rcel a personas tan inocentemente nobles como" /></frame>
+			<frame type="Possession" head="se">
+				<argument type="Possession" dependent="a meter en la c&#225;rcel a personas tan inocentemente nobles como" /></frame>
 			<frame type="Risky_situation" head="peligrosas">
 				<argument type="Situation" dependent="como yo" /></frame>
+			<frame type="Risky_situation" head="peligrosas">
+				<argument type="Situation" dependent="como yo" /></frame>
+			<frame type="Risky_situation" head="peligrosas">
+				<argument type="Situation" dependent="como yo" /></frame>
+			<frame type="Risky_situation" head="peligrosas">
+				<argument type="Situation" dependent="como yo" /></frame>
+			<frame type="Risky_situation" head="peligrosas">
+				<argument type="Situation" dependent="como yo" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_1" dependent="tan poco peligrosas" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_1" dependent="tan poco peligrosas" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_1" dependent="tan poco peligrosas" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_1" dependent="tan poco peligrosas" /></frame>
 			<frame type="Similarity" head="como">
 				<argument type="Entity_1" dependent="tan poco peligrosas" /></frame>
 		</semantic_roles>
@@ -95,14 +155,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Evidence" head="demostraba">
-				<argument type="Proposition" dependent="su desorientaci&#243;n" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="di0mp0">Todos</token><token pos="da0mp0">los</token><token pos="ncmp000">primitos</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">ni&#241;as</token>
 		</theme>
 		<rheme>
@@ -124,7 +182,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0fs0">La</token><token pos="aq0fs0">buena</token><token pos="ncfs000">ciudadan&#237;a</token>
 		</theme>
 		<rheme>
@@ -132,25 +190,53 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Agriculture" head="cultivar" />
+			<main_frame type="Agriculture" head="cultivar" />
+			<frame type="Agriculture" head="cultivar" />
+			<frame type="Calendric_unit" head="siglo" />
+			<frame type="Calendric_unit" head="siglo" />
 			<frame type="Calendric_unit" head="siglo" />
 			<frame type="Cardinal_numbers" head="tres" />
+			<frame type="Cardinal_numbers" head="tres" />
+			<frame type="Cardinal_numbers" head="tres" />
+			<frame type="Desirability" head="buena" />
+			<frame type="Desirability" head="buena" />
 			<frame type="Desirability" head="buena" />
 			<frame type="Event_instance" head="dos veces">
 				<argument type="Event" dependent="ciudadan&#237;a razonable nos lleva al caos con tres o cuatro guerras cada siglo" /></frame>
+			<frame type="Event_instance" head="dos veces">
+				<argument type="Event" dependent="ciudadan&#237;a razonable nos lleva al caos con tres o cuatro guerras cada siglo" /></frame>
+			<frame type="Event_instance" head="dos veces">
+				<argument type="Event" dependent="ciudadan&#237;a razonable nos lleva al caos con tres o cuatro guerras cada siglo" /></frame>
+			<frame type="Frequency" head="cada" />
+			<frame type="Frequency" head="cada" />
 			<frame type="Frequency" head="cada" />
 			<frame type="Hostile_encounter" head="guerras" />
+			<frame type="Hostile_encounter" head="guerras" />
+			<frame type="Hostile_encounter" head="guerras" />
+			<frame type="Leadership" head="lleva">
+				<argument type="Governed" dependent="nos lleva al caos con tres o cuatro guerras" /></frame>
+			<frame type="Leadership" head="lleva">
+				<argument type="Governed" dependent="nos lleva al caos con tres o cuatro guerras" /></frame>
 			<frame type="Leadership" head="lleva">
 				<argument type="Governed" dependent="nos lleva al caos con tres o cuatro guerras" /></frame>
 			<frame type="Opinion" head="pens&#225;ndolo">
 				<argument type="Opinion" dependent="dos veces la" />
 				<argument type="Opinion" dependent="ciudadan&#237;a razonable nos lleva al caos con tres o cuatro guerras cada siglo" /></frame>
+			<frame type="Opinion" head="pens&#225;ndolo">
+				<argument type="Opinion" dependent="dos veces la" />
+				<argument type="Opinion" dependent="ciudadan&#237;a razonable nos lleva al caos con tres o cuatro guerras cada siglo" /></frame>
+			<frame type="Opinion" head="pens&#225;ndolo">
+				<argument type="Opinion" dependent="dos veces la" />
+				<argument type="Opinion" dependent="ciudadan&#237;a razonable nos lleva al caos con tres o cuatro guerras cada siglo" /></frame>
+			<frame type="Proportional_quantity" head="en" />
+			<frame type="Proportional_quantity" head="en" />
 			<frame type="Proportional_quantity" head="en" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="da0ms0">El</token><token pos="ncms000">camale&#243;n</token>
 		</theme>
 		<rheme>
@@ -166,7 +252,7 @@
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="da0fs0">La</token><token pos="np0000a">Tierra</token>
 		</theme>
 		<rheme>

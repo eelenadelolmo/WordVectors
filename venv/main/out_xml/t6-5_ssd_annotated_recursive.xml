@@ -26,13 +26,13 @@
 
 
 	<concepts>
-		<concept id="A">una grácil patinadora rubia</concept>
-		<concept id="B">sus ojos</concept>
-		<concept id="C">El huerto</concept>
+		<concept id="c_0">una grácil patinadora rubia</concept>
+		<concept id="c_1">sus ojos</concept>
+		<concept id="c_2">El huerto</concept>
 	</concepts>
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="di0fs0">una</token><token pos="aq0cs0">grácil</token><token pos="ncfs000">patinadora</token><token pos="aq0fs0">rubia</token>
 		</theme>
 		<rheme>
@@ -64,21 +64,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Age" head="viejo" />
-			<frame type="Architectural_part" head="la pared" />
-			<frame type="Cardinal_numbers" head="dos">
-				<argument type="Entity" dependent="pendientes de bisutería barata" /></frame>
-			<frame type="Expensiveness" head="barata" />
-			<frame type="Part_orientational" head="fondo de un">
-				<argument type="Whole" dependent="de un cajón" /></frame>
-			<frame type="Removing" head="extrajo">
-				<argument type="Theme" dependent="viejo rollo de papel, dos pendientes de bisutería barata y cuatro chinchetas" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="dp3cp0">sus</token><token pos="ncmp000">ojos</token>
 		</theme>
 		<rheme>
@@ -96,7 +87,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0ms0">El</token><token pos="ncms000">huerto</token>
 		</theme>
 		<rheme>
@@ -134,28 +125,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Activity_finish" head="terminar">
-				<argument type="Activity" dependent="esta obra" /></frame>
-			<frame type="Calendric_unit" head="días" />
-			<frame type="Departing" head="faltan">
-				<argument type="Time" dependent="923 días" />
-				<argument type="Goal" dependent="para terminar esta obra" /></frame>
-			<frame type="Locative_relation" head="se">
-				<argument type="Figure" dependent="un turbio mensaje" />
-				<argument type="Ground" dependent="faltan 923 días para terminar esta obra" /></frame>
-			<frame type="Possibility" head="podía">
-				<argument type="Possible_event" dependent="Debajo se" />
-				<argument type="Possible_event" dependent="leer un turbio mensaje" /></frame>
-			<frame type="Reading_activity" head="leer un">
-				<argument type="Reader" dependent="Debajo se" />
-				<argument type="Text" dependent="un turbio mensaje" /></frame>
-			<frame type="Work" head="obra" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="pr000000">cuando</token><token pos="da0fs0">la</token><token pos="ncfs000">amargura</token><token pos="sps00">de</token><token pos="dd0ms0">aquel</token><token pos="ncms000">descubrimiento</token>
 		</theme>
 		<rheme>
@@ -164,27 +139,53 @@
 		<semantic_roles>
 			<frame type="Becoming" head="se">
 				<argument type="Final_category" dependent="acostumbrado ya a que las cosas siguieran ese orden del que se suele decir que es el curso lógico de los acontecimientos" /></frame>
+			<frame type="Becoming" head="se">
+				<argument type="Final_category" dependent="acostumbrado ya a que las cosas siguieran ese orden del que se suele decir que es el curso lógico de los acontecimientos" /></frame>
+			<frame type="Becoming_aware" head="descubrimiento" />
 			<frame type="Becoming_aware" head="descubrimiento" />
 			<frame type="Calendric_unit" head="años">
 				<argument type="Whole" dependent="de vida igual" /></frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Whole" dependent="de vida igual" /></frame>
 			<frame type="Cardinal_numbers" head="tres" />
+			<frame type="Cardinal_numbers" head="tres" />
+			<frame type="Contrition" head="culpable">
+				<argument type="Action" dependent="de la previsible destrucción del prodigio" /></frame>
 			<frame type="Contrition" head="culpable">
 				<argument type="Action" dependent="de la previsible destrucción del prodigio" /></frame>
 			<frame type="Destroying" head="destrucción">
 				<argument type="Patient" dependent="del prodigio" /></frame>
+			<frame type="Destroying" head="destrucción">
+				<argument type="Patient" dependent="del prodigio" /></frame>
+			<frame type="Emotion_directed" head="amargura de">
+				<argument type="Stimulus" dependent="aquel descubrimiento se había diluido poco a poco en el transcurso del tiempo" /></frame>
 			<frame type="Emotion_directed" head="amargura de">
 				<argument type="Stimulus" dependent="aquel descubrimiento se había diluido poco a poco en el transcurso del tiempo" /></frame>
 			<frame type="Event" head="acontecimientos" />
+			<frame type="Event" head="acontecimientos" />
+			<frame type="Expectation" head="previsible">
+				<argument type="Phenomenon" dependent="destrucción del prodigio" /></frame>
 			<frame type="Expectation" head="previsible">
 				<argument type="Phenomenon" dependent="destrucción del prodigio" /></frame>
 			<frame type="Frequency" head="suele">
 				<argument type="Event" dependent="es" />
 				<argument type="Event" dependent="decir que es el curso lógico de los acontecimientos" /></frame>
+			<frame type="Frequency" head="suele">
+				<argument type="Event" dependent="es" />
+				<argument type="Event" dependent="decir que es el curso lógico de los acontecimientos" /></frame>
+			<frame type="Proportional_quantity" head="en" />
 			<frame type="Proportional_quantity" head="en" />
 			<frame type="Relative_time" head="transcurso del">
 				<argument type="Focal_occasion" dependent="se había acostumbrado ya a que las cosas" />
 				<argument type="Focal_occasion" dependent="ese orden del que se suele decir que es el curso lógico de los acontecimientos" /></frame>
+			<frame type="Relative_time" head="transcurso del">
+				<argument type="Focal_occasion" dependent="se había acostumbrado ya a que las cosas" />
+				<argument type="Focal_occasion" dependent="ese orden del que se suele decir que es el curso lógico de los acontecimientos" /></frame>
 			<frame type="Sequence" head="orden" />
+			<frame type="Sequence" head="orden" />
+			<frame type="Statement" head="decir">
+				<argument type="Message" dependent="orden del que se suele" />
+				<argument type="Message" dependent="curso lógico de los acontecimientos" /></frame>
 			<frame type="Statement" head="decir">
 				<argument type="Message" dependent="orden del que se suele" />
 				<argument type="Message" dependent="curso lógico de los acontecimientos" /></frame>
@@ -192,6 +193,12 @@
 				<argument type="Activity" dependent="la amargura de aquel descubrimiento" />
 				<argument type="Time_length" dependent="transcurso del tiempo" />
 				<argument type="Activity" dependent="casi tres años de vida igual" /></frame>
+			<frame type="Taking_time" head="transcurso">
+				<argument type="Activity" dependent="la amargura de aquel descubrimiento" />
+				<argument type="Time_length" dependent="transcurso del tiempo" />
+				<argument type="Activity" dependent="casi tres años de vida igual" /></frame>
+			<frame type="Using" head="acostumbrado">
+				<argument type="Purpose" dependent="orden del que se suele decir que es el curso lógico de los acontecimientos" /></frame>
 			<frame type="Using" head="acostumbrado">
 				<argument type="Purpose" dependent="orden del que se suele decir que es el curso lógico de los acontecimientos" /></frame>
 		</semantic_roles>

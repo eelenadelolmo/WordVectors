@@ -26,11 +26,11 @@
 
 
 	<concepts>
-		<concept id="A">los románticos españoles</concept>
-		<concept id="B">El perro</concept>
-		<concept id="C">El gato</concept>
-		<concept id="D">Es con mayúscula La Mi</concept>
-		<concept id="E">uno</concept>
+		<concept id="c_0">los románticos españoles</concept>
+		<concept id="c_1">El perro</concept>
+		<concept id="c_2">El gato</concept>
+		<concept id="c_3">Es con mayúscula La Mi</concept>
+		<concept id="c_4">uno</concept>
 	</concepts>
 
 	<sentence>
@@ -53,29 +53,23 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Bringing" head="oso">
-				<argument type="Theme" dependent="más feo peor para él" /></frame>
-			<frame type="People" head="hombre" />
-			<frame type="Statement" head="dicen" />
-			<frame type="Temporal_collocation" head="ahora">
-				<argument type="Trajector_event" dependent="él, dicen" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0mp0">los</token><token pos="ncmp000">románticos</token><token pos="aq0mp0">españoles</token>
 		</theme>
 		<rheme>
 			<token pos="vmis3p0">inventaron</token><token pos="da0ms0">el</token><token pos="ncms000">liberalismo</token><token pos="aq0ms0">político</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Coming_up_with" head="inventaron">
+			<main_frame type="Coming_up_with" head="inventaron">
 				<argument type="Time" dependent="En 1812" />
 				<argument type="Cognizer" dependent="románticos españoles" />
 				<argument type="Idea" dependent="liberalismo político" />
-				<argument type="Place" dependent="en las Cortes de" /></frame>
+				<argument type="Place" dependent="en las Cortes de" /></main_frame>
 		</semantic_roles>
 	</sentence>
 
@@ -88,15 +82,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Coming_up_with" head="inventaron">
-				<argument type="Cognizer" dependent="franceses en el lendemain de Napoleón" />
-				<argument type="Idea" dependent="con su sentido práctico" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="ncms000">liberalismo</token>
 		</theme>
 		<rheme>
@@ -121,16 +112,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Importance" head="importante">
-				<argument type="Factor" dependent="que legislar" /></frame>
-			<frame type="Increment" head="más">
-				<argument type="Class" dependent="importante que legislar" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="aq0ms0">verdadero</token><token pos="ncms000">blasfemo</token>
 		</theme>
 		<rheme>
@@ -153,7 +140,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0ms0">El</token><token pos="ncms000">perro</token>
 		</theme>
 		<rheme>
@@ -166,7 +153,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0ms0">El</token><token pos="ncms000">gato</token>
 		</theme>
 		<rheme>
@@ -179,22 +166,58 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">mejicanos</token><token pos="pr0cn000">que</token><token pos="vmip3p0">entran</token><token pos="rg">ilegalmente</token><token pos="sps00">en</token><token pos="np0000l">California</token>
 		</theme>
 		<rheme>
 			<token pos="vmip3p0">tienen</token><token pos="cs">que</token><token pos="vmn0000">vérselas</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="ncfs000">policía</token><token pos="sps00">de</token><token pos="ncfs000">emigración</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="pr0cn000">que</token><token pos="vmip3p0">nombran</token><token pos="sps00">con</token><token pos="di0fs0">una</token><token pos="ncfs000">palabra</token><token pos="fd">:</token><token pos="da0fs0">la</token><token pos="ncfs000">migra</token>
 		</rheme>
 		<semantic_roles>
+			<main_frame type="Activity_start" head="entran">
+				<argument type="Agent" dependent="Los mejicanos que" /></main_frame>
+			<frame type="Activity_start" head="entran">
+				<argument type="Agent" dependent="Los mejicanos que" /></frame>
+			<frame type="Activity_start" head="entran">
+				<argument type="Agent" dependent="Los mejicanos que" /></frame>
 			<frame type="Activity_start" head="entran">
 				<argument type="Agent" dependent="Los mejicanos que" /></frame>
 			<frame type="Appointing" head="nombran">
 				<argument type="Official" dependent="que nombran" />
 				<argument type="Role" dependent="con una palabra que tiene su dosis de magia : la migra" /></frame>
+			<frame type="Appointing" head="nombran">
+				<argument type="Official" dependent="que nombran" />
+				<argument type="Role" dependent="con una palabra que tiene su dosis de magia : la migra" /></frame>
+			<frame type="Appointing" head="nombran">
+				<argument type="Official" dependent="que nombran" />
+				<argument type="Role" dependent="con una palabra que tiene su dosis de magia : la migra" /></frame>
+			<main_frame type="Appointing" head="nombran">
+				<argument type="Official" dependent="que nombran" />
+				<argument type="Role" dependent="con una palabra que tiene su dosis de magia : la migra" /></main_frame>
 			<frame type="Ineffability" head="magia" />
+			<frame type="Ineffability" head="magia" />
+			<frame type="Ineffability" head="magia" />
+			<frame type="Ineffability" head="magia" />
+			<frame type="Law_enforcement_agency" head="policía" />
+			<frame type="Law_enforcement_agency" head="policía" />
+			<frame type="Law_enforcement_agency" head="policía" />
 			<frame type="Law_enforcement_agency" head="policía" />
 			<frame type="Quantified_mass" head="dosis">
 				<argument type="Mass" dependent="de magia" /></frame>
+			<frame type="Quantified_mass" head="dosis">
+				<argument type="Mass" dependent="de magia" /></frame>
+			<frame type="Quantified_mass" head="dosis">
+				<argument type="Mass" dependent="de magia" /></frame>
+			<frame type="Quantified_mass" head="dosis">
+				<argument type="Mass" dependent="de magia" /></frame>
+			<frame type="Resolve_problem" head="de">
+				<argument type="Agent" dependent="mejicanos que entran ilegalmente en California" />
+				<argument type="Problem" dependent="con la policía de emigración" /></frame>
+			<frame type="Resolve_problem" head="de">
+				<argument type="Agent" dependent="mejicanos que entran ilegalmente en California" />
+				<argument type="Problem" dependent="con la policía de emigración" /></frame>
+			<frame type="Resolve_problem" head="de">
+				<argument type="Agent" dependent="mejicanos que entran ilegalmente en California" />
+				<argument type="Problem" dependent="con la policía de emigración" /></frame>
 			<frame type="Resolve_problem" head="de">
 				<argument type="Agent" dependent="mejicanos que entran ilegalmente en California" />
 				<argument type="Problem" dependent="con la policía de emigración" /></frame>
@@ -203,24 +226,19 @@
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="np0000o">Es</token><token pos="sps00">con</token><token pos="ncfs000">mayúscula</token><token pos="da0fs0">La</token><token pos="np0000o">Mi</token>
 		</theme>
 		<rheme>
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Relational_political_locales" head="mayúscula">
-				<argument type="Locale" dependent="mayúscula" /></frame>
-			<frame type="Statement" head="decir">
-				<argument type="Message" dependent="con mayúscula" /></frame>
-			<frame type="Text" head="La" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="pi0ms000">uno</token>
 		</theme>
 		<rheme>

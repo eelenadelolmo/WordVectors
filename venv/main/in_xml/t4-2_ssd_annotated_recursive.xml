@@ -2,7 +2,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0ms0">el</token><token pos="ncms000">nacer</token>
 		</theme>
 		<rheme>
@@ -29,14 +29,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Cardinal_numbers" head="tres" />
-			<frame type="Contingency" head="factores">
-				<argument type="Determinant" dependent="factores de eternidad : vac&#237;o, materia y movimiento" /></frame>
-			<frame type="Identicality" head="identidad" />
-			<frame type="Instance" head="ejemplo">
-				<argument type="Type" dependent="de la identidad" /></frame>
-			<frame type="Required_event" head="mejor">
-				<argument type="Required_situation" dependent="ejemplo de la identidad" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -49,21 +41,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Awareness" head="sabemos">
-				<argument type="Content" dependent="que no existe el &#233;ter en el espacio insondable" /></frame>
-			<frame type="Being_named" head="el nombre" />
-			<frame type="Cause_change" head="cambiar">
-				<argument type="Entity" dependent="el nombre" />
-				<argument type="Final_category" dependent="a la eternidad" /></frame>
-			<frame type="Desirable_event" head="deb&#237;amos">
-				<argument type="State_of_affairs" dependent="cambiar el nombre a la eternidad" /></frame>
-			<frame type="Interior_profile_relation" head="en">
-				<argument type="Figure" dependent="no" />
-				<argument type="Ground" dependent="espacio insondable" /></frame>
-			<frame type="Locative_relation" head="existe">
-				<argument type="Ground" dependent="no existe el &#233;ter en el espacio insondable" /></frame>
-			<frame type="Temporal_collocation" head="Ahora">
-				<argument type="Trajector_event" dependent="que sabemos que no existe el &#233;ter en el espacio insondable deb&#237;amos cambiar el nombre a la eternidad ." /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -76,13 +53,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Capability" head="podemos">
-				<argument type="Event" dependent="S&#243;lo podemos querernos a nosotros mismos porque Dios" /></frame>
-			<frame type="Causation" head="porque">
-				<argument type="Effect" dependent="S&#243;lo podemos querernos a nosotros mismos" />
-				<argument type="Cause" dependent="Dios nos" /></frame>
-			<frame type="Experiencer_focus" head="querernos" />
-			<frame type="Experiencer_focus" head="quiere" />
 		</semantic_roles>
 	</sentence>
 
@@ -95,18 +65,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Being_born" head="nacido" />
-			<frame type="Giving" head="dado" />
-			<frame type="Judgment_direct_address" head="Agradecemos" />
-			<frame type="Locative_relation" head="en">
-				<argument type="Figure" dependent="qu&#233; mal habr&#237;a" />
-				<argument type="Ground" dependent="no haber nacido" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0ms0">El</token><token pos="ncms000">amor</token>
 		</theme>
 		<rheme>
@@ -124,7 +88,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0ms0">el</token><token pos="ncfs000">agua</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">fuego</token>
 		</theme>
 		<rheme>
@@ -152,19 +116,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Awareness" head="sab&#237;a">
-				<argument type="Cognizer" dependent="escribi&#243; su rom&#225;ntico - P&#225;jaro Azul - no" />
-				<argument type="Content" dependent="que ese p&#225;jaro vive" /></frame>
-			<frame type="Being_named" head="se llama" />
-			<frame type="Body_parts" head="manos" />
-			<frame type="Interior_profile_relation" head="en">
-				<argument type="Ground" dependent="Am&#233;rica y se llama" /></frame>
-			<frame type="Kinship" head="su" />
-			<frame type="Means" head="por" />
-			<frame type="Residence" head="vive" />
-			<frame type="Temporal_pattern" head="acude" />
-			<frame type="Text_creation" head="escribi&#243;">
-				<argument type="Text" dependent="su rom&#225;ntico - P&#225;jaro Azul" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -177,18 +128,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Causation" head="porque">
-				<argument type="Cause" dependent="hombres hacemos algo parecido )" /></frame>
-			<frame type="Chatting" head="hablar" />
-			<frame type="Desirable_event" head="deb&#237;a">
-				<argument type="State_of_affairs" dependent="No deb&#237;a hablar as&#237; porque los hombres hacemos algo parecido )" /></frame>
-			<frame type="Similarity" head="parecido" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -198,8 +143,8 @@
 			<frame type="Aggregate" head="partido" />
 			<frame type="Cardinal_numbers" head="un" />
 			<frame type="Membership" head="partido" />
-			<frame type="Possession" head="tiene">
-				<argument type="Possession" dependent="partido que tiene un s&#243;lo" /></frame>
+			<main_frame type="Possession" head="tiene">
+				<argument type="Possession" dependent="partido que tiene un s&#243;lo" /></main_frame>
 		</semantic_roles>
 	</sentence>
 
@@ -212,14 +157,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Calendric_unit" head="d&#237;a" />
-			<frame type="Quantified_mass" head="muchas" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="da0ms0">El</token><token pos="ncms000">le&#243;n</token>
 		</theme>
 		<rheme>
@@ -250,16 +193,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Agriculture" head="cultivar" />
-			<frame type="Attention" head="atenci&#243;n" />
-			<frame type="Cause_change_of_position_on_a_scale" head="promover">
-				<argument type="Agent" dependent="&#250;nico bueno que hacen las universidades" /></frame>
-			<frame type="Desirability" head="bueno">
-				<argument type="Evaluee" dependent="universidades" /></frame>
-			<frame type="Locale_by_use" head="universidades">
-				<argument type="Descriptor" dependent="bueno que" /></frame>
-			<frame type="Sole_instance" head="Lo &#250;nico">
-				<argument type="Type" dependent="bueno que hacen las universidades" /></frame>
 		</semantic_roles>
 	</sentence>
 

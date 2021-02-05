@@ -26,13 +26,13 @@
 
 
 	<concepts>
-		<concept id="A">un huerto auténtico</concept>
-		<concept id="B">El descubrimiento de la decoración , en cuyos torpes misterios decidiera iniciarse con la enfermiza disponibilidad de un fanático ,</concept>
-		<concept id="C">ella</concept>
+		<concept id="c_0">un huerto auténtico</concept>
+		<concept id="c_1">El descubrimiento de la decoración , en cuyos torpes misterios decidiera iniciarse con la enfermiza disponibilidad de un fanático ,</concept>
+		<concept id="c_2">ella</concept>
 	</concepts>
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="di0ms0">un</token><token pos="ncms000">huerto</token><token pos="aq0ms0">auténtico</token>
 		</theme>
 		<rheme>
@@ -42,19 +42,36 @@
 			<frame type="Age" head="envejecido">
 				<argument type="Entity" dependent="un huerto auténtico" />
 				<argument type="Time" dependent="a su paso, un día" /></frame>
+			<main_frame type="Age" head="envejecido">
+				<argument type="Entity" dependent="un huerto auténtico" />
+				<argument type="Time" dependent="a su paso, un día" /></main_frame>
 			<frame type="Calendric_unit" head="día" />
+			<frame type="Calendric_unit" head="día" />
+			<frame type="Cause_to_wake" head="su" />
 			<frame type="Cause_to_wake" head="su" />
 			<frame type="Death" head="envejecido">
 				<argument type="Place" dependent="antes que él" /></frame>
+			<main_frame type="Death" head="envejecido">
+				<argument type="Place" dependent="antes que él" /></main_frame>
+			<frame type="Interior_profile_relation" head="a su">
+				<argument type="Figure" dependent="huerto auténtico había envejecido a" />
+				<argument type="Ground" dependent="su" /></frame>
 			<frame type="Interior_profile_relation" head="a su">
 				<argument type="Figure" dependent="huerto auténtico había envejecido a" />
 				<argument type="Ground" dependent="su" /></frame>
 			<frame type="Locative_relation" head="Allí">
 				<argument type="Ground" dependent="un huerto auténtico había envejecido a su paso, un día" /></frame>
+			<frame type="Locative_relation" head="Allí">
+				<argument type="Ground" dependent="un huerto auténtico había envejecido a su paso, un día" /></frame>
+			<frame type="Relative_time" head="antes que">
+				<argument type="Focal_occasion" dependent="huerto auténtico había envejecido a su paso, un día" /></frame>
 			<frame type="Relative_time" head="antes que">
 				<argument type="Focal_occasion" dependent="huerto auténtico había envejecido a su paso, un día" /></frame>
 			<frame type="Temporal_collocation" head="ahora">
 				<argument type="Trajector_event" dependent="moría antes que él" /></frame>
+			<frame type="Temporal_collocation" head="ahora">
+				<argument type="Trajector_event" dependent="moría antes que él" /></frame>
+			<frame type="Time_vector" head="antes" />
 			<frame type="Time_vector" head="antes" />
 		</semantic_roles>
 	</sentence>
@@ -68,30 +85,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Becoming_aware" head="descubrió">
-				<argument type="Phenomenon" dependent="primeros síntomas de esta irreversible agonía" /></frame>
-			<frame type="Body_parts" head="ojos" />
-			<frame type="Calendric_unit" head="año" />
-			<frame type="Categorization" head="considerarse">
-				<argument type="Category" dependent="vagamente culpable de lo sucedido" /></frame>
-			<frame type="Color" head="verdes" />
-			<frame type="Contrition" head="culpable">
-				<argument type="Depictive" dependent="de lo sucedido" /></frame>
-			<frame type="Electricity" head="potencia">
-				<argument type="Source" dependent="de sus hojas verdes" /></frame>
-			<frame type="Event" head="sucedido" />
-			<frame type="Frequency" head="periódico">
-				<argument type="Event" dependent="estallido de las litronas de cristal" /></frame>
-			<frame type="Locale_by_use" head="hojas" />
-			<frame type="Ordinal_numbers" head="primeros">
-				<argument type="Type" dependent="síntomas de esta irreversible agonía" /></frame>
-			<frame type="Presence" head="ausencia">
-				<argument type="Location" dependent="sus ojos" /></frame>
-			<frame type="Relative_time" head="Cuando">
-				<argument type="Focal_occasion" dependent=", la ruina de esas tomateras que un año" />
-				<argument type="Focal_occasion" dependent="sobrevivido para él, machacando la lógica, el humo, y el periódico estallido de las litronas de cristal ," /></frame>
-			<frame type="Sign" head="síntomas">
-				<argument type="Indicated" dependent="de esta irreversible agonía" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -104,14 +97,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Calendric_unit" head="meses" />
-			<frame type="Cardinal_numbers" head="seis" />
-			<frame type="Forming_relationships" head="boda" />
-			<frame type="Increment" head="más">
-				<argument type="Class" dependent="de seis meses" /></frame>
-			<frame type="Time_vector" head="desde">
-				<argument type="Event" dependent="No habrían pasado más de seis meses" />
-				<argument type="Landmark_event" dependent="su boda" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -124,8 +109,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Calendric_unit" head="domingo" />
-			<frame type="Precipitation" head="llovía" />
 		</semantic_roles>
 	</sentence>
 
@@ -138,14 +121,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Operating_a_system" head="logrado">
-				<argument type="System" dependent="resistir" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0ms0">El</token><token pos="ncms000">descubrimiento</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">decoración</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="pr0mp000">cuyos</token><token pos="aq0cp0">torpes</token><token pos="ncmp000">misterios</token><token pos="vmsi3s0">decidiera</token><token pos="vmn0000">iniciarse</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="aq0fs0">enfermiza</token><token pos="ncfs000">disponibilidad</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">fanático</token><token pos="fc">,</token>
 		</theme>
 		<rheme>
@@ -153,44 +134,170 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Abandonment" head="abandonado" />
+			<frame type="Abandonment" head="abandonado" />
+			<frame type="Abandonment" head="abandonado" />
+			<frame type="Abandonment" head="abandonado" />
+			<frame type="Activity_start" head="iniciarse">
+				<argument type="Activity" dependent="con la enfermiza disponibilidad de un fanático" /></frame>
+			<main_frame type="Activity_start" head="iniciarse">
+				<argument type="Activity" dependent="con la enfermiza disponibilidad de un fanático" /></main_frame>
+			<frame type="Activity_start" head="iniciarse">
+				<argument type="Activity" dependent="con la enfermiza disponibilidad de un fanático" /></frame>
 			<frame type="Activity_start" head="iniciarse">
 				<argument type="Activity" dependent="con la enfermiza disponibilidad de un fanático" /></frame>
 			<frame type="Age" head="nueva" />
+			<frame type="Age" head="nueva" />
+			<frame type="Age" head="nueva" />
+			<frame type="Age" head="nueva" />
+			<frame type="Becoming_aware" head="descubrimiento">
+				<argument type="Phenomenon" dependent="decoración" /></frame>
+			<frame type="Becoming_aware" head="descubrimiento">
+				<argument type="Phenomenon" dependent="decoración" /></frame>
+			<frame type="Becoming_aware" head="descubrimiento">
+				<argument type="Phenomenon" dependent="decoración" /></frame>
 			<frame type="Becoming_aware" head="descubrimiento">
 				<argument type="Phenomenon" dependent="decoración" /></frame>
 			<frame type="Buildings" head="casa" />
+			<frame type="Buildings" head="casa" />
+			<frame type="Buildings" head="casa" />
+			<frame type="Buildings" head="casa" />
+			<frame type="Calendric_unit" head="día">
+				<argument type="Whole" dependent="su boda" /></frame>
+			<frame type="Calendric_unit" head="día">
+				<argument type="Whole" dependent="su boda" /></frame>
+			<frame type="Calendric_unit" head="día">
+				<argument type="Whole" dependent="su boda" /></frame>
 			<frame type="Calendric_unit" head="día">
 				<argument type="Whole" dependent="su boda" /></frame>
 			<frame type="Calendric_unit" head="día de" />
+			<frame type="Calendric_unit" head="día de" />
+			<frame type="Calendric_unit" head="día de" />
+			<frame type="Calendric_unit" head="día de" />
+			<frame type="Calendric_unit" head="meses" />
+			<frame type="Calendric_unit" head="meses" />
+			<frame type="Calendric_unit" head="meses" />
 			<frame type="Calendric_unit" head="meses" />
 			<frame type="Coming_up_with" head="diseñado">
 				<argument type="Idea" dependent="hasta en los más mínimos detalles la distribución del jardín" /></frame>
+			<frame type="Coming_up_with" head="diseñado">
+				<argument type="Idea" dependent="hasta en los más mínimos detalles la distribución del jardín" /></frame>
+			<frame type="Coming_up_with" head="diseñado">
+				<argument type="Idea" dependent="hasta en los más mínimos detalles la distribución del jardín" /></frame>
+			<frame type="Coming_up_with" head="diseñado">
+				<argument type="Idea" dependent="hasta en los más mínimos detalles la distribución del jardín" /></frame>
+			<main_frame type="Deciding" head="decidiera">
+				<argument type="Decision" dependent="iniciarse con la enfermiza disponibilidad de un fanático" /></main_frame>
+			<frame type="Deciding" head="decidiera">
+				<argument type="Decision" dependent="iniciarse con la enfermiza disponibilidad de un fanático" /></frame>
+			<frame type="Deciding" head="decidiera">
+				<argument type="Decision" dependent="iniciarse con la enfermiza disponibilidad de un fanático" /></frame>
 			<frame type="Deciding" head="decidiera">
 				<argument type="Decision" dependent="iniciarse con la enfermiza disponibilidad de un fanático" /></frame>
 			<frame type="Departing" head="abandonado para">
 				<argument type="Source" dependent="con su nueva mujer y su casa nueva, espléndidamente decorada" /></frame>
+			<frame type="Departing" head="abandonado para">
+				<argument type="Source" dependent="con su nueva mujer y su casa nueva, espléndidamente decorada" /></frame>
+			<frame type="Departing" head="abandonado para">
+				<argument type="Source" dependent="con su nueva mujer y su casa nueva, espléndidamente decorada" /></frame>
+			<frame type="Departing" head="abandonado para">
+				<argument type="Source" dependent="con su nueva mujer y su casa nueva, espléndidamente decorada" /></frame>
+			<frame type="Dispersal" head="distribución">
+				<argument type="Individuals" dependent="del jardín" /></frame>
+			<frame type="Dispersal" head="distribución">
+				<argument type="Individuals" dependent="del jardín" /></frame>
+			<frame type="Dispersal" head="distribución">
+				<argument type="Individuals" dependent="del jardín" /></frame>
 			<frame type="Dispersal" head="distribución">
 				<argument type="Individuals" dependent="del jardín" /></frame>
 			<frame type="Distributed_position" head="decorada" />
+			<frame type="Distributed_position" head="decorada" />
+			<frame type="Distributed_position" head="decorada" />
+			<frame type="Distributed_position" head="decorada" />
+			<frame type="Electricity" head="alimentado">
+				<argument type="Source" dependent="un sistema de calefacción" /></frame>
+			<frame type="Electricity" head="alimentado">
+				<argument type="Source" dependent="un sistema de calefacción" /></frame>
+			<frame type="Electricity" head="alimentado">
+				<argument type="Source" dependent="un sistema de calefacción" /></frame>
 			<frame type="Electricity" head="alimentado">
 				<argument type="Source" dependent="un sistema de calefacción" /></frame>
 			<frame type="Filling" head="llenado">
 				<argument type="Goal" dependent="todos los armarios de cajoneras" /></frame>
+			<frame type="Filling" head="llenado">
+				<argument type="Goal" dependent="todos los armarios de cajoneras" /></frame>
+			<frame type="Filling" head="llenado">
+				<argument type="Goal" dependent="todos los armarios de cajoneras" /></frame>
+			<frame type="Filling" head="llenado">
+				<argument type="Goal" dependent="todos los armarios de cajoneras" /></frame>
+			<frame type="Likelihood" head="disponibilidad">
+				<argument type="Hypothetical_event" dependent=", que una vez fuera con él generoso hasta los límites de lo grotesco, le había" /></frame>
+			<frame type="Likelihood" head="disponibilidad">
+				<argument type="Hypothetical_event" dependent=", que una vez fuera con él generoso hasta los límites de lo grotesco, le había" /></frame>
+			<frame type="Likelihood" head="disponibilidad">
+				<argument type="Hypothetical_event" dependent=", que una vez fuera con él generoso hasta los límites de lo grotesco, le había" /></frame>
 			<frame type="Likelihood" head="disponibilidad">
 				<argument type="Hypothetical_event" dependent=", que una vez fuera con él generoso hasta los límites de lo grotesco, le había" /></frame>
 			<frame type="Locale_by_use" head="jardín" />
+			<frame type="Locale_by_use" head="jardín" />
+			<frame type="Locale_by_use" head="jardín" />
+			<frame type="Locale_by_use" head="jardín" />
+			<frame type="Medical_conditions" head="saludable" />
+			<frame type="Medical_conditions" head="saludable" />
+			<frame type="Medical_conditions" head="saludable" />
 			<frame type="Medical_conditions" head="saludable" />
 			<frame type="Personal_relationship" head="mujer" />
+			<frame type="Personal_relationship" head="mujer" />
+			<frame type="Personal_relationship" head="mujer" />
+			<frame type="Personal_relationship" head="mujer" />
+			<frame type="Precipitation" head="azar">
+				<argument type="Precipitation" dependent="mínimos detalles la distribución del jardín, y hasta había instalado un sistema de calefacción alimentado con acumuladores solares" />
+				<argument type="Place" dependent=", que una vez fuera con él generoso hasta los límites de lo grotesco, le había" /></frame>
+			<frame type="Precipitation" head="azar">
+				<argument type="Precipitation" dependent="mínimos detalles la distribución del jardín, y hasta había instalado un sistema de calefacción alimentado con acumuladores solares" />
+				<argument type="Place" dependent=", que una vez fuera con él generoso hasta los límites de lo grotesco, le había" /></frame>
+			<frame type="Precipitation" head="azar">
+				<argument type="Precipitation" dependent="mínimos detalles la distribución del jardín, y hasta había instalado un sistema de calefacción alimentado con acumuladores solares" />
+				<argument type="Place" dependent=", que una vez fuera con él generoso hasta los límites de lo grotesco, le había" /></frame>
 			<frame type="Precipitation" head="azar">
 				<argument type="Precipitation" dependent="mínimos detalles la distribución del jardín, y hasta había instalado un sistema de calefacción alimentado con acumuladores solares" />
 				<argument type="Place" dependent=", que una vez fuera con él generoso hasta los límites de lo grotesco, le había" /></frame>
 			<frame type="Process_end" head="hasta">
 				<argument type="Manner" dependent="seis meses" /></frame>
+			<frame type="Process_end" head="hasta">
+				<argument type="Manner" dependent="seis meses" /></frame>
+			<frame type="Process_end" head="hasta">
+				<argument type="Manner" dependent="seis meses" /></frame>
+			<frame type="Process_end" head="hasta">
+				<argument type="Manner" dependent="seis meses" /></frame>
+			<frame type="Protecting" head="cubierto">
+				<argument type="Asset" dependent="la terraza" /></frame>
+			<frame type="Protecting" head="cubierto">
+				<argument type="Asset" dependent="la terraza" /></frame>
+			<frame type="Protecting" head="cubierto">
+				<argument type="Asset" dependent="la terraza" /></frame>
 			<frame type="Protecting" head="cubierto">
 				<argument type="Asset" dependent="la terraza" /></frame>
 			<frame type="Stinginess" head="generoso">
 				<argument type="Resource" dependent="hasta los límites de lo grotesco" /></frame>
+			<frame type="Stinginess" head="generoso">
+				<argument type="Resource" dependent="hasta los límites de lo grotesco" /></frame>
+			<frame type="Stinginess" head="generoso">
+				<argument type="Resource" dependent="hasta los límites de lo grotesco" /></frame>
+			<frame type="Stinginess" head="generoso">
+				<argument type="Resource" dependent="hasta los límites de lo grotesco" /></frame>
 			<frame type="System" head="sistema" />
+			<frame type="System" head="sistema" />
+			<frame type="System" head="sistema" />
+			<frame type="System" head="sistema" />
+			<frame type="Time_vector" head="desde">
+				<argument type="Landmark_event" dependent="seis meses desde el" />
+				<argument type="Landmark_event" dependent="el día de su boda" /></frame>
+			<frame type="Time_vector" head="desde">
+				<argument type="Landmark_event" dependent="seis meses desde el" />
+				<argument type="Landmark_event" dependent="el día de su boda" /></frame>
+			<frame type="Time_vector" head="desde">
+				<argument type="Landmark_event" dependent="seis meses desde el" />
+				<argument type="Landmark_event" dependent="el día de su boda" /></frame>
 			<frame type="Time_vector" head="desde">
 				<argument type="Landmark_event" dependent="seis meses desde el" />
 				<argument type="Landmark_event" dependent="el día de su boda" /></frame>
@@ -199,7 +306,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="pp3fs000">ella</token>
 		</theme>
 		<rheme>
@@ -234,8 +341,8 @@
 			<frame type="Motion" head="ido">
 				<argument type="Goal" dependent="a hacer" /></frame>
 			<frame type="Opinion" head="pensar" />
-			<frame type="Perception_active" head="miró">
-				<argument type="Ground" dependent="a su" /></frame>
+			<main_frame type="Perception_active" head="miró">
+				<argument type="Ground" dependent="a su" /></main_frame>
 			<frame type="Possession" head="alquiler" />
 			<frame type="Relative_time" head="antes" />
 			<frame type="Relative_time" head="después">
@@ -268,23 +375,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Attempt" head="emprendido">
-				<argument type="Goal" dependent="absurda excursión, cuando vivía allí no tenía coche, no lo necesitaba" /></frame>
-			<frame type="Destiny" head="mucho">
-				<argument type="State_of_affairs" dependent="trabajo" /></frame>
-			<frame type="Experiencer_focus" head="arrepentirse">
-				<argument type="Content" dependent="haber emprendido aquella absurda excursión" /></frame>
-			<frame type="Locative_relation" head="allí" />
-			<frame type="Mental_property" head="absurda" />
-			<frame type="Needing" head="necesitaba" />
-			<frame type="Placing" head="aparcar" />
-			<frame type="Possession" head="emprendido">
-				<argument type="Possession" dependent="absurda excursión, cuando vivía allí no tenía coche, no lo necesitaba" /></frame>
-			<frame type="Residence" head="vivía" />
-			<frame type="Travel" head="excursión" />
-			<frame type="Vehicle" head="coche" />
-			<frame type="Work" head="trabajo">
-				<argument type="Goal" dependent="aparcar" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -297,32 +387,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Activity_start" head="entrar">
-				<argument type="Activity" dependent="el portal" /></frame>
-			<frame type="Attempt" head="esfuerzo">
-				<argument type="Goal" dependent="al que recordaba haber derrochado nunca" /></frame>
-			<frame type="Concessive" head="aunque">
-				<argument type="Main_assertion" dependent="Antes de entrar en el portal, quiso mirar a su alrededor y no advirtió cambio alguno ," />
-				<argument type="Conceded_state_of_affairs" dependent="subir las escaleras le exigió un esfuerzo superior al que recordaba haber derrochado nunca" /></frame>
-			<frame type="Desiring" head="exigió">
-				<argument type="Event" dependent="mirar a" /></frame>
-			<frame type="Have_as_requirement" head="exigió">
-				<argument type="Requirement" dependent="un esfuerzo superior al que recordaba haber derrochado nunca" /></frame>
-			<frame type="Locative_relation" head="alrededor" />
-			<frame type="Perception_active" head="mirar" />
-			<frame type="Possession" head="advirtió" />
-			<frame type="Remembering_experience" head="recordaba">
-				<argument type="Experience" dependent="haber derrochado nunca" /></frame>
-			<frame type="Time_vector" head="Antes">
-				<argument type="Landmark_event" dependent="entrar en el portal" />
-				<argument type="Event" dependent="quiso mirar a su alrededor y no advirtió cambio alguno, aunque subir las escaleras le exigió un esfuerzo superior al que recordaba haber" /></frame>
-			<frame type="Undergo_change" head="cambio" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0fp0">las</token><token pos="ncfp000">habitaciones</token><token pos="rg">casi</token><token pos="aq0fp0">vacías</token>
 		</theme>
 		<rheme>
@@ -331,18 +401,33 @@
 		<semantic_roles>
 			<frame type="Becoming_aware" head="Encontró">
 				<argument type="Phenomenon" dependent="el piso" /></frame>
+			<frame type="Becoming_aware" head="Encontró">
+				<argument type="Phenomenon" dependent="el piso" /></frame>
 			<frame type="Building_subparts" head="habitaciones" />
+			<frame type="Building_subparts" head="habitaciones" />
+			<frame type="Building_subparts" head="piso" />
 			<frame type="Building_subparts" head="piso" />
 			<frame type="Experiencer_focus" head="como">
 				<argument type="Content" dependent="una sucesión de gestos amables" /></frame>
+			<frame type="Experiencer_focus" head="como">
+				<argument type="Content" dependent="una sucesión de gestos amables" /></frame>
 			<frame type="Fullness" head="vacías" />
+			<frame type="Fullness" head="vacías" />
+			<frame type="Increment" head="otra" />
 			<frame type="Increment" head="otra" />
 			<frame type="Relative_time" head="cuando">
 				<argument type="Landmark_occasion" dependent="otra como una sucesión de gestos amables" /></frame>
+			<frame type="Relative_time" head="cuando">
+				<argument type="Landmark_occasion" dependent="otra como una sucesión de gestos amables" /></frame>
+			<frame type="Social_interaction_evaluation" head="amables" />
 			<frame type="Social_interaction_evaluation" head="amables" />
 			<frame type="Spatial_contact" head="en">
 				<argument type="Figure" dependent="polvo acumulado" />
 				<argument type="Ground" dependent="todas las superficies" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="polvo acumulado" />
+				<argument type="Ground" dependent="todas las superficies" /></frame>
+			<frame type="State_of_entity" head="estado" />
 			<frame type="State_of_entity" head="estado" />
 		</semantic_roles>
 	</sentence>

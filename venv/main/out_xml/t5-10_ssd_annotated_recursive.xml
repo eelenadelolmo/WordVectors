@@ -26,13 +26,13 @@
 
 
 	<concepts>
-		<concept id="A">el pobre</concept>
-		<concept id="B">ella</concept>
-		<concept id="C">él</concept>
+		<concept id="c_0">el pobre</concept>
+		<concept id="c_1">ella</concept>
+		<concept id="c_2">él</concept>
 	</concepts>
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0ms0">el</token><token pos="nccs000">pobre</token>
 		</theme>
 		<rheme>
@@ -57,14 +57,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Desirability" head="bueno" />
-			<frame type="People" head="hombre" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="pp2fs000">ella</token>
 		</theme>
 		<rheme>
@@ -72,12 +70,21 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Cardinal_numbers" head="le" />
+			<frame type="Cardinal_numbers" head="le" />
 			<frame type="Emotion_directed" head="feliz" />
+			<frame type="Emotion_directed" head="feliz" />
+			<frame type="Experiencer_focus" head="del cariño">
+				<argument type="Content" dependent="que nadie le había dado" /></frame>
 			<frame type="Experiencer_focus" head="del cariño">
 				<argument type="Content" dependent="que nadie le había dado" /></frame>
 			<frame type="Giving" head="dado">
 				<argument type="Donor" dependent="nadie" /></frame>
+			<frame type="Giving" head="dado">
+				<argument type="Donor" dependent="nadie" /></frame>
 			<frame type="Manufacturing" head="hacerle" />
+			<main_frame type="Manufacturing" head="hacerle" />
+			<main_frame type="Possibility" head="podría">
+				<argument type="Possible_event" dependent="hacerle muy feliz y rodearle del cariño que nadie le había" /></main_frame>
 			<frame type="Possibility" head="podría">
 				<argument type="Possible_event" dependent="hacerle muy feliz y rodearle del cariño que nadie le había" /></frame>
 		</semantic_roles>
@@ -85,15 +92,19 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="pp3ms000">él</token>
 		</theme>
 		<rheme>
 			<token pos="pp3fsa00">la</token><token pos="vmii3s0">quería</token><token pos="sps00">a</token><token pos="vmn0000">pesar</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncfs000">timidez</token><token pos="cc">y</token><token pos="dp3cs0">su</token><token pos="ncms000">silencio</token>
 		</rheme>
 		<semantic_roles>
+			<main_frame type="Experiencer_focus" head="quería">
+				<argument type="Content" dependent="a pesar de su timidez y su silencio" /></main_frame>
 			<frame type="Experiencer_focus" head="quería">
 				<argument type="Content" dependent="a pesar de su timidez y su silencio" /></frame>
+			<frame type="Likelihood" head="sin duda">
+				<argument type="Hypothetical_event" dependent="a pesar de su timidez y su silencio" /></frame>
 			<frame type="Likelihood" head="sin duda">
 				<argument type="Hypothetical_event" dependent="a pesar de su timidez y su silencio" /></frame>
 		</semantic_roles>
@@ -109,24 +120,6 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Modality_Reporter" head="Antonia " />
-			<frame type="Buildings" head="casa" />
-			<frame type="Calendric_unit" head="meses" />
-			<frame type="Capability" head="capaz">
-				<argument type="Event" dependent="despedirse por miedo a mostrar sus emociones" /></frame>
-			<frame type="Departing" head="despedirse">
-				<argument type="Time" dependent="Dos meses después de aquel apresurado café" />
-				<argument type="Theme" dependent="el vecino" />
-				<argument type="Path" dependent="casa" /></frame>
-			<frame type="Fear" head="miedo">
-				<argument type="Stimulus" dependent="a mostrar sus emociones" /></frame>
-			<frame type="Food" head="café" />
-			<frame type="People_by_residence" head="vecino" />
-			<frame type="Relative_time" head="después de">
-				<argument type="Focal_occasion" dependent="Dos meses" />
-				<argument type="Landmark_occasion" dependent="aquel apresurado café, el vecino se mudó de casa sin decir nada, y" />
-				<argument type="Focal_occasion" dependent="capaz de despedirse por miedo a mostrar sus emociones" /></frame>
-			<frame type="Statement" head="decir">
-				<argument type="Message" dependent="despedirse por miedo a mostrar sus emociones" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -151,14 +144,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Departing" head="desaparecían" />
-			<frame type="Departing" head="iban de">
-				<argument type="Path" dependent="su vida" /></frame>
-			<frame type="Earnings_and_losses" head="perdían">
-				<argument type="Buyer" dependent="en la inmensidad del mundo" /></frame>
-			<frame type="Interior_profile_relation" head="en">
-				<argument type="Ground" dependent="la inmensidad del mundo" /></frame>
-			<frame type="Political_locales" head="mundo" />
 		</semantic_roles>
 	</sentence>
 

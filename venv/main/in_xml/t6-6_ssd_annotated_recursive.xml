@@ -9,19 +9,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Body_parts" head="brazos" />
-			<frame type="Body_parts" head="sus pies" />
-			<frame type="Bringing" head="acercar">
-				<argument type="Theme" dependent="mejilla a sus" />
-				<argument type="Goal" dependent="a sus pies" /></frame>
-			<frame type="Change_position_on_a_scale" head="se tiraba">
-				<argument type="Final_value" dependent="Muchas veces" />
-				<argument type="Attribute" dependent="al suelo para rodear con los brazos los tobillos de su madre y acercar la mejilla a sus pies" /></frame>
-			<frame type="Kinship" head="madre" />
-			<frame type="Locative_relation" head="acercar">
-				<argument type="Figure" dependent="los brazos" />
-				<argument type="Ground" dependent="tobillos de su madre" /></frame>
-			<frame type="Quantified_mass" head="Muchas" />
 		</semantic_roles>
 	</sentence>
 
@@ -34,17 +21,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Body_parts" head="cabeza" />
-			<frame type="Body_parts" head="piel" />
-			<frame type="Deciding" head="decid&#237;a">
-				<argument type="Decision" dependent="a resbalar sobre su piel" /></frame>
-			<frame type="Experiencer_focus" head="disfrutaba">
-				<argument type="Content" dependent="pluma casi invisible cuando se decid&#237;a a resbalar sobre su piel" /></frame>
-			<frame type="Manipulation" head="se" />
-			<frame type="Motion" head="mov&#237;a">
-				<argument type="Path" dependent="su piel" /></frame>
-			<frame type="Motion" head="mov&#237;a la">
-				<argument type="Theme" dependent="la cabeza" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -57,18 +33,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Arriving" head="recib&#237;a" />
-			<frame type="Facial_expression" head="sonrisa" />
-			<frame type="Making_faces" head="sonrisa" />
-			<frame type="Receiving" head="recib&#237;a">
-				<argument type="Theme" dependent="una sonrisa" />
-				<argument type="Place" dependent="a cambio" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="pp3fs000">Ella</token><token pos="fc">,</token><token pos="nccs000">c&#243;mplice</token><token pos="sps00">en</token><token pos="dd0ms0">aquel</token><token pos="ncms000">juego</token><token pos="aq0cs0">inocente</token><token pos="pr0cn000">que</token><token pos="dp3cs0">su</token><token pos="ncms000">marido</token><token pos="vmii3s0">desaprobaba</token><token pos="sps00">con</token><token pos="ncfs000">energ&#237;a</token><token pos="fc">,</token>
 		</theme>
 		<rheme>
@@ -77,30 +47,86 @@
 		<semantic_roles>
 			<frame type="Activity_ongoing" head="guardaba">
 				<argument type="Activity" dependent="para &#233;l" /></frame>
+			<frame type="Activity_ongoing" head="guardaba">
+				<argument type="Activity" dependent="para &#233;l" /></frame>
+			<frame type="Activity_ongoing" head="guardaba">
+				<argument type="Activity" dependent="para &#233;l" /></frame>
+			<frame type="Awareness" head="consciente">
+				<argument type="Time" dependent="en poco tiempo" /></frame>
+			<frame type="Awareness" head="consciente">
+				<argument type="Time" dependent="en poco tiempo" /></frame>
 			<frame type="Awareness" head="consciente">
 				<argument type="Time" dependent="en poco tiempo" /></frame>
 			<frame type="Body_parts" head="piel" />
+			<frame type="Body_parts" head="piel" />
+			<frame type="Body_parts" head="piel" />
 			<frame type="Boundary" head="frontera" />
+			<frame type="Boundary" head="frontera" />
+			<frame type="Boundary" head="frontera" />
+			<frame type="Coming_to_believe" head="iba">
+				<argument type="Content" dependent="plumas que se desprend&#237;an a su paso y las guardaba para &#233;l, para compensarle quiz&#225; de la" /></frame>
+			<main_frame type="Coming_to_believe" head="iba">
+				<argument type="Content" dependent="plumas que se desprend&#237;an a su paso y las guardaba para &#233;l, para compensarle quiz&#225; de la" /></main_frame>
 			<frame type="Coming_to_believe" head="iba">
 				<argument type="Content" dependent="plumas que se desprend&#237;an a su paso y las guardaba para &#233;l, para compensarle quiz&#225; de la" /></frame>
 			<frame type="Communication" head="compart&#237;an">
 				<argument type="Message" dependent=", hasta que el cambio de estaci&#243;n se encarnara en pretexto suficiente para estrenar otro par, siempre el mismo modelo" /></frame>
+			<frame type="Communication" head="compart&#237;an">
+				<argument type="Message" dependent=", hasta que el cambio de estaci&#243;n se encarnara en pretexto suficiente para estrenar otro par, siempre el mismo modelo" /></frame>
+			<frame type="Communication" head="compart&#237;an">
+				<argument type="Message" dependent=", hasta que el cambio de estaci&#243;n se encarnara en pretexto suficiente para estrenar otro par, siempre el mismo modelo" /></frame>
+			<main_frame type="Expectation" head="desaprobaba" />
+			<frame type="Expectation" head="desaprobaba" />
 			<frame type="Expectation" head="desaprobaba" />
 			<frame type="Experiencer_focus" head="placer que" />
+			<frame type="Experiencer_focus" head="placer que" />
+			<frame type="Experiencer_focus" head="placer que" />
+			<frame type="Guilt_or_innocence" head="inocente" />
+			<frame type="Guilt_or_innocence" head="inocente" />
 			<frame type="Guilt_or_innocence" head="inocente" />
 			<frame type="Identicality" head="el mismo" />
+			<frame type="Identicality" head="el mismo" />
+			<frame type="Identicality" head="el mismo" />
 			<frame type="Increment" head="otro" />
+			<frame type="Increment" head="otro" />
+			<frame type="Increment" head="otro" />
+			<frame type="Memory" head="el recuerdo">
+				<argument type="Content" dependent="las plumas sobre una sucia franja desmochada" /></frame>
+			<frame type="Memory" head="el recuerdo">
+				<argument type="Content" dependent="las plumas sobre una sucia franja desmochada" /></frame>
 			<frame type="Memory" head="el recuerdo">
 				<argument type="Content" dependent="las plumas sobre una sucia franja desmochada" /></frame>
 			<frame type="Natural_features" head="desmochada">
 				<argument type="Locale" dependent="iba" /></frame>
+			<frame type="Natural_features" head="desmochada">
+				<argument type="Locale" dependent="iba" /></frame>
+			<frame type="Natural_features" head="desmochada">
+				<argument type="Locale" dependent="iba" /></frame>
 			<frame type="Personal_relationship" head="marido" />
+			<frame type="Personal_relationship" head="marido" />
+			<frame type="Personal_relationship" head="marido" />
+			<frame type="Process_end" head="paso" />
+			<frame type="Process_end" head="paso" />
 			<frame type="Process_end" head="paso" />
 			<frame type="Processing_materials" head="te&#241;ida de">
 				<argument type="Place" dependent="de azul" /></frame>
+			<frame type="Processing_materials" head="te&#241;ida de">
+				<argument type="Place" dependent="de azul" /></frame>
+			<frame type="Processing_materials" head="te&#241;ida de">
+				<argument type="Place" dependent="de azul" /></frame>
+			<frame type="Shapes" head="te&#241;ida de" />
+			<frame type="Shapes" head="te&#241;ida de" />
 			<frame type="Shapes" head="te&#241;ida de" />
 			<frame type="Sufficiency" head="suficiente">
 				<argument type="Item" dependent="para estrenar otro par" /></frame>
+			<frame type="Sufficiency" head="suficiente">
+				<argument type="Item" dependent="para estrenar otro par" /></frame>
+			<frame type="Sufficiency" head="suficiente">
+				<argument type="Item" dependent="para estrenar otro par" /></frame>
+			<frame type="Undergo_change" head="cambio">
+				<argument type="Final_quality" dependent="estaci&#243;n se" /></frame>
+			<frame type="Undergo_change" head="cambio">
+				<argument type="Final_quality" dependent="estaci&#243;n se" /></frame>
 			<frame type="Undergo_change" head="cambio">
 				<argument type="Final_quality" dependent="estaci&#243;n se" /></frame>
 		</semantic_roles>
@@ -108,7 +134,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -117,23 +143,89 @@
 		<semantic_roles>
 			<frame type="Age" head="nueva">
 				<argument type="Entity" dependent="fiesta de plumas y caricias" /></frame>
+			<frame type="Age" head="nueva">
+				<argument type="Entity" dependent="fiesta de plumas y caricias" /></frame>
+			<frame type="Age" head="nueva">
+				<argument type="Entity" dependent="fiesta de plumas y caricias" /></frame>
+			<frame type="Age" head="nueva">
+				<argument type="Entity" dependent="fiesta de plumas y caricias" /></frame>
+			<frame type="Body_parts" head="sus pies">
+				<argument type="Descriptor" dependent="levemente hinchados" /></frame>
+			<frame type="Body_parts" head="sus pies">
+				<argument type="Descriptor" dependent="levemente hinchados" /></frame>
+			<frame type="Body_parts" head="sus pies">
+				<argument type="Descriptor" dependent="levemente hinchados" /></frame>
 			<frame type="Body_parts" head="sus pies">
 				<argument type="Descriptor" dependent="levemente hinchados" /></frame>
 			<frame type="Cause_change" head="paso">
 				<argument type="Final_category" dependent="ser el &#250;nico lujo a su alcance de entre todos aquellos con los que so&#241;ara de soltera" /></frame>
+			<frame type="Cause_change" head="paso">
+				<argument type="Final_category" dependent="ser el &#250;nico lujo a su alcance de entre todos aquellos con los que so&#241;ara de soltera" /></frame>
+			<frame type="Cause_change" head="paso">
+				<argument type="Final_category" dependent="ser el &#250;nico lujo a su alcance de entre todos aquellos con los que so&#241;ara de soltera" /></frame>
+			<frame type="Cause_change" head="paso">
+				<argument type="Final_category" dependent="ser el &#250;nico lujo a su alcance de entre todos aquellos con los que so&#241;ara de soltera" /></frame>
+			<frame type="Intentionally_act" head="paso" />
+			<frame type="Intentionally_act" head="paso" />
+			<frame type="Intentionally_act" head="paso" />
 			<frame type="Intentionally_act" head="paso" />
 			<frame type="Interior_profile_relation" head="en">
 				<argument type="Figure" dependent="se sentaba" />
 				<argument type="Ground" dependent="un sill&#243;n y embut&#237;a" />
 				<argument type="Figure" dependent="sus pies levemente hinchados en el que hab&#237;a resultado ser el &#250;nico lujo a su alcance de entre todos" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="se sentaba" />
+				<argument type="Ground" dependent="un sill&#243;n y embut&#237;a" />
+				<argument type="Figure" dependent="sus pies levemente hinchados en el que hab&#237;a resultado ser el &#250;nico lujo a su alcance de entre todos" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="se sentaba" />
+				<argument type="Ground" dependent="un sill&#243;n y embut&#237;a" />
+				<argument type="Figure" dependent="sus pies levemente hinchados en el que hab&#237;a resultado ser el &#250;nico lujo a su alcance de entre todos" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="se sentaba" />
+				<argument type="Ground" dependent="un sill&#243;n y embut&#237;a" />
+				<argument type="Figure" dependent="sus pies levemente hinchados en el que hab&#237;a resultado ser el &#250;nico lujo a su alcance de entre todos" /></frame>
+			<frame type="Manipulation" head="caricias" />
+			<frame type="Manipulation" head="caricias" />
+			<frame type="Manipulation" head="caricias" />
 			<frame type="Manipulation" head="caricias" />
 			<frame type="People" head="soltera" />
+			<frame type="People" head="soltera" />
+			<frame type="People" head="soltera" />
+			<frame type="People" head="soltera" />
+			<frame type="Posture" head="sentaba" />
+			<frame type="Posture" head="sentaba" />
+			<frame type="Posture" head="sentaba" />
 			<frame type="Posture" head="sentaba" />
 			<frame type="Referring_by_name" head="llamaba">
 				<argument type="Name" dependent="a dar" /></frame>
+			<frame type="Referring_by_name" head="llamaba">
+				<argument type="Name" dependent="a dar" /></frame>
+			<frame type="Referring_by_name" head="llamaba">
+				<argument type="Name" dependent="a dar" /></frame>
+			<frame type="Referring_by_name" head="llamaba">
+				<argument type="Name" dependent="a dar" /></frame>
+			<frame type="Sleep" head="se" />
+			<frame type="Sleep" head="se" />
+			<frame type="Sleep" head="se" />
 			<frame type="Sleep" head="se" />
 			<frame type="Sole_instance" head="un solo" />
+			<frame type="Sole_instance" head="un solo" />
+			<frame type="Sole_instance" head="un solo" />
+			<frame type="Sole_instance" head="un solo" />
 			<frame type="Sole_instance" head="&#250;nico" />
+			<frame type="Sole_instance" head="&#250;nico" />
+			<frame type="Sole_instance" head="&#250;nico" />
+			<frame type="Sole_instance" head="&#250;nico" />
+			<frame type="Time_vector" head="antes">
+				<argument type="Event" dependent="&#250;nico lujo a su alcance de entre todos aquellos" />
+				<argument type="Landmark_event" dependent="haber llegado a dar siquiera un solo paso" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Event" dependent="&#250;nico lujo a su alcance de entre todos aquellos" />
+				<argument type="Landmark_event" dependent="haber llegado a dar siquiera un solo paso" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Event" dependent="&#250;nico lujo a su alcance de entre todos aquellos" />
+				<argument type="Landmark_event" dependent="haber llegado a dar siquiera un solo paso" /></frame>
 			<frame type="Time_vector" head="antes">
 				<argument type="Event" dependent="&#250;nico lujo a su alcance de entre todos aquellos" />
 				<argument type="Landmark_event" dependent="haber llegado a dar siquiera un solo paso" /></frame>
@@ -142,7 +234,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0fp0">Las</token><token pos="ncfp000">chinelas</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncfs000">madre</token>
 		</theme>
 		<rheme>
@@ -174,8 +266,8 @@
 			<frame type="Measurable_attributes" head="estrecha" />
 			<frame type="Part_whole" head="tramos">
 				<argument type="Whole" dependent="que jam&#225;s habr&#237;a sido capaz de coronar solo" /></frame>
-			<frame type="Relative_time" head="preced&#237;an">
-				<argument type="Focal_occasion" dependent="estrecha escalera de la" /></frame>
+			<main_frame type="Relative_time" head="preced&#237;an">
+				<argument type="Focal_occasion" dependent="estrecha escalera de la" /></main_frame>
 		</semantic_roles>
 	</sentence>
 

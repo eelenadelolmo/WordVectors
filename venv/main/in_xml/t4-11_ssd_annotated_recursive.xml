@@ -2,7 +2,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">ni&#241;os</token>
 		</theme>
 		<rheme>
@@ -22,13 +22,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Calendric_unit" head="se" />
-			<frame type="Categorization" head="consideramos">
-				<argument type="Item" dependent="adultos" />
-				<argument type="Category" dependent="cuando se dejan intrigar tambi&#233;n por los misterios del mediod&#237;a, del alba y del" /></frame>
-			<frame type="People_by_age" head="adultos" />
-			<frame type="Text" head="misterios">
-				<argument type="Topic" dependent="mediod&#237;a" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -41,16 +34,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Evidence" head="evidencia">
-				<argument type="Proposition" dependent="de madurez" /></frame>
-			<frame type="Stimulus_focus" head="triste">
-				<argument type="Stimulus" dependent="evidencia de madurez" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0fs0">La</token><token pos="ncfs000">vida</token>
 		</theme>
 		<rheme>
@@ -68,7 +57,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="np0000l">Roma</token>
 		</theme>
 		<rheme>
@@ -76,6 +65,9 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Aggregate" head="fiesta" />
+			<frame type="Aggregate" head="fiesta" />
+			<main_frame type="Desiring" head="quiere">
+				<argument type="Event" dependent="otra vez la fiesta" /></main_frame>
 			<frame type="Desiring" head="quiere">
 				<argument type="Event" dependent="otra vez la fiesta" /></frame>
 		</semantic_roles>
@@ -102,17 +94,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Capability" head="puede">
-				<argument type="Entity" dependent="un hombre" />
-				<argument type="Event" dependent="ser" /></frame>
-			<frame type="Desirability" head="pobre" />
-			<frame type="People" head="hombre" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="di0mp0">Todos</token><token pos="da0mp0">los</token><token pos="ncmp000">pintores</token>
 		</theme>
 		<rheme>
@@ -136,23 +123,19 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Locative_relation" head="hay">
-				<argument type="Ground" dependent="hay un secreto muy convincente" /></frame>
-			<frame type="Secrecy_status" head="secreto" />
-			<frame type="Suasion" head="convincente" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="pp1csn00">Yo</token>
 		</theme>
 		<rheme>
 			<token pos="pp3msa00">lo</token><token pos="vmip1s0">conozco</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Awareness" head="conozco" />
+			<main_frame type="Awareness" head="conozco" />
 			<frame type="Reveal_secret" head="revelarlo" />
 			<frame type="Risky_situation" head="peligroso">
 				<argument type="Situation" dependent="revelarlo" /></frame>
@@ -161,7 +144,7 @@
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="da0mp0">Los</token><token pos="nccp000">guardias</token><token pos="aq0cp0">civiles</token>
 		</theme>
 		<rheme>
@@ -169,10 +152,34 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Cardinal_numbers" head="tres" />
+			<frame type="Cardinal_numbers" head="tres" />
+			<main_frame type="Cardinal_numbers" head="tres" />
+			<frame type="Cardinal_numbers" head="tres" />
+			<main_frame type="Desirable_event" head="deb&#237;an">
+				<argument type="State_of_affairs" dependent="Los guardias civiles" />
+				<argument type="State_of_affairs" dependent="no deb&#237;an usar el tricornio" /></main_frame>
+			<frame type="Desirable_event" head="deb&#237;an">
+				<argument type="State_of_affairs" dependent="Los guardias civiles" />
+				<argument type="State_of_affairs" dependent="no deb&#237;an usar el tricornio" /></frame>
+			<frame type="Desirable_event" head="deb&#237;an">
+				<argument type="State_of_affairs" dependent="Los guardias civiles" />
+				<argument type="State_of_affairs" dependent="no deb&#237;an usar el tricornio" /></frame>
 			<frame type="Desirable_event" head="deb&#237;an">
 				<argument type="State_of_affairs" dependent="Los guardias civiles" />
 				<argument type="State_of_affairs" dependent="no deb&#237;an usar el tricornio" /></frame>
 			<frame type="Social_interaction_evaluation" head="civiles" />
+			<frame type="Social_interaction_evaluation" head="civiles" />
+			<main_frame type="Social_interaction_evaluation" head="civiles" />
+			<frame type="Social_interaction_evaluation" head="civiles" />
+			<frame type="Wearing" head="usar">
+				<argument type="Wearer" dependent="Los guardias civiles" />
+				<argument type="Clothing" dependent="el tricornio" /></frame>
+			<main_frame type="Wearing" head="usar">
+				<argument type="Wearer" dependent="Los guardias civiles" />
+				<argument type="Clothing" dependent="el tricornio" /></main_frame>
+			<frame type="Wearing" head="usar">
+				<argument type="Wearer" dependent="Los guardias civiles" />
+				<argument type="Clothing" dependent="el tricornio" /></frame>
 			<frame type="Wearing" head="usar">
 				<argument type="Wearer" dependent="Los guardias civiles" />
 				<argument type="Clothing" dependent="el tricornio" /></frame>

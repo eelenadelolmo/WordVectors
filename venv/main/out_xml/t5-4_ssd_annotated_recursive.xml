@@ -26,16 +26,16 @@
 
 
 	<concepts>
-		<concept id="A">el calor</concept>
-		<concept id="B">los muslos</concept>
-		<concept id="C">Esto</concept>
-		<concept id="D">Antonia</concept>
-		<concept id="E">Ella</concept>
-		<concept id="F">que</concept>
+		<concept id="c_0">el calor</concept>
+		<concept id="c_1">los muslos</concept>
+		<concept id="c_2">Esto</concept>
+		<concept id="c_3">Antonia</concept>
+		<concept id="c_4">Ella</concept>
+		<concept id="c_5">que</concept>
 	</concepts>
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0ms0">el</token><token pos="ncms000">calor</token>
 		</theme>
 		<rheme>
@@ -58,7 +58,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Increment" head="Más" />
 		</semantic_roles>
 	</sentence>
 
@@ -76,7 +75,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="da0mp0">los</token><token pos="ncmp000">muslos</token>
 		</theme>
 		<rheme>
@@ -106,7 +105,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="pd0ns000">Esto</token>
 		</theme>
 		<rheme>
@@ -118,24 +117,29 @@
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="np0000p">Antonia</token>
 		</theme>
 		<rheme>
 			<token pos="vmii3s0">acababa</token><token pos="sps00">de</token><token pos="vmn0000">fregar</token><token pos="da0mp0">los</token><token pos="ncmp000">platos</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">comida</token>
 		</rheme>
 		<semantic_roles>
+			<main_frame type="Activity_finish" head="acababa de">
+				<argument type="Activity" dependent="fregar los platos de la comida" /></main_frame>
 			<frame type="Activity_finish" head="acababa de">
 				<argument type="Activity" dependent="fregar los platos de la comida" /></frame>
 			<frame type="Removing" head="fregar">
 				<argument type="Goal" dependent="los platos de la comida" /></frame>
+			<main_frame type="Removing" head="fregar">
+				<argument type="Goal" dependent="los platos de la comida" /></main_frame>
+			<frame type="Social_event" head="comida" />
 			<frame type="Social_event" head="comida" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="np0000p">Antonio</token>
 		</theme>
 		<rheme>
@@ -143,12 +147,22 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Arriving" head="así" />
+			<frame type="Arriving" head="así" />
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="ella sola ensuciaba siempre poco" /></frame>
 			<frame type="Frequency" head="siempre">
 				<argument type="Event" dependent="ella sola ensuciaba siempre poco" /></frame>
 			<frame type="Interior_profile_relation" head="en">
 				<argument type="Figure" dependent="es que acabó en" />
 				<argument type="Ground" dependent="siempre" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="es que acabó en" />
+				<argument type="Ground" dependent="siempre" /></frame>
 			<frame type="Proportional_quantity" head="en" />
+			<frame type="Proportional_quantity" head="en" />
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="ella sola ensuciaba siempre poco" />
+				<argument type="Ground" dependent="ella sola" /></frame>
 			<frame type="Spatial_contact" head="en">
 				<argument type="Figure" dependent="ella sola ensuciaba siempre poco" />
 				<argument type="Ground" dependent="ella sola" /></frame>
@@ -157,7 +171,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="np0000p">Antonio</token>
 		</theme>
 		<rheme>
@@ -165,32 +179,200 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Calendric_unit" head="minutos" />
+			<frame type="Calendric_unit" head="minutos" />
+			<frame type="Calendric_unit" head="minutos" />
+			<frame type="Calendric_unit" head="minutos" />
+			<frame type="Calendric_unit" head="minutos" />
+			<frame type="Calendric_unit" head="minutos" />
+			<frame type="Calendric_unit" head="minutos" />
+			<frame type="Calendric_unit" head="minutos" />
+			<frame type="Calendric_unit" head="minutos" />
+			<frame type="Impact" head="sacó" />
+			<frame type="Impact" head="sacó" />
+			<frame type="Impact" head="sacó" />
+			<frame type="Impact" head="sacó" />
+			<frame type="Impact" head="sacó" />
+			<frame type="Impact" head="sacó" />
+			<frame type="Impact" head="sacó" />
+			<frame type="Impact" head="sacó" />
 			<frame type="Impact" head="sacó" />
 			<frame type="Intentionally_act" head="de" />
+			<frame type="Intentionally_act" head="de" />
+			<frame type="Intentionally_act" head="de" />
+			<frame type="Intentionally_act" head="de" />
+			<frame type="Intentionally_act" head="de" />
+			<frame type="Intentionally_act" head="de" />
+			<frame type="Intentionally_act" head="de" />
+			<frame type="Intentionally_act" head="de" />
+			<frame type="Intentionally_act" head="de" />
+			<frame type="Locative_relation" head="entretuvo">
+				<argument type="Figure" dependent="pega" />
+				<argument type="Ground" dependent="del armario" /></frame>
+			<frame type="Locative_relation" head="entretuvo">
+				<argument type="Figure" dependent="pega" />
+				<argument type="Ground" dependent="del armario" /></frame>
+			<frame type="Locative_relation" head="entretuvo">
+				<argument type="Figure" dependent="pega" />
+				<argument type="Ground" dependent="del armario" /></frame>
+			<frame type="Locative_relation" head="entretuvo">
+				<argument type="Figure" dependent="pega" />
+				<argument type="Ground" dependent="del armario" /></frame>
+			<frame type="Locative_relation" head="entretuvo">
+				<argument type="Figure" dependent="pega" />
+				<argument type="Ground" dependent="del armario" /></frame>
+			<frame type="Locative_relation" head="entretuvo">
+				<argument type="Figure" dependent="pega" />
+				<argument type="Ground" dependent="del armario" /></frame>
+			<frame type="Locative_relation" head="entretuvo">
+				<argument type="Figure" dependent="pega" />
+				<argument type="Ground" dependent="del armario" /></frame>
+			<frame type="Locative_relation" head="entretuvo">
+				<argument type="Figure" dependent="pega" />
+				<argument type="Ground" dependent="del armario" /></frame>
 			<frame type="Locative_relation" head="entretuvo">
 				<argument type="Figure" dependent="pega" />
 				<argument type="Ground" dependent="del armario" /></frame>
 			<frame type="Manipulation" head="engrasadas">
 				<argument type="Agent" dependent="pega" /></frame>
+			<frame type="Manipulation" head="engrasadas">
+				<argument type="Agent" dependent="pega" /></frame>
+			<frame type="Manipulation" head="engrasadas">
+				<argument type="Agent" dependent="pega" /></frame>
+			<frame type="Manipulation" head="engrasadas">
+				<argument type="Agent" dependent="pega" /></frame>
+			<frame type="Manipulation" head="engrasadas">
+				<argument type="Agent" dependent="pega" /></frame>
+			<frame type="Manipulation" head="engrasadas">
+				<argument type="Agent" dependent="pega" /></frame>
+			<frame type="Manipulation" head="engrasadas">
+				<argument type="Agent" dependent="pega" /></frame>
+			<main_frame type="Manipulation" head="engrasadas">
+				<argument type="Agent" dependent="pega" /></main_frame>
+			<frame type="Manipulation" head="engrasadas">
+				<argument type="Agent" dependent="pega" /></frame>
 			<frame type="Perception_experience" head="no ves" />
+			<frame type="Perception_experience" head="no ves" />
+			<frame type="Perception_experience" head="no ves" />
+			<frame type="Perception_experience" head="no ves" />
+			<frame type="Perception_experience" head="no ves" />
+			<frame type="Perception_experience" head="no ves" />
+			<main_frame type="Perception_experience" head="no ves" />
+			<frame type="Perception_experience" head="no ves" />
+			<frame type="Perception_experience" head="no ves" />
+			<main_frame type="Preventing_or_letting" head="permitía">
+				<argument type="Event" dependent="hacerlo" /></main_frame>
+			<frame type="Preventing_or_letting" head="permitía">
+				<argument type="Event" dependent="hacerlo" /></frame>
+			<frame type="Preventing_or_letting" head="permitía">
+				<argument type="Event" dependent="hacerlo" /></frame>
+			<frame type="Preventing_or_letting" head="permitía">
+				<argument type="Event" dependent="hacerlo" /></frame>
+			<frame type="Preventing_or_letting" head="permitía">
+				<argument type="Event" dependent="hacerlo" /></frame>
+			<frame type="Preventing_or_letting" head="permitía">
+				<argument type="Event" dependent="hacerlo" /></frame>
+			<frame type="Preventing_or_letting" head="permitía">
+				<argument type="Event" dependent="hacerlo" /></frame>
+			<frame type="Preventing_or_letting" head="permitía">
+				<argument type="Event" dependent="hacerlo" /></frame>
 			<frame type="Preventing_or_letting" head="permitía">
 				<argument type="Event" dependent="hacerlo" /></frame>
 			<frame type="Quantified_mass" head="unos" />
+			<frame type="Quantified_mass" head="unos" />
+			<frame type="Quantified_mass" head="unos" />
+			<frame type="Quantified_mass" head="unos" />
+			<frame type="Quantified_mass" head="unos" />
+			<frame type="Quantified_mass" head="unos" />
+			<frame type="Quantified_mass" head="unos" />
+			<frame type="Quantified_mass" head="unos" />
+			<frame type="Quantified_mass" head="unos" />
 			<frame type="Removing" head="se lavan">
 				<argument type="Theme" dependent="pega" /></frame>
+			<frame type="Removing" head="se lavan">
+				<argument type="Theme" dependent="pega" /></frame>
+			<frame type="Removing" head="se lavan">
+				<argument type="Theme" dependent="pega" /></frame>
+			<main_frame type="Removing" head="se lavan">
+				<argument type="Theme" dependent="pega" /></main_frame>
+			<frame type="Removing" head="se lavan">
+				<argument type="Theme" dependent="pega" /></frame>
+			<frame type="Removing" head="se lavan">
+				<argument type="Theme" dependent="pega" /></frame>
+			<frame type="Removing" head="se lavan">
+				<argument type="Theme" dependent="pega" /></frame>
+			<frame type="Removing" head="se lavan">
+				<argument type="Theme" dependent="pega" /></frame>
+			<frame type="Removing" head="se lavan">
+				<argument type="Theme" dependent="pega" /></frame>
+			<frame type="Statement" head="decía">
+				<argument type="Message" dependent="entretuvo en frotarlas con estropajo y denodado celo ; Antonio no le permitía hacerlo" />
+				<argument type="Message" dependent="que las sartenes no se lavan, sino que se restriegan con papel de periódico para que queden engrasadas, - no ves ," /></frame>
+			<frame type="Statement" head="decía">
+				<argument type="Message" dependent="entretuvo en frotarlas con estropajo y denodado celo ; Antonio no le permitía hacerlo" />
+				<argument type="Message" dependent="que las sartenes no se lavan, sino que se restriegan con papel de periódico para que queden engrasadas, - no ves ," /></frame>
+			<main_frame type="Statement" head="decía">
+				<argument type="Message" dependent="entretuvo en frotarlas con estropajo y denodado celo ; Antonio no le permitía hacerlo" />
+				<argument type="Message" dependent="que las sartenes no se lavan, sino que se restriegan con papel de periódico para que queden engrasadas, - no ves ," /></main_frame>
+			<frame type="Statement" head="decía">
+				<argument type="Message" dependent="entretuvo en frotarlas con estropajo y denodado celo ; Antonio no le permitía hacerlo" />
+				<argument type="Message" dependent="que las sartenes no se lavan, sino que se restriegan con papel de periódico para que queden engrasadas, - no ves ," /></frame>
+			<frame type="Statement" head="decía">
+				<argument type="Message" dependent="entretuvo en frotarlas con estropajo y denodado celo ; Antonio no le permitía hacerlo" />
+				<argument type="Message" dependent="que las sartenes no se lavan, sino que se restriegan con papel de periódico para que queden engrasadas, - no ves ," /></frame>
+			<frame type="Statement" head="decía">
+				<argument type="Message" dependent="entretuvo en frotarlas con estropajo y denodado celo ; Antonio no le permitía hacerlo" />
+				<argument type="Message" dependent="que las sartenes no se lavan, sino que se restriegan con papel de periódico para que queden engrasadas, - no ves ," /></frame>
+			<frame type="Statement" head="decía">
+				<argument type="Message" dependent="entretuvo en frotarlas con estropajo y denodado celo ; Antonio no le permitía hacerlo" />
+				<argument type="Message" dependent="que las sartenes no se lavan, sino que se restriegan con papel de periódico para que queden engrasadas, - no ves ," /></frame>
+			<frame type="Statement" head="decía">
+				<argument type="Message" dependent="entretuvo en frotarlas con estropajo y denodado celo ; Antonio no le permitía hacerlo" />
+				<argument type="Message" dependent="que las sartenes no se lavan, sino que se restriegan con papel de periódico para que queden engrasadas, - no ves ," /></frame>
 			<frame type="Statement" head="decía">
 				<argument type="Message" dependent="entretuvo en frotarlas con estropajo y denodado celo ; Antonio no le permitía hacerlo" />
 				<argument type="Message" dependent="que las sartenes no se lavan, sino que se restriegan con papel de periódico para que queden engrasadas, - no ves ," /></frame>
 			<frame type="Taking_time" head="sacó">
 				<argument type="Time_length" dependent="todas las sartenes del" />
 				<argument type="Activity" dependent="del armario" /></frame>
+			<frame type="Taking_time" head="sacó">
+				<argument type="Time_length" dependent="todas las sartenes del" />
+				<argument type="Activity" dependent="del armario" /></frame>
+			<frame type="Taking_time" head="sacó">
+				<argument type="Time_length" dependent="todas las sartenes del" />
+				<argument type="Activity" dependent="del armario" /></frame>
+			<frame type="Taking_time" head="sacó">
+				<argument type="Time_length" dependent="todas las sartenes del" />
+				<argument type="Activity" dependent="del armario" /></frame>
+			<frame type="Taking_time" head="sacó">
+				<argument type="Time_length" dependent="todas las sartenes del" />
+				<argument type="Activity" dependent="del armario" /></frame>
+			<frame type="Taking_time" head="sacó">
+				<argument type="Time_length" dependent="todas las sartenes del" />
+				<argument type="Activity" dependent="del armario" /></frame>
+			<frame type="Taking_time" head="sacó">
+				<argument type="Time_length" dependent="todas las sartenes del" />
+				<argument type="Activity" dependent="del armario" /></frame>
+			<frame type="Taking_time" head="sacó">
+				<argument type="Time_length" dependent="todas las sartenes del" />
+				<argument type="Activity" dependent="del armario" /></frame>
+			<frame type="Taking_time" head="sacó">
+				<argument type="Time_length" dependent="todas las sartenes del" />
+				<argument type="Activity" dependent="del armario" /></frame>
+			<frame type="Text" head="periódico" />
+			<frame type="Text" head="periódico" />
+			<frame type="Text" head="periódico" />
+			<frame type="Text" head="periódico" />
+			<frame type="Text" head="periódico" />
+			<frame type="Text" head="periódico" />
+			<frame type="Text" head="periódico" />
+			<frame type="Text" head="periódico" />
 			<frame type="Text" head="periódico" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="pp3fs000">Ella</token>
 		</theme>
 		<rheme>
@@ -199,7 +381,7 @@
 		<semantic_roles>
 			<frame type="Awareness" head="sabía">
 				<argument type="Content" dependent="dónde había sacado su hermano eso de que así no se pegaban" /></frame>
-			<frame type="Compliance" head="obedecía" />
+			<main_frame type="Compliance" head="obedecía" />
 			<frame type="Impact" head="sacado" />
 			<frame type="Increment" head="aunque" />
 			<frame type="Kinship" head="hermano" />
@@ -219,29 +401,18 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Biological_area" head="detergente" />
-			<frame type="Change_of_leadership" head="rebeldía" />
-			<frame type="Departing" head="dejar">
-				<argument type="Path" dependent="de frituras" /></frame>
-			<frame type="Preventing_or_letting" head="permitía">
-				<argument type="Event" dependent="brizna de rebeldía fraternal y las frotaba y refrotaba bien con detergente hasta hacer" /></frame>
-			<frame type="Time_vector" head="hasta">
-				<argument type="Event" dependent="a Antonia le repugnaba un poco dejar las sartenes aceitosas, de vez en cuando se permitía una brizna de" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="F">
+		<theme concept_ref="c_5">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Apply_heat" head="cocinaba" />
-			<frame type="Relative_time" head="fin de">
-				<argument type="Focal_occasion" dependent="la que cocinaba era ella, qué" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -254,9 +425,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Identicality" head="la misma" />
-			<frame type="Kinship" head="padre">
-				<argument type="Ego" dependent="la misma manía" /></frame>
 		</semantic_roles>
 	</sentence>
 

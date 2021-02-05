@@ -26,15 +26,15 @@
 
 
 	<concepts>
-		<concept id="A">que</concept>
-		<concept id="B">Él</concept>
-		<concept id="C">las paredes de sus pulmones</concept>
-		<concept id="D">sus brazos</concept>
-		<concept id="E">Los diez dedos , extendidos ,</concept>
+		<concept id="c_0">que</concept>
+		<concept id="c_1">Él</concept>
+		<concept id="c_2">las paredes de sus pulmones</concept>
+		<concept id="c_3">sus brazos</concept>
+		<concept id="c_4">Los diez dedos , extendidos ,</concept>
 	</concepts>
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -56,8 +56,8 @@
 			<frame type="Manipulation" head="desmadrado que">
 				<argument type="Entity" dependent="espolón que proyectaba sobre su piel la huella de un esternón deforme como un arma agresiva e hiriente ," /></frame>
 			<frame type="Medical_conditions" head="sanos" />
-			<frame type="Project" head="proyectaba">
-				<argument type="Goal" dependent="su piel la huella de un esternón deforme como un arma agresiva e hiriente" /></frame>
+			<main_frame type="Project" head="proyectaba">
+				<argument type="Goal" dependent="su piel la huella de un esternón deforme como un arma agresiva e hiriente" /></main_frame>
 			<frame type="Subjective_influence" head="hiriente">
 				<argument type="Product" dependent="que proyectaba sobre su piel la huella de un esternón deforme como un arma agresiva e hiriente ," /></frame>
 			<frame type="Weapon" head="arma">
@@ -74,51 +74,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Activity_start" head="comenzaba a">
-				<argument type="Activity" dependent="carne blanquecina, fofa, que" />
-				<argument type="Activity" dependent="a acumularse en torno a su" /></frame>
-			<frame type="Age" head="nueva" />
-			<frame type="Body_parts" head="cara" />
-			<frame type="Body_parts" head="cuerpo" />
-			<frame type="Calendric_unit" head="años" />
-			<frame type="Causation" head="por esa">
-				<argument type="Effect" dependent="huesudas y separadas como las patas de un pollo mojado" />
-				<argument type="Cause" dependent="por esa carne blanquecina, fofa, que comenzaba a acumularse en torno a su cintura, a descolgarse hacia" /></frame>
-			<frame type="Cause_motion" head="arrastrando">
-				<argument type="Theme" dependent="su vértigo un ombligo progresivamente hondo" /></frame>
-			<frame type="Change_position_on_a_scale" head="torno" />
-			<frame type="Desiring" head="cuidado" />
-			<frame type="Existence" head="existir">
-				<argument type="Duration" dependent="a ser feo" /></frame>
-			<frame type="Expertise" head="familiar" />
-			<frame type="Give_impression" head="bulto" />
-			<frame type="Giving" head="ombligo">
-				<argument type="Donor" dependent="el espejo" /></frame>
-			<frame type="Impression" head="imagen" />
-			<frame type="Judgment_communication" head="condenado">
-				<argument type="Evaluee" dependent="un cuerpo" /></frame>
-			<frame type="Locative_relation" head="en torno">
-				<argument type="Figure" dependent="huesudas y separadas como las patas de un pollo mojado, y por esa carne" />
-				<argument type="Ground" dependent="su cintura" /></frame>
-			<frame type="Locative_relation" head="hacia">
-				<argument type="Figure" dependent="los dedos" />
-				<argument type="Ground" dependent="su vértigo" /></frame>
-			<frame type="Opinion" head="pensando">
-				<argument type="Opinion" dependent=", que nada podía hacer ya por su cara, ni por su" /></frame>
-			<frame type="Perception_experience" head="veía" />
-			<frame type="Possibility" head="podía">
-				<argument type="Possible_event" dependent="no veía" /></frame>
-			<frame type="Self_motion" head="hacer">
-				<argument type="Path" dependent="los dedos" />
-				<argument type="Source" dependent="a acumularse en torno a" /></frame>
-			<frame type="Spatial_contact" head="ombligo">
-				<argument type="Figure" dependent="bulto con cuidado, recorriendo sus aristas con las yemas de los dedos, contemplando la imagen que le devolvía el espejo" /></frame>
-			<frame type="Statement" head="añadir">
-				<argument type="Speaker" dependent="comenzaba a acumularse en torno a su cintura, a descolgarse hacia abajo arrastrando en su vértigo un ombligo progresivamente hondo, para" />
-				<argument type="Message" dependent="una nueva vejación" /></frame>
-			<frame type="Time_vector" head="antes">
-				<argument type="Event" dependent=", para añadir una nueva vejación, la de los años, a un cuerpo condenado de antemano, desde antes" />
-				<argument type="Landmark_event" dependent="de existir, a ser feo" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -131,13 +86,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Body_parts" head="boca" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="pp3ms000">Él</token>
 		</theme>
 		<rheme>
@@ -145,6 +99,9 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Calendric_unit" head="matutina" />
+			<frame type="Calendric_unit" head="matutina" />
+			<main_frame type="Possibility" head="podía">
+				<argument type="Possible_event" dependent="la halitosis matutina" /></main_frame>
 			<frame type="Possibility" head="podía">
 				<argument type="Possible_event" dependent="la halitosis matutina" /></frame>
 		</semantic_roles>
@@ -159,30 +116,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Arriving" head="estante">
-				<argument type="Goal" dependent="el brazo izquierdo" /></frame>
-			<frame type="Body_parts" head="brazo" />
-			<frame type="Calendric_unit" head="aquella mañana" />
-			<frame type="Containers" head="taza del" />
-			<frame type="Departing" head="izquierdo" />
-			<frame type="Getting" head="tos">
-				<argument type="Theme" dependent="escapar impune aquella mañana" /></frame>
-			<frame type="Just_found_out" head="sacudió" />
-			<frame type="Occupy_rank" head="superior del">
-				<argument type="Item" dependent="del armario" /></frame>
-			<frame type="Opinion" head="creído">
-				<argument type="Opinion" dependent="poder escapar impune aquella mañana" /></frame>
-			<frame type="Possibility" head="le">
-				<argument type="Possible_event" dependent="escapar impune aquella mañana" /></frame>
-			<frame type="Suitability" head="estante">
-				<argument type="Degree" dependent="un violento" />
-				<argument type="Degree" dependent="de tos" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0fp0">las</token><token pos="ncfp000">paredes</token><token pos="sps00">de</token><token pos="dp3cp0">sus</token><token pos="ncmp000">pulmones</token>
 		</theme>
 		<rheme>
@@ -191,41 +130,80 @@
 		<semantic_roles>
 			<frame type="Age" head="vieja">
 				<argument type="Entity" dependent="grasa vieja que nivelaba como una pasta lisa y brillante el irregular perfil del suelo" /></frame>
+			<frame type="Age" head="vieja">
+				<argument type="Entity" dependent="grasa vieja que nivelaba como una pasta lisa y brillante el irregular perfil del suelo" /></frame>
+			<frame type="Architectural_part" head="paredes" />
 			<frame type="Architectural_part" head="paredes" />
 			<frame type="Architectural_part" head="paredes de">
 				<argument type="Whole" dependent="de sus pulmones se" /></frame>
+			<frame type="Architectural_part" head="paredes de">
+				<argument type="Whole" dependent="de sus pulmones se" /></frame>
+			<frame type="Architectural_part" head="suelo" />
 			<frame type="Architectural_part" head="suelo" />
 			<frame type="Attempt" head="se">
 				<argument type="Goal" dependent="proyectarlo a través de la sucia pared" /></frame>
+			<frame type="Attempt" head="se">
+				<argument type="Goal" dependent="proyectarlo a través de la sucia pared" /></frame>
+			<frame type="Body_parts" head="brazos" />
 			<frame type="Body_parts" head="brazos" />
 			<frame type="Body_parts" head="cabeza" />
+			<frame type="Body_parts" head="cabeza" />
+			<frame type="Body_parts" head="hombros" />
 			<frame type="Body_parts" head="hombros" />
 			<frame type="Body_parts" head="manos" />
+			<frame type="Body_parts" head="manos" />
 			<frame type="Body_parts" head="ojos" />
+			<frame type="Body_parts" head="ojos" />
+			<main_frame type="Building" head="soldaban">
+				<argument type="Place" dependent="al aire" /></main_frame>
 			<frame type="Building" head="soldaban">
 				<argument type="Place" dependent="al aire" /></frame>
 			<frame type="Building_subparts" head="cocina" />
+			<frame type="Building_subparts" head="cocina" />
 			<frame type="Cardinal_numbers" head="dos" />
+			<frame type="Cardinal_numbers" head="dos" />
+			<frame type="Connecting_architecture" head="puertas" />
 			<frame type="Connecting_architecture" head="puertas" />
 			<frame type="Destroying" head="nivelaba">
 				<argument type="Degree" dependent="grasa vieja" /></frame>
+			<frame type="Destroying" head="nivelaba">
+				<argument type="Degree" dependent="grasa vieja" /></frame>
 			<frame type="Duration_description" head="breve" />
+			<frame type="Duration_description" head="breve" />
+			<frame type="Expansion" head="tendidos">
+				<argument type="Item" dependent="los dos brazos" /></frame>
 			<frame type="Expansion" head="tendidos">
 				<argument type="Item" dependent="los dos brazos" /></frame>
 			<frame type="Possibility" head="pudo">
 				<argument type="Possible_event" dependent="cerrándose al aire, y ya no pudo escupir palabra alguna, sólo toser, expulsar los sólidos demonios de su pecho, un" /></frame>
+			<frame type="Possibility" head="pudo">
+				<argument type="Possible_event" dependent="cerrándose al aire, y ya no pudo escupir palabra alguna, sólo toser, expulsar los sólidos demonios de su pecho, un" /></frame>
+			<frame type="Preventing_or_letting" head="hasta" />
 			<frame type="Preventing_or_letting" head="hasta" />
 			<frame type="Project" head="proyectarlo" />
+			<frame type="Project" head="proyectarlo" />
 			<frame type="Quantified_mass" head="varias" />
+			<frame type="Quantified_mass" head="varias" />
+			<frame type="Removing" head="empujando">
+				<argument type="Theme" dependent="los sólidos demonios" />
+				<argument type="Source" dependent="de su pecho" /></frame>
 			<frame type="Removing" head="empujando">
 				<argument type="Theme" dependent="los sólidos demonios" />
 				<argument type="Source" dependent="de su pecho" /></frame>
 			<frame type="Spatial_contact" head="en">
 				<argument type="Figure" dependent="una letanía" />
 				<argument type="Ground" dependent="sus labios" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="una letanía" />
+				<argument type="Ground" dependent="sus labios" /></frame>
 			<frame type="Subjective_influence" head="empujando">
 				<argument type="Cognizer" dependent="sus manos" />
 				<argument type="Behavior" dependent="empujando las frágiles puertas del armario de cocina como si pretendieran en realidad proyectarlo a través de la sucia pared alicatada" /></frame>
+			<frame type="Subjective_influence" head="empujando">
+				<argument type="Cognizer" dependent="sus manos" />
+				<argument type="Behavior" dependent="empujando las frágiles puertas del armario de cocina como si pretendieran en realidad proyectarlo a través de la sucia pared alicatada" /></frame>
+			<frame type="Taking_sides" head="entre">
+				<argument type="Side" dependent="puertas del armario de cocina" /></frame>
 			<frame type="Taking_sides" head="entre">
 				<argument type="Side" dependent="puertas del armario de cocina" /></frame>
 		</semantic_roles>
@@ -240,19 +218,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Continued_state_of_affairs" head="todavía">
-				<argument type="State_of_affairs" dependent="repitió nuevamente" /></frame>
-			<frame type="Motion" head="mover">
-				<argument type="Theme" dependent="los labios" /></frame>
-			<frame type="Possibility" head="pudo">
-				<argument type="Possible_event" dependent="mover los labios" /></frame>
-			<frame type="Preventing_or_letting" head="dejaré" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="D">
+		<theme concept_ref="c_3">
 			<token pos="dp3cp0">sus</token><token pos="ncmp000">brazos</token>
 		</theme>
 		<rheme>
@@ -270,7 +241,7 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -278,15 +249,28 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Body_parts" head="cuerpo" />
+			<frame type="Body_parts" head="cuerpo" />
+			<frame type="Body_parts" head="manos" />
 			<frame type="Body_parts" head="manos" />
 			<frame type="Continued_state_of_affairs" head="aún">
 				<argument type="State_of_affairs" dependent="su cuerpo" />
 				<argument type="State_of_affairs" dependent="hacia delante, confiado su peso a las manos que parecían a punto de horadar la formica con sus inofensivas" /></frame>
+			<frame type="Continued_state_of_affairs" head="aún">
+				<argument type="State_of_affairs" dependent="su cuerpo" />
+				<argument type="State_of_affairs" dependent="hacia delante, confiado su peso a las manos que parecían a punto de horadar la formica con sus inofensivas" /></frame>
+			<frame type="Dimension" head="peso" />
 			<frame type="Dimension" head="peso" />
 			<frame type="Duration_description" head="largo" />
+			<frame type="Duration_description" head="largo" />
+			<main_frame type="Give_impression" head="parecían">
+				<argument type="Phenomenon" dependent="confiado su peso a las manos que" />
+				<argument type="Inference" dependent="de horadar la formica con sus inofensivas yemas" /></main_frame>
 			<frame type="Give_impression" head="parecían">
 				<argument type="Phenomenon" dependent="confiado su peso a las manos que" />
 				<argument type="Inference" dependent="de horadar la formica con sus inofensivas yemas" /></frame>
+			<frame type="Performers_and_roles" head="contempló">
+				<argument type="Duration" dependent="desagradable fenómeno" />
+				<argument type="Time" dependent="largo tiempo" /></frame>
 			<frame type="Performers_and_roles" head="contempló">
 				<argument type="Duration" dependent="desagradable fenómeno" />
 				<argument type="Time" dependent="largo tiempo" /></frame>
@@ -295,7 +279,7 @@
 
 
 	<sentence>
-		<theme concept_ref="E">
+		<theme concept_ref="c_4">
 			<token pos="da0mp0">Los</token><token pos="dn0cp0">diez</token><token pos="ncmp000">dedos</token><token pos="fc">,</token><token pos="aq0mpp">extendidos</token><token pos="fc">,</token>
 		</theme>
 		<rheme>

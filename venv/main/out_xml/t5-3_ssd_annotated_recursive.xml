@@ -26,9 +26,9 @@
 
 
 	<concepts>
-		<concept id="A">El sol</concept>
-		<concept id="B">Antonia</concept>
-		<concept id="C">ella</concept>
+		<concept id="c_0">El sol</concept>
+		<concept id="c_1">Antonia</concept>
+		<concept id="c_2">ella</concept>
 	</concepts>
 
 	<sentence>
@@ -39,18 +39,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Breathing" head="resuello" />
-			<frame type="Building_subparts" head="cocina" />
-			<frame type="Part_inner_outer" head="mitad">
-				<argument type="Whole" dependent="de la cocina" /></frame>
-			<frame type="Posture" head="pie en">
-				<argument type="Location" dependent="en mitad de la cocina" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="ncms000">sol</token>
 		</theme>
 		<rheme>
@@ -64,7 +58,7 @@
 
 
 	<sentence>
-		<theme concept_ref="B">
+		<theme concept_ref="c_1">
 			<token pos="np0000p">Antonia</token>
 		</theme>
 		<rheme>
@@ -88,12 +82,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Kinship" head="hermano" />
-			<frame type="Kinship" head="pequeña" />
-			<frame type="Make_noise" head="jugar">
-				<argument type="Sound" dependent="esto con su hermano" /></frame>
-			<frame type="Using" head="con">
-				<argument type="Purpose" dependent="jugar a esto con su hermano" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -118,17 +106,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Closure" head="establo">
-				<argument type="Container_portal" dependent="el portón" />
-				<argument type="Circumstances" dependent="sólo una chispa" /></frame>
-			<frame type="Hair_configuration" head="establo">
-				<argument type="Location" dependent="encerraban en el" /></frame>
-			<frame type="Interior_profile_relation" head="en">
-				<argument type="Ground" dependent="el establo" /></frame>
-			<frame type="Process_end" head="pasara" />
-			<frame type="Proportional_quantity" head="algo de" />
-			<frame type="Sufficiency" head="lo">
-				<argument type="Enabled_situation" dependent="para que pasara algo de sol" /></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -142,26 +119,19 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Modality_Reporter" head="Antonio " />
-			<frame type="Body_parts" head="mano" />
-			<frame type="Perception_experience" head="ver">
-				<argument type="Phenomenon" dependent="los huesos de la mano" /></frame>
-			<frame type="Possibility" head="podían">
-				<argument type="Possible_event" dependent="ver los huesos de la mano" /></frame>
-			<frame type="Statement" head="decía">
-				<argument type="Message" dependent="que así se podían ver los huesos de la mano, el mismísimo esqueleto" /></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="pp3fs000">ella</token>
 		</theme>
 		<rheme>
 			<token pos="rg">nunca</token><token pos="pp3msa00">lo</token><token pos="vmis3s0">vio</token><token pos="aq0ms0">claro</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Removing" head="vio claro" />
+			<main_frame type="Removing" head="vio claro" />
 		</semantic_roles>
 	</sentence>
 
@@ -174,13 +144,12 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Scrutiny" head="mira" />
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="pp3fs000">ella</token>
 		</theme>
 		<rheme>
@@ -197,14 +166,14 @@
 
 
 	<sentence>
-		<theme concept_ref="A">
+		<theme concept_ref="c_0">
 			<token pos="pd0ns000">Eso</token>
 		</theme>
 		<rheme>
 			<token pos="vsii3s0">era</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="ncmp000">veranos</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">hora</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">siesta</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Calendric_unit" head="veranos" />
+			<main_frame type="Calendric_unit" head="veranos" />
 			<frame type="Concessive" head="mientras">
 				<argument type="Main_assertion" dependent="Eso era en los veranos, a la hora de la siesta" />
 				<argument type="Main_assertion" dependent="el mundo dormía" /></frame>
@@ -220,7 +189,7 @@
 
 
 	<sentence>
-		<theme concept_ref="C">
+		<theme concept_ref="c_2">
 			<token pos="da0ms0">El</token><token pos="ncms000">establo</token>
 		</theme>
 		<rheme>
@@ -250,7 +219,6 @@
 			
 		</rheme>
 		<semantic_roles>
-			<frame type="Similarity" head="Como" />
 		</semantic_roles>
 	</sentence>
 
