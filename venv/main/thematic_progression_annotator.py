@@ -31,13 +31,13 @@ model_sm_path = "/home/elena/PycharmProjects/WordVectors/venv/main/Spacy_models/
 
 # Parameters for sentence transzformed based on BETO
 np.set_printoptions(threshold=100)
-model = SentenceTransformer('BETO_model')
+BETO_model = SentenceTransformer('BETO_model')
 
 # Loading Word2vec model for Spanish
-word_vectors = KeyedVectors.load('w2vec_models/complete.kv', mmap='r')
+w2vec_models = KeyedVectors.load('w2vec_models/complete.kv', mmap='r')
 
 # Loading FastText model for Spanish
-ft = FastText.load_fasttext_format('FastText_models/cc.es.300.bin')
+FastText_models = FastText.load_fasttext_format('FastText_models/cc.es.300.bin')
 
 # Directory containing the output in XML of the feature generation module
 input_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/in_xml'
@@ -47,6 +47,14 @@ output_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/out_xml'
 shutil.rmtree(output_dir, ignore_errors=True)
 os.makedirs(output_dir)
 
+
+
+
+
+##____________________________________________________________________________________________________________
+##____________________________________________________________________________________________________________
+##____________________________________________________________________________________________________________
+## Getting the themes, rhemes and semantic arguments of the rhemes
 
 for file_xml in os.listdir(input_dir):
 
@@ -86,6 +94,7 @@ for file_xml in os.listdir(input_dir):
                             for arg in frame:
                                 rheme_sem_role.append(arg.attrib['dependent'])
 
+            # Data
             t_r_ord.append((theme, rheme))
             t_ord.append(theme)
             r_ord.append(rheme)
@@ -104,15 +113,24 @@ for file_xml in os.listdir(input_dir):
             n_sentence += 1
 
 
+
+
+        ##____________________________________________________________________________________________________________
+        ##____________________________________________________________________________________________________________
+        ##____________________________________________________________________________________________________________
+        ## Getting theme-theme similarity measures
+
+
         print('\n\n\n\n========================================================')
+        print("** Matching themes to themes **")
 
         themes_ranking = dict()
 
+
         print("\n\n--------------------------------------------------------")
-        print("** Matching themes to themes **")
         print("\nSentence transformers with BETO as a model")
 
-        theme_embeddings = model.encode(t_ord)
+        theme_embeddings = BETO_model.encode(t_ord)
 
         # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
         closest_n = len(theme_embeddings)
@@ -135,7 +153,6 @@ for file_xml in os.listdir(input_dir):
                 themes_ranking[theme.strip()][t_ord[idx].strip()] = 1-distance
 
         print("\n\n--------------------------------------------------------")
-        print("** Matching themes to themes **")
         print("\nWord2vec embeddings\n\n")
 
         for idx, theme in enumerate(t_ord):
@@ -145,13 +162,13 @@ for file_xml in os.listdir(input_dir):
             # Copying the list by values not by reference
             others = t_ord[:]
             del others[idx]
-            print("-", theme + ":", word_vectors.wmdistance(theme, theme))
+            print("-", theme + ":", w2vec_models.wmdistance(theme, theme))
 
             # List of normalized Word Movers Distance for every theme
             WMD_others = list()
 
             for other in others:
-                WMD = word_vectors.wmdistance(theme, other)
+                WMD = w2vec_models.wmdistance(theme, other)
                 WMD_others.append(WMD)
                 print("-", other + ":", WMD)
 
@@ -166,7 +183,6 @@ for file_xml in os.listdir(input_dir):
 
 
         print("\n\n--------------------------------------------------------")
-        print("** Matching themes to themes **")
         print("\nFastText embeddings\n\n")
 
         for idx, theme in enumerate(t_ord):
@@ -176,13 +192,13 @@ for file_xml in os.listdir(input_dir):
             # Copying the list by values not by reference
             others = t_ord[:]
             del others[idx]
-            print("-", theme + ":", ft.wv.wmdistance(theme, theme))
+            print("-", theme + ":", FastText_models.wv.wmdistance(theme, theme))
 
             # List of normalized Word Movers Distance for every theme
             WMD_others = list()
 
             for other in others:
-                WMD = ft.wv.wmdistance(theme, other)
+                WMD = FastText_models.wv.wmdistance(theme, other)
                 WMD_others.append(WMD)
                 print("-", other + ":", WMD)
 
@@ -197,17 +213,21 @@ for file_xml in os.listdir(input_dir):
 
 
 
-## Desde aquí
+
+        ##____________________________________________________________________________________________________________
+        ##____________________________________________________________________________________________________________
+        ##____________________________________________________________________________________________________________
+        ## Getting rheme-rheme similarity measures
 
         print('\n\n\n\n========================================================')
+        print("** Matching rhemes to rhemes **")
 
         rhemes_ranking = dict()
 
         print("\n\n--------------------------------------------------------")
-        print("** Matching rhemes to rhemes **")
         print("\nSentence transformers with BETO as a model")
 
-        rheme_embeddings = model.encode(r_ord)
+        rheme_embeddings = BETO_model.encode(r_ord)
 
         # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
         closest_n = len(rheme_embeddings)
@@ -219,7 +239,7 @@ for file_xml in os.listdir(input_dir):
 
             print("\n\n")
             print("Rheme:", rheme)
-            print("\nMost similar themes in the sentence:")
+            print("\nMost similar rhemes in the sentence:")
 
             rhemes_ranking[rheme.strip()] = dict()
 
@@ -230,85 +250,22 @@ for file_xml in os.listdir(input_dir):
                 rhemes_ranking[rheme.strip()][r_ord[idx].strip()] = 1-distance
 
         print("\n\n--------------------------------------------------------")
-        print("** Matching themes to themes **")
         print("\nWord2vec embeddings\n\n")
 
         for idx, rheme in enumerate(r_ord):
-            print("Theme:", rheme)
-            print("Word Mover's distance from other themes:")
-
-            # Copying the list by values not by reference
-            others = r_ord[:]
-            del others[idx]
-            print("-", rheme + ":", word_vectors.wmdistance(rheme, rheme))
-
-            # List of normalized Word Movers Distance for every theme
-            WMD_others = list()
-
-            for other in others:
-                WMD = word_vectors.wmdistance(rheme, other)
-                WMD_others.append(WMD)
-                print("-", other + ":", WMD)
-
-            # Normalizing the Word Movers Distance value to a 0-1 range
-            # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
-            norm = [1 - (float(i) / 20) for i in WMD_others]
-            for n, other in enumerate(others):
-                print("- (norm.)", other + ":", norm[n])
-                rhemes_ranking[rheme.strip()][other.strip()] += norm[n]
-
-            print('\n\n')
-
-
-
-        print('\n\n\n\n========================================================')
-
-        rhemes_ranking = dict()
-
-        print("\n\n--------------------------------------------------------")
-        print("** Matching rhemes to rhemes **")
-        print("\nSentence transformers with BETO as a model")
-
-        rheme_embeddings = model.encode(r_ord)
-
-        # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
-        closest_n = len(rheme_embeddings)
-        for rheme, rheme_embedding in zip(r_ord, rheme_embeddings):
-            distances = scipy.spatial.distance.cdist([rheme_embedding], rheme_embeddings, "cosine")[0]
-
-            results = zip(range(len(distances)), distances)
-            results = sorted(results, key=lambda x: x[1])
-
-            print("\n\n")
             print("Rheme:", rheme)
-            print("\nMost similar themes in the sentence:")
-
-            rhemes_ranking[rheme.strip()] = dict()
-
-            # Not considering the distance with the theme itself (i.e. selecting the list elements from the second one)
-            # Undone because caused problems when the same theme are literally repeated along the document
-            for idx, distance in results[:closest_n]:
-                print(r_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
-                rhemes_ranking[rheme.strip()][r_ord[idx].strip()] = 1-distance
-
-        print("\n\n--------------------------------------------------------")
-        print("** Matching themes to themes **")
-        print("\nWord2vec embeddings\n\n")
-
-        for idx, rheme in enumerate(r_ord):
-            print("Theme:", rheme)
-            print("Word Mover's distance from other themes:")
+            print("Word Mover's distance from other rhemes:")
 
             # Copying the list by values not by reference
             others = r_ord[:]
             del others[idx]
-            print("-", rheme + ":", word_vectors.wmdistance(rheme, rheme))
+            print("-", rheme + ":", w2vec_models.wmdistance(rheme, rheme))
 
             # List of normalized Word Movers Distance for every theme
             WMD_others = list()
 
             for other in others:
-                WMD = word_vectors.wmdistance(rheme, other)
+                WMD = w2vec_models.wmdistance(rheme, other)
                 WMD_others.append(WMD)
                 print("-", other + ":", WMD)
 
@@ -323,7 +280,6 @@ for file_xml in os.listdir(input_dir):
 
 
         print("\n\n--------------------------------------------------------")
-        print("** Matching rhemes to rhemes **")
         print("\nFastText embeddings\n\n")
 
         for idx, rheme in enumerate(r_ord):
@@ -333,13 +289,13 @@ for file_xml in os.listdir(input_dir):
             # Copying the list by values not by reference
             others = r_ord[:]
             del others[idx]
-            print("-", rheme + ":", ft.wv.wmdistance(rheme, rheme))
+            print("-", rheme + ":", FastText_models.wv.wmdistance(rheme, rheme))
 
             # List of normalized Word Movers Distance for every theme
             WMD_others = list()
 
             for other in others:
-                WMD = ft.wv.wmdistance(rheme, other)
+                WMD = FastText_models.wv.wmdistance(rheme, other)
                 WMD_others.append(WMD)
                 print("-", other + ":", WMD)
 
@@ -357,7 +313,107 @@ for file_xml in os.listdir(input_dir):
 
 
 
-        ## Including conceptual coreference information in the XML
+        ##____________________________________________________________________________________________________________
+        ##____________________________________________________________________________________________________________
+        ##____________________________________________________________________________________________________________
+        ## Getting rheme-theme similarity measures
+
+        print('\n\n\n\n========================================================')
+        print("** Matching rhemes to themes **")
+        rhemes_ranking = dict()
+
+        print("\nSentence transformers with BETO as a model")
+
+        rheme_embeddings = BETO_model.encode(r_ord)
+
+        # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
+        closest_n = len(rheme_embeddings)
+        for rheme, rheme_embedding in zip(r_ord, theme_embeddings):
+            distances = scipy.spatial.distance.cdist([rheme_embedding], theme_embeddings, "cosine")[0]
+
+            results = zip(range(len(distances)), distances)
+            results = sorted(results, key=lambda x: x[1])
+
+            print("\n\n")
+            print("Rheme:", rheme)
+            print("\nMost similar themes in the sentence:")
+
+            rhemes_ranking[rheme.strip()] = dict()
+
+            # Not considering the distance with the theme itself (i.e. selecting the list elements from the second one)
+            # Undone because caused problems when the same theme are literally repeated along the document
+            for idx, distance in results[:closest_n]:
+                print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
+                rhemes_ranking[rheme.strip()][t_ord[idx].strip()] = 1-distance
+
+
+        print("\n\n--------------------------------------------------------")
+        print("\nWord2vec embeddings\n\n")
+
+        for idx, rheme in enumerate(r_ord):
+            print("Rheme:", rheme)
+            print("Word Mover's distance from themes:")
+
+            # Copying the list by values not by reference
+            others = t_ord[:]
+            del others[idx]
+            print("-", rheme + ":", w2vec_models.wmdistance(rheme, rheme))
+
+            # List of normalized Word Movers Distance for every theme
+            WMD_others = list()
+
+            for other in others:
+                WMD = w2vec_models.wmdistance(rheme, other)
+                WMD_others.append(WMD)
+                print("-", other + ":", WMD)
+
+            # Normalizing the Word Movers Distance value to a 0-1 range
+            # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
+            norm = [1 - (float(i) / 20) for i in WMD_others]
+            for n, other in enumerate(others):
+                print("- (norm.)", other + ":", norm[n])
+                rhemes_ranking[rheme.strip()][other.strip()] += norm[n]
+
+            print('\n\n')
+
+
+        print("\n\n--------------------------------------------------------")
+        print("\nFastText embeddings\n\n")
+
+        for idx, rheme in enumerate(r_ord):
+            print("Rheme:", rheme)
+            print("Word Mover's distance from other themes:")
+
+            # Copying the list by values not by reference
+            others = t_ord[:]
+            del others[idx]
+            print("-", rheme + ":", FastText_models.wv.wmdistance(rheme, rheme))
+
+            # List of normalized Word Movers Distance for every theme
+            WMD_others = list()
+
+            for other in others:
+                WMD = FastText_models.wv.wmdistance(rheme, other)
+                WMD_others.append(WMD)
+                print("-", other + ":", WMD)
+
+            # Normalizing the Word Movers Distance value to a 0-1 range
+            # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
+            norm = [1 - (float(i) / 3) for i in WMD_others]
+            for n, other in enumerate(others):
+                print("- (norm.)", other + ":", norm[n])
+                rhemes_ranking[rheme.strip()][other.strip()] += norm[n]
+
+            print('\n\n')
+
+
+
+
+
+        ##____________________________________________________________________________________________________________
+        ##____________________________________________________________________________________________________________
+        ##____________________________________________________________________________________________________________
+        ## Deciding correference sets
 
         print("Ranking de correferencias de los temas:")
         pretty(themes_ranking, indent=1)
@@ -410,6 +466,13 @@ for file_xml in os.listdir(input_dir):
         print("Coreference analyzed", theme_id)
 
 
+
+
+
+        ##____________________________________________________________________________________________________________
+        ##____________________________________________________________________________________________________________
+        ##____________________________________________________________________________________________________________
+        ## Including conceptual coreference information in the XML
 
         tree = ElementTree()
         tree.parse(input_dir + '/' + file_xml)
