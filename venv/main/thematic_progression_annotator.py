@@ -29,15 +29,25 @@ model_sm_path = "/home/elena/PycharmProjects/WordVectors/venv/main/Spacy_models/
 # nlp = spacy.load(model_lg_path)
 # os.system("python -m spacy download es_core_news_sm")
 
-# Parameters for sentence transzformed based on BETO
+# Parameters for sentence transformed based on BETO
 np.set_printoptions(threshold=100)
 BETO_model = SentenceTransformer('BETO_model')
+
+# Parameters for sentence transformed based on ROBERTA
+# np.set_printoptions(threshold=100)
+# BETO_model = SentenceTransformer('BERT_ROBERTA_model')
 
 # Loading Word2vec model for Spanish
 w2vec_models = KeyedVectors.load('w2vec_models/complete.kv', mmap='r')
 
+# Loading Word2vec model for English
+# w2vec_models = KeyedVectors.load_word2vec_format('w2vec_models_en/GoogleNews-vectors-negative300.bin', binary=True)
+
 # Loading FastText model for Spanish
 FastText_models = FastText.load_fasttext_format('FastText_models/cc.es.300.bin')
+
+# Loading FastText model for English
+# FastText_models = FastText.load_fasttext_format('FastText_models/cc.en.300.bin')
 
 # Directory containing the output in XML of the feature generation module
 input_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/in_xml'
