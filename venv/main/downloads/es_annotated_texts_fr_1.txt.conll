@@ -1,0 +1,11 @@
+{   ('Calendric_unit', 'janvier'): [('Count', 'samedi'), ('Relative_time', '16')],
+    ('Calendric_unit', 'jours'): [('Count', '15')],
+    ('Calendric_unit', 'samedi'): [],
+    ('Goal', 'à'): [('Landmark', '18h00')],
+    ('Leadership', 'ministre'): [('Descriptor', 'Premier')],
+    ('Locale', 'territoire'): [('Descriptor', 'métropolitain')],
+    ('Locative_relation', 'sur l ’ ensemble'): [('Ground', 'du territoire métropolitain'), ('Time', 'à partir du samedi 16')],
+    ('Origin', 'à partir du'): [('Entity', 'du territoire métropolitain'), ('Origin', 'samedi')],
+    ('Progression', 'avancée'): [],
+    ('Spatial_contact', 'sur'): [('Ground', '14 janvier')],
+    ('Statement', 'annoncé'): [('Time', '14 janvier 2021 ,'), ('Speaker', 'le Premier ministre'), ('Message', 'l ’ avancée du'), ('Time', 'de 20h00 à 18h00 sur l ’')]}

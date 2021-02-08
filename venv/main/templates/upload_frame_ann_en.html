@@ -1,0 +1,38 @@
+
+<!doctype html>
+<title>Mapping FrameNet annotations from different languages</title>
+
+    <h1>Upload English annotated with FrameNet SRL files and the original Spanish sentences files</h1>
+    <h2>The names of the corresponding files for every sentence/annotated sentence must match, except for the extra .conll extension of the annotated version</h2>
+
+<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul class=flashes>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+<form method="POST" action="upload-frame-ann-en" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input type="file" name="files[]" multiple="true" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Submit">
+	</p>
+</form>
+
+<!--
+<h2>When you are done, press <a href="/mapping_SRL"><input type="button" value="here"></a> to get the string representations of Python dictionaries in a txt file with the corresponding Spanish SRL for every sentence </h2>
+-->
+
+<h2>When you are done, press this button to get the string representations of Python dictionaries in a txt file with the corresponding Spanish SRL for every sentence </h2>
+
+<form action="/mapping_SRL" method="post">
+    <button name="forwardBtn" type="submit">Perform the mapping!</button>
+</form>

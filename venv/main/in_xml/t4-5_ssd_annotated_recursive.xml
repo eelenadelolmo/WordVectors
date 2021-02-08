@@ -1,0 +1,212 @@
+<text id="t4-5_ssd_annotated_recursive">
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="pd0ms000">&#233;ste</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">sale</token><token pos="sps00">a</token><token pos="vmn0000">saludarme</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Animals" head="gato" />
+			<frame type="Animals" head="gato" />
+			<frame type="Buildings" head="casas" />
+			<frame type="Buildings" head="casas" />
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="las casas" />
+				<argument type="Figure" dependent="vive alg&#250;n gato" /></frame>
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="las casas" />
+				<argument type="Figure" dependent="vive alg&#250;n gato" /></frame>
+			<frame type="Process_end" head="Paso">
+				<argument type="Process" dependent="las casas" /></frame>
+			<frame type="Process_end" head="Paso">
+				<argument type="Process" dependent="las casas" /></frame>
+			<main_frame type="Sleep" head="sale a" />
+			<frame type="Sleep" head="sale a" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">perros</token><token pos="sps00">en</token><token pos="ncmp000">cambio</token><token pos="fg">-</token><token pos="fg">-</token><token pos="nccp000">nacionalistas</token><token pos="aq0mp0">obtusos</token><token pos="fg">-</token><token pos="fg">-</token>
+		</theme>
+		<rheme>
+			<token pos="pp1cs000">me</token><token pos="vmip3p0">gru&#241;en</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_2">
+			<token pos="da0mp0">Los</token><token pos="nccp000">mayas</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">fabrican</token><token pos="ncfp000">telas</token><token pos="sps00">de</token><token pos="dn0cp0">tres</token><token pos="ncfp000">lluvias</token><token pos="cc">o</token><token pos="sps00">de</token><token pos="pn0cp000">dos</token><token pos="cc">o</token><token pos="sps00">de</token><token pos="pn0cp000">cinco</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Contingency" head="seg&#250;n">
+				<argument type="Determinant" dependent="su diafanidad y ligereza" /></frame>
+			<frame type="Precipitation" head="lluvias" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_3">
+			<token pos="pd0ns000">eso</token>
+		</theme>
+		<rheme>
+			<token pos="vmic3s0">podr&#237;a</token><token pos="vmn0000">entenderse</token><token pos="sps00">a</token><token pos="di0fs0">toda</token><token pos="np0000l">Castilla</token><token pos="cc">y</token><token pos="sps00">a</token><token pos="di0fs0">toda</token><token pos="np0000l">Espa&#241;a</token><token pos="aq0fsp">esquilmada</token><token pos="rg">f&#237;sica</token><token pos="cc">y</token><token pos="rg">moralmente</token><token pos="sps00">por</token><token pos="da0mp0">los</token><token pos="nccp000">patriotas</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">guerra</token><token pos="aq0cs0">civil</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desiring" head="esperanza">
+				<argument type="Experiencer" dependent="en los corazones" /></frame>
+			<frame type="Desiring" head="esperanza">
+				<argument type="Experiencer" dependent="en los corazones" /></frame>
+			<frame type="Food" head="verdura" />
+			<frame type="Food" head="verdura" />
+			<frame type="Grasp" head="entenderse" />
+			<main_frame type="Grasp" head="entenderse" />
+			<frame type="Hostile_encounter" head="guerra" />
+			<frame type="Hostile_encounter" head="guerra" />
+			<frame type="Manufacturing" head="haci&#233;ndolo">
+				<argument type="Product" dependent="fraudulento, falaz y funerario ( tres efes ) o sacristanesco, sanguinario y saturniano ( tres" /></frame>
+			<frame type="Manufacturing" head="haci&#233;ndolo">
+				<argument type="Product" dependent="fraudulento, falaz y funerario ( tres efes ) o sacristanesco, sanguinario y saturniano ( tres" /></frame>
+			<frame type="Political_locales" head="aldea" />
+			<frame type="Political_locales" head="aldea" />
+			<main_frame type="Possibility" head="podr&#237;a">
+				<argument type="Possible_event" dependent="una aldea" />
+				<argument type="Possible_event" dependent="entenderse a toda" /></main_frame>
+			<frame type="Possibility" head="podr&#237;a">
+				<argument type="Possible_event" dependent="una aldea" />
+				<argument type="Possible_event" dependent="entenderse a toda" /></frame>
+			<frame type="Statement" head="dec&#237;a">
+				<argument type="Message" dependent="Ni verdura en la tierra ni esperanza en los corazones" />
+				<argument type="Message" dependent="Gasset hablando de una aldea y eso podr&#237;a entenderse a toda Castilla y a toda Espa&#241;a esquilmada f&#237;sica y moralmente por los patriotas de la guerra civil que pervirtieron el patriotismo haci&#233;ndolo fraudulento, falaz y funerario ( tres efes ) o sacristanesco, sanguinario y saturniano ( tres eses y que Saturno perdone )" /></frame>
+			<frame type="Statement" head="dec&#237;a">
+				<argument type="Message" dependent="Ni verdura en la tierra ni esperanza en los corazones" />
+				<argument type="Message" dependent="Gasset hablando de una aldea y eso podr&#237;a entenderse a toda Castilla y a toda Espa&#241;a esquilmada f&#237;sica y moralmente por los patriotas de la guerra civil que pervirtieron el patriotismo haci&#233;ndolo fraudulento, falaz y funerario ( tres efes ) o sacristanesco, sanguinario y saturniano ( tres eses y que Saturno perdone )" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="np0000p">Lerroux</token><token pos="rg">ya</token><token pos="aq0ms0">viejo</token><token pos="cc">y</token><token pos="aq0ms0">valetudinario</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">pas&#243;</token><token pos="di0ms0">un</token><token pos="ncms000">d&#237;a</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">calle</token><token pos="rg">frente</token><token pos="sps00">a</token><token pos="di0ms0">un</token><token pos="ncms000">espejo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="viejo" />
+			<frame type="Calendric_unit" head="d&#237;a" />
+			<frame type="Direction" head="se">
+				<argument type="Path" dependent="se detuvo" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="la calle" />
+				<argument type="Ground" dependent="frente a un espejo" /></frame>
+			<frame type="Part_orientational" head="frente">
+				<argument type="Whole" dependent="un espejo" /></frame>
+			<frame type="Part_whole" head="a medias" />
+			<frame type="Perception_experience" head="visto" />
+			<frame type="Posture" head="detuvo">
+				<argument type="Location" dependent="irgui&#233;ndose a" /></frame>
+			<frame type="Preventing_or_letting" head="detuvo">
+				<argument type="Event" dependent="Lerroux ya viejo y valetudinario pas&#243; un d&#237;a en la calle frente a un espejo ," />
+				<argument type="Event" dependent="e irgui&#233;ndose a medias sobre el bast&#243;n dijo : - - &#161; Qui&#233;n te ha visto y qui&#233;n te ve, Alejandro" /></frame>
+			<frame type="Relational_political_locales" head="visto" />
+			<frame type="Roadways" head="calle">
+				<argument type="Characteristic" dependent="frente a un espejo" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="detuvo e irgui&#233;ndose a medias" />
+				<argument type="Ground" dependent="te ha" /></frame>
+			<frame type="Statement" head="dijo">
+				<argument type="Message" dependent="Lerroux ya viejo y valetudinario pas&#243; un d&#237;a en la calle frente a un espejo, se detuvo e irgui&#233;ndose a" />
+				<argument type="Message" dependent="e irgui&#233;ndose a medias sobre el bast&#243;n dijo : - - &#161; Qui&#233;n te ha visto y qui&#233;n te ve, Alejandro" /></frame>
+			<frame type="Temporal_collocation" head="ya">
+				<argument type="Trajector_event" dependent="viejo y" /></frame>
+			<frame type="Used_up" head="se">
+				<argument type="Resource" dependent="un d&#237;a en la calle frente a un espejo" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

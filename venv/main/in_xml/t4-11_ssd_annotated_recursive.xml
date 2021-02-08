@@ -1,0 +1,190 @@
+<text id="t4-11_ssd_annotated_recursive">
+
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">ni&#241;os</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vmip3p0">inquietan</token><token pos="sps00">con</token><token pos="da0fp0">las</token><token pos="ncfp000">tinieblas</token><token pos="aq0fp0">nocturnas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="nocturnas" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="ncfs000">vida</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vmip3s0">polariza</token><token pos="sps00">hacia</token><token pos="da0ms0">el</token><token pos="ncms000">placer</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_named" head="el nombre">
+				<argument type="Name" dependent="nombre de esa estrella" /></frame>
+			<frame type="Experiencer_focus" head="placer" />
+			<frame type="Performers_and_roles" head="estrella">
+				<argument type="Performance" dependent="del alba" /></frame>
+			<frame type="Required_event" head="mejor" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_2">
+			<token pos="np0000l">Roma</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">quiere</token><token pos="vmn0000">aguarnos</token><token pos="di0fs0">otra</token><token pos="ncfs000">vez</token><token pos="da0fs0">la</token><token pos="ncfs000">fiesta</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="fiesta" />
+			<frame type="Aggregate" head="fiesta" />
+			<main_frame type="Desiring" head="quiere">
+				<argument type="Event" dependent="otra vez la fiesta" /></main_frame>
+			<frame type="Desiring" head="quiere">
+				<argument type="Event" dependent="otra vez la fiesta" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="di0mp0">Todos</token><token pos="da0mp0">los</token><token pos="ncmp000">pintores</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">envidian</token><token pos="sps00">a</token><token pos="np0000p">Picasso</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Dead_or_alive" head="vivo" />
+			<frame type="Death" head="muerte" />
+			<frame type="Give_impression" head="parece">
+				<argument type="Phenomenon" dependent="sepultura - -" />
+				<argument type="Characterization" dependent="m&#225;s vivo" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_3">
+			<token pos="pp1csn00">Yo</token>
+		</theme>
+		<rheme>
+			<token pos="pp3msa00">lo</token><token pos="vmip1s0">conozco</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Awareness" head="conozco" />
+			<frame type="Reveal_secret" head="revelarlo" />
+			<frame type="Risky_situation" head="peligroso">
+				<argument type="Situation" dependent="revelarlo" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_4">
+			<token pos="da0mp0">Los</token><token pos="nccp000">guardias</token><token pos="aq0cp0">civiles</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vmii3p0">deb&#237;an</token><token pos="vmn0000">usar</token><token pos="da0ms0">el</token><token pos="ncms000">tricornio</token><token pos="fc">,</token><token pos="vsis3p0">es</token><token pos="vmp00pm">decir</token><token pos="da0mp0">los</token><token pos="dn0cp0">tres</token><token pos="ncmp000">cuernos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="tres" />
+			<frame type="Cardinal_numbers" head="tres" />
+			<main_frame type="Cardinal_numbers" head="tres" />
+			<frame type="Cardinal_numbers" head="tres" />
+			<main_frame type="Desirable_event" head="deb&#237;an">
+				<argument type="State_of_affairs" dependent="Los guardias civiles" />
+				<argument type="State_of_affairs" dependent="no deb&#237;an usar el tricornio" /></main_frame>
+			<frame type="Desirable_event" head="deb&#237;an">
+				<argument type="State_of_affairs" dependent="Los guardias civiles" />
+				<argument type="State_of_affairs" dependent="no deb&#237;an usar el tricornio" /></frame>
+			<frame type="Desirable_event" head="deb&#237;an">
+				<argument type="State_of_affairs" dependent="Los guardias civiles" />
+				<argument type="State_of_affairs" dependent="no deb&#237;an usar el tricornio" /></frame>
+			<frame type="Desirable_event" head="deb&#237;an">
+				<argument type="State_of_affairs" dependent="Los guardias civiles" />
+				<argument type="State_of_affairs" dependent="no deb&#237;an usar el tricornio" /></frame>
+			<frame type="Social_interaction_evaluation" head="civiles" />
+			<frame type="Social_interaction_evaluation" head="civiles" />
+			<main_frame type="Social_interaction_evaluation" head="civiles" />
+			<frame type="Social_interaction_evaluation" head="civiles" />
+			<frame type="Wearing" head="usar">
+				<argument type="Wearer" dependent="Los guardias civiles" />
+				<argument type="Clothing" dependent="el tricornio" /></frame>
+			<main_frame type="Wearing" head="usar">
+				<argument type="Wearer" dependent="Los guardias civiles" />
+				<argument type="Clothing" dependent="el tricornio" /></main_frame>
+			<frame type="Wearing" head="usar">
+				<argument type="Wearer" dependent="Los guardias civiles" />
+				<argument type="Clothing" dependent="el tricornio" /></frame>
+			<frame type="Wearing" head="usar">
+				<argument type="Wearer" dependent="Los guardias civiles" />
+				<argument type="Clothing" dependent="el tricornio" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

@@ -1,0 +1,231 @@
+<text id="t5-7_ssd_annotated_recursive">
+
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">los</token><token pos="ncmp000">vecinos</token><token pos="sps00">de</token><token pos="rg">enfrente</token>
+		</theme>
+		<rheme>
+			<token pos="vmii3p0">entornaban</token><token pos="da0fp0">las</token><token pos="ncfp000">hojas</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">ventana</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="noches" />
+			<frame type="Calendric_unit" head="verano" />
+			<frame type="Cogitation" head="reflejaba">
+				<argument type="Topic" dependent="su televisor" />
+				<argument type="Medium" dependent="en el cristal" /></frame>
+			<frame type="Connecting_architecture" head="ventana" />
+			<frame type="Part_whole" head="se">
+				<argument type="Whole" dependent="la ventana" /></frame>
+			<frame type="People_by_residence" head="vecinos">
+				<argument type="Location" dependent="de enfrente" /></frame>
+			<frame type="Roadways" head="enfrente" />
+			<frame type="Spatial_contact" head="en">
+				<argument type="Ground" dependent="noches de verano" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="np0000p">Antonia</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vmii3s0">asomaba</token><token pos="spcms">al</token><token pos="ncms000">patio</token><token pos="sps00">para</token><token pos="vmn0000">ver</token><token pos="sps00">de</token><token pos="dt0cn0">qu&#233;</token><token pos="ncms000">color</token><token pos="vsii3s0">era</token><token pos="da0ms0">el</token><token pos="ncms000">traje</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="nccs000">protagonista</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Locative_relation" head="hab&#237;a">
+				<argument type="Ground" dependent="hab&#237;a pel&#237;cula" /></frame>
+			<frame type="Locative_relation" head="hab&#237;a">
+				<argument type="Ground" dependent="hab&#237;a pel&#237;cula" /></frame>
+			<frame type="Locative_relation" head="hab&#237;a">
+				<argument type="Ground" dependent="hab&#237;a pel&#237;cula" /></frame>
+			<frame type="Perception_active" head="ver">
+				<argument type="Phenomenon" dependent="al patio para ver de qu&#233; color era el traje de la protagonista" /></frame>
+			<main_frame type="Perception_active" head="ver">
+				<argument type="Phenomenon" dependent="al patio para ver de qu&#233; color era el traje de la protagonista" /></main_frame>
+			<frame type="Perception_active" head="ver">
+				<argument type="Phenomenon" dependent="al patio para ver de qu&#233; color era el traje de la protagonista" /></frame>
+			<frame type="Perception_experience" head="ver">
+				<argument type="Phenomenon" dependent="qu&#233; color era el traje de la protagonista" /></frame>
+			<main_frame type="Perception_experience" head="ver">
+				<argument type="Phenomenon" dependent="qu&#233; color era el traje de la protagonista" /></main_frame>
+			<frame type="Perception_experience" head="ver">
+				<argument type="Phenomenon" dependent="qu&#233; color era el traje de la protagonista" /></frame>
+			<frame type="Sleep" head="se" />
+			<frame type="Sleep" head="se" />
+			<frame type="Sleep" head="se" />
+			<frame type="Temporal_collocation" head="cuando">
+				<argument type="Trajector_event" dependent="hab&#237;a pel&#237;cula, Antonia se asomaba al patio para ver de qu&#233; color era el traje de la protagonista" /></frame>
+			<frame type="Temporal_collocation" head="cuando">
+				<argument type="Trajector_event" dependent="hab&#237;a pel&#237;cula, Antonia se asomaba al patio para ver de qu&#233; color era el traje de la protagonista" /></frame>
+			<frame type="Temporal_collocation" head="cuando">
+				<argument type="Trajector_event" dependent="hab&#237;a pel&#237;cula, Antonia se asomaba al patio para ver de qu&#233; color era el traje de la protagonista" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="dp3cs0">su</token><token pos="ncms000">hermano</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vmii3s0">quer&#237;a</token><token pos="vmn0000">comprarle</token><token pos="di0ms0">un</token><token pos="ncms000">aparato</token><token pos="aq0ms0">nuevo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevo" />
+			<frame type="Age" head="nuevo" />
+			<frame type="Commerce_buy" head="comprarle">
+				<argument type="Buyer" dependent="su hermano" />
+				<argument type="Goods" dependent="un aparato nuevo" /></frame>
+			<main_frame type="Commerce_buy" head="comprarle">
+				<argument type="Buyer" dependent="su hermano" />
+				<argument type="Goods" dependent="un aparato nuevo" /></main_frame>
+			<main_frame type="Desiring" head="quer&#237;a">
+				<argument type="Experiencer" dependent="su hermano" />
+				<argument type="Event" dependent="comprarle un aparato nuevo" /></main_frame>
+			<frame type="Desiring" head="quer&#237;a">
+				<argument type="Experiencer" dependent="su hermano" />
+				<argument type="Event" dependent="comprarle un aparato nuevo" /></frame>
+			<frame type="Gizmo" head="aparato" />
+			<frame type="Gizmo" head="aparato" />
+			<frame type="Kinship" head="hermano" />
+			<frame type="Kinship" head="hermano" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="di0mp0">unos</token><token pos="ncmp000">muchachos</token><token pos="sps00">de</token><token pos="ncms000">pelo</token><token pos="aq0ms0">tieso</token><token pos="fc">,</token><token pos="sps00">como</token><token pos="rg">reci&#233;n</token><token pos="aq0mpp">salidos</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">susto</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vmii3p0">contorsionaban</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="reci&#233;n" />
+			<frame type="Catastrophe" head="sufrieran">
+				<argument type="Time" dependent="como" />
+				<argument type="Undesirable_event" dependent="de un" /></frame>
+			<frame type="Identicality" head="lo mismo" />
+			<frame type="Make_noise" head="susto" />
+			<frame type="People_by_age" head="muchachos" />
+			<frame type="Spatial_contact" head="se">
+				<argument type="Ground" dependent="la pantalla, unos muchachos" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="np0000p">Antonia</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">cogi&#243;</token><token pos="di0fs0">una</token><token pos="ncfs000">revista</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="sab&#237;a">
+				<argument type="Content" dependent=": un espacio musical, otro religioso, f&#250;tbol" /></frame>
+			<frame type="Increment" head="otro">
+				<argument type="Class" dependent="religioso, f&#250;tbol" /></frame>
+			<frame type="Text" head="revista" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">el</token><token pos="ncms000">calor</token>
+		</theme>
+		<rheme>
+			<token pos="vsii3s0">era</token><token pos="rg">igualmente</token><token pos="aq0cs0">insoportable</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="vieja" />
+			<frame type="Architectural_part" head="techo" />
+			<frame type="Building_subparts" head="dormitorio" />
+			<frame type="Buildings" head="casa" />
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Figure" dependent="ya no daba" />
+				<argument type="Ground" dependent="el dormitorio" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="np0000p">Antonia</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">abri&#243;</token><token pos="da0fs0">la</token><token pos="ncfs000">ventana</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Closure" head="abri&#243;">
+				<argument type="Container_portal" dependent="la ventana de" /></main_frame>
+			<frame type="Connecting_architecture" head="ventana" />
+			<frame type="Hit_or_miss" head="se" />
+		</semantic_roles>
+	</sentence>
+
+
+</text>

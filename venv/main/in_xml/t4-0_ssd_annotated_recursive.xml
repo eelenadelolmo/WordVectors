@@ -1,0 +1,186 @@
+<text id="t4-0_ssd_annotated_recursive">
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="ncfs000">vida</token><token pos="sps00">de</token><token pos="di0cs0">cada</token><token pos="pr0cs000">cual</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="el" />
+			<frame type="Calendric_unit" head="de" />
+			<frame type="Calendric_unit" head="d&#237;a" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="del clamor de la vejez" />
+				<argument type="Ground" dependent="crep&#250;sculo de este d&#237;a solar que" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">la</token><token pos="ncfs000">gente</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vmip3s0">recoge</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Coming_to_believe" head="recoge" />
+			<frame type="Direction" head="se" />
+			<frame type="Motion" head="se">
+				<argument type="Goal" dependent="a dormir" /></frame>
+			<frame type="Opinion" head="supone">
+				<argument type="Opinion" dependent="se recoge" /></frame>
+			<frame type="People" head="gente" />
+			<frame type="Relative_time" head="Despu&#233;s del">
+				<argument type="Landmark_occasion" dependent="del clar&#237;n crepuscular" />
+				<argument type="Focal_occasion" dependent="se supone que la gente se recoge y se acuesta a dormir" /></frame>
+			<frame type="Sleep" head="dormir" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">la</token><token pos="ncfs000">naturaleza</token>
+		</theme>
+		<rheme>
+			<token pos="pp1cp000">nos</token><token pos="vmip3s0">adiestra</token><token pos="dd0mp0">trescientas</token><token pos="dn0cp0">sesenta</token><token pos="cc">y</token><token pos="dn0cp0">cinco</token><token pos="ncfp000">veces</token><token pos="di0cs0">cada</token><token pos="ncms000">a&#241;o</token><token pos="cc">y</token><token pos="dn0cp0">sesenta</token><token pos="cc">u</token><token pos="dn0cp0">ochenta</token><token pos="ncmp000">a&#241;os</token><token pos="fc">,</token><token pos="pi0ms000">uno</token><token pos="sps00">tras</token><token pos="pi0ms000">otro</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="a&#241;o" />
+			<frame type="Calendric_unit" head="a&#241;os" />
+			<frame type="Cardinal_numbers" head="sesenta u" />
+			<frame type="Cardinal_numbers" head="trescientas" />
+			<frame type="Cardinal_numbers" head="uno" />
+			<frame type="Expertise" head="experiencia">
+				<argument type="Skill" dependent="trescientas sesenta y cinco veces cada a&#241;o y sesenta u ochenta a&#241;os" /></frame>
+			<frame type="Frequency" head="diario" />
+			<frame type="Increment" head="otro" />
+			<frame type="Relative_time" head="para">
+				<argument type="Focal_occasion" dependent="ochenta a&#241;os" /></frame>
+			<frame type="Vehicle" head="tras" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_3">
+			<token pos="da0fs0">La</token><token pos="ncfs000">verdad</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="cs">que</token><token pos="pi0cs000">nadie</token><token pos="vmip3s0">aprende</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Affirm_or_deny" head="negar">
+				<argument type="Message" dependent="que cuando llega el turno todos mueren esa muerte ejemplar que nunca crea adeptos ni adictos ( excepto los suicidas )" /></frame>
+			<frame type="Affirm_or_deny" head="negar">
+				<argument type="Message" dependent="que cuando llega el turno todos mueren esa muerte ejemplar que nunca crea adeptos ni adictos ( excepto los suicidas )" /></frame>
+			<frame type="Becoming_aware" head="aprende">
+				<argument type="Cognizer" dependent="nadie" /></frame>
+			<main_frame type="Becoming_aware" head="aprende">
+				<argument type="Cognizer" dependent="nadie" /></main_frame>
+			<frame type="Bringing" head="llevan">
+				<argument type="Carrier" dependent="incluidos los suicidas" />
+				<argument type="Goal" dependent="a cabo con la mayor perfecci&#243;n" /></frame>
+			<frame type="Bringing" head="llevan">
+				<argument type="Carrier" dependent="incluidos los suicidas" />
+				<argument type="Goal" dependent="a cabo con la mayor perfecci&#243;n" /></frame>
+			<frame type="Death" head="muerte" />
+			<frame type="Death" head="muerte" />
+			<frame type="Inclusion" head="incluidos" />
+			<frame type="Inclusion" head="incluidos" />
+			<frame type="Intentionally_create" head="crea">
+				<argument type="Created_entity" dependent="adeptos ni adictos" /></frame>
+			<frame type="Intentionally_create" head="crea">
+				<argument type="Created_entity" dependent="adeptos ni adictos" /></frame>
+			<frame type="Killing" head="suicidas" />
+			<frame type="Killing" head="suicidas" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_4">
+			<token pos="pp1csn00">Yo</token>
+		</theme>
+		<rheme>
+			<token pos="rg">tampoco</token><token pos="vmip1s0">suelo</token><token pos="vmn0000">dec&#237;rmelo</token><token pos="sps00">a</token><token pos="pp1cso00">m&#237;</token><token pos="di0ms0">mismo</token><token pos="da0fs0">la</token><token pos="ncfs000">verdad</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Telling" head="dec&#237;rmelo">
+				<argument type="Message" dependent="m&#237; mismo" /></frame>
+			<main_frame type="Telling" head="dec&#237;rmelo">
+				<argument type="Message" dependent="m&#237; mismo" /></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_5">
+			<token pos="di0fs0">Una</token><token pos="ncfs000">convicci&#243;n</token><token pos="aq0fs0">axiom&#225;tica</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vsip3s0">es</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desiring" head="ambici&#243;n">
+				<argument type="Event" dependent="de perfecciones vitalistas y gozaderas" /></frame>
+			<frame type="Identicality" head="lo mismo">
+				<argument type="Type" dependent="convicci&#243;n axiom&#225;tica" />
+				<argument type="Type" dependent="mismo que una ambici&#243;n de perfecciones vitalistas y" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>
