@@ -12,10 +12,13 @@
         <!ELEMENT rheme (token*)>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
-        <!ELEMENT semantic_roles (frame*)>
-        <!ELEMENT frame (argument*)>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
             <!ATTLIST frame type CDATA #REQUIRED>
             <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
         <!ELEMENT argument EMPTY>
             <!ATTLIST argument type CDATA #REQUIRED>
             <!ATTLIST argument dependent CDATA #REQUIRED>

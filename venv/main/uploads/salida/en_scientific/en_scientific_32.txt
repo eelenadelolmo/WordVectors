@@ -1,0 +1,1 @@
+Para la segunda etapa, seleccionamos 12.711 SNP, aproximadamente el 5% de los tipificados en la etapa 1, sobre la base de la importancia de la diferencia en la frecuencia de genotipos entre casos y controles.

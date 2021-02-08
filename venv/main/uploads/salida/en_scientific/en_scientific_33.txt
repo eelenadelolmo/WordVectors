@@ -1,0 +1,1 @@
+Estos SNP se genotiparon en otros 3990 casos de cáncer de mama invasivo y 3916 controles del estudio SEARCH, utilizando una matriz de oligonucleótidos diseñada a medida.

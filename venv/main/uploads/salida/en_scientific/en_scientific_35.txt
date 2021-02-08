@@ -1,0 +1,1 @@
+La comparación de la distribución observada y esperada de las estadísticas de prueba mostró alguna evidencia de inflación de las estadísticas de prueba tanto en la etapa 1 (factor de inflación λ = 1.03, intervalo de confianza (IC) 95_% 1.02 - 1.04) como en la etapa 2 (λ = 1.06, 95_% IC 1.04 - 1.12), basado en el 90_% de SNP menos significativos (Fig.1).

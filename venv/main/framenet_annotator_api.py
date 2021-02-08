@@ -135,9 +135,8 @@ def main():
                 for line in lines:
                     n_lines += 1
                     with io.open(new_dir_sent + '/en_' + filename[:-4] + '_' + str(n_lines) + '.txt', 'w', encoding='utf8') as f_new_1:
-                        # translation = translator.translate(text=re.sub('&quot;', '"', line), src='es', dest='en')
-                        # DIFFERENT LANGUAGE
-                        translation = translator.translate(text=re.sub('&quot;', '"', line), src='fr', dest='en')
+                        # En terminal: pip install googletrans==3.1.0a0
+                        translation = translator.translate(text=re.sub('&quot;', '"', line), src='es', dest='en')
                         f_new_1.write(translation.text)
                         f_new_1.close()
                     # Saving original files too

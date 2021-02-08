@@ -1,0 +1,1 @@
+Initally , we analysed 227,876 SNPs ( 85_% ) with genotypes on at_least 80_% of the subjects.

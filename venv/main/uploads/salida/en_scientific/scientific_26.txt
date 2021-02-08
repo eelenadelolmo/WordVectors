@@ -1,0 +1,1 @@
+These SNPs were genotyped in 408 breast cancer cases and 400 controls from the UK ; data were analysed for 390 cases and 364 controls genotyped for ≥ 80_% of the SNPs.

@@ -1,0 +1,1 @@
+Utilizamos 227.876 SNP que se estimó que se correlacionaban con el 77% de los SNP comunes conocidos en europeos con r2> 0,5.

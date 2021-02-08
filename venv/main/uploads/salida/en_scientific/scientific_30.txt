@@ -1,0 +1,1 @@
+As expected , coverage was strongly related to m . a . f . : 70_% of SNPs with m . a . f . > 10_% were tagged at r2 > 0.8 , compared with 23_% of SNPs with m . a . f . 5 – 10_%.

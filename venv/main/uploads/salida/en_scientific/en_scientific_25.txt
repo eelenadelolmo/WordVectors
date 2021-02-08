@@ -1,0 +1,1 @@
+En la primera etapa, utilizamos un panel de 266.722 SNP, seleccionados para etiquetar variantes comunes conocidas en todo el genoma18.

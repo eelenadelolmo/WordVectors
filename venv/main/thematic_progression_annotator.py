@@ -3,7 +3,7 @@ import re
 import html
 import shutil
 import numpy as np
-# import spacy
+import spacy
 import scipy.spatial
 import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import ElementTree
@@ -26,7 +26,7 @@ def pretty(d, indent=0):
 model_lg_path = "/home/elena/PycharmProjects/WordVectors/venv/main/Spacy_models/es_core_news_lg-2.3.1/es_core_news_lg/es_core_news_lg-2.3.1"
 model_md_path = "/home/elena/PycharmProjects/WordVectors/venv/main/Spacy_models/es_core_news_md-2.3.1/es_core_news_lg/es_core_news_md-2.3.1"
 model_sm_path = "/home/elena/PycharmProjects/WordVectors/venv/main/Spacy_models/es_core_news_sm-2.3.1/es_core_news_lg/es_core_news_sm-2.3.1"
-# nlp = spacy.load(model_lg_path)
+nlp = spacy.load(model_lg_path)
 # os.system("python -m spacy download es_core_news_sm")
 
 # Parameters for sentence transformed based on BETO
@@ -80,6 +80,9 @@ for file_xml in os.listdir(input_dir):
     # List composed of the tuples with the ordered theme and rheme for every sentence in the text
     t_r_ord = list()
 
+    # List comopones of the lists of noun phrases in rhemes
+    r_ord_noun_phrases = list()
+
 
     with open(input_dir + '/' + file_xml) as f_xml:
         xml = f_xml.read()
@@ -109,6 +112,9 @@ for file_xml in os.listdir(input_dir):
             t_ord.append(theme)
             r_ord.append(rheme)
             r_ord_sem_roles.append(rheme_sem_role)
+            noun_phrases = [sn.text for sn in nlp(rheme).noun_chunks]
+            r_ord_noun_phrases.append(noun_phrases)
+
 
 
         # Deleting sentences with no theme and rheme matched
@@ -119,10 +125,10 @@ for file_xml in os.listdir(input_dir):
             if t_ord[n_sentence] == '' and r_ord[n_sentence] == '':
                 t_ord.pop(n_sentence)
                 r_ord.pop(n_sentence)
+                r_ord_sem_roles.pop(n_sentence)
+                r_ord_noun_phrases.pop(n_sentence)
                 n_sentence -= 1
             n_sentence += 1
-
-
 
 
         ##____________________________________________________________________________________________________________
@@ -135,7 +141,6 @@ for file_xml in os.listdir(input_dir):
         print("** Matching themes to themes **")
 
         themes_ranking = dict()
-
 
         print("\n\n--------------------------------------------------------")
         print("\nSentence transformers with BETO as a model")
@@ -223,14 +228,13 @@ for file_xml in os.listdir(input_dir):
 
 
 
-
         ##____________________________________________________________________________________________________________
         ##____________________________________________________________________________________________________________
         ##____________________________________________________________________________________________________________
         ## Getting rheme-rheme similarity measures
 
         print('\n\n\n\n========================================================')
-        print("** Matching rhemes to rhemes **")
+        print("** Matching rheme noun phrases to rheme noun phrases **")
 
         rhemes_ranking = dict()
 
@@ -330,7 +334,7 @@ for file_xml in os.listdir(input_dir):
 
         print('\n\n\n\n========================================================')
         print("** Matching rhemes to themes **")
-        rhemes_ranking = dict()
+        rhemes_themes_ranking = dict()
 
         print("\nSentence transformers with BETO as a model")
 
@@ -348,13 +352,13 @@ for file_xml in os.listdir(input_dir):
             print("Rheme:", rheme)
             print("\nMost similar themes in the sentence:")
 
-            rhemes_ranking[rheme.strip()] = dict()
+            rhemes_themes_ranking[rheme.strip()] = dict()
 
             # Not considering the distance with the theme itself (i.e. selecting the list elements from the second one)
             # Undone because caused problems when the same theme are literally repeated along the document
             for idx, distance in results[:closest_n]:
                 print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
-                rhemes_ranking[rheme.strip()][t_ord[idx].strip()] = 1-distance
+                rhemes_themes_ranking[rheme.strip()][t_ord[idx].strip()] = 1-distance
 
 
         print("\n\n--------------------------------------------------------")
@@ -382,7 +386,7 @@ for file_xml in os.listdir(input_dir):
             norm = [1 - (float(i) / 20) for i in WMD_others]
             for n, other in enumerate(others):
                 print("- (norm.)", other + ":", norm[n])
-                rhemes_ranking[rheme.strip()][other.strip()] += norm[n]
+                rhemes_themes_ranking[rheme.strip()][other.strip()] += norm[n]
 
             print('\n\n')
 
@@ -412,7 +416,7 @@ for file_xml in os.listdir(input_dir):
             norm = [1 - (float(i) / 3) for i in WMD_others]
             for n, other in enumerate(others):
                 print("- (norm.)", other + ":", norm[n])
-                rhemes_ranking[rheme.strip()][other.strip()] += norm[n]
+                rhemes_themes_ranking[rheme.strip()][other.strip()] += norm[n]
 
             print('\n\n')
 
@@ -428,14 +432,14 @@ for file_xml in os.listdir(input_dir):
         print("Ranking de correferencias de los temas:")
         pretty(themes_ranking, indent=1)
 
-        print("Ranking de correferencias de los remas:")
+        print("Ranking de correferencias de los remas con los remas:")
         pretty(rhemes_ranking, indent=1)
+
+        print("Ranking de correferencias de los remas con los temas:")
+        pretty(rhemes_themes_ranking, indent=1)
 
         # Critical value for the weighted semantic similarity to consider two themes corefer to the same underlying concept
         threshold = 1.6
-
-        # List of themes already included in a corefence set
-        coreferent_concepts = list()
 
         # List of identifiers for coreference sets
         # ids_coref = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z".split()
@@ -446,6 +450,9 @@ for file_xml in os.listdir(input_dir):
 
         # List of (theme, id) tuples
         theme_id = list()
+
+        # List of themes already included in a corefence set
+        coreferent_concepts = list()
 
         for count, t in enumerate(themes_ranking):
 
@@ -472,10 +479,47 @@ for file_xml in os.listdir(input_dir):
                         theme_id.append((t_c, id_c))
                         coreferent_concepts.append(t_c)
 
+        print("Thematic coreference analyzed", theme_id)
 
-        print("Coreference analyzed", theme_id)
 
 
+
+        # List of (rheme, id) tuples
+        rheme_id = list()
+
+        # List of rhemes already included in a corefence set
+        coreferent_concepts_rheme = list()
+
+        # Critical value for the weighted semantic similarity to consider two themes corefer to the same underlying concept
+        threshold_rheme = 5
+
+
+        for count, r in enumerate(rhemes_ranking):
+
+            # If the rheme isn't yet in any coreference chain
+            if r not in coreferent_concepts_rheme:
+                # Assigning a new id with the next corresponding capital letter
+                n_sets += 1
+                id_c = ids_coref[n_sets]
+                rheme_id.append((r, id_c))
+                coreferent_concepts_rheme.append(r)
+
+            # If the theme already is in a coreference chain
+            else:
+                # Getting the previously assigned id
+                for e in rheme_id:
+                    if e[0] == r:
+                        id_c = e[1]
+                        break
+
+            # Assigning the coreference chain id of the current theme to the themes with a semantic similarity measure above the threshold
+            for r_c in rhemes_ranking[r]:
+                if r_c not in coreferent_concepts_rheme:
+                    if rhemes_ranking[r][r_c] > threshold_rheme:
+                        rheme_id.append((r_c, id_c))
+                        coreferent_concepts_rheme.append(r_c)
+
+        print("Rhematic coreference analyzed", rheme_id)
 
 
 
@@ -538,10 +582,13 @@ for file_xml in os.listdir(input_dir):
         <!ELEMENT rheme (token*)>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
-        <!ELEMENT semantic_roles (frame*)>
-        <!ELEMENT frame (argument*)>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
             <!ATTLIST frame type CDATA #REQUIRED>
             <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
         <!ELEMENT argument EMPTY>
             <!ATTLIST argument type CDATA #REQUIRED>
             <!ATTLIST argument dependent CDATA #REQUIRED>
@@ -625,7 +672,7 @@ for file_xml in os.listdir(input_dir):
 
 
 
-## Tesing unsupervised clustering algorithms
+## Testing unsupervised clustering algorithms
 
 """
 from sklearn.cluster import KMeans

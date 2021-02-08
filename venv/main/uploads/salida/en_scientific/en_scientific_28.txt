@@ -1,0 +1,1 @@
+Inicialmente, analizamos 227,876 SNP (85%) con genotipos en al menos el 80% de los sujetos.

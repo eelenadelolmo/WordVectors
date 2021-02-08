@@ -1,0 +1,1 @@
+En los análisis principales, consideramos 10,405 SNP con una tasa de llamadas de> 95% que no se desviaron del equilibrio de Hardy-Weinberg en los controles.

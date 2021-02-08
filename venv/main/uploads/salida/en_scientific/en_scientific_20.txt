@@ -1,0 +1,1 @@
+Los avances tecnológicos recientes han proporcionado plataformas que permiten analizar cientos de miles de SNP en estudios de asociación, proporcionando así una base para identificar alelos de riesgo moderado sin conocimiento previo de posición o función.

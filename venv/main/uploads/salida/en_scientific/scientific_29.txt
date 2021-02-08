@@ -1,0 +1,1 @@
+We estimate that these SNPs are correlated with 58_% of common SNPs in the HapMap_CEPH / CEU ( Utah residents with ancestry from northern and western Europe ) samples at r2 > 0.8 , and 77_% at r2 > 0.5 ( mean r2=0.75 ; see Supplementary_Fig . 1 ) ( http://www.hapmap.org/ ) 21.

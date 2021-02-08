@@ -1,8 +1,0 @@
-{   ('Dimension', 'les mesures'): [('Object', 'barrières')],
-    ('Economy', 'économie'): [],
-    ('Enforcing', 'mise'): [('Rule', 'mesures barrières'), ('Degree', 'moins bien')],
-    ('Locative_relation', 'où'): [('Figure', 'le virus')],
-    ('Objective_influence', 'impact'): [('Dependent_entity', 'sur l ’ économie')],
-    ('Purpose', 'objectif'): [('Goal', 'à rude')],
-    ('Rate_description', 'rapidement'): [('Event', 'le virus')],
-    ('Type', 'mise à rude'): [('Category', 'l ’ économie')]}

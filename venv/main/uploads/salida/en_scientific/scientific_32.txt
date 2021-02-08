@@ -1,0 +1,1 @@
+For the second stage we selected 12,711 SNPs , approximately 5_% of those typed in stage 1 , on the basis of the significance of the difference in genotype frequency between cases and controls.
