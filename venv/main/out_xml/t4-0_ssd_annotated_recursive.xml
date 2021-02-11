@@ -47,9 +47,9 @@
 		<concept id="c_5">Una convicción axiomática</concept>
 		<concept id="c_6">nadie</concept>
 		<concept id="c_7">mí mismo</concept>
-		<concept id="c_8">la vida</concept>
-		<concept id="c_9">se</concept>
-		<concept id="c_10">nos</concept>
+		<concept id="c_10">se</concept>
+		<concept id="c_11">nos</concept>
+		<concept id="c_12">cada año</concept>
 	</concepts>
 
 	<sentence>
@@ -80,7 +80,7 @@
 		<theme concept_ref="c_0">
 			<token pos="pr0cn000">que</token>
 		</theme>
-		<rheme concept_ref1="c_3" concept_ref2="c_2" concept_ref3="c_8">
+		<rheme concept_ref1="c_3" concept_ref2="c_2">
 			<token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="ncfs000">vida</token><token pos="sps00">de</token><token pos="di0cs0">cada</token><token pos="pr0cs000">cual</token>
 		</rheme>
 		<semantic_roles>
@@ -110,7 +110,7 @@
 		<theme concept_ref="c_1">
 			<token pos="da0fs0">la</token><token pos="ncfs000">gente</token>
 		</theme>
-		<rheme concept_ref1="c_9">
+		<rheme concept_ref1="c_10">
 			<token pos="p0300000">se</token><token pos="vmip3s0">recoge</token>
 		</rheme>
 		<semantic_roles>
@@ -133,7 +133,7 @@
 		<theme concept_ref="c_2">
 			<token pos="da0fs0">la</token><token pos="ncfs000">naturaleza</token>
 		</theme>
-		<rheme concept_ref1="c_8" concept_ref2="c_9" concept_ref3="c_10">
+		<rheme concept_ref1="c_10" concept_ref2="c_11" concept_ref3="c_12">
 			<token pos="pp1cp000">nos</token><token pos="vmip3s0">adiestra</token><token pos="dd0mp0">trescientas</token><token pos="dn0cp0">sesenta</token><token pos="cc">y</token><token pos="dn0cp0">cinco</token><token pos="ncfp000">veces</token><token pos="di0cs0">cada</token><token pos="ncms000">año</token><token pos="cc">y</token><token pos="dn0cp0">sesenta</token><token pos="cc">u</token><token pos="dn0cp0">ochenta</token><token pos="ncmp000">años</token><token pos="fc">,</token><token pos="pi0ms000">uno</token><token pos="sps00">tras</token><token pos="pi0ms000">otro</token>
 		</rheme>
 		<semantic_roles>
@@ -205,7 +205,7 @@
 		<theme concept_ref="c_4">
 			<token pos="pp1csn00">Yo</token>
 		</theme>
-		<rheme concept_ref1="c_3" concept_ref2="c_7" concept_ref3="c_8">
+		<rheme concept_ref1="c_3" concept_ref2="c_7">
 			<token pos="rg">tampoco</token><token pos="vmip1s0">suelo</token><token pos="vmn0000">decírmelo</token><token pos="sps00">a</token><token pos="pp1cso00">mí</token><token pos="di0ms0">mismo</token><token pos="da0fs0">la</token><token pos="ncfs000">verdad</token>
 		</rheme>
 		<semantic_roles>

@@ -139,7 +139,7 @@
 		<theme concept_ref="c_2">
 			<token pos="da0ms0">el</token><token pos="ncfs000">agua</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">fuego</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_6" concept_ref4="c_10">
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_10">
 			<token pos="vsip3p0">son</token><token pos="ncmp000">dioses</token><token pos="da0ms0">el</token><token pos="ncms000">rayo</token><token pos="dp3cs0">su</token><token pos="rg">más</token><token pos="aq0cs0">elocuente</token><token pos="cc">y</token><token pos="aq0cs0">eficaz</token><token pos="nccs000">agente</token><token pos="sps00">de</token><token pos="ncfp000">relaciones</token><token pos="aq0fp0">públicas</token>
 		</rheme>
 		<semantic_roles>

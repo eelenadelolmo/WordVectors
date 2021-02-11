@@ -45,14 +45,13 @@
 		<concept id="c_3">Yo</concept>
 		<concept id="c_4">Los guardias civiles</concept>
 		<concept id="c_5">otra vez la fiesta</concept>
-		<concept id="c_7">las tinieblas</concept>
 	</concepts>
 
 	<sentence>
 		<theme concept_ref="c_0">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">niños</token>
 		</theme>
-		<rheme concept_ref1="c_4" concept_ref2="c_7">
+		<rheme concept_ref1="c_4">
 			<token pos="p0300000">se</token><token pos="vmip3p0">inquietan</token><token pos="sps00">con</token><token pos="da0fp0">las</token><token pos="ncfp000">tinieblas</token><token pos="aq0fp0">nocturnas</token>
 		</rheme>
 		<semantic_roles>
@@ -107,7 +106,7 @@
 		<theme concept_ref="c_2">
 			<token pos="np0000l">Roma</token>
 		</theme>
-		<rheme concept_ref1="c_5" concept_ref2="c_7">
+		<rheme concept_ref1="c_5">
 			<token pos="vmip3s0">quiere</token><token pos="vmn0000">aguarnos</token><token pos="di0fs0">otra</token><token pos="ncfs000">vez</token><token pos="da0fs0">la</token><token pos="ncfs000">fiesta</token>
 		</rheme>
 		<semantic_roles>
@@ -149,7 +148,7 @@
 		<theme concept_ref="c_0">
 			<token pos="di0mp0">Todos</token><token pos="da0mp0">los</token><token pos="ncmp000">pintores</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_7">
+		<rheme concept_ref1="c_0">
 			<token pos="vmip3p0">envidian</token><token pos="sps00">a</token><token pos="np0000p">Picasso</token>
 		</rheme>
 		<semantic_roles>
@@ -194,7 +193,7 @@
 		<theme concept_ref="c_4">
 			<token pos="da0mp0">Los</token><token pos="nccp000">guardias</token><token pos="aq0cp0">civiles</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_5" concept_ref3="c_7">
+		<rheme concept_ref1="c_0" concept_ref2="c_5">
 			<token pos="rn">no</token><token pos="vmii3p0">debían</token><token pos="vmn0000">usar</token><token pos="da0ms0">el</token><token pos="ncms000">tricornio</token><token pos="fc">,</token><token pos="vsis3p0">es</token><token pos="vmp00pm">decir</token><token pos="da0mp0">los</token><token pos="dn0cp0">tres</token><token pos="ncmp000">cuernos</token>
 		</rheme>
 		<semantic_roles>

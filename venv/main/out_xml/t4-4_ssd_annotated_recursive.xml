@@ -48,8 +48,8 @@
 		<concept id="c_6">Lo demás</concept>
 		<concept id="c_7">una amiga</concept>
 		<concept id="c_8">Su misión</concept>
-		<concept id="c_9">los</concept>
 		<concept id="c_10">esos silencios</concept>
+		<concept id="c_14">se</concept>
 	</concepts>
 
 	<sentence>
@@ -68,7 +68,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0fp0">Las</token><token pos="ncfp000">auroras</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_9">
+		<rheme concept_ref1="c_1">
 			<token pos="pp3mpa00">los</token><token pos="vmip3p0">tienen</token>
 		</rheme>
 		<semantic_roles>
@@ -92,7 +92,7 @@
 		<theme concept_ref="c_1">
 			<token pos="pi0mp000">todos</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_9" concept_ref3="c_10">
+		<rheme concept_ref1="c_1" concept_ref2="c_10" concept_ref3="c_14">
 			<token pos="vmip1p0">preferimos</token><token pos="dd0mp0">esos</token><token pos="ncmp000">silencios</token><token pos="aq0mp0">absolutos</token><token pos="sps00">durante</token><token pos="da0mp0">los</token><token pos="pr0cp000">cuales</token><token pos="np0000p">Dios</token><token pos="pp1cp000">nos</token><token pos="vmip3s0">habla</token>
 		</rheme>
 		<semantic_roles>
@@ -106,7 +106,7 @@
 		<theme concept_ref="c_1">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">sordos</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_9">
+		<rheme concept_ref1="c_1">
 			<token pos="pp3msa00">lo</token><token pos="vmip3p0">oyen</token>
 		</rheme>
 		<semantic_roles>
@@ -124,7 +124,7 @@
 		<theme concept_ref="c_2">
 			<token pos="pr0cn000">que</token>
 		</theme>
-		<rheme concept_ref1="c_5">
+		<rheme concept_ref1="c_5" concept_ref2="c_14">
 			<token pos="p0300000">se</token><token pos="vmip3s0">llama</token><token pos="np0000p">Danaida</token>
 		</rheme>
 		<semantic_roles>
@@ -166,7 +166,7 @@
 		<theme concept_ref="c_4">
 			<token pos="dp3cs0">Su</token><token pos="ncfs000">misión</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_9">
+		<rheme concept_ref1="c_1">
 			<token pos="vsii3s0">era</token><token pos="vmn0000">llenarlo</token>
 		</rheme>
 		<semantic_roles>
@@ -184,7 +184,7 @@
 		<theme concept_ref="c_5">
 			<token pos="di0cs0">Cada</token><token pos="pr0cs000">cual</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_9" concept_ref4="c_10">
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_10" concept_ref4="c_14">
 			<token pos="pp3msa00">lo</token><token pos="vmip3s0">comprende</token><token pos="pd0ns000">eso</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="ncfs000">manera</token><token pos="cc">y</token><token pos="sps00">según</token><token pos="dp3cs0">su</token><token pos="ncms000">caso</token><token pos="aq0cs0">personal</token>
 		</rheme>
 		<semantic_roles>

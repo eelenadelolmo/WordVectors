@@ -46,17 +46,16 @@
 		<concept id="c_4">Los diez dedos , extendidos ,</concept>
 		<concept id="c_5">su piel la huella de un esternón deforme como un arma agresiva e hiriente</concept>
 		<concept id="c_6">al aire</concept>
-		<concept id="c_7">su piel</concept>
 		<concept id="c_8">la huella</concept>
 		<concept id="c_10">un arma</concept>
-		<concept id="c_12">la halitosis</concept>
+		<concept id="c_13">la halitosis</concept>
 	</concepts>
 
 	<sentence>
 		<theme concept_ref="c_0">
 			<token pos="pr0cn000">que</token>
 		</theme>
-		<rheme concept_ref1="c_2" concept_ref2="c_5" concept_ref3="c_7" concept_ref4="c_8" concept_ref5="c_10">
+		<rheme concept_ref1="c_2" concept_ref2="c_5" concept_ref3="c_8" concept_ref4="c_10">
 			<token pos="vmii3s0">proyectaba</token><token pos="sps00">sobre</token><token pos="dp3cs0">su</token><token pos="ncfs000">piel</token><token pos="da0fs0">la</token><token pos="ncfs000">huella</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">esternón</token><token pos="aq0cs0">deforme</token><token pos="sps00">como</token><token pos="di0ms0">un</token><token pos="ncfs000">arma</token><token pos="aq0fs0">agresiva</token><token pos="cc">e</token><token pos="aq0cs0">hiriente</token><token pos="fc">,</token><token pos="pi0fs000">una</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">carcajadas</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncms000">cuerpo</token><token pos="fc">,</token><token pos="dd0ms0">aquel</token><token pos="ncms000">hueso</token><token pos="aq0ms0">burlón</token><token pos="cc">y</token><token pos="aq0msp">desmadrado</token>
 		</rheme>
 		<semantic_roles>
@@ -113,7 +112,7 @@
 		<theme concept_ref="c_1">
 			<token pos="pp3ms000">Él</token>
 		</theme>
-		<rheme concept_ref1="c_5" concept_ref2="c_7" concept_ref3="c_12">
+		<rheme concept_ref1="c_5" concept_ref2="c_8" concept_ref3="c_13">
 			<token pos="rn">no</token><token pos="vmii3s0">podía</token><token pos="vmn0000">permitirse</token><token pos="da0ms0">el</token><token pos="ncms000">lujo</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfn000">halitosis</token><token pos="aq0fs0">matutina</token>
 		</rheme>
 		<semantic_roles>
@@ -263,7 +262,7 @@
 		<theme concept_ref="c_0">
 			<token pos="pr0cn000">que</token>
 		</theme>
-		<rheme concept_ref1="c_2" concept_ref2="c_5" concept_ref3="c_12">
+		<rheme concept_ref1="c_2" concept_ref2="c_5" concept_ref3="c_13">
 			<token pos="vmii3p0">parecían</token><token pos="sps00">a</token><token pos="ncfs000">punto</token><token pos="sps00">de</token><token pos="vmn0000">horadar</token><token pos="da0fs0">la</token><token pos="ncfs000">formica</token><token pos="sps00">con</token><token pos="dp3cp0">sus</token><token pos="aq0fp0">inofensivas</token><token pos="ncfp000">yemas</token>
 		</rheme>
 		<semantic_roles>

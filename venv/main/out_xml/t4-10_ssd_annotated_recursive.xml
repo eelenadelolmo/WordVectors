@@ -45,16 +45,15 @@
 		<concept id="c_3">yo</concept>
 		<concept id="c_4">inteligencia de los robots que</concept>
 		<concept id="c_5">en la</concept>
-		<concept id="c_6">nos</concept>
 		<concept id="c_9">se</concept>
-		<concept id="c_10">la palabra</concept>
+		<concept id="c_15">la palabra</concept>
 	</concepts>
 
 	<sentence>
 		<theme concept_ref="c_0">
 			<token pos="da0fs0">La</token><token pos="ncfs000">inteligencia</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">robots</token><token pos="pr0cn000">que</token><token pos="vmip3p0">responden</token><token pos="rg">lógicamente</token>
 		</theme>
-		<rheme concept_ref1="c_2" concept_ref2="c_6">
+		<rheme concept_ref1="c_2">
 			<token pos="pp1cp000">nos</token><token pos="vmip3s0">causa</token><token pos="ncfs000">risa</token><token pos="cc">y</token><token pos="ncms000">miedo</token>
 		</rheme>
 		<semantic_roles>
@@ -122,7 +121,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="ncms000">murciélago</token><token pos="aq0ms0">nocturno</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">golondrina</token><token pos="aq0fs0">diurna</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_6" concept_ref4="c_9">
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_9">
 			<token pos="p0300000">se</token><token pos="vmip3p0">alimentan</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">insectos</token><token pos="aq0cp0">volantes</token><token pos="fg">-</token><token pos="fg">-</token><token pos="ncmp000">mosquitos</token><token pos="sps00">de</token><token pos="di0cp0">diferentes</token><token pos="ncfp000">clases</token><token pos="fg">-</token><token pos="fg">-</token><token pos="cc">y</token>
 		</rheme>
 		<semantic_roles>
@@ -149,7 +148,7 @@
 		<theme concept_ref="c_1">
 			<token pos="pr0cn000">que</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_6">
+		<rheme concept_ref1="c_0">
 			<token pos="pp3mpa00">los</token><token pos="vmip3s0">diferencia</token>
 		</rheme>
 		<semantic_roles>
@@ -165,7 +164,7 @@
 		<theme concept_ref="c_0">
 			<token pos="pi0cs000">Algo</token><token pos="aq0msp">parecido</token>
 		</theme>
-		<rheme concept_ref1="c_2" concept_ref2="c_0" concept_ref3="c_6">
+		<rheme concept_ref1="c_2" concept_ref2="c_0">
 			<token pos="pp1cp000">nos</token><token pos="vmip3s0">sucede</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="ncmp000">hombres</token>
 		</rheme>
 		<semantic_roles>
@@ -180,7 +179,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">franceses</token>
 		</theme>
-		<rheme concept_ref1="c_10">
+		<rheme concept_ref1="c_15">
 			<token pos="vmip3p0">usan</token><token pos="da0fs0">la</token><token pos="ncfs000">palabra</token><token pos="fg">-</token><token pos="nc00000">toucher</token><token pos="fg">-</token>
 		</rheme>
 		<semantic_roles>
@@ -193,7 +192,7 @@
 		<theme concept_ref="c_2">
 			<token pos="pp1mp000">Nosotros</token>
 		</theme>
-		<rheme concept_ref1="c_2" concept_ref2="c_6">
+		<rheme concept_ref1="c_2">
 			<token pos="vsip1p0">somos</token><token pos="rg">menos</token><token pos="aq0mp0">delicados</token>
 		</rheme>
 		<semantic_roles>
@@ -209,7 +208,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0fs0">La</token><token pos="ncfs000">nación</token><token pos="aq0fs0">española</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_4" concept_ref3="c_9" concept_ref4="c_6">
+		<rheme concept_ref1="c_0" concept_ref2="c_4" concept_ref3="c_9">
 			<token pos="vmip3s0">comienza</token><token pos="sps00">en</token><token pos="np0000l">Cervere</token><token pos="fpa">(</token><token pos="ncms000">can</token><token pos="np00000">Cerbero</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="dn0cp0">tres</token><token pos="ncfp000">cabezas</token><token pos="fpt">)</token>
 		</rheme>
 		<semantic_roles>
@@ -233,7 +232,7 @@
 		<theme concept_ref="c_3">
 			<token pos="pp1csn00">yo</token>
 		</theme>
-		<rheme concept_ref1="c_2" concept_ref2="c_6" concept_ref3="c_10">
+		<rheme concept_ref1="c_2" concept_ref2="c_15">
 			<token pos="sps00">Con</token><token pos="pd0ns000">esto</token><token pos="rn">no</token><token pos="vmip1s0">quiero</token><token pos="vmn0000">decir</token><token pos="pi0cs000">nada</token>
 		</rheme>
 		<semantic_roles>
@@ -245,7 +244,7 @@
 		<theme concept_ref="c_2">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">políticos</token>
 		</theme>
-		<rheme concept_ref1="c_2" concept_ref2="c_0" concept_ref3="c_6" concept_ref4="c_9">
+		<rheme concept_ref1="c_2" concept_ref2="c_0" concept_ref3="c_9">
 			<token pos="pp1cp000">nos</token><token pos="vmip3p0">hacen</token><token pos="vmn0000">reír</token><token pos="sps00">por</token><token pos="dp3cs0">su</token><token pos="ncfs000">frivolidad</token><token pos="sps00">de</token><token pos="aq0cp0">secuaces</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">partido</token>
 		</rheme>
 		<semantic_roles>

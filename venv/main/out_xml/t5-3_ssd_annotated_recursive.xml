@@ -42,8 +42,7 @@
 		<concept id="c_0">El sol</concept>
 		<concept id="c_1">Antonia</concept>
 		<concept id="c_2">ella</concept>
-		<concept id="c_4">las rendijas</concept>
-		<concept id="c_5">la mano</concept>
+		<concept id="c_9">la manita</concept>
 	</concepts>
 
 	<sentence>
@@ -62,7 +61,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="ncms000">sol</token>
 		</theme>
-		<rheme concept_ref1="c_2" concept_ref2="c_4">
+		<rheme concept_ref1="c_2">
 			<token pos="p0300000">se</token><token pos="vmii3s0">colaba</token><token pos="sps00">por</token><token pos="sps00">entre</token><token pos="da0fp0">las</token><token pos="ncfp000">rendijas</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">persiana</token><token pos="aq0fs0">metálica</token>
 		</rheme>
 		<semantic_roles>
@@ -76,7 +75,7 @@
 		<theme concept_ref="c_1">
 			<token pos="np0000p">Antonia</token>
 		</theme>
-		<rheme concept_ref1="c_2" concept_ref2="c_0" concept_ref3="c_5">
+		<rheme concept_ref1="c_2" concept_ref2="c_0">
 			<token pos="vmis3s0">colocó</token><token pos="da0fs0">la</token><token pos="ncfs000">mano</token><token pos="sps00">a</token><token pos="nccs000">contraluz</token>
 		</rheme>
 		<semantic_roles>
@@ -167,7 +166,7 @@
 		<theme concept_ref="c_2">
 			<token pos="pp3fs000">ella</token>
 		</theme>
-		<rheme concept_ref1="c_4">
+		<rheme concept_ref1="c_9">
 			<token pos="p0300000">se</token><token pos="vmii3s0">remiraba</token><token pos="da0fs0">la</token><token pos="ncfs000">manita</token>
 		</rheme>
 		<semantic_roles>
@@ -184,7 +183,7 @@
 		<theme concept_ref="c_0">
 			<token pos="pd0ns000">Eso</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_4" concept_ref4="c_5">
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_9">
 			<token pos="vsii3s0">era</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="ncmp000">veranos</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">hora</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">siesta</token>
 		</rheme>
 		<semantic_roles>
@@ -207,7 +206,7 @@
 		<theme concept_ref="c_2">
 			<token pos="da0ms0">El</token><token pos="ncms000">establo</token>
 		</theme>
-		<rheme concept_ref1="c_5">
+		<rheme>
 			<token pos="vmii3s0">olía</token><token pos="sps00">a</token><token pos="ncms000">sudor</token><token pos="sps00">de</token><token pos="ncms000">ganado</token>
 		</rheme>
 		<semantic_roles>

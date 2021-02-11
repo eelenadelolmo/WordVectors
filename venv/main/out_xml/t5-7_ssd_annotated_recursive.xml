@@ -42,14 +42,13 @@
 		<concept id="c_0">los vecinos de enfrente</concept>
 		<concept id="c_1">Antonia</concept>
 		<concept id="c_2">al patio para ver de qué color era el traje de la protagonista</concept>
-		<concept id="c_3">las hojas</concept>
 	</concepts>
 
 	<sentence>
 		<theme concept_ref="c_0">
 			<token pos="da0mp0">los</token><token pos="ncmp000">vecinos</token><token pos="sps00">de</token><token pos="rg">enfrente</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_3">
+		<rheme concept_ref1="c_1">
 			<token pos="vmii3p0">entornaban</token><token pos="da0fp0">las</token><token pos="ncfp000">hojas</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">ventana</token>
 		</rheme>
 		<semantic_roles>
@@ -74,7 +73,7 @@
 		<theme concept_ref="c_1">
 			<token pos="np0000p">Antonia</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_2" concept_ref3="c_3">
+		<rheme concept_ref1="c_1" concept_ref2="c_2">
 			<token pos="p0300000">se</token><token pos="vmii3s0">asomaba</token><token pos="spcms">al</token><token pos="ncms000">patio</token><token pos="sps00">para</token><token pos="vmn0000">ver</token><token pos="sps00">de</token><token pos="dt0cn0">qué</token><token pos="ncms000">color</token><token pos="vsii3s0">era</token><token pos="da0ms0">el</token><token pos="ncms000">traje</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="nccs000">protagonista</token>
 		</rheme>
 		<semantic_roles>
@@ -113,7 +112,7 @@
 		<theme concept_ref="c_1">
 			<token pos="dp3cs0">su</token><token pos="ncms000">hermano</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_2" concept_ref3="c_3">
+		<rheme concept_ref1="c_1" concept_ref2="c_2">
 			<token pos="rn">no</token><token pos="vmii3s0">quería</token><token pos="vmn0000">comprarle</token><token pos="di0ms0">un</token><token pos="ncms000">aparato</token><token pos="aq0ms0">nuevo</token>
 		</rheme>
 		<semantic_roles>
@@ -212,7 +211,7 @@
 		<theme concept_ref="c_1">
 			<token pos="np0000p">Antonia</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_3">
+		<rheme concept_ref1="c_1">
 			<token pos="vmis3s0">cogió</token><token pos="di0fs0">una</token><token pos="ncfs000">revista</token>
 		</rheme>
 		<semantic_roles>
@@ -260,7 +259,7 @@
 		<theme concept_ref="c_1">
 			<token pos="np0000p">Antonia</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_3">
+		<rheme concept_ref1="c_1">
 			<token pos="vmis3s0">abrió</token><token pos="da0fs0">la</token><token pos="ncfs000">ventana</token>
 		</rheme>
 		<semantic_roles>

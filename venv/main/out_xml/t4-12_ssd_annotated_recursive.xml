@@ -45,16 +45,14 @@
 		<concept id="c_3">El camaleón</concept>
 		<concept id="c_4">La Tierra</concept>
 		<concept id="c_5">con un tema tan metafísicamente imposible</concept>
-		<concept id="c_6">cuernos</concept>
 		<concept id="c_8">un tema</concept>
-		<concept id="c_9">la cárcel</concept>
 	</concepts>
 
 	<sentence>
 		<theme concept_ref="c_0">
 			<token pos="da0mp0">los</token><token pos="aq0cp0">mejores</token><token pos="ncmp000">guerreros</token><token pos="spcms">del</token><token pos="ncms000">mundo</token><token pos="fc">,</token><token pos="da0mp0">los</token><token pos="ncmp000">hunos</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_6">
+		<rheme concept_ref1="c_0">
 			<token pos="sps00">con</token><token pos="dn0cp0">dos</token><token pos="ncmp000">cuernos</token><token pos="vmii3p0">tenían</token>
 		</rheme>
 		<semantic_roles>
@@ -113,7 +111,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0fs0">La</token><token pos="ncfs000">monarquía</token><token pos="sps00">de</token><token pos="np0000l">Alfonso</token><token pos="np0000l">XIII</token><token pos="sps00">a</token><token pos="pr0cs000">quien</token><token pos="pi0mp000">todos</token><token pos="vmii3p0">consideraban</token><token pos="aq0cs0">gafe</token><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="aq0cs0">numeral</token><token pos="fg">-</token><token pos="fg">-</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmn000">idus</token><token pos="aq0mp0">romanos</token><token pos="fg">-</token><token pos="fg">-</token>
 		</theme>
-		<rheme concept_ref1="c_3" concept_ref2="c_0" concept_ref3="c_5" concept_ref4="c_6" concept_ref5="c_9">
+		<rheme concept_ref1="c_3" concept_ref2="c_0" concept_ref3="c_5">
 			<token pos="p0300000">se</token><token pos="vmis3s0">hundió</token><token pos="sps00">por</token><token pos="van0000">haberse</token><token pos="vmp00sm">atrevido</token><token pos="sps00">a</token><token pos="vmn0000">meter</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">cárcel</token><token pos="sps00">a</token><token pos="ncfp000">personas</token><token pos="rg">tan</token><token pos="rg">inocentemente</token><token pos="aq0cp0">nobles</token><token pos="cs">como</token><token pos="np00000">Fernando</token><token pos="sps00">de</token><token pos="da0fs0">los</token><token pos="np00000">Ríos</token><token pos="fc">,</token><token pos="rg">tan</token><token pos="rg">genialmente</token><token pos="aq0fp0">líricas</token><token pos="cs">como</token><token pos="ncms000">Valle</token><token pos="np00000">Inclán</token><token pos="cc">y</token><token pos="rg">tan</token><token pos="rg">poco</token><token pos="aq0fp0">peligrosas</token><token pos="cs">como</token><token pos="pp1csn00">yo</token>
 		</rheme>
 		<semantic_roles>
@@ -212,7 +210,7 @@
 		<theme concept_ref="c_0">
 			<token pos="di0mp0">Todos</token><token pos="da0mp0">los</token><token pos="ncmp000">primitos</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">niñas</token>
 		</theme>
-		<rheme concept_ref1="c_6">
+		<rheme>
 			<token pos="vmip3p0">orinan</token><token pos="sps00">por</token><token pos="di0ms0">un</token><token pos="ncms000">dedo</token><token pos="aq0cs0">meñique</token>
 		</rheme>
 		<semantic_roles>

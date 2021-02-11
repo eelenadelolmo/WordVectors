@@ -44,8 +44,7 @@
 		<concept id="c_2">sugerir esos tónicos de café con gotas que llaman ahora carajillos y que tanto cuentan en las</concept>
 		<concept id="c_3">Cajal que</concept>
 		<concept id="c_5">nos</concept>
-		<concept id="c_7">los seres</concept>
-		<concept id="c_14">hombre</concept>
+		<concept id="c_15">hombre</concept>
 	</concepts>
 
 	<sentence>
@@ -96,7 +95,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="ncfs000">hambre</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="ncfs000">sed</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">frío</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_7">
+		<rheme concept_ref1="c_0">
 			<token pos="vsip3p0">son</token><token pos="ncfp000">amenazas</token><token pos="aq0cp0">constantes</token><token pos="sps00">para</token><token pos="di0mp0">todos</token><token pos="da0mp0">los</token><token pos="ncmp000">seres</token><token pos="aq0mp0">vivos</token>
 		</rheme>
 		<semantic_roles>
@@ -134,7 +133,7 @@
 		<theme concept_ref="c_1">
 			<token pos="pr0cn000">que</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_5" concept_ref4="c_7">
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_5">
 			<token pos="vmis3s0">escribió</token><token pos="np00000">Tónicos</token><token pos="sps00">de</token><token pos="da0mp0">la</token><token pos="ncmp000">voluntad</token><token pos="fc">,</token><token pos="ncfs000">Charlas</token><token pos="sps00">de</token><token pos="np00000">Café</token><token pos="fc">,</token><token pos="ncms000">Cuentos</token><token pos="spcms">de</token><token pos="ncms000">Vacaciones</token><token pos="sps00">con</token><token pos="da0mp0">los</token><token pos="pr0cn000">que</token><token pos="p0000000">se</token><token pos="vmip3p0">pueden</token><token pos="vmn0000">sugerir</token><token pos="dd0mp0">esos</token><token pos="ncmp000">tónicos</token><token pos="sps00">de</token><token pos="ncms000">café</token><token pos="sps00">con</token><token pos="ncfp000">gotas</token><token pos="cc">y</token>
 		</rheme>
 		<semantic_roles>
@@ -227,7 +226,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0ms0">el</token><token pos="aq0cs0">abominable</token><token pos="ncms000">hombre</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">nieves</token><token pos="aq0fp0">eternas</token><token pos="spcms">del</token><token pos="np0000l">Himalaya</token>
 		</theme>
-		<rheme concept_ref1="c_14">
+		<rheme concept_ref1="c_15">
 			<token pos="rn">no</token><token pos="vsip3s0">es</token><token pos="ncms000">hombre</token><token pos="ncfs000">mujer</token>
 		</rheme>
 		<semantic_roles>

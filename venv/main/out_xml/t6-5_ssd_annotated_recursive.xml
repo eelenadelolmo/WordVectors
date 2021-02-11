@@ -42,8 +42,6 @@
 		<concept id="c_0">una grácil patinadora rubia</concept>
 		<concept id="c_1">sus ojos</concept>
 		<concept id="c_2">El huerto</concept>
-		<concept id="c_3">una marca</concept>
-		<concept id="c_4">chocolates</concept>
 		<concept id="c_5">Valladolid</concept>
 	</concepts>
 
@@ -51,7 +49,7 @@
 		<theme concept_ref="c_0">
 			<token pos="di0fs0">una</token><token pos="aq0cs0">grácil</token><token pos="ncfs000">patinadora</token><token pos="aq0fs0">rubia</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_3" concept_ref4="c_4" concept_ref5="c_5">
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_5">
 			<token pos="vmii3s0">anunciaba</token><token pos="di0fs0">una</token><token pos="ncfs000">marca</token><token pos="sps00">de</token><token pos="ncmp000">chocolates</token><token pos="sps00">de</token><token pos="np0000l">Valladolid</token>
 		</rheme>
 		<semantic_roles>
@@ -88,7 +86,7 @@
 		<theme concept_ref="c_1">
 			<token pos="dp3cp0">sus</token><token pos="ncmp000">ojos</token>
 		</theme>
-		<rheme concept_ref1="c_3">
+		<rheme>
 			<token pos="vmis3p0">distinguieron</token><token pos="di0fs0">una</token><token pos="ncfs000">mancha</token><token pos="aq0fs0">clara</token>
 		</rheme>
 		<semantic_roles>
@@ -149,7 +147,7 @@
 		<theme concept_ref="c_0">
 			<token pos="pr000000">cuando</token><token pos="da0fs0">la</token><token pos="ncfs000">amargura</token><token pos="sps00">de</token><token pos="dd0ms0">aquel</token><token pos="ncms000">descubrimiento</token>
 		</theme>
-		<rheme concept_ref1="c_2" concept_ref2="c_4" concept_ref3="c_5">
+		<rheme concept_ref1="c_2" concept_ref2="c_5">
 			<token pos="p0300000">se</token><token pos="vaii3s0">había</token><token pos="vmp00sm">diluido</token><token pos="rg">poco</token><token pos="sps00">a</token><token pos="pi0cs000">poco</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">transcurso</token><token pos="spcms">del</token><token pos="ncms000">tiempo</token><token pos="fc">,</token><token pos="rg">casi</token><token pos="dn0cp0">tres</token><token pos="ncmp000">años</token><token pos="sps00">de</token><token pos="ncfs000">vida</token><token pos="aq0cs0">igual</token><token pos="fc">,</token>
 		</rheme>
 		<semantic_roles>

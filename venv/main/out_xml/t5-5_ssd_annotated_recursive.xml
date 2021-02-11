@@ -46,7 +46,7 @@
 		<concept id="c_4">la tarde</concept>
 		<concept id="c_5">un niño</concept>
 		<concept id="c_6">el silencio</concept>
-		<concept id="c_7">la penumbra</concept>
+		<concept id="c_13">nadie</concept>
 	</concepts>
 
 	<sentence>
@@ -65,7 +65,7 @@
 		<theme concept_ref="c_0">
 			<token pos="di0ms0">Un</token><token pos="ncms000">moscón</token><token pos="aq0cs0">verde</token><token pos="cc">y</token><token pos="sps00">a</token><token pos="di0fp0">todas</token><token pos="ncfp000">luces</token><token pos="aq0ms0">moribundo</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_7">
+		<rheme concept_ref1="c_0">
 			<token pos="vmis3s0">revoloteó</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">penumbra</token>
 		</rheme>
 		<semantic_roles>
@@ -229,7 +229,7 @@
 		<theme concept_ref="c_3">
 			<token pos="np0000p">Antonia</token>
 		</theme>
-		<rheme concept_ref1="c_2" concept_ref2="c_4" concept_ref3="c_7">
+		<rheme concept_ref1="c_2" concept_ref2="c_4" concept_ref3="c_13">
 			<token pos="fc">,</token><token pos="sps00">tras</token><token pos="vmn0000">regresar</token><token pos="sps00">de</token><token pos="ncfs000">misa</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">pan</token><token pos="fc">,</token><token pos="rn">no</token><token pos="vmii3s0">iba</token><token pos="sps00">a</token><token pos="vmn0000">volver</token><token pos="sps00">a</token><token pos="vmn0000">hablar</token><token pos="sps00">con</token><token pos="pi0cs000">nadie</token><token pos="sps00">hasta</token><token pos="da0ms0">el</token><token pos="ncms000">día</token><token pos="aq0cs0">siguiente</token>
 		</rheme>
 		<semantic_roles>

@@ -700,7 +700,8 @@ for file_xml in os.listdir(input_dir):
             # Assigning the coreference chain id of the current theme to the themes with a semantic similarity measure above the threshold
             for r_c in rhemes_ranking[r]:
                 if r_c not in coreferent_concepts_rheme:
-                    if rhemes_ranking[r][r_c] > threshold_rhemes_np:
+                    # Matching only rhemes not previously matched with themes
+                    if rhemes_ranking[r][r_c] > threshold_rhemes_np and r not in [r_t_coref for r_t_coref, id_coref in rheme_theme_id]:
                         rheme_id.append((r_c, id_c))
                         coreferent_concepts_rheme.append(r_c)
 
@@ -713,8 +714,6 @@ for file_xml in os.listdir(input_dir):
             coref_sets_others = [elem[1] for elem in rheme_id_copy]
             if x[1] in coref_sets_others:
                 rheme_id_repeated.append((x))
-
-
 
 
         print("Rhematic coreference analyzed (noun phrases)", rheme_id_repeated)

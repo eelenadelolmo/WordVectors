@@ -47,9 +47,7 @@
 		<concept id="c_5">funcionarios municipales, sobre todo los que, como él</concept>
 		<concept id="c_6">a sus labios</concept>
 		<concept id="c_8">humedad</concept>
-		<concept id="c_9">el rancio aroma</concept>
-		<concept id="c_14">la calle</concept>
-		<concept id="c_15">perfil</concept>
+		<concept id="c_17">perfil</concept>
 	</concepts>
 
 	<sentence>
@@ -200,7 +198,7 @@
 		<theme concept_ref="c_2">
 			<token pos="pr0cn000">que</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_5" concept_ref3="c_8" concept_ref4="c_9">
+		<rheme concept_ref1="c_0" concept_ref2="c_5" concept_ref3="c_8">
 			<token pos="vmii3s0">comenzaba</token><token pos="sps00">a</token><token pos="vmn0000">oler</token><token pos="sps00">a</token><token pos="ncfs000">humedad</token><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="aq0ms0">rancio</token><token pos="ncfs000">aroma</token><token pos="spcms">del</token><token pos="ncms000">abandono</token>
 		</rheme>
 		<semantic_roles>
@@ -373,7 +371,7 @@
 		<theme concept_ref="c_4">
 			<token pos="dp3cs0">Su</token><token pos="ncfs000">mirada</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_9" concept_ref4="c_14" concept_ref5="c_15">
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_17">
 			<token pos="vmis3s0">atravesó</token><token pos="da0fs0">la</token><token pos="ncfs000">calle</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="ncfs000">calzada</token><token pos="aq0fsp">empedrada</token><token pos="fc">,</token><token pos="da0fp0">las</token><token pos="aq0fp0">viejas</token><token pos="ncfp000">aceras</token><token pos="sps00">de</token><token pos="ncms000">perfil</token><token pos="aq0ms0">curvo</token><token pos="fc">,</token><token pos="ncfs000">piedra</token><token pos="aq0fs0">blanda</token><token pos="fc">,</token><token pos="aq0fsp">lamida</token><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="ncms000">tiempo</token>
 		</rheme>
 		<semantic_roles>
