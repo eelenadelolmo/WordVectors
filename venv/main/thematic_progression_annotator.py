@@ -889,6 +889,118 @@ for file_xml in os.listdir(input_dir):
 
 
 
+
+
+
+
+
+
+# Pending: precedence of comparisons
+# Pending: rename ids_c
+
+## Generating HTML output
+
+# Pending: more colors and not cycle over the 12 (%12)
+# Pending: more than one color in rhemes
+
+
+import xml.etree.ElementTree as ET
+import shutil
+import os
+output_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/out_xml'
+
+output_dir_html = '/home/elena/PycharmProjects/WordVectors/venv/main/out_html'
+shutil.rmtree(output_dir_html, ignore_errors=True)
+os.makedirs(output_dir_html)
+
+colors = ['green', 'blue', 'red', 'purple', 'fucsia', 'gray', 'lime', 'olive', 'navy', 'maroon', 'teal', 'aqua']
+
+for file_xml in os.listdir(output_dir):
+
+    html = """<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Analysis of the theme/rheme coreferences in text</title>
+    </head>
+
+    <body>
+    
+        <h1>Conceptos</h1>
+    
+    """
+
+    with open(output_dir + '/' + file_xml) as xml:
+        texto = xml.read()
+        root = ET.fromstring(texto)
+
+        ids_colors = dict()
+        n_concept = 0
+
+        for concepts in root.iter('concepts'):
+            for concept in concepts:
+                ids_colors[concept.attrib['id']] = colors[n_concept % 12]
+                html += '<p style="color:' + colors[n_concept % 12] + ';">' + concept.text.strip() + '</p>'
+                n_concept += 1
+
+        html += '''
+
+        <h1>Oraciones</h1>'''
+
+        for sentence in root.iter('sentence'):
+
+            theme = ""
+            rheme = ""
+            rheme_sem_role = list()
+
+            theme_color = 'black'
+            rheme_color = 'black'
+
+            for child in sentence:
+                if child.tag == 'theme':
+
+                    if 'concept_ref' in child.attrib and child.attrib['concept_ref'] in ids_colors:
+                        theme_color = ids_colors[child.attrib['concept_ref']]
+
+                    for token in child:
+                        theme += token.text.strip() + ' '
+
+                elif child.tag == 'rheme':
+
+                    if 'concept_ref1' in child.attrib and child.attrib['concept_ref1'] in ids_colors:
+                        rheme_color = ids_colors[child.attrib['concept_ref1']]
+
+                    for token in child:
+                        rheme += token.text.strip() + ' '
+                if child.tag == 'semantic_roles':
+                    for frame in child:
+                        if frame.tag == 'main_frame':
+                            for arg in frame:
+                                rheme_sem_role.append(arg.attrib['dependent'])
+
+            html += '<p><span style="color:' + theme_color + ';">' + theme + '</span> //// <span style="color:' + rheme_color + ';">' + rheme + '''</p>'''
+    html += '''    </body>
+</html>'''
+
+    with open(output_dir_html + '/' + file_xml.split('.')[0] + '.html', 'w') as file_html:
+        file_html.write(html)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Testing unsupervised clustering algorithms
 
 """
@@ -928,3 +1040,4 @@ for i, cluster in enumerate(clustered_sentences):
     print(cluster)
     print("")
 """
+
