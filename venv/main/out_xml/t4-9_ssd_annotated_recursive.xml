@@ -10,6 +10,16 @@
         <!ELEMENT theme (token*)>
             <!ATTLIST theme concept_ref IDREF #REQUIRED>
         <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
@@ -171,7 +181,7 @@
 		<theme concept_ref="c_2">
 			<token pos="np0000l">España</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_1">
 			<token pos="vsip3s0">es</token><token pos="di0ms0">un</token><token pos="ncms000">país</token><token pos="sps00">de</token><token pos="ncmp000">oradores</token><token pos="aq0cp0">fúnebres</token>
 		</rheme>
 		<semantic_roles>

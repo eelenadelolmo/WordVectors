@@ -10,6 +10,16 @@
         <!ELEMENT theme (token*)>
             <!ATTLIST theme concept_ref IDREF #REQUIRED>
         <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
@@ -43,7 +53,7 @@
 		<theme concept_ref="c_0">
 			<token pos="di0ms0">un</token><token pos="ncms000">huerto</token><token pos="aq0ms0">auténtico</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_4" concept_ref2="c_9">
 			<token pos="rg">Allí</token><token pos="vaii3s0">había</token><token pos="vmp00sm">envejecido</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="ncms000">paso</token><token pos="fc">,</token><token pos="di0ms0">un</token><token pos="ncms000">día</token><token pos="sps00">tras</token><token pos="pi0ms000">otro</token><token pos="fc">,</token>
 		</rheme>
 		<semantic_roles>
@@ -137,7 +147,7 @@
 		<theme concept_ref="c_1">
 			<token pos="da0ms0">El</token><token pos="ncms000">descubrimiento</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">decoración</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="pr0mp000">cuyos</token><token pos="aq0cp0">torpes</token><token pos="ncmp000">misterios</token><token pos="vmsi3s0">decidiera</token><token pos="vmn0000">iniciarse</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="aq0fs0">enfermiza</token><token pos="ncfs000">disponibilidad</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">fanático</token><token pos="fc">,</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_2">
 			<token pos="pp3csd00">le</token><token pos="vaii3s0">había</token><token pos="vmp00sm">resultado</token><token pos="rg">muy</token><token pos="aq0cs0">saludable</token><token pos="fc">,</token>
 		</rheme>
 		<semantic_roles>
@@ -317,7 +327,7 @@
 		<theme concept_ref="c_2">
 			<token pos="pp3fs000">ella</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_2" concept_ref2="c_1" concept_ref3="c_9">
 			<token pos="pp3csa00">le</token><token pos="vmis3s0">miró</token><token pos="sps00">con</token><token pos="da0mp0">Los</token><token pos="ncmp000">ojos</token><token pos="rg">fuera</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">órbitas</token>
 		</rheme>
 		<semantic_roles>
@@ -403,7 +413,7 @@
 		<theme concept_ref="c_1">
 			<token pos="da0fp0">las</token><token pos="ncfp000">habitaciones</token><token pos="rg">casi</token><token pos="aq0fp0">vacías</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_2" concept_ref2="c_0" concept_ref3="c_4" concept_ref4="c_9">
 			<token pos="pp3csa00">le</token><token pos="vsis3p0">fueron</token><token pos="vmg0000">acogiendo</token><token pos="pi0fs000">una</token><token pos="sps00">tras</token><token pos="pi0fs000">otra</token><token pos="cs">como</token><token pos="di0fs0">una</token><token pos="ncfs000">sucesión</token><token pos="sps00">de</token><token pos="ncmp000">gestos</token><token pos="aq0cp0">amables</token>
 		</rheme>
 		<semantic_roles>

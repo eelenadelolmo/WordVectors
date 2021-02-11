@@ -1,35 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (theme, rheme, semantic_roles)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
 <text id="t6-1_ssd_annotated_recursive">
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme>
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
-			<token pos="vmii3s0">proyectaba</token><token pos="sps00">sobre</token><token pos="dp3cs0">su</token><token pos="ncfs000">piel</token><token pos="da0fs0">la</token><token pos="ncfs000">huella</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">estern&#243;n</token><token pos="aq0cs0">deforme</token><token pos="sps00">como</token><token pos="di0ms0">un</token><token pos="ncfs000">arma</token><token pos="aq0fs0">agresiva</token><token pos="cc">e</token><token pos="aq0cs0">hiriente</token><token pos="fc">,</token><token pos="pi0fs000">una</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">carcajadas</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncms000">cuerpo</token><token pos="fc">,</token><token pos="dd0ms0">aquel</token><token pos="ncms000">hueso</token><token pos="aq0ms0">burl&#243;n</token><token pos="cc">y</token><token pos="aq0msp">desmadrado</token>
+			<token pos="vmii3s0">proyectaba</token><token pos="sps00">sobre</token><token pos="dp3cs0">su</token><token pos="ncfs000">piel</token><token pos="da0fs0">la</token><token pos="ncfs000">huella</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">esternón</token><token pos="aq0cs0">deforme</token><token pos="sps00">como</token><token pos="di0ms0">un</token><token pos="ncfs000">arma</token><token pos="aq0fs0">agresiva</token><token pos="cc">e</token><token pos="aq0cs0">hiriente</token><token pos="fc">,</token><token pos="pi0fs000">una</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">carcajadas</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncms000">cuerpo</token><token pos="fc">,</token><token pos="dd0ms0">aquel</token><token pos="ncms000">hueso</token><token pos="aq0ms0">burlón</token><token pos="cc">y</token><token pos="aq0msp">desmadrado</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Aesthetics" head="bellos" />
+			<frame type="Aesthetics" head="bellos"></frame>
 			<frame type="Arriving" head="hacia">
-				<argument type="Goal" dependent="una de sus manos" /></frame>
-			<frame type="Body_parts" head="cuerpo" />
-			<frame type="Body_parts" head="manos" />
-			<frame type="Body_parts" head="piel" />
-			<frame type="Change_position_on_a_scale" head="crecido" />
-			<frame type="Color" head="blancos" />
-			<frame type="Continued_state_of_affairs" head="segu&#237;a" />
+				<argument type="Goal" dependent="una de sus manos"/></frame>
+			<frame type="Body_parts" head="cuerpo"></frame>
+			<frame type="Body_parts" head="manos"></frame>
+			<frame type="Body_parts" head="piel"></frame>
+			<frame type="Change_position_on_a_scale" head="crecido"></frame>
+			<frame type="Color" head="blancos"></frame>
+			<frame type="Continued_state_of_affairs" head="seguía"></frame>
 			<frame type="Judgment_communication" head="hileras">
-				<argument type="Evaluee" dependent="su cuerpo" /></frame>
-			<frame type="Making_faces" head="sonriendo" />
+				<argument type="Evaluee" dependent="su cuerpo"/></frame>
+			<frame type="Making_faces" head="sonriendo"></frame>
 			<frame type="Manipulation" head="desmadrado que">
-				<argument type="Entity" dependent="espol&#243;n que proyectaba sobre su piel la huella de un estern&#243;n deforme como un arma agresiva e hiriente ," /></frame>
-			<frame type="Medical_conditions" head="sanos" />
+				<argument type="Entity" dependent="espolón que proyectaba sobre su piel la huella de un esternón deforme como un arma agresiva e hiriente ,"/></frame>
+			<frame type="Medical_conditions" head="sanos"></frame>
 			<main_frame type="Project" head="proyectaba">
-				<argument type="Goal" dependent="su piel la huella de un estern&#243;n deforme como un arma agresiva e hiriente" /></main_frame>
+				<argument type="Goal" dependent="su piel la huella de un esternón deforme como un arma agresiva e hiriente"/></main_frame>
 			<frame type="Subjective_influence" head="hiriente">
-				<argument type="Product" dependent="que proyectaba sobre su piel la huella de un estern&#243;n deforme como un arma agresiva e hiriente ," /></frame>
+				<argument type="Product" dependent="que proyectaba sobre su piel la huella de un esternón deforme como un arma agresiva e hiriente ,"/></frame>
 			<frame type="Weapon" head="arma">
-				<argument type="Descriptor" dependent="agresiva e hiriente" /></frame>
+				<argument type="Descriptor" dependent="agresiva e hiriente"/></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -59,19 +82,19 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
-			<token pos="pp3ms000">&#201;l</token>
+		<theme>
+			<token pos="pp3ms000">Él</token>
 		</theme>
 		<rheme>
-			<token pos="rn">no</token><token pos="vmii3s0">pod&#237;a</token><token pos="vmn0000">permitirse</token><token pos="da0ms0">el</token><token pos="ncms000">lujo</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfn000">halitosis</token><token pos="aq0fs0">matutina</token>
+			<token pos="rn">no</token><token pos="vmii3s0">podía</token><token pos="vmn0000">permitirse</token><token pos="da0ms0">el</token><token pos="ncms000">lujo</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfn000">halitosis</token><token pos="aq0fs0">matutina</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Calendric_unit" head="matutina" />
-			<frame type="Calendric_unit" head="matutina" />
-			<main_frame type="Possibility" head="pod&#237;a">
-				<argument type="Possible_event" dependent="la halitosis matutina" /></main_frame>
-			<frame type="Possibility" head="pod&#237;a">
-				<argument type="Possible_event" dependent="la halitosis matutina" /></frame>
+			<frame type="Calendric_unit" head="matutina"></frame>
+			<frame type="Calendric_unit" head="matutina"></frame>
+			<main_frame type="Possibility" head="podía">
+				<argument type="Possible_event" dependent="la halitosis matutina"/></main_frame>
+			<frame type="Possibility" head="podía">
+				<argument type="Possible_event" dependent="la halitosis matutina"/></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -89,91 +112,91 @@
 
 
 	<sentence>
-		<theme concept_ref="c_2">
+		<theme>
 			<token pos="da0fp0">las</token><token pos="ncfp000">paredes</token><token pos="sps00">de</token><token pos="dp3cp0">sus</token><token pos="ncmp000">pulmones</token>
 		</theme>
 		<rheme>
-			<token pos="p0300000">se</token><token pos="vmii3p0">soldaban</token><token pos="fc">,</token><token pos="vmg0000">cerr&#225;ndose</token><token pos="spcms">al</token><token pos="ncms000">aire</token>
+			<token pos="p0300000">se</token><token pos="vmii3p0">soldaban</token><token pos="fc">,</token><token pos="vmg0000">cerrándose</token><token pos="spcms">al</token><token pos="ncms000">aire</token>
 		</rheme>
 		<semantic_roles>
 			<frame type="Age" head="vieja">
-				<argument type="Entity" dependent="grasa vieja que nivelaba como una pasta lisa y brillante el irregular perfil del suelo" /></frame>
+				<argument type="Entity" dependent="grasa vieja que nivelaba como una pasta lisa y brillante el irregular perfil del suelo"/></frame>
 			<frame type="Age" head="vieja">
-				<argument type="Entity" dependent="grasa vieja que nivelaba como una pasta lisa y brillante el irregular perfil del suelo" /></frame>
-			<frame type="Architectural_part" head="paredes" />
-			<frame type="Architectural_part" head="paredes" />
+				<argument type="Entity" dependent="grasa vieja que nivelaba como una pasta lisa y brillante el irregular perfil del suelo"/></frame>
+			<frame type="Architectural_part" head="paredes"></frame>
+			<frame type="Architectural_part" head="paredes"></frame>
 			<frame type="Architectural_part" head="paredes de">
-				<argument type="Whole" dependent="de sus pulmones se" /></frame>
+				<argument type="Whole" dependent="de sus pulmones se"/></frame>
 			<frame type="Architectural_part" head="paredes de">
-				<argument type="Whole" dependent="de sus pulmones se" /></frame>
-			<frame type="Architectural_part" head="suelo" />
-			<frame type="Architectural_part" head="suelo" />
+				<argument type="Whole" dependent="de sus pulmones se"/></frame>
+			<frame type="Architectural_part" head="suelo"></frame>
+			<frame type="Architectural_part" head="suelo"></frame>
 			<frame type="Attempt" head="se">
-				<argument type="Goal" dependent="proyectarlo a trav&#233;s de la sucia pared" /></frame>
+				<argument type="Goal" dependent="proyectarlo a través de la sucia pared"/></frame>
 			<frame type="Attempt" head="se">
-				<argument type="Goal" dependent="proyectarlo a trav&#233;s de la sucia pared" /></frame>
-			<frame type="Body_parts" head="brazos" />
-			<frame type="Body_parts" head="brazos" />
-			<frame type="Body_parts" head="cabeza" />
-			<frame type="Body_parts" head="cabeza" />
-			<frame type="Body_parts" head="hombros" />
-			<frame type="Body_parts" head="hombros" />
-			<frame type="Body_parts" head="manos" />
-			<frame type="Body_parts" head="manos" />
-			<frame type="Body_parts" head="ojos" />
-			<frame type="Body_parts" head="ojos" />
+				<argument type="Goal" dependent="proyectarlo a través de la sucia pared"/></frame>
+			<frame type="Body_parts" head="brazos"></frame>
+			<frame type="Body_parts" head="brazos"></frame>
+			<frame type="Body_parts" head="cabeza"></frame>
+			<frame type="Body_parts" head="cabeza"></frame>
+			<frame type="Body_parts" head="hombros"></frame>
+			<frame type="Body_parts" head="hombros"></frame>
+			<frame type="Body_parts" head="manos"></frame>
+			<frame type="Body_parts" head="manos"></frame>
+			<frame type="Body_parts" head="ojos"></frame>
+			<frame type="Body_parts" head="ojos"></frame>
 			<main_frame type="Building" head="soldaban">
-				<argument type="Place" dependent="al aire" /></main_frame>
+				<argument type="Place" dependent="al aire"/></main_frame>
 			<frame type="Building" head="soldaban">
-				<argument type="Place" dependent="al aire" /></frame>
-			<frame type="Building_subparts" head="cocina" />
-			<frame type="Building_subparts" head="cocina" />
-			<frame type="Cardinal_numbers" head="dos" />
-			<frame type="Cardinal_numbers" head="dos" />
-			<frame type="Connecting_architecture" head="puertas" />
-			<frame type="Connecting_architecture" head="puertas" />
+				<argument type="Place" dependent="al aire"/></frame>
+			<frame type="Building_subparts" head="cocina"></frame>
+			<frame type="Building_subparts" head="cocina"></frame>
+			<frame type="Cardinal_numbers" head="dos"></frame>
+			<frame type="Cardinal_numbers" head="dos"></frame>
+			<frame type="Connecting_architecture" head="puertas"></frame>
+			<frame type="Connecting_architecture" head="puertas"></frame>
 			<frame type="Destroying" head="nivelaba">
-				<argument type="Degree" dependent="grasa vieja" /></frame>
+				<argument type="Degree" dependent="grasa vieja"/></frame>
 			<frame type="Destroying" head="nivelaba">
-				<argument type="Degree" dependent="grasa vieja" /></frame>
-			<frame type="Duration_description" head="breve" />
-			<frame type="Duration_description" head="breve" />
+				<argument type="Degree" dependent="grasa vieja"/></frame>
+			<frame type="Duration_description" head="breve"></frame>
+			<frame type="Duration_description" head="breve"></frame>
 			<frame type="Expansion" head="tendidos">
-				<argument type="Item" dependent="los dos brazos" /></frame>
+				<argument type="Item" dependent="los dos brazos"/></frame>
 			<frame type="Expansion" head="tendidos">
-				<argument type="Item" dependent="los dos brazos" /></frame>
+				<argument type="Item" dependent="los dos brazos"/></frame>
 			<frame type="Possibility" head="pudo">
-				<argument type="Possible_event" dependent="cerr&#225;ndose al aire, y ya no pudo escupir palabra alguna, s&#243;lo toser, expulsar los s&#243;lidos demonios de su pecho, un" /></frame>
+				<argument type="Possible_event" dependent="cerrándose al aire, y ya no pudo escupir palabra alguna, sólo toser, expulsar los sólidos demonios de su pecho, un"/></frame>
 			<frame type="Possibility" head="pudo">
-				<argument type="Possible_event" dependent="cerr&#225;ndose al aire, y ya no pudo escupir palabra alguna, s&#243;lo toser, expulsar los s&#243;lidos demonios de su pecho, un" /></frame>
-			<frame type="Preventing_or_letting" head="hasta" />
-			<frame type="Preventing_or_letting" head="hasta" />
-			<frame type="Project" head="proyectarlo" />
-			<frame type="Project" head="proyectarlo" />
-			<frame type="Quantified_mass" head="varias" />
-			<frame type="Quantified_mass" head="varias" />
+				<argument type="Possible_event" dependent="cerrándose al aire, y ya no pudo escupir palabra alguna, sólo toser, expulsar los sólidos demonios de su pecho, un"/></frame>
+			<frame type="Preventing_or_letting" head="hasta"></frame>
+			<frame type="Preventing_or_letting" head="hasta"></frame>
+			<frame type="Project" head="proyectarlo"></frame>
+			<frame type="Project" head="proyectarlo"></frame>
+			<frame type="Quantified_mass" head="varias"></frame>
+			<frame type="Quantified_mass" head="varias"></frame>
 			<frame type="Removing" head="empujando">
-				<argument type="Theme" dependent="los s&#243;lidos demonios" />
-				<argument type="Source" dependent="de su pecho" /></frame>
+				<argument type="Theme" dependent="los sólidos demonios"/>
+				<argument type="Source" dependent="de su pecho"/></frame>
 			<frame type="Removing" head="empujando">
-				<argument type="Theme" dependent="los s&#243;lidos demonios" />
-				<argument type="Source" dependent="de su pecho" /></frame>
+				<argument type="Theme" dependent="los sólidos demonios"/>
+				<argument type="Source" dependent="de su pecho"/></frame>
 			<frame type="Spatial_contact" head="en">
-				<argument type="Figure" dependent="una letan&#237;a" />
-				<argument type="Ground" dependent="sus labios" /></frame>
+				<argument type="Figure" dependent="una letanía"/>
+				<argument type="Ground" dependent="sus labios"/></frame>
 			<frame type="Spatial_contact" head="en">
-				<argument type="Figure" dependent="una letan&#237;a" />
-				<argument type="Ground" dependent="sus labios" /></frame>
+				<argument type="Figure" dependent="una letanía"/>
+				<argument type="Ground" dependent="sus labios"/></frame>
 			<frame type="Subjective_influence" head="empujando">
-				<argument type="Cognizer" dependent="sus manos" />
-				<argument type="Behavior" dependent="empujando las fr&#225;giles puertas del armario de cocina como si pretendieran en realidad proyectarlo a trav&#233;s de la sucia pared alicatada" /></frame>
+				<argument type="Cognizer" dependent="sus manos"/>
+				<argument type="Behavior" dependent="empujando las frágiles puertas del armario de cocina como si pretendieran en realidad proyectarlo a través de la sucia pared alicatada"/></frame>
 			<frame type="Subjective_influence" head="empujando">
-				<argument type="Cognizer" dependent="sus manos" />
-				<argument type="Behavior" dependent="empujando las fr&#225;giles puertas del armario de cocina como si pretendieran en realidad proyectarlo a trav&#233;s de la sucia pared alicatada" /></frame>
+				<argument type="Cognizer" dependent="sus manos"/>
+				<argument type="Behavior" dependent="empujando las frágiles puertas del armario de cocina como si pretendieran en realidad proyectarlo a través de la sucia pared alicatada"/></frame>
 			<frame type="Taking_sides" head="entre">
-				<argument type="Side" dependent="puertas del armario de cocina" /></frame>
+				<argument type="Side" dependent="puertas del armario de cocina"/></frame>
 			<frame type="Taking_sides" head="entre">
-				<argument type="Side" dependent="puertas del armario de cocina" /></frame>
+				<argument type="Side" dependent="puertas del armario de cocina"/></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -191,7 +214,7 @@
 
 
 	<sentence>
-		<theme concept_ref="c_3">
+		<theme>
 			<token pos="dp3cp0">sus</token><token pos="ncmp000">brazos</token>
 		</theme>
 		<rheme>
@@ -199,67 +222,67 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Becoming_aware" head="sus">
-				<argument type="Phenomenon" dependent="advirti&#243; por primera vez que sus brazos ya no eran paralelos" /></frame>
-			<frame type="Body_parts" head="brazos" />
-			<frame type="Direction" head="elev&#243;" />
-			<frame type="Ordinal_numbers" head="primera" />
-			<frame type="Perception_active" head="vista" />
+				<argument type="Phenomenon" dependent="advirtió por primera vez que sus brazos ya no eran paralelos"/></frame>
+			<frame type="Body_parts" head="brazos"></frame>
+			<frame type="Direction" head="elevó"></frame>
+			<frame type="Ordinal_numbers" head="primera"></frame>
+			<frame type="Perception_active" head="vista"></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme>
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
-			<token pos="vmii3p0">parec&#237;an</token><token pos="sps00">a</token><token pos="ncfs000">punto</token><token pos="sps00">de</token><token pos="vmn0000">horadar</token><token pos="da0fs0">la</token><token pos="ncfs000">formica</token><token pos="sps00">con</token><token pos="dp3cp0">sus</token><token pos="aq0fp0">inofensivas</token><token pos="ncfp000">yemas</token>
+			<token pos="vmii3p0">parecían</token><token pos="sps00">a</token><token pos="ncfs000">punto</token><token pos="sps00">de</token><token pos="vmn0000">horadar</token><token pos="da0fs0">la</token><token pos="ncfs000">formica</token><token pos="sps00">con</token><token pos="dp3cp0">sus</token><token pos="aq0fp0">inofensivas</token><token pos="ncfp000">yemas</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Body_parts" head="cuerpo" />
-			<frame type="Body_parts" head="cuerpo" />
-			<frame type="Body_parts" head="manos" />
-			<frame type="Body_parts" head="manos" />
-			<frame type="Continued_state_of_affairs" head="a&#250;n">
-				<argument type="State_of_affairs" dependent="su cuerpo" />
-				<argument type="State_of_affairs" dependent="hacia delante, confiado su peso a las manos que parec&#237;an a punto de horadar la formica con sus inofensivas" /></frame>
-			<frame type="Continued_state_of_affairs" head="a&#250;n">
-				<argument type="State_of_affairs" dependent="su cuerpo" />
-				<argument type="State_of_affairs" dependent="hacia delante, confiado su peso a las manos que parec&#237;an a punto de horadar la formica con sus inofensivas" /></frame>
-			<frame type="Dimension" head="peso" />
-			<frame type="Dimension" head="peso" />
-			<frame type="Duration_description" head="largo" />
-			<frame type="Duration_description" head="largo" />
-			<main_frame type="Give_impression" head="parec&#237;an">
-				<argument type="Phenomenon" dependent="confiado su peso a las manos que" />
-				<argument type="Inference" dependent="de horadar la formica con sus inofensivas yemas" /></main_frame>
-			<frame type="Give_impression" head="parec&#237;an">
-				<argument type="Phenomenon" dependent="confiado su peso a las manos que" />
-				<argument type="Inference" dependent="de horadar la formica con sus inofensivas yemas" /></frame>
-			<frame type="Performers_and_roles" head="contempl&#243;">
-				<argument type="Duration" dependent="desagradable fen&#243;meno" />
-				<argument type="Time" dependent="largo tiempo" /></frame>
-			<frame type="Performers_and_roles" head="contempl&#243;">
-				<argument type="Duration" dependent="desagradable fen&#243;meno" />
-				<argument type="Time" dependent="largo tiempo" /></frame>
+			<frame type="Body_parts" head="cuerpo"></frame>
+			<frame type="Body_parts" head="cuerpo"></frame>
+			<frame type="Body_parts" head="manos"></frame>
+			<frame type="Body_parts" head="manos"></frame>
+			<frame type="Continued_state_of_affairs" head="aún">
+				<argument type="State_of_affairs" dependent="su cuerpo"/>
+				<argument type="State_of_affairs" dependent="hacia delante, confiado su peso a las manos que parecían a punto de horadar la formica con sus inofensivas"/></frame>
+			<frame type="Continued_state_of_affairs" head="aún">
+				<argument type="State_of_affairs" dependent="su cuerpo"/>
+				<argument type="State_of_affairs" dependent="hacia delante, confiado su peso a las manos que parecían a punto de horadar la formica con sus inofensivas"/></frame>
+			<frame type="Dimension" head="peso"></frame>
+			<frame type="Dimension" head="peso"></frame>
+			<frame type="Duration_description" head="largo"></frame>
+			<frame type="Duration_description" head="largo"></frame>
+			<main_frame type="Give_impression" head="parecían">
+				<argument type="Phenomenon" dependent="confiado su peso a las manos que"/>
+				<argument type="Inference" dependent="de horadar la formica con sus inofensivas yemas"/></main_frame>
+			<frame type="Give_impression" head="parecían">
+				<argument type="Phenomenon" dependent="confiado su peso a las manos que"/>
+				<argument type="Inference" dependent="de horadar la formica con sus inofensivas yemas"/></frame>
+			<frame type="Performers_and_roles" head="contempló">
+				<argument type="Duration" dependent="desagradable fenómeno"/>
+				<argument type="Time" dependent="largo tiempo"/></frame>
+			<frame type="Performers_and_roles" head="contempló">
+				<argument type="Duration" dependent="desagradable fenómeno"/>
+				<argument type="Time" dependent="largo tiempo"/></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_4">
+		<theme>
 			<token pos="da0mp0">Los</token><token pos="dn0cp0">diez</token><token pos="ncmp000">dedos</token><token pos="fc">,</token><token pos="aq0mpp">extendidos</token><token pos="fc">,</token>
 		</theme>
 		<rheme>
-			<token pos="vmii3p0">dibujaban</token><token pos="di0ms0">un</token><token pos="ncms000">diagrama</token><token pos="aq0cs0">familiar</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="aq0cs0">reconfortante</token><token pos="ncfs000">simetr&#237;a</token><token pos="fc">,</token>
+			<token pos="vmii3p0">dibujaban</token><token pos="di0ms0">un</token><token pos="ncms000">diagrama</token><token pos="aq0cs0">familiar</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="aq0cs0">reconfortante</token><token pos="ncfs000">simetría</token><token pos="fc">,</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Body_parts" head="brazos" />
+			<frame type="Body_parts" head="brazos"></frame>
 			<frame type="Body_parts" head="dedos">
-				<argument type="Descriptor" dependent="diez" /></frame>
+				<argument type="Descriptor" dependent="diez"/></frame>
 			<frame type="Cardinal_numbers" head="diez">
-				<argument type="Entity" dependent="dedos" /></frame>
-			<frame type="Expertise" head="familiar" />
+				<argument type="Entity" dependent="dedos"/></frame>
+			<frame type="Expertise" head="familiar"></frame>
 		</semantic_roles>
 	</sentence>
 

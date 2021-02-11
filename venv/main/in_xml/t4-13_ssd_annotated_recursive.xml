@@ -1,24 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (theme, rheme, semantic_roles)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
 <text id="t4-13_ssd_annotated_recursive">
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme>
 			<token pos="da0fs0">La</token><token pos="ncfs000">angustia</token><token pos="fg">-</token><token pos="fg">-</token><token pos="ncfs000">enfermedad</token><token pos="spcms">del</token><token pos="ncfs000">alma</token><token pos="fg">-</token><token pos="fg">-</token>
 		</theme>
 		<rheme>
-			<token pos="vmip3s0">alcanza</token><token pos="dp3cs0">su</token><token pos="ncmn000">cl&#237;max</token>
+			<token pos="vmip3s0">alcanza</token><token pos="dp3cs0">su</token><token pos="ncmn000">clímax</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Importance" head="vital" />
-			<main_frame type="Reliance" head="alcanza" />
+			<frame type="Importance" head="vital"></frame>
+			<main_frame type="Reliance" head="alcanza"></main_frame>
 			<frame type="Verification" head="comprobar">
-				<argument type="Unconfirmed_content" dependent="falsedad de alg&#250;n principio vital en el que nos apoy&#225;bamos" /></frame>
+				<argument type="Unconfirmed_content" dependent="falsedad de algún principio vital en el que nos apoyábamos"/></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme>
 			<token pos="da0mp0">Los</token><token pos="ncmp000">loros</token><token pos="pr0cn000">que</token><token pos="vmip3p0">imitan</token><token pos="dp1fsp">nuestra</token><token pos="ncfs000">habla</token><token pos="cc">y</token><token pos="da0mp0">los</token><token pos="ncmp000">macacos</token><token pos="dp1fpp">nuestras</token><token pos="ncfp000">maneras</token>
 		</theme>
 		<rheme>
@@ -26,128 +49,128 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Causation" head="porque">
-				<argument type="Effect" dependent="Los loros que imitan nuestra habla y los macacos nuestras maneras nos ofenden" />
-				<argument type="Cause" dependent="hacen de nosotros parientes pobres" /></frame>
+				<argument type="Effect" dependent="Los loros que imitan nuestra habla y los macacos nuestras maneras nos ofenden"/>
+				<argument type="Cause" dependent="hacen de nosotros parientes pobres"/></frame>
 			<frame type="Causation" head="porque">
-				<argument type="Effect" dependent="Los loros que imitan nuestra habla y los macacos nuestras maneras nos ofenden" />
-				<argument type="Cause" dependent="hacen de nosotros parientes pobres" /></frame>
-			<frame type="Communication" head="habla" />
-			<frame type="Communication" head="habla" />
+				<argument type="Effect" dependent="Los loros que imitan nuestra habla y los macacos nuestras maneras nos ofenden"/>
+				<argument type="Cause" dependent="hacen de nosotros parientes pobres"/></frame>
+			<frame type="Communication" head="habla"></frame>
+			<frame type="Communication" head="habla"></frame>
 			<frame type="Kinship" head="parientes">
-				<argument type="Ego" dependent="pobres" /></frame>
+				<argument type="Ego" dependent="pobres"/></frame>
 			<frame type="Kinship" head="parientes">
-				<argument type="Ego" dependent="pobres" /></frame>
+				<argument type="Ego" dependent="pobres"/></frame>
 			<frame type="Means" head="maneras">
-				<argument type="Purpose" dependent="imitan nuestra" /></frame>
+				<argument type="Purpose" dependent="imitan nuestra"/></frame>
 			<frame type="Means" head="maneras">
-				<argument type="Purpose" dependent="imitan nuestra" /></frame>
+				<argument type="Purpose" dependent="imitan nuestra"/></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_0">
-			<token pos="da0ms0">El</token><token pos="ncfs000">hambre</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="ncfs000">sed</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">fr&#237;o</token>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="ncfs000">hambre</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="ncfs000">sed</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">frío</token>
 		</theme>
 		<rheme>
 			<token pos="vsip3p0">son</token><token pos="ncfp000">amenazas</token><token pos="aq0cp0">constantes</token><token pos="sps00">para</token><token pos="di0mp0">todos</token><token pos="da0mp0">los</token><token pos="ncmp000">seres</token><token pos="aq0mp0">vivos</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Ambient_temperature" head="fr&#237;o" />
-			<frame type="Experiencer_focus" head="satisfacci&#243;n" />
-			<frame type="Residence" head="vivos" />
-			<frame type="Risky_situation" head="amenazas" />
+			<frame type="Ambient_temperature" head="frío"></frame>
+			<frame type="Experiencer_focus" head="satisfacción"></frame>
+			<frame type="Residence" head="vivos"></frame>
+			<frame type="Risky_situation" head="amenazas"></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_0">
-			<token pos="da0mp0">Los</token><token pos="aq0cp0">j&#243;venes</token><token pos="ncmp000">escritores</token><token pos="sps00">de</token><token pos="rg">ahora</token>
+		<theme>
+			<token pos="da0mp0">Los</token><token pos="aq0cp0">jóvenes</token><token pos="ncmp000">escritores</token><token pos="sps00">de</token><token pos="rg">ahora</token>
 		</theme>
 		<rheme>
 			<token pos="vmip3p0">andan</token><token pos="vmg0000">ramoneando</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Age" head="j&#243;venes" />
-			<frame type="Age" head="j&#243;venes" />
+			<frame type="Age" head="jóvenes"></frame>
+			<frame type="Age" head="jóvenes"></frame>
 			<frame type="Biological_area" head="bosque">
-				<argument type="Name" dependent="de los ramones" /></frame>
+				<argument type="Name" dependent="de los ramones"/></frame>
 			<frame type="Biological_area" head="bosque">
-				<argument type="Name" dependent="de los ramones" /></frame>
-			<frame type="Calendric_unit" head="ahora" />
-			<frame type="Calendric_unit" head="ahora" />
-			<frame type="People_by_vocation" head="escritores" />
-			<frame type="People_by_vocation" head="escritores" />
+				<argument type="Name" dependent="de los ramones"/></frame>
+			<frame type="Calendric_unit" head="ahora"></frame>
+			<frame type="Calendric_unit" head="ahora"></frame>
+			<frame type="People_by_vocation" head="escritores"></frame>
+			<frame type="People_by_vocation" head="escritores"></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme>
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
-			<token pos="vmis3s0">escribi&#243;</token><token pos="np00000">T&#243;nicos</token><token pos="sps00">de</token><token pos="da0mp0">la</token><token pos="ncmp000">voluntad</token><token pos="fc">,</token><token pos="ncfs000">Charlas</token><token pos="sps00">de</token><token pos="np00000">Caf&#233;</token><token pos="fc">,</token><token pos="ncms000">Cuentos</token><token pos="spcms">de</token><token pos="ncms000">Vacaciones</token><token pos="sps00">con</token><token pos="da0mp0">los</token><token pos="pr0cn000">que</token><token pos="p0000000">se</token><token pos="vmip3p0">pueden</token><token pos="vmn0000">sugerir</token><token pos="dd0mp0">esos</token><token pos="ncmp000">t&#243;nicos</token><token pos="sps00">de</token><token pos="ncms000">caf&#233;</token><token pos="sps00">con</token><token pos="ncfp000">gotas</token><token pos="cc">y</token>
+			<token pos="vmis3s0">escribió</token><token pos="np00000">Tónicos</token><token pos="sps00">de</token><token pos="da0mp0">la</token><token pos="ncmp000">voluntad</token><token pos="fc">,</token><token pos="ncfs000">Charlas</token><token pos="sps00">de</token><token pos="np00000">Café</token><token pos="fc">,</token><token pos="ncms000">Cuentos</token><token pos="spcms">de</token><token pos="ncms000">Vacaciones</token><token pos="sps00">con</token><token pos="da0mp0">los</token><token pos="pr0cn000">que</token><token pos="p0000000">se</token><token pos="vmip3p0">pueden</token><token pos="vmn0000">sugerir</token><token pos="dd0mp0">esos</token><token pos="ncmp000">tónicos</token><token pos="sps00">de</token><token pos="ncms000">café</token><token pos="sps00">con</token><token pos="ncfp000">gotas</token><token pos="cc">y</token>
 		</rheme>
 		<semantic_roles>
 			<frame type="Capability" head="pueden">
-				<argument type="Event" dependent="sugerir esos t&#243;nicos de caf&#233; con gotas que llaman ahora carajillos y que tanto cuentan en las" /></frame>
+				<argument type="Event" dependent="sugerir esos tónicos de café con gotas que llaman ahora carajillos y que tanto cuentan en las"/></frame>
 			<main_frame type="Capability" head="pueden">
-				<argument type="Event" dependent="sugerir esos t&#243;nicos de caf&#233; con gotas que llaman ahora carajillos y que tanto cuentan en las" /></main_frame>
+				<argument type="Event" dependent="sugerir esos tónicos de café con gotas que llaman ahora carajillos y que tanto cuentan en las"/></main_frame>
 			<frame type="Capability" head="pueden">
-				<argument type="Event" dependent="sugerir esos t&#243;nicos de caf&#233; con gotas que llaman ahora carajillos y que tanto cuentan en las" /></frame>
+				<argument type="Event" dependent="sugerir esos tónicos de café con gotas que llaman ahora carajillos y que tanto cuentan en las"/></frame>
 			<frame type="Categorization" head="cuentan">
-				<argument type="Category" dependent="tanto cuentan en las" /></frame>
+				<argument type="Category" dependent="tanto cuentan en las"/></frame>
 			<frame type="Categorization" head="cuentan">
-				<argument type="Category" dependent="tanto cuentan en las" /></frame>
+				<argument type="Category" dependent="tanto cuentan en las"/></frame>
 			<frame type="Categorization" head="cuentan">
-				<argument type="Category" dependent="tanto cuentan en las" /></frame>
-			<frame type="Food" head="caf&#233;" />
-			<frame type="Food" head="caf&#233;" />
-			<frame type="Food" head="caf&#233;" />
+				<argument type="Category" dependent="tanto cuentan en las"/></frame>
+			<frame type="Food" head="café"></frame>
+			<frame type="Food" head="café"></frame>
+			<frame type="Food" head="café"></frame>
 			<frame type="Possibility" head="pueden">
-				<argument type="Possible_event" dependent="a&#241;adir Ram&#243;n y Cajal que escribi&#243; T&#243;nicos de la voluntad, Charlas de Caf&#233;, Cuentos de Vacaciones con los que se" /></frame>
+				<argument type="Possible_event" dependent="añadir Ramón y Cajal que escribió Tónicos de la voluntad, Charlas de Café, Cuentos de Vacaciones con los que se"/></frame>
 			<main_frame type="Possibility" head="pueden">
-				<argument type="Possible_event" dependent="a&#241;adir Ram&#243;n y Cajal que escribi&#243; T&#243;nicos de la voluntad, Charlas de Caf&#233;, Cuentos de Vacaciones con los que se" /></main_frame>
+				<argument type="Possible_event" dependent="añadir Ramón y Cajal que escribió Tónicos de la voluntad, Charlas de Café, Cuentos de Vacaciones con los que se"/></main_frame>
 			<frame type="Possibility" head="pueden">
-				<argument type="Possible_event" dependent="a&#241;adir Ram&#243;n y Cajal que escribi&#243; T&#243;nicos de la voluntad, Charlas de Caf&#233;, Cuentos de Vacaciones con los que se" /></frame>
+				<argument type="Possible_event" dependent="añadir Ramón y Cajal que escribió Tónicos de la voluntad, Charlas de Café, Cuentos de Vacaciones con los que se"/></frame>
 			<frame type="Referring_by_name" head="llaman">
-				<argument type="Name" dependent="gotas que" /></frame>
+				<argument type="Name" dependent="gotas que"/></frame>
 			<frame type="Referring_by_name" head="llaman">
-				<argument type="Name" dependent="gotas que" /></frame>
+				<argument type="Name" dependent="gotas que"/></frame>
 			<frame type="Referring_by_name" head="llaman">
-				<argument type="Name" dependent="gotas que" /></frame>
-			<frame type="Statement" head="a&#241;adir">
-				<argument type="Message" dependent="pueden sugerir esos t&#243;nicos de caf&#233; con gotas que llaman ahora carajillos y que tanto cuentan en las" /></frame>
-			<frame type="Statement" head="a&#241;adir">
-				<argument type="Message" dependent="pueden sugerir esos t&#243;nicos de caf&#233; con gotas que llaman ahora carajillos y que tanto cuentan en las" /></frame>
-			<frame type="Statement" head="a&#241;adir">
-				<argument type="Message" dependent="pueden sugerir esos t&#243;nicos de caf&#233; con gotas que llaman ahora carajillos y que tanto cuentan en las" /></frame>
+				<argument type="Name" dependent="gotas que"/></frame>
+			<frame type="Statement" head="añadir">
+				<argument type="Message" dependent="pueden sugerir esos tónicos de café con gotas que llaman ahora carajillos y que tanto cuentan en las"/></frame>
+			<frame type="Statement" head="añadir">
+				<argument type="Message" dependent="pueden sugerir esos tónicos de café con gotas que llaman ahora carajillos y que tanto cuentan en las"/></frame>
+			<frame type="Statement" head="añadir">
+				<argument type="Message" dependent="pueden sugerir esos tónicos de café con gotas que llaman ahora carajillos y que tanto cuentan en las"/></frame>
 			<frame type="Statement" head="sugerir">
-				<argument type="Message" dependent="esos t&#243;nicos de caf&#233; con gotas que llaman ahora carajillos y que tanto cuentan en las" /></frame>
+				<argument type="Message" dependent="esos tónicos de café con gotas que llaman ahora carajillos y que tanto cuentan en las"/></frame>
 			<frame type="Statement" head="sugerir">
-				<argument type="Message" dependent="esos t&#243;nicos de caf&#233; con gotas que llaman ahora carajillos y que tanto cuentan en las" /></frame>
+				<argument type="Message" dependent="esos tónicos de café con gotas que llaman ahora carajillos y que tanto cuentan en las"/></frame>
 			<main_frame type="Statement" head="sugerir">
-				<argument type="Message" dependent="esos t&#243;nicos de caf&#233; con gotas que llaman ahora carajillos y que tanto cuentan en las" /></main_frame>
+				<argument type="Message" dependent="esos tónicos de café con gotas que llaman ahora carajillos y que tanto cuentan en las"/></main_frame>
 			<frame type="Temporal_collocation" head="ahora">
-				<argument type="Trajector_event" dependent="esos t&#243;nicos de caf&#233; con gotas que" />
-				<argument type="Trajector_event" dependent="carajillos y que tanto cuentan en" /></frame>
+				<argument type="Trajector_event" dependent="esos tónicos de café con gotas que"/>
+				<argument type="Trajector_event" dependent="carajillos y que tanto cuentan en"/></frame>
 			<frame type="Temporal_collocation" head="ahora">
-				<argument type="Trajector_event" dependent="esos t&#243;nicos de caf&#233; con gotas que" />
-				<argument type="Trajector_event" dependent="carajillos y que tanto cuentan en" /></frame>
+				<argument type="Trajector_event" dependent="esos tónicos de café con gotas que"/>
+				<argument type="Trajector_event" dependent="carajillos y que tanto cuentan en"/></frame>
 			<frame type="Temporal_collocation" head="ahora">
-				<argument type="Trajector_event" dependent="esos t&#243;nicos de caf&#233; con gotas que" />
-				<argument type="Trajector_event" dependent="carajillos y que tanto cuentan en" /></frame>
-			<main_frame type="Text_creation" head="escribi&#243;">
-				<argument type="Author" dependent="Cajal que" />
-				<argument type="Text" dependent="T&#243;nicos de la voluntad" /></main_frame>
-			<frame type="Text_creation" head="escribi&#243;">
-				<argument type="Author" dependent="Cajal que" />
-				<argument type="Text" dependent="T&#243;nicos de la voluntad" /></frame>
-			<frame type="Text_creation" head="escribi&#243;">
-				<argument type="Author" dependent="Cajal que" />
-				<argument type="Text" dependent="T&#243;nicos de la voluntad" /></frame>
+				<argument type="Trajector_event" dependent="esos tónicos de café con gotas que"/>
+				<argument type="Trajector_event" dependent="carajillos y que tanto cuentan en"/></frame>
+			<main_frame type="Text_creation" head="escribió">
+				<argument type="Author" dependent="Cajal que"/>
+				<argument type="Text" dependent="Tónicos de la voluntad"/></main_frame>
+			<frame type="Text_creation" head="escribió">
+				<argument type="Author" dependent="Cajal que"/>
+				<argument type="Text" dependent="Tónicos de la voluntad"/></frame>
+			<frame type="Text_creation" head="escribió">
+				<argument type="Author" dependent="Cajal que"/>
+				<argument type="Text" dependent="Tónicos de la voluntad"/></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -177,7 +200,7 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme>
 			<token pos="da0ms0">el</token><token pos="aq0cs0">abominable</token><token pos="ncms000">hombre</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">nieves</token><token pos="aq0fp0">eternas</token><token pos="spcms">del</token><token pos="np0000l">Himalaya</token>
 		</theme>
 		<rheme>
@@ -185,15 +208,15 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Interior_profile_relation" head="en">
-				<argument type="Figure" dependent="he dicho" />
-				<argument type="Ground" dependent="un libro" />
-				<argument type="Figure" dependent="el abominable hombre de las nieves eternas del Himalaya no es hombre sino mujer" /></frame>
-			<frame type="People" head="hombre" />
-			<frame type="People" head="mujer" />
+				<argument type="Figure" dependent="he dicho"/>
+				<argument type="Ground" dependent="un libro"/>
+				<argument type="Figure" dependent="el abominable hombre de las nieves eternas del Himalaya no es hombre sino mujer"/></frame>
+			<frame type="People" head="hombre"></frame>
+			<frame type="People" head="mujer"></frame>
 			<frame type="Statement" head="dicho">
-				<argument type="Message" dependent="en un libro" />
-				<argument type="Message" dependent="el abominable hombre de las nieves eternas del Himalaya no es hombre sino mujer" /></frame>
-			<frame type="Text" head="libro" />
+				<argument type="Message" dependent="en un libro"/>
+				<argument type="Message" dependent="el abominable hombre de las nieves eternas del Himalaya no es hombre sino mujer"/></frame>
+			<frame type="Text" head="libro"></frame>
 		</semantic_roles>
 	</sentence>
 

@@ -10,6 +10,16 @@
         <!ELEMENT theme (token*)>
             <!ATTLIST theme concept_ref IDREF #REQUIRED>
         <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
@@ -100,7 +110,7 @@
 		<theme concept_ref="c_2">
 			<token pos="pp3ms000">él</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_1" concept_ref2="c_3" concept_ref3="c_6">
 			<token pos="pp3fsa00">la</token><token pos="vmii3s0">quería</token><token pos="sps00">a</token><token pos="vmn0000">pesar</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncfs000">timidez</token><token pos="cc">y</token><token pos="dp3cs0">su</token><token pos="ncms000">silencio</token>
 		</rheme>
 		<semantic_roles>

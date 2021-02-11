@@ -1,3 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (theme, rheme, semantic_roles)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
 <text id="t4-3_ssd_annotated_recursive">
 
 
@@ -26,18 +49,18 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
-			<token pos="da0mp0">los</token><token pos="ncmp000">rom&#225;nticos</token><token pos="aq0mp0">espa&#241;oles</token>
+		<theme>
+			<token pos="da0mp0">los</token><token pos="ncmp000">románticos</token><token pos="aq0mp0">españoles</token>
 		</theme>
 		<rheme>
-			<token pos="vmis3p0">inventaron</token><token pos="da0ms0">el</token><token pos="ncms000">liberalismo</token><token pos="aq0ms0">pol&#237;tico</token>
+			<token pos="vmis3p0">inventaron</token><token pos="da0ms0">el</token><token pos="ncms000">liberalismo</token><token pos="aq0ms0">político</token>
 		</rheme>
 		<semantic_roles>
 			<main_frame type="Coming_up_with" head="inventaron">
-				<argument type="Time" dependent="En 1812" />
-				<argument type="Cognizer" dependent="rom&#225;nticos espa&#241;oles" />
-				<argument type="Idea" dependent="liberalismo pol&#237;tico" />
-				<argument type="Place" dependent="en las Cortes de" /></main_frame>
+				<argument type="Time" dependent="En 1812"/>
+				<argument type="Cognizer" dependent="románticos españoles"/>
+				<argument type="Idea" dependent="liberalismo político"/>
+				<argument type="Place" dependent="en las Cortes de"/></main_frame>
 		</semantic_roles>
 	</sentence>
 
@@ -55,7 +78,7 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme>
 			<token pos="da0ms0">El</token><token pos="ncms000">liberalismo</token>
 		</theme>
 		<rheme>
@@ -63,11 +86,11 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Idiosyncrasy" head="cierta">
-				<argument type="Entity" dependent="influencia idealista" /></frame>
+				<argument type="Entity" dependent="influencia idealista"/></frame>
 			<frame type="Motion" head="bragueta">
-				<argument type="Goal" dependent="inund&#243; el mundo" /></frame>
-			<frame type="Objective_influence" head="influencia" />
-			<frame type="Political_locales" head="mundo" />
+				<argument type="Goal" dependent="inundó el mundo"/></frame>
+			<frame type="Objective_influence" head="influencia"></frame>
+			<frame type="Political_locales" head="mundo"></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -85,117 +108,117 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme>
 			<token pos="da0ms0">El</token><token pos="aq0ms0">verdadero</token><token pos="ncms000">blasfemo</token>
 		</theme>
 		<rheme>
-			<token pos="vsip3s0">es</token><token pos="da0ms0">el</token><token pos="ncms000">agn&#243;stico</token>
+			<token pos="vsip3s0">es</token><token pos="da0ms0">el</token><token pos="ncms000">agnóstico</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Agree_or_refuse_to_act" head="neg&#225;ndose">
-				<argument type="Proposed_action" dependent="a conocer - - o tratar de - - quiere eludir el mayor problema" /></frame>
+			<frame type="Agree_or_refuse_to_act" head="negándose">
+				<argument type="Proposed_action" dependent="a conocer - - o tratar de - - quiere eludir el mayor problema"/></frame>
 			<frame type="Attempt" head="tratar de">
-				<argument type="Goal" dependent="de - - quiere eludir el mayor problema" /></frame>
-			<frame type="Avoiding" head="neg&#225;ndose a">
-				<argument type="Undesirable_situation" dependent="el mayor problema" /></frame>
-			<frame type="Awareness" head="conocer" />
+				<argument type="Goal" dependent="de - - quiere eludir el mayor problema"/></frame>
+			<frame type="Avoiding" head="negándose a">
+				<argument type="Undesirable_situation" dependent="el mayor problema"/></frame>
+			<frame type="Awareness" head="conocer"></frame>
 			<frame type="Desiring" head="quiere">
-				<argument type="Event" dependent="de - - quiere" />
-				<argument type="Event" dependent="eludir el mayor problema" /></frame>
-			<frame type="Predicament" head="problema" />
+				<argument type="Event" dependent="de - - quiere"/>
+				<argument type="Event" dependent="eludir el mayor problema"/></frame>
+			<frame type="Predicament" head="problema"></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme>
 			<token pos="da0ms0">El</token><token pos="ncms000">perro</token>
 		</theme>
 		<rheme>
-			<token pos="vsip3s0">es</token><token pos="rg">hip&#243;critamente</token><token pos="aq0cs0">clerical</token>
+			<token pos="vsip3s0">es</token><token pos="rg">hipócritamente</token><token pos="aq0cs0">clerical</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Animals" head="perro" />
+			<frame type="Animals" head="perro"></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_2">
+		<theme>
 			<token pos="da0ms0">El</token><token pos="ncms000">gato</token>
 		</theme>
 		<rheme>
 			<token pos="vsip3s0">es</token><token pos="aq0ms0">ateo</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Animals" head="gato" />
+			<frame type="Animals" head="gato"></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme>
 			<token pos="da0mp0">Los</token><token pos="ncmp000">mejicanos</token><token pos="pr0cn000">que</token><token pos="vmip3p0">entran</token><token pos="rg">ilegalmente</token><token pos="sps00">en</token><token pos="np0000l">California</token>
 		</theme>
 		<rheme>
-			<token pos="vmip3p0">tienen</token><token pos="cs">que</token><token pos="vmn0000">v&#233;rselas</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="ncfs000">polic&#237;a</token><token pos="sps00">de</token><token pos="ncfs000">emigraci&#243;n</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="pr0cn000">que</token><token pos="vmip3p0">nombran</token><token pos="sps00">con</token><token pos="di0fs0">una</token><token pos="ncfs000">palabra</token><token pos="fd">:</token><token pos="da0fs0">la</token><token pos="ncfs000">migra</token>
+			<token pos="vmip3p0">tienen</token><token pos="cs">que</token><token pos="vmn0000">vérselas</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="ncfs000">policía</token><token pos="sps00">de</token><token pos="ncfs000">emigración</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="pr0cn000">que</token><token pos="vmip3p0">nombran</token><token pos="sps00">con</token><token pos="di0fs0">una</token><token pos="ncfs000">palabra</token><token pos="fd">:</token><token pos="da0fs0">la</token><token pos="ncfs000">migra</token>
 		</rheme>
 		<semantic_roles>
 			<main_frame type="Activity_start" head="entran">
-				<argument type="Agent" dependent="Los mejicanos que" /></main_frame>
+				<argument type="Agent" dependent="Los mejicanos que"/></main_frame>
 			<frame type="Activity_start" head="entran">
-				<argument type="Agent" dependent="Los mejicanos que" /></frame>
+				<argument type="Agent" dependent="Los mejicanos que"/></frame>
 			<frame type="Activity_start" head="entran">
-				<argument type="Agent" dependent="Los mejicanos que" /></frame>
+				<argument type="Agent" dependent="Los mejicanos que"/></frame>
 			<frame type="Activity_start" head="entran">
-				<argument type="Agent" dependent="Los mejicanos que" /></frame>
+				<argument type="Agent" dependent="Los mejicanos que"/></frame>
 			<frame type="Appointing" head="nombran">
-				<argument type="Official" dependent="que nombran" />
-				<argument type="Role" dependent="con una palabra que tiene su dosis de magia : la migra" /></frame>
+				<argument type="Official" dependent="que nombran"/>
+				<argument type="Role" dependent="con una palabra que tiene su dosis de magia : la migra"/></frame>
 			<frame type="Appointing" head="nombran">
-				<argument type="Official" dependent="que nombran" />
-				<argument type="Role" dependent="con una palabra que tiene su dosis de magia : la migra" /></frame>
+				<argument type="Official" dependent="que nombran"/>
+				<argument type="Role" dependent="con una palabra que tiene su dosis de magia : la migra"/></frame>
 			<frame type="Appointing" head="nombran">
-				<argument type="Official" dependent="que nombran" />
-				<argument type="Role" dependent="con una palabra que tiene su dosis de magia : la migra" /></frame>
+				<argument type="Official" dependent="que nombran"/>
+				<argument type="Role" dependent="con una palabra que tiene su dosis de magia : la migra"/></frame>
 			<main_frame type="Appointing" head="nombran">
-				<argument type="Official" dependent="que nombran" />
-				<argument type="Role" dependent="con una palabra que tiene su dosis de magia : la migra" /></main_frame>
-			<frame type="Ineffability" head="magia" />
-			<frame type="Ineffability" head="magia" />
-			<frame type="Ineffability" head="magia" />
-			<frame type="Ineffability" head="magia" />
-			<frame type="Law_enforcement_agency" head="polic&#237;a" />
-			<frame type="Law_enforcement_agency" head="polic&#237;a" />
-			<frame type="Law_enforcement_agency" head="polic&#237;a" />
-			<frame type="Law_enforcement_agency" head="polic&#237;a" />
+				<argument type="Official" dependent="que nombran"/>
+				<argument type="Role" dependent="con una palabra que tiene su dosis de magia : la migra"/></main_frame>
+			<frame type="Ineffability" head="magia"></frame>
+			<frame type="Ineffability" head="magia"></frame>
+			<frame type="Ineffability" head="magia"></frame>
+			<frame type="Ineffability" head="magia"></frame>
+			<frame type="Law_enforcement_agency" head="policía"></frame>
+			<frame type="Law_enforcement_agency" head="policía"></frame>
+			<frame type="Law_enforcement_agency" head="policía"></frame>
+			<frame type="Law_enforcement_agency" head="policía"></frame>
 			<frame type="Quantified_mass" head="dosis">
-				<argument type="Mass" dependent="de magia" /></frame>
+				<argument type="Mass" dependent="de magia"/></frame>
 			<frame type="Quantified_mass" head="dosis">
-				<argument type="Mass" dependent="de magia" /></frame>
+				<argument type="Mass" dependent="de magia"/></frame>
 			<frame type="Quantified_mass" head="dosis">
-				<argument type="Mass" dependent="de magia" /></frame>
+				<argument type="Mass" dependent="de magia"/></frame>
 			<frame type="Quantified_mass" head="dosis">
-				<argument type="Mass" dependent="de magia" /></frame>
+				<argument type="Mass" dependent="de magia"/></frame>
 			<frame type="Resolve_problem" head="de">
-				<argument type="Agent" dependent="mejicanos que entran ilegalmente en California" />
-				<argument type="Problem" dependent="con la polic&#237;a de emigraci&#243;n" /></frame>
+				<argument type="Agent" dependent="mejicanos que entran ilegalmente en California"/>
+				<argument type="Problem" dependent="con la policía de emigración"/></frame>
 			<frame type="Resolve_problem" head="de">
-				<argument type="Agent" dependent="mejicanos que entran ilegalmente en California" />
-				<argument type="Problem" dependent="con la polic&#237;a de emigraci&#243;n" /></frame>
+				<argument type="Agent" dependent="mejicanos que entran ilegalmente en California"/>
+				<argument type="Problem" dependent="con la policía de emigración"/></frame>
 			<frame type="Resolve_problem" head="de">
-				<argument type="Agent" dependent="mejicanos que entran ilegalmente en California" />
-				<argument type="Problem" dependent="con la polic&#237;a de emigraci&#243;n" /></frame>
+				<argument type="Agent" dependent="mejicanos que entran ilegalmente en California"/>
+				<argument type="Problem" dependent="con la policía de emigración"/></frame>
 			<frame type="Resolve_problem" head="de">
-				<argument type="Agent" dependent="mejicanos que entran ilegalmente en California" />
-				<argument type="Problem" dependent="con la polic&#237;a de emigraci&#243;n" /></frame>
+				<argument type="Agent" dependent="mejicanos que entran ilegalmente en California"/>
+				<argument type="Problem" dependent="con la policía de emigración"/></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_3">
-			<token pos="np0000o">Es</token><token pos="sps00">con</token><token pos="ncfs000">may&#250;scula</token><token pos="da0fs0">La</token><token pos="np0000o">Mi</token>
+		<theme>
+			<token pos="np0000o">Es</token><token pos="sps00">con</token><token pos="ncfs000">mayúscula</token><token pos="da0fs0">La</token><token pos="np0000o">Mi</token>
 		</theme>
 		<rheme>
 			
@@ -206,7 +229,7 @@
 
 
 	<sentence>
-		<theme concept_ref="c_4">
+		<theme>
 			<token pos="pi0ms000">uno</token>
 		</theme>
 		<rheme>
@@ -214,17 +237,17 @@
 		</rheme>
 		<semantic_roles>
 			<frame type="Attempt" head="tratar de">
-				<argument type="Goal" dependent="tratar de parecerlo por respeto precisamente para el vecino" /></frame>
-			<frame type="Cardinal_numbers" head="uno" />
+				<argument type="Goal" dependent="tratar de parecerlo por respeto precisamente para el vecino"/></frame>
+			<frame type="Cardinal_numbers" head="uno"></frame>
 			<frame type="Give_impression" head="parecerlo">
-				<argument type="Inference" dependent="por respeto precisamente para el vecino" /></frame>
+				<argument type="Inference" dependent="por respeto precisamente para el vecino"/></frame>
 			<frame type="Judgment" head="respeto">
-				<argument type="Reason" dependent="precisamente para el vecino" /></frame>
-			<frame type="People_by_residence" head="vecino" />
+				<argument type="Reason" dependent="precisamente para el vecino"/></frame>
+			<frame type="People_by_residence" head="vecino"></frame>
 			<frame type="Required_event" head="hay que">
-				<argument type="Required_situation" dependent="tratar de parecerlo por respeto precisamente para el vecino" /></frame>
+				<argument type="Required_situation" dependent="tratar de parecerlo por respeto precisamente para el vecino"/></frame>
 			<frame type="Required_event" head="mejor">
-				<argument type="Required_situation" dependent="que el vecino" /></frame>
+				<argument type="Required_situation" dependent="que el vecino"/></frame>
 		</semantic_roles>
 	</sentence>
 

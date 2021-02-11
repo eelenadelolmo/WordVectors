@@ -10,6 +10,16 @@
         <!ELEMENT theme (token*)>
             <!ATTLIST theme concept_ref IDREF #REQUIRED>
         <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
@@ -55,7 +65,7 @@
 		<theme concept_ref="c_0">
 			<token pos="di0ms0">Un</token><token pos="ncms000">moscón</token><token pos="aq0cs0">verde</token><token pos="cc">y</token><token pos="sps00">a</token><token pos="di0fp0">todas</token><token pos="ncfp000">luces</token><token pos="aq0ms0">moribundo</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_0" concept_ref2="c_7">
 			<token pos="vmis3s0">revoloteó</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">penumbra</token>
 		</rheme>
 		<semantic_roles>
@@ -101,7 +111,7 @@
 		<theme concept_ref="c_2">
 			<token pos="da0fs0">la</token><token pos="ncfs000">tarde</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_4">
 			<token pos="vmii3s0">amenazaba</token><token pos="rn">no</token><token pos="vmn0000">acabar</token><token pos="rg">nunca</token>
 		</rheme>
 		<semantic_roles>
@@ -139,7 +149,7 @@
 		<theme concept_ref="c_2">
 			<token pos="pp2fs000">ella</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_2">
 			<token pos="vsii3s0">era</token><token pos="sps00">de</token><token pos="nccs000">natural</token><token pos="aq0ms0">metódico</token>
 		</rheme>
 		<semantic_roles>
@@ -170,7 +180,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="ncms000">llanto</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">niño</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_3" concept_ref2="c_6">
 			<token pos="vmis3s0">cortó</token><token pos="da0ms0">el</token><token pos="ncms000">silencio</token><token pos="spcms">del</token><token pos="ncms000">patio</token><token pos="aq0cs0">vecinal</token>
 		</rheme>
 		<semantic_roles>
@@ -219,7 +229,7 @@
 		<theme concept_ref="c_3">
 			<token pos="np0000p">Antonia</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_2" concept_ref2="c_4" concept_ref3="c_7">
 			<token pos="fc">,</token><token pos="sps00">tras</token><token pos="vmn0000">regresar</token><token pos="sps00">de</token><token pos="ncfs000">misa</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">pan</token><token pos="fc">,</token><token pos="rn">no</token><token pos="vmii3s0">iba</token><token pos="sps00">a</token><token pos="vmn0000">volver</token><token pos="sps00">a</token><token pos="vmn0000">hablar</token><token pos="sps00">con</token><token pos="pi0cs000">nadie</token><token pos="sps00">hasta</token><token pos="da0ms0">el</token><token pos="ncms000">día</token><token pos="aq0cs0">siguiente</token>
 		</rheme>
 		<semantic_roles>

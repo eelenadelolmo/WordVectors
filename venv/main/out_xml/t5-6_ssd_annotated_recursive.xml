@@ -10,6 +10,16 @@
         <!ELEMENT theme (token*)>
             <!ATTLIST theme concept_ref IDREF #REQUIRED>
         <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
@@ -43,7 +53,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0fs0">La</token><token pos="ncfs000">mosca</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_9">
 			<token pos="vmis3s0">zumbó</token><token pos="sps00">con</token><token pos="aq0msp">redoblado</token><token pos="ncmn000">énfasis</token><token pos="sps00">durante</token><token pos="di0mp0">unos</token><token pos="ncmp000">segundos</token>
 		</rheme>
 		<semantic_roles>
@@ -61,7 +71,7 @@
 		<theme concept_ref="c_1">
 			<token pos="np0000p">Antonio</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_4" concept_ref2="c_9">
 			<token pos="cc">ni</token><token pos="rg">siquiera</token><token pos="vaii3s0">había</token><token pos="vmp00sm">llamado</token><token pos="sps00">para</token><token pos="vmn0000">decirle</token><token pos="cs">que</token><token pos="rn">no</token><token pos="vmii3s0">venía</token>
 		</rheme>
 		<semantic_roles>
@@ -89,7 +99,7 @@
 		<theme concept_ref="c_2">
 			<token pos="pd0ns000">Esto</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_9">
 			<token pos="rn">no</token><token pos="pp3csd00">le</token><token pos="vmii3s0">preocupaba</token>
 		</rheme>
 		<semantic_roles>
@@ -130,7 +140,7 @@
 		<theme concept_ref="c_1">
 			<token pos="np0000p">Antonia</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_9">
 			<token pos="p0300000">se</token><token pos="vmii3s0">sentía</token><token pos="aq0fs0">necesaria</token>
 		</rheme>
 		<semantic_roles>
@@ -169,7 +179,7 @@
 		<theme concept_ref="c_3">
 			<token pos="da0fs0">La</token><token pos="ncfs000">televisión</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_1" concept_ref2="c_5" concept_ref3="c_6" concept_ref4="c_9">
 			<token pos="vmii3s0">hablaba</token><token pos="aq0fs0">sola</token><token pos="sps00">en</token><token pos="dp3cs0">su</token><token pos="ncms000">rincón</token><token pos="sps00">con</token><token pos="ncfs000">verborrea</token><token pos="aq0fs0">mecánica</token><token pos="fd">:</token><token pos="sps00">a</token><token pos="np0000p">Antonia</token><token pos="pp3csd00">le</token><token pos="vmii3s0">gustaba</token><token pos="vmn0000">mantener</token><token pos="da0ms0">el</token><token pos="ncms000">aparato</token><token pos="aq0msp">encendido</token><token pos="fc">,</token><token pos="pp3msa00">lo</token><token pos="vmsi3s0">estuviera</token><token pos="vmg0000">viendo</token><token pos="cc">o</token><token pos="rn">no</token>
 		</rheme>
 		<semantic_roles>

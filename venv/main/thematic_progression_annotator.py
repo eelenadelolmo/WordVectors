@@ -68,6 +68,8 @@ os.makedirs(output_dir)
 
 for file_xml in os.listdir(input_dir):
 
+    shutil.copyfile(input_dir + '/' + file_xml, output_dir+ '/' + file_xml)
+
     # List composed of the ordered themes sentence in the text
     t_ord = list()
 
@@ -90,7 +92,7 @@ for file_xml in os.listdir(input_dir):
     r_ord_noun_phrases_all = list()
 
 
-    with open(input_dir + '/' + file_xml) as f_xml:
+    with open(output_dir + '/' + file_xml) as f_xml:
         xml = f_xml.read()
         root = ET.fromstring(xml)
 
@@ -725,12 +727,14 @@ for file_xml in os.listdir(input_dir):
         ## Including conceptual coreference information in the XML
 
         tree = ElementTree()
-        tree.parse(input_dir + '/' + file_xml)
+        tree.parse(output_dir + '/' + file_xml)
 
         for sentence in tree.iter('sentence'):
 
             # Getting the theme string and the corresponding tag in the XML file
             theme_xml = ""
+            rheme_xml = ""
+
             for child in sentence:
                 if child.tag == 'theme':
                     for token in child:
@@ -740,7 +744,23 @@ for file_xml in os.listdir(input_dir):
                         if e[0] == theme_xml.strip():
                             child.set('concept_ref', e[1])
 
-        tree.write(input_dir + '/' + file_xml)
+                # Getting all rhematic coreference sets
+                rheme_id_all = rheme_theme_id + rheme_sr_id + rheme_id_repeated
+                n_corref_int = 1
+                id_added_rheme = list()
+
+                if child.tag == 'rheme':
+                    for token in child:
+                        rheme_xml += token.text.strip() + ' '
+
+                    for e in rheme_id_all:
+                        if e[0] in rheme_xml.strip() and e[1] not in id_added_rheme:
+                            child.set('concept_ref' + str(n_corref_int), e[1])
+                            id_added_rheme.append(e[1])
+                            n_corref_int += 1
+
+
+        tree.write(output_dir + '/' + file_xml)
 
 
         # List of the concept lines to add to the output XML file
@@ -777,7 +797,7 @@ for file_xml in os.listdir(input_dir):
 
 
         # Getting the text of the original XML of the output of the previous module without the DTD
-        with open(input_dir + '/' + file_xml) as in_xml:
+        with open(output_dir + '/' + file_xml) as in_xml:
             xml_old = in_xml.read()
 
             from_tag = '(<text id=".+?".+)'
@@ -797,6 +817,16 @@ for file_xml in os.listdir(input_dir):
         <!ELEMENT theme (token*)>
             <!ATTLIST theme concept_ref IDREF #REQUIRED>
         <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>

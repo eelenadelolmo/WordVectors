@@ -10,6 +10,16 @@
         <!ELEMENT theme (token*)>
             <!ATTLIST theme concept_ref IDREF #REQUIRED>
         <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
@@ -86,7 +96,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0ms0">el</token><token pos="ncms000">mochuelo</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_4" concept_ref2="c_13">
 			<token pos="vmip3s0">alcanza</token><token pos="di0fs0">cierta</token><token pos="ncfs000">edad</token>
 		</rheme>
 		<semantic_roles>
@@ -120,7 +130,7 @@
 		<theme concept_ref="c_1">
 			<token pos="ncms000">Valle</token><token pos="np00000">Inclán</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_4" concept_ref2="c_15">
 			<token pos="pp1cs000">me</token><token pos="vmii3s0">decía</token><token pos="fd">:</token><token pos="fg">-</token><token pos="rg">Allí</token><token pos="rg">allí</token><token pos="vmip3s0">está</token><token pos="np0000p">Dios</token>
 		</rheme>
 		<semantic_roles>
@@ -144,7 +154,7 @@
 		<theme concept_ref="c_2">
 			<token pos="dp3cs0">su</token><token pos="aq0fs0">pequeña</token><token pos="ncfs000">hija</token><token pos="np0000p">Mariquiña</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_4" concept_ref2="c_8" concept_ref3="c_15">
 			<token pos="pp3msa00">lo</token><token pos="vmii3s0">miraba</token><token pos="vmg0000">pensando</token><token pos="fd">:</token><token pos="fia">¿</token><token pos="vsip3s0">Es</token><token pos="aq0cs0">posible</token><token pos="cs">que</token><token pos="np0000p">Dios</token><token pos="vssp3s0">sea</token><token pos="rg">tan</token><token pos="aq0ms0">friolero</token>
 		</rheme>
 		<semantic_roles>
@@ -192,7 +202,7 @@
 		<theme concept_ref="c_3">
 			<token pos="pr0cn000">que</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_4" concept_ref2="c_13">
 			<token pos="vmip3p0">ven</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">oscuridad</token>
 		</rheme>
 		<semantic_roles>
@@ -230,7 +240,7 @@
 		<theme concept_ref="c_4">
 			<token pos="da0ms0">El</token><token pos="ncms000">misterio</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">búhos</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_4" concept_ref2="c_10" concept_ref3="c_12" concept_ref4="c_15">
 			<token pos="vmip3s0">comienza</token><token pos="sps00">a</token><token pos="vsn0000">ser</token><token pos="di0fs0">una</token><token pos="ncfs000">bruma</token><token pos="sps00">con</token><token pos="dp3cp0">sus</token><token pos="ncmp000">ponderativos</token><token pos="ncms000">uh</token><token pos="ncms000">uh</token>
 		</rheme>
 		<semantic_roles>
@@ -260,7 +270,7 @@
 		<theme concept_ref="c_4">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">sabios</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">antigüedad</token><token pos="aq0fs0">helena</token><token pos="cc">o</token><token pos="aq0fs0">romana</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_4" concept_ref2="c_10" concept_ref3="c_13">
 			<token pos="vsis3p0">fueron</token><token pos="sps00">durante</token><token pos="di0mp0">algunos</token><token pos="ncmp000">años</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncfs000">vida</token><token pos="ncmp000">refugiados</token><token pos="aq0mp0">políticos</token>
 		</rheme>
 		<semantic_roles>

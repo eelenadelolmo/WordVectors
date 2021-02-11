@@ -1,99 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (theme, rheme, semantic_roles)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
 <text id="t6-2_ssd_annotated_recursive">
 
 
 	<sentence>
-		<theme concept_ref="c_0">
-			<token pos="dp3cp0">sus</token><token pos="ncmp000">m&#250;sculos</token>
+		<theme>
+			<token pos="dp3cp0">sus</token><token pos="ncmp000">músculos</token>
 		</theme>
 		<rheme>
 			<token pos="vmis3p0">comenzaron</token><token pos="sps00">a</token><token pos="vmn0000">temblar</token><token pos="sps00">sin</token><token pos="van0000">haber</token><token pos="vmp00sm">llegado</token><token pos="sps00">a</token><token pos="vmn0000">rectificar</token><token pos="sps00">en</token><token pos="pi0cs000">nada</token><token pos="da0ms0">el</token><token pos="aq0cs0">incomprensible</token><token pos="ncms000">vicio</token>
 		</rheme>
 		<semantic_roles>
 			<main_frame type="Activity_start" head="comenzaron">
-				<argument type="Agent" dependent="sus m&#250;sculos" />
-				<argument type="Activity" dependent="temblar" />
-				<argument type="Time" dependent="sin haber llegado a rectificar en nada el incomprensible vicio que cunaba el codo hacia dentro" /></main_frame>
+				<argument type="Agent" dependent="sus músculos"/>
+				<argument type="Activity" dependent="temblar"/>
+				<argument type="Time" dependent="sin haber llegado a rectificar en nada el incomprensible vicio que cunaba el codo hacia dentro"/></main_frame>
 			<frame type="Activity_start" head="comenzaron">
-				<argument type="Agent" dependent="sus m&#250;sculos" />
-				<argument type="Activity" dependent="temblar" />
-				<argument type="Time" dependent="sin haber llegado a rectificar en nada el incomprensible vicio que cunaba el codo hacia dentro" /></frame>
+				<argument type="Agent" dependent="sus músculos"/>
+				<argument type="Activity" dependent="temblar"/>
+				<argument type="Time" dependent="sin haber llegado a rectificar en nada el incomprensible vicio que cunaba el codo hacia dentro"/></frame>
 			<frame type="Activity_start" head="comenzaron">
-				<argument type="Agent" dependent="sus m&#250;sculos" />
-				<argument type="Activity" dependent="temblar" />
-				<argument type="Time" dependent="sin haber llegado a rectificar en nada el incomprensible vicio que cunaba el codo hacia dentro" /></frame>
+				<argument type="Agent" dependent="sus músculos"/>
+				<argument type="Activity" dependent="temblar"/>
+				<argument type="Time" dependent="sin haber llegado a rectificar en nada el incomprensible vicio que cunaba el codo hacia dentro"/></frame>
 			<frame type="Activity_start" head="comenzaron">
-				<argument type="Agent" dependent="sus m&#250;sculos" />
-				<argument type="Activity" dependent="temblar" />
-				<argument type="Time" dependent="sin haber llegado a rectificar en nada el incomprensible vicio que cunaba el codo hacia dentro" /></frame>
+				<argument type="Agent" dependent="sus músculos"/>
+				<argument type="Activity" dependent="temblar"/>
+				<argument type="Time" dependent="sin haber llegado a rectificar en nada el incomprensible vicio que cunaba el codo hacia dentro"/></frame>
 			<frame type="Activity_start" head="comenzaron">
-				<argument type="Agent" dependent="sus m&#250;sculos" />
-				<argument type="Activity" dependent="temblar" />
-				<argument type="Time" dependent="sin haber llegado a rectificar en nada el incomprensible vicio que cunaba el codo hacia dentro" /></frame>
+				<argument type="Agent" dependent="sus músculos"/>
+				<argument type="Activity" dependent="temblar"/>
+				<argument type="Time" dependent="sin haber llegado a rectificar en nada el incomprensible vicio que cunaba el codo hacia dentro"/></frame>
 			<frame type="Being_obligated" head="tarea de">
-				<argument type="Duty" dependent="de estirar su brazo izquierdo" /></frame>
+				<argument type="Duty" dependent="de estirar su brazo izquierdo"/></frame>
 			<frame type="Being_obligated" head="tarea de">
-				<argument type="Duty" dependent="de estirar su brazo izquierdo" /></frame>
+				<argument type="Duty" dependent="de estirar su brazo izquierdo"/></frame>
 			<frame type="Being_obligated" head="tarea de">
-				<argument type="Duty" dependent="de estirar su brazo izquierdo" /></frame>
+				<argument type="Duty" dependent="de estirar su brazo izquierdo"/></frame>
 			<frame type="Being_obligated" head="tarea de">
-				<argument type="Duty" dependent="de estirar su brazo izquierdo" /></frame>
+				<argument type="Duty" dependent="de estirar su brazo izquierdo"/></frame>
 			<frame type="Being_obligated" head="tarea de">
-				<argument type="Duty" dependent="de estirar su brazo izquierdo" /></frame>
-			<frame type="Body_parts" head="brazo" />
-			<frame type="Body_parts" head="brazo" />
-			<frame type="Body_parts" head="brazo" />
-			<frame type="Body_parts" head="brazo" />
-			<frame type="Body_parts" head="brazo" />
+				<argument type="Duty" dependent="de estirar su brazo izquierdo"/></frame>
+			<frame type="Body_parts" head="brazo"></frame>
+			<frame type="Body_parts" head="brazo"></frame>
+			<frame type="Body_parts" head="brazo"></frame>
+			<frame type="Body_parts" head="brazo"></frame>
+			<frame type="Body_parts" head="brazo"></frame>
 			<frame type="Cause_motion" head="bruscamente">
-				<argument type="Goal" dependent="bruscamente del mueble" /></frame>
+				<argument type="Goal" dependent="bruscamente del mueble"/></frame>
 			<frame type="Cause_motion" head="bruscamente">
-				<argument type="Goal" dependent="bruscamente del mueble" /></frame>
+				<argument type="Goal" dependent="bruscamente del mueble"/></frame>
 			<frame type="Cause_motion" head="bruscamente">
-				<argument type="Goal" dependent="bruscamente del mueble" /></frame>
+				<argument type="Goal" dependent="bruscamente del mueble"/></frame>
 			<frame type="Cause_motion" head="bruscamente">
-				<argument type="Goal" dependent="bruscamente del mueble" /></frame>
+				<argument type="Goal" dependent="bruscamente del mueble"/></frame>
 			<frame type="Cause_motion" head="bruscamente">
-				<argument type="Goal" dependent="bruscamente del mueble" /></frame>
-			<frame type="Expansion" head="de estirar" />
-			<frame type="Expansion" head="de estirar" />
-			<frame type="Expansion" head="de estirar" />
-			<frame type="Expansion" head="de estirar" />
-			<frame type="Expansion" head="de estirar" />
+				<argument type="Goal" dependent="bruscamente del mueble"/></frame>
+			<frame type="Expansion" head="de estirar"></frame>
+			<frame type="Expansion" head="de estirar"></frame>
+			<frame type="Expansion" head="de estirar"></frame>
+			<frame type="Expansion" head="de estirar"></frame>
+			<frame type="Expansion" head="de estirar"></frame>
 			<frame type="Level_of_force_exertion" head="fuerzas">
-				<argument type="Circumstances" dependent="en la absurda tarea de estirar su brazo izquierdo" /></frame>
+				<argument type="Circumstances" dependent="en la absurda tarea de estirar su brazo izquierdo"/></frame>
 			<frame type="Level_of_force_exertion" head="fuerzas">
-				<argument type="Circumstances" dependent="en la absurda tarea de estirar su brazo izquierdo" /></frame>
+				<argument type="Circumstances" dependent="en la absurda tarea de estirar su brazo izquierdo"/></frame>
 			<frame type="Level_of_force_exertion" head="fuerzas">
-				<argument type="Circumstances" dependent="en la absurda tarea de estirar su brazo izquierdo" /></frame>
+				<argument type="Circumstances" dependent="en la absurda tarea de estirar su brazo izquierdo"/></frame>
 			<frame type="Level_of_force_exertion" head="fuerzas">
-				<argument type="Circumstances" dependent="en la absurda tarea de estirar su brazo izquierdo" /></frame>
+				<argument type="Circumstances" dependent="en la absurda tarea de estirar su brazo izquierdo"/></frame>
 			<frame type="Level_of_force_exertion" head="fuerzas">
-				<argument type="Circumstances" dependent="en la absurda tarea de estirar su brazo izquierdo" /></frame>
+				<argument type="Circumstances" dependent="en la absurda tarea de estirar su brazo izquierdo"/></frame>
 			<frame type="Mental_property" head="absurda">
-				<argument type="Behavior" dependent="tarea de estirar su brazo izquierdo" /></frame>
+				<argument type="Behavior" dependent="tarea de estirar su brazo izquierdo"/></frame>
 			<frame type="Mental_property" head="absurda">
-				<argument type="Behavior" dependent="tarea de estirar su brazo izquierdo" /></frame>
+				<argument type="Behavior" dependent="tarea de estirar su brazo izquierdo"/></frame>
 			<frame type="Mental_property" head="absurda">
-				<argument type="Behavior" dependent="tarea de estirar su brazo izquierdo" /></frame>
+				<argument type="Behavior" dependent="tarea de estirar su brazo izquierdo"/></frame>
 			<frame type="Mental_property" head="absurda">
-				<argument type="Behavior" dependent="tarea de estirar su brazo izquierdo" /></frame>
+				<argument type="Behavior" dependent="tarea de estirar su brazo izquierdo"/></frame>
 			<frame type="Mental_property" head="absurda">
-				<argument type="Behavior" dependent="tarea de estirar su brazo izquierdo" /></frame>
+				<argument type="Behavior" dependent="tarea de estirar su brazo izquierdo"/></frame>
 			<frame type="Part_orientational" head="ante">
-				<argument type="Whole" dependent="su" /></frame>
+				<argument type="Whole" dependent="su"/></frame>
 			<frame type="Part_orientational" head="ante">
-				<argument type="Whole" dependent="su" /></frame>
+				<argument type="Whole" dependent="su"/></frame>
 			<frame type="Part_orientational" head="ante">
-				<argument type="Whole" dependent="su" /></frame>
+				<argument type="Whole" dependent="su"/></frame>
 			<frame type="Part_orientational" head="ante">
-				<argument type="Whole" dependent="su" /></frame>
+				<argument type="Whole" dependent="su"/></frame>
 			<frame type="Part_orientational" head="ante">
-				<argument type="Whole" dependent="su" /></frame>
-			<frame type="Part_orientational" head="izquierdo" />
-			<frame type="Part_orientational" head="izquierdo" />
-			<frame type="Part_orientational" head="izquierdo" />
-			<frame type="Part_orientational" head="izquierdo" />
-			<frame type="Part_orientational" head="izquierdo" />
+				<argument type="Whole" dependent="su"/></frame>
+			<frame type="Part_orientational" head="izquierdo"></frame>
+			<frame type="Part_orientational" head="izquierdo"></frame>
+			<frame type="Part_orientational" head="izquierdo"></frame>
+			<frame type="Part_orientational" head="izquierdo"></frame>
+			<frame type="Part_orientational" head="izquierdo"></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -111,89 +134,89 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme>
 			<token pos="dp3cp0">sus</token><token pos="ncmp000">brazos</token>
 		</theme>
 		<rheme>
 			<token pos="rn">no</token><token pos="vsii3p0">eran</token><token pos="aq0mp0">paralelos</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Body_parts" head="brazos" />
-			<frame type="Causation" head="levant&#243;">
-				<argument type="Effect" dependent="p&#225;rpados nuevamente" /></frame>
+			<frame type="Body_parts" head="brazos"></frame>
+			<frame type="Causation" head="levantó">
+				<argument type="Effect" dependent="párpados nuevamente"/></frame>
 			<frame type="Idiosyncrasy" head="certeza">
-				<argument type="Entity" dependent="que sus brazos ya no eran paralelos" /></frame>
+				<argument type="Entity" dependent="que sus brazos ya no eran paralelos"/></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme>
 			<token pos="pp3mpa00">los</token>
 		</theme>
 		<rheme>
-			<token pos="vmis3s0">dej&#243;</token><token pos="vmn0000">caer</token><token pos="sps00">a</token><token pos="da0ms0">lo</token><token pos="aq0cs0">largo</token><token pos="spcms">de</token><token pos="dp3cs0">su</token><token pos="ncms000">cuerpo</token>
+			<token pos="vmis3s0">dejó</token><token pos="vmn0000">caer</token><token pos="sps00">a</token><token pos="da0ms0">lo</token><token pos="aq0cs0">largo</token><token pos="spcms">de</token><token pos="dp3cs0">su</token><token pos="ncms000">cuerpo</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Architectural_part" head="la pared" />
-			<frame type="Architectural_part" head="la pared" />
-			<frame type="Body_parts" head="cuerpo" />
-			<frame type="Body_parts" head="cuerpo" />
-			<main_frame type="Change_position_on_a_scale" head="dej&#243; caer">
-				<argument type="Place" dependent="desplom&#225;ndose contra la pared" />
-				<argument type="Final_value" dependent="de su cuerpo y sinti&#243; su peso" /></main_frame>
-			<main_frame type="Change_position_on_a_scale" head="dej&#243; caer">
-				<argument type="Place" dependent="desplom&#225;ndose contra la pared" />
-				<argument type="Final_value" dependent="de su cuerpo y sinti&#243; su peso" /></main_frame>
-			<frame type="Dimension" head="peso" />
-			<frame type="Dimension" head="peso" />
+			<frame type="Architectural_part" head="la pared"></frame>
+			<frame type="Architectural_part" head="la pared"></frame>
+			<frame type="Body_parts" head="cuerpo"></frame>
+			<frame type="Body_parts" head="cuerpo"></frame>
+			<main_frame type="Change_position_on_a_scale" head="dejó caer">
+				<argument type="Place" dependent="desplomándose contra la pared"/>
+				<argument type="Final_value" dependent="de su cuerpo y sintió su peso"/></main_frame>
+			<main_frame type="Change_position_on_a_scale" head="dejó caer">
+				<argument type="Place" dependent="desplomándose contra la pared"/>
+				<argument type="Final_value" dependent="de su cuerpo y sintió su peso"/></main_frame>
+			<frame type="Dimension" head="peso"></frame>
+			<frame type="Dimension" head="peso"></frame>
 			<frame type="Locative_relation" head="a lo largo">
-				<argument type="Ground" dependent="su cuerpo" /></frame>
+				<argument type="Ground" dependent="su cuerpo"/></frame>
 			<frame type="Locative_relation" head="a lo largo">
-				<argument type="Ground" dependent="su cuerpo" /></frame>
+				<argument type="Ground" dependent="su cuerpo"/></frame>
 			<frame type="Taking_sides" head="contra">
-				<argument type="Side" dependent="la pared" /></frame>
+				<argument type="Side" dependent="la pared"/></frame>
 			<frame type="Taking_sides" head="contra">
-				<argument type="Side" dependent="la pared" /></frame>
+				<argument type="Side" dependent="la pared"/></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_2">
+		<theme>
 			<token pos="da0ns0">lo</token><token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
-			<token pos="rg">no</token><token pos="vsii3s0">era</token><token pos="di0ms0">otra</token><token pos="ncms000">cosa</token><token pos="pr0cn000">que</token><token pos="ncmn000">re&#250;ma</token><token pos="fc">,</token><token pos="cc">o</token><token pos="ncfn000">artrosis</token><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="aq0cs0">simple</token><token pos="ncms000">cansancio</token><token pos="sps00">de</token><token pos="di0mp0">unos</token><token pos="ncmp000">huesos</token>
+			<token pos="rg">no</token><token pos="vsii3s0">era</token><token pos="di0ms0">otra</token><token pos="ncms000">cosa</token><token pos="pr0cn000">que</token><token pos="ncmn000">reúma</token><token pos="fc">,</token><token pos="cc">o</token><token pos="ncfn000">artrosis</token><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="aq0cs0">simple</token><token pos="ncms000">cansancio</token><token pos="sps00">de</token><token pos="di0mp0">unos</token><token pos="ncmp000">huesos</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Age" head="lo" />
-			<frame type="Agree_or_refuse_to_act" head="dej&#225;ndose">
-				<argument type="Interlocutor" dependent="su propia decrepitud" />
-				<argument type="Proposed_action" dependent="encontrar cualquier explicaci&#243;n amable a lo que no era otra cosa que re&#250;ma, o artrosis, el simple cansancio de unos huesos" /></frame>
+			<frame type="Age" head="lo"></frame>
+			<frame type="Agree_or_refuse_to_act" head="dejándose">
+				<argument type="Interlocutor" dependent="su propia decrepitud"/>
+				<argument type="Proposed_action" dependent="encontrar cualquier explicación amable a lo que no era otra cosa que reúma, o artrosis, el simple cansancio de unos huesos"/></frame>
 			<frame type="Becoming_aware" head="encontrar">
-				<argument type="Phenomenon" dependent="cualquier explicaci&#243;n amable a lo que no era otra cosa que re&#250;ma, o artrosis, el simple cansancio de unos huesos" /></frame>
+				<argument type="Phenomenon" dependent="cualquier explicación amable a lo que no era otra cosa que reúma, o artrosis, el simple cansancio de unos huesos"/></frame>
 			<frame type="Boundary" head="decrepitud">
-				<argument type="Boundary" dependent="unos huesos que" />
-				<argument type="Boundary" dependent="recta de la vejez" />
-				<argument type="Entities" dependent="el &#250;nico destino cierto" /></frame>
-			<frame type="Calendric_unit" head="de" />
+				<argument type="Boundary" dependent="unos huesos que"/>
+				<argument type="Boundary" dependent="recta de la vejez"/>
+				<argument type="Entities" dependent="el único destino cierto"/></frame>
+			<frame type="Calendric_unit" head="de"></frame>
 			<frame type="Candidness" head="recta">
-				<argument type="Topic" dependent="preludio de" /></frame>
-			<frame type="Destiny" head="destino" />
-			<frame type="Duration_description" head="mucho tiempo" />
-			<main_frame type="Expectation" head="inesperado" />
+				<argument type="Topic" dependent="preludio de"/></frame>
+			<frame type="Destiny" head="destino"></frame>
+			<frame type="Duration_description" head="mucho tiempo"></frame>
+			<main_frame type="Expectation" head="inesperado"></main_frame>
 			<frame type="Increment" head="otra">
-				<argument type="Class" dependent="que re&#250;ma, o artrosis" /></frame>
+				<argument type="Class" dependent="que reúma, o artrosis"/></frame>
 			<frame type="Preventing_or_letting" head="lo">
-				<argument type="Event" dependent="dej&#225;ndose aniquilar pl&#225;cidamente por el inesperado preludio de su propia decrepitud ," /></frame>
-			<frame type="Similarity" head="as&#237;">
-				<argument type="Entity_2" dependent="as&#237; mucho tiempo" /></frame>
-			<frame type="Sole_instance" head="&#250;nico">
-				<argument type="Item" dependent="destino cierto" /></frame>
-			<frame type="State_continue" head="Permaneci&#243;">
-				<argument type="State" dependent="as&#237; mucho tiempo" /></frame>
-			<frame type="Type" head="amable" />
+				<argument type="Event" dependent="dejándose aniquilar plácidamente por el inesperado preludio de su propia decrepitud ,"/></frame>
+			<frame type="Similarity" head="así">
+				<argument type="Entity_2" dependent="así mucho tiempo"/></frame>
+			<frame type="Sole_instance" head="único">
+				<argument type="Item" dependent="destino cierto"/></frame>
+			<frame type="State_continue" head="Permaneció">
+				<argument type="State" dependent="así mucho tiempo"/></frame>
+			<frame type="Type" head="amable"></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -211,55 +234,55 @@
 
 
 	<sentence>
-		<theme concept_ref="c_2">
+		<theme>
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
-			<token pos="vmic3s0">estar&#237;a</token><token pos="rg">todav&#237;a</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">cama</token><token pos="fc">,</token><token pos="aq0cs0">feliz</token><token pos="sps00">ante</token><token pos="da0fs0">la</token><token pos="ncfs000">perspectiva</token><token pos="sps00">de</token><token pos="vmn0000">echar</token><token pos="ncfp000">ra&#237;ces</token><token pos="sps00">entre</token><token pos="da0fp0">las</token><token pos="ncfp000">s&#225;banas</token>
+			<token pos="vmic3s0">estaría</token><token pos="rg">todavía</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">cama</token><token pos="fc">,</token><token pos="aq0cs0">feliz</token><token pos="sps00">ante</token><token pos="da0fs0">la</token><token pos="ncfs000">perspectiva</token><token pos="sps00">de</token><token pos="vmn0000">echar</token><token pos="ncfp000">raíces</token><token pos="sps00">entre</token><token pos="da0fp0">las</token><token pos="ncfp000">sábanas</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Awareness" head="imaginaba" />
-			<frame type="Awareness" head="imaginaba" />
-			<frame type="Continued_state_of_affairs" head="todav&#237;a">
-				<argument type="State_of_affairs" dependent="que estar&#237;a" />
-				<argument type="State_of_affairs" dependent="en la cama" /></frame>
-			<frame type="Continued_state_of_affairs" head="todav&#237;a">
-				<argument type="State_of_affairs" dependent="que estar&#237;a" />
-				<argument type="State_of_affairs" dependent="en la cama" /></frame>
+			<frame type="Awareness" head="imaginaba"></frame>
+			<frame type="Awareness" head="imaginaba"></frame>
+			<frame type="Continued_state_of_affairs" head="todavía">
+				<argument type="State_of_affairs" dependent="que estaría"/>
+				<argument type="State_of_affairs" dependent="en la cama"/></frame>
+			<frame type="Continued_state_of_affairs" head="todavía">
+				<argument type="State_of_affairs" dependent="que estaría"/>
+				<argument type="State_of_affairs" dependent="en la cama"/></frame>
 			<frame type="Emotion_directed" head="feliz">
-				<argument type="Stimulus" dependent="ante la perspectiva de echar ra&#237;ces entre las s&#225;banas mientras le imaginaba en Salamanca" /></frame>
+				<argument type="Stimulus" dependent="ante la perspectiva de echar raíces entre las sábanas mientras le imaginaba en Salamanca"/></frame>
 			<frame type="Emotion_directed" head="feliz">
-				<argument type="Stimulus" dependent="ante la perspectiva de echar ra&#237;ces entre las s&#225;banas mientras le imaginaba en Salamanca" /></frame>
+				<argument type="Stimulus" dependent="ante la perspectiva de echar raíces entre las sábanas mientras le imaginaba en Salamanca"/></frame>
 			<frame type="Fire_burning" head="quemaron">
-				<argument type="Fire" dependent="tostadas" /></frame>
+				<argument type="Fire" dependent="tostadas"/></frame>
 			<frame type="Fire_burning" head="quemaron">
-				<argument type="Fire" dependent="tostadas" /></frame>
+				<argument type="Fire" dependent="tostadas"/></frame>
 			<frame type="Hostile_encounter" head="batallando">
-				<argument type="Side_2" dependent="alguna oscura contrata" /></frame>
+				<argument type="Side_2" dependent="alguna oscura contrata"/></frame>
 			<frame type="Hostile_encounter" head="batallando">
-				<argument type="Side_2" dependent="alguna oscura contrata" /></frame>
-			<frame type="Interior_profile_relation" head="en" />
-			<frame type="Interior_profile_relation" head="en" />
+				<argument type="Side_2" dependent="alguna oscura contrata"/></frame>
+			<frame type="Interior_profile_relation" head="en"></frame>
+			<frame type="Interior_profile_relation" head="en"></frame>
 			<frame type="Interior_profile_relation" head="entre">
-				<argument type="Figure" dependent="perspectiva de echar ra&#237;ces" />
-				<argument type="Ground" dependent="las tostadas" /></frame>
+				<argument type="Figure" dependent="perspectiva de echar raíces"/>
+				<argument type="Ground" dependent="las tostadas"/></frame>
 			<frame type="Interior_profile_relation" head="entre">
-				<argument type="Figure" dependent="perspectiva de echar ra&#237;ces" />
-				<argument type="Ground" dependent="las tostadas" /></frame>
+				<argument type="Figure" dependent="perspectiva de echar raíces"/>
+				<argument type="Ground" dependent="las tostadas"/></frame>
 			<frame type="Locative_relation" head="en">
-				<argument type="Figure" dependent="le quemaron las tostadas y pens&#243; en Auri, que estar&#237;a todav&#237;a en la cama" />
-				<argument type="Ground" dependent="ante la perspectiva de echar ra&#237;ces entre las s&#225;banas mientras le imaginaba en Salamanca" /></frame>
+				<argument type="Figure" dependent="le quemaron las tostadas y pensó en Auri, que estaría todavía en la cama"/>
+				<argument type="Ground" dependent="ante la perspectiva de echar raíces entre las sábanas mientras le imaginaba en Salamanca"/></frame>
 			<frame type="Locative_relation" head="en">
-				<argument type="Figure" dependent="le quemaron las tostadas y pens&#243; en Auri, que estar&#237;a todav&#237;a en la cama" />
-				<argument type="Ground" dependent="ante la perspectiva de echar ra&#237;ces entre las s&#225;banas mientras le imaginaba en Salamanca" /></frame>
-			<frame type="Opinion" head="pens&#243;">
-				<argument type="Opinion" dependent="pens&#243; en Auri" /></frame>
-			<frame type="Opinion" head="pens&#243;">
-				<argument type="Opinion" dependent="pens&#243; en Auri" /></frame>
+				<argument type="Figure" dependent="le quemaron las tostadas y pensó en Auri, que estaría todavía en la cama"/>
+				<argument type="Ground" dependent="ante la perspectiva de echar raíces entre las sábanas mientras le imaginaba en Salamanca"/></frame>
+			<frame type="Opinion" head="pensó">
+				<argument type="Opinion" dependent="pensó en Auri"/></frame>
+			<frame type="Opinion" head="pensó">
+				<argument type="Opinion" dependent="pensó en Auri"/></frame>
 			<frame type="Taking_time" head="echar">
-				<argument type="Activity" dependent="entre las s&#225;banas mientras le imaginaba en Salamanca" /></frame>
+				<argument type="Activity" dependent="entre las sábanas mientras le imaginaba en Salamanca"/></frame>
 			<main_frame type="Taking_time" head="echar">
-				<argument type="Activity" dependent="entre las s&#225;banas mientras le imaginaba en Salamanca" /></main_frame>
+				<argument type="Activity" dependent="entre las sábanas mientras le imaginaba en Salamanca"/></main_frame>
 		</semantic_roles>
 	</sentence>
 

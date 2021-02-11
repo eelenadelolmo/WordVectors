@@ -10,6 +10,16 @@
         <!ELEMENT theme (token*)>
             <!ATTLIST theme concept_ref IDREF #REQUIRED>
         <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
@@ -78,7 +88,7 @@
 		<theme concept_ref="c_2">
 			<token pos="da0fs0">La</token><token pos="ncms000">iniciación</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">mal</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_9">
 			<token pos="vsip3s0">es</token><token pos="rg">más</token><token pos="aq0cs0">importante</token><token pos="cs">que</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">bien</token>
 		</rheme>
 		<semantic_roles>
@@ -123,7 +133,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0fp0">Las</token><token pos="ncfp000">guerras</token><token pos="aq0fp0">destructoras</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_2" concept_ref2="c_3">
 			<token pos="vmip3p0">nacen</token><token pos="spcms">del</token><token pos="ncms000">odio</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">codicia</token>
 		</rheme>
 		<semantic_roles>
@@ -146,7 +156,7 @@
 		<theme concept_ref="c_1">
 			<token pos="da0ms0">El</token><token pos="ncms000">prestigio</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">aves</token><token pos="sps00">desde</token><token pos="da0fs0">la</token><token pos="ncfs000">paloma</token><token pos="sps00">hasta</token><token pos="da0ms0">el</token><token pos="ncfs000">águila</token><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="ncms000">quetzal</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncmn000">albatros</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_0" concept_ref2="c_6" concept_ref3="c_9" concept_ref4="c_12">
 			<token pos="p0300000">se</token><token pos="vmip3s0">basa</token><token pos="sps00">en</token><token pos="cs">que</token><token pos="vmip3p0">pueden</token><token pos="vmn0000">vencer</token><token pos="rg">fácilmente</token><token pos="da0fs0">la</token><token pos="ncfs000">gravedad</token><token pos="cc">y</token><token pos="vmip3p0">viven</token><token pos="sps00">entre</token><token pos="da0fs0">la</token><token pos="ncfs000">tierra</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">cielo</token>
 		</rheme>
 		<semantic_roles>

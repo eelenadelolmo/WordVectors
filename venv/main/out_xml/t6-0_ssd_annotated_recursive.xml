@@ -10,6 +10,16 @@
         <!ELEMENT theme (token*)>
             <!ATTLIST theme concept_ref IDREF #REQUIRED>
         <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
@@ -64,7 +74,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="ncms000">olor</token><token pos="sps00">a</token><token pos="aq0msp">podrido</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_3">
 			<token pos="vmis3s0">rebotó</token><token pos="sps00">en</token><token pos="dp3cs0">su</token><token pos="ncfs000">piel</token>
 		</rheme>
 		<semantic_roles>
@@ -152,7 +162,7 @@
 		<theme concept_ref="c_1">
 			<token pos="dd0fs0">Aquella</token><token pos="ncfs000">sonrisa</token><token pos="aq0cs0">ritual</token><token pos="fc">,</token><token pos="di0fs0">una</token><token pos="ncfs000">mueca</token><token pos="aq0fsp">encausada</token><token pos="cc">y</token><token pos="aq0fs0">gratuita</token><token pos="fc">,</token><token pos="aq0fs0">ridícula</token><token pos="fc">,</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_2" concept_ref4="c_3" concept_ref5="c_4">
 			<token pos="rg">no</token><token pos="vsii3s0">era</token><token pos="rg">más</token><token pos="cs">que</token><token pos="di0ms0">un</token><token pos="aq0cs0">torpe</token><token pos="ncms000">recurso</token><token pos="aq0cs0">personal</token><token pos="sps00">para</token><token pos="vmn0000">propiciar</token><token pos="di0mp0">otros</token><token pos="aq0cp0">improbables</token><token pos="ncmp000">presagios</token><token pos="aq0cp0">favorables</token><token pos="fc">,</token><token pos="di0fs0">una</token><token pos="aq0fs0">burda</token><token pos="ncfs000">trampa</token><token pos="aq0fsp">tendida</token><token pos="sps00">hacia</token><token pos="pp3cno00">sí</token><token pos="di0ms0">mismo</token><token pos="di0cs0">cada</token><token pos="ncfs000">mañana</token><token pos="fc">,</token><token pos="di0fs0">una</token><token pos="ncfs000">estupidez</token><token pos="rg">más</token>
 		</rheme>
 		<semantic_roles>

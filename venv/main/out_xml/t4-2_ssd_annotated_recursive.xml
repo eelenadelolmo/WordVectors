@@ -10,6 +10,16 @@
         <!ELEMENT theme (token*)>
             <!ATTLIST theme concept_ref IDREF #REQUIRED>
         <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
@@ -43,7 +53,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0ms0">el</token><token pos="ncms000">nacer</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_3" concept_ref2="c_4" concept_ref3="c_6">
 			<token pos="vsii3s0">era</token><token pos="di0fs0">una</token><token pos="ncfs000">evasión</token><token pos="fpa">(</token><token pos="fg">-</token><token pos="sps00">de</token><token pos="pt0cs000">qué</token><token pos="fit">?</token><token pos="fpt">)</token><token pos="da0ms0">el</token><token pos="ncms000">morir</token><token pos="di0fs0">una</token><token pos="ncfs000">emigración</token><token pos="fpa">(</token><token pos="fg">-</token><token pos="sps00">a</token><token pos="pt000000">dónde</token><token pos="fit">?</token>
 		</rheme>
 		<semantic_roles>
@@ -111,7 +121,7 @@
 		<theme concept_ref="c_1">
 			<token pos="da0ms0">El</token><token pos="ncms000">amor</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_0" concept_ref2="c_6" concept_ref3="c_10">
 			<token pos="p0000000">se</token><token pos="vmip3s0">cuenta</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">frecuencia</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">besos</token>
 		</rheme>
 		<semantic_roles>
@@ -129,7 +139,7 @@
 		<theme concept_ref="c_2">
 			<token pos="da0ms0">el</token><token pos="ncfs000">agua</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">fuego</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_6" concept_ref4="c_10">
 			<token pos="vsip3p0">son</token><token pos="ncmp000">dioses</token><token pos="da0ms0">el</token><token pos="ncms000">rayo</token><token pos="dp3cs0">su</token><token pos="rg">más</token><token pos="aq0cs0">elocuente</token><token pos="cc">y</token><token pos="aq0cs0">eficaz</token><token pos="nccs000">agente</token><token pos="sps00">de</token><token pos="ncfp000">relaciones</token><token pos="aq0fp0">públicas</token>
 		</rheme>
 		<semantic_roles>
@@ -174,7 +184,7 @@
 		<theme concept_ref="c_3">
 			<token pos="pr0cn000">que</token>
 		</theme>
-		<rheme>
+		<rheme concept_ref1="c_6">
 			<token pos="vmip3s0">tiene</token><token pos="dn0ms0">un</token><token pos="aq0ms0">sólo</token><token pos="nccs000">militante</token><token pos="pp1csn00">Yo</token>
 		</rheme>
 		<semantic_roles>

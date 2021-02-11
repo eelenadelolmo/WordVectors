@@ -1,3 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (theme, rheme, semantic_roles)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
 <text id="t4-4_ssd_annotated_recursive">
 
 
@@ -14,7 +37,7 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme>
 			<token pos="da0fp0">Las</token><token pos="ncfp000">auroras</token>
 		</theme>
 		<rheme>
@@ -38,39 +61,39 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme>
 			<token pos="pi0mp000">todos</token>
 		</theme>
 		<rheme>
 			<token pos="vmip1p0">preferimos</token><token pos="dd0mp0">esos</token><token pos="ncmp000">silencios</token><token pos="aq0mp0">absolutos</token><token pos="sps00">durante</token><token pos="da0mp0">los</token><token pos="pr0cp000">cuales</token><token pos="np0000p">Dios</token><token pos="pp1cp000">nos</token><token pos="vmip3s0">habla</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Becoming_silent" head="silencios" />
-			<frame type="Becoming_silent" head="silencios" />
+			<frame type="Becoming_silent" head="silencios"></frame>
+			<frame type="Becoming_silent" head="silencios"></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme>
 			<token pos="da0mp0">Los</token><token pos="ncmp000">sordos</token>
 		</theme>
 		<rheme>
 			<token pos="pp3msa00">lo</token><token pos="vmip3p0">oyen</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="People" head="Los" />
+			<frame type="People" head="Los"></frame>
 			<frame type="Perception_experience" head="sordos lo">
-				<argument type="Perceiver_passive" dependent="sordos" />
-				<argument type="Phenomenon" dependent="lo oyen mejor que nosotros" /></frame>
+				<argument type="Perceiver_passive" dependent="sordos"/>
+				<argument type="Phenomenon" dependent="lo oyen mejor que nosotros"/></frame>
 			<frame type="Required_event" head="mejor">
-				<argument type="Required_situation" dependent="que nosotros" /></frame>
+				<argument type="Required_situation" dependent="que nosotros"/></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_2">
+		<theme>
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -78,23 +101,23 @@
 		</rheme>
 		<semantic_roles>
 			<main_frame type="Appointing" head="se llama">
-				<argument type="Official" dependent="una amiga" /></main_frame>
-			<frame type="Personal_relationship" head="amiga" />
+				<argument type="Official" dependent="una amiga"/></main_frame>
+			<frame type="Personal_relationship" head="amiga"></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_3">
+		<theme>
 			<token pos="da0ms0">El</token><token pos="ncms000">origen</token><token pos="spcms">del</token><token pos="ncms000">nombre</token>
 		</theme>
 		<rheme>
-			<token pos="vsip3s0">es</token><token pos="np0000p">N&#225;yade</token>
+			<token pos="vsip3s0">es</token><token pos="np0000p">Náyade</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Being_named" head="del nombre" />
+			<frame type="Being_named" head="del nombre"></frame>
 			<frame type="Origin" head="origen">
-				<argument type="Entity" dependent="nombre es N&#225;yade" /></frame>
+				<argument type="Entity" dependent="nombre es Náyade"/></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -112,37 +135,37 @@
 
 
 	<sentence>
-		<theme concept_ref="c_4">
-			<token pos="dp3cs0">Su</token><token pos="ncfs000">misi&#243;n</token>
+		<theme>
+			<token pos="dp3cs0">Su</token><token pos="ncfs000">misión</token>
 		</theme>
 		<rheme>
 			<token pos="vsii3s0">era</token><token pos="vmn0000">llenarlo</token>
 		</rheme>
 		<semantic_roles>
 			<frame type="Filling" head="llenarlo">
-				<argument type="Cause" dependent="Su misi&#243;n" /></frame>
+				<argument type="Cause" dependent="Su misión"/></frame>
 			<main_frame type="Filling" head="llenarlo">
-				<argument type="Cause" dependent="Su misi&#243;n" /></main_frame>
-			<frame type="Success_or_failure" head="consegu&#237;an" />
-			<frame type="Success_or_failure" head="consegu&#237;an" />
+				<argument type="Cause" dependent="Su misión"/></main_frame>
+			<frame type="Success_or_failure" head="conseguían"></frame>
+			<frame type="Success_or_failure" head="conseguían"></frame>
 		</semantic_roles>
 	</sentence>
 
 
 	<sentence>
-		<theme concept_ref="c_5">
+		<theme>
 			<token pos="di0cs0">Cada</token><token pos="pr0cs000">cual</token>
 		</theme>
 		<rheme>
-			<token pos="pp3msa00">lo</token><token pos="vmip3s0">comprende</token><token pos="pd0ns000">eso</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="ncfs000">manera</token><token pos="cc">y</token><token pos="sps00">seg&#250;n</token><token pos="dp3cs0">su</token><token pos="ncms000">caso</token><token pos="aq0cs0">personal</token>
+			<token pos="pp3msa00">lo</token><token pos="vmip3s0">comprende</token><token pos="pd0ns000">eso</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="ncfs000">manera</token><token pos="cc">y</token><token pos="sps00">según</token><token pos="dp3cs0">su</token><token pos="ncms000">caso</token><token pos="aq0cs0">personal</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Be_in_agreement_on_action" head="seg&#250;n">
-				<argument type="Obligation" dependent="su caso personal" /></frame>
-			<frame type="Cardinal_numbers" head="cual" />
+			<frame type="Be_in_agreement_on_action" head="según">
+				<argument type="Obligation" dependent="su caso personal"/></frame>
+			<frame type="Cardinal_numbers" head="cual"></frame>
 			<frame type="Goal" head="lo">
-				<argument type="Landmark" dependent="su caso personal" /></frame>
-			<frame type="Means" head="manera" />
+				<argument type="Landmark" dependent="su caso personal"/></frame>
+			<frame type="Means" head="manera"></frame>
 		</semantic_roles>
 	</sentence>
 
@@ -184,16 +207,16 @@
 
 
 	<sentence>
-		<theme concept_ref="c_6">
-			<token pos="da0ns0">Lo</token><token pos="pi0cp000">dem&#225;s</token>
+		<theme>
+			<token pos="da0ns0">Lo</token><token pos="pi0cp000">demás</token>
 		</theme>
 		<rheme>
 			<token pos="vsip3s0">es</token><token pos="ncfs000">existencia</token><token pos="fc">,</token><token pos="ncms000">simulacro</token><token pos="aq0ms0">transitorio</token><token pos="cc">y</token><token pos="aq0cs0">mudable</token>
 		</rheme>
 		<semantic_roles>
-			<frame type="Existence" head="existencia" />
-			<frame type="Rest" head="dem&#225;s" />
-			<frame type="Undergo_change" head="mudable" />
+			<frame type="Existence" head="existencia"></frame>
+			<frame type="Rest" head="demás"></frame>
+			<frame type="Undergo_change" head="mudable"></frame>
 		</semantic_roles>
 	</sentence>
 
