@@ -1,0 +1,23 @@
+1	el	_	El	_	NNP	0	_	_	_	_	_	_	_	O
+2	trabajo	_	UNK	_	VBD	0	_	_	_	_	_	_	_	O
+3	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+4	en	_	en	_	VBN	0	_	_	_	_	_	_	_	O
+5	primer	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+6	lugar	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+7	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+8	nos	_	no	_	NNS	0	_	_	_	_	_	_	_	O
+9	permite	_	UNK	_	VBP	0	_	_	_	_	_	_	_	O
+10	ganar	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+11	el	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+12	unk	_	UNK	_	IN	0	_	_	_	_	_	_	_	O
+13	diario	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+14	sin	_	sin	_	NN	0	_	_	_	_	_	sin.n	Misdeed	O
+15	tener	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+16	que	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+17	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+18	contra	_	contra	_	NN	0	_	_	_	_	_	_	_	O
+19	los	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+20	elementos	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+21	naturales	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+22	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

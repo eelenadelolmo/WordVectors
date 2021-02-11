@@ -1,1 +1,0 @@
-Estimamos que estos SNP se correlacionan con el 58_% de los SNP comunes en las muestras de HapMap_CEPH / CEU (residentes de Utah con ascendencia del norte y oeste de Europa) con r2> 0,8 y 77% con r2> 0,5 (media de r2 = 0,75; consulte la figura complementaria). 1) (http://www.hapmap.org/) 21.

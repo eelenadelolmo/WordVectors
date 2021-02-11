@@ -1,1 +1,0 @@
-In the main analyses , we considered 10,405 SNPs with call rate of > 95_% that did not deviate from Hardy – Weinberg equilibrium in controls.

@@ -1,1 +1,0 @@
-Los análisis principales se limitaron a 205.586 SNP que tenían una tasa de llamada del 90% y cuyas distribuciones de genotipos no diferían del equilibrio de Hardy-Weinberg en los controles (en P <10-5).

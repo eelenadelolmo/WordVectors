@@ -1,1 +1,0 @@
-The main analyses were restricted to 205,586 SNPs that had a call rate of 90_% and whose genotype distributions did not differ from Hardy – Weinberg equilibrium in controls ( at P < 10 − 5 ).

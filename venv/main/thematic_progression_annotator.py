@@ -2,6 +2,7 @@ import os
 import re
 import html
 import shutil
+import logging
 import numpy as np
 import spacy
 import scipy.spatial
@@ -68,7 +69,12 @@ os.makedirs(output_dir)
 
 for file_xml in os.listdir(input_dir):
 
-    shutil.copyfile(input_dir + '/' + file_xml, output_dir+ '/' + file_xml)
+    with open(input_dir + '/' + file_xml) as archivo:
+        texto = archivo.read().encode(encoding='utf-8').decode('utf-8')
+        texto = re.sub('\\& ', '', texto)
+
+    with open(output_dir + '/' + file_xml, 'w') as nuevo:
+        nuevo.write(texto)
 
     # List composed of the ordered themes sentence in the text
     t_ord = list()
@@ -93,7 +99,7 @@ for file_xml in os.listdir(input_dir):
 
 
     with open(output_dir + '/' + file_xml) as f_xml:
-        xml = f_xml.read()
+        xml = f_xml.read().encode(encoding='utf-8').decode('utf-8')
         root = ET.fromstring(xml)
 
         for sentence in root.iter('sentence'):
@@ -863,41 +869,6 @@ for file_xml in os.listdir(input_dir):
 
 
 
-
-
-
-        ## Matching rhemes PENDING
-
-        """
-        print("\n\n--------------------------------------------------------")
-        print("** Matching rhemes to themes **")
-
-        # sentences = t_ord + r_ord
-        # sentence_embeddings = model.encode(sentences)
-        theme_embeddings = model.encode(t_ord)
-        rheme_embeddings = model.encode(r_ord)
-
-        # The result is a list of sentence embeddings as numpy arrays
-        for theme, theme_embedding in zip(t_ord, theme_embeddings):
-            print("Sentence:", theme)
-            print("Embedding:", theme_embedding)
-            print("")
-
-        # Find the closest 5 sentences of the corpus for each query sentence based on cosine similarity
-        closest_n = 5
-        for rheme, rheme_embedding in zip(r_ord, rheme_embeddings):
-            distances = scipy.spatial.distance.cdist([rheme_embedding], theme_embeddings, "cosine")[0]
-
-            results = zip(range(len(distances)), distances)
-            results = sorted(results, key=lambda x: x[1])
-
-            print("\n\n")
-            print("Rheme:", rheme)
-            print("\nTop 5 most similar themes in the sentence:")
-
-            for idx, distance in results[0:closest_n]:
-                print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
-        """
 
 
 

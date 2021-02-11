@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (theme, rheme, semantic_roles)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #REQUIRED>
+        <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="4_20010701_ssd_annotated_recursive">
+
+
+	<concepts>
+		<concept id="c_0">John de Mol</concept>
+		<concept id="c_1">Joop</concept>
+		<concept id="c_2">Endemol , que en 1999 facturó casi 73.000 millones de pesetas , Telefónica</concept>
+		<concept id="c_7">un programa</concept>
+		<concept id="c_9">el interés</concept>
+	</concepts>
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="np0000o">John</token><token pos="sps00">de</token><token pos="np0000l">Mol</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_7">
+			<token pos="vmis3s0">empezó</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">mundo</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">televisión</token><token pos="aq0fs0">holandesa</token><token pos="cs">como</token><token pos="nccs000">ayudante</token><token pos="sps00">de</token><token pos="ncfs000">producción</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">programa</token><token pos="aq0ms0">deportivo</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="ncfs000">Joop</token>
+		</theme>
+		<rheme>
+			<token pos="vaip3s0">van</token><token pos="vmp00sm">den</token><token pos="ncfp000">Ende</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Kinship" head="Brother" />
+			<frame type="Kinship" head="Brother" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_2">
+			<token pos="np00000">Endemol</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="sps00">en</token><token pos="z">1999</token><token pos="vmis3s0">facturó</token><token pos="rg">casi</token><token pos="z">73.000</token><token pos="ncmp000">millones</token><token pos="sps00">de</token><token pos="zm">pesetas</token><token pos="fc">,</token><token pos="np00000">Telefónica</token>
+		</theme>
+		<rheme concept_ref1="c_9">
+			<token pos="vmis3s0">despertó</token><token pos="da0ms0">el</token><token pos="ncms000">interés</token><token pos="aq0cs0">mundial</token><token pos="vmis3s0">decidió</token><token pos="vmn0000">comprarla</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="z">2000</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="sps00">De</token><token pos="np00000">Mol</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_9">
+			<token pos="vmis3s0">ganó</token><token pos="z">261.000</token><token pos="ncmp000">millones</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="director" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="z">250</token><token pos="ncmp000">millones</token><token pos="sps00">de</token><token pos="ncfp000">personas</token><token pos="sps00">en</token><token pos="di0ms0">todo</token><token pos="da0ms0">el</token><token pos="ncms000">mundo</token>
+		</theme>
+		<rheme concept_ref1="c_7">
+			<token pos="vmip3p0">ven</token><token pos="dp3cp0">sus</token><token pos="ncmp000">programas</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

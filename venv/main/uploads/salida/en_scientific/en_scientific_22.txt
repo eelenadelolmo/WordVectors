@@ -1,1 +1,0 @@
-Sin embargo, debido a que la recombinación tiende a ocurrir en distintos "puntos calientes", los polimorfismos vecinos a menudo están fuertemente correlacionados (en "desequilibrio de ligamiento", LD) entre sí.

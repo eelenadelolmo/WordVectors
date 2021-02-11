@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (theme, rheme, semantic_roles)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #REQUIRED>
+        <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="7_19990901_ssd_annotated_recursive">
+
+
+	<concepts>
+		<concept id="c_0">que</concept>
+		<concept id="c_1">La Generalitat</concept>
+		<concept id="c_2">Jordi Pujol</concept>
+		<concept id="c_5">debate</concept>
+		<concept id="c_8">millones</concept>
+	</concepts>
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_5" concept_ref4="c_8">
+			<token pos="p0000000">se</token><token pos="vmip3s0">puede</token><token pos="vmn0000">decir</token><token pos="sps00">sobre</token><token pos="da0ms0">el</token><token pos="ncms000">desenlace</token><token pos="spcms">del</token><token pos="aq0ms0">ruidoso</token><token pos="ncms000">debate</token><token pos="sps00">sobre</token><token pos="da0fp0">las</token><token pos="ncfp000">pensiones</token><token pos="aq0fp0">mínimas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Discussion" head="debate">
+				<argument type="Interlocutors" dependent="sobre el desenlace del ruidoso" />
+				<argument type="Topic" dependent="sobre las pensiones mínimas es que ha sido el parto de los montes" /></frame>
+			<frame type="Discussion" head="debate">
+				<argument type="Interlocutors" dependent="sobre el desenlace del ruidoso" />
+				<argument type="Topic" dependent="sobre las pensiones mínimas es que ha sido el parto de los montes" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="np00000">Generalitat</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_5" concept_ref4="c_8">
+			<token pos="vmif3s0">repartirá</token><token pos="di0ms0">un</token><token pos="aq0cs0">total</token><token pos="sps00">de</token><token pos="z">465</token><token pos="ncmp000">millones</token><token pos="sps00">de</token><token pos="zm">pesetas</token><token pos="sps00">entre</token><token pos="z">70.000</token><token pos="ncfp000">personas</token><token pos="pr0cn000">que</token><token pos="vmip3p0">ingresan</token><token pos="rg">menos</token><token pos="sps00">de</token><token pos="z">35.000</token><token pos="zm">pesetas</token><token pos="spcms">al</token><token pos="ncms000">mes</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Amounting_to" head="total" />
+			<frame type="Amounting_to" head="total" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">el</token><token pos="ncms000">repartidor</token><token pos="sps00">de</token><token pos="dd0fs0">esa</token><token pos="ncfs000">torna</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="da0fs0">la</token><token pos="ncfs000">oposición</token><token pos="vmip3s0">considera</token><token pos="di0fs0">una</token><token pos="aq0fsp">descarada</token><token pos="ncfs000">paga</token><token pos="aq0cs0">extra</token><token pos="aq0cs0">electoral</token><token pos="sps00">para</token><token pos="ncmp000">jubilados</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1">
+			<token pos="vsif3s0">será</token><token pos="np00000">Benestar</token><token pos="aq0ms0">Social</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="mayor">
+				<argument type="Governed" dependent="para" />
+				<argument type="Leader" dependent="de" /></frame>
+			<frame type="Leadership" head="mayor">
+				<argument type="Governed" dependent="para" />
+				<argument type="Leader" dependent="de" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="pr0cp000">quienes</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_8">
+			<token pos="vmip3p0">cobran</token><token pos="ncfp000">pensiones</token><token pos="rg">manifiestamente</token><token pos="aq0cp0">insuficientes</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="ncfs000">creación</token><token pos="sps00">de</token><token pos="ncfp000">expectativas</token><token pos="cc">y</token><token pos="ncmp000">agravios</token><token pos="rg">dentro</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncms000">ocho</token><token pos="ncmp000">millones</token><token pos="sps00">de</token><token pos="ncmp000">españoles</token><token pos="pr0cn000">que</token><token pos="vmip3p0">perciben</token><token pos="ncfp000">prestaciones</token>
+		</theme>
+		<rheme>
+			<token pos="fc">,</token><token pos="vsip3s0">es</token><token pos="aq0cs0">grave</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_8">
+			<token pos="vmif3s0">apoyará</token><token pos="da0mp0">los</token><token pos="ncfs000">Presupuestos</token><token pos="sps00">del</token><token pos="np00000">Estado</token><token pos="sps00">sin</token><token pos="vmn0000">condicionar</token><token pos="dp3cs0">su</token><token pos="ncms000">voto</token><token pos="sps00">a</token><token pos="di0fs0">una</token><token pos="ncfs000">mejora</token><token pos="aq0cs0">real</token><token pos="sps00">para</token><token pos="da0mp0">los</token><token pos="nccp000">pensionistas</token><token pos="fg">-</token><token pos="fg">-</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Misdeed" head="sin" />
+			<frame type="Misdeed" head="sin" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_2">
+			<token pos="np0000l">Jordi</token><token pos="np0000l">Pujol</token>
+		</theme>
+		<rheme concept_ref1="c_5">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">conducido</token><token pos="rg">mal</token><token pos="dd0ms0">este</token><token pos="ncms000">tema</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="ncfs000">opinión</token><token pos="spcms">del</token><token pos="ncms000">diario</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_8">
+			<token pos="p0000000">se</token><token pos="vmip3s0">expresa</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="ncmp000">editoriales</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="da0mp0">Los</token><token pos="nccp000">articulistas</token>
+		</theme>
+		<rheme concept_ref1="c_1">
+			<token pos="vmip3p0">exponen</token><token pos="ncfp000">posturas</token><token pos="aq0cp0">personales</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

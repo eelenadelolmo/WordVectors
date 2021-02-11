@@ -1,0 +1,23 @@
+1	la	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+2	generalitat	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+3	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+4	un	_	un	_	NN	0	_	_	_	_	_	_	_	O
+5	total	_	total	_	NN	0	_	_	_	_	_	total.n	Amounting_to	O
+6	de	_	de	_	NN	0	_	_	_	_	_	_	_	O
+7	465	_	UNK	_	CD	0	_	_	_	_	_	_	_	O
+8	millones	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+9	de	_	de	_	IN	0	_	_	_	_	_	_	_	O
+10	pesetas	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+11	entre	_	UNK	_	VBP	0	_	_	_	_	_	_	_	O
+12	70.000	_	UNK	_	CD	0	_	_	_	_	_	_	_	O
+13	personas	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+14	que	_	UNK	_	VBP	0	_	_	_	_	_	_	_	O
+15	unk	_	UNK	_	JJ	0	_	_	_	_	_	_	_	O
+16	menos	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+17	de	_	de	_	IN	0	_	_	_	_	_	_	_	O
+18	35.000	_	UNK	_	CD	0	_	_	_	_	_	_	_	O
+19	pesetas	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+20	al	_	UNK	_	JJ	0	_	_	_	_	_	_	_	O
+21	mes	_	me	_	NNS	0	_	_	_	_	_	_	_	O
+22	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

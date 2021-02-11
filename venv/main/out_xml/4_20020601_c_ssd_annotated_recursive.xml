@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (theme, rheme, semantic_roles)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #REQUIRED>
+        <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="4_20020601_c_ssd_annotated_recursive">
+
+
+	<concepts>
+		<concept id="c_0">que que</concept>
+		<concept id="c_1">la Generalitat</concept>
+		<concept id="c_2">La solución adecuada</concept>
+		<concept id="c_3">Nadie todo el mundo</concept>
+		<concept id="c_4">Éste</concept>
+		<concept id="c_5">eso demos</concept>
+		<concept id="c_6">El problema aparece cuando un</concept>
+		<concept id="c_10">los marroquís</concept>
+		<concept id="c_11">poco</concept>
+		<concept id="c_33">núcleo</concept>
+		<concept id="c_37">rechazo</concept>
+	</concepts>
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="pr0cn000">que</token><token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_1">
+			<token pos="vmip3s0">vive</token><token pos="sps00">en</token><token pos="np00000">Catalunya</token><token pos="rn">no</token><token pos="vmip3s0">habla</token><token pos="cc">ni</token><token pos="ncms000">catalán</token><token pos="cc">ni</token><token pos="ncms000">castellano</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="pr0cn000">que</token><token pos="pp1csn00">yo</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_2" concept_ref3="c_10" concept_ref4="c_11">
+			<token pos="vmip3s0">contrasta</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="nccp000">marroquís</token><token pos="pr0cn000">que</token><token pos="vaip3p0">han</token><token pos="vmp00sm">aprendido</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="di0ms0">poco</token><token pos="ncms000">tiempo</token><token pos="fc">,</token><token pos="di0ms0">un</token><token pos="ncms000">castellano</token><token pos="aq0ms0">básico</token><token pos="vmip1s0">conozco</token><token pos="pi0ms000">alguno</token><token pos="pr0cn000">que</token><token pos="vmip3s0">habla</token><token pos="di0ms0">un</token><token pos="ncms000">catalán</token><token pos="rg">muy</token><token pos="aq0ms0">correcto</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">la</token><token pos="np00000">Generalitat</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_10" concept_ref3="c_11">
+			<token pos="vmif3s0">facilitará</token><token pos="di0ms0">un</token><token pos="nccs000">intérprete</token><token pos="sps00">a</token><token pos="dd0mp0">aquellos</token><token pos="ncmp000">imanes</token><token pos="pr0cn000">que</token><token pos="rg">sólo</token><token pos="vmsp3p0">hablen</token><token pos="nccs000">árabe</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_4" concept_ref4="c_2" concept_ref5="c_3" concept_ref6="c_5" concept_ref7="c_11">
+			<token pos="rg">sólo</token><token pos="vmip3s0">puede</token><token pos="vmn0000">consolidar</token><token pos="da0fs0">la</token><token pos="ncfs000">voluntad</token><token pos="sps00">de</token><token pos="ncfs000">extranjería</token><token pos="sps00">de</token><token pos="pr0cs000">quien</token><token pos="p0300000">se</token><token pos="vmip3s0">niega</token><token pos="sps00">a</token><token pos="vmn0000">aprender</token><token pos="di0fs0">una</token><token pos="ncfs000">lengua</token><token pos="sps00">de</token><token pos="ncfs000">comunicación</token><token pos="aq0cs0">habitual</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">sociedad</token><token pos="sps00">en</token><token pos="pr000000">donde</token><token pos="p0000000">se</token><token pos="vmip3s0">vive</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">La</token><token pos="ncfs000">solución</token><token pos="aq0fsp">adecuada</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_10" concept_ref3="c_11">
+			<token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">cursos</token><token pos="sps00">de</token><token pos="ncms000">aprendizaje</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_3">
+			<token pos="pi0cs000">Nadie</token><token pos="di0ms0">todo</token><token pos="da0ms0">el</token><token pos="ncms000">mundo</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_2" concept_ref3="c_1">
+			<token pos="vmip3s0">tiene</token><token pos="da0fs0">la</token><token pos="ncfs000">obligación</token><token pos="sps00">de</token><token pos="vmn0000">renunciar</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">lengua</token><token pos="aq0fs0">propia</token><token pos="vmic3s0">debería</token><token pos="vmn0000">sentir</token><token pos="da0fs0">la</token><token pos="ncfs000">necesidad</token><token pos="sps00">de</token><token pos="vmn0000">conocer</token><token pos="da0fp0">las</token><token pos="ncfp000">lenguas</token><token pos="pr0cn000">que</token><token pos="pp3csd00">le</token><token pos="vmip3p0">rodean</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">El</token><token pos="ncms000">problema</token><token pos="di0ms0">un</token><token pos="ncms000">imán</token><token pos="fc">,</token><token pos="cc">o</token><token pos="pr0cs000">quien</token><token pos="vssp3s0">sea</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_33">
+			<token pos="vmip3s0">aparece</token><token pos="vmip3s0">cree</token><token pos="cs">que</token><token pos="rn">no</token><token pos="vmip3s0">existe</token><token pos="pi0cs000">nada</token><token pos="rg">fuera</token><token pos="spcms">del</token><token pos="ncms000">núcleo</token><token pos="pr000000">donde</token><token pos="vmip3s0">vive</token><token pos="cc">o</token><token pos="vmip3s0">trabaja</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Natural_features" head="sea">
+				<argument type="Descriptor" dependent="El problema aparece cuando un" /></frame>
+			<main_frame type="Natural_features" head="sea">
+				<argument type="Descriptor" dependent="El problema aparece cuando un" /></main_frame>
+			<frame type="Natural_features" head="sea">
+				<argument type="Descriptor" dependent="El problema aparece cuando un" /></frame>
+			<frame type="Natural_features" head="sea">
+				<argument type="Descriptor" dependent="El problema aparece cuando un" /></frame>
+			<frame type="Natural_features" head="sea">
+				<argument type="Descriptor" dependent="El problema aparece cuando un" /></frame>
+			<frame type="Natural_features" head="sea">
+				<argument type="Descriptor" dependent="El problema aparece cuando un" /></frame>
+			<frame type="People" head="un">
+				<argument type="Descriptor" dependent="El problema aparece cuando" /></frame>
+			<frame type="People" head="un">
+				<argument type="Descriptor" dependent="El problema aparece cuando" /></frame>
+			<frame type="People" head="un">
+				<argument type="Descriptor" dependent="El problema aparece cuando" /></frame>
+			<frame type="People" head="un">
+				<argument type="Descriptor" dependent="El problema aparece cuando" /></frame>
+			<frame type="People" head="un">
+				<argument type="Descriptor" dependent="El problema aparece cuando" /></frame>
+			<frame type="People" head="un">
+				<argument type="Descriptor" dependent="El problema aparece cuando" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">la</token><token pos="ncfs000">sociedad</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="vmp00sf">sustituida</token><token pos="sps00">por</token><token pos="di0ms0">un</token><token pos="aq0ms0">pequeño</token><token pos="ncms000">grupo</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_4">
+			<token pos="pd0ms000">Éste</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_1" concept_ref3="c_11" concept_ref4="c_37">
+			<token pos="vsip3s0">es</token><token pos="di0ms0">un</token><token pos="ncms000">aspecto</token><token pos="aq0ms0">negativo</token><token pos="sps00">de</token><token pos="da0ns0">lo</token><token pos="pr0cn000">que</token><token pos="vmip1p0">llamamos</token><token pos="ncfs000">intolerancia</token><token pos="cc">o</token><token pos="ncms000">rechazo</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">convivencia</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="People" head="un">
+				<argument type="Persistent_characteristic" dependent="o" />
+				<argument type="Person" dependent="un aspecto negativo de lo que llamamos intolerancia o rechazo de la convivencia" /></frame>
+			<frame type="People" head="un">
+				<argument type="Persistent_characteristic" dependent="o" />
+				<argument type="Person" dependent="un aspecto negativo de lo que llamamos intolerancia o rechazo de la convivencia" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_3">
+			<token pos="da0mp0">los</token><token pos="nccp000">dirigentes</token><token pos="fg">-</token><token pos="fg">-</token><token pos="aq0mp0">religiosos</token><token pos="fc">,</token><token pos="aq0mp0">políticos</token><token pos="fc">,</token><token pos="aq0cp0">culturales</token><token pos="fc">,</token><token pos="aq0cp0">sociales</token><token pos="fg">-</token><token pos="fg">-</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_5" concept_ref3="c_10">
+			<token pos="vssp3p0">sean</token><token pos="rg">más</token><token pos="aq0mpp">cerrados</token><token pos="cs">que</token><token pos="dp3cp0">sus</token><token pos="ncmp000">seguidores</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_2">
+			<token pos="di0cs0">Cada</token><token pos="ncfs000">célula</token><token pos="pi0fs000">ninguna</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_10">
+			<token pos="vmip3s0">tiene</token><token pos="dp3cs0">su</token><token pos="ncfs000">vida</token><token pos="vmip3s0">puede</token><token pos="vmn0000">sobrevivir</token><token pos="sps00">con</token><token pos="ncfs000">independencia</token><token pos="spcms">del</token><token pos="ncms000">organismo</token><token pos="spcms">del</token><token pos="pr0cn000">que</token><token pos="vmp00sm">forma</token><token pos="ncfp000">parte</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_5">
+			<token pos="pd0ns000">eso</token><token pos="nc00000">demos</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_3" concept_ref3="c_11" concept_ref4="c_33" concept_ref5="c_37">
+			<token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="ncfs000">democracia</token><token pos="vmip3s0">quiere</token><token pos="vmn0000">decir</token><token pos="ncms000">pueblo</token><token pos="fc">,</token><token pos="ncms000">conjunto</token><token pos="sps00">de</token><token pos="ncfp000">personas</token><token pos="pr0cn000">que</token><token pos="vmip3p0">comparten</token><token pos="di0ms0">un</token><token pos="ncms000">ámbito</token><token pos="aq0msp">determinado</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

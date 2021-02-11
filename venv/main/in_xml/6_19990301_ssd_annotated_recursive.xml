@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (theme, rheme, semantic_roles)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="6_19990301_ssd_annotated_recursive">
+
+
+	<sentence>
+		<theme>
+			<token pos="da0fs0">La</token><token pos="ncfs000">anorexia</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">bulimia</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vaip3p0">han</token><token pos="vmp00sm">convertido</token><token pos="sps00">en</token><token pos="di0fs0">una</token><token pos="aq0cs0">doble</token><token pos="ncfs000">epidemia</token><token pos="aq0fs0">silenciosa</token><token pos="pr0cn000">que</token><token pos="p0300000">se</token><token pos="vmip3s0">ceba</token><token pos="rg">especialmente</token><token pos="sps00">en</token><token pos="aq0cp0">jóvenes</token><token pos="ncfp000">prisioneras</token><token pos="spcms">del</token><token pos="ncms000">modelo</token><token pos="aq0cs0">social</token><token pos="pr0cn000">que</token><token pos="vmip3s0">prima</token><token pos="da0fs0">la</token><token pos="ncfs000">delgadez</token><token pos="spcms">del</token><token pos="ncms000">cuerpo</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="da0fp0">Las</token><token pos="ncfp000">estadísticas</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">reflejan</token><token pos="di0ms0">un</token><token pos="ncms000">incremento</token><token pos="aq0cs0">constante</token><token pos="spcms">del</token><token pos="ncms000">número</token><token pos="sps00">de</token><token pos="ncfp000">muchachas</token><token pos="pr0cn000">que</token><token pos="rg">apenas</token><token pos="vmip3p0">ingieren</token><token pos="ncmp000">alimentos</token><token pos="cc">o</token><token pos="pr0cn000">que</token><token pos="pp300000">se</token><token pos="vmip3p0">fuerzan</token><token pos="ncmp000">vómitos</token><token pos="sps00">para</token><token pos="vmn0000">mantener</token><token pos="da0fs0">la</token><token pos="ncfs000">línea</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="da0fs0">La</token><token pos="ncfs000">magnitud</token><token pos="spcms">del</token><token pos="ncms000">problema</token>
+		</theme>
+		<rheme>
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">movilizado</token><token pos="spcms">al</token><token pos="nccs000">juez</token><token pos="pr0cn000">que</token><token pos="p0300000">se</token><token pos="vmip3s0">encarga</token><token pos="sps00">en</token><token pos="np00000">Barcelona</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">internamientos</token><token pos="aq0mp0">psiquiátricos</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="pd0ms000">Este</token><token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="fc">,</token><token pos="sps00">a</token><token pos="ncfp000">instancias</token><token pos="sps00">de</token><token pos="di0mp0">algunos</token><token pos="ncmp000">médicos</token><token pos="fc">,</token><token pos="vmip3s0">empieza</token><token pos="sps00">a</token><token pos="vmn0000">dictar</token><token pos="da0fs0">la</token><token pos="ncfs000">incapacidad</token><token pos="aq0fs0">jurídica</token><token pos="sps00">de</token><token pos="pi0fp000">algunas</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="aq0fpp">afectadas</token><token pos="vmsp3p0">puedan</token><token pos="vmn0000">controlar</token><token pos="dp3cs0">su</token><token pos="ncfs000">alimentación</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="sps00">hasta</token><token pos="vmip3s0">hace</token><token pos="rg">poco</token><token pos="p0000000">se</token><token pos="vmii3s0">sufría</token><token pos="sps00">de</token><token pos="ncfs000">forma</token><token pos="aq0fs0">íntima</token><token pos="cc">y</token><token pos="sps00">sin</token><token pos="ncfp000">esperanzas</token><token pos="sps00">de</token><token pos="ncfs000">superación</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Misdeed" head="sin">
+				<argument type="Wrongdoer" dependent="esperanzas de"/></frame>
+			<frame type="Misdeed" head="sin">
+				<argument type="Wrongdoer" dependent="esperanzas de"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">intentan</token><token pos="vmn0000">curar</token><token pos="sps00">a</token><token pos="ncmp000">precios</token><token pos="aq0mp0">elevadísimos</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="pr0cp000">quienes</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3p0">son</token><token pos="da0fp0">las</token><token pos="aq0cp0">simples</token><token pos="ncfp000">víctimas</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">enfermedad</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Kinship" head="son">
+				<argument type="Ego" dependent="quienes"/>
+				<argument type="Ego" dependent="simples víctimas de la enfermedad"/></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

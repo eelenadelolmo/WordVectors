@@ -1,0 +1,22 @@
+1	el	_	El	_	NNP	0	_	_	_	_	_	_	_	O
+2	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+3	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+4	en	_	en	_	NN	0	_	_	_	_	_	_	_	O
+5	madrid	_	Madrid	_	NNP	0	_	_	_	_	_	_	_	O
+6	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+7	el	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+8	22	_	22	_	CD	0	_	_	_	_	_	_	_	O
+9	de	_	de	_	IN	0	_	_	_	_	_	_	_	O
+10	abril	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+11	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+12	cuando	_	UNK	_	VBP	0	_	_	_	_	_	_	_	O
+13	unk	_	UNK	_	-NONE-	0	_	_	_	_	_	_	_	O
+14	un	_	un	_	VBN	0	_	_	_	_	_	_	_	O
+15	coche	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+16	ante	_	ante	_	NN	0	_	_	_	_	_	ante.prep	Time_vector	O
+17	la	_	la	_	NN	0	_	_	_	_	_	_	_	B-Event
+18	sede	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Event
+19	de	_	de	_	IN	0	_	_	_	_	_	_	_	I-Event
+20	unk	_	UNK	_	JJ	0	_	_	_	_	_	_	_	I-Event
+21	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

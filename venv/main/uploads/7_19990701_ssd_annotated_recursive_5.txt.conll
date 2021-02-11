@@ -1,0 +1,22 @@
+1	sin	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+2	embargo	_	embargo	_	VBD	0	_	_	_	_	_	_	_	O
+3	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+4	en	_	en	_	VBN	0	_	_	_	_	_	_	_	O
+5	sevilla	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+6	el	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+7	pa	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+8	sigue	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+9	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+10	negociaciones	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+11	a	_	a	_	DT	0	_	_	_	_	_	_	_	O
+12	dos	_	do	_	NNS	0	_	_	_	_	_	do.v	Intentionally_act	B-Act
+13	bandas	_	UNK	_	VBZ	0	_	_	_	_	_	_	_	I-Act
+14	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+15	con	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+16	el	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+17	pp	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+18	y	_	y	_	NN	0	_	_	_	_	_	_	_	O
+19	el	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+20	psoe	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+21	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

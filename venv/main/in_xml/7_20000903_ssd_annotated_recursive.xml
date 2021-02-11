@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (theme, rheme, semantic_roles)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="7_20000903_ssd_annotated_recursive">
+
+
+	<sentence>
+		<theme>
+			<token pos="da0fs0">La</token><token pos="ncfs000">religiosa</token><token pos="sps00">por</token><token pos="pr0fs000">cuya</token><token pos="ncfs000">curación</token><token pos="vsif3s0">será</token><token pos="aq0ms0">beato</token><token pos="ncms000">Juan</token><token pos="np00000">XXIII</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">rehúye</token><token pos="da0fp0">las</token><token pos="ncfp000">apariciones</token><token pos="aq0fp0">públicas</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="np0000l">Caterina</token><token pos="np0000l">Capitani</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="rn">no</token><token pos="vsii3s0">era</token><token pos="di0fs0">una</token><token pos="ncfs000">devota</token><token pos="spcms">del</token><token pos="np00000">Papa</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">sanó</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="ncfs000">dolencia</token><token pos="aq0cs0">mortal</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Calendric_unit" head="era"></main_frame>
+			<frame type="Calendric_unit" head="era"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="pp3csd00">le</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">valido</token><token pos="sps00">a</token><token pos="ncms000">Juan</token><token pos="np00000">XXIII</token><token pos="da0fs0">la</token><token pos="ncfs000">proclamación</token><token pos="sps00">de</token><token pos="ncms000">beato</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="pi0ms000">uno</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="pr0cp000">cuales</token>
+		</theme>
+		<rheme>
+			<token pos="vaip3s0">ha</token><token pos="vsp00sm">sido</token><token pos="vmp00sm">relatado</token><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="ncms000">semanario</token><token pos="ncms000">Familia</token><token pos="aq0ms0">Cristiana</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="da0fs0">La</token><token pos="ncfs000">religiosa</token><token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">vive</token><token pos="sps00">en</token><token pos="np00000">Agrigento</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="ncmp000">años</token><token pos="zm">50</token><token pos="vmii3p0">trabajaban</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="ncmp000">hospitales</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="da0fs0">la</token><token pos="ncfs000">monja</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">vomitó</token><token pos="ncfs000">sangre</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="ncms000">hecho</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vmis3s0">repitió</token><token pos="sps00">al</token><token pos="ncfs000">cabo</token><token pos="sps00">de</token><token pos="dn0cp0">seis</token><token pos="ncmp000">meses</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="ncms000">doctor</token>
+		</theme>
+		<rheme>
+			<token pos="pp3csd00">le</token><token pos="vmis3s0">diagnosticó</token><token pos="di0fs0">una</token><token pos="aq0fs0">rara</token><token pos="ncfs000">patología</token><token pos="aq0cs0">incurable</token><token pos="cc">y</token><token pos="aq0cs0">mortal</token><token pos="fc">,</token><token pos="aq0fsp">llamada</token><token pos="ncms000">estómago</token><token pos="aq0ms0">rojo</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Medical_professionals" head="doctor"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="np00000">Capitani</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vmii3s0">sentía</token><token pos="ncfs000">devoción</token><token pos="sps00">por</token><token pos="ncms000">Juan</token><token pos="np00000">XXIII</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="dd0ms0">aquel</token><token pos="ncms000">señor</token><token pos="aq0ms0">anciano</token><token pos="fc">,</token><token pos="sps00">con</token><token pos="ncmp000">modales</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="aq0ms0">viejo</token><token pos="ncms000">padre</token>
+		</theme>
+		<rheme>
+			<token pos="fc">,</token><token pos="pp1cs000">me</token><token pos="vmis3s0">conquistó</token><token pos="fc">,</token><token pos="fe">&quot;</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="da0fs0">La</token><token pos="np00000">Iglesia</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">hace</token><token pos="sps00">en</token><token pos="vmn0000">proclamarlo</token><token pos="ncms000">santo</token><token pos="fc">,</token><token pos="fe">&quot;</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="da0fs0">la</token><token pos="ncfs000">hermana</token><token pos="np00000">Capitani</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">confiesa</token><token pos="cs">que</token><token pos="sps00">en</token><token pos="dp3cp0">sus</token><token pos="ncmp000">rezos</token><token pos="sps00">de</token><token pos="dd0mp0">aquellos</token><token pos="ncmp000">días</token><token pos="p0300000">se</token><token pos="vmis3s0">dirigió</token><token pos="sps00">a</token><token pos="di0ms0">otro</token><token pos="ncms000">abogado</token><token pos="aq0cs0">celestial</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="np0000o">Virgen</token><token pos="sps00">de</token><token pos="np0000l">Pompeya</token><token pos="fd">:</token><token pos="fe">&quot;</token><token pos="vsii3s0">Era</token><token pos="da0fs0">la</token><token pos="pi0fs000">misma</token><token pos="pr0cn000">que</token><token pos="vaii3s0">había</token><token pos="vmp00sm">invocado</token><token pos="dp1css">mi</token><token pos="ncfs000">madre</token><token pos="sps00">para</token><token pos="vmn0000">llevarme</token><token pos="spcms">al</token><token pos="ncms000">mundo</token><token pos="fc">,</token><token pos="rg">después</token><token pos="sps00">de</token><token pos="dn0cp0">dos</token><token pos="ncmp000">hermanos</token><token pos="cc">y</token><token pos="spcms">del</token><token pos="ncms000">parecer</token><token pos="aq0ms0">contrario</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">médicos</token><token pos="fe">&quot;</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Intentionally_act" head="dos">
+				<argument type="Act" dependent="hermanos"/></frame>
+			<frame type="Intentionally_act" head="dos">
+				<argument type="Act" dependent="hermanos"/></frame>
+			<frame type="Intentionally_act" head="dos">
+				<argument type="Act" dependent="hermanos"/></frame>
+			<frame type="Intentionally_act" head="dos">
+				<argument type="Act" dependent="hermanos"/></frame>
+			<frame type="Intentionally_act" head="dos">
+				<argument type="Act" dependent="hermanos"/></frame>
+			<frame type="Intentionally_act" head="dos">
+				<argument type="Act" dependent="hermanos"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="da0fs0">la</token><token pos="ncfs000">religiosa</token><token pos="di0fs0">otra</token><token pos="ncfs000">monja</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="ncfs000">hermana</token><token pos="np00000">Adele</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmii3s0">estaba</token><token pos="sps00">en</token><token pos="dp3cs0">su</token><token pos="ncms000">lecho</token><token pos="sps00">de</token><token pos="ncfs000">muerte</token><token pos="vmis3s0">empezó</token><token pos="sps00">a</token><token pos="vmn0000">encomendarla</token><token pos="spcms">al</token><token pos="ncms000">papa</token><token pos="aq0ms0">Bueno</token><token pos="fc">,</token><token pos="spcms">del</token><token pos="pr0cs000">cual</token><token pos="vsii3s0">era</token><token pos="rg">muy</token><token pos="aq0fs0">devota</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="era"></frame>
+			<frame type="Calendric_unit" head="era"></frame>
+			<frame type="Calendric_unit" head="era"></frame>
+			<main_frame type="Calendric_unit" head="era"></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="pp1csn00">Yo</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vmii3s0">pedía</token><token pos="di0ms0">un</token><token pos="ncms000">favor</token><token pos="aq0cs0">celestial</token><token pos="fc">,</token><token pos="di0ms0">un</token><token pos="ncms000">milagro</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Preference" head="favor">
+				<argument type="Contrast" dependent="un"/>
+				<argument type="Event" dependent="celestial, un milagro . Me preocupaba sólo de mis pecados y de mi poca fe & quot"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="da0fs0">la</token><token pos="ncfs000">imposición</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">imagen</token><token pos="spcms">del</token><token pos="np00000">Papa</token><token pos="sps00">sobre</token><token pos="dp3cs0">su</token><token pos="ncms000">cuerpo</token><token pos="cc">y</token><token pos="da0mp0">los</token><token pos="ncmp000">rezos</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3p0">provocaron</token><token pos="da0ms0">el</token><token pos="ncms000">milagro</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

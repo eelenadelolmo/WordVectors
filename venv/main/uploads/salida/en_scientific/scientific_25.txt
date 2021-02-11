@@ -1,1 +1,0 @@
-In the first stage , we used a panel of 266,722 SNPs , selected to tag known common variants across the entire genome18.

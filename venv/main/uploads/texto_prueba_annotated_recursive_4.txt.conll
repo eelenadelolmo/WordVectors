@@ -1,0 +1,13 @@
+1	las	_	Las	_	NNP	0	_	_	_	_	_	_	_	O
+2	unk	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+3	de	_	de	_	IN	0	_	_	_	_	_	_	_	O
+4	aumento	_	UNK	_	IN	0	_	_	_	_	_	_	_	O
+5	tienen	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+6	un	_	un	_	NN	0	_	_	_	_	_	un.n	People	S-Person
+7	efecto	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+8	beneficios	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+9	en	_	en	_	VBP	0	_	_	_	_	_	_	_	O
+10	la	_	la	_	NN	0	_	_	_	_	_	_	_	O
+11	unk	_	UNK	_	-NONE-	0	_	_	_	_	_	_	_	O
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

@@ -1,1 +1,0 @@
-We used 227,876 SNPs that were estimated to correlate with 77_% of known common SNPs in Europeans at r2 > 0.5.

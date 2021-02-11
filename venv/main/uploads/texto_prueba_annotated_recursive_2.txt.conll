@@ -1,0 +1,13 @@
+1	las	_	Las	_	NNP	0	_	_	_	_	_	_	_	S-Patient
+2	crisis	_	crisis	_	NN	0	_	_	_	_	_	crisis.n	Catastrophe	O
+3	unk	_	UNK	_	-NONE-	0	_	_	_	_	_	_	_	S-Undesirable_event
+4	siempre	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+5	se	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+6	deben	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+7	a	_	a	_	DT	0	_	_	_	_	_	_	_	O
+8	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+9	de	_	de	_	UNK	0	_	_	_	_	_	_	_	O
+10	unk	_	UNK	_	RB	0	_	_	_	_	_	_	_	O
+11	unk	_	UNK	_	-NONE-	0	_	_	_	_	_	_	_	O
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

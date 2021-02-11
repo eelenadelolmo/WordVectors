@@ -1,0 +1,19 @@
+1	pero	_	UNK	_	NNP	0	_	_	_	_	_	_	_	B-Descriptor
+2	aunque	_	UNK	_	VBP	0	_	_	_	_	_	_	_	I-Descriptor
+3	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	I-Descriptor
+4	sea	_	sea	_	NN	0	_	_	_	_	_	sea.n	Natural_features	S-Locale
+5	la	_	la	_	NN	0	_	_	_	_	_	_	_	O
+6	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+7	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+8	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+9	en	_	en	_	VBN	0	_	_	_	_	_	_	_	O
+10	la	_	la	_	NN	0	_	_	_	_	_	_	_	O
+11	unk	_	UNK	_	-NONE-	0	_	_	_	_	_	_	_	O
+12	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+13	europea	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+14	avanza	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+15	una	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+16	tesis	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+17	distinta	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+18	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

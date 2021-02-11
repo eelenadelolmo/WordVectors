@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (theme, rheme, semantic_roles)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #REQUIRED>
+        <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="8_20010502_ssd_annotated_recursive">
+
+
+	<concepts>
+		<concept id="c_0">El presidente de Cuba , Fidel Castro ,</concept>
+		<concept id="c_1">Castro</concept>
+		<concept id="c_2">cubanos</concept>
+	</concepts>
+
+	<sentence>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">presidente</token><token pos="sps00">de</token><token pos="np00000">Cuba</token><token pos="fc">,</token><token pos="np00000">Fidel</token><token pos="ncms000">Castro</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">desfiló</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Time_vector" head="ante">
+				<argument type="Landmark_event" dependent="la Oficina de Intereses de Estados" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme concept_ref="c_1">
+			<token pos="np00000">Castro</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_2">
+			<token pos="vmis3s0">pasó</token><token pos="aq0msp">acompañado</token><token pos="sps00">de</token><token pos="pn0cp000">miles</token><token pos="sps00">de</token><token pos="ncmp000">cubanos</token><token pos="sps00">sin</token><token pos="vmn0000">dejar</token><token pos="sps00">de</token><token pos="vmn0000">mirar</token><token pos="da0ms0">el</token><token pos="ncms000">edificio</token><token pos="aq0ms0">americano</token><token pos="cc">y</token><token pos="sps00">bajo</token><token pos="da0fp0">las</token><token pos="ncfp000">consignas</token><token pos="sps00">de</token><token pos="np00000">Cuba</token><token pos="rg">sí</token><token pos="fc">,</token><token pos="nccp000">yanquis</token><token pos="rn">no</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="ncmp000">actos</token><token pos="spcms">del</token><token pos="np0000a">Día</token><token pos="sps00">del</token><token pos="ncms000">Trabajo</token><token pos="fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Measure_linear_extent" head="miles">
+				<argument type="Count" dependent="de" />
+				<argument type="Stuff" dependent="de cubanos" /></frame>
+			<frame type="Measure_linear_extent" head="miles">
+				<argument type="Count" dependent="de" />
+				<argument type="Stuff" dependent="de cubanos" /></frame>
+			<frame type="Measure_linear_extent" head="miles">
+				<argument type="Count" dependent="de" />
+				<argument type="Stuff" dependent="de cubanos" /></frame>
+			<frame type="Misdeed" head="sin">
+				<argument type="Injured_party" dependent="miles de cubanos" />
+				<argument type="Misdeed" dependent="dejar de mirar el edificio americano y bajo las consignas de Cuba sí, yanquis no en los actos" /></frame>
+			<frame type="Misdeed" head="sin">
+				<argument type="Injured_party" dependent="miles de cubanos" />
+				<argument type="Misdeed" dependent="dejar de mirar el edificio americano y bajo las consignas de Cuba sí, yanquis no en los actos" /></frame>
+			<frame type="Misdeed" head="sin">
+				<argument type="Injured_party" dependent="miles de cubanos" />
+				<argument type="Misdeed" dependent="dejar de mirar el edificio americano y bajo las consignas de Cuba sí, yanquis no en los actos" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

@@ -1,1 +1,0 @@
-We computed 1 degree of freedom ( d . f . ) association tests for each SNP , combining stages 1 and 2.

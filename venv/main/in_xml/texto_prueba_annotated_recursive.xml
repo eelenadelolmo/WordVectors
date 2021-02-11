@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (theme, rheme, semantic_roles)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="texto_prueba_annotated_recursive">
+
+
+	<sentence>
+		<theme>
+			<token pos="DA0MS0">El</token><token pos="NCMS000">retroceso</token><token pos="SP">de</token><token pos="DA0FS0">la</token><token pos="NCFS000">economía</token>
+		</theme>
+		<rheme>
+			<token pos="VMIP3S0">augura</token><token pos="DI0FS0">una</token><token pos="AQ0CS00">grave</token><token pos="NCFN000">crisis</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="DA0FP0">Las</token><token pos="NCFN000">crisis</token><token pos="AQ0FP00">económicas</token>
+		</theme>
+		<rheme>
+			<token pos="RG">siempre</token><token pos="P00CN00">se</token><token pos="VMIP3P0">deben</token><token pos="SP">a</token><token pos="NCFP000">curvas</token><token pos="SP">de</token><token pos="NCMS000">receso</token><token pos="AQ0MS00">económico</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="DA0FS0">La</token><token pos="NCFS000">economía</token>
+		</theme>
+		<rheme>
+			<token pos="VMIP3S0">tiene</token><token pos="DP3CPN">sus</token><token pos="NCFP000">fases</token><token pos="SP">de</token><token pos="NCMS000">aumento</token><token pos="CC">y</token><token pos="NCFS000">recesión</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="DA0FP0">Las</token><token pos="NCFP000">fases</token><token pos="SP">de</token><token pos="NCMS000">aumento</token>
+		</theme>
+		<rheme>
+			<token pos="VMIP3P0">tienen</token><token pos="DI0MS0">un</token><token pos="NCMS000">efecto</token><token pos="NCMP000">beneficios</token><token pos="SP">en</token><token pos="DA0FS0">la</token><token pos="NCFS000">economía</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="DA0MP0">Los</token><token pos="NCMP000">empresarios</token>
+		</theme>
+		<rheme>
+			<token pos="VMIP3P0">prefieren</token><token pos="DA0FP0">las</token><token pos="NCFP000">épocas</token><token pos="SP">de</token><token pos="NCMS000">crecimiento</token><token pos="SP">a</token><token pos="DA0FP0">las</token><token pos="SP">de</token><token pos="NCFS000">recesión</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="DA0FP0">las</token><token pos="NCFP000">fases</token><token pos="SP">de</token><token pos="NCFS000">recesión</token>
+		</theme>
+		<rheme>
+			<token pos="VMIP3P0">presentan</token><token pos="AQ0FP00">numerosas</token><token pos="NCFP000">ventajas</token><token pos="AQ0FP00">indirectas</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="DA0FP0">Las</token><token pos="NCFP000">ventajas</token>
+		</theme>
+		<rheme>
+			<token pos="VSIP3P0">son</token><token pos="DA0FS0">la</token><token pos="NCFS000">mejora</token><token pos="SP">en</token><token pos="DA0FS0">la</token><token pos="NCFS000">capacidad</token><token pos="SP">de</token><token pos="NCFS000">resiliencia</token><token pos="CC">y</token><token pos="DA0MS0">el</token><token pos="NCMS000">aprendizaje</token><token pos="SP">de</token><token pos="DA0MP0">los</token><token pos="NCMP000">errores</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<theme>
+			<token pos="DA0MP0">Los</token><token pos="NCMP000">errores</token><token pos="AQ0MP00">problemáticos</token>
+		</theme>
+		<rheme>
+			<token pos="P00CN00">se</token><token pos="VMIP3P0">reducen</token><token pos="RG">inevitablemente</token><token pos="SP">después_de</token><token pos="DA0FP0">las</token><token pos="NCFN000">crisis</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

@@ -1,0 +1,27 @@
+1	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	B-Injured_party
+2	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Injured_party
+3	sentido	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Injured_party
+4	tiene	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Injured_party
+5	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Injured_party
+6	tan	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Injured_party
+7	dura	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Injured_party
+8	faena	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Injured_party
+9	con	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Injured_party
+10	tan	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Injured_party
+11	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	B-Manner
+12	beneficio	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Manner
+13	sin	_	sin	_	NN	0	_	_	_	_	_	sin.n	Misdeed	S-Misdeed
+14	el	_	UNK	_	NN	0	_	_	_	_	_	_	_	B-Wrongdoer
+15	consuelo	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Wrongdoer
+16	unk	_	UNK	_	-NONE-	0	_	_	_	_	_	_	_	I-Wrongdoer
+17	de	_	de	_	IN	0	_	_	_	_	_	_	_	I-Wrongdoer
+18	un	_	un	_	NN	0	_	_	_	_	_	_	_	I-Wrongdoer
+19	mar	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Wrongdoer
+20	libre	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Wrongdoer
+21	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+22	abierto	_	UNK	_	IN	0	_	_	_	_	_	_	_	O
+23	e	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+24	unk	_	UNK	_	JJ	0	_	_	_	_	_	_	_	O
+25	?	_	?	_	.	0	_	_	_	_	_	_	_	O
+26	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

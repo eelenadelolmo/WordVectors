@@ -1,1 +1,0 @@
-Calculamos 1 grado de libertad (d. F.) Pruebas de asociación para cada SNP, combinando las etapas 1 y 2.

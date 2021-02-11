@@ -1,1 +1,0 @@
-Comparison of the observed and expected distribution of test statistics showed some evidence for an inflation of the test statistics in both stage 1 ( inflation factor λ=1.03 , 95_% confidence interval ( CI ) 1.02 – 1.04 ) and stage 2 ( λ=1.06 , 95_% CI 1.04 – 1.12 ) , based on the 90_% least significant SNPs ( Fig . 1 ).

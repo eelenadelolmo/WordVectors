@@ -1,0 +1,22 @@
+1	mucha	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+2	gente	_	UNK	_	VBP	0	_	_	_	_	_	_	_	O
+3	quiere	_	UNK	_	RB	0	_	_	_	_	_	_	_	O
+4	seguir	_	UNK	_	JJ	0	_	_	_	_	_	_	_	O
+5	viviendo	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+6	como	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+7	cuando	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+8	los	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+9	unk	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+10	no	_	no	_	DT	0	_	_	_	_	_	_	_	O
+11	unk	_	UNK	_	JJ	0	_	_	_	_	_	_	_	O
+12	amos	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+13	y	_	y	_	VBP	0	_	_	_	_	_	_	_	O
+14	el	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+15	fruto	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+16	de	_	de	_	IN	0	_	_	_	_	_	_	_	O
+17	la	_	la	_	DT	0	_	_	_	_	_	_	_	O
+18	mar	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+19	era	_	era	_	NN	0	_	_	_	_	_	era.n	Calendric_unit	S-Unit
+20	infinito	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+21	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
