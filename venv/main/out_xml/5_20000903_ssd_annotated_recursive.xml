@@ -42,21 +42,24 @@
 		<concept id="c_0">La unificación italiana</concept>
 		<concept id="c_1">Los historiadores</concept>
 		<concept id="c_2">que</concept>
-		<concept id="c_3">Juan María Mastai Ferretti que</concept>
-		<concept id="c_4">Pío IX</concept>
-		<concept id="c_5">que</concept>
-		<concept id="c_6">o</concept>
-		<concept id="c_7">el papado</concept>
-		<concept id="c_11">el último grito</concept>
-		<concept id="c_12">progreso</concept>
-		<concept id="c_14">la mili</concept>
+		<concept id="c_3">una la libre discusión</concept>
+		<concept id="c_4">Juan María Mastai Ferretti que</concept>
+		<concept id="c_5">Pío IX</concept>
+		<concept id="c_6">Su carisma</concept>
+		<concept id="c_7">cuyos seguidores en Roma</concept>
+		<concept id="c_8">que</concept>
+		<concept id="c_9">o</concept>
+		<concept id="id_10">el papado</concept>
+		<concept id="id_11">el último grito</concept>
+		<concept id="id_12">progreso</concept>
+		<concept id="id_13">la mili</concept>
 	</concepts>
 
 	<sentence>
 		<theme concept_ref="c_0">
 			<token pos="da0fs0">La</token><token pos="ncfs000">unificación</token><token pos="aq0fs0">italiana</token>
 		</theme>
-		<rheme concept_ref1="c_3" concept_ref2="c_6" concept_ref3="c_7">
+		<rheme concept_ref1="c_4" concept_ref2="c_9" concept_ref3="id_10">
 			<token pos="vmis3s0">marcó</token><token pos="da0ms0">el</token><token pos="ncms000">papado</token><token pos="sps00">de</token><token pos="np0000l">Mastai</token><token pos="np0000l">Ferretti</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -68,7 +71,7 @@
 		<theme concept_ref="c_1">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">historiadores</token>
 		</theme>
-		<rheme concept_ref1="c_4" concept_ref2="c_6">
+		<rheme concept_ref1="c_5" concept_ref2="c_9">
 			<token pos="vmip3p0">consideran</token><token pos="sps00">a</token><token pos="np0000l">Pío</token><token pos="np0000l">IX</token><token pos="cs">como</token><token pos="di0ms0">un</token><token pos="np00000">Papa</token><token pos="aq0cs0">popular</token><token pos="cc">y</token><token pos="aq0msp">controvertido</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -82,7 +85,7 @@
 		<theme concept_ref="c_2">
 			<token pos="pr0cn000">que</token>
 		</theme>
-		<rheme concept_ref1="c_6" concept_ref2="c_11" concept_ref3="c_12">
+		<rheme concept_ref1="c_9" concept_ref2="id_11" concept_ref3="id_12">
 			<token pos="vsii3s0">era</token><token pos="da0ms0">el</token><token pos="ao0ms0">último</token><token pos="ncms000">grito</token><token pos="spcms">del</token><token pos="ncms000">progreso</token>
 		</rheme>
 		<semantic_roles>
@@ -95,10 +98,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme concept_ref="c_3">
 			<token pos="pi0fs000">una</token><token pos="da0fs0">la</token><token pos="aq0cs0">libre</token><token pos="ncfs000">discusión</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_5" concept_ref3="c_6" concept_ref4="c_11" concept_ref5="c_14">
+		<rheme concept_ref1="c_7" concept_ref2="c_8" concept_ref3="c_9" concept_ref4="id_11" concept_ref5="id_13">
 			<token pos="vmip3s0">dice</token><token pos="cs">que</token><token pos="sps00">por</token><token pos="ncms000">derecho</token><token pos="aq0cs0">natural</token><token pos="da0ms0">el</token><token pos="ncms000">clero</token><token pos="rn">no</token><token pos="vmip3s0">debe</token><token pos="vmn0000">hacer</token><token pos="da0fs0">la</token><token pos="ncfs000">mili</token><token pos="vmip3s0">corrompe</token><token pos="da0ms0">el</token><token pos="ncfs000">alma</token>
 		</rheme>
 		<semantic_roles>
@@ -107,10 +110,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_3">
+		<theme concept_ref="c_4">
 			<token pos="ncms000">Juan</token><token pos="np0000o">María</token><token pos="ncms000">Mastai</token><token pos="np0000a">Ferretti</token><token pos="pr0cn000">que</token>
 		</theme>
-		<rheme concept_ref1="c_3" concept_ref2="c_6" concept_ref3="c_14">
+		<rheme concept_ref1="c_4" concept_ref2="c_9" concept_ref3="id_13">
 			<token pos="vaii3s0">había</token><token pos="vmp00sm">nacido</token><token pos="sps00">en</token><token pos="np00000">Senigallia</token><token pos="da0ms0">el</token><token pos="ncmp000">año</token><token pos="zm">1792</token><token pos="vmis3p0">contribuyeron</token><token pos="sps00">a</token><token pos="vmn0000">darle</token><token pos="di0ms0">un</token><token pos="ncms000">carácter</token><token pos="aq0msp">retraído</token>
 		</rheme>
 		<semantic_roles>
@@ -127,10 +130,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_4">
+		<theme concept_ref="c_5">
 			<token pos="np0000l">Pío</token><token pos="np0000l">IX</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_6" concept_ref4="c_7" concept_ref5="c_11" concept_ref6="c_12">
+		<rheme concept_ref1="c_7" concept_ref2="c_3" concept_ref3="c_6" concept_ref4="c_9" concept_ref5="id_10" concept_ref6="id_11" concept_ref7="id_12">
 			<token pos="vmis3s0">empezó</token><token pos="dp3cs0">su</token><token pos="ncms000">pontificado</token><token pos="sps00">con</token><token pos="aq0cp0">grandes</token><token pos="ncmp000">proyectos</token><token pos="sps00">para</token><token pos="vmn0000">reformar</token><token pos="da0ms0">el</token><token pos="ncms000">clero</token><token pos="fc">,</token><token pos="vmn0000">poner</token><token pos="ncfs000">orden</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">diplomacia</token><token pos="aq0fs0">vaticana</token><token pos="cc">y</token><token pos="vmn0000">potenciar</token><token pos="da0fp0">las</token><token pos="ncfp000">misiones</token><token pos="aq0fp0">católicas</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -139,10 +142,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme concept_ref="c_6">
 			<token pos="dp3cs0">Su</token><token pos="ncms000">carisma</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_6">
+		<rheme concept_ref1="c_6" concept_ref2="c_9">
 			<token pos="pp3csd00">le</token><token pos="vmis3s0">dio</token><token pos="di0fs0">mucha</token><token pos="ncfs000">popularidad</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -163,10 +166,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_4">
+		<theme concept_ref="c_5">
 			<token pos="np0000l">Pío</token><token pos="np0000l">IX</token>
 		</theme>
-		<rheme concept_ref1="c_6">
+		<rheme concept_ref1="c_9">
 			<token pos="vmis3s0">reaccionó</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -175,10 +178,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme concept_ref="c_7">
 			<token pos="pr0mp000">cuyos</token><token pos="ncmp000">seguidores</token><token pos="sps00">en</token><token pos="np00000">Roma</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_6" concept_ref3="c_12">
+		<rheme concept_ref1="c_7" concept_ref2="c_9" concept_ref3="id_12">
 			<token pos="vmii3p0">seguían</token><token pos="vmg0000">viviendo</token><token pos="sps00">en</token><token pos="ncmp000">guetos</token>
 		</rheme>
 		<semantic_roles>
@@ -187,10 +190,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_4">
+		<theme concept_ref="c_5">
 			<token pos="np0000l">Pío</token><token pos="np0000l">IX</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_3" concept_ref3="c_5" concept_ref4="c_6" concept_ref5="c_7" concept_ref6="c_12">
+		<rheme concept_ref1="c_0" concept_ref2="c_4" concept_ref3="c_8" concept_ref4="c_9" concept_ref5="id_10" concept_ref6="id_12">
 			<token pos="vmis3s0">proclamó</token><token pos="da0ms0">el</token><token pos="ncms000">dogma</token><token pos="fpa">(</token><token pos="ncfs000">verdad</token><token pos="aq0cs0">indiscutible</token><token pos="fpt">)</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np0000l">Inmaculada</token><token pos="np0000l">Concepción</token><token pos="fc">,</token><token pos="cc">o</token><token pos="vsis3s0">sea</token><token pos="cs">que</token><token pos="da0fs0">la</token><token pos="ncms000">virgen</token><token pos="np00000">María</token><token pos="vaic3s0">habría</token><token pos="vmp00sm">nacido</token><token pos="sps00">sin</token><token pos="ncms000">pecado</token><token pos="aq0cs0">original</token><token pos="fc">,</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>

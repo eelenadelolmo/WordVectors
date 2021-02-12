@@ -41,6 +41,7 @@
 	<concepts>
 		<concept id="c_0">Jaime de Marichalar y su hijo Froilán</concept>
 		<concept id="c_1">La explosión</concept>
+		<concept id="c_2">Marichalar</concept>
 	</concepts>
 
 	<sentence>
@@ -68,7 +69,7 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme concept_ref="c_2">
 			<token pos="np00000">Marichalar</token>
 		</theme>
 		<rheme>

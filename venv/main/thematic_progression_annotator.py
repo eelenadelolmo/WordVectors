@@ -553,7 +553,7 @@ for file_xml in os.listdir(input_dir):
         pretty(rhemes_ranking, indent=1)
 
         # Critical value for the weighted semantic similarity to consider two themes corefer to the same underlying concept
-        threshold_themes = 1.6
+        threshold_themes = 2.6
 
         # List of identifiers for coreference sets
         # ids_coref = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z".split()
@@ -712,17 +712,36 @@ for file_xml in os.listdir(input_dir):
                         coreferent_concepts_rheme.append(r_c)
 
 
-        # Keeping only coreferente sets with at least two mentions
+        # Keeping only coreference sets with at least two mentions
         rheme_id_repeated = list()
+
+        # First id of the rhematic coreference sets, updated in order to maintain subsequent id numbers
+        id_old = int(rheme_id[0][1].split('_')[1])
+
+        # Dictionary to update other reapeated ids
+        to_add = dict()
+
         for n, x in enumerate(rheme_id):
+
+            # If the rheme has already been included in the list of repeated rhemes
+            if x[1] in [ya for ya in to_add]:
+                rheme_id_repeated.append((x[0], to_add[x[1]]))
+                continue
+
+            # Creating the list of ids of the other rhematic coreference sets
             rheme_id_copy = rheme_id[:]
             rheme_id_copy.pop(n)
             coref_sets_others = [elem[1] for elem in rheme_id_copy]
+
+            # If the rhematic coreference set is repeated
             if x[1] in coref_sets_others:
-                rheme_id_repeated.append((x))
+                rheme_id_repeated.append((x[0], 'id_' + str(id_old)))
+                to_add[x[1]] = 'id_' + str(id_old)
+                id_old += 1
 
 
         print("Rhematic coreference analyzed (noun phrases)", rheme_id_repeated)
+
 
 
 
@@ -895,8 +914,7 @@ for file_xml in os.listdir(input_dir):
 
 
 
-# Pending: precedence of comparisons
-# Pending: rename ids_c
+# Pending: precedence of comparisonsç
 
 ## Generating HTML output
 

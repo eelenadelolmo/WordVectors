@@ -41,7 +41,9 @@
 	<concepts>
 		<concept id="c_0">nadie</concept>
 		<concept id="c_1">Los medios audiovisuales de entretenimiento</concept>
-		<concept id="c_7">la racionalidad</concept>
+		<concept id="c_2">los informativos , responsables de testimoniar esa realidad ,</concept>
+		<concept id="c_3">al menos los telediarios</concept>
+		<concept id="id_4">la racionalidad</concept>
 	</concepts>
 
 	<sentence>
@@ -60,7 +62,7 @@
 		<theme concept_ref="c_1">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">medios</token><token pos="aq0cp0">audiovisuales</token><token pos="sps00">de</token><token pos="ncms000">entretenimiento</token>
 		</theme>
-		<rheme concept_ref1="c_1">
+		<rheme concept_ref1="c_1" concept_ref2="c_2">
 			<token pos="p0300000">se</token><token pos="vmip3p0">esfuerzan</token><token pos="sps00">en</token><token pos="vmn0000">aportar</token><token pos="rg">tanto</token><token pos="ncms000">verismo</token><token pos="sps00">a</token><token pos="dp3cp0">sus</token><token pos="ncfp000">producciones</token><token pos="cs">como</token><token pos="da0fs0">la</token><token pos="di0fs0">propia</token><token pos="ncfs000">realidad</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -69,7 +71,7 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme concept_ref="c_2">
 			<token pos="da0mp0">los</token><token pos="ncmp000">informativos</token><token pos="fc">,</token><token pos="aq0cp0">responsables</token><token pos="sps00">de</token><token pos="vmn0000">testimoniar</token><token pos="dd0fs0">esa</token><token pos="ncfs000">realidad</token><token pos="fc">,</token>
 		</theme>
 		<rheme concept_ref1="c_1">
@@ -105,10 +107,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme concept_ref="c_3">
 			<token pos="sps00">al</token><token pos="rg">menos</token><token pos="da0mp0">los</token><token pos="ncmp000">telediarios</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_7">
+		<rheme concept_ref1="c_2" concept_ref2="c_0" concept_ref3="id_4">
 			<token pos="vmic3p0">deberían</token><token pos="vmn0000">salvaguardar</token><token pos="da0fs0">la</token><token pos="ncfs000">racionalidad</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">ética</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="ncfs000">información</token><token pos="aq0fs0">desapasionada</token><token pos="fc">,</token><token pos="rg">más</token><token pos="rg">allá</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">ratios</token><token pos="sps00">de</token><token pos="ncfs000">audiencia</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>

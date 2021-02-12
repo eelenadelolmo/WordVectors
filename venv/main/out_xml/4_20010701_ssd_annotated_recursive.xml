@@ -42,15 +42,17 @@
 		<concept id="c_0">John de Mol</concept>
 		<concept id="c_1">Joop</concept>
 		<concept id="c_2">Endemol , que en 1999 facturó casi 73.000 millones de pesetas , Telefónica</concept>
-		<concept id="c_7">un programa</concept>
-		<concept id="c_9">el interés</concept>
+		<concept id="c_3">De Mol</concept>
+		<concept id="c_4">250 millones de personas en todo el mundo</concept>
+		<concept id="id_5">un programa</concept>
+		<concept id="id_6">el interés</concept>
 	</concepts>
 
 	<sentence>
 		<theme concept_ref="c_0">
 			<token pos="np0000o">John</token><token pos="sps00">de</token><token pos="np0000l">Mol</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_7">
+		<rheme concept_ref1="c_4" concept_ref2="c_2" concept_ref3="id_5">
 			<token pos="vmis3s0">empezó</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">mundo</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">televisión</token><token pos="aq0fs0">holandesa</token><token pos="cs">como</token><token pos="nccs000">ayudante</token><token pos="sps00">de</token><token pos="ncfs000">producción</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">programa</token><token pos="aq0ms0">deportivo</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -76,7 +78,7 @@
 		<theme concept_ref="c_2">
 			<token pos="np00000">Endemol</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="sps00">en</token><token pos="z">1999</token><token pos="vmis3s0">facturó</token><token pos="rg">casi</token><token pos="z">73.000</token><token pos="ncmp000">millones</token><token pos="sps00">de</token><token pos="zm">pesetas</token><token pos="fc">,</token><token pos="np00000">Telefónica</token>
 		</theme>
-		<rheme concept_ref1="c_9">
+		<rheme concept_ref1="id_6">
 			<token pos="vmis3s0">despertó</token><token pos="da0ms0">el</token><token pos="ncms000">interés</token><token pos="aq0cs0">mundial</token><token pos="vmis3s0">decidió</token><token pos="vmn0000">comprarla</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="z">2000</token>
 		</rheme>
 		<semantic_roles>
@@ -85,10 +87,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme concept_ref="c_3">
 			<token pos="sps00">De</token><token pos="np00000">Mol</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_9">
+		<rheme concept_ref1="c_4" concept_ref2="id_6">
 			<token pos="vmis3s0">ganó</token><token pos="z">261.000</token><token pos="ncmp000">millones</token>
 		</rheme>
 		<semantic_roles>
@@ -98,10 +100,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme concept_ref="c_4">
 			<token pos="z">250</token><token pos="ncmp000">millones</token><token pos="sps00">de</token><token pos="ncfp000">personas</token><token pos="sps00">en</token><token pos="di0ms0">todo</token><token pos="da0ms0">el</token><token pos="ncms000">mundo</token>
 		</theme>
-		<rheme concept_ref1="c_7">
+		<rheme concept_ref1="id_5">
 			<token pos="vmip3p0">ven</token><token pos="dp3cp0">sus</token><token pos="ncmp000">programas</token>
 		</rheme>
 		<semantic_roles>

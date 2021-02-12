@@ -43,6 +43,8 @@
 		<concept id="c_1">Adán</concept>
 		<concept id="c_2">que</concept>
 		<concept id="c_3">Esto</concept>
+		<concept id="c_4">Todos los ciudadanos</concept>
+		<concept id="c_5">todos</concept>
 	</concepts>
 
 	<sentence>
@@ -137,7 +139,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">trabajadores</token><token pos="aq0mpp">organizados</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_3">
+		<rheme concept_ref1="c_0" concept_ref2="c_5" concept_ref3="c_4">
 			<token pos="pp3fsa00">la</token><token pos="vaip3p0">han</token><token pos="vmp00sm">conquistado</token><token pos="sps00">a</token><token pos="da0ms0">lo</token><token pos="aq0cs0">largo</token><token pos="spcms">de</token><token pos="di0mp0">muchos</token><token pos="ncmp000">años</token><token pos="sps00">de</token><token pos="ncfs000">lucha</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -197,7 +199,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="ncms000">trabajo</token>
 		</theme>
-		<rheme concept_ref1="c_3" concept_ref2="c_0">
+		<rheme concept_ref1="c_5" concept_ref2="c_0">
 			<token pos="fc">,</token><token pos="sps00">en</token><token pos="ao0ms0">primer</token><token pos="ncms000">lugar</token><token pos="fc">,</token><token pos="pp1cp000">nos</token><token pos="vmip3s0">permite</token><token pos="vmn0000">ganar</token><token pos="da0ms0">el</token><token pos="ncms000">sustento</token><token pos="aq0ms0">diario</token><token pos="sps00">sin</token><token pos="vmn0000">tener</token><token pos="cs">que</token><token pos="vmn0000">luchar</token><token pos="sps00">contra</token><token pos="da0mp0">los</token><token pos="ncmp000">elementos</token><token pos="aq0cp0">naturales</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -237,7 +239,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="ncms000">trabajo</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_3">
+		<rheme concept_ref1="c_0" concept_ref2="c_5">
 			<token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="nccs000">base</token><token pos="sps00">de</token><token pos="rg">casi</token><token pos="di0ms0">todo</token><token pos="da0ns0">lo</token><token pos="pr0cn000">que</token><token pos="vmip3s0">necesita</token><token pos="di0ms0">un</token><token pos="ncms000">ser</token><token pos="aq0ms0">humano</token><token pos="rg">hoy</token><token pos="sps00">para</token><token pos="vsn0000">ser</token><token pos="di0fs0">una</token><token pos="ncfs000">persona</token><token pos="aq0fsp">equilibrada</token><token pos="fc">,</token><token pos="aq0fs0">segura</token><token pos="sps00">de</token><token pos="pp3cno00">sí</token><token pos="aq0fs0">misma</token><token pos="fc">,</token><token pos="sps00">para</token><token pos="vmn0000">disfrutar</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">vida</token><token pos="cc">y</token><token pos="vsn0000">ser</token><token pos="aq0cs0">feliz</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -269,7 +271,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0ms0">el</token><token pos="ncms000">trabajo</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_3">
+		<rheme concept_ref1="c_0" concept_ref2="c_5" concept_ref3="c_4">
 			<token pos="p0300000">se</token><token pos="vmip3s0">convierte</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="ncms000">derecho</token><token pos="sps00">de</token><token pos="di0mp0">todos</token><token pos="da0mp0">los</token><token pos="ncmp000">ciudadanos</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vmip3s0">está</token><token pos="aq0msp">reconocido</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">ley</token><token pos="aq0cs0">fundamental</token><token pos="fg">-</token><token pos="fg">-</token><token pos="da0fs0">la</token><token pos="np00000">Constitución</token><token pos="fg">-</token><token pos="fg">-</token><token pos="sps00">de</token><token pos="di0mp0">muchos</token><token pos="ncmp000">estados</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -350,10 +352,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme concept_ref="c_4">
 			<token pos="di0mp0">Todos</token><token pos="da0mp0">los</token><token pos="ncmp000">ciudadanos</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_3">
+		<rheme concept_ref1="c_0" concept_ref2="c_5" concept_ref3="c_3">
 			<token pos="vmip1p0">estamos</token><token pos="sps00">a</token><token pos="ncfs000">favor</token><token pos="sps00">de</token><token pos="cs">que</token><token pos="p0000000">se</token><token pos="vmsp3p0">persigan</token><token pos="da0mp0">los</token><token pos="ncmp000">abusos</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -366,7 +368,7 @@
 
 
 	<sentence>
-		<theme concept_ref="c_3">
+		<theme concept_ref="c_5">
 			<token pos="pi0mp000">todos</token>
 		</theme>
 		<rheme concept_ref1="c_0" concept_ref2="c_3">
@@ -381,7 +383,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0ms0">el</token><token pos="np00000">Gobierno</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_3">
+		<rheme concept_ref1="c_0" concept_ref2="c_5" concept_ref3="c_3">
 			<token pos="aq0mpp">puestos</token><token pos="sps00">a</token><token pos="vmn0000">perseguir</token><token pos="ncmp000">abusos</token><token pos="vmic3s0">debería</token><token pos="vmn0000">comenzar</token><token pos="sps00">por</token><token pos="da0mp0">los</token><token pos="ncmp000">abusos</token><token pos="sps00">de</token><token pos="di0mp0">todos</token><token pos="dd0mp0">aquellos</token><token pos="pr0cn000">que</token><token pos="rn">no</token><token pos="vmip3p0">pagan</token><token pos="ncmp000">impuestos</token><token pos="cc">y</token><token pos="vmip3p0">tienen</token><token pos="dp3cs0">su</token><token pos="ncfs000">capital</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">extranjero</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -423,7 +425,7 @@
 		<theme concept_ref="c_0">
 			<token pos="da0ms0">el</token><token pos="np00000">Gobierno</token><token pos="spcms">del</token><token pos="np00000">PP</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_3">
+		<rheme concept_ref1="c_0" concept_ref2="c_5">
 			<token pos="p0300000">se</token><token pos="vmip3s0">muestra</token><token pos="aq0cs0">fuerte</token><token pos="sps00">con</token><token pos="da0mp0">los</token><token pos="aq0cp0">débiles</token><token pos="cc">y</token><token pos="aq0cs0">débil</token><token pos="sps00">con</token><token pos="da0mp0">los</token><token pos="aq0cp0">fuertes</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vsip3s0">es</token><token pos="da0ms0">el</token><token pos="ncms000">colmo</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">corrupción</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">hipocresía</token><token pos="spcms">del</token><token pos="ncms000">poder</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>

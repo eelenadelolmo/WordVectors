@@ -43,8 +43,8 @@
 		<concept id="c_1">BBVA y BSCH</concept>
 		<concept id="c_2">el BBVA</concept>
 		<concept id="c_3">Ambas adquisiciones</concept>
-		<concept id="c_7">sus estructuras</concept>
-		<concept id="c_9">la región</concept>
+		<concept id="id_4">sus estructuras</concept>
+		<concept id="id_5">la región</concept>
 	</concepts>
 
 	<sentence>
@@ -63,7 +63,7 @@
 		<theme concept_ref="c_1">
 			<token pos="np00000">BBVA</token><token pos="cc">y</token><token pos="np00000">BSCH</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_7" concept_ref3="c_9">
+		<rheme concept_ref1="c_0" concept_ref2="id_4" concept_ref3="id_5">
 			<token pos="vaip3p0">han</token><token pos="vmp00sm">integrado</token><token pos="sps00">en</token><token pos="dp3cp0">sus</token><token pos="ncfp000">estructuras</token><token pos="ncmp000">bancos</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">región</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -75,7 +75,7 @@
 		<theme concept_ref="c_2">
 			<token pos="da0ms0">el</token><token pos="np00000">BBVA</token>
 		</theme>
-		<rheme concept_ref1="c_9">
+		<rheme concept_ref1="id_5">
 			<token pos="sps00">En</token><token pos="np00000">México</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">incorporado</token><token pos="np00000">Bancomer</token><token pos="fc">,</token>
 		</rheme>
 		<semantic_roles>
@@ -87,7 +87,7 @@
 		<theme concept_ref="c_3">
 			<token pos="dn0fp0">Ambas</token><token pos="ncfp000">adquisiciones</token>
 		</theme>
-		<rheme concept_ref1="c_7">
+		<rheme concept_ref1="id_4">
 			<token pos="vmis3p0">tuvieron</token><token pos="di0ms0">un</token><token pos="ncms000">coste</token><token pos="aq0msp">elevado</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>

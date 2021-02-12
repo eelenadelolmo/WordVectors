@@ -41,17 +41,26 @@
 	<concepts>
 		<concept id="c_0">que</concept>
 		<concept id="c_1">El seguro las primas</concept>
-		<concept id="c_2">una</concept>
-		<concept id="c_3">las primas son</concept>
-		<concept id="c_6">carácter</concept>
-		<concept id="c_16">se</concept>
+		<concept id="c_2">la respuesta de un potencial cliente</concept>
+		<concept id="c_3">la decisión de un asegurador de rechazar el aseguramiento de determinados riesgos</concept>
+		<concept id="c_4">no todo el sector</concept>
+		<concept id="c_5">El caso que nos ocupa</concept>
+		<concept id="c_6">El incremento alarmante en el número de siniestros en algunos colectivos</concept>
+		<concept id="c_7">la única forma de hacer posible una conducción masiva y a precio razonable</concept>
+		<concept id="c_8">uno quien nadie</concept>
+		<concept id="c_9">las ventas el ciclomotor que</concept>
+		<concept id="c_10">qué joven</concept>
+		<concept id="c_11">una</concept>
+		<concept id="c_12">las primas son</concept>
+		<concept id="id_13">carácter</concept>
+		<concept id="id_14">se</concept>
 	</concepts>
 
 	<sentence>
 		<theme concept_ref="c_0">
 			<token pos="pr0cn000">que</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_16">
+		<rheme concept_ref1="c_1" concept_ref2="id_14">
 			<token pos="vmip3p0">circulan</token><token pos="sps00">sin</token><token pos="da0ms0">el</token><token pos="ncms000">seguro</token><token pos="sps00">de</token><token pos="ncfs000">responsabilidad</token><token pos="aq0cs0">civil</token><token pos="aq0ms0">obligatorio</token>
 		</rheme>
 		<semantic_roles>
@@ -66,7 +75,7 @@
 		<theme concept_ref="c_1">
 			<token pos="da0ms0">El</token><token pos="ncms000">seguro</token><token pos="da0fp0">las</token><token pos="ncfp000">primas</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_6" concept_ref3="c_16">
+		<rheme concept_ref1="c_9" concept_ref2="c_6" concept_ref3="c_10" concept_ref4="id_13" concept_ref5="id_14">
 			<token pos="vmip3s0">tiene</token><token pos="ncms000">carácter</token><token pos="aq0cs0">causal</token><token pos="cc">y</token><token pos="aq0cs0">mutual</token><token pos="vsip3p0">son</token><token pos="ncfs000">consecuencia</token><token pos="sps00">de</token><token pos="vmn0000">distribuir</token><token pos="sps00">entre</token><token pos="di0mp0">todos</token><token pos="da0mp0">los</token><token pos="ncmp000">conductores</token><token pos="da0ms0">el</token><token pos="ncms000">importe</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">siniestralidad</token><token pos="pr0cn000">que</token><token pos="vmip3p0">generan</token><token pos="pr0cp000">quienes</token><token pos="vmip3p0">tienen</token><token pos="ncmp000">siniestros</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -85,10 +94,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme concept_ref="c_2">
 			<token pos="da0fs0">la</token><token pos="ncfs000">respuesta</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="aq0cs0">potencial</token><token pos="nccs000">cliente</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_16">
+		<rheme concept_ref1="c_1" concept_ref2="id_14">
 			<token pos="vsip3s0">es</token><token pos="da0ms0">el</token><token pos="rg">No</token><token pos="ncms000">aseguramiento</token>
 		</rheme>
 		<semantic_roles>
@@ -97,10 +106,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme concept_ref="c_3">
 			<token pos="da0fs0">la</token><token pos="ncfs000">decisión</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">asegurador</token><token pos="sps00">de</token><token pos="vmn0000">rechazar</token><token pos="da0ms0">el</token><token pos="ncms000">aseguramiento</token><token pos="sps00">de</token><token pos="aq0mpp">determinados</token><token pos="ncmp000">riesgos</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_16">
+		<rheme concept_ref1="c_2" concept_ref2="id_14">
 			<token pos="vsip3s0">es</token><token pos="di0fs0">una</token><token pos="ncfs000">potestad</token><token pos="pr0cn000">que</token><token pos="vmip3s0">puede</token><token pos="vmn0000">elegir</token><token pos="rg">libremente</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -109,10 +118,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme concept_ref="c_4">
 			<token pos="rn">no</token><token pos="di0ms0">todo</token><token pos="da0ms0">el</token><token pos="ncms000">sector</token>
 		</theme>
-		<rheme concept_ref1="c_1">
+		<rheme concept_ref1="c_9">
 			<token pos="vmip3s0">rechaza</token><token pos="aq0mpp">determinados</token><token pos="ncmp000">vehículos</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -122,10 +131,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme concept_ref="c_5">
 			<token pos="da0ms0">El</token><token pos="ncms000">caso</token><token pos="pr0cn000">que</token><token pos="pp1cp000">nos</token><token pos="vmip3s0">ocupa</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_16">
+		<rheme concept_ref1="c_9" concept_ref2="id_14">
 			<token pos="p0000000">se</token><token pos="vmip3s0">centra</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="aq0mpp">denominados</token><token pos="ncmp000">ciclomotores</token>
 		</rheme>
 		<semantic_roles>
@@ -134,10 +143,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme concept_ref="c_6">
 			<token pos="da0ms0">El</token><token pos="ncms000">incremento</token><token pos="aq0cs0">alarmante</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">número</token><token pos="sps00">de</token><token pos="ncmp000">siniestros</token><token pos="sps00">en</token><token pos="di0mp0">algunos</token><token pos="ncmp000">colectivos</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_16">
+		<rheme concept_ref1="c_9" concept_ref2="c_1" concept_ref3="id_14">
 			<token pos="vaip3s0">ha</token><token pos="vmp00sm">provocado</token><token pos="da0ms0">el</token><token pos="ncms000">aumento</token><token pos="sps00">de</token><token pos="ncfp000">primas</token><token pos="sps00">de</token><token pos="di0mp0">todos</token><token pos="da0mp0">los</token><token pos="aq0mpp">asegurados</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -146,10 +155,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme concept_ref="c_7">
 			<token pos="da0fs0">la</token><token pos="aq0fs0">única</token><token pos="ncfs000">forma</token><token pos="sps00">de</token><token pos="vmn0000">hacer</token><token pos="aq0cs0">posible</token><token pos="di0fs0">una</token><token pos="ncfs000">conducción</token><token pos="aq0fs0">masiva</token><token pos="cc">y</token><token pos="sps00">a</token><token pos="ncms000">precio</token><token pos="aq0cs0">razonable</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_16">
+		<rheme concept_ref1="c_9" concept_ref2="id_14">
 			<token pos="vsip3s0">es</token><token pos="vmn0000">colocar</token><token pos="da0fs0">la</token><token pos="ncfs000">siniestralidad</token><token pos="sps00">en</token><token pos="ncmp000">límites</token><token pos="aq0cp0">razonables</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -242,10 +251,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme concept_ref="c_8">
 			<token pos="pi0ms000">uno</token><token pos="pr0cs000">quien</token><token pos="pi0cs000">nadie</token>
 		</theme>
-		<rheme concept_ref1="c_16">
+		<rheme concept_ref1="id_14">
 			<token pos="pp30sa00">le</token><token pos="vmsp3s0">asegure</token><token pos="pp3cn000">se</token><token pos="vmsp3s0">engañe</token>
 		</rheme>
 		<semantic_roles>
@@ -254,10 +263,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme concept_ref="c_9">
 			<token pos="da0fp0">las</token><token pos="ncfp000">ventas</token><token pos="da0ms0">el</token><token pos="ncms000">ciclomotor</token><token pos="pr0cn000">que</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_6" concept_ref3="c_16">
+		<rheme concept_ref1="c_9" concept_ref2="c_4" concept_ref3="id_13" concept_ref4="id_14">
 			<token pos="vsip3s0">es</token><token pos="da0ms0">el</token><token pos="aq0ms0">auténtico</token><token pos="ncms000">motor</token><token pos="spcms">del</token><token pos="ncms000">sector</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="dn0cp0">dos</token><token pos="ncfp000">ruedas</token><token pos="vmip3p0">fabrican</token><token pos="ncfp000">motos</token><token pos="sps00">de</token><token pos="z">50</token><token pos="ncmp000">cc</token>
 		</rheme>
 		<semantic_roles>
@@ -276,10 +285,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme concept_ref="c_10">
 			<token pos="de0cn0">qué</token><token pos="nccs000">joven</token>
 		</theme>
-		<rheme concept_ref1="c_16">
+		<rheme concept_ref1="id_14">
 			<token pos="vsip3s0">es</token><token pos="aq0cs0">capaz</token><token pos="sps00">de</token><token pos="vmn0000">pagar</token><token pos="rg">casi</token><token pos="z">100.000</token><token pos="zm">pesetas</token><token pos="sps00">de</token><token pos="ncms000">seguro</token><token pos="fit">?</token>
 		</rheme>
 		<semantic_roles>
@@ -288,10 +297,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_2">
+		<theme concept_ref="c_11">
 			<token pos="pi0fs000">una</token>
 		</theme>
-		<rheme concept_ref1="c_16">
+		<rheme concept_ref1="id_14">
 			<token pos="p0300000">se</token><token pos="vmsp3s0">atreva</token>
 		</rheme>
 		<semantic_roles>

@@ -42,6 +42,7 @@
 		<concept id="c_0">ETA</concept>
 		<concept id="c_1">un coche bomba</concept>
 		<concept id="c_2">El atentado más sangriento</concept>
+		<concept id="c_3">El último atentado en Madrid</concept>
 	</concepts>
 
 	<sentence>
@@ -93,7 +94,7 @@
 
 
 	<sentence>
-		<theme concept_ref="c_2">
+		<theme concept_ref="c_3">
 			<token pos="da0ms0">El</token><token pos="ao0ms0">último</token><token pos="ncms000">atentado</token><token pos="sps00">en</token><token pos="np00000">Madrid</token>
 		</theme>
 		<rheme concept_ref1="c_1">

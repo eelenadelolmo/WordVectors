@@ -41,7 +41,7 @@
 	<concepts>
 		<concept id="c_0">El presidente de Cuba , Fidel Castro ,</concept>
 		<concept id="c_1">Castro</concept>
-		<concept id="c_2">cubanos</concept>
+		<concept id="id_2">cubanos</concept>
 	</concepts>
 
 	<sentence>
@@ -62,7 +62,7 @@
 		<theme concept_ref="c_1">
 			<token pos="np00000">Castro</token>
 		</theme>
-		<rheme concept_ref1="c_1" concept_ref2="c_2">
+		<rheme concept_ref1="c_1" concept_ref2="id_2">
 			<token pos="vmis3s0">pasó</token><token pos="aq0msp">acompañado</token><token pos="sps00">de</token><token pos="pn0cp000">miles</token><token pos="sps00">de</token><token pos="ncmp000">cubanos</token><token pos="sps00">sin</token><token pos="vmn0000">dejar</token><token pos="sps00">de</token><token pos="vmn0000">mirar</token><token pos="da0ms0">el</token><token pos="ncms000">edificio</token><token pos="aq0ms0">americano</token><token pos="cc">y</token><token pos="sps00">bajo</token><token pos="da0fp0">las</token><token pos="ncfp000">consignas</token><token pos="sps00">de</token><token pos="np00000">Cuba</token><token pos="rg">sí</token><token pos="fc">,</token><token pos="nccp000">yanquis</token><token pos="rn">no</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="ncmp000">actos</token><token pos="spcms">del</token><token pos="np0000a">Día</token><token pos="sps00">del</token><token pos="ncms000">Trabajo</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>

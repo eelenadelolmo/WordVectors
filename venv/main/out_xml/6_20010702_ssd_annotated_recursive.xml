@@ -40,17 +40,19 @@
 
 	<concepts>
 		<concept id="c_0">las últimas semanas</concept>
-		<concept id="c_1">que</concept>
-		<concept id="c_2">Maragall</concept>
-		<concept id="c_3">Ebro</concept>
-		<concept id="c_4">Catalunya</concept>
+		<concept id="c_1">La peste porcina , los incendios o el malestar por la aprobación del trasvase del Ebro</concept>
+		<concept id="c_2">los últimos días</concept>
+		<concept id="c_3">que</concept>
+		<concept id="c_4">Maragall</concept>
+		<concept id="c_5">Ebro</concept>
+		<concept id="id_6">Catalunya</concept>
 	</concepts>
 
 	<sentence>
 		<theme concept_ref="c_0">
 			<token pos="da0fp0">las</token><token pos="ao0fp0">últimas</token><token pos="ncfp000">semanas</token>
 		</theme>
-		<rheme concept_ref1="c_4">
+		<rheme concept_ref1="id_6">
 			<token pos="rn">no</token><token pos="vasp3p0">hayan</token><token pos="vsp00sm">sido</token><token pos="rg">muy</token><token pos="aq0fp0">buenas</token><token pos="sps00">para</token><token pos="np00000">Catalunya</token>
 		</rheme>
 		<semantic_roles>
@@ -61,10 +63,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme concept_ref="c_1">
 			<token pos="da0fs0">La</token><token pos="ncfs000">peste</token><token pos="aq0fs0">porcina</token><token pos="fc">,</token><token pos="da0mp0">los</token><token pos="ncmp000">incendios</token><token pos="cc">o</token><token pos="da0ms0">el</token><token pos="ncms000">malestar</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">aprobación</token><token pos="spcms">del</token><token pos="ncms000">trasvase</token><token pos="spcms">del</token><token pos="np00000">Ebro</token>
 		</theme>
-		<rheme concept_ref1="c_0">
+		<rheme concept_ref1="c_1" concept_ref2="c_0">
 			<token pos="vsip3p0">son</token><token pos="ncmp000">problemas</token><token pos="aq0cp0">graves</token><token pos="pr0cn000">que</token><token pos="da0ms0">el</token><token pos="np00000">Govern</token><token pos="vmip3s0">tiene</token><token pos="rg">ahora</token><token pos="aq0ms0">mismo</token><token pos="rg">encima</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">mesa</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -77,10 +79,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme concept_ref="c_2">
 			<token pos="da0mp0">los</token><token pos="ao0mp0">últimos</token><token pos="ncmp000">días</token>
 		</theme>
-		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_4">
+		<rheme concept_ref1="c_1" concept_ref2="c_4" concept_ref3="id_6">
 			<token pos="rn">no</token><token pos="vaip3p0">han</token><token pos="vsp00sm">sido</token><token pos="rg">especialmente</token><token pos="aq0cp0">brillantes</token><token pos="sps00">para</token><token pos="da0ms0">el</token><token pos="aq0cs0">principal</token><token pos="nccs000">líder</token><token pos="sps00">de</token><token pos="dd0fs0">esa</token><token pos="ncfs000">oposición</token><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="nccs000">socialista</token><token pos="np0000l">Pasqual</token><token pos="np0000l">Maragall</token>
 		</rheme>
 		<semantic_roles>
@@ -103,7 +105,7 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme concept_ref="c_3">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>
@@ -115,10 +117,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_2">
+		<theme concept_ref="c_4">
 			<token pos="np00000">Maragall</token>
 		</theme>
-		<rheme concept_ref1="c_0">
+		<rheme concept_ref1="c_0" concept_ref2="c_1">
 			<token pos="vmip3s0">fía</token><token pos="di0fp0">demasiadas</token><token pos="ncfp000">cartas</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="aq0cs0">evidente</token><token pos="ncfs000">brillantez</token>
 		</rheme>
 		<semantic_roles>
@@ -127,7 +129,7 @@
 
 
 	<sentence>
-		<theme concept_ref="c_1">
+		<theme concept_ref="c_3">
 			<token pos="pr0cn000">que</token>
 		</theme>
 		<rheme>

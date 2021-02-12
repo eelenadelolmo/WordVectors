@@ -40,6 +40,8 @@
 
 	<concepts>
 		<concept id="c_0">Una nueva borrasca la mejoría del tiempo generalizado de ayer en la mayor parte del país</concept>
+		<concept id="c_1">La situación en las carreteras y las montañas</concept>
+		<concept id="c_2">La entrada del nuevo frente atlántico , que conlleva fuertes vientos y lluvias abundantes , que que</concept>
 	</concepts>
 
 	<sentence>
@@ -64,10 +66,10 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme concept_ref="c_1">
 			<token pos="da0fs0">La</token><token pos="ncfs000">situación</token><token pos="sps00">en</token><token pos="da0fp0">las</token><token pos="ncfp000">carreteras</token><token pos="cc">y</token><token pos="da0fp0">las</token><token pos="ncfp000">montañas</token>
 		</theme>
-		<rheme concept_ref1="c_0">
+		<rheme concept_ref1="c_1">
 			<token pos="p0300000">se</token><token pos="vmis3s0">normalizó</token><token pos="sps00">en</token><token pos="di0fp0">todas</token><token pos="da0fp0">las</token><token pos="ncfp000">autonomías</token><token pos="aq0fpp">afectadas</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
@@ -76,7 +78,7 @@
 
 
 	<sentence>
-		<theme concept_ref="c_0">
+		<theme concept_ref="c_2">
 			<token pos="da0fs0">La</token><token pos="ncfs000">entrada</token><token pos="spcms">del</token><token pos="aq0ms0">nuevo</token><token pos="ncms000">frente</token><token pos="aq0ms0">atlántico</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vmip3s0">conlleva</token><token pos="aq0cp0">fuertes</token><token pos="ncmp000">vientos</token><token pos="cc">y</token><token pos="ncfp000">lluvias</token><token pos="aq0cp0">abundantes</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="pr0cn000">que</token>
 		</theme>
 		<rheme concept_ref1="c_0">
