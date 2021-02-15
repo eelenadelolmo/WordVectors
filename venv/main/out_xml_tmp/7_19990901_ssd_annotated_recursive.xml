@@ -203,7 +203,7 @@
 		</theme>
 		<rheme concept_ref1="c_4" concept_ref2="c_2" concept_ref3="c_7" concept_ref4="c_9">
 			<token pos="vmif3s0">apoyará</token><token pos="da0mp0">los</token><token pos="ncfs000">Presupuestos</token><token pos="sps00">del</token><token pos="np00000">Estado</token><token pos="sps00">sin</token><token pos="vmn0000">condicionar</token><token pos="dp3cs0">su</token><token pos="ncms000">voto</token><token pos="sps00">a</token><token pos="di0fs0">una</token><token pos="ncfs000">mejora</token><token pos="aq0cs0">real</token><token pos="sps00">para</token><token pos="da0mp0">los</token><token pos="nccp000">pensionistas</token><token pos="fg">-</token><token pos="fg">-</token>
-		<to_annotate>[[(123, 260), 'los Presupuestos del Estado', 'c_4'], [(421, 487), 'una mejora', 'c_2'], [(123, 622), 'los pensionistas', 'c_7'], [(123, 622), 'los pensionistas', 'c_9']]</to_annotate></rheme>
+		<to_annotate>[[(123, 260), 'los Presupuestos del Estado', 'c_4'], [(421, 487), 'una mejora', 'c_2'], [(550, 622), 'los pensionistas', 'c_7'], [(550, 622), 'los pensionistas', 'c_9']]</to_annotate></rheme>
 		<semantic_roles>
 			<frame type="Misdeed" head="sin" />
 			<frame type="Misdeed" head="sin" />

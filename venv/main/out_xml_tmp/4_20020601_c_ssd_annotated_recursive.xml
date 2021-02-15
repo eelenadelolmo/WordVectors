@@ -207,7 +207,7 @@
 		</theme>
 		<rheme concept_ref1="c_7" concept_ref2="c_3" concept_ref3="c_6">
 			<token pos="vmip3s0">tiene</token><token pos="da0fs0">la</token><token pos="ncfs000">obligación</token><token pos="sps00">de</token><token pos="vmn0000">renunciar</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">lengua</token><token pos="aq0fs0">propia</token><token pos="vmic3s0">debería</token><token pos="vmn0000">sentir</token><token pos="da0fs0">la</token><token pos="ncfs000">necesidad</token><token pos="sps00">de</token><token pos="vmn0000">conocer</token><token pos="da0fp0">las</token><token pos="ncfp000">lenguas</token><token pos="pr0cn000">que</token><token pos="pp3csd00">le</token><token pos="vmip3p0">rodean</token>
-		<to_annotate>[['se', 'c_7'], [(102, 171), 'la obligación', 'c_3'], [(102, 504), 'la necesidad', 'c_6']]</to_annotate></rheme>
+		<to_annotate>[['se', 'c_7'], [(102, 171), 'la obligación', 'c_3'], [(436, 504), 'la necesidad', 'c_6']]</to_annotate></rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>

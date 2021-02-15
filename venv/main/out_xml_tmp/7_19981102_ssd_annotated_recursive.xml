@@ -65,7 +65,7 @@
 		</theme>
 		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_1" concept_ref4="c_3" concept_ref5="c_4">
 			<token pos="vmip3s0">menciona</token><token pos="sps00">a</token><token pos="np0000l">Monica</token><token pos="np0000l">Lewinsky</token><token pos="cc">o</token><token pos="da0fs0">la</token><token pos="ncfs000">posibilidad</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">impeachment</token><token pos="spcms">del</token><token pos="ncms000">presidente</token><token pos="ncms000">Bill</token><token pos="np00000">Clinton</token><token pos="vmis3s0">intentó</token><token pos="vmn0000">encubrir</token><token pos="dp3cs0">su</token><token pos="ncfs000">aventura</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="ncfs000">becaria</token>
-		<to_annotate>[[(171, 243), 'Monica Lewinsky', 'c_0'], [(268, 338), 'la posibilidad', 'c_2'], [(648, 715), 'su aventura', 'c_1'], [(467, 506), 'presidente', 'c_3'], [(268, 811), 'la becaria', 'c_4']]</to_annotate></rheme>
+		<to_annotate>[[(171, 243), 'Monica Lewinsky', 'c_0'], [(268, 338), 'la posibilidad', 'c_2'], [(648, 715), 'su aventura', 'c_1'], [(467, 506), 'presidente', 'c_3'], [(745, 811), 'la becaria', 'c_4']]</to_annotate></rheme>
 		<semantic_roles>
 			<frame type="Actually_occurring_entity" head="actual">
 				<argument type="Type" dependent="de" /></frame>
@@ -83,7 +83,7 @@
 		</theme>
 		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_2" concept_ref4="c_3" concept_ref5="c_5">
 			<token pos="vmis3s0">impulsó</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="aq0mp0">republicanos</token><token pos="sps00">a</token><token pos="rn">no</token><token pos="vmn0000">rozar</token><token pos="da0ms0">el</token><token pos="ncms000">caso</token><token pos="np00000">Lewinsky</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">campaña</token><token pos="aq0cs0">electoral</token><token pos="sps00">hasta</token><token pos="rg">apenas</token><token pos="di0fs0">una</token><token pos="ncfs000">semana</token><token pos="rg">antes</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">comicios</token><token pos="fc">,</token><token pos="cs">cuando</token><token pos="vmis3p0">lanzaron</token><token pos="dp3cs0">su</token><token pos="ao0fs0">última</token><token pos="ncfs000">andanada</token><token pos="sps00">contra</token><token pos="da0mp0">los</token><token pos="nccp000">demócratas</token><token pos="sps00">con</token><token pos="di0fs0">una</token><token pos="ncfs000">serie</token><token pos="sps00">de</token><token pos="ncmp000">anuncios</token><token pos="aq0mp0">televisivos</token><token pos="aq0mpp">apoyados</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">escándalo</token><token pos="aq0cs0">sexual</token><token pos="fp">.</token>
-		<to_annotate>[[(170, 241), 'los republicanos', 'c_0'], [(329, 392), 'el caso', 'c_1'], [(170, 1111), 'los demócratas', 'c_2'], [(623, 1206), 'una serie', 'c_3'], [(623, 689), 'una semana', 'c_5']]</to_annotate></rheme>
+		<to_annotate>[[(170, 241), 'los republicanos', 'c_0'], [(329, 392), 'el caso', 'c_1'], [(1041, 1111), 'los demócratas', 'c_2'], [(1141, 1206), 'una serie', 'c_3'], [(623, 689), 'una semana', 'c_5']]</to_annotate></rheme>
 		<semantic_roles>
 			<frame type="Time_vector" head="antes" />
 			<frame type="Time_vector" head="antes" />

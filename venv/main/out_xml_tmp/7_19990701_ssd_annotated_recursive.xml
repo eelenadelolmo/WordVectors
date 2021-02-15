@@ -59,7 +59,7 @@
 		</theme>
 		<rheme concept_ref1="c_6" concept_ref2="c_1" concept_ref3="c_7" concept_ref4="c_8" concept_ref5="c_9">
 			<token pos="vmis3p0">denunciaron</token><token pos="cs">que</token><token pos="da0ms0">el</token><token pos="ncms000">Grupo</token><token pos="np0000o">Independiente</token><token pos="ncms000">Liberal</token><token pos="fpa">(</token><token pos="np00000">GIL</token><token pos="fpt">)</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">ofrecido</token><token pos="fe">"</token><token pos="ncfp000">cantidades</token><token pos="aq0fp0">millonarias</token><token pos="fe">"</token><token pos="sps00">a</token><token pos="di0mp0">varios</token><token pos="ncmp000">ediles</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">oposición</token><token pos="sps00">para</token><token pos="cs">que</token><token pos="rn">no</token><token pos="vmsp3p0">propicien</token><token pos="da0ms0">el</token><token pos="ncms000">pacto</token><token pos="ncms000">anti-Gil</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vmic3s0">haría</token><token pos="vmn0000">perder</token><token pos="da0fs0">la</token><token pos="ncfs000">alcaldía</token><token pos="sps00">de</token><token pos="np00000">Estepona</token><token pos="fpa">(</token><token pos="np00000">Málaga</token><token pos="fpt">)</token><token pos="sps00">a</token><token pos="ncfs000">Jesús</token><token pos="ncms000">Gil</token><token pos="np00000">Marín</token><token pos="fc">,</token><token pos="ncms000">hijo</token><token pos="spcms">del</token><token pos="aq0ms0">polémico</token><token pos="ncms000">alcalde</token><token pos="sps00">de</token><token pos="np00000">Marbella</token><token pos="fp">.</token>
-		<to_annotate>[[(173, 315), 'el Grupo Independiente Liberal', 'c_6'], [(492, 531), 'cantidades', 'c_1'], [(721, 789), 'la oposición', 'c_7'], [(721, 1206), 'la alcaldía', 'c_8'], [(1387, 1487), 'Jesús Gil Marín', 'c_9']]</to_annotate></rheme>
+		<to_annotate>[[(173, 315), 'el Grupo Independiente Liberal', 'c_6'], [(492, 531), 'cantidades', 'c_1'], [(721, 789), 'la oposición', 'c_7'], [(1139, 1206), 'la alcaldía', 'c_8'], [(1387, 1487), 'Jesús Gil Marín', 'c_9']]</to_annotate></rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
@@ -107,7 +107,7 @@
 		</theme>
 		<rheme concept_ref1="c_2" concept_ref2="c_4" concept_ref3="c_0" concept_ref4="c_7" concept_ref5="c_11">
 			<token pos="vmip3s0">sigue</token><token pos="vmg0000">manteniendo</token><token pos="ncfp000">negociaciones</token><token pos="sps00">a</token><token pos="dn0cp0">dos</token><token pos="ncfp000">bandas</token><token pos="fc">,</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="np00000">PP</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="np00000">PSOE</token><token pos="fp">.</token>
-		<to_annotate>[[(181, 223), 'negociaciones', 'c_2'], [(372, 433), 'el PP', 'c_4'], [(372, 521), 'el PSOE', 'c_0'], [(181, 223), 'negociaciones', 'c_7'], [(282, 317), 'bandas', 'c_11']]</to_annotate></rheme>
+		<to_annotate>[[(181, 223), 'negociaciones', 'c_2'], [(372, 433), 'el PP', 'c_4'], [(458, 521), 'el PSOE', 'c_0'], [(181, 223), 'negociaciones', 'c_7'], [(282, 317), 'bandas', 'c_11']]</to_annotate></rheme>
 		<semantic_roles>
 			<frame type="Intentionally_act" head="dos">
 				<argument type="Act" dependent="dos bandas" /></frame>

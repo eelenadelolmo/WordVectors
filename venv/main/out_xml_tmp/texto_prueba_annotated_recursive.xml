@@ -8,7 +8,7 @@
             <!ATTLIST concept id ID #REQUIRED>
     <!ELEMENT sentence (theme, rheme, semantic_roles)>
         <!ELEMENT theme (token*)>
-            <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ATTLIST theme concept_ref IDREF #REQUIRED>
         <!ELEMENT rheme (token*)>
             <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
             <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>

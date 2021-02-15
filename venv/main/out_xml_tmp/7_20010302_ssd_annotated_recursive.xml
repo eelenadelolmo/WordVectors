@@ -70,7 +70,7 @@
 		</theme>
 		<rheme concept_ref1="c_2" concept_ref2="c_4" concept_ref3="c_6" concept_ref4="c_7" concept_ref5="c_8">
 			<token pos="vaip3s0">ha</token><token pos="vmp00sm">sumado</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="ncfs000">contabilidad</token><token pos="da0fs0">la</token><token pos="ncfs000">venta</token><token pos="sps00">en</token><token pos="ncfs000">bolsa</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="nccs000">filial</token><token pos="sps00">de</token><token pos="ncmp000">móviles</token><token pos="fp">.</token>
-		<to_annotate>[[(200, 271), 'su contabilidad', 'c_2'], [(271, 335), 'la venta', 'c_4'], [(364, 398), 'bolsa', 'c_6'], [(271, 492), 'la filial', 'c_7'], [(521, 557), 'móviles', 'c_8']]</to_annotate></rheme>
+		<to_annotate>[[(200, 271), 'su contabilidad', 'c_2'], [(271, 335), 'la venta', 'c_4'], [(364, 398), 'bolsa', 'c_6'], [(427, 492), 'la filial', 'c_7'], [(521, 557), 'móviles', 'c_8']]</to_annotate></rheme>
 		<semantic_roles>
 			<frame type="Kinship" head="filial">
 				<argument type="Ego" dependent="de" /></frame>

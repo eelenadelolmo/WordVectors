@@ -195,7 +195,7 @@
 		</theme>
 		<rheme concept_ref1="c_11" concept_ref2="c_4" concept_ref3="c_3" concept_ref4="c_1" concept_ref5="c_13" concept_ref6="c_14" concept_ref7="c_15" concept_ref8="c_17">
 			<token pos="p0300000">se</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">nutrido</token><token pos="sps00">de</token><token pos="ncfs000">población</token><token pos="aq0fsp">inmigrada</token><token pos="aq0fsp">llegada</token><token pos="sps00">de</token><token pos="dn0fs0">media</token><token pos="np00000">Europa</token><token pos="fc">,</token><token pos="sps00">entre</token><token pos="da0fs0">la</token><token pos="pr0cn000">que</token><token pos="da0fs0">la</token><token pos="ncfs000">gallega</token><token pos="vmip3s0">demuestra</token><token pos="vsn0000">ser</token><token pos="da0fs0">la</token><token pos="pr0cn000">que</token><token pos="vmip3s0">vive</token><token pos="rg">más</token><token pos="ncmp000">años</token><token pos="fp">.</token>
-		<to_annotate>[[(168, 200), 'se', 'c_11'], [(882, 915), 'años', 'c_4'], [(296, 334), 'población', 'c_3'], [(560, 689), 'la gallega', 'c_1'], [(168, 200), 'se', 'c_13'], [(882, 915), 'años', 'c_14'], [(296, 334), 'población', 'c_15'], [(560, 689), 'la gallega', 'c_17']]</to_annotate></rheme>
+		<to_annotate>[[(168, 200), 'se', 'c_11'], [(882, 915), 'años', 'c_4'], [(296, 334), 'población', 'c_3'], [(623, 689), 'la gallega', 'c_1'], [(168, 200), 'se', 'c_13'], [(882, 915), 'años', 'c_14'], [(296, 334), 'población', 'c_15'], [(623, 689), 'la gallega', 'c_17']]</to_annotate></rheme>
 		<semantic_roles>
 			<frame type="Relational_political_locales" head="capital">
 				<argument type="Container_possessor" dependent="la" /></frame>

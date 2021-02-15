@@ -77,7 +77,7 @@
 		</theme>
 		<rheme concept_ref1="c_4" concept_ref2="c_1" concept_ref3="c_5">
 			<token pos="vmip3s0">permite</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="np00000">Administración</token><token pos="vmn0000">enviar</token><token pos="da0fs0">la</token><token pos="ncfs000">sanción</token><token pos="sps00">a</token><token pos="ncfs000">casa</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="ncfs000">fotografía</token><token pos="fp">.</token>
-		<to_annotate>[[(132, 306), 'la sanción', 'c_4'], [(132, 205), 'la Administración', 'c_1'], [(132, 466), 'la fotografía', 'c_5']]</to_annotate></rheme>
+		<to_annotate>[[(240, 306), 'la sanción', 'c_4'], [(132, 205), 'la Administración', 'c_1'], [(397, 466), 'la fotografía', 'c_5']]</to_annotate></rheme>
 		<semantic_roles>
 			<frame type="Actually_occurring_entity" head="actual">
 				<argument type="Type" dependent="Pero la" />

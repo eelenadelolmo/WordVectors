@@ -791,14 +791,14 @@ for file_xml in os.listdir(input_dir):
 
                     for e in rheme_id_all:
                         if e[0] in rheme_xml.strip() and e[1] not in id_added_rheme:
-                            regex = '</token><token pos=".+?">'.join(e[0].strip().split())
+                            regex = '</token><token pos="[^>]+?">'.join(e[0].strip().split())
                             regex = '<token pos="[^>]+?">' + regex + '</token>'
                             encontrados_start_end.append([(m.start(0), m.end(0)) for m in re.finditer(regex, ET.tostring(child, encoding="unicode"), re.DOTALL)])
                             encontrados_start_end[-1].append(e[0])
                             encontrados_start_end[-1].append(e[1])
-                            # print("CACAAAA1", regex)
-                            # print("CACAAAA2", ET.tostring(child, encoding="unicode"))
-                            # print("CACAAAA3", encontrados_start_end[-1])
+                            # print(regex)
+                            # print(ET.tostring(child, encoding="unicode"))
+                            # print(encontrados_start_end[-1])
                             id_added_rheme.append(e[1])
 
                     new_tag = ET.Element('to_annotate')
@@ -905,6 +905,8 @@ for file_xml in os.listdir(input_dir):
             out.write(html.unescape(xml_new))
 
 
+
+
 # Pending: comment these lines (executing separatedly by now)ç
 import os
 import re
@@ -987,12 +989,12 @@ for f in os.listdir(output_dir_tmp):
 
                     prin = tup[0][0] + extra_len
                     fin = tup[0][1] + extra_len
-                    start_tag = '<mention concept_ref="' + tup[2] + '">'
-                    end_tag = '</mention>'
-                    extra_len = extra_len + len(start_tag + end_tag)
 
                     # Avoiding overlapping
-                    if '<m' not in rheme_str[prin:fin] and rheme_str[fin-1] != '<':
+                    if '<m' not in rheme_str[prin:fin] and '</m' not in rheme_str[prin:fin] and rheme_str[fin-1] != '<':
+                        start_tag = '<mention concept_ref="' + tup[2] + '">'
+                        end_tag = '</mention>'
+                        extra_len = extra_len + len(start_tag + end_tag)
                         rheme_str = rheme_str[:prin] + start_tag + rheme_str[prin:fin] + end_tag + rheme_str[fin:]
 
             xml_nue += rheme_str
@@ -1121,6 +1123,9 @@ for file_xml in os.listdir(output_dir):
     <head>
         <meta charset="UTF-8" />
         <title>Analysis of the theme/rheme coreferences in text</title>
+        <style>
+            span {white-space:nowrap}
+        </style>
     </head>
 
     <body>
@@ -1139,7 +1144,7 @@ for file_xml in os.listdir(output_dir):
         for concepts in root.iter('concepts'):
             for concept in concepts:
                 ids_colors[concept.attrib['id']] = colors[n_concept % 140]
-                html += '<p style="color:#' + colors[n_concept % 140] + ';">' + concept.text.strip() + '</p>'
+                html += '<p style="color:#' + colors[n_concept % 140] + ';">' + concept.text.strip() + ' (' + concept.attrib['id'] + ')</p>'
                 n_concept += 1
 
         html += '''
@@ -1167,23 +1172,45 @@ for file_xml in os.listdir(output_dir):
                     for token in child:
                         theme += token.text.strip() + ' '
 
+
+
                 elif child.tag == 'rheme':
 
+                    for grandson in child:
+                        if grandson.tag == 'token':
+                            rheme += grandson.text.strip() + ' '
+                        if grandson.tag == 'mention':
+                            rheme_id_str += grandson.attrib['concept_ref'] + ','
+                            rheme_color = ids_colors[grandson.attrib['concept_ref']]
+                            rheme += '<span style="white-space:nowrap;color:#' + rheme_color + ';">' + '['
+                            for grand_grandson in grandson:
+                                rheme += grand_grandson.text.strip() + ' '
+                            rheme = rheme[:-1]
+                            rheme += ']' + grandson.attrib['concept_ref'] + ' </span>'
+                    if len(rheme_id_str) > 1:
+                        rheme_id_str = rheme_id_str[:-1]
+
+                    # Colouring the full rheme in the same colour
+                    """
                     if 'concept_ref1' in child.attrib and child.attrib['concept_ref1'] in ids_colors:
                         rheme_color = ids_colors[child.attrib['concept_ref1']]
                         rheme_id_str = child.attrib['concept_ref1']
 
                     for token in child:
                         rheme += token.text.strip() + ' '
+                    """
                 if child.tag == 'semantic_roles':
                     for frame in child:
                         if frame.tag == 'main_frame':
                             for arg in frame:
                                 rheme_sem_role.append(arg.attrib['dependent'])
 
-            html += '<p> [ ' + theme_id_str + ' / ' + rheme_id_str + ' ] <span style="color:#' + theme_color + ';">' + theme + '</span> ////<br/> <span style="color:#' + rheme_color + ';">' + rheme + '</p>'
-    html += '''    </body>
-</html>'''
+
+            html += '<p> [ ' + theme_id_str + ' / ' + rheme_id_str + ' ] <span style="white-space:nowrap;color:#' + theme_color + ';">' + theme + '</span> ////<br/>' + '<nobr>' + rheme + '</nobr>'
+
+            # Colouring the full rheme in the same colour
+            # html += '<p> [ ' + theme_id_str + ' / ' + rheme_id_str + ' ] <span style="white-space:nowrap;color:#' + theme_color + ';">' + theme + '</span> ////<br/> <span style="color:#' + rheme_color + ';">' + rheme + '</span></p>'
+    html += '\t</body>\n</html>'
 
     with open(output_dir_html + '/' + file_xml.split('.')[0] + '.html', 'w') as file_html:
         file_html.write(html)

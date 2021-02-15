@@ -195,7 +195,7 @@
 		</theme>
 		<rheme concept_ref1="c_0" concept_ref2="c_4" concept_ref3="c_8" concept_ref4="c_9" concept_ref5="c_10" concept_ref6="c_12">
 			<token pos="vmis3s0">proclamó</token><token pos="da0ms0">el</token><token pos="ncms000">dogma</token><token pos="fpa">(</token><token pos="ncfs000">verdad</token><token pos="aq0cs0">indiscutible</token><token pos="fpt">)</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np0000l">Inmaculada</token><token pos="np0000l">Concepción</token><token pos="fc">,</token><token pos="cc">o</token><token pos="vsis3s0">sea</token><token pos="cs">que</token><token pos="da0fs0">la</token><token pos="ncms000">virgen</token><token pos="np00000">María</token><token pos="vaic3s0">habría</token><token pos="vmp00sm">nacido</token><token pos="sps00">sin</token><token pos="ncms000">pecado</token><token pos="aq0cs0">original</token><token pos="fc">,</token><token pos="fp">.</token>
-		<to_annotate>[[(384, 492), 'la Inmaculada Concepción', 'c_0'], [(384, 700), 'la virgen María', 'c_4'], [(574, 601), 'que', 'c_8'], [(517, 542), 'o', 'c_9'], [(164, 228), 'el dogma', 'c_10'], [(254, 289), 'verdad', 'c_12']]</to_annotate></rheme>
+		<to_annotate>[[(384, 492), 'la Inmaculada Concepción', 'c_0'], [(601, 700), 'la virgen María', 'c_4'], [(574, 601), 'que', 'c_8'], [(517, 542), 'o', 'c_9'], [(164, 228), 'el dogma', 'c_10'], [(254, 289), 'verdad', 'c_12']]</to_annotate></rheme>
 		<semantic_roles>
 			<frame type="Misdeed" head="sin">
 				<argument type="Manner" dependent="la virgen" />

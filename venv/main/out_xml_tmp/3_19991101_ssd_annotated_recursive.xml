@@ -103,7 +103,7 @@
 		</theme>
 		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_7" concept_ref4="c_8" concept_ref5="c_9" concept_ref6="c_10">
 			<token pos="vmis3s0">ocurrió</token><token pos="sps00">en</token><token pos="z">1976</token><token pos="fc">,</token><token pos="pr000000">cuando</token><token pos="di0ms0">un</token><token pos="ncms000">avión</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">aerolínea</token><token pos="p0300000">se</token><token pos="vmis3s0">estrelló</token><token pos="sps00">durante</token><token pos="da0fs0">la</token><token pos="ncfs000">maniobra</token><token pos="sps00">de</token><token pos="ncms000">aterrizaje</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">aeropuerto</token><token pos="sps00">de</token><token pos="np00000">Bangkok</token><token pos="fpa">(</token><token pos="np00000">Tailandia</token><token pos="fpt">)</token><token pos="cc">y</token><token pos="vmis3p0">fallecieron</token><token pos="z">72</token><token pos="ncfp000">personas</token><token pos="fp">.</token>
-		<to_annotate>[[(372, 440), 'la aerolínea', 'c_0'], [(372, 610), 'la maniobra', 'c_1'], [(707, 776), 'el aeropuerto', 'c_7'], [(372, 440), 'la aerolínea', 'c_8'], [(639, 678), 'aterrizaje', 'c_9'], [(279, 343), 'un avión', 'c_10']]</to_annotate></rheme>
+		<to_annotate>[[(372, 440), 'la aerolínea', 'c_0'], [(543, 610), 'la maniobra', 'c_1'], [(707, 776), 'el aeropuerto', 'c_7'], [(372, 440), 'la aerolínea', 'c_8'], [(639, 678), 'aterrizaje', 'c_9'], [(279, 343), 'un avión', 'c_10']]</to_annotate></rheme>
 		<semantic_roles>
 			<frame type="People" head="un">
 				<argument type="Descriptor" dependent="cuando" /></frame>
@@ -145,7 +145,7 @@
 		</theme>
 		<rheme concept_ref1="c_10" concept_ref2="c_11" concept_ref3="c_7">
 			<token pos="vmip3s0">tiene</token><token pos="aq0mp0">numerosos</token><token pos="ncmp000">críticos</token><token pos="sps00">en</token><token pos="dp3cs0">su</token><token pos="di0ms0">propio</token><token pos="ncms000">país</token><token pos="vmip3p0">reclaman</token><token pos="dp3cs0">su</token><token pos="ncfs000">privatización</token>
-		<to_annotate>[[(207, 413), 'su privatización', 'c_10'], [(207, 304), 'su propio país', 'c_11'], [(141, 178), 'críticos', 'c_7']]</to_annotate></rheme>
+		<to_annotate>[[(341, 413), 'su privatización', 'c_10'], [(207, 304), 'su propio país', 'c_11'], [(141, 178), 'críticos', 'c_7']]</to_annotate></rheme>
 		<semantic_roles>
 			<frame type="Kinship" head="son" />
 			<frame type="Kinship" head="son" />
@@ -159,7 +159,7 @@
 		</theme>
 		<rheme concept_ref1="c_0" concept_ref2="c_6" concept_ref3="c_7" concept_ref4="c_8">
 			<token pos="vaip3s0">ha</token><token pos="vmp00sm">reconocido</token><token pos="ncmp000">errores</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">forma</token><token pos="sps00">en</token><token pos="pr0cn000">que</token><token pos="p0000000">se</token><token pos="vmip3s0">gestiona</token><token pos="da0fs0">la</token><token pos="ncfs000">aerolínea</token><token pos="fc">,</token>
-		<to_annotate>[[(222, 485), 'la aerolínea', 'c_0'], [(222, 286), 'la forma', 'c_6'], [(157, 193), 'errores', 'c_7'], [(222, 485), 'la aerolínea', 'c_8']]</to_annotate></rheme>
+		<to_annotate>[[(417, 485), 'la aerolínea', 'c_0'], [(222, 286), 'la forma', 'c_6'], [(157, 193), 'errores', 'c_7'], [(417, 485), 'la aerolínea', 'c_8']]</to_annotate></rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
