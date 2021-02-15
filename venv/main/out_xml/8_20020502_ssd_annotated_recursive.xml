@@ -8,8 +8,8 @@
             <!ATTLIST concept id ID #REQUIRED>
     <!ELEMENT sentence (theme, rheme, semantic_roles)>
         <!ELEMENT theme (token*)>
-            <!ATTLIST theme concept_ref IDREF #REQUIRED>
-        <!ELEMENT rheme (token*)>
+            <!ATTLIST theme concept_ref IDREF #IMPLIED>
+        <!ELEMENT rheme (token|mention)*>
             <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
             <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
             <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
@@ -22,6 +22,8 @@
             <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT mention (token+)>
+            <!ATTLIST mention concept_ref CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
 		<!ELEMENT frame (argument*)>
             <!ATTLIST frame type CDATA #REQUIRED>
@@ -49,13 +51,11 @@
 			<token pos="np0000o">Jaime</token><token pos="sps00">de</token><token pos="np0000l">Marichalar</token><token pos="cc">y</token><token pos="dp3cs0">su</token><token pos="ncms000">hijo</token><token pos="np00000">Froilán</token>
 		</theme>
 		<rheme concept_ref1="c_1" concept_ref2="c_0">
-			<token pos="vmii3p0">visitaban</token><token pos="di0fs0">una</token><token pos="ncfs000">exposición</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncfs000">Palacio</token><token pos="spcms">de</token><token pos="ncms000">Congresos</token><token pos="sps00">de</token><token pos="np0000o">Madrid</token><token pos="fc">,</token><token pos="rg">muy</token><token pos="rg">cerca</token><token pos="spcms">del</token><token pos="np00000">Bernabéu</token><token pos="fc">,</token><token pos="fp">.</token>
+			<token pos="vmii3p0">visitaban</token><mention concept_ref="c_1"><token pos="di0fs0">una</token><token pos="ncfs000">exposición</token></mention><token pos="sps00">en</token><mention concept_ref="c_0"><token pos="da0ms0">el</token><token pos="ncfs000">Palacio</token><token pos="spcms">de</token><token pos="ncms000">Congresos</token><token pos="sps00">de</token><token pos="np0000o">Madrid</token></mention><token pos="fc">,</token><token pos="rg">muy</token><token pos="rg">cerca</token><token pos="spcms">del</token><token pos="np00000">Bernabéu</token><token pos="fc">,</token><token pos="fp">.</token>
 		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_1">
 			<token pos="da0fs0">La</token><token pos="ncfs000">explosión</token>
@@ -66,8 +66,6 @@
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_2">
 			<token pos="np00000">Marichalar</token>
@@ -78,6 +76,5 @@
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
+	
 </text>

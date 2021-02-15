@@ -1,5 +1,6 @@
 import os
 import re
+import ast
 import html
 import shutil
 import logging
@@ -54,9 +55,9 @@ FastText_models = FastText.load_fasttext_format('FastText_models/cc.es.300.bin')
 input_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/in_xml'
 
 # Directory containing the output in XML of the coreference annotation
-output_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/out_xml'
-shutil.rmtree(output_dir, ignore_errors=True)
-os.makedirs(output_dir)
+output_dir_tmp = '/home/elena/PycharmProjects/WordVectors/venv/main/out_xml_tmp'
+shutil.rmtree(output_dir_tmp, ignore_errors=True)
+os.makedirs(output_dir_tmp)
 
 
 
@@ -73,7 +74,7 @@ for file_xml in os.listdir(input_dir):
         texto = archivo.read().encode(encoding='utf-8').decode('utf-8')
         texto = re.sub('\\& ', '', texto)
 
-    with open(output_dir + '/' + file_xml, 'w') as nuevo:
+    with open(output_dir_tmp + '/' + file_xml, 'w') as nuevo:
         nuevo.write(texto)
 
     # List composed of the ordered themes sentence in the text
@@ -98,7 +99,7 @@ for file_xml in os.listdir(input_dir):
     r_ord_noun_phrases_all = list()
 
 
-    with open(output_dir + '/' + file_xml) as f_xml:
+    with open(output_dir_tmp + '/' + file_xml) as f_xml:
         xml = f_xml.read().encode(encoding='utf-8').decode('utf-8')
         root = ET.fromstring(xml)
 
@@ -153,13 +154,13 @@ for file_xml in os.listdir(input_dir):
         ## Getting theme-theme similarity measures
 
 
-        print('\n\n\n\n========================================================')
-        print("** Matching themes to themes **")
+        # print('\n\n\n\n========================================================')
+        # print("** Matching themes to themes **")
 
         themes_ranking = dict()
 
-        print("\n\n--------------------------------------------------------")
-        print("\nSentence transformers with BETO as a model")
+        # print("\n\n--------------------------------------------------------")
+        # print("\nSentence transformers with BETO as a model")
 
         theme_embeddings = BETO_model.encode(t_ord)
 
@@ -171,29 +172,29 @@ for file_xml in os.listdir(input_dir):
             results = zip(range(len(distances)), distances)
             results = sorted(results, key=lambda x: x[1])
 
-            print("\n\n")
-            print("Theme:", theme)
-            print("\nMost similar themes:")
+            # print("\n\n")
+            # print("Theme:", theme)
+            # print("\nMost similar themes:")
 
             themes_ranking[theme.strip()] = dict()
 
             # Not considering the distance with the theme itself (i.e. selecting the list elements from the second one)
             # Undone because caused problems when the same theme are literally repeated along the document
             for idx, distance in results[:closest_n]:
-                print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
+                # print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
                 themes_ranking[theme.strip()][t_ord[idx].strip()] = 1-distance
 
-        print("\n\n--------------------------------------------------------")
-        print("\nWord2vec embeddings\n\n")
+        # print("\n\n--------------------------------------------------------")
+        # print("\nWord2vec embeddings\n\n")
 
         for idx, theme in enumerate(t_ord):
-            print("Theme:", theme)
-            print("Word Mover's distance from other themes:")
+            # print("Theme:", theme)
+            # print("Word Mover's distance from other themes:")
 
             # Copying the list by values not by reference
             others = t_ord[:]
             del others[idx]
-            print("-", theme + ":", w2vec_models.wmdistance(theme, theme))
+            # print("-", theme + ":", w2vec_models.wmdistance(theme, theme))
 
             # List of normalized Word Movers Distance for every theme
             WMD_others = list()
@@ -201,29 +202,29 @@ for file_xml in os.listdir(input_dir):
             for other in others:
                 WMD = w2vec_models.wmdistance(theme, other)
                 WMD_others.append(WMD)
-                print("-", other + ":", WMD)
+                # print("-", other + ":", WMD)
 
             # Normalizing the Word Movers Distance value to a 0-1 range
             # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
             norm = [1 - (float(i) / 20) for i in WMD_others]
             for n, other in enumerate(others):
-                print("- (norm.)", other + ":", norm[n])
+                # print("- (norm.)", other + ":", norm[n])
                 themes_ranking[theme.strip()][other.strip()] += norm[n]
 
-            print('\n\n')
+            # print('\n\n')
 
 
-        print("\n\n--------------------------------------------------------")
-        print("\nFastText embeddings\n\n")
+        # print("\n\n--------------------------------------------------------")
+        # print("\nFastText embeddings\n\n")
 
         for idx, theme in enumerate(t_ord):
-            print("Theme:", theme)
-            print("Word Mover's distance from other themes:")
+            # print("Theme:", theme)
+            # print("Word Mover's distance from other themes:")
 
             # Copying the list by values not by reference
             others = t_ord[:]
             del others[idx]
-            print("-", theme + ":", FastText_models.wv.wmdistance(theme, theme))
+            # print("-", theme + ":", FastText_models.wv.wmdistance(theme, theme))
 
             # List of normalized Word Movers Distance for every theme
             WMD_others = list()
@@ -231,16 +232,16 @@ for file_xml in os.listdir(input_dir):
             for other in others:
                 WMD = FastText_models.wv.wmdistance(theme, other)
                 WMD_others.append(WMD)
-                print("-", other + ":", WMD)
+                # print("-", other + ":", WMD)
 
             # Normalizing the Word Movers Distance value to a 0-1 range
             # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
             norm = [1 - (float(i) / 3) for i in WMD_others]
             for n, other in enumerate(others):
-                print("- (norm.)", other + ":", norm[n])
+                # print("- (norm.)", other + ":", norm[n])
                 themes_ranking[theme.strip()][other.strip()] += norm[n]
 
-            print('\n\n')
+            # print('\n\n')
 
 
 
@@ -250,11 +251,11 @@ for file_xml in os.listdir(input_dir):
         ##____________________________________________________________________________________________________________
         ## Getting rheme noun phrases-theme similarity measures
 
-        print('\n\n\n\n========================================================')
-        print("** Matching rhemes to themes **")
+        # print('\n\n\n\n========================================================')
+        # print("** Matching rhemes to themes **")
         rhemes_themes_ranking = dict()
 
-        print("\nSentence transformers with BETO as a model")
+        # print("\nSentence transformers with BETO as a model")
 
         rheme_embeddings = BETO_model.encode(r_ord_noun_phrases_all)
 
@@ -266,30 +267,30 @@ for file_xml in os.listdir(input_dir):
             results = zip(range(len(distances)), distances)
             results = sorted(results, key=lambda x: x[1])
 
-            print("\n\n")
-            print("Rheme noun phrase:", rheme)
-            print("\nMost similar themes:")
+            # print("\n\n")
+            # print("Rheme noun phrase:", rheme)
+            # print("\nMost similar themes:")
 
             rhemes_themes_ranking[rheme.strip()] = dict()
 
             # Not considering the distance with the theme itself (i.e. selecting the list elements from the second one)
             # Undone because caused problems when the same theme are literally repeated along the document
             for idx, distance in results[:closest_n]:
-                print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
+                # print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
                 rhemes_themes_ranking[rheme.strip()][t_ord[idx].strip()] = 1-distance
 
 
-        print("\n\n--------------------------------------------------------")
-        print("\nWord2vec embeddings\n\n")
+        # print("\n\n--------------------------------------------------------")
+        # print("\nWord2vec embeddings\n\n")
 
         for idx, rheme in enumerate(r_ord_noun_phrases_all):
-            print("Rheme noun phrase:", rheme)
-            print("Word Mover's distance from themes:")
+            # print("Rheme noun phrase:", rheme)
+            # print("Word Mover's distance from themes:")
 
             # Copying the list by values not by reference
             others = t_ord[:]
             # del others[idx]
-            print("-", rheme + ":", w2vec_models.wmdistance(rheme, rheme))
+            # print("-", rheme + ":", w2vec_models.wmdistance(rheme, rheme))
 
             # List of normalized Word Movers Distance for every theme
             WMD_others = list()
@@ -297,29 +298,29 @@ for file_xml in os.listdir(input_dir):
             for other in others:
                 WMD = w2vec_models.wmdistance(rheme, other)
                 WMD_others.append(WMD)
-                print("-", other + ":", WMD)
+                # print("-", other + ":", WMD)
 
             # Normalizing the Word Movers Distance value to a 0-1 range
             # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
             norm = [1 - (float(i) / 20) for i in WMD_others]
             for n, other in enumerate(others):
-                print("- (norm.)", other + ":", norm[n])
+                # print("- (norm.)", other + ":", norm[n])
                 rhemes_themes_ranking[rheme.strip()][other.strip()] += norm[n]
 
-            print('\n\n')
+            # print('\n\n')
 
 
-        print("\n\n--------------------------------------------------------")
-        print("\nFastText embeddings\n\n")
+        # print("\n\n--------------------------------------------------------")
+        # print("\nFastText embeddings\n\n")
 
         for idx, rheme in enumerate(r_ord_noun_phrases_all):
-            print("Rheme noun phrase:", rheme)
-            print("Word Mover's distance from other themes:")
+            # print("Rheme noun phrase:", rheme)
+            # print("Word Mover's distance from other themes:")
 
             # Copying the list by values not by reference
             others = t_ord[:]
             # del others[idx]
-            print("-", rheme + ":", FastText_models.wv.wmdistance(rheme, rheme))
+            # print("-", rheme + ":", FastText_models.wv.wmdistance(rheme, rheme))
 
             # List of normalized Word Movers Distance for every theme
             WMD_others = list()
@@ -327,16 +328,16 @@ for file_xml in os.listdir(input_dir):
             for other in others:
                 WMD = FastText_models.wv.wmdistance(rheme, other)
                 WMD_others.append(WMD)
-                print("-", other + ":", WMD)
+                # print("-", other + ":", WMD)
 
             # Normalizing the Word Movers Distance value to a 0-1 range
             # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
             norm = [1 - (float(i) / 3) for i in WMD_others]
             for n, other in enumerate(others):
-                print("- (norm.)", other + ":", norm[n])
+                # print("- (norm.)", other + ":", norm[n])
                 rhemes_themes_ranking[rheme.strip()][other.strip()] += norm[n]
 
-            print('\n\n')
+            # print('\n\n')
 
 
 
@@ -346,13 +347,13 @@ for file_xml in os.listdir(input_dir):
         ##____________________________________________________________________________________________________________
         ## Getting rheme main semantic frame arguments-rheme main semantic frame arguments similarity measures
 
-        print('\n\n\n\n========================================================')
-        print("** Matching rhematic main frame arguments to rhematic main frame arguments **")
+        # print('\n\n\n\n========================================================')
+        # print("** Matching rhematic main frame arguments to rhematic main frame arguments **")
 
         rhemes_sr_ranking = dict()
 
-        print("\n\n--------------------------------------------------------")
-        print("\nSentence transformers with BETO as a model")
+        # print("\n\n--------------------------------------------------------")
+        # print("\nSentence transformers with BETO as a model")
 
         rheme_embeddings = BETO_model.encode(r_ord_sem_roles_all)
 
@@ -364,29 +365,29 @@ for file_xml in os.listdir(input_dir):
             results = zip(range(len(distances)), distances)
             results = sorted(results, key=lambda x: x[1])
 
-            print("\n\n")
-            print("Rhematic main frame arguments:", rheme)
-            print("\nMost similar rhematic main frame arguments:")
+            # print("\n\n")
+            # print("Rhematic main frame arguments:", rheme)
+            # print("\nMost similar rhematic main frame arguments:")
 
             rhemes_sr_ranking[rheme.strip()] = dict()
 
             # Not considering the distance with the theme itself (i.e. selecting the list elements from the second one)
             # Undone because caused problems when the same theme are literally repeated along the document
             for idx, distance in results[:closest_n]:
-                print(r_ord_sem_roles_all[idx].strip(), "(Score: %.4f)" % (1-distance))
+                # print(r_ord_sem_roles_all[idx].strip(), "(Score: %.4f)" % (1-distance))
                 rhemes_sr_ranking[rheme.strip()][r_ord_sem_roles_all[idx].strip()] = 1-distance
 
-        print("\n\n--------------------------------------------------------")
-        print("\nWord2vec embeddings\n\n")
+        # print("\n\n--------------------------------------------------------")
+        # print("\nWord2vec embeddings\n\n")
 
         for idx, rheme in enumerate(r_ord_sem_roles_all):
-            print("Rhematic main frame arguments:", rheme)
-            print("Word Mover's distance from other rhematic main frame arguments:")
+            # print("Rhematic main frame arguments:", rheme)
+            # print("Word Mover's distance from other rhematic main frame arguments:")
 
             # Copying the list by values not by reference
             others = r_ord_sem_roles_all[:]
             del others[idx]
-            print("-", rheme + ":", w2vec_models.wmdistance(rheme, rheme))
+            # print("-", rheme + ":", w2vec_models.wmdistance(rheme, rheme))
 
             # List of normalized Word Movers Distance for every theme
             WMD_others = list()
@@ -394,29 +395,29 @@ for file_xml in os.listdir(input_dir):
             for other in others:
                 WMD = w2vec_models.wmdistance(rheme, other)
                 WMD_others.append(WMD)
-                print("-", other + ":", WMD)
+                # print("-", other + ":", WMD)
 
             # Normalizing the Word Movers Distance value to a 0-1 range
             # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
             norm = [1 - (float(i) / 20) for i in WMD_others]
             for n, other in enumerate(others):
-                print("- (norm.)", other + ":", norm[n])
+                # print("- (norm.)", other + ":", norm[n])
                 rhemes_sr_ranking[rheme.strip()][other.strip()] += norm[n]
 
-            print('\n\n')
+            # print('\n\n')
 
 
-        print("\n\n--------------------------------------------------------")
-        print("\nFastText embeddings\n\n")
+        # print("\n\n--------------------------------------------------------")
+        # print("\nFastText embeddings\n\n")
 
         for idx, rheme in enumerate(r_ord_sem_roles_all):
-            print("Rhematic main frame arguments:", rheme)
-            print("Word Mover's distance from other rhematic main frame arguments:")
+            # print("Rhematic main frame arguments:", rheme)
+            # print("Word Mover's distance from other rhematic main frame arguments:")
 
             # Copying the list by values not by reference
             others = r_ord_sem_roles_all[:]
             del others[idx]
-            print("-", rheme + ":", FastText_models.wv.wmdistance(rheme, rheme))
+            # print("-", rheme + ":", FastText_models.wv.wmdistance(rheme, rheme))
 
             # List of normalized Word Movers Distance for every theme
             WMD_others = list()
@@ -424,16 +425,16 @@ for file_xml in os.listdir(input_dir):
             for other in others:
                 WMD = FastText_models.wv.wmdistance(rheme, other)
                 WMD_others.append(WMD)
-                print("-", other + ":", WMD)
+                # print("-", other + ":", WMD)
 
             # Normalizing the Word Movers Distance value to a 0-1 range
             # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
             norm = [1 - (float(i) / 3) for i in WMD_others]
             for n, other in enumerate(others):
-                print("- (norm.)", other + ":", norm[n])
+                # print("- (norm.)", other + ":", norm[n])
                 rhemes_sr_ranking[rheme.strip()][other.strip()] += norm[n]
 
-            print('\n\n')
+            # print('\n\n')
 
 
 
@@ -443,13 +444,13 @@ for file_xml in os.listdir(input_dir):
         ##____________________________________________________________________________________________________________
         ## Getting rheme noun phrases-rheme noun phrases similarity measures
 
-        print('\n\n\n\n========================================================')
-        print("** Matching rheme noun phrases to rheme noun phrases **")
+        # print('\n\n\n\n========================================================')
+        # ("** Matching rheme noun phrases to rheme noun phrases **")
 
         rhemes_ranking = dict()
 
-        print("\n\n--------------------------------------------------------")
-        print("\nSentence transformers with BETO as a model")
+        # print("\n\n--------------------------------------------------------")
+        # print("\nSentence transformers with BETO as a model")
 
         rheme_embeddings = BETO_model.encode(r_ord_noun_phrases_all)
 
@@ -461,29 +462,29 @@ for file_xml in os.listdir(input_dir):
             results = zip(range(len(distances)), distances)
             results = sorted(results, key=lambda x: x[1])
 
-            print("\n\n")
-            print("Rheme noun phrase:", rheme)
-            print("\nMost similar rheme noun phrases:")
+            # print("\n\n")
+            # print("Rheme noun phrase:", rheme)
+            # print("\nMost similar rheme noun phrases:")
 
             rhemes_ranking[rheme.strip()] = dict()
 
             # Not considering the distance with the theme itself (i.e. selecting the list elements from the second one)
             # Undone because caused problems when the same theme are literally repeated along the document
             for idx, distance in results[:closest_n]:
-                print(r_ord_noun_phrases_all[idx].strip(), "(Score: %.4f)" % (1-distance))
+                # print(r_ord_noun_phrases_all[idx].strip(), "(Score: %.4f)" % (1-distance))
                 rhemes_ranking[rheme.strip()][r_ord_noun_phrases_all[idx].strip()] = 1-distance
 
-        print("\n\n--------------------------------------------------------")
-        print("\nWord2vec embeddings\n\n")
+        # print("\n\n--------------------------------------------------------")
+        # print("\nWord2vec embeddings\n\n")
 
         for idx, rheme in enumerate(r_ord_noun_phrases_all):
-            print("Rheme noun phrase:", rheme)
-            print("Word Mover's distance from other rheme noun phrases:")
+            # print("Rheme noun phrase:", rheme)
+            # print("Word Mover's distance from other rheme noun phrases:")
 
             # Copying the list by values not by reference
             others = r_ord_noun_phrases_all[:]
             del others[idx]
-            print("-", rheme + ":", w2vec_models.wmdistance(rheme, rheme))
+            # print("-", rheme + ":", w2vec_models.wmdistance(rheme, rheme))
 
             # List of normalized Word Movers Distance for every theme
             WMD_others = list()
@@ -491,29 +492,29 @@ for file_xml in os.listdir(input_dir):
             for other in others:
                 WMD = w2vec_models.wmdistance(rheme, other)
                 WMD_others.append(WMD)
-                print("-", other + ":", WMD)
+                # print("-", other + ":", WMD)
 
             # Normalizing the Word Movers Distance value to a 0-1 range
             # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
             norm = [1 - (float(i) / 20) for i in WMD_others]
             for n, other in enumerate(others):
-                print("- (norm.)", other + ":", norm[n])
+                # print("- (norm.)", other + ":", norm[n])
                 rhemes_ranking[rheme.strip()][other.strip()] += norm[n]
 
-            print('\n\n')
+            # print('\n\n')
 
 
-        print("\n\n--------------------------------------------------------")
-        print("\nFastText embeddings\n\n")
+        # print("\n\n--------------------------------------------------------")
+        # print("\nFastText embeddings\n\n")
 
         for idx, rheme in enumerate(r_ord_noun_phrases_all):
-            print("Rheme noun phrase:", rheme)
-            print("Word Mover's distance from other rheme noun phrases:")
+            # print("Rheme noun phrase:", rheme)
+            # print("Word Mover's distance from other rheme noun phrases:")
 
             # Copying the list by values not by reference
             others = r_ord_noun_phrases_all[:]
             del others[idx]
-            print("-", rheme + ":", FastText_models.wv.wmdistance(rheme, rheme))
+            # print("-", rheme + ":", FastText_models.wv.wmdistance(rheme, rheme))
 
             # List of normalized Word Movers Distance for every theme
             WMD_others = list()
@@ -521,16 +522,16 @@ for file_xml in os.listdir(input_dir):
             for other in others:
                 WMD = FastText_models.wv.wmdistance(rheme, other)
                 WMD_others.append(WMD)
-                print("-", other + ":", WMD)
+                # print("-", other + ":", WMD)
 
             # Normalizing the Word Movers Distance value to a 0-1 range
             # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
             norm = [1 - (float(i) / 3) for i in WMD_others]
             for n, other in enumerate(others):
-                print("- (norm.)", other + ":", norm[n])
+                # print("- (norm.)", other + ":", norm[n])
                 rhemes_ranking[rheme.strip()][other.strip()] += norm[n]
 
-            print('\n\n')
+            # print('\n\n')
 
 
 
@@ -540,17 +541,17 @@ for file_xml in os.listdir(input_dir):
         ##____________________________________________________________________________________________________________
         ## Deciding correference sets
 
-        print("Ranking de correferencias de los temas:")
-        pretty(themes_ranking, indent=1)
+        # print("Ranking de correferencias de los temas:")
+        # pretty(themes_ranking, indent=1)
 
-        print("Ranking de correferencias de los sintagmas nominales de los remas con los temas:")
-        pretty(rhemes_themes_ranking, indent=1)
+        # print("Ranking de correferencias de los sintagmas nominales de los remas con los temas:")
+        # pretty(rhemes_themes_ranking, indent=1)
 
-        print("Ranking de correferencias de los argumentos de los marcos semánticos principales de los remas con los argumentos de los marcos semánticos principales de los remas:")
-        pretty(rhemes_sr_ranking, indent=1)
+        # print("Ranking de correferencias de los argumentos de los marcos semánticos principales de los remas con los argumentos de los marcos semánticos principales de los remas:")
+        # pretty(rhemes_sr_ranking, indent=1)
 
-        print("Ranking de correferencias de los sintagmas nominales de los remas con los sintagmas nominales de los remas:")
-        pretty(rhemes_ranking, indent=1)
+        # print("Ranking de correferencias de los sintagmas nominales de los remas con los sintagmas nominales de los remas:")
+        # pretty(rhemes_ranking, indent=1)
 
         # Critical value for the weighted semantic similarity to consider two themes corefer to the same underlying concept
         threshold_themes = 2.6
@@ -593,7 +594,7 @@ for file_xml in os.listdir(input_dir):
                         theme_id.append((t_c, id_c))
                         coreferent_concepts.append(t_c)
 
-        print("Thematic coreference analyzed", theme_id)
+        # print("Thematic coreference analyzed", theme_id)
 
 
 
@@ -630,7 +631,7 @@ for file_xml in os.listdir(input_dir):
                 rheme_theme_id.append((r, id_c))
             """
 
-        print("Rheme-theme coreference analyzed", rheme_theme_id)
+        # print("Rheme-theme coreference analyzed", rheme_theme_id)
 
 
 
@@ -670,7 +671,7 @@ for file_xml in os.listdir(input_dir):
                         rheme_sr_id.append((r_c, id_c))
                         coreferent_concepts_rheme.append(r_c)
 
-        print("Rhematic coreference analyzed (main semantic frame arguments)", rheme_sr_id)
+        # print("Rhematic coreference analyzed (main semantic frame arguments)", rheme_sr_id)
 
 
 
@@ -735,12 +736,12 @@ for file_xml in os.listdir(input_dir):
 
             # If the rhematic coreference set is repeated
             if x[1] in coref_sets_others:
-                rheme_id_repeated.append((x[0], 'id_' + str(id_old)))
-                to_add[x[1]] = 'id_' + str(id_old)
+                rheme_id_repeated.append((x[0], 'c_' + str(id_old)))
+                to_add[x[1]] = 'c_' + str(id_old)
                 id_old += 1
 
 
-        print("Rhematic coreference analyzed (noun phrases)", rheme_id_repeated)
+        # print("Rhematic coreference analyzed (noun phrases)", rheme_id_repeated)
 
 
 
@@ -751,13 +752,15 @@ for file_xml in os.listdir(input_dir):
         ## Including conceptual coreference information in the XML
 
         tree = ElementTree()
-        tree.parse(output_dir + '/' + file_xml)
+        tree.parse(output_dir_tmp + '/' + file_xml)
 
         for sentence in tree.iter('sentence'):
 
             # Getting the theme string and the corresponding tag in the XML file
             theme_xml = ""
             rheme_xml = ""
+
+            encontrados_start_end = []
 
             for child in sentence:
                 if child.tag == 'theme':
@@ -774,6 +777,7 @@ for file_xml in os.listdir(input_dir):
                 id_added_rheme = list()
 
                 if child.tag == 'rheme':
+
                     for token in child:
                         rheme_xml += token.text.strip() + ' '
 
@@ -783,8 +787,25 @@ for file_xml in os.listdir(input_dir):
                             id_added_rheme.append(e[1])
                             n_corref_int += 1
 
+                    id_added_rheme = list()
 
-        tree.write(output_dir + '/' + file_xml)
+                    for e in rheme_id_all:
+                        if e[0] in rheme_xml.strip() and e[1] not in id_added_rheme:
+                            regex = '</token><token pos=".+?">'.join(e[0].strip().split())
+                            regex = '<token pos="[^>]+?">' + regex + '</token>'
+                            encontrados_start_end.append([(m.start(0), m.end(0)) for m in re.finditer(regex, ET.tostring(child, encoding="unicode"), re.DOTALL)])
+                            encontrados_start_end[-1].append(e[0])
+                            encontrados_start_end[-1].append(e[1])
+                            # print("CACAAAA1", regex)
+                            # print("CACAAAA2", ET.tostring(child, encoding="unicode"))
+                            # print("CACAAAA3", encontrados_start_end[-1])
+                            id_added_rheme.append(e[1])
+
+                    new_tag = ET.Element('to_annotate')
+                    child.append(new_tag)
+                    new_tag.text = str(encontrados_start_end)
+
+        tree.write(output_dir_tmp + '/' + file_xml)
 
 
         # List of the concept lines to add to the output XML file
@@ -821,13 +842,13 @@ for file_xml in os.listdir(input_dir):
 
 
         # Getting the text of the original XML of the output of the previous module without the DTD
-        with open(output_dir + '/' + file_xml) as in_xml:
+        with open(output_dir_tmp + '/' + file_xml) as in_xml:
             xml_old = in_xml.read()
 
             from_tag = '(<text id=".+?".+)'
             m = re.search(r'(<text id=".+?\n)((.*\n?)+)', xml_old)
 
-        with open(output_dir + '/' + file_xml, 'w') as out:
+        with open(output_dir_tmp + '/' + file_xml, 'w') as out:
 
             xml_new = '''<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 
@@ -884,6 +905,168 @@ for file_xml in os.listdir(input_dir):
             out.write(html.unescape(xml_new))
 
 
+# Pending: comment these lines (executing separatedly by now)ç
+import os
+import re
+import ast
+import shutil
+output_dir_tmp = '/home/elena/PycharmProjects/WordVectors/venv/main/out_xml_tmp'
+output_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/out_xml'
+shutil.rmtree(output_dir, ignore_errors=True)
+os.makedirs(output_dir)
+
+for f in os.listdir(output_dir_tmp):
+    with open(output_dir_tmp + '/' + f, 'r') as fich_xml:
+        xml_ant = fich_xml.read()
+        xml_nue = '''<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (theme, rheme, semantic_roles)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #IMPLIED>
+        <!ELEMENT rheme (token|mention)*>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT mention (token+)>
+            <!ATTLIST mention concept_ref CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+'''
+        xml_nue += re.search(r'(<text.+?)<sentence>', xml_ant, re.DOTALL).group(1)
+        sentences_str = re.findall('<sentence>(.+?)</sentence>', xml_ant, re.DOTALL)
+
+        for sentence_str in sentences_str:
+            xml_nue += '<sentence>\n\t\t'
+            match = re.search('<theme.+?>(.+?)</theme>', sentence_str, re.DOTALL)
+            if (match):
+                theme_str = match.group(0)
+            else:
+                theme_str = '<theme>\n\t\t</theme>'
+
+            xml_nue += theme_str + '\n\t\t'
+
+            rheme_str = re.search('</theme>(.+?)<to_annotate>.+?</to_annotate>', sentence_str, re.DOTALL).group(1).strip()
+            # Pending to solve
+            # to_ann_list = [x for x in ast.literal_eval(re.search('<to_annotate>(.+?)</to_annotate>', xml_ant).group(1))]
+            to_ann_list = [x for x in ast.literal_eval(re.search('<to_annotate>(.+?)</to_annotate>', sentence_str).group(1)) if len(x) == 3]
+
+            extra_len = 0
+            to_ann_list.sort()
+            lista_rangos = [el[0] for el in to_ann_list]
+
+            for tup in to_ann_list:
+
+                # Avoding multiclass mentions
+                if lista_rangos.count(tup[0]) == 1:
+
+                    prin = tup[0][0] + extra_len
+                    fin = tup[0][1] + extra_len
+                    start_tag = '<mention concept_ref="' + tup[2] + '">'
+                    end_tag = '</mention>'
+                    extra_len = extra_len + len(start_tag + end_tag)
+
+                    # Avoiding overlapping
+                    if '<m' not in rheme_str[prin:fin] and rheme_str[fin-1] != '<':
+                        rheme_str = rheme_str[:prin] + start_tag + rheme_str[prin:fin] + end_tag + rheme_str[fin:]
+
+            xml_nue += rheme_str
+            xml_nue += '\n\t\t</rheme>\n\t'
+
+            match = re.search('<semantic_roles>(.+?)</semantic_roles>', sentence_str, re.DOTALL)
+            if (match):
+                semantic_roles_str = match.group(0)
+            else:
+                semantic_roles_str = '\n\t\t<semantic_roles>\n\t\t</semantic_roles>'
+
+            xml_nue += '\t' + semantic_roles_str + '\n\t</sentence>\n\t'
+        xml_nue += '\n</text>'
+
+        with open(output_dir + '/' + f, 'w') as output_dir_nue:
+            output_dir_nue.write(xml_nue)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -919,7 +1102,7 @@ for file_xml in os.listdir(input_dir):
 
 ## Generating HTML output
 
-
+# Pending: comment these lines (executing separatedly by now)
 import xml.etree.ElementTree as ET
 import shutil
 import os
