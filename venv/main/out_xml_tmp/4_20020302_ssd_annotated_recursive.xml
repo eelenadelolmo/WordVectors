@@ -8,8 +8,8 @@
             <!ATTLIST concept id ID #REQUIRED>
     <!ELEMENT sentence (theme, rheme, semantic_roles)>
         <!ELEMENT theme (token*)>
-            <!ATTLIST theme concept_ref IDREF #REQUIRED>
-        <!ELEMENT rheme (token*)>
+            <!ATTLIST theme concept_ref IDREF #IMPLIED>
+        <!ELEMENT rheme (token|mention)*>
             <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
             <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
             <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
@@ -22,6 +22,8 @@
             <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT mention (token+)>
+            <!ATTLIST mention concept_ref CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
 		<!ELEMENT frame (argument*)>
             <!ATTLIST frame type CDATA #REQUIRED>
@@ -52,32 +54,28 @@
 			<token pos="da0fs0">La</token><token pos="aq0fs0">nueva</token><token pos="ncfs000">ley</token><token pos="sps00">de</token><token pos="ncms000">tráfico</token>
 		</theme>
 		<rheme concept_ref1="c_0" concept_ref2="c_5">
-			<token pos="vmip3s0">ampara</token><token pos="da0ms0">el</token><token pos="aq0ms0">nuevo</token><token pos="ncms000">sistema</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">fotomultas</token><token pos="fp">.</token>
-		<to_annotate>[[(84, 183), 'el nuevo sistema', 'c_0'], [(212, 282), 'las fotomultas', 'c_5']]</to_annotate></rheme>
+			<token pos="vmip3s0">ampara</token><mention concept_ref="c_0"><token pos="da0ms0">el</token><token pos="aq0ms0">nuevo</token><token pos="ncms000">sistema</token></mention><token pos="sps00">de</token><mention concept_ref="c_5"><token pos="da0fp0">las</token><token pos="ncfp000">fotomultas</token></mention><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_1">
 			<token pos="da0fs0">La</token><token pos="aq0cs0">anterior</token><token pos="ncfs000">legislación</token>
 		</theme>
 		<rheme concept_ref1="c_4" concept_ref2="c_5">
-			<token pos="vmii3s0">obligaba</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="nccp000">agentes</token><token pos="sps00">a</token><token pos="vmn0000">perseguir</token><token pos="spcms">al</token><token pos="ncms000">infractor</token><token pos="cc">y</token><token pos="vmn0000">comunicarle</token><token pos="da0fs0">la</token><token pos="ncfs000">sanción</token><token pos="sps00">al</token><token pos="ncmp000">momento</token><token pos="fp">.</token>
-		<to_annotate>[[(114, 181), 'los agentes', 'c_4'], [(379, 445), 'la sanción', 'c_5']]</to_annotate></rheme>
+			<token pos="vmii3s0">obligaba</token><token pos="sps00">a</token><mention concept_ref="c_4"><token pos="da0mp0">los</token><token pos="nccp000">agentes</token></mention><token pos="sps00">a</token><token pos="vmn0000">perseguir</token><token pos="spcms">al</token><token pos="ncms000">infractor</token><token pos="cc">y</token><token pos="vmn0000">comunicarle</token><mention concept_ref="c_5"><token pos="da0fs0">la</token><token pos="ncfs000">sanción</token></mention><token pos="sps00">al</token><token pos="ncmp000">momento</token><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_2">
 			<token pos="da0fs0">la</token><token pos="aq0cs0">actual</token><token pos="ncfs000">ley</token>
 		</theme>
 		<rheme concept_ref1="c_4" concept_ref2="c_1" concept_ref3="c_5">
-			<token pos="vmip3s0">permite</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="np00000">Administración</token><token pos="vmn0000">enviar</token><token pos="da0fs0">la</token><token pos="ncfs000">sanción</token><token pos="sps00">a</token><token pos="ncfs000">casa</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="ncfs000">fotografía</token><token pos="fp">.</token>
-		<to_annotate>[[(240, 306), 'la sanción', 'c_4'], [(132, 205), 'la Administración', 'c_1'], [(397, 466), 'la fotografía', 'c_5']]</to_annotate></rheme>
+			<token pos="vmip3s0">permite</token><token pos="sps00">a</token><mention concept_ref="c_1"><token pos="da0fs0">la</token><token pos="np00000">Administración</token></mention><token pos="vmn0000">enviar</token><mention concept_ref="c_4"><token pos="da0fs0">la</token><token pos="ncfs000">sanción</token></mention><token pos="sps00">a</token><token pos="ncfs000">casa</token><token pos="sps00">con</token><mention concept_ref="c_5"><token pos="da0fs0">la</token><token pos="ncfs000">fotografía</token></mention><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 			<frame type="Actually_occurring_entity" head="actual">
 				<argument type="Type" dependent="Pero la" />
@@ -87,42 +85,33 @@
 				<argument type="Type" dependent="ley" /></frame>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_3">
 			<token pos="da0fs0">La</token><token pos="ncfs000">ley</token>
 		</theme>
 		<rheme concept_ref1="c_4" concept_ref2="c_1" concept_ref3="c_5">
-			<token pos="rg">también</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">modificado</token><token pos="da0fs0">la</token><token pos="ncfs000">valoración</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">infracciones</token><token pos="fp">.</token>
-		<to_annotate>[[(169, 238), 'la valoración', 'c_4'], [(267, 339), 'las infracciones', 'c_1'], [(169, 238), 'la valoración', 'c_5']]</to_annotate></rheme>
+			<token pos="rg">también</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">modificado</token><token pos="da0fs0">la</token><token pos="ncfs000">valoración</token><token pos="sps00">de</token><mention concept_ref="c_1"><token pos="da0fp0">las</token><token pos="ncfp000">infracciones</token></mention><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_4">
 			<token pos="da0ms0">el</token><token pos="ncms000">conductor</token><token pos="da0fs0">la</token><token pos="ncfs000">sanción</token>
 		</theme>
 		<rheme concept_ref1="c_4">
-			<token pos="vmip3s0">sobrepasa</token><token pos="sps00">en</token><token pos="rg">más</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="zp">50%</token><token pos="da0fs0">la</token><token pos="ncfs000">velocidad</token><token pos="aq0fsp">permitida</token><token pos="vsip3s0">es</token><token pos="rg">muy</token><token pos="aq0cs0">grave</token><token pos="fp">.</token>
-		<to_annotate>[[(210, 278), 'la velocidad', 'c_4']]</to_annotate></rheme>
+			<token pos="vmip3s0">sobrepasa</token><token pos="sps00">en</token><token pos="rg">más</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="zp">50%</token><mention concept_ref="c_4"><token pos="da0fs0">la</token><token pos="ncfs000">velocidad</token></mention><token pos="aq0fsp">permitida</token><token pos="vsip3s0">es</token><token pos="rg">muy</token><token pos="aq0cs0">grave</token><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme>
-			
 		</theme>
 		<rheme>
-			
-		<to_annotate>[]</to_annotate></rheme>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
+	
 </text>

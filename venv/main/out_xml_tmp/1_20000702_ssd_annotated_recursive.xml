@@ -8,8 +8,8 @@
             <!ATTLIST concept id ID #REQUIRED>
     <!ELEMENT sentence (theme, rheme, semantic_roles)>
         <!ELEMENT theme (token*)>
-            <!ATTLIST theme concept_ref IDREF #REQUIRED>
-        <!ELEMENT rheme (token*)>
+            <!ATTLIST theme concept_ref IDREF #IMPLIED>
+        <!ELEMENT rheme (token|mention)*>
             <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
             <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
             <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
@@ -22,6 +22,8 @@
             <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT mention (token+)>
+            <!ATTLIST mention concept_ref CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
 		<!ELEMENT frame (argument*)>
             <!ATTLIST frame type CDATA #REQUIRED>
@@ -65,44 +67,38 @@
 			<token pos="rg">Casi</token><token pos="di0mp0">todos</token><token pos="da0mp0">los</token><token pos="ncmp000">expertos</token><token pos="pr0cn000">que</token><token pos="vaip3p0">han</token><token pos="vmp00sm">analizado</token><token pos="rg">sistemáticamente</token><token pos="da0ms0">el</token><token pos="ncms000">contenido</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">libros</token><token pos="sps00">de</token><token pos="ncms000">texto</token><token pos="sps00">de</token><token pos="ncfs000">secundaria</token><token pos="cc">y</token><token pos="ncms000">bachillerato</token>
 		</theme>
 		<rheme concept_ref1="c_6" concept_ref2="c_2" concept_ref3="c_13">
-			<token pos="vmip3p0">sostienen</token><token pos="cs">que</token><token pos="da0fs0">la</token><token pos="ncfp000">Real</token><token pos="ncfp000">Academia</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Historia</token><token pos="p0300000">se</token><token pos="vmis3s0">equivocó</token><token pos="spcms">al</token><token pos="vmn0000">asegurar</token><token pos="cs">que</token><token pos="da0fp0">las</token><token pos="ncfp000">comunidades</token><token pos="aq0fp0">autónomas</token><token pos="vmip3p0">tergiversan</token><token pos="da0ms0">el</token><token pos="ncms000">pasado</token><token pos="cc">y</token><token pos="vmip3p0">silencian</token><token pos="da0ms0">el</token><token pos="ncms000">concepto</token><token pos="sps00">de</token><token pos="np00000">España</token><token pos="fp">.</token>
-		<to_annotate>[[(134, 330), 'la Real Academia de la Historia', 'c_6'], [(492, 563), 'las comunidades', 'c_2'], [(330, 362), 'se', 'c_13']]</to_annotate></rheme>
+			<token pos="vmip3p0">sostienen</token><token pos="cs">que</token><mention concept_ref="c_6"><token pos="da0fs0">la</token><token pos="ncfp000">Real</token><token pos="ncfp000">Academia</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Historia</token></mention><mention concept_ref="c_13"><token pos="p0300000">se</token></mention><token pos="vmis3s0">equivocó</token><token pos="spcms">al</token><token pos="vmn0000">asegurar</token><token pos="cs">que</token><mention concept_ref="c_2"><token pos="da0fp0">las</token><token pos="ncfp000">comunidades</token></mention><token pos="aq0fp0">autónomas</token><token pos="vmip3p0">tergiversan</token><token pos="da0ms0">el</token><token pos="ncms000">pasado</token><token pos="cc">y</token><token pos="vmip3p0">silencian</token><token pos="da0ms0">el</token><token pos="ncms000">concepto</token><token pos="sps00">de</token><token pos="np00000">España</token><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_1">
 			<token pos="da0fs0">La</token><token pos="ncfs000">mayoría</token><token pos="sps00">de</token><token pos="ncmp000">manuales</token>
 		</theme>
 		<rheme concept_ref1="c_6">
-			<token pos="vmip3s0">desarrolla</token><token pos="da0ms0">el</token><token pos="ncms000">pasado</token><token pos="aq0cs0">común</token><token pos="fp">.</token>
-		<to_annotate>[[(69, 134), 'el pasado', 'c_6']]</to_annotate></rheme>
+			<token pos="vmip3s0">desarrolla</token><mention concept_ref="c_6"><token pos="da0ms0">el</token><token pos="ncms000">pasado</token></mention><token pos="aq0cs0">común</token><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_2">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">libros</token><token pos="sps00">de</token><token pos="ncms000">texto</token>
 		</theme>
 		<rheme concept_ref1="c_6" concept_ref2="c_2" concept_ref3="c_5" concept_ref4="c_13" concept_ref5="c_14">
-			<token pos="vmip3p0">ofrecen</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="nccp000">escolares</token><token pos="di0fs0">una</token><token pos="ncfs000">visión</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">historia</token><token pos="sps00">de</token><token pos="np00000">España</token><token pos="aq0fsp">equilibrada</token><token pos="fc">,</token><token pos="aq0cs0">universal</token><token pos="cc">y</token><token pos="aq0fsp">ajustada</token><token pos="spcms">al</token><token pos="ncms000">espíritu</token><token pos="aq0cs0">plural</token><token pos="cc">y</token><token pos="aq0ms0">democrático</token><token pos="aq0msp">inspirado</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="np00000">Constitución</token><token pos="sps00">de</token><token pos="z">1978</token><token pos="fc">,</token><token pos="fp">.</token>
-		<to_annotate>[[(432, 467), 'España', 'c_6'], [(172, 241), 'los escolares', 'c_2'], [(859, 930), 'la Constitución', 'c_5'], [(172, 241), 'los escolares', 'c_13'], [(241, 307), 'una visión', 'c_14']]</to_annotate></rheme>
+			<token pos="vmip3p0">ofrecen</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="nccp000">escolares</token><mention concept_ref="c_14"><token pos="di0fs0">una</token><token pos="ncfs000">visión</token></mention><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">historia</token><token pos="sps00">de</token><mention concept_ref="c_6"><token pos="np00000">España</token></mention><token pos="aq0fsp">equilibrada</token><token pos="fc">,</token><token pos="aq0cs0">universal</token><token pos="cc">y</token><token pos="aq0fsp">ajustada</token><token pos="spcms">al</token><token pos="ncms000">espíritu</token><token pos="aq0cs0">plural</token><token pos="cc">y</token><token pos="aq0ms0">democrático</token><token pos="aq0msp">inspirado</token><token pos="sps00">en</token><mention concept_ref="c_5"><token pos="da0fs0">la</token><token pos="np00000">Constitución</token></mention><token pos="sps00">de</token><token pos="z">1978</token><token pos="fc">,</token><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_3">
 			<token pos="di0ms0">Un</token><token pos="ncms000">informe</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfp000">Real</token><token pos="ncfp000">Academia</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Historia</token><token pos="aq0msp">hecho</token><token pos="aq0ms0">público</token><token pos="dd0fs0">esta</token><token pos="ncfs000">semana</token>
 		</theme>
 		<rheme concept_ref1="c_2" concept_ref2="c_7" concept_ref3="c_6" concept_ref4="c_11" concept_ref5="c_13" concept_ref6="c_14" concept_ref7="c_15" concept_ref8="c_16">
-			<token pos="vmis3s0">acusó</token><token pos="sps00">a</token><token pos="da0fp0">las</token><token pos="ncfp000">comunidades</token><token pos="aq0fp0">autónomas</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="aq0msp">particular</token><token pos="sps00">a</token><token pos="np00000">Catalunya</token><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="np00000">País</token><token pos="ncms000">Vasco</token><token pos="cc">y</token><token pos="np00000">Galicia</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="fe">"</token><token pos="vmn0000">tergiversar</token><token pos="fe">"</token><token pos="da0fs0">la</token><token pos="ncfs000">enseñanza</token><token pos="sps00">de</token><token pos="dd0fs0">esta</token><token pos="ncfs000">disciplina</token><token pos="fc">,</token><token pos="cc">y</token><token pos="vmn0000">convertirla</token><token pos="sps00">en</token><token pos="fe">"</token><token pos="di0fs0">una</token><token pos="ncfs000">historia</token><token pos="aq0cs0">local</token><token pos="fc">,</token><token pos="aq0fs0">discontinua</token><token pos="cc">y</token><token pos="aq0cs0">particularista</token><token pos="fe">"</token><token pos="fp">.</token>
-		<to_annotate>[[(230, 301), 'las comunidades', 'c_2'], [(521, 618), 'el País Vasco', 'c_7'], [(823, 891), 'la enseñanza', 'c_6'], [(920, 991), 'esta disciplina', 'c_11'], ['se', 'c_13'], [(1135, 1203), 'una historia', 'c_14'], [(458, 496), 'Catalunya', 'c_15'], [(643, 679), 'Galicia', 'c_16']]</to_annotate></rheme>
+			<token pos="vmis3s0">acusó</token><token pos="sps00">a</token><mention concept_ref="c_2"><token pos="da0fp0">las</token><token pos="ncfp000">comunidades</token></mention><token pos="aq0fp0">autónomas</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="aq0msp">particular</token><token pos="sps00">a</token><mention concept_ref="c_15"><token pos="np00000">Catalunya</token></mention><token pos="fc">,</token><mention concept_ref="c_7"><token pos="da0ms0">el</token><token pos="np00000">País</token><token pos="ncms000">Vasco</token></mention><token pos="cc">y</token><mention concept_ref="c_16"><token pos="np00000">Galicia</token></mention><token pos="fc">,</token><token pos="sps00">de</token><token pos="fe">"</token><token pos="vmn0000">tergiversar</token><token pos="fe">"</token><mention concept_ref="c_6"><token pos="da0fs0">la</token><token pos="ncfs000">enseñanza</token></mention><token pos="sps00">de</token><mention concept_ref="c_11"><token pos="dd0fs0">esta</token><token pos="ncfs000">disciplina</token></mention><token pos="fc">,</token><token pos="cc">y</token><token pos="vmn0000">convertirla</token><token pos="sps00">en</token><token pos="fe">"</token><mention concept_ref="c_14"><token pos="di0fs0">una</token><token pos="ncfs000">historia</token></mention><token pos="aq0cs0">local</token><token pos="fc">,</token><token pos="aq0fs0">discontinua</token><token pos="cc">y</token><token pos="aq0cs0">particularista</token><token pos="fe">"</token><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 			<frame type="Idiosyncrasy" head="particular">
 				<argument type="Degree" dependent="en" />
@@ -121,15 +117,13 @@
 				<argument type="Descriptor" dependent="una historia" /></frame>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_0">
 			<token pos="da0ms0">El</token><token pos="ncms000">catedrático</token><token pos="np0000l">Joaquín</token><token pos="np0000l">Prats</token><token pos="fc">,</token><token pos="ncms000">director</token><token pos="spcms">del</token><token pos="ncms000">departamento</token><token pos="pr0cn000">que</token><token pos="vmip3s0">engloba</token><token pos="sps00">a</token><token pos="z">17</token><token pos="ncmp000">expertos</token><token pos="pr0cn000">que</token><token pos="vaip3p0">han</token><token pos="vmp00sm">coordinado</token><token pos="da0fs0">la</token><token pos="ncfs000">edición</token><token pos="sps00">de</token><token pos="rg">más</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">mitad</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">libros</token><token pos="sps00">de</token><token pos="np00000">Historia</token><token pos="aq0mpp">empleados</token><token pos="sps00">en</token><token pos="ncmp000">colegios</token><token pos="cc">e</token><token pos="ncmp000">institutos</token><token pos="sps00">de</token><token pos="np00000">España</token><token pos="fc">,</token>
 		</theme>
 		<rheme concept_ref1="c_9" concept_ref2="c_2" concept_ref3="c_13" concept_ref4="c_17">
-			<token pos="vmip3s0">asegura</token><token pos="cs">que</token><token pos="da0ms0">el</token><token pos="ncms000">informe</token><token pos="vsip3s0">es</token><token pos="fe">"</token><token pos="aq0ms0">injusto</token><token pos="fc">,</token><token pos="rg">poco</token><token pos="aq0ms0">riguroso</token><token pos="cc">y</token><token pos="aq0ms0">atento</token><token pos="rg">tan</token><token pos="rg">sólo</token><token pos="sps00">a</token><token pos="da0fp0">las</token><token pos="ncfp000">excepciones</token><token pos="fe">"</token><token pos="fp">.</token>
-		<to_annotate>[[(152, 218), 'el informe', 'c_9'], [(540, 611), 'las excepciones', 'c_2'], ['se', 'c_13'], [(182, 218), 'informe', 'c_17']]</to_annotate></rheme>
+			<token pos="vmip3s0">asegura</token><token pos="cs">que</token><mention concept_ref="c_9"><token pos="da0ms0">el</token><token pos="ncms000">informe</token></mention><token pos="vsip3s0">es</token><token pos="fe">"</token><token pos="aq0ms0">injusto</token><token pos="fc">,</token><token pos="rg">poco</token><token pos="aq0ms0">riguroso</token><token pos="cc">y</token><token pos="aq0ms0">atento</token><token pos="rg">tan</token><token pos="rg">sólo</token><token pos="sps00">a</token><mention concept_ref="c_2"><token pos="da0fp0">las</token><token pos="ncfp000">excepciones</token></mention><token pos="fe">"</token><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 			<frame type="Leadership" head="director" />
 			<frame type="Leadership" head="director" />
@@ -138,15 +132,13 @@
 			<frame type="Leadership" head="director" />
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_4">
 			<token pos="da0fs0">La</token><token pos="aq0cs0">mayor</token><token pos="ncfs000">proporción</token><token pos="sps00">de</token><token pos="ncfp000">temas</token><token pos="aq0mp0">relativos</token><token pos="sps00">a</token><token pos="di0fs0">toda</token><token pos="np00000">España</token><token pos="rg">frente</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="aq0mp0">específicos</token><token pos="sps00">de</token><token pos="di0cs0">cada</token><token pos="ncms000">territorio</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="ncfs000">ecuanimidad</token><token pos="sps00">con</token><token pos="pr0cn000">que</token><token pos="p0000000">se</token><token pos="vmip3s0">explica</token><token pos="da0ms0">el</token><token pos="ncms000">fenómeno</token><token pos="aq0cs0">nacionalista</token><token pos="rg">junto</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="ncmp000">hechos</token><token pos="aq0mp0">históricos</token><token pos="aq0cp0">comunes</token><token pos="fc">,</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncmn000">énfasis</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="pr0cn000">que</token><token pos="da0fs0">la</token><token pos="np00000">Constitución</token><token pos="cc">y</token><token pos="da0mp0">los</token><token pos="aq0cp0">correspondientes</token><token pos="ncmp000">estatutos</token><token pos="sps00">de</token><token pos="ncfs000">autonomía</token><token pos="vsip3p0">son</token><token pos="vmp00pm">presentados</token><token pos="cs">como</token><token pos="ncmp000">pilares</token><token pos="spcms">del</token><token pos="ncms000">régimen</token><token pos="aq0ms0">democrático</token>
 		</theme>
 		<rheme concept_ref1="c_9" concept_ref2="c_6" concept_ref3="c_13" concept_ref4="c_15" concept_ref5="c_17">
-			<token pos="vmip3p0">desmienten</token><token pos="fc">,</token><token pos="fc">,</token><token pos="da0mp0">los</token><token pos="ncmp000">ejes</token><token pos="aq0cp0">centrales</token><token pos="spcms">del</token><token pos="ncms000">informe</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">academia</token><token pos="fp">.</token>
-		<to_annotate>[['el informe', 'c_9'], [(394, 461), 'la academia', 'c_6'], [(198, 262), 'los ejes', 'c_13'], [(394, 461), 'la academia', 'c_15'], [(329, 365), 'informe', 'c_17']]</to_annotate></rheme>
+			<token pos="vmip3p0">desmienten</token><token pos="fc">,</token><token pos="fc">,</token><mention concept_ref="c_13"><token pos="da0mp0">los</token><token pos="ncmp000">ejes</token></mention><token pos="aq0cp0">centrales</token><token pos="spcms">del</token><mention concept_ref="c_17"><token pos="ncms000">informe</token></mention><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">academia</token><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 			<frame type="Kinship" head="son" />
 			<main_frame type="Kinship" head="son" />
@@ -166,66 +158,55 @@
 				<argument type="Leader" dependent="de temas" /></frame>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_5">
 			<token pos="da0mp0">Los</token><token pos="ncmp000">libros</token><token pos="sps00">de</token><token pos="ncms000">texto</token><token pos="pr0cn000">que</token><token pos="rn">no</token><token pos="vmip2p0">respetan</token><token pos="di0fs0">una</token><token pos="ncfs000">visión</token><token pos="aq0fs0">neutra</token><token pos="cc">y</token><token pos="aq0fs0">sensata</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">historia</token><token pos="pr0cn000">que</token>
 		</theme>
 		<rheme concept_ref1="c_6" concept_ref2="c_13" concept_ref3="c_16" concept_ref4="c_17">
-			<token pos="vsip3p0">son</token><token pos="aq0fs0">pura</token><token pos="ncfs000">excepción</token><token pos="fe">"</token><token pos="vmip3s0">presta</token><token pos="ncfp000">funciones</token><token pos="sps00">de</token><token pos="ncms000">asesor</token><token pos="aq0ms0">educativo</token><token pos="sps00">en</token><token pos="ncmp000">países</token><token pos="sps00">de</token><token pos="np00000">América</token><token pos="aq0ms0">Latina</token>
-		<to_annotate>[[(484, 554), 'América Latina', 'c_6'], ['se', 'c_13'], [(484, 554), 'América Latina', 'c_16'], [(252, 290), 'funciones', 'c_17']]</to_annotate></rheme>
+			<token pos="vsip3p0">son</token><token pos="aq0fs0">pura</token><token pos="ncfs000">excepción</token><token pos="fe">"</token><token pos="vmip3s0">presta</token><mention concept_ref="c_17"><token pos="ncfp000">funciones</token></mention><token pos="sps00">de</token><token pos="ncms000">asesor</token><token pos="aq0ms0">educativo</token><token pos="sps00">en</token><token pos="ncmp000">países</token><token pos="sps00">de</token><token pos="np00000">América</token><token pos="aq0ms0">Latina</token>
+		</rheme>
 		<semantic_roles>
 			<frame type="Kinship" head="son" />
 			<main_frame type="Kinship" head="son" />
 			<frame type="Kinship" head="son" />
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_6">
 			<token pos="da0fs0">La</token><token pos="ncfs000">academia</token><token pos="da0fs0">la</token><token pos="aq0fs0">vieja</token><token pos="ncfs000">historia</token><token pos="sps00">de</token><token pos="np00000">España</token>
 		</theme>
 		<rheme>
-			
-		<to_annotate>[]</to_annotate></rheme>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_7">
 			<token pos="da0ms0">el</token><token pos="ncms000">volumen</token><token pos="sps00">de</token><token pos="np00000">Anaya</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">serie</token><token pos="dp3cs0">Nuestro</token><token pos="ncfs000">Mundo</token><token pos="fc">,</token><token pos="pi0ms000">uno</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="rg">más</token><token pos="aq0mpp">usados</token><token pos="sps00">en</token><token pos="da0fp0">las</token><token pos="ncfp000">aulas</token><token pos="aq0fp0">vascas</token><token pos="fc">,</token>
 		</theme>
 		<rheme concept_ref1="c_2" concept_ref2="c_11" concept_ref3="c_14" concept_ref4="c_17" concept_ref5="c_18">
-			<token pos="vmip3s0">excede</token><token pos="da0ms0">el</token><token pos="zp">55%</token><token pos="sps00">de</token><token pos="ncms000">temario</token><token pos="aq0cs0">común</token><token pos="aq0msp">fijado</token><token pos="sps00">por</token><token pos="np00000">Educación</token><token pos="sps00">para</token><token pos="da0fp0">las</token><token pos="ncfp000">comunidades</token><token pos="sps00">con</token><token pos="ncfs000">lengua</token><token pos="aq0fs0">propia</token><token pos="fp">.</token>
-		<to_annotate>[[(433, 504), 'las comunidades', 'c_2'], [(231, 267), 'temario', 'c_11'], [(364, 402), 'Educación', 'c_14'], [(231, 267), 'temario', 'c_17'], [(534, 569), 'lengua', 'c_18']]</to_annotate></rheme>
+			<token pos="vmip3s0">excede</token><token pos="da0ms0">el</token><token pos="zp">55%</token><token pos="sps00">de</token><token pos="ncms000">temario</token><token pos="aq0cs0">común</token><token pos="aq0msp">fijado</token><token pos="sps00">por</token><mention concept_ref="c_14"><token pos="np00000">Educación</token></mention><token pos="sps00">para</token><mention concept_ref="c_2"><token pos="da0fp0">las</token><token pos="ncfp000">comunidades</token></mention><token pos="sps00">con</token><mention concept_ref="c_18"><token pos="ncfs000">lengua</token></mention><token pos="aq0fs0">propia</token><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_8">
 			<token pos="rg">tan</token><token pos="rg">sólo</token><token pos="z">6</token><token pos="fg">-</token><token pos="fg">-</token><token pos="da0ms0">el</token><token pos="zp">5,7%</token><token pos="fg">-</token><token pos="fg">-</token>
 		</theme>
 		<rheme concept_ref1="c_7" concept_ref2="c_13">
-			<token pos="p0300000">se</token><token pos="vmip3p0">centran</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="np00000">País</token><token pos="ncms000">Vasco</token><token pos="fp">.</token>
-		<to_annotate>[[(147, 244), 'el País Vasco', 'c_7'], [(50, 82), 'se', 'c_13']]</to_annotate></rheme>
+			<mention concept_ref="c_13"><token pos="p0300000">se</token></mention><token pos="vmip3p0">centran</token><token pos="sps00">en</token><mention concept_ref="c_7"><token pos="da0ms0">el</token><token pos="np00000">País</token><token pos="ncms000">Vasco</token></mention><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_9">
 			<token pos="dd0ms0">Este</token><token pos="ncms000">manual</token><token pos="fc">,</token><token pos="spcms">del</token><token pos="pr0cn000">que</token><token pos="vmip3s0">existe</token><token pos="da0fs0">la</token><token pos="aq0cs0">correspondiente</token><token pos="ncfs000">versión</token><token pos="sps00">en</token><token pos="ncms000">euskera</token><token pos="fc">,</token>
 		</theme>
 		<rheme concept_ref1="c_6" concept_ref2="c_11" concept_ref3="c_2" concept_ref4="c_7" concept_ref5="c_13" concept_ref6="c_15">
-			<token pos="vmip3s0">incluye</token><token pos="di0ms0">un</token><token pos="aq0ms0">amplio</token><token pos="ncms000">bloque</token><token pos="pr000000">donde</token><token pos="p0000000">se</token><token pos="vmip3p0">tratan</token><token pos="rg">extensamente</token><token pos="da0fp0">las</token><token pos="fe">"</token><token pos="ncfp000">raíces</token><token pos="aq0fp0">históricas</token><token pos="fe">"</token><token pos="pr0cn000">que</token><token pos="da0fs0">la</token><token pos="ncfs000">academia</token><token pos="vmip3s0">asegura</token><token pos="rn">no</token><token pos="vmn0000">encontrar</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="ncmp000">libros</token><token pos="sps00">de</token><token pos="ncms000">texto</token><token pos="fp">.</token>
-		<to_annotate>[[(588, 655), 'la academia', 'c_6'], [(164, 263), 'un amplio bloque', 'c_11'], [(263, 298), 'donde', 'c_2'], [(401, 492), 'las " raíces', 'c_7'], [(298, 330), 'se', 'c_13'], [(588, 655), 'la academia', 'c_15']]</to_annotate></rheme>
+			<token pos="vmip3s0">incluye</token><mention concept_ref="c_11"><token pos="di0ms0">un</token><token pos="aq0ms0">amplio</token><token pos="ncms000">bloque</token></mention><mention concept_ref="c_2"><token pos="pr000000">donde</token></mention><mention concept_ref="c_13"><token pos="p0000000">se</token></mention><token pos="vmip3p0">tratan</token><token pos="rg">extensamente</token><mention concept_ref="c_7"><token pos="da0fp0">las</token><token pos="fe">"</token><token pos="ncfp000">raíces</token></mention><token pos="aq0fp0">históricas</token><token pos="fe">"</token><token pos="pr0cn000">que</token><token pos="da0fs0">la</token><token pos="ncfs000">academia</token><token pos="vmip3s0">asegura</token><token pos="rn">no</token><token pos="vmn0000">encontrar</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="ncmp000">libros</token><token pos="sps00">de</token><token pos="ncms000">texto</token><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 			<frame type="Text" head="manual">
 				<argument type="Genre" dependent="Este" /></frame>
@@ -239,15 +220,13 @@
 				<argument type="Genre" dependent="Este" /></frame>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_10">
 			<token pos="da0fs0">La</token><token pos="aq0fs0">fabulosa</token><token pos="ncfs000">herencia</token><token pos="sps00">de</token><token pos="np00000">Carlos</token><token pos="ncms000">V</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="ncfs000">monarquía</token><token pos="aq0fs0">hispánica</token><token pos="cc">y</token><token pos="np00000">Reyes</token><token pos="aq0mp0">Poderosos</token>
 		</theme>
 		<rheme concept_ref1="c_6" concept_ref2="c_2" concept_ref3="c_11" concept_ref4="c_7" concept_ref5="c_1" concept_ref6="c_10" concept_ref7="c_13" concept_ref8="c_14" concept_ref9="c_15" concept_ref10="c_17" concept_ref11="c_18">
-			<token pos="vsip3p0">son</token><token pos="dn0cp0">tres</token><token pos="ncmp000">apartados</token><token pos="pr000000">donde</token><token pos="p0000000">se</token><token pos="vmip3p0">explican</token><token pos="da0fs0">la</token><token pos="ncfs000">herencia</token><token pos="aq0cs0">territorial</token><token pos="spcms">del</token><token pos="ao0ms0">primer</token><token pos="nccs000">monarca</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">Casa</token><token pos="sps00">de</token><token pos="np00000">Austria</token><token pos="fc">,</token><token pos="fe">"</token><token pos="pr0cn000">que</token><token pos="vmii3s0">tenía</token><token pos="sps00">en</token><token pos="np00000">España</token><token pos="dp3cs0">su</token><token pos="ncms000">núcleo</token><token pos="sps00">de</token><token pos="ncms000">poder</token><token pos="fe">"</token><token pos="fx">;</token><token pos="da0fs0">la</token><token pos="nccs000">defensa</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">unidad</token><token pos="aq0fs0">católica</token><token pos="cc">y</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="fe">"</token><token pos="ncfs000">hegemonía</token><token pos="sps00">de</token><token pos="np00000">España</token><token pos="fe">"</token><token pos="aq0ms0">llevada</token><token pos="sps00">a</token><token pos="ncfs000">cabo</token><token pos="sps00">por</token><token pos="dp3cs0">su</token><token pos="ncms000">hijo</token><token pos="np0000l">Felipe</token><token pos="np0000l">II</token><token pos="fc">,</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="fe">"</token><token pos="ncfs000">epopeya</token><token pos="aq0fs0">americana</token><token pos="fe">"</token><token pos="pr0cn000">que</token><token pos="vmis3s0">supuso</token><token pos="da0fs0">la</token><token pos="ncfs000">colonización</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="np00000">Indias</token><token pos="fp">.</token>
-		<to_annotate>[[(944, 979), (1529, 1564), 'España', 'c_6'], [(331, 366), 'donde', 'c_2'], [(435, 502), 'la herencia', 'c_11'], [(979, 1044), 'su núcleo', 'c_7'], [(1157, 1223), 'la defensa', 'c_1'], [(1407, 1500), 'la " hegemonía', 'c_10'], [(366, 398), 'se', 'c_13'], [(2115, 2186), 'la colonización', 'c_14'], [(1252, 1317), 'la unidad', 'c_15'], [(979, 1044), 'su núcleo', 'c_17'], [(435, 502), 'la herencia', 'c_18']]</to_annotate></rheme>
+			<token pos="vsip3p0">son</token><token pos="dn0cp0">tres</token><token pos="ncmp000">apartados</token><mention concept_ref="c_2"><token pos="pr000000">donde</token></mention><mention concept_ref="c_13"><token pos="p0000000">se</token></mention><token pos="vmip3p0">explican</token><token pos="da0fs0">la</token><token pos="ncfs000">herencia</token><token pos="aq0cs0">territorial</token><token pos="spcms">del</token><token pos="ao0ms0">primer</token><token pos="nccs000">monarca</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">Casa</token><token pos="sps00">de</token><token pos="np00000">Austria</token><token pos="fc">,</token><token pos="fe">"</token><token pos="pr0cn000">que</token><token pos="vmii3s0">tenía</token><token pos="sps00">en</token><token pos="np00000">España</token><token pos="dp3cs0">su</token><token pos="ncms000">núcleo</token><token pos="sps00">de</token><token pos="ncms000">poder</token><token pos="fe">"</token><token pos="fx">;</token><mention concept_ref="c_1"><token pos="da0fs0">la</token><token pos="nccs000">defensa</token></mention><token pos="sps00">de</token><mention concept_ref="c_15"><token pos="da0fs0">la</token><token pos="ncfs000">unidad</token></mention><token pos="aq0fs0">católica</token><token pos="cc">y</token><token pos="sps00">de</token><mention concept_ref="c_10"><token pos="da0fs0">la</token><token pos="fe">"</token><token pos="ncfs000">hegemonía</token></mention><token pos="sps00">de</token><token pos="np00000">España</token><token pos="fe">"</token><token pos="aq0ms0">llevada</token><token pos="sps00">a</token><token pos="ncfs000">cabo</token><token pos="sps00">por</token><token pos="dp3cs0">su</token><token pos="ncms000">hijo</token><token pos="np0000l">Felipe</token><token pos="np0000l">II</token><token pos="fc">,</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="fe">"</token><token pos="ncfs000">epopeya</token><token pos="aq0fs0">americana</token><token pos="fe">"</token><token pos="pr0cn000">que</token><token pos="vmis3s0">supuso</token><mention concept_ref="c_14"><token pos="da0fs0">la</token><token pos="ncfs000">colonización</token></mention><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="np00000">Indias</token><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 			<main_frame type="Kinship" head="son">
 				<argument type="Ego" dependent="Poderosos" /></main_frame>
@@ -267,18 +246,15 @@
 				<argument type="Descriptor" dependent="herencia" /></frame>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_11">
 			<token pos="di0ms0">Otro</token><token pos="ncms000">temor</token><token pos="aq0msp">invocado</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">academia</token>
 		</theme>
 		<rheme concept_ref1="c_2" concept_ref2="c_11" concept_ref3="c_13" concept_ref4="c_17">
-			<token pos="vsip3s0">es</token><token pos="di0ms0">un</token><token pos="aq0cs0">posible</token><token pos="ncms000">tratamiento</token><token pos="fe">"</token><token pos="sps00">de</token><token pos="di0ms0">todo</token><token pos="da0ns0">lo</token><token pos="pr0cn000">que</token><token pos="pp1cp000">nos</token><token pos="vmip3s0">separa</token><token pos="fe">"</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vmsi3s0">pudiera</token><token pos="vmn0000">conducir</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="fe">"</token><token pos="ncfs000">xenofobia</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">racismo</token><token pos="fe">"</token><token pos="sps00">entre</token><token pos="da0mp0">los</token><token pos="ncmp000">escolares</token><token pos="fp">.</token>
-		<to_annotate>[[(868, 937), 'los escolares', 'c_2'], [(121, 226), 'un posible tratamiento', 'c_11'], ['se', 'c_13'], [(745, 811), 'el racismo', 'c_17']]</to_annotate></rheme>
+			<token pos="vsip3s0">es</token><mention concept_ref="c_11"><token pos="di0ms0">un</token><token pos="aq0cs0">posible</token><token pos="ncms000">tratamiento</token></mention><token pos="fe">"</token><token pos="sps00">de</token><token pos="di0ms0">todo</token><token pos="da0ns0">lo</token><token pos="pr0cn000">que</token><token pos="pp1cp000">nos</token><token pos="vmip3s0">separa</token><token pos="fe">"</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vmsi3s0">pudiera</token><token pos="vmn0000">conducir</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="fe">"</token><token pos="ncfs000">xenofobia</token><token pos="cc">y</token><mention concept_ref="c_17"><token pos="da0ms0">el</token><token pos="ncms000">racismo</token></mention><token pos="fe">"</token><token pos="sps00">entre</token><mention concept_ref="c_2"><token pos="da0mp0">los</token><token pos="ncmp000">escolares</token></mention><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
+	
 </text>

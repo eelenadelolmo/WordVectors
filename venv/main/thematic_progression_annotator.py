@@ -3,15 +3,19 @@ import re
 import ast
 import html
 import shutil
-import logging
-import numpy as np
 import spacy
+import numpy as np
+import pandas as pd
 import scipy.spatial
+import matplotlib.pyplot as plt
 import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import ElementTree
 from gensim.models import KeyedVectors
 from sentence_transformers import SentenceTransformer
 from gensim.models.wrappers import FastText
+
+
+# Pending: precedence of comparisons
 
 
 # Pretty-printing a dictionary with a n-tabs indentation
@@ -54,12 +58,25 @@ FastText_models = FastText.load_fasttext_format('FastText_models/cc.es.300.bin')
 # Directory containing the output in XML of the feature generation module
 input_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/in_xml'
 
-# Directory containing the output in XML of the coreference annotation
+# Directory containing the temporal output in XML of the coreference annotation for whole themes and rhemes
 output_dir_tmp = '/home/elena/PycharmProjects/WordVectors/venv/main/out_xml_tmp'
 shutil.rmtree(output_dir_tmp, ignore_errors=True)
 os.makedirs(output_dir_tmp)
 
+# Directory containing the output in XML of this module (coreference annotator for whole theams and rhematic mentions)
+output_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/out_xml_tmp'
+shutil.rmtree(output_dir, ignore_errors=True)
+os.makedirs(output_dir)
 
+# Directory containing the output in HTML of this module
+output_dir_html = '/home/elena/PycharmProjects/WordVectors/venv/main/out_html'
+shutil.rmtree(output_dir_html, ignore_errors=True)
+os.makedirs(output_dir_html)
+
+# Directory containing the visual matrix output in png of this module
+output_dir_plot = '/home/elena/PycharmProjects/WordVectors/venv/main/out_plot'
+shutil.rmtree(output_dir_plot, ignore_errors=True)
+os.makedirs(output_dir_plot)
 
 
 
@@ -907,15 +924,49 @@ for file_xml in os.listdir(input_dir):
 
 
 
-# Pending: comment these lines (executing separatedly by now)ç
-import os
-import re
-import ast
-import shutil
-output_dir_tmp = '/home/elena/PycharmProjects/WordVectors/venv/main/out_xml_tmp'
-output_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/out_xml'
-shutil.rmtree(output_dir, ignore_errors=True)
-os.makedirs(output_dir)
+## Testing unsupervised clustering algorithms
+
+"""
+from sklearn.cluster import KMeans
+
+corpus = [' El Ayuntamiento de Barcelona.',
+          ' Los radares.',
+          ' El proyecto.',
+          ' las cámaras.',
+          ' las cámaras.',
+          'cada radar.',
+          ' así.',
+          ' Los responsables del área de Vía Pública.',
+          ' en las rondas de Barcelona.',
+          ' En la mayoría de los siniestros mortales.',
+          ' el automovilista infractor.',
+          ' En las rondas , la velocidad máxima autorizada.',
+          ' Los responsables del proyecto.',
+          ' Para evitar la picaresca',
+          ' El conductor.',
+          ' los radares.'
+          ]
+
+corpus_embeddings = model.encode(corpus)
+
+num_clusters = 4
+clustering_model = KMeans(n_clusters=num_clusters)
+clustering_model.fit(corpus_embeddings)
+cluster_assignment = clustering_model.labels_
+
+clustered_sentences = [[] for i in range(num_clusters)]
+for sentence_id, cluster_id in enumerate(cluster_assignment):
+    clustered_sentences[cluster_id].append(corpus[sentence_id])
+
+for i, cluster in enumerate(clustered_sentences):
+    print("Cluster ", i+1)
+    print(cluster)
+    print("")
+"""
+
+
+
+## Generating XML with mention annotations
 
 for f in os.listdir(output_dir_tmp):
     with open(output_dir_tmp + '/' + f, 'r') as fich_xml:
@@ -1015,108 +1066,14 @@ for f in os.listdir(output_dir_tmp):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Pending: precedence of comparisons
-# Pending: more than one color in rhemes
-
-## Generating HTML output
-
-# Pending: comment these lines (executing separatedly by now)
-import xml.etree.ElementTree as ET
-import shutil
-import os
-output_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/out_xml'
-
-output_dir_html = '/home/elena/PycharmProjects/WordVectors/venv/main/out_html'
-shutil.rmtree(output_dir_html, ignore_errors=True)
-os.makedirs(output_dir_html)
+## Generating HTML output and the data for the plot
 
 colors = ['708090', 'D2691E', '556B2F', 'FFE4C4', '000080', '2F4F4F', '4B0082', '8B4513', '6A5ACD', '663399', 'BDB76B', 'FFD700', '00FF7F', 'D2B48C', 'DEB887', '32CD32', 'FFFACD', '0000CD', '008000', 'FFFAF0', '6B8E23', '90EE90', '7B68EE', 'FFFFF0', '5F9EA0', 'FFFFFF', '6495ED', '00CED1', '808080', '00008B', 'FFF8DC', '4169E1', 'FF1493', 'FF6347', 'F4A460', '7FFF00', '808000', 'F5F5DC', '8B008B', 'FFF0F5', 'F0FFF0', '9ACD32', 'ADFF2F', 'FF7F50', 'DC143C', 'FF69B4', 'FFFFE0', 'ADD8E6', 'FFEFD5', '8A2BE2', 'DAA520', '7FFFD4', 'E0FFFF', 'BA55D3', 'FF8C00', '20B2AA', 'AFEEEE', 'B22222', '008080', '2E8B57', 'CD853F', 'B0C4DE', 'FAEBD7', '000000', '228B22', '008B8B', '006400', '8FBC8F', '778899', 'FFDAB9', 'FFFAFA', '696969', 'FFE4B5', 'E9967A', 'F0FFFF', '66CDAA', '800080', '87CEEB', 'D3D3D3', 'C0C0C0', 'FA8072', '4682B4', 'F5F5F5', 'DCDCDC', '00FFFF', '48D1CC', 'B0E0E6', 'FFA07A', 'FF0000', '00FA9A', 'A9A9A9', 'FF4500', 'DDA0DD', 'E6E6FA', 'FFEBCD', 'BC8F8F', 'EE82EE', 'FFA500', 'A0522D', '8B0000', 'F8F8FF', 'FDF5E6', '98FB98', '9370DB', '191970', 'FFF5EE', 'FF00FF', 'EEE8AA', 'FAFAD2', '800000', 'FFC0CB', '9932CC', 'B8860B', '00BFFF', 'FFDEAD', 'FFB6C1', 'DB7093', '00FF00', '40E0D0', 'F5DEB3', 'FFFF00', 'FAF0E6', '3CB371', 'D8BFD8', '9400D3', 'C71585', 'DA70D6', 'F0E68C', '0000FF', 'FFE4E1', 'F5FFFA', 'CD5C5C', '483D8B', '87CEFA', '8B4513', '7CFC00', 'F0F8FF', 'A52A2A', '1E90FF', 'F08080']
 
 for file_xml in os.listdir(output_dir):
+
+    # Every row in the dataframe to plot
+    data = list()
 
     html = """<!DOCTYPE html>
     <html lang="en">
@@ -1135,24 +1092,28 @@ for file_xml in os.listdir(output_dir):
     """
 
     with open(output_dir + '/' + file_xml) as xml:
+
         texto = xml.read()
+
         root = ET.fromstring(texto)
 
+
         ids_colors = dict()
-        n_concept = 0
+        n_concepts = 0
 
         for concepts in root.iter('concepts'):
             for concept in concepts:
-                ids_colors[concept.attrib['id']] = colors[n_concept % 140]
-                html += '<p style="color:#' + colors[n_concept % 140] + ';">' + concept.text.strip() + ' (' + concept.attrib['id'] + ')</p>'
-                n_concept += 1
+                ids_colors[concept.attrib['id']] = colors[n_concepts % 140]
+                html += '<p style="color:#' + str(colors[n_concepts % 140]) + ';">' + concept.text.strip() + ' (' + concept.attrib['id'] + ')</p>'
+                n_concepts += 1
 
         html += '''
 
         <h1>Oraciones</h1>'''
+        n_oraciones = 0
 
-        for sentence in root.iter('sentence'):
-
+        for num_sentence, sentence in enumerate(root.iter('sentence')):
+            n_oraciones += 1
             theme = ""
             rheme = ""
             rheme_sem_role = list()
@@ -1182,7 +1143,7 @@ for file_xml in os.listdir(output_dir):
                         if grandson.tag == 'mention':
                             rheme_id_str += grandson.attrib['concept_ref'] + ','
                             rheme_color = ids_colors[grandson.attrib['concept_ref']]
-                            rheme += '<span style="white-space:nowrap;color:#' + rheme_color + ';">' + '['
+                            rheme += '<span style="white-space:nowrap;color:#' + str(rheme_color) + ';">' + '['
                             for grand_grandson in grandson:
                                 rheme += grand_grandson.text.strip() + ' '
                             rheme = rheme[:-1]
@@ -1206,68 +1167,71 @@ for file_xml in os.listdir(output_dir):
                                 rheme_sem_role.append(arg.attrib['dependent'])
 
 
-            html += '<p> [ ' + theme_id_str + ' / ' + rheme_id_str + ' ] <span style="white-space:nowrap;color:#' + theme_color + ';">' + theme + '</span> ////<br/>' + '<nobr>' + rheme + '</nobr>'
+            html += '<p> [ ' + theme_id_str + ' / ' + rheme_id_str + ' ] <span style="white-space:nowrap;color:#' + str(theme_color) + ';">' + theme + '</span> ////<br/>' + '<nobr>' + rheme + '</nobr>'
 
             # Colouring the full rheme in the same colour
             # html += '<p> [ ' + theme_id_str + ' / ' + rheme_id_str + ' ] <span style="white-space:nowrap;color:#' + theme_color + ';">' + theme + '</span> ////<br/> <span style="color:#' + rheme_color + ';">' + rheme + '</span></p>'
+
+            # Getting the list of theme and rheme ids
+            theme_id_str_list = re.sub("c_", "", theme_id_str).split(",")
+            rheme_id_str_list = re.sub("c_", "", rheme_id_str).split(",")
+
+            sent_n_concepts = list(range(n_concepts))
+
+            for tema in theme_id_str_list:
+                if tema != "":
+                    sent_n_concepts[int(tema)] = 'T'
+
+            for rema in rheme_id_str_list:
+                if rema != "":
+                    if sent_n_concepts[int(rema)] == 'T':
+                        sent_n_concepts[int(rema)] = 'B'
+                    else:
+                        sent_n_concepts[int(rema)] = 'R'
+
+            for pos, sent_n_concept in enumerate(sent_n_concepts):
+                if sent_n_concept not in ['T', 'R', 'B']:
+                    sent_n_concepts[pos] = 'N'
+
+            # Appending the sentence id at the beginning
+            sent_n_concepts = [num_sentence] + sent_n_concepts
+            data.append(sent_n_concepts)
+
+    # print(data)
+
     html += '\t</body>\n</html>'
 
     with open(output_dir_html + '/' + file_xml.split('.')[0] + '.html', 'w') as file_html:
         file_html.write(html)
 
+    frases = list()
+    conceptos = list()
+    tema_rema = list()
 
+    for dato in data:
+        frases += [dato[0]] * n_concepts
+        conceptos += list(range(n_concepts))
+        tema_rema += dato[1:]
 
+    df = pd.DataFrame(dict(n_sentence=frases, n_concept=conceptos, t_r=tema_rema))
+    # pd.set_option("display.max_rows", None, "display.max_columns", None)
+    # print(df)
 
+    x = df['n_sentence']
+    y = df['n_concept']
 
+    colores = {'N': 'white', 'T': 'red', 'R': 'blue', 'B': 'orange'}
 
+    fig, ax = plt.subplots()
+    columnas = ['c_' + str(numero) for numero in range(n_concepts)]
 
+    plt.xticks(list(range(n_oraciones)), list(range(n_oraciones)))
+    plt.yticks(list(range(n_concepts)), columnas)
+    plt.rc('grid', linestyle=":", linewidth='0.5', color='gray')
+    plt.grid(True)
 
+    ax.scatter(x, y, c=df['t_r'].map(colores))
 
+    plt.savefig(output_dir_plot + '/' + file_xml.split('.')[0] + '.png')
 
-
-
-
-
-
-
-
-## Testing unsupervised clustering algorithms
-
-"""
-from sklearn.cluster import KMeans
-
-corpus = [' El Ayuntamiento de Barcelona.',
-          ' Los radares.',
-          ' El proyecto.',
-          ' las cámaras.',
-          ' las cámaras.',
-          'cada radar.',
-          ' así.',
-          ' Los responsables del área de Vía Pública.',
-          ' en las rondas de Barcelona.',
-          ' En la mayoría de los siniestros mortales.',
-          ' el automovilista infractor.',
-          ' En las rondas , la velocidad máxima autorizada.',
-          ' Los responsables del proyecto.',
-          ' Para evitar la picaresca',
-          ' El conductor.',
-          ' los radares.'
-          ]
-
-corpus_embeddings = model.encode(corpus)
-
-num_clusters = 4
-clustering_model = KMeans(n_clusters=num_clusters)
-clustering_model.fit(corpus_embeddings)
-cluster_assignment = clustering_model.labels_
-
-clustered_sentences = [[] for i in range(num_clusters)]
-for sentence_id, cluster_id in enumerate(cluster_assignment):
-    clustered_sentences[cluster_id].append(corpus[sentence_id])
-
-for i, cluster in enumerate(clustered_sentences):
-    print("Cluster ", i+1)
-    print(cluster)
-    print("")
-"""
 

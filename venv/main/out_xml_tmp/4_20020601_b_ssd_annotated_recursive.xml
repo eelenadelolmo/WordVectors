@@ -8,8 +8,8 @@
             <!ATTLIST concept id ID #REQUIRED>
     <!ELEMENT sentence (theme, rheme, semantic_roles)>
         <!ELEMENT theme (token*)>
-            <!ATTLIST theme concept_ref IDREF #REQUIRED>
-        <!ELEMENT rheme (token*)>
+            <!ATTLIST theme concept_ref IDREF #IMPLIED>
+        <!ELEMENT rheme (token|mention)*>
             <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
             <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
             <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
@@ -22,6 +22,8 @@
             <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT mention (token+)>
+            <!ATTLIST mention concept_ref CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
 		<!ELEMENT frame (argument*)>
             <!ATTLIST frame type CDATA #REQUIRED>
@@ -48,7 +50,7 @@
 		</theme>
 		<rheme>
 			<token pos="vaip3p0">han</token><token pos="vmp00sm">permitido</token><token pos="vmn0000">constatar</token><token pos="da0ns0">lo</token><token pos="pr0cn000">que</token><token pos="da0fs0">la</token><token pos="ncfs000">sabiduría</token><token pos="aq0cs0">popular</token><token pos="rg">ya</token><token pos="vmii3s0">sabía</token><token pos="fp">.</token>
-		<to_annotate>[]</to_annotate></rheme>
+		</rheme>
 		<semantic_roles>
 			<frame type="Desirability" head="popular">
 				<argument type="Evaluee" dependent="ya" /></frame>
@@ -68,18 +70,13 @@
 				<argument type="Evaluee" dependent="ya" /></frame>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme>
-			
 		</theme>
 		<rheme>
-			
-		<to_annotate>[]</to_annotate></rheme>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
+	
 </text>

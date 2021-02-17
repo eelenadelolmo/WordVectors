@@ -8,8 +8,8 @@
             <!ATTLIST concept id ID #REQUIRED>
     <!ELEMENT sentence (theme, rheme, semantic_roles)>
         <!ELEMENT theme (token*)>
-            <!ATTLIST theme concept_ref IDREF #REQUIRED>
-        <!ELEMENT rheme (token*)>
+            <!ATTLIST theme concept_ref IDREF #IMPLIED>
+        <!ELEMENT rheme (token|mention)*>
             <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
             <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
             <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
@@ -22,6 +22,8 @@
             <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT mention (token+)>
+            <!ATTLIST mention concept_ref CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
 		<!ELEMENT frame (argument*)>
             <!ATTLIST frame type CDATA #REQUIRED>
@@ -61,34 +63,30 @@
 			<token pos="da0fs0">La</token><token pos="ncfs000">década</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">años</token><token pos="zm">90</token>
 		</theme>
 		<rheme concept_ref1="c_2" concept_ref2="c_8" concept_ref3="c_4" concept_ref4="c_3" concept_ref5="c_9" concept_ref6="c_10" concept_ref7="c_13">
-			<token pos="vaii3s0">había</token><token pos="vmp00sm">resultado</token><token pos="aq0fs0">improductiva</token><token pos="sps00">para</token><token pos="da0ms0">el</token><token pos="ncms000">motociclismo</token><token pos="aq0ms0">español</token><token pos="fc">,</token><token pos="aq0msp">acostumbrado</token><token pos="sps00">desde</token><token pos="ncmp000">finales</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="z">60</token><token pos="sps00">a</token><token pos="vmn0000">descorchar</token><token pos="ncfp000">botellas</token><token pos="sps00">de</token><token pos="ncfs000">cava</token><token pos="cc">y</token><token pos="vmn0000">coleccionar</token><token pos="ncfp000">coronas</token><token pos="sps00">de</token><token pos="ncms000">campeón</token><token pos="fp">.</token>
-		<to_annotate>[[(289, 360), 'el motociclismo', 'c_2'], [(492, 528), 'finales', 'c_8'], [(680, 717), 'botellas', 'c_4'], [(909, 945), 'campeón', 'c_3'], [(746, 779), 'cava', 'c_9'], [(844, 880), 'coronas', 'c_10'], [(319, 360), 'motociclismo', 'c_13']]</to_annotate></rheme>
+			<token pos="vaii3s0">había</token><token pos="vmp00sm">resultado</token><token pos="aq0fs0">improductiva</token><token pos="sps00">para</token><mention concept_ref="c_2"><token pos="da0ms0">el</token><token pos="ncms000">motociclismo</token></mention><token pos="aq0ms0">español</token><token pos="fc">,</token><token pos="aq0msp">acostumbrado</token><token pos="sps00">desde</token><mention concept_ref="c_8"><token pos="ncmp000">finales</token></mention><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="z">60</token><token pos="sps00">a</token><token pos="vmn0000">descorchar</token><mention concept_ref="c_4"><token pos="ncfp000">botellas</token></mention><token pos="sps00">de</token><mention concept_ref="c_9"><token pos="ncfs000">cava</token></mention><token pos="cc">y</token><token pos="vmn0000">coleccionar</token><mention concept_ref="c_10"><token pos="ncfp000">coronas</token></mention><token pos="sps00">de</token><mention concept_ref="c_3"><token pos="ncms000">campeón</token></mention><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_1">
 			<token pos="da0ms0">el</token><token pos="ncms000">deporte</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="dn0cp0">dos</token><token pos="ncfp000">ruedas</token>
 		</theme>
 		<rheme concept_ref1="c_9" concept_ref2="c_10" concept_ref3="c_11">
-			<token pos="vmis3s0">sumó</token><token pos="sps00">en</token><token pos="np00000">España</token><token pos="pi0cs000">nada</token><token pos="rg">menos</token><token pos="cs">que</token><token pos="z">23</token><token pos="ncmp000">campeonatos</token><token pos="spcms">del</token><token pos="ncms000">mundo</token><token pos="fp">.</token>
-		<to_annotate>[[(132, 167), 'España', 'c_9'], [(282, 322), 'campeonatos', 'c_10'], [(352, 386), 'mundo', 'c_11']]</to_annotate></rheme>
+			<token pos="vmis3s0">sumó</token><token pos="sps00">en</token><mention concept_ref="c_9"><token pos="np00000">España</token></mention><token pos="pi0cs000">nada</token><token pos="rg">menos</token><token pos="cs">que</token><token pos="z">23</token><mention concept_ref="c_10"><token pos="ncmp000">campeonatos</token></mention><token pos="spcms">del</token><mention concept_ref="c_11"><token pos="ncms000">mundo</token></mention><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 			<frame type="Intentionally_act" head="dos">
 				<argument type="Act" dependent="ruedas" /></frame>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_2">
 			<token pos="da0mp0">Los</token><token pos="aq0cp0">formidables</token><token pos="ncmp000">éxitos</token><token pos="fc">,</token><token pos="dd0ms0">este</token><token pos="ncms000">año</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="np00000">Crivillé</token><token pos="cc">y</token><token pos="np0000l">Emilio</token><token pos="np0000l">Alzamora</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="z">500cc</token><token pos="cc">y</token><token pos="z">125cc</token><token pos="fc">,</token>
 		</theme>
 		<rheme concept_ref1="c_4" concept_ref2="c_9" concept_ref3="c_10" concept_ref4="c_12" concept_ref5="c_13" concept_ref6="c_14">
-			<token pos="vmip3p0">demuestran</token><token pos="fc">,</token><token pos="sps00">sin</token><token pos="ncmp000">embargo</token><token pos="fc">,</token><token pos="cs">que</token><token pos="da0fs0">la</token><token pos="ncfs000">falta</token><token pos="sps00">de</token><token pos="ncmp000">títulos</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ao0mp0">últimos</token><token pos="ncmp000">tiempos</token><token pos="rn">no</token><token pos="vsii3s0">era</token><token pos="aq0ms0">sinónimo</token><token pos="sps00">de</token><token pos="ncfs000">decadencia</token><token pos="sps00">en</token><token pos="di0fs0">una</token><token pos="ncfs000">actividad</token><token pos="sps00">con</token><token pos="aq0fp0">fortísimas</token><token pos="ncfp000">raíces</token><token pos="fg">-</token><token pos="fg">-</token><token pos="aq0fp0">deportivas</token><token pos="cc">e</token><token pos="aq0cp0">industriales</token><token pos="fg">-</token><token pos="fg">-</token><token pos="sps00">en</token><token pos="np00000">España</token><token pos="fc">,</token><token pos="cc">y</token><token pos="sps00">en</token><token pos="aq0msp">especial</token><token pos="sps00">en</token><token pos="np00000">Catalunya</token><token pos="fp">.</token>
-		<to_annotate>[[(899, 934), 'raíces', 'c_4'], [(1345, 1383), 'Catalunya', 'c_9'], [(899, 934), 'raíces', 'c_10'], [(404, 440), 'títulos', 'c_12'], [(469, 571), 'los últimos tiempos', 'c_13'], [(694, 733), 'decadencia', 'c_14']]</to_annotate></rheme>
+			<token pos="vmip3p0">demuestran</token><token pos="fc">,</token><token pos="sps00">sin</token><token pos="ncmp000">embargo</token><token pos="fc">,</token><token pos="cs">que</token><token pos="da0fs0">la</token><token pos="ncfs000">falta</token><token pos="sps00">de</token><mention concept_ref="c_12"><token pos="ncmp000">títulos</token></mention><token pos="sps00">de</token><mention concept_ref="c_13"><token pos="da0mp0">los</token><token pos="ao0mp0">últimos</token><token pos="ncmp000">tiempos</token></mention><token pos="rn">no</token><token pos="vsii3s0">era</token><token pos="aq0ms0">sinónimo</token><token pos="sps00">de</token><mention concept_ref="c_14"><token pos="ncfs000">decadencia</token></mention><token pos="sps00">en</token><token pos="di0fs0">una</token><token pos="ncfs000">actividad</token><token pos="sps00">con</token><token pos="aq0fp0">fortísimas</token><token pos="ncfp000">raíces</token><token pos="fg">-</token><token pos="fg">-</token><token pos="aq0fp0">deportivas</token><token pos="cc">e</token><token pos="aq0cp0">industriales</token><token pos="fg">-</token><token pos="fg">-</token><token pos="sps00">en</token><token pos="np00000">España</token><token pos="fc">,</token><token pos="cc">y</token><token pos="sps00">en</token><token pos="aq0msp">especial</token><token pos="sps00">en</token><mention concept_ref="c_9"><token pos="np00000">Catalunya</token></mention><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 			<frame type="Calendric_unit" head="era" />
 			<main_frame type="Calendric_unit" head="era" />
@@ -96,27 +94,23 @@
 			<frame type="Misdeed" head="sin" />
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_3">
 			<token pos="da0fs0">La</token><token pos="ncfs000">reaparición</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="z">125cc</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="ncfs000">marca</token><token pos="aq0fs0">histórica</token><token pos="cs">como</token><token pos="np00000">Derbi</token>
 		</theme>
 		<rheme concept_ref1="c_9">
-			<token pos="rg">también</token><token pos="vmip3s0">debe</token><token pos="vmn0000">añadirse</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">lista</token><token pos="sps00">de</token><token pos="ncmp000">éxitos</token><token pos="sps00">de</token><token pos="z">1999</token><token pos="fp">.</token>
-		<to_annotate>[[(159, 223), 'la lista', 'c_9']]</to_annotate></rheme>
+			<token pos="rg">también</token><token pos="vmip3s0">debe</token><token pos="vmn0000">añadirse</token><token pos="sps00">a</token><mention concept_ref="c_9"><token pos="da0fs0">la</token><token pos="ncfs000">lista</token></mention><token pos="sps00">de</token><token pos="ncmp000">éxitos</token><token pos="sps00">de</token><token pos="z">1999</token><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_4">
 			<token pos="dn0cp0">Tres</token><token pos="ncmp000">detalles</token>
 		</theme>
 		<rheme concept_ref1="c_2" concept_ref2="c_4" concept_ref3="c_8" concept_ref4="c_3" concept_ref5="c_9" concept_ref6="c_10" concept_ref7="c_11" concept_ref8="c_12" concept_ref9="c_13" concept_ref10="c_14">
-			<token pos="vmip3p0">certifican</token><token pos="cs">que</token><token pos="da0ms0">el</token><token pos="ncms000">motociclismo</token><token pos="aq0ms0">español</token><token pos="rn">no</token><token pos="vmii3s0">estaba</token><token pos="aq0ms0">yermo</token><token pos="fc">,</token><token pos="cc">sino</token><token pos="rg">sólo</token><token pos="sps00">en</token><token pos="ncmp000">barbecho</token><token pos="fd">:</token><token pos="da0fs0">la</token><token pos="ncfs000">presencia</token><token pos="fc">,</token><token pos="rg">hoy</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="aq0msp">nutrido</token><token pos="ncms000">grupo</token><token pos="sps00">de</token><token pos="nccp000">pilotos</token><token pos="rg">muy</token><token pos="aq0mp0">prometedores</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">categoría</token><token pos="ncfs000">reina</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="z">500cc</token><token pos="fc">,</token><token pos="rg">además</token><token pos="sps00">de</token><token pos="np00000">Crivillé</token><token pos="fpa">(</token><token pos="np00000">Gibernau</token><token pos="fc">,</token><token pos="np00000">Checa</token><token pos="fc">,</token><token pos="np00000">Borja</token><token pos="fc">,</token><token pos="sps00">De</token><token pos="np00000">Gea</token><token pos="fc">,</token><token pos="np00000">Cardoso</token><token pos="fs">...</token><token pos="fpt">)</token><token pos="fx">;</token><token pos="da0fs0">la</token><token pos="aq0cs0">potente</token><token pos="ncfs000">aportación</token><token pos="aq0fs0">económica</token><token pos="sps00">de</token><token pos="ncmp000">patrocinadores</token><token pos="fpa">(</token><token pos="np00000">Repsol</token><token pos="fc">,</token><token pos="np0000l">Vía</token><token pos="np0000l">Digital</token><token pos="fc">,</token><token pos="np00000">Movistar</token><token pos="fs">...</token><token pos="fpt">)</token><token pos="pr0cn000">que</token><token pos="vmip3p0">valoran</token><token pos="da0ms0">el</token><token pos="aq0ms0">suculento</token><token pos="ncms000">filón</token><token pos="aq0ms0">publicitario</token><token pos="spcms">del</token><token pos="ncms000">motociclismo</token><token pos="fc">,</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">organización</token><token pos="fc">,</token><token pos="dd0ms0">este</token><token pos="ncms000">año</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="dn0cp0">tres</token><token pos="aq0cp0">grandes</token><token pos="ncmp000">premios</token><token pos="fpa">(</token><token pos="np00000">Catalunya</token><token pos="fc">,</token><token pos="np00000">Valencia</token><token pos="cc">y</token><token pos="np00000">Jerez</token><token pos="fpt">)</token><token pos="fc">,</token><token pos="sps00">con</token><token pos="ncms000">lleno</token><token pos="aq0cs0">total</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="dn0cp0">tres</token><token pos="ncmp000">circuitos</token><token pos="fp">.</token>
-		<to_annotate>[[(273, 344), 'el motociclismo', 'c_2'], [(645, 713), 'la presencia', 'c_4'], [(1416, 1453), 'Gibernau', 'c_8'], [(1796, 1900), 'la potente aportación', 'c_3'], [(2952, 2990), 'Catalunya', 'c_9'], [(1966, 2009), 'patrocinadores', 'c_10'], [(819, 918), 'un nutrido grupo', 'c_11'], [(3288, 3389), 'los tres circuitos', 'c_12'], [(303, 344), (2518, 2559), 'motociclismo', 'c_13'], [(1147, 1181), 'reina', 'c_14']]</to_annotate></rheme>
+			<token pos="vmip3p0">certifican</token><token pos="cs">que</token><mention concept_ref="c_2"><token pos="da0ms0">el</token><token pos="ncms000">motociclismo</token></mention><token pos="aq0ms0">español</token><token pos="rn">no</token><token pos="vmii3s0">estaba</token><token pos="aq0ms0">yermo</token><token pos="fc">,</token><token pos="cc">sino</token><token pos="rg">sólo</token><token pos="sps00">en</token><token pos="ncmp000">barbecho</token><token pos="fd">:</token><mention concept_ref="c_4"><token pos="da0fs0">la</token><token pos="ncfs000">presencia</token></mention><token pos="fc">,</token><token pos="rg">hoy</token><token pos="fc">,</token><token pos="sps00">de</token><mention concept_ref="c_11"><token pos="di0ms0">un</token><token pos="aq0msp">nutrido</token><token pos="ncms000">grupo</token></mention><token pos="sps00">de</token><token pos="nccp000">pilotos</token><token pos="rg">muy</token><token pos="aq0mp0">prometedores</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">categoría</token><mention concept_ref="c_14"><token pos="ncfs000">reina</token></mention><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="z">500cc</token><token pos="fc">,</token><token pos="rg">además</token><token pos="sps00">de</token><token pos="np00000">Crivillé</token><token pos="fpa">(</token><mention concept_ref="c_8"><token pos="np00000">Gibernau</token></mention><token pos="fc">,</token><token pos="np00000">Checa</token><token pos="fc">,</token><token pos="np00000">Borja</token><token pos="fc">,</token><token pos="sps00">De</token><token pos="np00000">Gea</token><token pos="fc">,</token><token pos="np00000">Cardoso</token><token pos="fs">...</token><token pos="fpt">)</token><token pos="fx">;</token><mention concept_ref="c_3"><token pos="da0fs0">la</token><token pos="aq0cs0">potente</token><token pos="ncfs000">aportación</token></mention><token pos="aq0fs0">económica</token><token pos="sps00">de</token><mention concept_ref="c_10"><token pos="ncmp000">patrocinadores</token></mention><token pos="fpa">(</token><token pos="np00000">Repsol</token><token pos="fc">,</token><token pos="np0000l">Vía</token><token pos="np0000l">Digital</token><token pos="fc">,</token><token pos="np00000">Movistar</token><token pos="fs">...</token><token pos="fpt">)</token><token pos="pr0cn000">que</token><token pos="vmip3p0">valoran</token><token pos="da0ms0">el</token><token pos="aq0ms0">suculento</token><token pos="ncms000">filón</token><token pos="aq0ms0">publicitario</token><token pos="spcms">del</token><token pos="ncms000">motociclismo</token><token pos="fc">,</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">organización</token><token pos="fc">,</token><token pos="dd0ms0">este</token><token pos="ncms000">año</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="dn0cp0">tres</token><token pos="aq0cp0">grandes</token><token pos="ncmp000">premios</token><token pos="fpa">(</token><mention concept_ref="c_9"><token pos="np00000">Catalunya</token></mention><token pos="fc">,</token><token pos="np00000">Valencia</token><token pos="cc">y</token><token pos="np00000">Jerez</token><token pos="fpt">)</token><token pos="fc">,</token><token pos="sps00">con</token><token pos="ncms000">lleno</token><token pos="aq0cs0">total</token><token pos="sps00">en</token><mention concept_ref="c_12"><token pos="da0mp0">los</token><token pos="dn0cp0">tres</token><token pos="ncmp000">circuitos</token></mention><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 			<frame type="Amounting_to" head="total">
 				<argument type="Attribute" dependent="con lleno" /></frame>
@@ -126,15 +120,13 @@
 				<argument type="Attribute" dependent="con lleno" /></frame>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_5">
 			<token pos="np00000">Europa</token><token pos="pi0cs000">Nadie</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">mundo</token>
 		</theme>
 		<rheme concept_ref1="c_3" concept_ref2="c_10" concept_ref3="c_9" concept_ref4="c_12">
-			<token pos="vmsp3s0">recupere</token><token pos="z">4</token><token pos="ncmp000">años</token><token pos="rg">Después</token><token pos="da0ms0">el</token><token pos="ncms000">título</token><token pos="sps00">de</token><token pos="ncms000">campeón</token><token pos="sps00">de</token><token pos="z">500cc</token><token pos="vmip3s0">vive</token><token pos="da0fp0">las</token><token pos="ncfp000">motos</token><token pos="sps00">con</token><token pos="di0fs0">tanta</token><token pos="ncfs000">pasión</token>
-		<to_annotate>[[(308, 344), 'campeón', 'c_3'], [(434, 499), 'las motos', 'c_10'], [(529, 597), 'tanta pasión', 'c_9'], [(214, 279), 'el título', 'c_12']]</to_annotate></rheme>
+			<token pos="vmsp3s0">recupere</token><token pos="z">4</token><token pos="ncmp000">años</token><token pos="rg">Después</token><mention concept_ref="c_12"><token pos="da0ms0">el</token><token pos="ncms000">título</token></mention><token pos="sps00">de</token><mention concept_ref="c_3"><token pos="ncms000">campeón</token></mention><token pos="sps00">de</token><token pos="z">500cc</token><token pos="vmip3s0">vive</token><mention concept_ref="c_10"><token pos="da0fp0">las</token><token pos="ncfp000">motos</token></mention><token pos="sps00">con</token><mention concept_ref="c_9"><token pos="di0fs0">tanta</token><token pos="ncfs000">pasión</token></mention>
+		</rheme>
 		<semantic_roles>
 			<frame type="Natural_features" head="sea">
 				<argument type="Descriptor" dependent="hermoso que" /></frame>
@@ -142,42 +134,35 @@
 				<argument type="Descriptor" dependent="hermoso que" /></frame>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_6">
 			<token pos="da0ms0">El</token><token pos="ncms000">modo</token><token pos="sps00">en</token><token pos="pr0cn000">que</token><token pos="np00000">Crivillé</token><token pos="cc">y</token><token pos="np00000">Alzamora</token><token pos="p0000000">se</token><token pos="vaip3p0">han</token><token pos="vmp00sm">entronizado</token>
 		</theme>
 		<rheme>
 			<token pos="vaip3s0">ha</token><token pos="vmp00sm">resultado</token><token pos="rg">tan</token><token pos="aq0ms0">distinto</token><token pos="cs">como</token><token pos="aq0ms0">hermoso</token><token pos="fp">.</token>
-		<to_annotate>[]</to_annotate></rheme>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_7">
 			<token pos="da0ms0">El</token><token pos="np0000o">Nen</token><token pos="sps00">de</token><token pos="np0000l">Seva</token>
 		</theme>
 		<rheme concept_ref1="c_6" concept_ref2="c_8" concept_ref3="c_10" concept_ref4="c_14">
 			<token pos="vsis3s0">fue</token><token pos="da0ms0">el</token><token pos="rg">más</token><token pos="aq0ms0">rápido</token><token pos="cc">e</token><token pos="aq0cs0">inteligente</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="aq0cs0">Mejor</token><token pos="ncms000">moto</token><token pos="spcms">del</token><token pos="np00000">Mundial</token><token pos="fp">.</token>
-		<to_annotate>[[(306, 402), 'la Mejor moto', 'c_6'], [(432, 468), 'Mundial', 'c_8'], [(306, 402), 'la Mejor moto', 'c_10'], [(432, 468), 'Mundial', 'c_14']]</to_annotate></rheme>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_8">
 			<token pos="da0ms0">El</token><token pos="ncms000">leridano</token>
 		</theme>
 		<rheme concept_ref1="c_3" concept_ref2="c_10">
 			<token pos="rn">no</token><token pos="vmis3s0">ganó</token><token pos="di0fs0">una</token><token pos="aq0fs0">sola</token><token pos="ncfs000">carrera</token>
-		<to_annotate>[[(109, 208), 'una sola carrera', 'c_3'], [(109, 208), 'una sola carrera', 'c_10']]</to_annotate></rheme>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
+	
 </text>

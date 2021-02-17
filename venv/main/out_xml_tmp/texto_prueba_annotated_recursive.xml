@@ -8,8 +8,8 @@
             <!ATTLIST concept id ID #REQUIRED>
     <!ELEMENT sentence (theme, rheme, semantic_roles)>
         <!ELEMENT theme (token*)>
-            <!ATTLIST theme concept_ref IDREF #REQUIRED>
-        <!ELEMENT rheme (token*)>
+            <!ATTLIST theme concept_ref IDREF #IMPLIED>
+        <!ELEMENT rheme (token|mention)*>
             <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
             <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
             <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
@@ -22,6 +22,8 @@
             <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT mention (token+)>
+            <!ATTLIST mention concept_ref CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
 		<!ELEMENT frame (argument*)>
             <!ATTLIST frame type CDATA #REQUIRED>
@@ -55,95 +57,80 @@
 			<token pos="DA0MS0">El</token><token pos="NCMS000">retroceso</token><token pos="SP">de</token><token pos="DA0FS0">la</token><token pos="NCFS000">economía</token>
 		</theme>
 		<rheme concept_ref1="c_5">
-			<token pos="VMIP3S0">augura</token><token pos="DI0FS0">una</token><token pos="AQ0CS00">grave</token><token pos="NCFN000">crisis</token><token pos="Fp">.</token>
-		<to_annotate>[[(65, 165), 'una grave crisis', 'c_5']]</to_annotate></rheme>
+			<token pos="VMIP3S0">augura</token><mention concept_ref="c_5"><token pos="DI0FS0">una</token><token pos="AQ0CS00">grave</token><token pos="NCFN000">crisis</token></mention><token pos="Fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_1">
 			<token pos="DA0FP0">Las</token><token pos="NCFN000">crisis</token><token pos="AQ0FP00">económicas</token>
 		</theme>
 		<rheme concept_ref1="c_5" concept_ref2="c_4">
-			<token pos="RG">siempre</token><token pos="P00CN00">se</token><token pos="VMIP3P0">deben</token><token pos="SP">a</token><token pos="NCFP000">curvas</token><token pos="SP">de</token><token pos="NCMS000">receso</token><token pos="AQ0MS00">económico</token><token pos="Fp">.</token>
-		<to_annotate>[[(80, 111), 'se', 'c_5'], [(231, 266), 'receso', 'c_4']]</to_annotate></rheme>
+			<token pos="RG">siempre</token><mention concept_ref="c_5"><token pos="P00CN00">se</token></mention><token pos="VMIP3P0">deben</token><token pos="SP">a</token><token pos="NCFP000">curvas</token><token pos="SP">de</token><mention concept_ref="c_4"><token pos="NCMS000">receso</token></mention><token pos="AQ0MS00">económico</token><token pos="Fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_2">
 			<token pos="DA0FS0">La</token><token pos="NCFS000">economía</token>
 		</theme>
 		<rheme concept_ref1="c_5" concept_ref2="c_3">
-			<token pos="VMIP3S0">tiene</token><token pos="DP3CPN">sus</token><token pos="NCFP000">fases</token><token pos="SP">de</token><token pos="NCMS000">aumento</token><token pos="CC">y</token><token pos="NCFS000">recesión</token><token pos="Fp">.</token>
-		<to_annotate>[['se', 'c_5'], [(83, 148), 'sus fases', 'c_3']]</to_annotate></rheme>
+			<token pos="VMIP3S0">tiene</token><mention concept_ref="c_3"><token pos="DP3CPN">sus</token><token pos="NCFP000">fases</token></mention><token pos="SP">de</token><token pos="NCMS000">aumento</token><token pos="CC">y</token><token pos="NCFS000">recesión</token><token pos="Fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_3">
 			<token pos="DA0FP0">Las</token><token pos="NCFP000">fases</token><token pos="SP">de</token><token pos="NCMS000">aumento</token>
 		</theme>
 		<rheme concept_ref1="c_2" concept_ref2="c_8">
-			<token pos="VMIP3P0">tienen</token><token pos="DI0MS0">un</token><token pos="NCMS000">efecto</token><token pos="NCMP000">beneficios</token><token pos="SP">en</token><token pos="DA0FS0">la</token><token pos="NCFS000">economía</token><token pos="Fp">.</token>
-		<to_annotate>[[(214, 281), 'la economía', 'c_2'], [(84, 149), 'un efecto', 'c_8']]</to_annotate></rheme>
+			<token pos="VMIP3P0">tienen</token><mention concept_ref="c_8"><token pos="DI0MS0">un</token><token pos="NCMS000">efecto</token></mention><token pos="NCMP000">beneficios</token><token pos="SP">en</token><mention concept_ref="c_2"><token pos="DA0FS0">la</token><token pos="NCFS000">economía</token></mention><token pos="Fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_4">
 			<token pos="DA0MP0">Los</token><token pos="NCMP000">empresarios</token>
 		</theme>
 		<rheme concept_ref1="c_5" concept_ref2="c_1" concept_ref3="c_8">
-			<token pos="VMIP3P0">prefieren</token><token pos="DA0FP0">las</token><token pos="NCFP000">épocas</token><token pos="SP">de</token><token pos="NCMS000">crecimiento</token><token pos="SP">a</token><token pos="DA0FP0">las</token><token pos="SP">de</token><token pos="NCFS000">recesión</token><token pos="Fp">.</token>
-		<to_annotate>[[(320, 357), 'recesión', 'c_5'], [(106, 172), 'las épocas', 'c_1'], [(198, 238), 'crecimiento', 'c_8']]</to_annotate></rheme>
+			<token pos="VMIP3P0">prefieren</token><mention concept_ref="c_1"><token pos="DA0FP0">las</token><token pos="NCFP000">épocas</token></mention><token pos="SP">de</token><mention concept_ref="c_8"><token pos="NCMS000">crecimiento</token></mention><token pos="SP">a</token><token pos="DA0FP0">las</token><token pos="SP">de</token><mention concept_ref="c_5"><token pos="NCFS000">recesión</token></mention><token pos="Fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_5">
 			<token pos="DA0FP0">las</token><token pos="NCFP000">fases</token><token pos="SP">de</token><token pos="NCFS000">recesión</token>
 		</theme>
 		<rheme concept_ref1="c_5" concept_ref2="c_6">
-			<token pos="VMIP3P0">presentan</token><token pos="AQ0FP00">numerosas</token><token pos="NCFP000">ventajas</token><token pos="AQ0FP00">indirectas</token><token pos="Fp">.</token>
-		<to_annotate>[['se', 'c_5'], [(125, 162), 'ventajas', 'c_6']]</to_annotate></rheme>
+			<token pos="VMIP3P0">presentan</token><token pos="AQ0FP00">numerosas</token><mention concept_ref="c_6"><token pos="NCFP000">ventajas</token></mention><token pos="AQ0FP00">indirectas</token><token pos="Fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_6">
 			<token pos="DA0FP0">Las</token><token pos="NCFP000">ventajas</token>
 		</theme>
 		<rheme concept_ref1="c_6" concept_ref2="c_5" concept_ref3="c_7" concept_ref4="c_8">
-			<token pos="VSIP3P0">son</token><token pos="DA0FS0">la</token><token pos="NCFS000">mejora</token><token pos="SP">en</token><token pos="DA0FS0">la</token><token pos="NCFS000">capacidad</token><token pos="SP">de</token><token pos="NCFS000">resiliencia</token><token pos="CC">y</token><token pos="DA0MS0">el</token><token pos="NCMS000">aprendizaje</token><token pos="SP">de</token><token pos="DA0MP0">los</token><token pos="NCMP000">errores</token><token pos="Fp">.</token>
-		<to_annotate>[[(119, 184), 'la mejora', 'c_6'], [(304, 344), 'resiliencia', 'c_5'], [(465, 532), 'los errores', 'c_7'], [(304, 344), 'resiliencia', 'c_8']]</to_annotate></rheme>
+			<token pos="VSIP3P0">son</token><mention concept_ref="c_6"><token pos="DA0FS0">la</token><token pos="NCFS000">mejora</token></mention><token pos="SP">en</token><token pos="DA0FS0">la</token><token pos="NCFS000">capacidad</token><token pos="SP">de</token><token pos="NCFS000">resiliencia</token><token pos="CC">y</token><token pos="DA0MS0">el</token><token pos="NCMS000">aprendizaje</token><token pos="SP">de</token><mention concept_ref="c_7"><token pos="DA0MP0">los</token><token pos="NCMP000">errores</token></mention><token pos="Fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_7">
 			<token pos="DA0MP0">Los</token><token pos="NCMP000">errores</token><token pos="AQ0MP00">problemáticos</token>
 		</theme>
 		<rheme concept_ref1="c_5">
-			<token pos="P00CN00">se</token><token pos="VMIP3P0">reducen</token><token pos="RG">inevitablemente</token><token pos="SP">después_de</token><token pos="DA0FP0">las</token><token pos="NCFN000">crisis</token><token pos="Fp">.</token>
-		<to_annotate>[[(30, 61), 'se', 'c_5']]</to_annotate></rheme>
+			<mention concept_ref="c_5"><token pos="P00CN00">se</token></mention><token pos="VMIP3P0">reducen</token><token pos="RG">inevitablemente</token><token pos="SP">después_de</token><token pos="DA0FP0">las</token><token pos="NCFN000">crisis</token><token pos="Fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
+	
 </text>

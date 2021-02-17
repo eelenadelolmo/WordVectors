@@ -8,8 +8,8 @@
             <!ATTLIST concept id ID #REQUIRED>
     <!ELEMENT sentence (theme, rheme, semantic_roles)>
         <!ELEMENT theme (token*)>
-            <!ATTLIST theme concept_ref IDREF #REQUIRED>
-        <!ELEMENT rheme (token*)>
+            <!ATTLIST theme concept_ref IDREF #IMPLIED>
+        <!ELEMENT rheme (token|mention)*>
             <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
             <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
             <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
@@ -22,6 +22,8 @@
             <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
         <!ELEMENT token (#PCDATA)>
             <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT mention (token+)>
+            <!ATTLIST mention concept_ref CDATA #REQUIRED>
 		<!ELEMENT semantic_roles (frame|main_frame)*>
 		<!ELEMENT frame (argument*)>
             <!ATTLIST frame type CDATA #REQUIRED>
@@ -52,35 +54,30 @@
 			<token pos="da0ms0">El</token><token pos="np00000">Gobierno</token><token pos="sps00">de</token><token pos="np00000">Portugal</token>
 		</theme>
 		<rheme concept_ref1="c_3" concept_ref2="c_4" concept_ref3="c_5">
-			<token pos="vmis3s0">decidió</token><token pos="vmn0000">abrir</token><token pos="di0fs0">una</token><token pos="ncfs000">cuenta</token><token pos="sps00">de</token><token pos="ncms000">ahorro</token><token pos="sps00">con</token><token pos="z">50</token><token pos="zm">euros</token><token pos="fpa">(</token><token pos="z">8.319</token><token pos="zm">pesetas</token><token pos="fpt">)</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="ncmp000">bebés</token><token pos="aq0mpp">nacidos</token><token pos="da0ms0">el</token><token pos="z">1</token><token pos="sps00">de</token><token pos="ncfp000">enero</token><token pos="sps00">del</token><token pos="z">2002</token><token pos="fc">,</token><token pos="fp">.</token>
-		<to_annotate>[[(138, 204), 'una cuenta', 'c_3'], [(323, 352), 'euros', 'c_4'], [(406, 437), 'pesetas', 'c_5']]</to_annotate></rheme>
+			<token pos="vmis3s0">decidió</token><token pos="vmn0000">abrir</token><mention concept_ref="c_3"><token pos="di0fs0">una</token><token pos="ncfs000">cuenta</token></mention><token pos="sps00">de</token><token pos="ncms000">ahorro</token><token pos="sps00">con</token><token pos="z">50</token><mention concept_ref="c_4"><token pos="zm">euros</token></mention><token pos="fpa">(</token><token pos="z">8.319</token><mention concept_ref="c_5"><token pos="zm">pesetas</token></mention><token pos="fpt">)</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="ncmp000">bebés</token><token pos="aq0mpp">nacidos</token><token pos="da0ms0">el</token><token pos="z">1</token><token pos="sps00">de</token><token pos="ncfp000">enero</token><token pos="sps00">del</token><token pos="z">2002</token><token pos="fc">,</token><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_1">
 			<token pos="da0ms0">El</token><token pos="ncms000">ministro</token>
 		</theme>
 		<rheme concept_ref1="c_0" concept_ref2="c_3" concept_ref3="c_5">
-			<token pos="vmis3s0">afirmó</token><token pos="cs">que</token><token pos="sps00">con</token><token pos="dd0ms0">este</token><token pos="ncms000">gesto</token><token pos="p0000000">se</token><token pos="vmii3s0">pretendía</token><token pos="vmn0000">destacar</token><token pos="fe">"</token><token pos="di0ms0">un</token><token pos="ncms000">momento</token><token pos="aq0ms0">histórico</token><token pos="fe">"</token><token pos="vmg0000">asociando</token><token pos="sps00">para</token><token pos="rg">siempre</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="rg">recién</token><token pos="aq0mpp">nacidos</token><token pos="spcms">del</token><token pos="ao0ms0">primer</token><token pos="ncms000">día</token><token pos="spcms">del</token><token pos="ncms000">año</token><token pos="fe">"</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="ncfs000">construcción</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="np00000">Europa</token><token pos="sps00">de</token><token pos="ncfs000">paz</token><token pos="cc">y</token><token pos="ncfs000">solidaridad</token><token pos="fe">"</token><token pos="fp">.</token>
-		<to_annotate>[[(923, 994), 'la construcción', 'c_0'], [(1023, 1150), 'una Europa de paz', 'c_3'], [(160, 226), 'este gesto', 'c_5']]</to_annotate></rheme>
+			<token pos="vmis3s0">afirmó</token><token pos="cs">que</token><token pos="sps00">con</token><mention concept_ref="c_5"><token pos="dd0ms0">este</token><token pos="ncms000">gesto</token></mention><token pos="p0000000">se</token><token pos="vmii3s0">pretendía</token><token pos="vmn0000">destacar</token><token pos="fe">"</token><token pos="di0ms0">un</token><token pos="ncms000">momento</token><token pos="aq0ms0">histórico</token><token pos="fe">"</token><token pos="vmg0000">asociando</token><token pos="sps00">para</token><token pos="rg">siempre</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="rg">recién</token><token pos="aq0mpp">nacidos</token><token pos="spcms">del</token><token pos="ao0ms0">primer</token><token pos="ncms000">día</token><token pos="spcms">del</token><token pos="ncms000">año</token><token pos="fe">"</token><token pos="sps00">con</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="ncfs000">construcción</token></mention><token pos="sps00">de</token><mention concept_ref="c_3"><token pos="di0fs0">una</token><token pos="np00000">Europa</token><token pos="sps00">de</token><token pos="ncfs000">paz</token></mention><token pos="cc">y</token><token pos="ncfs000">solidaridad</token><token pos="fe">"</token><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
 	<sentence>
 		<theme concept_ref="c_2">
 			<token pos="da0ms0">El</token><token pos="np00000">Ejecutivo</token><token pos="aq0ms0">portugués</token>
 		</theme>
 		<rheme concept_ref1="c_0" concept_ref2="c_3" concept_ref3="c_4">
-			<token pos="vmii3s0">quería</token><token pos="vmn0000">saludar</token><token pos="sps00">de</token><token pos="dd0fs0">esta</token><token pos="ncfs000">forma</token><token pos="da0ms0">el</token><token pos="ncms000">nacimiento</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="ncfs000">generación</token><token pos="ncms000">euro</token><token pos="fp">.</token>
-		<to_annotate>[[(234, 303), 'el nacimiento', 'c_0'], [(332, 402), 'una generación', 'c_3'], [(402, 435), 'euro', 'c_4']]</to_annotate></rheme>
+			<token pos="vmii3s0">quería</token><token pos="vmn0000">saludar</token><token pos="sps00">de</token><token pos="dd0fs0">esta</token><token pos="ncfs000">forma</token><mention concept_ref="c_0"><token pos="da0ms0">el</token><token pos="ncms000">nacimiento</token></mention><token pos="sps00">de</token><mention concept_ref="c_3"><token pos="di0fs0">una</token><token pos="ncfs000">generación</token></mention><mention concept_ref="c_4"><token pos="ncms000">euro</token></mention><token pos="fp">.</token>
+		</rheme>
 		<semantic_roles>
 		</semantic_roles>
 	</sentence>
-
-
+	
 </text>
