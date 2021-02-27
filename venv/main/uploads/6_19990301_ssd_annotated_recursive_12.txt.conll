@@ -1,9 +1,0 @@
-1	bienvenida	_	UNK	_	NNP	0	_	_	_	_	_	_	_	S-Relative_location
-2	sea	_	sea	_	NN	0	_	_	_	_	_	sea.n	Natural_features	S-Locale
-3	la	_	la	_	NN	0	_	_	_	_	_	_	_	O
-4	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
-5	de	_	de	_	IN	0	_	_	_	_	_	_	_	O
-6	la	_	la	_	DT	0	_	_	_	_	_	_	_	O
-7	justicia	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
-8	.	_	.	_	.	0	_	_	_	_	_	_	_	O
-

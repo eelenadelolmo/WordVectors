@@ -1,14 +1,106 @@
 <!doctype html>
-  <title>Download English translated files</title>
-  <h1>Download English translated files</h1>
-  <body class="body">
+    <head>
+        <title>Download English translated files</title>
+        <style>
+            * {
+          margin: 0;
+          padding:0;
+          box-sizing:border-box;
+        }
 
-     <div class="container" align="left">
-      <a href="/return-files/{{value}}" target="blank"><button class='btn btn-default'>Download</button></a>
-     </div>
+        .fieldset_download {
+          border: solid;
+          color: #000000;
+          border-radius: 1em;
+          margin: 2em 1em 1em;
+          padding:0 1em 1em;
+        }
 
-     <div class="container" align="left">
-      <a href="http://0.0.0.0:5002"><button class='btn btn-default'>Continue to automatic Semantic Role Labelling</button></a>
-     </div>
+        .fieldset_back {
+          border: solid;
+          color: #cc0000;
+          border-radius: 1em;
+          margin: 2em 1em 1em;
+          padding:0 1em 1em;
+        }
+
+        .fieldset_continue {
+          border: solid;
+          color: #669900;
+          border-radius: 1em;
+          margin: 2em 1em 1em;
+          padding:0 1em 1em;
+        }
+
+        .legend {
+          transform: translatey(-50%);
+          width: max-content;
+          background: white;
+          padding: 0 0.15em;
+        }
+
+        .fieldset li {
+          list-style-type: " - ";
+        }
+        </style>
+    </head>
+    <body class="body">
+
+    <div style="background-color: #4d4d4d;">
+        <br/><br/>
+        <h1 style="text-align:center; color: #ffffff; font-size: 77px">Translation module</h1>
+        <br/><br/>
+    </div>
+
+    <br/><br/><br/>
+    <div class="fieldset_download">
+      <h1 class="legend">Download</h1>
+      <ul>
+          <h2>Download English translated files, consisting of:</h2>
+          <br/>
+          <p> - One folder for every sentence (named with the text id), containing:</p>
+          <p>    - One file for every original sentence (named with the text id)</p>
+          <p>    - One file for every translated sentence (named with 'en_' plus the text id)</p>
+          <br/><br/>
+          <div class="container" align="left">
+           <a href="/return-files/{{value}}" target="blank"><button class='btn btn-default'>Download</button></a>
+          </div>
+      </ul>
+    </div>
+
+
+    <br/><br/>
+
+
+
+
+    <div class="fieldset_back">
+      <h1 class="legend">Go back</h1>
+      <ul>
+          <h2 style="color:black">Press the button to go back to the translation module.</h2>
+          <br/><br/>
+          <div class="container" align="left">
+          <a href="http://0.0.0.0:5001"><button class='btn btn-default'>Go back</button></a>
+         </div>
+      </ul>
+    </div>
+
+
+    <br/><br/>
+
+
+
+
+    <div class="fieldset_continue">
+      <h1 class="legend">Continue</h1>
+      <ul>
+          <h2 style="color:black">Press the button to continue to the automatic Semantic Role Labelling module.</h2>
+          <br/><br/>
+          <div class="container" align="left">
+          <a href="http://0.0.0.0:5002"><button class='btn btn-default'>Continue</button></a>
+         </div>
+      </ul>
+    </div>
+
 
   </body>
