@@ -17,6 +17,14 @@
           padding:0 1em 1em;
         }
 
+        .fieldset_process {
+          border: solid;
+          color: #669900;
+          border-radius: 1em;
+          margin: 2em 1em 1em;
+          padding:0 1em 1em;
+        }
+
         .legend {
           transform: translatey(-50%);
           width: max-content;
@@ -39,6 +47,8 @@
     </div>
 
     <br/><br/><br/>
+
+    <form method="POST" action="" enctype="multipart/form-data">
     <div class="fieldset_upload">
       <h1 class="legend">Upload</h1>
       <ul>
@@ -46,26 +56,30 @@
         <br/>
         <p> - txt with a sentence per line</p>
         <p> - CoNLL-U</p>
-        <br/>
-        <h2 style="color:black">Press the submit button after selecting the group of files.</h2>
         <br/><br/>
-
-        <form method="POST" action="" enctype="multipart/form-data">
-            <dl>
-                <p>
-                    <input type="file" name="files[]" multiple="true" autocomplete="off" required>
-                </p>
-            </dl>
-            <br/>
+        <dl>
             <p>
-                <input type="submit" value="Submit">
+                <input type="file" name="files[]" multiple="true" autocomplete="off" required>
             </p>
-        </form>
-
-
-
+        </dl
       </ul>
     </div>
+
+
+
+    <div class="fieldset_process">
+      <h1 class="legend">Translate</h1>
+      <ul>
+		  <h2 style="color:black">Once all the files to annotate have been selected, press this button to perform the translation:</h2>
+		  <br/><br/>
+            <p>
+                <input type="submit" value="Translate!">
+            </p>
+      </ul>
+    </div>
+
+
+    </form>
 
     </body>
 
