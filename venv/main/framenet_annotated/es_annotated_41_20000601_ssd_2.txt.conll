@@ -1,0 +1,11 @@
+{   ('Age', 'jóvenes'): [('Entity', 'leones convergentes')],
+    ('Aggregate', 'grupo'): [('Individuals', 'jóvenes leones convergentes')],
+    ('Certainty', 'dudas'): [('Cognizer', 'sus')],
+    ('Documents', 'documento'): [],
+    ('Leadership', 'ficha'): [('Leader', 'el grupo de los jóvenes leones convergentes'), ('Governed', 'por Artur Mas')],
+    ('Motion', 'hacia'): [('Theme', 'los'), ('Theme', 'y la presentación de un documento de mínimos')],
+    ('Relative_time', 'Después de'): [   ('Landmark_occasion', 'haber lanzado cantos de sirena por parte de Pere Esteve hacia los republicanos'),
+                                         ('Focal_occasion', ', ahora el grupo de los jóvenes leones convergentes liderados por Artur Mas tiene sus dudas')],
+    ('Shoot_projectiles', 'lanzado'): [('Projectile', 'Pere')],
+    ('Statement', 'declaraciones'): [('Speaker', 'de Josep')],
+    ('Text', 'cantos de'): [('Author', 'Pere')]}

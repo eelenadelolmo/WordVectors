@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+		<!ELEMENT str (#PCDATA)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="38_19990902_d_ssd_annotated_recursive">
+
+
+	<sentence>
+		<str>
+			 Pujol sufre un pequeño accidente de coche en la A-7.
+		</str>
+		<theme>
+			<token pos="np00000">Pujol</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">sufre</token><token pos="di0ms0">un</token><token pos="aq0ms0">pequeño</token><token pos="ncms000">accidente</token><token pos="sps00">de</token><token pos="ncms000">coche</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Catastrophe" head="accidente">
+				<argument type="Cause" dependent="un pequeño"/>
+				<argument type="Place" dependent="en la A-7"/></frame>
+			<frame type="Size" head="pequeño">
+				<argument type="Entity" dependent="accidente de coche en la A-7"/></frame>
+			<frame type="Vehicle" head="coche"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El incidente se produjo el pasado lunes, cuando el vehículo que abría la comitiva del presidente de la Generalitat chocó contra un camión.
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="nccs000">incidente</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vmis3s0">produjo</token><token pos="da0ms0">el</token><token pos="aq0msp">pasado</token><token pos="ncms000">lunes</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="la Generalitat"/></frame>
+			<frame type="Calendric_unit" head="lunes">
+				<argument type="Relative_time" dependent="se"/></frame>
+			<frame type="Catastrophe" head="incidente"></frame>
+			<frame type="Event" head="incidente se">
+				<argument type="Event" dependent="El incidente"/>
+				<argument type="Time" dependent="pasado lunes"/></frame>
+			<frame type="Relative_time" head="se">
+				<argument type="Focal_occasion" dependent="lunes"/></frame>
+			<frame type="Vehicle" head="camión"></frame>
+			<frame type="Vehicle" head="vehículo"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El conductor del coche en el que viajaba Pujol frenó para evitar el impacto, momento en el que recibió un golpe trasero del tercer automóvil de la comitiva presidencial.
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="ncms000">conductor</token><token pos="spcms">del</token><token pos="ncms000">coche</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="pr0cn000">que</token><token pos="vmii3s0">viajaba</token><token pos="np00000">Pujol</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">frenó</token><token pos="sps00">para</token><token pos="vmn0000">evitar</token><token pos="da0ms0">el</token><token pos="ncms000">impacto</token><token pos="ncms000">momento</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="pr0cn000">que</token><token pos="vmis3s0">recibió</token><token pos="di0ms0">un</token><token pos="ncms000">golpe</token><token pos="aq0ms0">trasero</token><token pos="spcms">del</token><token pos="ao0ms0">tercer</token><token pos="ncms000">automóvil</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">comitiva</token><token pos="aq0cs0">presidencial</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Avoiding" head="evitar">
+				<argument type="Agent" dependent="Pujol"/>
+				<argument type="Undesirable_situation" dependent="el impacto"/></main_frame>
+			<frame type="Leadership" head="presidencial"></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="El conductor del coche en el que viajaba Pujol frenó para evitar el impacto"/>
+				<argument type="Ground" dependent="que recibió un golpe trasero del tercer automóvil de la comitiva presidencial"/></frame>
+			<frame type="Objective_influence" head="impacto"></frame>
+			<frame type="Ordinal_numbers" head="tercer">
+				<argument type="Type" dependent="automóvil de la comitiva presidencial"/></frame>
+			<frame type="Part_orientational" head="trasero">
+				<argument type="Whole" dependent="golpe"/></frame>
+			<main_frame type="Receiving" head="recibió">
+				<argument type="Recipient" dependent="el"/>
+				<argument type="Theme" dependent="un golpe trasero del"/>
+				<argument type="Place" dependent="del tercer automóvil de la comitiva presidencial"/></main_frame>
+			<main_frame type="Travel" head="viajaba">
+				<argument type="Traveler" dependent="conductor del coche en el que"/></main_frame>
+			<frame type="Vehicle" head="coche">
+				<argument type="Use" dependent="de la comitiva presidencial"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El accidente se saldó sin heridos.
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="ncms000">accidente</token>
+		</theme>
+		<rheme>
+			<token pos="p0000000">se</token><token pos="vmis3s0">saldó</token><token pos="sps00">sin</token><token pos="ncmp000">heridos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Catastrophe" head="accidente"></frame>
+			<frame type="Experience_bodily_harm" head="heridos"></frame>
+			<main_frame type="Process_end" head="se saldó">
+				<argument type="Process" dependent="accidente"/>
+				<argument type="Process" dependent="sin heridos"/></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

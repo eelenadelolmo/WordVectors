@@ -1,7 +1,0 @@
-{   ('Animals', 'gatos'): [],
-    ('Interior_profile_relation', 'en'): [('Figure', 'mis amigos ahora los que ven'), ('Ground', 'oscuridad : los gatos y los búhos')],
-    ('Openness', 'oscuridad'): [('Useful_location', 'gatos y los búhos')],
-    ('Perception_experience', 'ven en'): [('Phenomenon', 'mis amigos'), ('State', 'en la oscuridad : los gatos y')],
-    ('Personal_relationship', 'amigos'): [],
-    ('Required_event', 'mejor'): [('Required_situation', 'amanecer')],
-    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'son mis amigos ahora los que ven en la oscuridad : los gatos y los búhos')]}

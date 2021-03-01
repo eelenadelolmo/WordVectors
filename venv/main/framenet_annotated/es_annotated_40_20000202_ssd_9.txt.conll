@@ -1,0 +1,8 @@
+{   ('Activity_prepare', 'preparado'): [('Agent', 'Bush'), ('Activity', 'para ello')],
+    ('Buildings', 'Casa'): [('Descriptor', 'Blanca')],
+    ('Cardinal_numbers', 'millones'): [('Multiplier', '11.000'), ('Entity', 'pesetas')],
+    ('Cardinal_numbers', 'siete'): [('Unit', 'electorales')],
+    ('Color', 'Blanca'): [('Entity', 'Casa')],
+    ('Money', 'fondos'): [('Possessor', 'sus'), ('Inherent_purpose', 'electorales')],
+    ('Social_connection', 'acercan'): [('Connection', 'sus fondos electorales'), ('Individual_2', '11.000 millones de pesetas')],
+    ('Time_vector', 'ello'): [('Landmark_event', 'sus fondos electorales')]}

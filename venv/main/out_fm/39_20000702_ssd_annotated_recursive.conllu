@@ -1,0 +1,26 @@
+1	El	el	da0ms0	da0ms0	rep=no|t=yes|r=no|m=yes|c=no	2	de	_	_
+2	consejo	consejo	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=no	7	nsub	_	_
+3	de	de	sps00	sps00	rep=no|t=yes|r=no|m=yes|c=no	2	prep	_	_
+4	administración	administración	ncfs000	ncfs000	rep=no|t=yes|r=no|m=yes|c=no	3	pob	_	_
+5	de	de	sps00	sps00	rep=no|t=yes|r=no|m=yes|c=no	2	prep	_	_
+6	Telefónica	Telefónica	np00000	np00000	rep=no|t=yes|r=no|m=yes|c=no	5	pob	_	_
+7	aplazó	aplazar	vmis3s0	vmis3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+8	el	el	da0ms0	da0ms0	rep=no|t=no|r=yes|m=yes|c=no	9	de	_	_
+9	debate	debate	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	7	dob	_	_
+10	sobre	sobre	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	9	prep	_	_
+11	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	12	de	_	_
+12	continuidad	continuidad	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	10	pob	_	_
+13	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	12	prep	_	_
+14	Juan	Juan	np0000l	np0000l	rep=no|t=no|r=yes|m=yes|c=no	13	pob	_	_
+15	Villalonga	Villalonga	np0000l	np0000l	rep=no|t=no|r=yes|m=yes|c=no	14	appo	_	_
+
+1	José	José	ncfs000	ncfs000	rep=no|t=yes|r=no|m=yes|c=no	6	nsub	_	_
+2	María	María	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=no	1	appo	_	_
+3	Aznar	aznar	np00000	np00000	rep=no|t=yes|r=no|m=yes|c=no	2	appo	_	_
+4	lo	el	da0ns0	da0ns0	rep=no|t=no|r=yes|m=yes|c=no	5	de	_	_
+5	importante	importante	aq0cs0	aq0cs0	rep=no|t=no|r=yes|m=yes|c=no	6	att	_	_
+6	es	ser	vsip3s0	vsip3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+7	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	8	de	_	_
+8	empresa	empresa	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	6	att	_	_
+
+

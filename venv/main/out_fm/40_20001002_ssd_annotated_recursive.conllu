@@ -1,0 +1,22 @@
+1	El	el	da0ms0	da0ms0	rep=no|t=yes|r=no|m=yes|c=no	2	de	_	_
+2	colectivo	colectivo	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=no	4	nsub	_	_
+3	inmigrante	inmigrante	aq0cs0	aq0cs0	rep=no|t=yes|r=no|m=yes|c=no	2	amo	_	_
+4	tiene	tener	vmip3s0	vmip3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+5	un	uno	di0ms0	di0ms0	rep=no|t=no|r=yes|m=yes|c=no	7	de	_	_
+6	serio	serio	aq0ms0	aq0ms0	rep=no|t=no|r=yes|m=yes|c=no	7	amo	_	_
+7	problema	problema	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	4	dob	_	_
+
+1	Eso	ese	pd0ns000	pd0ns000	rep=no|t=yes|r=no|m=yes|c=no	4	nsub	_	_
+2	,	,	fc	fc	rep=no|t=no|r=yes|m=yes|c=no	4	punc	_	_
+3	,	,	fc	fc	rep=no|t=no|r=yes|m=yes|c=no	4	punc	_	_
+4	es	ser	vsip3s0	vsip3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+5	un	uno	di0ms0	di0ms0	rep=no|t=no|r=yes|m=yes|c=no	6	de	_	_
+6	obstáculo	obstáculo	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	4	att	_	_
+
+
+1	nadie	nadie	pi0cs000	pi0cs000	rep=no|t=yes|r=no|m=yes|c=no	2	nsub	_	_
+2	baje	bajar	vmsp3s0	vmsp3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+3	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	4	de	_	_
+4	guardia	guardia	nccs000	nccs000	rep=no|t=no|r=yes|m=yes|c=no	2	dob	_	_
+
+

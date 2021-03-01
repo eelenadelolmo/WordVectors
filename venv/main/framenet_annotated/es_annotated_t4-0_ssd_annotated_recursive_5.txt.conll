@@ -1,7 +1,0 @@
-{   ('Coming_to_believe', 'recoge'): [],
-    ('Direction', 'se'): [],
-    ('Motion', 'se'): [('Goal', 'a dormir')],
-    ('Opinion', 'supone'): [('Opinion', 'se recoge')],
-    ('People', 'gente'): [],
-    ('Relative_time', 'Después del'): [('Landmark_occasion', 'del clarín crepuscular'), ('Focal_occasion', 'se supone que la gente se recoge y se acuesta a dormir')],
-    ('Sleep', 'dormir'): []}
