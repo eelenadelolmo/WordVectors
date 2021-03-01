@@ -57,7 +57,7 @@ def make_archive(source, destination):
 
 
 UPLOAD_FOLDER = '/home/elena/PycharmProjects/WordVectors/venv/main/uploads'
-DOWNLOAD_FOLDER = '/home/elena/PycharmProjects/WordVectors/venv/main/downloads'
+DOWNLOAD_FOLDER = '/home/elena/PycharmProjects/WordVectors/venv/main/out'
 
 shutil.rmtree(UPLOAD_FOLDER + '/', ignore_errors=True)
 shutil.rmtree(DOWNLOAD_FOLDER + '/', ignore_errors=True)
@@ -97,12 +97,12 @@ def main():
         # file = request.files['file']
         files = request.files.getlist('files[]')
 
-        new_dir = UPLOAD_FOLDER + '/output'
+        new_dir = UPLOAD_FOLDER + '/out'
         shutil.rmtree(new_dir, ignore_errors=True)
         os.makedirs(new_dir)
 
-        new_dir_sents_en = UPLOAD_FOLDER + '/output/en'
-        new_dir_sents_es = UPLOAD_FOLDER + '/output/es/'
+        new_dir_sents_en = UPLOAD_FOLDER + '/out/en'
+        new_dir_sents_es = UPLOAD_FOLDER + '/out/es/'
         os.makedirs(new_dir_sents_en)
         os.makedirs(new_dir_sents_es)
 
@@ -145,9 +145,9 @@ def main():
                         f_new_2.write(line)
                         f_new_2.close()
 
-        make_archive(new_dir, DOWNLOAD_FOLDER + '/en_salida' + '.zip')
+        make_archive(new_dir, DOWNLOAD_FOLDER + '/en_translated' + '.zip')
 
-        return redirect(url_for('download_file', filename='salida.zip'))
+        return redirect(url_for('download_file', filename='translated.zip'))
 
     return render_template('main.html')
 
@@ -156,16 +156,16 @@ def main():
 def upload_form():
     shutil.rmtree(UPLOAD_FOLDER + '/', ignore_errors=True)
     os.makedirs(UPLOAD_FOLDER + '/')
-    return render_template('upload_frame_ann_en.html')
+    return render_template('upload_mapper.html')
 
 
 @app.route('/upload-frame-ann-en', methods=['POST'])
 def upload_file():
     if request.method == 'POST':
 
-        shutil.rmtree(UPLOAD_FOLDER + '/', ignore_errors=True)
+        # shutil.rmtree(UPLOAD_FOLDER + '/', ignore_errors=True)
+        # os.makedirs(UPLOAD_FOLDER + '/')
         shutil.rmtree(DOWNLOAD_FOLDER + '/', ignore_errors=True)
-        os.makedirs(UPLOAD_FOLDER + '/')
         os.makedirs(DOWNLOAD_FOLDER + '/')
 
         # check if the post request has the file part
@@ -184,7 +184,7 @@ def upload_file():
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             file.stream.seek(0)
 
-    return render_template('upload_frame_ann_en.html')
+    return render_template('upload_mapper.html')
 
 
 @app.route('/mapping_SRL', methods=['POST'])
@@ -295,8 +295,8 @@ def mappingsrl():
             f.write(SRL_es_pretty)
             f.close()
 
-    make_archive(DOWNLOAD_FOLDER, DOWNLOAD_FOLDER + '/' + 'es_annotated.zip')
-    return redirect(url_for('download_file_frame_ann_en', filename='es_annotated.zip'))
+    make_archive(DOWNLOAD_FOLDER, DOWNLOAD_FOLDER + '/' + 'es_framenet_annotated_dict.zip')
+    return redirect(url_for('download_file_frame_ann_en', filename='es_framenet_annotated_dict.zip'))
 
     # return render_template('upload_frame_ann_en.html')
 
@@ -307,7 +307,7 @@ def download_file(filename):
 
 @app.route("/downloadfile-frame-ann-en/<filename>", methods = ['GET'])
 def download_file_frame_ann_en(filename):
-    return render_template('download_frame_ann_en.html', value=filename)
+    return render_template('download_mapper.html', value=filename)
 
 @app.route('/return-files/<filename>')
 def return_files_tut(filename):
@@ -316,7 +316,7 @@ def return_files_tut(filename):
 
 @app.route('/return-files-frame-ann-en/<filename>', methods = ['GET'])
 def return_files_tut_2(filename):
-    file_path = DOWNLOAD_FOLDER + '/es_annotated.zip'
+    file_path = DOWNLOAD_FOLDER + '/es_framenet_annotated_dict.zip'
     return send_file(file_path, as_attachment=True, cache_timeout=0)
 
 

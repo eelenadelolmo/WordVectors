@@ -1,0 +1,32 @@
+1	joan	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+2	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+3	has	_	have	_	VBZ	0	_	_	_	_	_	_	_	O
+4	been	_	be	_	VBN	0	_	_	_	_	_	_	_	O
+5	one	_	one	_	CD	0	_	_	_	_	_	one.num	Cardinal_numbers	S-Number
+6	of	_	of	_	IN	0	_	_	_	_	_	_	_	B-Entity
+7	the	_	the	_	DT	0	_	_	_	_	_	_	_	I-Entity
+8	catalan	_	UNK	_	NNP	0	_	_	_	_	_	_	_	I-Entity
+9	artists	_	UNK	_	VBZ	0	_	_	_	_	_	_	_	I-Entity
+10	with	_	with	_	IN	0	_	_	_	_	_	_	_	O
+11	the	_	the	_	DT	0	_	_	_	_	_	_	_	O
+12	most	_	most	_	RBS	0	_	_	_	_	_	_	_	O
+13	international	_	international	_	JJ	0	_	_	_	_	_	_	_	O
+14	fame	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+15	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	joan	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+2	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+3	has	_	have	_	VBZ	0	_	_	_	_	_	_	_	O
+4	been	_	be	_	VBN	0	_	_	_	_	_	_	_	O
+5	one	_	one	_	CD	0	_	_	_	_	_	_	_	O
+6	of	_	of	_	IN	0	_	_	_	_	_	_	_	O
+7	the	_	the	_	DT	0	_	_	_	_	_	_	_	O
+8	catalan	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+9	artists	_	UNK	_	VBZ	0	_	_	_	_	_	_	_	O
+10	with	_	with	_	IN	0	_	_	_	_	_	_	_	O
+11	the	_	the	_	DT	0	_	_	_	_	_	_	_	O
+12	most	_	most	_	RBS	0	_	_	_	_	_	_	_	O
+13	international	_	international	_	JJ	0	_	_	_	_	_	international.a	Political_locales	S-Locale
+14	fame	_	UNK	_	NN	0	_	_	_	_	_	_	_	S-Population
+15	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

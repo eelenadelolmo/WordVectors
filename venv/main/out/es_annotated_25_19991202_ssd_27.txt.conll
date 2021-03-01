@@ -1,0 +1,8 @@
+{   ('Becoming_silent', 'silencio'): [],
+    ('Capability', 'pueden'): [('Entity', 'tantos millones'), ('Event', 'más fuerza que una invitación a cenar para')],
+    ('Cardinal_numbers', 'millones'): [('Multiplier', 'tantos')],
+    ('Increment', 'más'): [('Class', 'fuerza')],
+    ('Quantified_mass', 'tantos'): [('Individuals', 'millones')],
+    ('Request', 'invitación'): [('Message', 'cenar para')],
+    ('Social_event', 'cenar'): [],
+    ('Suasion', 'convencer'): [('Content', 'alguien de las virtudes del silencio')]}

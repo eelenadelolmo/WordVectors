@@ -1,0 +1,52 @@
+1	police	_	Police	_	NNP	0	_	_	_	_	_	_	_	S-Suspect
+2	suspect	_	suspect	_	VBD	0	_	_	_	_	_	suspect.v	Suspicion	O
+3	that	_	that	_	IN	0	_	_	_	_	_	_	_	B-Incident
+4	the	_	the	_	DT	0	_	_	_	_	_	_	_	I-Incident
+5	only	_	only	_	JJ	0	_	_	_	_	_	_	_	I-Incident
+6	serious	_	serious	_	JJ	0	_	_	_	_	_	_	_	I-Incident
+7	victim	_	victim	_	NN	0	_	_	_	_	_	_	_	I-Incident
+8	participated	_	participate	_	VBD	0	_	_	_	_	_	_	_	I-Incident
+9	in	_	in	_	IN	0	_	_	_	_	_	_	_	I-Incident
+10	the	_	the	_	DT	0	_	_	_	_	_	_	_	I-Incident
+11	attack	_	attack	_	NN	0	_	_	_	_	_	_	_	I-Incident
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	police	_	Police	_	NNP	0	_	_	_	_	_	_	_	O
+2	suspect	_	suspect	_	VBD	0	_	_	_	_	_	_	_	O
+3	that	_	that	_	IN	0	_	_	_	_	_	_	_	O
+4	the	_	the	_	DT	0	_	_	_	_	_	_	_	B-Patient
+5	only	_	only	_	JJ	0	_	_	_	_	_	_	_	I-Patient
+6	serious	_	serious	_	JJ	0	_	_	_	_	_	_	_	I-Patient
+7	victim	_	victim	_	NN	0	_	_	_	_	_	victim.n	Catastrophe	B-Undesirable_event
+8	participated	_	participate	_	VBD	0	_	_	_	_	_	_	_	I-Undesirable_event
+9	in	_	in	_	IN	0	_	_	_	_	_	_	_	I-Undesirable_event
+10	the	_	the	_	DT	0	_	_	_	_	_	_	_	I-Undesirable_event
+11	attack	_	attack	_	NN	0	_	_	_	_	_	_	_	I-Undesirable_event
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	police	_	Police	_	NNP	0	_	_	_	_	_	_	_	O
+2	suspect	_	suspect	_	VBD	0	_	_	_	_	_	_	_	O
+3	that	_	that	_	IN	0	_	_	_	_	_	_	_	O
+4	the	_	the	_	DT	0	_	_	_	_	_	_	_	B-Event
+5	only	_	only	_	JJ	0	_	_	_	_	_	_	_	I-Event
+6	serious	_	serious	_	JJ	0	_	_	_	_	_	_	_	I-Event
+7	victim	_	victim	_	NN	0	_	_	_	_	_	_	_	I-Event
+8	participated	_	participate	_	VBD	0	_	_	_	_	_	participate.v	Participation	O
+9	in	_	in	_	IN	0	_	_	_	_	_	_	_	B-Event
+10	the	_	the	_	DT	0	_	_	_	_	_	_	_	I-Event
+11	attack	_	attack	_	NN	0	_	_	_	_	_	_	_	I-Event
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	police	_	Police	_	NNP	0	_	_	_	_	_	_	_	O
+2	suspect	_	suspect	_	VBD	0	_	_	_	_	_	_	_	O
+3	that	_	that	_	IN	0	_	_	_	_	_	_	_	O
+4	the	_	the	_	DT	0	_	_	_	_	_	_	_	O
+5	only	_	only	_	JJ	0	_	_	_	_	_	_	_	O
+6	serious	_	serious	_	JJ	0	_	_	_	_	_	_	_	O
+7	victim	_	victim	_	NN	0	_	_	_	_	_	_	_	O
+8	participated	_	participate	_	VBD	0	_	_	_	_	_	_	_	O
+9	in	_	in	_	IN	0	_	_	_	_	_	_	_	O
+10	the	_	the	_	DT	0	_	_	_	_	_	_	_	O
+11	attack	_	attack	_	NN	0	_	_	_	_	_	attack.n	Attack	O
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

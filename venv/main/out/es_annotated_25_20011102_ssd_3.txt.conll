@@ -1,0 +1,7 @@
+{   ('Interior_profile_relation', 'en'): [('Figure', 'terrorismo'), ('Ground', 'la región')],
+    ('Locale', 'región'): [],
+    ('Means', 'por'): [('Purpose', 'al terrorismo en la región')],
+    ('Part_whole', 'parte'): [('Whole', 'su')],
+    ('Possibility', 'puede'): [('Possible_event', 'violencia israelí'), ('Possible_event', 'abonar el terreno al terrorismo en la región')],
+    ('Terrorism', 'terrorismo'): [('Place', 'en la región')],
+    ('Warning', 'avisó'): [('Message', 'quot ; violencia israelí & quot ; puede abonar el terreno al terrorismo en la región')]}

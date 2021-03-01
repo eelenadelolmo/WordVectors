@@ -1,0 +1,6 @@
+{   ('Activity_start', 'comenzó'): [('Agent', 'policía israelí')],
+    ('Assistance', 'ayuda'): [('Benefited_party', 'de helicópteros')],
+    ('Awareness', 'sospechosos'): [],
+    ('Fleeing', 'persecución'): [('Self_mover', 'una persecución de sospechosos'), ('Path', 'del lugar')],
+    ('Law_enforcement_agency', 'policía'): [('Jurisdiction', 'israelí')],
+    ('Vehicle', 'helicópteros'): []}

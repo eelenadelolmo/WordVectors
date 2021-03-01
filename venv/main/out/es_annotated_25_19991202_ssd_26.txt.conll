@@ -1,0 +1,8 @@
+{   ('Becoming_silent', 'silencio'): [],
+    ('Defending', 'defienden'): [('Victim', 'del ex entrenador')],
+    ('Desiring', 'que desee'): [('Event', 'lo que'), ('Experiencer', 'lo')],
+    ('People_by_vocation', 'abogados'): [('Employer', 'Toshack')],
+    ('Respond_to_proposal', 'rechazan'): [('Speaker', 'abogados de Toshack'), ('Proposal', 'de silencio')],
+    ('Statement', 'comentar'): [('Message', 'defienden el derecho del ex entrenador a comentar'), ('Topic', 'lo que desee')],
+    ('Text_creation', 'escribo'): [('Author', 'y'), ('Text', 'estas líneas')],
+    ('Vehicle', 'entrenador'): []}

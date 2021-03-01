@@ -1,0 +1,9 @@
+{   ('Location_of_light', 'llamas'): [],
+    ('Locative_relation', 'cerca'): [('Figure', 'parte de los explosivos'), ('Ground', 'un vehículo que saltó en llamas')],
+    ('Locative_relation', 'en'): [('Ground', 'menos , parte de los explosivos')],
+    ('Motion', 'fueron'): [('Theme', 'un vehículo que'), ('Path', 'en'), ('Source', 'en llamas')],
+    ('Part_inner_outer', 'dentro'): [('Whole', 'un vehículo')],
+    ('Placing', 'colocados'): [('Theme', 'parte de los explosivos')],
+    ('Proportional_quantity', 'los'): [('Individuals', 'de los explosivos')],
+    ('Vehicle', 'vehículo'): [],
+    ('Weapon', 'explosivos'): []}

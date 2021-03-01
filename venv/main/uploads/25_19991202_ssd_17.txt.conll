@@ -1,0 +1,13 @@
+1	whoever	_	UNK	_	RB	0	_	_	_	_	_	_	_	S-Evaluee
+2	charges	_	charge	_	VBZ	0	_	_	_	_	_	charge.v	Judgment_communication	O
+3	for	_	for	_	IN	0	_	_	_	_	_	_	_	B-Evaluee
+4	being	_	be	_	VBG	0	_	_	_	_	_	_	_	I-Evaluee
+5	silent	_	silent	_	NN	0	_	_	_	_	_	_	_	I-Evaluee
+6	is	_	be	_	VBZ	0	_	_	_	_	_	_	_	O
+7	that	_	that	_	IN	0	_	_	_	_	_	_	_	B-Evaluee
+8	he	_	he	_	PRP	0	_	_	_	_	_	_	_	I-Evaluee
+9	has	_	have	_	VBZ	0	_	_	_	_	_	_	_	I-Evaluee
+10	no	_	no	_	DT	0	_	_	_	_	_	_	_	I-Evaluee
+11	decency	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Evaluee
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

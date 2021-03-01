@@ -1,0 +1,8 @@
+{   ('Becoming_silent', 'silencio'): [('Speaker', 'su'), ('Place', 'durante toda la vida')],
+    ('Calendric_unit', 'anuales'): [],
+    ('Commerce_pay', 'pagarían'): [('Buyer', 'quien'), ('Money', '50 millones')],
+    ('People_by_vocation', 'gerente'): [('Employer', 'papel semejante'), ('Employer', 'Madrid')],
+    ('Performers_and_roles', 'papel semejante'): [('Manner', 'semejante')],
+    ('Sign_agreement', 'firmó'): [('Agreement', 'papel semejante'), ('Time', 'ya'), ('Signatory', 'antiguo gerente del Madrid , a quien por')],
+    ('Similarity', 'semejante'): [('Entity_1', 'papel semejante')],
+    ('Statement', 'lo'): [('Speaker', 'su'), ('Message', 'papel semejante lo firmó ya un antiguo gerente del Madrid , a quien por su silencio le pagarían 50 millones')]}

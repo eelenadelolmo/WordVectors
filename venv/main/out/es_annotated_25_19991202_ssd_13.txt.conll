@@ -1,0 +1,6 @@
+{   ('Becoming_silent', 'silencio'): [('Speaker', 'mi')],
+    ('Being_in_control', 'dirección'): [('Controlling_entity', 'por')],
+    ('Certainty', 'seguro de que'): [('Cognizer', 'de'), ('Content', 'no me ofrecería ni un duro por mi silencio')],
+    ('Deciding', 'decidiese'): [('Cognizer', 'la dirección de EL PERIODICO decidiese'), ('Decision', 'prescindir de mis servicios')],
+    ('Offering', 'ofrecería'): [('Offerer', 'mis'), ('Theme', 'un duro por mi silencio')],
+    ('Public_services', 'servicios'): []}
