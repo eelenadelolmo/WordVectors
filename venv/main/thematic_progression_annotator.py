@@ -645,7 +645,11 @@ for file_xml in os.listdir(input_dir_coref):
                     for frame in child:
                         if frame.tag == 'main_frame':
                             for arg in frame:
-                                rheme_sem_role.append(arg.attrib['dependent'])
+                                # In order not to get concepts not in the rheme
+                                # print(arg.attrib['dependent'])
+                                # print(rheme)
+                                if arg.attrib['dependent'] in rheme:
+                                    rheme_sem_role.append(arg.attrib['dependent'])
 
             # Data
             t_r_ord.append((theme, rheme))
