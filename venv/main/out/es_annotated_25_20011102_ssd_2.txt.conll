@@ -1,7 +1,0 @@
-{   ('Aggregate', 'partes'): [],
-    ('Arriving', 'alcanzar'): [('Goal', 'un acuerdo')],
-    ('Attempt', 'esfuerzo'): [('Goal', 'pacificación')],
-    ('Communicate_categorization', 'quot'): [('Speaker', 'Aznar'), ('Item', 'la situación'), ('Category', 'en la zona')],
-    ('Locale', 'zona'): [],
-    ('Make_agreement_on_action', 'un acuerdo'): [],
-    ('Warning', 'advirtió'): [('Message', 'que cualquier esfuerzo de pacificación será inútil si no existe la voluntad de las partes para alcanzar un acuerdo')]}

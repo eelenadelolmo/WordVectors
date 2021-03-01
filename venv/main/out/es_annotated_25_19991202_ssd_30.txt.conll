@@ -1,7 +1,0 @@
-{   ('Awareness', 'es'): [('Cognizer', 'Conocemos'), ('Content', 'muchos casos')],
-    ('Becoming_silent', 'silencio'): [('Speaker', 'que'), ('Topic', 'la voz del dinero')],
-    ('Instance', 'casos'): [('Instance_prop', 'muchos')],
-    ('Interior_profile_relation', 'en'): [('Figure', 'Conocemos muchos casos'), ('Ground', 'quot ; el silencio es la voz del dinero')],
-    ('Money', 'dinero'): [],
-    ('Quantified_mass', 'muchos'): [('Individuals', 'casos')],
-    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'Conocemos muchos casos')]}

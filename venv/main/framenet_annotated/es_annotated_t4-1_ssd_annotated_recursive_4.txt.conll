@@ -1,0 +1,6 @@
+{   ('Arriving', 'alcanza'): [('Theme', 'el mochuelo'), ('Goal', 'cierta edad se')],
+    ('Calendric_unit', 'edad'): [],
+    ('Experiencer_obj', 'confunde'): [],
+    ('Idiosyncrasy', 'cierta'): [],
+    ('Motion', 'va a'): [('Goal', 'a su olivo')],
+    ('Temporal_collocation', 'Cuando'): [('Trajector_event', 'alcanza cierta edad se confunde fácilmente y no va a su olivo sino al ciprés')]}

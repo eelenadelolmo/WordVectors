@@ -1,0 +1,90 @@
+<!doctype html>
+    <head>
+        <title>Mapping FrameNet annotations from different languages</title>
+        <style>
+
+        * {
+          margin: 0;
+          padding:0;
+          box-sizing:border-box;
+        }
+
+        .fieldset_upload {
+          border: solid;
+          color: #000000;
+          border-radius: 1em;
+          margin: 2em 1em 1em;
+          padding:0 1em 1em;
+        }
+
+        .fieldset_process {
+          border: solid;
+          color: #669900;
+          border-radius: 1em;
+          margin: 2em 1em 1em;
+          padding:0 1em 1em;
+        }
+
+        .legend {
+          transform: translatey(-50%);
+          width: max-content;
+          background: white;
+          padding: 0 0.15em;
+        }
+
+        .fieldset li {
+          list-style-type: " - ";
+        }
+        </style>
+    </head>
+
+    <body class="body">
+
+    <div style="background-color: #4d4d4d;">
+        <br/><br/>
+        <h1 style="text-align:center; color: #ffffff; font-size: 77px">EN-ES Sequence mapper (Framenet SRL)</h1>
+        <br/><br/>
+    </div>
+
+
+    <br/><br/><br/>
+    <div class="fieldset_upload">
+      <h1 class="legend">Upload</h1>
+      <ul>
+          <h2 style="color:black">Upload English annotated with FrameNet SRL files and the original Spanish sentences files.</h2>
+          <br/>
+		  <h2 style="color:black">Press the submit button after selecting every group of files.</h2>
+          <br/>
+          <p style="color:black">The names of the corresponding files for every sentence/annotated sentence must match, except for the extra .conll extension of the annotated version.</p>
+          <br/><br/>
+
+			<form method="POST" action="upload-frame-ann-en" enctype="multipart/form-data">
+                <dl>
+                    <p>
+                        <input type="file" name="files[]" multiple="true" autocomplete="off" required>
+                    </p>
+                </dl>
+                <br/>
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+      </ul>
+    </div>
+    <br/><br/>
+
+
+    <div class="fieldset_process">
+      <h1 class="legend">Mapping</h1>
+      <ul>
+		  <h2 style="color:black">When you are done, press this button to perform the mapping:</h2>
+		  <br/><br/>
+
+		  <form action="/mapping_SRL" method="post">
+            <button name="forwardBtn" type="submit">Annotate in Spanish!</button>
+        </form>
+      </ul>
+    </div>
+
+    </body>
+

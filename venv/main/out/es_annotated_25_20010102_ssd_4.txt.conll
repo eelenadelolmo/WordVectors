@@ -1,8 +1,0 @@
-{   ('Calendric_unit', 'domingo'): [],
-    ('Catastrophe', 'incidentes'): [('Undesirable_event', 'de diversa')],
-    ('Earnings_and_losses', 'perdieron'): [('Earnings', 'vida en incidentes violentos de diversa índole')],
-    ('Inclusion', 'en'): [('Total', 'cuatro palestinos'), ('Part', 'un niño de 10 años , y dos israelís')],
-    ('People_by_age', 'niño'): [('Age', 'niño de 10 años')],
-    ('Time_vector', 'Desde'): [   ('Landmark_event', 'domingo'),
-                                  ('Event', ', cuatro palestinos , entre ellos un niño de 10 años , y dos israelís , perdieron la vida en incidentes violentos de diversa índole')],
-    ('Type', 'diversa'): [('Type_property', 'diversa')]}

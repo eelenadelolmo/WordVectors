@@ -1,9 +1,0 @@
-{   ('Age', 'joven'): [],
-    ('Being_employed', 'trabajaba'): [('Employee', 'que'), ('Task', 'para la')],
-    ('Calendric_unit', 'año'): [],
-    ('Death', 'murió'): [('Protagonist', 'que'), ('Result', 'tan joven')],
-    ('Increment', 'otros'): [('Class', 'amigos')],
-    ('Locative_relation', 'allí'): [('Ground', 'allí una vez cada año')],
-    ('Motion', 'voy'): [('Theme', 'y'), ('Goal', 'a comer allí una vez cada año')],
-    ('Personal_relationship', 'amigos'): [],
-    ('Remembering_experience', 'recordar'): [('Cognizer', 'y'), ('Experience', ', con otros amigos , a Alex Ferrer Isbert , que trabajaba para la Fundació y murió tan joven')]}

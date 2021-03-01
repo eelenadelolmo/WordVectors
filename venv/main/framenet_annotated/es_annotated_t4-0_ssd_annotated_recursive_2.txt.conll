@@ -1,0 +1,8 @@
+{   ('Awareness', 'saben'): [('Cognizer', 'la mayor parte de los lectores'), ('Content', 'que es')],
+    ('Being_necessary', 'necesario'): [('Dependent', 'escribir un')],
+    ('Degree', 'lo'): [],
+    ('Explaining_the_facts', 'explicar'): [('State_of_affairs', 'el título')],
+    ('Goal', 'para'): [('Trajector', 'sea necesario'), ('Landmark', 'escribir un')],
+    ('Opinion', 'creo'): [('Opinion', 'sea necesario escribir un prólogo a no ser para explicar el título aunque')],
+    ('Reading_perception', 'lectores'): [],
+    ('Text_creation', 'escribir'): [('Text', 'un')]}

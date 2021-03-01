@@ -1,0 +1,13 @@
+{   ('Age', 'nuevo'): [('Entity', 'derecho')],
+    ('Assistance', 'servir'): [('Benefited_party', 'el nuevo derecho'), ('Goal', 'perseguir la conducta de los productores y los transportistas de la droga')],
+    ('Businesses', 'operaciones'): [('Descriptor', 'espectaculares'), ('Product', 'sólo suponen el 10 % del tráfico mundial de drogas')],
+    ('Conduct', 'conducta'): [('Means', 'productores y los transportistas de la droga , y la economía que subyace debajo de ese mundo')],
+    ('Economy', 'economía'): [('Economy', 'economía que subyace debajo de ese mundo , ya que estas operaciones tan espectaculares sólo suponen el 10 % del tráfico mundial de drogas')],
+    ('Explaining_the_facts', 'los'): [('Fact', 'estas operaciones tan espectaculares'), ('State_of_affairs', '10 % del tráfico mundial de drogas')],
+    ('Intoxicants', 'drogas'): [('Country_of_origin', 'mundo')],
+    ('Law', 'derecho'): [('Descriptor', 'nuevo')],
+    ('Manufacturing', 'productores'): [('Product', 'drogas'), ('Product', 'transportistas')],
+    ('Political_locales', 'mundo'): [],
+    ('Required_event', 'debe'): [   ('Required_situation', 'el nuevo derecho'),
+                                    ('Required_situation', 'servir para perseguir la conducta de los productores y los transportistas de la droga , y la economía que subyace debajo de ese mundo ,')],
+    ('Time_vector', 'de ese'): [('Landmark_event', 'estas operaciones tan espectaculares sólo suponen el 10 % del tráfico mundial de drogas')]}

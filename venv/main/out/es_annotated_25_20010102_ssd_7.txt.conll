@@ -1,7 +1,0 @@
-{   ('Causation', 'causaron'): [('Cause', 'de unos 10 kilos de explosivos que'), ('Effect', 'daños materiales en tiendas y vehículos')],
-    ('Damaging', 'daños'): [('Patient', 'materiales'), ('Patient', 'tiendas y vehículos')],
-    ('Goal', 'en'): [('Landmark', 'la policía')],
-    ('Ingredients', 'materiales'): [],
-    ('Locale_by_use', 'tiendas'): [],
-    ('Vehicle', 'vehículos'): [],
-    ('Weapon', 'explosivos'): []}

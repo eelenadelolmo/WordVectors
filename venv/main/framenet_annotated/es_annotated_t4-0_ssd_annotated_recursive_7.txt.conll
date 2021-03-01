@@ -1,0 +1,7 @@
+{   ('Affirm_or_deny', 'negar'): [('Message', 'que cuando llega el turno todos mueren esa muerte ejemplar que nunca crea adeptos ni adictos ( excepto los suicidas )')],
+    ('Becoming_aware', 'aprende'): [('Cognizer', 'nadie')],
+    ('Bringing', 'llevan'): [('Carrier', 'incluidos los suicidas'), ('Goal', 'a cabo con la mayor perfección')],
+    ('Death', 'muerte'): [],
+    ('Inclusion', 'incluidos'): [],
+    ('Intentionally_create', 'crea'): [('Created_entity', 'adeptos ni adictos')],
+    ('Killing', 'suicidas'): []}

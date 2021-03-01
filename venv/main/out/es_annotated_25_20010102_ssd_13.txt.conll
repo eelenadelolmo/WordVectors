@@ -1,5 +1,0 @@
-{   ('Bringing', 'realizados'): [('Theme', 'los crímenes asesinos'), ('Goal', 'contra el liderazgo palestino')],
-    ('Committing_crime', 'crímenes'): [('Manner', 'asesinos')],
-    ('Intentionally_act', 'acciones'): [('Purpose', 'represalia'), ('Purpose', 'crímenes asesinos realizados contra el liderazgo palestino')],
-    ('Participation', 'participantes'): [],
-    ('Referring_by_name', 'quot'): [('Entity', 'Los participantes en el sepelio'), ('Name', 'acciones de represalia por')]}

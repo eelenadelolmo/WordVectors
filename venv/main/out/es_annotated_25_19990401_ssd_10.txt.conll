@@ -1,6 +1,0 @@
-{   ('Being_obligated', 'de actuar'): [],
-    ('Body_parts', 'frente'): [],
-    ('Goal', 'de'): [('Landmark', 'deber de')],
-    ('Intentionally_act', 'actuar'): [('Act', 'de actuar')],
-    ('Statement', 'quot'): [   ('Speaker', ', los europeos & quot ; tienen el deber de actuar & quot ; frente a & quot ; la barbarie de las autoridades serbias'),
-                               ('Speaker', 'su portavoz , Catherine Colonna')]}

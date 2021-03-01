@@ -1,9 +1,0 @@
-{   ('Awareness', 'sabe'): [('Cognizer', 'lo'), ('Content', 'El problema es que llega el momento de tomar decisiones , y ese momento es')],
-    ('Deciding', 'decisiones'): [],
-    ('Difficulty', 'duro'): [('Activity', 'ese momento es'), ('Time', 'muy')],
-    ('Frequency', 'a veces'): [('Event', 'no interesa tomar decisiones')],
-    ('Manufacturing', 'hacer'): [('Producer', 'lo'), ('Product', 'decisiones')],
-    ('Mental_stimulus_stimulus_focus', 'interesa'): [('Stimulus', 'lo'), ('Stimulus', 'de tomar decisiones')],
-    ('Predicament', 'problema'): [],
-    ('Statement', 'dijo'): [   ('Message', '. El problema es que llega el momento de tomar decisiones , y ese momento es muy duro , y a veces no interesa tomar decisiones & quot ; , dijo'),
-                               ('Speaker', 'lo')]}

@@ -1,0 +1,6 @@
+{   ('Age', 'nuevo'): [('Entity', 'derecho')],
+    ('Assistance', 'ayudan'): [('Helper', 'Estas operaciones'), ('Goal', 'a ensayar ese nuevo derecho que debe disciplinar los aspectos criminales de la globalización')],
+    ('Businesses', 'operaciones'): [],
+    ('Law', 'derecho'): [],
+    ('Legality', 'criminales'): [('Action', 'globalización')],
+    ('Operational_testing', 'de'): [('Product', 'nuevo derecho que debe disciplinar los aspectos criminales de la globalización')]}

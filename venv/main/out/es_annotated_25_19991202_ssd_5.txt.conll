@@ -1,5 +1,0 @@
-{   ('Arriving', 'llega'): [('Theme', 'el acuerdo definitivo')],
-    ('Make_agreement_on_action', 'el acuerdo'): [('Descriptor', 'definitivo')],
-    ('Money', 'dinero'): [('Type', 'por cuestiones')],
-    ('Process_end', 'definitivo'): [('Process', 'el acuerdo')],
-    ('Reason', 'por cuestiones'): [('State_of_affairs', 'dinero')]}

@@ -1,5 +1,0 @@
-{   ('Arriving', 'resto'): [],
-    ('Gathering_up', 'finiquito'): [('Agent', 'le'), ('Individuals', 'resto del finiquito que le corresponde')],
-    ('Interior_profile_relation', 'del'): [('Ground', 'resto'), ('Figure', 'cobraría el resto del finiquito que le corresponde')],
-    ('Locale_by_use', 'corresponde'): [],
-    ('Rest', 'resto'): [('Whole', 'del finiquito que le corresponde')]}

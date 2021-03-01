@@ -1,5 +1,0 @@
-{   ('Body_parts', 'cabeza'): [('Possessor', 'sus')],
-    ('Body_parts', 'cuerpos'): [('Possessor', 'sus')],
-    ('Earnings_and_losses', 'perdido'): [('Earner', 'les'), ('Earnings', 'parte de sus cuerpos')],
-    ('Part_whole', 'parte'): [('Part', 'les'), ('Whole', 'de sus cuerpos')],
-    ('State_continue', 'queda la'): [('Entity', 'les queda la cabeza')]}

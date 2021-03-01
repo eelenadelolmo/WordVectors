@@ -1,0 +1,9 @@
+{   ('Aggregate', 'grupo'): [('Individuals', 'de presos')],
+    ('Attempt', 'intentado'): [('Agent', 'que'), ('Goal', 'suicidarse')],
+    ('Calendric_unit', 'martes'): [],
+    ('Calendric_unit', 'noche'): [('Relative_time', 'martes')],
+    ('Catastrophe', 'incidente'): [],
+    ('Fire_burning', 'quemó'): [('Fire', 'un grupo de presos'), ('Fire', 'sus colchones'), ('Place', 'protestar contra los guardias de la prisión')],
+    ('Prison', 'prisión'): [],
+    ('Taking_sides', 'contra'): [('Side', 'prisión')],
+    ('Wealthiness', 'desató'): [('Person', 'quemó')]}

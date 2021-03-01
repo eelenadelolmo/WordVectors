@@ -1,0 +1,5 @@
+{   ('Ambient_temperature', 'friolero'): [],
+    ('Kinship', 'hija'): [],
+    ('Likelihood', 'posible'): [('Hypothetical_event', 'Dios sea tan friolero')],
+    ('Opinion', 'pensando'): [('Opinion', 'Es posible que Dios sea tan friolero')],
+    ('Perception_active', 'miraba'): [('Phenomenon', 'su pequeña hija'), ('Place', 'su')]}

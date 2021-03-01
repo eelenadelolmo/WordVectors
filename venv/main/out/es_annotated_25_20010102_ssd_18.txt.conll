@@ -1,5 +1,0 @@
-{   ('Leadership', 'líder'): [('Governed', 'israelí'), ('Descriptor', 'de la')],
-    ('Personal_relationship', 'esposa'): [('Partner_1', 'su')],
-    ('Quantified_mass', 'multitudinario'): [('Individuals', 'un líder de la ultraderecha israelí , Binyamin Zeev Cahana , y de su esposa se clamó a la venganza')],
-    ('Referring_by_name', 'clamó'): [('Entity', 'su'), ('Name', 'a la venganza')],
-    ('Revenge', 'venganza'): [('Avenger', 'su')]}
