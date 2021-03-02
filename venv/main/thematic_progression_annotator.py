@@ -1608,19 +1608,27 @@ for file_xml in os.listdir(output_dir):
 
     <body>
     
-        <h1>Conceptos</h1>
+        <h1>Texto</h1>
     
     """
 
     with open(output_dir + '/' + file_xml) as xml:
 
         texto = xml.read()
-
         root = ET.fromstring(texto)
+
+        for sentence in root.iter('sentence'):
+            for child in sentence:
+                if child.tag == 'str':
+                    html += child.text + ' '
 
 
         ids_colors = dict()
         n_concepts = 0
+
+        html += '''
+
+        <h1>Conceptos</h1>'''
 
         for concepts in root.iter('concepts'):
             for concept in concepts:
