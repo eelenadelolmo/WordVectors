@@ -1,7 +1,0 @@
-{   ('Employing', 'trabajadores'): [],
-    ('Frequency', 'siempre'): [('Event', 'no han'), ('Event', 'condenado las acusaciones')],
-    ('Judgment_communication', 'acusaciones'): [('Communicator', 'lo')],
-    ('Judgment_communication', 'condenado'): [('Communicator', 'Los'), ('Degree', 'siempre'), ('Evaluee', 'acusaciones')],
-    ('Relation', 'relación'): [('Entity_2', 'Rei')],
-    ('Request', 'exigen'): [('Speaker', 'Los'), ('Message', 'Gara que rectifique')],
-    ('Sign_agreement', 'firmado'): [('Signatory', 'Los'), ('Agreement', 'nada en relación con Rei')]}

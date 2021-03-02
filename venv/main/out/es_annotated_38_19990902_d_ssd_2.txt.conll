@@ -1,7 +1,0 @@
-{   ('Appellations', 'presidente'): [('Type', 'la Generalitat')],
-    ('Calendric_unit', 'lunes'): [('Relative_time', 'se')],
-    ('Catastrophe', 'incidente'): [],
-    ('Event', 'incidente se'): [('Event', 'El incidente'), ('Time', 'pasado lunes')],
-    ('Relative_time', 'se'): [('Focal_occasion', 'lunes')],
-    ('Vehicle', 'camión'): [],
-    ('Vehicle', 'vehículo'): []}

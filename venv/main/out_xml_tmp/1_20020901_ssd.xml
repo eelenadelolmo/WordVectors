@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+        <!ELEMENT str (#PCDATA)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #REQUIRED>
+        <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="1_20020901_ssd">
+
+
+	<concepts>
+		<concept id="c_0">La violencia doméstica</concept>
+		<concept id="c_1">dos mujeres</concept>
+		<concept id="c_2">los jueces catalanes</concept>
+		<concept id="c_3">El problema</concept>
+		<concept id="c_4">La fiscalía del Tribunal Superior de Justícia de Catalunya</concept>
+		<concept id="c_5">La mayoría de las denuncias</concept>
+		<concept id="c_6">20</concept>
+		<concept id="c_7">Los tribunales</concept>
+		<concept id="c_8">Los jueces de instrucción que investigan las denuncias por malos tratos</concept>
+		<concept id="c_9">la fiscalía de Barcelona</concept>
+		<concept id="c_10">la fiscalía</concept>
+		<concept id="c_11">que</concept>
+		<concept id="c_12">Estas circunstancias</concept>
+		<concept id="c_13">Los fiscales y los jueces</concept>
+		<concept id="c_14">Los agentes</concept>
+		<concept id="c_15">las víctimas</concept>
+		<concept id="c_16">la afectada</concept>
+		<concept id="c_17">El servicio de violencia doméstica de la fiscalía de Barcelona</concept>
+		<concept id="c_18">delito</concept>
+		<concept id="c_19">en un juicio de faltas</concept>
+		<concept id="c_20">la víctima</concept>
+		<concept id="c_21">agresor</concept>
+		<concept id="c_22">45</concept>
+		<concept id="c_23">un</concept>
+		<concept id="c_24">una</concept>
+		<concept id="c_25">quot</concept>
+		<concept id="c_26">se</concept>
+		<concept id="c_27">asiduidad</concept>
+		<concept id="c_28">incidentes</concept>
+	</concepts>
+
+	<sentence>
+		<str>
+			 La violencia doméstica no frena.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="ncfs000">violencia</token><token pos="aq0fs0">doméstica</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vmip3s0">frena</token>
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<main_frame type="Preventing_or_letting" head="frena">
+				<argument type="Event" dependent="violencia doméstica" /></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Esta misma semana, dos mujeres fueron agredidas, una de ellas mortalmente, y dos niños de corta edad, apuñalados por su padre.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="dn0cp0">dos</token><token pos="ncfp000">mujeres</token>
+		</theme>
+		<rheme concept_ref1="c_14" concept_ref2="c_23" concept_ref3="c_24">
+			<token pos="vsis3p0">fueron</token><token pos="vmp00pf">agredidas</token><token pos="fc">,</token><token pos="pi0fs000">una</token><token pos="sps00">de</token><token pos="pp3fp000">ellas</token><token pos="rg">mortalmente</token><token pos="fc">,</token>
+		<to_annotate>[[(231, 266), 'ellas', 'c_14'], ['un', 'c_23'], [(169, 202), 'una', 'c_24']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Age" head="edad">
+				<argument type="Entity" dependent="niños" /></frame>
+			<main_frame type="Attack" head="agredidas">
+				<argument type="Victim" dependent="dos mujeres" /></main_frame>
+			<main_frame type="Attempt" head="agredidas" />
+			<frame type="Calendric_unit" head="semana">
+				<argument type="Relative_time" dependent="misma" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="niños de" /></frame>
+			<frame type="Cardinal_numbers" head="una">
+				<argument type="Entity" dependent="de ellas" /></frame>
+			<frame type="Identicality" head="misma">
+				<argument type="Type" dependent="semana" /></frame>
+			<frame type="Kinship" head="niños">
+				<argument type="Descriptor" dependent="edad" /></frame>
+			<frame type="Kinship" head="padre">
+				<argument type="Ego" dependent="ellas" /></frame>
+			<frame type="People" head="mujeres" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Ante la reiteración de estos casos, los jueces catalanes empiezan a adoptar cada vez medidas más drásticas y apuestan por prohibir a los maltratadores que se acerquen a sus víctimas como medida cautelar - - antes de la condena - -.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0mp0">los</token><token pos="nccp000">jueces</token><token pos="aq0mp0">catalanes</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_14" concept_ref3="c_16">
+			<token pos="sps00">Ante</token><token pos="da0fs0">la</token><token pos="ncfs000">reiteración</token><token pos="sps00">de</token><token pos="dd0mp0">estos</token><token pos="ncmp000">casos</token><token pos="vmip3p0">empiezan</token><token pos="sps00">a</token><token pos="vmn0000">adoptar</token><token pos="di0cs0">cada</token><token pos="ncfs000">vez</token><token pos="ncfp000">medidas</token><token pos="rg">más</token><token pos="aq0fp0">drásticas</token>
+		<to_annotate>[[(101, 171), 'la reiteración', 'c_5'], [(200, 267), 'estos casos', 'c_14'], [(368, 432), 'cada vez', 'c_16']]</to_annotate></rheme>
+		<semantic_roles>
+			<main_frame type="Activity_start" head="empiezan">
+				<argument type="Agent" dependent="jueces catalanes" />
+				<argument type="Activity" dependent="a adoptar cada vez medidas más drásticas y" /></main_frame>
+			<main_frame type="Adopt_selection" head="adoptar">
+				<argument type="Agent" dependent="jueces catalanes" />
+				<argument type="Attribute" dependent="medidas más drásticas y" /></main_frame>
+			<main_frame type="Arriving" head="adoptar">
+				<argument type="Theme" dependent="prohibir a los maltratadores que" />
+				<argument type="Theme" dependent="sus víctimas" /></main_frame>
+			<frame type="Catastrophe" head="víctimas">
+				<argument type="Patient" dependent="sus víctimas" /></frame>
+			<main_frame type="Commitment" head="adoptar">
+				<argument type="Speaker" dependent="jueces catalanes" />
+				<argument type="Message" dependent="por prohibir a los maltratadores" /></main_frame>
+			<frame type="Instance" head="casos">
+				<argument type="Instance_prop" dependent="estos" /></frame>
+			<frame type="People_by_vocation" head="jueces">
+				<argument type="Person" dependent="jueces catalanes" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El problema surge cuando no hay medios para que el alejamiento se cumpla.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">El</token><token pos="ncms000">problema</token>
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Causation" head="que">
+				<argument type="Effect" dependent="hay" />
+				<argument type="Effect" dependent="para que el alejamiento se cumpla" /></frame>
+			<frame type="Coming_to_be" head="surge">
+				<argument type="Entity" dependent="problema" /></frame>
+			<frame type="Locative_relation" head="hay">
+				<argument type="Ground" dependent="no hay medios para que el alejamiento se cumpla" /></frame>
+			<frame type="Predicament" head="problema" />
+			<frame type="Quitting_a_place" head="alejamiento" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La fiscalía del Tribunal Superior de Justícia de Catalunya alerta en su memoria del 2001 del "difícil control" del acatamiento de la medida.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0fs0">La</token><token pos="ncfs000">fiscalía</token><token pos="spcms">del</token><token pos="ncfp000">Tribunal</token><token pos="ncfp000">Superior</token><token pos="sps00">de</token><token pos="ncms000">Justícia</token><token pos="sps00">de</token><token pos="np00000">Catalunya</token>
+		</theme>
+		<rheme concept_ref1="c_16" concept_ref2="c_3" concept_ref3="c_6" concept_ref4="c_25">
+			<token pos="vmip3s0">alerta</token><token pos="sps00">en</token><token pos="dp3cs0">su</token><token pos="ncfs000">memoria</token><token pos="spcms">del</token><token pos="z">2001</token><token pos="spcms">del</token><token pos="fe">quot;</token><token pos="aq0cs0">difícil</token><token pos="ncms000">control</token><token pos="fe">quot;</token><token pos="spcms">del</token><token pos="ncms000">acatamiento</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">medida</token>
+		<to_annotate>[[(89, 124), 'alerta', 'c_16'], [(153, 219), 'su memoria', 'c_3'], [(249, 276), '2001', 'c_6'], ['quot', 'c_25']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Being_in_control" head="control" />
+			<frame type="Building_subparts" head="fiscalía" />
+			<frame type="Compliance" head="acatamiento">
+				<argument type="Norm" dependent="de la medida" /></frame>
+			<frame type="Difficulty" head="difícil">
+				<argument type="Activity" dependent="control" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="Tribunal Superior de Justícia de Catalunya alerta" />
+				<argument type="Ground" dependent="su memoria del 2001 del  quot ; difícil control  quot ; del acatamiento de la medida" /></frame>
+			<frame type="Judicial_body" head="Tribunal" />
+			<frame type="Memory" head="memoria">
+				<argument type="Cognizer" dependent="su" />
+				<argument type="Time" dependent="2001" />
+				<argument type="Content" dependent="difícil control  quot ; del acatamiento de la medida" /></frame>
+			<frame type="Quantified_mass" head="medida" />
+			<main_frame type="Warning" head="alerta">
+				<argument type="Speaker" dependent="Tribunal Superior de Justícia de Catalunya" />
+				<argument type="Message" dependent="en su memoria del 2001 del  quot ; difícil control  quot ; del acatamiento de la medida" /></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En 32 de las 74 sentencias condenatorias por violencia doméstica dictadas en el año pasado en Barcelona se acordaron medidas de alejamiento.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="año">
+				<argument type="Relative_time" dependent="se" /></frame>
+			<frame type="Change_position_on_a_scale" head="se">
+				<argument type="Item" dependent="violencia doméstica" />
+				<argument type="Path" dependent="año pasado" />
+				<argument type="Attribute" dependent="en Barcelona" /></frame>
+			<frame type="Foreign_or_domestic_country" head="doméstica" />
+			<frame type="Giving" head="dictadas">
+				<argument type="Theme" dependent="violencia doméstica" />
+				<argument type="Manner" dependent="año pasado" />
+				<argument type="Donor" dependent="en Barcelona" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Time" dependent="año pasado" />
+				<argument type="Ground" dependent="Barcelona" /></frame>
+			<frame type="Make_agreement_on_action" head="se" />
+			<frame type="Relative_time" head="se">
+				<argument type="Focal_occasion" dependent="año" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La mayoría de las denuncias acaban en un juicio de faltas al no apreciarse la existencia de delito.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0fs0">La</token><token pos="ncfs000">mayoría</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">denuncias</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_14" concept_ref3="c_18" concept_ref4="c_19" concept_ref5="c_23" concept_ref6="c_25" concept_ref7="c_26">
+			<token pos="vmip3p0">acaban</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="ncms000">juicio</token><token pos="sps00">de</token><token pos="ncfp000">faltas</token><token pos="spcms">al</token><token pos="rn">no</token><token pos="vmn0000">apreciarse</token><token pos="da0fs0">la</token><token pos="ncfs000">existencia</token><token pos="sps00">de</token><token pos="ncms000">delito</token>
+		<to_annotate>[[(309, 344), 'faltas', 'c_10'], [(438, 507), 'la existencia', 'c_14'], [(536, 571), 'delito', 'c_18'], [(186, 344), 'en un juicio de faltas', 'c_19'], [(215, 245), 'un', 'c_23'], [(215, 280), 'un juicio', 'c_25'], ['se', 'c_26']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Committing_crime" head="delito" />
+			<frame type="Existence" head="existencia">
+				<argument type="Entity" dependent="de delito" /></frame>
+			<main_frame type="Judgment" head="apreciarse">
+				<argument type="Evaluee" dependent="delito" /></main_frame>
+			<main_frame type="Process_end" head="acaban">
+				<argument type="Process" dependent="mayoría de las denuncias" />
+				<argument type="Place" dependent="en un juicio de faltas" /></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En el 2001 se dictaron 91 sentencias de faltas absolutorias y 56 condenatorias ( 20 prohibían al agresor acercarse a la víctima ).
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="z">20</token>
+		</theme>
+		<rheme concept_ref1="c_14" concept_ref2="c_15" concept_ref3="c_20" concept_ref4="c_21" concept_ref5="c_26">
+			<token pos="vmii3p0">prohibían</token><token pos="spcms">al</token><token pos="ncms000">agresor</token><token pos="vmn0000">acercarse</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">víctima</token><token pos="fpt">)</token>
+		<to_annotate>[[(178, 214), 'agresor', 'c_14'], [(280, 346), 'la víctima', 'c_15'], [(280, 346), 'la víctima', 'c_20'], [(178, 214), 'agresor', 'c_21'], ['se', 'c_26']]</to_annotate></rheme>
+		<semantic_roles>
+			<main_frame type="Arriving" head="acercarse">
+				<argument type="Theme" dependent="20 prohibían al agresor" />
+				<argument type="Goal" dependent="la víctima" /></main_frame>
+			<frame type="Catastrophe" head="víctima" />
+			<main_frame type="Deny_or_grant_permission" head="prohibían">
+				<argument type="Action" dependent="agresor" /></main_frame>
+			<frame type="Giving" head="dictaron">
+				<argument type="Time" dependent="En el 2001" />
+				<argument type="Theme" dependent="91 sentencias de faltas absolutorias y 56" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Los tribunales celebraron otros 19 juicios en los que existía delito, dictando una sola sentencia absolutoria y 18 condenatorias ( en 12 se impuso la pena de alejamiento ).
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">tribunales</token>
+		</theme>
+		<rheme concept_ref1="c_14" concept_ref2="c_9" concept_ref3="c_16" concept_ref4="c_18" concept_ref5="c_19" concept_ref6="c_23" concept_ref7="c_24" concept_ref8="c_25" concept_ref9="c_26">
+			<token pos="vmis3p0">celebraron</token><token pos="di0mp0">otros</token><token pos="z">19</token><token pos="ncmp000">juicios</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="pr0cn000">que</token><token pos="vmii3s0">existía</token><token pos="ncms000">delito</token><token pos="vmg0000">dictando</token><token pos="di0fs0">una</token><token pos="aq0fs0">sola</token><token pos="ncfs000">sentencia</token><token pos="aq0fs0">absolutoria</token><token pos="cc">y</token><token pos="z">18</token><token pos="aq0fp0">condenatorias</token><token pos="fpa">(</token><token pos="sps00">en</token><token pos="z">12</token><token pos="p0000000">se</token><token pos="vmis3s0">impuso</token><token pos="da0fs0">la</token><token pos="ncfs000">pena</token><token pos="sps00">de</token><token pos="ncms000">alejamiento</token><token pos="fpt">)</token>
+		<to_annotate>[[(452, 487), 'delito', 'c_14'], [(524, 625), 'una sola sentencia', 'c_9'], [(902, 965), 'la pena', 'c_16'], [(452, 487), 'delito', 'c_18'], [(524, 714), 'una sola sentencia absolutoria y 18', 'c_19'], ['un', 'c_23'], [(524, 555), 'una', 'c_24'], [(229, 262), 'otros', 'c_25'], [(835, 867), 'se', 'c_26']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Committing_crime" head="delito" />
+			<main_frame type="Contingency" head="dictando">
+				<argument type="Determinant" dependent="una sola sentencia absolutoria y 18" /></main_frame>
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="19 juicios" /></frame>
+			<frame type="Judicial_body" head="tribunales" />
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="otros 19 juicios en los que" />
+				<argument type="Ground" dependent="existía delito" /></frame>
+			<frame type="Sole_instance" head="sola">
+				<argument type="Type" dependent="dictando" /></frame>
+			<frame type="Trial" head="juicios" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Los jueces de instrucción que investigan las denuncias por malos tratos también aplican con mayor asiduidad y de forma cautelar la prohibición de acercamiento a la víctima.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="da0mp0">Los</token><token pos="nccp000">jueces</token><token pos="sps00">de</token><token pos="ncfs000">instrucción</token><token pos="pr0cn000">que</token><token pos="vmip3p0">investigan</token><token pos="da0fp0">las</token><token pos="ncfp000">denuncias</token><token pos="sps00">por</token><token pos="aq0mp0">malos</token><token pos="ncmp000">tratos</token>
+		</theme>
+		<rheme concept_ref1="c_15" concept_ref2="c_7" concept_ref3="c_14" concept_ref4="c_20" concept_ref5="c_27">
+			<token pos="vmip3p0">aplican</token><token pos="sps00">con</token><token pos="aq0cs0">mayor</token><token pos="ncfs000">asiduidad</token><token pos="cc">y</token><token pos="sps00">de</token><token pos="ncfs000">forma</token><token pos="aq0cs0">cautelar</token><token pos="da0fs0">la</token><token pos="ncfs000">prohibición</token><token pos="sps00">de</token><token pos="ncms000">acercamiento</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">víctima</token>
+		<to_annotate>[[(539, 605), 'la víctima', 'c_15'], [(371, 441), 'la prohibición', 'c_7'], [(470, 511), 'acercamiento', 'c_14'], [(539, 605), 'la víctima', 'c_20'], [(209, 247), 'asiduidad', 'c_27']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="acercamiento a">
+				<argument type="Goal" dependent="mayor asiduidad y de forma cautelar la prohibición de acercamiento a la víctima" /></frame>
+			<frame type="Catastrophe" head="víctima">
+				<argument type="Undesirable_event" dependent="de forma cautelar" /></frame>
+			<frame type="Conduct" head="de forma">
+				<argument type="Manner" dependent="cautelar" /></frame>
+			<main_frame type="Scrutiny" head="investigan">
+				<argument type="Cognizer" dependent="jueces de instrucción que investigan" />
+				<argument type="Ground" dependent="las denuncias por malos" /></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En el 2001, la fiscalía de Barcelona solicitó 93 y los tribunales concedieron 87.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="da0fs0">la</token><token pos="ncfs000">fiscalía</token><token pos="sps00">de</token><token pos="np00000">Barcelona</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">solicitó</token><token pos="z">53</token>
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Building_subparts" head="fiscalía">
+				<argument type="Descriptor" dependent="fiscalía de Barcelona" /></frame>
+			<frame type="Judicial_body" head="tribunales" />
+			<main_frame type="Request" head="solicitó">
+				<argument type="Time" dependent="En el 2001" />
+				<argument type="Speaker" dependent="la fiscalía de Barcelona" />
+				<argument type="Addressee" dependent="93 y los tribunales" /></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 A pesar del incremento de las órdenes cautelares de alejamiento, la fiscalía desvela la dificultad existente para controlar y evitar que el agresor se acerque a la víctima.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="da0fs0">la</token><token pos="ncfs000">fiscalía</token>
+		</theme>
+		<rheme concept_ref1="c_14" concept_ref2="c_15" concept_ref3="c_16" concept_ref4="c_18" concept_ref5="c_19" concept_ref6="c_20" concept_ref7="c_21" concept_ref8="c_25" concept_ref9="c_26" concept_ref10="c_27">
+			<token pos="vmip3s0">desvela</token><token pos="da0fs0">la</token><token pos="ncfs000">dificultad</token><token pos="aq0cs0">existente</token><token pos="sps00">para</token><token pos="vmn0000">controlar</token><token pos="cc">y</token><token pos="vmn0000">evitar</token><token pos="cs">que</token><token pos="da0ms0">el</token><token pos="ncms000">agresor</token><token pos="p0300000">se</token><token pos="vmsp3s0">acerque</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">víctima</token>
+		<to_annotate>[[(540, 576), 'agresor', 'c_14'], [(672, 738), 'la víctima', 'c_15'], [(248, 317), 'la dificultad', 'c_16'], [(248, 317), 'la dificultad', 'c_18'], [(540, 738), 'agresor se acerque a la víctima', 'c_19'], [(672, 738), 'la víctima', 'c_20'], [(540, 576), 'agresor', 'c_21'], ['control', 'c_25'], [(576, 608), 'se', 'c_26'], [(248, 317), 'la dificultad', 'c_27']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="alejamiento">
+				<argument type="Theme" dependent="el agresor" />
+				<argument type="Goal" dependent="la víctima" /></frame>
+			<main_frame type="Being_in_control" head="controlar">
+				<argument type="Dependent_entity" dependent="la dificultad" /></main_frame>
+			<frame type="Catastrophe" head="víctima">
+				<argument type="Undesirable_event" dependent="el agresor" /></frame>
+			<frame type="Change_position_on_a_scale" head="incremento">
+				<argument type="Item" dependent="de las órdenes cautelares de alejamiento" /></frame>
+			<frame type="Difficulty" head="dificultad" />
+			<main_frame type="Preventing_or_letting" head="evitar">
+				<argument type="Event" dependent="agresor se acerque a la víctima" /></main_frame>
+			<frame type="Sequence" head="órdenes" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 "Se intenta proteger al perjudicado, aunque la efectividad de la medida es de muy difícil cumplimiento ya que depende del acusado. Sólo se puede actuar cuando ya se ha quebrantado la medida", asegura el abogado penalista Miguel Capuz.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="se" />
+			<frame type="Attempt" head="intenta" />
+			<frame type="Capability" head="puede">
+				<argument type="Entity" dependent="se" />
+				<argument type="Event" dependent="Sólo se puede actuar" /></frame>
+			<frame type="Contingency" head="depende" />
+			<frame type="Difficulty" head="difícil">
+				<argument type="Activity" dependent="la efectividad de la medida" />
+				<argument type="Degree" dependent="muy" /></frame>
+			<frame type="Intentionally_act" head="actuar" />
+			<frame type="Legality" head="penalista">
+				<argument type="Action" dependent="abogado" /></frame>
+			<frame type="Meet_specifications" head="quebrantado" />
+			<frame type="People_by_vocation" head="abogado">
+				<argument type="Employer" dependent="penalista" />
+				<argument type="Person" dependent="abogado" /></frame>
+			<frame type="Protecting" head="proteger">
+				<argument type="Asset" dependent="al perjudicado" /></frame>
+			<frame type="Quantified_mass" head="medida" />
+			<frame type="Statement" head="quot">
+				<argument type="Message" dependent="; Se intenta proteger al perjudicado , aunque la efectividad de la medida es de muy difícil cumplimiento" />
+				<argument type="Speaker" dependent="Sólo se puede actuar cuando ya se ha quebrantado la medida" />
+				<argument type="Message" dependent="abogado penalista" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El informe de la fiscalía relata que ante los incumplimientos no se están adoptando "medidas que impliquen una mayor limitación de la libertad personal del agresor".
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_14" concept_ref2="c_5" concept_ref3="c_10" concept_ref4="c_21" concept_ref5="c_23" concept_ref6="c_24" concept_ref7="c_26">
+			<token pos="vmsp3p0">impliquen</token><token pos="di0fs0">una</token><token pos="aq0cs0">mayor</token><token pos="ncfs000">limitación</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">libertad</token><token pos="aq0cs0">personal</token><token pos="ncms000">del</token><token pos="ncms000">agresor</token>
+		<to_annotate>[[(455, 491), 'agresor', 'c_14'], [(188, 291), 'una mayor limitación', 'c_5'], [(320, 387), 'la libertad', 'c_10'], [(455, 491), 'agresor', 'c_21'], ['un', 'c_23'], [(188, 219), 'una', 'c_24'], ['el agresor', 'c_26']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El informe de la fiscalía " />
+			<frame type="Adopt_selection" head="adoptando">
+				<argument type="Attribute" dependent="la libertad personal del agresor" /></frame>
+			<frame type="Body_parts" head="ante" />
+			<frame type="Limitation" head="limitación">
+				<argument type="Entity" dependent="la libertad personal del agresor" /></frame>
+			<frame type="Statement" head="informe de" />
+			<frame type="Statement" head="se">
+				<argument type="Message" dependent="El informe de la" />
+				<argument type="Message" dependent="que ante los incumplimientos no" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Destaca que "especialmente son pocos los supuestos en los que, pese a la evidente situación de riesgo en la que se está la víctima y ante las reiteradas denuncias de incumplimiento de las medidas de alejamiento adoptadas, se acuerde la prisión provisional".
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Adopt_selection" head="adoptadas">
+				<argument type="Attribute" dependent="medidas" /></frame>
+			<frame type="Body_parts" head="ante" />
+			<frame type="Catastrophe" head="víctima" />
+			<frame type="Imprisonment" head="prisión">
+				<argument type="Prisoner" dependent="provisional" /></frame>
+			<frame type="Instance" head="situación">
+				<argument type="Instance_prop" dependent="pocos" /></frame>
+			<frame type="Locative_relation" head="está">
+				<argument type="Figure" dependent="que" />
+				<argument type="Ground" dependent="especialmente son pocos los supuestos en" /></frame>
+			<frame type="Make_agreement_on_action" head="supuestos">
+				<argument type="Obligation" dependent="prisión provisional" /></frame>
+			<frame type="Obviousness" head="evidente">
+				<argument type="Phenomenon" dependent="situación de riesgo" /></frame>
+			<frame type="Quantified_mass" head="pocos">
+				<argument type="Individuals" dependent="situación" /></frame>
+			<frame type="Run_risk" head="riesgo" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Estas circunstancias pueden llegar a desvirtuar la medida.
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="dd0fp0">Estas</token><token pos="ncfp000">circunstancias</token>
+		</theme>
+		<rheme concept_ref1="c_16">
+			<token pos="vmip3p0">pueden</token><token pos="vmn0000">llegar</token><token pos="sps00">a</token><token pos="vmn0000">desvirtuar</token><token pos="da0fs0">la</token><token pos="ncfs000">medida</token>
+		<to_annotate>[[(168, 233), 'la medida', 'c_16']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Quantified_mass" head="medida" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 PROTECCIÓN ESPECIAL.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Los fiscales y los jueces aplican medidas más drásticas ante casos de extrema gravedad.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="da0mp0">Los</token><token pos="nccp000">fiscales</token><token pos="cc">y</token><token pos="da0mp0">los</token><token pos="nccp000">jueces</token>
+		</theme>
+		<rheme concept_ref1="c_14">
+			<token pos="vmip3p0">aplican</token><token pos="ncfp000">medidas</token><token pos="rg">más</token><token pos="aq0fp0">drásticas</token>
+		<to_annotate>[[(67, 103), 'medidas', 'c_14']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Instance" head="casos">
+				<argument type="Instance_prop" dependent="extrema" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En 13 supuestos se acordó el año pasado el establecimiento de un servicio policial de vigilancia y protección personal de la víctima.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="año">
+				<argument type="Relative_time" dependent="pasado el" /></frame>
+			<frame type="Catastrophe" head="víctima" />
+			<frame type="Instance" head="víctima">
+				<argument type="Instance_prop" dependent="13" /></frame>
+			<frame type="Intentionally_create" head="establecimiento">
+				<argument type="Created_entity" dependent="un servicio policial" /></frame>
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Ground" dependent="13 supuestos" /></frame>
+			<frame type="Law_enforcement_agency" head="policial" />
+			<frame type="Make_agreement_on_action" head="supuestos">
+				<argument type="Party_1" dependent="se" />
+				<argument type="Obligation" dependent="el año pasado el establecimiento de un servicio policial de vigilancia y protección personal de la víctima" /></frame>
+			<frame type="Public_services" head="servicio" />
+			<frame type="Relative_time" head="pasado el">
+				<argument type="Focal_occasion" dependent="año pasado" /></frame>
+			<frame type="Scrutiny" head="vigilancia" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Los agentes, además, debieron acompañar en 45 ocasiones a las perjudicadas a los juzgados para evitar incidentes con el agresor.
+		</str>
+		<theme concept_ref="c_14">
+			<token pos="da0mp0">Los</token><token pos="nccp000">agentes</token>
+		</theme>
+		<rheme concept_ref1="c_14" concept_ref2="c_7" concept_ref3="c_18" concept_ref4="c_21" concept_ref5="c_22" concept_ref6="c_26" concept_ref7="c_28">
+			<token pos="rg">además</token><token pos="vmis3p0">debieron</token><token pos="vmn0000">acompañar</token><token pos="sps00">en</token><token pos="z">45</token><token pos="ncfp000">ocasiones</token><token pos="sps00">a</token><token pos="da0fp0">las</token><token pos="aq0fpp">perjudicadas</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="ncmp000">juzgados</token><token pos="sps00">para</token><token pos="vmn0000">evitar</token><token pos="nccp000">incidentes</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">agresor</token>
+		<to_annotate>[[(707, 743), 'agresor', 'c_14'], [(474, 542), 'los juzgados', 'c_7'], [(608, 743), 'incidentes con el agresor', 'c_18'], [(707, 743), 'agresor', 'c_21'], [(284, 309), '45', 'c_22'], [(677, 743), 'el agresor', 'c_26'], [(608, 647), 'incidentes', 'c_28']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Active_substance" head="agentes" />
+			<main_frame type="Avoiding" head="evitar">
+				<argument type="Agent" dependent="45" />
+				<argument type="Undesirable_situation" dependent="incidentes con el agresor" /></main_frame>
+			<frame type="Catastrophe" head="incidentes">
+				<argument type="Undesirable_event" dependent="con el agresor" /></frame>
+			<frame type="Judicial_body" head="juzgados" />
+			<frame type="People" head="las">
+				<argument type="Descriptor" dependent="perjudicadas" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 "En casos muy graves, se puede acordar la vigilancia de la víctima todo el día o acompañarle a comprar al trabajo o a la escuela de su hijo. Hay otros sistemas de control, como la contravigilancia o el contacto telefónico con los agentes", afirman los Mossos d'Esquadra.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Active_substance" head="agentes" />
+			<frame type="Being_in_control" head="control" />
+			<frame type="Calendric_unit" head="día">
+				<argument type="Count" dependent="todo el" /></frame>
+			<frame type="Capability" head="puede">
+				<argument type="Entity" dependent="su" />
+				<argument type="Event" dependent="vigilancia de la víctima todo el día o acompañarle a comprar al trabajo o a la escuela de su hijo" /></frame>
+			<frame type="Catastrophe" head="víctima">
+				<argument type="Patient" dependent="su" />
+				<argument type="Undesirable_event" dependent="todo el día" />
+				<argument type="Undesirable_event" dependent="o el contacto telefónico con los agentes  quot ; , afirman" /></frame>
+			<frame type="Commerce_buy" head="comprar">
+				<argument type="Buyer" dependent="su" />
+				<argument type="Goods" dependent="al trabajo o a la escuela de su hijo" /></frame>
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="sistemas de control" /></frame>
+			<frame type="Instance" head="casos">
+				<argument type="Instance_prop" dependent="muy graves" /></frame>
+			<frame type="Kinship" head="su">
+				<argument type="Ego" dependent="su" /></frame>
+			<frame type="Scrutiny" head="vigilancia">
+				<argument type="Cognizer" dependent="su" /></frame>
+			<frame type="Statement" head="afirman">
+				<argument type="Speaker" dependent="otros sistemas de control , como la contravigilancia o el contacto telefónico con los agentes  quot" />
+				<argument type="Message" dependent="o a" /></frame>
+			<frame type="System" head="sistemas">
+				<argument type="Function" dependent="control" /></frame>
+			<frame type="Work" head="trabajo" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En Catalunya se ha experimentado la posibilidad de que las víctimas lleven una alarma en la muñeca para contactar con la policía.
+		</str>
+		<theme concept_ref="c_15">
+			<token pos="da0fp0">las</token><token pos="ncfp000">víctimas</token>
+		</theme>
+		<rheme concept_ref1="c_9" concept_ref2="c_10" concept_ref3="c_23" concept_ref4="c_24">
+			<token pos="vmsp3p0">lleven</token><token pos="di0fs0">una</token><token pos="ncfs000">alarma</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">muñeca</token><token pos="sps00">para</token><token pos="vmn0000">contactar</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="nccs000">policía</token>
+		<to_annotate>[[(220, 285), 'la muñeca', 'c_9'], [(384, 450), 'la policía', 'c_10'], ['un', 'c_23'], [(125, 156), 'una', 'c_24']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Catastrophe" head="víctimas">
+				<argument type="Undesirable_event" dependent="lleven una alarma en la muñeca para contactar con la policía" /></frame>
+			<frame type="Law_enforcement_agency" head="policía" />
+			<frame type="Likelihood" head="posibilidad">
+				<argument type="Hypothetical_event" dependent="víctimas lleven una alarma en la muñeca para contactar con la policía" /></frame>
+			<frame type="Noise_makers" head="alarma" />
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="una alarma" />
+				<argument type="Ground" dependent="para contactar con la policía" /></frame>
+			<frame type="Wearing" head="se">
+				<argument type="Wearer" dependent="víctimas" />
+				<argument type="Clothing" dependent="una alarma" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En el plan participó un grupo de mujeres de Girona, pero se comprobó que no era efectivo ya que sólo funcionaba en el domicilio y era más fácil que la afectada llevara un teléfono móvil.
+		</str>
+		<theme concept_ref="c_16">
+			<token pos="da0fs0">la</token><token pos="ncfs000">afectada</token>
+		</theme>
+		<rheme concept_ref1="c_19" concept_ref2="c_23">
+			<token pos="vmsi3s0">llevara</token><token pos="di0ms0">un</token><token pos="ncms000">teléfono</token><token pos="aq0cs0">móvil</token>
+		<to_annotate>[[(87, 187), 'un teléfono móvil', 'c_19'], [(87, 117), 'un', 'c_23']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="grupo">
+				<argument type="Individuals" dependent="de mujeres" />
+				<argument type="Aggregate_property" dependent="de Girona" /></frame>
+			<frame type="Becoming_aware" head="comprobó">
+				<argument type="Cognizer" dependent="se" />
+				<argument type="Phenomenon" dependent="que no era efectivo ya que sólo funcionaba en el domicilio y era más fácil que la afectada llevara un teléfono móvil ." /></frame>
+			<frame type="Being_employed" head="funcionaba">
+				<argument type="Employee" dependent="se" />
+				<argument type="Place_of_employment" dependent="en el domicilio y" /></frame>
+			<main_frame type="Bringing" head="llevara">
+				<argument type="Agent" dependent="un" />
+				<argument type="Goal" dependent="un teléfono móvil" /></main_frame>
+			<frame type="Bringing" head="móvil">
+				<argument type="Theme" dependent="teléfono" /></frame>
+			<frame type="Buildings" head="domicilio" />
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="sólo funcionaba" />
+				<argument type="Ground" dependent="domicilio" /></frame>
+			<frame type="Objective_influence" head="afectada">
+				<argument type="Dependent_entity" dependent="un" /></frame>
+			<frame type="Participation" head="participó">
+				<argument type="Participants" dependent="un grupo de mujeres de Girona" />
+				<argument type="Event" dependent="En el plan" /></frame>
+			<frame type="People" head="mujeres">
+				<argument type="Descriptor" dependent="de Girona" /></frame>
+			<frame type="People" head="un" />
+			<frame type="Purpose" head="plan" />
+			<frame type="Time_vector" head="en">
+				<argument type="Event" dependent="no era efectivo" />
+				<argument type="Landmark_event" dependent="sólo funcionaba en el domicilio" /></frame>
+			<frame type="Usefulness" head="efectivo">
+				<argument type="Entity" dependent="se" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El servicio de violencia doméstica de la fiscalía de Barcelona incoó el año pasado 335 diligencias de investigación y recibió 576 denuncias.
+		</str>
+		<theme concept_ref="c_17">
+			<token pos="da0ms0">El</token><token pos="ncms000">servicio</token><token pos="sps00">de</token><token pos="ncfs000">violencia</token><token pos="aq0fs0">doméstica</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">fiscalía</token><token pos="sps00">de</token><token pos="np00000">Barcelona</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_8" concept_ref3="c_28">
+			<token pos="vmis3s0">incoó</token><token pos="da0ms0">el</token><token pos="ncms000">año</token><token pos="aq0msp">pasado</token><token pos="z">335</token><token pos="ncfp000">diligencias</token><token pos="sps00">de</token><token pos="ncfs000">investigación</token>
+		<to_annotate>[[(225, 265), 'diligencias', 'c_7'], [(294, 336), 'investigación', 'c_8'], [(294, 336), 'investigación', 'c_28']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Building_subparts" head="fiscalía" />
+			<frame type="Calendric_unit" head="año">
+				<argument type="Relative_time" dependent="pasado" /></frame>
+			<frame type="Criminal_investigation" head="investigación" />
+			<frame type="Foreign_or_domestic_country" head="doméstica" />
+			<frame type="Means" head="diligencias de">
+				<argument type="Purpose" dependent="investigación" /></frame>
+			<frame type="Public_services" head="servicio">
+				<argument type="Domain" dependent="violencia doméstica" />
+				<argument type="Target_group" dependent="de Barcelona" /></frame>
+			<frame type="Receiving" head="recibió">
+				<argument type="Theme" dependent="denuncias" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

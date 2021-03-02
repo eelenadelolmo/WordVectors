@@ -1,0 +1,10 @@
+{   ('Arriving', 'regresaron'): [('Theme', 'Veinte familias de las 24 afectadas'), ('Goal', 'hogares'), ('Time', 'anoche')],
+    ('Buildings', 'hogares'): [],
+    ('Buildings', 'hoteles'): [],
+    ('Calendric_unit', 'anoche'): [('Relative_time', 'las')],
+    ('Interior_profile_relation', 'en'): [('Ground', 'hoteles')],
+    ('Kinship', 'familias'): [('Ego', 'de las 24 afectadas')],
+    ('Objective_influence', 'afectadas'): [('Degree', '24'), ('Time', 'regresaron anoche a sus hogares')],
+    ('Relative_time', 'de las'): [('Focal_occasion', 'Veinte familias de las 24 afectadas regresaron anoche a sus hogares'), ('Landmark_occasion', 'dormir en hoteles')],
+    ('Relative_time', 'las'): [('Focal_occasion', 'anoche')],
+    ('Sleep', 'dormir'): [('Sleeper', 'en hoteles')]}

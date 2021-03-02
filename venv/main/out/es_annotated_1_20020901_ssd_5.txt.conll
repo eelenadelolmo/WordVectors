@@ -1,0 +1,10 @@
+{   ('Being_in_control', 'control'): [],
+    ('Building_subparts', 'fiscalía'): [],
+    ('Compliance', 'acatamiento'): [('Norm', 'de la medida')],
+    ('Difficulty', 'difícil'): [('Activity', 'control')],
+    ('Interior_profile_relation', 'en'): [   ('Figure', 'Tribunal Superior de Justícia de Catalunya alerta'),
+                                             ('Ground', 'su memoria del 2001 del & quot ; difícil control & quot ; del acatamiento de la medida')],
+    ('Judicial_body', 'Tribunal'): [],
+    ('Memory', 'memoria'): [('Cognizer', 'su'), ('Time', '2001'), ('Content', 'difícil control & quot ; del acatamiento de la medida')],
+    ('Quantified_mass', 'medida'): [],
+    ('Warning', 'alerta'): [('Speaker', 'Tribunal Superior de Justícia de Catalunya'), ('Message', 'en su memoria del 2001 del & quot ; difícil control & quot ; del acatamiento de la medida')]}

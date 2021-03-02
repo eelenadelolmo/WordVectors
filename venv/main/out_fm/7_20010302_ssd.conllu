@@ -1,0 +1,82 @@
+1	El	el	da0ms0	da0ms0	rep=no|t=yes|r=no|m=yes|c=no	2	de	_	_
+2	efecto	efecto	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=no	17	nsub	_	_
+3	de	de	sps00	sps00	rep=no|t=yes|r=no|m=yes|c=no	2	prep	_	_
+4	los	el	da0mp0	da0mp0	rep=no|t=yes|r=no|m=yes|c=no	6	de	_	_
+5	llamados	llamado	aq0mpp	aq0mpp	rep=no|t=yes|r=no|m=yes|c=no	6	amo	_	_
+6	resultados	resultado	ncmp000	ncmp000	rep=no|t=yes|r=no|m=yes|c=no	3	pob	_	_
+7	extraordinarios	extraordinario	aq0mp0	aq0mp0	rep=no|t=yes|r=no|m=yes|c=no	6	amo	_	_
+8	-	-	fg	fg	rep=no|t=yes|r=no|m=yes|c=no	10	punc	_	_
+9	-	-	fg	fg	rep=no|t=yes|r=no|m=yes|c=no	10	punc	_	_
+10	diferentes	diferente	aq0cp0	aq0cp0	rep=no|t=yes|r=no|m=yes|c=no	6	amo	_	_
+11	a	a	sps00	sps00	rep=no|t=yes|r=no|m=yes|c=no	10	prep	_	_
+12	la	el	da0fs0	da0fs0	rep=no|t=yes|r=no|m=yes|c=no	13	de	_	_
+13	actividad	actividad	ncfs000	ncfs000	rep=no|t=yes|r=no|m=yes|c=no	11	pob	_	_
+14	principal	principal	aq0cs0	aq0cs0	rep=no|t=yes|r=no|m=yes|c=no	13	amo	_	_
+15	-	-	fg	fg	rep=no|t=yes|r=no|m=yes|c=no	10	punc	_	_
+16	-	-	fg	fg	rep=no|t=yes|r=no|m=yes|c=no	10	punc	_	_
+17	sido	ser	vsp00sm	vsp00sm	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+18	claro	claro	aq0ms0	aq0ms0	rep=no|t=no|r=yes|m=yes|c=no	17	cpre	_	_
+19	en	en	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	17	prep	_	_
+20	el	el	da0ms0	da0ms0	rep=no|t=no|r=yes|m=yes|c=no	21	de	_	_
+21	caso	caso	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	19	pob	_	_
+22	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	21	prep	_	_
+23	Telefónica	Telefónica	np00000	np00000	rep=no|t=no|r=yes|m=yes|c=no	22	pob	_	_
+
+1	La	el	da0fs0	da0fs0	rep=no|t=yes|r=no|m=yes|c=no	2	de	_	_
+2	compañía	compañía	ncfs000	ncfs000	rep=no|t=yes|r=no|m=yes|c=no	3	nsub	_	_
+3	ha	haber	vaip3s0	vaip3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+4	sumado	sumar	vmp00sm	vmp00sm	rep=no|t=no|r=yes|m=yes|c=no	3	vob	_	_
+5	a	a	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	4	oob	_	_
+6	su	su	dp3cs0	dp3cs0	rep=no|t=no|r=yes|m=yes|c=no	7	pos	_	_
+7	contabilidad	contabilidad	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	5	pob	_	_
+8	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	9	de	_	_
+9	venta	venta	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	4	dob	_	_
+10	en	en	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	9	prep	_	_
+11	bolsa	bolsa	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	10	pob	_	_
+12	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	9	prep	_	_
+13	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	14	de	_	_
+14	filial	filial	nccs000	nccs000	rep=no|t=no|r=yes|m=yes|c=no	12	pob	_	_
+15	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	14	prep	_	_
+16	móviles	móvil	ncmp000	ncmp000	rep=no|t=no|r=yes|m=yes|c=no	15	pob	_	_
+
+1	Los	el	da0mp0	da0mp0	rep=no|t=yes|r=no|m=yes|c=no	2	de	_	_
+2	extraordinarios	extraordinario	ncmp000	ncmp000	rep=no|t=yes|r=no|m=yes|c=no	4	nsub	_	_
+3	se	se	p0000000	p0000000	rep=no|t=no|r=yes|m=yes|c=no	5	refle	_	_
+4	han	haber	vaip3p0	vaip3p0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+5	prodigado	prodigar	vmp00sm	vmp00sm	rep=no|t=no|r=yes|m=yes|c=no	4	vob	_	_
+6	en	en	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	5	prep	_	_
+7	el	el	da0ms0	da0ms0	rep=no|t=no|r=yes|m=yes|c=no	8	de	_	_
+8	2000	2000	z	z	rep=no|t=no|r=yes|m=yes|c=no	6	pob	_	_
+9	en	en	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	5	prep	_	_
+10	su	su	dp3cs0	dp3cs0	rep=no|t=no|r=yes|m=yes|c=no	12	pos	_	_
+11	mayor	mayor	aq0cs0	aq0cs0	rep=no|t=no|r=yes|m=yes|c=no	12	amo	_	_
+12	parte	parte	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	9	pob	_	_
+13	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	5	prep	_	_
+14	forma	forma	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	13	pob	_	_
+15	negativa	negativo	aq0fs0	aq0fs0	rep=no|t=no|r=yes|m=yes|c=no	14	amo	_	_
+
+
+1	La	el	da0fs0	da0fs0	rep=no|t=yes|r=no|m=yes|c=no	2	de	_	_
+2	tabacalera	tabacalera	ncfs000	ncfs000	rep=no|t=yes|r=no|m=yes|c=no	4	nsub	_	_
+3	Altadis	Altadis	np00000	np00000	rep=no|t=yes|r=no|m=yes|c=no	2	appo	_	_
+4	llevó	llevar	vmn0000	vmn0000	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+5	a	a	spcms	spcms	rep=no|t=no|r=yes|m=yes|c=no	4	iob	_	_
+6	cabo	cabo	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	5	pob	_	_
+7	este	este	dd0ms0	dd0ms0	rep=no|t=no|r=yes|m=yes|c=no	8	de	_	_
+8	año	año	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	4	dob	_	_
+9	una	uno	di0fs0	di0fs0	rep=no|t=no|r=yes|m=yes|c=no	11	de	_	_
+10	fuerte	fuerte	aq0cs0	aq0cs0	rep=no|t=no|r=yes|m=yes|c=no	11	amo	_	_
+11	reestructuración	reestructuración	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	4	dob	_	_
+
+1	Telepizza	Telepizza	np00000	np00000	rep=no|t=yes|r=no|m=yes|c=no	2	nsub	_	_
+2	cambió	cambiar	vmis3s0	vmis3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+3	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	2	oob	_	_
+4	estrategia	estrategia	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	3	pob	_	_
+5	para	para	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	2	prep	_	_
+6	limpiar	limpiar	vmn0000	vmn0000	rep=no|t=no|r=yes|m=yes|c=no	5	pob	_	_
+7	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	6	prep	_	_
+8	pérdidas	pérdida	ncfp000	ncfp000	rep=no|t=no|r=yes|m=yes|c=no	7	pob	_	_
+9	el	el	da0ms0	da0ms0	rep=no|t=no|r=yes|m=yes|c=no	10	de	_	_
+10	balance	balance	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	6	dob	_	_
+
+

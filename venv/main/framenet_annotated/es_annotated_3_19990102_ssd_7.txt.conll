@@ -1,0 +1,10 @@
+{   ('Assistance', 'ayudas'): [],
+    ('Commitment', 'amenazados'): [('Addressee', 'Portugal'), ('Speaker', 'por el plan de los países ricos'), ('Message', 'de recortar las ayudas')],
+    ('Cutting', 'recortar'): [('Item', 'ayudas')],
+    ('Defending', 'defender'): [('Victim', 'solidaridad y la cohesión'), ('Defender', 'dentro de la UE')],
+    ('Opportunity', 'aprovechó'): [   ('Agent', 'Portugal'),
+                                      ('Desirable_situation', 'defender la solidaridad y la cohesión dentro de la UE , amenazados por el plan de los países ricos de recortar las ayudas')],
+    ('Political_locales', 'países'): [],
+    ('Position_on_a_scale', 'ricos'): [('Item', 'países')],
+    ('Purpose', 'plan'): [('Goal', 'de recortar las ayudas')],
+    ('Taking_time', 'aprovechó'): [('Agent', 'Portugal'), ('Activity', 'defender la solidaridad y la cohesión dentro de la UE , amenazados por el plan de los países ricos de recortar las ayudas')]}

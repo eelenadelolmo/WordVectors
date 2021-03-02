@@ -1,0 +1,53 @@
+1	Jaime	Jaime	np0000o	np0000o	rep=no|t=yes|r=no|m=yes|c=yes	8	nsub	_	_
+2	de	de	sps00	sps00	rep=no|t=yes|r=no|m=yes|c=no	1	prep	_	_
+3	Marichalar	Marichalar	np0000l	np0000l	rep=no|t=yes|r=no|m=yes|c=no	2	pob	_	_
+4	y	y	cc	cc	rep=no|t=yes|r=no|m=yes|c=no	8	coord_fixe	_	_
+5	su	su	dp3cs0	dp3cs0	rep=no|t=yes|r=no|m=yes|c=no	6	pos	_	_
+6	hijo	hijo	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=yes	8	nsub	_	_
+7	Froilán	Froilán	np00000	np00000	rep=no|t=yes|r=no|m=yes|c=no	6	appo	_	_
+8	visitaban	visitar	vmii3p0	vmii3p0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+9	una	uno	di0fs0	di0fs0	rep=no|t=no|r=yes|m=yes|c=no	10	de	_	_
+10	exposición	exposición	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	8	dob	_	_
+11	en	en	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	10	prep	_	_
+12	el	el	da0ms0	da0ms0	rep=no|t=no|r=yes|m=yes|c=no	13	de	_	_
+13	Palacio	palacio	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	11	pob	_	_
+14	de	de	spcms	spcms	rep=no|t=no|r=yes|m=yes|c=no	13	prep	_	_
+15	Congresos	congreso	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	14	pob	_	_
+16	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	15	prep	_	_
+17	Madrid	Madrid	np0000o	np0000o	rep=no|t=no|r=yes|m=yes|c=no	16	pob	_	_
+18	,	,	fc	fc	rep=no|t=no|r=yes|m=yes|c=no	13	punc	_	_
+19	muy	mucho	rg	rg	rep=no|t=no|r=yes|m=yes|c=no	20	advmo	_	_
+20	cerca	cerca	rg	rg	rep=no|t=no|r=yes|m=yes|c=no	13	advmo	_	_
+21	del	del	spcms	spcms	rep=no|t=no|r=yes|m=yes|c=no	20	pre	_	_
+22	Bernabéu	Bernabéu	np00000	np00000	rep=no|t=no|r=yes|m=yes|c=no	21	pob	_	_
+23	,	,	fc	fc	rep=no|t=no|r=yes|m=yes|c=no	13	punc	_	_
+
+1	La	el	da0fs0	da0fs0	rep=no|t=yes|r=no|m=yes|c=no	2	de	_	_
+2	explosión	explosión	ncfs000	ncfs000	rep=no|t=yes|r=no|m=yes|c=no	3	nsub	_	_
+3	dañó	dañar	vmis3s0	vmis3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+4	cinco	cinco	dn0cp0	dn0cp0	rep=no|t=no|r=yes|m=yes|c=no	5	de	_	_
+5	ventanas	ventana	ncfp000	ncfp000	rep=no|t=no|r=yes|m=yes|c=no	3	dob	_	_
+6	del	del	spcms	spcms	rep=no|t=no|r=yes|m=yes|c=no	5	prep	_	_
+7	edificio	edificio	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	6	pob	_	_
+8	en	en	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	11	prep	_	_
+9	el	el	da0ms0	da0ms0	rep=no|t=no|r=yes|m=yes|c=no	10	de	_	_
+10	que	que	pr0cn000	pr0cn000	rep=no|t=no|r=yes|m=yes|c=no	8	pob	_	_
+11	estaba	estar	vmii3s0	vmii3s0	rep=no|t=no|r=yes|m=yes|c=no	7	de	_	_
+12	el	el	da0ms0	da0ms0	rep=no|t=no|r=yes|m=yes|c=no	13	de	_	_
+13	duque	duque	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	11	nsub	_	_
+14	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	13	prep	_	_
+15	Lugo	Lugo	np00000	np00000	rep=no|t=no|r=yes|m=yes|c=no	14	pob	_	_
+
+1	Marichalar	Marichalar	np00000	np00000	rep=no|t=yes|r=no|m=yes|c=no	4	nsub	_	_
+2	&quot;	&quot;	fe	fe	rep=no|t=no|r=yes|m=yes|c=no	4	punc	_	_
+3	se	él	p0300000	p0300000	rep=no|t=no|r=yes|m=yes|c=no	4	refle	_	_
+4	mostró	mostrar	vmis3s0	vmis3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+5	impasible	impasible	aq0cs0	aq0cs0	rep=no|t=no|r=yes|m=yes|c=no	4	cpre	_	_
+6	para	para	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	4	prep	_	_
+7	no	no	rn	rn	rep=no|t=no|r=yes|m=yes|c=no	8	ne	_	_
+8	asustar	asustar	vmn0000	vmn0000	rep=no|t=no|r=yes|m=yes|c=no	6	pob	_	_
+9	al	al	spcms	spcms	rep=no|t=no|r=yes|m=yes|c=no	8	dob	_	_
+10	niño	niño	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	9	pob	_	_
+11	&quot;	&quot;	fe	fe	rep=no|t=no|r=yes|m=yes|c=no	4	punc	_	_
+
+

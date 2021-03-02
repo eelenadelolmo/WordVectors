@@ -1,0 +1,13 @@
+{   ('Becoming_aware', 'descubierto'): [   ('Cognizer', 'expertos de la Policía Científica'),
+                                           ('Phenomenon', 'varios cortes'),
+                                           ('Evidence', 'en la goma de la cocina del 2° 1ª del número 92 de la calle de')],
+    ('Building_subparts', 'cocina'): [],
+    ('Expertise', 'expertos'): [('Knowledge', 'de la Policía Científica')],
+    ('Leadership', 'propiciaron'): [('Governed', 'que'), ('Activity', 'gran fuga de gas y la posterior explosión')],
+    ('Quantified_mass', 'número'): [('Individuals', '92 de la calle de Eduard Toda , que propiciaron una gran fuga de gas y la posterior explosión')],
+    ('Quantified_mass', 'varios'): [('Individuals', 'cortes')],
+    ('Relative_time', 'posterior'): [('Focal_occasion', 'explosión')],
+    ('Reveal_secret', 'fuga'): [('Information', 'explosión')],
+    ('Roadways', 'calle'): [('Name', 'Toda')],
+    ('Size', 'gran'): [('Entity', 'gas')],
+    ('Substance', 'gas'): [('Descriptor', 'gran')]}

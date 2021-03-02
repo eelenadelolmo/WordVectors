@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+		<!ELEMENT str (#PCDATA)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="9_20010601_a_ssd">
+
+
+	<sentence>
+		<str>
+			 El problema de los vehículos que circulan sin el seguro de responsabilidad civil obligatorio hay que enmarcarlo en todos aquellos colectivos con elevada siniestralidad.
+		</str>
+		<theme>
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">circulan</token><token pos="sps00">sin</token><token pos="da0ms0">el</token><token pos="ncms000">seguro</token><token pos="sps00">de</token><token pos="ncfs000">responsabilidad</token><token pos="aq0cs0">civil</token><token pos="aq0ms0">obligatorio</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Misdeed" head="sin">
+				<argument type="Wrongdoer" dependent="problema de los"/>
+				<argument type="Wrongdoer" dependent="el seguro de"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El seguro tiene carácter causal y mutual: las primas son consecuencia de distribuir entre todos los conductores el importe de la siniestralidad que generan quienes tienen siniestros.
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="ncms000">seguro</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">tiene</token><token pos="ncms000">carácter</token><token pos="aq0cs0">causal</token><token pos="cc">y</token><token pos="aq0cs0">mutual</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Kinship" head="son">
+				<argument type="Alter" dependent="las primas son"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Si la respuesta de un potencial cliente es el No aseguramiento, deberíamos apelar a su sentido de la responsabilidad frente a los terceros perjudicados, pero en ningún caso culpar al asegurador.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Igualmente, la decisión de un asegurador de rechazar el aseguramiento de determinados riesgos es una potestad que puede elegir libremente.
+		</str>
+		<theme>
+			<token pos="da0fs0">la</token><token pos="ncfs000">decisión</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">asegurador</token><token pos="sps00">de</token><token pos="vmn0000">rechazar</token><token pos="da0ms0">el</token><token pos="ncms000">aseguramiento</token><token pos="sps00">de</token><token pos="aq0mpp">determinados</token><token pos="ncmp000">riesgos</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="di0fs0">una</token><token pos="ncfs000">potestad</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Y en todo caso, no todo el sector rechaza sistemáticamente determinados vehículos.
+		</str>
+		<theme>
+			<token pos="rn">no</token><token pos="di0ms0">todo</token><token pos="da0ms0">el</token><token pos="ncms000">sector</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">rechaza</token><token pos="aq0mpp">determinados</token><token pos="ncmp000">vehículos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Fields" head="sector"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El caso que nos ocupa se centra principalmente en los denominados ciclomotores y se acentúa en las edades entre 14 y 25 años.
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="ncms000">caso</token><token pos="pr0cn000">que</token><token pos="pp1cp000">nos</token><token pos="vmip3s0">ocupa</token>
+		</theme>
+		<rheme>
+			<token pos="p0000000">se</token><token pos="vmip3s0">centra</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="aq0mpp">denominados</token><token pos="ncmp000">ciclomotores</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El incremento alarmante en el número de siniestros en algunos colectivos ha provocado el aumento de primas de todos los asegurados.
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="ncms000">incremento</token><token pos="aq0cs0">alarmante</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">número</token><token pos="sps00">de</token><token pos="ncmp000">siniestros</token><token pos="sps00">en</token><token pos="di0mp0">algunos</token><token pos="ncmp000">colectivos</token>
+		</theme>
+		<rheme>
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">provocado</token><token pos="da0ms0">el</token><token pos="ncms000">aumento</token><token pos="sps00">de</token><token pos="ncfp000">primas</token><token pos="sps00">de</token><token pos="di0mp0">todos</token><token pos="da0mp0">los</token><token pos="aq0mpp">asegurados</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Lamentablemente, la única forma de hacer posible una conducción masiva y a precio razonable es colocar la siniestralidad en límites razonables.
+		</str>
+		<theme>
+			<token pos="da0fs0">la</token><token pos="aq0fs0">única</token><token pos="ncfs000">forma</token><token pos="sps00">de</token><token pos="vmn0000">hacer</token><token pos="aq0cs0">posible</token><token pos="di0fs0">una</token><token pos="ncfs000">conducción</token><token pos="aq0fs0">masiva</token><token pos="cc">y</token><token pos="sps00">a</token><token pos="ncms000">precio</token><token pos="aq0cs0">razonable</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="vmn0000">colocar</token><token pos="da0fs0">la</token><token pos="ncfs000">siniestralidad</token><token pos="sps00">en</token><token pos="ncmp000">límites</token><token pos="aq0cp0">razonables</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Pero, ¿a quién corresponde dicha responsabilidad?.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 No puede ser que en casa paguemos la misma prima por asegurar el coche que el ciclomotor.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Cuando recibí la semana pasada la póliza con un importe total de 54.000 pesetas me sentí como en Sierra Morena acosado por Curro Jiménez.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Amounting_to" head="total"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Menudo atraco.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Y encima voy y me entero de que es barato.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Si eres menor de 21 años, mejor que ni lo intentes.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 "Lo siento, no aseguramos ciclomotores", es la frase que repiten hasta la saciedad.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Si uno no encuentra quien le asegure, le queda el Consorcio de Compensación, aunque que nadie se engañe, empezó con una prima de 37.000 pesetas y en pocos meses ha subido hasta las 57.000.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Mientras se consigue alguna solución, las ventas caen en picado - - en España el ciclomotor es el auténtico motor del sector de las dos ruedas y hay seis marcas que fabrican motos de 50 cc - - y demasiados temerarios circulan sin seguro.
+		</str>
+		<theme>
+			<token pos="da0fp0">las</token><token pos="ncfp000">ventas</token>
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Fields" head="sector">
+				<argument type="Activity" dependent="motor del"/></frame>
+			<frame type="Intentionally_act" head="dos">
+				<argument type="Act" dependent="las dos ruedas"/></frame>
+			<frame type="Misdeed" head="sin"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Porque claro, ¿qué joven es capaz de pagar casi 100.000 pesetas de seguro?
+		</str>
+		<theme>
+			<token pos="de0cn0">qué</token><token pos="nccs000">joven</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="aq0cs0">capaz</token><token pos="sps00">de</token><token pos="vmn0000">pagar</token><token pos="rg">casi</token><token pos="z">100.000</token><token pos="zm">pesetas</token><token pos="sps00">de</token><token pos="ncms000">seguro</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Estamos en manos de las grandes compañías hasta que una se atreva y salte al ruedo con precios más razonables.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

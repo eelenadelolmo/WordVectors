@@ -1,0 +1,45 @@
+1	Una	uno	di0fs0	di0fs0	rep=no|t=yes|r=no|m=yes|c=no	3	de	_	_
+2	nueva	nuevo	aq0fs0	aq0fs0	rep=no|t=yes|r=no|m=yes|c=no	3	amo	_	_
+3	borrasca	borrasca	ncfs000	ncfs000	rep=no|t=yes|r=no|m=yes|c=no	4	nsub	_	_
+4	cruzará	cruzar	vmif3s0	vmif3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+5	España	España	np00000	np00000	rep=no|t=no|r=yes|m=yes|c=no	4	dob	_	_
+6	a	a	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	4	prep	_	_
+7	partir	partir	vmn0000	vmn0000	rep=no|t=no|r=yes|m=yes|c=no	6	pob	_	_
+8	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	7	iob	_	_
+9	hoy	hoy	rg	rg	rep=no|t=no|r=yes|m=yes|c=no	8	advmo	_	_
+
+1	La	el	da0fs0	da0fs0	rep=no|t=yes|r=no|m=yes|c=no	2	de	_	_
+2	situación	situación	ncfs000	ncfs000	rep=no|t=yes|r=no|m=yes|c=no	10	nsub	_	_
+3	en	en	sps00	sps00	rep=no|t=yes|r=no|m=yes|c=no	2	prep	_	_
+4	las	el	da0fp0	da0fp0	rep=no|t=yes|r=no|m=yes|c=no	5	de	_	_
+5	carreteras	carretera	ncfp000	ncfp000	rep=no|t=yes|r=no|m=yes|c=yes	3	pob	_	_
+6	y	y	cc	cc	rep=no|t=yes|r=no|m=yes|c=no	3	coord_fixe	_	_
+7	las	el	da0fp0	da0fp0	rep=no|t=yes|r=no|m=yes|c=no	8	de	_	_
+8	montañas	montaña	ncfp000	ncfp000	rep=no|t=yes|r=no|m=yes|c=yes	3	pob	_	_
+9	se	él	p0300000	p0300000	rep=no|t=no|r=yes|m=yes|c=no	10	refle	_	_
+10	normalizó	normalizar	vmis3s0	vmis3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+11	en	en	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	10	prep	_	_
+12	todas	todo	di0fp0	di0fp0	rep=no|t=no|r=yes|m=yes|c=no	14	de	_	_
+13	las	el	da0fp0	da0fp0	rep=no|t=no|r=yes|m=yes|c=no	14	de	_	_
+14	autonomías	autonomía	ncfp000	ncfp000	rep=no|t=no|r=yes|m=yes|c=no	11	pob	_	_
+15	afectadas	afectado	aq0fpp	aq0fpp	rep=no|t=no|r=yes|m=yes|c=no	14	amo	_	_
+
+1	La	el	da0fs0	da0fs0	rep=no|t=yes|r=no|m=yes|c=no	2	de	_	_
+2	entrada	entrada	ncfs000	ncfs000	rep=no|t=yes|r=no|m=yes|c=no	17	nsub	_	_
+3	del	del	spcms	spcms	rep=no|t=yes|r=no|m=yes|c=no	2	prep	_	_
+4	nuevo	nuevo	aq0ms0	aq0ms0	rep=no|t=yes|r=no|m=yes|c=no	5	amo	_	_
+5	frente	frente	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=no	3	pob	_	_
+6	atlántico	atlántico	aq0ms0	aq0ms0	rep=no|t=yes|r=no|m=yes|c=no	5	amo	_	_
+7	,	,	fc	fc	rep=no|t=yes|r=no|m=yes|c=no	2	punc	_	_
+8	que	que	pr0cn000	pr0cn000	rep=no|t=yes|r=no|m=yes|c=no	9	nsub	_	_
+9	conlleva	conllevar	vmip3s0	vmip3s0	rep=no|t=yes|r=no|m=yes|c=no	2	rcmo	_	_
+10	fuertes	fuerte	aq0cp0	aq0cp0	rep=no|t=yes|r=no|m=yes|c=no	11	amo	_	_
+11	vientos	viento	ncmp000	ncmp000	rep=no|t=yes|r=no|m=yes|c=yes	9	dob	_	_
+12	y	y	cc	cc	rep=no|t=yes|r=no|m=yes|c=no	9	coord_fixe	_	_
+13	lluvias	lluvia	ncfp000	ncfp000	rep=no|t=yes|r=no|m=yes|c=yes	9	dob	_	_
+14	abundantes	abundante	aq0cp0	aq0cp0	rep=no|t=yes|r=no|m=yes|c=no	13	amo	_	_
+15	,	,	fc	fc	rep=no|t=yes|r=no|m=yes|c=no	2	punc	_	_
+16	se	se	p0000000	p0000000	rep=no|t=no|r=yes|m=yes|c=no	17	refle	_	_
+17	encuadra	encuadrar	vmip3s0	vmip3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+
+

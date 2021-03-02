@@ -1,3 +1,0 @@
-{   ('Assistance', 'servir'): [('Helper', 'es'), ('Goal', 'de excusa para no hacer nada')],
-    ('Desirable_event', 'debe'): [('State_of_affairs', 'es'), ('State_of_affairs', 'servir de excusa para no hacer nada')],
-    ('Intentionally_act', 'hacer'): [('Act', 'nada')]}

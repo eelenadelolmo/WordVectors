@@ -1,5 +1,0 @@
-{   ('Appellations', 'presidente'): [],
-    ('Be_in_agreement_on_action', 'según la'): [('Obligation', 'Esta actuación'), ('Obligation', 'según la comisión')],
-    ('Being_employed', 'el cargo'): [('Employee', 'de presidente')],
-    ('Goal', 'de'): [('Landmark', 'la comisión')],
-    ('Intentionally_act', 'actuación'): []}

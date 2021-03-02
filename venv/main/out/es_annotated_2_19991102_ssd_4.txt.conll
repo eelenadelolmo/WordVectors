@@ -1,0 +1,9 @@
+{   ('Activity_start', 'iniciarme'): [('Activity', 'en el satanismo')],
+    ('Attention', 'atención'): [('Perceiver', 'mi')],
+    ('Awareness', 'saber'): [('Cognizer', 'en'), ('Content', 'qué hacer para iniciarme en el satanismo')],
+    ('Being_named', 'nombre'): [('Entity', 'mi')],
+    ('Causation', 'para'): [('Cause', 'Hola , mi nombre es ... , quisiera saber qué hacer para iniciarme en el satanismo'), ('Cause', 'siento que me atrae poderosamente la atención')],
+    ('Feeling', 'siento'): [('Experiencer', 'en'), ('Emotional_state', 'que me atrae poderosamente la atención')],
+    ('Intentionally_act', 'en'): [('Act', 'qué'), ('Act', 'para iniciarme en el satanismo')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'qué hacer para iniciarme'), ('Ground', 'satanismo')],
+    ('Similarity', 'pues'): [('Entity_1', 'en'), ('Entity_2', 'saber qué hacer para iniciarme en el satanismo')]}

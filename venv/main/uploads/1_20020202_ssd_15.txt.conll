@@ -1,0 +1,16 @@
+1	natural	_	Natural	_	NNP	0	_	_	_	_	_	_	_	B-Descriptor
+2	gas	_	UNK	_	NNP	0	_	_	_	_	_	_	_	I-Descriptor
+3	sources	_	source	_	NNS	0	_	_	_	_	_	source.n	Source_of_getting	S-Source
+4	corroborated	_	corroborate	_	VBD	0	_	_	_	_	_	_	_	O
+5	this	_	this	_	DT	0	_	_	_	_	_	_	_	O
+6	point	_	point	_	NN	0	_	_	_	_	_	_	_	O
+7	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	natural	_	Natural	_	NNP	0	_	_	_	_	_	_	_	B-Support
+2	gas	_	UNK	_	NNP	0	_	_	_	_	_	_	_	I-Support
+3	sources	_	source	_	NNS	0	_	_	_	_	_	_	_	I-Support
+4	corroborated	_	corroborate	_	VBD	0	_	_	_	_	_	corroborate.v	Evidence	O
+5	this	_	this	_	DT	0	_	_	_	_	_	_	_	B-Proposition
+6	point	_	point	_	NN	0	_	_	_	_	_	_	_	I-Proposition
+7	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

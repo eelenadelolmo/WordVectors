@@ -1,0 +1,5 @@
+{   ('Causation', 'accidental'): [('Cause', 'los'), ('Effect', 'grietas')],
+    ('Leadership', 'se'): [('Leader', 'los técnicos')],
+    ('People_by_vocation', 'los técnicos'): [],
+    ('Reason', 'Por'): [],
+    ('Separating', 'seccionado'): [('Agent', 'se')]}

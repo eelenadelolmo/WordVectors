@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+        <!ELEMENT str (#PCDATA)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #IMPLIED>
+        <!ELEMENT rheme (token|mention)*>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT mention (token+)>
+            <!ATTLIST mention concept_ref CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="4_20020302_ssd">
+
+
+	<concepts>
+		<concept id="c_0">La nueva ley de tráfico</concept>
+		<concept id="c_1">La anterior legislación</concept>
+		<concept id="c_2">la actual ley</concept>
+		<concept id="c_3">La ley</concept>
+		<concept id="c_4">las fotomultas</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 La nueva ley de tráfico ampara el nuevo sistema de las fotomultas.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="aq0fs0">nueva</token><token pos="ncfs000">ley</token><token pos="sps00">de</token><token pos="ncms000">tráfico</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_4">
+			<token pos="vmip3s0">ampara</token><mention concept_ref="c_0"><token pos="da0ms0">el</token><token pos="aq0ms0">nuevo</token><token pos="ncms000">sistema</token></mention><token pos="sps00">de</token><mention concept_ref="c_4"><token pos="da0fp0">las</token><token pos="ncfp000">fotomultas</token></mention>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La anterior legislación obligaba a los agentes a perseguir al infractor y comunicarle la sanción al momento.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="aq0cs0">anterior</token><token pos="ncfs000">legislación</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_4">
+			<token pos="vmii3s0">obligaba</token><token pos="sps00">a</token><mention concept_ref="c_1"><token pos="da0mp0">los</token><token pos="nccp000">agentes</token></mention><token pos="sps00">a</token><token pos="vmn0000">perseguir</token><token pos="spcms">al</token><token pos="ncms000">infractor</token><token pos="cc">y</token><token pos="vmn0000">comunicarle</token><mention concept_ref="c_4"><token pos="da0fs0">la</token><token pos="ncfs000">sanción</token></mention><token pos="sps00">al</token><token pos="ncmp000">momento</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero la actual ley permite a la Administración enviar la sanción a casa con la fotografía.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">la</token><token pos="aq0cs0">actual</token><token pos="ncfs000">ley</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_4">
+			<token pos="vmip3s0">permite</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="np00000">Administración</token><token pos="vmn0000">enviar</token><mention concept_ref="c_1"><token pos="da0fs0">la</token><token pos="ncfs000">sanción</token></mention><token pos="sps00">a</token><token pos="ncfs000">casa</token><token pos="sps00">con</token><mention concept_ref="c_4"><token pos="da0fs0">la</token><token pos="ncfs000">fotografía</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Actually_occurring_entity" head="actual">
+				<argument type="Type" dependent="Pero la" />
+				<argument type="Type" dependent="ley" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La ley también ha modificado la valoración de las infracciones.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fs0">La</token><token pos="ncfs000">ley</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_4">
+			<token pos="rg">también</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">modificado</token><token pos="da0fs0">la</token><token pos="ncfs000">valoración</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">infracciones</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ahora, cuando el conductor sobrepasa en más de un 50% la velocidad permitida, la sanción es muy grave.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Al conductor se le retira el carnet cuando acumula tres infracciones muy graves en menos de dos años.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Intentionally_act" head="dos">
+				<argument type="Act" dependent="de" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

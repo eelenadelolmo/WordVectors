@@ -1,0 +1,5 @@
+{   ('Cardinal_numbers', 'una'): [('Entity', 'pastilla')],
+    ('Increment', 'más'): [('Class', 'atractiva')],
+    ('Instance', 'caso'): [('Type', 'Viagra')],
+    ('Manufacturing', 'hace'): [('Producer', 'que la'), ('Product', 'más atractiva')],
+    ('Sufficiency', 'suficiente'): [('Item', 'una pastilla')]}

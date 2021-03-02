@@ -1,0 +1,11 @@
+{   ('Aggregate', 'comunidades'): [('Aggregate_property', 'autónomas')],
+    ('Becoming_silent', 'silencian'): [('Topic', 'el concepto de')],
+    ('Correctness', 'equivocó'): [('Information', 'la Real Academia de la Historia'), ('Information', 'al asegurar que las comunidades autónomas tergiversan el pasado')],
+    ('Expertise', 'expertos'): [],
+    ('Individual_history', 'la Historia'): [],
+    ('Locale_by_use', 'de secundaria'): [('Descriptor', 'secundaria y')],
+    ('Position_on_a_scale', 'han'): [('Item', 'de secundaria')],
+    ('Reasoning', 'se'): [   ('Arguer', 'todos los expertos que han analizado sistemáticamente el contenido de los libros de texto de secundaria y'),
+                             ('Content', 'que la Real Academia de la Historia se equivocó al asegurar que las comunidades autónomas tergiversan el pasado y silencian')],
+    ('Relative_time', 'pasado'): [],
+    ('Text', 'libros de texto'): [('Genre', 'de secundaria y')]}

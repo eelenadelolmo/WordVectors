@@ -1,0 +1,7 @@
+{   ('Cardinal_numbers', 'uno'): [('Entity', 'de ellos')],
+    ('Color', 'negras'): [('Entity', 'misas')],
+    ('Contacting', 'contactos'): [('Addressee', 'con satánicos'), ('Place', 'de todo el mundo')],
+    ('Locative_relation', 'se'): [('Figure', 'esta página se ofrecen textos sobre los valores del satanista , misas negras , además de contactos con satánicos de'), ('Ground', 'el mundo')],
+    ('Political_locales', 'mundo'): [],
+    ('Quantified_mass', 'misas'): [('Q_prop', 'negras')],
+    ('Spatial_contact', 'se'): [('Figure', 'esta página se ofrecen textos'), ('Ground', 'valores del satanista , misas negras')]}

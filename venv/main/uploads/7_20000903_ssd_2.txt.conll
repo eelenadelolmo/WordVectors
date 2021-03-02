@@ -1,0 +1,18 @@
+1	caterina	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+2	capitani	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+3	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+4	que	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+5	no	_	no	_	DT	0	_	_	_	_	_	_	_	O
+6	era	_	era	_	NN	0	_	_	_	_	_	era.n	Calendric_unit	S-Unit
+7	una	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+8	devota	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+9	del	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+10	papa	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+11	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+12	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+13	de	_	de	_	IN	0	_	_	_	_	_	_	_	O
+14	una	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+15	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+16	mortal	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+17	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

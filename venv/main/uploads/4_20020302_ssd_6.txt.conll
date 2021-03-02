@@ -1,0 +1,20 @@
+1	al	_	Al	_	NNP	0	_	_	_	_	_	_	_	O
+2	conductor	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+3	se	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+4	le	_	le	_	NN	0	_	_	_	_	_	_	_	O
+5	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+6	el	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+7	carnet	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+8	cuando	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+9	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+10	tres	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+11	unk	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+12	muy	_	UNK	_	VBP	0	_	_	_	_	_	_	_	O
+13	graves	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+14	en	_	en	_	VBN	0	_	_	_	_	_	_	_	O
+15	menos	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+16	de	_	de	_	IN	0	_	_	_	_	_	_	_	O
+17	dos	_	do	_	NNS	0	_	_	_	_	_	do.v	Intentionally_act	O
+18	unk	_	UNK	_	NNS	0	_	_	_	_	_	_	_	S-Act
+19	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+		<!ELEMENT str (#PCDATA)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="6_20010501_ssd">
+
+
+	<sentence>
+		<str>
+			 La conmemoración del Primero de Mayo de este año aporta como novedad que los dos principales sindicatos españoles, CCOO y UGT, han convocado unitariamente los actos previstos para hoy, pero leerán comunicados distintos.
+		</str>
+		<theme>
+			<token pos="da0mp0">los</token><token pos="dn0cp0">dos</token><token pos="aq0cp0">principales</token><token pos="ncmp000">sindicatos</token><token pos="aq0mp0">españoles</token><token pos="fc">,</token><token pos="np00000">CCOO</token><token pos="cc">y</token><token pos="np00000">UGT</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vaip3p0">han</token><token pos="vmp00sm">convocado</token><token pos="rg">unitariamente</token><token pos="da0mp0">los</token><token pos="ncmp000">actos</token><token pos="aq0mpp">previstos</token><token pos="sps00">para</token><token pos="rg">hoy</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="La conmemoración del Primero de Mayo de este año "></frame>
+			<frame type="Intentionally_act" head="dos">
+				<argument type="Act" dependent="principales sindicatos españoles , CCOO y UGT , han"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Les separa el grado de sintonía con el Gobierno en la reforma laboral, que ha contado con un calendario de negociación diseñado con toda la astucia por el Ejecutivo: en Febrero se impuso por ley la regulación de los nuevos contratos, con la protesta sindical y el silencio de la patronal.
+		</str>
+		<theme>
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">contado</token><token pos="sps00">con</token><token pos="di0ms0">un</token><token pos="ncms000">calendario</token><token pos="sps00">de</token><token pos="ncfs000">negociación</token><token pos="aq0msp">diseñado</token><token pos="sps00">con</token><token pos="di0fs0">toda</token><token pos="da0fs0">la</token><token pos="ncfs000">astucia</token><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="np00000">Ejecutivo</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Y siguió la reforma parcial de las pensiones, con la división no sólo de las dos grandes centrales, sino con la disensión interna en UGT.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Intentionally_act" head="dos">
+				<argument type="Act" dependent="las dos grandes centrales"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La próxima apuesta del Gobierno, reformar la negociación colectiva, puede ser el reactivo para recuperar la deseable unidad sindical.
+		</str>
+		<theme>
+			<token pos="da0fs0">La</token><token pos="aq0fs0">próxima</token><token pos="ncfs000">apuesta</token><token pos="spcms">del</token><token pos="np00000">Gobierno</token><token pos="fc">,</token><token pos="vmn0000">reformar</token><token pos="da0fs0">la</token><token pos="ncfs000">negociación</token><token pos="aq0fs0">colectiva</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">puede</token><token pos="vsn0000">ser</token><token pos="da0ms0">el</token><token pos="ncms000">reactivo</token><token pos="sps00">para</token><token pos="vmn0000">recuperar</token><token pos="da0fs0">la</token><token pos="aq0cs0">deseable</token><token pos="ncfs000">unidad</token><token pos="aq0cs0">sindical</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Lo prueba de manera fehaciente el recuerdo del camino desandado en sólo un año.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Si el pasado Primero de Mayo aún resonaba el escándalo de los sobresueldos de directivos - - las stock options - - y los contratos precarios, este año ya estamos en los despidos masivos en empresas que no están en números rojos, en el incremento de la siniestralidad laboral y en la explotación sin contemplaciones de los trabajadores inmigrantes.
+		</str>
+		<theme>
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vmip3p0">están</token><token pos="sps00">en</token><token pos="ncmp000">números</token><token pos="aq0mp0">rojos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Misdeed" head="sin"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

@@ -1,0 +1,23 @@
+1	fuentes	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+2	municipales	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+3	unk	_	UNK	_	VBP	0	_	_	_	_	_	_	_	O
+4	ayer	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+5	su	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+6	esperanza	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+7	de	_	de	_	IN	0	_	_	_	_	_	_	_	O
+8	que	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+9	la	_	la	_	NN	0	_	_	_	_	_	_	_	O
+10	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+11	con	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+12	cascos	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+13	sea	_	sea	_	NN	0	_	_	_	_	_	sea.n	Natural_features	S-Locale
+14	mejor	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+15	que	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+16	con	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+17	su	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+18	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+19	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+20	rafael	_	Rafael	_	NNP	0	_	_	_	_	_	_	_	O
+21	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+22	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

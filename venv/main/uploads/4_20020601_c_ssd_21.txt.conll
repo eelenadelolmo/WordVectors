@@ -1,0 +1,21 @@
+1	vivir	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+2	12	_	12	_	CD	0	_	_	_	_	_	_	_	O
+3	unk	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+4	en	_	en	_	VBN	0	_	_	_	_	_	_	_	O
+5	catalunya	_	UNK	_	NNP	0	_	_	_	_	_	_	_	S-Injured_party
+6	sin	_	sin	_	NN	0	_	_	_	_	_	sin.n	Misdeed	S-Misdeed
+7	querer	_	UNK	_	NN	0	_	_	_	_	_	_	_	B-Wrongdoer
+8	aprender	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Wrongdoer
+9	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Wrongdoer
+10	ni	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Wrongdoer
+11	castellano	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Wrongdoer
+12	es	_	UNK	_	NNS	0	_	_	_	_	_	_	_	I-Wrongdoer
+13	un	_	un	_	VBP	0	_	_	_	_	_	_	_	I-Wrongdoer
+14	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Wrongdoer
+15	que	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Wrongdoer
+16	no	_	no	_	DT	0	_	_	_	_	_	_	_	I-Wrongdoer
+17	es	_	UNK	_	NNS	0	_	_	_	_	_	_	_	I-Wrongdoer
+18	preciso	_	UNK	_	RB	0	_	_	_	_	_	_	_	I-Wrongdoer
+19	unk	_	UNK	_	JJ	0	_	_	_	_	_	_	_	I-Wrongdoer
+20	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

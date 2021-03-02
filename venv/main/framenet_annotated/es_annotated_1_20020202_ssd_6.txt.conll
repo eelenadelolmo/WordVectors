@@ -1,0 +1,5 @@
+{   ('Activity_ongoing', 'sostienen'): [('Agent', 'especialistas de la policía'), ('Activity', 'sostienen que se trata de cortes')],
+    ('Cutting', 'cortes'): [('Item', 'Los')],
+    ('Expertise', 'especialistas'): [],
+    ('Law_enforcement_agency', 'policía'): [],
+    ('Temporal_collocation', 'recientemente'): [('Trajector_event', 'Los')]}

@@ -1,0 +1,7 @@
+{   ('Arriving', 'alejamiento'): [('Theme', 'el agresor'), ('Goal', 'la víctima')],
+    ('Being_in_control', 'controlar'): [('Dependent_entity', 'la dificultad')],
+    ('Catastrophe', 'víctima'): [('Undesirable_event', 'el agresor')],
+    ('Change_position_on_a_scale', 'incremento'): [('Item', 'de las órdenes cautelares de alejamiento')],
+    ('Difficulty', 'dificultad'): [],
+    ('Preventing_or_letting', 'evitar'): [('Event', 'agresor se acerque a la víctima')],
+    ('Sequence', 'órdenes'): []}

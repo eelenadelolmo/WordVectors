@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+        <!ELEMENT str (#PCDATA)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #REQUIRED>
+        <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="4_20020601_c_ssd">
+
+
+	<concepts>
+		<concept id="c_0">que</concept>
+		<concept id="c_1">la Generalitat</concept>
+		<concept id="c_2">La solución adecuada</concept>
+		<concept id="c_3">Nadie</concept>
+		<concept id="c_4">El problema</concept>
+		<concept id="c_5">la sociedad</concept>
+		<concept id="c_6">Éste</concept>
+		<concept id="c_7">los dirigentes - - religiosos , políticos , culturales , sociales - -</concept>
+		<concept id="c_8">Cada célula</concept>
+		<concept id="c_9">eso</concept>
+		<concept id="c_10">los marroquís</concept>
+	</concepts>
+
+	<sentence>
+		<str>
+			 AÑOS Y AÑOS DENTRO DEL CASCARÓN.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Se ha conocido el caso de un imán que hace 12 años que vive en Catalunya y que no habla ni catalán ni castellano.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_8">
+			<token pos="vmip3s0">vive</token><token pos="sps00">en</token><token pos="np00000">Catalunya</token>
+		<to_annotate>[[(92, 130), 'Catalunya', 'c_8']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Sólo árabe.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Es una actitud que contrasta con la de los marroquís que han aprendido, en poco tiempo, un castellano básico, y yo conozco alguno que habla un catalán muy correcto.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_10">
+			<token pos="vmip3s0">contrasta</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="nccp000">marroquís</token>
+		<to_annotate>[[(158, 227), 'los marroquís', 'c_10']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Se trata, pues, de un caso de voluntad negativa.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Al cabo de 12 años, si no habla las lenguas de la sociedad en donde vive es porque no quiere.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Me cuesta entenderlo, porque me gusta, cuando estoy en el extranjero, hablar un poco la lengua del país.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Lograr dialogar en la lengua del otro me da la sensación de que me hace más amigo, o más vecino del lugar.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Negarme a aprender, me haría sentir aislado e intruso.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 He leído que la Generalitat facilitará un intérprete a aquellos imanes que sólo hablen árabe.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">la</token><token pos="np00000">Generalitat</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_10">
+			<token pos="vmif3s0">facilitará</token><token pos="di0ms0">un</token><token pos="nccs000">intérprete</token><token pos="sps00">a</token><token pos="dd0mp0">aquellos</token><token pos="ncmp000">imanes</token>
+		<to_annotate>[[(186, 257), 'aquellos imanes', 'c_2'], [(186, 257), 'aquellos imanes', 'c_10']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Una decisión que sólo puede consolidar la voluntad de extranjería de quien se niega a aprender una lengua de comunicación habitual en la sociedad en donde se vive.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La solución adecuada es la de los cursos de aprendizaje.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">La</token><token pos="ncfs000">solución</token><token pos="aq0fsp">adecuada</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_10">
+			<token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">cursos</token><token pos="sps00">de</token><token pos="ncms000">aprendizaje</token>
+		<to_annotate>[[(235, 275), 'aprendizaje', 'c_3'], [(140, 206), 'los cursos', 'c_10']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Nadie tiene la obligación de renunciar a la lengua propia, pero todo el mundo debería sentir la necesidad de conocer las lenguas que le rodean.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="pi0cs000">Nadie</token>
+		</theme>
+		<rheme concept_ref1="c_2">
+			<token pos="vmip3s0">tiene</token><token pos="da0fs0">la</token><token pos="ncfs000">obligación</token><token pos="sps00">de</token><token pos="vmn0000">renunciar</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">lengua</token><token pos="aq0fs0">propia</token>
+		<to_annotate>[[(64, 133), 'la obligación', 'c_2']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El problema aparece cuando un imán, o quien sea, cree que no existe nada fuera del núcleo donde vive o trabaja.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0ms0">El</token><token pos="ncms000">problema</token>
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Natural_features" head="sea">
+				<argument type="Descriptor" dependent="El problema aparece cuando un" /></frame>
+			<frame type="People" head="un">
+				<argument type="Descriptor" dependent="El problema aparece cuando" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Cuando la sociedad es sustituida por un pequeño grupo.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0fs0">la</token><token pos="ncfs000">sociedad</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="vmp00sf">sustituida</token><token pos="sps00">por</token><token pos="di0ms0">un</token><token pos="aq0ms0">pequeño</token><token pos="ncms000">grupo</token>
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Cuando se quiere estar al margen de las costumbres y de las leyes generales.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Éste es un aspecto negativo de lo que llamamos intolerancia o rechazo de la convivencia.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="pd0ms000">Éste</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_5">
+			<token pos="vsip3s0">es</token><token pos="di0ms0">un</token><token pos="ncms000">aspecto</token><token pos="aq0ms0">negativo</token><token pos="sps00">de</token><token pos="da0ns0">lo</token><token pos="pr0cn000">que</token><token pos="vmip1p0">llamamos</token><token pos="ncfs000">intolerancia</token><token pos="cc">o</token><token pos="ncms000">rechazo</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">convivencia</token>
+		<to_annotate>[[(80, 146), 'un aspecto', 'c_4'], [(311, 352), 'intolerancia', 'c_5']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="People" head="un">
+				<argument type="Persistent_characteristic" dependent="o" />
+				<argument type="Person" dependent="un aspecto negativo de lo que llamamos intolerancia o rechazo de la convivencia" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 No es bueno que los dirigentes - - religiosos, políticos, culturales, sociales - - sean más cerrados que sus seguidores, porque pueden llevarlos por el camino de la rigidez.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0mp0">los</token><token pos="nccp000">dirigentes</token><token pos="fg">-</token><token pos="fg">-</token><token pos="aq0mp0">religiosos</token><token pos="fc">,</token><token pos="aq0mp0">políticos</token><token pos="fc">,</token><token pos="aq0cp0">culturales</token><token pos="fc">,</token><token pos="aq0cp0">sociales</token><token pos="fg">-</token><token pos="fg">-</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_10">
+			<token pos="vssp3p0">sean</token><token pos="rg">más</token><token pos="aq0mpp">cerrados</token><token pos="cs">que</token><token pos="dp3cp0">sus</token><token pos="ncmp000">seguidores</token>
+		<to_annotate>[[(173, 243), 'sus seguidores', 'c_7'], [(173, 243), 'sus seguidores', 'c_10']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Cada célula tiene su vida, pero ninguna puede sobrevivir con independencia del organismo del que forma parte.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="di0cs0">Cada</token><token pos="ncfs000">célula</token>
+		</theme>
+		<rheme concept_ref1="c_5">
+			<token pos="vmip3s0">tiene</token><token pos="dp3cs0">su</token><token pos="ncfs000">vida</token>
+		<to_annotate>[[(64, 127), 'su vida', 'c_5']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En cierto sentido, eso es la democracia, y conviene recordar que demos quiere decir pueblo, conjunto de personas que comparten un ámbito determinado.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="pd0ns000">eso</token>
+		</theme>
+		<rheme concept_ref1="c_5">
+			<token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="ncfs000">democracia</token>
+		<to_annotate>[[(61, 130), 'la democracia', 'c_5']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Vivir 12 años en Catalunya sin querer aprender catalán ni castellano es un menosprecio que no es preciso interpretar.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Misdeed" head="sin">
+				<argument type="Injured_party" dependent="Catalunya" />
+				<argument type="Wrongdoer" dependent="querer aprender catalán ni castellano es un menosprecio que no es preciso" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

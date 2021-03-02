@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+        <!ELEMENT str (#PCDATA)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #REQUIRED>
+        <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="6_20020501_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Dianne Pretty , víctima de una enfermedad degenerativa ,</concept>
+		<concept id="c_1">El tribunal de Estrasburgo</concept>
+		<concept id="c_2">el derecho a la vida</concept>
+		<concept id="c_3">el momento de la muerte</concept>
+		<concept id="c_4">la ayuda</concept>
+		<concept id="c_5">restricciones</concept>
+	</concepts>
+
+	<sentence>
+		<str>
+			 El Tribunal Europeo de Derechos Humanos acaba de refrendar que Dianne Pretty, víctima de una enfermedad degenerativa, no podrá suicidarse con la ayuda de su marido.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np0000l">Dianne</token><token pos="np0000l">Pretty</token><token pos="fc">,</token><token pos="ncfs000">víctima</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="ncfs000">enfermedad</token><token pos="aq0fs0">degenerativa</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_4">
+			<token pos="rn">no</token><token pos="vmif3s0">podrá</token><token pos="vmn0000">suicidarse</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="ncfs000">ayuda</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncms000">marido</token>
+		<to_annotate>[[(271, 336), 'su marido', 'c_1'], [(178, 242), 'la ayuda', 'c_4']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El Tribunal Europeo de Derechos Humanos " />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El tribunal de Estrasburgo mantiene así claramente diferenciadas la eutanasia activa, despenalizada únicamente en Holanda, y la suspensión de los tratamientos que mantienen a una persona artificialmente con vida, vía aceptada con más o menos restricciones administrativas según los países y de la que el mismo Lunes se beneficiaba otra enferma británica.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">tribunal</token><token pos="sps00">de</token><token pos="np00000">Estrasburgo</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_3" concept_ref3="c_4" concept_ref4="c_5">
+			<token pos="vmip3s0">mantiene</token><token pos="rg">claramente</token><token pos="aq0fpp">diferenciadas</token><token pos="da0fs0">la</token><token pos="ncfs000">eutanasia</token><token pos="aq0fs0">activa</token><token pos="fc">,</token><token pos="aq0fsp">despenalizada</token><token pos="rg">únicamente</token><token pos="sps00">en</token><token pos="np00000">Holanda</token><token pos="fc">,</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">suspensión</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">tratamientos</token><token pos="fc">,</token><token pos="ncfs000">vía</token><token pos="aq0fsp">aceptada</token><token pos="sps00">con</token><token pos="rg">más</token><token pos="cc">o</token><token pos="rg">menos</token><token pos="ncfp000">restricciones</token><token pos="aq0fp0">administrativas</token><token pos="sps00">según</token><token pos="da0mp0">los</token><token pos="ncmp000">países</token><token pos="cc">y</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="pr0cn000">que</token><token pos="da0ms0">el</token><token pos="di0ms0">mismo</token><token pos="ncms000">Lunes</token><token pos="p0300000">se</token><token pos="vmii3s0">beneficiaba</token><token pos="di0fs0">otra</token><token pos="ncfs000">enferma</token><token pos="aq0fs0">británica</token>
+		<to_annotate>[[(516, 585), 'la suspensión', 'c_1'], [(1190, 1287), 'el mismo Lunes', 'c_3'], [(199, 267), 'la eutanasia', 'c_4'], [(890, 932), 'restricciones', 'c_5']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Según el fallo, el derecho a la vida no supone el derecho de cada persona a disponer libremente de la suya propia.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">el</token><token pos="ncms000">derecho</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">vida</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_4">
+			<token pos="rn">no</token><token pos="vmip3s0">supone</token><token pos="da0ms0">el</token><token pos="ncms000">derecho</token><token pos="sps00">de</token><token pos="di0cs0">cada</token><token pos="ncfs000">persona</token><token pos="sps00">a</token><token pos="vmn0000">disponer</token><token pos="rg">libremente</token><token pos="sps00">de</token><token pos="di0mp0">la</token><token pos="dn0cp0">suya</token><token pos="aq0fs0">propia</token>
+		<to_annotate>[[(110, 176), 'el derecho', 'c_2'], [(205, 273), 'cada persona', 'c_4']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Pero aunque ésta sea la jurisprudencia comunitaria, en la opinión pública europea avanza una tesis distinta.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Natural_features" head="sea">
+				<argument type="Descriptor" dependent="Pero aunque" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Cuesta aceptar que entre personas adultas en plenitud de sus capacidades mentales y con unas expectativas vitales reducidas, el momento de la muerte dependa sólo del a veces muy lento desgaste que provocan las enfermedades.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">el</token><token pos="ncms000">momento</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">muerte</token>
+		</theme>
+		<rheme>
+			<token pos="vmsp3s0">dependa</token><token pos="rg">sólo</token><token pos="spcms">del</token><token pos="sps00">a</token><token pos="ncmp000">veces</token><token pos="rg">muy</token><token pos="aq0ms0">lento</token><token pos="ncms000">desgaste</token>
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Mientras se proteja el derecho a seguir vivo de los enfermos terminales que no puedan expresar su voluntad, no debería haber cortapisa para reconocer el derecho a morir de quienes puedan decidirlo de forma consciente.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

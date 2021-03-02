@@ -1,0 +1,8 @@
+{   ('Cure', 'tratamiento'): [],
+    ('Fear', 'temor'): [('Experiencer', 'por la academia')],
+    ('Increment', 'Otro'): [('Class', 'temor invocado por la academia')],
+    ('Kinship', 'escolares'): [('Ego', 'escolares')],
+    ('Leadership', 'conducir'): [('Leader', 'que'), ('Activity', 'xenofobia y el racismo & quot ; entre los escolares')],
+    ('Likelihood', 'posible'): [('Hypothetical_event', 'tratamiento & quot ; de todo lo que nos separa')],
+    ('Locale_by_use', 'escolares'): [],
+    ('Possibility', 'pudiera'): [('Possible_event', 'que'), ('Possible_event', 'xenofobia y el racismo & quot ; entre los escolares')]}

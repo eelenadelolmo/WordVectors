@@ -1,0 +1,32 @@
+1	El	el	da0ms0	da0ms0	rep=no|t=yes|r=no|m=yes|c=no	2	de	_	_
+2	alargamiento	alargamiento	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=no	13	nsub	_	_
+3	en	en	sps00	sps00	rep=no|t=yes|r=no|m=yes|c=no	2	prep	_	_
+4	la	el	da0fs0	da0fs0	rep=no|t=yes|r=no|m=yes|c=no	5	de	_	_
+5	esperanza	esperanza	ncfs000	ncfs000	rep=no|t=yes|r=no|m=yes|c=no	3	pob	_	_
+6	de	de	sps00	sps00	rep=no|t=yes|r=no|m=yes|c=no	5	prep	_	_
+7	vida	vida	ncfs000	ncfs000	rep=no|t=yes|r=no|m=yes|c=no	6	pob	_	_
+8	en	en	sps00	sps00	rep=no|t=yes|r=no|m=yes|c=no	5	prep	_	_
+9	los	el	da0mp0	da0mp0	rep=no|t=yes|r=no|m=yes|c=no	10	de	_	_
+10	pacientes	paciente	nccp000	nccp000	rep=no|t=yes|r=no|m=yes|c=no	8	pob	_	_
+11	con	con	sps00	sps00	rep=no|t=yes|r=no|m=yes|c=no	10	prep	_	_
+12	VIH	VIH	np00000	np00000	rep=no|t=yes|r=no|m=yes|c=no	11	pob	_	_
+13	ha	haber	vaip3s0	vaip3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+14	convertido	convertir	vmp00sm	vmp00sm	rep=no|t=no|r=yes|m=yes|c=no	13	vob	_	_
+15	a	a	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	14	dob	_	_
+16	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	17	de	_	_
+17	hepatitis	hepatitis	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	15	pob	_	_
+18	C	C	np00000	np00000	rep=no|t=no|r=yes|m=yes|c=no	17	appo	_	_
+19	en	en	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	14	oob	_	_
+20	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	22	de	_	_
+21	primera	primero	ao0fs0	ao0fs0	rep=no|t=no|r=yes|m=yes|c=no	22	amo	_	_
+22	causa	causa	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	19	pob	_	_
+23	individual	individual	aq0cs0	aq0cs0	rep=no|t=no|r=yes|m=yes|c=no	22	amo	_	_
+24	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	22	prep	_	_
+25	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	26	de	_	_
+26	muerte	muerte	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	24	pob	_	_
+27	en	en	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	26	prep	_	_
+28	el	el	da0ms0	da0ms0	rep=no|t=no|r=yes|m=yes|c=no	29	de	_	_
+29	sida	sida	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	27	pob	_	_
+
+
+

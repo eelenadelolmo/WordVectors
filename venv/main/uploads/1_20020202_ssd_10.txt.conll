@@ -1,0 +1,65 @@
+1	the	_	The	_	DT	0	_	_	_	_	_	_	_	O
+2	woman	_	woman	_	NN	0	_	_	_	_	_	woman.n	People	S-Person
+3	denied	_	deny	_	VBD	0	_	_	_	_	_	_	_	O
+4	all	_	all	_	DT	0	_	_	_	_	_	_	_	O
+5	responsibility	_	responsibility	_	NN	0	_	_	_	_	_	_	_	O
+6	for	_	for	_	IN	0	_	_	_	_	_	_	_	O
+7	her	_	her	_	PRP$	0	_	_	_	_	_	_	_	O
+8	mother	_	mother	_	NN	0	_	_	_	_	_	_	_	O
+9	in	_	in	_	IN	0	_	_	_	_	_	_	_	O
+10	the	_	the	_	DT	0	_	_	_	_	_	_	_	O
+11	incident	_	incident	_	NN	0	_	_	_	_	_	_	_	O
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	the	_	The	_	DT	0	_	_	_	_	_	_	_	B-Speaker
+2	woman	_	woman	_	NN	0	_	_	_	_	_	_	_	I-Speaker
+3	denied	_	deny	_	VBD	0	_	_	_	_	_	deny.v	Affirm_or_deny	O
+4	all	_	all	_	DT	0	_	_	_	_	_	_	_	B-Message
+5	responsibility	_	responsibility	_	NN	0	_	_	_	_	_	_	_	I-Message
+6	for	_	for	_	IN	0	_	_	_	_	_	_	_	I-Message
+7	her	_	her	_	PRP$	0	_	_	_	_	_	_	_	I-Message
+8	mother	_	mother	_	NN	0	_	_	_	_	_	_	_	I-Message
+9	in	_	in	_	IN	0	_	_	_	_	_	_	_	I-Message
+10	the	_	the	_	DT	0	_	_	_	_	_	_	_	I-Message
+11	incident	_	incident	_	NN	0	_	_	_	_	_	_	_	I-Message
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	the	_	The	_	DT	0	_	_	_	_	_	_	_	O
+2	woman	_	woman	_	NN	0	_	_	_	_	_	_	_	O
+3	denied	_	deny	_	VBD	0	_	_	_	_	_	_	_	O
+4	all	_	all	_	DT	0	_	_	_	_	_	_	_	O
+5	responsibility	_	responsibility	_	NN	0	_	_	_	_	_	responsibility.n	Being_obligated	O
+6	for	_	for	_	IN	0	_	_	_	_	_	_	_	B-Duty
+7	her	_	her	_	PRP$	0	_	_	_	_	_	_	_	I-Duty
+8	mother	_	mother	_	NN	0	_	_	_	_	_	_	_	I-Duty
+9	in	_	in	_	IN	0	_	_	_	_	_	_	_	I-Duty
+10	the	_	the	_	DT	0	_	_	_	_	_	_	_	I-Duty
+11	incident	_	incident	_	NN	0	_	_	_	_	_	_	_	I-Duty
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	the	_	The	_	DT	0	_	_	_	_	_	_	_	O
+2	woman	_	woman	_	NN	0	_	_	_	_	_	_	_	O
+3	denied	_	deny	_	VBD	0	_	_	_	_	_	_	_	O
+4	all	_	all	_	DT	0	_	_	_	_	_	_	_	O
+5	responsibility	_	responsibility	_	NN	0	_	_	_	_	_	_	_	O
+6	for	_	for	_	IN	0	_	_	_	_	_	_	_	O
+7	her	_	her	_	PRP$	0	_	_	_	_	_	_	_	S-Ego
+8	mother	_	mother	_	NN	0	_	_	_	_	_	mother.n	Kinship	S-Alter
+9	in	_	in	_	IN	0	_	_	_	_	_	_	_	O
+10	the	_	the	_	DT	0	_	_	_	_	_	_	_	O
+11	incident	_	incident	_	NN	0	_	_	_	_	_	_	_	O
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	the	_	The	_	DT	0	_	_	_	_	_	_	_	O
+2	woman	_	woman	_	NN	0	_	_	_	_	_	_	_	O
+3	denied	_	deny	_	VBD	0	_	_	_	_	_	_	_	O
+4	all	_	all	_	DT	0	_	_	_	_	_	_	_	O
+5	responsibility	_	responsibility	_	NN	0	_	_	_	_	_	_	_	O
+6	for	_	for	_	IN	0	_	_	_	_	_	_	_	O
+7	her	_	her	_	PRP$	0	_	_	_	_	_	_	_	O
+8	mother	_	mother	_	NN	0	_	_	_	_	_	_	_	O
+9	in	_	in	_	IN	0	_	_	_	_	_	_	_	O
+10	the	_	the	_	DT	0	_	_	_	_	_	_	_	O
+11	incident	_	incident	_	NN	0	_	_	_	_	_	incident.n	Catastrophe	S-Undesirable_event
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

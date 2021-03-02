@@ -1,9 +1,0 @@
-{   ('Bringing', 'llevado'): [('Theme', 'le'), ('Goal', 'en el bolsillo la brújula que le regaló un votante de este estado')],
-    ('Clothing_parts', 'bolsillo'): [],
-    ('Frequency', 'siempre'): [('Event', 'que le'), ('Event', 'por el buen camino')],
-    ('Giving', 'regaló'): [('Donor', 'estado'), ('Recipient', 'le'), ('Theme', 'quot ; para que fuera siempre por el buen camino')],
-    ('Interior_profile_relation', 'en'): [('Figure', 'Hasta ha llevado'), ('Ground', 'ha llevado en el bolsillo')],
-    ('Leadership', 'estado'): [],
-    ('Roadways', 'camino'): [],
-    ('Spatial_contact', 'en'): [('Figure', 'le'), ('Ground', 'el buen camino')],
-    ('Telling', 'dijo'): [('Speaker', 'le'), ('Speaker', 'le'), ('Addressee', 'le')]}

@@ -1,8 +1,0 @@
-{   ('Cardinal_numbers', 'millones'): [('Multiplier', '2.560'), ('Unit', 'pesetas')],
-    ('Causation', 'ingente'): [('Cause', 'McCain'), ('Effect', 'pagar los enormes gastos de una campaña electoral auguran una lucha muy desigual')],
-    ('Commerce_pay', 'pagar'): [('Buyer', 'McCain'), ('Goods', 'enormes gastos de una campaña electoral auguran una lucha muy desigual')],
-    ('Commutative_statement', 'suma'): [('Terms', 'enormes')],
-    ('Expensiveness', 'gastos de'): [('Rate', 'enormes'), ('Goods', 'campaña electoral auguran una lucha muy desigual')],
-    ('Hostile_encounter', 'lucha'): [('Depictive', 'desigual')],
-    ('Operating_a_system', 'logrado'): [('System', 'McCain')],
-    ('Size', 'enormes'): [('Entity', 'gastos de')]}

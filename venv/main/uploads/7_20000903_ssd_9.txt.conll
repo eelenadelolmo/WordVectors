@@ -1,0 +1,16 @@
+1	el	_	El	_	NNP	0	_	_	_	_	_	_	_	O
+2	doctor	_	doctor	_	NN	0	_	_	_	_	_	doctor.n	Medical_professionals	S-Professional
+3	le	_	le	_	NN	0	_	_	_	_	_	_	_	O
+4	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+5	una	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+6	rara	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+7	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+8	incurable	_	UNK	_	JJ	0	_	_	_	_	_	_	_	O
+9	y	_	y	_	NN	0	_	_	_	_	_	_	_	O
+10	mortal	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+11	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+12	llamada	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+13	unk	_	UNK	_	-NONE-	0	_	_	_	_	_	_	_	O
+14	rojo	_	UNK	_	RB	0	_	_	_	_	_	_	_	O
+15	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

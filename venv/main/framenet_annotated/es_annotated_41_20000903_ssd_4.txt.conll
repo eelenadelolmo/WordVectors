@@ -1,3 +1,0 @@
-{   ('Leadership', 'Estado'): [],
-    ('Measurable_attributes', 'estrecho'): [('Entity', 'Estado')],
-    ('State_continue', 'queda'): [('Entity', 'Estado'), ('State', 'estrecho e ineficaz para estos fenómenos')]}

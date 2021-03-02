@@ -1,0 +1,25 @@
+1	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+2	bien	_	UNK	_	VBN	0	_	_	_	_	_	_	_	O
+3	empezar	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+4	a	_	a	_	DT	0	_	_	_	_	_	_	_	O
+5	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+6	en	_	en	_	NN	0	_	_	_	_	_	_	_	O
+7	serio	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+8	esta	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+9	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+10	que	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+11	hasta	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+12	hace	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+13	poco	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+14	se	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+15	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+16	de	_	de	_	IN	0	_	_	_	_	_	_	_	O
+17	forma	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+18	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+19	y	_	y	_	NN	0	_	_	_	_	_	_	_	O
+20	sin	_	sin	_	NN	0	_	_	_	_	_	sin.n	Misdeed	O
+21	esperanzas	_	UNK	_	NNS	0	_	_	_	_	_	_	_	B-Wrongdoer
+22	de	_	de	_	IN	0	_	_	_	_	_	_	_	I-Wrongdoer
+23	unk	_	UNK	_	JJ	0	_	_	_	_	_	_	_	I-Wrongdoer
+24	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

@@ -1,6 +1,0 @@
-{   ('Appellations', 'vicepresidente'): [('Type', 'paseó')],
-    ('Filling', 'traje'): [('Source', 'a algunos locales')],
-    ('Make_cognitive_connection', 'corbata'): [('Concept_2', 'en Washington')],
-    ('Political_locales', 'campo'): [],
-    ('Political_locales', 'locales'): [],
-    ('Self_motion', 'paseó'): [('Goal', 'vestido de campo'), ('Manner', 'botas y')]}

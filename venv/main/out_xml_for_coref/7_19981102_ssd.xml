@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+		<!ELEMENT str (#PCDATA)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="7_19981102_ssd">
+
+
+	<sentence>
+		<str>
+			 Casi 10 millones de dólares ( 1.400 millones de pesetas ) le costó a la oposición republicana la batería de anuncios televisivos basados en el caso Lewinsky con que han barrido, en los últimos días de la presente campaña electoral, las 56 circunscripciones en que se elegirán a los candidatos al legislativo, Según reveló Todd Harris, portavoz del Comité Nacional Republicano para el Congreso.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Ninguno de los anuncios menciona directamente a Monica Lewinsky o la posibilidad de un impeachment del presidente Bill Clinton, pero ponen de manifiesto las mentiras y tergiversaciones con las que el actual inquilino de la Casa Blanca intentó encubrir su aventura con la becaria.
+		</str>
+		<theme>
+			<token pos="pi0ms000">Ninguno</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">anuncios</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">menciona</token><token pos="sps00">a</token><token pos="np0000l">Monica</token><token pos="np0000l">Lewinsky</token><token pos="cc">o</token><token pos="da0fs0">la</token><token pos="ncfs000">posibilidad</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">impeachment</token><token pos="spcms">del</token><token pos="ncms000">presidente</token><token pos="ncms000">Bill</token><token pos="np00000">Clinton</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Actually_occurring_entity" head="actual">
+				<argument type="Type" dependent="de"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Este malestar impulsó a los republicanos a no rozar el caso Lewinsky en la campaña electoral hasta apenas una semana antes de los comicios, cuando lanzaron su última andanada contra los demócratas con una serie de anuncios televisivos apoyados en el escándalo sexual.
+		</str>
+		<theme>
+			<token pos="dd0ms0">Este</token><token pos="ncms000">malestar</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">impulsó</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="aq0mp0">republicanos</token><token pos="sps00">a</token><token pos="rn">no</token><token pos="vmn0000">rozar</token><token pos="da0ms0">el</token><token pos="ncms000">caso</token><token pos="np00000">Lewinsky</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">campaña</token><token pos="aq0cs0">electoral</token><token pos="sps00">hasta</token><token pos="rg">apenas</token><token pos="di0fs0">una</token><token pos="ncfs000">semana</token><token pos="rg">antes</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">comicios</token><token pos="fc">,</token><token pos="cs">cuando</token><token pos="vmis3p0">lanzaron</token><token pos="dp3cs0">su</token><token pos="ao0fs0">última</token><token pos="ncfs000">andanada</token><token pos="sps00">contra</token><token pos="da0mp0">los</token><token pos="nccp000">demócratas</token><token pos="sps00">con</token><token pos="di0fs0">una</token><token pos="ncfs000">serie</token><token pos="sps00">de</token><token pos="ncmp000">anuncios</token><token pos="aq0mp0">televisivos</token><token pos="aq0mpp">apoyados</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">escándalo</token><token pos="aq0cs0">sexual</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Time_vector" head="antes"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Si esta táctica será efectiva está por ver, ante unos votantes demócratas cuyas prioridades son la educación, la sanidad y la seguridad social, y unos votantes republicanos a quienes les preocupan sobre todo los impuestos, la criminalidad y la beneficencia.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Kinship" head="son"></frame>
+			<frame type="Time_vector" head="ante">
+				<argument type="Event" dependent="seguridad social , y unos"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Sólo en este sector se consideran los valores morales como una prioridad a la hora de votar, pero es citada por apenas un tercio de los republicanos.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Fields" head="sector"></frame>
+			<frame type="People" head="un">
+				<argument type="Descriptor" dependent="apenas"/>
+				<argument type="Person" dependent="tercio de los"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

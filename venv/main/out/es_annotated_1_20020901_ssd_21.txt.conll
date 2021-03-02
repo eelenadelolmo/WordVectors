@@ -1,0 +1,13 @@
+{   ('Active_substance', 'agentes'): [],
+    ('Being_in_control', 'control'): [],
+    ('Calendric_unit', 'día'): [('Count', 'todo el')],
+    ('Capability', 'puede'): [('Entity', 'su'), ('Event', 'vigilancia de la víctima todo el día o acompañarle a comprar al trabajo o a la escuela de su hijo')],
+    ('Catastrophe', 'víctima'): [('Patient', 'su'), ('Undesirable_event', 'todo el día'), ('Undesirable_event', 'o el contacto telefónico con los agentes & quot ; , afirman')],
+    ('Commerce_buy', 'comprar'): [('Buyer', 'su'), ('Goods', 'al trabajo o a la escuela de su hijo')],
+    ('Increment', 'otros'): [('Class', 'sistemas de control')],
+    ('Instance', 'casos'): [('Instance_prop', 'muy graves')],
+    ('Kinship', 'su'): [('Ego', 'su')],
+    ('Scrutiny', 'vigilancia'): [('Cognizer', 'su')],
+    ('Statement', 'afirman'): [('Speaker', 'otros sistemas de control , como la contravigilancia o el contacto telefónico con los agentes & quot'), ('Message', 'o a')],
+    ('System', 'sistemas'): [('Function', 'control')],
+    ('Work', 'trabajo'): []}

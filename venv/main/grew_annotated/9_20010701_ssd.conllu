@@ -1,0 +1,31 @@
+1	Carlos	Carlos	np00000	np00000	rep=no|t=yes|r=no|m=yes|c=yes	5	nsubj
+2	y	y	cc	cc	rep=no|t=yes|r=no|m=yes|c=no	5	coord_fixed
+3	Fayna	Fayna	np00000	np00000	rep=no|t=yes|r=no|m=yes|c=yes	5	nsubj
+4	se	él	p0300000	p0300000	rep=no|t=no|r=yes|m=yes|c=no	5	reflec
+5	enzarzan	enzarzar	vmip3p0	vmip3p0	rep=no|t=no|r=yes|m=yes|c=no	0	root
+6	en	en	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	5	oobj
+7	una	uno	di0fs0	di0fs0	rep=no|t=no|r=yes|m=yes|c=no	8	det
+8	bronca	bronca	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	6	pobj
+9	ante	ante	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	5	prepv
+10	las	el	da0fp0	da0fp0	rep=no|t=no|r=yes|m=yes|c=no	11	det
+11	cámaras	cámara	ncfp000	ncfp000	rep=no|t=no|r=yes|m=yes|c=no	9	pobj
+12	.	.	fp	fp	rep=no|t=no|r=no|m=no|c=no	5	punct
+
+1	Él	él	pp3ms000	pp3ms000	rep=no|t=yes|r=no|m=yes|c=no	2	nsubj
+2	llega	llegar	vmip3s0	vmip3s0	rep=no|t=no|r=yes|m=yes|c=no	8	coord
+3	a	a	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	2	prepv
+4	tirarla	tirar	vmn0000	vmn0000	rep=no|t=no|r=yes|m=yes|c=no	2	dobj
+5	sobre	sobre	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	2	prepv
+6	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	7	det
+7	cama	cama	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	5	pobj
+8	y	y	cc	cc	rep=no|t=no|r=no|m=yes|c=no	0	root
+9	le	él	pp3csd00	pp3csd00	rep=no|t=no|r=no|m=yes|c=no	10	iobj
+10	toca	tocar	vmip3s0	vmip3s0	rep=no|t=no|r=no|m=yes|c=no	8	coord
+11	la	el	da0fs0	da0fs0	rep=no|t=no|r=no|m=yes|c=no	12	det
+12	cara	cara	ncfs000	ncfs000	rep=no|t=no|r=no|m=yes|c=no	10	dobj
+13	con	con	sps00	sps00	rep=no|t=no|r=no|m=yes|c=no	10	prepv
+14	la	el	da0fs0	da0fs0	rep=no|t=no|r=no|m=yes|c=no	15	det
+15	mano	mano	ncfs000	ncfs000	rep=no|t=no|r=no|m=yes|c=no	13	pobj
+16	.	.	fp	fp	rep=no|t=no|r=no|m=no|c=no	8	punct
+
+

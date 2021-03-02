@@ -1,0 +1,3 @@
+{   ('Law_enforcement_agency', 'policía'): [],
+    ('Quantified_mass', 'número'): [('Individuals', 'Instrucción')],
+    ('Telling', 'informado'): [('Speaker', 'policía'), ('Manner', 'verbalmente'), ('Message', 'al Juzgado de Instrucción número 17')]}

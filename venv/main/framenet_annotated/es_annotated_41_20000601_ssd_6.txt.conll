@@ -1,9 +1,0 @@
-{   ('Aggregate', 'partidos'): [],
-    ('Arriving', 'llegar'): [('Goal', 'las próximas elecciones'), ('Time', 'del 2003')],
-    ('Being_necessary', 'necesarios'): [],
-    ('Cardinal_numbers', 'dos'): [('Entity', 'partidos')],
-    ('Change_of_leadership', 'elecciones'): [('Selector', 'del')],
-    ('Desiring', 'deseada'): [('Event', 'estabilidad deseada para llegar en condiciones a las próximas elecciones autonómicas del 2003')],
-    ('Interior_profile_relation', 'en'): [('Figure', 'las próximas elecciones'), ('Ground', '2003')],
-    ('Locale', 'del'): [],
-    ('Temporal_collocation', 'Ahora'): [('Trajector_event', 'resultará que la estrategia de CDC pasa por ser equidistante de los dos partidos necesarios para asegurar la')]}

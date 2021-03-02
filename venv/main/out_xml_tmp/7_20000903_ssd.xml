@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+        <!ELEMENT str (#PCDATA)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #REQUIRED>
+        <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="7_20000903_ssd">
+
+
+	<concepts>
+		<concept id="c_0">La religiosa por cuya curación será beato Juan XXIII</concept>
+		<concept id="c_1">Caterina Capitani , que no era una devota del Papa ,</concept>
+		<concept id="c_2">que</concept>
+		<concept id="c_3">La religiosa</concept>
+		<concept id="c_4">la monja</concept>
+		<concept id="c_5">El hecho</concept>
+		<concept id="c_6">El doctor</concept>
+		<concept id="c_7">Capitani</concept>
+		<concept id="c_8">aquel señor anciano , con modales de un viejo padre</concept>
+		<concept id="c_9">La Iglesia</concept>
+		<concept id="c_10">la hermana Capitani</concept>
+		<concept id="c_11">Yo</concept>
+		<concept id="c_12">la imposición de la imagen del Papa sobre su cuerpo y los rezos</concept>
+		<concept id="c_13">le</concept>
+		<concept id="c_14">beato</concept>
+		<concept id="c_15">Agrigento</concept>
+		<concept id="c_16">un favor</concept>
+	</concepts>
+
+	<sentence>
+		<str>
+			 La religiosa por cuya curación será beato Juan XXIII rehúye las apariciones públicas.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="ncfs000">religiosa</token><token pos="sps00">por</token><token pos="pr0fs000">cuya</token><token pos="ncfs000">curación</token><token pos="vsif3s0">será</token><token pos="aq0ms0">beato</token><token pos="ncms000">Juan</token><token pos="np00000">XXIII</token>
+		</theme>
+		<rheme concept_ref1="c_9">
+			<token pos="vmip3s0">rehúye</token><token pos="da0fp0">las</token><token pos="ncfp000">apariciones</token><token pos="aq0fp0">públicas</token>
+		<to_annotate>[[(65, 136), 'las apariciones', 'c_9']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Caterina Capitani, que no era una devota del Papa, sanó de una dolencia mortal.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np0000l">Caterina</token><token pos="np0000l">Capitani</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="rn">no</token><token pos="vsii3s0">era</token><token pos="di0fs0">una</token><token pos="ncfs000">devota</token><token pos="spcms">del</token><token pos="np00000">Papa</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_12" concept_ref2="c_13">
+			<token pos="vmis3s0">sanó</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="ncfs000">dolencia</token><token pos="aq0cs0">mortal</token>
+		<to_annotate>[[(113, 181), 'una dolencia', 'c_12'], ['le', 'c_13']]</to_annotate></rheme>
+		<semantic_roles>
+			<main_frame type="Calendric_unit" head="era" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La beneficiaria del milagro que le ha valido a Juan XXIII la proclamación de beato es la monja Caterina Capitani, una de las estrellas de la ceremonia de esta mañana en la plaza de San Pedro.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_13" concept_ref3="c_14">
+			<token pos="pp3csd00">le</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">valido</token><token pos="sps00">a</token><token pos="ncms000">Juan</token><token pos="np00000">XXIII</token><token pos="da0fs0">la</token><token pos="ncfs000">proclamación</token><token pos="sps00">de</token><token pos="ncms000">beato</token>
+		<to_annotate>[[(263, 334), 'la proclamación', 'c_4'], [(70, 102), 'le', 'c_13'], [(363, 397), 'beato', 'c_14']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Pero hasta ahora ha permanecido oculta.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 No ha concedido entrevistas, ni tan sólo a los medios católicos, a excepción de algunos encuentros informales, uno de los cuales ha sido relatado por el semanario Familia Cristiana.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La religiosa vive en Agrigento y pertenece a la congregación de las Hijas de la Caridad de San Vicente Paúl, que en los años 50 trabajaban en los hospitales.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fs0">La</token><token pos="ncfs000">religiosa</token>
+		</theme>
+		<rheme concept_ref1="c_15">
+			<token pos="vmip3s0">vive</token><token pos="sps00">en</token><token pos="np00000">Agrigento</token>
+		<to_annotate>[[(93, 131), 'Agrigento', 'c_15']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En 1966, la monja vomitó sangre.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0fs0">la</token><token pos="ncfs000">monja</token>
+		</theme>
+		<rheme concept_ref1="c_3">
+			<token pos="vmis3s0">vomitó</token><token pos="ncfs000">sangre</token>
+		<to_annotate>[[(65, 100), 'sangre', 'c_3']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El hecho se repitió al cabo de seis meses y entonces fue operada por uno de los mejores especialistas italianos, Giuseppe Zannini.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0ms0">El</token><token pos="ncms000">hecho</token>
+		</theme>
+		<rheme concept_ref1="c_13">
+			<token pos="p0300000">se</token><token pos="vmis3s0">repitió</token><token pos="sps00">al</token><token pos="ncfs000">cabo</token><token pos="sps00">de</token><token pos="dn0cp0">seis</token><token pos="ncmp000">meses</token>
+		<to_annotate>[['me', 'c_13']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El doctor le diagnosticó una rara patología incurable y mortal, llamada estómago rojo.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0ms0">El</token><token pos="ncms000">doctor</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_13">
+			<token pos="pp3csd00">le</token><token pos="vmis3s0">diagnosticó</token><token pos="di0fs0">una</token><token pos="aq0fs0">rara</token><token pos="ncfs000">patología</token><token pos="aq0cs0">incurable</token><token pos="cc">y</token><token pos="aq0cs0">mortal</token><token pos="fc">,</token><token pos="aq0fsp">llamada</token><token pos="ncms000">estómago</token><token pos="aq0ms0">rojo</token>
+		<to_annotate>[[(122, 223), 'una rara patología', 'c_1'], [(50, 82), 'le', 'c_13']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Medical_professionals" head="doctor" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 De manera que llamaron al cura y le administraron la extremaunción.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Capitani no sentía devoción por Juan XXIII.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="np00000">Capitani</token>
+		</theme>
+		<rheme concept_ref1="c_13" concept_ref2="c_15">
+			<token pos="rn">no</token><token pos="vmii3s0">sentía</token><token pos="ncfs000">devoción</token><token pos="sps00">por</token><token pos="ncms000">Juan</token><token pos="np00000">XXIII</token>
+		<to_annotate>[['se', 'c_13'], [(112, 149), 'devoción', 'c_15']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Más bien al contrario.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Cuando fue elegido Papa tuvo una decepción.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 "Pero después, aquel señor anciano, con modales de un viejo padre, me conquistó, como hizo con muchas personas", ha explicado.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="dd0ms0">aquel</token><token pos="ncms000">señor</token><token pos="aq0ms0">anciano</token><token pos="fc">,</token><token pos="sps00">con</token><token pos="ncmp000">modales</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="aq0ms0">viejo</token><token pos="ncms000">padre</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_6" concept_ref3="c_13">
+			<token pos="fc">,</token><token pos="pp1cs000">me</token><token pos="vmis3s0">conquistó</token><token pos="fc">,</token><token pos="vmis3s0">hizo</token><token pos="sps00">con</token><token pos="di0fp0">muchas</token><token pos="ncfp000">personas</token><token pos="fe">quot;</token>
+		<to_annotate>[[(252, 323), 'muchas personas', 'c_8'], ['quot', 'c_6'], [(94, 126), 'me', 'c_13']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 "La Iglesia hace bien en proclamarlo santo, porque la ha abierto al mundo, la ha hecho más simpática", subraya.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="da0fs0">La</token><token pos="np00000">Iglesia</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_4" concept_ref3="c_14">
+			<token pos="vmip3s0">hace</token><token pos="sps00">en</token><token pos="vmn0000">proclamarlo</token><token pos="ncms000">santo</token><token pos="fc">,</token><token pos="fe">quot;</token>
+		<to_annotate>[['quot', 'c_6'], [(171, 205), 'santo', 'c_4'], [(171, 205), 'santo', 'c_14']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En realidad, la hermana Capitani confiesa que en sus rezos de aquellos días se dirigió a otro abogado celestial, la Virgen de Pompeya: "Era la misma que había invocado mi madre para llevarme al mundo, después de dos hermanos y del parecer contrario de los médicos".
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="da0fs0">la</token><token pos="ncfs000">hermana</token><token pos="np00000">Capitani</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_6" concept_ref3="c_12" concept_ref4="c_13" concept_ref5="c_14">
+			<token pos="sps00">en</token><token pos="dp3cp0">sus</token><token pos="ncmp000">rezos</token><token pos="sps00">de</token><token pos="dd0mp0">aquellos</token><token pos="ncmp000">días</token><token pos="p0300000">se</token><token pos="vmis3s0">dirigió</token><token pos="sps00">a</token><token pos="di0ms0">otro</token><token pos="ncms000">abogado</token><token pos="aq0cs0">celestial</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="np0000o">Virgen</token><token pos="sps00">de</token><token pos="np0000l">Pompeya</token>
+		<to_annotate>[[(232, 301), 'aquellos días', 'c_3'], [(397, 465), 'otro abogado', 'c_6'], [(527, 657), 'la Virgen de Pompeya', 'c_12'], ['le', 'c_13'], [(397, 465), 'otro abogado', 'c_14']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Intentionally_act" head="dos">
+				<argument type="Act" dependent="hermanos" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Mientras la religiosa estaba en su lecho de muerte, otra monja, la hermana Adele, empezó a encomendarla al papa Bueno, del cual era muy devota.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="era" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 "No había nada más que hacer, de manera que aquella noche del 25 de mayo de 1966 me dispuse a morir", ha relatado la hermana Capitani.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 "Yo no pedía un favor celestial, un milagro. Me preocupaba sólo de mis pecados y de mi poca fe", ha añadido.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="pp1csn00">Yo</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_13" concept_ref3="c_16">
+			<token pos="rn">no</token><token pos="vmii3s0">pedía</token><token pos="di0ms0">un</token><token pos="ncms000">favor</token><token pos="aq0cs0">celestial</token><token pos="fc">,</token><token pos="di0ms0">un</token><token pos="ncms000">milagro</token>
+		<to_annotate>[[(256, 322), 'un milagro', 'c_4'], ['le', 'c_13'], [(130, 194), 'un favor', 'c_16']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Preference" head="favor">
+				<argument type="Contrast" dependent="un" />
+				<argument type="Event" dependent="celestial , un milagro . Me preocupaba sólo de mis pecados y de mi poca fe  quot" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Pero la imposición de la imagen del Papa sobre su cuerpo y los rezos provocaron el milagro.
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="da0fs0">la</token><token pos="ncfs000">imposición</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">imagen</token><token pos="spcms">del</token><token pos="np00000">Papa</token><token pos="sps00">sobre</token><token pos="dp3cs0">su</token><token pos="ncms000">cuerpo</token><token pos="cc">y</token><token pos="da0mp0">los</token><token pos="ncmp000">rezos</token>
+		</theme>
+		<rheme concept_ref1="c_9" concept_ref2="c_15">
+			<token pos="vmis3p0">provocaron</token><token pos="da0ms0">el</token><token pos="ncms000">milagro</token>
+		<to_annotate>[[(89, 155), 'el milagro', 'c_9'], [(89, 155), 'el milagro', 'c_15']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 "Una curación científicamente inexplicable", testificó el profesor Zannini, fallecido el pasado año, ante el tribunal para la beatificación.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el profesor Zannini , fallecido el pasado año , " />
+			<frame type="Time_vector" head="ante">
+				<argument type="Event" dependent="el tribunal para la" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

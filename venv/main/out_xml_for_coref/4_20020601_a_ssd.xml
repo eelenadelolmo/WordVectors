@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+		<!ELEMENT str (#PCDATA)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="4_20020601_a_ssd">
+
+
+	<sentence>
+		<str>
+			 El alargamiento en la esperanza de vida en los pacientes con VIH ha convertido a la hepatitis C en la primera causa individual de la muerte en el sida.
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="ncms000">alargamiento</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">esperanza</token><token pos="sps00">de</token><token pos="ncfs000">vida</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="nccp000">pacientes</token><token pos="sps00">con</token><token pos="np00000">VIH</token>
+		</theme>
+		<rheme>
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">convertido</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncms000">hepatitis</token><token pos="np00000">C</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ao0fs0">primera</token><token pos="ncfs000">causa</token><token pos="aq0cs0">individual</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">muerte</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">sida</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="People" head="individual">
+				<argument type="Person" dependent="de la"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Ahora hay más cirrosis hepáticas que infecciones, lo que obliga a los médicos a cambiar los tratamientos.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

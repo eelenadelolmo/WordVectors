@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+		<!ELEMENT str (#PCDATA)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="10_20010601_ssd">
+
+
+	<sentence>
+		<str>
+			 El gran galleguista Castelao escribió de sus compatriotas que son gente sufrida, que, cuando sienten que la realidad de su país les oprime, cogen sus cosas y se van.
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="aq0cs0">gran</token><token pos="nccs000">galleguista</token><token pos="np00000">Castelao</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3p0">son</token><token pos="ncfs000">gente</token><token pos="aq0fsp">sufrida</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="fc">,</token><token pos="cs">cuando</token><token pos="vmip3p0">sienten</token><token pos="cs">que</token><token pos="da0fs0">la</token><token pos="ncfs000">realidad</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncms000">país</token><token pos="pp3cpd00">les</token><token pos="vmip3s0">oprime</token><token pos="fc">,</token><token pos="vmip3p0">cogen</token><token pos="dp3cp0">sus</token><token pos="ncfp000">cosas</token><token pos="cc">y</token><token pos="p0300000">se</token><token pos="vmip3p0">van</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Kinship" head="son">
+				<argument type="Ego" dependent="El gran galleguista Castelao"/></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 "Los gallegos no protestan, emigran".
+		</str>
+		<theme>
+			<token pos="da0mp0">Los</token><token pos="ncmp000">gallegos</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vmip3p0">protestan</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Son cientos de miles por toda América y de ellos pueden depender las elecciones autonómicas que se anuncian para el mes de octubre.
+		</str>
+		<theme>
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="p0000000">se</token><token pos="vmip3p0">anuncian</token><token pos="sps00">para</token><token pos="da0ms0">el</token><token pos="ncms000">mes</token><token pos="spcms">de</token><token pos="ncms000">octubre</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Measure_linear_extent" head="miles">
+				<argument type="Count" dependent="Son cientos de"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 No ha de extrañar que todos los candidatos tengan las maletas preparadas para llevar la campaña al otro lado del Atlántico.
+		</str>
+		<theme>
+			<token pos="di0mp0">todos</token><token pos="da0mp0">los</token><token pos="ncmp000">candidatos</token>
+		</theme>
+		<rheme>
+			<token pos="vmsp3p0">tengan</token><token pos="da0fp0">las</token><token pos="nccp000">maletas</token><token pos="aq0fpp">preparadas</token><token pos="sps00">para</token><token pos="vmn0000">llevar</token><token pos="da0fs0">la</token><token pos="ncfs000">campaña</token><token pos="spcms">al</token><token pos="di0ms0">otro</token><token pos="ncms000">lado</token><token pos="spcms">del</token><token pos="np00000">Atlántico</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Los 78 años no arredran al señor Fraga, que últimamente ha preparado queimadas de fraternidad electoral en Argentina y México, y que para el mes de agosto tiene previsto hacerlo en México.
+		</str>
+		<theme>
+			<token pos="da0mp0">Los</token><token pos="z">78</token><token pos="ncmp000">años</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vmip3p0">arredran</token><token pos="spcms">al</token><token pos="ncms000">señor</token><token pos="np00000">Fraga</token><token pos="fc">,</token><token pos="cc">y</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Desde la Xunta, a través de los centros gallegos, cuida mucho a los fillos de la patria que se fueron y, como son gente agradecida, la mayoría vota al PP.
+		</str>
+		<theme>
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vmis3p0">fueron</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Kinship" head="son">
+				<argument type="Ego" dependent="como"/>
+				<argument type="Alter" dependent="son gente agradecida , la mayoría vota al PP"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Hicieron bien yéndose a América.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Dejaron atrás la opresión y muchos de ellos eligieron una tierra de saludables efectos, como es la de Buenos Aires, ciudad con unos 80.000 gallegos censados, entre los que 3.000 rebasan los 100 años.
+		</str>
+		<theme>
+			<token pos="pi0mp000">muchos</token><token pos="sps00">de</token><token pos="pp3mp000">ellos</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3p0">eligieron</token><token pos="di0fs0">una</token><token pos="ncfs000">tierra</token><token pos="sps00">de</token><token pos="aq0cp0">saludables</token><token pos="ncmp000">efectos</token><token pos="fc">,</token><token pos="cs">como</token><token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="sps00">de</token><token pos="aq0ms0">Buenos</token><token pos="ncms000">Aires</token><token pos="fc">,</token><token pos="ncfs000">ciudad</token><token pos="sps00">con</token><token pos="di0mp0">unos</token><token pos="z">80.000</token><token pos="ncmp000">gallegos</token><token pos="aq0mpp">censados</token><token pos="fc">,</token><token pos="sps00">entre</token><token pos="da0mp0">los</token><token pos="pr0cn000">que</token><token pos="z">3.000</token><token pos="vmip3p0">rebasan</token><token pos="da0mp0">los</token><token pos="z">100</token><token pos="ncmp000">años</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Tal longevidad merece un estudio de la Organización Mundial de la Salud.
+		</str>
+		<theme>
+			<token pos="dd0cs0">Tal</token><token pos="ncfs000">longevidad</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">merece</token><token pos="di0ms0">un</token><token pos="ncms000">estudio</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfp000">Organización</token><token pos="ncfp000">Mundial</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Salud</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="People" head="un">
+				<argument type="Descriptor" dependent="de"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La capital argentina se ha nutrido de población inmigrada llegada de media Europa, entre la que la gallega demuestra ser la que vive más años.
+		</str>
+		<theme>
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">vive</token><token pos="rg">más</token><token pos="ncmp000">años</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="la gallega "></frame>
+			<frame type="Relational_political_locales" head="capital">
+				<argument type="Container_possessor" dependent="la"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 ¿Qué tendrán los gallegos bonaerenses, si los italianos emigrados mueren a la misma edad que sus parientes que no se movieron de Nápoles?.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Pero ocurre que personas malpensadas del PSOE y del BNG sospechan que muchos de los centenarios censados murieron hace años, aunque su voto por correo pueda llegar ahora a su correspondiente colegio electoral.
+		</str>
+		<theme>
+			<token pos="ncfp000">personas</token><token pos="aq0fp0">malpensadas</token><token pos="spcms">del</token><token pos="np00000">PSOE</token><token pos="cc">y</token><token pos="spcms">del</token><token pos="np00000">BNG</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">sospechan</token><token pos="dp3cs0">su</token><token pos="ncms000">voto</token><token pos="sps00">por</token><token pos="ncms000">correo</token><token pos="vmsp3s0">pueda</token><token pos="vmn0000">llegar</token><token pos="rg">ahora</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="aq0cs0">correspondiente</token><token pos="ncms000">colegio</token><token pos="aq0cs0">electoral</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Y lo mismo se afirma que ocurre en Galicia.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 ¿Será verdad que el PP resucita a los muertos durante un ratito para que vayan a votar?.
+		</str>
+		<theme>
+			<token pos="da0ms0">el</token><token pos="np00000">PP</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">resucita</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="ncmp000">muertos</token><token pos="sps00">durante</token><token pos="di0ms0">un</token><token pos="ncms000">ratito</token><token pos="sps00">para</token><token pos="cs">que</token><token pos="vmsp3p0">vayan</token><token pos="sps00">a</token><token pos="vmn0000">votar</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

@@ -1,7 +1,0 @@
-{   ('Collaboration', 'cooperación'): [('Partner_2', 'internacional'), ('Partner_2', 'entre distintas jurisdicciones')],
-    ('Evidence', 'ilustra'): [],
-    ('Increment', 'Otra'): [],
-    ('Increment', 'otros'): [('Class', 'recientes')],
-    ('Political_locales', 'internacional'): [('Relative_location', 'cooperación internacional entre distintas jurisdicciones')],
-    ('Political_locales', 'jurisdicciones'): [],
-    ('Similarity', 'distintas'): [('Entities', 'jurisdicciones')]}

@@ -1,0 +1,22 @@
+1	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+2	has	_	have	_	VBZ	0	_	_	_	_	_	_	_	O
+3	been	_	be	_	VBN	0	_	_	_	_	_	_	_	O
+4	on	_	on	_	IN	0	_	_	_	_	_	_	_	O
+5	the	_	the	_	DT	0	_	_	_	_	_	_	_	O
+6	net	_	Net	_	NNP	0	_	_	_	_	_	_	_	O
+7	for	_	for	_	IN	0	_	_	_	_	_	_	_	O
+8	three	_	three	_	CD	0	_	_	_	_	_	three.num	Cardinal_numbers	S-Number
+9	years	_	year	_	NNS	0	_	_	_	_	_	_	_	S-Unit
+10	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+2	has	_	have	_	VBZ	0	_	_	_	_	_	_	_	O
+3	been	_	be	_	VBN	0	_	_	_	_	_	_	_	O
+4	on	_	on	_	IN	0	_	_	_	_	_	_	_	O
+5	the	_	the	_	DT	0	_	_	_	_	_	_	_	O
+6	net	_	Net	_	NNP	0	_	_	_	_	_	_	_	O
+7	for	_	for	_	IN	0	_	_	_	_	_	_	_	O
+8	three	_	three	_	CD	0	_	_	_	_	_	_	_	S-Count
+9	years	_	year	_	NNS	0	_	_	_	_	_	year.n	Calendric_unit	S-Unit
+10	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

@@ -1,0 +1,48 @@
+1	La	el	da0fs0	da0fs0	rep=no|t=yes|r=no|m=yes|c=no	3	de	_	_
+2	gran	gran	aq0cs0	aq0cs0	rep=no|t=yes|r=no|m=yes|c=no	3	amo	_	_
+3	banca	banca	ncfs000	ncfs000	rep=no|t=yes|r=no|m=yes|c=no	4	nsub	_	_
+4	sido	ser	vsp00sm	vsp00sm	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+5	muy	mucho	rg	rg	rep=no|t=no|r=yes|m=yes|c=no	6	advmo	_	_
+6	activa	activo	aq0fs0	aq0fs0	rep=no|t=no|r=yes|m=yes|c=no	4	cpre	_	_
+7	al	al	spcms	spcms	rep=no|t=no|r=yes|m=yes|c=no	4	prep	_	_
+8	implantar	implantar	vmn0000	vmn0000	rep=no|t=no|r=yes|m=yes|c=no	7	pob	_	_
+9	sus	su	dp3cp0	dp3cp0	rep=no|t=no|r=yes|m=yes|c=no	10	pos	_	_
+10	actividades	actividad	ncfp000	ncfp000	rep=no|t=no|r=yes|m=yes|c=no	8	dob	_	_
+11	al	al	spcms	spcms	rep=no|t=no|r=yes|m=yes|c=no	8	prep	_	_
+12	otro	otro	di0ms0	di0ms0	rep=no|t=no|r=yes|m=yes|c=no	13	de	_	_
+13	lado	lado	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	11	pob	_	_
+14	del	del	spcms	spcms	rep=no|t=no|r=yes|m=yes|c=no	13	prep	_	_
+15	Atlántico	Atlántico	np00000	np00000	rep=no|t=no|r=yes|m=yes|c=no	14	pob	_	_
+
+1	BBVA	BBVA	np00000	np00000	rep=no|t=yes|r=no|m=yes|c=yes	4	nsub	_	_
+2	y	y	cc	cc	rep=no|t=yes|r=no|m=yes|c=no	4	coord_fixe	_	_
+3	BSCH	BSCH	np00000	np00000	rep=no|t=yes|r=no|m=yes|c=yes	4	nsub	_	_
+4	han	haber	vaip3p0	vaip3p0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+5	integrado	integrar	vmp00sm	vmp00sm	rep=no|t=no|r=yes|m=yes|c=no	4	vob	_	_
+6	en	en	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	5	prep	_	_
+7	sus	su	dp3cp0	dp3cp0	rep=no|t=no|r=yes|m=yes|c=no	8	pos	_	_
+8	estructuras	estructura	ncfp000	ncfp000	rep=no|t=no|r=yes|m=yes|c=no	6	pob	_	_
+9	bancos	banco	ncmp000	ncmp000	rep=no|t=no|r=yes|m=yes|c=no	5	dob	_	_
+10	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	9	prep	_	_
+11	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	12	de	_	_
+12	región	región	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	10	pob	_	_
+
+1	En	en	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	6	prep	_	_
+2	México	México	np00000	np00000	rep=no|t=no|r=yes|m=yes|c=no	1	pob	_	_
+3	el	el	da0ms0	da0ms0	rep=no|t=yes|r=no|m=yes|c=no	4	de	_	_
+4	BBVA	BBVA	np00000	np00000	rep=no|t=yes|r=no|m=yes|c=no	5	nsub	_	_
+5	ha	haber	vaip3s0	vaip3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+6	incorporado	incorporar	vmp00sm	vmp00sm	rep=no|t=no|r=yes|m=yes|c=no	5	vob	_	_
+7	Bancomer	Bancomer	np00000	np00000	rep=no|t=no|r=yes|m=yes|c=no	6	dob	_	_
+8	,	,	fc	fc	rep=no|t=no|r=yes|m=yes|c=no	5	punc	_	_
+
+1	Ambas	ambos	dn0fp0	dn0fp0	rep=no|t=yes|r=no|m=yes|c=no	2	de	_	_
+2	adquisiciones	adquisición	ncfp000	ncfp000	rep=no|t=yes|r=no|m=yes|c=no	3	nsub	_	_
+3	tuvieron	tener	vmis3p0	vmis3p0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+4	un	uno	di0ms0	di0ms0	rep=no|t=no|r=yes|m=yes|c=no	5	de	_	_
+5	coste	coste	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	3	dob	_	_
+6	elevado	elevado	aq0msp	aq0msp	rep=no|t=no|r=yes|m=yes|c=no	5	amo	_	_
+
+
+
+

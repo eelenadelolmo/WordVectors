@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+        <!ELEMENT str (#PCDATA)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #REQUIRED>
+        <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="2_19981101_ssd">
+
+
+	<concepts>
+		<concept id="c_0">La Federación Nacional de Asociaciones de Lesionados Medulares ( Aspaym )</concept>
+		<concept id="c_1">Alberto de Pinto , presidente de Aspaym ,</concept>
+		<concept id="c_2">el ministerio</concept>
+		<concept id="c_3">la impresión que tiene de sus resultados</concept>
+		<concept id="c_4">El estudio</concept>
+		<concept id="c_5">La principal ventaja de la Viagra frente al tratamiento con prostaglandina</concept>
+		<concept id="c_6">lo que</concept>
+		<concept id="c_7">ha</concept>
+		<concept id="c_8">con el Gobierno</concept>
+		<concept id="c_9">prudencia</concept>
+		<concept id="c_10">su posición</concept>
+		<concept id="c_11">la Viagra</concept>
+		<concept id="c_12">un problema</concept>
+		<concept id="c_13">el jefe</concept>
+	</concepts>
+
+	<sentence>
+		<str>
+			 La Federación Nacional de Asociaciones de Lesionados Medulares ( Aspaym ) confía en que el Ministerio de Sanidad reconsidere su posición y financie la Viagra para aquellos pacientes que tengan problemas de fertilidad.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="ncfs000">Federación</token><token pos="aq0cs0">Nacional</token><token pos="spcms">de</token><token pos="ncms000">Asociaciones</token><token pos="sps00">de</token><token pos="ncms000">Lesionados</token><token pos="np00000">Medulares</token><token pos="fpa">(</token><token pos="np00000">Aspaym</token><token pos="fpt">)</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_4" concept_ref3="c_10" concept_ref4="c_11">
+			<token pos="vmip3s0">confía</token><token pos="sps00">en</token><token pos="cs">que</token><token pos="da0ms0">el</token><token pos="ncms000">Ministerio</token><token pos="spcms">de</token><token pos="ncms000">Sanidad</token><token pos="vmsp3s0">reconsidere</token><token pos="dp3cs0">su</token><token pos="ncfs000">posición</token><token pos="cc">y</token><token pos="vmm03s0">financie</token><token pos="da0fs0">la</token><token pos="np00000">Viagra</token><token pos="sps00">para</token><token pos="dd0mp0">aquellos</token><token pos="nccp000">pacientes</token>
+		<to_annotate>[[(180, 314), 'el Ministerio de Sanidad', 'c_2'], [(579, 653), 'aquellos pacientes', 'c_4'], [(354, 421), 'su posición', 'c_10'], [(483, 548), 'la Viagra', 'c_11']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Being_employed" head="posición">
+				<argument type="Employer" dependent="su" /></frame>
+			<frame type="Political_locales" head="Nacional" />
+			<frame type="Predicament" head="problemas">
+				<argument type="Domain" dependent="fertilidad" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Alberto de Pinto, presidente de Aspaym, ha anunciado que negociará con el Gobierno sobre esta cuestión una vez termine el ensayo clínico sobre la eficacia de la píldora que se desarrolla en el Hospital Nacional de Parapléjicos de Toledo.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np0000o">Alberto</token><token pos="sps00">de</token><token pos="np0000l">Pinto</token><token pos="fc">,</token><token pos="ncms000">presidente</token><token pos="sps00">de</token><token pos="np00000">Aspaym</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_4" concept_ref3="c_0" concept_ref4="c_7" concept_ref5="c_8" concept_ref6="c_10" concept_ref7="c_11">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">anunciado</token><token pos="cs">que</token><token pos="vmif3s0">negociará</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="np00000">Gobierno</token><token pos="sps00">sobre</token><token pos="dd0fs0">esta</token><token pos="ncfs000">cuestión</token><token pos="di0fs0">una</token><token pos="ncfs000">vez</token><token pos="vmsp3s0">termine</token><token pos="da0ms0">el</token><token pos="ncms000">ensayo</token><token pos="aq0ms0">clínico</token><token pos="sps00">sobre</token><token pos="da0fs0">la</token><token pos="ncfs000">eficacia</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">píldora</token>
+		<to_annotate>[[(310, 377), 'el Gobierno', 'c_2'], [(409, 478), 'esta cuestión', 'c_4'], [(577, 642), 'el ensayo', 'c_0'], [(146, 177), 'ha', 'c_7'], [(280, 377), 'con el Gobierno', 'c_8'], [(409, 478), 'esta cuestión', 'c_10'], [(709, 776), 'la eficacia', 'c_11']]</to_annotate></rheme>
+		<semantic_roles>
+			<main_frame type="Activity_finish" head="termine">
+				<argument type="Activity" dependent="desarrolla en el Hospital Nacional de Parapléjicos de" /></main_frame>
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="de" /></frame>
+			<frame type="Buildings" head="Hospital">
+				<argument type="Relative_location" dependent="Nacional" />
+				<argument type="Relative_location" dependent="de Parapléjicos de" /></frame>
+			<frame type="Cause_to_make_progress" head="desarrolla">
+				<argument type="Project" dependent="la píldora que" />
+				<argument type="Prior_state" dependent="en el Hospital Nacional" /></frame>
+			<main_frame type="Discussion" head="negociará">
+				<argument type="Interlocutor_1" dependent="ha" />
+				<argument type="Interlocutor_2" dependent="con el Gobierno" /></main_frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="la píldora que se desarrolla en" />
+				<argument type="Ground" dependent="el Hospital Nacional" /></frame>
+			<frame type="Point_of_dispute" head="cuestión">
+				<argument type="Time" dependent="una vez termine el ensayo clínico" />
+				<argument type="Descriptor" dependent="la eficacia de la píldora que se desarrolla en el Hospital Nacional de Parapléjicos de" /></frame>
+			<frame type="Political_locales" head="Nacional" />
+			<main_frame type="Statement" head="anunciado">
+				<argument type="Speaker" dependent="Pinto , presidente de Aspaym , ha" />
+				<argument type="Message" dependent="que negociará con el Gobierno sobre esta cuestión una vez termine el ensayo clínico sobre la eficacia de la píldora que se" /></main_frame>
+			<frame type="Trial" head="ensayo">
+				<argument type="Defendant" dependent="clínico" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El presidente de Aspaym, entidad que agrupa a unos 30.000 lesionados medulares de toda España, cree que el ministerio no ha dado aún este paso por "prudencia", para evitar que otros colectivos hagan la misma demanda, lo que, a su entender, "sería un problema".
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">el</token><token pos="ncms000">ministerio</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_6" concept_ref3="c_3" concept_ref4="c_4" concept_ref5="c_5" concept_ref6="c_7" concept_ref7="c_8" concept_ref8="c_9" concept_ref9="c_11" concept_ref10="c_12" concept_ref11="c_13">
+			<token pos="rn">no</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">dado</token><token pos="dd0ms0">este</token><token pos="ncms000">paso</token><token pos="sps00">por</token><token pos="fe">quot;</token><token pos="ncfs000">prudencia</token><token pos="fe">quot;</token><token pos="fc">,</token><token pos="sps00">para</token><token pos="vmn0000">evitar</token><token pos="cs">que</token><token pos="di0mp0">otros</token><token pos="ncmp000">colectivos</token><token pos="vmsp3p0">hagan</token><token pos="da0fs0">la</token><token pos="di0fs0">misma</token><token pos="ncfs000">demanda</token><token pos="fc">,</token><token pos="da0ns0">lo</token><token pos="pr0cn000">que</token><token pos="fc">,</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="vmn0000">entender</token><token pos="fc">,</token><token pos="fe">quot;</token><token pos="vsic3s0">sería</token><token pos="di0ms0">un</token><token pos="ncms000">problema</token><token pos="fe">quot;</token>
+		<to_annotate>[[(315, 380), 'este paso', 'c_1'], ['quot', 'c_6'], [(439, 477), 'prudencia', 'c_3'], [(624, 696), 'otros colectivos', 'c_4'], [(730, 829), 'la misma demanda', 'c_5'], [(251, 282), 'ha', 'c_7'], [(624, 696), 'otros colectivos', 'c_8'], [(439, 477), 'prudencia', 'c_9'], [(730, 760), 'la', 'c_11'], [(1125, 1192), 'un problema', 'c_12'], ['se', 'c_13']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El presidente de Aspaym , entidad que agrupa a unos 30.000 lesionados medulares de toda España , " />
+			<frame type="Aggregate" head="agrupa" />
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="de" /></frame>
+			<frame type="Certainty" head="cree">
+				<argument type="Cognizer" dependent="El presidente de Aspaym , entidad que agrupa a unos 30.000 lesionados medulares de toda" />
+				<argument type="Content" dependent="ministerio no ha dado aún este paso por  quot ; prudencia  quot ; , para evitar que otros colectivos" /></frame>
+			<frame type="Collaboration" head="agrupa a unos">
+				<argument type="Undertaking" dependent="30.000 lesionados medulares de" />
+				<argument type="Partner_2" dependent="de toda" /></frame>
+			<frame type="Experience_bodily_harm" head="lesionados" />
+			<frame type="Identicality" head="la misma">
+				<argument type="Type" dependent="demanda" /></frame>
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="agrupa" /></frame>
+			<frame type="Intentionally_act" head="paso">
+				<argument type="Agent" dependent="el ministerio" />
+				<argument type="Act" dependent="paso por  quot ; prudencia" /></frame>
+			<frame type="Opinion" head="quot">
+				<argument type="Cognizer" dependent="su" /></frame>
+			<frame type="Predicament" head="problema" />
+			<main_frame type="Preventing_or_letting" head="evitar">
+				<argument type="Event" dependent="otros colectivos" /></main_frame>
+			<frame type="Proportional_quantity" head="por">
+				<argument type="Q_prop" dependent="toda" />
+				<argument type="Individuals" dependent="hagan" /></frame>
+			<frame type="Request" head="demanda">
+				<argument type="Message" dependent="que el" /></frame>
+			<main_frame type="Sleep" head="hagan">
+				<argument type="Sleeper" dependent="el ministerio" />
+				<argument type="Sleeper" dependent="prudencia" /></main_frame>
+			<main_frame type="Taking_time" head="dado">
+				<argument type="Agent" dependent="el ministerio" />
+				<argument type="Time_length" dependent="este paso por  quot ; prudencia" />
+				<argument type="Activity" dependent="evitar que otros colectivos hagan la misma demanda" /></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Aunque el ensayo clínico que se está llevando a cabo en el Hospital Nacional de Parapléjicos en 12 personas con lesiones medulares no terminará hasta mediados de noviembre, De Pinto adelantó que la impresión que tiene de sus resultados es "buenísima, porque solventará muchos problemas".
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fs0">la</token><token pos="ncfs000">impresión</token><token pos="pr0cn000">que</token><token pos="vmip3s0">tiene</token><token pos="sps00">de</token><token pos="dp3cp0">sus</token><token pos="ncmp000">resultados</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_3" concept_ref3="c_12">
+			<token pos="vsip3s0">es</token><token pos="fe">quot;</token><token pos="aq0fs0">buenísima</token><token pos="fc">,</token><token pos="fe">quot;</token>
+		<to_annotate>[['quot', 'c_6'], [(129, 166), 'buenísima', 'c_3'], [(129, 166), 'buenísima', 'c_12']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="De Pinto " />
+			<frame type="Bringing" head="llevando">
+				<argument type="Goal" dependent="el ensayo clínico" />
+				<argument type="Theme" dependent="es" /></frame>
+			<frame type="Buildings" head="Hospital">
+				<argument type="Relative_location" dependent="en 12 personas con lesiones medulares" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="buenísima" />
+				<argument type="Cause" dependent="solventará muchos problemas" /></frame>
+			<main_frame type="Causation" head="resultados">
+				<argument type="Cause" dependent="sus" /></main_frame>
+			<frame type="Desirability" head="buenísima">
+				<argument type="Degree" dependent="buenísima" /></frame>
+			<main_frame type="Experience_bodily_harm" head="lesiones">
+				<argument type="Body_part" dependent="cabo" /></main_frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="el Hospital Nacional de Parapléjicos en" />
+				<argument type="Ground" dependent="12 personas con lesiones medulares" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="el ensayo clínico que se está llevando a cabo" />
+				<argument type="Ground" dependent="el Hospital Nacional de Parapléjicos en" /></frame>
+			<frame type="People" head="personas">
+				<argument type="Descriptor" dependent="12" />
+				<argument type="Descriptor" dependent="con lesiones medulares" /></frame>
+			<frame type="Political_locales" head="Nacional" />
+			<frame type="Predicament" head="problemas" />
+			<frame type="Process_end" head="terminará">
+				<argument type="Process" dependent="cabo en el Hospital Nacional de Parapléjicos en 12 personas con lesiones" /></frame>
+			<frame type="Quantified_mass" head="muchos">
+				<argument type="Individuals" dependent="problemas" /></frame>
+			<frame type="Resolve_problem" head="solventará">
+				<argument type="Agent" dependent="es" />
+				<argument type="Problem" dependent="muchos problemas" /></frame>
+			<frame type="Sleep" head="llevando" />
+			<frame type="Statement" head="quot">
+				<argument type="Message" dependent="lesiones medulares no terminará hasta mediados de noviembre" />
+				<argument type="Speaker" dependent="De Pinto" />
+				<argument type="Message" dependent="adelantó que la impresión que tiene de sus resultados es  quot ; buenísima , porque solventará muchos problemas" /></frame>
+			<frame type="Time_vector" head="hasta">
+				<argument type="Event" dependent="lesiones medulares no terminará" />
+				<argument type="Landmark_event" dependent="mediados de noviembre" />
+				<argument type="Event" dependent="Pinto adelantó que la impresión que tiene de sus resultados es  quot ; buenísima , porque solventará muchos problemas  quot ;" /></frame>
+			<frame type="Trial" head="ensayo" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El estudio está dirigido por el jefe de la Unidad de Sexualidad y Reproducción Asistida del hospital, Antonio Sánchez Ramos, y servirá para comparar la efectividad del sildenafilo, base farmacológica de la Viagra, con la de la infiltración intracavernosa de prostaglandina E-1, método que se viene utilizando con bastante éxito en el centro sanitario.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0ms0">El</token><token pos="ncms000">estudio</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_11" concept_ref3="c_13">
+			<token pos="vmip3s0">está</token><token pos="aq0msp">dirigido</token><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="ncms000">jefe</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">Unidad</token><token pos="sps00">de</token><token pos="ncfs000">Sexualidad</token><token pos="cc">y</token><token pos="np00000">Reproducción</token><token pos="np00000">Asistida</token><token pos="spcms">del</token><token pos="ncms000">hospital</token><token pos="fc">,</token><token pos="ncfs000">Antonio</token><token pos="ncms000">Sánchez</token><token pos="np00000">Ramos</token><token pos="fc">,</token>
+		<to_annotate>[[(261, 564), 'la Unidad de Sexualidad y Reproducción Asistida del hospital', 'c_0'], [(261, 291), 'la', 'c_11'], [(169, 232), 'el jefe', 'c_13']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Assistance" head="servirá">
+				<argument type="Helper" dependent="de la Unidad de Sexualidad y Reproducción Asistida del hospital ," />
+				<argument type="Goal" dependent="para comparar la efectividad del sildenafilo , base farmacológica de la Viagra , con la de la infiltración intracavernosa de prostaglandina" /></frame>
+			<frame type="Attack" head="infiltración">
+				<argument type="Manner" dependent="de" />
+				<argument type="Victim" dependent="de prostaglandina E-1" /></frame>
+			<frame type="Body_parts" head="jefe">
+				<argument type="Possessor" dependent="de la Unidad de Sexualidad y Reproducción Asistida del" /></frame>
+			<frame type="Buildings" head="hospital" />
+			<frame type="Evaluative_comparison" head="comparar">
+				<argument type="Profiled_item" dependent="efectividad del sildenafilo , base farmacológica de la Viagra , con la de la infiltración intracavernosa de prostaglandina E-1 ," /></frame>
+			<frame type="Locale_by_use" head="centro">
+				<argument type="Use" dependent="sanitario" /></frame>
+			<frame type="Means" head="método">
+				<argument type="Purpose" dependent="que se viene utilizando con bastante éxito en el centro sanitario" /></frame>
+			<frame type="Scrutiny" head="estudio" />
+			<frame type="Success_or_failure" head="éxito" />
+			<frame type="Using" head="utilizando">
+				<argument type="Instrument" dependent="método que" />
+				<argument type="Purpose" dependent="con bastante éxito en el centro sanitario" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La principal ventaja de la Viagra frente al tratamiento con prostaglandina es que, para aplicar este último método, se precisa de un pinchazo en el pene.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0fs0">La</token><token pos="aq0cs0">principal</token><token pos="ncfs000">ventaja</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Viagra</token><token pos="rg">frente</token><token pos="spcms">al</token><token pos="ncms000">tratamiento</token><token pos="sps00">con</token><token pos="ncfs000">prostaglandina</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_7" concept_ref3="c_8" concept_ref4="c_10" concept_ref5="c_13">
+			<token pos="vsip3s0">es</token><token pos="cs">que</token><token pos="fc">,</token><token pos="sps00">para</token><token pos="vmn0000">aplicar</token><token pos="dd0ms0">este</token><token pos="ao0ms0">último</token><token pos="ncms000">método</token><token pos="fc">,</token><token pos="p0000000">se</token><token pos="vmip3s0">precisa</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">pinchazo</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">pene</token>
+		<to_annotate>[[(258, 359), 'este último método', 'c_4'], ['ha', 'c_7'], [(481, 640), 'un pinchazo en el pene', 'c_8'], [(481, 548), 'un pinchazo', 'c_10'], [(577, 640), 'el pene', 'c_13']]</to_annotate></rheme>
+		<semantic_roles>
+			<main_frame type="Have_as_requirement" head="precisa">
+				<argument type="Dependent" dependent="un pinchazo en el pene" /></main_frame>
+			<frame type="Importance" head="principal">
+				<argument type="Factor" dependent="ventaja de la Viagra frente al tratamiento con prostaglandina" /></frame>
+			<frame type="Means" head="método">
+				<argument type="Descriptor" dependent="último" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En el caso de la Viagra es suficiente con una pastilla, lo que la hace "más atractiva".
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0ns0">lo</token><token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_7" concept_ref3="c_8" concept_ref4="c_11">
+			<token pos="pp3fsa00">la</token><token pos="vmip3s0">hace</token><token pos="fe">quot;</token><token pos="rg">más</token><token pos="aq0fs0">atractiva</token><token pos="fe">quot;</token>
+		<to_annotate>[['quot', 'c_6'], ['ha', 'c_7'], [(182, 246), 'más atractiva', 'c_8'], [(88, 120), 'la', 'c_11']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="una">
+				<argument type="Entity" dependent="pastilla" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="atractiva" /></frame>
+			<frame type="Instance" head="caso">
+				<argument type="Type" dependent="Viagra" /></frame>
+			<main_frame type="Manufacturing" head="hace">
+				<argument type="Producer" dependent="que la" />
+				<argument type="Product" dependent="más atractiva" /></main_frame>
+			<frame type="Sufficiency" head="suficiente">
+				<argument type="Item" dependent="una pastilla" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

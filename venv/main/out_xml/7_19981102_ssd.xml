@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+        <!ELEMENT str (#PCDATA)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #IMPLIED>
+        <!ELEMENT rheme (token|mention)*>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT mention (token+)>
+            <!ATTLIST mention concept_ref CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="7_19981102_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Ninguno de los anuncios</concept>
+		<concept id="c_1">Este malestar</concept>
+		<concept id="c_2">presidente</concept>
+		<concept id="c_3">una semana</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Casi 10 millones de dólares ( 1.400 millones de pesetas ) le costó a la oposición republicana la batería de anuncios televisivos basados en el caso Lewinsky con que han barrido, en los últimos días de la presente campaña electoral, las 56 circunscripciones en que se elegirán a los candidatos al legislativo, Según reveló Todd Harris, portavoz del Comité Nacional Republicano para el Congreso.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ninguno de los anuncios menciona directamente a Monica Lewinsky o la posibilidad de un impeachment del presidente Bill Clinton, pero ponen de manifiesto las mentiras y tergiversaciones con las que el actual inquilino de la Casa Blanca intentó encubrir su aventura con la becaria.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="pi0ms000">Ninguno</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">anuncios</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_2">
+			<token pos="vmip3s0">menciona</token><token pos="sps00">a</token><mention concept_ref="c_0"><token pos="np0000l">Monica</token><token pos="np0000l">Lewinsky</token></mention><token pos="cc">o</token><token pos="da0fs0">la</token><token pos="ncfs000">posibilidad</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">impeachment</token><token pos="spcms">del</token><mention concept_ref="c_2"><token pos="ncms000">presidente</token></mention><token pos="ncms000">Bill</token><token pos="np00000">Clinton</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Actually_occurring_entity" head="actual">
+				<argument type="Type" dependent="de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Este malestar impulsó a los republicanos a no rozar el caso Lewinsky en la campaña electoral hasta apenas una semana antes de los comicios, cuando lanzaron su última andanada contra los demócratas con una serie de anuncios televisivos apoyados en el escándalo sexual.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="dd0ms0">Este</token><token pos="ncms000">malestar</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_2" concept_ref4="c_3">
+			<token pos="vmis3s0">impulsó</token><token pos="sps00">a</token><mention concept_ref="c_0"><token pos="da0mp0">los</token><token pos="aq0mp0">republicanos</token></mention><token pos="sps00">a</token><token pos="rn">no</token><token pos="vmn0000">rozar</token><mention concept_ref="c_1"><token pos="da0ms0">el</token><token pos="ncms000">caso</token></mention><token pos="np00000">Lewinsky</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">campaña</token><token pos="aq0cs0">electoral</token><token pos="sps00">hasta</token><token pos="rg">apenas</token><mention concept_ref="c_3"><token pos="di0fs0">una</token><token pos="ncfs000">semana</token></mention><token pos="rg">antes</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">comicios</token><token pos="fc">,</token><token pos="cs">cuando</token><token pos="vmis3p0">lanzaron</token><token pos="dp3cs0">su</token><token pos="ao0fs0">última</token><token pos="ncfs000">andanada</token><token pos="sps00">contra</token><token pos="da0mp0">los</token><token pos="nccp000">demócratas</token><token pos="sps00">con</token><mention concept_ref="c_2"><token pos="di0fs0">una</token><token pos="ncfs000">serie</token></mention><token pos="sps00">de</token><token pos="ncmp000">anuncios</token><token pos="aq0mp0">televisivos</token><token pos="aq0mpp">apoyados</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">escándalo</token><token pos="aq0cs0">sexual</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Time_vector" head="antes" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Si esta táctica será efectiva está por ver, ante unos votantes demócratas cuyas prioridades son la educación, la sanidad y la seguridad social, y unos votantes republicanos a quienes les preocupan sobre todo los impuestos, la criminalidad y la beneficencia.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Kinship" head="son" />
+			<frame type="Time_vector" head="ante">
+				<argument type="Event" dependent="seguridad social , y unos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sólo en este sector se consideran los valores morales como una prioridad a la hora de votar, pero es citada por apenas un tercio de los republicanos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Fields" head="sector" />
+			<frame type="People" head="un">
+				<argument type="Descriptor" dependent="apenas" />
+				<argument type="Person" dependent="tercio de los" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

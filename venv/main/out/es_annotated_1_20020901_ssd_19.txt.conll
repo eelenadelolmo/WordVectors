@@ -1,0 +1,10 @@
+{   ('Calendric_unit', 'año'): [('Relative_time', 'pasado el')],
+    ('Catastrophe', 'víctima'): [],
+    ('Instance', 'víctima'): [('Instance_prop', '13')],
+    ('Intentionally_create', 'establecimiento'): [('Created_entity', 'un servicio policial')],
+    ('Interior_profile_relation', 'En'): [('Ground', '13 supuestos')],
+    ('Law_enforcement_agency', 'policial'): [],
+    ('Make_agreement_on_action', 'supuestos'): [('Party_1', 'se'), ('Obligation', 'el año pasado el establecimiento de un servicio policial de vigilancia y protección personal de la víctima')],
+    ('Public_services', 'servicio'): [],
+    ('Relative_time', 'pasado el'): [('Focal_occasion', 'año pasado')],
+    ('Scrutiny', 'vigilancia'): []}

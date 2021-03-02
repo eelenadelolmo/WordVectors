@@ -1,8 +1,0 @@
-{   ('Age', 'Nueva'): [('Entity', 'Hampshire')],
-    ('Competition', 'competidores'): [],
-    ('Getting', 'vencer'): [],
-    ('Goal', 'en'): [('Landmark', 'vencer en Nueva Hampshire')],
-    ('Interior_profile_relation', 'en'): [('Figure', 'vencer en'), ('Ground', 'Nueva')],
-    ('Medical_conditions', 'frío'): [],
-    ('Statement', 'desafiar'): [('Speaker', 'la'), ('Message', 'frío y a la nieve , o a los competidores')],
-    ('Sufficiency', 'basta'): [('Item', 'la'), ('Enabled_situation', 'desafiar al frío y a la nieve')]}

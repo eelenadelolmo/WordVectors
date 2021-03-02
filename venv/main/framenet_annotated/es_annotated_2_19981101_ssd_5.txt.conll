@@ -1,0 +1,11 @@
+{   ('Assistance', 'servirá'): [   ('Helper', 'de la Unidad de Sexualidad y Reproducción Asistida del hospital ,'),
+                                   ('Goal', 'para comparar la efectividad del sildenafilo , base farmacológica de la Viagra , con la de la infiltración intracavernosa de prostaglandina')],
+    ('Attack', 'infiltración'): [('Manner', 'de'), ('Victim', 'de prostaglandina E-1')],
+    ('Body_parts', 'jefe'): [('Possessor', 'de la Unidad de Sexualidad y Reproducción Asistida del')],
+    ('Buildings', 'hospital'): [],
+    ('Evaluative_comparison', 'comparar'): [('Profiled_item', 'efectividad del sildenafilo , base farmacológica de la Viagra , con la de la infiltración intracavernosa de prostaglandina E-1 ,')],
+    ('Locale_by_use', 'centro'): [('Use', 'sanitario')],
+    ('Means', 'método'): [('Purpose', 'que se viene utilizando con bastante éxito en el centro sanitario')],
+    ('Scrutiny', 'estudio'): [],
+    ('Success_or_failure', 'éxito'): [],
+    ('Using', 'utilizando'): [('Instrument', 'método que'), ('Purpose', 'con bastante éxito en el centro sanitario')]}

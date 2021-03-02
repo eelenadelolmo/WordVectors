@@ -1,0 +1,7 @@
+{   ('Building_subparts', 'fiscalía'): [],
+    ('Calendric_unit', 'año'): [('Relative_time', 'pasado')],
+    ('Criminal_investigation', 'investigación'): [],
+    ('Foreign_or_domestic_country', 'doméstica'): [],
+    ('Means', 'diligencias de'): [('Purpose', 'investigación')],
+    ('Public_services', 'servicio'): [('Domain', 'violencia doméstica'), ('Target_group', 'de Barcelona')],
+    ('Receiving', 'recibió'): [('Theme', 'denuncias')]}

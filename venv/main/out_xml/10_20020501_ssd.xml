@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+        <!ELEMENT str (#PCDATA)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #IMPLIED>
+        <!ELEMENT rheme (token|mention)*>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT mention (token+)>
+            <!ATTLIST mention concept_ref CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="10_20020501_ssd">
+
+
+	<concepts>
+		<concept id="c_0">el trabajo</concept>
+		<concept id="c_1">Adán</concept>
+		<concept id="c_2">que</concept>
+		<concept id="c_3">Esto</concept>
+		<concept id="c_4">Todos los ciudadanos</concept>
+		<concept id="c_5">lo</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Los antiguos creían que el trabajo era un castigo de Dios.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">trabajo</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_3">
+			<token pos="vsii3s0">era</token><mention concept_ref="c_0"><token pos="di0ms0">un</token><token pos="ncms000">castigo</token></mention><token pos="sps00">de</token><mention concept_ref="c_3"><token pos="np00000">Dios</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Calendric_unit" head="era" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Según la Biblia, por no obedecer a Dios y comer de la fruta prohibida, Adán, en representación de toda la humanidad, tendrá que ganarse el pan con el sudor de su frente porque tendrá que luchar contra la tierra y los elementos para arrancarle los medios de subsistencia.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np00000">Adán</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_0" concept_ref3="c_4">
+			<token pos="sps00">Según</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="np00000">Biblia</token></mention><token pos="sps00">por</token><token pos="rn">no</token><token pos="vmn0000">obedecer</token><token pos="sps00">a</token><mention concept_ref="c_3"><token pos="np00000">Dios</token></mention><token pos="cc">y</token><token pos="vmn0000">comer</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">fruta</token><token pos="aq0fsp">prohibida</token><token pos="sps00">en</token><token pos="ncfs000">representación</token><token pos="sps00">de</token><token pos="di0fs0">toda</token><mention concept_ref="c_4"><token pos="da0fs0">la</token><token pos="ncfs000">humanidad</token></mention><token pos="vmif3s0">tendrá</token><token pos="cs">que</token><token pos="vmn0000">ganarse</token><token pos="da0ms0">el</token><token pos="ncms000">pan</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">sudor</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncfs000">frente</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La verdad es que en la antigüedad el trabajo de la agricultura, de la manufactura, de la minería y de la construcción resultaba terriblemente dificultoso y pesado.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="ncfs000">verdad</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<token pos="vsip3s0">es</token><token pos="cs">que</token><token pos="sps00">en</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="ncfs000">antigüedad</token></mention><token pos="da0ms0">el</token><token pos="ncms000">trabajo</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">agricultura</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">manufactura</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">minería</token><token pos="cc">y</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">construcción</token><token pos="vmii3s0">resultaba</token><token pos="rg">terriblemente</token><token pos="aq0ms0">dificultoso</token><token pos="cc">y</token><token pos="aq0ms0">pesado</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La mayor parte se realizaba en régimen de esclavitud.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="aq0cs0">mayor</token><token pos="ncfs000">parte</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<mention concept_ref="c_0"><token pos="p0000000">se</token></mention><token pos="vmii3s0">realizaba</token><token pos="sps00">en</token><token pos="ncms000">régimen</token><token pos="sps00">de</token><token pos="ncfs000">esclavitud</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="mayor">
+				<argument type="Governed" dependent="La" />
+				<argument type="Leader" dependent="parte se" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Luego viene la dignificación del trabajo, el proceso por medio del cual el trabajo se transforma gradualmente de una maldición en una bendición.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">trabajo</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<mention concept_ref="c_0"><token pos="p0300000">se</token></mention><token pos="vmip3s0">transforma</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="ncfs000">maldición</token><token pos="sps00">en</token><token pos="di0fs0">una</token><token pos="ncfs000">bendición</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Gracias a la tecnología, a la división y organización del trabajo, a la acumulación de conocimientos y experiencias, el trabajo se ha ido humanizando y perdiendo el carácter de maldición divina.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">trabajo</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<mention concept_ref="c_0"><token pos="p0300000">se</token></mention><token pos="vaip3s0">ha</token><token pos="vmp00sm">ido</token><token pos="vmg0000">humanizando</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero la humanización del trabajo no ha sido fácil ni gratuita.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">la</token><token pos="ncfs000">humanización</token><token pos="spcms">del</token><token pos="ncms000">trabajo</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vsp00sm">sido</token><token pos="aq0cs0">fácil</token><token pos="cc">ni</token><token pos="aq0fs0">gratuita</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los trabajadores organizados la han conquistado a lo largo de muchos años de lucha.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">trabajadores</token><token pos="aq0mpp">organizados</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_4" concept_ref3="c_5">
+			<mention concept_ref="c_0"><token pos="pp3fsa00">la</token></mention><token pos="vaip3p0">han</token><token pos="vmp00sm">conquistado</token><token pos="sps00">a</token><mention concept_ref="c_5"><token pos="da0ms0">lo</token></mention><token pos="aq0cs0">largo</token><token pos="spcms">de</token><mention concept_ref="c_4"><token pos="di0mp0">muchos</token><token pos="ncmp000">años</token></mention><token pos="sps00">de</token><token pos="ncfs000">lucha</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Aunque todavía hoy quedan lugares y empresas en que el trabajo se realiza en condiciones infrahumanas, como regla general el carácter de maldición del trabajo tiende a desaparecer.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El trabajo es la solución para muchas cosas.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">trabajo</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_0"><token pos="da0fs0">la</token></mention><token pos="ncfs000">solución</token><token pos="sps00">para</token><token pos="di0fp0">muchas</token><token pos="ncfp000">cosas</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Es la alegría del especialista y del creador, el orgullo del artesano y del miembro de un equipo, la pasión del intelectual y del científico.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Aunque quedan muchas personas que siguen sintiendo el trabajo como una maldición, el componente subjetivo juega un papel importante en estas percepciones.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El trabajo, en primer lugar, nos permite ganar el sustento diario sin tener que luchar contra los elementos naturales.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">trabajo</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_3" concept_ref3="c_5">
+			<mention concept_ref="c_3"><token pos="pp1cp000">nos</token></mention><token pos="vmip3s0">permite</token><token pos="vmn0000">ganar</token><token pos="da0ms0">el</token><token pos="ncms000">sustento</token><token pos="aq0ms0">diario</token><token pos="sps00">sin</token><token pos="vmn0000">tener</token><token pos="cs">que</token><token pos="vmn0000">luchar</token><token pos="sps00">contra</token><token pos="da0mp0">los</token><token pos="ncmp000">elementos</token><token pos="aq0cp0">naturales</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Misdeed" head="sin" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Además nos socializa y nos hace miembros de equipos y comunidades que satisfacen nuestras apetencias de sociabilidad, de compartir pensamientos, penas y alegrías.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<token pos="vmip3p0">satisfacen</token><mention concept_ref="c_0"><token pos="dp1fpp">nuestras</token><token pos="ncfp000">apetencias</token></mention><token pos="sps00">de</token><token pos="ncfs000">sociabilidad</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="vmn0000">compartir</token><token pos="ncmp000">pensamientos</token><token pos="fc">,</token><token pos="ncfp000">penas</token><token pos="cc">y</token><token pos="ncfp000">alegrías</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El trabajo bien hecho genera autoestima y, no en último lugar, llena nuestras horas del día de ideas positivas y pensamientos constructivos.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">trabajo</token><token pos="rg">bien</token><token pos="aq0msp">hecho</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<token pos="vmip3s0">genera</token><mention concept_ref="c_0"><token pos="ncfs000">autoestima</token></mention>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El trabajo es la base de casi todo lo que necesita un ser humano hoy para ser una persona equilibrada, segura de sí misma, para disfrutar de la vida y ser feliz.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">trabajo</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_3" concept_ref3="c_5">
+			<token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="nccs000">base</token><token pos="sps00">de</token><token pos="rg">casi</token><mention concept_ref="c_3"><token pos="di0ms0">todo</token><token pos="da0ns0">lo</token></mention><token pos="pr0cn000">que</token><token pos="vmip3s0">necesita</token><token pos="di0ms0">un</token><token pos="ncms000">ser</token><token pos="aq0ms0">humano</token><token pos="rg">hoy</token><token pos="sps00">para</token><token pos="vsn0000">ser</token><token pos="di0fs0">una</token><token pos="ncfs000">persona</token><token pos="aq0fsp">equilibrada</token><token pos="fc">,</token><token pos="aq0fs0">segura</token><token pos="sps00">de</token><token pos="pp3cno00">sí</token><token pos="aq0fs0">misma</token><token pos="fc">,</token><token pos="sps00">para</token><token pos="vmn0000">disfrutar</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">vida</token><token pos="cc">y</token><token pos="vsn0000">ser</token><token pos="aq0cs0">feliz</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Locale_by_use" head="base">
+				<argument type="Container_possessor" dependent="El trabajo es la" /></frame>
+			<frame type="People" head="un">
+				<argument type="Descriptor" dependent="casi todo lo que necesita" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por eso, en un momento dado de la historia, el trabajo se convierte en un derecho de todos los ciudadanos, que está reconocido en la ley fundamental - - la Constitución - - de muchos estados.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">trabajo</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_3" concept_ref3="c_4" concept_ref4="c_5">
+			<mention concept_ref="c_0"><token pos="p0300000">se</token></mention><token pos="vmip3s0">convierte</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="ncms000">derecho</token><token pos="sps00">de</token><token pos="di0mp0">todos</token><mention concept_ref="c_4"><token pos="da0mp0">los</token><token pos="ncmp000">ciudadanos</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero, últimamente, el trabajo, que es principio de realización personal y derecho, se ha convertido en un problema, porque es escaso, está mal pagado en relación a las necesidades que se han creado y se aceptan como normales, es temporal y precario, se ha hecho anodino y aburrido ( por exceso de mecanización ), deja de ser una fuente de alegría y base de la realización humana para convertirse en un fantasma que atormenta y angustia.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">trabajo</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vsip3s0">es</token><token pos="ncms000">principio</token><token pos="sps00">de</token><token pos="ncfs000">realización</token><token pos="aq0cs0">personal</token><token pos="cc">y</token><token pos="ncms000">derecho</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<token pos="cc">Pero</token><token pos="rg">últimamente</token><token pos="p0300000">se</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">convertido</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="ncms000">problema</token><token pos="cs">porque</token><token pos="vsip3s0">es</token><token pos="aq0ms0">escaso</token><token pos="fc">,</token><token pos="vmip3s0">está</token><token pos="rg">mal</token><token pos="aq0msp">pagado</token><token pos="sps00">en</token><token pos="ncfs000">relación</token><token pos="sps00">a</token><token pos="da0fp0">las</token><token pos="ncfp000">necesidades</token><token pos="fc">,</token><token pos="vsip3s0">es</token><token pos="aq0cs0">temporal</token><token pos="cc">y</token><token pos="aq0ms0">precario</token><token pos="fc">,</token><token pos="p0300000">se</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">hecho</token><token pos="aq0ms0">anodino</token><token pos="cc">y</token><token pos="aq0msp">aburrido</token><token pos="fpa">(</token><token pos="sps00">por</token><token pos="ncms000">exceso</token><token pos="sps00">de</token><token pos="ncfs000">mecanización</token><token pos="fpt">)</token><token pos="fc">,</token><token pos="vmip3s0">deja</token><token pos="sps00">de</token><token pos="vsn0000">ser</token><token pos="di0fs0">una</token><token pos="ncfs000">fuente</token><token pos="sps00">de</token><token pos="ncfs000">alegría</token><token pos="cc">y</token><token pos="ncfs000">base</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">realización</token><token pos="aq0fs0">humana</token><token pos="sps00">para</token><token pos="vmn0000">convertirse</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="nccs000">fantasma</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Más aun, para algunos es fuente de marginación, en la medida en que la sociedad clasifica a las personas según lo que hacen.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Mucho de esto se debe a que el trabajo también tiene el carácter de mercancía que se compra y vende en un mercado competitivo.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">trabajo</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<token pos="vmip3s0">tiene</token><token pos="da0ms0">el</token><token pos="ncms000">carácter</token><token pos="sps00">de</token><token pos="ncfs000">mercancía</token><token pos="pr0cn000">que</token><mention concept_ref="c_0"><token pos="p0000000">se</token></mention><token pos="vmip3s0">compra</token><token pos="cc">y</token><token pos="vmip3s0">vende</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="ncms000">mercado</token><token pos="aq0ms0">competitivo</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ahora nuestros gobernantes quieren cambiar las reglas por las que rige este mercado, porque dicen que es poco flexible.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="dp1mpp">nuestros</token><token pos="nccp000">gobernantes</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<token pos="rg">Ahora</token><token pos="vmip3p0">quieren</token><token pos="vmn0000">cambiar</token><token pos="da0fp0">las</token><token pos="ncfp000">reglas</token><token pos="sps00">por</token><token pos="da0fp0">las</token><token pos="pr0cn000">que</token><token pos="vmip3s0">rige</token><token pos="dd0ms0">este</token><token pos="ncms000">mercado</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En realidad, porque los trabajadores están protegidos por unas leyes y reglamentos laborales que en su día aprobaron otros gobernantes como la manera de defender los derechos de los trabajadores y al trabajo como un derecho.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Defending" head="defender" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Esto es intolerable.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="pd0ns000">Esto</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="aq0cs0">intolerable</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Todos los ciudadanos estamos a favor de que se persigan los abusos.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="di0mp0">Todos</token><token pos="da0mp0">los</token><token pos="ncmp000">ciudadanos</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_5">
+			<token pos="vmip1p0">estamos</token><token pos="sps00">a</token><token pos="ncfs000">favor</token><token pos="sps00">de</token><token pos="cs">que</token><mention concept_ref="c_0"><token pos="p0000000">se</token></mention><token pos="vmsp3p0">persigan</token><token pos="da0mp0">los</token><token pos="ncmp000">abusos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Preference" head="favor">
+				<argument type="Event" dependent="de que se persigan" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por otro lado, todos sabemos que en el sistema de beneficios por desempleo se cometen abusos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="todos " />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero, puestos a perseguir abusos, el Gobierno debería comenzar por los abusos de todos aquellos que no pagan impuestos y tienen su capital en el extranjero.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="np00000">Gobierno</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_4" concept_ref3="c_5">
+			<token pos="aq0mpp">puestos</token><token pos="sps00">a</token><token pos="vmn0000">perseguir</token><token pos="ncmp000">abusos</token><token pos="vmic3s0">debería</token><token pos="vmn0000">comenzar</token><token pos="sps00">por</token><token pos="da0mp0">los</token><token pos="ncmp000">abusos</token><token pos="sps00">de</token><mention concept_ref="c_4"><token pos="di0mp0">todos</token><token pos="dd0mp0">aquellos</token></mention><token pos="pr0cn000">que</token><token pos="rn">no</token><token pos="vmip3p0">pagan</token><token pos="ncmp000">impuestos</token><token pos="cc">y</token><token pos="vmip3p0">tienen</token><token pos="dp3cs0">su</token><token pos="ncfs000">capital</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">extranjero</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="People_by_religion" head="pagan" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Cuando solucionen esto podrán ocuparse de los abusos de los beneficios por desempleo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Empezar a moralizar el mercado por los abusos de los más desgraciados, los desempleados, es una vergüenza en un país donde los escándalos financieros están a la orden del día.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="People" head="un" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Con esta manera de proceder, el Gobierno del PP se muestra fuerte con los débiles y débil con los fuertes, que es el colmo de la corrupción y la hipocresía del poder.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="np00000">Gobierno</token><token pos="spcms">del</token><token pos="np00000">PP</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_5">
+			<mention concept_ref="c_0"><token pos="p0300000">se</token></mention><token pos="vmip3s0">muestra</token><token pos="aq0cs0">fuerte</token><token pos="sps00">con</token><token pos="da0mp0">los</token><token pos="aq0cp0">débiles</token><token pos="cc">y</token><token pos="aq0cs0">débil</token><token pos="sps00">con</token><token pos="da0mp0">los</token><token pos="aq0cp0">fuertes</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Economista.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	
+</text>

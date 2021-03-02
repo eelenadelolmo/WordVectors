@@ -1,5 +1,0 @@
-{   ('Aggregate', 'colectivo'): [('Aggregate_property', 'inmigrante')],
-    ('Capability', 'ha'): [('Entity', 'la'), ('Event', 'organizarse para entablar un diálogo fluido con la Administración')],
-    ('Causation', 'porque'): [('Effect', 'inmigrante tiene un serio problema'), ('Cause', 'no ha sabido organizarse para entablar un diálogo fluido con la Administración')],
-    ('Intentionally_create', 'organizarse para'): [('Created_entity', 'un diálogo fluido con la Administración')],
-    ('Predicament', 'problema'): [('Situation', 'colectivo inmigrante')]}

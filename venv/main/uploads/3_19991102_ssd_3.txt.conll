@@ -1,0 +1,17 @@
+1	en	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+2	barcelona	_	Barcelona	_	NNP	0	_	_	_	_	_	_	_	O
+3	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+4	juicio	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+5	nera	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+6	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+7	de	_	de	_	IN	0	_	_	_	_	_	_	_	O
+8	luis	_	Luis	_	NNP	0	_	_	_	_	_	_	_	O
+9	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+10	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+11	que	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+12	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+13	el	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+14	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	S-Descriptor
+15	ritual	_	ritual	_	NN	0	_	_	_	_	_	ritual.n	Custom	O
+16	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

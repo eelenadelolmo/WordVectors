@@ -1,0 +1,10 @@
+{   ('Aggregate', 'comunidades'): [],
+    ('Aggregate', 'fijado'): [('Individuals', 'temario')],
+    ('Cardinal_numbers', 'uno'): [('Entity', 'de los más usados en las aulas vascas')],
+    ('Degree', 'excede'): [('Gradable_attribute', 'excede')],
+    ('Education_teaching', 'Educación'): [('Subject', 'para las comunidades con lengua propia')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'uno de los más usados'), ('Ground', 'aulas vascas')],
+    ('Surpassing', 'excede'): [('Time', 'excede'), ('Profiled_item', 'el 55 % de temario común fijado por Educación para las comunidades con lengua propia')],
+    ('Text', 'volumen de'): [('Author', 'Anaya')],
+    ('Timetable', 'temario'): [],
+    ('Typicality', 'común'): [('State_of_affairs', 'temario')]}

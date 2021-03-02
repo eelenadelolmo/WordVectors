@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+		<!ELEMENT str (#PCDATA)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="3_19991202_ssd">
+
+
+	<sentence>
+		<str>
+			 La UE aprovechó la referencia de Clinton a posibles sanciones comerciales por motivos laborales para ganar el apoyo de esos países.
+		</str>
+		<theme>
+			<token pos="da0fs0">La</token><token pos="np00000">UE</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">aprovechó</token><token pos="da0fs0">la</token><token pos="ncfs000">referencia</token><token pos="sps00">de</token><token pos="np00000">Clinton</token><token pos="sps00">a</token><token pos="aq0cp0">posibles</token><token pos="ncfp000">sanciones</token><token pos="aq0cp0">comerciales</token><token pos="sps00">por</token><token pos="ncmp000">motivos</token><token pos="aq0cp0">laborales</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Los Quince sólo defienden crear un foro de trabajo permanente entre la OMC y la Organización Internacional de Trabajo para reforzar el respeto de los derechos laborales y excluye la posibilidad de sanciones.
+		</str>
+		<theme>
+			<token pos="da0mp0">Los</token><token pos="pn0cp000">Quince</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">defienden</token><token pos="vmn0000">crear</token><token pos="di0ms0">un</token><token pos="ncms000">foro</token><token pos="sps00">de</token><token pos="ncms000">trabajo</token><token pos="aq0cs0">permanente</token><token pos="sps00">entre</token><token pos="da0fs0">la</token><token pos="np00000">OMC</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncms000">Organización</token><token pos="ncms000">Internacional</token><token pos="sps00">de</token><token pos="ncms000">Trabajo</token><token pos="sps00">para</token><token pos="vmn0000">reforzar</token><token pos="da0ms0">el</token><token pos="ncms000">respeto</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">derechos</token><token pos="aq0cp0">laborales</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Esta fórmula sería aceptable para los países en desarrollo, ya que no establece compromisos.
+		</str>
+		<theme>
+			<token pos="dd0fs0">Esta</token><token pos="ncfs000">fórmula</token>
+		</theme>
+		<rheme>
+			<token pos="vsic3s0">sería</token><token pos="aq0cs0">aceptable</token><token pos="sps00">para</token><token pos="da0mp0">los</token><token pos="ncmp000">países</token><token pos="sps00">en</token><token pos="ncms000">desarrollo</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La policía y la Guardia Nacional impiden más concentraciones ante el centro de congresos.
+		</str>
+		<theme>
+			<token pos="da0fs0">La</token><token pos="nccs000">policía</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncms000">Guardia</token><token pos="aq0ms0">Nacional</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">impiden</token><token pos="rg">más</token><token pos="ncfp000">concentraciones</token><token pos="sps00">ante</token><token pos="da0ms0">el</token><token pos="ncms000">centro</token><token pos="sps00">de</token><token pos="ncmp000">congresos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Time_vector" head="ante">
+				<argument type="Event" dependent="y la Guardia Nacional"/>
+				<argument type="Event" dependent="el centro de congresos"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El alcalde avisa de que evitará más incidentes violentos, que acabaron con 240 detenciones
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="ncms000">alcalde</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">avisa</token><token pos="sps00">de</token><token pos="cs">que</token><token pos="vmif3s0">evitará</token><token pos="rg">más</token><token pos="nccp000">incidentes</token><token pos="aq0mp0">violentos</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Seattle amaneció ayer bajo un estricto control policial, tras los violentos incidentes protagonizados en la tarde y la noche del Martes ( madrugada de ayer en España ) por diversos grupos radicales que lograron bloquear la apertura de la conferencia ministerial de la Organización Mundial de Comercio ( OMC ).
+		</str>
+		<theme>
+			<token pos="np00000">Seattle</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">amaneció</token><token pos="sps00">bajo</token><token pos="di0ms0">un</token><token pos="aq0ms0">estricto</token><token pos="ncms000">control</token><token pos="aq0cs0">policial</token><token pos="sps00">tras</token><token pos="da0mp0">los</token><token pos="aq0mp0">violentos</token><token pos="nccp000">incidentes</token><token pos="aq0mpp">protagonizados</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">tarde</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">noche</token><token pos="spcms">del</token><token pos="ncms000">Martes</token><token pos="fpa">(</token><token pos="ncfs000">madrugada</token><token pos="sps00">de</token><token pos="rg">ayer</token><token pos="sps00">en</token><token pos="np00000">España</token><token pos="fpt">)</token><token pos="sps00">por</token><token pos="di0mp0">diversos</token><token pos="ncmp000">grupos</token><token pos="aq0cp0">radicales</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_in_control" head="control">
+				<argument type="Controlling_entity" dependent="amaneció ayer bajo un"/>
+				<argument type="Dependent_entity" dependent="de"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Cientos de policías pertrechados con material antidisturbio pesado controlaron las calles del centro de la ciudad, en especial un amplio perímetro alrededor del centro de congresos.
+		</str>
+		<theme>
+			<token pos="pn0cp000">Cientos</token><token pos="sps00">de</token><token pos="nccp000">policías</token><token pos="aq0mpp">pertrechados</token><token pos="sps00">con</token><token pos="ncms000">material</token><token pos="aq0cs0">antidisturbio</token><token pos="aq0ms0">pesado</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3p0">controlaron</token><token pos="da0fp0">las</token><token pos="ncfp000">calles</token><token pos="spcms">del</token><token pos="ncms000">centro</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">ciudad</token><token pos="sps00">en</token><token pos="aq0msp">especial</token><token pos="di0ms0">un</token><token pos="aq0ms0">amplio</token><token pos="ncms000">perímetro</token><token pos="rg">alrededor</token><token pos="spcms">del</token><token pos="ncms000">centro</token><token pos="sps00">de</token><token pos="ncmp000">congresos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Ingredients" head="material">
+				<argument type="Descriptor" dependent="pertrechados con"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Muchos escaparates de las tiendas y de los centros comerciales fueron tapados con planchas de madera tras la ruptura de sus lunas la víspera.
+		</str>
+		<theme>
+			<token pos="di0mp0">Muchos</token><token pos="ncmp000">escaparates</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">tiendas</token><token pos="cc">y</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">centros</token><token pos="aq0cp0">comerciales</token>
+		</theme>
+		<rheme>
+			<token pos="vsis3p0">fueron</token><token pos="vmp00pm">tapados</token><token pos="sps00">con</token><token pos="ncfp000">planchas</token><token pos="sps00">de</token><token pos="ncfs000">madera</token><token pos="sps00">tras</token><token pos="da0fs0">la</token><token pos="ncfs000">ruptura</token><token pos="sps00">de</token><token pos="dp3cp0">sus</token><token pos="ncfp000">lunas</token><token pos="da0fs0">la</token><token pos="ncfs000">víspera</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Los antidisturbios impedían ayer acercarse a la zona a los grupos radicales, que intentaban volver a bloquear el acceso a la conferencia de la OMC como el primer día.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="que "></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Las unidades policiales no vacilaron en detener a quienes desobedecían sus instrucciones de mantenerse alejados.
+		</str>
+		<theme>
+			<token pos="da0fp0">Las</token><token pos="ncfp000">unidades</token><token pos="aq0cp0">policiales</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vmis3p0">vacilaron</token><token pos="sps00">en</token><token pos="vmn0000">detener</token><token pos="sps00">a</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El número de detenidos por los incidentes superaba ya las 240 personas al final de la mañana de ayer, según fuentes policiales.
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="ncms000">número</token><token pos="sps00">de</token><token pos="aq0mpp">detenidos</token><token pos="sps00">por</token><token pos="da0mp0">los</token><token pos="nccp000">incidentes</token>
+		</theme>
+		<rheme>
+			<token pos="vmii3s0">superaba</token><token pos="da0fp0">las</token><token pos="z">240</token><token pos="ncfp000">personas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="fuentes policiales "></frame>
+			<frame type="Process_end" head="final">
+				<argument type="Process" dependent="de ayer"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Pese al dispositivo de seguridad, grupos de jóvenes, algunos disfrazados de tortugas o de otros animales, intentaron concentrarse en el centro de la ciudad para formar cadenas humanas.
+		</str>
+		<theme>
+			<token pos="ncmp000">grupos</token><token pos="sps00">de</token><token pos="nccp000">jóvenes</token><token pos="fc">,</token><token pos="pi0mp000">algunos</token><token pos="aq0mpp">disfrazados</token><token pos="sps00">de</token><token pos="ncfp000">tortugas</token><token pos="cc">o</token><token pos="sps00">de</token><token pos="di0mp0">otros</token><token pos="ncmp000">animales</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3p0">intentaron</token><token pos="vmn0000">concentrarse</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">centro</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">ciudad</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Las fuerzas de seguridad se reforzaron ayer con la llegada a Seattle de 300 agentes procedentes del resto del estado de Washington.
+		</str>
+		<theme>
+			<token pos="da0fp0">Las</token><token pos="ncfp000">fuerzas</token><token pos="sps00">de</token><token pos="ncfs000">seguridad</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vmis3p0">reforzaron</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="ncfs000">llegada</token><token pos="sps00">a</token><token pos="np00000">Seattle</token><token pos="sps00">de</token><token pos="z">300</token><token pos="nccp000">agentes</token><token pos="aq0cp0">procedentes</token><token pos="spcms">del</token><token pos="ncms000">resto</token><token pos="spcms">del</token><token pos="ncms000">estado</token><token pos="sps00">de</token><token pos="np00000">Washington</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Por la mañana, unos 200 miembros de la Guardia Nacional también fueron desplegados por la zona.
+		</str>
+		<theme>
+			<token pos="di0mp0">unos</token><token pos="z">200</token><token pos="ncmp000">miembros</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncms000">Guardia</token><token pos="aq0ms0">Nacional</token>
+		</theme>
+		<rheme>
+			<token pos="sps00">Por</token><token pos="da0fs0">la</token><token pos="ncfs000">mañana</token><token pos="rg">también</token><token pos="vsis3p0">fueron</token><token pos="vmp00pm">desplegados</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">zona</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La policía logró recuperar el control del centro de la ciudad alrededor de las 7 de la tarde del martes ( 4 de la madrugada hora española ) tras desalojar calle por calle a los grupos radicales con gases lacrimógenos y contundentes cargas.
+		</str>
+		<theme>
+			<token pos="da0fs0">La</token><token pos="nccs000">policía</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">logró</token><token pos="vmn0000">recuperar</token><token pos="da0ms0">el</token><token pos="ncms000">control</token><token pos="spcms">del</token><token pos="ncms000">centro</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">ciudad</token><token pos="rg">alrededor</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="z">7</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">tarde</token><token pos="spcms">del</token><token pos="ncms000">martes</token><token pos="fpa">(</token><token pos="z">4</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">madrugada</token><token pos="ncfs000">hora</token><token pos="aq0fs0">española</token><token pos="fpt">)</token><token pos="sps00">tras</token><token pos="vmn0000">desalojar</token><token pos="ncfs000">calle</token><token pos="sps00">por</token><token pos="ncfs000">calle</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="ncmp000">grupos</token><token pos="aq0cp0">radicales</token><token pos="sps00">con</token><token pos="ncmp000">gases</token><token pos="aq0mp0">lacrimógenos</token><token pos="cc">y</token><token pos="aq0cp0">contundentes</token><token pos="ncfp000">cargas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_in_control" head="control">
+				<argument type="Controlling_entity" dependent="la"/>
+				<argument type="Dependent_entity" dependent="recuperar el"/></frame>
+			<frame type="Substance" head="gases"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 No obstante, durante la noche aún se produjeron algunos enfrentamientos aislados.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Los incidentes del martes fueron protagonizados por jóvenes encapuchados y equipados con máscaras antigás que rompieron escaparates de los centros comerciales, incendiaron contenedores y se enfrentaron repetidamente a la policía.
+		</str>
+		<theme>
+			<token pos="da0mp0">Los</token><token pos="nccp000">incidentes</token><token pos="spcms">del</token><token pos="ncms000">martes</token>
+		</theme>
+		<rheme>
+			<token pos="vsis3p0">fueron</token><token pos="vmp00pm">protagonizados</token><token pos="sps00">por</token><token pos="nccp000">jóvenes</token><token pos="aq0mp0">encapuchados</token><token pos="cc">y</token><token pos="aq0mpp">equipados</token><token pos="sps00">con</token><token pos="ncfp000">máscaras</token><token pos="aq0cn0">antigás</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Tras la disolución de la masiva y pacífica manifestación convocada por sindicatos, asociaciones ecologistas y organizaciones no gubernamentales ( ONG ) contra la OMC y la "mundialización de las multinacionales", Paul Schell, alcalde de Seattle, declaró a media tarde del Martes el estado de emergencia y decretó el toque de queda en el centro de la ciudad.
+		</str>
+		<theme>
+			<token pos="np0000l">Paul</token><token pos="np0000l">Schell</token><token pos="fc">,</token><token pos="ncms000">alcalde</token><token pos="sps00">de</token><token pos="np00000">Seattle</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">declaró</token><token pos="sps00">a</token><token pos="dn0fs0">media</token><token pos="ncfs000">tarde</token><token pos="spcms">del</token><token pos="ncms000">Martes</token><token pos="da0ms0">el</token><token pos="ncms000">estado</token><token pos="sps00">de</token><token pos="ncfs000">emergencia</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 "Esto no volverá a ocurrir", afirmó Schell en una entrevista televisada.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 "Vamos a utilizar cada medio de que dispongamos y actuaremos inmediatamente contra cualquier desmán en las calles", añadió.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Toque de queda vigente.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En principio, el toque de queda y el estado de emergencia se mantendrán hasta el final de la reunión.
+		</str>
+		<theme>
+			<token pos="da0ms0">el</token><token pos="ncms000">toque</token><token pos="spcms">de</token><token pos="ncms000">queda</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">estado</token><token pos="sps00">de</token><token pos="ncfs000">emergencia</token>
+		</theme>
+		<rheme>
+			<token pos="p0000000">se</token><token pos="vmif3p0">mantendrán</token><token pos="sps00">hasta</token><token pos="da0ms0">el</token><token pos="ncms000">final</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">reunión</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Process_end" head="final">
+				<argument type="Process" dependent="de la"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La noche del martes, unos 2.000 manifestantes radicales se hicieron con el control de los cruces de las calles alrededor del centro de congresos para impedir el acceso de las autoridades a la conferencia de la OMC.
+		</str>
+		<theme>
+			<token pos="di0mp0">unos</token><token pos="z">2.000</token><token pos="nccp000">manifestantes</token><token pos="aq0cp0">radicales</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vmis3p0">hicieron</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">control</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">cruces</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">calles</token><token pos="rg">alrededor</token><token pos="spcms">del</token><token pos="ncms000">centro</token><token pos="sps00">de</token><token pos="ncmp000">congresos</token><token pos="sps00">para</token><token pos="vmn0000">impedir</token><token pos="da0ms0">el</token><token pos="ncms000">acceso</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">autoridades</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">conferencia</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">OMC</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_in_control" head="control">
+				<argument type="Dependent_entity" dependent="el"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La policía, que tardó varias horas en controlar la situación, cargó con gases lacrimógenos para desalojar a esos grupos de las inmediaciones del centro de reuniones.
+		</str>
+		<theme>
+			<token pos="da0fs0">La</token><token pos="nccs000">policía</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vmis3s0">tardó</token><token pos="di0fp0">varias</token><token pos="ncfp000">horas</token><token pos="sps00">en</token><token pos="vmn0000">controlar</token><token pos="da0fs0">la</token><token pos="ncfs000">situación</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">cargó</token><token pos="sps00">con</token><token pos="ncmp000">gases</token><token pos="aq0mp0">lacrimógenos</token><token pos="sps00">para</token><token pos="vmn0000">desalojar</token><token pos="sps00">a</token><token pos="dd0mp0">esos</token><token pos="ncmp000">grupos</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">inmediaciones</token><token pos="spcms">del</token><token pos="ncms000">centro</token><token pos="sps00">de</token><token pos="ncfp000">reuniones</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Substance" head="gases"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

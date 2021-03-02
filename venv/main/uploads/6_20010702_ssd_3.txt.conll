@@ -1,0 +1,27 @@
+1	pero	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+2	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+3	es	_	UNK	_	VBZ	0	_	_	_	_	_	_	_	O
+4	evidente	_	UNK	_	JJ	0	_	_	_	_	_	_	_	O
+5	que	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+6	los	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+7	unk	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+8	unk	_	UNK	_	-NONE-	0	_	_	_	_	_	_	_	O
+9	no	_	no	_	DT	0	_	_	_	_	_	_	_	O
+10	han	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+11	sido	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+12	especialmente	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+13	brillantes	_	UNK	_	VBZ	0	_	_	_	_	_	_	_	O
+14	para	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+15	el	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+16	principal	_	principal	_	NN	0	_	_	_	_	_	principal.n	Leadership	S-Role
+17	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+18	de	_	de	_	IN	0	_	_	_	_	_	_	_	O
+19	esa	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+20	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+21	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+22	el	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+23	socialista	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+24	pasqual	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+25	maragall	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+26	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

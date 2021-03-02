@@ -1,0 +1,1 @@
+El precio de un diario traducido a euros , 0,75 cents , resulta más operativo que 0,748 , aunque el redondeo excesivo también sea peligroso.

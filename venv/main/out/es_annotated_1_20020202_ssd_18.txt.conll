@@ -1,0 +1,6 @@
+{   ('Buildings', 'casa'): [],
+    ('Explaining_the_facts', 'explica'): [('Fact', 'Esto'), ('State_of_affairs', 'que la policía se haya incautado de toda la cubertería de la casa para verificar con precisión el utensilio')],
+    ('Law_enforcement_agency', 'policía'): [],
+    ('Taking', 'incautado'): [('Agent', 'la policía'), ('Theme', 'toda la cubertería'), ('Place', 'de la casa'), ('Time', 'para verificar con precisión el utensilio')],
+    ('Using', 'con'): [('Instrument', 'utensilio')],
+    ('Verification', 'verificar'): [('Manner', 'precisión'), ('Unconfirmed_content', 'utensilio')]}

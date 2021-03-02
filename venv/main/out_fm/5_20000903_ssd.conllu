@@ -1,0 +1,82 @@
+1	La	el	da0fs0	da0fs0	rep=no|t=yes|r=no|m=yes|c=no	2	de	_	_
+2	unificación	unificación	ncfs000	ncfs000	rep=no|t=yes|r=no|m=yes|c=no	4	nsub	_	_
+3	italiana	italiano	aq0fs0	aq0fs0	rep=no|t=yes|r=no|m=yes|c=no	2	amo	_	_
+4	marcó	marcar	vmis3s0	vmis3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+5	el	el	da0ms0	da0ms0	rep=no|t=no|r=yes|m=yes|c=no	6	de	_	_
+6	papado	papado	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	4	dob	_	_
+7	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	6	prep	_	_
+8	Mastai	Mastai	np0000l	np0000l	rep=no|t=no|r=yes|m=yes|c=no	7	pob	_	_
+9	Ferretti	Ferretti	np0000l	np0000l	rep=no|t=no|r=yes|m=yes|c=no	8	appo	_	_
+
+1	Los	el	da0mp0	da0mp0	rep=no|t=yes|r=no|m=yes|c=no	2	de	_	_
+2	historiadores	historiador	ncmp000	ncmp000	rep=no|t=yes|r=no|m=yes|c=no	3	nsub	_	_
+3	consideran	considerar	vmip3p0	vmip3p0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+4	a	a	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	3	dob	_	_
+5	Pío	Pío	np0000l	np0000l	rep=no|t=no|r=yes|m=yes|c=no	4	pob	_	_
+6	IX	IX	np0000l	np0000l	rep=no|t=no|r=yes|m=yes|c=no	5	appo	_	_
+7	como	como	cs	cs	rep=no|t=no|r=yes|m=yes|c=no	3	cpre	_	_
+8	un	uno	di0ms0	di0ms0	rep=no|t=no|r=yes|m=yes|c=no	9	de	_	_
+9	Papa	Papa	np00000	np00000	rep=no|t=no|r=yes|m=yes|c=no	7	cob	_	_
+10	popular	popular	aq0cs0	aq0cs0	rep=no|t=no|r=yes|m=yes|c=yes	9	de	_	_
+11	y	y	cc	cc	rep=no|t=no|r=yes|m=yes|c=no	9	coord_fixe	_	_
+12	controvertido	controvertido	aq0msp	aq0msp	rep=no|t=no|r=yes|m=yes|c=yes	9	de	_	_
+
+1	que	que	pr0cn000	pr0cn000	rep=no|t=yes|r=no|m=yes|c=no	2	nsub	_	_
+2	era	ser	vsii3s0	vsii3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+3	el	el	da0ms0	da0ms0	rep=no|t=no|r=yes|m=yes|c=no	5	de	_	_
+4	último	último	ao0ms0	ao0ms0	rep=no|t=no|r=yes|m=yes|c=no	5	amo	_	_
+5	grito	grito	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	2	att	_	_
+6	del	del	spcms	spcms	rep=no|t=no|r=yes|m=yes|c=no	5	prep	_	_
+7	progreso	progreso	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	6	pob	_	_
+
+1	por	por	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	8	prep	_	_
+2	derecho	derecho	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	1	pob	_	_
+3	natural	natural	aq0cs0	aq0cs0	rep=no|t=no|r=yes|m=yes|c=no	2	amo	_	_
+4	el	el	da0ms0	da0ms0	rep=no|t=yes|r=no|m=yes|c=no	5	de	_	_
+5	clero	clero	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=no	7	nsub	_	_
+6	no	no	rn	rn	rep=no|t=no|r=yes|m=yes|c=no	7	ne	_	_
+7	debe	deber	vmip3s0	vmip3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+8	hacer	hacer	vmn0000	vmn0000	rep=no|t=no|r=yes|m=yes|c=no	7	dob	_	_
+9	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	10	de	_	_
+10	mili	mili	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	8	dob	_	_
+
+1	Juan	juan	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=no	5	nsub	_	_
+2	María	María	np0000o	np0000o	rep=no|t=yes|r=no|m=yes|c=no	1	appo	_	_
+3	Mastai	Mastai	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=no	1	appo	_	_
+4	Ferretti	Ferretti	np0000a	np0000a	rep=no|t=yes|r=no|m=yes|c=no	3	appo	_	_
+5	había	haber	vaii3s0	vaii3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+6	nacido	nacer	vmp00sm	vmp00sm	rep=no|t=no|r=yes|m=yes|c=no	5	vob	_	_
+7	en	en	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	6	prep	_	_
+8	Senigallia	Senigallia	np00000	np00000	rep=no|t=no|r=yes|m=yes|c=no	7	pob	_	_
+9	el	el	da0ms0	da0ms0	rep=no|t=no|r=yes|m=yes|c=no	10	de	_	_
+10	año	año	ncmp000	ncmp000	rep=no|t=no|r=yes|m=yes|c=no	6	de	_	_
+11	1792	1792	zm	zm	rep=no|t=no|r=yes|m=yes|c=no	10	nu	_	_
+
+1	Pío	Pío	np0000l	np0000l	rep=no|t=yes|r=no|m=yes|c=no	3	nsub	_	_
+2	IX	IX	np0000l	np0000l	rep=no|t=yes|r=no|m=yes|c=no	1	appo	_	_
+3	empezó	empezar	vmis3s0	vmis3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+4	su	su	dp3cs0	dp3cs0	rep=no|t=no|r=yes|m=yes|c=no	5	pos	_	_
+5	pontificado	pontificado	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	3	dob	_	_
+
+1	Su	su	dp3cs0	dp3cs0	rep=no|t=yes|r=no|m=yes|c=no	2	pos	_	_
+2	carisma	carisma	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=no	4	nsub	_	_
+3	le	él	pp3csd00	pp3csd00	rep=no|t=no|r=yes|m=yes|c=no	4	iob	_	_
+4	dio	dar	vmis3s0	vmis3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+5	mucha	mucho	di0fs0	di0fs0	rep=no|t=no|r=yes|m=yes|c=no	6	de	_	_
+6	popularidad	popularidad	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	4	dob	_	_
+
+
+1	Pío	Pío	np0000l	np0000l	rep=no|t=yes|r=no|m=yes|c=no	0	roo	_	_
+2	IX	IX	np0000l	np0000l	rep=no|t=yes|r=no|m=yes|c=no	1	appo	_	_
+
+
+1	la	el	da0fs0	da0fs0	rep=no|t=yes|r=no|m=yes|c=no	2	de	_	_
+2	virgen	virgen	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=no	4	nsub	_	_
+3	María	María	np00000	np00000	rep=no|t=yes|r=no|m=yes|c=no	2	appo	_	_
+4	habría	haber	vaic3s0	vaic3s0	rep=no|t=no|r=yes|m=yes|c=no	0	roo	_	_
+5	nacido	nacer	vmp00sm	vmp00sm	rep=no|t=no|r=yes|m=yes|c=no	4	vob	_	_
+6	sin	sin	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	5	prep	_	_
+7	pecado	pecado	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	6	pob	_	_
+8	original	original	aq0cs0	aq0cs0	rep=no|t=no|r=yes|m=yes|c=no	7	amo	_	_
+
+

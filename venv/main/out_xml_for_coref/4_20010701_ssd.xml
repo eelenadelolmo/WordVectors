@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+		<!ELEMENT str (#PCDATA)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="4_20010701_ssd">
+
+
+	<sentence>
+		<str>
+			 Hace unos 25 años, John de Mol empezó en el mundo de la televisión holandesa como ayudante de producción de un programa deportivo.
+		</str>
+		<theme>
+			<token pos="np0000o">John</token><token pos="sps00">de</token><token pos="np0000l">Mol</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">empezó</token><token pos="cs">como</token><token pos="nccs000">ayudante</token><token pos="sps00">de</token><token pos="ncfs000">producción</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">programa</token><token pos="aq0ms0">deportivo</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Después de montar su propia productora y fusionarse en 1993 con la de Joop van den Ende, de donde salió el nombre de Endemol, ideó Big Brother.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Kinship" head="Brother"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Endemol, que en 1999 facturó casi 73.000 millones de pesetas, despertó el interés mundial y Telefónica decidió comprarla en el 2000.
+		</str>
+		<theme>
+			<token pos="np00000">Endemol</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="sps00">en</token><token pos="z">1999</token><token pos="vmis3s0">facturó</token><token pos="rg">casi</token><token pos="z">73.000</token><token pos="ncmp000">millones</token><token pos="sps00">de</token><token pos="zm">pesetas</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">despertó</token><token pos="da0ms0">el</token><token pos="ncms000">interés</token><token pos="aq0cs0">mundial</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Gracias a que poseía el 28,6% de las acciones, De Mol ganó 261.000 millones, pero aun así sigue trabajando como director creativo en la firma.
+		</str>
+		<theme>
+			<token pos="sps00">De</token><token pos="np00000">Mol</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">ganó</token><token pos="z">261.000</token><token pos="ncmp000">millones</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="director"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Dice que cada día 250 millones de personas en todo el mundo ven sus programas.
+		</str>
+		<theme>
+			<token pos="z">250</token><token pos="ncmp000">millones</token><token pos="sps00">de</token><token pos="ncfp000">personas</token><token pos="sps00">en</token><token pos="di0ms0">todo</token><token pos="da0ms0">el</token><token pos="ncms000">mundo</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">ven</token><token pos="dp3cp0">sus</token><token pos="ncmp000">programas</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

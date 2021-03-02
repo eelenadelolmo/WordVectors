@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+		<!ELEMENT str (#PCDATA)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="6_20010702_ssd">
+
+
+	<sentence>
+		<str>
+			 Es probable que, como denuncia la oposición, las últimas semanas no hayan sido muy buenas para Catalunya.
+		</str>
+		<theme>
+			<token pos="da0fp0">las</token><token pos="ao0fp0">últimas</token><token pos="ncfp000">semanas</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vasp3p0">hayan</token><token pos="vsp00sm">sido</token><token pos="rg">muy</token><token pos="aq0fp0">buenas</token><token pos="sps00">para</token><token pos="np00000">Catalunya</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Likelihood" head="probable"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La peste porcina, los incendios o el malestar por la aprobación del trasvase del Ebro son problemas graves que el Govern tiene ahora mismo encima de la mesa.
+		</str>
+		<theme>
+			<token pos="da0fs0">La</token><token pos="ncfs000">peste</token><token pos="aq0fs0">porcina</token><token pos="fc">,</token><token pos="da0mp0">los</token><token pos="ncmp000">incendios</token><token pos="cc">o</token><token pos="da0ms0">el</token><token pos="ncms000">malestar</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">aprobación</token><token pos="spcms">del</token><token pos="ncms000">trasvase</token><token pos="spcms">del</token><token pos="np00000">Ebro</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3p0">son</token><token pos="ncmp000">problemas</token><token pos="aq0cp0">graves</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Kinship" head="son">
+				<argument type="Ego" dependent="Ebro"/></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Pero también es evidente que los últimos días no han sido especialmente brillantes para el principal líder de esa oposición, el socialista Pasqual Maragall.
+		</str>
+		<theme>
+			<token pos="da0mp0">los</token><token pos="ao0mp0">últimos</token><token pos="ncmp000">días</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vaip3p0">han</token><token pos="vsp00sm">sido</token><token pos="rg">especialmente</token><token pos="aq0cp0">brillantes</token><token pos="sps00">para</token><token pos="da0ms0">el</token><token pos="aq0cs0">principal</token><token pos="nccs000">líder</token><token pos="sps00">de</token><token pos="dd0fs0">esa</token><token pos="ncfs000">oposición</token><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="nccs000">socialista</token><token pos="np0000l">Pasqual</token><token pos="np0000l">Maragall</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="principal"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 A su falta de dominio del ritmo parlamentario - - el miércoles perdió un debate cuerpo a cuerpo con Pujol simplemente porque no calculó el tiempo que tenía para intervenir - - añadió luego otra dosis de desconcierto a su estrategia de oposición al pronunciarse a favor del adelanto electoral en Catalunya.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Discussion" head="debate">
+				<argument type="Depictive" dependent="un"/></frame>
+			<frame type="Preference" head="favor">
+				<argument type="Event" dependent="del"/>
+				<argument type="Contrast" dependent="adelanto electoral en Catalunya"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Lo hizo a remolque del presidente de Iniciativa, Joan Saura, y después de llevar meses amagando con la presentación de una moción de censura que nunca llega.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Da la sensación de que Maragall fía demasiadas cartas a su evidente brillantez.
+		</str>
+		<theme>
+			<token pos="np00000">Maragall</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">fía</token><token pos="di0fp0">demasiadas</token><token pos="ncfp000">cartas</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="aq0cs0">evidente</token><token pos="ncfs000">brillantez</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Pero lo hace desde la improvisación y sin asumir el sofisticado papel de cabeza visible de la oposición, entre cuyas obligaciones está transmitir con claridad sus ideas alternativas para derrotar a CiU cuando toquen elecciones, que de momento es en el otoño del 2003.
+		</str>
+		<theme>
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">otoño</token><token pos="spcms">del</token><token pos="z">2003</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Misdeed" head="sin">
+				<argument type="Wrongdoer" dependent="el"/></frame>
+			<frame type="Obviousness" head="visible">
+				<argument type="Phenomenon" dependent="de la"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

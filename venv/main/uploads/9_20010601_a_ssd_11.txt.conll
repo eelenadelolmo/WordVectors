@@ -1,0 +1,26 @@
+1	cuando	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+2	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+3	la	_	la	_	NN	0	_	_	_	_	_	_	_	O
+4	semana	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+5	pasada	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+6	la	_	la	_	NN	0	_	_	_	_	_	_	_	O
+7	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+8	con	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+9	un	_	un	_	NN	0	_	_	_	_	_	_	_	O
+10	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+11	total	_	total	_	NN	0	_	_	_	_	_	total.n	Amounting_to	O
+12	de	_	de	_	NN	0	_	_	_	_	_	_	_	O
+13	unk	_	UNK	_	CD	0	_	_	_	_	_	_	_	O
+14	pesetas	_	UNK	_	NNS	0	_	_	_	_	_	_	_	O
+15	me	_	me	_	PRP	0	_	_	_	_	_	_	_	O
+16	unk	_	UNK	_	-NONE-	0	_	_	_	_	_	_	_	O
+17	como	_	UNK	_	RB	0	_	_	_	_	_	_	_	O
+18	en	_	en	_	VBN	0	_	_	_	_	_	_	_	O
+19	sierra	_	Sierra	_	NNP	0	_	_	_	_	_	_	_	O
+20	morena	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+21	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+22	por	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+23	curro	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+24	unk	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+25	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

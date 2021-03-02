@@ -1,0 +1,7 @@
+{   ('Activity_start', 'empiezan'): [('Agent', 'jueces catalanes'), ('Activity', 'a adoptar cada vez medidas más drásticas y')],
+    ('Adopt_selection', 'adoptar'): [('Agent', 'jueces catalanes'), ('Attribute', 'medidas más drásticas y')],
+    ('Arriving', 'adoptar'): [('Theme', 'prohibir a los maltratadores que'), ('Theme', 'sus víctimas')],
+    ('Catastrophe', 'víctimas'): [('Patient', 'sus víctimas')],
+    ('Commitment', 'adoptar'): [('Speaker', 'jueces catalanes'), ('Message', 'por prohibir a los maltratadores')],
+    ('Instance', 'casos'): [('Instance_prop', 'estos')],
+    ('People_by_vocation', 'jueces'): [('Person', 'jueces catalanes')]}

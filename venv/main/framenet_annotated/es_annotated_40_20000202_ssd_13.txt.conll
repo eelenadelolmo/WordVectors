@@ -1,6 +1,0 @@
-{   ('Attack', 'agresiva'): [('Assailant', 'su'), ('Victim', 'su carácter')],
-    ('Calendric_unit', 'fin de semana'): [],
-    ('Change_position_on_a_scale', 'aumento'): [('Path', 'en las')],
-    ('Evaluative_comparison', 'contiendas'): [],
-    ('Predicting', 'auguraron'): [('Eventuality', 'un aumento de las escaramuzas entre ambos en las próximas contiendas')],
-    ('Proportional_quantity', 'por'): [('Individuals', 'Bradley'), ('Individuals', 'el fin de semana')]}

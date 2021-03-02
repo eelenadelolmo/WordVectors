@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+        <!ELEMENT str (#PCDATA)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #REQUIRED>
+        <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="10_20010301_ssd">
+
+
+	<concepts>
+		<concept id="c_0">nadie</concept>
+		<concept id="c_1">Los medios audiovisuales de entretenimiento</concept>
+		<concept id="c_2">los informativos , responsables de testimoniar esa realidad ,</concept>
+		<concept id="c_3">al menos los telediarios</concept>
+		<concept id="c_4">la racionalidad</concept>
+	</concepts>
+
+	<sentence>
+		<str>
+			 En esta sociedad donde impera la imagen nadie parece conformarse con ser como es.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="pi0cs000">nadie</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">parece</token><token pos="vmn0000">conformarse</token><token pos="sps00">con</token><token pos="vsn0000">ser</token><token pos="cs">como</token><token pos="vsip3s0">es</token>
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Los medios audiovisuales de entretenimiento se esfuerzan en aportar tanto verismo a sus producciones como la propia realidad.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">medios</token><token pos="aq0cp0">audiovisuales</token><token pos="sps00">de</token><token pos="ncms000">entretenimiento</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_2">
+			<token pos="p0300000">se</token><token pos="vmip3p0">esfuerzan</token><token pos="sps00">en</token><token pos="vmn0000">aportar</token><token pos="rg">tanto</token><token pos="ncms000">verismo</token><token pos="sps00">a</token><token pos="dp3cp0">sus</token><token pos="ncfp000">producciones</token><token pos="cs">como</token><token pos="da0fs0">la</token><token pos="di0fs0">propia</token><token pos="ncfs000">realidad</token>
+		<to_annotate>[[(213, 249), 'verismo', 'c_1'], [(277, 349), 'sus producciones', 'c_2']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Y los informativos, responsables de testimoniar esa realidad, tratan de convertirla en espectáculo, tomando de la ficción los aspectos supuestamente más atractivos para el espectador, incluidas las escenas escabrosas.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0mp0">los</token><token pos="ncmp000">informativos</token><token pos="fc">,</token><token pos="aq0cp0">responsables</token><token pos="sps00">de</token><token pos="vmn0000">testimoniar</token><token pos="dd0fs0">esa</token><token pos="ncfs000">realidad</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1">
+			<token pos="vmip3p0">tratan</token><token pos="vmn0000">convertirla</token><token pos="sps00">en</token><token pos="ncms000">espectáculo</token>
+		<to_annotate>[[(134, 174), 'espectáculo', 'c_1']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Como una bocanada de aire clarificador se agradece la lista de recomendaciones del Consell de l'Audiovisual de Catalunya.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Sigue pendiente una normativa ética para la ficción.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Pero al menos los telediarios deberían salvaguardar la racionalidad y la ética de una información desapasionada, más allá de las ratios de audiencia.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="sps00">al</token><token pos="rg">menos</token><token pos="da0mp0">los</token><token pos="ncmp000">telediarios</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_0" concept_ref3="c_4">
+			<token pos="vmic3p0">deberían</token><token pos="vmn0000">salvaguardar</token><token pos="da0fs0">la</token><token pos="ncfs000">racionalidad</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">ética</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="ncfs000">información</token><token pos="aq0fs0">desapasionada</token><token pos="rg">más</token><token pos="rg">allá</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">ratios</token><token pos="sps00">de</token><token pos="ncfs000">audiencia</token>
+		<to_annotate>[[(531, 597), 'las ratios', 'c_2'], [(626, 664), 'audiencia', 'c_0'], [(146, 217), 'la racionalidad', 'c_4']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

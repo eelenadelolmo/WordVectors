@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+        <!ELEMENT str (#PCDATA)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #IMPLIED>
+        <!ELEMENT rheme (token|mention)*>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT mention (token+)>
+            <!ATTLIST mention concept_ref CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="9_20010702_ssd">
+
+
+	<concepts>
+		<concept id="c_0">nuestras compañeras , las mujeres ,</concept>
+		<concept id="c_1">Una visita a la playa recién inaugurada</concept>
+		<concept id="c_2">Los pechos femeninos</concept>
+		<concept id="c_3">el tabú del seno materno</concept>
+		<concept id="c_4">los varones</concept>
+		<concept id="c_5">uno</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Hace unos años, con la recuperación de la democracia y las libertades, vivimos con regocijo libertador el momento en que nuestras compañeras, las mujeres, se libraron de uno de los tabúes de su sexo, y empezaron a exhibir, gozosas, en playas y piscinas, sus senos secularmente escondidos.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="dp1fpp">nuestras</token><token pos="ncfp000">compañeras</token><token pos="fc">,</token><token pos="da0fp0">las</token><token pos="ncfp000">mujeres</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_5">
+			<token pos="p080000">se</token><token pos="vmis3p0">libraron</token><token pos="sps00">de</token><mention concept_ref="c_5"><token pos="pi0ms000">uno</token></mention><token pos="sps00">de</token><mention concept_ref="c_4"><token pos="da0mp0">los</token><token pos="ncmp000">tabúes</token></mention><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncms000">sexo</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Las tetas saltaron a la palestra y se reivindicaron en todas sus formas, tamaños y colores, y, todos creíamos que ya jamás se volverían a ocultar.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="todos " />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Craso error.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Una visita a la playa recién inaugurada nos informará de que todo había sido un espejismo.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="di0fs0">Una</token><token pos="ncfs000">visita</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">playa</token><token pos="rg">recién</token><token pos="aq0fsp">inaugurada</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_5">
+			<mention concept_ref="c_5"><token pos="pp1cp000">nos</token></mention><token pos="vmif3s0">informará</token><token pos="sps00">de</token><token pos="cs">que</token><token pos="pi0ms000">todo</token><token pos="vaii3s0">había</token><token pos="vsp00sm">sido</token><mention concept_ref="c_0"><token pos="di0ms0">un</token><token pos="ncms000">espejismo</token></mention>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los pechos femeninos vuelven a estar tapados.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">pechos</token><token pos="aq0mp0">femeninos</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">vuelven</token><token pos="vmn0000">estar</token><token pos="aq0mpp">tapados</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿Será que el tabú del seno materno es demasiado fuerte para destruirlo?.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">el</token><token pos="ncms000">tabú</token><token pos="spcms">del</token><token pos="ncms000">seno</token><token pos="aq0ms0">materno</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="rg">demasiado</token><token pos="aq0cs0">fuerte</token><token pos="sps00">para</token><token pos="vmn0000">destruirlo</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿O que los varones mirábamos con demasiada avidez?.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0mp0">los</token><token pos="ncmp000">varones</token>
+		</theme>
+		<rheme>
+			<token pos="vmii1p0">mirábamos</token><token pos="sps00">con</token><token pos="di0fs0">demasiada</token><token pos="ncfs000">avidez</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Lo cierto es que a mí, me da un poco de pena.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	
+</text>

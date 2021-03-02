@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+	<!ELEMENT text (sentence+)>
+	    <!ATTLIST text id CDATA #REQUIRED>
+	<!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+		<!ELEMENT str (#PCDATA)>
+		<!ELEMENT theme (token*)>
+		<!ELEMENT rheme (token*)>
+		<!ELEMENT token (#PCDATA)>
+		    <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+		<!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="9_20010601_b_ssd">
+
+
+	<sentence>
+		<str>
+			 Después la propia competencia y la ley de mercado acabará derivando en una rebaja de los precios o en un sistema más justo para que no paguen justos por pecadores.
+		</str>
+		<theme>
+			<token pos="da0fs0">la</token><token pos="di0fs0">propia</token><token pos="ncfs000">competencia</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">ley</token><token pos="sps00">de</token><token pos="ncms000">mercado</token>
+		</theme>
+		<rheme>
+			<token pos="vmif3s0">acabará</token><token pos="vmg0000">derivando</token><token pos="sps00">en</token><token pos="di0fs0">una</token><token pos="ncfs000">rebaja</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">precios</token><token pos="cc">o</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="ncms000">sistema</token><token pos="rg">más</token><token pos="aq0ms0">justo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="People" head="un"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La política exterior del Gobierno de Aznar ha oscilado entre la prepotencia y la impotencia.
+		</str>
+		<theme>
+			<token pos="da0fs0">La</token><token pos="ncfs000">política</token><token pos="aq0cs0">exterior</token><token pos="spcms">del</token><token pos="np00000">Gobierno</token><token pos="sps00">de</token><token pos="np00000">Aznar</token>
+		</theme>
+		<rheme>
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">oscilado</token><token pos="sps00">entre</token><token pos="da0fs0">la</token><token pos="ncfs000">prepotencia</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">impotencia</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Han fallado las formas diplomáticas y hay que cambiarlas una retirada a tiempo no siempre es una victoria, máxime cuando se estuvo predicando durante meses la guerra santa contra la pérfida Alemania y su manía de resistirse a mantener los fondos estructurales y de cohesión para España hasta pasado el 2006.
+		</str>
+		<theme>
+			<token pos="di0fs0">una</token><token pos="ncfs000">retirada</token><token pos="sps00">a</token><token pos="ncmp000">tiempo</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vsip3s0">es</token><token pos="di0fs0">una</token><token pos="ncfs000">victoria</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El Gobierno español no ha tenido más remedio que rendirse a la evidencia y cancelar la batalla que le enfrentaba a casi todos los países de la Unión Europea, excepción hecha de Grecia y Portugal, por un asunto que nadie deseaba plantear con antelación y que tampoco se sabía muy bien por qué habría de resolverse ahora y no dentro de cuatro años.
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="np00000">Gobierno</token><token pos="aq0ms0">español</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">tenido</token><token pos="rg">más</token><token pos="ncms000">remedio</token><token pos="cs">que</token><token pos="vmn0000">rendirse</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">evidencia</token><token pos="cc">y</token><token pos="vmn0000">cancelar</token><token pos="da0fs0">la</token><token pos="ncfs000">batalla</token><token pos="sps00">por</token><token pos="di0ms0">un</token><token pos="ncms000">asunto</token><token pos="cc">y</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El problema no era de fondos sino de forma.
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="ncms000">problema</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vsii3s0">era</token><token pos="sps00">de</token><token pos="ncmp000">fondos</token><token pos="sps00">de</token><token pos="ncfs000">forma</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Calendric_unit" head="era"></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 O mejor, de formas.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El Gobierno español tenía razón en exigir que, por simple ingeniería estadística derivada de la ampliación, varias regiones ( Andalucía, Galicia, Extremadura ) no se quedaran sin los dichosos fondos ( casi un billón de pesetas anuales ).
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="np00000">Gobierno</token><token pos="aq0ms0">español</token>
+		</theme>
+		<rheme>
+			<token pos="vmii3s0">tenía</token><token pos="ncfs000">razón</token><token pos="sps00">en</token><token pos="vmn0000">exigir</token><token pos="cs">que</token><token pos="fc">,</token><token pos="sps00">por</token><token pos="aq0cs0">simple</token><token pos="ncfs000">ingeniería</token><token pos="aq0fs0">estadística</token><token pos="aq0fsp">derivada</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">ampliación</token><token pos="fc">,</token><token pos="di0fp0">varias</token><token pos="ncfp000">regiones</token><token pos="fpa">(</token><token pos="np00000">Andalucía</token><token pos="fc">,</token><token pos="np00000">Galicia</token><token pos="fc">,</token><token pos="np00000">Extremadura</token><token pos="fpt">)</token><token pos="rn">no</token><token pos="p0300000">se</token><token pos="vmsi3p0">quedaran</token><token pos="sps00">sin</token><token pos="da0mp0">los</token><token pos="aq0mp0">dichosos</token><token pos="ncmp000">fondos</token><token pos="fpa">(</token><token pos="rg">casi</token><token pos="di0ms0">un</token><token pos="ncms000">billón</token><token pos="sps00">de</token><token pos="zm">pesetas</token><token pos="aq0cp0">anuales</token><token pos="fpt">)</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Misdeed" head="sin"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Lo que FALLARON fueron las formas.
+		</str>
+		<theme>
+			<token pos="da0ns0">Lo</token><token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El tono prepotente, a veces agresivo con que se gestionaron las ambiciones españolas y la exigencia abierta de un cambalache por la moratoria de siete años que Alemania exigía en la circulación de personas envenenó el asunto.
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="ncms000">tono</token><token pos="aq0cs0">prepotente</token><token pos="fc">,</token><token pos="sps00">a</token><token pos="ncmp000">veces</token><token pos="aq0ms0">agresivo</token><token pos="sps00">con</token><token pos="pr0cn000">que</token><token pos="p0000000">se</token><token pos="vmis3p0">gestionaron</token><token pos="da0fp0">las</token><token pos="ncfp000">ambiciones</token><token pos="aq0fp0">españolas</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">exigencia</token><token pos="aq0fsp">abierta</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">cambalache</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">moratoria</token><token pos="sps00">de</token><token pos="dn0cp0">siete</token><token pos="ncmp000">años</token><token pos="pr0cn000">que</token><token pos="np00000">Alemania</token><token pos="vmii3s0">exigía</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">circulación</token><token pos="sps00">de</token><token pos="ncfp000">personas</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">envenenó</token><token pos="da0ms0">el</token><token pos="ncms000">asunto</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Y mientras el Gobierno de Madrid llamaba inútilmente en puertas supuestamente amigas ( Francia fue un caso paradigmático ), las otras puertas, las ajenas, se iban cerrando paulatinamente.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 España se quedó orgullosamente sola apenas respaldada por un Silvio Berlusconi recién llegado al cotarro europeo y que hace buena aquella frase del gitano: "No me defiendas, compadre".
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="que "></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En los últimos años se ha ido creando un tipo de comportamiento en política exterior que oscila entre la prepotencia y la impotencia.
+		</str>
+		<theme>
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">oscila</token><token pos="sps00">entre</token><token pos="da0fs0">la</token><token pos="ncfs000">prepotencia</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">impotencia</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Nuestros heraldos diplomáticos hinchan pecho ante los asuntos más arduos de la vida internacional, anuncian grandes proyectos, pontifican sobre cómo resolver el problema de Oriente Próximo, la deuda externa, los derechos humanos y la cuadratura del círculo para, finalmente, emitir una sarta de tópicos semejantes a las resoluciones del Parlamento Europeo o de la propia UE sobre las elecciones en Kazajstán o la trágica trifulca chechena.
+		</str>
+		<theme>
+			<token pos="dp1mpp">Nuestros</token><token pos="ncmp000">heraldos</token><token pos="aq0mp0">diplomáticos</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">hinchan</token><token pos="ncms000">pecho</token><token pos="sps00">ante</token><token pos="da0mp0">los</token><token pos="ncmp000">asuntos</token><token pos="rg">más</token><token pos="aq0mp0">arduos</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">vida</token><token pos="aq0cs0">internacional</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Van a por todas: un día el ministro del ramo, Josep Piqué, saluda los esfuerzos del Gobierno argelino en el respeto a los derechos humanos y la democracia: lo hace oportunamente, cuando tres días antes el Ejército argelino ha disparado contra una manifestación en Tizi Uzú y deja un balance de un centenar de víctimas mortales.
+		</str>
+		<theme>
+			<token pos="da0ms0">el</token><token pos="ncms000">ministro</token><token pos="spcms">del</token><token pos="ncms000">ramo</token><token pos="fc">,</token><token pos="np0000l">Josep</token><token pos="np0000l">Piqué</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">saluda</token><token pos="da0mp0">los</token><token pos="ncmp000">esfuerzos</token><token pos="spcms">del</token><token pos="np00000">Gobierno</token><token pos="aq0ms0">argelino</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">respeto</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="ncms000">derechos</token><token pos="aq0ms0">humanos</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">democracia</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Time_vector" head="antes">
+				<argument type="Event" dependent="Uzú y deja un balance de un centenar"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Al otro día se desempolvan sonoros clarines para lanzar un plan para Lejano Oriente que será el asombro de Damasco o de Shanghái ante la sorpresa de los empresarios y de los representantes, héroes anónimos del catálogo y la comisión, inventores geniales del Chupa-Chups y de la fregona Vileda.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Purpose" head="plan"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Pero que el factor humano no falte: fines de semana en el parque natural de Doñana con Tony ( Blair ) y Abderramán ( Yusufi ), excursiones mesetarias con Lionel ( Jospin ) y António ( Guterres ).
+		</str>
+		<theme>
+			<token pos="da0ms0">el</token><token pos="ncms000">factor</token><token pos="aq0ms0">humano</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vmsp3s0">falte</token><token pos="fd">:</token><token pos="fc">,</token><token pos="ncfp000">excursiones</token><token pos="aq0fp0">mesetarias</token><token pos="sps00">con</token><token pos="np00000">Lionel</token><token pos="fpa">(</token><token pos="np00000">Jospin</token><token pos="fpt">)</token><token pos="cc">y</token><token pos="np00000">António</token><token pos="fpa">(</token><token pos="np00000">Guterres</token><token pos="fpt">)</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Emotion_directed" head="fines"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Son amigos, un conocimiento, aunque Después no hay quien pesque una sardina en sus aguas turbias ni que en el momento de la verdad echen un cable en la cosa de los fondos y las políticas regionales: el gazpacho y el Ribera del Duero tienen una virtualidad limitada.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="People" head="un"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 O esos encuentros casi carnales con Vladimir Putin, enigmática sonrisa de polizonte, salvador de Chechenia y otros enclaves.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Tantas efusiones... ¿Qué se hicieron? ¿para Qué sirvieron?.
+		</str>
+		<theme>
+			<token pos="pt0cs000">Qué</token>
+		</theme>
+		<rheme>
+			<token pos="p0000000">se</token><token pos="vmis3p0">hicieron</token><token pos="fit">?</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Todo recuerda aquel histórico intercambio de corbatas con el dinosaurio cubano con resultados tan brillantes y espectaculares: yo muevo ficha si tú mueves ficha.
+		</str>
+		<theme>
+			<token pos="pi0ms000">Todo</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">recuerda</token><token pos="dd0ms0">aquel</token><token pos="aq0ms0">histórico</token><token pos="ncms000">intercambio</token><token pos="sps00">de</token><token pos="ncfp000">corbatas</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">dinosaurio</token><token pos="aq0ms0">cubano</token><token pos="sps00">con</token><token pos="ncmp000">resultados</token><token pos="rg">tan</token><token pos="aq0cp0">brillantes</token><token pos="cc">y</token><token pos="aq0cp0">espectaculares</token><token pos="fd">:</token><token pos="pp1csn00">yo</token><token pos="vmip1s0">muevo</token><token pos="ncfs000">ficha</token><token pos="cs">si</token><token pos="pp2csn00">tú</token><token pos="vmip2s0">mueves</token><token pos="ncfs000">ficha</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En el ecuador del poder los señores primeros ministros sucumben aquí casi siempre a la tentación de "hacer el Kissinger", una figura taurina de reconocida eficacia y diversión.
+		</str>
+		<theme>
+			<token pos="da0mp0">los</token><token pos="ncmp000">señores</token><token pos="ao0mp0">primeros</token><token pos="ncmp000">ministros</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">sucumben</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">tentación</token><token pos="sps00">de</token><token pos="fe">quot;</token><token pos="vmn0000">hacer</token><token pos="da0ms0">el</token><token pos="np00000">Kissinger</token><token pos="fe">quot;</token><token pos="fc">,</token><token pos="di0fs0">una</token><token pos="ncfs000">figura</token><token pos="aq0fs0">taurina</token><token pos="sps00">de</token><token pos="aq0fsp">reconocida</token><token pos="ncfs000">eficacia</token><token pos="cc">y</token><token pos="ncfs000">diversión</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El mundo ya no es ajeno aunque sigue siendo ancho.
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="ncms000">mundo</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vsip3s0">es</token><token pos="aq0ms0">ajeno</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Y todas las miradas convergen en la lucecita de la Moncloa porque de allí provienen la buena nueva y las buenas noticias.
+		</str>
+		<theme>
+			<token pos="di0fp0">todas</token><token pos="da0fp0">las</token><token pos="ncfp000">miradas</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">convergen</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">lucecita</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Moncloa</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Conviene que ahora, en plena apoteosis de pre-presidencia ( presidiremos la Unión Europea dentro de unos meses: rogativas y festejos son de rigor ) reflexionemos críticamente y nos hagamos un lifting metodológico.
+		</str>
+		<theme>
+			<token pos="ncfp000">rogativas</token><token pos="cc">y</token><token pos="ncmp000">festejos</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3p0">son</token><token pos="sps00">de</token><token pos="ncms000">rigor</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cause_to_end" head="lifting">
+				<argument type="State" dependent="de"/></frame>
+			<main_frame type="Kinship" head="son"></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Cambiar las formas parece de rigor, pero, en el fondo, el fondo no hay quien lo cambie.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

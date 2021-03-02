@@ -1,9 +1,0 @@
-{   ('Appellations', 'presidente'): [('Type', 'Bush')],
-    ('Arriving', 'regrese'): [('Goal', 'a sus raíces reformistas')],
-    ('Choosing', 'candidato'): [],
-    ('Feeling', 'sensación'): [],
-    ('Kinship', 'sus'): [('Ego', 'del ex presidente Bush')],
-    ('Leadership', 'gobernador de'): [('Governed', 'gobernador de Tejas e hijo del ex presidente Bush')],
-    ('Statement', 'añadió'): [   ('Speaker', '; Es hora de que el partido republicano regrese a sus raíces reformistas'),
-                                 ('Message', ', cuyo triunfo rompe la sensación de que Bush , gobernador de Tejas e hijo del ex presidente Bush , es el candidato preferido de los republicanos')],
-    ('Time_vector', 'del ex'): [('Event', 'presidente Bush')]}

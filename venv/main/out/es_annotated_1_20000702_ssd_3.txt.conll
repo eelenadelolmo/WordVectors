@@ -1,0 +1,13 @@
+{   ('Activity_finish', 'concluye'): [   ('Manner', 'al'),
+                                         (   'Activity',
+                                             'un examen a los manuales más vendidos realizado desde el Departamento de Didàctica de les Ciències Socials de la Universitat de Barcelona ( UB )')],
+    ('Bringing', 'realizado'): [   ('Theme', 'los manuales más vendidos'),
+                                   ('Goal', 'a los'),
+                                   ('Carrier', 'desde el Departamento de Didàctica de les Ciències Socials de la Universitat de Barcelona ( UB )')],
+    ('Individual_history', 'historia'): [('Events', 'Ciències')],
+    ('Locale_by_use', 'Universitat'): [('Name', 'de Barcelona ( UB )')],
+    ('Offering', 'ofrecen'): [   ('Offerer', 'libros de texto'),
+                                 ('Theme', 'ofrecen a los escolares una visión de la historia de España equilibrada , universal y ajustada al espíritu plural y democrático inspirado en la')],
+    ('Scrutiny', 'examen'): [('Ground', 'los manuales más vendidos')],
+    ('Subjective_influence', 'inspirado'): [('Entity', 'espíritu plural y democrático'), ('Place', 'en la Constitución de 1978')],
+    ('Text', 'manuales'): []}

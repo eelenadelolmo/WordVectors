@@ -1,0 +1,1 @@
+El conductor no podrá diferenciar qué soportes llevan cámara y cuáles no.

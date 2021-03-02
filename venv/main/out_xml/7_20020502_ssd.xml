@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+        <!ELEMENT str (#PCDATA)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #IMPLIED>
+        <!ELEMENT rheme (token|mention)*>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+        <!ELEMENT mention (token+)>
+            <!ATTLIST mention concept_ref CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="7_20020502_ssd">
+
+
+	<concepts>
+		<concept id="c_0">ETA</concept>
+		<concept id="c_1">un coche bomba</concept>
+		<concept id="c_2">El atentado más sangriento</concept>
+		<concept id="c_3">El último atentado en Madrid</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 ETA HA COLOCADO 12 COCHES BOMBA EN MADRID DESDE EL FINAL DE LA TREGUA QUE HAN CAUSADO SEIS MUERTOS Y DECENAS DE HERIDOS.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">ETA</token>
+		</theme>
+		<rheme>
+			<token pos="vaip3s0">HA</token><token pos="vmp00sm">COLOCADO</token><token pos="z">12</token><token pos="ncmp000">COCHES</token><token pos="ncfs000">BOMBA</token><token pos="sps00">EN</token><token pos="np00000">MADRID</token><token pos="sps00">DESDE</token><token pos="da0ms0">EL</token><token pos="ncms000">FINAL</token><token pos="sps00">DE</token><token pos="da0fs0">LA</token><token pos="ncfs000">TREGUA</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El 12 de octubre del 2001, un coche bomba explotó en un párking al que lo llevó la Guardia Urbana por estar mal aparcado.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="di0ms0">un</token><token pos="ncms000">coche</token><token pos="ncfs000">bomba</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El atentado más sangriento ocurrió el 30 de octubre del 2000.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="ncms000">atentado</token><token pos="rg">más</token><token pos="aq0ms0">sangriento</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">ocurrió</token><token pos="da0ms0">el</token><token pos="z">30</token><token pos="sps00">de</token><token pos="ncfp000">octubre</token><token pos="sps00">del</token><token pos="z">2000</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Murieron el magistrado Francisco Querol y otras tres personas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El último atentado en Madrid ocurrió el 22 de abril, cuando estalló un coche ante la sede de Repsol-YPF.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">El</token><token pos="ao0ms0">último</token><token pos="ncms000">atentado</token><token pos="sps00">en</token><token pos="np00000">Madrid</token>
+		</theme>
+		<rheme concept_ref1="c_1">
+			<token pos="vmis3s0">ocurrió</token><token pos="da0ms0">el</token><token pos="zp">22</token><token pos="spcms">de</token><token pos="ncms000">abril</token><token pos="fc">,</token><token pos="pr00000">cuando</token><token pos="vmis3s0">estalló</token><mention concept_ref="c_1"><token pos="di0ms0">un</token><token pos="ncms000">coche</token></mention><token pos="sps00">ante</token><token pos="da0fs0">la</token><token pos="ncfs000">sede</token><token pos="sps00">de</token><token pos="np00000">Repsol-YPF</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Time_vector" head="ante">
+				<argument type="Event" dependent="la sede de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No hubo heridos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	
+</text>

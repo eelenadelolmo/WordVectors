@@ -1,0 +1,14 @@
+1	tal	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+2	unk	_	UNK	_	VBD	0	_	_	_	_	_	_	_	O
+3	unk	_	UNK	_	NN	0	_	_	_	_	_	_	_	S-Descriptor
+4	un	_	un	_	NN	0	_	_	_	_	_	un.n	People	S-Person
+5	estudio	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+6	de	_	de	_	IN	0	_	_	_	_	_	_	_	O
+7	la	_	la	_	DT	0	_	_	_	_	_	_	_	O
+8	unk	_	UNK	_	JJ	0	_	_	_	_	_	_	_	O
+9	mundial	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+10	de	_	de	_	IN	0	_	_	_	_	_	_	_	O
+11	la	_	la	_	DT	0	_	_	_	_	_	_	_	O
+12	salud	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+13	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

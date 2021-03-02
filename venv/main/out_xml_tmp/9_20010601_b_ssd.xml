@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE text [
+    <!ELEMENT text (concepts, sentence+)>
+        <!ATTLIST text id CDATA #REQUIRED>
+    <!ELEMENT concepts (concept+)>
+        <!ELEMENT concept (#PCDATA)>
+            <!ATTLIST concept id ID #REQUIRED>
+    <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+        <!ELEMENT str (#PCDATA)>
+        <!ELEMENT theme (token*)>
+            <!ATTLIST theme concept_ref IDREF #REQUIRED>
+        <!ELEMENT rheme (token*)>
+            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+        <!ELEMENT token (#PCDATA)>
+            <!ATTLIST token pos CDATA #REQUIRED>
+		<!ELEMENT semantic_roles (frame|main_frame)*>
+		<!ELEMENT frame (argument*)>
+            <!ATTLIST frame type CDATA #REQUIRED>
+            <!ATTLIST frame head CDATA #REQUIRED>
+		<!ELEMENT main_frame (argument*)>
+            <!ATTLIST main_frame type CDATA #REQUIRED>
+            <!ATTLIST main_frame head CDATA #REQUIRED>
+        <!ELEMENT argument EMPTY>
+            <!ATTLIST argument type CDATA #REQUIRED>
+            <!ATTLIST argument dependent CDATA #REQUIRED>
+]>
+
+
+<text id="9_20010601_b_ssd">
+
+
+	<concepts>
+		<concept id="c_0">la propia competencia y la ley de mercado</concept>
+		<concept id="c_1">La política exterior del Gobierno de Aznar</concept>
+		<concept id="c_2">una retirada a tiempo</concept>
+		<concept id="c_3">Lo que</concept>
+		<concept id="c_4">que</concept>
+		<concept id="c_5">el factor humano</concept>
+		<concept id="c_6">Qué</concept>
+		<concept id="c_7">Todo</concept>
+		<concept id="c_8">El mundo</concept>
+		<concept id="c_9">todas las miradas</concept>
+		<concept id="c_10">rogativas y festejos</concept>
+		<concept id="c_11">la batalla</concept>
+		<concept id="c_12">un asunto</concept>
+		<concept id="c_13">forma</concept>
+		<concept id="c_14">Andalucía</concept>
+		<concept id="c_15">Galicia</concept>
+		<concept id="c_16">se</concept>
+		<concept id="c_17">un billón</concept>
+	</concepts>
+
+	<sentence>
+		<str>
+			 Después la propia competencia y la ley de mercado acabará derivando en una rebaja de los precios o en un sistema más justo para que no paguen justos por pecadores.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">la</token><token pos="di0fs0">propia</token><token pos="ncfs000">competencia</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">ley</token><token pos="sps00">de</token><token pos="ncms000">mercado</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_0">
+			<token pos="vmif3s0">acabará</token><token pos="vmg0000">derivando</token><token pos="sps00">en</token><token pos="di0fs0">una</token><token pos="ncfs000">rebaja</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">precios</token><token pos="cc">o</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="ncms000">sistema</token><token pos="rg">más</token><token pos="aq0ms0">justo</token>
+		<to_annotate>[[(152, 218), 'una rebaja', 'c_2'], [(247, 314), 'los precios', 'c_0']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="People" head="un" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La política exterior del Gobierno de Aznar ha oscilado entre la prepotencia y la impotencia.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="ncfs000">política</token><token pos="aq0cs0">exterior</token><token pos="spcms">del</token><token pos="np00000">Gobierno</token><token pos="sps00">de</token><token pos="np00000">Aznar</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">oscilado</token><token pos="sps00">entre</token><token pos="da0fs0">la</token><token pos="ncfs000">prepotencia</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">impotencia</token>
+		<to_annotate>[[(130, 200), 'la prepotencia', 'c_0']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Han fallado las formas diplomáticas y hay que cambiarlas una retirada a tiempo no siempre es una victoria, máxime cuando se estuvo predicando durante meses la guerra santa contra la pérfida Alemania y su manía de resistirse a mantener los fondos estructurales y de cohesión para España hasta pasado el 2006.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="di0fs0">una</token><token pos="ncfs000">retirada</token><token pos="sps00">a</token><token pos="ncmp000">tiempo</token>
+		</theme>
+		<rheme concept_ref1="c_2">
+			<token pos="rn">no</token><token pos="vsip3s0">es</token><token pos="di0fs0">una</token><token pos="ncfs000">victoria</token>
+		<to_annotate>[[(87, 155), 'una victoria', 'c_2']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El Gobierno español no ha tenido más remedio que rendirse a la evidencia y cancelar la batalla que le enfrentaba a casi todos los países de la Unión Europea, excepción hecha de Grecia y Portugal, por un asunto que nadie deseaba plantear con antelación y que tampoco se sabía muy bien por qué habría de resolverse ahora y no dentro de cuatro años.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="np00000">Gobierno</token><token pos="aq0ms0">español</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_11" concept_ref3="c_12" concept_ref4="c_16">
+			<token pos="rn">no</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">tenido</token><token pos="rg">más</token><token pos="ncms000">remedio</token><token pos="cs">que</token><token pos="vmn0000">rendirse</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">evidencia</token><token pos="cc">y</token><token pos="vmn0000">cancelar</token><token pos="da0fs0">la</token><token pos="ncfs000">batalla</token><token pos="sps00">por</token><token pos="di0ms0">un</token><token pos="ncms000">asunto</token><token pos="cc">y</token>
+		<to_annotate>[[(209, 245), 'remedio', 'c_0'], [(467, 533), 'la batalla', 'c_11'], [(563, 628), 'un asunto', 'c_12'], ['se', 'c_16']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El problema no era de fondos sino de forma.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">problema</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_13">
+			<token pos="rn">no</token><token pos="vsii3s0">era</token><token pos="sps00">de</token><token pos="ncmp000">fondos</token><token pos="sps00">de</token><token pos="ncfs000">forma</token>
+		<to_annotate>[[(137, 172), 'fondos', 'c_8'], [(201, 235), 'forma', 'c_13']]</to_annotate></rheme>
+		<semantic_roles>
+			<main_frame type="Calendric_unit" head="era" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 O mejor, de formas.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El Gobierno español tenía razón en exigir que, por simple ingeniería estadística derivada de la ampliación, varias regiones ( Andalucía, Galicia, Extremadura ) no se quedaran sin los dichosos fondos ( casi un billón de pesetas anuales ).
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="np00000">Gobierno</token><token pos="aq0ms0">español</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_0" concept_ref3="c_2" concept_ref4="c_14" concept_ref5="c_15" concept_ref6="c_16" concept_ref7="c_17">
+			<token pos="vmii3s0">tenía</token><token pos="ncfs000">razón</token><token pos="sps00">en</token><token pos="vmn0000">exigir</token><token pos="cs">que</token><token pos="fc">,</token><token pos="sps00">por</token><token pos="aq0cs0">simple</token><token pos="ncfs000">ingeniería</token><token pos="aq0fs0">estadística</token><token pos="aq0fsp">derivada</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">ampliación</token><token pos="fc">,</token><token pos="di0fp0">varias</token><token pos="ncfp000">regiones</token><token pos="fpa">(</token><token pos="np00000">Andalucía</token><token pos="fc">,</token><token pos="np00000">Galicia</token><token pos="fc">,</token><token pos="np00000">Extremadura</token><token pos="fpt">)</token><token pos="rn">no</token><token pos="p0300000">se</token><token pos="vmsi3p0">quedaran</token><token pos="sps00">sin</token><token pos="da0mp0">los</token><token pos="aq0mp0">dichosos</token><token pos="ncmp000">fondos</token><token pos="fpa">(</token><token pos="rg">casi</token><token pos="di0ms0">un</token><token pos="ncms000">billón</token><token pos="sps00">de</token><token pos="zm">pesetas</token><token pos="aq0cp0">anuales</token><token pos="fpt">)</token>
+		<to_annotate>[[(1112, 1147), 'fondos', 'c_8'], [(396, 435), 'ingeniería', 'c_0'], [(854, 894), 'Extremadura', 'c_2'], [(730, 768), 'Andalucía', 'c_14'], [(793, 829), 'Galicia', 'c_15'], [(946, 978), 'se', 'c_16'], [(1201, 1266), 'un billón', 'c_17']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Misdeed" head="sin" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Lo que FALLARON fueron las formas.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ns0">Lo</token><token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El tono prepotente, a veces agresivo con que se gestionaron las ambiciones españolas y la exigencia abierta de un cambalache por la moratoria de siete años que Alemania exigía en la circulación de personas envenenó el asunto.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">tono</token><token pos="aq0cs0">prepotente</token><token pos="fc">,</token><token pos="sps00">a</token><token pos="ncmp000">veces</token><token pos="aq0ms0">agresivo</token><token pos="sps00">con</token><token pos="pr0cn000">que</token><token pos="p0000000">se</token><token pos="vmis3p0">gestionaron</token><token pos="da0fp0">las</token><token pos="ncfp000">ambiciones</token><token pos="aq0fp0">españolas</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">exigencia</token><token pos="aq0fsp">abierta</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">cambalache</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">moratoria</token><token pos="sps00">de</token><token pos="dn0cp0">siete</token><token pos="ncmp000">años</token><token pos="pr0cn000">que</token><token pos="np00000">Alemania</token><token pos="vmii3s0">exigía</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">circulación</token><token pos="sps00">de</token><token pos="ncfp000">personas</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_12">
+			<token pos="vmis3s0">envenenó</token><token pos="da0ms0">el</token><token pos="ncms000">asunto</token>
+		<to_annotate>[[(87, 152), 'el asunto', 'c_5'], [(87, 152), 'el asunto', 'c_12']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Y mientras el Gobierno de Madrid llamaba inútilmente en puertas supuestamente amigas ( Francia fue un caso paradigmático ), las otras puertas, las ajenas, se iban cerrando paulatinamente.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 España se quedó orgullosamente sola apenas respaldada por un Silvio Berlusconi recién llegado al cotarro europeo y que hace buena aquella frase del gitano: "No me defiendas, compadre".
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="que " />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En los últimos años se ha ido creando un tipo de comportamiento en política exterior que oscila entre la prepotencia y la impotencia.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<token pos="vmip3s0">oscila</token><token pos="sps00">entre</token><token pos="da0fs0">la</token><token pos="ncfs000">prepotencia</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">impotencia</token>
+		<to_annotate>[[(97, 167), 'la prepotencia', 'c_0']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Nuestros heraldos diplomáticos hinchan pecho ante los asuntos más arduos de la vida internacional, anuncian grandes proyectos, pontifican sobre cómo resolver el problema de Oriente Próximo, la deuda externa, los derechos humanos y la cuadratura del círculo para, finalmente, emitir una sarta de tópicos semejantes a las resoluciones del Parlamento Europeo o de la propia UE sobre las elecciones en Kazajstán o la trágica trifulca chechena.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="dp1mpp">Nuestros</token><token pos="ncmp000">heraldos</token><token pos="aq0mp0">diplomáticos</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_9" concept_ref3="c_11" concept_ref4="c_12">
+			<token pos="vmip3p0">hinchan</token><token pos="ncms000">pecho</token><token pos="sps00">ante</token><token pos="da0mp0">los</token><token pos="ncmp000">asuntos</token><token pos="rg">más</token><token pos="aq0mp0">arduos</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">vida</token><token pos="aq0cs0">internacional</token>
+		<to_annotate>[[(125, 159), 'pecho', 'c_0'], [(347, 410), 'la vida', 'c_9'], [(347, 410), 'la vida', 'c_11'], [(190, 257), 'los asuntos', 'c_12']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Van a por todas: un día el ministro del ramo, Josep Piqué, saluda los esfuerzos del Gobierno argelino en el respeto a los derechos humanos y la democracia: lo hace oportunamente, cuando tres días antes el Ejército argelino ha disparado contra una manifestación en Tizi Uzú y deja un balance de un centenar de víctimas mortales.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">ministro</token><token pos="spcms">del</token><token pos="ncms000">ramo</token><token pos="fc">,</token><token pos="np0000l">Josep</token><token pos="np0000l">Piqué</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_5" concept_ref3="c_15" concept_ref4="c_16">
+			<token pos="vmip3s0">saluda</token><token pos="da0mp0">los</token><token pos="ncmp000">esfuerzos</token><token pos="spcms">del</token><token pos="np00000">Gobierno</token><token pos="aq0ms0">argelino</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">respeto</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="ncms000">derechos</token><token pos="aq0ms0">humanos</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">democracia</token>
+		<to_annotate>[[(124, 193), 'los esfuerzos', 'c_0'], [(547, 616), 'la democracia', 'c_5'], [(547, 616), 'la democracia', 'c_15'], [(325, 391), 'el respeto', 'c_16']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Time_vector" head="antes">
+				<argument type="Event" dependent="Uzú y deja un balance de un centenar" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Al otro día se desempolvan sonoros clarines para lanzar un plan para Lejano Oriente que será el asombro de Damasco o de Shanghái ante la sorpresa de los empresarios y de los representantes, héroes anónimos del catálogo y la comisión, inventores geniales del Chupa-Chups y de la fregona Vileda.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Purpose" head="plan" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Pero que el factor humano no falte: fines de semana en el parque natural de Doñana con Tony ( Blair ) y Abderramán ( Yusufi ), excursiones mesetarias con Lionel ( Jospin ) y António ( Guterres ).
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0ms0">el</token><token pos="ncms000">factor</token><token pos="aq0ms0">humano</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_16" concept_ref3="c_17">
+			<token pos="rn">no</token><token pos="vmsp3s0">falte</token><token pos="fd">:</token><token pos="fc">,</token><token pos="ncfp000">excursiones</token><token pos="aq0fp0">mesetarias</token><token pos="sps00">con</token><token pos="np00000">Lionel</token><token pos="fpa">(</token><token pos="np00000">Jospin</token><token pos="fpt">)</token><token pos="cc">y</token><token pos="np00000">António</token><token pos="fpa">(</token><token pos="np00000">Guterres</token><token pos="fpt">)</token>
+		<to_annotate>[[(180, 220), 'excursiones', 'c_0'], ['se', 'c_16'], [(435, 471), 'António', 'c_17']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Emotion_directed" head="fines" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Son amigos, un conocimiento, aunque Después no hay quien pesque una sardina en sus aguas turbias ni que en el momento de la verdad echen un cable en la cosa de los fondos y las políticas regionales: el gazpacho y el Ribera del Duero tienen una virtualidad limitada.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="People" head="un" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 O esos encuentros casi carnales con Vladimir Putin, enigmática sonrisa de polizonte, salvador de Chechenia y otros enclaves.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Tantas efusiones... ¿Qué se hicieron? ¿para Qué sirvieron?.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="pt0cs000">Qué</token>
+		</theme>
+		<rheme concept_ref1="c_16">
+			<token pos="p0000000">se</token><token pos="vmis3p0">hicieron</token><token pos="fit">?</token>
+		<to_annotate>[[(31, 63), 'se', 'c_16']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Todo recuerda aquel histórico intercambio de corbatas con el dinosaurio cubano con resultados tan brillantes y espectaculares: yo muevo ficha si tú mueves ficha.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="pi0ms000">Todo</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_9" concept_ref3="c_5" concept_ref4="c_13">
+			<token pos="vmip3s0">recuerda</token><token pos="dd0ms0">aquel</token><token pos="aq0ms0">histórico</token><token pos="ncms000">intercambio</token><token pos="sps00">de</token><token pos="ncfp000">corbatas</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">dinosaurio</token><token pos="aq0ms0">cubano</token><token pos="sps00">con</token><token pos="ncmp000">resultados</token><token pos="rg">tan</token><token pos="aq0cp0">brillantes</token><token pos="cc">y</token><token pos="aq0cp0">espectaculares</token><token pos="fd">:</token><token pos="pp1csn00">yo</token><token pos="vmip1s0">muevo</token><token pos="ncfs000">ficha</token><token pos="cs">si</token><token pos="pp2csn00">tú</token><token pos="vmip2s0">mueves</token><token pos="ncfs000">ficha</token>
+		<to_annotate>[[(125, 235), 'aquel histórico intercambio', 'c_0'], [(264, 301), 'corbatas', 'c_9'], [(726, 760), (853, 887), 'ficha', 'c_5'], [(726, 760), (853, 887), 'ficha', 'c_13']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En el ecuador del poder los señores primeros ministros sucumben aquí casi siempre a la tentación de "hacer el Kissinger", una figura taurina de reconocida eficacia y diversión.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">los</token><token pos="ncmp000">señores</token><token pos="ao0mp0">primeros</token><token pos="ncmp000">ministros</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_3" concept_ref3="c_0" concept_ref4="c_2">
+			<token pos="vmip3p0">sucumben</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">tentación</token><token pos="sps00">de</token><token pos="fe">quot;</token><token pos="vmn0000">hacer</token><token pos="da0ms0">el</token><token pos="np00000">Kissinger</token><token pos="fe">quot;</token><token pos="fc">,</token><token pos="di0fs0">una</token><token pos="ncfs000">figura</token><token pos="aq0fs0">taurina</token><token pos="sps00">de</token><token pos="aq0fsp">reconocida</token><token pos="ncfs000">eficacia</token><token pos="cc">y</token><token pos="ncfs000">diversión</token>
+		<to_annotate>[[(152, 220), 'la tentación', 'c_1'], ['quot', 'c_3'], ['el Kissinger quot', 'c_0'], [(434, 500), 'una figura', 'c_2']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El mundo ya no es ajeno aunque sigue siendo ancho.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="da0ms0">El</token><token pos="ncms000">mundo</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vsip3s0">es</token><token pos="aq0ms0">ajeno</token>
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Y todas las miradas convergen en la lucecita de la Moncloa porque de allí provienen la buena nueva y las buenas noticias.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="di0fp0">todas</token><token pos="da0fp0">las</token><token pos="ncfp000">miradas</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_14">
+			<token pos="vmip3p0">convergen</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">lucecita</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Moncloa</token>
+		<to_annotate>[[(117, 184), 'la lucecita', 'c_0'], [(213, 279), 'la Moncloa', 'c_14']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Conviene que ahora, en plena apoteosis de pre-presidencia ( presidiremos la Unión Europea dentro de unos meses: rogativas y festejos son de rigor ) reflexionemos críticamente y nos hagamos un lifting metodológico.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="ncfp000">rogativas</token><token pos="cc">y</token><token pos="ncmp000">festejos</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3p0">son</token><token pos="sps00">de</token><token pos="ncms000">rigor</token>
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Cause_to_end" head="lifting">
+				<argument type="State" dependent="de" /></frame>
+			<main_frame type="Kinship" head="son" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Cambiar las formas parece de rigor, pero, en el fondo, el fondo no hay quien lo cambie.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

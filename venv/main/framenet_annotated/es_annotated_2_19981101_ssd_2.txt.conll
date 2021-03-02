@@ -1,0 +1,11 @@
+{   ('Activity_finish', 'termine'): [('Activity', 'desarrolla en el Hospital Nacional de Parapléjicos de')],
+    ('Appellations', 'presidente'): [('Type', 'de')],
+    ('Buildings', 'Hospital'): [('Relative_location', 'Nacional'), ('Relative_location', 'de Parapléjicos de')],
+    ('Cause_to_make_progress', 'desarrolla'): [('Project', 'la píldora que'), ('Prior_state', 'en el Hospital Nacional')],
+    ('Discussion', 'negociará'): [('Interlocutor_1', 'ha'), ('Interlocutor_2', 'con el Gobierno')],
+    ('Locative_relation', 'en'): [('Figure', 'la píldora que se desarrolla en'), ('Ground', 'el Hospital Nacional')],
+    ('Point_of_dispute', 'cuestión'): [('Time', 'una vez termine el ensayo clínico'), ('Descriptor', 'la eficacia de la píldora que se desarrolla en el Hospital Nacional de Parapléjicos de')],
+    ('Political_locales', 'Nacional'): [],
+    ('Statement', 'anunciado'): [   ('Speaker', 'Pinto , presidente de Aspaym , ha'),
+                                    ('Message', 'que negociará con el Gobierno sobre esta cuestión una vez termine el ensayo clínico sobre la eficacia de la píldora que se')],
+    ('Trial', 'ensayo'): [('Defendant', 'clínico')]}

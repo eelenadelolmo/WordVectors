@@ -1,0 +1,5 @@
+{   ('Leadership', 'ministro'): [('Governed', 'portugués'), ('Leader', 'de')],
+    ('Level_of_force_exertion', 'fuerte'): [('Exerter', 'el')],
+    ('Needing', 'necesita'): [('Cognizer', 'euro estable y fuerte'), ('Requirement', 'UE fuerte')],
+    ('Origin', 'portugués'): [('Entity', 'ministro')],
+    ('Statement', 'afirmó'): [('Speaker', 'euro estable y fuerte necesita una UE fuerte &'), ('Speaker', 'el ministro portugués')]}

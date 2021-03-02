@@ -1,0 +1,5 @@
+{   ('Adopt_selection', 'adoptando'): [('Attribute', 'la libertad personal del agresor')],
+    ('Body_parts', 'ante'): [],
+    ('Limitation', 'limitación'): [('Entity', 'la libertad personal del agresor')],
+    ('Statement', 'informe de'): [],
+    ('Statement', 'se'): [('Message', 'El informe de la'), ('Message', 'que ante los incumplimientos no')]}

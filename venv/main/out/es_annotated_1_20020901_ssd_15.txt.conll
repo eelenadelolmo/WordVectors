@@ -1,0 +1,10 @@
+{   ('Adopt_selection', 'adoptadas'): [('Attribute', 'medidas')],
+    ('Body_parts', 'ante'): [],
+    ('Catastrophe', 'víctima'): [],
+    ('Imprisonment', 'prisión'): [('Prisoner', 'provisional')],
+    ('Instance', 'situación'): [('Instance_prop', 'pocos')],
+    ('Locative_relation', 'está'): [('Figure', 'que'), ('Ground', 'especialmente son pocos los supuestos en')],
+    ('Make_agreement_on_action', 'supuestos'): [('Obligation', 'prisión provisional')],
+    ('Obviousness', 'evidente'): [('Phenomenon', 'situación de riesgo')],
+    ('Quantified_mass', 'pocos'): [('Individuals', 'situación')],
+    ('Run_risk', 'riesgo'): []}

@@ -1,8 +1,0 @@
-{   ('Calendric_unit', 'ayer'): [],
-    ('Calendric_unit', 'días'): [('Salient_event', 'de elecciones')],
-    ('Change_of_leadership', 'de elecciones'): [],
-    ('Killing', 'matar'): [('Victim', 'la ansiedad yéndose al cine')],
-    ('Motion', 'yéndose'): [('Goal', 'al cine')],
-    ('Opinion', 'pensaba'): [('Cognizer', 'el senador por'), ('Manner', 'ayer'), ('Opinion', 'matar la ansiedad yéndose al cine')],
-    ('Reason', 'por'): [],
-    ('Statement', 'dijo'): [('Message', 'quot ; como hace todos los días de elecciones'), ('Speaker', 'yéndose')]}
