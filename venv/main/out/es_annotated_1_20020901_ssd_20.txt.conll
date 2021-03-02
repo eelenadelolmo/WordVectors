@@ -1,5 +1,0 @@
-{   ('Active_substance', 'agentes'): [],
-    ('Avoiding', 'evitar'): [('Agent', '45'), ('Undesirable_situation', 'incidentes con el agresor')],
-    ('Catastrophe', 'incidentes'): [('Undesirable_event', 'con el agresor')],
-    ('Judicial_body', 'juzgados'): [],
-    ('People', 'las'): [('Descriptor', 'perjudicadas')]}

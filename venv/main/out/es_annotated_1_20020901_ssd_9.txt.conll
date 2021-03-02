@@ -1,7 +1,0 @@
-{   ('Committing_crime', 'delito'): [],
-    ('Contingency', 'dictando'): [('Determinant', 'una sola sentencia absolutoria y 18')],
-    ('Increment', 'otros'): [('Class', '19 juicios')],
-    ('Judicial_body', 'tribunales'): [],
-    ('Locative_relation', 'en'): [('Figure', 'otros 19 juicios en los que'), ('Ground', 'existía delito')],
-    ('Sole_instance', 'sola'): [('Type', 'dictando')],
-    ('Trial', 'juicios'): []}

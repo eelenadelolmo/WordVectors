@@ -1,7 +1,0 @@
-{   ('Arriving', 'visita'): [('Goal', 'al lugar de la explosión')],
-    ('Attempt_suasion', 'presión'): [('Content', 'edificio')],
-    ('Buildings', 'edificio'): [],
-    ('Commitment', 'prometió'): [('Message', 'a los afectados la & quot ; máxima presión & quot ; para activar la reconstrucción del edificio , en una visita al')],
-    ('Interior_profile_relation', 'en'): [('Figure', 'edificio'), ('Ground', 'una visita al lugar de la explosión')],
-    ('Leadership', 'máxima'): [],
-    ('Objective_influence', 'afectados la'): [('Influencing_situation', 'los')]}

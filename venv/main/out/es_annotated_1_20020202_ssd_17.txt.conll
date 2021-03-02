@@ -1,4 +1,0 @@
-{   ('Assistance', 'ayuda'): [],
-    ('Cutting', 'cuchillo'): [('Agent', 'alguien'), ('Manner', 'deliberadamente'), ('Item', 'esa goma con ayuda')],
-    ('Likelihood', 'seguramente'): [('Hypothetical_event', 'goma con ayuda'), ('Hypothetical_event', 'un cuchillo')],
-    ('Suasion', 'convencidos'): [('Speaker', 'investigadores'), ('Content', 'que alguien cortó deliberadamente esa goma con ayuda')]}

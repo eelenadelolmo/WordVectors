@@ -1,6 +1,0 @@
-{   ('Contacting', 'páginas'): [('Place', 'castellano abiertas por miembros de estas sectas o por las mismas hermandades')],
-    ('Interior_profile_relation', 'en'): [('Figure', 'existen páginas en'), ('Ground', 'castellano abiertas por miembros de estas sectas')],
-    ('Locative_relation', 'existen'): [('Figure', 'la Red'), ('Ground', 'existen páginas en castellano abiertas por miembros de estas sectas o por las mismas hermandades')],
-    ('Membership', 'miembros'): [('Group', 'de estas sectas')],
-    ('Organization', 'hermandades'): [],
-    ('Spatial_contact', 'en'): [('Ground', 'la Red'), ('Figure', 'existen páginas en castellano abiertas por miembros de estas sectas o por las mismas hermandades')]}

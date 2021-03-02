@@ -1,1 +1,14 @@
-{('Misdeed', 'sin'): [('Manner', 'futuro del')]}
+{   ('Accomplishment', 'lograr'): [('Goal', 'avance')],
+    ('Alternatives', 'futuro'): [],
+    ('Body_parts', 'jefe'): [],
+    ('Calendric_unit', 'Lunes'): [('Relative_time', 'definitivo')],
+    ('Desiring', 'deseo'): [('Event', 'de lograr un avance en la negociación sobre el futuro del Peñón sin renunciar a la reintegración a la soberanía española')],
+    ('Duration_description', 'duradero'): [],
+    ('Level_of_force_exertion', 'fuerte'): [('Degree', 'tal'), ('Exerter', 'que el jefe de la diplomacia se mostró dispuesto a aceptar un')],
+    ('Make_agreement_on_action', 'un acuerdo'): [('Obligation', 'dispuesto a aceptar un')],
+    ('Part_whole', 'parte'): [('Whole', 'Aznar que el jefe de')],
+    ('Progression', 'avance'): [],
+    ('Receiving', 'aceptar'): [('Theme', 'jefe de la diplomacia'), ('Theme', 'un acuerdo & quot ; duradero & quot ; o')],
+    ('Relative_time', 'duradero'): [('Focal_occasion', 'un acuerdo')],
+    ('Renunciation', 'reintegración'): [('Content', 'la reintegración a la soberanía española')],
+    ('Willingness', 'dispuesto'): [('Activity', 'jefe de la diplomacia'), ('Activity', 'a aceptar un acuerdo & quot ; duradero & quot ; o')]}

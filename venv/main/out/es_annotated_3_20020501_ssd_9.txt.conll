@@ -1,1 +1,25 @@
-{}
+{   ('Calendric_unit', 'siglos'): [('Relative_time', 'últimos'), ('Count', 'tres')],
+    ('Cardinal_numbers', 'tres'): [('Precision', 'últimos'), ('Unit', 'siglos')],
+    ('Categorization', 'consideró'): [   ('Item', 'el ministro'),
+                                         ('Cognizer', 'quien'),
+                                         ('Item', 'que el'),
+                                         ('Category', 'asumible que el Gobierno británico someta el acuerdo a consulta entre los gibraltareños')],
+    ('Causation', 'porque'): [   ('Effect', '; No hemos recurrido ni vamos a recurrir a los planteamientos del todo o nada'),
+                                 ('Cause', 'esas actitudes han impedido una solución al contencioso en los tres últimos siglos & quot ; , afirmó el ministro ,'),
+                                 (   'Effect',
+                                     ', quien consideró asumible que el Gobierno británico someta el acuerdo a consulta entre los gibraltareños , pero no admitirá ningún ejercicio de '
+                                     'autodeterminación')],
+    ('Discussion', 'consulta'): [('Interlocutor_2', 'entre los gibraltareños')],
+    ('Leadership', 'Gobierno'): [('Governed', 'británico')],
+    ('Make_agreement_on_action', 'el acuerdo'): [('Obligation', 'a consulta entre los gibraltareños')],
+    ('Means', 'recurrir'): [('Purpose', 'nada')],
+    ('Motion', 'a los'): [('Theme', 'hemos'), ('Goal', 'a recurrir a los planteamientos del todo o nada')],
+    ('Practice', 'ejercicio'): [('Manner', 'ningún'), ('Action', 'ejercicio de autodeterminación')],
+    ('Preventing_or_letting', 'impedido'): [('Potential_hindrance', 'esas actitudes'), ('Event', 'solución al contencioso en los tres últimos siglos')],
+    ('Quarreling', 'contencioso'): [('Time', 'en los tres últimos siglos')],
+    ('Reveal_secret', 'admitirá'): [('Speaker', 'que el'), ('Information', 'ningún ejercicio de autodeterminación')],
+    ('Statement', 'afirmó'): [   ('Speaker', 'actitudes han impedido una solución al contencioso en los tres últimos siglos'),
+                                 (   'Message',
+                                     '; , afirmó el ministro , quien consideró asumible que el Gobierno británico someta el acuerdo a consulta entre los gibraltareños , pero no admitirá ningún '
+                                     'ejercicio de autodeterminación')],
+    ('Submitting_documents', 'quot'): [('Submittor', 'el Gobierno británico'), ('Documents', 'el acuerdo a consulta entre los gibraltareños')]}

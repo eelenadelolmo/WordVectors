@@ -1,4 +1,15 @@
-{   ('Actually_occurring_entity', 'actual'): [('Type', 'es')],
-    ('Intentionally_act', 'dos'): [('Act', 'estados amigos')],
+{   ('Accomplishment', 'lograr'): [('Goal', 'un acuerdo global')],
+    ('Adopt_selection', 'asumidas'): [('Attribute', 'Bajo las')],
+    ('Age', 'nuevo'): [('Entity', 'estatuto')],
+    ('Aggregate', 'partes'): [],
+    ('Causation', 'provoca'): [],
+    ('Cogitation', 'consideración'): [('Topic', 'a los gibraltareños')],
+    ('Judgment', 'respeto'): [('Reason', 'máxima consideración a los gibraltareños')],
+    ('Leadership', 'estados'): [],
+    ('Locale', 'situación'): [],
+    ('Make_agreement_on_action', 'un acuerdo'): [('Topic', 'global')],
     ('Political_locales', 'global'): [],
-    ('Taking_sides', 'partes'): [('Side', 'las')]}
+    ('Purpose', 'objetivo'): [('Goal', 'quot ; lograr un acuerdo global')],
+    ('Quarreling', 'contencioso'): [],
+    ('Social_interaction_evaluation', 'amigos'): [('Evaluee', 'estados')],
+    ('Temporal_collocation', 'actual'): [('Trajector_entity', 'situación')]}

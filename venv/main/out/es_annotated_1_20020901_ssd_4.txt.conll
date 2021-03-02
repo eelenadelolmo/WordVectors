@@ -1,5 +1,0 @@
-{   ('Causation', 'que'): [('Effect', 'hay'), ('Effect', 'para que el alejamiento se cumpla')],
-    ('Coming_to_be', 'surge'): [('Entity', 'problema')],
-    ('Locative_relation', 'hay'): [('Ground', 'no hay medios para que el alejamiento se cumpla')],
-    ('Predicament', 'problema'): [],
-    ('Quitting_a_place', 'alejamiento'): []}

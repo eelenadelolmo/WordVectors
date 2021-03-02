@@ -1,8 +1,0 @@
-1	these	_	These	_	DT	0	_	_	_	_	_	_	_	O
-2	circumstances	_	circumstance	_	NNS	0	_	_	_	_	_	_	_	O
-3	may	_	may	_	MD	0	_	_	_	_	_	_	_	O
-4	distort	_	UNK	_	VB	0	_	_	_	_	_	_	_	O
-5	the	_	the	_	DT	0	_	_	_	_	_	_	_	O
-6	measure	_	measure	_	NN	0	_	_	_	_	_	measure.n	Quantified_mass	S-Quantity
-7	.	_	.	_	.	0	_	_	_	_	_	_	_	O
-

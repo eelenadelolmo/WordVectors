@@ -1,9 +1,0 @@
-{   ('Attempt', 'intentos'): [('Goal', 'suicidios')],
-    ('Expertise', 'expertos'): [],
-    ('People', 'han'): [],
-    ('People_by_vocation', 'juez'): [],
-    ('Quantified_mass', 'bastantes'): [('Individuals', 'antecedentes')],
-    ('Telling', 'informado'): [   ('Speaker', 'expertos policiales'),
-                                  ('Message', 'juez de que la presunta responsable de la explosión tiene & quot ; bastantes antecedentes & quot ; por intentos de suicidios')],
-    ('Text', 'antecedentes'): [('Genre', 'bastantes')],
-    ('Unattributed_information', 'la presunta'): [('Reported_fact', 'han')]}

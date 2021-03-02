@@ -1,5 +1,0 @@
-{   ('Buildings', 'vivienda'): [],
-    ('Judgment_direct_address', 'gracias'): [('Reason', 'la vida'), ('Reason', 'a un sofá')],
-    ('People_by_vocation', 'bomberos'): [],
-    ('Rescuing', 'rescataron'): [('Agent', 'Los bomberos'), ('Patient', 'del Carmen Costa'), ('Harmful_situation', 'de esa vivienda')],
-    ('Rescuing', 'salvó'): [('Agent', 'que'), ('Time', 'milagrosamente'), ('Patient', 'la vida')]}

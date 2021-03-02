@@ -1,1 +1,9 @@
-{('Leadership', 'director'): []}
+{   ('Being_employed', 'trabajando'): [('Task', 'como director creativo en la')],
+    ('Businesses', 'firma'): [],
+    ('Cardinal_numbers', 'millones'): [('Multiplier', 'Mol'), ('Precision', '261.000')],
+    ('Continued_state_of_affairs', 'aun'): [('State_of_affairs', 'trabajando como director creativo en la')],
+    ('Earnings_and_losses', 'ganó'): [('Earner', 'Mol'), ('Earnings', '261.000 millones')],
+    ('Judgment_direct_address', 'Gracias'): [('Reason', 'poseía el 28,6 % de las acciones , De Mol ganó 261.000 millones ,')],
+    ('Leadership', 'director'): [('Descriptor', 'creativo')],
+    ('Possession', 'poseía'): [('Possession', '28,6 % de las acciones , De Mol ganó 261.000 millones ,')],
+    ('Process_continue', 'sigue'): [('Manner', 'aun'), ('Event', 'trabajando como director creativo en la')]}

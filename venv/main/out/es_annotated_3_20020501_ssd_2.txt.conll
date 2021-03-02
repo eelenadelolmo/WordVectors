@@ -1,1 +1,13 @@
-{('Leadership', 'principal'): [('Type', 'cuyo ministro')]}
+{   ('Aggregate', 'partes'): [],
+    ('Arriving', 'otorgar'): [('Theme', 'ambas partes'), ('Goal', 'un acuerdo')],
+    ('Becoming_a_member', 'invitó'): [('New_member', 'gibraltareños , a cuyo ministro principal'), ('Group', 'diálogo')],
+    ('Calendric_unit', 'Ayer'): [],
+    ('Cogitation', 'consideración'): [('Topic', 'a los gibraltareños')],
+    ('Commitment', 'compromiso'): [('Speaker', 'español'), ('Message', 'quot ; la máxima consideración & quot ; a los gibraltareños , a cuyo ministro principal , Peter Caruana , invitó de nuevo')],
+    ('Giving', 'otorgar'): [('Donor', 'ambas partes'), ('Theme', '; la máxima consideración'), ('Recipient', 'a los gibraltareños')],
+    ('Interior_profile_relation', 'en'): [('Figure', ', auguró un & quot ; serio deterioro'), ('Ground', 'relaciones bilaterales')],
+    ('Leadership', 'principal'): [('Governed', 'cuyo')],
+    ('Make_agreement_on_action', 'un acuerdo'): [],
+    ('Predicting', 'auguró'): [('Speaker', 'el'), ('Eventuality', 'deterioro & quot ; de las relaciones bilaterales si ambas partes no logran un acuerdo y reiteró el compromiso español de')],
+    ('Relation', 'las relaciones'): [('Relation_type', 'bilaterales')],
+    ('Request', 'invitó'): [('Message', 'gibraltareños , a cuyo ministro principal'), ('Message', 'de nuevo a sumarse al diálogo')]}

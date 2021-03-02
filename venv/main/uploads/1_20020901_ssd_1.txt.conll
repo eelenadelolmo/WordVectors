@@ -1,7 +1,0 @@
-1	domestic	_	UNK	_	JJ	0	_	_	_	_	_	_	_	B-Event
-2	violence	_	violence	_	NN	0	_	_	_	_	_	_	_	I-Event
-3	does	_	do	_	VBZ	0	_	_	_	_	_	_	_	O
-4	not	_	not	_	RB	0	_	_	_	_	_	_	_	O
-5	stop	_	stop	_	VB	0	_	_	_	_	_	stop.v	Preventing_or_letting	O
-6	.	_	.	_	.	0	_	_	_	_	_	_	_	O
-

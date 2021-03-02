@@ -1,1 +1,5 @@
-{('People', 'un'): [('Descriptor', 'En todo caso')]}
+{   ('Discussion', 'negociaciones'): [],
+    ('Importance', 'seriamente'): [('Undertaking', 'relaciones bilaterales'), ('Undertaking', 'desembocan')],
+    ('Improvement_or_decline', 'desembocan'): [('Entity', 'relaciones bilaterales'), ('Rate', 'seriamente')],
+    ('Relation', 'las relaciones'): [('Relation_type', 'bilaterales')],
+    ('Successful_action', 'éxito'): [('Means', 'las negociaciones')]}

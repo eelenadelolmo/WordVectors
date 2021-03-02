@@ -1,1 +1,7 @@
-{('Kinship', 'Brother'): []}
+{   ('Arriving', 'salió'): [('Theme', 'su'), ('Manner', 'den'), ('Source', 'con la de')],
+    ('Being_named', 'el nombre'): [('Entity', 'Endemol')],
+    ('Businesses', 'van'): [('Proprietor', 'su'), ('Descriptor', 'propia'), ('Product', 'productora')],
+    ('Kinship', 'Brother'): [('Descriptor', 'Big')],
+    ('Manufacturing', 'productora'): [],
+    ('Placing', 'montar'): [('Theme', 'su propia productora')],
+    ('Relative_time', 'Después de'): [('Landmark_occasion', 'montar su propia productora'), ('Focal_occasion', 'Joop van den Ende , de donde salió el nombre de Endemol , ideó Big')]}

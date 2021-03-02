@@ -1,1 +1,13 @@
-{('Process_end', 'final'): [('Process', 'del verano')], ('Time_vector', 'ante'): [('Event', 'de dificultades para cumplir el objetivo inicial de llegar a un acuerdo en junio')]}
+{   ('Arriving', 'llegar'): [('Goal', 'un acuerdo'), ('Time', 'en')],
+    ('Calendric_unit', 'verano'): [],
+    ('Discussion', 'negociaciones'): [('Interlocutor_2', 'con los británicos')],
+    ('Discussion', 'un acuerdo'): [('Topic', 'cumplir el objetivo inicial de llegar a un acuerdo en')],
+    ('Evidence', 'evidencia'): [('Proposition', 'de dificultades')],
+    ('Giving', 'dispuesto'): [('Theme', 'la evidencia de dificultades')],
+    ('Make_agreement_on_action', 'un acuerdo'): [('Time', 'en')],
+    ('Process_end', 'final'): [('Process', 'del verano')],
+    ('Purpose', 'objetivo'): [('Goal', 'llegar a un acuerdo'), ('Time', 'en')],
+    ('Self_motion', 'llegar'): [('Self_mover', 'ministro de Asuntos Exteriores ,'), ('Path', 'negociaciones con los británicos sobre Gibraltar hasta el final del verano')],
+    ('Spatial_contact', 'en'): [('Figure', 'británicos'), ('Ground', 'apurar')],
+    ('Version_sequence', 'inicial'): [('Item', 'cumplir el objetivo inicial de llegar a un acuerdo en')],
+    ('Willingness', 'dispuesto'): [('Activity', 'a apurar las negociaciones con los británicos sobre Gibraltar hasta el final del verano')]}

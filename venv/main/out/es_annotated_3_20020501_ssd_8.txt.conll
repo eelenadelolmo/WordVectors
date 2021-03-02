@@ -1,1 +1,6 @@
-{}
+{   ('Desiring', 'esperanza en que'): [('Experiencer', 'su')],
+    ('Evidence', 'mostró'): [   ('Support', 'su'),
+                                ('Proposition', 'su esperanza en que cuando José María Aznar y Tony Blair se reúnan en Londres , el próximo día 20 , los negociadores hayan allanado el camino')],
+    ('Make_acquaintance', 'se'): [('Individual_2', 'Tony Blair'), ('Time', 'en Londres , el próximo día 20')],
+    ('Means', 'camino'): [('Agent', 'los negociadores')],
+    ('Possession', 'se'): [('Owner', 'los negociadores'), ('Possession', 'allanado el camino')]}

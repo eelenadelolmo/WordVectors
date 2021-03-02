@@ -1,1 +1,8 @@
-{}
+{   ('Accoutrements', 'ven'): [('Accoutrement', 'mundo ven'), ('Style', 'sus programas')],
+    ('Calendric_unit', 'día'): [('Count', 'cada')],
+    ('Cardinal_numbers', 'millones'): [('Multiplier', '250'), ('Entity', 'personas')],
+    ('Evidence', 'Dice'): [('Support', 'sus')],
+    ('Locative_relation', 'en'): [('Figure', 'cada día 250 millones de personas'), ('Ground', 'el mundo')],
+    ('People', 'personas'): [('Descriptor', '250 millones')],
+    ('Political_locales', 'mundo'): [],
+    ('Statement', 'Dice'): [('Speaker', 'sus'), ('Message', 'que cada día 250 millones de personas en todo el mundo ven sus')]}

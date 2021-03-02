@@ -1,1 +1,9 @@
-{}
+{   ('Activity_start', 'empezó'): [('Time', 'Hace unos 25 años'), ('Agent', 'John de Mol'), ('Place', 'en el mundo de la televisión holandesa como ayudante de producción de un programa deportivo')],
+    ('Calendric_unit', 'años'): [('Count', '25')],
+    ('Manufacturing', 'producción'): [],
+    ('Origin', 'holandesa'): [('Entity', 'televisión')],
+    ('Political_locales', 'mundo'): [('Container_possessor', 'la televisión holandesa')],
+    ('Project', 'programa'): [('Salient_entity', 'deportivo')],
+    ('Proportional_quantity', 'de la'): [('Reference_quantity', '25 años')],
+    ('Subordinates_and_superiors', 'ayudante de'): [('Superior', 'producción')],
+    ('Time_vector', 'Hace'): [('Distance', 'unos 25 años'), ('Event', 'John de Mol empezó en el mundo de la televisión holandesa como ayudante de producción de un programa deportivo')]}

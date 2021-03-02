@@ -1,1 +1,8 @@
-{('Leadership', 'mayor'): [('Type', 'de')]}
+{   ('Activity_start', 'comenzado'): [('Agent', 'su'), ('Activity', 'Straw el complejo asunto de la soberanía y & quot ; la negociación vive los momentos de mayor complejidad')],
+    ('Hiding_objects', 'ocultó'): [('Hidden_object', 'su disgusto'), ('Time', 'por la interferencia de Hain')],
+    ('Hindering', 'interferencia'): [('Hindrance', 'Hain')],
+    ('Locale_by_use', 'complejo'): [],
+    ('Perception_experience', 'asunto'): [('Phenomenon', 'negociación'), ('Ground', 'los momentos de mayor complejidad')],
+    ('Point_of_dispute', 'asunto'): [('Descriptor', 'complejo'), ('Question', 'la soberanía'), ('Descriptor', 'con su homólogo Jack Straw el')],
+    ('Statement', 'quot'): [('Speaker', 'su'), ('Message', 'Straw el complejo asunto de la soberanía')],
+    ('System_complexity', 'complejo'): [('Degree', 'de mayor'), ('System', 'momentos')]}
