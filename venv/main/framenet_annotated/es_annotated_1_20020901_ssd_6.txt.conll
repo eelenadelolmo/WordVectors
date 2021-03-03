@@ -1,7 +1,0 @@
-{   ('Calendric_unit', 'año'): [('Relative_time', 'se')],
-    ('Change_position_on_a_scale', 'se'): [('Item', 'violencia doméstica'), ('Path', 'año pasado'), ('Attribute', 'en Barcelona')],
-    ('Foreign_or_domestic_country', 'doméstica'): [],
-    ('Giving', 'dictadas'): [('Theme', 'violencia doméstica'), ('Manner', 'año pasado'), ('Donor', 'en Barcelona')],
-    ('Interior_profile_relation', 'en'): [('Time', 'año pasado'), ('Ground', 'Barcelona')],
-    ('Make_agreement_on_action', 'se'): [],
-    ('Relative_time', 'se'): [('Focal_occasion', 'año')]}

@@ -1,5 +1,0 @@
-{   ('Affirm_or_deny', 'rechazó'): [('Speaker', 'La mujer'), ('Message', 'toda responsabilidad de su madre en el siniestro')],
-    ('Being_obligated', 'responsabilidad'): [('Duty', 'su madre en el siniestro')],
-    ('Catastrophe', 'siniestro'): [],
-    ('Kinship', 'madre'): [('Ego', 'su')],
-    ('People', 'mujer'): []}

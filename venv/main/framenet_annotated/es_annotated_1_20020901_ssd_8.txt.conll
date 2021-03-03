@@ -1,4 +1,0 @@
-{   ('Arriving', 'acercarse'): [('Theme', '20 prohibían al agresor'), ('Goal', 'la víctima')],
-    ('Catastrophe', 'víctima'): [],
-    ('Deny_or_grant_permission', 'prohibían'): [('Action', 'agresor')],
-    ('Giving', 'dictaron'): [('Time', 'En el 2001'), ('Theme', '91 sentencias de faltas absolutorias y 56')]}

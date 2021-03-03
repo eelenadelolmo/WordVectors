@@ -1,4 +1,0 @@
-{   ('Committing_crime', 'delito'): [],
-    ('Existence', 'existencia'): [('Entity', 'de delito')],
-    ('Judgment', 'apreciarse'): [('Evaluee', 'delito')],
-    ('Process_end', 'acaban'): [('Process', 'mayoría de las denuncias'), ('Place', 'en un juicio de faltas')]}

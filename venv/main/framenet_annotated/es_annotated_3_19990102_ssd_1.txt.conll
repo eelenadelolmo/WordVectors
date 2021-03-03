@@ -1,9 +1,0 @@
-{   ('Accomplishment', 'conseguir'): [('Agent', 'la respuesta europea'), ('Goal', 'objetivo de un mayor nivel de empleo y bienestar de nuestros ciudadanos . El euro es la mejor base')],
-    ('Being_employed', 'empleo'): [],
-    ('Communicate_categorization', 'representa'): [   ('Speaker', 'euro'),
-                                                      ('Category', 'euro representa la respuesta europea para conseguir el objetivo de un mayor nivel de empleo y bienestar de nuestros')],
-    ('Intentionally_create', 'crear'): [('Created_entity', 'empleo')],
-    ('Purpose', 'objetivo'): [('Goal', 'mayor nivel de empleo y bienestar de nuestros ciudadanos . El euro es la mejor base para crear empleo & quot ;')],
-    ('Required_event', 'mejor'): [('Required_situation', 'base'), ('Purpose', 'para crear empleo')],
-    ('Response', 'respuesta'): [('Agent', 'europea'), ('Trigger', 'europea para conseguir el objetivo de un mayor nivel de empleo y bienestar de nuestros')],
-    ('Statement', 'insistió'): [('Speaker', 'el')]}

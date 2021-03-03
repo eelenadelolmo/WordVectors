@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 
-<!DOCTYPE text [
-	<!ELEMENT text (sentence+)>
-	    <!ATTLIST text id CDATA #REQUIRED>
-	<!ELEMENT sentence (str, theme, rheme, semantic_roles)>
-		<!ELEMENT str (#PCDATA)>
-		<!ELEMENT theme (token*)>
-		<!ELEMENT rheme (token*)>
-		<!ELEMENT token (#PCDATA)>
-		    <!ATTLIST token pos CDATA #REQUIRED>
-		<!ELEMENT semantic_roles (frame|main_frame)*>
-		<!ELEMENT frame (argument*)>
-            <!ATTLIST frame type CDATA #REQUIRED>
-            <!ATTLIST frame head CDATA #REQUIRED>
-		<!ELEMENT main_frame (argument*)>
-            <!ATTLIST main_frame type CDATA #REQUIRED>
-            <!ATTLIST main_frame head CDATA #REQUIRED>
-		<!ELEMENT argument EMPTY>
-            <!ATTLIST argument type CDATA #REQUIRED>
-            <!ATTLIST argument dependent CDATA #REQUIRED>
-]>
+    <!DOCTYPE text [
+    	<!ELEMENT text (sentence+)>
+    	    <!ATTLIST text id CDATA #REQUIRED>
+    	<!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+    		<!ELEMENT str (#PCDATA)>
+    		<!ELEMENT theme (token*)>
+    		<!ELEMENT rheme (token*)>
+    		<!ELEMENT token (#PCDATA)>
+    		    <!ATTLIST token pos CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+    		<!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
 
 
-<text id="9_20010601_a_ssd">
+    <text id="9_20010601_a_ssd">
 
 
 	<sentence>

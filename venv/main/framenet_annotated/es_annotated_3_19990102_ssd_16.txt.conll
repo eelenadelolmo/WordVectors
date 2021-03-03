@@ -1,7 +1,0 @@
-{   ('Cardinal_numbers', 'dos'): [('Precision', 'de Berlín')],
-    ('Evidence', 'significa'): [('Support', 'es'), ('Proposition', 'que los 26 cents de diferencia entre las dos hamburguesas ( la de Barcelona y la de Berlín )')],
-    ('Identicality', 'el mismo'): [('Type', '25 %')],
-    ('Increment', 'más'): [('Class', 'más de 43 pesetas')],
-    ('Interior_profile_relation', 'en'): [('Figure', 'se hace la comparación'), ('Ground', 'pesetas')],
-    ('Manufacturing', 'hace'): [('Product', 'la comparación'), ('Factory', 'en pesetas')],
-    ('Non-commutative_statement', 'diferencia'): [('Term_1', 'entre las dos hamburguesas')]}

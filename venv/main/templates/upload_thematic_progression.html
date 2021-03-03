@@ -42,7 +42,7 @@
 
     <div style="background-color: #4d4d4d;">
         <br/><br/>
-        <h1 style="text-align:center; color: #ffffff; font-size: 77px">EN-ES Sequence mapper (Framenet SRL)</h1>
+        <h1 style="text-align:center; color: #ffffff; font-size: 77px">Thematic Progression annotator</h1>
         <br/><br/>
     </div>
 
@@ -51,14 +51,14 @@
     <div class="fieldset_upload">
       <h1 class="legend">Upload</h1>
       <ul>
-          <h2 style="color:black">Upload English annotated with FrameNet SRL files and the original Spanish sentences files.</h2>
+          <h2 style="color:black">Upload Spanish annotated frames in JSON and Grew annotated corresponding files for every text.</h2>
           <br/>
 		  <h2 style="color:black">Press the submit button after selecting every group of files.</h2>
           <br/>
-          <p style="color:black">The names of the corresponding files for every sentence/annotated sentence must match, except for the extra .conll extension of the annotated version.</p>
+          <p style="color:black">The names of the corresponding files for every sentence must match, but there is one file per every sentence of the text with its SRL annotation.</p>
           <br/><br/>
 
-			<form method="POST" action="upload-frame-ann-en" enctype="multipart/form-data">
+			<form method="POST" action="upload-tp-ann" enctype="multipart/form-data">
                 <dl>
                     <p>
                         <input type="file" name="files[]" multiple="true" autocomplete="off" required>
@@ -77,11 +77,11 @@
     <div class="fieldset_process">
       <h1 class="legend">Mapping</h1>
       <ul>
-		  <h2 style="color:black">When you are done, press this button to perform the mapping:</h2>
+		  <h2 style="color:black">When you are done, press this button to annotate the Thematic Progression:</h2>
 		  <br/><br/>
 
-		  <form action="/mapping_SRL" method="post">
-            <button name="forwardBtn" type="submit">Annotate in Spanish!</button>
+		  <form action="/TP_annotate" method="post">
+            <button name="forwardBtn" type="submit">Annotate!</button>
         </form>
       </ul>
     </div>

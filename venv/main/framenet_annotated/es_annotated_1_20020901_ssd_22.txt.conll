@@ -1,6 +1,0 @@
-{   ('Catastrophe', 'víctimas'): [('Undesirable_event', 'lleven una alarma en la muñeca para contactar con la policía')],
-    ('Law_enforcement_agency', 'policía'): [],
-    ('Likelihood', 'posibilidad'): [('Hypothetical_event', 'víctimas lleven una alarma en la muñeca para contactar con la policía')],
-    ('Noise_makers', 'alarma'): [],
-    ('Spatial_contact', 'en'): [('Figure', 'una alarma'), ('Ground', 'para contactar con la policía')],
-    ('Wearing', 'se'): [('Wearer', 'víctimas'), ('Clothing', 'una alarma')]}

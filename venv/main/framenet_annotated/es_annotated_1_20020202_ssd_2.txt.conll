@@ -1,5 +1,0 @@
-{   ('Calendric_unit', 'horas'): [('Count', 'nueve')],
-    ('People', 'mujer'): [],
-    ('Rescuing', 'rescatada'): [('Agent', 'la mujer'), ('Harmful_situation', 'bajo un sofá nueve horas después')],
-    ('Suspicion', 'sospechan'): [('Suspect', 'agentes'), ('Suspect', 'la mujer')],
-    ('Temporal_subregion', 'después'): [('Time_period', 'bajo un sofá nueve horas')]}

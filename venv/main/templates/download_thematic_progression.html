@@ -24,14 +24,6 @@
           padding:0 1em 1em;
         }
 
-        .fieldset_continue {
-          border: solid;
-          color: #669900;
-          border-radius: 1em;
-          margin: 2em 1em 1em;
-          padding:0 1em 1em;
-        }
-
         .legend {
           transform: translatey(-50%);
           width: max-content;
@@ -49,7 +41,7 @@
 
     <div style="background-color: #4d4d4d;">
         <br/><br/>
-        <h1 style="text-align:center; color: #ffffff; font-size: 77px">EN-ES Sequence mapper (Framenet SRL)</h1>
+        <h1 style="text-align:center; color: #ffffff; font-size: 77px">Thematic Progression annotator</h1>
         <br/><br/>
     </div>
 
@@ -57,10 +49,14 @@
     <div class="fieldset_download">
       <h1 class="legend">Download</h1>
       <ul>
-          <h2>Press the button to download the output of this pipeline, consisting of one JSON file for every sentence containing the SRL annotations corresponding the the English annoteted file:</h2>
+          <h2>Press the button to download the output of this pipeline, consisting of:</h2>
+          <br/><br/>
+          <p> - One folder (xml) with the raw data in XML</p>
+          <p> - One folder (png) with the graphical output of the thematic progression of the texts</p>
+          <p> - One folder (html) with the visual output of the thematic progression of the texts (the text, plus the concepst, plus its mentions along the themes and rhemes)</p>
           <br/><br/>
           <div class="container" align="left">
-           <a href="/return-files-frame-ann-en/{{value}}" target="blank"><button class='btn btn-default'>Download</button></a>
+           <a href="/return-files-tp-ann/{{value}}" target="blank"><button class='btn btn-default'>Download</button></a>
           </div>
       </ul>
     </div>
@@ -70,23 +66,10 @@
     <div class="fieldset_back">
       <h1 class="legend">Go back</h1>
       <ul>
-          <h2 style="color:black">Press the button to go back to the mapping module:</h2>
+          <h2 style="color:black">Press the button to go back to the Thematic Progression annotation module:</h2>
           <br/><br/>
           <div class="container" align="left">
-            <a href="http://0.0.0.0:5001/upload-frame-ann-en"><button class='btn btn-default'>Go back</button></a>
-         </div>
-      </ul>
-    </div>
-
-    <br/><br/>
-
-    <div class="fieldset_continue">
-      <h1 class="legend">Continue</h1>
-      <ul>
-          <h2 style="color:black">Press the button to continue to the Thematic Progression annotation module:</h2>
-          <br/><br/>
-          <div class="container" align="left">
-          <a href="http://0.0.0.0:5001/pending"><button class='btn btn-default'>Continue</button></a>
+            <a href="http://0.0.0.0:5003/upload-tp-ann"><button class='btn btn-default'>Go back</button></a>
          </div>
       </ul>
     </div>

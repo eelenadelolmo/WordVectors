@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 
-<!DOCTYPE text [
-    <!ELEMENT text (concepts, sentence+)>
-        <!ATTLIST text id CDATA #REQUIRED>
-    <!ELEMENT concepts (concept+)>
-        <!ELEMENT concept (#PCDATA)>
-            <!ATTLIST concept id ID #REQUIRED>
-    <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
-        <!ELEMENT str (#PCDATA)>
-        <!ELEMENT theme (token*)>
-            <!ATTLIST theme concept_ref IDREF #REQUIRED>
-        <!ELEMENT rheme (token*)>
-            <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
-            <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
-            <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
-            <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
-            <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
-            <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
-            <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
-            <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
-            <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
-            <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
-        <!ELEMENT token (#PCDATA)>
-            <!ATTLIST token pos CDATA #REQUIRED>
-		<!ELEMENT semantic_roles (frame|main_frame)*>
-		<!ELEMENT frame (argument*)>
-            <!ATTLIST frame type CDATA #REQUIRED>
-            <!ATTLIST frame head CDATA #REQUIRED>
-		<!ELEMENT main_frame (argument*)>
-            <!ATTLIST main_frame type CDATA #REQUIRED>
-            <!ATTLIST main_frame head CDATA #REQUIRED>
-        <!ELEMENT argument EMPTY>
-            <!ATTLIST argument type CDATA #REQUIRED>
-            <!ATTLIST argument dependent CDATA #REQUIRED>
-]>
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #REQUIRED>
+            <!ELEMENT rheme (token*)>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
 
 
-<text id="9_20010702_ssd">
+    <text id="9_20010702_ssd">
 
 
 	<concepts>
