@@ -1,4 +1,0 @@
-{   ('Age', 'años'): [('Time', 'años')],
-    ('Calendric_unit', 'años'): [('Count', '14')],
-    ('Interior_profile_relation', 'en'): [('Figure', 'en'), ('Ground', 'en')],
-    ('Residence', 'Vivo'): [('Resident', 'en'), ('Location', ', Colombia')]}

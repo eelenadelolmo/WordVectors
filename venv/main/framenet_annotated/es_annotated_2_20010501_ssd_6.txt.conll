@@ -1,6 +1,0 @@
-{   ('Cause_motion', 'sacar'): [('Theme', '1.050 hectómetros de agua'), ('Goal', 'del río')],
-    ('Interior_profile_relation', 'en'): [('Figure', 'CiU vota con el PP'), ('Ground', 'Congreso'), ('Figure', 'que prevé sacar 1.050 hectómetros de agua del río')],
-    ('Natural_features', 'río'): [],
-    ('Origin', 'del'): [('Entity', 'agua'), ('Origin', 'del río')],
-    ('Purpose', 'prevé'): [('Agent', 'que'), ('Goal', 'sacar 1.050 hectómetros de agua del río')],
-    ('Spatial_contact', 'en'): [('Ground', '26 de abril'), ('Figure', ', CiU vota con el PP en el Congreso un PHN que prevé sacar 1.050 hectómetros de agua del río')]}

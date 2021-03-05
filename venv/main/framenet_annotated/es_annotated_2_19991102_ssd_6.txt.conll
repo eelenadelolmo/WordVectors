@@ -1,3 +1,0 @@
-{   ('Cardinal_numbers', 'uno'): [('Entity', 'de esos tableros')],
-    ('Reading_activity', 'se lee'): [('Reader', 'se'), ('Text', 'en uno de esos tableros')],
-    ('Spatial_contact', 'en'): [('Figure', 'se'), ('Ground', 'uno de esos tableros')]}

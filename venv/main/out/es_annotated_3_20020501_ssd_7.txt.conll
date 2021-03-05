@@ -1,8 +1,0 @@
-{   ('Completeness', 'plena'): [('Whole', 'reintegración')],
-    ('Desiring', 'quiso'): [('Experiencer', 'la'), ('Event', 'dejar claro que & quot ; este Gobierno ni ningún Gobierno')],
-    ('Leadership', 'Gobierno'): [],
-    ('Locative_relation', 'en'): [   ('Figure', 'quot ; este Gobierno ni ningún Gobierno & quot ; renunciará a la reintegración plena de Gibraltar a la soberanía española & quot ;'),
-                                     ('Ground', 'algún')],
-    ('Manufacturing', 'de'): [('Producer', 'la'), ('Product', 'la')],
-    ('Removing', 'dejar claro'): [('Agent', 'la')],
-    ('Renunciation', 'reintegración'): [('Speaker', 'este Gobierno ni ningún Gobierno'), ('Content', 'la reintegración plena de Gibraltar a la soberanía española & quot ; en algún')]}
