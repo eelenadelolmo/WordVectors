@@ -1,4 +1,0 @@
-{   ('Cause_to_start', 'despertó'): [('Effect', 'interés mundial y')],
-    ('Commerce_buy', 'comprarla'): [('Goods', 'el'), ('Time', 'en el 2000')],
-    ('Deciding', 'decidió'): [('Decision', 'de'), ('Decision', 'comprarla en el 2000')],
-    ('Emotion_directed', 'interés'): [('Experiencer', 'mundial')]}

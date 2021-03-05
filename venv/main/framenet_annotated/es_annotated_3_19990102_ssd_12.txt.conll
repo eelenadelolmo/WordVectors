@@ -1,5 +1,0 @@
-{   ('Contingency', 'factores'): [],
-    ('Dimension', 'pesan y'): [],
-    ('Earnings_and_losses', 'la renta'): [('Earner', 'cápita'), ('Earnings', 'renta per cápita que pesan y que condicionan las políticas de precios')],
-    ('Locative_relation', 'Hay'): [('Ground', 'factores como la renta per cápita que pesan y que condicionan las políticas de precios')],
-    ('State_of_entity', 'condicionan'): [('Entity', 'políticas de precios')]}

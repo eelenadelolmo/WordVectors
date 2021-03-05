@@ -1,7 +1,0 @@
-{   ('Aggregate', 'grupos'): [('Aggregate_property', 'izquierda')],
-    ('Collaboration', 'junto'): [   ('Partner_2', 'CiU vota en el Parlament de Catalunya'),
-                                    ('Partner_2', 'junto a los grupos de izquierda'),
-                                    ('Partner_2', 'una petición'),
-                                    ('Undertaking', 'de retirada del PHN')],
-    ('Quitting_a_place', 'retirada'): [('Self_mover', 'del')],
-    ('Request', 'petición'): [('Message', 'de retirada del PHN')]}

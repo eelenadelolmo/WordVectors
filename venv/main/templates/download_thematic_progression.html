@@ -1,6 +1,6 @@
 <!doctype html>
     <head>
-        <title>Download the SRL annotations in Spanish</title>
+        <title>Download TP annotated texts in Spanish</title>
         <style>
             * {
           margin: 0;
@@ -18,7 +18,7 @@
 
         .fieldset_back {
           border: solid;
-          color: #cc0000;
+          color: #EC7063;
           border-radius: 1em;
           margin: 2em 1em 1em;
           padding:0 1em 1em;
@@ -34,6 +34,36 @@
         .fieldset li {
           list-style-type: " - ";
         }
+
+
+
+        ul.breadcrumb {
+          padding: 10px 16px;
+          list-style: none;
+          background-color: #eee;
+        }
+
+        ul.breadcrumb li {
+          display: inline;
+          font-size: 18px;
+        }
+
+        ul.breadcrumb li+li:before {
+          padding: 8px;
+          color: black;
+          content: "/\00a0";
+        }
+
+        ul.breadcrumb li a {
+          color: #0275d8;
+          text-decoration: none;
+        }
+
+        ul.breadcrumb li a:hover {
+          color: #01447e;
+          text-decoration: underline;
+        }
+
         </style>
     </head>
 
@@ -44,8 +74,13 @@
         <h1 style="text-align:center; color: #ffffff; font-size: 77px">Thematic Progression annotator</h1>
         <br/><br/>
     </div>
+    <ul class="breadcrumb" style="text-align:center;">
+        <li><a href="http://0.0.0.0:5000/upload-grew-ann">Grammars module</a></li>
+        <li><a href="http://0.0.0.0:5001/">SRL module</a></li>
+        <li><span style="list-style-position:inside; border: 3px solid #AEB6BF; border-radius: 5px; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px;">TP annotation module</span></li>
+    </ul>
 
-    <br/><br/><br/>
+    <br/><br/>
     <div class="fieldset_download">
       <h1 class="legend">Download</h1>
       <ul>
