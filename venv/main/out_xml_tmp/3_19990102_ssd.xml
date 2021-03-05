@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #REQUIRED>
+            <!ELEMENT rheme (token*)>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="3_19990102_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El euro</concept>
+		<concept id="c_1">Rato</concept>
+		<concept id="c_2">el momento</concept>
+		<concept id="c_3">El euro incluso antes de ser creado</concept>
+		<concept id="c_4">Portugal</concept>
+		<concept id="c_5">Un euro estable y fuerte</concept>
+		<concept id="c_6">La divisa única</concept>
+		<concept id="c_7">Una única moneda con la que manejarse en un amplio espacio geográfico sin fronteras físicas</concept>
+		<concept id="c_8">que</concept>
+		<concept id="c_9">la hamburguesa simple de McDonald's , que en Barcelona cuesta 170 pesetas 1,02 - - euros - - ,</concept>
+		<concept id="c_10">cada cent - - fracción en la que se divide el euro - -</concept>
+		<concept id="c_11">los 26 cents de diferencia entre las dos hamburguesas ( la de Barcelona y la de Berlín ) ,</concept>
+		<concept id="c_12">El precio de un diario traducido a euros , 0,75 cents ,</concept>
+		<concept id="c_13">Las circunstancias de cada país</concept>
+		<concept id="c_14">Un español</concept>
+		<concept id="c_15">el berlinés</concept>
+		<concept id="c_16">todos los productos</concept>
+		<concept id="c_17">Alemania , por su parte , el país con más renta de los analizados</concept>
+		<concept id="c_18">Incluso la bajada de bandera del taxi , que oscila entre el equivalente a 2,05 y 3,07 euros , en función de la carrera ,</concept>
+		<concept id="c_19">la respuesta europea</concept>
+		<concept id="c_20">euro</concept>
+		<concept id="c_21">la</concept>
+		<concept id="c_22">UE</concept>
+		<concept id="c_23">UE fuerte</concept>
+		<concept id="c_24">una inflación</concept>
+		<concept id="c_25">la UE</concept>
+		<concept id="c_26">renta</concept>
+		<concept id="c_27">precios</concept>
+	</concepts>
+
+	<sentence>
+		<str>
+			 "El euro representa la respuesta europea para conseguir el objetivo de un mayor nivel de empleo y bienestar de nuestros ciudadanos. El euro es la mejor base para crear empleo", insistió.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">euro</token>
+		</theme>
+		<rheme concept_ref1="c_14" concept_ref2="c_2" concept_ref3="c_12" concept_ref4="c_15" concept_ref5="c_16" concept_ref6="c_0" concept_ref7="c_19" concept_ref8="c_20" concept_ref9="c_21" concept_ref10="c_25">
+			<token pos="vmip3s0">representa</token><token pos="da0fs0">la</token><token pos="ncfs000">respuesta</token><token pos="aq0fs0">europea</token><token pos="sps00">para</token><token pos="vmn0000">conseguir</token><token pos="da0ms0">el</token><token pos="ncms000">objetivo</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="aq0cs0">mayor</token><token pos="ncms000">nivel</token><token pos="sps00">de</token><token pos="ncms000">empleo</token><token pos="cc">y</token><token pos="ncms000">bienestar</token><token pos="sps00">de</token><token pos="dp1mpp">nuestros</token><token pos="ncmp000">ciudadanos</token>
+		<to_annotate>[[(249, 317), 'la respuesta', 'c_14'], [(421, 488), 'el objetivo', 'c_2'], [(517, 614), 'un mayor nivel', 'c_12'], [(703, 741), 'bienestar', 'c_15'], [(770, 845), 'nuestros ciudadanos', 'c_16'], ['euro', 'c_0'], [(249, 352), 'la respuesta europea', 'c_19'], ['euro', 'c_20'], [(249, 279), 'la', 'c_21'], [(249, 279), 'la', 'c_25']]</to_annotate></rheme>
+		<semantic_roles>
+			<main_frame type="Accomplishment" head="conseguir">
+				<argument type="Agent" dependent="la respuesta europea" />
+				<argument type="Goal" dependent="objetivo de un mayor nivel de empleo y bienestar de nuestros ciudadanos . El euro es la mejor base" /></main_frame>
+			<frame type="Being_employed" head="empleo" />
+			<main_frame type="Communicate_categorization" head="representa">
+				<argument type="Speaker" dependent="euro" />
+				<argument type="Category" dependent="euro representa la respuesta europea para conseguir el objetivo de un mayor nivel de empleo y bienestar de nuestros" /></main_frame>
+			<frame type="Intentionally_create" head="crear">
+				<argument type="Created_entity" dependent="empleo" /></frame>
+			<frame type="Purpose" head="objetivo">
+				<argument type="Goal" dependent="mayor nivel de empleo y bienestar de nuestros ciudadanos . El euro es la mejor base para crear empleo  quot ;" /></frame>
+			<frame type="Required_event" head="mejor">
+				<argument type="Required_situation" dependent="base" />
+				<argument type="Purpose" dependent="para crear empleo" /></frame>
+			<frame type="Response" head="respuesta">
+				<argument type="Agent" dependent="europea" />
+				<argument type="Trigger" dependent="europea para conseguir el objetivo de un mayor nivel de empleo y bienestar de nuestros" /></frame>
+			<frame type="Statement" head="insistió">
+				<argument type="Speaker" dependent="el" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Rato aprovechó la reunión para entregar a la Comisión Europea el programa de estabilidad español, que incluye el objetivo de eliminar totalmente el déficit público en el 2002 y situar el nivel de renta español en el 85% de la media comunitaria.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np00000">Rato</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_21" concept_ref3="c_25">
+			<token pos="vmis3s0">aprovechó</token><token pos="da0fs0">la</token><token pos="ncfs000">reunión</token>
+		<to_annotate>[[(108, 174), 'la reunión', 'c_7'], [(108, 138), 'la', 'c_21'], [(108, 138), 'la', 'c_25']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="comunitaria" />
+			<frame type="Delivery" head="entregar">
+				<argument type="Recipient" dependent="a la Comisión Europea" />
+				<argument type="Goal" dependent="programa de estabilidad español" /></frame>
+			<frame type="Discussion" head="reunión">
+				<argument type="Topic" dependent="para entregar a la Comisión Europea el programa de estabilidad español" /></frame>
+			<frame type="Earnings_and_losses" head="renta">
+				<argument type="Earner" dependent="español" /></frame>
+			<frame type="Inclusion" head="incluye">
+				<argument type="Total" dependent="Comisión Europea el programa de estabilidad español" />
+				<argument type="Total" dependent="que" />
+				<argument type="Part" dependent="el objetivo de eliminar totalmente el déficit público en el 2002 y situar el nivel de renta español en el 85 % de la media comunitaria" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="déficit público" />
+				<argument type="Ground" dependent="2002" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="nivel de renta español" />
+				<argument type="Ground" dependent="85 % de la media comunitaria" /></frame>
+			<frame type="Placing" head="situar">
+				<argument type="Theme" dependent="nivel de renta español" />
+				<argument type="Goal" dependent="en el 85 % de la media comunitaria" /></frame>
+			<frame type="Precariousness" head="estabilidad">
+				<argument type="Place" dependent="español" />
+				<argument type="Situation" dependent="programa de" /></frame>
+			<frame type="Project" head="programa de">
+				<argument type="Agent" dependent="español" />
+				<argument type="Name" dependent="estabilidad" /></frame>
+			<frame type="Purpose" head="objetivo">
+				<argument type="Means" dependent="totalmente" />
+				<argument type="Time" dependent="déficit público en el 2002" /></frame>
+			<frame type="Rank" head="nivel">
+				<argument type="Rank" dependent="renta español" /></frame>
+			<frame type="Removing" head="eliminar">
+				<argument type="Theme" dependent="déficit público" />
+				<argument type="Time" dependent="en el 2002" /></frame>
+			<frame type="Typicality" head="la media">
+				<argument type="State_of_affairs" dependent="comunitaria" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Ayer mismo, en el primer día del euro, Rato destacó las capacidades de la moneda única europea como instrumento para avanzar en la solución de problemas "como es el empleo, la calidad de vida, la calidad de los servicios públicos, la sanidad, las pensiones y, en definitiva, la prosperidad de los españoles", dijo.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np00000">Rato</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_13" concept_ref3="c_12" concept_ref4="c_7" concept_ref5="c_14" concept_ref6="c_4" concept_ref7="c_6" concept_ref8="c_16" concept_ref9="c_9" concept_ref10="c_0" concept_ref11="c_19" concept_ref12="c_20" concept_ref13="c_21" concept_ref14="c_25">
+			<token pos="vmis3s0">destacó</token><token pos="da0fp0">las</token><token pos="ncfp000">capacidades</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">moneda</token><token pos="aq0fs0">única</token><token pos="aq0fs0">europea</token><token pos="cs">como</token><token pos="ncms000">instrumento</token><token pos="sps00">para</token><token pos="vmn0000">avanzar</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">solución</token><token pos="sps00">de</token><token pos="ncmp000">problemas</token><token pos="fe">quot;</token><token pos="cs">como</token><token pos="vsip3s0">es</token><token pos="da0ms0">el</token><token pos="ncms000">empleo</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="ncfs000">calidad</token><token pos="sps00">de</token><token pos="ncfs000">vida</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="ncfs000">calidad</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">servicios</token><token pos="aq0mp0">públicos</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="ncfs000">sanidad</token><token pos="fc">,</token><token pos="da0fp0">las</token><token pos="ncfp000">pensiones</token><token pos="cc">y</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="aq0msp">definitiva</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="ncfs000">prosperidad</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">españoles</token><token pos="fe">quot;</token>
+		<to_annotate>[[(975, 1010), 'empleo', 'c_2'], [(326, 397), 'las capacidades', 'c_13'], [(587, 627), 'instrumento', 'c_12'], [(723, 790), 'la solución', 'c_7'], [(819, 857), 'problemas', 'c_14'], ['quot', 'c_4'], [(1130, 1163), 'vida', 'c_6'], [(1283, 1352), 'los servicios', 'c_16'], [(1504, 1573), 'las pensiones', 'c_9'], ['euro', 'c_0'], [(397, 559), 'de la moneda única europea', 'c_19'], ['euro', 'c_20'], [(426, 456), (723, 753), (1035, 1065), (1188, 1218), (1413, 1443), (1715, 1745), 'la', 'c_21'], [(426, 456), (723, 753), (1035, 1065), (1188, 1218), (1413, 1443), (1715, 1745), 'la', 'c_25']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Being_employed" head="empleo" />
+			<frame type="Calendric_unit" head="Ayer" />
+			<frame type="Calendric_unit" head="día">
+				<argument type="Relative_time" dependent="primer" />
+				<argument type="Whole" dependent="del euro" /></frame>
+			<main_frame type="Capability" head="capacidades">
+				<argument type="Entity" dependent="de la moneda única europea" /></main_frame>
+			<frame type="Gizmo" head="instrumento" />
+			<frame type="Medical_conditions" head="sanidad" />
+			<frame type="Ordinal_numbers" head="primer">
+				<argument type="Type" dependent="día" /></frame>
+			<frame type="Origin" head="europea">
+				<argument type="Entity" dependent="moneda" /></frame>
+			<frame type="Predicament" head="problemas" />
+			<frame type="Public_services" head="servicios">
+				<argument type="Domain" dependent="públicos" /></frame>
+			<frame type="Sole_instance" head="única">
+				<argument type="Type" dependent="del euro" /></frame>
+			<frame type="Statement" head="dijo">
+				<argument type="Message" dependent="instrumento para avanzar en la solución de problemas  quot ; como es el empleo , la calidad de vida , la calidad de los servicios públicos ," />
+				<argument type="Speaker" dependent="el" /></frame>
+			<frame type="Temporal_collocation" head="definitiva">
+				<argument type="Trajector_event" dependent="instrumento para avanzar en la solución de problemas  quot ; como es el empleo , la calidad de vida , la calidad de los servicios públicos ," /></frame>
+			<frame type="Thriving" head="prosperidad">
+				<argument type="Entity" dependent="españoles" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En su última actuación como presidente del Consejo de Economía, el ministro austriaco, Rudolf Edlinger, resaltó el jueves que "el momento es idóneo para la introducción del euro", con un crecimiento sostenido, las cuentas públicas saneadas y una inflación muy baja.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">el</token><token pos="ncms000">momento</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_13" concept_ref3="c_0" concept_ref4="c_2" concept_ref5="c_20" concept_ref6="c_21" concept_ref7="c_24" concept_ref8="c_25">
+			<token pos="vsip3s0">es</token><token pos="aq0ms0">idóneo</token><token pos="sps00">para</token><token pos="da0fs0">la</token><token pos="ncfs000">introducción</token><token pos="spcms">del</token><token pos="ncms000">euro</token><token pos="fe">quot;</token><token pos="fc">,</token><token pos="sps00">con</token><token pos="di0ms0">un</token><token pos="ncms000">crecimiento</token><token pos="aq0msp">sostenido</token><token pos="fc">,</token><token pos="da0fp0">las</token><token pos="ncfp000">cuentas</token><token pos="aq0fp0">públicas</token><token pos="aq0fpp">saneadas</token><token pos="cc">y</token><token pos="di0fs0">una</token><token pos="ncfs000">inflación</token><token pos="rg">muy</token><token pos="aq0fs0">baja</token>
+		<to_annotate>[['quot', 'c_4'], [(264, 335), 'la introducción', 'c_13'], [(365, 398), 'euro', 'c_0'], [(482, 552), 'un crecimiento', 'c_2'], [(365, 398), 'euro', 'c_20'], [(264, 294), 'la', 'c_21'], [(778, 847), 'una inflación', 'c_24'], [(264, 294), 'la', 'c_25']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el ministro austriaco , Rudolf Edlinger , " />
+			<main_frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="del Consejo de Economía" /></main_frame>
+			<main_frame type="Calendric_unit" head="jueves" />
+			<frame type="Change_position_on_a_scale" head="crecimiento" />
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Ground" dependent="su última actuación" />
+				<argument type="Figure" dependent="presidente del Consejo de Economía , el ministro austriaco , Rudolf Edlinger , resaltó el jueves que  quot ; el momento es idóneo para" /></frame>
+			<frame type="Leadership" head="ministro">
+				<argument type="Governed" dependent="austriaco" />
+				<argument type="Leader" dependent="Rudolf Edlinger" /></frame>
+			<frame type="Medical_conditions" head="saneadas">
+				<argument type="Body_part" dependent="cuentas públicas" /></frame>
+			<frame type="Position_on_a_scale" head="baja">
+				<argument type="Degree" dependent="muy" />
+				<argument type="Item" dependent="inflación" /></frame>
+			<frame type="Relative_time" head="última">
+				<argument type="Focal_occasion" dependent="actuación" /></frame>
+			<frame type="Text" head="cuentas">
+				<argument type="Author" dependent="públicas" /></frame>
+			<frame type="Usefulness" head="idóneo para">
+				<argument type="Entity" dependent="para la introducción del euro" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El euro, incluso antes de ser creado, protegió a la UE durante el año pasado de la grave crisis financiera internacional y la convirtió en un polo de estabilidad, señaló Edlinger.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">El</token><token pos="ncms000">euro</token><token pos="rg">incluso</token><token pos="rg">antes</token><token pos="sps00">de</token><token pos="vsn0000">ser</token><token pos="vmp00sm">creado</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_13" concept_ref3="c_19" concept_ref4="c_21" concept_ref5="c_22" concept_ref6="c_25">
+			<token pos="fc">,</token><token pos="fc">,</token><token pos="vmis3s0">protegió</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="np00000">UE</token><token pos="sps00">durante</token><token pos="da0ms0">el</token><token pos="ncms000">año</token><token pos="aq0msp">pasado</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="aq0cs0">grave</token><token pos="ncfn000">crisis</token><token pos="aq0fs0">financiera</token><token pos="aq0cs0">internacional</token><token pos="pp3fsa00">la</token><token pos="vmis3s0">convirtió</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="ncms000">polo</token><token pos="sps00">de</token><token pos="ncfs000">estabilidad</token>
+		<to_annotate>[[(340, 402), 'el año', 'c_0'], [(465, 563), 'la grave crisis', 'c_13'], [(436, 642), 'de la grave crisis financiera internacional', 'c_19'], [(245, 275), (465, 495), (642, 674), 'la', 'c_21'], [(275, 306), 'UE', 'c_22'], [(245, 306), 'la UE', 'c_25']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Edlinger " />
+			<frame type="Becoming_aware" head="señaló">
+				<argument type="Phenomenon" dependent="Edlinger" /></frame>
+			<frame type="Calendric_unit" head="año">
+				<argument type="Relative_time" dependent="pasado" /></frame>
+			<frame type="Catastrophe" head="crisis">
+				<argument type="Cause" dependent="financiera" />
+				<argument type="Undesirable_event" dependent="la" /></frame>
+			<main_frame type="Cause_change" head="convirtió">
+				<argument type="Agent" dependent="la" />
+				<argument type="Entity" dependent="la" />
+				<argument type="Final_category" dependent="en un polo de estabilidad , señaló Edlinger" /></main_frame>
+			<main_frame type="Intentionally_create" head="creado">
+				<argument type="Created_entity" dependent="la" /></main_frame>
+			<frame type="Political_locales" head="internacional">
+				<argument type="Constituent_parts" dependent="crisis financiera" /></frame>
+			<frame type="Precariousness" head="estabilidad" />
+			<frame type="Proportional_quantity" head="en">
+				<argument type="Q_prop" dependent="el" />
+				<argument type="Reference_quantity" dependent="el año pasado de" /></frame>
+			<main_frame type="Protecting" head="protegió">
+				<argument type="Asset" dependent="UE" />
+				<argument type="Time" dependent="año pasado de la" />
+				<argument type="Danger" dependent="de la grave crisis financiera internacional" /></main_frame>
+			<frame type="Relative_time" head="pasado">
+				<argument type="Focal_occasion" dependent="año" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Landmark_event" dependent="ser creado , protegió a la UE durante el año pasado" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Alemania recordó que ahora debe cumplirse el pacto de estabilidad y reclamó que se respete el compromiso de evitar la competencia desleal en la fiscalidad.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Alemania " />
+			<frame type="Avoiding" head="evitar">
+				<argument type="Undesirable_situation" dependent="se respete el compromiso de evitar la competencia desleal en la fiscalidad" /></frame>
+			<frame type="Commitment" head="compromiso de">
+				<argument type="Message" dependent="de evitar la competencia desleal en la fiscalidad" /></frame>
+			<frame type="Competition" head="competencia">
+				<argument type="Competition" dependent="la competencia desleal en la fiscalidad" /></frame>
+			<frame type="Compliance" head="cumplirse">
+				<argument type="Norm" dependent="estabilidad" />
+				<argument type="Time" dependent="ahora" />
+				<argument type="Norm" dependent="en" /></frame>
+			<frame type="Fairness_evaluation" head="desleal">
+				<argument type="Action" dependent="la competencia desleal en la fiscalidad" /></frame>
+			<frame type="Judgment" head="respete">
+				<argument type="Evaluee" dependent="en la fiscalidad" /></frame>
+			<frame type="Remembering_experience" head="recordó">
+				<argument type="Cognizer" dependent="Alemania" />
+				<argument type="Experience" dependent="que ahora debe cumplirse el pacto de estabilidad y reclamó que se respete el compromiso de evitar la competencia desleal en la fiscalidad" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Portugal aprovechó para defender la solidaridad y la cohesión dentro de la UE, amenazados por el plan de los países ricos de recortar las ayudas.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="np00000">Portugal</token>
+		</theme>
+		<rheme concept_ref1="c_13" concept_ref2="c_7" concept_ref3="c_14" concept_ref4="c_19" concept_ref5="c_21" concept_ref6="c_22" concept_ref7="c_24" concept_ref8="c_25">
+			<token pos="vmis3s0">aprovechó</token><token pos="sps00">para</token><token pos="vmn0000">defender</token><token pos="da0fs0">la</token><token pos="ncfs000">solidaridad</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">cohesión</token><token pos="rg">dentro</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">UE</token><token pos="aq0mpp">amenazados</token><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="ncms000">plan</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">países</token><token pos="aq0mp0">ricos</token><token pos="sps00">de</token><token pos="vmn0000">recortar</token><token pos="da0fp0">las</token><token pos="ncfp000">ayudas</token>
+		<to_annotate>[[(276, 346), 'la solidaridad', 'c_13'], [(371, 438), 'la cohesión', 'c_7'], [(626, 689), 'el plan', 'c_14'], [(438, 558), 'dentro de la UE', 'c_19'], [(276, 306), (371, 401), (497, 527), 'la', 'c_21'], [(527, 558), 'UE', 'c_22'], [(371, 438), 'la cohesión', 'c_24'], [(497, 558), 'la UE', 'c_25']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Assistance" head="ayudas" />
+			<frame type="Commitment" head="amenazados">
+				<argument type="Addressee" dependent="Portugal" />
+				<argument type="Speaker" dependent="por el plan de los países ricos" />
+				<argument type="Message" dependent="de recortar las ayudas" /></frame>
+			<main_frame type="Cutting" head="recortar">
+				<argument type="Item" dependent="ayudas" /></main_frame>
+			<main_frame type="Defending" head="defender">
+				<argument type="Victim" dependent="solidaridad y la cohesión" />
+				<argument type="Defender" dependent="dentro de la UE" /></main_frame>
+			<main_frame type="Opportunity" head="aprovechó">
+				<argument type="Agent" dependent="Portugal" />
+				<argument type="Desirable_situation" dependent="defender la solidaridad y la cohesión dentro de la UE , amenazados por el plan de los países ricos de recortar las ayudas" /></main_frame>
+			<frame type="Political_locales" head="países" />
+			<frame type="Position_on_a_scale" head="ricos">
+				<argument type="Item" dependent="países" /></frame>
+			<frame type="Purpose" head="plan">
+				<argument type="Goal" dependent="de recortar las ayudas" /></frame>
+			<main_frame type="Taking_time" head="aprovechó">
+				<argument type="Agent" dependent="Portugal" />
+				<argument type="Activity" dependent="defender la solidaridad y la cohesión dentro de la UE , amenazados por el plan de los países ricos de recortar las ayudas" /></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 "Un euro estable y fuerte necesita una UE fuerte", afirmó el ministro portugués, António de Sousa.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="di0ms0">Un</token><token pos="ncms000">euro</token><token pos="aq0cs0">estable</token><token pos="cc">y</token><token pos="aq0cs0">fuerte</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_22" concept_ref3="c_23" concept_ref4="c_25">
+			<token pos="vmip3s0">necesita</token><token pos="di0fs0">una</token><token pos="np00000">UE</token><token pos="aq0cs0">fuerte</token><token pos="fe">quot;</token>
+		<to_annotate>[['quot', 'c_4'], [(158, 189), 'UE', 'c_22'], [(158, 223), 'UE fuerte', 'c_23'], [(127, 189), 'una UE', 'c_25']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el ministro portugués , António de Sousa " />
+			<frame type="Leadership" head="ministro">
+				<argument type="Governed" dependent="portugués" />
+				<argument type="Leader" dependent="de" /></frame>
+			<frame type="Level_of_force_exertion" head="fuerte">
+				<argument type="Exerter" dependent="el" /></frame>
+			<main_frame type="Needing" head="necesita">
+				<argument type="Cognizer" dependent="euro estable y fuerte" />
+				<argument type="Requirement" dependent="UE fuerte" /></main_frame>
+			<frame type="Origin" head="portugués">
+				<argument type="Entity" dependent="ministro" /></frame>
+			<frame type="Statement" head="afirmó">
+				<argument type="Speaker" dependent="euro estable y fuerte necesita una UE fuerte " />
+				<argument type="Speaker" dependent="el ministro portugués" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La divisa única evidencia la disparidad de poder adquisitivo y renta entre países.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0fs0">La</token><token pos="ncfs000">divisa</token><token pos="aq0fs0">única</token>
+		</theme>
+		<rheme concept_ref1="c_13" concept_ref2="c_0" concept_ref3="c_19" concept_ref4="c_21" concept_ref5="c_25" concept_ref6="c_26">
+			<token pos="vmip3s0">evidencia</token><token pos="da0fs0">la</token><token pos="ncfs000">disparidad</token><token pos="sps00">de</token><token pos="ncms000">poder</token><token pos="aq0ms0">adquisitivo</token><token pos="cc">y</token><token pos="ncfs000">renta</token><token pos="sps00">entre</token><token pos="ncmp000">países</token>
+		<to_annotate>[[(168, 237), 'la disparidad', 'c_13'], [(266, 300), 'poder', 'c_0'], [(168, 465), 'la disparidad de poder adquisitivo y renta entre países', 'c_19'], [(168, 198), 'la', 'c_21'], [(168, 198), 'la', 'c_25'], [(364, 398), 'renta', 'c_26']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Commerce_buy" head="renta">
+				<argument type="Goods" dependent="de poder adquisitivo y renta" />
+				<argument type="Seller" dependent="entre países" /></frame>
+			<frame type="Earnings_and_losses" head="renta">
+				<argument type="Earnings" dependent="entre países" /></frame>
+			<frame type="Electricity" head="poder">
+				<argument type="Descriptor" dependent="renta" /></frame>
+			<main_frame type="Evidence" head="evidencia">
+				<argument type="Support" dependent="divisa única" />
+				<argument type="Proposition" dependent="la disparidad de poder adquisitivo y renta entre países" /></main_frame>
+			<frame type="Political_locales" head="países" />
+			<frame type="Similarity" head="disparidad">
+				<argument type="Differentiating_fact" dependent="de poder adquisitivo y renta entre países" /></frame>
+			<frame type="Sole_instance" head="única">
+				<argument type="Type" dependent="divisa" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Una única moneda con la que manejarse en un amplio espacio geográfico sin fronteras físicas es la mejor herramienta para la transparencia de precios.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="di0fs0">Una</token><token pos="aq0fs0">única</token><token pos="ncfs000">moneda</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="pr0cn000">que</token><token pos="vmn0000">manejarse</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="aq0ms0">amplio</token><token pos="ncms000">espacio</token><token pos="aq0ms0">geográfico</token><token pos="sps00">sin</token><token pos="ncfp000">fronteras</token><token pos="aq0fp0">físicas</token>
+		</theme>
+		<rheme concept_ref1="c_9" concept_ref2="c_13" concept_ref3="c_21" concept_ref4="c_25" concept_ref5="c_26" concept_ref6="c_27">
+			<token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="aq0cs0">mejor</token><token pos="ncfs000">herramienta</token><token pos="sps00">para</token><token pos="da0fs0">la</token><token pos="ncfs000">transparencia</token><token pos="sps00">de</token><token pos="ncmp000">precios</token>
+		<to_annotate>[[(161, 264), 'la mejor herramienta', 'c_9'], [(295, 367), 'la transparencia', 'c_13'], [(161, 191), (295, 325), 'la', 'c_21'], [(161, 191), (295, 325), 'la', 'c_25'], [(295, 367), 'la transparencia', 'c_26'], [(396, 432), 'precios', 'c_27']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Boundary" head="fronteras">
+				<argument type="Entities" dependent="físicas" /></frame>
+			<frame type="Dimension" head="amplio">
+				<argument type="Object" dependent="espacio geográfico" /></frame>
+			<frame type="Gizmo" head="herramienta">
+				<argument type="Descriptor" dependent="mejor" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="Una única moneda con la que manejarse en" />
+				<argument type="Ground" dependent="un amplio espacio geográfico" /></frame>
+			<main_frame type="Operating_a_system" head="manejarse" />
+			<frame type="Required_event" head="mejor">
+				<argument type="Required_situation" dependent="herramienta" /></frame>
+			<frame type="Sole_instance" head="única">
+				<argument type="Type" dependent="moneda" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 No cuesta igual un mismo producto en Barcelona que en Murcia o en Pontevedra.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Expensiveness" head="cuesta">
+				<argument type="Goods" dependent="mismo producto" />
+				<argument type="Goods" dependent="igual un mismo producto en Barcelona que en Murcia o en Pontevedra" /></frame>
+			<frame type="Identicality" head="igual">
+				<argument type="Set_of_instances" dependent="en Barcelona que en Murcia o en Pontevedra" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Hay factores como la renta per cápita que pesan y que condicionan las políticas de precios.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Contingency" head="factores" />
+			<frame type="Dimension" head="pesan y" />
+			<frame type="Earnings_and_losses" head="la renta">
+				<argument type="Earner" dependent="cápita" />
+				<argument type="Earnings" dependent="renta per cápita que pesan y que condicionan las políticas de precios" /></frame>
+			<frame type="Locative_relation" head="Hay">
+				<argument type="Ground" dependent="factores como la renta per cápita que pesan y que condicionan las políticas de precios" /></frame>
+			<frame type="State_of_entity" head="condicionan">
+				<argument type="Entity" dependent="políticas de precios" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Por ejemplo, la hamburguesa simple de McDonald's, que en Barcelona cuesta 170 pesetas 1,02 - - euros - -, en Berlín supera las 212 pesetas o 1,28 euros.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="da0fs0">la</token><token pos="ncfs000">hamburguesa</token><token pos="aq0cs0">simple</token><token pos="sps00">de</token><token pos="np00000">McDonald's</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="sps00">en</token><token pos="np00000">Barcelona</token><token pos="vmip3s0">cuesta</token><token pos="z">170</token><token pos="zm">pesetas</token><token pos="z">1,02</token><token pos="fg">-</token><token pos="fg">-</token><token pos="zm">euros</token><token pos="fg">-</token><token pos="fg">-</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_20" concept_ref4="c_21" concept_ref5="c_25" concept_ref6="c_26" concept_ref7="c_27">
+			<token pos="vmip3s0">supera</token><token pos="da0fp0">las</token><token pos="z">212</token><token pos="zm">pesetas</token><token pos="cc">o</token><token pos="z">1,28</token><token pos="zm">euros</token>
+		<to_annotate>[['euro', 'c_0'], [(241, 272), 'pesetas', 'c_2'], ['euro', 'c_20'], ['la', 'c_21'], ['la', 'c_25'], [(241, 272), 'pesetas', 'c_26'], [(324, 353), 'euros', 'c_27']]</to_annotate></rheme>
+		<semantic_roles>
+			<main_frame type="Expensiveness" head="cuesta">
+				<argument type="Goods" dependent="Barcelona" />
+				<argument type="Goods" dependent="170 pesetas 1,02 - - euros - - , en Berlín supera las 212 pesetas o 1,28" /></main_frame>
+			<frame type="Instance" head="ejemplo" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En pesetas se ve la diferencia de forma bien transparente: en Berlín cuesta un 25% más hincarle el diente a uno de los productos más estandarizados que existen.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Capability" head="se">
+				<argument type="Entity" dependent="se" />
+				<argument type="Event" dependent="ve la diferencia de forma bien transparente" /></frame>
+			<frame type="Existence" head="existen">
+				<argument type="Entity" dependent="que" /></frame>
+			<frame type="Expensiveness" head="cuesta">
+				<argument type="Goods" dependent="25 % más hincarle el diente a uno de los productos más estandarizados que existen" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Increment" dependent="25 %" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="Berlín" />
+				<argument type="Figure" dependent="cuesta un 25 % más hincarle el diente a uno de los productos más estandarizados que existen" /></frame>
+			<frame type="Means" head="de forma" />
+			<frame type="Non-commutative_statement" head="diferencia" />
+			<frame type="Perception_experience" head="se ve">
+				<argument type="Place" dependent="En pesetas" />
+				<argument type="Perceiver_passive" dependent="se" />
+				<argument type="Phenomenon" dependent="la diferencia de forma bien transparente" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En euros, parece que existen menos diferencias, pero hay que tener en cuenta que cada cent - - fracción en la que se divide el euro - - son 1,66 pesetas.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="di0cs0">cada</token><token pos="ncms000">cent</token><token pos="fg">-</token><token pos="fg">-</token><token pos="ncfs000">fracción</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="pr0cn000">que</token><token pos="p0300000">se</token><token pos="vmip3s0">divide</token><token pos="da0ms0">el</token><token pos="ncms000">euro</token><token pos="fg">-</token><token pos="fg">-</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_26">
+			<token pos="vsip3p0">son</token><token pos="z">1,66</token><token pos="zm">pesetas</token>
+		<to_annotate>[[(109, 140), 'pesetas', 'c_2'], [(109, 140), 'pesetas', 'c_26']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Give_impression" head="parece">
+				<argument type="Inference" dependent="que existen menos diferencias" /></frame>
+			<frame type="Locative_relation" head="hay">
+				<argument type="Figure" dependent="se" />
+				<argument type="Figure" dependent="que" />
+				<argument type="Ground" dependent="existen menos diferencias" /></frame>
+			<frame type="Non-commutative_statement" head="diferencias" />
+			<main_frame type="Separating" head="divide" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Ello significa que los 26 cents de diferencia entre las dos hamburguesas ( la de Barcelona y la de Berlín ), equivalen a más de 43 pesetas, es decir, el mismo 25% que si se hace la comparación en pesetas.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="da0mp0">los</token><token pos="z">26</token><token pos="ncmp000">cents</token><token pos="sps00">de</token><token pos="ncfs000">diferencia</token><token pos="sps00">entre</token><token pos="da0fp0">las</token><token pos="dn0cp0">dos</token><token pos="ncfp000">hamburguesas</token><token pos="fpa">(</token><token pos="da0fs0">la</token><token pos="sps00">de</token><token pos="np00000">Barcelona</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="sps00">de</token><token pos="np00000">Berlín</token><token pos="fpt">)</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_13" concept_ref3="c_19" concept_ref4="c_21" concept_ref5="c_24" concept_ref6="c_25" concept_ref7="c_26">
+			<token pos="vmip3p0">equivalen</token><token pos="sps00">a</token><token pos="rg">más</token><token pos="sps00">de</token><token pos="z">43</token><token pos="zm">pesetas</token><token pos="fc">,</token><token pos="vsis3p0">es</token><token pos="vmp00pm">decir</token><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="di0ms0">mismo</token><token pos="zp">25%</token><token pos="pr0cn000">que</token><token pos="cs">si</token><token pos="p0000000">se</token><token pos="vmip3s0">hace</token><token pos="da0fs0">la</token><token pos="ncfs000">comparación</token><token pos="sps00">en</token><token pos="ncfp000">pesetas</token>
+		<to_annotate>[[(297, 328), (756, 792), 'pesetas', 'c_2'], [(657, 727), 'la comparación', 'c_13'], [(727, 792), 'en pesetas', 'c_19'], [(657, 687), 'la', 'c_21'], [(657, 727), 'la comparación', 'c_24'], [(657, 687), 'la', 'c_25'], [(297, 328), (756, 792), 'pesetas', 'c_26']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Ello " />
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Precision" dependent="de Berlín" /></frame>
+			<frame type="Evidence" head="significa">
+				<argument type="Support" dependent="es" />
+				<argument type="Proposition" dependent="que los 26 cents de diferencia entre las dos hamburguesas ( la de Barcelona y la de Berlín )" /></frame>
+			<frame type="Identicality" head="el mismo">
+				<argument type="Type" dependent="25 %" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="más de 43 pesetas" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="se hace la comparación" />
+				<argument type="Ground" dependent="pesetas" /></frame>
+			<main_frame type="Manufacturing" head="hace">
+				<argument type="Product" dependent="la comparación" />
+				<argument type="Factory" dependent="en pesetas" /></main_frame>
+			<frame type="Non-commutative_statement" head="diferencia">
+				<argument type="Term_1" dependent="entre las dos hamburguesas" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Es cuestión de recuperar la memoria y recordar la etapa en la que era habitual en España contar céntimos y otras fracciones de la unidad de cuenta.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Categorization" head="contar">
+				<argument type="Item" dependent="céntimos y otras fracciones de la unidad de cuenta" /></frame>
+			<frame type="Increment" head="otras">
+				<argument type="Class" dependent="fracciones" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="la etapa" />
+				<argument type="Figure" dependent="que era habitual en España contar céntimos y otras fracciones de la unidad de cuenta" /></frame>
+			<frame type="Memory" head="memoria" />
+			<frame type="Remembering_experience" head="recordar">
+				<argument type="Experience" dependent="la etapa en la que era habitual en España contar céntimos y otras fracciones de la unidad de cuenta" /></frame>
+			<frame type="Text" head="de cuenta" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Tal circunstancia deberán tenerla en cuenta las empresas de gran consumo en sus políticas de precios en Eurolandia.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 No bastará con hacer la conversión.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El precio de un diario traducido a euros, 0,75 cents, resulta más operativo que 0,748, aunque el redondeo excesivo también sea peligroso.
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="da0ms0">El</token><token pos="ncms000">precio</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">diario</token><token pos="aq0msp">traducido</token><token pos="sps00">a</token><token pos="ncmp000">euros</token><token pos="fc">,</token><token pos="z">0,75</token><token pos="ncmp000">cents</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">resulta</token><token pos="rg">más</token><token pos="aq0ms0">operativo</token><token pos="cs">que</token><token pos="z">0,748</token>
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Natural_features" head="sea">
+				<argument type="Descriptor" dependent="un" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Las circunstancias de cada país pesan.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="da0fp0">Las</token><token pos="ncfp000">circunstancias</token><token pos="sps00">de</token><token pos="di0cs0">cada</token><token pos="ncms000">país</token>
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Un español tiene alrededor del 60% de la renta de un alemán.
+		</str>
+		<theme concept_ref="c_14">
+			<token pos="di0ms0">Un</token><token pos="ncms000">español</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_21" concept_ref3="c_25" concept_ref4="c_26">
+			<token pos="vmip3s0">tiene</token><token pos="rg">alrededor</token><token pos="spcms">del</token><token pos="zp">60%</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">renta</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">alemán</token>
+		<to_annotate>[[(243, 307), 'la renta', 'c_1'], [(243, 273), 'la', 'c_21'], [(243, 273), 'la', 'c_25'], [(273, 307), 'renta', 'c_26']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 No es tan raro, por tanto que el berlinés pague más del doble que el barcelonés por un billete de metro, entre otros servicios y productos.
+		</str>
+		<theme concept_ref="c_15">
+			<token pos="da0ms0">el</token><token pos="ncms000">berlinés</token>
+		</theme>
+		<rheme concept_ref1="c_15" concept_ref2="c_0" concept_ref3="c_16" concept_ref4="c_26" concept_ref5="c_27">
+			<token pos="vmsp3s0">pague</token><token pos="sps00">por</token><token pos="di0ms0">un</token><token pos="ncms000">billete</token><token pos="sps00">de</token><token pos="ncms000">metro</token><token pos="fc">,</token><token pos="sps00">entre</token><token pos="di0mp0">otros</token><token pos="ncmp000">servicios</token><token pos="cc">y</token><token pos="ncmp000">productos</token>
+		<to_annotate>[[(174, 240), 'un billete', 'c_15'], [(269, 303), 'metro', 'c_0'], [(360, 431), 'otros servicios', 'c_16'], [(269, 303), 'metro', 'c_26'], [(456, 494), 'productos', 'c_27']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Según el estudio realizado, con la ayuda de corresponsales del diario Eliseo Oliveras ( Bruselas ), Montserrat Capdevila ( París ) y Gonzalo Cáceres ( Berlín ), todos los productos son más baratos en España, con la excepción del modelo de Peugeot 306 más simple, que tiene el precio comparable en euros más bajo en Bruselas.
+		</str>
+		<theme concept_ref="c_16">
+			<token pos="di0mp0">todos</token><token pos="da0mp0">los</token><token pos="ncmp000">productos</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_2" concept_ref3="c_0" concept_ref4="c_21" concept_ref5="c_25">
+			<token pos="vsip3p0">son</token><token pos="rg">más</token><token pos="aq0mp0">baratos</token><token pos="sps00">en</token><token pos="np00000">España</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="ncfs000">excepción</token><token pos="spcms">del</token><token pos="ncms000">modelo</token><token pos="sps00">de</token><token pos="ncmp000">Peugeot</token><token pos="zm">306</token><token pos="rg">más</token><token pos="aq0cs0">simple</token><token pos="fc">,</token>
+		<to_annotate>[[(297, 365), 'la excepción', 'c_10'], [(395, 430), 'modelo', 'c_2'], [(459, 495), 'Peugeot', 'c_0'], [(297, 327), 'la', 'c_21'], [(297, 327), 'la', 'c_25']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Evaluative_comparison" head="comparable">
+				<argument type="Profiled_item" dependent="en euros más bajo en" />
+				<argument type="Standard_item" dependent="en Bruselas" /></frame>
+			<main_frame type="Kinship" head="son">
+				<argument type="Ego" dependent="todos los productos" />
+				<argument type="Alter" dependent="son más baratos en España , con la excepción del modelo de Peugeot 306 más simple , que tiene el precio" /></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Alemania, por su parte, el país con más renta de los analizados, es más cara para todo, excepto para el paquete de Winston.
+		</str>
+		<theme concept_ref="c_17">
+			<token pos="np00000">Alemania</token><token pos="fc">,</token><token pos="sps00">por</token><token pos="dp3cs0">su</token><token pos="ncfs000">parte</token><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="ncms000">país</token><token pos="sps00">con</token><token pos="rg">más</token><token pos="ncfs000">renta</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="aq0mpp">analizados</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_5" concept_ref3="c_25">
+			<token pos="vsip3s0">es</token><token pos="rg">más</token><token pos="ncms000">cara</token><token pos="sps00">para</token><token pos="pi0ms000">todo</token><token pos="sps00">excepto</token><token pos="sps00">para</token><token pos="da0ms0">el</token><token pos="nccs000">paquete</token><token pos="sps00">de</token><token pos="np00000">Winston</token>
+		<to_annotate>[[(191, 225), 'todo', 'c_1'], [(290, 356), 'el paquete', 'c_5'], [(127, 160), 'cara', 'c_25']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Incluso la bajada de bandera del taxi, que oscila entre el equivalente a 2,05 y 3,07 euros, en función de la carrera, es la más cara de todas.
+		</str>
+		<theme concept_ref="c_18">
+			<token pos="rg">Incluso</token><token pos="da0fs0">la</token><token pos="ncfs000">bajada</token><token pos="sps00">de</token><token pos="ncfs000">bandera</token><token pos="spcms">del</token><token pos="ncms000">taxi</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vmip3s0">oscila</token><token pos="sps00">entre</token><token pos="da0ms0">el</token><token pos="ncms000">equivalente</token><token pos="sps00">a</token><token pos="z">2,05</token><token pos="cc">y</token><token pos="z">3,07</token><token pos="zm">euros</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="ncfs000">función</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">carrera</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_21" concept_ref3="c_25">
+			<token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="rg">más</token><token pos="aq0fs0">cara</token><token pos="sps00">de</token><token pos="pi0fp000">todas</token>
+		<to_annotate>[[(219, 254), 'todas', 'c_1'], [(101, 131), 'la', 'c_21'], [(101, 131), 'la', 'c_25']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Una de las servidumbres de vivir en la tercera potencia económica mundial, ahora integrada en la segunda, Eurolandia.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

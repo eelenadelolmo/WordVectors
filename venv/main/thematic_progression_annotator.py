@@ -45,16 +45,16 @@ dir_output_xml = 'out_xml_for_coref'
 input_dir_coref = dir_output_xml
 
 # Directory containing the temporal output in XML of the coreference annotation for whole themes and rhemes
-output_dir_tmp = '/home/elena/PycharmProjects/WordVectors/venv/main/out_xml_tmp'
+output_dir_tmp = 'out_xml_tmp'
 
 # Directory containing the output in XML of this module (coreference annotator for whole themes and rhematic mentions)
-output_dir = '/home/elena/PycharmProjects/WordVectors/venv/main/out_xml'
+output_dir = 'out_xml'
 
 # Directory containing the output in HTML of this module
-output_dir_html = '/home/elena/PycharmProjects/WordVectors/venv/main/out_html'
+output_dir_html = 'out_html'
 
 # Directory containing the visual matrix output in png of this module
-output_dir_plot = '/home/elena/PycharmProjects/WordVectors/venv/main/out_plot'
+output_dir_plot = 'out_plot'
 
 
 
@@ -62,9 +62,9 @@ output_dir_plot = '/home/elena/PycharmProjects/WordVectors/venv/main/out_plot'
 ## Pretrained models
 
 # Loading Spacy Spanish large model from path
-model_lg_path = "/home/elena/PycharmProjects/WordVectors/venv/main/Spacy_models/es_core_news_lg-2.3.1/es_core_news_lg/es_core_news_lg-2.3.1"
-model_md_path = "/home/elena/PycharmProjects/WordVectors/venv/main/Spacy_models/es_core_news_md-2.3.1/es_core_news_lg/es_core_news_md-2.3.1"
-model_sm_path = "/home/elena/PycharmProjects/WordVectors/venv/main/Spacy_models/es_core_news_sm-2.3.1/es_core_news_lg/es_core_news_sm-2.3.1"
+model_lg_path = "Spacy_models/es_core_news_lg-2.3.1/es_core_news_lg/es_core_news_lg-2.3.1"
+model_md_path = "Spacy_models/es_core_news_md-2.3.1/es_core_news_lg/es_core_news_md-2.3.1"
+model_sm_path = "Spacy_models/es_core_news_sm-2.3.1/es_core_news_lg/es_core_news_sm-2.3.1"
 nlp = spacy.load(model_lg_path)
 # os.system("python -m spacy download es_core_news_sm")
 
@@ -405,7 +405,7 @@ def make_archive(source, destination):
         shutil.move('%s.%s'%(name,format), destination)
 
 
-DOWNLOAD_FOLDER = '/home/elena/PycharmProjects/WordVectors/venv/main/downloads'
+DOWNLOAD_FOLDER = 'downloads'
 
 app = Flask(__name__, template_folder='templates')
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
@@ -1795,12 +1795,12 @@ def TP_annotate():
 
         plt.savefig(output_dir_plot + '/' + file_xml.split('.')[0] + '.png')
 
-    for_zip = '/home/elena/PycharmProjects/WordVectors/venv/main/downloads/out'
+    for_zip = 'downloads/out'
     shutil.rmtree(for_zip, ignore_errors=True)
     os.makedirs(for_zip)
-    for_zip_tp_xml = '/home/elena/PycharmProjects/WordVectors/venv/main/downloads/out/xml'
-    for_zip_tp_html = '/home/elena/PycharmProjects/WordVectors/venv/main/downloads/out/html'
-    for_zip_tp_png = '/home/elena/PycharmProjects/WordVectors/venv/main/downloads/out/png'
+    for_zip_tp_xml = 'downloads/out/xml'
+    for_zip_tp_html = 'downloads/out/html'
+    for_zip_tp_png = 'downloads/out/png'
     shutil.copytree(output_dir, for_zip_tp_xml)
     shutil.copytree(output_dir_html, for_zip_tp_html)
     shutil.copytree(output_dir_plot, for_zip_tp_png)

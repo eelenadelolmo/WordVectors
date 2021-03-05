@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="3_19991101_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Egypt Air , compañía estatal creada hace 67 años ,</concept>
+		<concept id="c_1">eso</concept>
+		<concept id="c_2">El más grave y reciente</concept>
+		<concept id="c_3">La compañía , una de las más antiguas de Oriente Próximo ,</concept>
+		<concept id="c_4">Rayan , un ex general que dirige la empresa con mano de hierro ,</concept>
+		<concept id="c_5">Su flota</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Egypt Air, compañía estatal creada hace 67 años, aseguró ayer por boca de su presidente, Mohammed Fahim Rayan, que nunca habían tenido un accidente fatal anteriormente.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np0000l">Egypt</token><token pos="np0000l">Air</token><token pos="fc">,</token><token pos="ncfs000">compañía</token><token pos="aq0cs0">estatal</token><token pos="aq0fsp">creada</token><token pos="vmip3s0">hace</token><token pos="z">67</token><token pos="ncmp000">años</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_4">
+			<token pos="rg">nunca</token><token pos="vaii3p0">habían</token><token pos="vmp00sm">tenido</token><mention concept_ref="c_4"><token pos="di0ms0">un</token><token pos="ncms000">accidente</token></mention><token pos="aq0cs0">fatal</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Killing" head="fatal">
+				<argument type="Means" dependent="de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero algunas informaciones apuntan que eso no es verdad, según informa Associated Press.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="pd0ns000">eso</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vsip3s0">es</token><token pos="ncfs000">verdad</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="algunas informaciones Associated Press " />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En realidad, se le atribuyen cuatro accidentes mortales.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El más grave y reciente ocurrió en 1976, cuando un avión de la aerolínea se estrelló durante la maniobra de aterrizaje en el aeropuerto de Bangkok ( Tailandia ) y fallecieron 72 personas.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="rg">más</token><token pos="aq0cs0">grave</token><token pos="cc">y</token><token pos="aq0cs0">reciente</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">ocurrió</token><token pos="sps00">en</token><token pos="z">1976</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="People" head="un">
+				<argument type="Descriptor" dependent="cuando" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 También padeció un secuestro violento en 1985 en Malta que concluyó con tropas egipcias entrando con estrépito en el aparato.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Murieron 60 pasajeros.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La compañía, una de las más antiguas de Oriente Próximo, tiene numerosos críticos en su propio país y son muchas e insistentes las voces que reclaman su privatización.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fs0">La</token><token pos="ncfs000">compañía</token><token pos="fc">,</token><token pos="pi0fs000">una</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="rg">más</token><token pos="aq0fp0">antiguas</token><token pos="sps00">de</token><token pos="np0000l">Oriente</token><token pos="np0000l">Próximo</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">tiene</token><token pos="aq0mp0">numerosos</token><token pos="ncmp000">críticos</token><token pos="sps00">en</token><token pos="dp3cs0">su</token><token pos="di0ms0">propio</token><token pos="ncms000">país</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Kinship" head="son" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Rayan, un ex general que dirige la empresa con mano de hierro, ha reconocido errores en la forma en que se gestiona la aerolínea, pero ha descartado que abandone la propiedad estatal.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="np00000">Rayan</token><token pos="fc">,</token><token pos="di0ms0">un</token><token pos="aq0cn0">ex</token><token pos="nccs000">general</token><token pos="pr0cn000">que</token><token pos="vmip3s0">dirige</token><token pos="da0fs0">la</token><token pos="ncfs000">empresa</token><token pos="sps00">con</token><token pos="ncfs000">mano</token><token pos="sps00">de</token><token pos="ncms000">hierro</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_5" concept_ref3="c_4">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">reconocido</token><mention concept_ref="c_1"><token pos="ncmp000">errores</token></mention><token pos="sps00">en</token><mention concept_ref="c_5"><token pos="da0fs0">la</token><token pos="ncfs000">forma</token></mention><token pos="sps00">en</token><token pos="pr0cn000">que</token><token pos="p0000000">se</token><token pos="vmip3s0">gestiona</token><mention concept_ref="c_4"><token pos="da0fs0">la</token><token pos="ncfs000">aerolínea</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 De hecho, ha prometido un mejor servicio y una expansión apoyada en una inversión de 70.000 millones de pesetas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Su flota tiene 38 aviones.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="dp3cs0">Su</token><token pos="ncfs000">flota</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">tiene</token><token pos="z">38</token><token pos="ncmp000">aviones</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	
+</text>

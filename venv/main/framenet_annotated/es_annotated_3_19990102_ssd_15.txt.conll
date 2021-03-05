@@ -1,0 +1,4 @@
+{   ('Give_impression', 'parece'): [('Inference', 'que existen menos diferencias')],
+    ('Locative_relation', 'hay'): [('Figure', 'se'), ('Figure', 'que'), ('Ground', 'existen menos diferencias')],
+    ('Non-commutative_statement', 'diferencias'): [],
+    ('Separating', 'divide'): []}

@@ -1,0 +1,7 @@
+{   ('Commerce_buy', 'renta'): [('Goods', 'de poder adquisitivo y renta'), ('Seller', 'entre países')],
+    ('Earnings_and_losses', 'renta'): [('Earnings', 'entre países')],
+    ('Electricity', 'poder'): [('Descriptor', 'renta')],
+    ('Evidence', 'evidencia'): [('Support', 'divisa única'), ('Proposition', 'la disparidad de poder adquisitivo y renta entre países')],
+    ('Political_locales', 'países'): [],
+    ('Similarity', 'disparidad'): [('Differentiating_fact', 'de poder adquisitivo y renta entre países')],
+    ('Sole_instance', 'única'): [('Type', 'divisa')]}

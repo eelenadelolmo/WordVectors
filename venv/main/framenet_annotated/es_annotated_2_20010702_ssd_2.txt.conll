@@ -1,0 +1,6 @@
+{   ('Calendric_unit', 'año'): [],
+    ('Change_position_on_a_scale', 'crecerá'): [('Attribute', 'este año la demanda en Catalunya'), ('Attribute', 'entre un 5 y 6 %')],
+    ('Estimating', 'calcula que'): [('Estimation', 'que este año la demanda en Catalunya crecerá entre un 5 y 6 % .')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'este año la demanda'), ('Ground', 'Catalunya')],
+    ('Interior_profile_relation', 'entre'): [('Ground', '5 y 6 %')],
+    ('Request', 'demanda'): [('Speaker', 'en Catalunya')]}

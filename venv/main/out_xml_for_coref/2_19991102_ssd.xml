@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+    	<!ELEMENT text (sentence+)>
+    	    <!ATTLIST text id CDATA #REQUIRED>
+    	<!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+    		<!ELEMENT str (#PCDATA)>
+    		<!ELEMENT theme (token*)>
+    		<!ELEMENT rheme (token*)>
+    		<!ELEMENT token (#PCDATA)>
+    		    <!ATTLIST token pos CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+    		<!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="2_19991102_ssd">
+
+
+	<sentence>
+		<str>
+			 Los grupos satánicos españoles utilizan cada vez más Internet para difundir sus ideales.
+		</str>
+		<theme>
+			<token pos="da0mp0">Los</token><token pos="ncmp000">grupos</token><token pos="aq0mp0">satánicos</token><token pos="aq0mp0">españoles</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">utilizan</token><token pos="di0cs0">cada</token><token pos="ncfs000">vez</token><token pos="rg">más</token><token pos="np00000">Internet</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="grupos">
+				<argument type="Aggregate_property" dependent="satánicos españoles"/></frame>
+			<frame type="Change_position_on_a_scale" head="más">
+				<argument type="Item" dependent="grupos satánicos españoles"/>
+				<argument type="Final_value" dependent="Internet para difundir sus ideales"/></frame>
+			<frame type="Expansion" head="difundir">
+				<argument type="Item" dependent="grupos satánicos españoles"/>
+				<argument type="Item" dependent="sus ideales"/></frame>
+			<frame type="Usefulness" head="ideales"></frame>
+			<main_frame type="Using" head="utilizan">
+				<argument type="Agent" dependent="grupos satánicos españoles"/>
+				<argument type="Degree" dependent="más"/>
+				<argument type="Instrument" dependent="Internet"/>
+				<argument type="Purpose" dependent="para difundir sus ideales"/></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En la Red existen páginas en castellano abiertas por miembros de estas sectas o por las mismas hermandades.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Contacting" head="páginas">
+				<argument type="Place" dependent="castellano abiertas por miembros de estas sectas o por las mismas hermandades"/></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="existen páginas en"/>
+				<argument type="Ground" dependent="castellano abiertas por miembros de estas sectas"/></frame>
+			<frame type="Locative_relation" head="existen">
+				<argument type="Figure" dependent="la Red"/>
+				<argument type="Ground" dependent="existen páginas en castellano abiertas por miembros de estas sectas o por las mismas hermandades"/></frame>
+			<frame type="Membership" head="miembros">
+				<argument type="Group" dependent="de estas sectas"/></frame>
+			<frame type="Organization" head="hermandades"></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Ground" dependent="la Red"/>
+				<argument type="Figure" dependent="existen páginas en castellano abiertas por miembros de estas sectas o por las mismas hermandades"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En algunas de ellas pueden encontrarse chats ( páginas de conversación ) donde los adeptos se comunican y un tablón donde dejar anuncios diversos.
+		</str>
+		<theme>
+			<token pos="da0mp0">los</token><token pos="ncmp000">adeptos</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vmip3p0">comunican</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_aware" head="encontrarse">
+				<argument type="Cognizer" dependent="se"/>
+				<argument type="Phenomenon" dependent="chats"/></frame>
+			<frame type="Capability" head="pueden">
+				<argument type="Entity" dependent="los"/>
+				<argument type="Event" dependent="dejar anuncios diversos"/></frame>
+			<frame type="Chatting" head="chats"></frame>
+			<frame type="Chatting" head="conversación">
+				<argument type="Topic" dependent="páginas"/></frame>
+			<main_frame type="Communication" head="comunican">
+				<argument type="Communicator" dependent="los adeptos"/></main_frame>
+			<frame type="Contacting" head="páginas">
+				<argument type="Manner" dependent="conversación"/>
+				<argument type="Topic" dependent="donde los adeptos se comunican y un tablón donde dejar anuncios diversos"/></frame>
+			<frame type="Departing" head="dejar">
+				<argument type="Theme" dependent="los"/>
+				<argument type="Path" dependent="anuncios diversos"/></frame>
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Ground" dependent="algunas de"/>
+				<argument type="Ground" dependent="anuncios"/></frame>
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="un tablón"/>
+				<argument type="Figure" dependent="dejar anuncios diversos"/></frame>
+			<frame type="Proportional_quantity" head="algunas">
+				<argument type="Mass" dependent="de ellas"/></frame>
+			<frame type="Statement" head="anuncios">
+				<argument type="Speaker" dependent="los"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Hola, mi nombre es..., quisiera saber qué hacer para iniciarme en el satanismo, pues siento que me atrae poderosamente la atención.
+		</str>
+		<theme>
+			<token pos="dp1css">mi</token><token pos="ncms000">nombre</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="fs">...</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_start" head="iniciarme">
+				<argument type="Activity" dependent="en el satanismo"/></frame>
+			<frame type="Attention" head="atención">
+				<argument type="Perceiver" dependent="mi"/></frame>
+			<frame type="Awareness" head="saber">
+				<argument type="Cognizer" dependent="en"/>
+				<argument type="Content" dependent="qué hacer para iniciarme en el satanismo"/></frame>
+			<frame type="Being_named" head="nombre">
+				<argument type="Entity" dependent="mi"/></frame>
+			<frame type="Causation" head="para">
+				<argument type="Cause" dependent="Hola , mi nombre es ... , quisiera saber qué hacer para iniciarme en el satanismo"/>
+				<argument type="Cause" dependent="siento que me atrae poderosamente la atención"/></frame>
+			<frame type="Feeling" head="siento">
+				<argument type="Experiencer" dependent="en"/>
+				<argument type="Emotional_state" dependent="que me atrae poderosamente la atención"/></frame>
+			<frame type="Intentionally_act" head="en">
+				<argument type="Act" dependent="qué"/>
+				<argument type="Act" dependent="para iniciarme en el satanismo"/></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="qué hacer para iniciarme"/>
+				<argument type="Ground" dependent="satanismo"/></frame>
+			<main_frame type="Similarity" head="pues">
+				<argument type="Entity_1" dependent="en"/>
+				<argument type="Entity_2" dependent="saber qué hacer para iniciarme en el satanismo"/></main_frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Tengo 14 años, Vivo en Medellín, Colombia....
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="años">
+				<argument type="Time" dependent="años"/></frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="14"/></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="en"/>
+				<argument type="Ground" dependent="en"/></frame>
+			<frame type="Residence" head="Vivo">
+				<argument type="Resident" dependent="en"/>
+				<argument type="Location" dependent=", Colombia"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Este es uno de los mensajes que se lee en uno de esos tableros.
+		</str>
+		<theme>
+			<token pos="pd0ms000">Este</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="pi0ms000">uno</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">mensajes</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="uno">
+				<argument type="Entity" dependent="de esos tableros"/></frame>
+			<frame type="Reading_activity" head="se lee">
+				<argument type="Reader" dependent="se"/>
+				<argument type="Text" dependent="en uno de esos tableros"/></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="se"/>
+				<argument type="Ground" dependent="uno de esos tableros"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 También hay escritos de personas de Barcelona, Girona y otros lugares de España.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="lugares"/></frame>
+			<frame type="Interior_profile_relation" head="de">
+				<argument type="Figure" dependent="y otros lugares"/>
+				<argument type="Ground" dependent="de"/></frame>
+			<frame type="Locale" head="lugares"></frame>
+			<frame type="Locative_relation" head="hay">
+				<argument type="Ground" dependent="También hay escritos de personas de Barcelona , Girona y otros lugares"/></frame>
+			<frame type="People" head="personas">
+				<argument type="Origin" dependent="de Barcelona"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Una de las webs más visitadas es Aquelarre Infernal, que se define como "un punto de encuentro para los satanistas hispanohablantes".
+		</str>
+		<theme>
+			<token pos="pi0fs000">Una</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">webs</token><token pos="rg">más</token><token pos="aq0fpp">visitadas</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="np0000l">Aquelarre</token><token pos="np0000l">Infernal</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="un">
+				<argument type="Entity" dependent="las webs más visitadas"/></frame>
+			<frame type="Communicate_categorization" head="define">
+				<argument type="Item" dependent="satanistas"/></frame>
+			<frame type="Discussion" head="de encuentro">
+				<argument type="Interlocutors" dependent="satanistas"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Está abierta por un miembro de la organización Church of Satan ( Iglesia de Satán ).
+		</str>
+		<theme>
+			<token pos="np0000o">Church</token><token pos="fpa">(</token><token pos="np0000o">Iglesia</token><token pos="sps00">de</token><token pos="np0000l">Satán</token><token pos="fpt">)</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">of</token><token pos="np0000l">Satan</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Membership" head="miembro">
+				<argument type="Group" dependent="de la organización Church of Satan"/></frame>
+			<frame type="Organization" head="organización"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En esta página se puede enlazar curiosamente con links contra el nazismo y el racismo.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Attaching" head="links">
+				<argument type="Agent" dependent="se"/>
+				<argument type="Degree" dependent="curiosamente"/>
+				<argument type="Goal" dependent="links contra el nazismo y el racismo"/></frame>
+			<frame type="Make_cognitive_connection" head="links">
+				<argument type="Concept_2" dependent="contra el nazismo y el racismo"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Blackefer lleva tres años en la Red.
+		</str>
+		<theme>
+			<token pos="np00000">Blackefer</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">lleva</token><token pos="dn0cp0">tres</token><token pos="ncmp000">años</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="tres"/></frame>
+			<frame type="Cardinal_numbers" head="tres">
+				<argument type="Unit" dependent="años"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 "Bienvenido, aquí tu alma y tu mente puede abrirse sin límites", reza su entrada.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="entrada">
+				<argument type="Theme" dependent="su"/></frame>
+			<frame type="Capability" head="puede">
+				<argument type="Entity" dependent="tu mente"/>
+				<argument type="Event" dependent="abrirse sin límites"/></frame>
+			<frame type="Closure" head="abrirse"></frame>
+			<frame type="Limiting" head="límites"></frame>
+			<frame type="Locative_relation" head="aquí">
+				<argument type="Figure" dependent="alma y tu mente puede abrirse sin límites  quot ; , reza su entrada"/></frame>
+			<frame type="Reading_activity" head="quot">
+				<argument type="Text" dependent="su entrada"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En esta página se ofrecen textos sobre los valores del satanista, misas negras, además de contactos con satánicos de todo el mundo ( uno de ellos es de Catalunya ) y los principios de este movimiento.
+		</str>
+		<theme>
+			<token pos="pi0ms000">uno</token><token pos="sps00">de</token><token pos="pp3mp000">ellos</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="sps00">de</token><token pos="np00000">Catalunya</token><token pos="fpt">)</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="uno">
+				<argument type="Entity" dependent="de ellos"/></frame>
+			<frame type="Color" head="negras">
+				<argument type="Entity" dependent="misas"/></frame>
+			<frame type="Contacting" head="contactos">
+				<argument type="Addressee" dependent="con satánicos"/>
+				<argument type="Place" dependent="de todo el mundo"/></frame>
+			<frame type="Locative_relation" head="se">
+				<argument type="Figure" dependent="esta página se ofrecen textos sobre los valores del satanista , misas negras , además de contactos con satánicos de"/>
+				<argument type="Ground" dependent="el mundo"/></frame>
+			<frame type="Political_locales" head="mundo"></frame>
+			<frame type="Quantified_mass" head="misas">
+				<argument type="Q_prop" dependent="negras"/></frame>
+			<frame type="Spatial_contact" head="se">
+				<argument type="Figure" dependent="esta página se ofrecen textos"/>
+				<argument type="Ground" dependent="valores del satanista , misas negras"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En Internet se publica una revista para sus adeptos.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		</rheme>
+		<semantic_roles>
+			<frame type="Spatial_contact" head="se">
+				<argument type="Figure" dependent="una revista"/>
+				<argument type="Figure" dependent="publica"/>
+				<argument type="Ground" dependent="Internet se publica"/></frame>
+			<frame type="Text" head="revista"></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Su título es Pulp Fiction, órgano de expresión de La Hermandad de Satán.
+		</str>
+		<theme>
+			<token pos="dp3cs0">Su</token><token pos="ncms000">título</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="np0000l">Pulp</token><token pos="np0000l">Fiction</token><token pos="fc">,</token><token pos="ncms000">órgano</token><token pos="sps00">de</token><token pos="ncfs000">expresión</token><token pos="sps00">de</token><token pos="da0fs0">La</token><token pos="ncfs000">Hermandad</token><token pos="sps00">de</token><token pos="np00000">Satán</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Hay organizaciones luciferinas que tienen sus propias páginas oficiales, como la de la Iglesia de Satán, que cuenta con 20.000 adeptos, la Iglesia Mundial de la Liberación Satánica, la Iglesia del Virus u Ordo Sinistra Vivendi.
+		</str>
+		<theme>
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">tienen</token><token pos="dp3cp0">sus</token><token pos="aq0fp0">propias</token><token pos="ncfp000">páginas</token><token pos="aq0cp0">oficiales</token><token pos="fc">,</token><token pos="cs">como</token><token pos="da0fs0">la</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np0000o">Iglesia</token><token pos="sps00">de</token><token pos="np0000l">Satán</token><token pos="fc">,</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="np00000">Iglesia</token><token pos="ncms000">Mundial</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Liberación</token><token pos="np00000">Satánica</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="np0000a">Iglesia</token><token pos="sps00">del</token><token pos="ncms000">Virus</token><token pos="cc">u</token><token pos="ncfs000">Ordo</token><token pos="ncms000">Sinistra</token><token pos="np00000">Vivendi</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="oficiales"></frame>
+			<frame type="Locative_relation" head="Hay">
+				<argument type="Ground" dependent="Hay organizaciones luciferinas que"/></frame>
+			<frame type="Organization" head="organizaciones">
+				<argument type="Descriptor" dependent="luciferinas"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Otras webs sobre el tema son: Los Satanistas, Templo Tezcat, Setumismo, Negropage, Red Gótic, Sade y Blasfeia Diabólica.
+		</str>
+		<theme>
+			<token pos="di0fp0">Otras</token><token pos="ncfp000">webs</token><token pos="sps00">sobre</token><token pos="da0ms0">el</token><token pos="ncms000">tema</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3p0">son</token><token pos="da0mp0">Los</token><token pos="np00000">Satanistas</token><token pos="fc">,</token><token pos="ncms000">Templo</token><token pos="np00000">Tezcat</token><token pos="fc">,</token><token pos="np00000">Setumismo</token><token pos="fc">,</token><token pos="np00000">Negropage</token><token pos="fc">,</token><token pos="ncms000">Red</token><token pos="np00000">Gótic</token><token pos="fc">,</token><token pos="np00000">Sade</token><token pos="cc">y</token><token pos="np0000l">Blasfeia</token><token pos="np0000l">Diabólica</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="Templo">
+				<argument type="Name" dependent="el"/></frame>
+			<frame type="Increment" head="Otras">
+				<argument type="Class" dependent="webs"/></frame>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

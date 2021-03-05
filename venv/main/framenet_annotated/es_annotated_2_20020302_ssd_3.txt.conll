@@ -1,0 +1,13 @@
+{   ('Color', 'negros'): [('Entity', 'puntos')],
+    ('Importance', 'principales'): [('Factor', 'puntos negros de la ciudad'), ('Undertaking', 'bajo permanente vigilancia')],
+    ('Installing', 'instalar'): [('Agent', 'es'), ('Component', 'una cámara')],
+    ('Instance', 'casos'): [],
+    ('Interior_profile_relation', 'en'): [   ('Figure', 'permanente vigilancia los principales puntos negros de la ciudad , aunque , tal y como admiten los responsables de'),
+                                             ('Ground', 'todos los casos'),
+                                             ('Figure', 'no será posible instalar una cámara')],
+    ('Likelihood', 'posible'): [('Hypothetical_event', 'instalar una cámara')],
+    ('Locale', 'puntos'): [('Descriptor', 'negros')],
+    ('Political_locales', 'ciudad'): [],
+    ('Purpose', 'objetivo'): [('Goal', 'tener bajo permanente vigilancia los principales puntos negros de la ciudad')],
+    ('Reveal_secret', 'admiten'): [('Information', 'Pública'), ('Information', 'no será posible instalar una cámara')],
+    ('Scrutiny', 'vigilancia'): [('Manner', 'permanente')]}

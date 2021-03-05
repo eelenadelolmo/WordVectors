@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #REQUIRED>
+            <!ELEMENT rheme (token*)>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="3_20020302_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El Ayuntamiento de Barcelona</concept>
+		<concept id="c_1">El proyecto , valorado en 601.012 euros ( 100 millones de pesetas ) ,</concept>
+		<concept id="c_2">La otra opción , más económica ,</concept>
+		<concept id="c_3">Los responsables del área de Vía Pública</concept>
+		<concept id="c_4">siete personas</concept>
+		<concept id="c_5">el automovilista infractor</concept>
+		<concept id="c_6">la velocidad máxima autorizada</concept>
+		<concept id="c_7">Los responsables del proyecto</concept>
+		<concept id="c_8">que</concept>
+		<concept id="c_9">qué soportes</concept>
+		<concept id="c_10">los radares</concept>
+		<concept id="c_11">cámaras</concept>
+		<concept id="c_12">un disco</concept>
+		<concept id="c_13">una fotografía</concept>
+		<concept id="c_14">vehículo</concept>
+	</concepts>
+
+	<sentence>
+		<str>
+			 El Ayuntamiento de Barcelona instalará, finalmente, ocho cámaras para controlar la velocidad en las rondas de Barcelona, y no las seis previstas inicialmente.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="np0000o">Ayuntamiento</token><token pos="sps00">de</token><token pos="np0000l">Barcelona</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_10" concept_ref3="c_0" concept_ref4="c_11">
+			<token pos="vmif3s0">instalará</token><token pos="fc">,</token><token pos="fc">,</token><token pos="dn0cp0">ocho</token><token pos="ncfp000">cámaras</token><token pos="sps00">para</token><token pos="vmn0000">controlar</token><token pos="da0fs0">la</token><token pos="ncfs000">velocidad</token><token pos="sps00">en</token><token pos="da0fp0">las</token><token pos="ncfp000">rondas</token><token pos="sps00">de</token><token pos="np00000">Barcelona</token>
+		<to_annotate>[[(314, 382), 'la velocidad', 'c_6'], [(411, 477), 'las rondas', 'c_10'], [(506, 544), 'Barcelona', 'c_0'], [(209, 245), 'cámaras', 'c_11']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Los radares se podrán situar, indistintamente, en alguno de los 26 soportes fijos que se colocarán repartidos entre la Ronda de Dalt y la del Litoral, adelantó ayer el director de Circulación del consistorio, Pere Navarro.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="director">
+				<argument type="Governed" dependent="ayer el" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El proyecto, valorado en 601.012 euros ( 100 millones de pesetas ), sólo está pendiente de que sea aprobado por el Comité Ejecutivo del ayuntamiento, que dará luz verde a la inversión en su próxima reunión, prevista a finales de mes.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">proyecto</token><token pos="fc">,</token><token pos="aq0msp">valorado</token><token pos="sps00">en</token><token pos="z">601.012</token><token pos="zm">euros</token><token pos="fpa">(</token><token pos="z">100</token><token pos="ncmp000">millones</token><token pos="sps00">de</token><token pos="zm">pesetas</token><token pos="fpt">)</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_4">
+			<token pos="vmip3s0">está</token><token pos="aq0cs0">pendiente</token><token pos="sps00">de</token><token pos="cs">que</token><token pos="vssp3s0">sea</token><token pos="vmp00sm">aprobado</token><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="np00000">Comité</token><token pos="ncms000">Ejecutivo</token><token pos="spcms">del</token><token pos="ncms000">ayuntamiento</token><token pos="fc">,</token>
+		<to_annotate>[[(274, 448), 'el Comité Ejecutivo del ayuntamiento', 'c_0'], ['se', 'c_4']]</to_annotate></rheme>
+		<semantic_roles>
+			<main_frame type="Natural_features" head="sea" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Si todo va bien, las cámaras empezarán a funcionar después del verano.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Si los miembros del Comité Ejecutivo son generosos y amplían el presupuesto previsto, las cámaras estarán comunicadas por fibra de vidrio a un monitor central.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Kinship" head="son" />
+			<frame type="Scrutiny" head="monitor">
+				<argument type="Cognizer" dependent="un" />
+				<argument type="Ground" dependent="central" /></frame>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 La otra opción, más económica, es que cada radar disponga de un disco que archive las imágenes y que un guardia urbano se encargue de recogerlo cada semana.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">La</token><token pos="di0fs0">otra</token><token pos="ncfs000">opción</token><token pos="fc">,</token><token pos="rg">más</token><token pos="aq0fs0">económica</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_11" concept_ref3="c_12">
+			<token pos="vsip3s0">es</token><token pos="cs">que</token><token pos="di0cs0">cada</token><token pos="ncms000">radar</token><token pos="vmsp3s0">disponga</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">disco</token><token pos="cc">y</token><token pos="cs">que</token><token pos="di0ms0">un</token><token pos="ncms000">guardia</token><token pos="aq0ms0">urbano</token><token pos="p0300000">se</token><token pos="vmsp3s0">encargue</token><token pos="sps00">de</token><token pos="vmn0000">recogerlo</token><token pos="di0cs0">cada</token><token pos="ncfs000">semana</token>
+		<to_annotate>[[(476, 508), 'se', 'c_4'], [(128, 194), 'cada radar', 'c_11'], [(260, 324), 'un disco', 'c_12']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 De hecho, así funcionan las cinco cámaras que ya ha instalado el Servei Català de Trànsit ( SCT ) en algunos tramos de carreteras del área metropolitana de Barcelona.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Los responsables del área de Vía Pública justifican el proyecto por motivos de seguridad vial.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0mp0">Los</token><token pos="nccp000">responsables</token><token pos="spcms">del</token><token pos="ncfs000">área</token><token pos="sps00">de</token><token pos="np0000l">Vía</token><token pos="np0000l">Pública</token>
+		</theme>
+		<rheme concept_ref1="c_7">
+			<token pos="vmip3p0">justifican</token><token pos="da0ms0">el</token><token pos="ncms000">proyecto</token>
+		<to_annotate>[[(69, 136), 'el proyecto', 'c_7']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El año pasado, en las rondas de Barcelona se registraron 610 accidentes de tráfico y siete personas perdieron la vida.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="dn0cp0">siete</token><token pos="ncfp000">personas</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_11">
+			<token pos="vmis3p0">perdieron</token><token pos="da0fs0">la</token><token pos="ncfs000">vida</token>
+		<to_annotate>[[(88, 151), 'la vida', 'c_6'], [(88, 151), 'la vida', 'c_11']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En la mayoría de los siniestros mortales apareció como causa el exceso de velocidad.
+		</str>
+		<theme>
+			
+		</theme>
+		<rheme>
+			
+		<to_annotate>[]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Como hará el SCT a partir del próximo 15 de marzo, el automovilista infractor recibirá la denuncia por exceso de velocidad acompañada de una fotografía en la que se imprime la hora, el punto kilométrico y la velocidad del vehículo.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0ms0">el</token><token pos="aq0cs0">automovilista</token><token pos="ncms000">infractor</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_4" concept_ref3="c_10" concept_ref4="c_9" concept_ref5="c_11" concept_ref6="c_13" concept_ref7="c_14">
+			<token pos="vmif3s0">recibirá</token><token pos="da0fs0">la</token><token pos="ncfs000">denuncia</token><token pos="sps00">por</token><token pos="ncms000">exceso</token><token pos="sps00">de</token><token pos="ncfs000">velocidad</token><token pos="aq0fsp">acompañada</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="ncfs000">fotografía</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="pr0cn000">que</token><token pos="p0000000">se</token><token pos="vmip3s0">imprime</token><token pos="da0fs0">la</token><token pos="ncfs000">hora</token><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="ncms000">punto</token><token pos="aq0ms0">kilométrico</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">velocidad</token><token pos="spcms">del</token><token pos="ncms000">vehículo</token>
+		<to_annotate>[[(897, 965), 'la velocidad', 'c_6'], [(613, 645), 'se', 'c_4'], [(185, 252), 'la denuncia', 'c_10'], [(769, 833), 'el punto', 'c_9'], [(681, 744), 'la hora', 'c_11'], [(451, 521), 'una fotografía', 'c_13'], [(995, 1032), 'vehículo', 'c_14']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 En las rondas, la velocidad máxima autorizada es de 80 kilómetros por hora, y en algunos tramos no se pueden superar los 60 kilómetros por hora.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0fs0">la</token><token pos="ncfs000">velocidad</token><token pos="aq0fs0">máxima</token><token pos="aq0fsp">autorizada</token>
+		</theme>
+		<rheme concept_ref1="c_5">
+			<token pos="vsip3s0">es</token><token pos="sps00">de</token><token pos="z">80</token><token pos="ncmp000">kilómetros</token><token pos="sps00">por</token><token pos="ncfs000">hora</token>
+		<to_annotate>[[(115, 154), 'kilómetros', 'c_5']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Los responsables del proyecto son conscientes de que los conductores se familiarizarán pronto con las cámaras, conocerán su localización y disminuirán la velocidad a su paso.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0mp0">Los</token><token pos="nccp000">responsables</token><token pos="spcms">del</token><token pos="ncms000">proyecto</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_4" concept_ref3="c_9" concept_ref4="c_10" concept_ref5="c_11" concept_ref6="c_12">
+			<token pos="vsip3p0">son</token><token pos="aq0cp0">conscientes</token><token pos="sps00">de</token><token pos="cs">que</token><token pos="da0mp0">los</token><token pos="ncmp000">conductores</token><token pos="p0300000">se</token><token pos="vmif3p0">familiarizarán</token><token pos="rg">pronto</token><token pos="sps00">con</token><token pos="da0fp0">las</token><token pos="ncfp000">cámaras</token><token pos="fc">,</token><token pos="vmif3p0">conocerán</token><token pos="dp3cs0">su</token><token pos="ncfs000">localización</token><token pos="cc">y</token><token pos="vmif3p0">disminuirán</token><token pos="da0fs0">la</token><token pos="ncfs000">velocidad</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="ncms000">paso</token>
+		<to_annotate>[[(727, 795), 'la velocidad', 'c_6'], [(326, 358), 'se', 'c_4'], [(255, 326), 'los conductores', 'c_9'], [(461, 528), 'las cámaras', 'c_10'], [(492, 528), 'cámaras', 'c_11'], [(255, 326), 'los conductores', 'c_12']]</to_annotate></rheme>
+		<semantic_roles>
+			<main_frame type="Kinship" head="son" />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Para evitar la picaresca, sólo trabajarán ocho cámaras que se irán situando en alguno de los 26 soportes.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_9" concept_ref3="c_13">
+			<token pos="p0000000">se</token><token pos="vmif3p0">irán</token><token pos="vmg0000">situando</token><token pos="sps00">en</token><token pos="pi0ms000">alguno</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="z">26</token><token pos="ncmp000">soportes</token>
+		<to_annotate>[[(69, 101), 'se', 'c_4'], [(321, 358), 'soportes', 'c_9'], [(200, 236), 'alguno', 'c_13']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 El conductor no podrá diferenciar qué soportes llevan cámara y cuáles no.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="dt0cn0">qué</token><token pos="ncmp000">soportes</token>
+		</theme>
+		<rheme concept_ref1="c_11">
+			<token pos="vmip3p0">llevan</token><token pos="ncfs000">cámara</token>
+		<to_annotate>[[(66, 101), 'cámara', 'c_11']]</to_annotate></rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El conductor " />
+		</semantic_roles>
+	</sentence>
+
+
+	<sentence>
+		<str>
+			 Además, los radares podrán funcionar dentro de un vehículo.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="da0mp0">los</token><token pos="ncmp000">radares</token>
+		</theme>
+		<rheme concept_ref1="c_14">
+			<token pos="rg">Además</token><token pos="vmif3p0">podrán</token><token pos="vmn0000">funcionar</token><token pos="rg">dentro</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">vehículo</token>
+		<to_annotate>[[(223, 260), 'vehículo', 'c_14']]</to_annotate></rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+
+
+</text>

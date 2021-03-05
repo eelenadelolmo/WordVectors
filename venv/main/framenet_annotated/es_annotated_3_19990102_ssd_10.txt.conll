@@ -1,0 +1,7 @@
+{   ('Boundary', 'fronteras'): [('Entities', 'físicas')],
+    ('Dimension', 'amplio'): [('Object', 'espacio geográfico')],
+    ('Gizmo', 'herramienta'): [('Descriptor', 'mejor')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'Una única moneda con la que manejarse en'), ('Ground', 'un amplio espacio geográfico')],
+    ('Operating_a_system', 'manejarse'): [],
+    ('Required_event', 'mejor'): [('Required_situation', 'herramienta')],
+    ('Sole_instance', 'única'): [('Type', 'moneda')]}

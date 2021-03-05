@@ -1,0 +1,10 @@
+{   ('Calendric_unit', 'año'): [('Count', 'cada')],
+    ('Cause_change_of_position_on_a_scale', 'reducir'): [('Attribute', 'la media de 50 muertes que cada año se producen en las calles de la ciudad')],
+    ('Death', 'muertes'): [],
+    ('Event', 'se producen'): [('Event', 'la media de 50 muertes que cada año'), ('Place', 'en las calles de la ciudad')],
+    ('Political_locales', 'ciudad'): [],
+    ('Purpose', 'objetivo'): [('Goal', 'reducir la media de 50 muertes que cada año se producen en las calles de la ciudad')],
+    ('Purpose', 'propósito'): [('Goal', 'medio plazo')],
+    ('Roadways', 'calles'): [('Name', 'de la ciudad')],
+    ('Spatial_contact', 'en'): [('Figure', 'la media de 50 muertes que cada año se'), ('Ground', 'las calles de la ciudad')],
+    ('Typicality', 'medio'): [('State_of_affairs', 'de 50 muertes')]}

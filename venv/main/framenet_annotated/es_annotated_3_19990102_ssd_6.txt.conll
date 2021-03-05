@@ -1,0 +1,9 @@
+{   ('Avoiding', 'evitar'): [('Undesirable_situation', 'se respete el compromiso de evitar la competencia desleal en la fiscalidad')],
+    ('Commitment', 'compromiso de'): [('Message', 'de evitar la competencia desleal en la fiscalidad')],
+    ('Competition', 'competencia'): [('Competition', 'la competencia desleal en la fiscalidad')],
+    ('Compliance', 'cumplirse'): [('Norm', 'estabilidad'), ('Time', 'ahora'), ('Norm', 'en')],
+    ('Fairness_evaluation', 'desleal'): [('Action', 'la competencia desleal en la fiscalidad')],
+    ('Judgment', 'respete'): [('Evaluee', 'en la fiscalidad')],
+    ('Remembering_experience', 'recordó'): [   ('Cognizer', 'Alemania'),
+                                               (   'Experience',
+                                                   'que ahora debe cumplirse el pacto de estabilidad y reclamó que se respete el compromiso de evitar la competencia desleal en la fiscalidad')]}
