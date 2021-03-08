@@ -12,6 +12,7 @@ venv/main/FastText_models/*
 venv/main/Spacy_models/*
 venv/main/framenet_annotated/*
 venv/main/grew_annotated/*
+venv/main/out/*
 venv/main/out_fm/*
 venv/main/out_html/*
 venv/main/out_plot/*
@@ -19,3 +20,4 @@ venv/main/out_xml/*
 venv/main/out_xml_for_coref/*
 venv/main/out_xml_tmp/*
 venv/main/downloads/*
+venv/main/uploads/*

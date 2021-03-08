@@ -2,7 +2,8 @@ import io
 import shutil
 import os
 import re
-from googletrans import Translator
+# from googletrans import Translator
+from google_trans_new import google_translator
 from werkzeug.utils import secure_filename
 from flask import Flask, flash, request, redirect, send_file, render_template, url_for
 from sentence_transformers import SentenceTransformer
@@ -132,13 +133,16 @@ def main():
             with io.open(UPLOAD_FOLDER + '/' + filename, 'r', encoding='utf8') as f:
                 lines = f.readlines()
                 n_lines = 0
-                translator = Translator()
+                # translator = Translator()
+                translator = google_translator()
                 for line in lines:
                     n_lines += 1
                     with io.open(new_dir_sents_en + '/en_' + filename.split('.')[0] + '_' + str(n_lines) + '.txt', 'w', encoding='utf8') as f_new_1:
                         # En terminal: pip install googletrans==3.1.0a0
-                        translation = translator.translate(text=re.sub('&quot;', '"', line), src='es', dest='en')
-                        f_new_1.write(translation.text)
+                        # translation = translator.translate(text=re.sub('&quot;', '"', line), src='es', dest='en')
+                        translation = translator.translate(re.sub('&quot;', '"', line), lang_src='es', lang_tgt='en')
+                        # f_new_1.write(translation.text)
+                        f_new_1.write(translation)
                         f_new_1.close()
                     # Saving original files too
                     with io.open(new_dir_sents_es + '/' + filename.split('.')[0] + '_' + str(n_lines) + '.txt', 'w', encoding='utf8') as f_new_2:
