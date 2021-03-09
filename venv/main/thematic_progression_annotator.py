@@ -20,9 +20,16 @@ from gensim.models.wrappers import FastText
 from xml.etree.ElementTree import ElementTree
 from sentence_transformers import SentenceTransformer
 from flask import Flask, flash, request, redirect, send_file, render_template, url_for
-
+import torch
+import gc
 
 # Pending: precedence of comparisons
+
+
+torch.cuda.empty_cache()
+torch.cuda.memory_summary(device=None, abbreviated=False)
+# del torch
+gc.collect()
 
 
 ## XML transformer directories
