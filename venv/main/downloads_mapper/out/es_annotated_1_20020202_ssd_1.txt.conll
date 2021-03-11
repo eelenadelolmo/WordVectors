@@ -1,0 +1,4 @@
+{   ('Buildings', 'edificio'): [('Name', 'Horta')],
+    ('Causation', 'provocada'): [('Effect', 'explosión de gas que originó el derrumbe parcial del edificio de Horta el pasado miércoles fue provocada')],
+    ('Certainty', 'considera que'): [('Cognizer', 'policía'), ('Content', 'la explosión de gas que originó el derrumbe parcial del edificio de Horta el pasado miércoles fue provocada')],
+    ('Substance', 'gas'): []}

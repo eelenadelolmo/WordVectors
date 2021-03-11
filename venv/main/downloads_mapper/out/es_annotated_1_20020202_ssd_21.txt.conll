@@ -1,0 +1,6 @@
+{   ('Calendric_unit', 'días'): [('Count', 'unos')],
+    ('Expectation', 'esperan'): [('Phenomenon', 'especialistas de la policía'), ('Phenomenon', 'tener redactado su informe en unos días')],
+    ('Expertise', 'especialistas'): [],
+    ('Law_enforcement_agency', 'policía'): [('Agency', 'especialistas de la policía')],
+    ('Quantified_mass', 'unos'): [('Individuals', 'días')],
+    ('Statement', 'informe'): [('Speaker', 'su')]}

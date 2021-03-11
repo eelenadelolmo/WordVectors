@@ -3,7 +3,7 @@ import shutil
 import os
 import re
 # from googletrans import Translator
-# from google_trans_new import google_translator
+from google_trans_new import google_translator
 from werkzeug.utils import secure_filename
 from flask import Flask, flash, request, redirect, send_file, render_template, url_for
 from sentence_transformers import SentenceTransformer

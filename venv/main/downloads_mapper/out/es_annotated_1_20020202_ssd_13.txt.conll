@@ -1,0 +1,7 @@
+{   ('Architectural_part', 'la pared'): [],
+    ('Awareness', 'sospechas'): [],
+    ('Building_subparts', 'cocina'): [],
+    ('Cause_change', 'girada'): [('Entity', 'la cocina'), ('Final_category', 'del revés')],
+    ('Cause_to_start', 'despertó'): [('Cause', 'que la'), ('Effect', 'policiales')],
+    ('Just_found_out', 'extraña'): [('Experiencer', 'Les'), ('Stimulus', 'que la cocina apareciera girada del revés')],
+    ('Law_enforcement_agency', 'policiales'): []}

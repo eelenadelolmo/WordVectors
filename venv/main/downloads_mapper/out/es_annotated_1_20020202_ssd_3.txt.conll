@@ -1,0 +1,5 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Cardinal_numbers', 'tres'): [('Entity', 'muertos')],
+    ('Causation', 'causó'): [('Cause', 'explosión'), ('Effect', 'tres muertos')],
+    ('Change_position_on_a_scale', 'explosión'): [],
+    ('Death', 'muertos'): []}

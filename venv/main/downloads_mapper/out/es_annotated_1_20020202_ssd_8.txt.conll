@@ -1,0 +1,10 @@
+{   ('Buildings', 'Hospital'): [],
+    ('Experience_bodily_harm', 'lesiones'): [('Place', 'en el Hospital de')],
+    ('Importance', 'se'): [('Factor', 'herido')],
+    ('Increment', 'otro'): [('Class', 'vecino')],
+    ('Locative_relation', 'donde'): [('Figure', 'otro vecino')],
+    ('Locative_relation', 'en'): [('Figure', 'sus lesiones'), ('Ground', 'el Hospital de Vall')],
+    ('People', 'mujer'): [],
+    ('People_by_residence', 'vecino'): [],
+    ('Reveal_secret', 'se'): [('Information', 'otro vecino')],
+    ('Temporal_collocation', 'Ahora'): [('Trajector_event', "la mujer se restablece de sus lesiones en el Hospital de Vall d'Hebron , donde hay internado otro vecino , éste herido")]}
