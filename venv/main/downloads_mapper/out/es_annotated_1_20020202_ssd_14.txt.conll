@@ -1,6 +1,0 @@
-{   ('Certainty', 'duda de'): [('Content', 'que fue manipulada exprofeso & quot ; , señalaron fuentes próximas al caso')],
-    ('Locative_relation', 'hay'): [('Ground', '; No hay duda de que fue manipulada exprofeso & quot ; , señalaron fuentes próximas al caso')],
-    ('Manipulate_into_doing', 'manipulada'): [('Victim', 'que'), ('Resulting_action', 'exprofeso')],
-    ('Social_connection', 'próximas'): [('Individual_1', 'fuentes'), ('Individual_2', 'al caso')],
-    ('Source_of_getting', 'fuentes'): [],
-    ('Statement', 'quot'): [('Message', '; No hay duda de que fue manipulada'), ('Message', 'fuentes próximas al caso')]}

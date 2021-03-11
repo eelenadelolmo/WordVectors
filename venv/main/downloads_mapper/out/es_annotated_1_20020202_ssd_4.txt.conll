@@ -1,8 +1,0 @@
-{   ('Attempt', 'intento'): [('Goal', 'de una vecina')],
-    ('Catastrophe', 'la tragedia'): [],
-    ('Causation', 'causa'): [('Effect', 'de la tragedia')],
-    ('Communication', 'señalado'): [('Message', 'Fuentes de la investigación'), ('Message', 'a este diario que el intento de suicidio de una vecina es la causa más probable de la tragedia')],
-    ('Criminal_investigation', 'investigación'): [],
-    ('Likelihood', 'probable'): [('Hypothetical_event', 'de la tragedia')],
-    ('People_by_residence', 'vecina'): [],
-    ('Text', 'diario'): [('Text', 'a este diario que el intento de suicidio de una vecina es la causa más probable de la tragedia')]}

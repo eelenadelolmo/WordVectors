@@ -20,4 +20,5 @@ venv/main/out_xml/*
 venv/main/out_xml_for_coref/*
 venv/main/out_xml_tmp/*
 venv/main/downloads/*
+venv/main/downloads_mapper/*
 venv/main/uploads/*

@@ -1,6 +1,0 @@
-{   ('Age', 'nueva'): [],
-    ('Cause_change', 'cambió'): [('Entity', 'espita de entrada del gas'), ('Time', 'pasado julio')],
-    ('Installing', 'instalación'): [('Manner', 'nueva')],
-    ('Kinship', 'hija de'): [('Ego', 'María')],
-    ('Referring_by_name', 'se llama'): [('Speaker', 'que la'), ('Name', 'Carmen')],
-    ('Substance', 'gas'): []}
