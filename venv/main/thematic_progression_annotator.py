@@ -31,7 +31,7 @@ import gc
 
 torch.cuda.empty_cache()
 torch.cuda.memory_summary(device=None, abbreviated=False)
-# del torch
+del torch
 gc.collect()
 
 ## Pretrained models
@@ -42,29 +42,6 @@ model_md_path = "Spacy_models/es_core_news_md-2.3.1/es_core_news_lg/es_core_news
 model_sm_path = "Spacy_models/es_core_news_sm-2.3.1/es_core_news_lg/es_core_news_sm-2.3.1"
 nlp = spacy.load(model_lg_path)
 # os.system("python -m spacy download es_core_news_sm")
-
-# Parameters for sentence transformed based on BETO
-np.set_printoptions(threshold=100)
-BETO_model = SentenceTransformer('BETO_model')
-
-# Parameters for sentence transformed based on ROBERTA
-# np.set_printoptions(threshold=100)
-# BETO_model = SentenceTransformer('BERT_ROBERTA_model')
-
-# Loading Word2vec model for Spanish
-w2vec_models = KeyedVectors.load('w2vec_models/complete.kv', mmap='r')
-
-# Loading Word2vec model for English
-# w2vec_models = KeyedVectors.load_word2vec_format('w2vec_models_en/GoogleNews-vectors-negative300.bin', binary=True)
-
-# Loading FastText model for Spanish
-FastText_models = FastText.load_fasttext_format('FastText_models/cc.es.300.bin')
-
-# Loading FastText model for English
-# FastText_models = FastText.load_fasttext_format('FastText_models/cc.en.300.bin')
-
-
-
 
 
 ## XML transformer directories
@@ -79,6 +56,11 @@ dir_output = 'out_fm'
 # Output dir for xml
 dir_output_xml = 'out_xml_for_coref'
 
+shutil.rmtree(dir_TP_annotated, ignore_errors=True)
+os.makedirs(dir_TP_annotated + '/')
+
+shutil.rmtree(dir_FN_annotated, ignore_errors=True)
+os.makedirs(dir_FN_annotated + '/')
 
 
 ## TP annotator directories
@@ -431,10 +413,6 @@ def add_header(response):
 
 @app.route('/upload-tp-ann')
 def upload_form():
-    shutil.rmtree(dir_TP_annotated, ignore_errors=True)
-    shutil.rmtree(dir_FN_annotated, ignore_errors=True)
-    os.makedirs(dir_TP_annotated + '/')
-    os.makedirs(dir_FN_annotated + '/')
     return render_template('upload_thematic_progression.html')
 
 @app.route('/upload-tp-ann', methods=['POST'])
@@ -478,6 +456,43 @@ def upload_file():
 
 @app.route('/TP_annotate', methods=['POST'])
 def TP_annotate():
+
+    import torch
+    torch.cuda.empty_cache()
+    torch.cuda.memory_summary(device=None, abbreviated=False)
+    del torch
+    gc.collect()
+
+    ## Pretrained models
+
+    # Loading Spacy Spanish large model from path
+    model_lg_path = "Spacy_models/es_core_news_lg-2.3.1/es_core_news_lg/es_core_news_lg-2.3.1"
+    model_md_path = "Spacy_models/es_core_news_md-2.3.1/es_core_news_lg/es_core_news_md-2.3.1"
+    model_sm_path = "Spacy_models/es_core_news_sm-2.3.1/es_core_news_lg/es_core_news_sm-2.3.1"
+    nlp = spacy.load(model_lg_path)
+    # os.system("python -m spacy download es_core_news_sm")
+
+    # Parameters for sentence transformed based on BETO
+    np.set_printoptions(threshold=100)
+    BETO_model = SentenceTransformer('BETO_model')
+
+    # Parameters for sentence transformed based on ROBERTA
+    # np.set_printoptions(threshold=100)
+    # BETO_model = SentenceTransformer('BERT_ROBERTA_model')
+
+    # Loading Word2vec model for Spanish
+    w2vec_models = KeyedVectors.load('w2vec_models/complete.kv', mmap='r')
+
+    # Loading Word2vec model for English
+    # w2vec_models = KeyedVectors.load_word2vec_format('w2vec_models_en/GoogleNews-vectors-negative300.bin', binary=True)
+
+    # Loading FastText model for Spanish
+    FastText_models = FastText.load_fasttext_format('FastText_models/cc.es.300.bin')
+
+    # Loading FastText model for English
+    # FastText_models = FastText.load_fasttext_format('FastText_models/cc.en.300.bin')
+
+
 
     # List of FrameNet annotations (one list element per sentence)
     FN_annotated_list = list()
@@ -709,8 +724,15 @@ def TP_annotate():
                         for token in child:
                             theme += token.text.strip() + ' '
                     elif child.tag == 'rheme':
-                        for token in child:
-                            rheme += token.text.strip() + ' '
+                        # Only if both theme and rheme have been annotated
+                        if len(theme) == 0:
+                            rheme = ''
+                        if len(theme) > 0:
+                            for token in child:
+                                rheme += token.text.strip() + ' '
+                            # Only if both theme and rheme have been annotated
+                            if len(rheme) == 0:
+                                theme = ''
                     if child.tag == 'semantic_roles':
                         for frame in child:
                             if frame.tag == 'main_frame':
@@ -851,7 +873,8 @@ def TP_annotate():
             rheme_embeddings = BETO_model.encode(r_ord_noun_phrases_all)
 
             # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
-            closest_n = len(rheme_embeddings)
+            closest_n = len(theme_embeddings)
+            # Changed!!!!
             for rheme, rheme_embedding in zip(r_ord_noun_phrases_all, rheme_embeddings):
                 distances = scipy.spatial.distance.cdist([rheme_embedding], theme_embeddings, "cosine")[0]
 
@@ -1816,6 +1839,11 @@ def TP_annotate():
     shutil.copytree(output_dir_html, for_zip_tp_html)
     shutil.copytree(output_dir_plot, for_zip_tp_png)
 
+    shutil.rmtree(dir_TP_annotated, ignore_errors=True)
+    os.makedirs(dir_TP_annotated + '/')
+    shutil.rmtree(dir_FN_annotated, ignore_errors=True)
+    os.makedirs(dir_FN_annotated + '/')
+
     make_archive(for_zip, DOWNLOAD_FOLDER + '/' + 'TP_annotated.zip')
     return redirect(url_for('download_file_tp_ann', filename='TP_annotated.zip'))
 
@@ -1868,6 +1896,12 @@ def upload_file_mapper():
 
 @app.route('/mapping_SRL', methods=['POST'])
 def mappingsrl():
+
+    import torch
+    torch.cuda.empty_cache()
+    torch.cuda.memory_summary(device=None, abbreviated=False)
+    del torch
+    gc.collect()
 
     shutil.rmtree(DOWNLOAD_FOLDER_mapper + '/', ignore_errors=True)
     os.makedirs(DOWNLOAD_FOLDER_mapper + '/')
