@@ -1,0 +1,124 @@
+<!doctype html>
+    <head>
+        <title>Expectation-based TP annotation</title>
+        <style>
+
+        * {
+          margin: 0;
+          padding:0;
+          box-sizing:border-box;
+        }
+
+        .fieldset_upload {
+          border: solid;
+          color: #000000;
+          border-radius: 1em;
+          margin: 2em 1em 1em;
+          padding:0 1em 1em;
+        }
+
+        .fieldset_process {
+          border: solid;
+          color: #669900;
+          border-radius: 1em;
+          margin: 2em 1em 1em;
+          padding:0 1em 1em;
+        }
+
+        .legend {
+          transform: translatey(-50%);
+          width: max-content;
+          background: white;
+          padding: 0 0.15em;
+        }
+
+        .fieldset li {
+          list-style-type: " - ";
+        }
+
+
+
+        ul.breadcrumb {
+          padding: 10px 16px;
+          list-style: none;
+          background-color: #eee;
+        }
+
+        ul.breadcrumb li {
+          display: inline;
+          font-size: 18px;
+        }
+
+        ul.breadcrumb li+li:before {
+          padding: 8px;
+          color: black;
+          content: "/\00a0";
+        }
+
+        ul.breadcrumb li a {
+          color: #0275d8;
+          text-decoration: none;
+        }
+
+        ul.breadcrumb li a:hover {
+          color: #01447e;
+          text-decoration: underline;
+        }
+
+        </style>
+    </head>
+
+    <body class="body">
+
+    <div style="background-color: #4d4d4d;">
+        <br/><br/>
+        <h1 style="text-align:center; color: #ffffff; font-size: 77px">Thematic Progression (TP) annotator</h1>
+        <br/><br/>
+    </div>
+    <ul class="breadcrumb" style="text-align:center;">
+        <li><a href="http://0.0.0.0:5000/upload-grew-ann">Grammars module</a></li>
+        <li><a href="http://0.0.0.0:5002/">SRL module</a></li>
+        <li><span style="list-style-position:inside; border: 3px solid #AEB6BF; border-radius: 5px; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px;">TP annotation module</span></li>
+    </ul>
+
+    <br/><br/>
+    <div class="fieldset_upload">
+      <h1 class="legend">Upload</h1>
+      <ul>
+          <h2 style="color:black">Upload Spanish annotated frames in JSON and Grew annotated corresponding files for every text.</h2>
+          <br/>
+		  <h2 style="color:black">Press the submit button after selecting every group of files.</h2>
+          <br/>
+          <p style="color:black">The names of the corresponding files for every sentence must match, but there is one file per every sentence of the text with its SRL annotation.</p>
+          <br/><br/>
+
+			<form method="POST" action="upload-tp-ann" enctype="multipart/form-data">
+                <dl>
+                    <p>
+                        <input type="file" name="files[]" multiple="true" autocomplete="off" required>
+                    </p>
+                </dl>
+                <br/>
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+      </ul>
+    </div>
+    <br/><br/>
+
+
+    <div class="fieldset_process">
+      <h1 class="legend">Mapping</h1>
+      <ul>
+		  <h2 style="color:black">When you are done, press this button to annotate the Thematic Progression:</h2>
+		  <br/><br/>
+
+		  <form action="/TP_annotate" method="post">
+            <button name="forwardBtn" type="submit">Annotate!</button>
+        </form>
+      </ul>
+    </div>
+
+    </body>
+

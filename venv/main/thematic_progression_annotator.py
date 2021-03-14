@@ -587,7 +587,6 @@ def TP_annotate():
                 tokens_rheme = forms_theme_rheme(sentence_main)[1].replace('&', '').replace('<', '').replace('>', '').split()
                 pos_theme = pos_theme_rheme(sentence_main)[0]
                 pos_rheme = pos_theme_rheme(sentence_main)[1]
-                pos_rheme = pos_theme_rheme(sentence_main)[1]
                 tokens_pos_theme = zip(tokens_theme, pos_theme)
                 tokens_pos_rheme = zip(tokens_rheme, pos_rheme)
 
@@ -1643,19 +1642,19 @@ def TP_annotate():
     ## Generating HTML output and the data for the plot
 
     colors = ['708090', 'D2691E', '556B2F', 'FF3300', '000080', '2F4F4F', '4B0082', '8B4513', '6A5ACD', '663399',
-              'BDB76B', 'FFD700', '00FF7F', 'D2B48C', 'DEB887', '32CD32', 'FFFACD', '0000CD', '008000', 'FFFAF0',
-              '6B8E23', '90EE90', '7B68EE', 'FFFFF0', '5F9EA0', 'FFFFFF', '6495ED', '00CED1', '808080', '00008B',
-              'FFF8DC', '4169E1', 'FF1493', 'FF6347', 'F4A460', '7FFF00', '808000', 'F5F5DC', '8B008B', 'FFF0F5',
-              'F0FFF0', '9ACD32', 'ADFF2F', 'FF7F50', 'DC143C', 'FF69B4', 'FFFFE0', 'ADD8E6', 'FFEFD5', '8A2BE2',
-              'DAA520', '7FFFD4', 'E0FFFF', 'BA55D3', 'FF8C00', '20B2AA', 'AFEEEE', 'B22222', '008080', '2E8B57',
+              'BDB76B', 'FFD700', '00FF7F', 'D2B48C', 'DEB887', '32CD32', 'FF436E', '0000CD', '008000', 'AF83BE',
+              '6B8E23', '90EE90', '7B68EE', '43825A', '5F9EA0', '826E43', '6495ED', '00CED1', '808080', '00008B',
+              '438281', '4169E1', 'FF1493', 'FF6347', 'F4A460', '7F7F00', '808000', 'F5F5DC', '8B008B', 'F7F0F5',
+              'F0F7F0', '9ACD32', 'ADFF2F', 'FF7F50', 'DC143C', 'FF69B4', 'F7FFE0', 'ADD8E6', 'FFEFD5', '8A2BE2',
+              'DAA520', '7F7FD4', 'E0F7FF', 'BA55D3', 'FF8C00', '20B2AA', 'AFEEEE', 'B22222', '008080', '2E8B57',
               'CD853F', 'B0C4DE', 'FAEBD7', '000000', '228B22', '008B8B', '006400', '8FBC8F', '778899', 'FFDAB9',
-              'FFFAFA', '696969', 'FFE4B5', 'E9967A', 'F0FFFF', '66CDAA', '800080', '87CEEB', 'D3D3D3', 'C0C0C0',
-              'FA8072', '4682B4', 'F5F5F5', 'DCDCDC', '00FFFF', '48D1CC', 'B0E0E6', 'FFA07A', 'FF0000', '00FA9A',
+              'F7FAFA', '696969', 'FFE4B5', 'E9967A', 'F0F7FF', '66CDAA', '800080', '87CEEB', 'D3D3D3', 'C0C0C0',
+              'FA8072', '4682B4', 'F5F5F5', 'DCDCDC', '00F7FF', '48D1CC', 'B0E0E6', 'FFA07A', 'FF0000', '00FA9A',
               'A9A9A9', 'FF4500', 'DDA0DD', 'E6E6FA', 'FFEBCD', 'BC8F8F', 'EE82EE', 'FFA500', 'A0522D', '8B0000',
-              'F8F8FF', 'FDF5E6', '98FB98', '9370DB', '191970', 'FFF5EE', 'FF00FF', 'EEE8AA', 'FAFAD2', '800000',
-              'FFC0CB', '9932CC', 'B8860B', '00BFFF', 'FFDEAD', 'FFB6C1', 'DB7093', '00FF00', '40E0D0', 'F5DEB3',
-              'FFFF00', 'FAF0E6', '3CB371', 'D8BFD8', '9400D3', 'C71585', 'DA70D6', 'F0E68C', '0000FF', 'FFE4E1',
-              'F5FFFA', 'CD5C5C', '483D8B', '87CEFA', '8B4513', '7CFC00', 'F0F8FF', 'A52A2A', '1E90FF', 'F08080']
+              'F8F8FF', 'FDF5E6', '98FB98', '9370DB', '191970', 'F7F5EE', 'FF00FF', 'EEE8AA', 'FAFAD2', '800000',
+              'FFC0CB', '9932CC', 'B8860B', '00BF7F', 'FFDEAD', 'FFB6C1', 'DB7093', '00FF00', '40E0D0', 'F5DEB3',
+              'F7FF00', 'FAF0E6', '3CB371', 'D8BFD8', '9400D3', 'C71585', 'DA70D6', 'F0E68C', '0000FF', 'FFE4E1',
+              'F5F7FA', 'CD5C5C', '483D8B', '87CEFA', '8B4513', '7CFC00', 'F0F8FF', 'A52A2A', '1E90FF', 'F08080']
 
     for file_xml in os.listdir(output_dir):
 
@@ -1817,7 +1816,8 @@ def TP_annotate():
 
         colores = {'N': 'white', 'T': 'red', 'R': 'blue', 'B': 'orange'}
 
-        fig, ax = plt.subplots()
+        # Making the plot size depend on the number os sentences and concepts
+        fig, ax = plt.subplots(figsize=(len(list(range(n_oraciones)))/4,len(list(range(n_concepts)))/4))
         columnas = ['c_' + str(numero) for numero in range(n_concepts)]
 
         plt.xticks(list(range(n_oraciones)), list(range(n_oraciones)))
