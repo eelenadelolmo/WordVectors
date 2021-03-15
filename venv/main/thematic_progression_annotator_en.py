@@ -462,7 +462,7 @@ def TP_annotate():
     # np.set_printoptions(threshold=100)
 
     # OOM: stsb-xlm-r-multilingual, paraphrase-xlm-r-multilingual-v1
-    BETO_model = SentenceTransformer('paraphrase-distilroberta-base-v1')
+    BERT_model = SentenceTransformer('BERT_multiling_distiluse')
 
     # Loading Word2vec model for English
     # w2vec_models = KeyedVectors.load_word2vec_format('w2vec_models_en/GoogleNews-vectors-negative300.bin', binary=True)
@@ -796,10 +796,10 @@ def TP_annotate():
 
             themes_ranking = dict()
 
-            print("\n\n--------------------------------------------------------")
-            print("\nSentence transformers with BETO as a model")
+            # print("\n\n--------------------------------------------------------")
+            # print("\nSentence transformers with BETO as a model")
 
-            theme_embeddings = BETO_model.encode(t_ord)
+            theme_embeddings = BERT_model.encode(t_ord)
 
             # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
             closest_n = len(theme_embeddings)
@@ -809,16 +809,16 @@ def TP_annotate():
                 results = zip(range(len(distances)), distances)
                 results = sorted(results, key=lambda x: x[1])
 
-                print("\n\n")
-                print("Theme:", theme)
-                print("\nMost similar themes:")
+                # print("\n\n")
+                # print("Theme:", theme)
+                # print("\nMost similar themes:")
 
                 themes_ranking[theme.strip()] = dict()
 
                 # Not considering the distance with the theme itself (i.e. selecting the list elements from the second one)
                 # Undone because caused problems when the same theme are literally repeated along the document
                 for idx, distance in results[:closest_n]:
-                    print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
+                    # print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
                     themes_ranking[theme.strip()][t_ord[idx].strip()] = 1 - distance
 
 
@@ -905,7 +905,7 @@ def TP_annotate():
 
             # print("\nSentence transformers with BETO as a model")
 
-            rheme_embeddings = BETO_model.encode(r_ord_noun_phrases_all)
+            rheme_embeddings = BERT_model.encode(r_ord_noun_phrases_all)
 
             # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
             closest_n = len(theme_embeddings)
@@ -1010,7 +1010,7 @@ def TP_annotate():
             # print("\n\n--------------------------------------------------------")
             # print("\nSentence transformers with BETO as a model")
 
-            rheme_embeddings = BETO_model.encode(r_ord_sem_roles_all)
+            rheme_embeddings = BERT_model.encode(r_ord_sem_roles_all)
 
             # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
             closest_n = len(rheme_embeddings)
@@ -1118,7 +1118,7 @@ def TP_annotate():
             # print("\n\n--------------------------------------------------------")
             # print("\nSentence transformers with BETO as a model")
 
-            rheme_embeddings = BETO_model.encode(r_ord_noun_phrases_all)
+            rheme_embeddings = BERT_model.encode(r_ord_noun_phrases_all)
 
             # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
             closest_n = len(rheme_embeddings)
@@ -1228,7 +1228,7 @@ def TP_annotate():
             # pretty(rhemes_ranking, indent=1)
 
             # Critical value for the weighted semantic similarity to consider two themes corefer to the same underlying concept
-            threshold_themes = 0.4
+            threshold_themes = 0.6
 
             # List of identifiers for coreference sets
             # ids_coref = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z".split()
@@ -1277,7 +1277,7 @@ def TP_annotate():
             agrupado = list()
 
             # Critical value for the weighted semantic similarity to consider noun phrases in rheme corefer with themes
-            threshold_rheme_theme_np = 0.4
+            threshold_rheme_theme_np = 0.6
 
             for count, r in enumerate(rhemes_themes_ranking):
 
@@ -1309,6 +1309,7 @@ def TP_annotate():
             # List of rhemes already included in a corefence set
             coreferent_concepts_rheme = list()
 
+            """
             # Critical value for the weighted semantic similarity to consider two rhematic main frame arguments corefer to the same underlying concept
             threshold_rhemes_sr = 0.4
 
@@ -1338,6 +1339,7 @@ def TP_annotate():
                             coreferent_concepts_rheme.append(r_c)
 
             # print("Rhematic coreference analyzed (main semantic frame arguments)", rheme_sr_id)
+            """
 
             # List of (rheme, id) tuples
             rheme_id = list()
@@ -1346,7 +1348,7 @@ def TP_annotate():
             coreferent_concepts_rheme = list()
 
             # Critical value for the weighted semantic similarity to consider two  two rhematic noun phrases corefer to the same underlying concept
-            threshold_rhemes_np = 0.4
+            threshold_rhemes_np = 0.6
 
             for count, r in enumerate(rhemes_ranking):
 

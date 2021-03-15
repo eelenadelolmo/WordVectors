@@ -474,20 +474,16 @@ def TP_annotate():
 
     # Parameters for sentence transformed based on BETO
     np.set_printoptions(threshold=100)
-    BETO_model = SentenceTransformer('BETO_model')
-
-    # Parameters for sentence transformed based on ROBERTA
-    # np.set_printoptions(threshold=100)
-    # BETO_model = SentenceTransformer('BERT_ROBERTA_model')
+    BERT_model = SentenceTransformer('BERT_multiling_distiluse')
 
     # Loading Word2vec model for Spanish
-    w2vec_models = KeyedVectors.load('w2vec_models/complete.kv', mmap='r')
+    # w2vec_models = KeyedVectors.load('w2vec_models/complete.kv', mmap='r')
 
     # Loading Word2vec model for English
     # w2vec_models = KeyedVectors.load_word2vec_format('w2vec_models_en/GoogleNews-vectors-negative300.bin', binary=True)
 
     # Loading FastText model for Spanish
-    FastText_models = FastText.load_fasttext_format('FastText_models/cc.es.300.bin')
+    # FastText_models = FastText.load_fasttext_format('FastText_models/cc.es.300.bin')
 
     # Loading FastText model for English
     # FastText_models = FastText.load_fasttext_format('FastText_models/cc.en.300.bin')
@@ -778,7 +774,7 @@ def TP_annotate():
             # print("\n\n--------------------------------------------------------")
             # print("\nSentence transformers with BETO as a model")
 
-            theme_embeddings = BETO_model.encode(t_ord)
+            theme_embeddings = BERT_model.encode(t_ord)
 
             # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
             closest_n = len(theme_embeddings)
@@ -800,6 +796,7 @@ def TP_annotate():
                     # print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
                     themes_ranking[theme.strip()][t_ord[idx].strip()] = 1 - distance
 
+            """
             # print("\n\n--------------------------------------------------------")
             # print("\nWord2vec embeddings\n\n")
 
@@ -857,6 +854,7 @@ def TP_annotate():
                     themes_ranking[theme.strip()][other.strip()] += norm[n]
 
                 # print('\n\n')
+            """
 
             ##____________________________________________________________________________________________________________
             ##____________________________________________________________________________________________________________
@@ -869,7 +867,7 @@ def TP_annotate():
 
             # print("\nSentence transformers with BETO as a model")
 
-            rheme_embeddings = BETO_model.encode(r_ord_noun_phrases_all)
+            rheme_embeddings = BERT_model.encode(r_ord_noun_phrases_all)
 
             # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
             closest_n = len(theme_embeddings)
@@ -892,6 +890,8 @@ def TP_annotate():
                     # print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
                     rhemes_themes_ranking[rheme.strip()][t_ord[idx].strip()] = 1 - distance
 
+
+            """
             # print("\n\n--------------------------------------------------------")
             # print("\nWord2vec embeddings\n\n")
 
@@ -949,6 +949,7 @@ def TP_annotate():
                     rhemes_themes_ranking[rheme.strip()][other.strip()] += norm[n]
 
                 # print('\n\n')
+            """
 
             ##____________________________________________________________________________________________________________
             ##____________________________________________________________________________________________________________
@@ -963,7 +964,7 @@ def TP_annotate():
             # print("\n\n--------------------------------------------------------")
             # print("\nSentence transformers with BETO as a model")
 
-            rheme_embeddings = BETO_model.encode(r_ord_sem_roles_all)
+            rheme_embeddings = BERT_model.encode(r_ord_sem_roles_all)
 
             # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
             closest_n = len(rheme_embeddings)
@@ -985,6 +986,8 @@ def TP_annotate():
                     # print(r_ord_sem_roles_all[idx].strip(), "(Score: %.4f)" % (1-distance))
                     rhemes_sr_ranking[rheme.strip()][r_ord_sem_roles_all[idx].strip()] = 1 - distance
 
+
+            """
             # print("\n\n--------------------------------------------------------")
             # print("\nWord2vec embeddings\n\n")
 
@@ -1042,6 +1045,8 @@ def TP_annotate():
                     rhemes_sr_ranking[rheme.strip()][other.strip()] += norm[n]
 
                 # print('\n\n')
+            """
+
 
             ##____________________________________________________________________________________________________________
             ##____________________________________________________________________________________________________________
@@ -1056,7 +1061,7 @@ def TP_annotate():
             # print("\n\n--------------------------------------------------------")
             # print("\nSentence transformers with BETO as a model")
 
-            rheme_embeddings = BETO_model.encode(r_ord_noun_phrases_all)
+            rheme_embeddings = BERT_model.encode(r_ord_noun_phrases_all)
 
             # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
             closest_n = len(rheme_embeddings)
@@ -1078,6 +1083,8 @@ def TP_annotate():
                     # print(r_ord_noun_phrases_all[idx].strip(), "(Score: %.4f)" % (1-distance))
                     rhemes_ranking[rheme.strip()][r_ord_noun_phrases_all[idx].strip()] = 1 - distance
 
+
+            """
             # print("\n\n--------------------------------------------------------")
             # print("\nWord2vec embeddings\n\n")
 
@@ -1135,6 +1142,8 @@ def TP_annotate():
                     rhemes_ranking[rheme.strip()][other.strip()] += norm[n]
 
                 # print('\n\n')
+            """
+
 
             ##____________________________________________________________________________________________________________
             ##____________________________________________________________________________________________________________
@@ -1154,7 +1163,7 @@ def TP_annotate():
             # pretty(rhemes_ranking, indent=1)
 
             # Critical value for the weighted semantic similarity to consider two themes corefer to the same underlying concept
-            threshold_themes = 2.6
+            threshold_themes = 0.35
 
             # List of identifiers for coreference sets
             # ids_coref = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z".split()
@@ -1203,7 +1212,7 @@ def TP_annotate():
             agrupado = list()
 
             # Critical value for the weighted semantic similarity to consider noun phrases in rheme corefer with themes
-            threshold_rheme_theme_np = 1.6
+            threshold_rheme_theme_np = 0.35
 
             for count, r in enumerate(rhemes_themes_ranking):
 
@@ -1235,8 +1244,10 @@ def TP_annotate():
             # List of rhemes already included in a corefence set
             coreferent_concepts_rheme = list()
 
+
+            """
             # Critical value for the weighted semantic similarity to consider two rhematic main frame arguments corefer to the same underlying concept
-            threshold_rhemes_sr = 1.6
+            threshold_rhemes_sr = 0.6
 
             for count, r in enumerate(rhemes_sr_ranking):
 
@@ -1264,6 +1275,8 @@ def TP_annotate():
                             coreferent_concepts_rheme.append(r_c)
 
             # print("Rhematic coreference analyzed (main semantic frame arguments)", rheme_sr_id)
+            """
+
 
             # List of (rheme, id) tuples
             rheme_id = list()
@@ -1272,7 +1285,7 @@ def TP_annotate():
             coreferent_concepts_rheme = list()
 
             # Critical value for the weighted semantic similarity to consider two  two rhematic noun phrases corefer to the same underlying concept
-            threshold_rhemes_np = 1.6
+            threshold_rhemes_np = 0.35
 
             for count, r in enumerate(rhemes_ranking):
 
@@ -1962,7 +1975,8 @@ def mappingsrl():
 
         # Creating the embeddings for all the subphrases of the Spanish sentences
         for original_filename in files_es:
-            if original_filename + '.conll' == name:
+            # Only in this branch ready for EN
+            if 'en_' + original_filename + '.conll' == name:
                 with io.open(UPLOAD_FOLDER_mapper + "/" + original_filename, 'r', encoding='utf8') as f:
                     sentence_original = f.read()
                     sentence_original_tokens = word_tokenize(sentence_original)
