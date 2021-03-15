@@ -460,7 +460,7 @@ def TP_annotate():
 
     # Loading BERT model for English
     # np.set_printoptions(threshold=100)
-    # BETO_model = SentenceTransformer('BERT_ROBERTA_model')
+    BETO_model = SentenceTransformer('BERT_multiling_distiluse')
 
     # Loading Word2vec model for English
     # w2vec_models = KeyedVectors.load_word2vec_format('w2vec_models_en/GoogleNews-vectors-negative300.bin', binary=True)
@@ -794,9 +794,8 @@ def TP_annotate():
 
             themes_ranking = dict()
 
-            """ OOM
-            # print("\n\n--------------------------------------------------------")
-            # print("\nSentence transformers with BETO as a model")
+            print("\n\n--------------------------------------------------------")
+            print("\nSentence transformers with BETO as a model")
 
             theme_embeddings = BETO_model.encode(t_ord)
 
@@ -808,18 +807,21 @@ def TP_annotate():
                 results = zip(range(len(distances)), distances)
                 results = sorted(results, key=lambda x: x[1])
 
-                # print("\n\n")
-                # print("Theme:", theme)
-                # print("\nMost similar themes:")
+                print("\n\n")
+                print("Theme:", theme)
+                print("\nMost similar themes:")
 
                 themes_ranking[theme.strip()] = dict()
 
                 # Not considering the distance with the theme itself (i.e. selecting the list elements from the second one)
                 # Undone because caused problems when the same theme are literally repeated along the document
                 for idx, distance in results[:closest_n]:
-                    # print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
+                    print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
                     themes_ranking[theme.strip()][t_ord[idx].strip()] = 1 - distance
 
+
+
+            """ OOM
             # print("\n\n--------------------------------------------------------")
             # print("\nWord2vec embeddings\n\n")
 
@@ -848,9 +850,9 @@ def TP_annotate():
                     themes_ranking[theme.strip()][other.strip()] += norm[n]
 
                 # print('\n\n')
-            """
-
-
+                
+                
+                
             # print("\n\n--------------------------------------------------------")
             # print("\nFastText embeddings\n\n")
 
@@ -880,7 +882,6 @@ def TP_annotate():
                     # print("-", other + ":", WMD)
                     themes_ranking[theme.strip()][other.strip()] = WMD
 
-                """ OOM
                 # Normalizing the Word Movers Distance value to a 0-1 range
                 # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
                 norm = [1 - (float(i) / 3) for i in WMD_others]
@@ -900,7 +901,6 @@ def TP_annotate():
             # print("** Matching rhemes to themes **")
             rhemes_themes_ranking = dict()
 
-            """ oom
             # print("\nSentence transformers with BETO as a model")
 
             rheme_embeddings = BETO_model.encode(r_ord_noun_phrases_all)
@@ -926,6 +926,9 @@ def TP_annotate():
                     # print(t_ord[idx].strip(), "(Score: %.4f)" % (1-distance))
                     rhemes_themes_ranking[rheme.strip()][t_ord[idx].strip()] = 1 - distance
 
+
+
+            """ OOM
             # print("\n\n--------------------------------------------------------")
             # print("\nWord2vec embeddings\n\n")
 
@@ -954,8 +957,9 @@ def TP_annotate():
                     rhemes_themes_ranking[rheme.strip()][other.strip()] += norm[n]
 
                 # print('\n\n')
-            """
-
+                
+                
+                
             # print("\n\n--------------------------------------------------------")
             # print("\nFastText embeddings\n\n")
 
@@ -979,8 +983,7 @@ def TP_annotate():
                     WMD_others.append(WMD)
                     # print("-", other + ":", WMD)
                     rhemes_themes_ranking[rheme.strip()][other.strip()] = WMD
-
-                """ OOM
+                    
                 # Normalizing the Word Movers Distance value to a 0-1 range
                 # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
                 norm = [1 - (float(i) / 3) for i in WMD_others]
@@ -1001,7 +1004,7 @@ def TP_annotate():
 
             rhemes_sr_ranking = dict()
 
-            """ OOM
+
             # print("\n\n--------------------------------------------------------")
             # print("\nSentence transformers with BETO as a model")
 
@@ -1027,6 +1030,9 @@ def TP_annotate():
                     # print(r_ord_sem_roles_all[idx].strip(), "(Score: %.4f)" % (1-distance))
                     rhemes_sr_ranking[rheme.strip()][r_ord_sem_roles_all[idx].strip()] = 1 - distance
 
+
+
+            """ OOM
             # print("\n\n--------------------------------------------------------")
             # print("\nWord2vec embeddings\n\n")
 
@@ -1055,7 +1061,9 @@ def TP_annotate():
                     rhemes_sr_ranking[rheme.strip()][other.strip()] += norm[n]
 
                 # print('\n\n')
-            """
+                
+                
+                
 
             # print("\n\n--------------------------------------------------------")
             # print("\nFastText embeddings\n\n")
@@ -1083,8 +1091,7 @@ def TP_annotate():
                     WMD = FastText_models.wv.wmdistance(" ".join(r_ord_sem_roles_heads_all[idx]).lower(), " ".join(other_heads).lower())
                     WMD_others.append(WMD)
                     # print("-", other + ":", WMD)
-
-                """ OOM
+                    
                 # Normalizing the Word Movers Distance value to a 0-1 range
                 # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
                 norm = [1 - (float(i) / 3) for i in WMD_others]
@@ -1105,7 +1112,7 @@ def TP_annotate():
 
             rhemes_ranking = dict()
 
-            """ OOM
+
             # print("\n\n--------------------------------------------------------")
             # print("\nSentence transformers with BETO as a model")
 
@@ -1131,6 +1138,9 @@ def TP_annotate():
                     # print(r_ord_noun_phrases_all[idx].strip(), "(Score: %.4f)" % (1-distance))
                     rhemes_ranking[rheme.strip()][r_ord_noun_phrases_all[idx].strip()] = 1 - distance
 
+
+
+            """ OOM
             # print("\n\n--------------------------------------------------------")
             # print("\nWord2vec embeddings\n\n")
 
@@ -1159,8 +1169,10 @@ def TP_annotate():
                     rhemes_ranking[rheme.strip()][other.strip()] += norm[n]
 
                 # print('\n\n')
-            """
-
+                
+                
+                
+                
             # print("\n\n--------------------------------------------------------")
             # print("\nFastText embeddings\n\n")
 
@@ -1186,7 +1198,6 @@ def TP_annotate():
                     # print("-", other + ":", WMD)
                     rhemes_ranking[rheme.strip()][other.strip()] = WMD
 
-                """ OOM
                 # Normalizing the Word Movers Distance value to a 0-1 range
                 # norm = [1 - (float(i) / sum(WMD_others)) for i in WMD_others]
                 norm = [1 - (float(i) / 3) for i in WMD_others]
@@ -1215,11 +1226,11 @@ def TP_annotate():
             # pretty(rhemes_ranking, indent=1)
 
             # Critical value for the weighted semantic similarity to consider two themes corefer to the same underlying concept
-            threshold_themes = 1.75
+            threshold_themes = 0.4
 
             # List of identifiers for coreference sets
             # ids_coref = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z".split()
-            ids_coref = ["c_" + str(num) for num in range(200)]
+            ids_coref = ["c_" + str(num) for num in range(500)]
 
             # Number of coreference sets
             n_sets = -1
@@ -1251,7 +1262,7 @@ def TP_annotate():
                 # Assigning the coreference chain id of the current theme to the themes with a semantic similarity measure above the threshold
                 for t_c in themes_ranking[t]:
                     if t_c not in coreferent_concepts:
-                        if themes_ranking[t][t_c] < threshold_themes:
+                        if themes_ranking[t][t_c] > threshold_themes:
                             theme_id.append((t_c, id_c))
                             coreferent_concepts.append(t_c)
 
@@ -1264,7 +1275,7 @@ def TP_annotate():
             agrupado = list()
 
             # Critical value for the weighted semantic similarity to consider noun phrases in rheme corefer with themes
-            threshold_rheme_theme_np = 1.75
+            threshold_rheme_theme_np = 0.4
 
             for count, r in enumerate(rhemes_themes_ranking):
 
@@ -1272,7 +1283,7 @@ def TP_annotate():
                 for t in rhemes_themes_ranking[r]:
                     if r in agrupado:
                         break
-                    if rhemes_themes_ranking[r][t] < threshold_rheme_theme_np:
+                    if rhemes_themes_ranking[r][t] > threshold_rheme_theme_np:
                         for e in theme_id:
                             if e[0] == t:
                                 id_c = e[1]
@@ -1297,7 +1308,7 @@ def TP_annotate():
             coreferent_concepts_rheme = list()
 
             # Critical value for the weighted semantic similarity to consider two rhematic main frame arguments corefer to the same underlying concept
-            threshold_rhemes_sr = 1.75
+            threshold_rhemes_sr = 0.4
 
             for count, r in enumerate(rhemes_sr_ranking):
 
@@ -1320,7 +1331,7 @@ def TP_annotate():
                 # Assigning the coreference chain id of the current theme to the themes with a semantic similarity measure above the threshold
                 for r_c in rhemes_sr_ranking[r]:
                     if r_c not in coreferent_concepts_rheme:
-                        if rhemes_sr_ranking[r][r_c] < threshold_rhemes_sr:
+                        if rhemes_sr_ranking[r][r_c] > threshold_rhemes_sr:
                             rheme_sr_id.append((r_c, id_c))
                             coreferent_concepts_rheme.append(r_c)
 
@@ -1333,7 +1344,7 @@ def TP_annotate():
             coreferent_concepts_rheme = list()
 
             # Critical value for the weighted semantic similarity to consider two  two rhematic noun phrases corefer to the same underlying concept
-            threshold_rhemes_np = 1.75
+            threshold_rhemes_np = 0.4
 
             for count, r in enumerate(rhemes_ranking):
 
@@ -1357,7 +1368,7 @@ def TP_annotate():
                 for r_c in rhemes_ranking[r]:
                     if r_c not in coreferent_concepts_rheme:
                         # Matching only rhemes not previously matched with themes
-                        if rhemes_ranking[r][r_c] < threshold_rhemes_np and r not in [r_t_coref for r_t_coref, id_coref
+                        if rhemes_ranking[r][r_c] > threshold_rhemes_np and r not in [r_t_coref for r_t_coref, id_coref
                                                                                       in rheme_theme_id]:
                             rheme_id.append((r_c, id_c))
                             coreferent_concepts_rheme.append(r_c)
