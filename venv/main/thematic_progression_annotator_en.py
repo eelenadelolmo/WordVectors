@@ -460,7 +460,9 @@ def TP_annotate():
 
     # Loading BERT model for English
     # np.set_printoptions(threshold=100)
-    BETO_model = SentenceTransformer('BERT_multiling_distiluse')
+
+    # OOM: stsb-xlm-r-multilingual, paraphrase-xlm-r-multilingual-v1
+    BETO_model = SentenceTransformer('paraphrase-distilroberta-base-v1')
 
     # Loading Word2vec model for English
     # w2vec_models = KeyedVectors.load_word2vec_format('w2vec_models_en/GoogleNews-vectors-negative300.bin', binary=True)

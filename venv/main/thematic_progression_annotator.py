@@ -1906,7 +1906,7 @@ def mappingsrl():
     shutil.rmtree(DOWNLOAD_FOLDER_mapper + '/', ignore_errors=True)
     os.makedirs(DOWNLOAD_FOLDER_mapper + '/')
 
-    model = SentenceTransformer('distiluse-base-multilingual-cased')
+    model = SentenceTransformer('BERT_multiling_distiluse')
 
     files_ann = list()
     files_es = list()

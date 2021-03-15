@@ -7,9 +7,8 @@ venv/main/w2vec_models/*
 venv/main/w2vec_models_en/*
 venv/main/BETO_pytorch/*
 venv/main/BERT_multiling_distiluse/*
-venv/main/BERT_ROBERTA_model/*
-venv/main/paraphrase-xlm-r-multilingual-v1/*
 venv/main/stsb-distilbert-base/*
+venv/main/paraphrase-distilroberta-base-v1/*
 venv/main/FastText_models/*
 venv/main/Spacy_models/*
 venv/main/framenet_annotated/*
