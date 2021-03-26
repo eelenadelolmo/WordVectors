@@ -463,6 +463,8 @@ def TP_annotate():
 
     # OOM: stsb-xlm-r-multilingual, paraphrase-xlm-r-multilingual-v1
     BERT_model = SentenceTransformer('BERT_multiling_distiluse')
+    # BERT_model = SentenceTransformer('stsb-distilbert-base')
+    # BERT_model = SentenceTransformer('paraphrase-distilroberta-base-v1')
 
     # Loading Word2vec model for English
     # w2vec_models = KeyedVectors.load_word2vec_format('w2vec_models_en/GoogleNews-vectors-negative300.bin', binary=True)
