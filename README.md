@@ -13,7 +13,13 @@ Clone the repo and execute the installation command:
 - Spanish version: run `thematic_progression_annotator.py` and upload your files to http://0.0.0.0:5003/upload-frame-ann-en.
 
     The Spanish pipeline begins with the SRL annotation mapper and the English version beging from the Thematic Progression annotator.
-
+    
+    - The sentence similarity is calculated with Sentence-Transformers (https://www.sbert.net/index.html). The pretrained models are available for download (https://www.sbert.net/docs/pretrained_models.html). For the annotation mapping, we use multilingual models (https://arxiv.org/abs/1908.10084).
+    - The FastText vectors can be downloaded from https://fasttext.cc/docs/en/crawl-vectors.html
+    - The BETO model (Spanish BERT) can be downloaded from https://github.com/dccuchile/beto
+    - SpaCy models can be downloaded from https://spacy.io/usage/models
+    - The word2vec Spanish model can be downloaded from https://morelab.deusto.es/datasets/info/word2vec-models-for-the-spanish-language/
+    
 - **Annotation mapper**
     - Accepted input files: English annotated files with FrameNet SRL files (output of the previous module) and the original Spanish sentences files (output of the translation module in the es folder).
     - The output consists of ne JSON file for every sentence containing the Spanish SRL annotations.
