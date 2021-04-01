@@ -29,18 +29,16 @@ import gc
 # Pending: precedence of comparisons
 
 
-# Using CPU instead of GPU
-device = torch.device("cpu")
+# Using CPU instead of GPUç
+# device = torch.device("cpu")
 
 
 # Using GPU instead of CPU
-"""
 import torch
 torch.cuda.empty_cache()
 torch.cuda.memory_summary(device=None, abbreviated=False)
 del torch
 gc.collect()
-"""
 
 ## Pretrained models
 
@@ -466,13 +464,11 @@ def upload_file():
 def TP_annotate():
 
     # Using GPU instead of CPU
-    """
     import torch
     torch.cuda.empty_cache()
     torch.cuda.memory_summary(device=None, abbreviated=False)
     del torch
     gc.collect()
-    """
 
     ## Pretrained models
 
@@ -485,7 +481,12 @@ def TP_annotate():
 
     # Parameters for sentence transformed based on BETO
     np.set_printoptions(threshold=100)
-    BETO_model = SentenceTransformer('BETO_model', device=devide)
+
+    BETO_model = SentenceTransformer('BETO_model')
+
+    # Using CPU instead of GPU
+    # BETO_model = SentenceTransformer('BETO_model', device="cpu")
+    # BETO_model = torch.nn.DataParallel(BETO_model)
 
     # Loading Word2vec model for Spanish
     w2vec_models = KeyedVectors.load('w2vec_models/complete.kv', mmap='r')
@@ -787,6 +788,9 @@ def TP_annotate():
 
             theme_embeddings = BETO_model.encode(t_ord)
 
+            # Using CPU instead of GPU
+            # theme_embeddings = BETO_model.module.encode(t_ord)
+
             # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
             closest_n = len(theme_embeddings)
             for theme, theme_embedding in zip(t_ord, theme_embeddings):
@@ -877,6 +881,9 @@ def TP_annotate():
             # print("\nSentence transformers with BETO as a model")
 
             rheme_embeddings = BETO_model.encode(r_ord_noun_phrases_all)
+
+            # Using CPU instead of GPU
+            # rheme_embeddings = BETO_model.module.encode(r_ord_noun_phrases_all)
 
             # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
             closest_n = len(theme_embeddings)
@@ -972,6 +979,9 @@ def TP_annotate():
 
             rheme_embeddings = BETO_model.encode(r_ord_sem_roles_all)
 
+            # Using CPU instead of GPU
+            # rheme_embeddings = BETO_model.module.encode(r_ord_sem_roles_all)
+
             # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
             closest_n = len(rheme_embeddings)
             for rheme, rheme_embedding in zip(r_ord_sem_roles_all, rheme_embeddings):
@@ -1064,6 +1074,9 @@ def TP_annotate():
             # print("\nSentence transformers with BETO as a model")
 
             rheme_embeddings = BETO_model.encode(r_ord_noun_phrases_all)
+
+            # Using CPU instead of GPU
+            # rheme_embeddings = BETO_model.module.encode(r_ord_noun_phrases_all)
 
             # Find the closest closest_n sentences of the corpus for each query sentence based on cosine similarity
             closest_n = len(rheme_embeddings)
@@ -1905,18 +1918,20 @@ def upload_file_mapper():
 def mappingsrl():
 
     # Using GPU instead of CPU
-    """
     import torch
     torch.cuda.empty_cache()
     torch.cuda.memory_summary(device=None, abbreviated=False)
     del torch
     gc.collect()
-    """
 
     shutil.rmtree(DOWNLOAD_FOLDER_mapper + '/', ignore_errors=True)
     os.makedirs(DOWNLOAD_FOLDER_mapper + '/')
 
     model = SentenceTransformer('BERT_multiling_distiluse')
+
+    # Using CPU instead of GPU
+    # model = SentenceTransformer('BERT_multiling_distiluse', device="cpu")
+    # model = torch.nn.DataParallel(model)
 
     files_ann = list()
     files_es = list()
@@ -1972,7 +1987,7 @@ def mappingsrl():
 
         # Creating the embeddings for all the subphrases of the Spanish sentences
         for original_filename in files_es:
-            if original_filename + '.conll' == name:
+            if 'en_' + original_filename + '.conll' == name:
                 with io.open(UPLOAD_FOLDER_mapper + "/" + original_filename, 'r', encoding='utf8') as f:
                     sentence_original = f.read()
                     sentence_original_tokens = word_tokenize(sentence_original)
@@ -1986,13 +2001,21 @@ def mappingsrl():
 
         sentence_embeddings = model.encode(subfrases)
 
+        # Using CPU instead of GPU
+        # sentence_embeddings = model.module.encode(subfrases)
+
         # Creating the dictionary for the Spanish annotations
         SRL_es = dict()
 
         for frame in SRL:
             query_frame_type = frame[0]
             query_frame_str = [frame[1]]
+
             query_frame_str_embedding = model.encode(query_frame_str)
+
+            # Using CPU instead of GPU
+            # query_frame_str_embedding = model.module.encode(query_frame_str)
+
             closest_n = 1
             distances = scipy.spatial.distance.cdist([query_frame_str_embedding[0]], sentence_embeddings, "cosine")[0]
             results = zip(range(len(distances)), distances)
@@ -2004,7 +2027,12 @@ def mappingsrl():
             for arg in SRL[frame]:
                 arg_type = arg[0]
                 arg_str = [arg[1]]
+
                 arg_str_embedding = model.encode(arg_str)
+
+                # Using CPU instead of GPU
+                # arg_str_embedding = model.module.encode(arg_str)
+
                 closest_n = 1
                 distances = scipy.spatial.distance.cdist([arg_str_embedding[0]], sentence_embeddings, "cosine")[0]
                 results = zip(range(len(distances)), distances)
