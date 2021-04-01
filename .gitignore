@@ -25,3 +25,4 @@ venv/main/downloads_mapper/*
 venv/main/uploads/*
 venv/pyvenv.cfg
 venv/include/*
+venv/main/templates/*
