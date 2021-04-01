@@ -467,18 +467,14 @@ def TP_annotate():
 
     # Loading Spacy Spanish large model from path
     model_lg_path = "Spacy_models/es_core_news_lg-2.3.1/es_core_news_lg/es_core_news_lg-2.3.1"
-    model_md_path = "Spacy_models/es_core_news_md-2.3.1/es_core_news_lg/es_core_news_md-2.3.1"
-    model_sm_path = "Spacy_models/es_core_news_sm-2.3.1/es_core_news_lg/es_core_news_sm-2.3.1"
+    # model_md_path = "Spacy_models/es_core_news_md-2.3.1/es_core_news_lg/es_core_news_md-2.3.1"
+    # model_sm_path = "Spacy_models/es_core_news_sm-2.3.1/es_core_news_lg/es_core_news_sm-2.3.1"
     nlp = spacy.load(model_lg_path)
     # os.system("python -m spacy download es_core_news_sm")
 
     # Parameters for sentence transformed based on BETO
     np.set_printoptions(threshold=100)
     BETO_model = SentenceTransformer('BETO_model')
-
-    # Parameters for sentence transformed based on ROBERTA
-    # np.set_printoptions(threshold=100)
-    # BETO_model = SentenceTransformer('BERT_ROBERTA_model')
 
     # Loading Word2vec model for Spanish
     w2vec_models = KeyedVectors.load('w2vec_models/complete.kv', mmap='r')
