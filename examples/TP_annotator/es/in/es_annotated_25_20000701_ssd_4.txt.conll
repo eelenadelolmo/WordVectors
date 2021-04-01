@@ -1,0 +1,6 @@
+{   ('Becoming_aware', 'le'): [('Phenomenon', 'declaró culpable de tres delitos de asesinato')],
+    ('Committing_crime', 'delitos'): [('Manner', 'tres')],
+    ('Contrition', 'culpable'): [('Experiencer', 'tres delitos de')],
+    ('Judicial_body', 'tribunal'): [],
+    ('Killing', 'asesinato'): [],
+    ('Quarreling', 'argumentos'): [('Arguers', 'declaró culpable de tres delitos de asesinato')]}

@@ -1,0 +1,5 @@
+{   ('Arriving', 'visita'): [('Theme', 'su'), ('Goal', 'como un intercambio de información sobre el contencioso')],
+    ('Discussion', 'intercambio'): [('Topic', 'de información'), ('Purpose', 'sobre el contencioso')],
+    ('Emphasizing', 'Enfoca'): [('Consideration', 'su visita como un intercambio de información sobre el contencioso')],
+    ('Information', 'información'): [('Topic', 'sobre el contencioso')],
+    ('Quarreling', 'contencioso'): []}

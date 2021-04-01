@@ -1,0 +1,7 @@
+{   ('Affirm_or_deny', 'desmentidas'): [('Speaker', 'por Israel')],
+    ('Body_parts', 'cuerpos'): [('Possessor', 'los dos palestinos')],
+    ('Evidence', 'mostraban'): [('Support', 'los cuerpos de los dos palestinos'), ('Proposition', 'signos de haber sido esposados y maltratados antes de morir')],
+    ('Give_impression', 'aparecieron'): [('Phenomenon', 'los cuerpos de los dos palestinos'), ('Characterization', 'desnudos')],
+    ('Goal', 'por'): [('Landmark', 'fuentes palestinas')],
+    ('Sign', 'signos'): [('Indicated', 'esposados y maltratados antes de morir')],
+    ('Source_of_getting', 'fuentes'): [('Descriptor', 'palestinas')]}

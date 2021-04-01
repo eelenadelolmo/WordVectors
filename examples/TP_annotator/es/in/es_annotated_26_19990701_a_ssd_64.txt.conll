@@ -1,0 +1,4 @@
+{   ('Affirm_or_deny', 'desmentir'): [('Speaker', 'en'), ('Message', 'porque no vale la pena')],
+    ('Causation', 'porque'): [('Cause', 'no vale la pena')],
+    ('Coming_up_with', 'inventó'): [('Idea', 'Alguien'), ('Idea', 'esa gracia')],
+    ('Posture', 'mentira'): []}

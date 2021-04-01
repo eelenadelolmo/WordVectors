@@ -1,0 +1,8 @@
+{   ('Arrest', 'detención'): [('Time', 'a la'), ('Suspect', 'de la diplomática norteamericana Cheri Leberknight bajo acusación de espionaje')],
+    ('Delivery', 'tras la'): [   ('Time', 'Paralelamente'),
+                                 ('Deliverer', 'el Ministerio de Exteriores ruso'),
+                                 ('Theme', 'ayer a la embajada de EEUU una nota de protesta tras la detención de la diplomática norteamericana Cheri')],
+    ('Identicality', 'la'): [('Type', 'ayer')],
+    ('Leadership', 'diplomática'): [('Governed', 'norteamericana')],
+    ('Locative_relation', 'a la'): [('Ground', 'Paralelamente'), ('Figure', 'acusación de espionaje')],
+    ('People_by_origin', 'norteamericana'): []}

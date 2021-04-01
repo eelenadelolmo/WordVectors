@@ -1,0 +1,8 @@
+{   ('Appellations', 'president'): [],
+    ('Desiring', 'quiere'): [   ('Experiencer', 'líder de los socialistas catalanes'),
+                                ('Event', 'evitar así que el president utilice las conversaciones con la oposición para prolongar su estrategia de gobernar en minoría')],
+    ('Discussion', 'conversaciones'): [('Topic', 'con la oposición para prolongar su estrategia de gobernar en minoría sin casarse con nadie')],
+    ('Leadership', 'líder'): [('Governed', 'los socialistas catalanes')],
+    ('Preventing_or_letting', 'evitar'): [   ('Potential_hindrance', 'líder de los socialistas catalanes'),
+                                             ('Event', 'president utilice las conversaciones con la oposición para prolongar su estrategia de gobernar en minoría sin casarse con nadie')],
+    ('Using', 'utilice'): [('Instrument', 'conversaciones'), ('Purpose', 'con la oposición para prolongar su estrategia de gobernar en minoría sin casarse con nadie')]}

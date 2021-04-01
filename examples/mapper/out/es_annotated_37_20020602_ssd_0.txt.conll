@@ -1,0 +1,9 @@
+{   ('Being_in_captivity', 'los presos'): [('Theme', 'Quatre')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Cardinal_numbers', 'un'): [('Entity', 'personas')],
+    ('Evidence', 'manifestaron'): [   ('Support', 'centenar de personas'),
+                                      ('Proposition', 'ayer en Barcelona en solidaridad con los presos de Quatre Camins , donde el miércoles se registró un violento')],
+    ('Locale', 'donde'): [],
+    ('Locative_relation', 'donde'): [('Figure', 'un violento motín')],
+    ('People', 'personas'): [],
+    ('Spatial_contact', 'en'): [('Figure', 'un violento motín'), ('Ground', 'miércoles')]}

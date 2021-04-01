@@ -1,0 +1,6 @@
+{   ('Capability', 'puede'): [('Entity', 'él'), ('Event', 'a dos metros de él')],
+    ('Cardinal_numbers', 'dos'): [('Unit', 'metros')],
+    ('Excreting', 'sudar'): [('Excreter', 'él')],
+    ('Locative_relation', 'hay'): [('Ground', 'hay un fan de Georgie Fame')],
+    ('Measure_linear_extent', 'metros'): [('Count', 'dos')],
+    ('Perception_active', 'verle'): [('Phenomenon', 'él')]}

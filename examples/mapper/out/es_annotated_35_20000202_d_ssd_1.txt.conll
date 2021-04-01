@@ -1,0 +1,3 @@
+{   ('Being_at_risk', 'de Seguridad'): [],
+    ('Questioning', 'pedido'): [('Speaker', 'ha'), ('Addressee', 'ministro de Seguridad que'), ('Message', 'dimita')],
+    ('Statement', 'dijo'): [('Speaker', 'Wahid'), ('Time', 'ayer que'), ('Message', 'que ha pedido al ministro de Seguridad que dimita')]}

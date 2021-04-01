@@ -1,0 +1,8 @@
+{   ('Businesses', 'empresa'): [],
+    ('Hostile_encounter', 'conflicto'): [('Side_2', 'de manera que el servicio no se vea afectado')],
+    ('Objective_influence', 'afectado'): [('Influencing_situation', 'el servicio')],
+    ('Public_services', 'servicio'): [],
+    ('Seeking_to_achieve', 'buscar'): [('Agent', 'se'), ('State_of_affairs', 'solución al conflicto de manera que el servicio no se vea afectado')],
+    ('Statement', 'anunció'): [   ('Speaker', 'de Barcelona'),
+                                  ('Manner', 'ayer que'),
+                                  ('Message', 'que se ha reunido con la empresa para buscar una solución al conflicto de manera que el servicio no se vea afectado')]}

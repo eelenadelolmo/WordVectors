@@ -1,0 +1,11 @@
+{   ('Buildings', 'palacio'): [('Name', 'de la Zarzuela')],
+    ('Calendric_unit', 'hoy'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'participa hoy y mañana en la'), ('Ground', 'la cumbre euromediterránea de')],
+    ('Locative_relation', 'donde'): [('Figure', 'participa hoy y mañana en la cumbre euromediterránea de')],
+    ('Motion', 'desplazarse'): [('Goal', 'a Mallorca')],
+    ('Participation', 'participa'): [('Participant_1', 'el')],
+    ('Receiving', 'recibido'): [('Theme', 'Mubarak'), ('Recipient', 'por el rey Juan Carlos'), ('Donor', 'en el palacio de la Zarzuela')],
+    ('Temporal_subregion', 'posteriormente'): [('Time_period', 'recibido posteriormente por el rey Juan Carlos')],
+    ('Time_vector', 'antes'): [   ('Event', 'Mubarak fue recibido posteriormente por el rey Juan Carlos en el palacio de la Zarzuela'),
+                                  ('Landmark_event', 'de desplazarse a Mallorca'),
+                                  ('Landmark_event', ', donde participa hoy y mañana en la cumbre euromediterránea de')]}

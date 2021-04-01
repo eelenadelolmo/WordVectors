@@ -1,0 +1,10 @@
+{   ('Affirm_or_deny', 'desmintió'): [('Speaker', 'de'), ('Message', 'algunos extremos de la versión del policía Angel López Carrillo , que confesó haber marcado con un número')],
+    ('Law_enforcement_agency', 'policía'): [],
+    ('Locative_relation', 'donde'): [('Figure', 'un número las estancias'), ('Figure', 'estuvieron los presuntos')],
+    ('Quantified_mass', 'número'): [('Individuals', 'las estancias')],
+    ('Reveal_secret', 'confesó'): [('Speaker', 'que'), ('Information', 'marcado con un número las estancias donde estuvieron los presuntos')],
+    ('Sign', 'marcado'): [   ('Indicator', 'algunos extremos de la versión del policía Angel'),
+                             ('Indicator', 'que confesó haber'),
+                             ('Indicated', 'con un número las estancias donde estuvieron los presuntos')],
+    ('Type', 'versión'): [('Category', 'policía Angel')],
+    ('Unattributed_information', 'confesó'): [('Reported_fact', 'de')]}

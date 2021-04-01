@@ -1,0 +1,11 @@
+{   ('Attaching', 'recogido'): [('Agent', 'establecido'), ('Goal', 'a las')],
+    ('Building_subparts', 'las'): [],
+    ('Buildings', 'hospitales'): [],
+    ('Calendric_unit', 'horas'): [('Count', '24')],
+    ('Gathering_up', 'recogido'): [('Manner', 'Vall'), ('Aggregate', 'ese mensaje')],
+    ('Intentionally_create', 'establecido'): [('Created_entity', 'las')],
+    ('People', 'personas'): [('Descriptor', 'con patologías leves')],
+    ('Request', 'demanda'): [('Message', 'a urgencias')],
+    ('Supply', 'recogido'): [('Supplier', 'los'), ('Theme', 'atienden de inmediato'), ('Theme', 'demanda de urgencias')],
+    ('Text', 'los'): [('Author', 'que'), ('Text', 'casi un 20 % de la demanda de urgencias')],
+    ('Time_vector', 'antes'): [('Landmark_event', '24 horas')]}

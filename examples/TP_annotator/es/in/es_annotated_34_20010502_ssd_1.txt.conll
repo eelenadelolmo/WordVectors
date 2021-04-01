@@ -1,0 +1,7 @@
+{   ('Body_parts', 'manos'): [('Possessor', 'congresos de los estados')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Discussion', 'discutía'): [('Manner', 'ayer'), ('Topic', 'cómo reformar la reforma')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'que'), ('Time', 'ahora'), ('Ground', 'manos de los congresos de los estados')],
+    ('Leadership', 'estados'): [],
+    ('Reforming_a_system', 'reforma'): [],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'que'), ('Trajector_event', 'en manos de los congresos de los estados')]}

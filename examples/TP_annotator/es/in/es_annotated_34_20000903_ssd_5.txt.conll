@@ -1,0 +1,5 @@
+{   ('Attack', 'ofensiva'): [('Assailant', 'al')],
+    ('Attempt', 'intenta'): [('Agent', 'el'), ('Goal', 'mediar cara a futuros pactos')],
+    ('Body_parts', 'cara'): [('Body_part', 'cara a futuros pactos')],
+    ('Leadership', 'Gobierno'): [],
+    ('Process_continue', 'seguir'): [('Event', 'criminalizando al PNV')]}

@@ -1,0 +1,8 @@
+{   ('Activity_start', 'abatido por'): [('Agent', 'de colonos judíos que'), ('Activity', 'localidad')],
+    ('Attempt', 'disparos'): [('Agent', 'un joven de 22 años')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Colonization', 'de colonos'): [('Homeland', 'judíos')],
+    ('Dead_or_alive', 'murió'): [],
+    ('Part_orientational', 'norte'): [('Whole', 'Jizme')],
+    ('People_by_age', 'un joven'): [('Age', '22 años')],
+    ('Political_locales', 'localidad'): []}

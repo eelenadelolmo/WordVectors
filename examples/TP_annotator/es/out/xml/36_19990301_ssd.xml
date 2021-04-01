@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="36_19990301_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Los centros</concept>
+		<concept id="c_1">Un millar de padres y niños procedentes de 30 escuelas públicas de Barcelona</concept>
+		<concept id="c_2">ese mestizaje</concept>
+		<concept id="c_3">Cada escuela</concept>
+		<concept id="c_4">El periodista Toni Soler</concept>
+		<concept id="c_5">La escuela pública</concept>
+		<concept id="c_6">Los organizadores del acto , presidido por el lema La escuela pública siempre la encontrarás abierta ,</concept>
+		<concept id="c_7">el apoyo de la Administración a estos centros</concept>
+		<concept id="c_8">el</concept>
+		<concept id="c_9">el apoyo</concept>
+		<concept id="c_10">un enorme cubo</concept>
+		<concept id="c_11">Soler</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Los centros defienden su oferta en la víspera del inicio de las prematriculaciones.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">centros</token>
+		</theme>
+		<rheme concept_ref1="c_6">
+			<token pos="vmip3p0">defienden</token><mention concept_ref="c_6"><token pos="dp3cs0">su</token><token pos="ncfs000">oferta</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Defending" head="defienden">
+				<argument type="Defender" dependent="centros" />
+				<argument type="Victim" dependent="su oferta en la víspera del inicio de las" /></main_frame>
+			<frame type="Locale_by_use" head="centros" />
+			<frame type="Temporal_subregion" head="inicio">
+				<argument type="Time_period" dependent="del" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Un millar de padres y niños procedentes de 30 escuelas públicas de Barcelona participaron ayer en la fiesta celebrada en el parque de la Espanya Industrial para reclamar el apoyo de la Administración a estos centros.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="di0ms0">Un</token><token pos="ncms000">millar</token><token pos="sps00">de</token><token pos="ncmp000">padres</token><token pos="cc">y</token><token pos="ncmp000">niños</token><token pos="aq0cp0">procedentes</token><token pos="sps00">de</token><token pos="z">30</token><token pos="ncfp000">escuelas</token><token pos="aq0fp0">públicas</token><token pos="sps00">de</token><token pos="np00000">Barcelona</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_5" concept_ref3="c_4" concept_ref4="c_0" concept_ref5="c_7" concept_ref6="c_8" concept_ref7="c_9">
+			<token pos="vmis3p0">participaron</token><token pos="sps00">en</token><mention concept_ref="c_3"><token pos="da0fs0">la</token><token pos="ncfs000">fiesta</token></mention><token pos="aq0fsp">celebrada</token><token pos="sps00">en</token><mention concept_ref="c_5"><token pos="da0ms0">el</token><token pos="ncms000">parque</token></mention><token pos="sps00">de</token><mention concept_ref="c_4"><token pos="da0fs0">la</token><token pos="np00000">Espanya</token><token pos="ncms000">Industrial</token></mention><token pos="sps00">para</token><token pos="vmn0000">reclamar</token><mention concept_ref="c_9"><token pos="da0ms0">el</token><token pos="ncms000">apoyo</token></mention><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Administración</token><token pos="sps00">a</token><mention concept_ref="c_0"><token pos="dd0mp0">estos</token><token pos="ncmp000">centros</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="fiesta" />
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Cardinal_numbers" head="millar de">
+				<argument type="Entity" dependent="padres" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="la fiesta" />
+				<argument type="Ground" dependent="el parque de la Espanya Industrial" />
+				<argument type="Figure" dependent="para reclamar el apoyo de la Administración a estos centros" /></frame>
+			<frame type="Kinship" head="niños" />
+			<frame type="Kinship" head="padres" />
+			<frame type="Locale_by_use" head="centros" />
+			<frame type="Locale_by_use" head="escuelas">
+				<argument type="Container_possessor" dependent="públicas" />
+				<argument type="Relative_location" dependent="de Barcelona" /></frame>
+			<frame type="Locale_by_use" head="parque">
+				<argument type="Name" dependent="Industrial" /></frame>
+			<main_frame type="Participation" head="participaron">
+				<argument type="Participants" dependent="Un millar de padres y niños procedentes de 30 escuelas públicas de Barcelona" />
+				<argument type="Institution" dependent="ayer en la fiesta celebrada en el parque de la Espanya Industrial para reclamar el apoyo de la Administración a estos centros" /></main_frame>
+			<main_frame type="Request" head="reclamar">
+				<argument type="Message" dependent="el apoyo de la Administración a estos centros" /></main_frame>
+			<frame type="Supporting" head="apoyo de">
+				<argument type="Supported" dependent="de la Administración a estos centros" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Hoy se inicia en toda Catalunya la preinscripción de los alumnos para el curso 1999-2000.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_start" head="inicia">
+				<argument type="Activity" dependent="la preinscripción de los alumnos para el curso 1999-2000" />
+				<argument type="Time" dependent="Hoy se inicia en toda Catalunya" /></frame>
+			<frame type="Calendric_unit" head="Hoy">
+				<argument type="Whole" dependent="en toda Catalunya" /></frame>
+			<frame type="Calendric_unit" head="se">
+				<argument type="Relative_time" dependent="1999-2000" />
+				<argument type="Salient_event" dependent="alumnos" /></frame>
+			<frame type="Education_teaching" head="alumnos" />
+			<frame type="Locative_relation" head="en toda">
+				<argument type="Time" dependent="Hoy" />
+				<argument type="Ground" dependent="Catalunya" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "No reivindicamos nada. Hemos venido a decir que la escuela pública no discrimina ni por el sexo, ni por la raza, ni por la situación económica" explicó Maria Lluïsa Massip, miembro del Marc Unitari de la Comunitat Educativa.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="Comunitat">
+				<argument type="Aggregate_property" dependent="Educativa" /></frame>
+			<frame type="Arriving" head="por">
+				<argument type="Theme" dependent=". Hemos" />
+				<argument type="Goal" dependent="decir que la escuela pública no discrimina ni por el sexo , ni por la raza , ni por la situación económica  quot ; explicó Maria" /></frame>
+			<frame type="Economy" head="económica" />
+			<frame type="Locale_by_use" head="escuela">
+				<argument type="Use" dependent="pública" /></frame>
+			<frame type="Membership" head="miembro">
+				<argument type="Group" dependent="de la Comunitat Educativa" /></frame>
+			<frame type="Statement" head="decir">
+				<argument type="Message" dependent=". Hemos venido a decir que la escuela pública no discrimina ni por el sexo" />
+				<argument type="Message" dependent="Massip , miembro del Marc Unitari de la Comunitat Educativa" /></frame>
+			<frame type="Statement" head="reivindicamos">
+				<argument type="Speaker" dependent=". Hemos" />
+				<argument type="Message" dependent="Hemos venido a decir que la escuela pública no discrimina ni por el sexo , ni por la raza" /></frame>
+			<frame type="Type" head="raza" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Consideramos que ese mestizaje equivale a la sociedad plural en que vivimos. Si la sociedad es así, la escuela ha de ser un reflejo de ella".
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="dd0ms0">ese</token><token pos="ncms000">mestizaje</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_9">
+			<token pos="vmip3s0">equivale</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">sociedad</token><token pos="aq0cs0">plural</token><token pos="sps00">en</token><token pos="pr0cn000">que</token><token pos="vmip1p0">vivimos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Certainty" head="ser">
+				<argument type="Cognizer" dependent="vivimos" />
+				<argument type="Content" dependent="equivale a la sociedad plural en que vivimos . Si la sociedad es así , la escuela ha de ser" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="la sociedad plural" />
+				<argument type="Ground" dependent="que vivimos . Si la sociedad es así , la" /></frame>
+			<frame type="Locale_by_use" head="escuela" />
+			<frame type="Required_event" head="ha de ser">
+				<argument type="Required_situation" dependent="la escuela" />
+				<argument type="Required_situation" dependent="ser un reflejo de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Cada escuela tenía la consigna de acudir con un enorme cubo de madera con el que se intentó construir un gran edificio escolar conjunto.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="di0cs0">Cada</token><token pos="ncfs000">escuela</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_3" concept_ref3="c_2" concept_ref4="c_6" concept_ref5="c_7" concept_ref6="c_8" concept_ref7="c_10">
+			<token pos="vmii3s0">tenía</token><mention concept_ref="c_5"><token pos="da0fs0">la</token><token pos="ncfs000">consigna</token></mention><token pos="sps00">de</token><token pos="vmn0000">acudir</token><token pos="sps00">con</token><mention concept_ref="c_10"><token pos="di0ms0">un</token><token pos="aq0cs0">enorme</token><token pos="ncms000">cubo</token></mention><token pos="sps00">de</token><mention concept_ref="c_3"><token pos="ncfs000">madera</token></mention><token pos="sps00">con</token><mention concept_ref="c_8"><token pos="da0ms0">el</token></mention><token pos="pr0cn000">que</token><mention concept_ref="c_2"><token pos="p0000000">se</token></mention><token pos="vmis3s0">intentó</token><token pos="vmn0000">construir</token><mention concept_ref="c_6"><token pos="di0ms0">un</token><token pos="aq0cs0">gran</token><token pos="ncms000">edificio</token></mention><token pos="aq0cs0">escolar</token><token pos="aq0ms0">conjunto</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="consigna de" />
+			<main_frame type="Attempt" head="intentó">
+				<argument type="Goal" dependent="construir un gran edificio escolar conjunto" /></main_frame>
+			<main_frame type="Building" head="construir">
+				<argument type="Created_entity" dependent="un gran edificio escolar conjunto" /></main_frame>
+			<frame type="Buildings" head="edificio">
+				<argument type="Descriptor" dependent="escolar conjunto" /></frame>
+			<frame type="Locale_by_use" head="escuela">
+				<argument type="Descriptor" dependent="enorme" /></frame>
+			<main_frame type="Manufacturing" head="construir">
+				<argument type="Product" dependent="un enorme cubo de madera con el que se intentó" />
+				<argument type="Product" dependent="construir un gran edificio escolar conjunto" /></main_frame>
+			<frame type="Size" head="enorme">
+				<argument type="Entity" dependent="edificio escolar conjunto" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El periodista Toni Soler - - "gracias por invitar a este antiguo escolapio", dijo - - leyó el documento que enumeró los valores de esta enseñanza.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0ms0">El</token><token pos="nccs000">periodista</token><token pos="np00000">Toni</token><token pos="ncms000">Soler</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_4" concept_ref3="c_0" concept_ref4="c_7" concept_ref5="c_8" concept_ref6="c_10">
+			<token pos="fg">-</token><token pos="fg">-</token><token pos="fe">quot;</token><mention concept_ref="c_6"><token pos="ncfp000">gracias</token><token pos="sps00">por</token></mention><token pos="vmn0000">invitar</token><token pos="sps00">a</token><token pos="dd0ms0">este</token><token pos="aq0ms0">antiguo</token><token pos="ncms000">escolapio</token><token pos="fe">quot;</token><token pos="fc">,</token><token pos="vmis3s0">dijo</token><token pos="fg">-</token><token pos="fg">-</token><token pos="vmis3s0">leyó</token><mention concept_ref="c_8"><token pos="da0ms0">el</token></mention><token pos="ncms000">documento</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="antiguo">
+				<argument type="Entity" dependent="escolapio" /></frame>
+			<frame type="Documents" head="documento" />
+			<frame type="Locale_by_use" head="escolapio">
+				<argument type="Descriptor" dependent="antiguo" /></frame>
+			<main_frame type="Reading_activity" head="leyó">
+				<argument type="Reader" dependent="el" />
+				<argument type="Text" dependent="documento que enumeró los valores de esta enseñanza" /></main_frame>
+			<main_frame type="Request" head="invitar">
+				<argument type="Addressee" dependent="este antiguo escolapio" /></main_frame>
+			<main_frame type="Statement" head="dijo">
+				<argument type="Speaker" dependent="el" />
+				<argument type="Message" dependent="documento que enumeró los valores de esta enseñanza" /></main_frame>
+			<frame type="Text_creation" head="enumeró los">
+				<argument type="Text" dependent="el documento que" />
+				<argument type="Text" dependent="valores de esta enseñanza" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "La escuela pública - - dijo Soler - - tiene el objetivo de formar personas cultas, equilibradas y felices para que, a partir del conocimiento y comprensión de su propia realidad, tengan recursos para entender el mundo en que viven, se integren en el mercado laboral y puedan trabajar en la transformación de la sociedad a partir del diálogo".
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0fs0">La</token><token pos="ncfs000">escuela</token><token pos="aq0fs0">pública</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_2" concept_ref3="c_4" concept_ref4="c_0" concept_ref5="c_6" concept_ref6="c_7" concept_ref7="c_8" concept_ref8="c_9" concept_ref9="c_10" concept_ref10="c_11">
+			<token pos="fg">-</token><token pos="fg">-</token><token pos="vmis3s0">dijo</token><mention concept_ref="c_11"><token pos="np00000">Soler</token></mention><token pos="fg">-</token><token pos="fg">-</token><token pos="vmip3s0">tiene</token><token pos="da0ms0">el</token><token pos="ncms000">objetivo</token><token pos="sps00">de</token><token pos="vmn0000">formar</token><mention concept_ref="c_4"><token pos="ncfp000">personas</token></mention><token pos="aq0fp0">cultas</token><token pos="fc">,</token><token pos="aq0fpp">equilibradas</token><token pos="cc">y</token><token pos="aq0cp0">felices</token><token pos="sps00">para</token><token pos="cs">que</token><token pos="fc">,</token><token pos="sps00">a</token><token pos="vmn0000">partir</token><token pos="sps00">del</token><mention concept_ref="c_0"><token pos="ncms000">conocimiento</token></mention><token pos="cc">y</token><mention concept_ref="c_10"><token pos="ncfs000">comprensión</token></mention><token pos="sps00">de</token><mention concept_ref="c_6"><token pos="dp3cs0">su</token><token pos="di0fs0">propia</token><token pos="ncfs000">realidad</token></mention><token pos="fc">,</token><token pos="vmsp3p0">tengan</token><token pos="ncmp000">recursos</token><token pos="sps00">para</token><token pos="vmn0000">entender</token><token pos="da0ms0">el</token><token pos="ncms000">mundo</token><token pos="sps00">en</token><token pos="pr0cn000">que</token><token pos="vmip3p0">viven</token><token pos="fc">,</token><mention concept_ref="c_2"><token pos="p0300000">se</token></mention><token pos="vmsp3p0">integren</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">mercado</token><token pos="aq0cs0">laboral</token><token pos="cc">y</token><token pos="vmsp3p0">puedan</token><mention concept_ref="c_7"><token pos="vmn0000">trabajar</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">transformación</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">sociedad</token><token pos="sps00">a</token></mention><token pos="vmn0000">partir</token><token pos="sps00">del</token><token pos="ncms000">diálogo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="comprensión">
+				<argument type="Content" dependent="su propia realidad , tengan" /></frame>
+			<frame type="Awareness" head="conocimiento">
+				<argument type="Content" dependent="su propia realidad , tengan" /></frame>
+			<main_frame type="Being_employed" head="trabajar" />
+			<main_frame type="Capability" head="puedan">
+				<argument type="Event" dependent="trabajar en la transformación de la sociedad a" /></main_frame>
+			<frame type="Cause_change" head="transformación">
+				<argument type="Entity" dependent="la sociedad" /></frame>
+			<main_frame type="Creating" head="de formar">
+				<argument type="Created_entity" dependent="personas cultas , equilibradas" /></main_frame>
+			<frame type="Education_teaching" head="conocimiento">
+				<argument type="Institution" dependent="personas" /></frame>
+			<frame type="Emotion_directed" head="felices">
+				<argument type="Stimulus" dependent=", a partir del conocimiento y comprensión de su propia realidad , tengan recursos para entender el mundo en que" /></frame>
+			<main_frame type="Grasp" head="entender">
+				<argument type="Cognizer" dependent="tengan" />
+				<argument type="Phenomenon" dependent="el mundo en que viven , se integren en el mercado laboral y puedan trabajar en la transformación de la sociedad a partir del" /></main_frame>
+			<frame type="Locale_by_use" head="escuela">
+				<argument type="Relative_location" dependent="pública" /></frame>
+			<frame type="People" head="personas">
+				<argument type="Descriptor" dependent="conocimiento" /></frame>
+			<frame type="Political_locales" head="mundo" />
+			<frame type="Purpose" head="objetivo">
+				<argument type="Goal" dependent="formar personas cultas , equilibradas y felices para que , a partir del conocimiento y comprensión de su propia realidad" /></frame>
+			<main_frame type="Residence" head="viven">
+				<argument type="Resident" dependent="tengan" /></main_frame>
+			<main_frame type="Statement" head="dijo">
+				<argument type="Message" dependent="escuela pública - - dijo Soler - - tiene el objetivo de formar personas cultas , equilibradas y felices para que , a partir del conocimiento y comprensión de su propia realidad , tengan recursos para entender el mundo en que viven , se integren en el mercado laboral y puedan trabajar en la transformación de la sociedad a partir del diálogo  quot ;" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los organizadores del acto, presidido por el lema La escuela pública siempre la encontrarás abierta, pidieron a los padres que inscriban a sus hijos en centros públicos.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">organizadores</token><token pos="spcms">del</token><token pos="ncms000">acto</token><token pos="fc">,</token><token pos="aq0msp">presidido</token><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="ncms000">lema</token><token pos="da0fs0">La</token><token pos="ncfs000">escuela</token><token pos="aq0fs0">pública</token><token pos="rg">siempre</token><token pos="da0fs0">la</token><token pos="vmif2s0">encontrarás</token><token pos="aq0fsp">abierta</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_7">
+			<token pos="vmsp3p0">inscriban</token><token pos="sps00">a</token><mention concept_ref="c_7"><token pos="dp3cp0">sus</token><token pos="ncmp000">hijos</token></mention><token pos="sps00">en</token><mention concept_ref="c_0"><token pos="ncmp000">centros</token></mention><token pos="aq0mp0">públicos</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Becoming_aware" head="inscriban">
+				<argument type="Cognizer" dependent="padres" />
+				<argument type="Phenomenon" dependent="sus hijos" /></main_frame>
+			<frame type="Event" head="acto" />
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="presidido por el lema La escuela pública" />
+				<argument type="Event" dependent="abierta" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="sus hijos" />
+				<argument type="Ground" dependent="escuela pública" /></frame>
+			<frame type="Kinship" head="hijos">
+				<argument type="Ego" dependent="sus" /></frame>
+			<frame type="Kinship" head="padres" />
+			<frame type="Locale_by_use" head="escuela">
+				<argument type="Container_possessor" dependent="pública" /></frame>
+			<frame type="Questioning" head="sus">
+				<argument type="Addressee" dependent="padres" />
+				<argument type="Message" dependent="inscriban a sus hijos en centros públicos" /></frame>
+			<frame type="Secrecy_status" head="abierta">
+				<argument type="Phenomenon" dependent="presidido por el lema La escuela pública" /></frame>
+			<frame type="Secrecy_status" head="pública">
+				<argument type="Phenomenon" dependent="escuela" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

@@ -1,0 +1,15 @@
+{   ('Becoming_aware', 'encontrar'): [('Phenomenon', 'a su nieta')],
+    ('Coming_to_believe', 'realizar'): [('Time', 'Después de una larga odisea'), ('Cognizer', 'el poeta argentino Juan Gelman'), ('Content', 'su sueño')],
+    ('Departing', 'desaparecida'): [('Theme', 'a su nieta'), ('Time', 'en 1976')],
+    ('Duration_description', 'larga'): [('Period', 'odisea')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'su nieta , desaparecida'), ('Ground', '1976')],
+    ('Locative_relation', 'en'): [   ('Figure', ', el poeta argentino Juan Gelman ha conseguido realizar su sueño : encontrar a su nieta , desaparecida en 1976 , al'),
+                                     ('Ground', 'al principio de la dictadura militar del general')],
+    ('Military', 'militar'): [],
+    ('Operating_a_system', 'conseguido'): [('Duration', 'Después de una larga odisea'), ('System', 'el poeta argentino Juan Gelman'), ('System', 'realizar su sueño')],
+    ('Relative_time', 'Después de'): [   ('Landmark_occasion', 'larga odisea'),
+                                         (   'Focal_occasion',
+                                             ', el poeta argentino Juan Gelman ha conseguido realizar su sueño : encontrar a su nieta , desaparecida en 1976 , al principio de la dictadura militar '
+                                             'del general Videla .')],
+    ('Temporal_subregion', 'al principio'): [('Time_period', 'dictadura militar del general')],
+    ('Travel', 'odisea'): [('Distance', 'larga')]}

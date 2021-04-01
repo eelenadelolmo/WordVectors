@@ -1,0 +1,9 @@
+{   ('Age', 'nueva'): [('Entity', 'reforma')],
+    ('Building', 'construir'): [('Created_entity', 'complejo turístico')],
+    ('Deny_or_grant_permission', 'aprobado'): [('Action', 'complejo turístico'), ('Action', 'por el Ministerio de')],
+    ('Locale_by_use', 'complejo'): [('Use', 'turístico')],
+    ('Natural_features', 'playas de'): [('Container_possessor', 'Ceuta )')],
+    ('Project', 'proyecto'): [('Goal', 'de recalificación de terrenos rústicos en las playas de')],
+    ('Reforming_a_system', 'reforma'): [('Cause', 'nueva')],
+    ('Required_event', 'deberá'): [('Required_situation', 'complejo turístico'), ('Required_situation', 'ser aprobado también por el Ministerio de')],
+    ('Spatial_contact', 'en'): [('Figure', 'el proyecto de recalificación de terrenos rústicos en'), ('Ground', 'las playas de Calamocarro ( Ceuta )')]}

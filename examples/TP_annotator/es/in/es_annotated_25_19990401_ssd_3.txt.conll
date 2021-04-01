@@ -1,0 +1,11 @@
+{   ('Arriving', 'retorno'): [('Theme', 'los refugiados')],
+    ('Be_in_agreement_on_action', 'según'): [('Party_2', 'El primer paso para convocar esa reunión'), ('Obligation', 'para')],
+    ('Discussion', 'reunión'): [],
+    ('Goal', 'para'): [('Trajector', 'reunión'), ('Landmark', 'Fischer')],
+    ('Intentionally_act', 'paso'): [('Manner', 'primer'), ('Explanation', 'para convocar esa reunión')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'las atrocidades de sus tropas'), ('Ground', 'Kosovo')],
+    ('Military', 'Ejército'): [],
+    ('Ordinal_numbers', 'primer'): [('Type', 'paso')],
+    ('Preventing_or_letting', 'detuviera'): [('Potential_hindrance', 'Milosevic'), ('Event', 'las atrocidades de sus tropas en Kosovo')],
+    ('Receiving', 'aceptara'): [('Theme', 'retorno de los refugiados')],
+    ('Removing', 'retirara'): [('Agent', 'sus tropas'), ('Theme', 'Ejército y a los paramilitares')]}

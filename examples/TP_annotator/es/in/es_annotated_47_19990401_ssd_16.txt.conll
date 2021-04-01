@@ -1,0 +1,7 @@
+{   ('Committing_crime', 'delito'): [],
+    ('Cotheme', 'perseguía'): [('Theme', 'su'), ('Source', 'indicios que motivaron la intervención policial')],
+    ('Law_enforcement_agency', 'policial'): [],
+    ('Political_locales', 'Nacional'): [],
+    ('Sequence', 'los'): [('Entities', 'de Palacios')],
+    ('Sign', 'señala'): [('Indicated', 'que motivaron la intervención policial')],
+    ('Subjective_influence', 'motivaron'): [('Behavior', 'especifica ni el delito que perseguía'), ('Cognizer', 'su'), ('Cognizer', 'señala que'), ('Behavior', 'motivaron la intervención policial')]}

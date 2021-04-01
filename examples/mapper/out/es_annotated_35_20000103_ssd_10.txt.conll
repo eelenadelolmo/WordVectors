@@ -1,0 +1,13 @@
+{   ('Calendric_unit', 'años'): [('Relative_time', 'últimos')],
+    ('Calendric_unit', 'hace dos semanas'): [],
+    ('Calendric_unit', 'semanas'): [('Count', 'dos')],
+    ('Cardinal_numbers', 'dos'): [('Unit', 'semanas')],
+    ('Increment', 'más'): [('Class', 'demanda')],
+    ('Interior_profile_relation', 'en'): [('Time', 'en'), ('Ground', 'últimos años')],
+    ('Medical_conditions', 'gripe'): [],
+    ('Proportional_quantity', 'casi un'): [('Reference_quantity', '40 % más de demanda')],
+    ('Public_services', 'servicios'): [('Domain', 'de urgencias')],
+    ('Receiving', 'recibieron'): [('Time', 'en los últimos años'), ('Theme', 'servicios de urgencias'), ('Theme', '40 % más de demanda que')],
+    ('Relative_time', 'últimos'): [('Focal_occasion', 'años')],
+    ('Request', 'demanda'): [('Message', 'los')],
+    ('Time_vector', 'anteayer'): [('Distance', 'dos semanas')]}

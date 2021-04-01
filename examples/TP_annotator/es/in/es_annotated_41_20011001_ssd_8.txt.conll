@@ -1,0 +1,10 @@
+{   ('Cardinal_numbers', 'dos'): [('Multiplier', 'nos'), ('Entity', 'cosas importantes')],
+    ('Frequency', 'siempre'): [('Event', 'el huevo de la serpiente del fascismo'), ('Event', 'incubando')],
+    ('Importance', 'importantes'): [('Factor', 'cosas')],
+    ('Information', 'inteligencia'): [],
+    ('Leadership', 'mando'): [('Governed', 'militar')],
+    ('Military', 'militar'): [],
+    ('Similarity', 'como'): [('Entity_1', 'inteligencia'), ('Entity_2', 'libertad')],
+    ('Telling', 'dice'): [   ('Speaker', 'Que en democracia , y desde un mando militar , alguien le recuerde con honor'),
+                             ('Addressee', 'dos cosas importantes'),
+                             ('Message', 'es una conquista permanente')]}

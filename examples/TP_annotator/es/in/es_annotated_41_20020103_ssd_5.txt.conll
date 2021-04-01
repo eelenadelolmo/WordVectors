@@ -1,0 +1,6 @@
+{   ('Defending', 'defensor'): [('Assailant', 'su')],
+    ('Duration_description', 'quot'): [],
+    ('Guilt_or_innocence', 'inocente'): [],
+    ('Questioning', 'pregunta'): [('Speaker', 'que'), ('Message', 'si Moussaoui se declaraba inocente respondió con un')],
+    ('Relative_time', 'se'): [('Focal_occasion', 'su')],
+    ('Response', 'respondió'): [('Responding_entity', 'inocente'), ('Response', 'con un escueto & quot ; sí &')]}

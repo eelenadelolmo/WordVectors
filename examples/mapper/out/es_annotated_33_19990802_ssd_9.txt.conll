@@ -1,0 +1,4 @@
+{   ('Communication_response', 'reconoció'): [('Speaker', 'Gobierno británico'), ('Trigger', 'mal de las vacas locas podía afectar a la salud humana')],
+    ('Medical_conditions', 'mal de'): [('Symptom', 'vacas locas')],
+    ('Objective_influence', 'afectar'): [('Influencing_entity', 'mal de las vacas locas'), ('Dependent_entity', 'salud humana')],
+    ('Possibility', 'podía'): [('Possible_event', 'mal de las vacas locas'), ('Possible_event', 'afectar a la salud humana')]}

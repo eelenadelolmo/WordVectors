@@ -1,0 +1,3 @@
+{   ('Arriving', 'llegar'): [('Goal', 'un acuerdo parlamentario estable')],
+    ('Deciding', 'decidirse'): [('Cognizer', 'o')],
+    ('Make_agreement_on_action', 'un acuerdo'): [('Descriptor', 'estable'), ('Topic', 'parlamentario')]}

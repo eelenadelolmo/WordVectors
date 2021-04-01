@@ -1,0 +1,6 @@
+{   ('Aesthetics', 'preciosas'): [('Entity', 'hijas')],
+    ('Age', 'nueva'): [('Entity', 'familia')],
+    ('Cardinal_numbers', 'tres'): [('Entity', 'hijas preciosas')],
+    ('Kinship', 'familia'): [],
+    ('Kinship', 'hijas'): [],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'tengo una nueva familia , tres hijas preciosas')]}

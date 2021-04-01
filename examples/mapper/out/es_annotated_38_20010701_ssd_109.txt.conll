@@ -1,0 +1,6 @@
+{   ('Capability', 'podré'): [('Entity', 'a'), ('Event', 'ir por ahí como un turista normal')],
+    ('Locative_relation', 'ir'): [('Ground', 'como un turista normal')],
+    ('Motion', 'ir por'): [('Goal', 'como un turista normal')],
+    ('Similarity', 'como'): [('Entity_2', 'un turista normal')],
+    ('Temporal_collocation', 'Ahora'): [],
+    ('Temporal_collocation', 'cuando'): [('Landmark_event', 'podré ir'), ('Trajector_event', 'no podré ir por ahí como un turista normal')]}

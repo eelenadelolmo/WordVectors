@@ -1,0 +1,13 @@
+{   ('Businesses', 'operaciones'): [('Descriptor', 'últimas'), ('Proprietor', 'israelís'), ('Service_provider', 'militares')],
+    ('Commitment', 'cometer'): [('Speaker', 'los que'), ('Message', 'un atentado suicida')],
+    ('Deciding', 'decidido'): [('Cognizer', 'los que'), ('Decision', 'cometer un atentado suicida')],
+    ('Judgment_communication', 'comentarios'): [   ('Communicator', 'Rumsfeld'),
+                                                   ('Evaluee', 'Irak'),
+                                                   (   'Reason',
+                                                       'cantidades de dinero a los que han decidido cometer un atentado suicida , pero no hizo comentarios sobre las últimas operaciones militares '
+                                                       'israelís')],
+    ('Military', 'militares'): [],
+    ('Money', 'dinero'): [],
+    ('Quantified_mass', 'cantidades'): [('Q_prop', 'cantidades'), ('Mass', 'de dinero')],
+    ('Statement', 'comentarios'): [('Message', 'los que'), ('Message', 'las últimas operaciones militares israelís')],
+    ('Weapon', 'atentado'): [('Type', 'suicida')]}

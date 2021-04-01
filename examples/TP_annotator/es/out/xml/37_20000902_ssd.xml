@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="37_20000902_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Pasqual Maragall</concept>
+		<concept id="c_1">El líder de los socialistas catalanes</concept>
+		<concept id="c_2">Maragall</concept>
+		<concept id="c_3">El modelo económico que defienden los socialistas</concept>
+		<concept id="c_4">acuerdos</concept>
+		<concept id="c_5">en un plazo de tiempo</concept>
+		<concept id="c_6">si</concept>
+		<concept id="c_7">la reunión</concept>
+		<concept id="c_8">Jordi Pujol</concept>
+		<concept id="c_9">propuestas</concept>
+		<concept id="c_10">tiempo</concept>
+		<concept id="c_11">el president</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Pasqual Maragall acudirá a la reunión con Jordi Pujol con un paquete de propuestas de diálogo bajo el brazo y con el objetivo de determinar si hay posibilidad de alcanzar acuerdos en un plazo de tiempo, que sitúa antes del debate de política general previsto para mediados de octubre.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np0000l">Pasqual</token><token pos="np0000l">Maragall</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_5" concept_ref3="c_6" concept_ref4="c_7" concept_ref5="c_8" concept_ref6="c_9" concept_ref7="c_10">
+			<token pos="vmif3s0">acudirá</token><token pos="sps00">a</token><mention concept_ref="c_7"><token pos="da0fs0">la</token><token pos="ncfs000">reunión</token></mention><token pos="sps00">con</token><mention concept_ref="c_8"><token pos="np0000l">Jordi</token><token pos="np0000l">Pujol</token></mention><token pos="sps00">con</token><token pos="di0ms0">un</token><token pos="nccs000">paquete</token><token pos="sps00">de</token><mention concept_ref="c_9"><token pos="ncfp000">propuestas</token></mention><token pos="sps00">de</token><token pos="ncms000">diálogo</token><token pos="sps00">bajo</token><token pos="da0ms0">el</token><token pos="ncms000">brazo</token><token pos="cc">y</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">objetivo</token><token pos="sps00">de</token><token pos="vmn0000">determinar</token><mention concept_ref="c_6"><token pos="cs">si</token></mention><token pos="vaip3s0">hay</token><token pos="ncfs000">posibilidad</token><token pos="sps00">de</token><token pos="vmn0000">alcanzar</token><mention concept_ref="c_4"><token pos="ncmp000">acuerdos</token></mention><mention concept_ref="c_5"><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="ncms000">plazo</token><token pos="sps00">de</token><token pos="ncms000">tiempo</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Arriving" head="alcanzar">
+				<argument type="Goal" dependent="acuerdos" />
+				<argument type="Time" dependent="en un plazo de tiempo" /></main_frame>
+			<frame type="Attending" head="previsto">
+				<argument type="Agent" dependent="Maragall" />
+				<argument type="Event" dependent="a la reunión con Jordi Pujol con un paquete de propuestas de diálogo bajo el brazo y con el objetivo de" /></frame>
+			<frame type="Body_parts" head="brazo">
+				<argument type="Possessor" dependent="el" /></frame>
+			<main_frame type="Contingency" head="de determinar">
+				<argument type="Determinant" dependent="de determinar si hay posibilidad de alcanzar acuerdos en un plazo de tiempo , que sitúa antes del debate de política general previsto para" /></main_frame>
+			<frame type="Discussion" head="debate">
+				<argument type="Topic" dependent="política general" /></frame>
+			<frame type="Discussion" head="reunión">
+				<argument type="Interlocutor_1" dependent="Maragall" />
+				<argument type="Interlocutor_1" dependent="con Jordi" /></frame>
+			<frame type="Frequency" head="plazo de">
+				<argument type="Event" dependent="de tiempo" /></frame>
+			<frame type="Law" head="política" />
+			<frame type="Likelihood" head="posibilidad">
+				<argument type="Hypothetical_event" dependent="de alcanzar acuerdos en un plazo de tiempo" /></frame>
+			<frame type="Locale" head="sitúa" />
+			<main_frame type="Locative_relation" head="hay">
+				<argument type="Figure" dependent="si" />
+				<argument type="Ground" dependent="hay posibilidad de alcanzar acuerdos en un plazo de tiempo" /></main_frame>
+			<frame type="Make_agreement_on_action" head="acuerdos" />
+			<frame type="Purpose" head="objetivo">
+				<argument type="Goal" dependent="de determinar si hay posibilidad de alcanzar acuerdos en un plazo de tiempo" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Distance" dependent="que sitúa" />
+				<argument type="Landmark_event" dependent="debate de política general" />
+				<argument type="Direction" dependent="previsto para mediados de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El líder de los socialistas catalanes quiere evitar así que el president utilice las conversaciones con la oposición para prolongar su estrategia de gobernar en minoría sin casarse con nadie.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="nccs000">líder</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="nccp000">socialistas</token><token pos="aq0mp0">catalanes</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_3" concept_ref3="c_4" concept_ref4="c_5" concept_ref5="c_6" concept_ref6="c_7" concept_ref7="c_9" concept_ref8="c_11">
+			<token pos="vmip3s0">quiere</token><token pos="vmn0000">evitar</token><token pos="rg">así</token><token pos="cs">que</token><mention concept_ref="c_11"><token pos="da0ms0">el</token><token pos="ncms000">president</token></mention><token pos="vmsp3s0">utilice</token><mention concept_ref="c_1"><token pos="da0fp0">las</token><token pos="ncfp000">conversaciones</token></mention><mention concept_ref="c_5"><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="ncfs000">oposición</token><token pos="sps00">para</token><token pos="vmn0000">prolongar</token><token pos="dp3cs0">su</token><token pos="ncfs000">estrategia</token><token pos="sps00">de</token><token pos="vmn0000">gobernar</token><token pos="sps00">en</token><token pos="ncfs000">minoría</token><token pos="sps00">sin</token><token pos="vmn0000">casarse</token><token pos="sps00">con</token><token pos="pi0cs000">nadie</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="president" />
+			<main_frame type="Desiring" head="quiere">
+				<argument type="Experiencer" dependent="líder de los socialistas catalanes" />
+				<argument type="Event" dependent="evitar así que el president utilice las conversaciones con la oposición para prolongar su estrategia de gobernar en minoría" /></main_frame>
+			<frame type="Discussion" head="conversaciones">
+				<argument type="Topic" dependent="con la oposición para prolongar su estrategia de gobernar en minoría sin casarse con nadie" /></frame>
+			<frame type="Leadership" head="líder">
+				<argument type="Governed" dependent="los socialistas catalanes" /></frame>
+			<main_frame type="Preventing_or_letting" head="evitar">
+				<argument type="Potential_hindrance" dependent="líder de los socialistas catalanes" />
+				<argument type="Event" dependent="president utilice las conversaciones con la oposición para prolongar su estrategia de gobernar en minoría sin casarse con nadie" /></main_frame>
+			<main_frame type="Using" head="utilice">
+				<argument type="Instrument" dependent="conversaciones" />
+				<argument type="Purpose" dependent="con la oposición para prolongar su estrategia de gobernar en minoría sin casarse con nadie" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Es decir, pactando con los populares y con los partidos de la izquierda en función del carácter de cada iniciativa del Govern.
+		</str>
+		<theme>
+			<token pos="np0000o">Es</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partidos">
+				<argument type="Individuals" dependent="de la izquierda" /></frame>
+			<frame type="Contingency" head="en función">
+				<argument type="Circumstances" dependent="Es decir , pactando con los populares y con los partidos de la izquierda en función del" />
+				<argument type="Determinant" dependent="en función del carácter de cada iniciativa del Govern" /></frame>
+			<frame type="Desirability" head="populares">
+				<argument type="Evaluee" dependent="partidos de la izquierda" /></frame>
+			<frame type="Part_orientational" head="izquierda" />
+			<frame type="Statement" head="decir">
+				<argument type="Speaker" dependent="Es" />
+				<argument type="Message" dependent="cada iniciativa del Govern" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Según indicaron fuentes del PSC, Maragall no reclamará a Pujol que reconozca su condición de jefe de la oposición, sino que se centrará en exponer sus propuestas en los ámbitos en los que considera que las dos principales fuerzas de Catalunya deberían intervenir conjuntamente: inmigración, política audiovisual, nueva ley electoral para Catalunya, devolución de poder a los municipios, y relectura de la Constitución y del Estatut.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Maragall " />
+			<frame type="Age" head="nueva">
+				<argument type="Entity" dependent="ley electoral" /></frame>
+			<frame type="Arriving" head="devolución">
+				<argument type="Goal" dependent="de poder a los municipios" /></frame>
+			<frame type="Becoming_aware" head="reconozca">
+				<argument type="Phenomenon" dependent="su condición de jefe de la oposición" /></frame>
+			<frame type="Being_employed" head="Estatut">
+				<argument type="Employee" dependent="sus" />
+				<argument type="Task" dependent="de la oposición" /></frame>
+			<frame type="Body_parts" head="jefe" />
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="principales fuerzas" /></frame>
+			<frame type="Certainty" head="considera">
+				<argument type="Cognizer" dependent="sus" />
+				<argument type="Content" dependent="que las dos principales fuerzas de Catalunya deberían intervenir conjuntamente : inmigración , política audiovisual ," /></frame>
+			<frame type="Desirable_event" head="deberían">
+				<argument type="State_of_affairs" dependent="las dos principales fuerzas de Catalunya" />
+				<argument type="State_of_affairs" dependent="intervenir conjuntamente : inmigración , política audiovisual , nueva ley electoral para Catalunya , devolución de poder a los municipios ," /></frame>
+			<frame type="Electricity" head="poder" />
+			<frame type="Goal" head="para">
+				<argument type="Landmark" dependent="fuentes del PSC" /></frame>
+			<frame type="Importance" head="principales">
+				<argument type="Factor" dependent="fuerzas de Catalunya" /></frame>
+			<frame type="Law" head="ley">
+				<argument type="Descriptor" dependent="electoral" /></frame>
+			<frame type="Law" head="política">
+				<argument type="Jurisdiction" dependent="audiovisual" /></frame>
+			<frame type="Locale" head="ámbitos" />
+			<frame type="Locative_relation" head="en los que" />
+			<frame type="Military" head="fuerzas">
+				<argument type="Descriptor" dependent="principales" />
+				<argument type="Members" dependent="de Catalunya" /></frame>
+			<frame type="Political_locales" head="municipios" />
+			<frame type="Questioning" head="se">
+				<argument type="Speaker" dependent="Maragall" />
+				<argument type="Addressee" dependent="Pujol" />
+				<argument type="Message" dependent="reconozca su condición de jefe de la oposición" />
+				<argument type="Message" dependent="intervenir conjuntamente : inmigración , política audiovisual , nueva ley electoral para Catalunya , devolución de poder a los municipios" /></frame>
+			<frame type="Source_of_getting" head="fuentes del">
+				<argument type="Descriptor" dependent="PSC" /></frame>
+			<frame type="Statement" head="propuestas">
+				<argument type="Speaker" dependent="sus" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Aunque inicialmente la financiación autonómica no figuraba en esta selección de cuestiones "clave" para Catalunya, el presidente del PSC la abordará con Pujol desde esta perspectiva.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="del PSC" /></frame>
+			<frame type="Choosing" head="selección">
+				<argument type="Chosen" dependent="de cuestiones  quot ; clave  quot ; para Catalunya" /></frame>
+			<frame type="Importance" head="clave">
+				<argument type="Factor" dependent="cuestiones" /></frame>
+			<frame type="Inclusion" head="figuraba en">
+				<argument type="Part" dependent="la financiación autonómica" /></frame>
+			<frame type="Point_of_dispute" head="cuestiones">
+				<argument type="Descriptor" dependent="clave" /></frame>
+			<frame type="Statement" head="quot">
+				<argument type="Speaker" dependent="el presidente del PSC" />
+				<argument type="Addressee" dependent="la" />
+				<argument type="Speaker" dependent="con Pujol" />
+				<argument type="Medium" dependent="desde esta perspectiva" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Maragall propondrá al president la búsqueda de un consenso sobre el modelo de fiscal que incluya también una propuesta para solucionar el problema de la financiación de los ayuntamientos.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="np00000">Maragall</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_6" concept_ref3="c_11">
+			<token pos="vmif3s0">propondrá</token><token pos="spcms">al</token><mention concept_ref="c_11"><token pos="ncms000">president</token></mention><mention concept_ref="c_1"><token pos="da0fs0">la</token><token pos="ncfs000">búsqueda</token></mention><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">consenso</token><token pos="sps00">sobre</token><token pos="da0ms0">el</token><token pos="ncms000">modelo</token><token pos="sps00">de</token><token pos="nccs000">fiscal</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="president" />
+			<frame type="Inclusion" head="incluya">
+				<argument type="Total" dependent="el modelo de fiscal que" />
+				<argument type="Part" dependent="propuesta para solucionar el problema de la financiación de los ayuntamientos" /></frame>
+			<frame type="Political_locales" head="ayuntamientos" />
+			<frame type="Predicament" head="problema">
+				<argument type="Experiencer" dependent="la financiación de los ayuntamientos" /></frame>
+			<frame type="Resolve_problem" head="solucionar">
+				<argument type="Problem" dependent="el problema de la financiación de los ayuntamientos" /></frame>
+			<frame type="Scrutiny" head="búsqueda" />
+			<frame type="Spatial_contact" head="de">
+				<argument type="Figure" dependent="un consenso" />
+				<argument type="Ground" dependent="el modelo de fiscal" />
+				<argument type="Figure" dependent="que incluya también una propuesta para solucionar el problema de la financiación de los ayuntamientos" /></frame>
+			<frame type="Statement" head="propuesta">
+				<argument type="Message" dependent="solucionar el problema de la financiación de los ayuntamientos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En la reunión de la ejecutiva socialista, que ayer se centró en preparar el curso político, la dirección del partido estuvo de acuerdo en la necesidad de plantear como prioridad la oferta de un pacto local catalán, y que éste se articule en paralelo al que impulsa el Gobierno central.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido" />
+			<frame type="Calendric_unit" head="ayer se" />
+			<frame type="Causation" head="se">
+				<argument type="Effect" dependent="como prioridad la oferta de un pacto local catalán" /></frame>
+			<frame type="Cause_change_of_position_on_a_scale" head="oferta">
+				<argument type="Agent" dependent="al que impulsa el Gobierno central" /></frame>
+			<frame type="Discussion" head="reunión">
+				<argument type="Interlocutors" dependent="de la ejecutiva socialista" /></frame>
+			<frame type="Emphasizing" head="central">
+				<argument type="Degree" dependent="ayer se" />
+				<argument type="Consideration" dependent="centró en preparar el curso político , la dirección del partido estuvo de acuerdo en la necesidad de plantear como prioridad la oferta de un pacto local catalán , y que éste se articule en paralelo al que impulsa el Gobierno central" /></frame>
+			<frame type="Expressing_publicly" head="articule">
+				<argument type="Content" dependent="se" />
+				<argument type="Circumstances" dependent="en paralelo al que impulsa el Gobierno central" /></frame>
+			<frame type="Importance" head="prioridad">
+				<argument type="Undertaking" dependent="oferta de un pacto local catalán" /></frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Type" dependent="central" /></frame>
+			<frame type="Leadership" head="ejecutiva">
+				<argument type="Descriptor" dependent="partido" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="la reunión de la ejecutiva socialista" /></frame>
+			<frame type="Make_agreement_on_action" head="de acuerdo">
+				<argument type="Party_1" dependent="político , la dirección del partido" />
+				<argument type="Obligation" dependent="en la necesidad de plantear como prioridad la oferta de un pacto local catalán , y" /></frame>
+			<frame type="Needing" head="necesidad de">
+				<argument type="Dependent" dependent="de plantear como prioridad la oferta de un pacto local catalán" /></frame>
+			<frame type="Offering" head="oferta">
+				<argument type="Theme" dependent="de un pacto local catalán" /></frame>
+			<frame type="Part_inner_outer" head="central">
+				<argument type="Whole" dependent="Gobierno" /></frame>
+			<frame type="Political_locales" head="local">
+				<argument type="Locale" dependent="catalán" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="político , la dirección del partido" />
+				<argument type="Ground" dependent="necesidad de plantear como prioridad la oferta de un pacto local catalán" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El modelo económico que defienden los socialistas pasa por dotar a los ayuntamientos de más competencias y de la correspondiente financiación para hacer frente, por ejemplo, a problemas como los generados por la inmigración o para poder desarrollar su propia política de empleo.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">El</token><token pos="ncms000">modelo</token><token pos="aq0ms0">económico</token><token pos="pr0cn000">que</token><token pos="vmip3p0">defienden</token><token pos="da0mp0">los</token><token pos="nccp000">socialistas</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_5" concept_ref3="c_7" concept_ref4="c_9" concept_ref5="c_10" concept_ref6="c_11">
+			<token pos="vmip3s0">pasa</token><token pos="sps00">por</token><token pos="vmn0000">dotar</token><token pos="sps00">a</token><mention concept_ref="c_1"><token pos="da0mp0">los</token><token pos="ncmp000">ayuntamientos</token></mention><token pos="sps00">de</token><token pos="rg">más</token><token pos="ncfp000">competencias</token><token pos="cc">y</token><token pos="sps00">de</token><mention concept_ref="c_7"><token pos="da0fs0">la</token><token pos="aq0cs0">correspondiente</token><token pos="ncfs000">financiación</token></mention><token pos="sps00">para</token><token pos="vmsp3p0">hacer</token><mention concept_ref="c_11"><token pos="rg">frente</token></mention><token pos="fc">,</token><token pos="sps00">por</token><token pos="ncmp000">ejemplo</token><token pos="fc">,</token><token pos="sps00">a</token><mention concept_ref="c_9"><token pos="ncmp000">problemas</token></mention><token pos="cs">como</token><token pos="da0mp0">los</token><token pos="aq0mpp">generados</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">inmigración</token><token pos="cc">o</token><token pos="sps00">para</token><token pos="vmn0000">poder</token><token pos="vmn0000">desarrollar</token><mention concept_ref="c_5"><token pos="dp3cs0">su</token><token pos="di0fs0">propia</token><token pos="ncfs000">política</token><token pos="sps00">de</token><token pos="ncms000">empleo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Attempt_suasion" head="defienden">
+				<argument type="Content" dependent="modelo económico" />
+				<argument type="Speaker" dependent="socialistas pasa por" /></main_frame>
+			<frame type="Being_employed" head="empleo" />
+			<main_frame type="Cause_to_make_progress" head="desarrollar">
+				<argument type="Project" dependent="su propia política de empleo" /></main_frame>
+			<frame type="Economy" head="económico">
+				<argument type="Political_region" dependent="modelo económico que defienden los socialistas" /></frame>
+			<main_frame type="Electricity" head="poder" />
+			<frame type="Exemplar" head="modelo" />
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="poder" /></frame>
+			<frame type="Instance" head="ejemplo" />
+			<frame type="Political_locales" head="ayuntamientos">
+				<argument type="Descriptor" dependent="de más competencias y de la correspondiente financiación para" /></frame>
+			<frame type="Predicament" head="problemas" />
+			<main_frame type="Resolve_problem" head="pasa">
+				<argument type="Problem" dependent="por ejemplo" /></main_frame>
+			<frame type="Supply" head="para">
+				<argument type="Supplier" dependent="los socialistas" />
+				<argument type="Recipient" dependent="ayuntamientos de más competencias y de la correspondiente financiación" />
+				<argument type="Source" dependent="hacer" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

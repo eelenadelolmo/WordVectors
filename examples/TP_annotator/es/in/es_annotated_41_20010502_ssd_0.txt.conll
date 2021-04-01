@@ -1,0 +1,9 @@
+{   ('Categorization', 'consideró'): [   ('Item', 'comisión investigadora del Congreso peruano'),
+                                         ('Item', 'constitucional por'),
+                                         ('Category', 'haber alquilado helicópteros del Ejército a la ONU de manera supuestamente irregular')],
+    ('Conduct', 'manera'): [('Manner', 'supuestamente irregular')],
+    ('Criminal_investigation', 'investigadora'): [],
+    ('Leadership', 'alquilado'): [],
+    ('Military', 'Ejército'): [('Possessor', 'helicópteros')],
+    ('Unattributed_information', 'acusación'): [('Reported_fact', 'manera supuestamente irregular')],
+    ('Vehicle', 'helicópteros'): []}

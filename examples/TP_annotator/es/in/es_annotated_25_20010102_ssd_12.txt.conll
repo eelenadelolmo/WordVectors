@@ -1,0 +1,5 @@
+{   ('Commitment', 'realizados'): [('Speaker', 'los crímenes asesinos'), ('Message', 'contra el liderazgo palestino')],
+    ('Committing_crime', 'crímenes'): [('Manner', 'asesinos')],
+    ('Participation', 'participantes'): [],
+    ('Referring_by_name', 'quot'): [('Entity', 'Los participantes en el sepelio'), ('Name', 'de represalia por')],
+    ('Revenge', 'represalia'): [('Injury', 'crímenes asesinos realizados contra el liderazgo palestino')]}

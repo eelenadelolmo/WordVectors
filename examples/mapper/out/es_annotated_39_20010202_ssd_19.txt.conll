@@ -1,0 +1,5 @@
+{   ('Level_of_force_exertion', 'fuerza'): [('Exerter', 'nosotros'), ('Degree', 'tanta'), ('Time', 'como dicen')],
+    ('Locative_relation', 'esta'): [('Ground', 'esta NTV')],
+    ('Possession', 'tenido'): [('Owner', 'nosotros'), ('Possession', 'tanta fuerza como dicen')],
+    ('Proportional_quantity', 'tanta'): [('Mass', 'fuerza')],
+    ('Statement', 'dicen'): [('Speaker', 'dicen'), ('Message', 'no existiría esta NTV')]}

@@ -1,0 +1,7 @@
+{   ('Direction', 'pasar'): [('Distance', 'pasar'), ('Landmark', 'memoria histórica')],
+    ('Giving', 'pasar'): [('Donor', 'la'), ('Theme', 'memoria histórica')],
+    ('Memory', 'memoria'): [('Topic', 'histórica')],
+    ('Motion', 'pasar'): [('Theme', 'la'), ('Goal', 'a la')],
+    ('Opinion', 'creo'): [('Cognizer', 'y'), ('Opinion', 'hay que mirar al futuro y')],
+    ('Perception_active', 'mirar'): [('Perceiver_agentive', 'la'), ('Phenomenon', 'al futuro')],
+    ('Required_event', 'hay que'): [('Required_situation', 'la'), ('Required_situation', 'mirar al futuro y pasar')]}

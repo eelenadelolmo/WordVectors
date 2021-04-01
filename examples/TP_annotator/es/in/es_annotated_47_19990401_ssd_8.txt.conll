@@ -1,0 +1,6 @@
+{   ('Arriving', 'entrada'): [],
+    ('Damaging', 'daños'): [],
+    ('Experiencer_obj', 'susto'): [],
+    ('Interior_profile_relation', 'a la'): [('Ground', 'además del susto')],
+    ('Placing', 'se'): [('Agent', 'lo'), ('Theme', 'se'), ('Goal', 'lo')],
+    ('Spatial_contact', 'se'): []}

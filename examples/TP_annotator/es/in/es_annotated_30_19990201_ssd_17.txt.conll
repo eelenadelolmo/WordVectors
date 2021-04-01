@@ -1,0 +1,4 @@
+{   ('Age', 'nuevo'): [('Entity', 'secretario')],
+    ('Attack', 'ataques'): [('Victim', 'de los')],
+    ('Remembering_experience', 'olvidó'): [('Salient_entity', 'los ataques'), ('Cognizer', 'de los'), ('Experience', 'que arrancaron los aplausos del auditorio')],
+    ('Spatial_contact', 'se'): [('Figure', 'los ataques'), ('Ground', 'los aplausos')]}

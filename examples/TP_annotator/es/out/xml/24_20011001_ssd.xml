@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="24_20011001_ssd">
+
+
+	<concepts>
+		<concept id="c_0">La Intifada de Al Aqsa , llamada también guerra de la independencia palestina ,</concept>
+		<concept id="c_1">coordenadas del conflicto palestino-israelí</concept>
+		<concept id="c_2">conflicto</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 La Intifada de Al Aqsa, llamada también guerra de la independencia palestina, ha cambiado las coordenadas del conflicto palestino-israelí: del diálogo en la mesa de negociaciones se ha pasado a sangrientos enfrentamientos que en un año se han cobrado las vidas de 684 palestinos y 160 israelís.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="ncfs000">Intifada</token><token pos="sps00">de</token><token pos="sps00">Al</token><token pos="ncms000">Aqsa</token><token pos="fc">,</token><token pos="aq0fsp">llamada</token><token pos="rg">también</token><token pos="ncfs000">guerra</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">independencia</token><token pos="aq0fs0">palestina</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_2">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">cambiado</token><mention concept_ref="c_0"><token pos="da0fp0">las</token><token pos="ncfp000">coordenadas</token></mention><token pos="spcms">del</token><mention concept_ref="c_2"><token pos="ncms000">conflicto</token></mention><token pos="aq0cs0">palestino-israelí</token><token pos="spcms">del</token><token pos="ncms000">diálogo</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">mesa</token><token pos="sps00">de</token><token pos="ncfp000">negociaciones</token><token pos="p0000000">se</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">pasado</token><token pos="sps00">a</token><token pos="aq0mp0">sangrientos</token><token pos="ncmp000">enfrentamientos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="año" />
+			<main_frame type="Cause_change" head="cambiado">
+				<argument type="Entity" dependent="coordenadas del conflicto palestino-israelí" /></main_frame>
+			<frame type="Change_of_leadership" head="independencia" />
+			<main_frame type="Change_position_on_a_scale" head="cambiado">
+				<argument type="Attribute" dependent="diálogo en la mesa de negociaciones se" />
+				<argument type="Attribute" dependent="sangrientos enfrentamientos que en un año se han cobrado las vidas de 684 palestinos y 160 israelís ." /></main_frame>
+			<frame type="Hostile_encounter" head="conflicto">
+				<argument type="Depictive" dependent="palestino-israelí" /></frame>
+			<frame type="Hostile_encounter" head="enfrentamientos" />
+			<frame type="Hostile_encounter" head="guerra">
+				<argument type="Sides" dependent="palestina" />
+				<argument type="Depictive" dependent="independencia" /></frame>
+			<frame type="Referring_by_name" head="llamada">
+				<argument type="Name" dependent="guerra de la independencia palestina" /></frame>
+			<frame type="Statement" head="se">
+				<argument type="Medium" dependent="sangrientos enfrentamientos" />
+				<argument type="Speaker" dependent="que" />
+				<argument type="Message" dependent="vidas de 684 palestinos y 160 israelís" />
+				<argument type="Time" dependent="en un año" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

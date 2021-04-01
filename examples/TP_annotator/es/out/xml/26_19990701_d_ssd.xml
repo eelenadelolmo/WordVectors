@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="26_19990701_d_ssd">
+
+
+	<concepts>
+		<concept id="c_0">el proyecto</concept>
+		<concept id="c_1">problemas</concept>
+		<concept id="c_2">al barrio</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Deteriorar un barrio.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Irán a los aparcamientos, al ser de pago ; que se escuchen ruidos ; y algún caco como símbolo del posible aumento de la inseguridad ciudadana.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Change_position_on_a_scale" head="aumento">
+				<argument type="Final_value" dependent="inseguridad ciudadana" /></frame>
+			<frame type="Commerce_pay" head="pago">
+				<argument type="Goods" dependent="los" /></frame>
+			<frame type="Likelihood" head="posible">
+				<argument type="Hypothetical_event" dependent="aumento de la inseguridad ciudadana" /></frame>
+			<frame type="Motion" head="se">
+				<argument type="Theme" dependent="los" />
+				<argument type="Goal" dependent="a los aparcamientos" /></frame>
+			<frame type="People_by_jurisdiction" head="ciudadana" />
+			<frame type="Perception_experience" head="escuchen">
+				<argument type="Perceiver_passive" dependent="los" />
+				<argument type="Phenomenon" dependent="ruidos" /></frame>
+			<frame type="Placing" head="aparcamientos">
+				<argument type="Goal" dependent="se" /></frame>
+			<frame type="Proportional_quantity" head="algún">
+				<argument type="Individuals" dependent="caco" /></frame>
+			<frame type="Temporal_collocation" head="se">
+				<argument type="Trajector_event" dependent="a los aparcamientos" />
+				<argument type="Landmark_event" dependent="ser de pago" />
+				<argument type="Trajector_event" dependent="se escuchen ruidos ; y algún caco como símbolo del posible aumento de la inseguridad ciudadana" /></frame>
+			<frame type="Vehicle" head="se" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Comprobará que el proyecto traerá problemas al barrio.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">proyecto</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_2">
+			<token pos="vmif3s0">traerá</token><mention concept_ref="c_1"><token pos="ncmp000">problemas</token></mention><mention concept_ref="c_2"><token pos="spcms">al</token><token pos="ncms000">barrio</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Bringing" head="traerá">
+				<argument type="Agent" dependent="el proyecto" />
+				<argument type="Theme" dependent="problemas" />
+				<argument type="Goal" dependent="al barrio" /></main_frame>
+			<frame type="Perception_experience" head="el">
+				<argument type="Perceiver_passive" dependent="el" />
+				<argument type="Phenomenon" dependent="que el proyecto traerá problemas al barrio" /></frame>
+			<frame type="Predicament" head="problemas" />
+			<frame type="Project" head="proyecto" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Todo, por dinamizar el barrio, dicen los que lo han admitido a trámite.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Process" head="trámite" />
+			<frame type="Reveal_secret" head="admitido">
+				<argument type="Speaker" dependent="los que" />
+				<argument type="Information" dependent="a trámite" /></frame>
+			<frame type="Statement" head="dicen">
+				<argument type="Medium" dependent="Todo , por dinamizar el barrio" />
+				<argument type="Message" dependent="los que lo han admitido a trámite" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

@@ -1,0 +1,4 @@
+{   ('Businesses', 'empresas'): [('Place', 'se')],
+    ('Commerce_sell', 'venden'): [('Goods', 'sus empresas'), ('Seller', 'que'), ('Buyer', 'en el resto de')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'que venden'), ('Ground', 'el resto de')],
+    ('Rest', 'resto'): [('Whole', 'se')]}

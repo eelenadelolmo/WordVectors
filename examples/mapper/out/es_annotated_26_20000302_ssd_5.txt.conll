@@ -1,0 +1,4 @@
+{   ('Cardinal_numbers', 'tres'): [('Entity', 'mujeres')],
+    ('Operating_a_system', 'resultaron'): [('System', 'Sólo tres mujeres'), ('Operator', 'que'), ('Time', 'a tiempo')],
+    ('People', 'mujeres'): [('Descriptor', 'tres')],
+    ('Traversing', 'saltar'): [('Time', 'a tiempo')]}

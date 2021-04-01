@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="46_20010802_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El precio del carburante en Suecia</concept>
+		<concept id="c_1">que</concept>
+		<concept id="c_2">Este nuevo y dudoso método de las empresas de carburantes para obtener ganancias sin bajar el precio</concept>
+		<concept id="c_3">La situación</concept>
+		<concept id="c_4">las denuncias y las nuevas sospechas</concept>
+		<concept id="c_5">Wallander</concept>
+		<concept id="c_6">la investigación</concept>
+		<concept id="c_7">Otros periódicos , como el Svenska Dagbladet ,</concept>
+		<concept id="c_8">esto</concept>
+		<concept id="c_9">estos acuerdos de precios</concept>
+		<concept id="c_10">el consumidor medio</concept>
+		<concept id="c_11">el Estado</concept>
+		<concept id="c_12">competencia</concept>
+		<concept id="c_13">ha</concept>
+		<concept id="c_14">en que</concept>
+		<concept id="c_15">europeos</concept>
+		<concept id="c_16">se han</concept>
+		<concept id="c_17">es</concept>
+		<concept id="c_18">los juzgados</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El precio del carburante en Suecia es casi el mismo aunque la distancia entre dos gasolineras sea de más de 1.000 kilómetros.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">precio</token><token pos="spcms">del</token><token pos="ncms000">carburante</token><token pos="sps00">en</token><token pos="np00000">Suecia</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_17">
+			<mention concept_ref="c_17"><token pos="vsip3s0">es</token></mention><token pos="rg">casi</token><mention concept_ref="c_10"><token pos="da0ms0">el</token><token pos="pi0ms000">mismo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="gasolineras" /></frame>
+			<frame type="Concessive" head="aunque">
+				<argument type="Main_assertion" dependent="precio del carburante en Suecia" />
+				<argument type="Conceded_state_of_affairs" dependent="la distancia entre dos gasolineras sea de más de 1.000 kilómetros" /></frame>
+			<frame type="Identicality" head="el mismo">
+				<argument type="Type" dependent="precio del carburante en Suecia" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="la distancia entre dos gasolineras" />
+				<argument type="Class" dependent="de 1.000 kilómetros" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="precio del carburante" />
+				<argument type="Ground" dependent="Suecia" /></frame>
+			<frame type="Interior_profile_relation" head="entre">
+				<argument type="Figure" dependent="la distancia" />
+				<argument type="Ground" dependent="dos gasolineras sea de más de 1.000 kilómetros" /></frame>
+			<frame type="Locale_by_use" head="gasolineras">
+				<argument type="Use" dependent="gasolineras" /></frame>
+			<frame type="Measure_linear_extent" head="kilómetros">
+				<argument type="Count" dependent="1.000" /></frame>
+			<frame type="Range" head="distancia" />
+			<frame type="Substance" head="gasolineras" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Hoy se paga a 9,15 coronas el litro ( 174 pesetas ) y "menos mal que ha bajado", dice con resignación un conductor sueco mientras trata de llenar el depósito de su Volvo S40 en una gasolinera de Malmoe, al sur del país.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attempt" head="se">
+				<argument type="Goal" dependent="llenar el depósito de su Volvo S40 en una gasolinera de Malmoe , al" /></frame>
+			<frame type="Calendric_unit" head="Hoy">
+				<argument type="Trajector_event" dependent="se paga a 9,15 coronas el litro ( 174 pesetas ) y  quot ; menos mal que ha bajado  quot ; ," /></frame>
+			<frame type="Change_position_on_a_scale" head="bajado">
+				<argument type="Correlated_variable" dependent="Hoy se paga a 9,15 coronas el litro ( 174 pesetas ) y  quot ; menos mal que ha" />
+				<argument type="Manner" dependent="bajado" />
+				<argument type="Item" dependent="ha" /></frame>
+			<frame type="Commerce_pay" head="país">
+				<argument type="Buyer" dependent="se" />
+				<argument type="Goods" dependent="9,15 coronas el litro ( 174 pesetas ) y  quot ; menos mal que ha bajado  quot ; , dice con" /></frame>
+			<frame type="Containers" head="depósito">
+				<argument type="Relative_location" dependent="de su Volvo S40" /></frame>
+			<frame type="Desirability" head="mal" />
+			<frame type="Direction" head="al sur del">
+				<argument type="Independent_variable" dependent="del país" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="una gasolinera" />
+				<argument type="Ground" dependent="Malmoe" /></frame>
+			<frame type="Motion" head="bajado">
+				<argument type="Theme" dependent="se" />
+				<argument type="Goal" dependent="bajado" /></frame>
+			<frame type="Political_locales" head="país" />
+			<frame type="Statement" head="dice">
+				<argument type="Message" dependent="Hoy se paga a 9,15 coronas el litro ( 174 pesetas ) y  quot ; menos mal que ha bajado" />
+				<argument type="Message" dependent="con resignación un conductor sueco mientras trata de llenar el depósito de su Volvo S40 en una gasolinera de Malmoe , al sur del país" /></frame>
+			<frame type="Substance" head="gasolinera" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Lo que no sabe es que posiblemente lo que está metiendo en el depósito de su coche no sea gasolina pura sino gasolina que contiene un 5% de etanol.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<token pos="vmip3s0">contiene</token><token pos="di0ms0">un</token><token pos="zp">5%</token><token pos="sps00">de</token><mention concept_ref="c_0"><token pos="ncms000">etanol</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="sabe">
+				<argument type="Content" dependent="que" />
+				<argument type="Cognizer" dependent="su" />
+				<argument type="Content" dependent="lo que está metiendo en el depósito de su coche no sea gasolina pura sino gasolina que contiene un 5 % de etanol" /></frame>
+			<frame type="Containers" head="depósito">
+				<argument type="Descriptor" dependent="coche" /></frame>
+			<main_frame type="Containing" head="contiene">
+				<argument type="Container" dependent="gasolina" />
+				<argument type="Contents" dependent="5 % de etanol" /></main_frame>
+			<frame type="Getting" head="metiendo">
+				<argument type="Recipient" dependent="su" />
+				<argument type="Theme" dependent="el depósito de su coche no sea gasolina pura sino gasolina que contiene un 5 % de etanol" /></frame>
+			<frame type="Vehicle" head="coche">
+				<argument type="Possessor" dependent="su" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Este nuevo y dudoso método de las empresas de carburantes para obtener ganancias sin bajar el precio ha hecho reaccionar otra vez a las instituciones del Estado que defienden al consumidor.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="dd0ms0">Este</token><token pos="aq0ms0">nuevo</token><token pos="cc">y</token><token pos="aq0ms0">dudoso</token><token pos="ncms000">método</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">empresas</token><token pos="sps00">de</token><token pos="ncmp000">carburantes</token><token pos="sps00">para</token><token pos="vmn0000">obtener</token><token pos="ncfp000">ganancias</token><token pos="sps00">sin</token><token pos="vmn0000">bajar</token><token pos="da0ms0">el</token><token pos="ncms000">precio</token>
+		</theme>
+		<rheme concept_ref1="c_11" concept_ref2="c_6" concept_ref3="c_13" concept_ref4="c_17">
+			<mention concept_ref="c_13"><token pos="vaip3s0">ha</token></mention><token pos="vmp00sm">hecho</token><token pos="vmn0000">reaccionar</token><mention concept_ref="c_11"><token pos="di0fs0">otra</token><token pos="ncfs000">vez</token></mention><token pos="sps00">a</token><mention concept_ref="c_6"><token pos="da0fp0">las</token><token pos="ncfp000">instituciones</token></mention><token pos="spcms">del</token><token pos="np00000">Estado</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevo" />
+			<frame type="Being_questionable" head="dudoso">
+				<argument type="Behavior" dependent="método de las empresas de carburantes" /></frame>
+			<frame type="Businesses" head="empresas">
+				<argument type="Product" dependent="carburantes" /></frame>
+			<main_frame type="Change_position_on_a_scale" head="bajar">
+				<argument type="Item" dependent="el precio" /></main_frame>
+			<frame type="Defending" head="defienden">
+				<argument type="Defender" dependent="las instituciones del Estado que" />
+				<argument type="Victim" dependent="consumidor" /></frame>
+			<frame type="Institutions" head="instituciones" />
+			<frame type="Leadership" head="Estado" />
+			<frame type="Means" head="método">
+				<argument type="Descriptor" dependent="dudoso" />
+				<argument type="Agent" dependent="empresas de carburantes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La situación es equiparable a lo ocurrido en otros países europeos, incluido España, en que ha habido sanciones contra petroleras por restringir la competencia.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fs0">La</token><token pos="ncfs000">situación</token>
+		</theme>
+		<rheme concept_ref1="c_11" concept_ref2="c_4" concept_ref3="c_6" concept_ref4="c_12" concept_ref5="c_13" concept_ref6="c_14" concept_ref7="c_15" concept_ref8="c_17">
+			<mention concept_ref="c_17"><token pos="vsip3s0">es</token></mention><token pos="aq0cs0">equiparable</token><token pos="sps00">a</token><token pos="da0ns0">lo</token><token pos="aq0msp">ocurrido</token><token pos="sps00">en</token><mention concept_ref="c_11"><token pos="di0mp0">otros</token><token pos="ncmp000">países</token></mention><mention concept_ref="c_15"><token pos="aq0mp0">europeos</token></mention><token pos="fc">,</token><token pos="aq0msp">incluido</token><token pos="np00000">España</token><token pos="fc">,</token><mention concept_ref="c_14"><token pos="sps00">en</token><token pos="pr0cn000">que</token></mention><mention concept_ref="c_13"><token pos="vaip3s0">ha</token></mention><token pos="vap00sm">habido</token><mention concept_ref="c_4"><token pos="ncfp000">sanciones</token></mention><token pos="sps00">contra</token><token pos="ncfp000">petroleras</token><token pos="sps00">por</token><token pos="vmn0000">restringir</token><mention concept_ref="c_6"><token pos="da0fs0">la</token><token pos="ncfs000">competencia</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Businesses" head="en">
+				<argument type="Service_provider" dependent="petroleras" /></frame>
+			<frame type="Competition" head="competencia" />
+			<main_frame type="Deny_or_grant_permission" head="restringir">
+				<argument type="Action" dependent="competencia" /></main_frame>
+			<frame type="Evaluative_comparison" head="contra">
+				<argument type="Profiled_item" dependent="situación" /></frame>
+			<frame type="Event" head="ocurrido">
+				<argument type="Event" dependent="que" />
+				<argument type="Place" dependent="en otros países europeos" /></frame>
+			<frame type="Inclusion" head="incluido">
+				<argument type="Total" dependent="otros países europeos" />
+				<argument type="Part" dependent="ha" /></frame>
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="países europeos" /></frame>
+			<main_frame type="Locative_relation" head="habido">
+				<argument type="Figure" dependent="ha" />
+				<argument type="Figure" dependent="en que" />
+				<argument type="Ground" dependent="ha habido sanciones contra petroleras por restringir la competencia" /></main_frame>
+			<frame type="Origin" head="europeos">
+				<argument type="Entity" dependent="países" /></frame>
+			<main_frame type="Political_locales" head="países">
+				<argument type="Population" dependent="europeos" /></main_frame>
+			<main_frame type="Revenge" head="sanciones">
+				<argument type="Offender" dependent="contra petroleras por" /></main_frame>
+			<frame type="Substance" head="petroleras" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sea cual sea la marca del combustible, en Suecia los precios no varían y las sospechas de la existencia de acuerdos entre las gasolineras es un hecho probado.
+		</str>
+		<theme>
+			<token pos="pr0cs000">cual</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="sospechas">
+				<argument type="Content" dependent="de la existencia de acuerdos entre las gasolineras es un hecho" /></frame>
+			<frame type="Cause_change" head="varían">
+				<argument type="Cause" dependent="cual sea la marca del combustible" />
+				<argument type="Cause" dependent="Suecia los precios" /></frame>
+			<frame type="Existence" head="existencia" />
+			<frame type="Substance" head="gasolineras" />
+			<frame type="Type" head="la marca">
+				<argument type="Category" dependent="combustible" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Aparecieron por primera vez en diciembre de 1999 y, a partir de esa fecha, las denuncias y las nuevas sospechas se han sucedido casi continuamente.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0fp0">las</token><token pos="ncfp000">denuncias</token><token pos="cc">y</token><token pos="da0fp0">las</token><token pos="aq0fp0">nuevas</token><token pos="ncfp000">sospechas</token>
+		</theme>
+		<rheme concept_ref1="c_12" concept_ref2="c_13" concept_ref3="c_16" concept_ref4="c_17">
+			<token pos="sps00">a</token><token pos="vmn0000">partir</token><token pos="sps00">de</token><token pos="dd0fs0">esa</token><token pos="ncfs000">fecha</token><mention concept_ref="c_16"><token pos="p0300000">se</token><token pos="vaip3p0">han</token></mention><token pos="vmp00sm">sucedido</token><mention concept_ref="c_12"><token pos="rg">casi</token><token pos="rg">continuamente</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevas">
+				<argument type="Entity" dependent="sospechas se han sucedido casi continuamente" /></frame>
+			<frame type="Awareness" head="sospechas">
+				<argument type="Content" dependent="han sucedido casi continuamente" /></frame>
+			<frame type="Calendric_unit" head="diciembre">
+				<argument type="Whole" dependent="1999" /></frame>
+			<main_frame type="Event" head="han sucedido">
+				<argument type="Manner" dependent="casi continuamente" /></main_frame>
+			<main_frame type="Give_impression" head="han sucedido">
+				<argument type="Phenomenon" dependent="se han" />
+				<argument type="Inference" dependent="por primera vez en diciembre de 1999" /></main_frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="primera vez" />
+				<argument type="Ground" dependent="diciembre de 1999" /></frame>
+			<frame type="Ordinal_numbers" head="primera">
+				<argument type="Type" dependent="vez" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Para la Oficina Estatal de Control de la Competencia que investigó el asunto, las informaciones que obtuvieron eran muy concretas y, por tanto, la investigación llevó a la entidad a demandar a los cinco mayores proveedores de carburantes suecos ( OK-Q8, Shell, Hydro, Statoil y Preem ) por una cantidad de 740 millones de coronas ( más de 14.000 millones de pesetas ).
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_11" concept_ref2="c_17">
+			<token pos="vmis3s0">investigó</token><mention concept_ref="c_11"><token pos="da0ms0">el</token><token pos="ncms000">asunto</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="millones">
+				<argument type="Unit" dependent="pesetas" /></frame>
+			<frame type="Criminal_investigation" head="investigación" />
+			<frame type="Getting" head="llevó">
+				<argument type="Theme" dependent="las informaciones" />
+				<argument type="Recipient" dependent="los" /></frame>
+			<frame type="Information" head="informaciones" />
+			<frame type="Leadership" head="de">
+				<argument type="Governed" dependent="la investigación" />
+				<argument type="Governed" dependent="la entidad" /></frame>
+			<frame type="Quantified_mass" head="cantidad">
+				<argument type="Mass" dependent="de 740 millones de" /></frame>
+			<frame type="Scrutiny" head="investigación">
+				<argument type="Cognizer" dependent="la Oficina Estatal de Control de la Competencia que" />
+				<argument type="Ground" dependent="asunto" /></frame>
+			<frame type="Supply" head="proveedores">
+				<argument type="Theme" dependent="carburantes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sin embargo, ahí no terminaron los acuerdos entre las empresas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Businesses" head="empresas" />
+			<frame type="Locative_relation" head="ahí">
+				<argument type="Figure" dependent="los acuerdos entre las empresas" /></frame>
+			<frame type="Make_agreement_on_action" head="los acuerdos">
+				<argument type="Party_2" dependent="entre las empresas" /></frame>
+			<frame type="Process_end" head="terminaron">
+				<argument type="Process" dependent="los acuerdos entre las empresas" />
+				<argument type="Process" dependent="ahí" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En noviembre del 2000 se inició una nueva investigación ante la nueva sospecha de la existencia de un pacto secreto en los precios del gasóleo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nueva">
+				<argument type="Entity" dependent="sospecha de la existencia de un pacto secreto en los precios del gasóleo" /></frame>
+			<frame type="Awareness" head="sospecha de">
+				<argument type="Time" dependent="En noviembre del 2000" />
+				<argument type="Content" dependent="de la existencia de un pacto secreto en los precios del gasóleo" /></frame>
+			<frame type="Commerce_scenario" head="precios">
+				<argument type="Goods" dependent="del gasóleo" /></frame>
+			<frame type="Criminal_investigation" head="investigación" />
+			<frame type="Existence" head="existencia" />
+			<frame type="Secrecy_status" head="secreto">
+				<argument type="Phenomenon" dependent="pacto" /></frame>
+			<frame type="Shoot_projectiles" head="inició">
+				<argument type="Time" dependent="En noviembre del 2000" />
+				<argument type="Projectile" dependent="una nueva investigación" />
+				<argument type="Goal" dependent="ante la nueva sospecha de la existencia de un pacto secreto en los precios del gasóleo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Hay informes que indican que esto ocurría el verano pasado y por eso debemos seguir investigando a estas empresas", dijo Thomas Wallander, de la Oficina de Control de la Competencia.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_11" concept_ref3="c_17">
+			<token pos="vmip3p0">indican</token><token pos="cs">que</token><mention concept_ref="c_8"><token pos="pd0ns000">esto</token></mention><token pos="vmii3s0">ocurría</token><mention concept_ref="c_11"><token pos="da0ms0">el</token><token pos="ncms000">verano</token></mention><token pos="aq0msp">pasado</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Businesses" head="empresas" />
+			<frame type="Calendric_unit" head="verano">
+				<argument type="Relative_time" dependent="pasado" /></frame>
+			<main_frame type="Event" head="ocurría" />
+			<frame type="Locative_relation" head="Hay">
+				<argument type="Ground" dependent="Hay informes que indican que esto ocurría el verano pasado" /></frame>
+			<frame type="Process_continue" head="seguir">
+				<argument type="Event" dependent="debemos" />
+				<argument type="Event" dependent="investigando a estas empresas" /></frame>
+			<frame type="Relative_time" head="pasado">
+				<argument type="Focal_occasion" dependent="verano" /></frame>
+			<frame type="Required_event" head="debemos">
+				<argument type="Required_situation" dependent="debemos" />
+				<argument type="Required_situation" dependent="seguir investigando a estas empresas  quot ; , dijo Thomas Wallander , de la Oficina de Control de la Competencia" /></frame>
+			<frame type="Scrutiny" head="investigando">
+				<argument type="Cognizer" dependent="debemos" />
+				<argument type="Ground" dependent="estas empresas" /></frame>
+			<frame type="Statement" head="dijo">
+				<argument type="Message" dependent="; Hay informes que indican que esto ocurría el verano pasado y por eso debemos seguir investigando a estas empresas " />
+				<argument type="Message" dependent="la Oficina de Control de la Competencia" /></frame>
+			<frame type="Statement" head="informes">
+				<argument type="Message" dependent="el verano pasado y por eso debemos seguir investigando a estas empresas  quot ; , dijo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Wallander no quiso dar detalles de la situación actual y dijo al periódico sueco Aftonbladet que está preocupado por la evolución de los múltiples casos.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="np00000">Wallander</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_3" concept_ref3="c_12" concept_ref4="c_17">
+			<token pos="rn">no</token><token pos="vmis3s0">quiso</token><mention concept_ref="c_12"><token pos="vmn0000">dar</token><token pos="ncmp000">detalles</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">situación</token><token pos="aq0cs0">actual</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Coming_to_be" head="evolución">
+				<argument type="Entity" dependent="de los múltiples casos" /></frame>
+			<main_frame type="Desiring" head="quiso dar">
+				<argument type="Experiencer" dependent="Wallander" />
+				<argument type="Event" dependent="dar detalles de la situación actual" /></main_frame>
+			<frame type="Instance" head="casos">
+				<argument type="Instance_prop" dependent="múltiples" /></frame>
+			<frame type="Quantified_mass" head="múltiples">
+				<argument type="Individuals" dependent="casos" /></frame>
+			<frame type="Telling" head="dijo">
+				<argument type="Addressee" dependent="periódico sueco" />
+				<argument type="Message" dependent="Aftonbladet que está preocupado por la evolución de los múltiples casos" /></frame>
+			<frame type="Temporal_collocation" head="actual">
+				<argument type="Trajector_entity" dependent="situación" /></frame>
+			<frame type="Text" head="periódico">
+				<argument type="Text" dependent="periódico sueco" /></frame>
+			<frame type="Topic" head="preocupado">
+				<argument type="Communicator" dependent="los" />
+				<argument type="Topic" dependent="la evolución de los múltiples casos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Tampoco quiso revelar los nombres de las empresas que están siendo investigadas.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_17">
+			<token pos="vmip3p0">están</token><token pos="vsg0000">siendo</token><token pos="vmp00pf">investigadas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_named" head="nombres">
+				<argument type="Entity" dependent="de las empresas" /></frame>
+			<frame type="Businesses" head="empresas" />
+			<frame type="Desiring" head="los">
+				<argument type="Experiencer" dependent="los" />
+				<argument type="Event" dependent="revelar los nombres de las empresas que están siendo investigadas" /></frame>
+			<frame type="Reveal_secret" head="revelar">
+				<argument type="Speaker" dependent="los" />
+				<argument type="Information" dependent="los nombres de las empresas que están siendo investigadas" /></frame>
+			<main_frame type="Scrutiny" head="investigadas">
+				<argument type="Ground" dependent="los nombres de las empresas" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "No voy a decir nada porque la investigación está en marcha", manifestó Wallander.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0fs0">la</token><token pos="ncfs000">investigación</token>
+		</theme>
+		<rheme concept_ref1="c_13" concept_ref2="c_17">
+			<token pos="vmip3s0">está</token><token pos="sps00">en</token><token pos="ncfs000">marcha</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Wallander " />
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="nada" />
+				<argument type="Cause" dependent="la investigación está en marcha  quot ; , manifestó Wallander" /></frame>
+			<frame type="Criminal_investigation" head="investigación" />
+			<frame type="Process_continue" head="en marcha">
+				<argument type="Event" dependent="la investigación" />
+				<argument type="Event" dependent="quot ; , manifestó Wallander" /></frame>
+			<frame type="Statement" head="decir">
+				<argument type="Speaker" dependent="Wallander" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Otros periódicos, como el Svenska Dagbladet, han buscado la información en los resúmenes e informes de los juzgados y por éstos se ha sabido que, recientemente, hubo una reunión entre los jefes de la Oficina de Control de la Competencia y los directivos de Shell.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="di0mp0">Otros</token><token pos="ncmp000">periódicos</token><token pos="fc">,</token><token pos="cs">como</token><token pos="da0ms0">el</token><token pos="np0000l">Svenska</token><token pos="np0000l">Dagbladet</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_9" concept_ref3="c_10" concept_ref4="c_13" concept_ref5="c_17" concept_ref6="c_18">
+			<token pos="vaip3p0">han</token><token pos="vmp00sm">buscado</token><mention concept_ref="c_6"><token pos="da0fs0">la</token><token pos="ncfs000">información</token></mention><token pos="sps00">en</token><mention concept_ref="c_9"><token pos="da0mp0">los</token><token pos="ncmp000">resúmenes</token></mention><token pos="cc">e</token><mention concept_ref="c_10"><token pos="ncmp000">informes</token></mention><token pos="sps00">de</token><mention concept_ref="c_18"><token pos="da0mp0">los</token><token pos="ncmp000">juzgados</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="sabido">
+				<argument type="Cognizer" dependent="se" />
+				<argument type="Content" dependent="los directivos de Shell" /></frame>
+			<frame type="Body_parts" head="jefes">
+				<argument type="Possessor" dependent="de la Oficina de Control de la Competencia y los directivos de Shell" /></frame>
+			<frame type="Discussion" head="reunión">
+				<argument type="Interlocutor_2" dependent="entre los jefes de la Oficina de Control de la Competencia y los directivos" /></frame>
+			<frame type="Increment" head="Otros">
+				<argument type="Class" dependent="periódicos" /></frame>
+			<frame type="Information" head="información">
+				<argument type="Topic" dependent="en los resúmenes e informes de los juzgados" /></frame>
+			<frame type="Interior_profile_relation" head="entre">
+				<argument type="Figure" dependent="una reunión" />
+				<argument type="Ground" dependent="los jefes de la Oficina de Control de la Competencia y los directivos" /></frame>
+			<frame type="Judicial_body" head="juzgados" />
+			<frame type="Locative_relation" head="se ha">
+				<argument type="Ground" dependent="hubo una reunión entre los jefes de la Oficina de Control de la Competencia y los directivos" /></frame>
+			<frame type="People_by_vocation" head="los directivos">
+				<argument type="Persistent_characteristic" dependent="Shell" /></frame>
+			<frame type="Perception_active" head="se">
+				<argument type="Perceiver_agentive" dependent="Otros periódicos , como el Svenska" />
+				<argument type="Phenomenon" dependent="información en los resúmenes e informes de los juzgados y por" /></frame>
+			<frame type="Statement" head="informes" />
+			<frame type="Temporal_collocation" head="recientemente">
+				<argument type="Trajector_event" dependent="por éstos se ha sabido que" /></frame>
+			<frame type="Text" head="periódicos" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Se trata de nuevas sospechas de pactos secretos sobre los precios de las gasolinas y el gasóleo y sobre todos los descuentos que aplican.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevas">
+				<argument type="Entity" dependent="sospechas de pactos secretos" /></frame>
+			<frame type="Awareness" head="sospechas">
+				<argument type="Content" dependent="pactos secretos" />
+				<argument type="Evidence" dependent="precios de las gasolinas y el" /></frame>
+			<frame type="Commerce_scenario" head="precios">
+				<argument type="Goods" dependent="gasolinas y" /></frame>
+			<frame type="Secrecy_status" head="secretos">
+				<argument type="Phenomenon" dependent="pactos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Para Wallander, esto es "una tendencia a largo plazo y en todas las direcciones".
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="pd0ns000">esto</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_3" concept_ref3="c_4" concept_ref4="c_17">
+			<mention concept_ref="c_17"><token pos="vsip3s0">es</token></mention><token pos="fe">quot;</token><mention concept_ref="c_3"><token pos="di0fs0">una</token><token pos="ncfs000">tendencia</token></mention><token pos="sps00">a</token><token pos="aq0ms0">largo</token><token pos="ncms000">plazo</token><token pos="cc">y</token><token pos="sps00">en</token><token pos="di0fp0">todas</token><mention concept_ref="c_4"><token pos="da0fp0">las</token><token pos="ncfp000">direcciones</token></mention><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Consumidores incrédulos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sin embargo, los consumidores suecos miran con cierta incredulidad y sorpresa que estos acuerdos de precios existan entre las empresas de su país.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="dd0mp0">estos</token><token pos="ncmp000">acuerdos</token><token pos="sps00">de</token><token pos="ncmp000">precios</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_12" concept_ref3="c_17">
+			<token pos="vmsp3p0">existan</token><mention concept_ref="c_12"><token pos="sps00">entre</token><token pos="da0fp0">las</token><token pos="ncfp000">empresas</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncms000">país</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="los consumidores suecos " />
+			<frame type="Businesses" head="empresas">
+				<argument type="Place" dependent="su país" /></frame>
+			<main_frame type="Existence" head="existan">
+				<argument type="Entity" dependent="estos acuerdos de precios" />
+				<argument type="Place" dependent="entre las empresas de su país" /></main_frame>
+			<frame type="Experiencer_obj" head="sorpresa">
+				<argument type="Stimulus" dependent="consumidores suecos" /></frame>
+			<frame type="Perception_active" head="miran">
+				<argument type="Perceiver_agentive" dependent="consumidores suecos" />
+				<argument type="Phenomenon" dependent="con cierta incredulidad y sorpresa que estos acuerdos de precios existan entre las empresas de su país" /></frame>
+			<frame type="Political_locales" head="país">
+				<argument type="Population" dependent="los" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Acostumbrados a una transparencia casi total en todo tipo de asuntos, el consumidor medio está convencido de que las ilegalidades serán controladas y castigadas por las instituciones suecas, pero también tiene la seguridad de que, termine como termine el asunto, no recibirá ningún dinero de vuelta.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="da0ms0">el</token><token pos="ncms000">consumidor</token><token pos="aq0ms0">medio</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_4" concept_ref3="c_12" concept_ref4="c_17">
+			<token pos="vmip3s0">está</token><token pos="aq0msp">convencido</token><token pos="sps00">de</token><token pos="cs">que</token><mention concept_ref="c_4"><token pos="da0fp0">las</token><token pos="ncfp000">ilegalidades</token></mention><token pos="vsif3p0">serán</token><token pos="vmp00pf">controladas</token><token pos="cc">y</token><token pos="vmp00pf">castigadas</token><mention concept_ref="c_12"><token pos="sps00">por</token><token pos="da0fp0">las</token><token pos="ncfp000">instituciones</token><token pos="aq0fp0">suecas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Being_in_control" head="controladas">
+				<argument type="Dependent_entity" dependent="ilegalidades" /></main_frame>
+			<frame type="Completeness" head="total">
+				<argument type="Whole" dependent="transparencia" /></frame>
+			<frame type="Institutions" head="instituciones">
+				<argument type="Domain" dependent="suecas" /></frame>
+			<frame type="Money" head="dinero">
+				<argument type="Creator" dependent="el" /></frame>
+			<frame type="Process_end" head="termine">
+				<argument type="Manner" dependent="como" /></frame>
+			<frame type="Receiving" head="recibirá">
+				<argument type="Recipient" dependent="el" />
+				<argument type="Theme" dependent="ningún dinero" />
+				<argument type="Manner" dependent="de vuelta" /></frame>
+			<main_frame type="Rewards_and_punishments" head="castigadas">
+				<argument type="Agent" dependent="por las instituciones suecas" /></main_frame>
+			<frame type="Suasion" head="convencido">
+				<argument type="Speaker" dependent="consumidor medio" />
+				<argument type="Content" dependent="que las ilegalidades serán controladas" /></frame>
+			<frame type="Type" head="tipo de">
+				<argument type="Category" dependent="el asunto" /></frame>
+			<frame type="Typicality" head="medio">
+				<argument type="State_of_affairs" dependent="consumidor" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Si bien los conductores han pagado unos precios demasiado altos por el combustible, el Estado es el que más tiene que perder por los impuestos y, por tanto, es quien intenta recuperar lo perdido.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="da0ms0">el</token><token pos="np00000">Estado</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_9" concept_ref3="c_12" concept_ref4="c_17" concept_ref5="c_18">
+			<mention concept_ref="c_17"><token pos="vsip3s0">es</token></mention><token pos="da0ms0">el</token><token pos="pr0cn000">que</token><token pos="rg">más</token><token pos="vmip3s0">tiene</token><token pos="cs">que</token><token pos="vmn0000">perder</token><token pos="sps00">por</token><token pos="da0mp0">los</token><token pos="ncmp000">impuestos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attempt" head="intenta">
+				<argument type="Agent" dependent="es" />
+				<argument type="Goal" dependent="recuperar lo perdido" /></frame>
+			<frame type="Cardinal_numbers" head="unos" />
+			<frame type="Commerce_pay" head="pagado">
+				<argument type="Buyer" dependent="los conductores" />
+				<argument type="Goods" dependent="precios demasiado altos por el combustible" /></frame>
+			<frame type="Concessive" head="tanto">
+				<argument type="Main_assertion" dependent="conductores han pagado unos precios demasiado altos por el combustible" />
+				<argument type="Main_assertion" dependent="es quien intenta recuperar lo perdido" /></frame>
+			<main_frame type="Earnings_and_losses" head="perder">
+				<argument type="Earner" dependent="es" />
+				<argument type="Earnings" dependent="los impuestos" /></main_frame>
+			<frame type="Leadership" head="Estado" />
+			<frame type="Position_on_a_scale" head="altos">
+				<argument type="Degree" dependent="tanto" />
+				<argument type="Item" dependent="unos precios demasiado altos por el combustible" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

@@ -1,0 +1,6 @@
+{   ('Catastrophe', 'incidente'): [],
+    ('Event', 'incidente se'): [('Event', 'El incidente'), ('Time', 'pasado lunes')],
+    ('Impact', 'incidente'): [('Impactor', 'la Generalitat chocó'), ('Impactee', 'un camión')],
+    ('Relative_time', 'se'): [('Focal_occasion', 'lunes')],
+    ('Vehicle', 'camión'): [],
+    ('Vehicle', 'vehículo'): []}

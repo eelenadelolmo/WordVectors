@@ -1,0 +1,5 @@
+{   ('Hiding_objects', 'escondida'): [('Hidden_object', 'Su familia'), ('Place', 'en Tora Bora'), ('Time', 'mínimo')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'familia debe de estar escondida'), ('Ground', 'Tora Bora')],
+    ('Kinship', 'familia'): [],
+    ('Locative_relation', 'en'): [('Ground', 'mínimo')],
+    ('Required_event', 'debe'): [('Required_situation', 'Su familia'), ('Required_situation', 'de estar escondida en Tora Bora')]}

@@ -1,0 +1,3 @@
+{   ('Alternatives', 'alternativa'): [('Agent', 'ser')],
+    ('Desirable_event', 'debe'): [('State_of_affairs', 'Qué pasos'), ('State_of_affairs', 'dar para ser alternativa')],
+    ('Intentionally_act', 'pasos'): []}

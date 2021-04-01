@@ -1,0 +1,6 @@
+{   ('Arriving', 'regresar'): [('Goal', 'a la Tierra'), ('Time', 'próximo mes de agosto')],
+    ('Calendric_unit', 'agosto'): [],
+    ('Purpose', 'previsto'): [   ('Agent', 'cosmonauta francés Jean-Pierre Haignere y los rusos Viktor Afanasyev y Sergei Avdeyev , que viajaron con Ivan Bella'),
+                                 ('Goal', 'regresar a la Tierra'),
+                                 ('Time', 'próximo mes de agosto')],
+    ('Travel', 'viajaron'): [('Traveler', 'cosmonauta francés Jean-Pierre Haignere y los rusos Viktor Afanasyev y Sergei Avdeyev'), ('Traveler', 'que'), ('Area', 'con Ivan Bella')]}

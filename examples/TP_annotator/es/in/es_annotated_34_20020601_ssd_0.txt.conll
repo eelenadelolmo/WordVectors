@@ -1,0 +1,5 @@
+{   ('Aggregate', 'grupo'): [],
+    ('Businesses', 'empresa'): [('Product', 'Taller de Ideas')],
+    ('Leadership', 'gobierno'): [('Descriptor', 'de')],
+    ('Purpose', 'Plan'): [('Attribute', 'del Plan')],
+    ('Work', 'trabajo'): [('Salient_entity', 'de la empresa Taller de Ideas')]}

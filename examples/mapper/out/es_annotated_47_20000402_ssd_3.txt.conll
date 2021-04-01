@@ -1,0 +1,9 @@
+{   ('Closure', 'dispersaron'): [('Containing_object', 'la zona')],
+    ('Dispersal', 'dispersaron'): [('Manner', 'contra la política de'), ('Source', 'después de que la policía')],
+    ('Law', 'política de'): [('Creator', 'sellara')],
+    ('Law_enforcement_agency', 'policía'): [],
+    ('Locale', 'zona'): [],
+    ('Protest', 'protestaban'): [('Protester', '10.000 manifestantes'), ('Action', 'contra la política de')],
+    ('Relative_time', 'después de'): [   ('Focal_occasion', '10.000 manifestantes , que protestaban contra la política de'),
+                                         ('Landmark_occasion', 'policía'),
+                                         ('Focal_occasion', 'interviniera y sellara la zona')]}

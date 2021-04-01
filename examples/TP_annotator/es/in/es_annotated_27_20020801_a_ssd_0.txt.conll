@@ -1,0 +1,7 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Commerce_pay', 'pagado'): [('Money', 'pasajes'), ('Buyer', 'los')],
+    ('Objective_influence', 'afectados'): [('Time', '15.000'), ('Influencing_situation', 'por la suspensión del servicio del catamarán')],
+    ('Operating_a_system', 'lograron'): [   ('System', 'Sólo 1.500 de los 15.000 afectados por la suspensión del servicio del catamarán'),
+                                            ('System', 'recuperar el importe de los pasajes que ya habían pagado')],
+    ('Public_services', 'servicio'): [],
+    ('Quantified_mass', 'pagado'): [('Mass', 'pasajes')]}

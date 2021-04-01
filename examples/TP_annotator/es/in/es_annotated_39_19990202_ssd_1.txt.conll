@@ -1,0 +1,8 @@
+{   ('Cause_change', 'cambiar'): [('Entity', 'marco de la violencia por un escenario de democracia')],
+    ('Certainty', 'Creo'): [('Cognizer', 'en'), ('Content', 'que en ambos dirigentes existe un deseo sincero de cambiar el marco de la violencia por un escenario de democracia')],
+    ('Desiring', 'deseo'): [('Manner', 'sincero')],
+    ('Leadership', 'dirigentes'): [],
+    ('Locative_relation', 'existe'): [   ('Figure', 'que'),
+                                         ('Ground', 'existe'),
+                                         ('Figure', 'ambos dirigentes existe un deseo sincero de cambiar el marco de la violencia por un escenario de democracia & quot ; , afirmó')],
+    ('Statement', 'afirmó'): [('Speaker', 'Bru de Sala')]}

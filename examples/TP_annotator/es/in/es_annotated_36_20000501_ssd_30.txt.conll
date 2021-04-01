@@ -1,0 +1,7 @@
+{   ('Aggregate', 'partido'): [],
+    ('Change_of_leadership', 'elecciones'): [('Selector', 'el')],
+    ('Choosing', 'elecciones'): [('Topic', 'de gobernar en Catalunya')],
+    ('Interior_profile_relation', 'en'): [('Ground', 'Catalunya')],
+    ('Leadership', 'gobernar'): [('Governed', 'en Catalunya')],
+    ('Locale', 'el'): [],
+    ('Obviousness', 'clara'): [('Phenomenon', 'opción clara de gobernar en Catalunya')]}

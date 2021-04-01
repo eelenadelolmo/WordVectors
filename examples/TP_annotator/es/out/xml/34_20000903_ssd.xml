@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="34_20000903_ssd">
+
+
+	<concepts>
+		<concept id="c_0">La brutal escalada terrorista</concept>
+		<concept id="c_1">Encorsetados por su presencia en el Pacto de Lizarra y por la falta de apoyo parlamentario , los nacionalistas vascos</concept>
+		<concept id="c_2">Jaime Mayor Oreja</concept>
+		<concept id="c_3">el Gobierno</concept>
+		<concept id="c_4">cuyo objetivo último</concept>
+		<concept id="c_5">La ofensiva etarra</concept>
+		<concept id="c_6">ETA</concept>
+		<concept id="c_7">cada asesinato</concept>
+		<concept id="c_8">El ministro del Interior , Jaime Mayor Oreja ,</concept>
+		<concept id="c_9">La afirmación del titular de Interior</concept>
+		<concept id="c_10">El desafío del Ejecutivo central pues</concept>
+		<concept id="c_11">El partido que con pulso cada vez menos firme dirige Xabier Arzalluz</concept>
+		<concept id="c_12">la mera voluntad de no excluir a la coalición aberzale</concept>
+		<concept id="c_13">el propio Arzalluz</concept>
+		<concept id="c_14">La incesante presión del Ejecutivo</concept>
+		<concept id="c_15">los dirigentes nacionalistas</concept>
+		<concept id="c_16">El parlamentario Joseba Arregi , los hermanos Guevara y hasta Iñaki Anasagasti</concept>
+		<concept id="c_17">el lehendakari Juan José Ibarretxe</concept>
+		<concept id="c_18">Ibarretxe</concept>
+		<concept id="c_19">tanto Aznar como Mayor Oreja - - su virtual candidato a lehendakari - -</concept>
+		<concept id="c_20">de legitimar</concept>
+		<concept id="c_21">nacionalismo en las urnas</concept>
+		<concept id="c_22">el</concept>
+		<concept id="c_23">lo</concept>
+		<concept id="c_24">PNV</concept>
+		<concept id="c_25">desgastar al PNV</concept>
+		<concept id="c_26">el documento que</concept>
+		<concept id="c_27">agosto</concept>
+		<concept id="c_28">lo</concept>
+		<concept id="c_29">omisión</concept>
+		<concept id="c_30">Aznar</concept>
+		<concept id="c_31">motivo</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 La brutal escalada terrorista ha puesto al PNV entre la espada etarra y la pétrea pared del Gobierno.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="aq0cs0">brutal</token><token pos="ncfs000">escalada</token><token pos="aq0cs0">terrorista</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_2" concept_ref3="c_3" concept_ref4="c_22" concept_ref5="c_24">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">puesto</token><token pos="spcms">al</token><mention concept_ref="c_24"><token pos="np00000">PNV</token></mention><token pos="sps00">entre</token><mention concept_ref="c_7"><token pos="da0fs0">la</token><token pos="ncfs000">espada</token></mention><token pos="aq0cs0">etarra</token><token pos="cc">y</token><mention concept_ref="c_2"><token pos="da0fs0">la</token><token pos="aq0fs0">pétrea</token><token pos="ncfs000">pared</token></mention><token pos="spcms">del</token><mention concept_ref="c_3"><token pos="np00000">Gobierno</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Architectural_part" head="pared del">
+				<argument type="Whole" dependent="Gobierno" />
+				<argument type="Descriptor" dependent="pétrea" /></frame>
+			<frame type="Change_position_on_a_scale" head="escalada">
+				<argument type="Item" dependent="terrorista" /></frame>
+			<frame type="Terrorism" head="terrorista" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Encorsetados por su presencia en el Pacto de Lizarra y por la falta de apoyo parlamentario, los nacionalistas vascos no abjuran del diálogo con HB, pero buscan una salida que el PP procura cegar.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="aq0mpp">Encorsetados</token><token pos="sps00">por</token><token pos="dp3cs0">su</token><token pos="ncfs000">presencia</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncfs000">Pacto</token><token pos="sps00">de</token><token pos="np00000">Lizarra</token><token pos="cc">y</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">falta</token><token pos="sps00">de</token><token pos="ncms000">apoyo</token><token pos="aq0ms0">parlamentario</token><token pos="fc">,</token><token pos="da0mp0">los</token><token pos="nccp000">nacionalistas</token><token pos="aq0mp0">vascos</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_22" concept_ref3="c_23" concept_ref4="c_28">
+			<token pos="rn">no</token><token pos="vmip3p0">abjuran</token><token pos="spcms">del</token><mention concept_ref="c_3"><token pos="ncms000">diálogo</token></mention><token pos="sps00">con</token><token pos="np00000">HB</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Means" head="por">
+				<argument type="Purpose" dependent="que el PP procura cegar" /></frame>
+			<frame type="Possession" head="falta">
+				<argument type="Possession" dependent="de apoyo parlamentario" />
+				<argument type="Possession" dependent="nacionalistas vascos no abjuran del diálogo con HB" /></frame>
+			<frame type="Presence" head="presencia">
+				<argument type="Entity" dependent="los" />
+				<argument type="Location" dependent="en el Pacto de" /></frame>
+			<frame type="Seeking_to_achieve" head="procura">
+				<argument type="Agent" dependent="PP" />
+				<argument type="State_of_affairs" dependent="abjuran del" /></frame>
+			<frame type="Supporting" head="de apoyo">
+				<argument type="Manner" dependent="parlamentario" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Durante la tregua, Jaime Mayor Oreja situaba al PNV en la encrucijada de regresar junto a los demócratas o seguir con los violentos.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="ncfp000">Jaime</token><token pos="aq0fp0">Mayor</token><token pos="ncfp000">Oreja</token>
+		</theme>
+		<rheme concept_ref1="c_24">
+			<token pos="vmii3s0">situaba</token><token pos="spcms">al</token><mention concept_ref="c_24"><token pos="np00000">PNV</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="regresar">
+				<argument type="Source" dependent="junto a los demócratas" /></frame>
+			<frame type="Leadership" head="Mayor">
+				<argument type="Governed" dependent="Jaime" />
+				<argument type="Leader" dependent="Oreja" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="PNV" />
+				<argument type="Ground" dependent="encrucijada de regresar junto a los demócratas o seguir con los violentos" /></frame>
+			<main_frame type="Placing" head="situaba al">
+				<argument type="Theme" dependent="Mayor Oreja" />
+				<argument type="Goal" dependent="al PNV en la encrucijada de regresar junto a los demócratas o seguir con los violentos" /></main_frame>
+			<frame type="Process_continue" head="seguir">
+				<argument type="Event" dependent="con los violentos" /></frame>
+			<frame type="Temporal_collocation" head="Durante">
+				<argument type="Trajector_event" dependent=", Jaime Mayor Oreja situaba al PNV en la encrucijada de regresar junto a los demócratas o seguir con los violentos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Tras 12 asesinatos en siete meses, el Gobierno crucifica sin complejos a Xabier Arzalluz acusándole de legitimar a ETA.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">el</token><token pos="np00000">Gobierno</token>
+		</theme>
+		<rheme concept_ref1="c_13" concept_ref2="c_20">
+			<token pos="vmip3s0">crucifica</token><token pos="sps00">a</token><mention concept_ref="c_13"><token pos="np0000l">Xabier</token><token pos="np0000l">Arzalluz</token></mention><token pos="vmg0000">acusándole</token><mention concept_ref="c_20"><token pos="sps00">de</token><token pos="vmn0000">legitimar</token></mention><token pos="sps00">a</token><token pos="np00000">ETA</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Judgment_communication" head="acusándole">
+				<argument type="Time" dependent="Tras 12 asesinatos en siete meses" />
+				<argument type="Medium" dependent="Gobierno crucifica sin complejos a Xabier Arzalluz" />
+				<argument type="Evaluee" dependent="el" />
+				<argument type="Reason" dependent="de legitimar" /></main_frame>
+			<frame type="Killing" head="asesinatos">
+				<argument type="Degree" dependent="12" />
+				<argument type="Time" dependent="en siete meses" /></frame>
+			<frame type="Leadership" head="Gobierno" />
+			<frame type="Locale_by_use" head="complejos" />
+			<frame type="Relative_time" head="en">
+				<argument type="Landmark_occasion" dependent="12 asesinatos en siete meses" />
+				<argument type="Focal_occasion" dependent="Gobierno crucifica sin complejos a Xabier Arzalluz acusándole de legitimar a" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Una operación cuyo objetivo último es derrotar al nacionalismo en las urnas.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="pr0ms000">cuyo</token><token pos="ncms000">objetivo</token><token pos="ao0ms0">último</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_15" concept_ref3="c_21">
+			<token pos="vsip3s0">es</token><token pos="vmn0000">derrotar</token><token pos="spcms">al</token><mention concept_ref="c_3"><token pos="ncms000">nacionalismo</token></mention><token pos="sps00">en</token><mention concept_ref="c_15"><token pos="da0fp0">las</token><token pos="ncfp000">urnas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Beat_opponent" head="derrotar">
+				<argument type="Competition" dependent="nacionalismo en las urnas" /></main_frame>
+			<frame type="Businesses" head="operación">
+				<argument type="Product" dependent="cuyo objetivo último es derrotar al nacionalismo en las urnas" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="Una operación cuyo objetivo último es derrotar al nacionalismo en" />
+				<argument type="Ground" dependent="las urnas" /></frame>
+			<frame type="Purpose" head="objetivo">
+				<argument type="Goal" dependent="operación" />
+				<argument type="Agent" dependent="cuyo" />
+				<argument type="Goal" dependent="derrotar al nacionalismo en las urnas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La ofensiva etarra anima al Gobierno a seguir criminalizando al PNV, mientras el PSOE intenta mediar cara a futuros pactos.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0fs0">La</token><token pos="ncfs000">ofensiva</token><token pos="aq0cs0">etarra</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_21" concept_ref3="c_24">
+			<token pos="vmip3s0">anima</token><token pos="spcms">al</token><mention concept_ref="c_3"><token pos="np00000">Gobierno</token></mention><token pos="sps00">a</token><token pos="vmn0000">seguir</token><mention concept_ref="c_21"><token pos="vmg0000">criminalizando</token><token pos="spcms">al</token><token pos="np00000">PNV</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="ofensiva">
+				<argument type="Assailant" dependent="al" /></frame>
+			<frame type="Attempt" head="intenta">
+				<argument type="Agent" dependent="el" />
+				<argument type="Goal" dependent="mediar cara a futuros pactos" /></frame>
+			<frame type="Body_parts" head="cara">
+				<argument type="Body_part" dependent="cara a futuros pactos" /></frame>
+			<frame type="Leadership" head="Gobierno" />
+			<main_frame type="Process_continue" head="seguir">
+				<argument type="Event" dependent="criminalizando al PNV" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ETA ha confirmado este verano las más macabras previsiones: entre julio y agosto, siete muertos, 20 heridos y varios atentados frustrados por el azar o la acción policial.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="np00000">ETA</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_12" concept_ref3="c_7" concept_ref4="c_0" concept_ref5="c_21" concept_ref6="c_22" concept_ref7="c_27">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">confirmado</token><mention concept_ref="c_3"><token pos="dd0ms0">este</token><token pos="ncms000">verano</token></mention><mention concept_ref="c_12"><token pos="da0fp0">las</token><token pos="rg">más</token><token pos="aq0fp0">macabras</token><token pos="ncfp000">previsiones</token></mention><token pos="sps00">entre</token><token pos="ncms000">julio</token><token pos="cc">y</token><mention concept_ref="c_27"><token pos="ncms000">agosto</token></mention><token pos="fc">,</token><token pos="dn0cp0">siete</token><token pos="ncmp000">muertos</token><token pos="fc">,</token><token pos="z">19</token><token pos="ncmp000">heridos</token><token pos="cc">y</token><mention concept_ref="c_7"><token pos="di0mp0">varios</token><token pos="ncmp000">atentados</token></mention><token pos="aq0mpp">frustrados</token><token pos="sps00">por</token><mention concept_ref="c_22"><token pos="da0ms0">el</token></mention><token pos="ncms000">azar</token><token pos="cc">o</token><token pos="da0fs0">la</token><token pos="ncfs000">acción</token><token pos="aq0cs0">policial</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="atentados" />
+			<frame type="Calendric_unit" head="agosto" />
+			<frame type="Calendric_unit" head="verano">
+				<argument type="Count" dependent="el" />
+				<argument type="Count" dependent="este" /></frame>
+			<frame type="Cardinal_numbers" head="siete">
+				<argument type="Unit" dependent="muertos" /></frame>
+			<frame type="Cause_harm" head="heridos">
+				<argument type="Degree" dependent="20" /></frame>
+			<frame type="Dead_or_alive" head="muertos">
+				<argument type="Degree" dependent="siete" /></frame>
+			<frame type="Intentionally_act" head="acción">
+				<argument type="Domain" dependent="policial" /></frame>
+			<frame type="Interior_profile_relation" head="entre">
+				<argument type="Ground" dependent="julio" /></frame>
+			<frame type="Law_enforcement_agency" head="policial" />
+			<main_frame type="Likelihood" head="ha">
+				<argument type="Hypothetical_event" dependent="acción policial" /></main_frame>
+			<frame type="Predicting" head="previsiones" />
+			<frame type="Quantified_mass" head="varios">
+				<argument type="Individuals" dependent="atentados" /></frame>
+			<main_frame type="Verification" head="confirmado">
+				<argument type="Inspector" dependent="el" />
+				<argument type="Unconfirmed_content" dependent="este verano las más macabras previsiones" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Como antes de la ya olvidada tregua, cada asesinato ha ido acompañado de un cansino rosario de condenas, pero también del creciente hostigamiento político a un Partido Nacionalista Vasco ( PNV ) que, si surte efectos la estrategia del Gobierno, pagará muy cara la firma que estampó en Lizarra.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="di0cs0">cada</token><token pos="ncms000">asesinato</token>
+		</theme>
+		<rheme concept_ref1="c_19" concept_ref2="c_11" concept_ref3="c_7">
+			<token pos="cs">Como</token><token pos="rg">antes</token><token pos="sps00">de</token><mention concept_ref="c_19"><token pos="da0fs0">la</token><token pos="rg">ya</token><token pos="aq0fsp">olvidada</token><token pos="ncfs000">tregua</token></mention><token pos="vaip3s0">ha</token><token pos="vmp00sm">ido</token><token pos="aq0msp">acompañado</token><token pos="sps00">de</token><mention concept_ref="c_11"><token pos="di0ms0">un</token><token pos="aq0ms0">cansino</token><token pos="ncms000">rosario</token></mention><token pos="sps00">de</token><mention concept_ref="c_7"><token pos="ncfp000">condenas</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Biological_urge" head="estampó">
+				<argument type="Experiencer" dependent="rosario de" /></frame>
+			<frame type="Change_position_on_a_scale" head="creciente">
+				<argument type="Item" dependent="hostigamiento político a un Partido Nacionalista" /></frame>
+			<frame type="Commerce_pay" head="pagará">
+				<argument type="Goods" dependent="surte efectos la estrategia" />
+				<argument type="Goods" dependent="la firma que estampó en" /></frame>
+			<frame type="Killing" head="asesinato" />
+			<frame type="Objective_influence" head="efectos">
+				<argument type="Manner" dependent="estrategia" /></frame>
+			<frame type="Remembering_experience" head="olvidada">
+				<argument type="Salient_entity" dependent="estampó" /></frame>
+			<frame type="Sign_agreement" head="la firma">
+				<argument type="Agreement" dependent="que estampó en" /></frame>
+			<frame type="Taking_time" head="estampó" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El ministro del Interior, Jaime Mayor Oreja, lo reconoció sin ambages el pasado julio, en una comparecencia parlamentaria: "Neutralizar la ofensiva soberanista del nacionalismo vasco es una política de Estado".
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="da0ms0">El</token><token pos="ncms000">ministro</token><token pos="spcms">del</token><token pos="np00000">Interior</token><token pos="fc">,</token><token pos="ncfp000">Jaime</token><token pos="aq0fp0">Mayor</token><token pos="ncfp000">Oreja</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_22" concept_ref3="c_23" concept_ref4="c_28">
+			<token pos="pp3msa00">lo</token><token pos="vmis3s0">reconoció</token><mention concept_ref="c_22"><token pos="da0ms0">el</token></mention><token pos="aq0msp">pasado</token><mention concept_ref="c_3"><token pos="ncms000">julio</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="ofensiva">
+				<argument type="Manner" dependent="de" />
+				<argument type="Victim" dependent="nacionalismo" /></frame>
+			<main_frame type="Becoming_aware" head="reconoció">
+				<argument type="Phenomenon" dependent="lo" /></main_frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="ministro del Interior , Jaime Mayor Oreja , lo reconoció sin ambages el pasado julio" />
+				<argument type="Ground" dependent="comparecencia parlamentaria" /></frame>
+			<frame type="Law" head="política de" />
+			<frame type="Leadership" head="Mayor">
+				<argument type="Governed" dependent="Jaime" />
+				<argument type="Leader" dependent="Oreja" /></frame>
+			<frame type="Leadership" head="ministro">
+				<argument type="Governed" dependent="del Interior" /></frame>
+			<frame type="Relative_time" head="pasado">
+				<argument type="Focal_occasion" dependent="julio" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La afirmación del titular de Interior obedece a la convicción, compartida por José María Aznar, de que la organización terrorista ETA no desaparecerá jamás mientras cuente con la complicidad, siquiera por omisión, de un Gobierno vasco controlado por el nacionalismo.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="da0fs0">La</token><token pos="ncfs000">afirmación</token><token pos="spcms">del</token><token pos="ncms000">titular</token><token pos="sps00">de</token><token pos="np00000">Interior</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_15" concept_ref3="c_2" concept_ref4="c_9" concept_ref5="c_12" concept_ref6="c_21" concept_ref7="c_22" concept_ref8="c_29" concept_ref9="c_30">
+			<token pos="vmip3s0">obedece</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">convicción</token><token pos="fc">,</token><token pos="aq0fsp">compartida</token><token pos="sps00">por</token><mention concept_ref="c_2"><token pos="ncfs000">José</token><token pos="ncms000">María</token><token pos="np00000">Aznar</token></mention><token pos="fc">,</token><token pos="sps00">de</token><token pos="cs">que</token><mention concept_ref="c_9"><token pos="da0fs0">la</token><token pos="ncfs000">organización</token></mention><token pos="aq0cs0">terrorista</token><token pos="np00000">ETA</token><token pos="rn">no</token><token pos="vmif3s0">desaparecerá</token><token pos="rg">jamás</token><token pos="cs">mientras</token><token pos="vmsp3s0">cuente</token><token pos="sps00">con</token><mention concept_ref="c_12"><token pos="da0fs0">la</token><token pos="ncfs000">complicidad</token></mention><token pos="fc">,</token><token pos="rg">siquiera</token><token pos="sps00">por</token><mention concept_ref="c_29"><token pos="ncfs000">omisión</token></mention><token pos="fc">,</token><token pos="sps00">de</token><token pos="di0ms0">un</token><mention concept_ref="c_3"><token pos="np00000">Gobierno</token></mention><token pos="aq0ms0">vasco</token><token pos="aq0msp">controlado</token><token pos="sps00">por</token><mention concept_ref="c_22"><token pos="da0ms0">el</token></mention><token pos="ncms000">nacionalismo</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Compliance" head="cuente">
+				<argument type="Protagonist" dependent="afirmación del titular de Interior" />
+				<argument type="Norm" dependent="la convicción" /></main_frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Governed" dependent="vasco" /></frame>
+			<frame type="Organization" head="organización">
+				<argument type="Members" dependent="terrorista" /></frame>
+			<frame type="Terrorism" head="terrorista" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El desafío del Ejecutivo central, pues, es el mismo que el del Partido Popular ( PP ): desgastar al PNV hasta arrebatarle en las urnas la hegemonía política del País Vasco.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="da0ms0">El</token><token pos="ncms000">desafío</token><token pos="spcms">del</token><token pos="np00000">Ejecutivo</token><token pos="aq0cs0">central</token><token pos="cs">pues</token>
+		</theme>
+		<rheme concept_ref1="c_15" concept_ref2="c_3" concept_ref3="c_12" concept_ref4="c_7" concept_ref5="c_22" concept_ref6="c_24" concept_ref7="c_25" concept_ref8="c_29">
+			<token pos="vsip3s0">es</token><token pos="da0ms0">el</token><token pos="pi0ms000">mismo</token><token pos="cs">que</token><token pos="da0ms0">el</token><token pos="spcms">del</token><token pos="ncms000">Partido</token><token pos="aq0ms0">Popular</token><token pos="fpa">(</token><token pos="np00000">PP</token><token pos="fpt">)</token><token pos="fd">:</token><mention concept_ref="c_25"><token pos="vmn0000">desgastar</token><token pos="spcms">al</token><token pos="np00000">PNV</token></mention><token pos="sps00">hasta</token><token pos="vmn0000">arrebatarle</token><token pos="sps00">en</token><mention concept_ref="c_15"><token pos="da0fp0">las</token><token pos="ncfp000">urnas</token></mention><mention concept_ref="c_12"><token pos="da0fs0">la</token><token pos="ncfs000">hegemonía</token></mention><token pos="aq0fs0">política</token><token pos="spcms">del</token><mention concept_ref="c_7"><token pos="np00000">País</token><token pos="ncms000">Vasco</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Difficulty" head="desafío">
+				<argument type="Activity" dependent="del Ejecutivo central" /></main_frame>
+			<frame type="Identicality" head="el mismo" />
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="es" />
+				<argument type="Ground" dependent="las urnas" /></frame>
+			<frame type="Part_inner_outer" head="central" />
+			<main_frame type="Sleep" head="desgastar">
+				<argument type="Sleeper" dependent="PNV" /></main_frame>
+			<frame type="Taking_time" head="hasta">
+				<argument type="Activity" dependent="hegemonía política del País" />
+				<argument type="Time_length" dependent="desgastar" />
+				<argument type="Activity" dependent="en las urnas la" /></frame>
+			<frame type="Time_vector" head="hasta">
+				<argument type="Event" dependent=") : desgastar al PNV" />
+				<argument type="Landmark_event" dependent="hegemonía política del País" /></frame>
+			<main_frame type="Wearing" head="desgastar">
+				<argument type="Clothing" dependent="desgastar al PNV" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Puestos a desangrar al herido, lo primero es no permitir que sanen sus cicatrices, hurgar en ellas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_mark" head="cicatrices">
+				<argument type="Possessor" dependent="sus" /></frame>
+			<frame type="Cause_harm" head="herido" />
+			<frame type="Entity" head="que" />
+			<frame type="Ordinal_numbers" head="primero">
+				<argument type="Type" dependent="que" /></frame>
+			<frame type="Preventing_or_letting" head="permitir">
+				<argument type="Event" dependent="sanen sus cicatrices" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El partido que con pulso cada vez menos firme dirige Xabier Arzalluz ha dialogado con Herri Batasuna ( HB ) desde la noche de los tiempos democráticos, sin que ello fuera un obstáculo para que, en 1996, Aznar suscribiera con él un acuerdo de gobernabilidad que acabó resultando muy fructífero para las arcas de Euskadi.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="da0ms0">El</token><token pos="ncms000">partido</token><token pos="pr0cn000">que</token><token pos="sps00">con</token><token pos="ncms000">pulso</token><token pos="di0cs0">cada</token><token pos="ncfs000">vez</token><token pos="rg">menos</token><token pos="aq0cs0">firme</token><token pos="vmip3s0">dirige</token><token pos="np0000l">Xabier</token><token pos="np0000l">Arzalluz</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_3" concept_ref3="c_15" concept_ref4="c_22" concept_ref5="c_23" concept_ref6="c_28" concept_ref7="c_30">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">dialogado</token><token pos="sps00">con</token><mention concept_ref="c_2"><token pos="np0000l">Herri</token><token pos="np0000l">Batasuna</token></mention><token pos="fpa">(</token><token pos="np00000">HB</token><token pos="fpt">)</token><token pos="sps00">desde</token><mention concept_ref="c_3"><token pos="da0fs0">la</token><token pos="ncfs000">noche</token></mention><token pos="sps00">de</token><mention concept_ref="c_15"><token pos="da0mp0">los</token><token pos="ncmp000">tiempos</token></mention><token pos="aq0mp0">democráticos</token><token pos="sps00">sin</token><token pos="cs">que</token><token pos="pp3ns000">ello</token><token pos="vssi3s0">fuera</token><token pos="di0ms0">un</token><token pos="ncms000">obstáculo</token><token pos="sps00">para</token><token pos="cs">que</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="z">1996</token><token pos="fc">,</token><mention concept_ref="c_30"><token pos="np00000">Aznar</token></mention><token pos="vmsi3s0">suscribiera</token><token pos="sps00">con</token><token pos="pp3ms000">él</token><token pos="di0ms0">un</token><token pos="ncms000">acuerdo</token><token pos="sps00">de</token><token pos="ncfs000">gobernabilidad</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido" />
+			<frame type="Businesses" head="firme">
+				<argument type="Product" dependent="pulso" /></frame>
+			<frame type="Calendric_unit" head="noche">
+				<argument type="Salient_event" dependent="tiempos democráticos" /></frame>
+			<frame type="Evidence" head="firme">
+				<argument type="Proposition" dependent="un acuerdo de gobernabilidad" />
+				<argument type="Support" dependent="ello" />
+				<argument type="Proposition" dependent="muy fructífero para las arcas de Euskadi" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="partido que con pulso cada vez menos firme dirige Xabier Arzalluz" />
+				<argument type="Ground" dependent="dialogado con Herri Batasuna ( HB )" /></frame>
+			<frame type="Make_agreement_on_action" head="un acuerdo">
+				<argument type="Obligation" dependent="de gobernabilidad" /></frame>
+			<frame type="Process_end" head="acabó">
+				<argument type="Time" dependent="en 1996" />
+				<argument type="Process" dependent="un acuerdo de gobernabilidad que" />
+				<argument type="Process" dependent="resultando muy fructífero para las arcas de Euskadi" /></frame>
+			<frame type="Sign_agreement" head="firme">
+				<argument type="Signatory" dependent="Aznar" />
+				<argument type="Agreement" dependent="con él" />
+				<argument type="Time" dependent="en 1996" /></frame>
+			<frame type="Time_vector" head="desde">
+				<argument type="Event" dependent="partido que con pulso cada vez menos firme dirige Xabier Arzalluz ha dialogado con Herri Batasuna ( HB )" />
+				<argument type="Landmark_event" dependent="noche de los tiempos democráticos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ahora, sin embargo, la mera voluntad de no excluir a la coalición aberzale es motivo suficiente para satanizar al PNV.
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="da0fs0">la</token><token pos="aq0fs0">mera</token><token pos="ncfs000">voluntad</token><token pos="sps00">de</token><token pos="rn">no</token><token pos="vmn0000">excluir</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">coalición</token><token pos="aq0cs0">aberzale</token>
+		</theme>
+		<rheme concept_ref1="c_24" concept_ref2="c_31">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_31"><token pos="ncms000">motivo</token></mention><token pos="aq0cs0">suficiente</token><token pos="sps00">para</token><token pos="vmn0000">satanizar</token><token pos="spcms">al</token><mention concept_ref="c_24"><token pos="np00000">PNV</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Alliance" head="coalición">
+				<argument type="Descriptor" dependent="de" /></frame>
+			<frame type="Reason" head="motivo">
+				<argument type="Action" dependent="para satanizar al PNV" /></frame>
+			<frame type="Sufficiency" head="suficiente">
+				<argument type="Item" dependent="motivo" />
+				<argument type="Enabled_situation" dependent="para satanizar al PNV" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Hasta hace escasas semanas, el Gobierno no se cansaba de exigir a los peneuvistas que enterraran el Pacto de Lizarra, el documento que precedió a la tregua de ETA y en el que todas las fuerzas y asociaciones nacionalistas esbozaron un plan de paz basado en la construcción nacional de Euskal Herria.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">el</token><token pos="np00000">Gobierno</token>
+		</theme>
+		<rheme concept_ref1="c_15" concept_ref2="c_19" concept_ref3="c_3" concept_ref4="c_0" concept_ref5="c_9" concept_ref6="c_17" concept_ref7="c_21" concept_ref8="c_22" concept_ref9="c_23" concept_ref10="c_26" concept_ref11="c_28" concept_ref12="c_30">
+			<token pos="rn">no</token><token pos="p0300000">se</token><token pos="vmii3s0">cansaba</token><token pos="sps00">de</token><token pos="vmn0000">exigir</token><token pos="sps00">a</token><mention concept_ref="c_15"><token pos="da0mp0">los</token><token pos="nccp000">peneuvistas</token></mention><token pos="cs">que</token><token pos="vmsi3p0">enterraran</token><mention concept_ref="c_19"><token pos="da0ms0">el</token><token pos="ncfs000">Pacto</token><token pos="sps00">de</token><token pos="np00000">Lizarra</token></mention><token pos="fc">,</token><mention concept_ref="c_3"><token pos="da0ms0">el</token><token pos="ncms000">documento</token></mention><token pos="pr0cn000">que</token><token pos="vmis3s0">precedió</token><token pos="sps00">a</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="ncfs000">tregua</token></mention><token pos="sps00">de</token><token pos="np00000">ETA</token><token pos="cc">y</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="pr0cn000">que</token><mention concept_ref="c_21"><token pos="di0fp0">todas</token><token pos="da0fp0">las</token><token pos="ncfp000">fuerzas</token><token pos="cc">y</token><token pos="ncfp000">asociaciones</token><token pos="aq0cp0">nacionalistas</token><token pos="vmis3p0">esbozaron</token><token pos="di0ms0">un</token><token pos="ncms000">plan</token><token pos="sps00">de</token><token pos="ncfs000">paz</token><token pos="aq0msp">basado</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">construcción</token><token pos="aq0cs0">nacional</token></mention><token pos="sps00">de</token><mention concept_ref="c_17"><token pos="np0000l">Euskal</token><token pos="np0000l">Herria</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Building" head="construcción">
+				<argument type="Manner" dependent="nacional" />
+				<argument type="Created_entity" dependent="cansaba de" /></frame>
+			<frame type="Calendric_unit" head="semanas">
+				<argument type="Count" dependent="escasas" /></frame>
+			<frame type="Documents" head="documento" />
+			<frame type="Leadership" head="Gobierno" />
+			<frame type="Military" head="fuerzas">
+				<argument type="Domain" dependent="nacionalistas" /></frame>
+			<frame type="Organization" head="asociaciones" />
+			<frame type="Political_locales" head="nacional" />
+			<frame type="Purpose" head="plan" />
+			<frame type="Quantified_mass" head="escasas">
+				<argument type="Individuals" dependent="semanas" /></frame>
+			<main_frame type="Relative_time" head="precedió">
+				<argument type="Focal_occasion" dependent="el documento que" />
+				<argument type="Focal_occasion" dependent="todas las fuerzas y asociaciones nacionalistas esbozaron un plan de paz basado en la construcción nacional" /></main_frame>
+			<main_frame type="Summarizing" head="precedió">
+				<argument type="Communicator" dependent="todas las fuerzas y asociaciones nacionalistas" />
+				<argument type="State_of_affairs" dependent="un plan de paz basado en la construcción nacional de" /></main_frame>
+			<frame type="Time_vector" head="se">
+				<argument type="Distance" dependent="escasas semanas ," />
+				<argument type="Event" dependent=", el Gobierno no se cansaba de exigir a los peneuvistas que enterraran el Pacto de Lizarra , el documento que precedió a la tregua de ETA y en el que todas las fuerzas y asociaciones nacionalistas esbozaron un plan de paz basado en la construcción nacional de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 De nada sirvió que, el pasado 15 de agosto, el propio Arzalluz declarara que la violenta reaparición de ETA había "invalidado" el foro de Lizarra: el PP le exigió a continuación que abdicara también de los principios que inspiraron aquel acuerdo.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="da0ms0">el</token><token pos="aq0ms0">propio</token><token pos="np00000">Arzalluz</token>
+		</theme>
+		<rheme concept_ref1="c_9" concept_ref2="c_4" concept_ref3="c_3" concept_ref4="c_22" concept_ref5="c_30" concept_ref6="c_31">
+			<token pos="vmsi3s0">declarara</token><mention concept_ref="c_9"><token pos="da0fs0">la</token><token pos="aq0fs0">violenta</token><token pos="ncfs000">reaparición</token></mention><token pos="sps00">de</token><token pos="np00000">ETA</token><token pos="vaii3s0">había</token><token pos="fe">quot;</token><token pos="vmp00sm">invalidado</token><token pos="fe">quot;</token><mention concept_ref="c_22"><token pos="da0ms0">el</token></mention><token pos="ncms000">foro</token><token pos="sps00">de</token><mention concept_ref="c_30"><token pos="np00000">Lizarra</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Make_agreement_on_action" head="aquel acuerdo" />
+			<frame type="Request" head="exigió">
+				<argument type="Speaker" dependent="PP le" />
+				<argument type="Addressee" dependent="aquel" />
+				<argument type="Message" dependent="abdicara también de los principios que inspiraron aquel acuerdo" /></frame>
+			<main_frame type="Statement" head="declarara">
+				<argument type="Time" dependent="15 de agosto" />
+				<argument type="Speaker" dependent="propio Arzalluz" />
+				<argument type="Message" dependent="que la violenta reaparición de ETA había  quot ; invalidado  quot ; el foro de Lizarra : el PP le exigió a continuación que" /></main_frame>
+			<frame type="Subjective_influence" head="inspiraron">
+				<argument type="Cognizer" dependent="los principios que" />
+				<argument type="Product" dependent="aquel acuerdo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Es decir, que renunciara a hablar con HB mientras esta coalición no condene los atentados etarras.
+		</str>
+		<theme>
+			<token pos="np0000o">Es</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Alliance" head="coalición" />
+			<frame type="Attack" head="atentados" />
+			<frame type="Chatting" head="hablar">
+				<argument type="Interlocutors" dependent="Es" />
+				<argument type="Topic" dependent="a" /></frame>
+			<frame type="Direction" head="los">
+				<argument type="Distance" dependent="Es" />
+				<argument type="Path" dependent="a hablar" />
+				<argument type="Independent_variable" dependent="a" /></frame>
+			<frame type="Giving" head="los">
+				<argument type="Donor" dependent="Es" />
+				<argument type="Theme" dependent="a hablar con HB mientras esta coalición no condene los atentados etarras" /></frame>
+			<frame type="Judgment_communication" head="condene los">
+				<argument type="Evaluee" dependent="atentados" /></frame>
+			<frame type="Statement" head="decir">
+				<argument type="Speaker" dependent="que" />
+				<argument type="Message" dependent="que renunciara a hablar con HB mientras esta coalición no condene los atentados etarras" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La incesante presión del Ejecutivo está teniendo un doble efecto en las filas peneuvistas.
+		</str>
+		<theme concept_ref="c_14">
+			<token pos="da0fs0">La</token><token pos="aq0cs0">incesante</token><token pos="ncfs000">presión</token><token pos="spcms">del</token><token pos="np00000">Ejecutivo</token>
+		</theme>
+		<rheme concept_ref1="c_4">
+			<token pos="vmip3s0">está</token><token pos="vmg0000">teniendo</token><mention concept_ref="c_4"><token pos="di0ms0">un</token><token pos="aq0cs0">doble</token><token pos="ncms000">efecto</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attempt_suasion" head="presión" />
+			<frame type="Objective_influence" head="efecto">
+				<argument type="Dependent_entity" dependent="en las filas" /></frame>
+			<main_frame type="Possession" head="teniendo">
+				<argument type="Owner" dependent="incesante presión del Ejecutivo" />
+				<argument type="Possession" dependent="un doble efecto en las filas" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por una parte, al exigir al PNV una rectificación en toda regla de la estrategia política que a principios de año aprobó en su asamblea, propicia que los dirigentes nacionalistas se enroquen en sus postulados para conjurar toda imagen de claudicación ; por la otra, alienta a los disidentes a plantar cara a Arzalluz y reforzar ante el electorado la imagen de división interna.
+		</str>
+		<theme concept_ref="c_15">
+			<token pos="da0mp0">los</token><token pos="nccp000">dirigentes</token><token pos="aq0cp0">nacionalistas</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_9">
+			<token pos="p0300000">se</token><token pos="vmsp3p0">enroquen</token><token pos="sps00">en</token><token pos="dp3cp0">sus</token><token pos="ncmp000">postulados</token><token pos="sps00">para</token><token pos="vmn0000">conjurar</token><mention concept_ref="c_7"><token pos="di0fs0">toda</token><token pos="ncfs000">imagen</token></mention><token pos="sps00">de</token><mention concept_ref="c_9"><token pos="ncfs000">claudicación</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="asamblea" />
+			<frame type="Body_parts" head="cara">
+				<argument type="Descriptor" dependent="una" /></frame>
+			<frame type="Calendric_unit" head="año" />
+			<frame type="Deny_or_grant_permission" head="aprobó">
+				<argument type="Protagonist" dependent="se" />
+				<argument type="Action" dependent="a principios de año aprobó en su asamblea" /></frame>
+			<frame type="Impression" head="imagen">
+				<argument type="Figure" dependent="de división interna" /></frame>
+			<frame type="Increment" head="otra" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Time" dependent="a principios de año" />
+				<argument type="Ground" dependent="su asamblea" /></frame>
+			<frame type="Leadership" head="dirigentes">
+				<argument type="Domain" dependent="nacionalistas" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="principios de año aprobó en su asamblea" />
+				<argument type="Figure" dependent="propicia que los dirigentes nacionalistas se enroquen en sus postulados para conjurar toda imagen de claudicación ; por" /></frame>
+			<frame type="Non-commutative_process" head="división" />
+			<frame type="Spatial_contact" head="en">
+				<argument type="Ground" dependent="una" /></frame>
+			<frame type="Subjective_influence" head="propicia">
+				<argument type="Behavior" dependent="la otra" />
+				<argument type="Cognizer" dependent="se" />
+				<argument type="Behavior" dependent="Arzalluz y reforzar ante el electorado la imagen de división interna" /></frame>
+			<frame type="Suitability" head="rectificación">
+				<argument type="Evaluee" dependent="PNV" /></frame>
+			<frame type="Temporal_subregion" head="a principios">
+				<argument type="Time_period" dependent="año" /></frame>
+			<frame type="Time_vector" head="ante">
+				<argument type="Event" dependent="Arzalluz y reforzar ante el electorado la imagen de división interna" />
+				<argument type="Landmark_event" dependent="el electorado" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El parlamentario Joseba Arregi, los hermanos Guevara y hasta Iñaki Anasagasti han levantado la voz, pero Arzalluz ha acallado las críticas de forma abrupta: "Donde hay patrón no manda marinero".
+		</str>
+		<theme concept_ref="c_16">
+			<token pos="da0ms0">El</token><token pos="ncms000">parlamentario</token><token pos="np0000l">Joseba</token><token pos="np0000l">Arregi</token><token pos="fc">,</token><token pos="da0mp0">los</token><token pos="ncmp000">hermanos</token><token pos="np00000">Guevara</token><token pos="cc">y</token><token pos="rg">hasta</token><token pos="np0000l">Iñaki</token><token pos="np0000l">Anasagasti</token>
+		</theme>
+		<rheme>
+			<token pos="vaip3p0">han</token><token pos="vmp00sm">levantado</token><token pos="da0fs0">la</token><token pos="ncfs000">voz</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Causation" head="levantado">
+				<argument type="Cause" dependent="parlamentario Joseba Arregi , los hermanos Guevara y hasta Iñaki Anasagasti han" />
+				<argument type="Effect" dependent="han levantado la voz , pero Arzalluz ha acallado las críticas de forma abrupta" /></main_frame>
+			<frame type="Kinship" head="hermanos">
+				<argument type="Ego" dependent="Arregi" /></frame>
+			<frame type="Leadership" head="manda">
+				<argument type="Leader" dependent="abrupta" />
+				<argument type="Governed" dependent="marinero" /></frame>
+			<frame type="Locative_relation" head="hay">
+				<argument type="Figure" dependent="Donde" />
+				<argument type="Ground" dependent="hay patrón no manda marinero" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Desde el palacio de Ajuria Enea, el lehendakari Juan José Ibarretxe se ve obligado a hacer toda clase de malabarismos para intentar salvar su compleja situación: desprovisto ya de la muleta de Euskal Herritarrok ( EH ), la marca electoral de HB, en las próximas semanas debe afrontar un debate de política general en el Parlamento de Vitoria y una votación presupuestaria que a buen seguro perderá.
+		</str>
+		<theme concept_ref="c_17">
+			<token pos="da0ms0">el</token><token pos="nccs000">lehendakari</token><token pos="ncfs000">Juan</token><token pos="np0000l">José</token><token pos="np0000l">Ibarretxe</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_0" concept_ref3="c_5" concept_ref4="c_8" concept_ref5="c_3" concept_ref6="c_15" concept_ref7="c_12" concept_ref8="c_20" concept_ref9="c_21" concept_ref10="c_22">
+			<token pos="p0300000">se</token><token pos="vmip3s0">ve</token><token pos="aq0msp">obligado</token><token pos="sps00">a</token><token pos="vmn0000">hacer</token><mention concept_ref="c_7"><token pos="di0fs0">toda</token><token pos="ncfs000">clase</token></mention><token pos="sps00">de</token><token pos="ncmp000">malabarismos</token><token pos="sps00">para</token><token pos="vmn0000">intentar</token><mention concept_ref="c_21"><token pos="vmn0000">salvar</token><token pos="dp3cs0">su</token><token pos="aq0fs0">compleja</token><token pos="ncfs000">situación</token></mention><token pos="fd">:</token><token pos="aq0msp">desprovisto</token><token pos="rg">ya</token><token pos="sps00">de</token><mention concept_ref="c_5"><token pos="da0fs0">la</token><token pos="ncfs000">muleta</token></mention><token pos="sps00">de</token><mention concept_ref="c_8"><token pos="np0000l">Euskal</token><token pos="np0000l">Herritarrok</token></mention><token pos="fpa">(</token><token pos="np00000">EH</token><token pos="fpt">)</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="ncfs000">marca</token><token pos="aq0cs0">electoral</token><token pos="sps00">de</token><token pos="np00000">HB</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="da0fp0">las</token><token pos="aq0fp0">próximas</token><token pos="ncfp000">semanas</token><token pos="vmip3s0">debe</token><token pos="vmn0000">afrontar</token><mention concept_ref="c_3"><token pos="di0ms0">un</token><token pos="ncms000">debate</token></mention><token pos="sps00">de</token><mention concept_ref="c_15"><token pos="ncfs000">política</token></mention><token pos="aq0cs0">general</token><token pos="sps00">en</token><mention concept_ref="c_22"><token pos="da0ms0">el</token></mention><token pos="np0000o">Parlamento</token><token pos="sps00">de</token><token pos="np0000l">Vitoria</token><token pos="cc">y</token><mention concept_ref="c_12"><token pos="di0fs0">una</token><token pos="ncfs000">votación</token></mention><token pos="aq0fs0">presupuestaria</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Arriving" head="afrontar" />
+			<main_frame type="Attempt" head="intentar">
+				<argument type="Goal" dependent="salvar su compleja situación" /></main_frame>
+			<frame type="Buildings" head="palacio">
+				<argument type="Name" dependent="de Euskal" /></frame>
+			<frame type="Calendric_unit" head="semanas">
+				<argument type="Relative_time" dependent="afrontar" /></frame>
+			<frame type="Causation" head="obligado">
+				<argument type="Effect" dependent="el lehendakari Juan José Ibarretxe se" />
+				<argument type="Effect" dependent="a hacer toda clase de malabarismos para intentar salvar su compleja situación :" /></frame>
+			<main_frame type="Confronting_problem" head="afrontar">
+				<argument type="Agent" dependent="la marca electoral de HB , en las próximas semanas" />
+				<argument type="Issue" dependent="política general en" /></main_frame>
+			<frame type="Discussion" head="debate">
+				<argument type="Topic" dependent="política general en" /></frame>
+			<frame type="Earnings_and_losses" head="perderá">
+				<argument type="Earnings" dependent=", la marca electoral de HB , en las próximas semanas debe afrontar un debate de política general en el Parlamento de Vitoria y una votación presupuestaria que a" /></frame>
+			<frame type="Intentionally_act" head="de">
+				<argument type="Agent" dependent="el lehendakari Juan José Ibarretxe se" />
+				<argument type="Act" dependent="toda clase de malabarismos para intentar salvar su compleja situación" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="debate de política general" />
+				<argument type="Ground" dependent="el Parlamento de Vitoria" /></frame>
+			<frame type="Law" head="política" />
+			<frame type="Locale_by_use" head="compleja">
+				<argument type="Container_possessor" dependent="su" /></frame>
+			<frame type="Origin" head="de la">
+				<argument type="Origin" dependent="el palacio de Ajuria Enea" />
+				<argument type="Origin" dependent="Ibarretxe se ve obligado a hacer toda clase de malabarismos para intentar salvar su compleja situación :" /></frame>
+			<main_frame type="Required_event" head="debe">
+				<argument type="Required_situation" dependent="la marca electoral de HB , en las próximas semanas" />
+				<argument type="Required_situation" dependent="debate de política general en el Parlamento de Vitoria y una votación presupuestaria que a buen seguro perderá" /></main_frame>
+			<frame type="Type" head="clase de">
+				<argument type="Type_property" dependent="toda" />
+				<argument type="Category" dependent="intentar salvar su compleja situación" /></frame>
+			<frame type="Type" head="la marca">
+				<argument type="Type_property" dependent="electoral" />
+				<argument type="Category" dependent="de HB" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Un negro panorama que quizá explique alguna de las contradicciones en que ha incurrido su Gabinete.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Color" head="negro">
+				<argument type="Entity" dependent="panorama" /></frame>
+			<frame type="Explaining_the_facts" head="explique">
+				<argument type="State_of_affairs" dependent="Un negro" />
+				<argument type="Fact" dependent="que" />
+				<argument type="State_of_affairs" dependent="alguna de las contradicciones en que ha incurrido su Gabinete" /></frame>
+			<frame type="Likelihood" head="quizá">
+				<argument type="Hypothetical_event" dependent="Un negro panorama que" />
+				<argument type="Hypothetical_event" dependent="explique alguna de las contradicciones en que ha incurrido su Gabinete" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ibarretxe acabó acatando la doctrina oficial del partido y desautorizó a su propio portavoz al desmentir que planeara excluir a la coalición aberzale de su iniciativa de diálogo.
+		</str>
+		<theme concept_ref="c_18">
+			<token pos="np00000">Ibarretxe</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_9" concept_ref3="c_20" concept_ref4="c_22">
+			<token pos="vmis3s0">acabó</token><mention concept_ref="c_20"><token pos="vmg0000">acatando</token><token pos="da0fs0">la</token><token pos="ncfs000">doctrina</token><token pos="aq0cs0">oficial</token><token pos="spcms">del</token><token pos="ncms000">partido</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Alliance" head="coalición">
+				<argument type="Descriptor" dependent="de" />
+				<argument type="Purpose" dependent="de su iniciativa de diálogo" /></frame>
+			<main_frame type="Compliance" head="acatando">
+				<argument type="Protagonist" dependent="Ibarretxe" />
+				<argument type="Norm" dependent="acatando la doctrina oficial del partido" /></main_frame>
+			<frame type="Leadership" head="oficial" />
+			<main_frame type="Process_end" head="acabó">
+				<argument type="Process" dependent="Ibarretxe" />
+				<argument type="Process" dependent="acatando la doctrina oficial del partido" /></main_frame>
+			<frame type="Representative" head="diálogo">
+				<argument type="Representative" dependent="al desmentir que planeara excluir a la coalición aberzale de su iniciativa de diálogo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Mientras estrechan el cerco sobre el PNV, tanto Aznar como Mayor Oreja - - su virtual candidato a lehendakari - - saben que, venza quien venza en las próximas elecciones vascas, carecerá de los apoyos suficientes para gobernar en solitario.
+		</str>
+		<theme concept_ref="c_19">
+			<token pos="rg">tanto</token><token pos="np00000">Aznar</token><token pos="cs">como</token><token pos="np00000">Mayor</token><token pos="ncms000">Oreja</token><token pos="fg">-</token><token pos="fg">-</token><token pos="dp3cs0">su</token><token pos="aq0cs0">virtual</token><token pos="ncms000">candidato</token><token pos="sps00">a</token><token pos="nccs000">lehendakari</token><token pos="fg">-</token><token pos="fg">-</token>
+		</theme>
+		<rheme concept_ref1="c_15" concept_ref2="c_22" concept_ref3="c_23" concept_ref4="c_27" concept_ref5="c_28">
+			<token pos="fc">,</token><token pos="vmm03s0">venza</token><token pos="sps00">en</token><mention concept_ref="c_15"><token pos="da0fp0">las</token><token pos="aq0fp0">próximas</token><token pos="ncfp000">elecciones</token></mention><token pos="aq0fp0">vascas</token><token pos="fc">,</token><token pos="vmif3s0">carecerá</token><token pos="sps00">de</token><mention concept_ref="c_27"><token pos="da0mp0">los</token><token pos="ncmp000">apoyos</token></mention><token pos="aq0cp0">suficientes</token><token pos="sps00">para</token><token pos="vmn0000">gobernar</token><token pos="sps00">en</token><token pos="aq0msp">solitario</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="saben">
+				<argument type="Expressor" dependent="lehendakari" />
+				<argument type="Content" dependent=", venza quien venza en las próximas elecciones vascas" /></frame>
+			<main_frame type="Besieging" head="venza" />
+			<frame type="Change_of_leadership" head="elecciones">
+				<argument type="Selector" dependent="vascas" /></frame>
+			<main_frame type="Getting" head="venza">
+				<argument type="Recipient" dependent="quien" /></main_frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="quien venza" />
+				<argument type="Ground" dependent="las próximas elecciones vascas" /></frame>
+			<main_frame type="Leadership" head="gobernar" />
+			<frame type="Possession" head="estrechan">
+				<argument type="Possession" dependent="apoyos suficientes" />
+				<argument type="Manner" dependent="para gobernar en solitario" /></frame>
+			<frame type="Proportional_quantity" head="sobre">
+				<argument type="Reference_quantity" dependent="venza" />
+				<argument type="Individuals" dependent="el PNV" /></frame>
+			<frame type="Relative_time" head="las próximas">
+				<argument type="Focal_occasion" dependent="elecciones vascas" /></frame>
+			<frame type="Sufficiency" head="suficientes">
+				<argument type="Item" dependent="apoyos" />
+				<argument type="Enabled_situation" dependent="para gobernar en solitario" /></frame>
+			<frame type="Supporting" head="apoyos" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 De ahí el interés del Gobierno en afianzar una "alternativa de libertad" junto al PSOE, en palabras de Aznar.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Alternatives" head="alternativa de" />
+			<frame type="Emotion_directed" head="interés">
+				<argument type="Experiencer" dependent="del Gobierno" />
+				<argument type="Stimulus" dependent="alternativa de libertad  quot ; junto al" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="palabras de Aznar" /></frame>
+			<frame type="Leadership" head="Gobierno" />
+			<frame type="Time_vector" head="en">
+				<argument type="Event" dependent="el interés del Gobierno en afianzar una  quot ; alternativa de libertad" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y de ahí también el deseo de los socialistas de mantener el consenso antiterrorista y constitucional con el PP pero, al tiempo, explorar vías de acercamiento al PNV.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_ongoing" head="mantener">
+				<argument type="Agent" dependent="los socialistas" />
+				<argument type="Activity" dependent="el consenso antiterrorista y constitucional con el PP pero , al tiempo ," /></frame>
+			<frame type="Desiring" head="el deseo">
+				<argument type="Experiencer" dependent="los socialistas de" /></frame>
+			<frame type="Identicality" head="también">
+				<argument type="Type" dependent="tiempo" /></frame>
+			<frame type="Locative_relation" head="al">
+				<argument type="Ground" dependent="al tiempo" />
+				<argument type="Figure" dependent="explorar vías de acercamiento al PNV" /></frame>
+			<frame type="Means" head="vías">
+				<argument type="Purpose" dependent="de acercamiento al PNV" /></frame>
+			<frame type="Time_vector" head="de ahí">
+				<argument type="Event" dependent="el deseo de los socialistas de mantener el consenso antiterrorista y constitucional con" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sólo así, compaginando la defensa.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Defending" head="defensa" />
+			<frame type="Evaluative_comparison" head="compaginando">
+				<argument type="Profiled_item" dependent="la defensa" /></frame>
+			<frame type="Similarity" head="así">
+				<argument type="Degree" dependent="Sólo" />
+				<argument type="Entity_2" dependent="así , compaginando la defensa" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

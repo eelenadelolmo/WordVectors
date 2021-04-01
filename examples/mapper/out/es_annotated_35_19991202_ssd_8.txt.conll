@@ -1,0 +1,5 @@
+{   ('Kinship', 'familiares'): [('Ego', 'Yeltsin')],
+    ('Leadership', 'funcionarios del'): [('Domain', 'Kremlin')],
+    ('Point_of_dispute', 'asuntos de'): [('Group', 'entre familiares de Yeltsin y altos funcionarios del')],
+    ('Scrutiny', 'investigaba'): [('Cognizer', 'su'), ('Ground', 'asuntos de corrupción')],
+    ('Subordinates_and_superiors', 'altos'): [('Superior', 'funcionarios del Kremlin')]}

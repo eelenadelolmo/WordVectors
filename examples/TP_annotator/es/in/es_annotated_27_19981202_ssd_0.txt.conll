@@ -1,0 +1,7 @@
+{   ('Aggregate', 'grupo'): [('Aggregate_property', 'de')],
+    ('Arrest', 'detención'): [('Authorities', 'Pinochet')],
+    ('Emotion_directed', 'preocupación'): [('Experiencer', 'su')],
+    ('Expressing_publicly', 'expresaron'): [   ('Time', 'ayer'),
+                                               ('Communicator', 'Las autoridades'),
+                                               ('Content', 'su preocupación por la posible reorganización de un grupo de ultraderecha que ha resurgido a')],
+    ('Likelihood', 'posible'): [('Hypothetical_event', 'reorganización de un grupo de ultraderecha que ha resurgido a raíz de la detención de Augusto')]}

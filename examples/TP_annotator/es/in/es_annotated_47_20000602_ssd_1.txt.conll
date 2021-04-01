@@ -1,0 +1,4 @@
+{   ('Co-association', 'colegas'): [('Participant2', 'Iturgaiz')],
+    ('Death', 'muerte'): [('Protagonist', 'Buesa')],
+    ('Questioning', 'preguntar'): [('Message', 'sus colegas de ETA & quot ; por la muerte de Buesa')],
+    ('Referring_by_name', 'quot'): [('Entity', 'Iturgaiz'), ('Name', 'al PNV a')]}

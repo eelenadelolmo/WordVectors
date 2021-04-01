@@ -1,0 +1,8 @@
+{   ('Aggregate', 'grupo'): [],
+    ('Calendric_unit', 'días'): [('Relative_time', 'últimos')],
+    ('Certainty', 'creía'): [('Content', 'disuelto')],
+    ('Give_impression', 'aparecido'): [('Phenomenon', 'algunos de sus partidarios'), ('Characterization', 'en los últimos días')],
+    ('Intentionally_act', 'acciones'): [('Act', 'acciones terroristas'), ('Purpose', 'contra el Gobierno de')],
+    ('Leadership', 'Gobierno'): [('Governed', 'el')],
+    ('Participation', 'participó'): [('Participants', 'movimiento'), ('Participants', 'que'), ('Participant_2', 'en acciones terroristas'), ('Event', 'contra el Gobierno de')],
+    ('Terrorism', 'terroristas'): []}

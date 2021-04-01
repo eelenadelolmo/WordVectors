@@ -1,0 +1,8 @@
+{   ('Cardinal_numbers', 'dos'): [('Entity', 'amores')],
+    ('Evoking', 'recuerda'): [   ('Cognizer', 'esta escena'),
+                                 ('Cognizer', 'un bolero de La Trinca'),
+                                 ('Stimulus', 'llamado Corazón loco , historia de dos amores , Catalunya y España , republicanos y conservadores , nacionalistas')],
+    ('Experiencer_focus', 'amores'): [('Content', 'Catalunya y España , republicanos y conservadores , nacionalistas')],
+    ('Increment', 'Más'): [('Class', 'Más que a los clásicos')],
+    ('Referring_by_name', 'llamado'): [('Speaker', 'un bolero de La Trinca'), ('Name', 'Corazón loco')],
+    ('Sensation', 'escena'): []}

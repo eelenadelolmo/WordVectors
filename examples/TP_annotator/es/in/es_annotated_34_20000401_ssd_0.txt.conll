@@ -1,0 +1,5 @@
+{   ('Age', 'joven'): [('Entity', 'la joven')],
+    ('Catastrophe', 'víctimas'): [('Cause', 'padres de la joven , que vive en Uruguay ,'), ('Undesirable_event', 'de Videla')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'que vive'), ('Ground', 'Uruguay')],
+    ('Kinship', 'padres'): [('Ego', 'la joven')],
+    ('People', 'la joven'): [('Descriptor', 'joven')]}

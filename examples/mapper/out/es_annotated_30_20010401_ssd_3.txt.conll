@@ -1,0 +1,7 @@
+{   ('Appellations', 'ministro'): [],
+    ('Arrest', 'arresto'): [('Suspect', 'primer ministro')],
+    ('Assistance', 'ayuda'): [('Helper', 'su'), ('Goal', 'a Serbia al')],
+    ('Extradition', 'extradición'): [('Suspect', 'primer ministro')],
+    ('Spatial_contact', 'por'): [   ('Figure', 'primer ministro macedonio , Ljubco Georgievski , reprobó a EEUU por condicionar su ayuda a Serbia'),
+                                    ('Ground', 'arresto y la extradición del ex mandatario')],
+    ('State_of_entity', 'condicionar'): [('Entity', 'su ayuda a')]}

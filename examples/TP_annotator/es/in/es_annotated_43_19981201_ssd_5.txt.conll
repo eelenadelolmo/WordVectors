@@ -1,0 +1,8 @@
+{   ('Appellations', 'president'): [],
+    ('Awareness', 'lo'): [('Cognizer', 'los autores'), ('Content', 'trataba de una vivienda del president')],
+    ('Buildings', 'vivienda'): [('Type', 'del president')],
+    ('Committing_crime', 'delincuencia'): [],
+    ('Goal', 'por'): [('Landmark', 'los investigadores')],
+    ('Increment', 'otra'): [('Class', 'motivación')],
+    ('Leadership', 'habitual'): [('Leader', 'los'), ('Activity', 'otra motivación no relacionada con la delincuencia habitual')],
+    ('Reason', 'motivación'): []}

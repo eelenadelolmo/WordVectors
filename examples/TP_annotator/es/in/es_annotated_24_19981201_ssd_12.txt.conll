@@ -1,0 +1,9 @@
+{   ('Affirm_or_deny', 'desmintió'): [   ('Speaker', 'el'),
+                                         ('Message', ', desmintió que exista un pacto secreto entre las autoridades británicas y chilenas para evitar que el dictador sea extraditado a')],
+    ('Extradition', 'extraditado'): [('Suspect', 'el dictador'), ('Crime_jurisdiction', 'para')],
+    ('Leadership', 'autoridades'): [('Governed', 'chilenas')],
+    ('Leadership', 'dictador'): [],
+    ('Locative_relation', 'exista'): [   ('Figure', 'desmintió que'),
+                                         ('Figure', 'desmintió que exista un pacto secreto entre las autoridades británicas y chilenas para evitar que el dictador sea extraditado a')],
+    ('Preventing_or_letting', 'evitar'): [('Event', 'el dictador sea extraditado a')],
+    ('Secrecy_status', 'secreto'): [('Phenomenon', 'pacto')]}

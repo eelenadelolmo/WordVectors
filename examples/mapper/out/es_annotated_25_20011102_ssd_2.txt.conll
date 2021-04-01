@@ -1,0 +1,7 @@
+{   ('Capability', 'puede'): [('Entity', 'violencia israelí'), ('Event', 'terreno al terrorismo en la región')],
+    ('Giving', 'su'): [('Theme', 'violencia israelí'), ('Theme', 'al terrorismo'), ('Donor', 'en la región')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'terrorismo'), ('Ground', 'la región')],
+    ('Locale', 'región'): [],
+    ('Part_whole', 'parte'): [('Whole', 'su')],
+    ('Terrorism', 'terrorismo'): [('Place', 'en la región')],
+    ('Warning', 'avisó'): [('Message', '; violencia israelí & quot ; puede abonar el terreno al terrorismo en la región')]}

@@ -1,0 +1,10 @@
+{   ('Hostile_encounter', 'lucha'): [('Purpose', 'antiterrorista')],
+    ('Information', 'información'): [('Topic', 'sobre el caso Lasa y Zabala')],
+    ('Leadership', 'cargos'): [('Leader', 'sus cargos')],
+    ('Leadership', 'jefe'): [('Descriptor', 'superior'), ('Governed', 'de policía de Bilbao')],
+    ('Leadership', 'mando'): [('Activity', 'la lucha antiterrorista')],
+    ('Sole_instance', 'único'): [('Type', 'lucha antiterrorista')],
+    ('Statement', 'declaró'): [   ('Message', 'Francisco Alvarez , ex jefe superior de policía de Bilbao y del mando único de la lucha antiterrorista'),
+                                  ('Manner', 'ayer que'),
+                                  ('Message', ', pese a sus cargos , no dispuso de ninguna información sobre el caso Lasa y Zabala')],
+    ('Terrorism', 'antiterrorista'): []}

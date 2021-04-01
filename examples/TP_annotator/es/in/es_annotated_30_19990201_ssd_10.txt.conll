@@ -1,0 +1,6 @@
+{   ('Calendric_unit', 'miércoles'): [],
+    ('Irregular_combatants', 'militantes'): [('Side_2', 'más allá de la solidaridad')],
+    ('Locative_relation', 'más allá'): [('Figure', 'militantes'), ('Ground', 'solidaridad')],
+    ('Purpose', 'objetivo'): [('Goal', 'violentos')],
+    ('Supporting', 'respaldo'): [('Purpose', 'militantes más allá de la solidaridad por ser objetivo de los violentos')],
+    ('Travel', 'viajar'): [('Traveler', 'Su objetivo inmediato'), ('Direction', 'este miércoles'), ('Area', 'al País')]}

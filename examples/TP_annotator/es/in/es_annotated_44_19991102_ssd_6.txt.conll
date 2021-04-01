@@ -1,0 +1,5 @@
+{   ('Calendric_unit', 'siglos'): [('Count', 'cinco')],
+    ('Cardinal_numbers', 'cinco'): [('Unit', 'siglos')],
+    ('Needing', 'necesidad de'): [('Requirement', 'un mayor diálogo - - & quot ; que no unidad & quot ; - - que ponga fin a la agria disputa doctrinal que')],
+    ('Process_end', 'fin'): [('Process', 'disputa doctrinal que ha durado casi cinco siglos')],
+    ('Quarreling', 'disputa'): [('Issue', 'doctrinal')]}

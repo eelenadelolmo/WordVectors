@@ -1,0 +1,8 @@
+{   ('Activity_start', 'comenzaron'): [('Time', 'Cuando el vehículo sobrepasó la capital granadina'), ('Agent', 'las dos turistas'), ('Activity', 'a inquietarse')],
+    ('Attempt', 'intentó'): [('Goal', 'tocarles las piernas')],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'turistas')],
+    ('Getting', 'las'): [('Recipient', 'las dos turistas'), ('Theme', 'sobrepasó')],
+    ('Questioning', 'respuesta'): [('Speaker', 'pidieron'), ('Message', 'explicaciones al conductor , éste , como respuesta ,')],
+    ('Relational_political_locales', 'capital'): [('Name', 'granadina')],
+    ('Response', 'respuesta'): [],
+    ('Vehicle', 'vehículo'): []}

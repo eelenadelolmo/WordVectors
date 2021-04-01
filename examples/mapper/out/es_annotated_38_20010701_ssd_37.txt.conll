@@ -1,0 +1,10 @@
+{   ('Age', 'años'): [('Time', '3 años')],
+    ('Buildings', 'casa'): [],
+    ('Calendric_unit', 'años'): [('Count', '3')],
+    ('Calendric_unit', 'días'): [('Relative_time', 'unos')],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'hijas')],
+    ('Increment', 'otras'): [('Class', 'dos hijas')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'nuestra casa'), ('Ground', 'Francia')],
+    ('Kinship', 'hijas'): [],
+    ('Kinship', 'madre'): [('Ego', 'Su')],
+    ('Quantified_mass', 'unos'): [('Individuals', 'días')]}

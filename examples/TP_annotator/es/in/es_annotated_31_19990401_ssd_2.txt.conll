@@ -1,0 +1,4 @@
+{   ('Origin', 'rusos'): [('Entity', 'navegar')],
+    ('Relative_time', 'por'): [('Focal_occasion', 'se habían retirado'), ('Landmark_occasion', 'la caída de la')],
+    ('Removing', 'retirado'): [('Agent', 'Los'), ('Source', 'tras la caída de')],
+    ('Vehicle', 'navegar'): [('Possessor', 'rusos')]}

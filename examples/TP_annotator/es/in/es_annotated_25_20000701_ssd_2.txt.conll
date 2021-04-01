@@ -1,0 +1,7 @@
+{   ('Age', 'Old'): [('Entity', 'tribunal del')],
+    ('Arriving', 'acudieron'): [('Theme', 'Algunos de ellos , que sufrieron la amputación de brazos y piernas ,'), ('Source', 'en silla de ruedas al'), ('Goal', 'al tribunal del Old')],
+    ('Body_parts', 'brazos'): [],
+    ('Catastrophe', 'sufrieron'): [('Cause', 'Algunos de ellos'), ('Patient', 'que'), ('Undesirable_event', 'amputación de brazos y piernas')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'Algunos de ellos , que sufrieron la amputación de brazos y piernas ,'), ('Ground', 'silla de ruedas al tribunal del Old')],
+    ('Proportional_quantity', 'Algunos'): [('Individuals', 'de ellos')],
+    ('Receiving', 'recibieron'): [('Theme', 'con gritos de júbilo y aplausos la implacable')]}

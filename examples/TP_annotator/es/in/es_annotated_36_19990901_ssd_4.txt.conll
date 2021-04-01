@@ -1,0 +1,9 @@
+{   ('Buildings', 'palacio'): [('Name', 'Miramar')],
+    ('Giving', 'dar'): [('Donor', 'su'), ('Recipient', 'su punto de vista sobre los recientes')],
+    ('Interior_profile_relation', 'en'): [   ('Figure', 'Ibarretxe abrió el curso del Parlamento vasco en el palacio de Miramar'),
+                                             ('Ground', 'San'),
+                                             ('Figure', 'donde aprovechó para dar su punto de vista sobre los recientes')],
+    ('Locative_relation', 'donde'): [('Figure', 'aprovechó para dar su punto de vista sobre los recientes')],
+    ('Opinion', 'vista'): [('Cognizer', 'su'), ('Topic', 'recientes')],
+    ('Opportunity', 'aprovechó'): [('Agent', 'su'), ('Desirable_situation', 'para dar su punto de vista sobre los recientes')],
+    ('Taking_time', 'dar'): [('Agent', 'su'), ('Activity', 'aprovechó para dar su punto de vista sobre los recientes')]}

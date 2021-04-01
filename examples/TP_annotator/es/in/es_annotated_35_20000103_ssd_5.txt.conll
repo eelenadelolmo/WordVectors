@@ -1,0 +1,11 @@
+{   ('Buildings', 'casa'): [],
+    ('Buildings', 'hospital'): [('Name', 'catalán')],
+    ('Calendric_unit', 'horas'): [('Count', 'cinco')],
+    ('Cardinal_numbers', 'cinco'): [('Unit', 'horas')],
+    ('Cardinal_numbers', 'dos'): [],
+    ('Communicate_categorization', 'atendido'): [('Speaker', 'en el servicio de urgencias de un hospital catalán')],
+    ('Contingency', 'decidido'): [('Outcome', 'el'), ('Determinant', 'a conseguir que nadie deba esperar cinco horas - - & quot ; ni dos ,')],
+    ('Desirable_event', 'ser'): [   ('State_of_affairs', 'nadie'),
+                                    ('State_of_affairs', 'esperar cinco horas - - & quot ; ni dos , tampoco & quot ; - - para ser atendido en el servicio de urgencias de un')],
+    ('Existence', 'exista'): [('Entity', 'un CAC'), ('Time', 'junto a su casa')],
+    ('Waiting', 'esperar'): [('Protagonist', 'nadie'), ('Manner', 'cinco horas')]}

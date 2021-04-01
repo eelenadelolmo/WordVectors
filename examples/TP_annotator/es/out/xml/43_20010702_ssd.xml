@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="43_20010702_ssd">
+
+
+	<concepts>
+		<concept id="c_0">España</concept>
+		<concept id="c_1">José María Aznar</concept>
+		<concept id="c_2">el EPR</concept>
+		<concept id="c_3">un centenar largo de terroristas</concept>
+		<concept id="c_4">los gobiernos mexicano y español</concept>
+		<concept id="c_5">su relación política con México</concept>
+		<concept id="c_6">las importaciones españolas de México</concept>
+		<concept id="c_7">Fox y Aznar</concept>
+		<concept id="c_8">Otros focos de interés</concept>
+		<concept id="c_9">la policía mexicana</concept>
+		<concept id="c_10">cobijo a</concept>
+		<concept id="c_11">pasada madrugada</concept>
+		<concept id="c_12">su</concept>
+		<concept id="c_13">antiterrorista</concept>
+		<concept id="c_14">al presidente Vicente Fox</concept>
+		<concept id="c_15">les</concept>
+		<concept id="c_16">la red</concept>
+		<concept id="c_17">apoyos</concept>
+		<concept id="c_18">la pasada madrugada</concept>
+		<concept id="c_19">presidente</concept>
+		<concept id="c_20">Vicente Fox</concept>
+		<concept id="c_21">tiempo</concept>
+		<concept id="c_22">les</concept>
+		<concept id="c_23">quot</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Desbloqueada la entrega de los etarras detenidos en México, España aspira ahora a que la policía mexicana investigue la red de apoyos que ETA tiene en este país, según informaron fuentes oficiales.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">España</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_9" concept_ref3="c_16" concept_ref4="c_17">
+			<token pos="vmip3s0">aspira</token><token pos="sps00">a</token><token pos="cs">que</token><mention concept_ref="c_6"><token pos="da0fs0">la</token><token pos="nccs000">policía</token></mention><token pos="aq0fs0">mexicana</token><token pos="vmsp3s0">investigue</token><mention concept_ref="c_16"><token pos="da0fs0">la</token><token pos="ncfs000">red</token></mention><token pos="sps00">de</token><mention concept_ref="c_17"><token pos="ncmp000">apoyos</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="fuentes oficiales " />
+			<frame type="Be_in_agreement_on_action" head="según">
+				<argument type="Party_1" dependent="etarras" />
+				<argument type="Obligation" dependent="fuentes oficiales" /></frame>
+			<frame type="Detaining" head="detenidos">
+				<argument type="Charges" dependent="de" /></frame>
+			<frame type="Goal" head="en">
+				<argument type="Trajector" dependent="etarras" />
+				<argument type="Landmark" dependent="fuentes oficiales" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="etarras" />
+				<argument type="Ground" dependent="este país" /></frame>
+			<frame type="Law_enforcement_agency" head="policía">
+				<argument type="Jurisdiction" dependent="mexicana" /></frame>
+			<frame type="Leadership" head="oficiales">
+				<argument type="Governed" dependent="fuentes" /></frame>
+			<frame type="Network" head="la red de">
+				<argument type="Descriptor" dependent="apoyos" />
+				<argument type="Nodes" dependent="tiene en este país" /></frame>
+			<frame type="Political_locales" head="país" />
+			<main_frame type="Scrutiny" head="investigue">
+				<argument type="Cognizer" dependent="la policía mexicana" />
+				<argument type="Ground" dependent="la red de apoyos que ETA tiene en este país" /></main_frame>
+			<frame type="Source_of_getting" head="fuentes">
+				<argument type="Descriptor" dependent="oficiales" /></frame>
+			<frame type="Supporting" head="apoyos" />
+			<frame type="Temporal_collocation" head="ahora">
+				<argument type="Trajector_event" dependent="aspira" />
+				<argument type="Trajector_event" dependent="que la policía mexicana investigue la red de apoyos que" /></frame>
+			<frame type="Traversing" head="según">
+				<argument type="Theme" dependent="aspira" />
+				<argument type="Time" dependent="ahora" />
+				<argument type="Theme" dependent="que la policía mexicana investigue la red de apoyos que ETA tiene en este país , según informaron fuentes oficiales" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 José María Aznar llegó la pasada madrugada a México con la intención de agradecer al presidente Vicente Fox su ayuda antiterrorista y pedirle al tiempo que averigüe si la guerrilla mexicana da cobijo a miembros de ETA.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="ncfs000">José</token><token pos="ncms000">María</token><token pos="np00000">Aznar</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_3" concept_ref3="c_9" concept_ref4="c_10" concept_ref5="c_11" concept_ref6="c_12" concept_ref7="c_13" concept_ref8="c_14" concept_ref9="c_16" concept_ref10="c_18" concept_ref11="c_19" concept_ref12="c_20" concept_ref13="c_21">
+			<token pos="vmis3s0">llegó</token><mention concept_ref="c_18"><token pos="da0fs0">la</token><token pos="aq0fsp">pasada</token><token pos="ncfs000">madrugada</token></mention><mention concept_ref="c_9"><token pos="sps00">a</token><token pos="np00000">México</token></mention><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="ncfs000">intención</token><token pos="sps00">de</token><token pos="vmn0000">agradecer</token><mention concept_ref="c_14"><token pos="spcms">al</token><token pos="ncms000">presidente</token><token pos="np00000">Vicente</token><token pos="ncms000">Fox</token></mention><mention concept_ref="c_12"><token pos="dp3cs0">su</token></mention><token pos="ncfs000">ayuda</token><mention concept_ref="c_13"><token pos="aq0cs0">antiterrorista</token></mention><token pos="cc">y</token><token pos="vmn0000">pedirle</token><token pos="sps00">al</token><mention concept_ref="c_21"><token pos="ncmp000">tiempo</token></mention><token pos="cs">que</token><token pos="vmsp3s0">averigüe</token><token pos="cs">si</token><token pos="da0fs0">la</token><token pos="ncfs000">guerrilla</token><token pos="aq0fs0">mexicana</token><token pos="vmip3s0">da</token><mention concept_ref="c_10"><token pos="ncms000">cobijo</token><token pos="sps00">a</token></mention><token pos="ncmp000">miembros</token><token pos="sps00">de</token><token pos="np00000">ETA</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="Fox" /></frame>
+			<main_frame type="Arriving" head="llegó">
+				<argument type="Theme" dependent="cobijo a" />
+				<argument type="Path" dependent="pasada madrugada" />
+				<argument type="Place" dependent="a México" /></main_frame>
+			<main_frame type="Assistance" head="ayuda">
+				<argument type="Helper" dependent="su" />
+				<argument type="Focal_entity" dependent="antiterrorista" /></main_frame>
+			<frame type="Becoming_aware" head="su">
+				<argument type="Cognizer" dependent="su" />
+				<argument type="Phenomenon" dependent="si la guerrilla mexicana da cobijo a miembros" /></frame>
+			<main_frame type="Buildings" head="averigüe">
+				<argument type="Name" dependent="mexicana" />
+				<argument type="Type" dependent="guerrilla" />
+				<argument type="Building" dependent="cobijo a miembros de" /></main_frame>
+			<main_frame type="Calendric_unit" head="madrugada">
+				<argument type="Relative_time" dependent="pasada" />
+				<argument type="Whole" dependent="a México" /></main_frame>
+			<main_frame type="Judgment_direct_address" head="agradecer">
+				<argument type="Addressee" dependent="al presidente Vicente Fox" />
+				<argument type="Reason" dependent="su ayuda antiterrorista" /></main_frame>
+			<frame type="Membership" head="miembros">
+				<argument type="Group" dependent="la" /></frame>
+			<frame type="Purpose" head="intención" />
+			<main_frame type="Questioning" head="pedirle">
+				<argument type="Message" dependent="Aznar llegó la pasada madrugada a México con la intención de agradecer al presidente Vicente Fox su ayuda antiterrorista" />
+				<argument type="Addressee" dependent="su" />
+				<argument type="Message" dependent="averigüe si la guerrilla mexicana da cobijo a miembros de" /></main_frame>
+			<frame type="Sleep" head="su">
+				<argument type="Sleeper" dependent="su" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "No me extrañaría que hubiera miembros de ETA dentro del Ejército Popular Revolucionario ( EPR )", sentenció Aznar en su última visita oficial a México, en 1996.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Aznar " />
+			<frame type="Arriving" head="visita">
+				<argument type="Goal" dependent="a México" />
+				<argument type="Time" dependent="en 1996" /></frame>
+			<frame type="Interior_profile_relation" head="dentro">
+				<argument type="Figure" dependent="miembros de" />
+				<argument type="Ground" dependent="del Ejército Popular Revolucionario (" /></frame>
+			<frame type="Just_found_out" head="extrañaría">
+				<argument type="Stimulus" dependent="en" /></frame>
+			<frame type="Leadership" head="oficial" />
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="miembros de ETA dentro del Ejército Popular Revolucionario ( EPR )  quot ; , sentenció Aznar en su última" /></frame>
+			<frame type="Membership" head="miembros">
+				<argument type="Group" dependent="en" />
+				<argument type="Place" dependent="dentro del Ejército Popular Revolucionario (" /></frame>
+			<frame type="Military" head="Ejército">
+				<argument type="Descriptor" dependent="Revolucionario" />
+				<argument type="Possessor" dependent="me" /></frame>
+			<frame type="People" head="miembros">
+				<argument type="Descriptor" dependent="Revolucionario" /></frame>
+			<frame type="Relative_time" head="última">
+				<argument type="Focal_participant" dependent="oficial" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="; No me extrañaría que hubiera miembros de ETA dentro del Ejército Popular Revolucionario (" />
+				<argument type="Figure" dependent="Aznar" />
+				<argument type="Ground" dependent="su última visita oficial a México" />
+				<argument type="Time" dependent="en 1996" /></frame>
+			<frame type="Statement" head="quot">
+				<argument type="Message" dependent="; No me extrañaría que hubiera miembros de ETA dentro del Ejército Popular Revolucionario (" />
+				<argument type="Speaker" dependent="Aznar" />
+				<argument type="Message" dependent="su última visita oficial a México , en" />
+				<argument type="Time" dependent="en 1996" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por aquel entonces, el EPR acababa de nacer, pero hoy se ha convertido en la guerrilla mexicana más activa, con decenas de muertos a sus espaldas.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">el</token><token pos="np00000">EPR</token>
+		</theme>
+		<rheme concept_ref1="c_15" concept_ref2="c_16">
+			<token pos="sps00">Por</token><mention concept_ref="c_16"><token pos="dd0ms0">aquel</token></mention><token pos="rg">entonces</token><token pos="vmii3s0">acababa</token><token pos="sps00">de</token><token pos="vmn0000">nacer</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming" head="convertido en">
+				<argument type="Entity" dependent="se" />
+				<argument type="Final_category" dependent="la guerrilla mexicana más activa" /></frame>
+			<frame type="Being_active" head="activa">
+				<argument type="Agent" dependent="guerrilla mexicana" /></frame>
+			<frame type="Body_parts" head="espaldas">
+				<argument type="Possessor" dependent="se ha" /></frame>
+			<main_frame type="Bringing" head="nacer">
+				<argument type="Time" dependent="aquel entonces ," />
+				<argument type="Theme" dependent="el EPR" />
+				<argument type="Manner" dependent="se" /></main_frame>
+			<frame type="Calendric_unit" head="hoy" />
+			<frame type="Dead_or_alive" head="muertos a" />
+			<frame type="Irregular_combatants" head="guerrilla">
+				<argument type="Descriptor" dependent="más activa" />
+				<argument type="Side_1" dependent="mexicana" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="aquel entonces" />
+				<argument type="Figure" dependent="el EPR acababa de nacer" /></frame>
+			<frame type="Relative_time" head="espaldas">
+				<argument type="Focal_occasion" dependent="guerrilla mexicana más activa , con decenas de muertos" />
+				<argument type="Landmark_occasion" dependent="espaldas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Las autoridades españolas sospechan que ETA adiestra y suministra material al EPR y a otros grupos terroristas mexicanos, a cambio del apoyo necesario para que los etarras perseguidos por la justicia española residan en este país a salvo de la policía federal.
+		</str>
+		<theme>
+			<token pos="np00000">ETA</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Las autoridades españolas " />
+			<frame type="Aggregate" head="grupos">
+				<argument type="Aggregate_property" dependent="mexicanos" />
+				<argument type="Individuals" dependent="terroristas" /></frame>
+			<frame type="Being_necessary" head="necesario">
+				<argument type="Required_entity" dependent="del apoyo" />
+				<argument type="Dependent" dependent="por la justicia española residan en este país a salvo de la policía federal" /></frame>
+			<frame type="Being_questionable" head="sospechan">
+				<argument type="Entity" dependent="autoridades españolas" />
+				<argument type="Behavior" dependent="suministra material al EPR y a otros grupos terroristas mexicanos , a cambio del apoyo" /></frame>
+			<frame type="Containers" head="salvo de">
+				<argument type="Type" dependent="país" /></frame>
+			<frame type="Discussion" head="cambio">
+				<argument type="Topic" dependent="del apoyo necesario para que los etarras perseguidos por la justicia española residan en este país a salvo de la" /></frame>
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="grupos terroristas mexicanos" /></frame>
+			<frame type="Ingredients" head="material">
+				<argument type="Descriptor" dependent="suministra material" />
+				<argument type="Product" dependent="al EPR y a otros grupos terroristas mexicanos" /></frame>
+			<frame type="Law_enforcement_agency" head="policía">
+				<argument type="Jurisdiction" dependent="federal" /></frame>
+			<frame type="Political_locales" head="federal">
+				<argument type="Name" dependent="policía" /></frame>
+			<frame type="Political_locales" head="país" />
+			<frame type="Residence" head="residan">
+				<argument type="Resident" dependent="justicia española" />
+				<argument type="Location" dependent="en este país a salvo de" /></frame>
+			<frame type="Supply" head="suministra material">
+				<argument type="Theme" dependent="material" />
+				<argument type="Recipient" dependent="al EPR y a otros grupos terroristas mexicanos" /></frame>
+			<frame type="System" head="suministra">
+				<argument type="Function" dependent="justicia" /></frame>
+			<frame type="Terrorism" head="terroristas" />
+			<frame type="Vehicle" head="los">
+				<argument type="Possessor" dependent="etarras" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Aunque desde 1995 México ha entregado a España a 23 etarras, el Gobierno español cree que un centenar largo de terroristas siguen ocultos en territorio azteca a la espera de que la banda les ordene regresar.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="di0ms0">un</token><token pos="ncms000">centenar</token><token pos="aq0ms0">largo</token><token pos="sps00">de</token><token pos="nccp000">terroristas</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_9" concept_ref3="c_15" concept_ref4="c_18" concept_ref5="c_21" concept_ref6="c_22">
+			<token pos="vmip3p0">siguen</token><mention concept_ref="c_9"><token pos="aq0mp0">ocultos</token><token pos="sps00">en</token><token pos="ncms000">territorio</token><token pos="aq0cs0">azteca</token><token pos="sps00">a</token></mention><token pos="da0fs0">la</token><token pos="ncfs000">espera</token><token pos="sps00">de</token><token pos="cs">que</token><mention concept_ref="c_18"><token pos="da0fs0">la</token><token pos="ncfs000">banda</token></mention><token pos="pp3cpd00">les</token><token pos="vmsp3s0">ordene</token><token pos="vmn0000">regresar</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el Gobierno español " />
+			<main_frame type="Arriving" head="regresar">
+				<argument type="Theme" dependent="les" /></main_frame>
+			<frame type="Cardinal_numbers" head="un">
+				<argument type="Entity" dependent="largo de terroristas" /></frame>
+			<frame type="Certainty" head="cree">
+				<argument type="Cognizer" dependent="Gobierno español" />
+				<argument type="Content" dependent="que un centenar largo de terroristas siguen ocultos en territorio azteca a la espera de que la banda les ordene regresar ." /></frame>
+			<main_frame type="Continued_state_of_affairs" head="siguen">
+				<argument type="State_of_affairs" dependent="largo de terroristas" />
+				<argument type="State_of_affairs" dependent="ocultos en territorio azteca a" /></main_frame>
+			<frame type="Duration_description" head="largo">
+				<argument type="Eventuality" dependent="terroristas" /></frame>
+			<frame type="Giving" head="entregado">
+				<argument type="Donor" dependent="México" />
+				<argument type="Theme" dependent="a 23 etarras" />
+				<argument type="Recipient" dependent="a la" /></frame>
+			<frame type="Hiding_objects" head="ocultos">
+				<argument type="Hidden_object" dependent="largo de terroristas" />
+				<argument type="Time" dependent="siguen" />
+				<argument type="Time" dependent="en territorio azteca a" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="largo de terroristas" />
+				<argument type="Ground" dependent="territorio azteca a" /></frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Governed" dependent="español" /></frame>
+			<frame type="Performers_and_roles" head="les">
+				<argument type="Performer" dependent="terroristas" />
+				<argument type="Performance" dependent="siguen ocultos en territorio azteca a" /></frame>
+			<frame type="Political_locales" head="territorio">
+				<argument type="Container_possessor" dependent="azteca a" /></frame>
+			<frame type="Proportional_quantity" head="desde">
+				<argument type="Individuals" dependent="23" /></frame>
+			<main_frame type="Sequence" head="ordene">
+				<argument type="Entities" dependent="les" /></main_frame>
+			<frame type="Terrorism" head="terroristas" />
+			<frame type="Time_vector" head="desde">
+				<argument type="Event" dependent="México ha entregado a España a 23 etarras" />
+				<argument type="Landmark_event" dependent="1995" /></frame>
+			<frame type="Waiting" head="espera">
+				<argument type="Protagonist" dependent="terroristas" />
+				<argument type="Salient_entity" dependent="de que la banda les ordene regresar" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En principio, los gobiernos mexicano y español dudan de que ETA coopere con el Ejército Zapatista de Liberación Nacional ( EZLN ), pese a que un informe desclasificado del Pentágono apunta esa conexión.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0mp0">los</token><token pos="ncmp000">gobiernos</token><token pos="aq0ms0">mexicano</token><token pos="cc">y</token><token pos="aq0ms0">español</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_9" concept_ref3="c_15">
+			<token pos="vmip3p0">dudan</token><token pos="sps00">de</token><token pos="cs">que</token><token pos="np00000">ETA</token><token pos="vmsp3s0">coopere</token><mention concept_ref="c_9"><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncfs000">Ejército</token><token pos="aq0fsp">Zapatista</token><token pos="sps00">de</token><token pos="ncms000">Liberación</token><token pos="aq0cs0">Nacional</token><token pos="fpa">(</token></mention><token pos="np00000">EZLN</token><token pos="fpt">)</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Certainty" head="dudan de que">
+				<argument type="Cognizer" dependent="gobiernos mexicano y español" />
+				<argument type="Content" dependent="coopere con el Ejército Zapatista de Liberación Nacional ( EZLN ) , pese a que" /></main_frame>
+			<main_frame type="Collaboration" head="coopere con">
+				<argument type="Partner_1" dependent="el" />
+				<argument type="Partner_2" dependent="con el Ejército Zapatista de Liberación Nacional (" /></main_frame>
+			<frame type="Leadership" head="gobiernos">
+				<argument type="Governed" dependent="español" /></frame>
+			<frame type="Military" head="Ejército">
+				<argument type="Possessor" dependent="Zapatista" />
+				<argument type="Possessor" dependent="de Liberación Nacional (" /></frame>
+			<frame type="Political_locales" head="Nacional" />
+			<frame type="Statement" head="informe" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 MAYOR RELACIÓN COMERCIAL.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Para el Gobierno español, su relación política con México es "excelente", pero no así la comercial, que apenas representa el 1% de sus respectivas exportaciones.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="dp3cs0">su</token><token pos="ncfs000">relación</token><token pos="aq0fs0">política</token><token pos="sps00">con</token><token pos="np00000">México</token>
+		</theme>
+		<rheme concept_ref1="c_15" concept_ref2="c_23">
+			<token pos="vsip3s0">es</token><token pos="fe">quot;</token><token pos="aq0cs0">excelente</token><token pos="fe">quot;</token><token pos="fc">,</token><token pos="rn">no</token><token pos="rg">así</token><token pos="da0fs0">la</token><token pos="aq0cs0">comercial</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cognitive_connection" head="relación">
+				<argument type="Concept_1" dependent="es" />
+				<argument type="Specification" dependent="política" />
+				<argument type="Concept_2" dependent="con México" /></frame>
+			<frame type="Desirability" head="excelente">
+				<argument type="Evaluee" dependent="Gobierno español , su relación política con México" /></frame>
+			<main_frame type="Exporting" head="exportaciones">
+				<argument type="Exporter" dependent="sus" /></main_frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Governed" dependent="español" /></frame>
+			<frame type="Text" head="sus" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El pasado año las importaciones españolas de México se cifraron en 280.000 millones de pesetas - - el 60% en petróleo - -, y la exportación rozó los 250.000 millones.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0fp0">las</token><token pos="ncfp000">importaciones</token><token pos="aq0fp0">españolas</token><token pos="sps00">de</token><token pos="np00000">México</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_15" concept_ref3="c_19" concept_ref4="c_21" concept_ref5="c_22">
+			<mention concept_ref="c_22"><token pos="p0000000">se</token></mention><token pos="vmis3p0">cifraron</token><token pos="sps00">en</token><token pos="z">280.000</token><token pos="ncmp000">millones</token><token pos="sps00">de</token><mention concept_ref="c_19"><token pos="zm">pesetas</token></mention><token pos="fg">-</token><token pos="fg">-</token><mention concept_ref="c_15"><token pos="da0ms0">el</token></mention><token pos="zp">60%</token><token pos="sps00">en</token><token pos="ncms000">petróleo</token><token pos="fg">-</token><token pos="fg">-</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="año">
+				<argument type="Relative_time" dependent="se" /></frame>
+			<frame type="Cardinal_numbers" head="millones">
+				<argument type="Multiplier" dependent="60" /></frame>
+			<frame type="Change_position_on_a_scale" head="rozó">
+				<argument type="Item" dependent="la exportación" />
+				<argument type="Path" dependent="250.000 millones" /></frame>
+			<frame type="Estimating" head="se">
+				<argument type="Estimation" dependent="importaciones españolas de México" />
+				<argument type="Estimation" dependent="en 280.000 millones de pesetas - - el 60 % en petróleo - - , y la exportación rozó" /></frame>
+			<frame type="Exporting" head="exportación">
+				<argument type="Importing_area" dependent="250.000 millones" /></frame>
+			<frame type="Importing" head="importaciones">
+				<argument type="Time" dependent="pasado año" />
+				<argument type="Importer" dependent="españolas" />
+				<argument type="Exporting_area" dependent="de México" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="importaciones españolas de México" />
+				<argument type="Ground" dependent="280.000 millones de pesetas - - el 60 % en petróleo - - , y la exportación rozó" /></frame>
+			<frame type="Relative_time" head="se" />
+			<frame type="Substance" head="petróleo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Para corregir este déficit - - que contrasta con la fuerte inversión que España realiza en México - -, se ha organizado un foro empresarial al que asistirá el presidente Aznar.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="Aznar" /></frame>
+			<frame type="Attending" head="se">
+				<argument type="Agent" dependent="presidente Aznar" /></frame>
+			<frame type="Businesses" head="empresarial" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="México" />
+				<argument type="Figure" dependent="se ha organizado un foro empresarial al que asistirá el presidente Aznar" /></frame>
+			<frame type="Level_of_force_exertion" head="fuerte">
+				<argument type="Exerter" dependent="inversión" /></frame>
+			<frame type="Manufacturing" head="realiza">
+				<argument type="Producer" dependent="se" />
+				<argument type="Factory" dependent="en México" /></frame>
+			<frame type="Resolve_problem" head="corregir">
+				<argument type="Problem" dependent="este déficit - - que contrasta con la fuerte inversión que España realiza en México - - , se ha organizado un foro empresarial al" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Fox y Aznar también abordarán las relaciones entre México y los Quince, con el horizonte de la presidencia española de la Unión Europea y la cumbre Europa-América Latina, ambas previstas para el 2002.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="np00000">Fox</token><token pos="cc">y</token><token pos="np00000">Aznar</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_8" concept_ref3="c_3" concept_ref4="c_15" concept_ref5="c_16" concept_ref6="c_20">
+			<token pos="vmif3p0">abordarán</token><token pos="da0fp0">las</token><token pos="ncfp000">relaciones</token><token pos="sps00">entre</token><mention concept_ref="c_5"><token pos="np00000">México</token></mention><token pos="cc">y</token><token pos="da0mp0">los</token><token pos="np00000">Quince</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Origin" head="Europea">
+				<argument type="Entity" dependent="la Unión Europea y la cumbre Europa-América" /></frame>
+			<frame type="Quantified_mass" head="ambas" />
+			<frame type="Relation" head="las relaciones">
+				<argument type="Entity_2" dependent="entre México" /></frame>
+			<frame type="Statement" head="de la">
+				<argument type="Speaker" dependent="Fox y Aznar" />
+				<argument type="Message" dependent="las relaciones entre México y los Quince , con el horizonte de la presidencia española de la Unión Europea y la cumbre Europa-América Latina" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Otros focos de interés serán la promoción del español y la cumbre iberoamericana de otoño, que organizará Alejandro Toledo en Perú.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="di0mp0">Otros</token><token pos="ncmp000">focos</token><token pos="sps00">de</token><token pos="ncms000">interés</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_0" concept_ref3="c_3" concept_ref4="c_15" concept_ref5="c_16" concept_ref6="c_17" concept_ref7="c_22" concept_ref8="c_23">
+			<token pos="vsif3p0">serán</token><mention concept_ref="c_5"><token pos="da0fs0">la</token><token pos="ncfs000">promoción</token></mention><token pos="spcms">del</token><token pos="ncms000">español</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">cumbre</token><token pos="aq0fs0">iberoamericana</token><token pos="sps00">de</token><mention concept_ref="c_23"><token pos="ncms000">otoño</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Emotion_directed" head="interés" />
+			<frame type="Increment" head="Otros">
+				<argument type="Class" dependent="de interés" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="Alejandro" />
+				<argument type="Ground" dependent="Perú" /></frame>
+			<frame type="Locale" head="del" />
+		</semantic_roles>
+	</sentence>
+	
+</text>

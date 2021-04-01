@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="35_20020501_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Shamil Basayev , carismático líder de la guerrilla independentista chechena ,</concept>
+		<concept id="c_1">El jefe de Estado Mayor del Ejército ruso , Anatoli Kvashnin ,</concept>
+		<concept id="c_2">Basayev</concept>
+		<concept id="c_3">las autoridades rusas</concept>
+		<concept id="c_4">Un grupo guerrillero</concept>
+		<concept id="c_5">El secuestro</concept>
+		<concept id="c_6">la pierna derecha</concept>
+		<concept id="c_7">quien</concept>
+		<concept id="c_8">el hospital</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Shamil Basayev, carismático líder de la guerrilla independentista chechena, puede haber fallecido.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np0000l">Shamil</token><token pos="np0000l">Basayev</token><token pos="fc">,</token><token pos="aq0ms0">carismático</token><token pos="nccs000">líder</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">guerrilla</token><token pos="aq0cs0">independentista</token><token pos="aq0fs0">chechena</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="van0000">haber</token><token pos="vmp00sm">fallecido</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Change_of_leadership" head="independentista">
+				<argument type="Place" dependent="chechena" /></frame>
+			<main_frame type="Death" head="fallecido">
+				<argument type="Protagonist" dependent="Shamil Basayev , carismático líder de la guerrilla independentista chechena" /></main_frame>
+			<frame type="Leadership" head="líder">
+				<argument type="Descriptor" dependent="carismático" />
+				<argument type="Leader" dependent="la guerrilla independentista chechena" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El jefe de Estado Mayor del Ejército ruso, Anatoli Kvashnin, lo dio ayer por muerto, aunque reconoció que su cadáver no había sido localizado.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">jefe</token><token pos="sps00">de</token><token pos="ncms000">Estado</token><token pos="aq0ms0">Mayor</token><token pos="spcms">del</token><token pos="np00000">Ejército</token><token pos="aq0ms0">ruso</token><token pos="fc">,</token><token pos="np0000l">Anatoli</token><token pos="np0000l">Kvashnin</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="pp3msa00">lo</token><token pos="vmis3s0">dio</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_aware" head="localizado">
+				<argument type="Phenomenon" dependent="su cadáver" /></frame>
+			<frame type="Body_parts" head="cadáver">
+				<argument type="Possessor" dependent="su" /></frame>
+			<frame type="Communication_response" head="reconoció">
+				<argument type="Speaker" dependent="lo" />
+				<argument type="Trigger" dependent="que su cadáver no había sido localizado" /></frame>
+			<frame type="Dead_or_alive" head="muerto" />
+			<frame type="Employing" head="jefe">
+				<argument type="Employer" dependent="del Ejército ruso" /></frame>
+			<frame type="Military" head="Ejército">
+				<argument type="Possessor" dependent="ruso" /></frame>
+			<frame type="Origin" head="ruso">
+				<argument type="Entity" dependent="Ejército" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Basayev perdió la pierna derecha en el invierno del 2000 al cruzar un campo de minas en un intento de burlar el cerco de Grozni por las tropas federales rusas.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="np00000">Basayev</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_6">
+			<token pos="vmis3s0">perdió</token><mention concept_ref="c_2"><token pos="da0fs0">la</token><token pos="ncfs000">pierna</token></mention><token pos="aq0fs0">derecha</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attempt" head="intento">
+				<argument type="Goal" dependent="por las tropas federales rusas" /></frame>
+			<frame type="Besieging" head="tropas">
+				<argument type="Assailant" dependent="de" />
+				<argument type="Victim" dependent="por las tropas federales rusas" /></frame>
+			<frame type="Calendric_unit" head="invierno">
+				<argument type="Salient_event" dependent="del 2000 al" /></frame>
+			<frame type="Direction" head="derecha">
+				<argument type="Landmark" dependent="la pierna" /></frame>
+			<main_frame type="Earnings_and_losses" head="perdió">
+				<argument type="Earner" dependent="Basayev" />
+				<argument type="Earnings" dependent="la pierna derecha" />
+				<argument type="Time" dependent="en el invierno del 2000 al" /></main_frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="un campo de minas" />
+				<argument type="Ground" dependent="un intento de burlar el cerco de Grozni por las tropas federales rusas" /></frame>
+			<frame type="Origin" head="rusas">
+				<argument type="Entity" dependent="tropas federales" /></frame>
+			<frame type="Political_locales" head="federales">
+				<argument type="Population" dependent="rusas" /></frame>
+			<frame type="Traversing" head="cruzar">
+				<argument type="Theme" dependent="el" />
+				<argument type="Goal" dependent="un campo de minas en un intento de burlar el cerco de Grozni por las tropas federales rusas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Tras ser operado de urgencia, logró escapar.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Departing" head="escapar">
+				<argument type="Theme" dependent="ser" /></frame>
+			<frame type="Operating_a_system" head="logró">
+				<argument type="Duration" dependent="Tras ser operado de urgencia" />
+				<argument type="Operator" dependent="ser" />
+				<argument type="System" dependent="escapar" /></frame>
+			<frame type="Relative_time" head="de">
+				<argument type="Landmark_occasion" dependent="operado de urgencia" />
+				<argument type="Focal_occasion" dependent="logró escapar" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 De confirmarse su muerte, sería un duro golpe para los independentistas tras el fallecimiento confirmado de otro destacado dirigente guerrillero, Jatab.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Death" head="muerte">
+				<argument type="Protagonist" dependent="de otro destacado dirigente guerrillero ," /></frame>
+			<frame type="Increment" head="otro">
+				<argument type="Class" dependent="destacado dirigente guerrillero ," /></frame>
+			<frame type="Irregular_combatants" head="guerrillero">
+				<argument type="Descriptor" dependent="destacado" /></frame>
+			<frame type="Leadership" head="dirigente">
+				<argument type="Descriptor" dependent="destacado" />
+				<argument type="Type" dependent="guerrillero" /></frame>
+			<frame type="Relative_time" head="de">
+				<argument type="Focal_occasion" dependent="sería un duro golpe para" />
+				<argument type="Landmark_occasion" dependent="fallecimiento confirmado de otro destacado dirigente guerrillero ," /></frame>
+			<frame type="Verification" head="confirmado de">
+				<argument type="Unconfirmed_content" dependent="fallecimiento confirmado de otro destacado dirigente guerrillero ," /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por el momento, las autoridades rusas no han ofrecido pruebas del fallecimiento de Basayev, a quien Moscú ha dado por muerto varias veces.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fp0">las</token><token pos="ncfp000">autoridades</token><token pos="aq0fp0">rusas</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_3" concept_ref3="c_0" concept_ref4="c_2" concept_ref5="c_6" concept_ref6="c_7">
+			<token pos="sps00">Por</token><mention concept_ref="c_5"><token pos="da0ms0">el</token><token pos="ncms000">momento</token></mention><token pos="rn">no</token><token pos="vaip3p0">han</token><token pos="vmp00sm">ofrecido</token><mention concept_ref="c_3"><token pos="ncfp000">pruebas</token></mention><token pos="spcms">del</token><mention concept_ref="c_0"><token pos="ncms000">fallecimiento</token></mention><token pos="sps00">de</token><mention concept_ref="c_2"><token pos="np00000">Basayev</token></mention><token pos="fc">,</token><token pos="sps00">a</token><mention concept_ref="c_7"><token pos="pr0cs000">quien</token></mention><token pos="np00000">Moscú</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">dado</token><token pos="sps00">por</token><mention concept_ref="c_6"><token pos="aq0msp">muerto</token><token pos="di0fp0">varias</token><token pos="ncfp000">veces</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Dead_or_alive" head="muerto">
+				<argument type="Protagonist" dependent="varias veces" /></frame>
+			<frame type="Death" head="muerto">
+				<argument type="Protagonist" dependent="de Basayev" /></frame>
+			<frame type="Evidence" head="pruebas">
+				<argument type="Support" dependent="las autoridades rusas" />
+				<argument type="Proposition" dependent="del fallecimiento de Basayev" /></frame>
+			<frame type="Quantified_mass" head="varias">
+				<argument type="Individuals" dependent="veces" /></frame>
+			<main_frame type="Statement" head="dado por">
+				<argument type="Speaker" dependent="quien" />
+				<argument type="Message" dependent="muerto varias veces" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Basayev protagonizó durante la primera guerra chechena la audaz operación de Pudyonnovsk.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="np00000">Basayev</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<token pos="vmis3s0">protagonizó</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="aq0cs0">audaz</token><token pos="ncfs000">operación</token></mention><token pos="sps00">de</token><token pos="np00000">Pudyonnovsk</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Businesses" head="operación de">
+				<argument type="Proprietor" dependent="de" /></frame>
+			<frame type="Hostile_encounter" head="guerra">
+				<argument type="Sides" dependent="chechena" /></frame>
+			<frame type="Ordinal_numbers" head="primera">
+				<argument type="Type" dependent="guerra chechena" /></frame>
+			<main_frame type="Performers_and_roles" head="protagonizó">
+				<argument type="Performer" dependent="Basayev" />
+				<argument type="Time" dependent="durante la primera guerra chechena la audaz operación de" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Un grupo guerrillero tomó el hospital de esa localidad rusa.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="di0ms0">Un</token><token pos="ncms000">grupo</token><token pos="aq0ms0">guerrillero</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_2" concept_ref3="c_6" concept_ref4="c_8">
+			<token pos="vmis3s0">tomó</token><token pos="da0ms0">el</token><token pos="ncms000">hospital</token><mention concept_ref="c_6"><token pos="sps00">de</token><token pos="dd0fs0">esa</token><token pos="ncfs000">localidad</token><token pos="aq0fs0">rusa</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="grupo">
+				<argument type="Aggregate_property" dependent="guerrillero" /></frame>
+			<frame type="Buildings" head="hospital" />
+			<frame type="Irregular_combatants" head="guerrillero">
+				<argument type="Side_2" dependent="grupo" /></frame>
+			<frame type="Origin" head="rusa">
+				<argument type="Entity" dependent="localidad" /></frame>
+			<frame type="Political_locales" head="localidad">
+				<argument type="Container_possessor" dependent="rusa" /></frame>
+			<main_frame type="Taking_time" head="tomó">
+				<argument type="Activity" dependent="Un grupo guerrillero" />
+				<argument type="Time_length" dependent="el hospital" />
+				<argument type="Activity" dependent="de esa localidad rusa" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El secuestro colocó la guerra de Chechenia en las primeras páginas de la prensa internacional y demostró al mundo que la rebelión independentista estaba lejos de ser sofocada.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0ms0">El</token><token pos="ncms000">secuestro</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_0" concept_ref3="c_3" concept_ref4="c_6">
+			<token pos="vmis3s0">colocó</token><mention concept_ref="c_4"><token pos="da0fs0">la</token><token pos="ncfs000">guerra</token></mention><token pos="sps00">de</token><mention concept_ref="c_0"><token pos="np00000">Chechenia</token></mention><token pos="sps00">en</token><mention concept_ref="c_3"><token pos="da0fp0">las</token><token pos="ao0fp0">primeras</token><token pos="ncfp000">páginas</token></mention><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">prensa</token><token pos="aq0cs0">internacional</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Change_of_leadership" head="independentista" />
+			<frame type="Change_of_leadership" head="rebelión">
+				<argument type="Depictive" dependent="independentista" />
+				<argument type="Degree" dependent="lejos" />
+				<argument type="Time" dependent="de ser sofocada" /></frame>
+			<frame type="Contacting" head="páginas">
+				<argument type="Addressee" dependent="de la prensa internacional" /></frame>
+			<frame type="Degree" head="lejos">
+				<argument type="Gradable_attribute" dependent="independentista" />
+				<argument type="Gradable_attribute" dependent="de ser sofocada" /></frame>
+			<frame type="Evidence" head="demostró">
+				<argument type="Proposition" dependent="mundo que la rebelión independentista estaba lejos de ser sofocada" /></frame>
+			<frame type="Hostile_encounter" head="guerra">
+				<argument type="Sides" dependent="Chechenia" /></frame>
+			<frame type="Kidnapping" head="secuestro" />
+			<frame type="Part_orientational" head="primeras" />
+			<main_frame type="Placing" head="colocó">
+				<argument type="Theme" dependent="secuestro" />
+				<argument type="Goal" dependent="la guerra de Chechenia en las primeras páginas de la prensa internacional" /></main_frame>
+			<frame type="Political_locales" head="internacional">
+				<argument type="Population" dependent="prensa" /></frame>
+			<frame type="Political_locales" head="mundo" />
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="la guerra de Chechenia" />
+				<argument type="Ground" dependent="páginas de la prensa internacional" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Entre 1996 y 1999, Basayev hizo de líder de la oposición chechena.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="np00000">Basayev</token>
+		</theme>
+		<rheme concept_ref1="c_6">
+			<token pos="vmis3s0">hizo</token><token pos="sps00">de</token><mention concept_ref="c_6"><token pos="nccs000">líder</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">oposición</token><token pos="aq0fs0">chechena</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Becoming" head="hizo">
+				<argument type="Time" dependent="Entre 1996 y 1999" />
+				<argument type="Entity" dependent="Basayev" />
+				<argument type="Final_category" dependent="líder de la oposición chechena" /></main_frame>
+			<frame type="Leadership" head="líder">
+				<argument type="Governed" dependent="Basayev" />
+				<argument type="Activity" dependent="la oposición chechena" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

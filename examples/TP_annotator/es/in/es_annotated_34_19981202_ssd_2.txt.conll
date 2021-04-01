@@ -1,0 +1,6 @@
+{   ('Appellations', 'presidente'): [('Type', 'es')],
+    ('Criminal_investigation', 'investigación'): [('Incident', 'contra')],
+    ('Locative_relation', 'se'): [('Ground', 'abrir la segunda audiencia pública del comité judicial')],
+    ('Ordinal_numbers', 'segunda'): [('Type', 'pública')],
+    ('Process_continue', 'seguir'): [('Depictive', 'con la investigación contra')],
+    ('Reasoning', 'cometer'): [('Content', 'quot ; cometer perjurio no es aceptable y debe tener consecuencias & quot ; , por lo que el comité se propone seguir adelante con la')]}

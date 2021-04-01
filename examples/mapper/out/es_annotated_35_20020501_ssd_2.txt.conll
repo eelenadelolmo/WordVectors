@@ -1,0 +1,9 @@
+{   ('Attempt', 'intento'): [('Goal', 'por las tropas federales rusas')],
+    ('Besieging', 'tropas'): [('Assailant', 'de'), ('Victim', 'por las tropas federales rusas')],
+    ('Calendric_unit', 'invierno'): [('Salient_event', 'del 2000 al')],
+    ('Direction', 'derecha'): [('Landmark', 'la pierna')],
+    ('Earnings_and_losses', 'perdió'): [('Earner', 'Basayev'), ('Earnings', 'la pierna derecha'), ('Time', 'en el invierno del 2000 al')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'un campo de minas'), ('Ground', 'un intento de burlar el cerco de Grozni por las tropas federales rusas')],
+    ('Origin', 'rusas'): [('Entity', 'tropas federales')],
+    ('Political_locales', 'federales'): [('Population', 'rusas')],
+    ('Traversing', 'cruzar'): [('Theme', 'el'), ('Goal', 'un campo de minas en un intento de burlar el cerco de Grozni por las tropas federales rusas')]}

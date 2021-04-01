@@ -1,0 +1,8 @@
+{   ('Cardinal_numbers', 'millones'): [('Unit', 'pesetas')],
+    ('Criminal_investigation', 'investigación'): [],
+    ('Getting', 'llevó'): [('Theme', 'las informaciones'), ('Recipient', 'los')],
+    ('Information', 'informaciones'): [],
+    ('Leadership', 'de'): [('Governed', 'la investigación'), ('Governed', 'la entidad')],
+    ('Quantified_mass', 'cantidad'): [('Mass', 'de 740 millones de')],
+    ('Scrutiny', 'investigación'): [('Cognizer', 'la Oficina Estatal de Control de la Competencia que'), ('Ground', 'asunto')],
+    ('Supply', 'proveedores'): [('Theme', 'carburantes')]}

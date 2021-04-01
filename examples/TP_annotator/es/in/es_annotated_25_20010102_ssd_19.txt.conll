@@ -1,0 +1,5 @@
+{   ('Cardinal_numbers', 'cinco'): [('Unit', 'hijas pequeñas')],
+    ('Cardinal_numbers', 'pareja'): [],
+    ('Cardinal_numbers', 'una'): [('Entity', 'de ellas')],
+    ('Importance', 'de'): [('Interested_party', 'una de ellas')],
+    ('Kinship', 'hijas'): [('Ego', 'pareja'), ('Descriptor', 'cinco')]}

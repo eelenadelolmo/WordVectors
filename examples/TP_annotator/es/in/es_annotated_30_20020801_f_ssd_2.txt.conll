@@ -1,0 +1,7 @@
+{   ('Architectural_part', 'piso'): [('Descriptor', 'segundo')],
+    ('Building_subparts', 'oficina'): [],
+    ('Businesses', 'tienda'): [],
+    ('Causation', 'obligó'): [('Affected', 'una tienda'), ('Effect', 'piso')],
+    ('Ordinal_numbers', 'primer'): [('Type', 'piso')],
+    ('Ordinal_numbers', 'segundo'): [('Type', 'piso')],
+    ('People', 'mujer'): [('Descriptor', '81 años')]}

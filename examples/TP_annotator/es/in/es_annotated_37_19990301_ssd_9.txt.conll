@@ -1,0 +1,9 @@
+{   ('Catastrophe', 'tragedia'): [],
+    ('Event', 'ocurrir'): [('Event', 'una tragedia')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'familias enteras'), ('Ground', 'la arena')],
+    ('Kinship', 'familias'): [],
+    ('Make_noise', 'juegan'): [('Sound_source', 'lo'), ('Sound_source', 'familias enteras'), ('Place', 'en la arena')],
+    ('People', 'mujer'): [],
+    ('Possibility', 'pudo'): [('Possible_event', 'una tragedia'), ('Possible_event', 'ocurrir')],
+    ('Ranked_expectation', 'enteras'): [('Entity', 'familias')],
+    ('Substance', 'la arena'): []}

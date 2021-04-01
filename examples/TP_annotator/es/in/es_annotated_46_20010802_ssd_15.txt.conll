@@ -1,0 +1,4 @@
+{   ('Age', 'nuevas'): [('Entity', 'sospechas de pactos secretos')],
+    ('Awareness', 'sospechas'): [('Content', 'pactos secretos'), ('Evidence', 'precios de las gasolinas y el')],
+    ('Commerce_scenario', 'precios'): [('Goods', 'gasolinas y')],
+    ('Secrecy_status', 'secretos'): [('Phenomenon', 'pactos')]}

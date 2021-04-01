@@ -1,0 +1,6 @@
+{   ('Calendric_unit', 'día'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'la casa rural Mas'), ('Ground', 'de')],
+    ('Kinship', 'familia'): [('Ego', 'mi')],
+    ('Locative_relation', 'en'): [('Figure', 'un día'), ('Ground', 'en la casa rural Mas')],
+    ('Locative_relation', 'pasar'): [('Ground', 'mi familia'), ('Figure', 'tuve la oportunidad de pasar un día en la casa rural Mas')],
+    ('Opportunity', 'oportunidad de'): [('Agent', 'en'), ('Desirable_situation', 'de pasar un día en la casa rural Mas')]}

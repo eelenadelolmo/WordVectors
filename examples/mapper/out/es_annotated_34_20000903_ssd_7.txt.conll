@@ -1,0 +1,8 @@
+{   ('Biological_urge', 'estampó'): [('Experiencer', 'rosario de')],
+    ('Change_position_on_a_scale', 'creciente'): [('Item', 'hostigamiento político a un Partido Nacionalista')],
+    ('Commerce_pay', 'pagará'): [('Goods', 'surte efectos la estrategia'), ('Goods', 'la firma que estampó en')],
+    ('Killing', 'asesinato'): [],
+    ('Objective_influence', 'efectos'): [('Manner', 'estrategia')],
+    ('Remembering_experience', 'olvidada'): [('Salient_entity', 'estampó')],
+    ('Sign_agreement', 'la firma'): [('Agreement', 'que estampó en')],
+    ('Taking_time', 'estampó'): []}

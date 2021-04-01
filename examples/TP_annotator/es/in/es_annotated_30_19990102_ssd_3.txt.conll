@@ -1,0 +1,4 @@
+{   ('Arrest', 'captura'): [('Suspect', 'emitidas')],
+    ('Documents', 'emitidas'): [('Descriptor', 'captura')],
+    ('Personal_relationship', 'esposa'): [('Partner_1', 'Karadzic')],
+    ('Personal_relationship', 'marido'): [('Partner_2', 'su')]}

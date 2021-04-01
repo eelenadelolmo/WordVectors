@@ -1,0 +1,5 @@
+{   ('Body_parts', 'cuerpos'): [],
+    ('Increment', 'otros'): [('Class', 'cuerpos')],
+    ('Intentionally_act', 'pasos'): [('Manner', 'primeros'), ('Agent', 'de la policía catalana')],
+    ('Law_enforcement_agency', 'policía'): [('Jurisdiction', 'catalana')],
+    ('Ordinal_numbers', 'primeros'): [('Type', 'pasos de la policía catalana')]}

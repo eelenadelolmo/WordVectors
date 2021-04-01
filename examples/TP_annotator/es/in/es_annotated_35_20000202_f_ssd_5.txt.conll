@@ -1,0 +1,8 @@
+{   ('Arrest', 'arrestado'): [('Time', 'Desde su entrada en Kosovo , en Junio del año pasado'), ('Authorities', 'la fuerza de paz'), ('Suspect', 'cinco serbios , sospechosos de crímenes de guerra')],
+    ('Calendric_unit', 'año'): [('Relative_time', 'Junio')],
+    ('Cardinal_numbers', 'cinco'): [('Unit', 'serbios')],
+    ('Committing_crime', 'crímenes'): [('Purpose', 'guerra')],
+    ('Hostile_encounter', 'guerra'): [],
+    ('Military', 'fuerza'): [('Goal', 'de paz de')],
+    ('Suspicion', 'sospechosos'): [('Authority', 'serbios'), ('Suspect', 'crímenes de guerra')],
+    ('Time_vector', 'Desde'): [('Landmark_event', 'su entrada en Kosovo , en Junio del año pasado')]}

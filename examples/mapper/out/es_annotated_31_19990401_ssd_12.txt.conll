@@ -1,0 +1,11 @@
+{   ('Attack', 'ataque'): [],
+    ('Attempt', 'esfuerzos'): [('Agent', 'el'), ('Goal', 'para detener el ataque')],
+    ('Becoming_aware', 'señalar'): [   (   'Phenomenon',
+                                           'señalar que continuará con los esfuerzos para detener el ataque , añadió que Milosevic ha dado prueba de buena voluntad y de que la pelota está ahora en '
+                                           'campo')],
+    ('Desirability', 'buena'): [('Evaluee', 'ha')],
+    ('Evidence', 'señalar'): [('Support', 'Milosevic'), ('Proposition', 'buena voluntad y de que la pelota está ahora en campo')],
+    ('Fields', 'campo'): [('Activity', 'de')],
+    ('Preventing_or_letting', 'detener'): [('Potential_hindrance', 'el'), ('Event', 'el ataque')],
+    ('Process_continue', 'continuará'): [('Event', 'esfuerzos para detener el ataque')],
+    ('Statement', 'añadió'): [('Speaker', 'ha'), ('Message', 'que Milosevic ha dado prueba de buena voluntad y de que la pelota está ahora en campo')]}

@@ -1,0 +1,9 @@
+{   ('Becoming', 'se'): [('Entity', 'este gesto positivo'), ('Final_category', 'quot ; una imagen de integración del protestantismo al catolicismo romano &')],
+    ('Emotion_directed', 'preocupación'): [   ('Experiencer', 'se'),
+                                              ('Topic', '; este gesto positivo & quot ; se convierta en & quot ; una imagen de integración del protestantismo al catolicismo romano')],
+    ('Expressing_publicly', 'mostró'): [   ('Content', 'Federación de Entidades Religiosas Evangélicas o Protestantes de España emitió una nota en la que'),
+                                           ('Communicator', 'se'),
+                                           (   'Content',
+                                               'preocupación por el hecho de que & quot ; este gesto positivo & quot ; se convierta en & quot ; una imagen de integración del protestantismo al '
+                                               'catolicismo romano')],
+    ('Impression', 'imagen'): [('Figure', 'de integración del protestantismo al')]}

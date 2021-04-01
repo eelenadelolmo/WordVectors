@@ -1,0 +1,9 @@
+{   ('Attack', 'ataques'): [],
+    ('Attempt', 'intento'): [('Agent', 'los'), ('Goal', 'de recuperar terreno')],
+    ('Hostile_encounter', 'combate'): [('Side_1', 'que'), ('Place', 'en esa zona contra los serbios en su intento de recuperar terreno')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'serbios'), ('Ground', 'su intento de recuperar terreno')],
+    ('Locale', 'zona'): [],
+    ('Reveal_secret', 'admitió'): [   ('Speaker', 'Shea'),
+                                      (   'Information',
+                                          'quot ; benefician indirectamente & quot ; a la guerrilla del UCK , que combate en esa zona contra los serbios en su intento de recuperar terreno')],
+    ('Taking_sides', 'contra'): [('Side', 'serbios')]}

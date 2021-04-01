@@ -1,0 +1,6 @@
+{   ('Capability', 'podré'): [('Entity', 'a'), ('Event', 'devolverte tanta confianza & quot ; , afirmó , para añadir : & quot ; Mi destino político va a estar marcado por ti')],
+    ('Destiny', 'destino'): [('Descriptor', 'político')],
+    ('Frequency', 'nunca'): [],
+    ('Rejuvenation', 'devolverte'): [('Agent', 'a'), ('Entity', 'ti')],
+    ('Sign', 'marcado'): [('Indicated', 'Mi destino político'), ('Indicated', 'por ti')],
+    ('Statement', 'afirmó'): [('Speaker', 'ti')]}

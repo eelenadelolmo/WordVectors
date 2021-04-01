@@ -1,0 +1,9 @@
+{   ('Being_named', 'nombre'): [('Descriptor', 'igual')],
+    ('Catastrophe', 'víctimas'): [('Undesirable_event', 'para lamentar que corrieran peligro por esa & quot ; equivocación')],
+    ('Causation', 'por esa'): [('Effect', 'corrieran peligro por'), ('Cause', 'equivocación')],
+    ('Experiencer_focus', 'lamentar'): [('Content', 'que corrieran peligro por esa & quot ; equivocación')],
+    ('Experiencer_obj', 'confundieron'): [('Stimulus', 'violentos'), ('Stimulus', 'al electricista con un diputado del PP de igual nombre')],
+    ('Identicality', 'igual'): [('Type', 'nombre')],
+    ('Interior_profile_relation', 'por'): [('Figure', 'Los'), ('Ground', 'peligro por esa & quot ; equivocación')],
+    ('Risky_situation', 'peligro'): [('Situation', 'Los')],
+    ('Spatial_contact', 'contactó'): [('Figure', 'quien'), ('Figure', 'las víctimas para lamentar que corrieran peligro por esa & quot ; equivocación')]}

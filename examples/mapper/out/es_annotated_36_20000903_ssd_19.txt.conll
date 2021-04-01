@@ -1,0 +1,5 @@
+{   ('Cause_change_of_position_on_a_scale', 'reduzca'): [('Cause', 'un modelo de financiación'), ('Agent', 'que'), ('Attribute', 'la aportación de Catalunya')],
+    ('Commitment', 'aportación'): [('Message', 'por el centro catalanista')],
+    ('Defending', 'defender'): [('Victim', 'modelo de financiación que reduzca la aportación de Catalunya')],
+    ('Goal', 'por'): [('Landmark', 'de')],
+    ('Locale_by_use', 'centro'): [('Container_possessor', 'catalanista')]}

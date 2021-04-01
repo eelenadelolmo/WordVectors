@@ -1,0 +1,11 @@
+{   ('Accoutrements', 'sombreros'): [('Style', 'reinas')],
+    ('Becoming_aware', 'encuentra'): [   ('Cognizer', 'lo'),
+                                         (   'Phenomenon',
+                                             'todo : balcones históricos , sombreros absurdos de reinas , juicios de nazis , puertos cosmopolitas en tiempos bélicos o estadistas inteligentes ,')],
+    ('Body_parts', 'ojos'): [('Possessor', 'lo')],
+    ('Closure', 'cerrados'): [('Container_portal', 'los ojos')],
+    ('Frequency', 'frecuentó'): [('Salient_entity', 'los')],
+    ('Historic_event', 'históricos'): [('Event', 'balcones')],
+    ('Legal_rulings', 'juicios de'): [('Defendant', 'nazis')],
+    ('Locale_by_use', 'puertos'): [('Descriptor', 'cosmopolitas')],
+    ('Mental_property', 'absurdos'): [('Behavior', 'sombreros absurdos de reinas')]}

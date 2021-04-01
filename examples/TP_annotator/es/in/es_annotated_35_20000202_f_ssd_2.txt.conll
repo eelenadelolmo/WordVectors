@@ -1,0 +1,5 @@
+{   ('Arrest', 'detenidos'): [('Suspect', 'Stojan Jovanovic , de 41 años , y Bogoljub Misic , de 38 ,')],
+    ('Interior_profile_relation', 'entre'): [('Figure', 'que cubre el trayecto'), ('Ground', 'Orahovac y Kosovska Mitrovica')],
+    ('Protecting', 'cubre'): [('Protection', 'un autobús que'), ('Asset', 'el trayecto entre Orahovac y Kosovska Mitrovica')],
+    ('Spatial_contact', 'en'): [('Figure', 'reservaban asiento'), ('Ground', 'un autobús que cubre el trayecto entre Orahovac y Kosovska Mitrovica')],
+    ('Vehicle', 'autobús'): []}

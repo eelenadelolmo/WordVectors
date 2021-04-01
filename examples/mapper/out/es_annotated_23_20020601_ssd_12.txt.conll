@@ -1,0 +1,7 @@
+{   ('Calendric_unit', 'año'): [('Relative_time', 'aún')],
+    ('Catastrophe', 'incidentes'): [],
+    ('Exchange', 'tras'): [],
+    ('Increment', 'más'): [('Class', 'abierto')],
+    ('Relative_time', 'aún'): [('Focal_occasion', 'año')],
+    ('Relative_time', 'los'): [('Focal_occasion', 'incidentes han abierto aún más la brecha entre la Conselleria de Justícia y los sindicatos'), ('Landmark_occasion', 'las fugas del pasado año')],
+    ('Reveal_secret', 'fugas'): [('Time', 'pasado año')]}

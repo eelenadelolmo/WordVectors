@@ -1,0 +1,3 @@
+{   ('Causation', 'porque'): [('Cause', 'tiene gracia')],
+    ('Obviousness', 'evidente'): [('Phenomenon', 'que si se reflexiona no se sostiene')],
+    ('Telling', 'se'): [('Speaker', 'esto'), ('Addressee', 'es'), ('Message', 'es porque tiene gracia')]}

@@ -1,0 +1,8 @@
+{   ('Arriving', 'de'): [('Theme', 'esta cantidad')],
+    ('Businesses', 'empresas'): [('Descriptor', 'austriaco')],
+    ('Explaining_the_facts', 'explicó'): [('Fact', 'el')],
+    ('Intentionally_create', 'crearían el'): [('Created_entity', 'Estado austriaco y las empresas que emplearon mano de obra gratuita durante el régimen de Adolf')],
+    ('Leadership', 'Estado'): [('Governed', 'austriaco')],
+    ('Leadership', 'régimen'): [('Domain', 'Hitler')],
+    ('Quantified_mass', 'cantidad'): [],
+    ('Using', 'emplearon'): [('Agent', 'el Estado austriaco y las empresas que'), ('Instrument', 'de obra gratuita'), ('Circumstances', 'durante el régimen de Adolf')]}

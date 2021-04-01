@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="42_20010901_ssd">
+
+
+	<concepts>
+		<concept id="c_0">BLANCA ESTHER DIAZ , que instruía la causa por la desaparición de sumarios que afectan a Jesús Gil ,</concept>
+		<concept id="c_1">La instrucción</concept>
+		<concept id="c_2">abstenerse por haber trabajado de sustituta en uno de los tres juzgados marbellís en que desaparecieron documentos judiciales</concept>
+		<concept id="c_3">juez</concept>
+		<concept id="c_4">los tres juzgados</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 BLANCA ESTHER DIAZ, que instruía la causa por la desaparición de sumarios que afectan a Jesús Gil, ha decidido abstenerse por haber trabajado de sustituta en uno de los tres juzgados marbellís en que desaparecieron documentos judiciales.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="ncfs000">BLANCA</token><token pos="ncms000">ESTHER</token><token pos="np00000">DIAZ</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vmii3s0">instruía</token><token pos="da0fs0">la</token><token pos="ncfs000">causa</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">desaparición</token><token pos="sps00">de</token><token pos="ncmp000">sumarios</token><token pos="pr0cn000">que</token><token pos="vmip3p0">afectan</token><token pos="sps00">a</token><token pos="np00000">Jesús</token><token pos="ncms000">Gil</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_4">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">decidido</token><mention concept_ref="c_2"><token pos="vmn0000">abstenerse</token><token pos="sps00">por</token><token pos="van0000">haber</token><token pos="vmp00sm">trabajado</token><token pos="sps00">de</token><token pos="ncfs000">sustituta</token><token pos="sps00">en</token><token pos="pi0ms000">uno</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="dn0cp0">tres</token><token pos="ncmp000">juzgados</token><token pos="aq0cp0">marbellís</token><token pos="sps00">en</token><token pos="pr0cn000">que</token><token pos="vmis3p0">desaparecieron</token><token pos="ncmp000">documentos</token><token pos="aq0cp0">judiciales</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Being_employed" head="trabajado" />
+			<main_frame type="Deciding" head="decidido">
+				<argument type="Decision" dependent="BLANCA ESTHER DIAZ , que instruía la causa por la desaparición" />
+				<argument type="Decision" dependent="abstenerse por haber trabajado de sustituta en uno de los tres juzgados marbellís en que desaparecieron documentos judiciales" /></main_frame>
+			<frame type="Departing" head="desaparición">
+				<argument type="Theme" dependent="documentos judiciales" /></frame>
+			<frame type="Departing" head="desaparición de" />
+			<frame type="Documents" head="documentos" />
+			<frame type="Instance" head="judiciales" />
+			<frame type="Judicial_body" head="judiciales">
+				<argument type="Task" dependent="de" /></frame>
+			<frame type="Scrutiny" head="juzgados">
+				<argument type="Cognizer" dependent="que" />
+				<argument type="Ground" dependent="causa" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La instrucción ha pasado a otra juez.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="ncfs000">instrucción</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_3" concept_ref3="c_4">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">pasado</token><mention concept_ref="c_2"><token pos="sps00">a</token><token pos="di0fs0">otra</token><token pos="nccs000">juez</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Criminal_investigation" head="juez" />
+			<frame type="Increment" head="otra">
+				<argument type="Class" dependent="juez" /></frame>
+			<frame type="People_by_vocation" head="juez" />
+			<main_frame type="Process_end" head="ha pasado">
+				<argument type="Process" dependent="juez" />
+				<argument type="Manner" dependent="a otra juez" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

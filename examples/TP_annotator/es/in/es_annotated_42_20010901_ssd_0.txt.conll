@@ -1,0 +1,9 @@
+{   ('Being_employed', 'trabajado'): [],
+    ('Deciding', 'decidido'): [   ('Decision', 'BLANCA ESTHER DIAZ , que instruía la causa por la desaparición'),
+                                  ('Decision', 'abstenerse por haber trabajado de sustituta en uno de los tres juzgados marbellís en que desaparecieron documentos judiciales')],
+    ('Departing', 'desaparición'): [('Theme', 'documentos judiciales')],
+    ('Departing', 'desaparición de'): [],
+    ('Documents', 'documentos'): [],
+    ('Instance', 'judiciales'): [],
+    ('Judicial_body', 'judiciales'): [('Task', 'de')],
+    ('Scrutiny', 'juzgados'): [('Cognizer', 'que'), ('Ground', 'causa')]}

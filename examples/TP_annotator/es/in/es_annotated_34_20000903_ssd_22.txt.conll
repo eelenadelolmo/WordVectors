@@ -1,0 +1,5 @@
+{   ('Alliance', 'coalición'): [('Descriptor', 'de'), ('Purpose', 'de su iniciativa de diálogo')],
+    ('Compliance', 'acatando'): [('Protagonist', 'Ibarretxe'), ('Norm', 'acatando la doctrina oficial del partido')],
+    ('Leadership', 'oficial'): [],
+    ('Process_end', 'acabó'): [('Process', 'Ibarretxe'), ('Process', 'acatando la doctrina oficial del partido')],
+    ('Representative', 'diálogo'): [('Representative', 'al desmentir que planeara excluir a la coalición aberzale de su iniciativa de diálogo')]}

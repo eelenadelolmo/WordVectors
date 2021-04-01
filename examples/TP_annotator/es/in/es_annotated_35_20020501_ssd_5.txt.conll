@@ -1,0 +1,5 @@
+{   ('Dead_or_alive', 'muerto'): [('Protagonist', 'varias veces')],
+    ('Death', 'muerto'): [('Protagonist', 'de Basayev')],
+    ('Evidence', 'pruebas'): [('Support', 'las autoridades rusas'), ('Proposition', 'del fallecimiento de Basayev')],
+    ('Quantified_mass', 'varias'): [('Individuals', 'veces')],
+    ('Statement', 'dado por'): [('Speaker', 'quien'), ('Message', 'muerto varias veces')]}

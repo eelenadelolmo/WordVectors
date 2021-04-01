@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="25_20000301_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El edificio</concept>
+		<concept id="c_1">Tanto el edificio , de Josep Lluís Sert , como el contenido artístico que se puede contemplar en él</concept>
+		<concept id="c_2">El éxito</concept>
+		<concept id="c_3">que</concept>
+		<concept id="c_4">Yo</concept>
+		<concept id="c_5">Joan Miró</concept>
+		<concept id="c_6">Sus manchas de colores vivos , perfiladas en negro</concept>
+		<concept id="c_7">aquello</concept>
+		<concept id="c_8">se</concept>
+		<concept id="c_9">y</concept>
+		<concept id="c_10">la iniciativa</concept>
+		<concept id="c_11">un punto</concept>
+		<concept id="c_12">la montaña</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Faltan pocos meses para que se conmemoren los 25 años de la Fundació Miró o, para decirlo de modo, quizá más preciso, pero menos popular, el Centre d'Estudis d'Art Contemporani.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="25" />
+				<argument type="Whole" dependent="de la Fundació" /></frame>
+			<frame type="Calendric_unit" head="meses">
+				<argument type="Count" dependent="pocos" /></frame>
+			<frame type="Desirability" head="popular" />
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="preciso" /></frame>
+			<frame type="Means" head="modo" />
+			<frame type="Placing" head="se">
+				<argument type="Theme" dependent="se" />
+				<argument type="Goal" dependent="modo" />
+				<argument type="Goal" dependent="quizá más preciso" /></frame>
+			<frame type="Quantified_mass" head="pocos">
+				<argument type="Individuals" dependent="meses" /></frame>
+			<frame type="Time_vector" head="para">
+				<argument type="Distance" dependent="pocos meses" />
+				<argument type="Landmark_event" dependent="25 años de la Fundació" />
+				<argument type="Direction" dependent="modo , quizá más preciso , pero menos popular , el Centre" />
+				<argument type="Event" dependent="d'Estudis d'Art" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El edificio se inauguró en 1975, de acuerdo con la iniciativa que Miró había tenido cuatro años antes.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">edificio</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_10">
+			<mention concept_ref="c_8"><token pos="p0000000">se</token></mention><token pos="vmis3s0">inauguró</token><token pos="sps00">en</token><token pos="z">1975</token><token pos="sps00">de</token><token pos="ncfs000">acuerdo</token><token pos="sps00">con</token><mention concept_ref="c_10"><token pos="da0fs0">la</token><token pos="ncfs000">iniciativa</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Be_in_agreement_on_action" head="de acuerdo">
+				<argument type="Party_2" dependent="edificio se inauguró en 1975" />
+				<argument type="Obligation" dependent="la iniciativa que Miró había tenido cuatro años antes" /></frame>
+			<frame type="Buildings" head="edificio" />
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="cuatro" /></frame>
+			<frame type="Goal" head="en">
+				<argument type="Trajector" dependent="edificio" />
+				<argument type="Landmark" dependent="la iniciativa que Miró había tenido cuatro años antes" /></frame>
+			<frame type="Temporal_subregion" head="antes" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Tanto el edificio, de Josep Lluís Sert, como el contenido artístico que se puede contemplar en él se convirtieron muy pronto en un punto de visita destacado en la montaña de Montjuïc.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="rg">Tanto</token><token pos="da0ms0">el</token><token pos="ncms000">edificio</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="ncfs000">Josep</token><token pos="ncms000">Lluís</token><token pos="np00000">Sert</token><token pos="fc">,</token><token pos="cs">como</token><token pos="da0ms0">el</token><token pos="ncms000">contenido</token><token pos="aq0ms0">artístico</token><token pos="pr0cn000">que</token><token pos="p0000000">se</token><token pos="vmip3s0">puede</token><token pos="vmn0000">contemplar</token><token pos="sps00">en</token><token pos="pp3ms000">él</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_10" concept_ref3="c_11" concept_ref4="c_12">
+			<mention concept_ref="c_8"><token pos="p0300000">se</token></mention><token pos="vmis3p0">convirtieron</token><token pos="sps00">en</token><mention concept_ref="c_11"><token pos="di0ms0">un</token><token pos="ncms000">punto</token></mention><token pos="sps00">de</token><mention concept_ref="c_10"><token pos="ncfs000">visita</token></mention><token pos="aq0msp">destacado</token><token pos="sps00">en</token><mention concept_ref="c_12"><token pos="da0fs0">la</token><token pos="ncfs000">montaña</token></mention><token pos="sps00">de</token><token pos="np00000">Montjuïc</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="visita">
+				<argument type="Goal" dependent="en la montaña de" /></frame>
+			<main_frame type="Becoming" head="convirtieron">
+				<argument type="Entity" dependent="se" />
+				<argument type="Final_category" dependent="muy pronto en un punto de visita destacado en la montaña de" /></main_frame>
+			<frame type="Buildings" head="edificio" />
+			<main_frame type="Capability" head="puede">
+				<argument type="Entity" dependent="el contenido artístico que" />
+				<argument type="Event" dependent="contemplar en él se convirtieron muy pronto en un punto de visita destacado en la montaña de" /></main_frame>
+			<frame type="Fields" head="artístico">
+				<argument type="Salient_entity" dependent="contenido" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="un punto de visita destacado" />
+				<argument type="Ground" dependent="la montaña de" /></frame>
+			<frame type="Natural_features" head="montaña">
+				<argument type="Name" dependent="de" /></frame>
+			<frame type="Quantified_mass" head="Tanto el">
+				<argument type="Individuals" dependent="el edificio" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El éxito ha ido creciendo.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="ncms000">éxito</token>
+		</theme>
+		<rheme>
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">ido</token><token pos="vmg0000">creciendo</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Change_position_on_a_scale" head="creciendo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Van allí los interesados por la obra de Miró, los que quieren ver las diversas exposiciones y actos que se realizan allí, los que valoran la arquitectura de Sert, los que deciden subir a Montjuïc y se lo encuentran sin preverlo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_aware" head="encuentran">
+				<argument type="Phenomenon" dependent="sin" /></frame>
+			<frame type="Deciding" head="deciden">
+				<argument type="Decision" dependent="los" />
+				<argument type="Cognizer" dependent="los que" />
+				<argument type="Decision" dependent="subir a Montjuïc y se lo encuentran" /></frame>
+			<frame type="Desiring" head="quieren">
+				<argument type="Event" dependent="los" />
+				<argument type="Experiencer" dependent="los que" />
+				<argument type="Event" dependent="ver las diversas exposiciones y actos que se realizan allí" /></frame>
+			<frame type="Diversity" head="diversas">
+				<argument type="Group" dependent="exposiciones" /></frame>
+			<frame type="Event" head="actos" />
+			<frame type="Experiencer_focus" head="interesados">
+				<argument type="Experiencer" dependent="los" />
+				<argument type="Content" dependent="obra" /></frame>
+			<frame type="Interior_profile_relation" head="por">
+				<argument type="Figure" dependent="interesados" />
+				<argument type="Ground" dependent="obra" /></frame>
+			<frame type="Locale" head="allí" />
+			<frame type="Locative_relation" head="allí">
+				<argument type="Figure" dependent="actos que se realizan allí" />
+				<argument type="Ground" dependent="los que valoran la arquitectura" /></frame>
+			<frame type="Motion" head="ver">
+				<argument type="Theme" dependent="los que" />
+				<argument type="Path" dependent="subir" />
+				<argument type="Goal" dependent="por" /></frame>
+			<frame type="Perception_experience" head="ver">
+				<argument type="Perceiver_passive" dependent="los que" />
+				<argument type="Phenomenon" dependent="las diversas exposiciones y actos que se realizan allí" /></frame>
+			<frame type="Taking_time" head="se">
+				<argument type="Time_length" dependent="allí" /></frame>
+			<frame type="Work" head="obra">
+				<argument type="Descriptor" dependent="de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No he hablado con Rosa Maria Malet, que es su excelente directora, para pedirle datos de visitantes y otros detalles.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desirability" head="excelente">
+				<argument type="Evaluee" dependent="directora" /></frame>
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="detalles" /></frame>
+			<frame type="Information" head="datos" />
+			<frame type="Leadership" head="directora">
+				<argument type="Governed" dependent="es" />
+				<argument type="Descriptor" dependent="excelente" /></frame>
+			<frame type="Questioning" head="pedirle">
+				<argument type="Speaker" dependent="y" />
+				<argument type="Message" dependent="datos de visitantes y otros detalles" /></frame>
+			<frame type="Statement" head="hablado">
+				<argument type="Speaker" dependent="y" /></frame>
+			<frame type="Visiting" head="visitantes" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ya se conocerán cuando se celebre el 25º aniversario.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Make_acquaintance" head="conocerán">
+				<argument type="Individual_1" dependent="se" />
+				<argument type="Time" dependent="cuando se celebre el 25º aniversario" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Además, en la Fundació Miró hay un restaurante que es muy agradable, sobre todo cuando hace buen tiempo, porque tiene una parte al aire libre, en un patio interior del museo.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_9">
+			<token pos="vsip3s0">es</token><token pos="rg">muy</token><token pos="aq0cs0">agradable</token><token pos="fc">,</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="buen tiempo" />
+				<argument type="Cause" dependent="tiene una parte al aire libre" /></frame>
+			<frame type="Desirability" head="buen">
+				<argument type="Evaluee" dependent="tiempo" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="tiene una parte al aire libre" />
+				<argument type="Ground" dependent="un patio interior del museo" /></frame>
+			<frame type="Locale_by_use" head="museo" />
+			<frame type="Locale_by_use" head="patio">
+				<argument type="Container_possessor" dependent="interior" /></frame>
+			<main_frame type="Locale_by_use" head="restaurante" />
+			<frame type="Locative_relation" head="hay">
+				<argument type="Figure" dependent="la Fundació" />
+				<argument type="Ground" dependent="hay" />
+				<argument type="Figure" dependent="un restaurante que es muy agradable , sobre todo cuando hace buen tiempo , porque tiene una parte al aire libre" /></frame>
+			<frame type="Part_inner_outer" head="interior" />
+			<frame type="Part_whole" head="parte">
+				<argument type="Whole" dependent="aire libre" /></frame>
+			<frame type="Stimulus_focus" head="agradable">
+				<argument type="Stimulus" dependent="un restaurante" />
+				<argument type="Experiencer" dependent="es" />
+				<argument type="Degree" dependent="muy" /></frame>
+			<frame type="Temporal_collocation" head="cuando">
+				<argument type="Landmark_event" dependent="buen tiempo" /></frame>
+			<frame type="Weather" head="tiempo">
+				<argument type="Specification" dependent="buen" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Yo voy a comer allí una vez cada año, para recordar, con otros amigos, a Alex Ferrer Isbert, que trabajaba para la Fundació y murió tan joven.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="pp1csn00">Yo</token>
+		</theme>
+		<rheme concept_ref1="c_9" concept_ref2="c_12">
+			<token pos="vmip1s0">voy</token><token pos="sps00">a</token><token pos="vmn0000">comer</token><token pos="rg">allí</token><token pos="di0fs0">una</token><token pos="ncfs000">vez</token><mention concept_ref="c_12"><token pos="di0cs0">cada</token><token pos="ncms000">año</token></mention><token pos="sps00">para</token><token pos="vmn0000">recordar</token><token pos="fc">,</token><token pos="sps00">con</token><token pos="di0mp0">otros</token><token pos="ncmp000">amigos</token><token pos="fc">,</token><token pos="sps00">a</token><token pos="ncfs000">Alex</token><token pos="ncms000">Ferrer</token><token pos="np00000">Isbert</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="joven" />
+			<frame type="Being_employed" head="trabajaba">
+				<argument type="Employee" dependent="que" />
+				<argument type="Task" dependent="para la Fundació" /></frame>
+			<frame type="Calendric_unit" head="año">
+				<argument type="Relative_time" dependent="cada" /></frame>
+			<frame type="Death" head="murió">
+				<argument type="Result" dependent="tan joven" /></frame>
+			<frame type="Frequency" head="cada">
+				<argument type="Interval" dependent="año" /></frame>
+			<frame type="Goal" head="para">
+				<argument type="Trajector" dependent="y" /></frame>
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="amigos" /></frame>
+			<frame type="Locative_relation" head="allí">
+				<argument type="Figure" dependent="y" />
+				<argument type="Ground" dependent="allí una vez cada año" /></frame>
+			<frame type="Personal_relationship" head="amigos" />
+			<main_frame type="Remembering_experience" head="recordar">
+				<argument type="Cognizer" dependent="y" />
+				<argument type="Experience" dependent="para la Fundació y murió tan joven" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Joan Miró ha sido uno de los artistas catalanes con más fama internacional.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="np0000l">Joan</token><token pos="np0000l">Miró</token>
+		</theme>
+		<rheme concept_ref1="c_11" concept_ref2="c_10">
+			<token pos="vsp00sm">sido</token><mention concept_ref="c_11"><token pos="pi0ms000">uno</token></mention><token pos="sps00">de</token><mention concept_ref="c_10"><token pos="da0mp0">los</token><token pos="nccp000">artistas</token></mention><token pos="aq0mp0">catalanes</token><token pos="sps00">con</token><token pos="rg">más</token><token pos="ncfs000">fama</token><token pos="aq0cs0">internacional</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="uno">
+				<argument type="Entity" dependent="los artistas catalanes con más fama internacional" /></frame>
+			<frame type="Create_physical_artwork" head="artistas">
+				<argument type="Descriptor" dependent="catalanes con más fama internacional" /></frame>
+			<frame type="Fame" head="fama">
+				<argument type="Degree" dependent="más fama internacional" />
+				<argument type="Entity" dependent="artistas catalanes" /></frame>
+			<frame type="Political_locales" head="internacional">
+				<argument type="Descriptor" dependent="más" />
+				<argument type="Locale" dependent="artistas catalanes con más fama internacional" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sus manchas de colores vivos, perfiladas en negro, sus símbolos, que evocan estrellas y lunas y pájaros, han sido muy imitados, pero todavía más: el estilo Miró ha influido - - posiblemente como ningún otro pintor - - en las formas y colores de la sociedad actual.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="dp3cp0">Sus</token><token pos="ncfp000">manchas</token><token pos="sps00">de</token><token pos="ncmp000">colores</token><token pos="aq0mp0">vivos</token><token pos="fc">,</token><token pos="aq0fpp">perfiladas</token><token pos="sps00">en</token><token pos="ncms000">negro</token>
+		</theme>
+		<rheme concept_ref1="c_9">
+			<token pos="fc">,</token><token pos="dp3cp0">sus</token><token pos="ncmp000">símbolos</token><token pos="fc">,</token><token pos="fc">,</token><token pos="vsp00sm">sido</token><token pos="rg">muy</token><token pos="aq0mpp">imitados</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="actual" />
+			<frame type="Color" head="negro">
+				<argument type="Entity" dependent="ha" />
+				<argument type="Entity" dependent="sus símbolos" /></frame>
+			<frame type="Evoking" head="evocan">
+				<argument type="Stimulus" dependent="estrellas y lunas y pájaros" /></frame>
+			<frame type="Increment" head="otro">
+				<argument type="Class" dependent="pintor" /></frame>
+			<frame type="Locale" head="manchas" />
+			<frame type="Objective_influence" head="influido">
+				<argument type="Influencing_entity" dependent="el estilo" /></frame>
+			<frame type="Performers_and_roles" head="estrellas" />
+			<frame type="Shapes" head="formas" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Existen muchas obras cartelísticas, diseños de piezas de interiorismo, objetos de uso cotidiano que tienen, aunque sólo sea en alguno de sus detalles, una estética mironiana.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_10">
+			<token pos="vmip3p0">tienen</token><token pos="fc">,</token><token pos="fc">,</token><mention concept_ref="c_10"><token pos="di0fs0">una</token><token pos="ncfs000">estética</token></mention><token pos="aq0fs0">mironiana</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Coming_up_with" head="diseños">
+				<argument type="Cognizer" dependent="interiorismo" /></frame>
+			<frame type="Locative_relation" head="sea en alguno">
+				<argument type="Ground" dependent="Existen muchas obras" /></frame>
+			<frame type="Part_inner_outer" head="interiorismo" />
+			<frame type="Part_piece" head="piezas">
+				<argument type="Substance" dependent="diseños" /></frame>
+			<frame type="Purpose" head="objetos de">
+				<argument type="Goal" dependent="uso cotidiano que" /></frame>
+			<frame type="Quantified_mass" head="muchas">
+				<argument type="Individuals" dependent="obras" /></frame>
+			<frame type="Using" head="uso">
+				<argument type="Purpose" dependent="cotidiano" /></frame>
+			<frame type="Work" head="obras">
+				<argument type="Manner" dependent="de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Lo que ocurre es que a menudo no somos conscientes de ello, y eso demuestra hasta qué punto Miró habita en nuestro mundo visual.
+		</str>
+		<theme>
+			<token pos="da0ns0">Lo</token><token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="conscientes">
+				<argument type="Cognizer" dependent="nuestro" />
+				<argument type="Content" dependent="de ello" /></frame>
+			<frame type="Degree" head="hasta">
+				<argument type="Gradable_attribute" dependent="habita" /></frame>
+			<frame type="Evidence" head="demuestra">
+				<argument type="Support" dependent="nuestro" />
+				<argument type="Proposition" dependent="hasta qué punto Miró habita en nuestro mundo visual" /></frame>
+			<frame type="Frequency" head="a menudo">
+				<argument type="Event" dependent="somos" />
+				<argument type="Event" dependent="conscientes de ello" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="hasta qué" />
+				<argument type="Ground" dependent="nuestro mundo visual" /></frame>
+			<frame type="Political_locales" head="mundo">
+				<argument type="Descriptor" dependent="visual" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Cuando Miró, después de pasar en su juventud por el expresionismo, el cubismo y el fauvismo, llegó a la fase de signos aparentemente simples que lo hicieron tan famoso, algún escéptico decía: "¿Eso? Mi hijo también lo haría".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="llegó">
+				<argument type="Theme" dependent="lo" /></frame>
+			<frame type="Fame" head="famoso" />
+			<frame type="Kinship" head="su">
+				<argument type="Ego" dependent="Mi" /></frame>
+			<frame type="Manufacturing" head="hicieron">
+				<argument type="Product" dependent="Eso" />
+				<argument type="Product" dependent="su" /></frame>
+			<frame type="People_by_age" head="juventud">
+				<argument type="Ethnicity" dependent="su" /></frame>
+			<frame type="Perception_active" head="aparentemente">
+				<argument type="Perceiver_agentive" dependent="lo" /></frame>
+			<frame type="Process_end" head="pasar">
+				<argument type="Process" dependent="pasar en su juventud por el expresionismo , el cubismo y el fauvismo" /></frame>
+			<frame type="Relative_time" head="después de">
+				<argument type="Focal_occasion" dependent="aparentemente" />
+				<argument type="Landmark_occasion" dependent="pasar en su juventud por el expresionismo , el cubismo y el fauvismo" />
+				<argument type="Focal_occasion" dependent=", llegó a la fase de signos aparentemente simples que lo hicieron tan famoso , algún escéptico decía :" /></frame>
+			<frame type="Sign" head="signos" />
+			<frame type="Statement" head="decía">
+				<argument type="Speaker" dependent="algún escéptico" />
+				<argument type="Message" dependent="; ¿ Eso ? Mi hijo también lo haría" /></frame>
+			<frame type="Thermodynamic_phase" head="fase" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Quería decir que aquello no tenía ningún mérito.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="pd0ns000">aquello</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vmii3s0">tenía</token><token pos="di0ms0">ningún</token><token pos="ncms000">mérito</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Evidence" head="que">
+				<argument type="Support" dependent="que" />
+				<argument type="Proposition" dependent="que aquello no tenía ningún mérito" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Cuando alguien dice de algún artista "yo podría hacerlo como él", es una señal inequívoca de que el artista ha conseguido el éxito más difícil de todos: el arte de la sencillez.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Accomplishment" head="conseguido">
+				<argument type="Agent" dependent="el artista" />
+				<argument type="Goal" dependent="el éxito más difícil de todos" /></frame>
+			<frame type="Create_physical_artwork" head="artista" />
+			<frame type="Difficulty" head="difícil">
+				<argument type="Degree" dependent="más" />
+				<argument type="Activity" dependent="éxito" /></frame>
+			<frame type="Fields" head="arte">
+				<argument type="Activity" dependent="difícil" /></frame>
+			<frame type="Intentionally_act" head="de">
+				<argument type="Agent" dependent="de" />
+				<argument type="Act" dependent="es" /></frame>
+			<frame type="Possibility" head="podría">
+				<argument type="Possible_event" dependent="de" />
+				<argument type="Possible_event" dependent="hacerlo como él  quot ; , es una señal inequívoca de que el artista ha conseguido el éxito más difícil de todos : el arte de" /></frame>
+			<frame type="Sign" head="señal">
+				<argument type="Indicated" dependent="el artista ha conseguido el éxito más difícil de todos : el arte de" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_1" dependent="es" /></frame>
+			<frame type="Statement" head="dice">
+				<argument type="Speaker" dependent="alguien" />
+				<argument type="Message" dependent="algún artista  quot ; yo podría hacerlo como él  quot ; , es una señal inequívoca de que el artista" /></frame>
+			<frame type="Success_or_failure" head="éxito">
+				<argument type="Agent" dependent="el artista" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El que engaña, pero también el que perdura.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="el que" />
+		</semantic_roles>
+	</sentence>
+	
+</text>

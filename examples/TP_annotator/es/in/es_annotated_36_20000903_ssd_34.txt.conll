@@ -1,0 +1,5 @@
+{   ('Deciding', 'decisión'): [('Decision', 'que sólo a ella le corresponde')],
+    ('Increment', 'más'): [],
+    ('Intentionally_act', 'paso'): [('Manner', 'más')],
+    ('Manufacturing', 'dar'): [('Producer', 'ella')],
+    ('Taking_time', 'dar'): [('Time_length', 'paso más')]}

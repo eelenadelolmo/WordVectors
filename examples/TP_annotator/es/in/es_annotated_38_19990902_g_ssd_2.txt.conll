@@ -1,0 +1,5 @@
+{   ('Cardinal_numbers', 'el'): [],
+    ('Questioning', 'pidió'): [('Addressee', 'él'), ('Message', 'retirase')],
+    ('Removing', 'retirase'): [('Agent', 'él')],
+    ('Statement', 'quot ; le'): [('Message', 'se'), ('Message', '; le pidió que se retirase , sino que fue él mismo quien , desde 1997 , venía reclamando el recambio')],
+    ('Take_place_of', 'recambio'): []}

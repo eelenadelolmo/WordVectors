@@ -1,0 +1,6 @@
+{   ('Being_named', 'nombres'): [('Name', 'la')],
+    ('Calendric_unit', 'ayer de'): [],
+    ('Event', 'sucederle'): [('Event', 'para')],
+    ('Interior_profile_relation', 'de'): [('Figure', 'Molins tirara'), ('Ground', 'toalla podrían vetar algunos nombres para sucederle')],
+    ('Possibility', 'podrían'): [('Possible_event', 'la toalla'), ('Possible_event', 'vetar algunos nombres para sucederle')],
+    ('Proportional_quantity', 'algunos'): [('Individuals', 'nombres')]}

@@ -1,0 +1,11 @@
+{   ('Being_obligated', 'misiones'): [],
+    ('Calendric_unit', 'años'): [('Count', 'muchos'), ('Whole', 'de vida')],
+    ('Catastrophe', 'incidentes'): [],
+    ('Catastrophe', 'sufrido'): [('Patient', 'la estación'), ('Time', 'a causa de sus muchos años de vida')],
+    ('Causation', 'causa de'): [('Effect', 'ha sufrido la estación'), ('Cause', 'muchos años de vida')],
+    ('Intentionally_act', 'haciendo'): [('Act', 'estudios científicos')],
+    ('Interior_profile_relation', 'en'): [('Ground', 'misiones precedentes')],
+    ('Quantified_mass', 'muchos'): [('Individuals', 'años')],
+    ('Relative_time', 'precedentes'): [('Focal_occasion', 'misiones')],
+    ('Scrutiny', 'estudios'): [('Ground', 'científicos')],
+    ('Spatial_contact', 'en'): [('Figure', 'a causa de sus muchos años de vida'), ('Ground', 'esta ocasión'), ('Figure', 'han pasado la mayor parte del tiempo haciendo estudios científicos')]}

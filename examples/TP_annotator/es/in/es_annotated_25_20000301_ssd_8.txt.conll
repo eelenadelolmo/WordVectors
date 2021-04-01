@@ -1,0 +1,10 @@
+{   ('Age', 'joven'): [],
+    ('Being_employed', 'trabajaba'): [('Employee', 'que'), ('Task', 'para la Fundació')],
+    ('Calendric_unit', 'año'): [('Relative_time', 'cada')],
+    ('Death', 'murió'): [('Result', 'tan joven')],
+    ('Frequency', 'cada'): [('Interval', 'año')],
+    ('Goal', 'para'): [('Trajector', 'y')],
+    ('Increment', 'otros'): [('Class', 'amigos')],
+    ('Locative_relation', 'allí'): [('Figure', 'y'), ('Ground', 'allí una vez cada año')],
+    ('Personal_relationship', 'amigos'): [],
+    ('Remembering_experience', 'recordar'): [('Cognizer', 'y'), ('Experience', 'para la Fundació y murió tan joven')]}

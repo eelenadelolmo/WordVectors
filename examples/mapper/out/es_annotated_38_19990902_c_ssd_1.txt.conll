@@ -1,0 +1,8 @@
+{   ('Aggregate', 'partido'): [('Individuals', 'los')],
+    ('Appellations', 'presidente'): [],
+    ('Committing_crime', 'delitos'): [],
+    ('Leadership', 'alcalde'): [('Governed', 'de Marbella acusa a los')],
+    ('Leadership', 'dirigentes'): [('Type', 'socialistas'), ('Governed', 'los delitos de')],
+    ('Means', 'métodos'): [('Descriptor', 'mafiosa')],
+    ('Organization', 'organización'): [('Purpose', 'de métodos gansteriles')],
+    ('Using', 'utilizando'): [('Instrument', 'los términos')]}

@@ -1,0 +1,8 @@
+{   ('Activity_finish', 'concluyó'): [('Agent', 'asesinato de Buesa ,'), ('Activity', 'concluyó que las parcas explicaciones del ministro confirman que & quot ; se ocultó')],
+    ('Hiding_objects', 'ocultó'): [('Hidden_object', 'ha')],
+    ('Information', 'información'): [],
+    ('Killing', 'asesinato'): [('Victim', 'Buesa')],
+    ('Questioning', 'solicitado'): [('Speaker', 'del Gobierno vasco , Josu Jon Imaz , que ha'), ('Message', 'Oreja que aclare las circunstancias que rodearon el asesinato de Buesa')],
+    ('Representative', 'quot'): [('Represented', 'Gobierno vasco'), ('Representative', 'Josu Jon Imaz')],
+    ('Surrounding', 'aclare'): [('Figure', 'las circunstancias'), ('Ground', 'el asesinato de Buesa')],
+    ('Verification', 'confirman'): [('Inspector', 'parcas explicaciones del ministro'), ('Unconfirmed_content', 'se ocultó & quot ; información')]}

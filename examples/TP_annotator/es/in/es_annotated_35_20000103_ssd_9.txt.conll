@@ -1,0 +1,7 @@
+{   ('Buildings', 'hospital'): [],
+    ('Capability', 'podrá'): [('Entity', 'Ninguno'), ('Event', 'decir que ponemos límite económico')],
+    ('Economy', 'económico'): [],
+    ('Placing', 'su'): [('Agent', 'ponemos'), ('Theme', 'límite económico')],
+    ('Purpose', 'planificar'): [('Agent', 'Cada hospital')],
+    ('Required_event', 'debe'): [('Required_situation', 'Cada hospital'), ('Required_situation', 'planificar su método . Ninguno podrá decir que ponemos límite económico')],
+    ('Statement', 'decir'): [('Speaker', 'Ninguno'), ('Message', 'que ponemos límite económico')]}

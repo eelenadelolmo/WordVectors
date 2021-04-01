@@ -1,0 +1,4 @@
+{   ('Buildings', 'Hospital'): [('Descriptor', 'Militar de Santiago')],
+    ('Leadership', 'el'): [('Leader', 'Fuentes del Hospital Militar de Santiago'), ('Activity', 'rumores del ingreso de Pinochet en el centro')],
+    ('Locale_by_use', 'centro'): [],
+    ('Unattributed_information', 'rumores'): [('Reported_fact', 'Fuentes del Hospital Militar de Santiago'), ('Reported_fact', 'ingreso de Pinochet')]}

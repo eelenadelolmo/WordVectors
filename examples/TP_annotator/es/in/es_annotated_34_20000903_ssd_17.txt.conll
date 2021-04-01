@@ -1,0 +1,3 @@
+{   ('Attempt_suasion', 'presión'): [],
+    ('Objective_influence', 'efecto'): [('Dependent_entity', 'en las filas')],
+    ('Possession', 'teniendo'): [('Owner', 'incesante presión del Ejecutivo'), ('Possession', 'un doble efecto en las filas')]}

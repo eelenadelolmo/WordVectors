@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="23_20020601_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Los Mossos d'Esquadra</concept>
+		<concept id="c_1">la Generalitat</concept>
+		<concept id="c_2">Los funcionarios</concept>
+		<concept id="c_3">La propia directora general de prisiones , Mercedes Sánchez ,</concept>
+		<concept id="c_4">Los policías , equipados con material antidisturbios ,</concept>
+		<concept id="c_5">Los agentes</concept>
+		<concept id="c_6">Los 72 policías</concept>
+		<concept id="c_7">El refuerzo</concept>
+		<concept id="c_8">los Mossos</concept>
+		<concept id="c_9">Los incidentes</concept>
+		<concept id="c_10">Tanto el conseller de Justícia , Josep-Delfí Guàrdia , como el presidente del crítico sindicato CATAC , Miguel Pueyo ,</concept>
+		<concept id="c_11">Justícia</concept>
+		<concept id="c_12">El conseller Guàrdia</concept>
+		<concept id="c_13">Las 4 centrales sindicales</concept>
+		<concept id="c_14">Los sindicatos CATAC , CCOO , UGT y CSIF</concept>
+		<concept id="c_15">Xavier Navarro , dirigente de CCOO y partidario del acuerdo ,</concept>
+		<concept id="c_16">Institucions Penitenciàries</concept>
+		<concept id="c_17">Manuel Allué , de CATAC ,</concept>
+		<concept id="c_18">esa extraordinaria presencia de policías</concept>
+		<concept id="c_19">acudió</concept>
+		<concept id="c_20">el</concept>
+		<concept id="c_21">nada</concept>
+		<concept id="c_22">un retén</concept>
+		<concept id="c_23">Camins</concept>
+		<concept id="c_24">guardia</concept>
+		<concept id="c_25">turnos</concept>
+		<concept id="c_26">motín</concept>
+		<concept id="c_27">convenio</concept>
+		<concept id="c_28">nada</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Los Mossos d'Esquadra mantienen un retén de 72 agentes en la cárcel de Quatre Camins, en La Roca del Vallès ( Vallès Oriental ), para prevenir nuevos altercados.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">Los</token><token pos="np0000l">Mossos</token><token pos="np0000l">d'Esquadra</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_22">
+			<token pos="vmip3p0">mantienen</token><mention concept_ref="c_22"><token pos="di0ms0">un</token><token pos="ncms000">retén</token></mention><token pos="sps00">de</token><token pos="z">72</token><mention concept_ref="c_5"><token pos="nccp000">agentes</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevos">
+				<argument type="Entity" dependent="altercados" /></frame>
+			<frame type="Preventing_or_letting" head="prevenir">
+				<argument type="Event" dependent="nuevos altercados" /></frame>
+			<frame type="Prison" head="cárcel">
+				<argument type="Name" dependent="Quatre" />
+				<argument type="Descriptor" dependent="de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los funcionarios de la prisión consiguieron que la Generalitat accediera a mantener esa extraordinaria presencia de policías tras el violento motín del miércoles.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">la</token><token pos="np00000">Generalitat</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_6" concept_ref3="c_5" concept_ref4="c_18">
+			<token pos="vmsi3s0">accediera</token><token pos="sps00">a</token><token pos="vmn0000">mantener</token><mention concept_ref="c_1"><token pos="dd0fs0">esa</token><token pos="aq0fs0">extraordinaria</token><token pos="ncfs000">presencia</token></mention><token pos="sps00">de</token><mention concept_ref="c_6"><token pos="nccp000">policías</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Los funcionarios de la prisión " />
+			<main_frame type="Activity_ongoing" head="mantener">
+				<argument type="Activity" dependent="esa extraordinaria presencia de policías" /></main_frame>
+			<frame type="Law_enforcement_agency" head="policías" />
+			<frame type="Leadership" head="funcionarios de">
+				<argument type="Domain" dependent="prisión" /></frame>
+			<main_frame type="Make_agreement_on_action" head="accediera">
+				<argument type="Obligation" dependent="a mantener esa extraordinaria presencia de policías tras el violento motín del miércoles" /></main_frame>
+			<main_frame type="Operating_a_system" head="accediera">
+				<argument type="System" dependent="funcionarios de la prisión" /></main_frame>
+			<frame type="Presence" head="presencia">
+				<argument type="Entity" dependent="de policías" /></frame>
+			<frame type="Prison" head="prisión" />
+			<frame type="Relative_time" head="de la">
+				<argument type="Focal_occasion" dependent="esa extraordinaria presencia de policías" />
+				<argument type="Landmark_occasion" dependent="el violento motín del" />
+				<argument type="Manner" dependent="del miércoles" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los funcionarios se concentraron ante la prisión poco después de las siete de la mañana y se negaron a entrar si antes la Administración no garantizaba su seguridad.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">funcionarios</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_2">
+			<mention concept_ref="c_5"><token pos="p0300000">se</token></mention><token pos="vmis3p0">concentraron</token><token pos="sps00">ante</token><mention concept_ref="c_2"><token pos="da0fs0">la</token><token pos="ncfs000">prisión</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_start" head="entrar" />
+			<frame type="Agree_or_refuse_to_act" head="se negaron">
+				<argument type="Proposed_action" dependent="a entrar si antes la Administración no garantizaba su seguridad" /></frame>
+			<frame type="Being_at_risk" head="seguridad">
+				<argument type="Asset" dependent="su" /></frame>
+			<frame type="Leadership" head="funcionarios" />
+			<frame type="Part_orientational" head="ante">
+				<argument type="Whole" dependent="la prisión" /></frame>
+			<frame type="Prison" head="prisión" />
+			<frame type="Relative_time" head="después de">
+				<argument type="Focal_occasion" dependent="funcionarios se concentraron ante la prisión poco" />
+				<argument type="Landmark_occasion" dependent="siete de" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Event" dependent="la Administración" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La propia directora general de prisiones, Mercedes Sánchez, acudió a Quatre Camins para negociar con los representantes de los trabajadores.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fs0">La</token><token pos="di0fs0">propia</token><token pos="ncfs000">directora</token><token pos="aq0cs0">general</token><token pos="sps00">de</token><token pos="ncfp000">prisiones</token><token pos="fc">,</token><token pos="ncms000">Mercedes</token><token pos="np00000">Sánchez</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_13" concept_ref3="c_18" concept_ref4="c_19" concept_ref5="c_23">
+			<mention concept_ref="c_19"><token pos="vmis3s0">acudió</token></mention><mention concept_ref="c_18"><token pos="sps00">a</token><token pos="np0000l">Quatre</token><token pos="np0000l">Camins</token><token pos="sps00">para</token><token pos="vmn0000">negociar</token><token pos="sps00">con</token><token pos="da0mp0">los</token><token pos="nccp000">representantes</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">trabajadores</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Discussion" head="negociar">
+				<argument type="Interlocutor_2" dependent="con los representantes de los trabajadores" /></main_frame>
+			<frame type="Employing" head="trabajadores" />
+			<frame type="Leadership" head="directora">
+				<argument type="Governed" dependent="general de prisiones" /></frame>
+			<frame type="Leadership" head="general">
+				<argument type="Descriptor" dependent="directora" />
+				<argument type="Leader" dependent="prisiones" /></frame>
+			<main_frame type="Motion" head="acudió a">
+				<argument type="Source" dependent="acudió" />
+				<argument type="Goal" dependent="a Quatre Camins para negociar con los representantes de los trabajadores" /></main_frame>
+			<frame type="Prison" head="prisiones" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A media mañana se alcanzó el acuerdo y a mediodía llegó el refuerzo policial, tras una decisión sin precedentes.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="alcanzó">
+				<argument type="Goal" dependent="el acuerdo" /></frame>
+			<frame type="Arriving" head="llegó">
+				<argument type="Time" dependent="media mañana se alcanzó el acuerdo" />
+				<argument type="Theme" dependent="refuerzo policial" />
+				<argument type="Time" dependent="a mediodía" />
+				<argument type="Time" dependent="tras una decisión sin precedentes" /></frame>
+			<frame type="Deciding" head="decisión">
+				<argument type="Manner" dependent="sin precedentes" /></frame>
+			<frame type="Law_enforcement_agency" head="policial" />
+			<frame type="Locative_relation" head="se">
+				<argument type="Figure" dependent="refuerzo policial" />
+				<argument type="Ground" dependent="mediodía" /></frame>
+			<frame type="Make_agreement_on_action" head="el acuerdo" />
+			<frame type="Relative_time" head="se">
+				<argument type="Landmark_occasion" dependent="una decisión sin precedentes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los policías, equipados con material antidisturbios, se mantendrán atentos a posibles incidentes en el cuerpo de guardia que los Mossos tienen en la prisión.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0mp0">Los</token><token pos="nccp000">policías</token><token pos="fc">,</token><token pos="aq0mpp">equipados</token><token pos="sps00">con</token><token pos="ncms000">material</token><token pos="aq0cn0">antidisturbios</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_9" concept_ref3="c_7" concept_ref4="c_20" concept_ref5="c_24">
+			<mention concept_ref="c_5"><token pos="p0300000">se</token></mention><token pos="vmif3p0">mantendrán</token><token pos="aq0mp0">atentos</token><token pos="sps00">a</token><token pos="aq0cp0">posibles</token><mention concept_ref="c_9"><token pos="nccp000">incidentes</token></mention><token pos="sps00">en</token><mention concept_ref="c_20"><token pos="da0ms0">el</token></mention><token pos="ncms000">cuerpo</token><token pos="sps00">de</token><mention concept_ref="c_24"><token pos="nccs000">guardia</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_ongoing" head="guardia que">
+				<argument type="Activity" dependent="posibles incidentes en el cuerpo de guardia que los Mossos tienen en la prisión" /></frame>
+			<frame type="Being_in_control" head="se">
+				<argument type="Dependent_entity" dependent="atentos" /></frame>
+			<frame type="Body_parts" head="se" />
+			<frame type="Catastrophe" head="incidentes">
+				<argument type="Undesirable_event" dependent="tienen en la prisión" /></frame>
+			<frame type="Gizmo" head="equipados">
+				<argument type="Use" dependent="antidisturbios" /></frame>
+			<frame type="Law_enforcement_agency" head="policías" />
+			<frame type="Likelihood" head="posibles">
+				<argument type="Hypothetical_event" dependent="incidentes en el cuerpo de guardia que los Mossos tienen en la prisión" /></frame>
+			<frame type="Military" head="atentos">
+				<argument type="Members" dependent="guardia" />
+				<argument type="Goal" dependent="tienen en la prisión" /></frame>
+			<frame type="Prison" head="prisión" />
+			<frame type="Supply" head="equipados">
+				<argument type="Theme" dependent="equipados con" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los agentes no patrullarán por el interior de la misma, como en un principio reclamaban algunos trabajadores, todavía afectados por el motín de presos, que se encaramaron al tejado y causaron importantes destrozos, y los plantes vividos esta semana.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0mp0">Los</token><token pos="nccp000">agentes</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_20" concept_ref3="c_23">
+			<token pos="rn">no</token><token pos="vmif3p0">patrullarán</token><token pos="sps00">por</token><mention concept_ref="c_20"><token pos="da0ms0">el</token></mention><token pos="ncms000">interior</token><token pos="sps00">de</token><mention concept_ref="c_23"><token pos="da0fs0">la</token><token pos="ncms000">misma</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Architectural_part" head="tejado" />
+			<frame type="Being_in_captivity" head="de presos" />
+			<frame type="Calendric_unit" head="semana">
+				<argument type="Relative_time" dependent="esta" /></frame>
+			<frame type="Causation" head="causaron">
+				<argument type="Cause" dependent="que" />
+				<argument type="Effect" dependent="importantes destrozos" /></frame>
+			<frame type="Continued_state_of_affairs" head="todavía">
+				<argument type="State_of_affairs" dependent="algunos trabajadores ," />
+				<argument type="State_of_affairs" dependent="afectados por el motín de presos" /></frame>
+			<frame type="Destroying" head="destrozos" />
+			<frame type="Employing" head="trabajadores" />
+			<frame type="Importance" head="importantes">
+				<argument type="Factor" dependent="destrozos" /></frame>
+			<frame type="Leadership" head="Los agentes" />
+			<frame type="Locale_by_use" head="plantes" />
+			<frame type="Objective_influence" head="afectados">
+				<argument type="Influencing_situation" dependent="algunos trabajadores" />
+				<argument type="Influencing_entity" dependent="por el motín de presos" /></frame>
+			<frame type="Part_inner_outer" head="interior">
+				<argument type="Whole" dependent="de la" /></frame>
+			<frame type="Residence" head="vividos">
+				<argument type="Resident" dependent="los plantes" />
+				<argument type="Location" dependent="esta semana" /></frame>
+			<frame type="Statement" head="se">
+				<argument type="Message" dependent="afectados por el motín de presos" />
+				<argument type="Time" dependent="en un principio" /></frame>
+			<frame type="Temporal_subregion" head="principio" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Al final, decidieron por unanimidad volver a sus puestos de trabajo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="volver">
+				<argument type="Goal" dependent="a sus puestos de trabajo" /></frame>
+			<frame type="Being_employed" head="trabajo">
+				<argument type="Employee" dependent="sus" /></frame>
+			<frame type="Deciding" head="decidieron">
+				<argument type="Time" dependent="Al final" />
+				<argument type="Decision" dependent="decidieron por unanimidad" />
+				<argument type="Decision" dependent="volver a sus puestos de trabajo" /></frame>
+			<frame type="Interior_profile_relation" head="por">
+				<argument type="Ground" dependent="final" />
+				<argument type="Figure" dependent="decidieron por unanimidad volver a sus puestos de trabajo" /></frame>
+			<frame type="Process_end" head="final" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 EL DOBLE DE AGENTES.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los 72 policías se distribuirán en tres turnos de 24.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0mp0">Los</token><token pos="z">72</token><token pos="nccp000">policías</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_25">
+			<mention concept_ref="c_5"><token pos="p0300000">se</token></mention><token pos="vmif3p0">distribuirán</token><token pos="sps00">en</token><token pos="dn0cp0">tres</token><mention concept_ref="c_25"><token pos="ncmp000">turnos</token></mention><token pos="sps00">de</token><token pos="z">24</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="tres">
+				<argument type="Unit" dependent="turnos" /></frame>
+			<frame type="Change_position_on_a_scale" head="turnos" />
+			<main_frame type="Dispersal" head="distribuirán">
+				<argument type="Individuals" dependent="Los 72 policías" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El refuerzo supone doblar el dispositivo policial habitual.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0ms0">El</token><token pos="ncms000">refuerzo</token>
+		</theme>
+		<rheme concept_ref1="c_9" concept_ref2="c_18" concept_ref3="c_20">
+			<token pos="vmip3s0">supone</token><token pos="vmn0000">doblar</token><mention concept_ref="c_20"><token pos="da0ms0">el</token></mention><token pos="ncms000">dispositivo</token><token pos="aq0cs0">policial</token><token pos="aq0cs0">habitual</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Change_position_on_a_scale" head="doblar">
+				<argument type="Item" dependent="el dispositivo policial habitual" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Además, los Mossos mantendrán a otros 25 agentes en la comisaría de Granollers, que llegarían a Quatre Camins en unos cinco minutos.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="da0mp0">los</token><token pos="np00000">Mossos</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_8" concept_ref3="c_22" concept_ref4="c_25">
+			<token pos="vmif3p0">mantendrán</token><token pos="sps00">a</token><token pos="di0mp0">otros</token><token pos="z">25</token><token pos="nccp000">agentes</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_ongoing" head="los">
+				<argument type="Agent" dependent="de" />
+				<argument type="Activity" dependent="otros 25 agentes" />
+				<argument type="Time" dependent="en la comisaría de Granollers" /></frame>
+			<frame type="Arriving" head="llegarían">
+				<argument type="Theme" dependent="que" />
+				<argument type="Goal" dependent="a Quatre" />
+				<argument type="Time" dependent="en unos cinco minutos" /></frame>
+			<frame type="Calendric_unit" head="minutos">
+				<argument type="Count" dependent="cinco" /></frame>
+			<frame type="Cardinal_numbers" head="cinco">
+				<argument type="Unit" dependent="minutos" /></frame>
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="25 agentes" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="Además" /></frame>
+			<frame type="Leadership" head="agentes">
+				<argument type="Descriptor" dependent="25" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="que" />
+				<argument type="Ground" dependent="Quatre" />
+				<argument type="Time" dependent="en unos cinco minutos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los incidentes han abierto aún más la brecha entre la Conselleria de Justícia y los sindicatos, tras las fugas del pasado año.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="da0mp0">Los</token><token pos="nccp000">incidentes</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_1" concept_ref3="c_12" concept_ref4="c_11" concept_ref5="c_20" concept_ref6="c_24">
+			<token pos="vaip3p0">han</token><token pos="vmp00sm">abierto</token><token pos="rg">aún</token><token pos="rg">más</token><mention concept_ref="c_1"><token pos="da0fs0">la</token><token pos="ncfs000">brecha</token></mention><token pos="sps00">entre</token><mention concept_ref="c_12"><token pos="da0fs0">la</token><token pos="np0000o">Conselleria</token><token pos="sps00">de</token><token pos="np0000l">Justícia</token></mention><token pos="cc">y</token><token pos="da0mp0">los</token><token pos="ncmp000">sindicatos</token><token pos="sps00">tras</token><mention concept_ref="c_24"><token pos="da0fp0">las</token><token pos="ncfp000">fugas</token></mention><token pos="spcms">del</token><token pos="aq0msp">pasado</token><token pos="ncms000">año</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="año">
+				<argument type="Relative_time" dependent="aún" /></frame>
+			<frame type="Catastrophe" head="incidentes" />
+			<frame type="Exchange" head="tras" />
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="abierto" /></frame>
+			<frame type="Relative_time" head="aún">
+				<argument type="Focal_occasion" dependent="año" /></frame>
+			<frame type="Relative_time" head="los">
+				<argument type="Focal_occasion" dependent="incidentes han abierto aún más la brecha entre la Conselleria de Justícia y los sindicatos" />
+				<argument type="Landmark_occasion" dependent="las fugas del pasado año" /></frame>
+			<frame type="Reveal_secret" head="fugas">
+				<argument type="Time" dependent="pasado año" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sin embargo, ha provocado una inusual unanimidad a la hora de valorar las causas del conflicto.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Causation" head="causas">
+				<argument type="Effect" dependent="del conflicto" /></frame>
+			<frame type="Hostile_encounter" head="conflicto" />
+			<frame type="Leadership" head="del">
+				<argument type="Leader" dependent="la" />
+				<argument type="Activity" dependent="provocado una inusual unanimidad a la hora de valorar las causas del conflicto" /></frame>
+			<frame type="Typicality" head="inusual">
+				<argument type="State_of_affairs" dependent="de valorar las causas del conflicto" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Tanto el conseller de Justícia, Josep-Delfí Guàrdia, como el presidente del crítico sindicato CATAC, Miguel Pueyo, han subrayado el origen "organizado y provocado" del motín por parte de grupos antisistema, y el sindicalista señaló a determinados abogados.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="rg">Tanto</token><token pos="da0ms0">el</token><token pos="ncms000">conseller</token><token pos="sps00">de</token><token pos="np00000">Justícia</token><token pos="fc">,</token><token pos="np0000l">Josep-Delfí</token><token pos="np0000l">Guàrdia</token><token pos="fc">,</token><token pos="cs">como</token><token pos="da0ms0">el</token><token pos="ncms000">presidente</token><token pos="spcms">del</token><token pos="aq0ms0">crítico</token><token pos="ncms000">sindicato</token><token pos="np00000">CATAC</token><token pos="fc">,</token><token pos="ncms000">Miguel</token><token pos="np00000">Pueyo</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_8" concept_ref3="c_20" concept_ref4="c_25" concept_ref5="c_26">
+			<token pos="vaip3p0">han</token><token pos="vmp00sm">subrayado</token><mention concept_ref="c_20"><token pos="da0ms0">el</token></mention><token pos="ncms000">origen</token><token pos="fe">quot;</token><token pos="aq0msp">organizado</token><token pos="cc">y</token><token pos="aq0msp">provocado</token><token pos="fe">quot;</token><token pos="spcms">del</token><mention concept_ref="c_26"><token pos="ncms000">motín</token></mention><token pos="sps00">por</token><token pos="ncfs000">parte</token><token pos="sps00">de</token><mention concept_ref="c_25"><token pos="ncmp000">grupos</token></mention><token pos="aq0cn0">antisistema</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Adducing" head="señaló">
+				<argument type="Speaker" dependent="el sindicalista" />
+				<argument type="Specified_entity" dependent="a determinados abogados" /></frame>
+			<frame type="Aggregate" head="grupos">
+				<argument type="Aggregate_property" dependent="de" /></frame>
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="del crítico sindicato" /></frame>
+			<frame type="Cause_to_start" head="provocado" />
+			<frame type="Idiosyncrasy" head="determinados">
+				<argument type="Entity" dependent="abogados" /></frame>
+			<frame type="Importance" head="crítico">
+				<argument type="Factor" dependent="sindicato" /></frame>
+			<frame type="Origin" head="origen">
+				<argument type="Entity" dependent="del motín por parte de grupos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 DISPERSIÓN DE CABECILLAS.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Justícia prosiguió ayer con la dispersión de los cabecillas de la revuelta a otras cárceles catalanas, que han acogido ya a unos 70 presos.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="np00000">Justícia</token>
+		</theme>
+		<rheme concept_ref1="c_9" concept_ref2="c_6" concept_ref3="c_1" concept_ref4="c_5" concept_ref5="c_20">
+			<token pos="vmis3s0">prosiguió</token><token pos="sps00">con</token><mention concept_ref="c_9"><token pos="da0fs0">la</token><token pos="ncfs000">dispersión</token></mention><token pos="sps00">de</token><mention concept_ref="c_6"><token pos="da0mp0">los</token><token pos="nccp000">cabecillas</token></mention><token pos="sps00">de</token><mention concept_ref="c_1"><token pos="da0fs0">la</token><token pos="ncfs000">revuelta</token></mention><token pos="sps00">a</token><mention concept_ref="c_5"><token pos="di0fp0">otras</token><token pos="ncfp000">cárceles</token></mention><token pos="aq0fp0">catalanas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_in_captivity" head="cárceles" />
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Change_of_leadership" head="revuelta">
+				<argument type="Old_leader" dependent="a otras cárceles catalanas" /></frame>
+			<frame type="Increment" head="otras">
+				<argument type="Class" dependent="cárceles catalanas" /></frame>
+			<frame type="Leadership" head="los cabecillas">
+				<argument type="Governed" dependent="la revuelta" /></frame>
+			<frame type="Prison" head="cárceles">
+				<argument type="Location" dependent="catalanas" /></frame>
+			<frame type="Process_continue" head="acogido ya">
+				<argument type="Event" dependent="de" />
+				<argument type="Manner" dependent="ayer" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y mantiene conversaciones con el Gobierno central para poder trasladar a internos y, de este modo, esponjar Quatre Camins, Brians y la Modelo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="poder">
+				<argument type="Entity" dependent="el" />
+				<argument type="Event" dependent="para poder trasladar a internos y , de este modo , esponjar Quatre Camins , Brians y la Modelo" /></frame>
+			<frame type="Chatting" head="conversaciones">
+				<argument type="Interlocutors" dependent="con el Gobierno central" />
+				<argument type="Topic" dependent="para poder trasladar a internos y , de este modo , esponjar Quatre Camins , Brians y la Modelo" /></frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Governed" dependent="central" /></frame>
+			<frame type="Transfer" head="trasladar">
+				<argument type="Theme" dependent="a internos y , de este modo , esponjar Quatre Camins , Brians y la Modelo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por el momento, ha optado por reforzar la plantilla de la cárcel de La Roca con funcionarios del resto de centros.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cause_change_of_strength" head="reforzar">
+				<argument type="Agent" dependent="ha" />
+				<argument type="Patient" dependent="cárcel de La Roca con funcionarios del" />
+				<argument type="Circumstances" dependent="con funcionarios del resto de centros" /></frame>
+			<frame type="Choosing" head="optado">
+				<argument type="Cognizer" dependent="ha" />
+				<argument type="Chosen" dependent="reforzar la plantilla de la cárcel de La Roca con funcionarios del resto de centros" /></frame>
+			<frame type="Employing" head="funcionarios">
+				<argument type="Employee" dependent="cárcel de La Roca con funcionarios" /></frame>
+			<frame type="Increment" head="del resto">
+				<argument type="Class" dependent="centros" /></frame>
+			<frame type="Leadership" head="funcionarios del">
+				<argument type="Governed" dependent="del resto de centros" /></frame>
+			<frame type="Locale_by_use" head="centros" />
+			<frame type="Prison" head="cárcel">
+				<argument type="Location" dependent="Roca" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El conseller Guàrdia comparó ayer el motín con "un terremoto, y puede tener - - dijo - - réplicas en otros puntos, pero de menor intensidad".
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="da0ms0">El</token><token pos="ncms000">conseller</token><token pos="np00000">Guàrdia</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_7" concept_ref3="c_20" concept_ref4="c_22" concept_ref5="c_25" concept_ref6="c_26">
+			<token pos="vmis3s0">comparó</token><mention concept_ref="c_20"><token pos="da0ms0">el</token></mention><mention concept_ref="c_26"><token pos="ncms000">motín</token></mention><token pos="sps00">con</token><token pos="fe">quot;</token><token pos="di0ms0">un</token><token pos="ncms000">terremoto</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="ayer" />
+			<main_frame type="Evaluative_comparison" head="comparó">
+				<argument type="Profiled_item" dependent="el" /></main_frame>
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="puntos" /></frame>
+			<frame type="Moving_in_place" head="terremoto" />
+			<frame type="Statement" head="dijo">
+				<argument type="Message" dependent="réplicas en otros puntos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Las 4 centrales sindicales rechazan la firma del convenio.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="da0fp0">Las</token><token pos="z">4</token><token pos="ncfp000">centrales</token><token pos="aq0cp0">sindicales</token>
+		</theme>
+		<rheme concept_ref1="c_9" concept_ref2="c_18" concept_ref3="c_20" concept_ref4="c_24" concept_ref5="c_27">
+			<token pos="vmip3p0">rechazan</token><mention concept_ref="c_24"><token pos="da0fs0">la</token><token pos="ncfs000">firma</token></mention><token pos="spcms">del</token><mention concept_ref="c_27"><token pos="ncms000">convenio</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Make_agreement_on_action" head="convenio" />
+			<main_frame type="Respond_to_proposal" head="rechazan">
+				<argument type="Speaker" dependent="Las 4 centrales sindicales" />
+				<argument type="Proposal" dependent="la firma del convenio" /></main_frame>
+			<frame type="Sign_agreement" head="firma del">
+				<argument type="Agreement" dependent="del convenio" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los sindicatos CATAC, CCOO, UGT y CSIF han rehusado firmar el convenio colectivo con Justícia tras los altercados.
+		</str>
+		<theme concept_ref="c_14">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">sindicatos</token><token pos="np00000">CATAC</token><token pos="fc">,</token><token pos="np00000">CCOO</token><token pos="fc">,</token><token pos="np00000">UGT</token><token pos="cc">y</token><token pos="np00000">CSIF</token>
+		</theme>
+		<rheme concept_ref1="c_9" concept_ref2="c_11" concept_ref3="c_18" concept_ref4="c_20" concept_ref5="c_27">
+			<token pos="vaip3p0">han</token><mention concept_ref="c_18"><token pos="vmp00sm">rehusado</token><token pos="vmn0000">firmar</token><token pos="da0ms0">el</token><token pos="ncms000">convenio</token><token pos="aq0ms0">colectivo</token><token pos="sps00">con</token><token pos="np00000">Justícia</token><token pos="sps00">tras</token><token pos="da0mp0">los</token><token pos="ncmp000">altercados</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Agree_or_refuse_to_act" head="rehusado">
+				<argument type="Speaker" dependent="Los sindicatos CATAC , CCOO , UGT y" />
+				<argument type="Proposed_action" dependent="rehusado firmar el convenio colectivo con Justícia tras los altercados" /></main_frame>
+			<frame type="Make_agreement_on_action" head="convenio">
+				<argument type="Manner" dependent="colectivo" />
+				<argument type="Party_2" dependent="con Justícia" />
+				<argument type="Time" dependent="tras los altercados" /></frame>
+			<frame type="Relative_time" head="los">
+				<argument type="Focal_occasion" dependent="Los sindicatos CATAC , CCOO , UGT y CSIF han rehusado firmar el convenio colectivo con Justícia" />
+				<argument type="Landmark_occasion" dependent="altercados" /></frame>
+			<main_frame type="Sign_agreement" head="firmar">
+				<argument type="Signatory" dependent="Los sindicatos CATAC , CCOO , UGT y" />
+				<argument type="Agreement" dependent="el convenio colectivo con Justícia tras los altercados" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Xavier Navarro, dirigente de CCOO y partidario del acuerdo, afirmó ayer: "No se firma nada".
+		</str>
+		<theme concept_ref="c_15">
+			<token pos="np00000">Xavier</token><token pos="ncms000">Navarro</token><token pos="fc">,</token><token pos="aq0cs0">dirigente</token><token pos="sps00">de</token><token pos="np00000">CCOO</token><token pos="cc">y</token><token pos="aq0ms0">partidario</token><token pos="spcms">del</token><token pos="ncms000">acuerdo</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_8" concept_ref3="c_21" concept_ref4="c_25" concept_ref5="c_28">
+			<token pos="vmis3s0">afirmó</token><token pos="fd">:</token><token pos="fe">quot;</token><token pos="rn">No</token><mention concept_ref="c_5"><token pos="p0000000">se</token></mention><token pos="vmip3s0">firma</token><token pos="pi0cs000">nada</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Leadership" head="dirigente">
+				<argument type="Leader" dependent="Xavier Navarro" />
+				<argument type="Leader" dependent="de CCOO y partidario del acuerdo" /></frame>
+			<frame type="Make_agreement_on_action" head="del acuerdo" />
+			<main_frame type="Sign_agreement" head="se firma">
+				<argument type="Agreement" dependent="nada" /></main_frame>
+			<main_frame type="Statement" head="afirmó">
+				<argument type="Speaker" dependent="Xavier Navarro , dirigente de CCOO y partidario del acuerdo" />
+				<argument type="Message" dependent="ayer :  quot ; No se firma nada" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y agregó: "No se puede tolerar que Institucions Penitenciàries permita, con su incompetencia, una situación extremadamente violenta, que ha puesto en peligro muchas vidas".
+		</str>
+		<theme concept_ref="c_16">
+			<token pos="np0000l">Institucions</token><token pos="np0000l">Penitenciàries</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_11" concept_ref3="c_23">
+			<token pos="vmsp3s0">permita</token><token pos="fc">,</token><token pos="sps00">con</token><mention concept_ref="c_3"><token pos="dp3cs0">su</token><token pos="ncfs000">incompetencia</token></mention><token pos="fc">,</token><token pos="di0fs0">una</token><token pos="ncfs000">situación</token><token pos="rg">extremadamente</token><token pos="aq0fs0">violenta</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Expertise" head="incompetencia">
+				<argument type="Protagonist" dependent="se" /></frame>
+			<main_frame type="Preventing_or_letting" head="permita">
+				<argument type="Event" dependent="que Institucions" /></main_frame>
+			<frame type="Quantified_mass" head="muchas">
+				<argument type="Individuals" dependent="vidas" /></frame>
+			<frame type="Risky_situation" head="peligro">
+				<argument type="Situation" dependent="ha" /></frame>
+			<frame type="Statement" head="agregó">
+				<argument type="Speaker" dependent="su" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Manuel Allué, de CATAC, coincidió con Navarro en subrayar: "La mejor aportación que pueden hacer a la política penitenciaria es marcharse a casa".
+		</str>
+		<theme concept_ref="c_17">
+			<token pos="np0000l">Manuel</token><token pos="np0000l">Allué</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="np00000">CATAC</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_8" concept_ref3="c_3" concept_ref4="c_21" concept_ref5="c_25" concept_ref6="c_28">
+			<token pos="vmis3s0">coincidió</token><token pos="sps00">con</token><token pos="np00000">Navarro</token><token pos="sps00">en</token><token pos="vmn0000">subrayar</token><token pos="fd">:</token><token pos="fe">quot;</token><mention concept_ref="c_3"><token pos="da0fs0">La</token><token pos="aq0cs0">mejor</token><token pos="ncfs000">aportación</token></mention><token pos="vsip3s0">es</token><token pos="vmn0000">marcharse</token><mention concept_ref="c_21"><token pos="sps00">a</token><token pos="ncfs000">casa</token></mention><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="a casa" />
+			<frame type="Capability" head="pueden">
+				<argument type="Entity" dependent="La mejor aportación que pueden" />
+				<argument type="Event" dependent="hacer a la política penitenciaria" /></frame>
+			<frame type="Law" head="política">
+				<argument type="Required" dependent="penitenciaria" />
+				<argument type="Required" dependent="marcharse a casa" /></frame>
+			<main_frame type="Make_agreement_on_action" head="coincidió">
+				<argument type="Party_1" dependent="Manuel Allué , de" /></main_frame>
+			<frame type="Manufacturing" head="hacer">
+				<argument type="Product" dependent="La mejor aportación" />
+				<argument type="Producer" dependent="pueden" />
+				<argument type="Product" dependent="a la política penitenciaria" /></frame>
+			<main_frame type="Motion" head="marcharse a">
+				<argument type="Goal" dependent="a casa" /></main_frame>
+			<frame type="Prison" head="penitenciaria" />
+			<frame type="Required_event" head="mejor">
+				<argument type="Required_situation" dependent="aportación" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

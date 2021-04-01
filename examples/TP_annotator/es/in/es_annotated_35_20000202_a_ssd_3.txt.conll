@@ -1,0 +1,7 @@
+{   ('Documents', 'constatación'): [('Bearer', 'de un especialista')],
+    ('Expertise', 'especialista'): [],
+    ('Opinion', 'opinión'): [('Cognizer', 'sus')],
+    ('Risky_situation', 'amenaza'): [],
+    ('Statement', 'agregó que'): [   ('Message', 'reporteros de la ZDZ sobre si sus palabras eran una amenaza ,'),
+                                     ('Speaker', 'Weyrauch'),
+                                     ('Message', 'que su opinión era tan sólo & quot ; una constatación de hechos de un especialista')]}

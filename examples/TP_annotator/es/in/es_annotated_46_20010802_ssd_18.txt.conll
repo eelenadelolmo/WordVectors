@@ -1,0 +1,6 @@
+{   ('Businesses', 'empresas'): [('Place', 'su país')],
+    ('Existence', 'existan'): [('Entity', 'estos acuerdos de precios'), ('Place', 'entre las empresas de su país')],
+    ('Experiencer_obj', 'sorpresa'): [('Stimulus', 'consumidores suecos')],
+    ('Perception_active', 'miran'): [   ('Perceiver_agentive', 'consumidores suecos'),
+                                        ('Phenomenon', 'con cierta incredulidad y sorpresa que estos acuerdos de precios existan entre las empresas de su país')],
+    ('Political_locales', 'país'): [('Population', 'los')]}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="35_20000402_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Azulgranas y valencianistas</concept>
+		<concept id="c_1">el partido de ida de cuartos de la Liga de Campeones</concept>
+		<concept id="c_2">el partido</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Azulgranas y valencianistas jugarán el partido de ida de cuartos de la Liga de Campeones.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="nccp000">Azulgranas</token><token pos="cc">y</token><token pos="aq0cp0">valencianistas</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_2">
+			<token pos="vmif3p0">jugarán</token><mention concept_ref="c_2"><token pos="da0ms0">el</token><token pos="ncms000">partido</token></mention><token pos="sps00">de</token><token pos="ncfs000">ida</token><token pos="sps00">de</token><token pos="ncmp000">cuartos</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np0000a">Liga</token><token pos="sps00">de</token><token pos="ncms000">Campeones</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Evaluative_comparison" head="partido">
+				<argument type="Manner" dependent="de" />
+				<argument type="Standard_attribute" dependent="de la Liga de Campeones" /></frame>
+			<main_frame type="Make_noise" head="jugarán">
+				<argument type="Sound_source" dependent="y" />
+				<argument type="Sound" dependent="el partido de ida de cuartos de la Liga de Campeones" /></main_frame>
+			<frame type="Organization" head="la Liga">
+				<argument type="Name" dependent="Campeones" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

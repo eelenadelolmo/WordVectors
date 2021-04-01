@@ -1,0 +1,8 @@
+{   ('Being_obligated', 'responsabilidades'): [],
+    ('Causation', 'porque'): [('Cause', 'quot ; la sociedad no lo permitiría y pediría responsabilidades &')],
+    ('Interior_profile_relation', 'en'): [('Ground', 'Ibarretxe'), ('Figure', 'proceso de paz se encuentra en fase de maduración')],
+    ('Opinion', 'quot'): [('Cognizer', 'Ibarretxe'), ('Opinion', 'proceso de paz se encuentra en fase de maduración')],
+    ('Preventing_or_letting', 'permitiría'): [('Agent', 'sociedad'), ('Event', 'lo')],
+    ('Process', 'proceso'): [('Process', 'proceso de paz')],
+    ('Questioning', 'pediría'): [('Message', 'responsabilidades')],
+    ('Thermodynamic_phase', 'fase'): [('Phase', 'maduración')]}

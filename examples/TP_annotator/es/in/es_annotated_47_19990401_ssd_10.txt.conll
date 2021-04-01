@@ -1,0 +1,7 @@
+{   ('Calendric_unit', 'medianoche'): [],
+    ('Cardinal_numbers', 'tres'): [('Unit', 'encapuchados')],
+    ('Destroying', 'arrasado'): [('Cause', 'local de Onda Cero en Vitoria quedó'), ('Place', 'cócteles molotov que')],
+    ('Fire_burning', 'al arder'): [('Fire', 'cócteles molotov')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'local de'), ('Ground', 'Vitoria')],
+    ('Locale', 'local'): [('Name', 'Onda')],
+    ('Locative_relation', 'hacia'): [('Figure', 'tres encapuchados'), ('Ground', 'medianoche')]}

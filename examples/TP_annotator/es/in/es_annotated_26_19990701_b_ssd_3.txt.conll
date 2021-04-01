@@ -1,0 +1,5 @@
+{   ('Building_subparts', 'habitación'): [],
+    ('Buildings', 'Hospital'): [('Name', 'Evangélico')],
+    ('Buildings', 'hotel'): [('Descriptor', 'de cinco estrellas')],
+    ('Referring_by_name', 'llamado'): [('Name', 'un hotel de cinco estrellas'), ('Entity', 'Hospital Evangélico')],
+    ('Travel', 'odisea'): [('Traveler', 'Esta')]}

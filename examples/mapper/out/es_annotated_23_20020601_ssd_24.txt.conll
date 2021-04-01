@@ -1,0 +1,8 @@
+{   ('Buildings', 'a casa'): [],
+    ('Capability', 'pueden'): [('Entity', 'La mejor aportación que pueden'), ('Event', 'hacer a la política penitenciaria')],
+    ('Law', 'política'): [('Required', 'penitenciaria'), ('Required', 'marcharse a casa')],
+    ('Make_agreement_on_action', 'coincidió'): [('Party_1', 'Manuel Allué , de')],
+    ('Manufacturing', 'hacer'): [('Product', 'La mejor aportación'), ('Producer', 'pueden'), ('Product', 'a la política penitenciaria')],
+    ('Motion', 'marcharse a'): [('Goal', 'a casa')],
+    ('Prison', 'penitenciaria'): [],
+    ('Required_event', 'mejor'): [('Required_situation', 'aportación')]}

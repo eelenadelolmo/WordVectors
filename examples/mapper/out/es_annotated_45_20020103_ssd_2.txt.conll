@@ -1,0 +1,6 @@
+{   ('Body_parts', 'jefe'): [],
+    ('Duration_description', 'breve'): [('Eventuality', 'tiempo')],
+    ('Explaining_the_facts', 'explicó'): [],
+    ('Making_faces', 'sonrieron'): [('Agent', 'la india , Jasuant')],
+    ('Origin', 'india'): [('Entity', 'se')],
+    ('Statement', 'hablaron'): []}

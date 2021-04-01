@@ -1,0 +1,6 @@
+{   ('Body_parts', 'jefe'): [('Possessor', 'del Estado')],
+    ('Expressing_publicly', 'manifestó'): [('Communicator', '42 %'), ('Content', 'una opinión negativa')],
+    ('Leadership', 'Estado'): [],
+    ('Opinion', 'opinión'): [('Domain', 'negativa')],
+    ('Receiving', 'recibido'): [('Recipient', 'moscovitas'), ('Theme', 'dimisión del jefe del Estado')],
+    ('Visiting', 'los'): [('Agent', 'los moscovitas consultados')]}

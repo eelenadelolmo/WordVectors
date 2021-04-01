@@ -1,0 +1,15 @@
+{   ('Age', 'Nueva'): [('Entity', 'Hampshire')],
+    ('Animals', 'gato'): [],
+    ('Animals', 'perro'): [],
+    ('Arriving', 'que vino a'): [('Goal', 'a Nueva Hampshire provisto de su almohada , para')],
+    ('Buildings', 'casa'): [],
+    ('Calendric_unit', 'días'): [('Count', 'estos')],
+    ('Difficulty', 'dura'): [('Activity', 'vida de'), ('Activity', 'mientras hacen campaña , como explicaba estos días George W. Bush , que no sólo confesó echar profundamente')],
+    ('Explaining_the_facts', 'explicaba'): [('Fact', 'hacen campaña , como explicaba estos días George W. Bush')],
+    ('Interior_profile_relation', 'en'): [('Time', 'en'), ('Ground', 'su propia casa')],
+    ('Military_operation', 'campaña'): [('Possessor', 'los')],
+    ('Residence', 'vida'): [('Location', 'de')],
+    ('Reveal_secret', 'confesó'): [   (   'Information',
+                                          'vida de los candidatos es dura mientras hacen campaña , como explicaba estos días George W. Bush , que no sólo confesó echar profundamente de menos a su '
+                                          'gato y a su perro ,')],
+    ('Sleep', 'dormir'): [('Sleeper', 'como en su propia casa')]}

@@ -1,0 +1,13 @@
+{   ('Age', 'nuevo'): [('Entity', 'partido')],
+    ('Aggregate', 'partido'): [('Aggregate_property', 'nuevo')],
+    ('Appellations', 'vicepresidente'): [('Title', 'vicepresidente')],
+    ('Becoming', 'quedó'): [('Entity', 'del Gobierno central y ex secretario general del PP , el asturiano Francisco'), ('Final_quality', 'claro durante el congreso de la Uras')],
+    ('Being_in_control', 'manejos'): [('Dependent_entity', 'del vicepresidente primero del Gobierno central y ex secretario general del PP , el asturiano Francisco')],
+    ('Catastrophe', 'crisis'): [('Manner', 'institucional'), ('Cause', 'en los')],
+    ('Intentionally_create', 'creado'): [('Created_entity', 'nuevo partido'), ('Creator', 'por Marqués y sus seguidores escindidos')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'sus orígenes'), ('Ground', 'manejos del vicepresidente primero del Gobierno central')],
+    ('Leadership', 'Gobierno'): [('Type', 'central')],
+    ('Obviousness', 'claro'): [],
+    ('Ordinal_numbers', 'primero'): [('Item', 'del vicepresidente primero del Gobierno central y ex secretario general del PP , el asturiano Francisco')],
+    ('Origin', 'orígenes'): [('Origin', 'sus orígenes')],
+    ('Part_inner_outer', 'central'): []}

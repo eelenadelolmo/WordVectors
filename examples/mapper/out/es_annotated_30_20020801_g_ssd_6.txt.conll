@@ -1,0 +1,5 @@
+{   ('Calendric_unit', 'año'): [('Count', 'de')],
+    ('Departing', 'desaparezcan'): [('Theme', 'las antenas')],
+    ('Expectation', 'previsto'): [('Phenomenon', 'las antenas'), ('Phenomenon', 'desaparezcan dentro de año y medio')],
+    ('Interior_profile_relation', 'dentro de'): [('Figure', 'previsto que las antenas desaparezcan'), ('Ground', 'de año')],
+    ('Part_whole', 'medio'): []}

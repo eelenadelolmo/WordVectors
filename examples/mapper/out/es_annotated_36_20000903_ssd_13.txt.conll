@@ -1,0 +1,8 @@
+{   ('Aggregate', 'partido'): [],
+    ('Body_parts', 'ante'): [('Possessor', 'la sociedad catalana')],
+    ('Importance', 'significativo'): [('Factor', 'exponente'), ('Interested_party', 'del PP en el conjunto del Estado y del papel que el')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'partido debe jugar'), ('Ground', 'la sociedad catalana')],
+    ('Leadership', 'Estado'): [],
+    ('Make_noise', 'jugar'): [('Sound_source', 'partido'), ('Place', 'ante la sociedad catalana')],
+    ('Ranked_expectation', 'en'): [('Entity', 'partido')],
+    ('Required_event', 'debe'): [('Required_situation', 'partido'), ('Required_situation', 'jugar ante la sociedad catalana')]}

@@ -1,0 +1,6 @@
+{   ('Calendric_unit', 'años'): [('Count', '50')],
+    ('Calendric_unit', 'diciembre'): [('Relative_time', 'extra de diciembre del año 49')],
+    ('Evidence', 'ilustrar'): [('Support', 'retrato de los fundadores'), ('Proposition', 'el número extra de diciembre del año 49')],
+    ('Quantified_mass', 'número'): [('Q_prop', 'extra')],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', '50 años')],
+    ('Time_vector', 'del'): [('Distance', '50 años')]}

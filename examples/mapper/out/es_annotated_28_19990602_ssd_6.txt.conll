@@ -1,0 +1,7 @@
+{   ('Calendric_unit', 'días'): [('Relative_time', 'últimos')],
+    ('Cardinal_numbers', 'una'): [('Entity', 'de las razones')],
+    ('Change_position_on_a_scale', 'descendido'): [('Item', 'flujo de refugiados hacia Albania'), ('Time', 'en los últimos días')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'flujo de refugiados hacia Albania'), ('Time', 'descendido'), ('Ground', 'últimos días')],
+    ('Reason', 'razones'): [('Action', 'razones por la que el flujo de refugiados hacia Albania ha descendido en los últimos días & quot ; , dijo Shea')],
+    ('Relative_time', 'últimos'): [('Focal_occasion', 'días')],
+    ('Statement', 'dijo'): [('Message', '; Esta es una de las razones por la que el flujo de refugiados hacia Albania ha descendido en los últimos días'), ('Speaker', 'Shea')]}

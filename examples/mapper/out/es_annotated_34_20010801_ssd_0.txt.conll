@@ -1,0 +1,9 @@
+{   ('Body_parts', 'armada'): [('Body_part', 'banda')],
+    ('Committing_crime', 'delitos'): [('Perpetrator', 'de pertenencia o colaboración')],
+    ('Membership', 'miembros'): [('Group', 'de Ekin , el supuesto aparato político')],
+    ('Political_locales', 'Nacional'): [],
+    ('Possession', 'los'): [('Possession', 'los delitos de pertenencia o colaboración con banda armada')],
+    ('Request', 'ordenó'): [   ('Speaker', 'juez de la Audiencia Nacional Baltasar'),
+                               ('Time', 'ayer'),
+                               ('Message', 'procesamiento de 31 miembros de Ekin , el supuesto aparato político de ETA , por los delitos de pertenencia o colaboración con')],
+    ('Statement', 'delitos'): [('Message', 'aparato político')]}

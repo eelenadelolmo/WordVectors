@@ -1,0 +1,10 @@
+{   ('Becoming_aware', 'aprendió'): [('Cognizer', 'bondades'), ('Phenomenon', 'bondades de la siesta en Cuba')],
+    ('Causation', 'porque'): [('Effect', 'estuvo en la isla como corresponsal')],
+    ('Experiencer_focus', 'que amaba'): [('Experiencer', 'un periodista que'), ('Content', 'siesta')],
+    ('Interior_profile_relation', 'en'): [   ('Figure', 'aprendió las bondades de la siesta en Cuba , cuando estuvo en la isla como corresponsal , porque ,'),
+                                             ('Ground', 'además de militar y político'),
+                                             ('Figure', 'fue periodista ; un periodista que amaba la siesta')],
+    ('Military', 'militar'): [],
+    ('Natural_features', 'isla'): [],
+    ('Spatial_contact', 'en'): [('Figure', 'la'), ('Ground', 'la isla'), ('Figure', ', porque , además de militar y político , fue periodista ;')],
+    ('Temporal_collocation', 'cuando'): [('Landmark_event', 'estuvo en la isla como corresponsal'), ('Trajector_event', ', porque , además de militar y político , fue periodista ;')]}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="43_20001001_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El GRAPO , en su reaparición en Barcelona ,</concept>
+		<concept id="c_1">el grupo terrorista</concept>
+		<concept id="c_2">causando heridas leves a cuatro policías y a un transeúnte e importantes daños materiales</concept>
+		<concept id="c_3">un artefacto</concept>
+		<concept id="c_4">heridas</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El GRAPO, en su reaparición en Barcelona, colocó un artefacto explosivo en la sede del diario El Mundo, causando heridas leves a cuatro policías y a un transeúnte e importantes daños materiales.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="np00000">GRAPO</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="dp3cs0">su</token><token pos="ncfs000">reaparición</token><token pos="sps00">en</token><token pos="np00000">Barcelona</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_2" concept_ref3="c_3" concept_ref4="c_4">
+			<token pos="vmis3s0">colocó</token><mention concept_ref="c_3"><token pos="di0ms0">un</token><token pos="ncms000">artefacto</token></mention><token pos="aq0ms0">explosivo</token><mention concept_ref="c_2"><token pos="vmg0000">causando</token><token pos="ncfp000">heridas</token><token pos="aq0cp0">leves</token><token pos="sps00">a</token><token pos="dn0cp0">cuatro</token><token pos="nccp000">policías</token><token pos="cc">y</token><token pos="sps00">a</token><token pos="di0ms0">un</token><token pos="nccs000">transeúnte</token><token pos="cc">e</token><token pos="aq0cp0">importantes</token><token pos="ncmp000">daños</token><token pos="aq0cp0">materiales</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Causation" head="causando">
+				<argument type="Cause" dependent="en su reaparición en Barcelona , colocó un artefacto explosivo en la sede del diario El Mundo ," />
+				<argument type="Effect" dependent="causando heridas leves a cuatro policías y a un transeúnte e importantes daños materiales" /></main_frame>
+			<frame type="Damaging" head="daños">
+				<argument type="Patient" dependent="materiales" /></frame>
+			<frame type="Experience_bodily_harm" head="heridas">
+				<argument type="Containing_event" dependent="a cuatro policías y a un transeúnte e importantes daños materiales" /></frame>
+			<frame type="Gizmo" head="un">
+				<argument type="Use" dependent="explosivo" /></frame>
+			<frame type="Importance" head="importantes">
+				<argument type="Factor" dependent="daños materiales" /></frame>
+			<frame type="Ingredients" head="materiales" />
+			<frame type="Locale_by_use" head="sede del">
+				<argument type="Container_possessor" dependent="del diario El Mundo" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="un artefacto explosivo en" />
+				<argument type="Ground" dependent="la sede del diario El Mundo" /></frame>
+			<main_frame type="Placing" head="colocó">
+				<argument type="Cause" dependent="su reaparición en Barcelona , colocó" />
+				<argument type="Goal" dependent="explosivo en la sede del diario El Mundo" /></main_frame>
+			<frame type="Text" head="del diario" />
+			<frame type="Weapon" head="explosivo">
+				<argument type="Type" dependent="un" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Seis días antes, el grupo terrorista asaltó en el barrio de la Verneda un furgón y robó 3,5 millones de pesetas.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">el</token><token pos="ncms000">grupo</token><token pos="aq0cs0">terrorista</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_4">
+			<token pos="vmis3s0">asaltó</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">barrio</token><token pos="sps00">de</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="np00000">Verneda</token></mention><token pos="di0ms0">un</token><token pos="ncms000">furgón</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="grupo">
+				<argument type="Individuals" dependent="terrorista" /></frame>
+			<main_frame type="Attack" head="asaltó">
+				<argument type="Time" dependent="Seis días antes" />
+				<argument type="Assailant" dependent="el grupo terrorista" />
+				<argument type="Victim" dependent="barrio de la Verneda un furgón y robó 3,5 millones de pesetas" /></main_frame>
+			<frame type="Calendric_unit" head="días">
+				<argument type="Count" dependent="Seis" /></frame>
+			<frame type="Temporal_subregion" head="antes">
+				<argument type="Time_period" dependent="Seis días" /></frame>
+			<frame type="Terrorism" head="terrorista" />
+		</semantic_roles>
+	</sentence>
+	
+</text>

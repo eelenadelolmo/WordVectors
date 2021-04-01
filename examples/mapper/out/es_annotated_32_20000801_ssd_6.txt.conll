@@ -1,0 +1,9 @@
+{   ('Being_employed', 'trabajen'): [],
+    ('Change_of_leadership', 'elecciones'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'eventuales elecciones anticipadas en'), ('Ground', 'Euskadi')],
+    ('Likelihood', 'eventuales'): [],
+    ('Opinion', 'pensar'): [('Opinion', 'eventuales elecciones anticipadas en Euskadi')],
+    ('Proportional_quantity', 'por'): [('Reference_quantity', 'eventuales')],
+    ('Referring_by_name', 'reclamó'): [('Entity', 'Montilla'), ('Name', 'a los demócratas vascos')],
+    ('Spatial_contact', 'en'): [('Figure', 'Montilla'), ('Ground', 'los demócratas vascos'), ('Figure', '; unidad & quot ; sin pensar en unas eventuales elecciones anticipadas en Euskadi')],
+    ('Temporal_subregion', 'anticipadas'): [('Time_period', 'elecciones')]}

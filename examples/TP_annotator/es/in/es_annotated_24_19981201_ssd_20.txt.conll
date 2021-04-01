@@ -1,0 +1,5 @@
+{   ('Calendric_unit', 'ayer de'): [],
+    ('Discussion', 'encuentro'): [('Time', 'ayer de'), ('Interlocutors', 'de Insulza')],
+    ('Locale', 'lugar'): [],
+    ('Locale_by_use', 'sede del'): [('Container_possessor', 'del')],
+    ('Locative_relation', 'en'): [('Ground', 'la sede del PSOE con Joaquín Almunia y')]}

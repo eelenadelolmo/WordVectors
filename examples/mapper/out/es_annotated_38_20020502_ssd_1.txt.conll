@@ -1,0 +1,8 @@
+{   ('Besieging', 'se'): [('Victim', 'de la basílica de la Natividad')],
+    ('Catastrophe', 'incidentes'): [],
+    ('Gusto', 'los ánimos'): [('Person', 'los ánimos de los habitantes')],
+    ('Interior_profile_relation', 'En'): [('Ground', 'se')],
+    ('Locative_relation', 'donde'): [('Figure', 'los habitantes están extremadamente crispados por el asedio de la basílica de la Natividad , se registraron varios incidentes')],
+    ('Quantified_mass', 'varios'): [('Individuals', 'incidentes')],
+    ('Recording', 'registraron'): [('Phenomenon', 'Natividad'), ('Phenomenon', 'varios incidentes')],
+    ('Residence', 'habitantes'): []}

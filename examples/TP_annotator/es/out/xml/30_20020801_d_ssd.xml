@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="30_20020801_d_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El alcalde de Sant Cugat</concept>
+		<concept id="c_1">la tala de árboles en el club de golf , denunciada por ERC ,</concept>
+		<concept id="c_2">La tala</concept>
+		<concept id="c_3">una tala</concept>
+		<concept id="c_4">el plan aprobado en un pleno del 2001</concept>
+		<concept id="c_5">el plan</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El alcalde de Sant Cugat justifica una tala.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">alcalde</token><token pos="sps00">de</token><token pos="np0000l">Sant</token><token pos="np0000l">Cugat</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_3">
+			<token pos="vmip3s0">justifica</token><token pos="di0fs0">una</token><token pos="ncfs000">tala</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Justifying" head="justifica">
+				<argument type="Agent" dependent="El alcalde de Sant Cugat" />
+				<argument type="State_of_affairs" dependent="una tala" /></main_frame>
+			<frame type="Leadership" head="alcalde">
+				<argument type="Leader" dependent="de Sant Cugat" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El convergente Lluís Recoder dijo ayer que la tala de árboles en el club de golf, denunciada por ERC, se incluye en el plan aprobado en un pleno del 2001.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">la</token><token pos="ncfs000">tala</token><token pos="sps00">de</token><token pos="ncmp000">árboles</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">club</token><token pos="sps00">de</token><token pos="ncmn000">golf</token><token pos="fc">,</token><token pos="aq0fsp">denunciada</token><token pos="sps00">por</token><token pos="np00000">ERC</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_5">
+			<token pos="p0000000">se</token><token pos="vmip3s0">incluye</token><token pos="sps00">en</token><mention concept_ref="c_5"><token pos="da0ms0">el</token><token pos="ncms000">plan</token></mention><token pos="aq0msp">aprobado</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="ncms000">pleno</token><token pos="spcms">del</token><token pos="z">2001</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El convergente Lluís Recoder " />
+			<frame type="Cutting" head="se" />
+			<frame type="Deny_or_grant_permission" head="aprobado">
+				<argument type="Action" dependent="el plan" />
+				<argument type="Action" dependent="en un pleno del 2001" /></frame>
+			<main_frame type="Inclusion" head="incluye">
+				<argument type="Part" dependent="árboles en el club de golf , denunciada por ERC ," />
+				<argument type="Contrast_set" dependent="el plan aprobado en un pleno del 2001" /></main_frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="árboles en el club de golf , denunciada por ERC , se incluye" />
+				<argument type="Ground" dependent="el plan" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="el plan" />
+				<argument type="Ground" dependent="pleno del 2001" /></frame>
+			<frame type="Purpose" head="plan" />
+			<frame type="Statement" head="dijo">
+				<argument type="Speaker" dependent="convergente" />
+				<argument type="Time" dependent="ayer que" />
+				<argument type="Message" dependent="la tala de árboles en el club de golf , denunciada por ERC , se incluye en el plan aprobado en un pleno del 2001" /></frame>
+			<frame type="Weapon" head="club">
+				<argument type="Type" dependent="golf" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La tala forma parte de las obras de mejora del club, que prevé plantar otros 150 ejemplares.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">La</token><token pos="ncfs000">tala</token>
+		</theme>
+		<rheme concept_ref1="c_5">
+			<token pos="vmp00sm">forma</token><mention concept_ref="c_5"><token pos="ncfp000">parte</token></mention><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">obras</token><token pos="sps00">de</token><token pos="ncfs000">mejora</token><token pos="spcms">del</token><token pos="ncms000">club</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_employed" head="obras">
+				<argument type="Place_of_employment" dependent="del club" /></frame>
+			<frame type="Duplication" head="ejemplares" />
+			<frame type="Improvement_or_decline" head="mejora del" />
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="150 ejemplares" /></frame>
+			<frame type="Locale_by_use" head="plantar">
+				<argument type="Use" dependent="otros 150 ejemplares" /></frame>
+			<frame type="Part_whole" head="parte">
+				<argument type="Whole" dependent="tala" />
+				<argument type="Whole" dependent="obras de mejora del club" /></frame>
+			<frame type="Purpose" head="prevé">
+				<argument type="Agent" dependent="que" />
+				<argument type="Goal" dependent="plantar otros 150 ejemplares" /></frame>
+			<frame type="Weapon" head="club" />
+		</semantic_roles>
+	</sentence>
+	
+</text>

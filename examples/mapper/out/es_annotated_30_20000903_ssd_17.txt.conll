@@ -1,0 +1,13 @@
+{   ('Aggregate', 'partido'): [],
+    ('Connecting_architecture', 'puerta'): [],
+    ('Emotion_directed', 'interés'): [('Stimulus', 'dirigente socialista vasco puso')],
+    ('Emphasizing', 'enfatizó'): [],
+    ('Expressing_publicly', 'quot'): [('Content', 'El dirigente socialista'), ('Content', 'interés en recalcar que su partido & quot ; siempre tendrá la puerta abierta')],
+    ('Frequency', 'siempre'): [('Event', 'su partido &'), ('Event', 'la puerta abierta & quot ; al PNV para luchar contra')],
+    ('Gizmo', 'instrumento'): [('Descriptor', 'más amplio de')],
+    ('Hostile_encounter', 'luchar'): [('Side_1', 'PNV'), ('Side_2', 'el')],
+    ('Leadership', 'dirigente'): [('Domain', 'vasco'), ('Type', 'socialista')],
+    ('Likelihood', 'posible'): [('Hypothetical_event', 'esa unidad')],
+    ('Make_agreement_on_action', 'aceptan'): [('Obligation', 'que el Estatuto')],
+    ('Receiving', 'aceptan'): [('Donor', 'los nacionalistas'), ('Theme', 'las reglas del juego democrático')],
+    ('Secrecy_status', 'abierta'): [('Phenomenon', 'al PNV para luchar contra')]}

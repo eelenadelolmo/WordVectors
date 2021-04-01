@@ -1,0 +1,4 @@
+{   ('Ingredients', 'ingredientes'): [('Descriptor', 'anteriores')],
+    ('Kinship', 'son'): [('Ego', 'de la marimba')],
+    ('Relative_time', 'anteriores'): [('Focal_occasion', 'ingredientes')],
+    ('Statement', 'añade'): [('Medium', 'Esto'), ('Message', 'más sabor aún a los ingredientes anteriores y convierte todo en el son de la marimba')]}

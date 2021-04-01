@@ -1,0 +1,13 @@
+{   ('Aggregate', 'fiesta'): [],
+    ('Calendric_unit', 'ayer'): [],
+    ('Cardinal_numbers', 'millar de'): [('Entity', 'padres')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'la fiesta'), ('Ground', 'el parque de la Espanya Industrial'), ('Figure', 'para reclamar el apoyo de la Administración a estos centros')],
+    ('Kinship', 'niños'): [],
+    ('Kinship', 'padres'): [],
+    ('Locale_by_use', 'centros'): [],
+    ('Locale_by_use', 'escuelas'): [('Container_possessor', 'públicas'), ('Relative_location', 'de Barcelona')],
+    ('Locale_by_use', 'parque'): [('Name', 'Industrial')],
+    ('Participation', 'participaron'): [   ('Participants', 'Un millar de padres y niños procedentes de 30 escuelas públicas de Barcelona'),
+                                           ('Institution', 'ayer en la fiesta celebrada en el parque de la Espanya Industrial para reclamar el apoyo de la Administración a estos centros')],
+    ('Request', 'reclamar'): [('Message', 'el apoyo de la Administración a estos centros')],
+    ('Supporting', 'apoyo de'): [('Supported', 'de la Administración a estos centros')]}

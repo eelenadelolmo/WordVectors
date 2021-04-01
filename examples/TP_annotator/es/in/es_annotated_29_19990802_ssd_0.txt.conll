@@ -1,0 +1,11 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Calendric_unit', 'madrugada'): [('Relative_time', 'madrugada'), ('Salient_event', 'de ayer')],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'accidentes')],
+    ('Catastrophe', 'accidentes'): [('Undesirable_event', 'accidentes que se produjeron en la madrugada de ayer como resultado de colisiones contra caballos')],
+    ('Cause_harm', 'heridas'): [],
+    ('Death', 'fallecidas'): [('Protagonist', 'Tres personas')],
+    ('Event', 'se produjeron'): [('Event', 'los dos accidentes que'), ('Place', 'en la madrugada de ayer como resultado de colisiones contra caballos')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'dos accidentes que se produjeron en la'), ('Ground', 'la madrugada de ayer como resultado de colisiones contra caballos')],
+    ('People', 'personas'): [],
+    ('Taking_sides', 'contra'): [('Descriptor', 'accidentes'), ('Side', 'caballos')],
+    ('Temporal_subregion', 'madrugada'): [('Time_period', 'madrugada')]}

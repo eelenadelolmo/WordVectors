@@ -1,0 +1,5 @@
+{   ('Avoiding', 'evitar'): [('Agent', 'su'), ('Undesirable_situation', 'una referencia a su tierra natal y cuna política')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Foreign_or_domestic_country', 'tierra natal'): [],
+    ('Possibility', 'pudo'): [('Possible_event', 'su'), ('Possible_event', 'evitar una referencia a su tierra natal y cuna política')],
+    ('Time_vector', 'ante'): [('Landmark_event', 'auditorio , no pudo evitar una referencia a su tierra natal y cuna política')]}

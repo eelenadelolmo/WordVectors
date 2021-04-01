@@ -1,0 +1,13 @@
+{   ('Artifact', 'artefacto'): [('Time_of_creation', 'en Brick Lane')],
+    ('Buildings', 'pub'): [],
+    ('Calendric_unit', 'abril'): [('Relative_time', 'pasado')],
+    ('Cardinal_numbers', 'tres'): [('Entity', 'mortales')],
+    ('Causation', 'causó'): [('Cause', 'una tercera bomba'), ('Cause', 'que'), ('Effect', 'tres víctimas mortales')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'un segundo artefacto'), ('Ground', 'Brick Lane')],
+    ('Locative_relation', 'donde'): [],
+    ('Ordinal_numbers', 'segundo'): [('Type', 'artefacto')],
+    ('Ordinal_numbers', 'tercera'): [('Type', 'bomba')],
+    ('Placing', 'procedentes'): [('Time', 'pasado abril'), ('Agent', 'el'), ('Theme', 'una bomba'), ('Place', 'en Brixton')],
+    ('Relative_time', 'pasado'): [],
+    ('Residence', 'viven'): [('Resident', 'inmigrantes procedentes de Bangladesh')],
+    ('Weapon', 'bomba'): []}

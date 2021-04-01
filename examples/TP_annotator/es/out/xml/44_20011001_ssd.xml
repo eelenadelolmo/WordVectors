@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="44_20011001_ssd">
+
+
+	<concepts>
+		<concept id="c_0">una lápida en la pared</concept>
+		<concept id="c_1">El resto</concept>
+		<concept id="c_2">El progreso</concept>
+		<concept id="c_3">la obra nueva</concept>
+		<concept id="c_4">la niebla de Llagostera : ¿ cuánto cuesta desplazar las torres ? ¿ Cuál es el precio de soterrar la línea ?</concept>
+		<concept id="c_5">los periódicos</concept>
+		<concept id="c_6">la historia de</concept>
+		<concept id="c_7">en un solo día</concept>
+		<concept id="c_8">es</concept>
+		<concept id="c_9">la historia</concept>
+		<concept id="c_10">líquidos</concept>
+		<concept id="c_11">pasado</concept>
+		<concept id="c_12">bien</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Si el paseante barcelonés se introduce desde la Via Laietana en la calle de Sant Pere mes Baix encontrará a su derecha la capilla de Marcús, un lugar donde los transportistas de entonces, los famosos bastaixos y macips del barrio de la Ribera, se detenían para rezar antes de emprender su viaje.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_aware" head="encontrará">
+				<argument type="Phenomenon" dependent="el paseante barcelonés se introduce desde la Via Laietana en la calle de Sant Pere mes Baix" />
+				<argument type="Ground" dependent="a su derecha la capilla de Marcús" /></frame>
+			<frame type="Board_vehicle" head="paseante">
+				<argument type="Source" dependent="su viaje" /></frame>
+			<frame type="Fame" head="famosos">
+				<argument type="Entity" dependent="y macips del barrio de la" /></frame>
+			<frame type="Locale" head="lugar" />
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="un lugar" /></frame>
+			<frame type="Preventing_or_letting" head="se">
+				<argument type="Potential_hindrance" dependent="famosos bastaixos y macips del barrio de la" />
+				<argument type="Event" dependent="detenían para rezar antes de emprender su viaje" /></frame>
+			<frame type="Rite" head="rezar">
+				<argument type="Leader" dependent="famosos bastaixos y macips del barrio de la" />
+				<argument type="Time" dependent="antes de emprender su viaje" /></frame>
+			<frame type="Roadways" head="calle">
+				<argument type="Name" dependent="Sant Pere mes Baix" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Event" dependent="famosos bastaixos y macips del barrio de la" />
+				<argument type="Landmark_event" dependent="su viaje" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Un poco más allá, a cincuenta metros escasos, se abre a la derecha la calle Claveguera.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="cincuenta">
+				<argument type="Unit" dependent="metros" /></frame>
+			<frame type="Closure" head="abre" />
+			<frame type="Direction" head="derecha">
+				<argument type="Landmark" dependent="calle" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Increment" dependent="poco" /></frame>
+			<frame type="Measure_linear_extent" head="metros">
+				<argument type="Count" dependent="cincuenta" /></frame>
+			<frame type="Quantified_mass" head="poco">
+				<argument type="Individuals" dependent="cincuenta metros" /></frame>
+			<frame type="Roadways" head="calle" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y una lápida en la pared cuenta la historia de que fue en esta calle donde se construyó la primera alcantarilla cubierta de la ciudad.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="di0fs0">una</token><token pos="ncfs000">lápida</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">pared</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_9">
+			<token pos="vmip3s0">cuenta</token><mention concept_ref="c_9"><token pos="da0fs0">la</token><token pos="ncfs000">historia</token></mention><token pos="sps00">de</token><token pos="cs">que</token><token pos="vsis3s0">fue</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Architectural_part" head="la pared" />
+			<frame type="Building" head="construyó">
+				<argument type="Created_entity" dependent="la primera alcantarilla cubierta de la ciudad" /></frame>
+			<frame type="Ordinal_numbers" head="primera">
+				<argument type="Type" dependent="cubierta de la ciudad" /></frame>
+			<frame type="Political_locales" head="ciudad" />
+			<frame type="Protecting" head="cubierta">
+				<argument type="Asset" dependent="la ciudad" /></frame>
+			<frame type="Roadways" head="calle" />
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="se" />
+				<argument type="Ground" dependent="esta calle" />
+				<argument type="Figure" dependent="se construyó la primera alcantarilla cubierta de la ciudad" /></frame>
+			<main_frame type="Telling" head="cuenta la">
+				<argument type="Speaker" dependent="una lápida en la pared" />
+				<argument type="Addressee" dependent="la historia de" />
+				<argument type="Message" dependent="que fue en esta calle donde se construyó la primera alcantarilla cubierta de la ciudad ." /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Tan importante fue la obra y tan excepcional, que dio nombre a la calle y cundió el ejemplo para las calles futuras.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_named" head="nombre">
+				<argument type="Name" dependent="nombre a la calle" /></frame>
+			<frame type="Degree" head="que">
+				<argument type="Gradable_attribute" dependent="importante" /></frame>
+			<frame type="Giving" head="que dio">
+				<argument type="Donor" dependent="la" />
+				<argument type="Recipient" dependent="nombre a la calle" /></frame>
+			<frame type="Importance" head="importante" />
+			<frame type="Instance" head="ejemplo" />
+			<frame type="Placing" head="las">
+				<argument type="Theme" dependent="el ejemplo para las calles futuras" /></frame>
+			<frame type="Roadways" head="calle" />
+			<frame type="Roadways" head="calles" />
+			<frame type="Work" head="obra" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Es difícil imaginar esa Barcelona antigua con una única calle alcantarillada.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="antigua">
+				<argument type="Entity" dependent="Barcelona" /></frame>
+			<frame type="Awareness" head="imaginar">
+				<argument type="Content" dependent="esa Barcelona antigua con una única calle" /></frame>
+			<frame type="Difficulty" head="difícil">
+				<argument type="Activity" dependent="esa" />
+				<argument type="Activity" dependent="imaginar esa Barcelona antigua con una única calle" /></frame>
+			<frame type="Roadways" head="calle">
+				<argument type="Characteristic" dependent="única" /></frame>
+			<frame type="Sole_instance" head="única">
+				<argument type="Type" dependent="calle" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El resto era territorio salvaje de líquidos, bacinillas y gritos de ¡agua va!.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">resto</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_9" concept_ref3="c_10">
+			<token pos="vsii3s0">era</token><mention concept_ref="c_1"><token pos="ncms000">territorio</token></mention><token pos="aq0cs0">salvaje</token><token pos="sps00">de</token><mention concept_ref="c_10"><token pos="ncmp000">líquidos</token></mention><token pos="fc">,</token><token pos="ncfp000">bacinillas</token><token pos="cc">y</token><mention concept_ref="c_9"><token pos="ncmp000">gritos</token></mention><token pos="sps00">de</token><token pos="np0000l">¡agua</token><token pos="np0000l">va!</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Motion" head="va">
+				<argument type="Theme" dependent="¡agua" /></frame>
+			<frame type="Political_locales" head="territorio">
+				<argument type="Descriptor" dependent="salvaje" />
+				<argument type="Name" dependent="de líquidos" /></frame>
+			<frame type="Rest" head="resto" />
+			<frame type="Substance" head="líquidos" />
+			<frame type="Vocalizations" head="gritos">
+				<argument type="Sound_source" dependent="de ¡agua" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El progreso no se alcanza en un solo día.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="ncms000">progreso</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_10">
+			<token pos="rn">no</token><token pos="p0000000">se</token><token pos="vmip3s0">alcanza</token><mention concept_ref="c_7"><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="aq0ms0">solo</token><token pos="ncms000">día</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Accomplishment" head="alcanza">
+				<argument type="Goal" dependent="progreso" />
+				<argument type="Time" dependent="en un solo día" /></main_frame>
+			<frame type="Calendric_unit" head="día">
+				<argument type="Relative_time" dependent="un solo" /></frame>
+			<frame type="Progression" head="progreso" />
+			<frame type="Sole_instance" head="un solo">
+				<argument type="Type" dependent="día" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No había cloacas y ahora las hay.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Locative_relation" head="hay">
+				<argument type="Time" dependent="ahora" />
+				<argument type="Ground" dependent="hay" /></frame>
+			<frame type="Temporal_collocation" head="ahora">
+				<argument type="Trajector_event" dependent="hay" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Se había de ir a la fuente a por agua y ahora sale del grifo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Motion" head="ir a la">
+				<argument type="Theme" dependent="la" />
+				<argument type="Goal" dependent="a la fuente a por agua" /></frame>
+			<frame type="Possession" head="había">
+				<argument type="Owner" dependent="la" />
+				<argument type="Possession" dependent="de ir a la fuente a por agua" /></frame>
+			<frame type="Sleep" head="sale del">
+				<argument type="Sleeper" dependent="la" />
+				<argument type="Sleeper" dependent="sale del" /></frame>
+			<frame type="Temporal_collocation" head="ahora">
+				<argument type="Trajector_event" dependent="sale del" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Dicen los expertos que en Catalunya hay 80.000 kilómetros de tendido eléctrico aéreo y que no se pueden enterrar todos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="pueden">
+				<argument type="Entity" dependent="los" />
+				<argument type="Event" dependent="no se pueden enterrar todos" /></frame>
+			<frame type="Electricity" head="eléctrico">
+				<argument type="Source" dependent="aéreo" /></frame>
+			<frame type="Locative_relation" head="hay">
+				<argument type="Figure" dependent="Catalunya" />
+				<argument type="Ground" dependent="hay 80.000 kilómetros de tendido eléctrico aéreo" /></frame>
+			<frame type="Quantified_mass" head="todos">
+				<argument type="Mass" dependent="enterrar" /></frame>
+			<frame type="Statement" head="se">
+				<argument type="Speaker" dependent="expertos" />
+				<argument type="Message" dependent="que en Catalunya hay 80.000 kilómetros de tendido eléctrico aéreo y que no se pueden enterrar todos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Es cierto.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero la obra nueva ha de mirar más al futuro que al pasado, más al bien común que al beneficio privado.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fs0">la</token><token pos="ncfs000">obra</token><token pos="aq0fs0">nueva</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_11" concept_ref3="c_12">
+			<token pos="vaip3s0">ha</token><token pos="sps00">de</token><token pos="vmn0000">mirar</token><mention concept_ref="c_6"><token pos="rg">más</token><token pos="spcms">al</token><token pos="ncms000">futuro</token><token pos="cs">que</token><token pos="spcms">al</token><token pos="ncms000">pasado</token></mention><token pos="fc">,</token><token pos="rg">más</token><token pos="spcms">al</token><mention concept_ref="c_12"><token pos="ncms000">bien</token></mention><token pos="aq0cs0">común</token><token pos="cs">que</token><token pos="spcms">al</token><token pos="ncms000">beneficio</token><token pos="aq0msp">privado</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nueva">
+				<argument type="Entity" dependent="obra" /></frame>
+			<frame type="Alternatives" head="futuro" />
+			<frame type="Desirability" head="bien">
+				<argument type="Evaluee" dependent="más al" /></frame>
+			<frame type="Increment" head="más" />
+			<main_frame type="Perception_active" head="mirar">
+				<argument type="Perceiver_agentive" dependent="la obra nueva" />
+				<argument type="Phenomenon" dependent="más al futuro que al pasado" /></main_frame>
+			<frame type="Relative_time" head="pasado" />
+			<main_frame type="Required_event" head="ha">
+				<argument type="Required_situation" dependent="la obra nueva" />
+				<argument type="Required_situation" dependent="mirar más al futuro que al pasado , más al bien común que al beneficio privado" /></main_frame>
+			<frame type="Work" head="obra" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y la niebla de Llagostera se concentra en esta duda: ¿cuánto cuesta desplazar las torres? ¿Cuál es el precio de soterrar la línea?.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0fs0">la</token><token pos="ncfs000">niebla</token><token pos="sps00">de</token><token pos="np00000">Llagostera</token><token pos="fd">:</token><token pos="fia">¿</token><token pos="pt0ms000">cuánto</token><token pos="vmip3s0">cuesta</token><token pos="vmn0000">desplazar</token><token pos="da0fp0">las</token><token pos="ncfp000">torres</token><token pos="fit">?</token><token pos="fia">¿</token><token pos="pt0cs000">Cuál</token><token pos="vsip3s0">es</token><token pos="da0ms0">el</token><token pos="ncms000">precio</token><token pos="sps00">de</token><token pos="vmn0000">soterrar</token><token pos="da0fs0">la</token><token pos="ncfs000">línea</token><token pos="fit">?</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_8">
+			<token pos="p0300000">se</token><token pos="vmip3s0">concentra</token><token pos="sps00">en</token><mention concept_ref="c_3"><token pos="dd0fs0">esta</token><token pos="ncfs000">duda</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Boundary" head="línea" />
+			<main_frame type="Buildings" head="las torres" />
+			<frame type="Certainty" head="duda">
+				<argument type="Content" dependent="la niebla de" /></frame>
+			<main_frame type="Expensiveness" head="cuesta">
+				<argument type="Goods" dependent="es" />
+				<argument type="Intended_event" dependent="desplazar las torres" /></main_frame>
+			<main_frame type="Motion" head="desplazar">
+				<argument type="Theme" dependent="las torres" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 De vez en cuando los periódicos nos sorprenden con la cifra de beneficios de las compañías eléctricas.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0mp0">los</token><token pos="ncmp000">periódicos</token>
+		</theme>
+		<rheme concept_ref1="c_9" concept_ref2="c_11" concept_ref3="c_12">
+			<token pos="pp1cp000">nos</token><token pos="vmip3p0">sorprenden</token><token pos="sps00">con</token><mention concept_ref="c_9"><token pos="da0fs0">la</token><token pos="ncfs000">cifra</token></mention><token pos="sps00">de</token><mention concept_ref="c_12"><token pos="ncmp000">beneficios</token></mention><token pos="sps00">de</token><mention concept_ref="c_11"><token pos="da0fp0">las</token><token pos="ncfp000">compañías</token></mention><token pos="aq0fp0">eléctricas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Businesses" head="compañías">
+				<argument type="Descriptor" dependent="eléctricas" /></frame>
+			<frame type="Electricity" head="eléctricas" />
+			<main_frame type="Just_found_out" head="sorprenden">
+				<argument type="Time" dependent="De vez en cuando" />
+				<argument type="Experiencer" dependent="los periódicos" /></main_frame>
+			<frame type="Text" head="periódicos" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Hagamos las cuentas: ¿tan grave y oneroso es ese viraje hacia el progreso que los vecinos de Llagostera solicitan?.
+		</str>
+		<theme>
+			<token pos="da0mp0">los</token><token pos="ncmp000">vecinos</token><token pos="sps00">de</token><token pos="np00000">Llagostera</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Change_position_on_a_scale" head="viraje" />
+			<frame type="Fields" head="cuentas" />
+			<frame type="People_by_residence" head="vecinos">
+				<argument type="Descriptor" dependent="Llagostera" /></frame>
+			<frame type="Progression" head="progreso" />
+			<frame type="Questioning" head="solicitan">
+				<argument type="Speaker" dependent="los vecinos de" />
+				<argument type="Message" dependent="de" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

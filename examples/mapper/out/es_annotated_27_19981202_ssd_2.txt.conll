@@ -1,0 +1,12 @@
+{   ('Bearing_arms', 'Armadas'): [('Protagonist', 'Fuerzas')],
+    ('Calendric_unit', 'Lunes'): [],
+    ('Employing', 'personal'): [('Employer', 'de las Fuerzas Armadas')],
+    ('Foreign_or_domestic_country', 'Patria'): [],
+    ('Rank', 'cuya'): [('Item', 'se ha')],
+    ('Statement', 'anunció'): [   ('Time', 'En un comunicado cuya autenticidad está por confirmar ,'),
+                                  ('Message', 'Patria y Libertad'),
+                                  ('Time', 'Lunes que'),
+                                  ('Message', 'quot ; y ha sumado a sus filas a & quot ; personal en retiro de las Fuerzas Armadas &')],
+    ('Statement', 'quot'): [],
+    ('Statement', 'sumado a'): [('Message', 'a sus filas a & quot ; personal en retiro de las Fuerzas Armadas')],
+    ('Verification', 'confirmar'): []}

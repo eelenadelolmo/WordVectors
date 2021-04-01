@@ -1,0 +1,4 @@
+{   ('Activity_ongoing', 'tenerlos'): [('Activity', 'Los')],
+    ('Architectural_part', 'la pared'): [],
+    ('Assistance', 'sirven'): [('Goal', 'para tenerlos colgados en la pared')],
+    ('Memory', 'recuerdos'): [('Content', 'sólo sirven para tenerlos colgados en la pared')]}

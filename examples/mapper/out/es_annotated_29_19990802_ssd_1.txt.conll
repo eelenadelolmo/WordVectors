@@ -1,0 +1,8 @@
+{   ('Interior_profile_relation', 'en'): [('Ground', 'localidad de Las Navas del')],
+    ('Locative_relation', 'en'): [('Figure', 'un turismo impactó'), ('Ground', '3.15')],
+    ('Objective_influence', 'impactó'): [('Influencing_entity', 'un turismo'), ('Time', 'sobre las 3.15')],
+    ('Political_locales', 'localidad'): [('Name', 'de Las Navas')],
+    ('Proportional_quantity', 'sobre'): [('Reference_quantity', '3.15')],
+    ('Roadways', 'carretera'): [],
+    ('Spatial_contact', 'en'): [('Figure', 'un caballo que se encontraba suelto'), ('Ground', 'la carretera')],
+    ('Taking_sides', 'contra'): [('Side', 'un caballo que se encontraba suelto en la carretera')]}

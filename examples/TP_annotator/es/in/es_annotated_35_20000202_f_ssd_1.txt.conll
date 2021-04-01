@@ -1,0 +1,6 @@
+{   ('Arrest', 'arrestos'): [],
+    ('Bringing', 'llevados'): [('Theme', 'arrestos'), ('Goal', 'en el suroeste de Kosovo')],
+    ('Calendric_unit', 'lunes'): [],
+    ('Interior_profile_relation', 'en'): [('Ground', 'suroeste de Kosovo')],
+    ('Law_enforcement_agency', 'policía'): [('Jurisdiction', 'de Naciones')],
+    ('Political_locales', 'localidad'): [('Name', 'de Velika Hoca')]}

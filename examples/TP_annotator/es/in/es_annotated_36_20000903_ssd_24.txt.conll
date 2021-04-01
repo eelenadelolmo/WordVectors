@@ -1,0 +1,5 @@
+{   ('Being_employed', 'trabaja'): [('Employee', 'nuestro'), ('Task', 'con la hipótesis de fortalecer nuestro proyecto')],
+    ('Causation', 'porque'): [('Effect', 'trabaja con la hipótesis de fortalecer nuestro proyecto'), ('Cause', 'PP catalán no le sobran las siglas')],
+    ('Experimentation', 'hipótesis'): [('Phenomenon', 'de fortalecer nuestro proyecto')],
+    ('Project', 'proyecto'): [('Agent', 'nuestro')],
+    ('Sufficiency', 'sobran'): [('Item', 'las siglas')]}

@@ -1,0 +1,10 @@
+{   ('Cardinal_numbers', 'dos'): [],
+    ('Change_position_on_a_scale', 'explosión'): [('Place', 'en una comisaría de la policía palestina')],
+    ('Death', 'falleció'): [('Protagonist', 'Un niño de 11 años')],
+    ('Increment', 'otros'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'una fuerte explosión'), ('Ground', 'policía palestina que')],
+    ('Law_enforcement_agency', 'policía'): [('Jurisdiction', 'palestina')],
+    ('Locale_by_use', 'ocupada'): [('Container_possessor', 'policía palestina que')],
+    ('People_by_age', 'niño'): [('Age', 'niño de 11 años')],
+    ('Residence', 'ocupada'): [('Location', 'por las tropas israelís')],
+    ('Time_vector', 'previamente'): [('Event', 'la policía palestina'), ('Event', 'ocupada por las tropas israelís')]}

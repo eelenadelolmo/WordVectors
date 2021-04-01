@@ -1,0 +1,13 @@
+{   ('Activity_ongoing', 'que mantenga'): [('Agent', 'su'), ('Activity', 'quot ; la esperanza de la sociedad española sobre un horizonte de paz')],
+    ('Appellations', 'presidente'): [('Type', 'del Gobierno')],
+    ('Attack', 'arremeter contra'): [('Victim', 'el PP en materia antiterrorista')],
+    ('Calendric_unit', 'se'): [],
+    ('Desiring', 'esperanza de'): [('Experiencer', 'sociedad española')],
+    ('Importance', 'crítica'): [('Degree', 'se'), ('Factor', 'del presidente del Gobierno al')],
+    ('Leadership', 'Gobierno'): [],
+    ('Manufacturing', 'hacer'): [('Product', 'una velada')],
+    ('Organization', 'sociedad'): [('Container_possessor', 'española')],
+    ('People_by_religion', 'fiel'): [],
+    ('Preventing_or_letting', 'permitió'): [('Event', 'su')],
+    ('Request', 'reclamarle'): [('Message', 'quot ; la esperanza de la sociedad española sobre un horizonte de paz')],
+    ('Spatial_contact', 'en'): [('Figure', 'sociedad española'), ('Ground', 'un horizonte de paz')]}

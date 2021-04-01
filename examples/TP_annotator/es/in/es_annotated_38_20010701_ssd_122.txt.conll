@@ -1,0 +1,5 @@
+{   ('Cause_change', 'cambiar'): [('Entity', 'cosas')],
+    ('Desiring', 'el deseo'): [('Experiencer', 'Todas las generaciones'), ('Event', 'de cambiar las cosas')],
+    ('Event', 'pasa'): [('Event', 'nada')],
+    ('Intentionally_create', 'generaciones'): [],
+    ('Quantified_mass', 'Todas'): [('Individuals', 'generaciones')]}

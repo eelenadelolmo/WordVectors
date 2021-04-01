@@ -1,0 +1,9 @@
+{   ('Calendric_unit', 'agosto'): [('Count', 'su')],
+    ('Calendric_unit', 'años'): [],
+    ('Cutting', 'cortara'): [('Item', 'la barba a lo')],
+    ('Finish_competition', 'Víctor'): [],
+    ('Getting', 'se'): [('Recipient', 'lo'), ('Theme', 'de la presidencia de Izquierda Unida')],
+    ('Manufacturing', 'hace'): [('Producer', 'Un peluquero'), ('Product', 'su agosto y Francisco Frutos')],
+    ('Possibility', 'si consiguiera'): [('Possible_event', 'lo'), ('Possible_event', 'portavoz de la presidencia de Izquierda Unida')],
+    ('Representative', 'presidencia'): [('Represented', 'de la presidencia de Izquierda Unida')],
+    ('Wearing', 'se'): [('Clothing', 'que'), ('Clothing', 'hace años')]}

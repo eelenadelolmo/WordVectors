@@ -1,0 +1,6 @@
+{   ('Activity_ongoing', 'mantener'): [('Agent', 'los socialistas'), ('Activity', 'el consenso antiterrorista y constitucional con el PP pero , al tiempo ,')],
+    ('Desiring', 'el deseo'): [('Experiencer', 'los socialistas de')],
+    ('Identicality', 'también'): [('Type', 'tiempo')],
+    ('Locative_relation', 'al'): [('Ground', 'al tiempo'), ('Figure', 'explorar vías de acercamiento al PNV')],
+    ('Means', 'vías'): [('Purpose', 'de acercamiento al PNV')],
+    ('Time_vector', 'de ahí'): [('Event', 'el deseo de los socialistas de mantener el consenso antiterrorista y constitucional con')]}

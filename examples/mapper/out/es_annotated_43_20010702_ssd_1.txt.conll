@@ -1,0 +1,13 @@
+{   ('Appellations', 'presidente'): [('Type', 'Fox')],
+    ('Arriving', 'llegó'): [('Theme', 'cobijo a'), ('Path', 'pasada madrugada'), ('Place', 'a México')],
+    ('Assistance', 'ayuda'): [('Helper', 'su'), ('Focal_entity', 'antiterrorista')],
+    ('Becoming_aware', 'su'): [('Cognizer', 'su'), ('Phenomenon', 'si la guerrilla mexicana da cobijo a miembros')],
+    ('Buildings', 'averigüe'): [('Name', 'mexicana'), ('Type', 'guerrilla'), ('Building', 'cobijo a miembros de')],
+    ('Calendric_unit', 'madrugada'): [('Relative_time', 'pasada'), ('Whole', 'a México')],
+    ('Judgment_direct_address', 'agradecer'): [('Addressee', 'al presidente Vicente Fox'), ('Reason', 'su ayuda antiterrorista')],
+    ('Membership', 'miembros'): [('Group', 'la')],
+    ('Purpose', 'intención'): [],
+    ('Questioning', 'pedirle'): [   ('Message', 'Aznar llegó la pasada madrugada a México con la intención de agradecer al presidente Vicente Fox su ayuda antiterrorista'),
+                                    ('Addressee', 'su'),
+                                    ('Message', 'averigüe si la guerrilla mexicana da cobijo a miembros de')],
+    ('Sleep', 'su'): [('Sleeper', 'su')]}

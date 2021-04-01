@@ -1,0 +1,7 @@
+{   ('Desirability', 'buena'): [('Evaluee', 'turno')],
+    ('Kinship', 'infantil'): [],
+    ('Leadership', 'príncipe'): [],
+    ('People_by_religion', 'musulmán'): [],
+    ('Quantified_mass', 'pocos'): [],
+    ('Shoot_projectiles', 'lanzar'): [('Projectile', 'un cuento infantil en')],
+    ('Similarity', 'como'): [('Degree', 'pocos')]}

@@ -1,0 +1,4 @@
+{   ('Cure', 'tratamiento'): [],
+    ('Event', 'sucesos'): [],
+    ('Statement', 'informaron de'): [('Speaker', 'británico The Times y las agencias Associated Press y France Presse'), ('Message', 'sucesos')],
+    ('Text', 'Presse'): [('Author', 'británico')]}

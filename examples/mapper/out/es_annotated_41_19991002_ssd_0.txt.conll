@@ -1,0 +1,3 @@
+{   ('Age', 'vieja'): [('Entity', 'su'), ('Entity', 'de discutir con España la soberanía de Ceuta y Melilla')],
+    ('Discussion', 'discutir'): [('Interlocutor_2', 'con'), ('Topic', 'la soberanía de Ceuta y Melilla')],
+    ('Statement', 'reclamación'): [('Speaker', 'su'), ('Message', 'vieja'), ('Message', 'de discutir con España la soberanía de Ceuta y Melilla')]}

@@ -1,0 +1,8 @@
+{   ('Attack', 'atacados'): [('Victim', 'una importante planta de ferroníquel situada en el extrarradio de la ciudad')],
+    ('Becoming_aware', 'situada'): [('Phenomenon', 'una importante planta de'), ('Ground', 'en el extrarradio de la ciudad')],
+    ('Buildings', 'aeropuerto'): [('Type', 'capital')],
+    ('Importance', 'importante'): [('Factor', 'planta de')],
+    ('Locale_by_use', 'planta'): [('Descriptor', 'importante'), ('Relative_location', 'situada en el extrarradio de la ciudad')],
+    ('Political_locales', 'ciudad'): [],
+    ('Relational_political_locales', 'capital'): [('Locale', 'aeropuerto de la capital')],
+    ('Spatial_contact', 'en'): [('Figure', 'una importante planta de'), ('Ground', 'el extrarradio de la ciudad')]}

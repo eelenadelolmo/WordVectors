@@ -1,0 +1,5 @@
+{   ('Certainty', 'confianza'): [],
+    ('Giving', 'dio un'): [('Donor', 'avalar'), ('Recipient', 'le dio'), ('Theme', 'voto de confianza condicionado a que ETA no mate de nuevo')],
+    ('Killing', 'avalar'): [('Victim', 'le')],
+    ('Means', 'planteamientos'): [('Agent', 'Ibarretxe')],
+    ('Taking_sides', 'avalar'): [('Cognizer', 'a priori'), ('Action', 'planteamientos de Ibarretxe')]}

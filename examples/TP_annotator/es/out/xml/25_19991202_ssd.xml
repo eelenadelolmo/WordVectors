@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="25_19991202_ssd">
+
+
+	<concepts>
+		<concept id="c_0">las condiciones</concept>
+		<concept id="c_1">El Madrid</concept>
+		<concept id="c_2">el entrenador</concept>
+		<concept id="c_3">que</concept>
+		<concept id="c_4">Cuatro millones al mes por no decir nada</concept>
+		<concept id="c_5">alguien</concept>
+		<concept id="c_6">Quien</concept>
+		<concept id="c_7">los abogados de Toshack</concept>
+		<concept id="c_8">tantos millones</concept>
+		<concept id="c_9">el silencio</concept>
+		<concept id="c_10">no comentar en público nada del club</concept>
+		<concept id="c_11">un documento</concept>
+		<concept id="c_12">se</concept>
+		<concept id="c_13">nada</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Cuando a alguien le rescinden un contrato - - porque a la empresa o a la institución para la que trabajaba ya no le interesan sus servicios - -, suele haber una discusión económica.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_employed" head="trabajaba">
+				<argument type="Employee" dependent="sus" /></frame>
+			<frame type="Businesses" head="empresa" />
+			<frame type="Discussion" head="discusión">
+				<argument type="Domain" dependent="económica" /></frame>
+			<frame type="Economy" head="económica" />
+			<frame type="Emotion_directed" head="interesan">
+				<argument type="Stimulus" dependent="sus servicios - - , suele haber una discusión económica" /></frame>
+			<frame type="Institutions" head="institución" />
+			<frame type="Locative_relation" head="ya">
+				<argument type="Figure" dependent="sus servicios" />
+				<argument type="Ground" dependent="discusión económica" /></frame>
+			<frame type="Public_services" head="servicios" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Aunque en el contrato consten ya las condiciones en caso de anulación.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Containing" head="consten">
+				<argument type="Container" dependent="el contrato" />
+				<argument type="Time" dependent="ya las" />
+				<argument type="Contents" dependent="las condiciones en caso de anulación" /></frame>
+			<frame type="Documents" head="contrato" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En función de las circunstancias del caso, las condiciones pueden ser modificadas.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fp0">las</token><token pos="ncfp000">condiciones</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_7" concept_ref3="c_12">
+			<token pos="sps00">En</token><token pos="ncfs000">función</token><token pos="sps00">de</token><mention concept_ref="c_0"><token pos="da0fp0">las</token><token pos="ncfp000">circunstancias</token></mention><token pos="spcms">del</token><mention concept_ref="c_7"><token pos="ncms000">caso</token></mention><token pos="vsn0000">ser</token><token pos="vmp00pf">modificadas</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Cause_change" head="modificadas">
+				<argument type="Entity" dependent="las condiciones" /></main_frame>
+			<frame type="Instance" head="caso" />
+			<frame type="Spatial_contact" head="de">
+				<argument type="Ground" dependent="las circunstancias del caso" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El Madrid ha prescindido de Benjamin Toshack como entrenador.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="np00000">Madrid</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_2">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">prescindido</token><token pos="sps00">de</token><mention concept_ref="c_7"><token pos="np0000l">Benjamin</token><token pos="np0000l">Toshack</token></mention><token pos="cs">como</token><mention concept_ref="c_2"><token pos="ncms000">entrenador</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Vehicle" head="entrenador" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero no llega el acuerdo definitivo, y no por cuestiones de dinero.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="por">
+				<argument type="Theme" dependent="el acuerdo definitivo" /></frame>
+			<frame type="Make_agreement_on_action" head="el acuerdo">
+				<argument type="Descriptor" dependent="definitivo" /></frame>
+			<frame type="Money" head="dinero" />
+			<frame type="Process_end" head="definitivo">
+				<argument type="Process" dependent="el acuerdo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Según se ha publicado, el club quiere que el entrenador firme un documento por el que se comprometa a no comentar en público nada del club.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">el</token><token pos="ncms000">entrenador</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_11" concept_ref3="c_12" concept_ref4="c_13">
+			<token pos="vmsp3s0">firme</token><mention concept_ref="c_11"><token pos="di0ms0">un</token><token pos="ncms000">documento</token></mention><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="pr0cn000">que</token><mention concept_ref="c_12"><token pos="p0300000">se</token></mention><token pos="vmsp3s0">comprometa</token><token pos="sps00">a</token><mention concept_ref="c_10"><token pos="rn">no</token><token pos="vmn0000">comentar</token><token pos="sps00">en</token><token pos="ncmp000">público</token><token pos="pi0cs000">nada</token><token pos="spcms">del</token><token pos="ncms000">club</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el club " />
+			<main_frame type="Attempt" head="comprometa">
+				<argument type="Agent" dependent="se ha" />
+				<argument type="Goal" dependent="no comentar en público nada del club" /></main_frame>
+			<frame type="Desiring" head="quiere">
+				<argument type="Experiencer" dependent="el club" />
+				<argument type="Event" dependent="entrenador firme un documento por el que se comprometa a no comentar en público nada del club" /></frame>
+			<frame type="Documents" head="documento" />
+			<frame type="Publishing" head="publicado">
+				<argument type="Author" dependent="se" /></frame>
+			<main_frame type="Sign_agreement" head="firme un">
+				<argument type="Agreement" dependent="documento por el que se comprometa a no comentar en público nada del club" /></main_frame>
+			<main_frame type="Statement" head="comentar">
+				<argument type="Speaker" dependent="se ha" />
+				<argument type="Message" dependent="nada del club" /></main_frame>
+			<frame type="Vehicle" head="entrenador" />
+			<frame type="Weapon" head="club" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A cambio cobraría el resto del finiquito que le corresponde.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_12">
+			<mention concept_ref="c_12"><token pos="pp3csd00">le</token></mention><token pos="vmip3s0">corresponde</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="resto" />
+			<frame type="Judgment_communication" head="cobraría">
+				<argument type="Communicator" dependent="le" />
+				<argument type="Evaluee" dependent="el resto del" />
+				<argument type="Medium" dependent="finiquito que le" /></frame>
+			<frame type="Rest" head="resto">
+				<argument type="Whole" dependent="del" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Dicen que un papel semejante lo firmó ya un antiguo gerente del Madrid, a quien por su silencio le pagarían 50 millones anuales durante toda la vida.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_silent" head="silencio">
+				<argument type="Speaker" dependent="su" />
+				<argument type="Topic" dependent="durante toda la vida" /></frame>
+			<frame type="Calendric_unit" head="anuales" />
+			<frame type="Cardinal_numbers" head="millones">
+				<argument type="Multiplier" dependent="50" />
+				<argument type="Unit" dependent="anuales" /></frame>
+			<frame type="Commerce_pay" head="pagarían">
+				<argument type="Buyer" dependent="quien" />
+				<argument type="Goods" dependent="su silencio le pagarían 50 millones anuales durante toda la vida" /></frame>
+			<frame type="People_by_vocation" head="gerente">
+				<argument type="Employer" dependent="papel semejante lo" />
+				<argument type="Employer" dependent="Madrid" /></frame>
+			<frame type="Sign_agreement" head="firmó">
+				<argument type="Agreement" dependent="papel semejante lo" />
+				<argument type="Time" dependent="ya" />
+				<argument type="Signatory" dependent="antiguo gerente del Madrid , a quien por" /></frame>
+			<frame type="Statement" head="lo">
+				<argument type="Speaker" dependent="su" />
+				<argument type="Message" dependent="papel semejante lo firmó ya un antiguo gerente del Madrid , a quien por su silencio le pagarían 50 millones" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Cuesta creerlo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Certainty" head="creerlo" />
+			<frame type="Difficulty" head="Cuesta">
+				<argument type="Activity" dependent="." />
+				<argument type="Activity" dependent="creerlo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Cuatro millones al mes por no decir nada es uno de los trabajos más cómodos y mejor pagados que se puedan imaginar.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="ncms000">Cuatro</token><token pos="ncmp000">millones</token><token pos="spcms">al</token><token pos="ncms000">mes</token><token pos="sps00">por</token><token pos="rn">no</token><token pos="vmn0000">decir</token><token pos="pi0cs000">nada</token>
+		</theme>
+		<rheme concept_ref1="c_7">
+			<token pos="vsip3s0">es</token><token pos="pi0ms000">uno</token><token pos="sps00">de</token><mention concept_ref="c_7"><token pos="da0mp0">los</token><token pos="ncmp000">trabajos</token></mention><token pos="rg">más</token><token pos="aq0mp0">cómodos</token><token pos="cc">y</token><token pos="rg">mejor</token><token pos="aq0mpp">pagados</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="imaginar">
+				<argument type="Content" dependent="trabajos" />
+				<argument type="Cognizer" dependent="se" /></frame>
+			<frame type="Being_employed" head="trabajos" />
+			<main_frame type="Calendric_unit" head="al mes" />
+			<frame type="Capability" head="puedan">
+				<argument type="Entity" dependent="se" />
+				<argument type="Event" dependent="imaginar" /></frame>
+			<frame type="Cardinal_numbers" head="Cuatro">
+				<argument type="Unit" dependent="millones" /></frame>
+			<main_frame type="Cardinal_numbers" head="millones">
+				<argument type="Multiplier" dependent="Cuatro" />
+				<argument type="Unit" dependent="al mes" /></main_frame>
+			<frame type="Cardinal_numbers" head="uno">
+				<argument type="Entity" dependent="los trabajos más cómodos y mejor pagados" /></frame>
+			<frame type="Commerce_pay" head="pagados">
+				<argument type="Manner" dependent="mejor" />
+				<argument type="Money" dependent="trabajos" /></frame>
+			<frame type="Required_event" head="mejor">
+				<argument type="Required_situation" dependent="trabajos" /></frame>
+			<main_frame type="Statement" head="decir">
+				<argument type="Message" dependent="nada es uno de los trabajos más cómodos y mejor pagados que se puedan imaginar" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¡ Qué importante debe de ser lo que sabe el señor Toshack, y cuánto daño podría hacer, si alguien lo supiera!.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="pi0cs000">alguien</token>
+		</theme>
+		<rheme>
+			<token pos="pp3msa00">lo</token><token pos="vmsi3s0">supiera</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="sabe">
+				<argument type="Cognizer" dependent="alguien" /></frame>
+			<frame type="Damaging" head="daño" />
+			<frame type="Importance" head="importante">
+				<argument type="Factor" dependent="lo" /></frame>
+			<frame type="Intentionally_act" head="de">
+				<argument type="Act" dependent="cuánto daño" />
+				<argument type="Agent" dependent="lo" /></frame>
+			<frame type="Possibility" head="podría">
+				<argument type="Possible_event" dependent="cuánto daño" />
+				<argument type="Possible_event" dependent="de" /></frame>
+			<frame type="Required_event" head="debe">
+				<argument type="Required_situation" dependent="lo" />
+				<argument type="Required_situation" dependent="ser lo que sabe el señor" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Automáticamente, me he sentido un desgraciado.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Similarity" head="he">
+				<argument type="Entity_1" dependent="me" />
+				<argument type="Entity_2" dependent="un desgraciado" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Si la dirección de EL PERIODICO decidiese prescindir de mis servicios, estoy seguro de que no me ofrecería ni un duro por mi silencio.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_silent" head="silencio">
+				<argument type="Speaker" dependent="mi" /></frame>
+			<frame type="Being_in_control" head="dirección">
+				<argument type="Dependent_entity" dependent="decidiese prescindir de mis servicios" /></frame>
+			<frame type="Cardinal_numbers" head="un">
+				<argument type="Precision" dependent="duro" /></frame>
+			<frame type="Certainty" head="seguro de que">
+				<argument type="Cognizer" dependent="de" />
+				<argument type="Content" dependent="que no me ofrecería ni un duro por mi silencio" /></frame>
+			<frame type="Deciding" head="decidiese">
+				<argument type="Decision" dependent="de" />
+				<argument type="Decision" dependent="prescindir de mis servicios" /></frame>
+			<frame type="Difficulty" head="duro">
+				<argument type="Activity" dependent="por mi silencio" /></frame>
+			<frame type="Offering" head="ofrecería">
+				<argument type="Offerer" dependent="de" />
+				<argument type="Theme" dependent="un duro por mi silencio" /></frame>
+			<frame type="Public_services" head="servicios" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Porque no valdría nada lo que yo pudiera contar.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Causation" head="Porque">
+				<argument type="Cause" dependent="no valdría nada lo que yo pudiera contar" /></frame>
+			<frame type="Deserving" head="valdría">
+				<argument type="State_of_affairs" dependent="nada" />
+				<argument type="State_of_affairs" dependent="lo que yo pudiera contar" /></frame>
+			<frame type="Possibility" head="pudiera">
+				<argument type="Possible_event" dependent="que yo" />
+				<argument type="Possible_event" dependent="contar" /></frame>
+			<frame type="Telling" head="contar">
+				<argument type="Message" dependent="que" />
+				<argument type="Speaker" dependent="lo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Quien paga es que tiene miedo.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="pr0cs000">Quien</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Commerce_pay" head="paga" />
+			<frame type="Fear" head="miedo">
+				<argument type="Experiencer" dependent="es" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿Y quién cobra?.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Quien cobra por callarse es que no tiene decencia.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="pr0cs000">Quien</token>
+		</theme>
+		<rheme concept_ref1="c_12">
+			<token pos="vmip3s0">cobra</token><token pos="sps00">por</token><token pos="vmn0000">callarse</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Body_movement" head="callarse">
+				<argument type="Message" dependent="es que no tiene decencia" /></main_frame>
+			<frame type="Cardinal_numbers" head="es" />
+			<frame type="Leadership" head="decencia">
+				<argument type="Leader" dependent="Quien" />
+				<argument type="Activity" dependent="por callarse es que no tiene decencia" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A menudo hay gente que se calla lo que sabe, pero no lo hace para obtener un beneficio económico.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_12">
+			<mention concept_ref="c_12"><token pos="p0300000">se</token></mention><token pos="vmip3s0">calla</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="sabe">
+				<argument type="Content" dependent="que" />
+				<argument type="Cognizer" dependent="lo" /></frame>
+			<main_frame type="Body_movement" head="calla lo">
+				<argument type="Message" dependent="calla lo que sabe" /></main_frame>
+			<frame type="Change_position_on_a_scale" head="beneficio">
+				<argument type="Item" dependent="económico" /></frame>
+			<frame type="Economy" head="económico" />
+			<frame type="Frequency" head="menudo">
+				<argument type="Event" dependent="gente que se calla lo que sabe" /></frame>
+			<frame type="Intentionally_act" head="se">
+				<argument type="Agent" dependent="lo" />
+				<argument type="Act" dependent="lo" />
+				<argument type="Purpose" dependent="para obtener un beneficio económico" /></frame>
+			<frame type="Locative_relation" head="hay">
+				<argument type="Figure" dependent="menudo hay gente que se calla lo que sabe , pero no lo hace para obtener un beneficio económico" /></frame>
+			<frame type="People" head="gente">
+				<argument type="Descriptor" dependent="gente que se calla lo que sabe" /></frame>
+			<frame type="Performers_and_roles" head="se">
+				<argument type="Performance" dependent="beneficio" /></frame>
+			<frame type="Proportional_quantity" head="que">
+				<argument type="Individuals" dependent="lo que sabe" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Se puede silenciar un hecho por razones diversas y perfectamente comprensibles.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_silent" head="silenciar">
+				<argument type="Topic" dependent="por razones diversas y perfectamente comprensibles" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por amistad, por ejemplo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Instance" head="ejemplo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por respeto personal o profesional.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Judgment" head="respeto">
+				<argument type="Evaluee" dependent="personal o profesional" /></frame>
+			<frame type="People_by_vocation" head="profesional" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por un principio ético.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "No me corresponde hablar en público de la empresa o del club que ya he dejado" es una reacción digna cuando es gratuita.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Businesses" head="empresa" />
+			<frame type="Departing" head="dejado">
+				<argument type="Path" dependent="o" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="No me corresponde hablar en" />
+				<argument type="Ground" dependent="público de la empresa" /></frame>
+			<frame type="Response" head="reacción" />
+			<frame type="Statement" head="hablar">
+				<argument type="Speaker" dependent="me" /></frame>
+			<frame type="Weapon" head="club" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "No hablo porque me pagan para que no diga nada" es una vergüenza.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="No hablo" />
+				<argument type="Cause" dependent="No hablo porque me pagan para que no diga nada  quot ; es una vergüenza" /></frame>
+			<frame type="Chatting" head="hablo">
+				<argument type="Interlocutor_1" dependent="es" /></frame>
+			<frame type="Commerce_pay" head="pagan">
+				<argument type="Buyer" dependent="es" />
+				<argument type="Goods" dependent="no diga nada  quot ; es una vergüenza" /></frame>
+			<frame type="Statement" head="diga">
+				<argument type="Speaker" dependent="es" />
+				<argument type="Message" dependent="nada  quot ; es una vergüenza" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Una vergüenza - - ¡ 50 millones cada año! - - muy bien retribuida, no se puede negar.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Affirm_or_deny" head="se">
+				<argument type="Speaker" dependent="se" />
+				<argument type="Message" dependent="se" /></frame>
+			<frame type="Calendric_unit" head="año">
+				<argument type="Relative_time" dependent="cada" /></frame>
+			<frame type="Commerce_pay" head="retribuida">
+				<argument type="Money" dependent="vergüenza - - ¡ 50 millones cada año ! - - muy bien" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Cuando escribo estas líneas, los abogados de Toshack rechazan el pacto de silencio y defienden el derecho del ex entrenador a comentar lo que desee.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0mp0">los</token><token pos="ncmp000">abogados</token><token pos="sps00">de</token><token pos="np00000">Toshack</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_9" concept_ref3="c_10" concept_ref4="c_11" concept_ref5="c_12">
+			<token pos="vmip3p0">rechazan</token><mention concept_ref="c_8"><token pos="da0ms0">el</token><token pos="ncms000">pacto</token></mention><mention concept_ref="c_10"><token pos="sps00">de</token><token pos="ncms000">silencio</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_silent" head="silencio" />
+			<frame type="Defending" head="defienden">
+				<argument type="Victim" dependent="derecho del ex entrenador a comentar lo que desee" /></frame>
+			<frame type="Desiring" head="que desee">
+				<argument type="Focal_participant" dependent="lo que" />
+				<argument type="Experiencer" dependent="lo" /></frame>
+			<frame type="People_by_vocation" head="abogados">
+				<argument type="Employer" dependent="Toshack" /></frame>
+			<main_frame type="Respond_to_proposal" head="rechazan">
+				<argument type="Speaker" dependent="abogados de Toshack" />
+				<argument type="Proposal" dependent="de silencio" /></main_frame>
+			<frame type="Statement" head="comentar">
+				<argument type="Message" dependent="defienden el derecho del ex entrenador a comentar" />
+				<argument type="Topic" dependent="lo que desee" /></frame>
+			<frame type="Text_creation" head="escribo">
+				<argument type="Author" dependent="y" />
+				<argument type="Text" dependent="estas líneas" /></frame>
+			<frame type="Vehicle" head="entrenador" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero tantos millones pueden tener más fuerza que una invitación a cenar para convencer a alguien de las virtudes del silencio.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="di0mp0">tantos</token><token pos="ncmp000">millones</token>
+		</theme>
+		<rheme concept_ref1="c_9" concept_ref2="c_5" concept_ref3="c_8" concept_ref4="c_10" concept_ref5="c_11" concept_ref6="c_12">
+			<token pos="vmip3p0">pueden</token><token pos="vmn0000">tener</token><token pos="rg">más</token><token pos="ncfs000">fuerza</token><token pos="cs">que</token><token pos="di0fs0">una</token><token pos="ncfs000">invitación</token><token pos="sps00">a</token><token pos="vmn0000">cenar</token><token pos="sps00">para</token><token pos="vmn0000">convencer</token><token pos="sps00">a</token><mention concept_ref="c_5"><token pos="pi0cs000">alguien</token></mention><token pos="sps00">de</token><mention concept_ref="c_8"><token pos="da0fp0">las</token><token pos="ncfp000">virtudes</token></mention><token pos="spcms">del</token><token pos="ncms000">silencio</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_silent" head="silencio" />
+			<frame type="Cardinal_numbers" head="millones">
+				<argument type="Multiplier" dependent="tantos" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="fuerza" /></frame>
+			<frame type="Level_of_force_exertion" head="fuerza">
+				<argument type="Degree" dependent="más" />
+				<argument type="Exerter" dependent="que una invitación a cenar" /></frame>
+			<frame type="Quantified_mass" head="tantos">
+				<argument type="Individuals" dependent="millones" /></frame>
+			<frame type="Request" head="invitación">
+				<argument type="Message" dependent="cenar para" /></frame>
+			<main_frame type="Social_event" head="cenar" />
+			<main_frame type="Suasion" head="convencer">
+				<argument type="Content" dependent="alguien de las virtudes del silencio" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ya veremos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Perception_experience" head="veremos">
+				<argument type="Perceiver_passive" dependent="veremos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Un mal poeta escribió que "el silencio es la voz del alma".
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="da0ms0">el</token><token pos="ncms000">silencio</token>
+		</theme>
+		<rheme concept_ref1="c_13">
+			<token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="ncfs000">voz</token><token pos="spcms">del</token><mention concept_ref="c_13"><token pos="ncfs000">alma</token></mention><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Un mal poeta " />
+			<frame type="Becoming_silent" head="silencio" />
+			<frame type="Desirability" head="mal">
+				<argument type="Evaluee" dependent="poeta" /></frame>
+			<main_frame type="Text_creation" head="escribió">
+				<argument type="Text" dependent="Un mal poeta" />
+				<argument type="Text" dependent="quot ; el silencio es la voz del alma" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Conocemos muchos casos, ahora, en que "el silencio es la voz del dinero".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="es">
+				<argument type="Cognizer" dependent="Conocemos" />
+				<argument type="Content" dependent="muchos casos" /></frame>
+			<frame type="Becoming_silent" head="silencio" />
+			<frame type="Instance" head="casos">
+				<argument type="Instance_prop" dependent="muchos" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="Conocemos muchos casos" />
+				<argument type="Ground" dependent="quot ; el silencio es la voz del dinero" /></frame>
+			<frame type="Money" head="dinero" />
+			<frame type="Quantified_mass" head="muchos">
+				<argument type="Individuals" dependent="casos" /></frame>
+			<frame type="Temporal_collocation" head="ahora">
+				<argument type="Trajector_event" dependent="muchos casos" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

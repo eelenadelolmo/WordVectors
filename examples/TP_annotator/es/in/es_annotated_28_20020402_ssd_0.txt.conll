@@ -1,0 +1,5 @@
+{   ('Change_position_on_a_scale', 'aumentar'): [('Item', 'violencia')],
+    ('Giving', 'contribuir'): [('Theme', 'a aumentar la violencia en Oriente')],
+    ('Judgment_communication', 'criticó'): [   ('Communicator', 'secretario de Defensa de EEUU , Donald Rumsfeld'),
+                                               ('Evaluee', 'a Irán , Siria e Irak por respaldar a terroristas y contribuir a aumentar la violencia en Oriente')],
+    ('Terrorism', 'terroristas'): []}

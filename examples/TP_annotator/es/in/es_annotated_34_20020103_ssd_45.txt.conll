@@ -1,0 +1,6 @@
+{   ('Cause_to_make_progress', 'mejorar'): [('Project', 'sus instalaciones')],
+    ('Confronting_problem', 'frente'): [('Agent', 'lo'), ('Issue', 'muchas demandas')],
+    ('Giving', 'sus'): [('Recipient', 'César'), ('Theme', 'lo que es del'), ('Recipient', 'al César')],
+    ('Locale_by_use', 'instalaciones'): [('Container_possessor', 'sus')],
+    ('Quantified_mass', 'muchas'): [('Individuals', 'demandas')],
+    ('Request', 'demandas'): [('Speaker', 'lo')]}

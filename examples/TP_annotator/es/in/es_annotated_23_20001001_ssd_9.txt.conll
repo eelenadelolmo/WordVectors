@@ -1,0 +1,7 @@
+{   ('Body_parts', 'cuerpo'): [],
+    ('Capability', 'capaz'): [('Event', 'moldearse')],
+    ('Difficulty', 'difícil'): [('Degree', 'más'), ('Activity', 'personaje')],
+    ('Forgiveness', 'disculpar'): [('Evaluee', 'el mutismo de un & quot ; alfarero de la interpretación')],
+    ('Impression', 'imágenes'): [('Descriptor', 'enjaular')],
+    ('Part_inner_outer', 'dentro'): [('Whole', 'personaje más difícil')],
+    ('Part_inner_outer', 'fuera'): []}

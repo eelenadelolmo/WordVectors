@@ -1,0 +1,4 @@
+{   ('Arrest', 'detención'): [('Time', 'ayer la'), ('Suspect', 'de Slobodan Milosevic')],
+    ('Committing_crime', 'crímenes'): [('Purpose', 'guerra')],
+    ('Hostile_encounter', 'guerra'): [],
+    ('Referring_by_name', 'sino'): []}

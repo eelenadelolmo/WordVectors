@@ -1,0 +1,6 @@
+{   ('Interior_profile_relation', 'en'): [('Ground', 'se')],
+    ('Purpose', 'plan'): [],
+    ('Statement', 'anunciado'): [('Message', 'el plan de paz propuesto por Ibarretxe en')],
+    ('Statement', 'propuesto'): [('Message', 'el plan de paz'), ('Speaker', 'por Ibarretxe'), ('Time', 'En él')],
+    ('Statement', 'según'): [('Speaker', ', según manifestó Redondo Terreros a Europa Press , no se abordó el plan de paz propuesto')],
+    ('Telling', 'según'): [('Speaker', 'Redondo Terreros'), ('Addressee', 'Europa Press'), ('Medium', 'plan de paz propuesto por'), ('Time', 'En él')]}

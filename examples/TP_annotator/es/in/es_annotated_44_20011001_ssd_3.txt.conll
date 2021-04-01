@@ -1,0 +1,9 @@
+{   ('Being_named', 'nombre'): [('Name', 'nombre a la calle')],
+    ('Degree', 'que'): [('Gradable_attribute', 'importante')],
+    ('Giving', 'que dio'): [('Donor', 'la'), ('Recipient', 'nombre a la calle')],
+    ('Importance', 'importante'): [],
+    ('Instance', 'ejemplo'): [],
+    ('Placing', 'las'): [('Theme', 'el ejemplo para las calles futuras')],
+    ('Roadways', 'calle'): [],
+    ('Roadways', 'calles'): [],
+    ('Work', 'obra'): []}

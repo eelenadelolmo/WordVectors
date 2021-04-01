@@ -1,0 +1,7 @@
+{   ('Awareness', 'sabíamos'): [('Cognizer', 'los corresponsales'), ('Content', 'se producían')],
+    ('Concessive', 'en'): [('Main_assertion', 'en Argelia nunca se nos informaba del movimiento de tropas , pero los corresponsales sabíamos que se')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'nos'), ('Ground', 'Argelia'), ('Figure', 'nunca se nos informaba del movimiento de tropas , pero los corresponsales sabíamos que se')],
+    ('Locale', 'se'): [],
+    ('Member_of_military', 'tropas'): [],
+    ('Taking_time', 'se'): [('Activity', 'los'), ('Time_length', 'se')],
+    ('Telling', 'informaba'): [('Speaker', 'nos'), ('Speaker', 'nos'), ('Addressee', 'del movimiento de tropas')]}

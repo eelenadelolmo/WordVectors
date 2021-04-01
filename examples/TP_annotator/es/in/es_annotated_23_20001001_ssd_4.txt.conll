@@ -1,0 +1,4 @@
+{   ('Certainty', 'creen'): [('Content', 'quienes estuvieron cerca de él'), ('Content', 'que masculló')],
+    ('Frequency', 'Siempre'): [('Event', 'es'), ('Event', 'un honor recibir un premio')],
+    ('Receiving', 'recibir'): [('Theme', 'un premio')],
+    ('Social_connection', 'cerca de'): [('Connection', 'quienes'), ('Individual_2', 'quienes'), ('Individual_2', 'de él')]}

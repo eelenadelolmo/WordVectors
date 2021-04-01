@@ -1,0 +1,8 @@
+{   ('Activity_ongoing', 'mantener'): [('Activity', 'esa extraordinaria presencia de policías')],
+    ('Law_enforcement_agency', 'policías'): [],
+    ('Leadership', 'funcionarios de'): [('Domain', 'prisión')],
+    ('Make_agreement_on_action', 'accediera'): [('Obligation', 'a mantener esa extraordinaria presencia de policías tras el violento motín del miércoles')],
+    ('Operating_a_system', 'accediera'): [('System', 'funcionarios de la prisión')],
+    ('Presence', 'presencia'): [('Entity', 'de policías')],
+    ('Prison', 'prisión'): [],
+    ('Relative_time', 'de la'): [('Focal_occasion', 'esa extraordinaria presencia de policías'), ('Landmark_occasion', 'el violento motín del'), ('Manner', 'del miércoles')]}

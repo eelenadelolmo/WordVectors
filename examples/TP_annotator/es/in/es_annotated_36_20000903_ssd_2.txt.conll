@@ -1,0 +1,6 @@
+{   ('Communicate_categorization', 'definirá'): [('Speaker', 'congreso del PP catalán'), ('Item', 'un proyecto más autónomo de Madrid')],
+    ('Contingency', 'depende'): [('Outcome', 'el Gobierno de Aznar'), ('Determinant', ', el congreso del PP catalán definirá un proyecto más autónomo de Madrid')],
+    ('Increment', 'más'): [('Class', 'proyecto')],
+    ('Leadership', 'Gobierno'): [('Governed', 'Aznar')],
+    ('Project', 'proyecto'): [('Name', 'autónomo'), ('Place', 'de Madrid')],
+    ('Temporal_collocation', 'Ahora'): [('Trajector_event', 'que el Gobierno de Aznar no depende de CiU , el congreso del PP catalán definirá un proyecto más')]}

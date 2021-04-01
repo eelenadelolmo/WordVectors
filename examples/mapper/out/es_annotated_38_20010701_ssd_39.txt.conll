@@ -1,0 +1,7 @@
+{   ('Destiny', 'mucha'): [('State_of_affairs', 'más felicidad')],
+    ('Giving', 'tener'): [('Donor', 'eso'), ('Recipient', 'me'), ('Theme', 'mucha más felicidad que salir en la tele')],
+    ('Increment', 'más'): [('Class', 'felicidad')],
+    ('Motion', 'salir'): [('Theme', 'me da mucha más felicidad'), ('Manner', 'en'), ('Source', 'en la tele')],
+    ('Possession', 'tener'): [('Possession', 'un disco de oro')],
+    ('Spatial_contact', 'en'): [('Figure', 'me da mucha más felicidad'), ('Ground', 'tele')],
+    ('Text', 'disco'): [('Text', 'oro')]}

@@ -1,0 +1,7 @@
+{   ('Age', 'nuevo'): [('Entity', 'en')],
+    ('Aggregate', 'grupo'): [],
+    ('Calendric_unit', 'horas'): [('Count', '12')],
+    ('Fear', 'temor'): [('Stimulus', 'a un overbooking')],
+    ('Relative_time', 'en'): [('Landmark_occasion', '12 horas de espera'), ('Focal_occasion', ', el grupo tuvo un nuevo sobresalto : un retraso de dos horas en el avión y el temor a un overbooking')],
+    ('Temporal_subregion', 'en'): [],
+    ('Waiting', 'espera'): []}

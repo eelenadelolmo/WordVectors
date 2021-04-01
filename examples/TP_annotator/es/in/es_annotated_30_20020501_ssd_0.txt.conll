@@ -1,0 +1,11 @@
+{   ('Artificiality', 'falso'): [('Reference_category', 'testimonio')],
+    ('Attack', 'atentados'): [('Time', 'septiembre'), ('Manner', '11')],
+    ('Judgment_communication', 'acusado'): [   ('Communicator', 'una organización caritativa musulmana'),
+                                               ('Evaluee', 'es'),
+                                               (   'Reason',
+                                                   'acusado de falso testimonio y de tener relación con la organización terrorista Al Qaida de Osama bin Laden , responsable de los atentados del 11 '
+                                                   'de septiembre en Washington y Nueva York .')],
+    ('Organization', 'organización'): [('Descriptor', 'bin'), ('Name', 'Al Qaida'), ('Members', 'terrorista')],
+    ('Possession', 'tener'): [('Possession', 'relación con la organización terrorista Al Qaida de Osama bin Laden , responsable de los atentados del 11 de septiembre en Washington y')],
+    ('Relation', 'relación'): [('Entities', 'con la organización terrorista Al Qaida de Osama bin Laden , responsable de los atentados del 11 de septiembre en Washington y Nueva')],
+    ('Terrorism', 'terrorista'): []}

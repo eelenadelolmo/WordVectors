@@ -1,0 +1,4 @@
+{   ('Origin', 'origen'): [('Origin', 'paliza')],
+    ('People_by_jurisdiction', 'ciudadano'): [],
+    ('Receiving', 'recibió'): [('Recipient', 'Un ciudadano de origen marroquí residente en Sant Pere Pescador'), ('Theme', 'una brutal paliza en'), ('Place', 'en la celda')],
+    ('Residence', 'residente'): [('Resident', 'paliza'), ('Location', 'en Sant Pere Pescador')]}

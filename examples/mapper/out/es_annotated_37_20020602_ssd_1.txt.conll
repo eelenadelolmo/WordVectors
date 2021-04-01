@@ -1,0 +1,6 @@
+{   ('Departing', 'partió'): [('Path', 'plaza')],
+    ('Locale_by_use', 'plaza'): [('Name', 'de')],
+    ('Locative_relation', 'donde'): [('Figure', 'hicieron pintadas')],
+    ('Motion', 'se dirigió a'): [('Goal', 'por el')],
+    ('Referring_by_name', 'convocada'): [('Name', 'marcha'), ('Name', 'por el Colectivo de Apoyo a los')],
+    ('Supporting', 'Apoyo'): []}

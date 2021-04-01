@@ -1,0 +1,4 @@
+{   ('Chatting', 'hablando'): [('Topic', 'de educar en la diversidad')],
+    ('Education_teaching', 'educar'): [('Skill', 'en la diversidad')],
+    ('Filling', 'llenan'): [('Cause', 'Muchos'), ('Goal', 'la boca'), ('Time', 'hablando de educar en la diversidad')],
+    ('Quantified_mass', 'Muchos'): [('Individuals', 'llenan la boca')]}

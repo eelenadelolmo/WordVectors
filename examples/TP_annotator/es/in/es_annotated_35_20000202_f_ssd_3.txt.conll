@@ -1,0 +1,6 @@
+{   ('Calendric_unit', 'año'): [('Relative_time', 'escenario'), ('Whole', 'de violentos combates')],
+    ('Hostile_encounter', 'combates'): [('Manner', 'violentos'), ('Side_2', 'entre las fuerzas serbias')],
+    ('Interior_profile_relation', 'entre'): [('Figure', 'violentos combates'), ('Ground', 'fuerzas serbias y la guerrilla albanokosovar')],
+    ('Locale', 'región'): [('Name', 'Orahovac')],
+    ('Military', 'fuerzas'): [('Possessor', 'serbias')],
+    ('Sensation', 'escenario'): []}

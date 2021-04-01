@@ -1,0 +1,12 @@
+{   ('Activity_ongoing', 'mantener'): [('Activity', 'el corredor existente en torno a')],
+    ('Attempt', 'intentar'): [('Agent', 'la frontera'), ('Goal', 'mantener el corredor existente en torno a')],
+    ('Boundary', 'frontera'): [],
+    ('Connecting_architecture', 'corredor'): [('Descriptor', 'existente'), ('Whole', 'torno a')],
+    ('Existence', 'existente'): [('Entity', 'corredor existente en torno a')],
+    ('Goal', 'para'): [('Landmark', 'Shea')],
+    ('Hostile_encounter', 'combates'): [('Manner', 'fuertes')],
+    ('Law_enforcement_agency', 'policía'): [],
+    ('Locative_relation', 'en torno'): [('Figure', 'el corredor existente'), ('Ground', 'de')],
+    ('Locative_relation', 'torno a'): [('Figure', 'fuertes combates con tropas del Ejército y de la policía serbia a'), ('Ground', 'la frontera')],
+    ('Member_of_military', 'tropas'): [('Loyal_side', 'del Ejército y de la policía serbia')],
+    ('Military', 'Ejército'): [('Possessor', 'serbia')]}

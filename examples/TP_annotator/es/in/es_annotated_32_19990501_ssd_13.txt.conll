@@ -1,0 +1,6 @@
+{   ('Event', 'ocurre'): [('Event', 'que')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'lo que ocurre'), ('Ground', 'Kosovo')],
+    ('Military', 'Ejército'): [('Descriptor', 'plurinacional')],
+    ('Relative_time', 'Después de'): [('Landmark_occasion', 'todo'), ('Focal_occasion', 'es un Ejército plurinacional y no les gusta lo que ocurre en Kosovo & quot ; , dijo')],
+    ('Similarity', 'gusta'): [('Entity_1', 'les'), ('Entity_2', 'lo que ocurre')],
+    ('Statement', 'dijo'): [('Message', '; Después de todo , es un Ejército plurinacional y no les gusta lo que ocurre en Kosovo & quot ; , dijo'), ('Speaker', 'lo')]}

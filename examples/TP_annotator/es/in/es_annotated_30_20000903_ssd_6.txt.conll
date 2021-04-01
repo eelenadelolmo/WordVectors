@@ -1,0 +1,4 @@
+{   ('Aggregate', 'partidos'): [('Aggregate_property', 'democráticos')],
+    ('Be_subset_of', 'entre'): [('Total', 'todos los partidos democráticos')],
+    ('Part_orientational', 'de fondo'): [('Whole', 'unidad')],
+    ('Purpose', 'objetivos'): []}

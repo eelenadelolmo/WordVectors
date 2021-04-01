@@ -1,0 +1,10 @@
+{   ('Arriving', 'entrada'): [('Theme', 'la cámara')],
+    ('Attack', 'atacantes'): [],
+    ('Cause_motion', 'arrojaron'): [('Cause', 'los atacantes'), ('Theme', 'el primer explosivo'), ('Area', 'policial')],
+    ('Change_position_on_a_scale', 'explosivo'): [('Item', 'la granada')],
+    ('Goal', 'entrada'): [('Trajector', 'el primer explosivo'), ('Landmark', 'policial')],
+    ('Law_enforcement_agency', 'policial'): [],
+    ('Measure_linear_extent', 'metros'): [('Count', '30')],
+    ('Ordinal_numbers', 'primer'): [('Type', 'explosivo')],
+    ('Proportional_quantity', 'de la'): [('Q_prop', 'Situados a'), ('Reference_quantity', '30'), ('Individuals', 'metros')],
+    ('Weapon', 'explosivo'): [('Name', 'primer')]}

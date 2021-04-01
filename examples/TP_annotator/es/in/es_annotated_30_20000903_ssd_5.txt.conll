@@ -1,0 +1,7 @@
+{   ('Be_in_agreement_on_action', 'según'): [   ('Party_1', 'socialistas'),
+                                                ('Obligation', 'de las palabras de su secretario general'),
+                                                ('Obligation', ', juzgan que dar portazo al PNV , como hace Aznar , puede no ser el mejor modo de recomponer la unidad democrática')],
+    ('Certainty', 'según'): [('Cognizer', 'socialistas'), ('Content', 'al PNV , como hace Aznar , puede no ser el mejor modo de recomponer la unidad democrática')],
+    ('Goal', 'se'): [('Trajector', 'socialistas'), ('Landmark', 'las palabras de su secretario general')],
+    ('Means', 'modo'): [('Descriptor', 'mejor'), ('Purpose', 'de recomponer la unidad democrática')],
+    ('Required_event', 'mejor'): [('Required_situation', 'modo de recomponer la unidad democrática')]}

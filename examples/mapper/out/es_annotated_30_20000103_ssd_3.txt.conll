@@ -1,0 +1,4 @@
+{   ('Compliance', 'por'): [('Protagonist', 'el'), ('Norm', 'petición de suspensión formulada por el Tribunal')],
+    ('Request', 'petición'): [('Speaker', 'Tribunal'), ('Message', 'de suspensión')],
+    ('Response', 'reacciones'): [],
+    ('Statement', 'añadió'): [('Message', '; Si respetamos la petición de suspensión formulada por el Tribunal , las reacciones del público podrían atenuarse con el tiempo y'), ('Speaker', 'el')]}

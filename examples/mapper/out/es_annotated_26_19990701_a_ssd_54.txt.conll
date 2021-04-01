@@ -1,0 +1,4 @@
+{   ('Activity_start', 'comenzaron'): [('Activity', 'Ese artículo'), ('Activity', 'a divulgarlo'), ('Time', 'durante las elecciones de 1977')],
+    ('Change_of_leadership', 'elecciones'): [],
+    ('Dispersal', 'de'): [('Individuals', 'Ese artículo')],
+    ('Text', 'artículo'): []}

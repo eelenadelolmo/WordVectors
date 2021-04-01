@@ -1,0 +1,10 @@
+{   ('Attack', 'atentado'): [('Manner', 'primer'), ('Victim', 'por el movimiento palestino Al')],
+    ('Being_at_risk', 'de seguridad'): [],
+    ('Calendric_unit', 'ayer que'): [],
+    ('Calendric_unit', 'semanas'): [('Relative_time', 'últimas')],
+    ('Execution', 'realizadas'): [('Executed', 'de líderes de este movimiento'), ('Time', 'en las últimas semanas')],
+    ('Leadership', 'líderes'): [('Governed', 'de este movimiento')],
+    ('Leadership', 'se'): [],
+    ('Ordinal_numbers', 'primer'): [('Type', 'atentado realizado por el movimiento palestino Al')],
+    ('Part_inner_outer', 'interior de'): [('Part', 'interior de Israel')],
+    ('Source_of_getting', 'Fuentes de'): [('Descriptor', 'de seguridad')]}

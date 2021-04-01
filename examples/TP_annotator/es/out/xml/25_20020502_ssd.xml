@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="25_20020502_ssd">
+
+
+	<concepts>
+		<concept id="c_0">el terrorismo</concept>
+		<concept id="c_1">todo en democracia</concept>
+		<concept id="c_2">que</concept>
+		<concept id="c_3">la muerte indiscriminada</concept>
+		<concept id="c_4">las multitudes democráticas</concept>
+		<concept id="c_5">Esa necesidad del hay que hacer algo</concept>
+		<concept id="c_6">hay un atentado</concept>
+		<concept id="c_7">seguros</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 En España el terrorismo es, sin duda, nuestro enemigo.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">terrorismo</token>
+		</theme>
+		<rheme concept_ref1="c_1">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_1"><token pos="dp1msp">nuestro</token><token pos="ncms000">enemigo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Certainty" head="duda" />
+			<frame type="Terrorism" head="terrorismo">
+				<argument type="Place" dependent="el" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No la independencia de Euskadi, que todo en democracia es posible, sino la muerte, su justificación y su uso político.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="pi0ms000">todo</token><token pos="sps00">en</token><token pos="ncfs000">democracia</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="aq0cs0">posible</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Change_of_leadership" head="independencia de">
+				<argument type="Manner" dependent="de" /></frame>
+			<frame type="Death" head="muerte" />
+			<frame type="Likelihood" head="posible">
+				<argument type="Hypothetical_event" dependent="que todo en democracia" /></frame>
+			<frame type="Using" head="uso">
+				<argument type="Agent" dependent="es" />
+				<argument type="Purpose" dependent="político" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Cada vez que hay un atentado hemos de salir a decir lo mismo.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_6">
+			<mention concept_ref="c_6"><token pos="vaip3s0">hay</token><token pos="di0ms0">un</token><token pos="ncms000">atentado</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="atentado" />
+			<frame type="Frequency" head="Cada">
+				<argument type="Interval" dependent="vez" />
+				<argument type="Event" dependent="hay un atentado" /></frame>
+			<frame type="Identicality" head="lo mismo">
+				<argument type="Type" dependent="que hay" /></frame>
+			<main_frame type="Locative_relation" head="hay">
+				<argument type="Figure" dependent="Cada vez" />
+				<argument type="Ground" dependent="hay un atentado" />
+				<argument type="Figure" dependent="hemos de salir a decir lo mismo" /></main_frame>
+			<frame type="Motion" head="salir a">
+				<argument type="Theme" dependent="hemos" />
+				<argument type="Goal" dependent="salir" /></frame>
+			<frame type="Sleep" head="salir">
+				<argument type="Sleeper" dependent="hemos" /></frame>
+			<frame type="Statement" head="decir">
+				<argument type="Speaker" dependent="hemos" />
+				<argument type="Message" dependent="lo mismo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ayer, sin ir más lejos, el pánico de la bomba cerca del Bernabéu nos recordó que la muerte indiscriminada es algo muy próximo.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fs0">la</token><token pos="ncfs000">muerte</token><token pos="aq0fs0">indiscriminada</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="pi0cs000">algo</token><token pos="rg">muy</token><token pos="aq0ms0">próximo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el pánico de la bomba cerca del Bernabéu " />
+			<frame type="Calendric_unit" head="Ayer" />
+			<frame type="Death" head="muerte" />
+			<frame type="Evoking" head="recordó">
+				<argument type="Stimulus" dependent="el pánico de la bomba cerca del" />
+				<argument type="Stimulus" dependent="que la muerte indiscriminada es algo muy próximo" /></frame>
+			<frame type="Increment" head="más" />
+			<frame type="Locative_relation" head="cerca del">
+				<argument type="Ground" dependent="algo muy" /></frame>
+			<frame type="Weapon" head="bomba" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y cuando nos sacude la ira las multitudes democráticas saldríamos a la calle a quemar muñecos para sentirnos seguros.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0fp0">las</token><token pos="ncfp000">multitudes</token><token pos="aq0fp0">democráticas</token>
+		</theme>
+		<rheme concept_ref1="c_7">
+			<token pos="vmic1p0">saldríamos</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">calle</token><token pos="sps00">a</token><token pos="vmn0000">quemar</token><token pos="ncmp000">muñecos</token><token pos="sps00">para</token><token pos="vmn0000">sentirnos</token><mention concept_ref="c_7"><token pos="aq0mp0">seguros</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="las multitudes">
+				<argument type="Aggregate_property" dependent="democráticas" /></frame>
+			<main_frame type="Feeling" head="sentirnos">
+				<argument type="Emotional_state" dependent="seguros" /></main_frame>
+			<main_frame type="Fire_burning" head="quemar">
+				<argument type="Fire" dependent="muñecos" />
+				<argument type="Fuel" dependent="para sentirnos seguros" /></main_frame>
+			<frame type="Getting" head="sacude la">
+				<argument type="Recipient" dependent="nos" />
+				<argument type="Theme" dependent="ira" /></frame>
+			<frame type="Motion" head="ira las">
+				<argument type="Theme" dependent="las multitudes democráticas" />
+				<argument type="Path" dependent="sacude la" />
+				<argument type="Goal" dependent="a la calle a quemar muñecos para sentirnos seguros" /></frame>
+			<frame type="Risky_situation" head="seguros" />
+			<frame type="Roadways" head="calle" />
+			<frame type="Sleep" head="sacude la">
+				<argument type="Sleeper" dependent="las multitudes democráticas" /></frame>
+			<frame type="Temporal_collocation" head="cuando">
+				<argument type="Landmark_event" dependent="nos sacude la ira" />
+				<argument type="Trajector_event" dependent="las multitudes democráticas saldríamos a la calle a quemar muñecos para sentirnos seguros" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Esa necesidad del hay que hacer algo nos lleva a soluciones que nunca lo son, pero que nos calman hasta el próximo zarpazo de la barbarie.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="dd0fs0">Esa</token><token pos="ncfs000">necesidad</token><token pos="spcms">del</token><token pos="vmis3s0">hay</token><token pos="cs">que</token><token pos="vmii1s0">hacer</token><token pos="pi0fp000">algo</token>
+		</theme>
+		<rheme>
+			<token pos="pp1cp000">nos</token><token pos="vmip3s0">lleva</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Change_position_on_a_scale" head="hasta">
+				<argument type="Item" dependent="que nos calman" />
+				<argument type="Final_state" dependent="hasta el próximo zarpazo de la barbarie" /></frame>
+			<frame type="Experiencer_focus" head="calman">
+				<argument type="Content" dependent="nos calman hasta el próximo zarpazo de la barbarie" /></frame>
+			<main_frame type="Intentionally_act" head="hacer">
+				<argument type="Act" dependent="nos lleva a" /></main_frame>
+			<frame type="Leadership" head="zarpazo de">
+				<argument type="Governed" dependent="nos" /></frame>
+			<frame type="Needing" head="necesidad">
+				<argument type="Cognizer" dependent="Esa" />
+				<argument type="Requirement" dependent="hacer algo nos lleva a soluciones que nunca lo son" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Han perdido parte de sus cuerpos, pero les queda la cabeza.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="cabeza">
+				<argument type="Possessor" dependent="sus" /></frame>
+			<frame type="Body_parts" head="cuerpos">
+				<argument type="Possessor" dependent="sus" /></frame>
+			<frame type="Earnings_and_losses" head="perdido">
+				<argument type="Earner" dependent="les" />
+				<argument type="Earnings" dependent="parte de sus cuerpos" /></frame>
+			<frame type="Proportional_quantity" head="les">
+				<argument type="Mass" dependent="de sus cuerpos" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

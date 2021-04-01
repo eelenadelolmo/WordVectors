@@ -1,0 +1,9 @@
+{   ('Calendric_unit', 'noche'): [],
+    ('Change_position_on_a_scale', 'explosiones'): [],
+    ('Event', 'se produjeron'): [('Event', 'Las explosiones en Netanya'), ('Place', 'en la calle Herzl')],
+    ('Importance', 'importante'): [('Factor', 'calle Herzl'), ('Place', 'de la ciudad')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'la más importante de la ciudad'), ('Time', 'a primeras'), ('Ground', 'la noche')],
+    ('Political_locales', 'ciudad'): [],
+    ('Roadways', 'calle'): [('Name', 'Herzl')],
+    ('Spatial_contact', 'en'): [('Figure', 'Las explosiones en Netanya se produjeron'), ('Ground', 'calle Herzl')],
+    ('Temporal_subregion', 'a primeras'): []}

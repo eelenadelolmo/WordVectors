@@ -1,0 +1,13 @@
+{   ('Age', 'nuevo'): [('Entity', 'número')],
+    ('Aggregate', 'partido'): [],
+    ('Alternatives', 'futuro'): [('Agent', 'su'), ('Number_of_possibilities', 'político')],
+    ('Attaching', 'vinculó'): [('Connector', 'su futuro político al de José María Aznar y ensalzó el trabajo de su antecesor , Francisco')],
+    ('Cardinal_numbers', 'dos'): [('Unit', 'partido')],
+    ('Communication', 'discurso'): [('Communicator', 'su'), ('Time', 'primer')],
+    ('Delivery', 'entrega'): [],
+    ('Difficulty', 'difíciles'): [('Activity', 'ensalzó el trabajo de su antecesor , Francisco Alvarez-Cascos , cuya & quot ; entrega e inteligencia'), ('Activity', 'vinculó')],
+    ('Evaluative_comparison', 'vinculó'): [('Profiled_item', ', Francisco Alvarez-Cascos , cuya & quot ; entrega e inteligencia')],
+    ('Information', 'inteligencia'): [],
+    ('Ordinal_numbers', 'primer'): [('Type', 'discurso')],
+    ('Quantified_mass', 'número'): [('Q_prop', 'nuevo')],
+    ('Work', 'trabajo'): [('Salient_entity', 'su antecesor , Francisco Alvarez-Cascos , cuya & quot ; entrega e inteligencia serán muy difíciles de')]}

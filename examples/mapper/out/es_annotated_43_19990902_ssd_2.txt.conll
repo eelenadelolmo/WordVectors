@@ -1,0 +1,13 @@
+{   ('Calendric_unit', 'años'): [('Relative_time', 'anteriores')],
+    ('Discussion', 'el encuentro'): [],
+    ('Ingestion', 'almuerzo'): [('Ingestibles', 'gazpacho')],
+    ('Leadership', 'Reina'): [('Leader', 'Botella')],
+    ('Leadership', 'jefe del'): [('Governed', 'Ejecutivo')],
+    ('Manipulation', 'se'): [   ('Entity', 'Botella un almuerzo - - gazpacho , merluza , solomillo y helados - - que'),
+                                ('Time', 'en esta ocasión'),
+                                ('Locus', 'en alta mar'),
+                                ('Manner', 'a bordo del Fortuna')],
+    ('Natural_features', 'mar'): [('Descriptor', 'alta')],
+    ('Position_on_a_scale', 'alta'): [('Item', 'mar')],
+    ('Relative_time', 'anteriores'): [('Focal_occasion', 'años')],
+    ('Spatial_contact', 'en'): [('Figure', 'Botella un almuerzo - - gazpacho , merluza , solomillo y helados - - que , en esta ocasión'), ('Ground', 'alta mar a bordo del Fortuna')]}

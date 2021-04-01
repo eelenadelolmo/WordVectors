@@ -1,0 +1,4 @@
+{   ('Aggregate', 'equipo'): [('Aggregate_property', 'local')],
+    ('Dominate_situation', 'dominan'): [('Agent', 'Backs de')],
+    ('Getting', 'ganó'): [('Recipient', 'equipo local'), ('Theme', 'el partido')],
+    ('Political_locales', 'local'): [('Container_possessor', 'equipo')]}

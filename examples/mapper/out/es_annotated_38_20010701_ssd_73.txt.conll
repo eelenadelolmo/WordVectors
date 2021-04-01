@@ -1,0 +1,6 @@
+{   ('Age', 'jóvenes'): [('Entity', 'músicos')],
+    ('Catastrophe', 'crisis'): [('Undesirable_event', 'de ideas')],
+    ('Causation', 'porque'): [('Effect', ', pero también los jóvenes músicos se dedican a bucear en el pasado'), ('Cause', 'hay una grave crisis de ideas')],
+    ('Locative_relation', 'hay'): [('Ground', 'hay una grave crisis de ideas')],
+    ('People_by_vocation', 'músicos'): [('Descriptor', 'jóvenes')],
+    ('Relative_time', 'pasado'): []}

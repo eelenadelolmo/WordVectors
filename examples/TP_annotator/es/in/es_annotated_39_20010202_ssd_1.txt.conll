@@ -1,0 +1,9 @@
+{   ('Building_subparts', 'oficina'): [],
+    ('Information', 'información'): [   ('Means_of_gathering', 'judicial'),
+                                        (   'Topic',
+                                            'deliberadamente información judicial sobre los profesionales de NTV como respuesta a las acusaciones que lanzaban los informadores desde la cadena de '
+                                            'televisión contra la Fiscalía rusa')],
+    ('Judgment_communication', 'acusaciones'): [],
+    ('Network', 'las'): [('Descriptor', 'televisión')],
+    ('People_by_vocation', 'profesionales'): [('Employer', 'NTV')],
+    ('Response', 'respuesta'): [('Trigger', 'a las acusaciones que lanzaban los informadores desde la cadena de televisión contra la Fiscalía rusa')]}

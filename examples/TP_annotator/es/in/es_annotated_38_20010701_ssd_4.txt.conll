@@ -1,0 +1,10 @@
+{   ('Buildings', 'hoteles'): [],
+    ('Commerce_pay', 'pagar'): [('Buyer', 'Somos'), ('Money', 'viajes')],
+    ('Food', 'comida'): [],
+    ('Intentionally_act', 'actuamos'): [('Agent', 'Somos'), ('Act', 'en sitios pequeños')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'actuamos'), ('Ground', 'sitios pequeños')],
+    ('Locale', 'sitios'): [('Descriptor', 'pequeños')],
+    ('People', 'personas'): [('Descriptor', 'en el escenario')],
+    ('Size', 'pequeños'): [('Entity', 'sitios')],
+    ('Spatial_contact', 'en'): [('Figure', '14 personas'), ('Ground', 'escenario')],
+    ('Travel', 'viajes'): [('Traveler', 'Somos')]}

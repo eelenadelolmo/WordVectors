@@ -1,0 +1,5 @@
+{   ('Activity_ongoing', 'mantienen'): [('Agent', 'los'), ('Activity', 'al respecto')],
+    ('Becoming_aware', 'respecto'): [('Phenomenon', 'discrepancias que mantienen al respecto')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Discussion', 'reunión'): [('Interlocutor_2', 'situación política vasca')],
+    ('Leadership', 'líder'): [('Governed', 'socialistas vascos y el lehendakari')]}

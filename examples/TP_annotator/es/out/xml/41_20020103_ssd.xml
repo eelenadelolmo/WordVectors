@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="41_20020103_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Zacarias Moussaoui , de 33 años ,</concept>
+		<concept id="c_1">Moussaoui , francés de ascendencia marroquí ,</concept>
+		<concept id="c_2">la madre del encausado , Aicha el Uafi ,</concept>
+		<concept id="c_3">que</concept>
+		<concept id="c_4">El procesado</concept>
+		<concept id="c_5">el juicio</concept>
+		<concept id="c_6">La defensa , en la que participa el francés François Roux , contratado por la madre del procesado ,</concept>
+		<concept id="c_7">La proximidad del primer aniversario de los atentados</concept>
+		<concept id="c_8">ser</concept>
+		<concept id="c_9">la sesión</concept>
+		<concept id="c_10">inocente</concept>
+		<concept id="c_11">empiece el 14 de</concept>
+		<concept id="c_12">por los abogados</concept>
+		<concept id="c_13">cómplice</concept>
+		<concept id="c_14">otros</concept>
+		<concept id="c_15">la palabra</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Zacarias Moussaoui, de 33 años, negó ayer al comparecer ante la juez Leoni Brinkema en Alejandría ( Virginia, EEUU ) haber participado, haber conspirado o ser cómplice de Osama bin Laden y otros en los atentados de Nueva York y de Washington del pasado 11 de septiembre.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np0000l">Zacarias</token><token pos="np0000l">Moussaoui</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="z">33</token><token pos="ncmp000">años</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_4" concept_ref3="c_8" concept_ref4="c_13" concept_ref5="c_14">
+			<token pos="vmis3s0">negó</token><token pos="van0000">haber</token><token pos="vmp00sm">participado</token><token pos="fc">,</token><token pos="van0000">haber</token><token pos="vmp00sm">conspirado</token><token pos="cc">o</token><mention concept_ref="c_8"><token pos="vsn0000">ser</token></mention><mention concept_ref="c_13"><token pos="nccs000">cómplice</token></mention><token pos="sps00">de</token><mention concept_ref="c_2"><token pos="ncfs000">Osama</token><token pos="ncms000">bin</token><token pos="np00000">Laden</token></mention><token pos="cc">y</token><mention concept_ref="c_14"><token pos="pi0mp000">otros</token></mention><token pos="sps00">en</token><mention concept_ref="c_4"><token pos="da0mp0">los</token><token pos="ncmp000">atentados</token></mention><token pos="sps00">de</token><token pos="ncms000">Nueva</token><token pos="np00000">York</token><token pos="cc">y</token><token pos="sps00">de</token><token pos="np00000">Washington</token><token pos="spcms">del</token><token pos="aq0msp">pasado</token><token pos="zp">11</token><token pos="spcms">de</token><token pos="ncms000">septiembre</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Affirm_or_deny" head="negó">
+				<argument type="Message" dependent="Zacarias Moussaoui , de 33 años" /></main_frame>
+			<frame type="Age" head="años">
+				<argument type="Time" dependent="33 años" /></frame>
+			<frame type="Attack" head="atentados">
+				<argument type="Assailant" dependent="de Nueva York y de Washington" />
+				<argument type="Time" dependent="11 de septiembre" /></frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="33" /></frame>
+			<main_frame type="Participation" head="participado">
+				<argument type="Participants" dependent="EEUU )" />
+				<argument type="Manner" dependent="ser" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Moussaoui, francés de ascendencia marroquí, es el primer procesado en EEUU en relación con los atentados.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np00000">Moussaoui</token><token pos="fc">,</token><token pos="aq0ms0">francés</token><token pos="sps00">de</token><token pos="ncfs000">ascendencia</token><token pos="aq0cs0">marroquí</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_8" concept_ref3="c_13" concept_ref4="c_14">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_8"><token pos="da0ms0">el</token></mention><token pos="ao0ms0">primer</token><token pos="ncms000">procesado</token><token pos="sps00">en</token><token pos="np00000">EEUU</token><token pos="sps00">en</token><token pos="ncfs000">relación</token><token pos="sps00">con</token><token pos="da0mp0">los</token><token pos="ncmp000">atentados</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="atentados" />
+			<frame type="Ordinal_numbers" head="primer">
+				<argument type="Type" dependent="procesado" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A miles de kilómetros, en Narbona ( sur de Francia ), la madre del encausado, Aicha el Uafi, siguió la sesión.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">la</token><token pos="ncfs000">madre</token><token pos="spcms">del</token><token pos="aq0msp">encausado</token><token pos="fc">,</token><token pos="np0000l">Aicha</token><token pos="di0fs0">el</token><token pos="ncfs000">Uafi</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_9">
+			<token pos="vmis3s0">siguió</token><token pos="da0fs0">la</token><token pos="ncfs000">sesión</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Direction" head="sur">
+				<argument type="Independent_variable" dependent="de Francia" /></frame>
+			<frame type="Kinship" head="madre">
+				<argument type="Ego" dependent="del encausado , Aicha el Uafi , siguió la sesión" /></frame>
+			<frame type="Measure_linear_extent" head="kilómetros" />
+			<frame type="Quantified_mass" head="miles de">
+				<argument type="Individuals" dependent="de kilómetros" /></frame>
+			<main_frame type="Relative_time" head="siguió">
+				<argument type="Focal_occasion" dependent="Aicha el" />
+				<argument type="Landmark_occasion" dependent="la sesión" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "En nombre de Alá, no tengo nada que declarar ; no declaro nada", dijo Moussaoui, que vestía una sudadera verde con la palabra prisionero en la espalda.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_4" concept_ref3="c_15">
+			<token pos="vmii3s0">vestía</token><mention concept_ref="c_2"><token pos="di0fs0">una</token><token pos="ncfs000">sudadera</token></mention><token pos="aq0cs0">verde</token><token pos="sps00">con</token><mention concept_ref="c_15"><token pos="da0fs0">la</token><token pos="ncfs000">palabra</token></mention><mention concept_ref="c_4"><token pos="ncms000">prisionero</token></mention><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">espalda</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_in_captivity" head="prisionero">
+				<argument type="Holding_location" dependent="palabra" /></frame>
+			<frame type="Being_named" head="nombre">
+				<argument type="Entity" dependent="de Alá" /></frame>
+			<frame type="Color" head="verde">
+				<argument type="Entity" dependent="vestía" /></frame>
+			<frame type="Statement" head="declarar">
+				<argument type="Speaker" dependent="en" />
+				<argument type="Message" dependent="nada" /></frame>
+			<frame type="Statement" head="dijo">
+				<argument type="Message" dependent="; En nombre de Alá , no tengo nada que declarar ; no declaro nada  quot ;" />
+				<argument type="Message" dependent="Moussaoui , que vestía una sudadera verde con la palabra prisionero en la espalda" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El procesado permaneció de pie los pocos minutos que duró el trámite y no llevaba esposas.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0ms0">El</token><token pos="ncms000">procesado</token>
+		</theme>
+		<rheme concept_ref1="c_14">
+			<token pos="vmis3s0">permaneció</token><mention concept_ref="c_14"><token pos="da0mp0">los</token><token pos="di0mp0">pocos</token><token pos="ncmp000">minutos</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="de pie">
+				<argument type="Possessor" dependent="el" /></frame>
+			<frame type="Calendric_unit" head="minutos">
+				<argument type="Count" dependent="pocos" /></frame>
+			<frame type="Quantified_mass" head="pocos">
+				<argument type="Individuals" dependent="minutos" /></frame>
+			<frame type="Spatial_contact" head="de">
+				<argument type="Figure" dependent="procesado" />
+				<argument type="Ground" dependent="de pie" /></frame>
+			<main_frame type="State_continue" head="permaneció">
+				<argument type="Entity" dependent="procesado" />
+				<argument type="State" dependent="de pie" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A su lado estuvo su defensor, Frank Dunham, que a la pregunta de si Moussaoui se declaraba inocente respondió con un escueto "sí".
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_0" concept_ref3="c_3" concept_ref4="c_10" concept_ref5="c_14">
+			<token pos="sps00">a</token><mention concept_ref="c_6"><token pos="da0fs0">la</token><token pos="ncfs000">pregunta</token></mention><token pos="sps00">de</token><token pos="cs">si</token><mention concept_ref="c_0"><token pos="np00000">Moussaoui</token></mention><token pos="p0300000">se</token><token pos="vmii3s0">declaraba</token><mention concept_ref="c_10"><token pos="aq0cs0">inocente</token></mention><token pos="vmis3s0">respondió</token><token pos="sps00">con</token><token pos="di0ms0">un</token><token pos="aq0ms0">escueto</token><token pos="fe">quot;</token><token pos="rg">sí</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Defending" head="defensor">
+				<argument type="Assailant" dependent="su" /></frame>
+			<frame type="Duration_description" head="quot" />
+			<frame type="Guilt_or_innocence" head="inocente" />
+			<frame type="Questioning" head="pregunta">
+				<argument type="Speaker" dependent="que" />
+				<argument type="Message" dependent="si Moussaoui se declaraba inocente respondió con un" /></frame>
+			<frame type="Relative_time" head="se">
+				<argument type="Focal_occasion" dependent="su" /></frame>
+			<main_frame type="Response" head="respondió">
+				<argument type="Responding_entity" dependent="inocente" />
+				<argument type="Response" dependent="con un escueto  quot ; sí " /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 HASTA OCTUBRE.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La juez aceptó que el juicio empiece el 14 de octubre, tal como propuso el fiscal Robert Spencer, que confirmó contra Moussaoui seis acusaciones, que incluyen la participación directa en la muerte de más de 3.000 personas: cuatro de los cargos están castigados con la pena de muerte, y dos, con la cadena perpetua.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0ms0">el</token><token pos="ncms000">juicio</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_11">
+			<mention concept_ref="c_11"><token pos="vmsp3s0">empiece</token><token pos="da0ms0">el</token><token pos="zp">14</token><token pos="spcms">de</token></mention><token pos="ncms000">octubre</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="La juez " />
+			<main_frame type="Activity_start" head="empiece">
+				<argument type="Activity" dependent="el juicio" />
+				<argument type="Time" dependent="empiece el 14 de" /></main_frame>
+			<frame type="Death" head="muerte" />
+			<frame type="Desirable_event" head="tal">
+				<argument type="State_of_affairs" dependent="el juicio" />
+				<argument type="State_of_affairs" dependent="empiece el 14 de" /></frame>
+			<frame type="Imprisonment" head="castigados">
+				<argument type="Prisoner" dependent="muerte" /></frame>
+			<frame type="Inclusion" head="incluyen">
+				<argument type="Total" dependent="contra Moussaoui seis acusaciones" />
+				<argument type="Part" dependent="incluyen la participación directa en la muerte de más de 3.000 personas : cuatro de los cargos están castigados con" /></frame>
+			<frame type="Leadership" head="cargos" />
+			<frame type="Participation" head="participación">
+				<argument type="Institution" dependent="directa" /></frame>
+			<frame type="People" head="personas" />
+			<frame type="People_by_vocation" head="juicio" />
+			<frame type="Receiving" head="aceptó">
+				<argument type="Recipient" dependent="el juicio" /></frame>
+			<frame type="Trial" head="juicio" />
+			<frame type="Verification" head="confirmó">
+				<argument type="Inspector" dependent="que el" />
+				<argument type="Unconfirmed_content" dependent="contra Moussaoui seis acusaciones , que incluyen la participación directa en la muerte de más de 3.000 personas : cuatro" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La defensa, en la que participa el francés François Roux, contratado por la madre del procesado, hizo constar que considera insuficiente el tiempo para preparar la causa, que obliga a traducir del árabe una gran cantidad de documentos, citar a testigos que residen en diferentes países e investigar en Francia, Gran Bretaña, Alemania y España.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0fs0">La</token><token pos="nccs000">defensa</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="pr0cn000">que</token><token pos="vmip3s0">participa</token><token pos="da0ms0">el</token><token pos="ncms000">francés</token><token pos="np0000l">François</token><token pos="np0000l">Roux</token><token pos="fc">,</token><token pos="aq0msp">contratado</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">madre</token><token pos="spcms">del</token><token pos="ncms000">procesado</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_9" concept_ref3="c_13" concept_ref4="c_15">
+			<token pos="vmis3s0">hizo</token><mention concept_ref="c_9"><token pos="vmn0000">constar</token><token pos="cs">que</token><token pos="vmip3s0">considera</token><token pos="aq0cs0">insuficiente</token></mention><mention concept_ref="c_8"><token pos="da0ms0">el</token></mention><token pos="ncms000">tiempo</token><token pos="sps00">para</token><token pos="vmn0000">preparar</token><mention concept_ref="c_15"><token pos="da0fs0">la</token><token pos="ncfs000">causa</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_prepare" head="preparar">
+				<argument type="Agent" dependent="el" />
+				<argument type="Activity" dependent="constar que considera insuficiente" /></main_frame>
+			<main_frame type="Categorization" head="considera">
+				<argument type="Time" dependent="hizo constar que" />
+				<argument type="Cognizer" dependent="el" />
+				<argument type="Item" dependent="insuficiente el tiempo para preparar la causa , que obliga a traducir del árabe una gran cantidad de documentos ," /></main_frame>
+			<frame type="Documents" head="documentos" />
+			<frame type="Have_as_requirement" head="obliga">
+				<argument type="Requirement" dependent="a traducir del árabe una gran cantidad de documentos , citar a testigos que residen en diferentes países e" />
+				<argument type="Dependent" dependent="investigar en Francia , Gran Bretaña , Alemania y" /></frame>
+			<frame type="Hiring" head="contratado">
+				<argument type="Employer" dependent="defensa , en la que participa el francés François Roux" />
+				<argument type="Employer" dependent="por la madre del procesado" /></frame>
+			<main_frame type="Instance" head="constar" />
+			<frame type="Kinship" head="madre">
+				<argument type="Ego" dependent="a testigos que" /></frame>
+			<main_frame type="Part_whole" head="participa" />
+			<frame type="Political_locales" head="países" />
+			<frame type="Quantified_mass" head="cantidad">
+				<argument type="Q_prop" dependent="gran" />
+				<argument type="Individuals" dependent="de documentos" /></frame>
+			<main_frame type="Request" head="constar">
+				<argument type="Addressee" dependent="testigos que residen en diferentes países" /></main_frame>
+			<frame type="Residence" head="residen">
+				<argument type="Resident" dependent="testigos que" />
+				<argument type="Location" dependent="en diferentes países" /></frame>
+			<frame type="Scrutiny" head="investigar">
+				<argument type="Cognizer" dependent="en Francia , Gran Bretaña , Alemania y" /></frame>
+			<frame type="Similarity" head="diferentes">
+				<argument type="Entities" dependent="países" /></frame>
+			<frame type="Size" head="gran">
+				<argument type="Dimension" dependent="cantidad de documentos" /></frame>
+			<main_frame type="Statement" head="constar que">
+				<argument type="Message" dependent="defensa , en la que participa el francés François Roux , contratado por la madre del procesado , hizo constar" />
+				<argument type="Message" dependent=", hizo constar que considera insuficiente el tiempo para preparar la causa , que obliga a traducir del árabe una gran cantidad de documentos , citar a testigos que residen en diferentes países e investigar en Francia , Gran Bretaña , Alemania y" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La proximidad del primer aniversario de los atentados también fue considerado por los abogados un dato contrario a los intereses de su cliente.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0fs0">La</token><token pos="ncfs000">proximidad</token><token pos="spcms">del</token><token pos="ao0ms0">primer</token><token pos="ncms000">aniversario</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">atentados</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_5" concept_ref3="c_9" concept_ref4="c_12" concept_ref5="c_13">
+			<token pos="rg">también</token><token pos="vsis3s0">fue</token><token pos="vmp00sm">considerado</token><mention concept_ref="c_12"><token pos="sps00">por</token><token pos="da0mp0">los</token><token pos="ncmp000">abogados</token></mention><token pos="di0ms0">un</token><token pos="ncms000">dato</token><mention concept_ref="c_9"><token pos="aq0ms0">contrario</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="ncmp000">intereses</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="nccs000">cliente</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="atentados" />
+			<main_frame type="Categorization" head="considerado">
+				<argument type="Category" dependent="proximidad del primer aniversario de los atentados" />
+				<argument type="Criteria" dependent="por los abogados" />
+				<argument type="Category" dependent="contrario a los intereses de su cliente" /></main_frame>
+			<frame type="Compliance" head="contrario">
+				<argument type="Norm" dependent="los abogados" />
+				<argument type="Norm" dependent="a los intereses de su cliente" /></frame>
+			<frame type="Emotion_directed" head="intereses">
+				<argument type="Stimulus" dependent="de su cliente" /></frame>
+			<frame type="Gradable_proximity" head="proximidad">
+				<argument type="Figure" dependent="primer aniversario de los atentados" /></frame>
+			<frame type="Ordinal_numbers" head="primer">
+				<argument type="Type" dependent="aniversario de los atentados" /></frame>
+			<frame type="People_by_vocation" head="abogados" />
+		</semantic_roles>
+	</sentence>
+	
+</text>

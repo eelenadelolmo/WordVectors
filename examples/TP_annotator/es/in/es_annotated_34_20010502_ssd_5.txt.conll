@@ -1,0 +1,7 @@
+{   ('Being_necessary', 'necesarios'): [('Requirement', 'cambios')],
+    ('Law', 'leyes'): [],
+    ('Leadership', 'diputado'): [('Leader', 'Roberto Fuentes')],
+    ('Locative_relation', 'hay'): [('Figure', 'todas las leyes'), ('Ground', 'hay algún vacío'), ('Figure', 'estaremos en la Mejor disposición para hacer los cambios necesarios')],
+    ('Required_event', 'Mejor'): [('Required_situation', 'disposición'), ('Purpose', 'disposición para hacer los cambios necesarios')],
+    ('Statement', 'quot'): [   ('Speaker', 'diputado Roberto Fuentes'),
+                               ('Message', 'quot ; todas las leyes son perfeccionables y , si hay algún vacío , estaremos en la Mejor disposición para hacer los cambios necesarios & quot ;')]}

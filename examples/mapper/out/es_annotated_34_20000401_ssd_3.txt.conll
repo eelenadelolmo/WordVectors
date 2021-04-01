@@ -1,0 +1,11 @@
+{   ('Age', 'joven'): [('Entity', 'la joven')],
+    ('Appellations', 'presidente'): [('Name', 'uruguayo')],
+    ('Attempt', 'intento'): [('Goal', 'de seguir las huellas de la joven')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'de más de 160 intelectuales de 70 países en'), ('Ground', 'su intento de seguir las huellas de la joven')],
+    ('Manufacturing', 'se'): [('Producer', 'su'), ('Product', 'pública la noticia')],
+    ('People', 'la joven'): [('Descriptor', 'joven')],
+    ('Political_locales', 'países'): [('Descriptor', '70')],
+    ('Receiving', 'recibido'): [('Recipient', 'su'), ('Theme', 'el apoyo de más de 160 intelectuales de'), ('Donor', 'de 70 países en su')],
+    ('Relative_time', 'seguir'): [('Focal_occasion', 'de más de 160 intelectuales de 70 países en su intento de'), ('Landmark_occasion', 'seguir las huellas de la joven')],
+    ('Supporting', 'apoyo de'): [('Supported', 'de más de 160 intelectuales'), ('Place', 'de 70 países en su'), ('Time', 'en su intento de seguir las huellas de la joven')],
+    ('Time_vector', 'antes'): [('Landmark_event', 'pública la noticia , ha recibido el apoyo de más de 160 intelectuales de 70 países en su')]}

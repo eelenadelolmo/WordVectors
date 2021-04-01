@@ -1,0 +1,3 @@
+{   ('Deciding', 'decidió'): [('Time', 'En 1993'), ('Cognizer', 'GRAPO'), ('Decision', 'continuar sus actividades')],
+    ('Intentionally_act', 'actividades'): [('Agent', 'el')],
+    ('Process_continue', 'continuar'): [('Event', 'sus actividades')]}

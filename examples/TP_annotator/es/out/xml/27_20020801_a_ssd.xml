@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="27_20020801_a_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Sólo 1.500 de los 15.000 afectados por la suspensión del servicio del catamarán Turbocat</concept>
+		<concept id="c_1">los afectados</concept>
+		<concept id="c_2">Cientos de personas</concept>
+		<concept id="c_3">quien</concept>
+		<concept id="c_4">Ésta y otras agencias</concept>
+		<concept id="c_5">los únicos billetes disponibles</concept>
+		<concept id="c_6">La otra opción , las líneas de Trasmediterránea - - con un catamarán que hace el viaje en cuatro horas - - ,</concept>
+		<concept id="c_7">el dinero en efectivo</concept>
+		<concept id="c_8">Muchos</concept>
+		<concept id="c_9">La OCUC</concept>
+		<concept id="c_10">La reiteración de los daños</concept>
+		<concept id="c_11">empresa vendió billetes</concept>
+		<concept id="c_12">los continuos fallos del catamarán</concept>
+		<concept id="c_13">es</concept>
+		<concept id="c_14">la vía</concept>
+		<concept id="c_15">se</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Sólo 1.500 de los 15.000 afectados por la suspensión del servicio del catamarán Turbocat lograron ayer recuperar el importe de los pasajes que ya habían pagado.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="rg">Sólo</token><token pos="z">1.500</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="z">15.000</token><token pos="aq0mpp">afectados</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">suspensión</token><token pos="spcms">del</token><token pos="ncms000">servicio</token><token pos="spcms">del</token><token pos="ncms000">catamarán</token><token pos="np00000">Turbocat</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_4" concept_ref3="c_13">
+			<token pos="vmis3p0">lograron</token><token pos="vmn0000">recuperar</token><mention concept_ref="c_7"><token pos="da0ms0">el</token><token pos="ncms000">importe</token></mention><token pos="sps00">de</token><mention concept_ref="c_4"><token pos="da0mp0">los</token><token pos="ncmp000">pasajes</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Commerce_pay" head="pagado">
+				<argument type="Money" dependent="pasajes" />
+				<argument type="Buyer" dependent="los" /></frame>
+			<frame type="Objective_influence" head="afectados">
+				<argument type="Time" dependent="15.000" />
+				<argument type="Influencing_situation" dependent="por la suspensión del servicio del catamarán" /></frame>
+			<main_frame type="Operating_a_system" head="lograron">
+				<argument type="System" dependent="Sólo 1.500 de los 15.000 afectados por la suspensión del servicio del catamarán" />
+				<argument type="System" dependent="recuperar el importe de los pasajes que ya habían pagado" /></main_frame>
+			<frame type="Public_services" head="servicio" />
+			<frame type="Quantified_mass" head="pagado">
+				<argument type="Mass" dependent="pasajes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La cancelación de los viajes del ferry de Naviera Universal desató una frenética contrarreloj de pasajeros frustrados que intentaban recuperar su dinero y conseguir plaza en aviones o barcos de otras compañías en medio de un gran caos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="que " />
+			<frame type="Attempt" head="intentaban">
+				<argument type="Agent" dependent="pasajeros" />
+				<argument type="Goal" dependent="recuperar su dinero" /></frame>
+			<frame type="Businesses" head="compañías">
+				<argument type="Descriptor" dependent="otras" /></frame>
+			<frame type="Increment" head="otras">
+				<argument type="Class" dependent="compañías" /></frame>
+			<frame type="Locale" head="plaza">
+				<argument type="Relative_location" dependent="en aviones o barcos de otras compañías" /></frame>
+			<frame type="Money" head="dinero">
+				<argument type="Possessor" dependent="los" /></frame>
+			<frame type="Part_inner_outer" head="medio">
+				<argument type="Whole" dependent="gran caos" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="plaza" />
+				<argument type="Ground" dependent="aviones o barcos de otras compañías en" /></frame>
+			<frame type="Travel" head="viajes">
+				<argument type="Traveler" dependent="ferry" />
+				<argument type="Traveler" dependent="Naviera Universal" /></frame>
+			<frame type="Vehicle" head="barcos">
+				<argument type="Use" dependent="de otras compañías" /></frame>
+			<frame type="Vehicle" head="ferry" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La Organització de Consumidors i Usuaris de Catalunya ( OCUC ) destacó que los afectados pueden recurrir a la vía penal, al considerar que la empresa vendió billetes pese a conocer los continuos fallos del catamarán.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0mp0">los</token><token pos="ncmp000">afectados</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_5" concept_ref3="c_11" concept_ref4="c_12" concept_ref5="c_13" concept_ref6="c_14" concept_ref7="c_15">
+			<token pos="vmip3p0">pueden</token><token pos="vmn0000">recurrir</token><token pos="sps00">a</token><mention concept_ref="c_14"><token pos="da0fs0">la</token><token pos="ncfs000">vía</token></mention><token pos="aq0cs0">penal</token><token pos="fc">,</token><token pos="spcms">al</token><token pos="vmn0000">considerar</token><token pos="cs">que</token><mention concept_ref="c_1"><token pos="da0fs0">la</token><token pos="ncfs000">empresa</token></mention><token pos="vmis3s0">vendió</token><mention concept_ref="c_5"><token pos="ncmp000">billetes</token></mention><token pos="vmip2s0">pese</token><token pos="sps00">a</token><token pos="vmn0000">conocer</token><mention concept_ref="c_12"><token pos="da0mp0">los</token><token pos="aq0mp0">continuos</token><token pos="ncmp000">fallos</token><token pos="spcms">del</token><token pos="ncms000">catamarán</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="La Organització de Consumidors i Usuaris de Catalunya ( OCUC ) " />
+			<main_frame type="Awareness" head="conocer">
+				<argument type="Cognizer" dependent="empresa vendió billetes" />
+				<argument type="Content" dependent="los continuos fallos del catamarán" /></main_frame>
+			<frame type="Businesses" head="empresa" />
+			<main_frame type="Commerce_sell" head="vendió">
+				<argument type="Seller" dependent="la empresa" />
+				<argument type="Buyer" dependent="billetes" /></main_frame>
+			<frame type="Legality" head="penal">
+				<argument type="Action" dependent="recurrir" /></frame>
+			<main_frame type="Means" head="recurrir">
+				<argument type="Descriptor" dependent="penal" /></main_frame>
+			<frame type="Objective_influence" head="afectados" />
+			<frame type="Success_or_failure" head="fallos">
+				<argument type="Goal" dependent="del catamarán" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 AGOLPADOS EN LAS OFICINAS.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Cientos de personas se agolparon en las oficinas de la empresa en el puerto de Barcelona.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="pn0cp000">Cientos</token><token pos="sps00">de</token><token pos="ncfp000">personas</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_4" concept_ref3="c_7" concept_ref4="c_10" concept_ref5="c_11" concept_ref6="c_13" concept_ref7="c_14" concept_ref8="c_15">
+			<mention concept_ref="c_15"><token pos="p0000000">se</token></mention><token pos="vmis3p0">agolparon</token><token pos="sps00">en</token><mention concept_ref="c_14"><token pos="da0fp0">las</token></mention><token pos="ncfp000">oficinas</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">empresa</token><token pos="sps00">en</token><mention concept_ref="c_7"><token pos="da0ms0">el</token><token pos="ncms000">puerto</token></mention><token pos="sps00">de</token><mention concept_ref="c_10"><token pos="np00000">Barcelona</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Building_subparts" head="oficinas de">
+				<argument type="Descriptor" dependent="empresa" /></frame>
+			<frame type="Businesses" head="empresa" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="oficinas de la empresa" />
+				<argument type="Ground" dependent="el puerto de Barcelona" /></frame>
+			<frame type="Locale_by_use" head="puerto">
+				<argument type="Container_possessor" dependent="de Barcelona" /></frame>
+			<frame type="People" head="personas" />
+			<frame type="Quantified_mass" head="Cientos de">
+				<argument type="Individuals" dependent="de personas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 De entrada, quienes habían adquirido los pasajes a través de las agencias de viajes se encontraron con que Naviera Universal no les iba a devolver el dinero y les remitía a las agencias.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="devolver">
+				<argument type="Goal" dependent="dinero y les remitía a las" /></frame>
+			<frame type="Becoming_aware" head="encontraron">
+				<argument type="Cognizer" dependent="pasajes a través de las agencias de viajes" />
+				<argument type="Phenomenon" dependent="que Naviera Universal no les iba a devolver el dinero y les remitía a las agencias" /></frame>
+			<frame type="Commerce_buy" head="adquirido">
+				<argument type="Seller" dependent="les" />
+				<argument type="Buyer" dependent="quienes" />
+				<argument type="Goods" dependent="pasajes" />
+				<argument type="Seller" dependent="a través de las agencias de viajes" /></frame>
+			<frame type="Money" head="dinero">
+				<argument type="Inherent_purpose" dependent="y les remitía a" /></frame>
+			<frame type="Motion" head="iba">
+				<argument type="Theme" dependent="Naviera Universal" />
+				<argument type="Goal" dependent="a devolver el dinero y les remitía a las agencias" /></frame>
+			<frame type="Temporal_subregion" head="iba" />
+			<frame type="Travel" head="viajes" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Una vez allí, recibieron una respuesta similar.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Locative_relation" head="allí">
+				<argument type="Ground" dependent=", recibieron una respuesta similar" /></frame>
+			<frame type="Receiving" head="recibieron">
+				<argument type="Recipient" dependent="allí" />
+				<argument type="Theme" dependent="respuesta similar" /></frame>
+			<frame type="Response" head="respuesta">
+				<argument type="Manner" dependent="similar" /></frame>
+			<frame type="Similarity" head="similar">
+				<argument type="Entity_1" dependent="respuesta" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Ha venido mucha gente pidiéndonos que les devolvamos el importe del billete, pero es Turbocat quien debe solucionar el problema, no nosotros", indicó una empleada de Halcón Viajes.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="pr0cs000">quien</token>
+		</theme>
+		<rheme concept_ref1="c_11">
+			<token pos="vmip3s0">debe</token><mention concept_ref="c_11"><token pos="vmn0000">solucionar</token><token pos="da0ms0">el</token><token pos="ncms000">problema</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="venido">
+				<argument type="Theme" dependent="mucha gente" />
+				<argument type="Goal" dependent="pidiéndonos que les devolvamos el importe del billete" /></frame>
+			<frame type="Commerce_pay" head="billete">
+				<argument type="Buyer" dependent="mucha gente" />
+				<argument type="Buyer" dependent="nosotros" />
+				<argument type="Goods" dependent="billete" /></frame>
+			<frame type="Employing" head="empleada de">
+				<argument type="Employee" dependent="una empleada de Halcón Viajes" /></frame>
+			<frame type="People" head="gente" />
+			<frame type="Predicament" head="problema" />
+			<frame type="Quantified_mass" head="mucha">
+				<argument type="Individuals" dependent="gente" /></frame>
+			<frame type="Questioning" head="quot">
+				<argument type="Speaker" dependent="mucha gente" />
+				<argument type="Addressee" dependent="nosotros" />
+				<argument type="Message" dependent="devolvamos el importe del billete" />
+				<argument type="Message" dependent="Viajes" /></frame>
+			<main_frame type="Required_event" head="debe">
+				<argument type="Required_situation" dependent="quien" />
+				<argument type="Required_situation" dependent="solucionar el problema" /></main_frame>
+			<main_frame type="Resolve_problem" head="solucionar">
+				<argument type="Agent" dependent="quien" />
+				<argument type="Problem" dependent="el problema" /></main_frame>
+			<frame type="Statement" head="quot">
+				<argument type="Message" dependent="; Ha venido mucha gente pidiéndonos que les devolvamos el importe del billete , pero es" />
+				<argument type="Speaker" dependent="el problema , no nosotros" />
+				<argument type="Message" dependent="una empleada de Halcón Viajes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ésta y otras agencias buscaban alternativas de transporte para sus clientes, principalmente en las aerolíneas que unen Barcelona y las Baleares ( Iberia, Spanair y Air Europa ).
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="pd0fs000">Ésta</token><token pos="cc">y</token><token pos="di0fp0">otras</token><token pos="ncfp000">agencias</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_2" concept_ref3="c_13" concept_ref4="c_14" concept_ref5="c_15">
+			<token pos="vmii3p0">buscaban</token><token pos="ncfp000">alternativas</token><token pos="sps00">de</token><mention concept_ref="c_2"><token pos="ncms000">transporte</token></mention><token pos="sps00">para</token><mention concept_ref="c_15"><token pos="dp3cp0">sus</token><token pos="nccp000">clientes</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Alternatives" head="alternativas">
+				<argument type="Number_of_possibilities" dependent="transporte" /></frame>
+			<frame type="Attaching" head="las">
+				<argument type="Agent" dependent="las aerolíneas" />
+				<argument type="Items" dependent="Barcelona" /></frame>
+			<frame type="Bringing" head="transporte">
+				<argument type="Goal" dependent="alternativas" /></frame>
+			<frame type="Increment" head="otras">
+				<argument type="Class" dependent="agencias" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Direction" dependent="principalmente" />
+				<argument type="Ground" dependent="aerolíneas que unen Barcelona y las Baleares ( Iberia , Spanair y Air Europa" /></frame>
+			<main_frame type="Perception_active" head="buscaban">
+				<argument type="Perceiver_agentive" dependent="Ésta y otras agencias" />
+				<argument type="Phenomenon" dependent="alternativas de transporte para sus clientes , principalmente en las aerolíneas que unen Barcelona y las Baleares ( Iberia ," /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero los únicos billetes disponibles eran los más caros.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0mp0">los</token><token pos="aq0mp0">únicos</token><token pos="ncmp000">billetes</token><token pos="aq0cp0">disponibles</token>
+		</theme>
+		<rheme>
+			<token pos="vsii3p0">eran</token><token pos="da0mp0">los</token><token pos="rg">más</token><token pos="aq0mp0">caros</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Expensiveness" head="caros">
+				<argument type="Goods" dependent="los únicos billetes disponibles" />
+				<argument type="Degree" dependent="los más" /></frame>
+			<frame type="Sole_instance" head="únicos">
+				<argument type="Type" dependent="billetes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 QUEJAS.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Así, mientras el viaje en el Turbocat costaba en promedio 138 euros ( 22.961 pesetas ), en un avión de última hora se pueden llegar a pagar hasta 249 ( 41.430 pesetas ), casi el doble.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="pueden">
+				<argument type="Entity" dependent="un avión de última hora se" />
+				<argument type="Event" dependent="pagar hasta 249" /></frame>
+			<frame type="Commerce_pay" head="pagar">
+				<argument type="Money" dependent="un avión de última hora" />
+				<argument type="Buyer" dependent="se" />
+				<argument type="Money" dependent="hasta 249 ( 41.430 pesetas )" /></frame>
+			<frame type="Expensiveness" head="pagar">
+				<argument type="Goods" dependent="promedio 138 euros ( 22.961 pesetas ) , en un avión de última hora se pueden llegar a pagar hasta 249 (" /></frame>
+			<frame type="Typicality" head="promedio">
+				<argument type="State_of_affairs" dependent="138 euros" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La otra opción, las líneas de Trasmediterránea - - con un catamarán que hace el viaje en cuatro horas - -, no es menos complicada.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0fs0">La</token><token pos="di0fs0">otra</token><token pos="ncfs000">opción</token><token pos="fc">,</token><token pos="da0fp0">las</token><token pos="ncfp000">líneas</token><token pos="sps00">de</token><token pos="np00000">Trasmediterránea</token><token pos="fg">-</token><token pos="fg">-</token><token pos="sps00">con</token><token pos="di0ms0">un</token><token pos="ncms000">catamarán</token><token pos="pr0cn000">que</token><token pos="vmip3s0">hace</token><token pos="da0ms0">el</token><token pos="ncms000">viaje</token><token pos="sps00">en</token><token pos="dn0cp0">cuatro</token><token pos="ncfp000">horas</token><token pos="fg">-</token><token pos="fg">-</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_13">
+			<token pos="rn">no</token><mention concept_ref="c_13"><token pos="vsip3s0">es</token></mention><token pos="rg">menos</token><token pos="aq0fsp">complicada</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Alternatives" head="opción" />
+			<frame type="Calendric_unit" head="horas">
+				<argument type="Count" dependent="cuatro" /></frame>
+			<frame type="Increment" head="otra">
+				<argument type="Class" dependent="opción" /></frame>
+			<main_frame type="Manufacturing" head="hace">
+				<argument type="Product" dependent="líneas de Trasmediterránea - - con un catamarán" />
+				<argument type="Producer" dependent="es" />
+				<argument type="Product" dependent="viaje en cuatro horas - - , no es menos complicada" /></main_frame>
+			<frame type="Travel" head="viaje" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Hacemos lo que podemos, pero es una época muy difícil", manifestó un portavoz de la naviera.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Businesses" head="la">
+				<argument type="Product" dependent="portavoz" /></frame>
+			<frame type="Capability" head="podemos">
+				<argument type="Entity" dependent="Hacemos" /></frame>
+			<frame type="Difficulty" head="difícil">
+				<argument type="Degree" dependent="muy" />
+				<argument type="Activity" dependent="época" /></frame>
+			<frame type="Intentionally_act" head="de">
+				<argument type="Agent" dependent="Hacemos" />
+				<argument type="Act" dependent="; Hacemos lo que podemos , pero es una época muy difícil  quot ; , manifestó un portavoz de la naviera" /></frame>
+			<frame type="Representative" head="quot">
+				<argument type="Represented" dependent="de la naviera" /></frame>
+			<frame type="Statement" head="quot">
+				<argument type="Message" dependent="un portavoz de la naviera" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los afectados volvieron a quejarse de la mala atención que reciben de Turbocat.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">afectados</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_14" concept_ref3="c_15">
+			<token pos="vmis3p0">volvieron</token><token pos="vmn0000">quejarse</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="aq0fs0">mala</token><token pos="ncfs000">atención</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Objective_influence" head="afectados" />
+			<frame type="Receiving" head="reciben">
+				<argument type="Recipient" dependent="Los" />
+				<argument type="Theme" dependent="de la" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A media mañana el dinero en efectivo se acabó y hubo un largo rato de espera.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0ms0">el</token><token pos="ncms000">dinero</token><token pos="sps00">en</token><token pos="ncmp000">efectivo</token>
+		</theme>
+		<rheme concept_ref1="c_15">
+			<mention concept_ref="c_15"><token pos="p0300000">se</token></mention><token pos="vmis3s0">acabó</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Duration_description" head="largo">
+				<argument type="Period" dependent="de espera" /></frame>
+			<frame type="Locative_relation" head="hubo">
+				<argument type="Ground" dependent="hubo un largo rato de espera" /></frame>
+			<frame type="Money" head="dinero" />
+			<frame type="Self_motion" head="rato">
+				<argument type="Time" dependent="media mañana el" />
+				<argument type="Self_mover" dependent="el dinero en" />
+				<argument type="Path" dependent="se" /></frame>
+			<frame type="Sleep" head="se">
+				<argument type="Manner" dependent="media mañana el" />
+				<argument type="Sleeper" dependent="el dinero en" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Nos han estropeado las vacaciones, hacemos cuatro horas de cola y ya no tienen dinero. Es indignante", dijo una afectada.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Boundary" head="quot" />
+			<frame type="Calendric_unit" head="horas">
+				<argument type="Count" dependent="cuatro" /></frame>
+			<frame type="Cardinal_numbers" head="cuatro">
+				<argument type="Unit" dependent="horas" /></frame>
+			<frame type="Destroying" head="estropeado las">
+				<argument type="Destroyer" dependent="tienen" />
+				<argument type="Patient" dependent="las vacaciones" /></frame>
+			<frame type="Interior_profile_relation" head="de">
+				<argument type="Figure" dependent="hacemos cuatro horas" />
+				<argument type="Ground" dependent="quot" /></frame>
+			<frame type="Money" head="dinero" />
+			<frame type="Objective_influence" head="afectada" />
+			<frame type="Statement" head="dijo">
+				<argument type="Speaker" dependent="de" />
+				<argument type="Message" dependent="una afectada" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Muchos han presentado reclamaciones ante la Conselleria d'Indústria.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="pi0mp000">Muchos</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_10" concept_ref3="c_11" concept_ref4="c_13" concept_ref5="c_14" concept_ref6="c_15">
+			<token pos="vaip3p0">han</token><token pos="vmp00sm">presentado</token><token pos="ncfp000">reclamaciones</token><token pos="sps00">ante</token><mention concept_ref="c_10"><token pos="da0fs0">la</token><token pos="np0000l">Conselleria</token><token pos="np0000l">d'Indústria</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Quantified_mass" head="Muchos">
+				<argument type="Individuals" dependent="han presentado reclamaciones ante la" /></frame>
+			<frame type="Statement" head="reclamaciones">
+				<argument type="Message" dependent="ante la Conselleria" /></frame>
+			<main_frame type="Submitting_documents" head="presentado">
+				<argument type="Documents" dependent="reclamaciones" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La OCUC recomienda a los afectados rellenar la hoja de reclamaciones para denunciar la infracción.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="da0fs0">La</token><token pos="np00000">OCUC</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_1" concept_ref3="c_11" concept_ref4="c_13" concept_ref5="c_14">
+			<token pos="vmip3s0">recomienda</token><token pos="sps00">a</token><mention concept_ref="c_1"><token pos="da0mp0">los</token><token pos="ncmp000">afectados</token></mention><token pos="vmn0000">rellenar</token><mention concept_ref="c_14"><token pos="da0fs0">la</token><token pos="ncfs000">hoja</token></mention><token pos="sps00">de</token><token pos="ncfp000">reclamaciones</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Objective_influence" head="afectados" />
+			<frame type="Statement" head="denunciar">
+				<argument type="Message" dependent="la infracción" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sin embargo, como la Generalitat ya ha abierto expediente sancionador, pueden optar por solicitar una mediación o un arbitraje con objeto de pactar daños y perjuicios por los costes de manutención, hotel y cancelaciones que están teniendo que asumir.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_ongoing" head="de manutención" />
+			<frame type="Adopt_selection" head="asumir">
+				<argument type="Agent" dependent="están" /></frame>
+			<frame type="Buildings" head="hotel" />
+			<frame type="Choosing" head="optar">
+				<argument type="Cognizer" dependent="están" />
+				<argument type="Chosen" dependent="solicitar una mediación o un arbitraje con objeto de pactar daños y perjuicios por los costes de manutención , hotel y cancelaciones que están" /></frame>
+			<frame type="Damaging" head="daños" />
+			<frame type="Expensiveness" head="costes">
+				<argument type="Goods" dependent="de manutención" /></frame>
+			<frame type="Make_agreement_on_action" head="asumir">
+				<argument type="Obligation" dependent="daños y perjuicios por los costes de manutención , hotel y cancelaciones que están teniendo que asumir" /></frame>
+			<frame type="Possession" head="teniendo">
+				<argument type="Owner" dependent="están" />
+				<argument type="Possession" dependent="asumir" /></frame>
+			<frame type="Request" head="solicitar">
+				<argument type="Message" dependent="mediación o un arbitraje" /></frame>
+			<frame type="Sequence" head="expediente">
+				<argument type="Entities" dependent="de pactar daños" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Si la empresa se niega, se puede optar por la vía civil, ya que la avería no es un caso de "fuerza mayor", según explicó la abogada de la asociación, Cristina Chueca.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="la abogada de la asociación , Cristina Chueca " />
+			<frame type="Agree_or_refuse_to_act" head="niega">
+				<argument type="Speaker" dependent="la empresa" /></frame>
+			<frame type="Be_in_agreement_on_action" head="según">
+				<argument type="Obligation" dependent="abogada de la asociación" /></frame>
+			<frame type="Businesses" head="empresa" />
+			<frame type="Choosing" head="optar">
+				<argument type="Chosen" dependent="la vía civil" />
+				<argument type="Chosen" dependent="asociación , Cristina Chueca" /></frame>
+			<frame type="Goal" head="por">
+				<argument type="Landmark" dependent="la abogada de la asociación" /></frame>
+			<frame type="Instance" head="caso">
+				<argument type="Type" dependent="quot ; fuerza mayor" /></frame>
+			<frame type="Likelihood" head="puede">
+				<argument type="Hypothetical_event" dependent="es" />
+				<argument type="Hypothetical_event" dependent="optar por la vía civil , ya que la avería no es un caso de  quot ; fuerza mayor" /></frame>
+			<frame type="Military" head="fuerza" />
+			<frame type="People_by_vocation" head="civil">
+				<argument type="Employer" dependent="de la asociación" /></frame>
+			<frame type="Roadways" head="vía">
+				<argument type="Relative_location" dependent="civil" /></frame>
+			<frame type="Time_vector" head="por">
+				<argument type="Landmark_event" dependent="no es un caso de  quot ; fuerza mayor  quot ; , según explicó la abogada de la asociación" />
+				<argument type="Event" dependent="Cristina Chueca" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La reiteración de los daños las convierte en "previsibles", por lo que se podría considerar que hubo indicios "de estafa" y actuar incluso por la vía penal, manifestó la misma fuente.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="da0fs0">La</token><token pos="ncfs000">reiteración</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">daños</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_11" concept_ref3="c_13" concept_ref4="c_14">
+			<token pos="pp3fpa00">las</token><token pos="vmip3s0">convierte</token><token pos="sps00">en</token><token pos="fe">quot;</token><token pos="aq0cp0">previsibles</token><token pos="fe">quot;</token><token pos="fc">,</token><token pos="sps00">por</token><token pos="cc">y</token><token pos="vmn0000">actuar</token><token pos="rg">incluso</token><token pos="sps00">por</token><mention concept_ref="c_14"><token pos="da0fs0">la</token><token pos="ncfs000">vía</token></mention><mention concept_ref="c_11"><token pos="aq0cs0">penal</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Categorization" head="considerar">
+				<argument type="Item" dependent="lo" /></frame>
+			<frame type="Damaging" head="daños" />
+			<frame type="Expectation" head="indicios">
+				<argument type="Cognizer" dependent="lo" />
+				<argument type="Phenomenon" dependent="," /></frame>
+			<frame type="Identicality" head="la misma">
+				<argument type="Type" dependent="fuente" /></frame>
+			<main_frame type="Intentionally_act" head="actuar" />
+			<frame type="Locative_relation" head="hubo">
+				<argument type="Figure" dependent="lo" />
+				<argument type="Ground" dependent="hubo indicios  quot ; de estafa  quot ; y actuar incluso por la vía penal , manifestó la misma fuente" /></frame>
+			<frame type="Manufacturing" head="se">
+				<argument type="Product" dependent="por lo que se podría considerar que hubo indicios  quot ; de estafa  quot ; y actuar" /></frame>
+			<frame type="Sign" head="quot">
+				<argument type="Indicated" dependent="indicios  quot ; de estafa  quot ; y actuar" /></frame>
+			<frame type="Source_of_getting" head="fuente" />
+			<frame type="Statement" head="quot">
+				<argument type="Message" dependent="por lo que se podría considerar que hubo indicios  quot ; de estafa  quot ; y actuar incluso por la vía penal" />
+				<argument type="Message" dependent="la misma fuente" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

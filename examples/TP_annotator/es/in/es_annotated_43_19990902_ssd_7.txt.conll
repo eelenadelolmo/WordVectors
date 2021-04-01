@@ -1,0 +1,7 @@
+{   ('Calendric_unit', 'ayer se'): [],
+    ('Calendric_unit', 'año'): [('Relative_time', 'Este')],
+    ('Locale', 'lugar'): [],
+    ('Manipulation', 'se'): [('Time', 'ayer se'), ('Entity', 'el segundo')],
+    ('Ordinal_numbers', 'primero'): [],
+    ('Ordinal_numbers', 'segundo'): [],
+    ('Spatial_contact', 'se'): [('Figure', 'primero tuvo lugar'), ('Ground', 'el día 9')]}

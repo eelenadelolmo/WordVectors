@@ -1,0 +1,6 @@
+{   ('Defending', 'defiende'): [('Assailant', 'el'), ('Victim', 'un sistema de financiación que otorgue más ingresos a')],
+    ('Earnings_and_losses', 'ingresos'): [('Earner', 'Catalunya')],
+    ('Giving', 'otorgue'): [('Recipient', 'financiación'), ('Donor', 'que'), ('Recipient', 'más ingresos a Catalunya')],
+    ('Sequence', 'otorgue'): [('Entity_2', 'no contradecir el discurso de Josep')],
+    ('Statement', 'cautela'): [],
+    ('System', 'sistema'): [('Function', 'de financiación que otorgue más ingresos a Catalunya')]}

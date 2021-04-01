@@ -1,0 +1,8 @@
+{   ('Attack', 'atacaron'): [('Victim', 'aviones aliados')],
+    ('Becoming_aware', 'señaló'): [   ('Cognizer', 'Bacon'),
+                                      ('Phenomenon', 'aviones aliados atacaron & quot ; con éxito & quot ; diversos carros yugoslavos y otros vehículos acorazados en la provincia de Kosovo')],
+    ('Increment', 'otros'): [('Class', 'aviones')],
+    ('Political_locales', 'provincia'): [('Name', 'de Kosovo')],
+    ('Quantified_mass', 'la'): [('Individuals', 'yugoslavos y otros vehículos acorazados')],
+    ('Vehicle', 'aviones'): [],
+    ('Vehicle', 'carros'): [('Possessor', 'yugoslavos')]}

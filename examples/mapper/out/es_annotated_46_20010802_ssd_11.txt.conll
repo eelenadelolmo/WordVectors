@@ -1,0 +1,8 @@
+{   ('Coming_to_be', 'evolución'): [('Entity', 'de los múltiples casos')],
+    ('Desiring', 'quiso dar'): [('Experiencer', 'Wallander'), ('Event', 'dar detalles de la situación actual')],
+    ('Instance', 'casos'): [('Instance_prop', 'múltiples')],
+    ('Quantified_mass', 'múltiples'): [('Individuals', 'casos')],
+    ('Telling', 'dijo'): [('Addressee', 'periódico sueco'), ('Message', 'Aftonbladet que está preocupado por la evolución de los múltiples casos')],
+    ('Temporal_collocation', 'actual'): [('Trajector_entity', 'situación')],
+    ('Text', 'periódico'): [('Text', 'periódico sueco')],
+    ('Topic', 'preocupado'): [('Communicator', 'los'), ('Topic', 'la evolución de los múltiples casos')]}

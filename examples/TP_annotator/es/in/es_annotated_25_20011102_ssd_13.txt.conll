@@ -1,0 +1,7 @@
+{   ('Commitment', 'cometen'): [('Speaker', 'quienes los'), ('Message', 'los')],
+    ('Communicate_categorization', 'ser tratados'): [('Item', 'quienes los cometen')],
+    ('Identicality', 'iguales'): [('Type', 'todos los actos de violencia')],
+    ('Intentionally_act', 'actos'): [('Act', 'de violencia')],
+    ('Required_event', 'deben'): [('Required_situation', 'quienes los cometen'), ('Required_situation', 'ser tratados & quot ; como lo que son')],
+    ('Statement', 'quot'): [('Speaker', 'son'), ('Message', 'que todos los actos de violencia son iguales y que quienes los cometen deben ser tratados & quot ;')],
+    ('Terrorism', 'terroristas'): []}

@@ -1,0 +1,1440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="36_20000501_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Alberto Fernández Díaz</concept>
+		<concept id="c_1">los populares</concept>
+		<concept id="c_2">el PP</concept>
+		<concept id="c_3">CiU</concept>
+		<concept id="c_4">Quien</concept>
+		<concept id="c_5">Nosotros</concept>
+		<concept id="c_6">cuál</concept>
+		<concept id="c_7">El objetivo del PP</concept>
+		<concept id="c_8">Catalunya</concept>
+		<concept id="c_9">Una legislatura nacionalista</concept>
+		<concept id="c_10">Una CiU enrocada con ERC</concept>
+		<concept id="c_11">el futuro de Catalunya</concept>
+		<concept id="c_12">el debate</concept>
+		<concept id="c_13">el nuevo modelo</concept>
+		<concept id="c_14">que</concept>
+		<concept id="c_15">la Generalitat</concept>
+		<concept id="c_16">El Govern</concept>
+		<concept id="c_17">el Partido Popular</concept>
+		<concept id="c_18">eso</concept>
+		<concept id="c_19">El alza del protagonismo y la capacidad de influencia</concept>
+		<concept id="c_20">muchos votantes nacionalistas</concept>
+		<concept id="c_21">La mayor expectativa de crecimiento</concept>
+		<concept id="c_22">La apuesta social</concept>
+		<concept id="c_23">Piqué</concept>
+		<concept id="c_24">el trasvase más importante</concept>
+		<concept id="c_25">éste</concept>
+		<concept id="c_26">Quién</concept>
+		<concept id="c_27">Un mayor protagonismo de Piqué en el Gobierno de España</concept>
+		<concept id="c_28">Aznar</concept>
+		<concept id="c_29">La apuesta por Josep Piqué en 1996</concept>
+		<concept id="c_30">La incorporación de Anna Birulés</concept>
+		<concept id="c_31">Birulés</concept>
+		<concept id="c_32">El planteamiento</concept>
+		<concept id="c_33">Nadie</concept>
+		<concept id="c_34">compitiendo por el electorado socialista más que captando votantes nacionalistas</concept>
+		<concept id="c_35">no entre PP y ERC</concept>
+		<concept id="c_36">el</concept>
+		<concept id="c_37">sus impuestos</concept>
+		<concept id="c_38">a asumir las cargas</concept>
+		<concept id="c_39">en Catalunya</concept>
+		<concept id="c_40">CiU</concept>
+		<concept id="c_41">presidente</concept>
+		<concept id="c_42">el único socio</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Aunque aún no enseña sus cartas, Alberto Fernández Díaz se prepara para renovar su cargo de presidente del PP catalán en el congreso que el partido celebrará tras el verano.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="ncfs000">Alberto</token><token pos="ncms000">Fernández</token><token pos="np00000">Díaz</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_20" concept_ref3="c_16" concept_ref4="c_2" concept_ref5="c_36" concept_ref6="c_41">
+			<mention concept_ref="c_18"><token pos="p0300000">se</token></mention><token pos="vmip3s0">prepara</token><token pos="sps00">para</token><token pos="vmn0000">renovar</token><mention concept_ref="c_20"><token pos="dp3cs0">su</token><token pos="ncms000">cargo</token></mention><token pos="sps00">de</token><mention concept_ref="c_41"><token pos="ncms000">presidente</token></mention><token pos="spcms">del</token><token pos="np00000">PP</token><token pos="aq0ms0">catalán</token><token pos="sps00">en</token><mention concept_ref="c_36"><token pos="da0ms0">el</token></mention><token pos="ncms000">congreso</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_prepare" head="prepara">
+				<argument type="Activity" dependent="renovar su cargo de presidente del PP catalán en el congreso que el partido" /></main_frame>
+			<main_frame type="Activity_resume" head="renovar">
+				<argument type="Agent" dependent="sus" />
+				<argument type="Activity" dependent="su cargo de presidente del PP catalán en el congreso que el partido celebrará tras el verano" /></main_frame>
+			<frame type="Aggregate" head="partido" />
+			<frame type="Appellations" head="presidente">
+				<argument type="Title" dependent="del PP catalán" /></frame>
+			<frame type="Being_employed" head="en el">
+				<argument type="Employee" dependent="sus" />
+				<argument type="Task" dependent="de presidente del PP catalán en" />
+				<argument type="Place_of_employment" dependent="en el congreso" /></frame>
+			<frame type="Calendric_unit" head="verano" />
+			<frame type="Continued_state_of_affairs" head="aún">
+				<argument type="State_of_affairs" dependent="sus" />
+				<argument type="State_of_affairs" dependent="no enseña sus cartas , Alberto Fernández Díaz se prepara para renovar su cargo de presidente del PP catalán en el" /></frame>
+			<frame type="Education_teaching" head="enseña">
+				<argument type="Teacher" dependent="sus" />
+				<argument type="Student" dependent="sus cartas" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="presidente del PP catalán" />
+				<argument type="Ground" dependent="el congreso" />
+				<argument type="Figure" dependent="que el partido celebrará tras el verano" /></frame>
+			<frame type="Manipulation" head="se">
+				<argument type="Agent" dependent="partido" />
+				<argument type="Time" dependent="tras el verano" /></frame>
+			<frame type="Relative_time" head="del">
+				<argument type="Focal_occasion" dependent="partido celebrará" />
+				<argument type="Landmark_occasion" dependent="el verano" /></frame>
+			<frame type="Text" head="cartas">
+				<argument type="Author" dependent="sus" />
+				<argument type="Text" dependent="se" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A diferencia de la estrategia marcada por Josep Piqué, considera que los populares deben aspirar a crecer compitiendo por el electorado socialista más que captando votantes nacionalistas.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0mp0">los</token><token pos="nccp000">populares</token>
+		</theme>
+		<rheme concept_ref1="c_17" concept_ref2="c_20" concept_ref3="c_16" concept_ref4="c_34" concept_ref5="c_36">
+			<token pos="vmip3p0">deben</token><token pos="vmn0000">aspirar</token><token pos="sps00">a</token><token pos="vmn0000">crecer</token><mention concept_ref="c_34"><token pos="vmg0000">compitiendo</token><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="ncms000">electorado</token><token pos="aq0cs0">socialista</token><token pos="rg">más</token><token pos="cs">que</token><token pos="vmg0000">captando</token><token pos="nccp000">votantes</token><token pos="aq0cp0">nacionalistas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Certainty" head="considera">
+				<argument type="Cognizer" dependent="el" />
+				<argument type="Content" dependent="que los populares deben aspirar a crecer compitiendo por el electorado socialista más que captando votantes nacionalistas" /></frame>
+			<main_frame type="Change_position_on_a_scale" head="crecer">
+				<argument type="Item" dependent="los populares" />
+				<argument type="Attribute" dependent="compitiendo por el electorado socialista más que captando votantes nacionalistas" /></main_frame>
+			<frame type="Desirability" head="populares" />
+			<main_frame type="Desirable_event" head="deben">
+				<argument type="State_of_affairs" dependent="los populares" />
+				<argument type="State_of_affairs" dependent="aspirar a crecer compitiendo por el electorado socialista más que captando votantes nacionalistas" /></main_frame>
+			<frame type="Placing" head="los">
+				<argument type="Theme" dependent="la estrategia" />
+				<argument type="Theme" dependent="por Josep" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Se manifiesta crecido tras el resultado electoral del 12-M.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Change_of_leadership" head="electoral" />
+			<frame type="Change_position_on_a_scale" head="crecido">
+				<argument type="Item" dependent="el resultado electoral del" /></frame>
+			<frame type="Relative_time" head="del">
+				<argument type="Focal_occasion" dependent="crecido" />
+				<argument type="Landmark_occasion" dependent="el resultado electoral del" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Tras pactar los Presupuestos de la Generalitat, ¿ha quedado claro que el PP es el único socio viable de CiU?
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">el</token><token pos="np00000">PP</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_36" concept_ref3="c_40" concept_ref4="c_42">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_36"><token pos="da0ms0">el</token></mention><token pos="aq0ms0">único</token><token pos="ncms000">socio</token><token pos="aq0cs0">viable</token><token pos="sps00">de</token><token pos="np00000">CiU</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming" head="quedado">
+				<argument type="Time" dependent="Tras pactar los Presupuestos de la" />
+				<argument type="Entity" dependent="es" />
+				<argument type="Final_category" dependent=", ¿ ha quedado claro que el PP es el único socio viable" /></frame>
+			<frame type="Make_agreement_on_action" head="los">
+				<argument type="Obligation" dependent="pactar los Presupuestos de la" /></frame>
+			<frame type="Obviousness" head="quedado claro">
+				<argument type="Phenomenon" dependent="que el PP es el único socio viable" /></frame>
+			<frame type="Relative_time" head="de la">
+				<argument type="Landmark_occasion" dependent="pactar los Presupuestos de la" />
+				<argument type="Focal_occasion" dependent=", ¿ ha quedado claro que el PP es el único socio viable de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - CiU puede elegir, no entre PP y ERC, sino entre moderación y radicalidad.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="np00000">CiU</token>
+		</theme>
+		<rheme concept_ref1="c_30" concept_ref2="c_33" concept_ref3="c_35" concept_ref4="c_36">
+			<token pos="vmip3s0">puede</token><token pos="vmn0000">elegir</token><mention concept_ref="c_35"><token pos="rn">no</token><token pos="sps00">entre</token><token pos="np00000">PP</token><token pos="cc">y</token><token pos="np00000">ERC</token></mention><token pos="fc">,</token><token pos="cc">sino</token><token pos="sps00">entre</token><mention concept_ref="c_30"><token pos="ncfs000">moderación</token></mention><token pos="cc">y</token><mention concept_ref="c_33"><token pos="ncfs000">radicalidad</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Choosing" head="elegir">
+				<argument type="Cognizer" dependent="-" />
+				<argument type="Chosen" dependent="no entre PP y ERC" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Deberá decidirse, o llegar a un acuerdo parlamentario estable.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="llegar">
+				<argument type="Goal" dependent="un acuerdo parlamentario estable" /></frame>
+			<frame type="Deciding" head="decidirse">
+				<argument type="Cognizer" dependent="o" /></frame>
+			<frame type="Make_agreement_on_action" head="un acuerdo">
+				<argument type="Descriptor" dependent="estable" />
+				<argument type="Topic" dependent="parlamentario" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Reclama a CiU un pacto de gobierno? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="gobierno" />
+			<frame type="Statement" head="de">
+				<argument type="Speaker" dependent="¿" />
+				<argument type="Message" dependent="a CiU un pacto de gobierno" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Quien precisa de un acuerdo estable es quien quiere gobernar.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="pr0cs000">Quien</token>
+		</theme>
+		<rheme concept_ref1="c_11" concept_ref2="c_34">
+			<token pos="vmip3s0">precisa</token><token pos="sps00">de</token><mention concept_ref="c_11"><token pos="di0ms0">un</token><token pos="ncms000">acuerdo</token></mention><token pos="aq0cs0">estable</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="un" />
+			<frame type="Desiring" head="quiere">
+				<argument type="Experiencer" dependent="quien" />
+				<argument type="Event" dependent="gobernar" /></frame>
+			<frame type="Leadership" head="gobernar">
+				<argument type="Leader" dependent="quien" /></frame>
+			<frame type="Make_agreement_on_action" head="un acuerdo">
+				<argument type="Manner" dependent="estable" /></frame>
+			<main_frame type="Needing" head="precisa">
+				<argument type="Cognizer" dependent="quien" />
+				<argument type="Requirement" dependent="un acuerdo estable" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Nosotros reiteramos nuestra apuesta por la estabilidad, a partir del reconocimiento de nuestra capacidad de influencia.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="pp1mp000">Nosotros</token>
+		</theme>
+		<rheme concept_ref1="c_22">
+			<token pos="vmip1p0">reiteramos</token><mention concept_ref="c_22"><token pos="dp1fsp">nuestra</token><token pos="ncfs000">apuesta</token></mention><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">estabilidad</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="capacidad">
+				<argument type="Entity" dependent="nuestra" />
+				<argument type="Event" dependent="de influencia" /></frame>
+			<frame type="Commitment" head="la estabilidad">
+				<argument type="Speaker" dependent="nuestra" />
+				<argument type="Message" dependent="estabilidad" /></frame>
+			<frame type="Objective_influence" head="influencia" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Aspira el PP a marcar cuál debe ser la acción cotidiana del Govern? - -.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="pt0cs000">cuál</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_15" concept_ref3="c_16" concept_ref4="c_35" concept_ref5="c_36">
+			<token pos="vmip3s0">debe</token><token pos="vsn0000">ser</token><mention concept_ref="c_15"><token pos="da0fs0">la</token><token pos="ncfs000">acción</token></mention><token pos="aq0fs0">cotidiana</token><mention concept_ref="c_35"><token pos="spcms">del</token><token pos="np00000">Govern</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Desirable_event" head="debe">
+				<argument type="State_of_affairs" dependent="del Govern" />
+				<argument type="State_of_affairs" dependent="? - -" /></main_frame>
+			<frame type="Frequency" head="cotidiana">
+				<argument type="Event" dependent="la acción cotidiana del Govern" /></frame>
+			<frame type="Intentionally_act" head="acción">
+				<argument type="Manner" dependent="cotidiana" />
+				<argument type="Act" dependent="del Govern" /></frame>
+			<main_frame type="Purpose" head="ser" />
+			<frame type="Sign" head="marcar">
+				<argument type="Indicator" dependent="PP" />
+				<argument type="Indicated" dependent="cuál debe ser la acción cotidiana del Govern ? - -" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pactar con CiU no es un objetivo en sí mismo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Purpose" head="objetivo">
+				<argument type="Goal" dependent="en sí mismo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El objetivo del PP es configurarse como alternativa de gobierno en Catalunya para aplicar las políticas que nuestro partido ya ha hecho realidad en el Gobierno de España.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0ms0">El</token><token pos="ncms000">objetivo</token><token pos="spcms">del</token><token pos="np00000">PP</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_32" concept_ref3="c_5" concept_ref4="c_8" concept_ref5="c_22" concept_ref6="c_36" concept_ref7="c_39" concept_ref8="c_41">
+			<token pos="vsip3s0">es</token><token pos="vmn0000">configurarse</token><token pos="cs">como</token><mention concept_ref="c_32"><token pos="ncfs000">alternativa</token></mention><token pos="sps00">de</token><token pos="ncms000">gobierno</token><mention concept_ref="c_39"><token pos="sps00">en</token><token pos="np00000">Catalunya</token></mention><token pos="sps00">para</token><token pos="vmn0000">aplicar</token><mention concept_ref="c_22"><token pos="da0fp0">las</token><token pos="ncfp000">políticas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido">
+				<argument type="Aggregate_property" dependent="nuestro" /></frame>
+			<frame type="Alternatives" head="alternativa de">
+				<argument type="Situation" dependent="gobierno" /></frame>
+			<frame type="Direction" head="en">
+				<argument type="Distance" dependent="el" />
+				<argument type="Path" dependent="en" /></frame>
+			<main_frame type="Execute_plan" head="aplicar">
+				<argument type="Plan" dependent="políticas que nuestro partido ya ha hecho realidad en el Gobierno de España" /></main_frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="realidad" />
+				<argument type="Ground" dependent="Gobierno de España" /></frame>
+			<frame type="Law" head="políticas">
+				<argument type="Required" dependent="nuestro partido ya ha hecho realidad en el Gobierno de España" /></frame>
+			<frame type="Leadership" head="gobierno">
+				<argument type="Governed" dependent="España" /></frame>
+			<frame type="Manufacturing" head="hecho">
+				<argument type="Product" dependent="nuestro partido" />
+				<argument type="Manner" dependent="ya ha hecho" />
+				<argument type="Product" dependent="hecho realidad en el Gobierno de España" /></frame>
+			<main_frame type="Placing" head="configurarse">
+				<argument type="Theme" dependent="el" /></main_frame>
+			<frame type="Purpose" head="objetivo">
+				<argument type="Agent" dependent="del PP" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Con carácter previo, queremos conseguir que Catalunya se gobierne desde la moderación, poniendo el acento en cuestiones sociales y económicas.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="np00000">Catalunya</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_30" concept_ref3="c_36" concept_ref4="c_42">
+			<token pos="p0000000">se</token><token pos="vmsp3s0">gobierne</token><token pos="sps00">desde</token><mention concept_ref="c_42"><token pos="da0fs0">la</token><token pos="ncfs000">moderación</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desiring" head="queremos">
+				<argument type="Experiencer" dependent="se" />
+				<argument type="Event" dependent="conseguir que Catalunya se gobierne desde la moderación" /></frame>
+			<frame type="Economy" head="económicas" />
+			<frame type="Emphasizing" head="carácter">
+				<argument type="Consideration" dependent="en cuestiones sociales y económicas" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="previo" />
+				<argument type="Figure" dependent=", queremos conseguir que Catalunya se gobierne desde la moderación , poniendo el acento en cuestiones sociales y económicas ." /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Una legislatura nacionalista es incompatible con el acuerdo con el PP.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="di0fs0">Una</token><token pos="ncfs000">legislatura</token><token pos="aq0cs0">nacionalista</token>
+		</theme>
+		<rheme concept_ref1="c_12" concept_ref2="c_2" concept_ref3="c_36">
+			<token pos="vsip3s0">es</token><token pos="aq0cs0">incompatible</token><token pos="sps00">con</token><mention concept_ref="c_12"><token pos="da0ms0">el</token><token pos="ncms000">acuerdo</token></mention><token pos="sps00">con</token><mention concept_ref="c_2"><token pos="da0ms0">el</token><token pos="np00000">PP</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="legislatura">
+				<argument type="Type" dependent="nacionalista" /></frame>
+			<frame type="Make_agreement_on_action" head="el acuerdo">
+				<argument type="Party_2" dependent="con el PP" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Una CiU enrocada con ERC, ¿perdería la posibilidad de pactar con el Gobierno? - -.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="di0fs0">Una</token><token pos="np00000">CiU</token><token pos="aq0fsp">enrocada</token><token pos="sps00">con</token><token pos="np00000">ERC</token>
+		</theme>
+		<rheme concept_ref1="c_32" concept_ref2="c_16" concept_ref3="c_34" concept_ref4="c_36" concept_ref5="c_42">
+			<token pos="vmic3s0">perdería</token><mention concept_ref="c_32"><token pos="da0fs0">la</token><token pos="ncfs000">posibilidad</token></mention><token pos="sps00">de</token><token pos="vmn0000">pactar</token><token pos="sps00">con</token><mention concept_ref="c_36"><token pos="da0ms0">el</token></mention><token pos="np00000">Gobierno</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Earnings_and_losses" head="perdería">
+				<argument type="Earner" dependent="el" />
+				<argument type="Earnings" dependent="posibilidad de pactar con el Gobierno" /></main_frame>
+			<frame type="Leadership" head="Gobierno" />
+			<frame type="Likelihood" head="posibilidad">
+				<argument type="Hypothetical_event" dependent="de pactar con el Gobierno" /></frame>
+			<frame type="Make_agreement_on_action" head="con">
+				<argument type="Obligation" dependent="con el Gobierno" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 CiU no se enrocará en Catalunya con Esquerra, porque sabe que sería su propio jaque mate político.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="np00000">CiU</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_8" concept_ref3="c_36" concept_ref4="c_39">
+			<token pos="rn">no</token><token pos="p0300000">se</token><token pos="vmif3s0">enrocará</token><mention concept_ref="c_39"><token pos="sps00">en</token><token pos="np00000">Catalunya</token></mention><token pos="sps00">con</token><token pos="np00000">Esquerra</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="sabe">
+				<argument type="Cognizer" dependent="se" />
+				<argument type="Content" dependent="que sería su propio jaque mate político" /></frame>
+			<frame type="Becoming" head="se">
+				<argument type="Entity" dependent="CiU" />
+				<argument type="Final_category" dependent="en Catalunya con" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="no se enrocará en Catalunya con" />
+				<argument type="Cause" dependent="sabe que sería su propio jaque mate político" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sabe que el futuro de Catalunya está en la moderación y la colaboración entre la Generalitat y el Gobierno de España.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="da0ms0">el</token><token pos="ncms000">futuro</token><token pos="sps00">de</token><token pos="np00000">Catalunya</token>
+		</theme>
+		<rheme concept_ref1="c_30" concept_ref2="c_16" concept_ref3="c_22" concept_ref4="c_15" concept_ref5="c_27" concept_ref6="c_8" concept_ref7="c_36" concept_ref8="c_42">
+			<token pos="vmip3s0">está</token><token pos="sps00">en</token><mention concept_ref="c_42"><token pos="da0fs0">la</token><token pos="ncfs000">moderación</token></mention><token pos="cc">y</token><mention concept_ref="c_22"><token pos="da0fs0">la</token><token pos="ncfs000">colaboración</token></mention><token pos="sps00">entre</token><mention concept_ref="c_15"><token pos="da0fs0">la</token><token pos="np00000">Generalitat</token></mention><token pos="cc">y</token><mention concept_ref="c_36"><token pos="da0ms0">el</token></mention><token pos="np00000">Gobierno</token><token pos="sps00">de</token><mention concept_ref="c_8"><token pos="np00000">España</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Alternatives" head="futuro">
+				<argument type="Salient_entity" dependent="de Catalunya" /></frame>
+			<frame type="Awareness" head="Sabe que">
+				<argument type="Cognizer" dependent="el" />
+				<argument type="Content" dependent="que el futuro de Catalunya está en la moderación y la colaboración entre la Generalitat y el Gobierno de" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="el futuro de Catalunya" />
+				<argument type="Ground" dependent="moderación y la colaboración entre la Generalitat y el Gobierno de" /></frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Governed" dependent="Sabe" /></frame>
+			<frame type="Posture" head="la">
+				<argument type="Agent" dependent="Catalunya" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Está de acuerdo con CiU en que la financiación para Catalunya es insuficiente? - -
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Make_agreement_on_action" head="de acuerdo">
+				<argument type="Party_1" dependent="es" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Habrá una mejora del modelo de financiación autonómica para Catalunya y para el conjunto de comunidades.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="comunidades" />
+			<frame type="Exemplar" head="modelo">
+				<argument type="Type" dependent="para Catalunya" /></frame>
+			<frame type="Improvement_or_decline" head="mejora del">
+				<argument type="Entity" dependent="modelo de financiación autonómica para Catalunya y para el conjunto de comunidades" /></frame>
+			<frame type="Interior_profile_relation" head="de">
+				<argument type="Figure" dependent="mejora del" />
+				<argument type="Ground" dependent="modelo de financiación autonómica para Catalunya" /></frame>
+			<frame type="Locale" head="de comunidades" />
+			<frame type="Locative_relation" head="el">
+				<argument type="Ground" dependent="Habrá una mejora del modelo de financiación autonómica para Catalunya y para el conjunto de comunidades" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero se aspira a que el debate se abra para cerrarlo definitivamente.
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="da0ms0">el</token><token pos="ncms000">debate</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_5" concept_ref3="c_36">
+			<token pos="p0000000">se</token><token pos="vmsp3s0">abra</token><token pos="sps00">para</token><token pos="vmn0000">cerrarlo</token><token pos="rg">definitivamente</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Closure" head="abra para">
+				<argument type="Container_portal" dependent="se" /></main_frame>
+			<frame type="Discussion" head="debate" />
+			<frame type="Traversing" head="se">
+				<argument type="Goal" dependent="que el debate se abra para cerrarlo definitivamente" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y el nuevo modelo supondrá más recursos, pero también mayores compromisos de corresponsabilidad fiscal y más rigor en el gasto.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="da0ms0">el</token><token pos="aq0ms0">nuevo</token><token pos="ncms000">modelo</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_22" concept_ref3="c_32" concept_ref4="c_36" concept_ref5="c_37" concept_ref6="c_42">
+			<token pos="vmif3s0">supondrá</token><mention concept_ref="c_37"><token pos="rg">más</token><token pos="ncmp000">recursos</token></mention><token pos="fc">,</token><token pos="cc">pero</token><token pos="rg">también</token><token pos="aq0cp0">mayores</token><token pos="ncmp000">compromisos</token><token pos="sps00">de</token><mention concept_ref="c_22"><token pos="ncfs000">corresponsabilidad</token></mention><token pos="aq0cs0">fiscal</token><token pos="cc">y</token><token pos="rg">más</token><token pos="ncms000">rigor</token><token pos="sps00">en</token><mention concept_ref="c_36"><token pos="da0ms0">el</token></mention><token pos="ncms000">gasto</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevo">
+				<argument type="Entity" dependent="modelo" /></frame>
+			<frame type="Commitment" head="compromisos de">
+				<argument type="Message" dependent="fiscal y más rigor en el" /></frame>
+			<frame type="Exemplar" head="modelo" />
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="recursos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Además, se falsea la realidad si se plantea el marco de relaciones entre Catalunya y el resto de España como un saldo fiscal desfavorable.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Relation" head="de relaciones">
+				<argument type="Entity_2" dependent="entre Catalunya" /></frame>
+			<frame type="Rest" head="resto">
+				<argument type="Whole" dependent="se" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Se debe contemplar también el flujo comercial y de capitales.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desirable_event" head="debe">
+				<argument type="State_of_affairs" dependent="contemplar" />
+				<argument type="State_of_affairs" dependent="contemplar también el flujo comercial y de capitales" /></frame>
+			<frame type="Exchange" head="comercial" />
+			<frame type="Giving" head="de">
+				<argument type="Theme" dependent="contemplar" />
+				<argument type="Purpose" dependent="el flujo comercial y de capitales" /></frame>
+			<frame type="Relational_political_locales" head="capitales" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Porque de la solidaridad fiscal de Catalunya se benefician sus empresas, que venden en el resto de España.
+		</str>
+		<theme concept_ref="c_14">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_8" concept_ref3="c_35" concept_ref4="c_36" concept_ref5="c_41">
+			<token pos="vmip3p0">venden</token><mention concept_ref="c_35"><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">resto</token><token pos="sps00">de</token></mention><mention concept_ref="c_8"><token pos="np00000">España</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Businesses" head="empresas">
+				<argument type="Place" dependent="se" /></frame>
+			<main_frame type="Commerce_sell" head="venden">
+				<argument type="Goods" dependent="sus empresas" />
+				<argument type="Seller" dependent="que" />
+				<argument type="Buyer" dependent="en el resto de" /></main_frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="que venden" />
+				<argument type="Ground" dependent="el resto de" /></frame>
+			<frame type="Rest" head="resto">
+				<argument type="Whole" dependent="se" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Si se plantea la negociación alegando el expolio fiscal habrá confrontación, porque otros alegarán que hay explotación comercial.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="Si se plantea la negociación alegando el expolio fiscal habrá confrontación ," />
+				<argument type="Cause" dependent="otros alegarán que hay explotación comercial" /></frame>
+			<frame type="Coming_to_be" head="se">
+				<argument type="Entity" dependent="la negociación" />
+				<argument type="Entity" dependent="alegando el expolio fiscal" /></frame>
+			<frame type="Discussion" head="negociación" />
+			<frame type="Hostile_encounter" head="confrontación">
+				<argument type="Purpose" dependent="que hay explotación comercial" /></frame>
+			<frame type="Locative_relation" head="hay">
+				<argument type="Figure" dependent="que" />
+				<argument type="Ground" dependent="hay explotación comercial" /></frame>
+			<frame type="Reasoning" head="plantea">
+				<argument type="Arguer" dependent="otros" />
+				<argument type="Content" dependent="que hay explotación comercial" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Corresponsabilidad fiscal significa que la Generalitat suba sus impuestos si quiere más recursos? - -.
+		</str>
+		<theme concept_ref="c_15">
+			<token pos="da0fs0">la</token><token pos="np00000">Generalitat</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_1" concept_ref3="c_37" concept_ref4="c_42">
+			<token pos="vmsp3s0">suba</token><token pos="dp3cp0">sus</token><token pos="ncmp000">impuestos</token><token pos="vmip3s0">quiere</token><token pos="rg">más</token><token pos="ncmp000">recursos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Corresponsabilidad fiscal " />
+			<main_frame type="Causation" head="suba sus">
+				<argument type="Cause" dependent="la Generalitat" />
+				<argument type="Effect" dependent="sus impuestos" />
+				<argument type="Circumstances" dependent="si quiere más recursos" /></main_frame>
+			<main_frame type="Desiring" head="quiere">
+				<argument type="Experiencer" dependent="la" />
+				<argument type="Event" dependent="más recursos" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No tiene sentido reivindicar cesión de impuestos y capacidad para regularlos si después no se ejerce.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="capacidad">
+				<argument type="Event" dependent="para regularlos" /></frame>
+			<frame type="Interior_profile_relation" head="se">
+				<argument type="Figure" dependent="no" />
+				<argument type="Ground" dependent="reivindicar cesión de impuestos" /></frame>
+			<frame type="Locative_relation" head="tiene">
+				<argument type="Ground" dependent="tiene" />
+				<argument type="Figure" dependent="No tiene sentido reivindicar cesión de impuestos y capacidad para regularlos si después no se ejerce" /></frame>
+			<frame type="Transfer" head="se">
+				<argument type="Theme" dependent="de impuestos" /></frame>
+			<frame type="Using" head="ejerce">
+				<argument type="Agent" dependent="se" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El Govern debe empezar a asumir las cargas y no sólo los beneficios de su capacidad para impulsar una política fiscal.
+		</str>
+		<theme concept_ref="c_16">
+			<token pos="da0ms0">El</token><token pos="np00000">Govern</token>
+		</theme>
+		<rheme concept_ref1="c_22" concept_ref2="c_38">
+			<token pos="vmip3s0">debe</token><token pos="vmn0000">empezar</token><mention concept_ref="c_38"><token pos="sps00">a</token><token pos="vmn0000">asumir</token><token pos="da0fp0">las</token><token pos="ncfp000">cargas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_start" head="empezar">
+				<argument type="Agent" dependent="Govern" />
+				<argument type="Activity" dependent="a asumir las cargas" /></main_frame>
+			<frame type="Capability" head="capacidad">
+				<argument type="Entity" dependent="su" />
+				<argument type="Event" dependent="impulsar una política fiscal" /></frame>
+			<frame type="Law" head="política">
+				<argument type="Required" dependent="asumir" /></frame>
+			<main_frame type="Required_event" head="debe">
+				<argument type="Required_situation" dependent="Govern" />
+				<argument type="Required_situation" dependent="empezar a asumir las cargas y no sólo los beneficios de su capacidad para impulsar una política fiscal" /></main_frame>
+			<frame type="Subjective_influence" head="impulsar">
+				<argument type="Situation" dependent="política fiscal" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Dentro de qué plazo aspira el PP poder gobernar Catalunya?.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="poder">
+				<argument type="Event" dependent="gobernar Catalunya" /></frame>
+			<frame type="Frequency" head="plazo">
+				<argument type="Event" dependent="plazo" /></frame>
+			<frame type="Leadership" head="gobernar">
+				<argument type="Leader" dependent="Catalunya" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿Qué pasos debe dar para ser alternativa? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Alternatives" head="alternativa">
+				<argument type="Agent" dependent="ser" /></frame>
+			<frame type="Desirable_event" head="debe">
+				<argument type="State_of_affairs" dependent="Qué pasos" />
+				<argument type="State_of_affairs" dependent="dar para ser alternativa" /></frame>
+			<frame type="Intentionally_act" head="pasos" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En las próximas elecciones autonómicas, el Partido Popular ya será un partido con opción clara de gobernar en Catalunya.
+		</str>
+		<theme concept_ref="c_17">
+			<token pos="da0ms0">el</token><token pos="ncms000">Partido</token><token pos="aq0ms0">Popular</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_8" concept_ref3="c_17" concept_ref4="c_36" concept_ref5="c_39" concept_ref6="c_42">
+			<token pos="vsif3s0">será</token><mention concept_ref="c_17"><token pos="di0ms0">un</token><token pos="ncms000">partido</token></mention><token pos="sps00">con</token><mention concept_ref="c_42"><token pos="ncfs000">opción</token></mention><token pos="aq0fs0">clara</token><token pos="sps00">de</token><token pos="vmn0000">gobernar</token><mention concept_ref="c_39"><token pos="sps00">en</token><token pos="np00000">Catalunya</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido" />
+			<frame type="Change_of_leadership" head="elecciones">
+				<argument type="Selector" dependent="el" /></frame>
+			<frame type="Choosing" head="elecciones">
+				<argument type="Topic" dependent="de gobernar en Catalunya" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="Catalunya" /></frame>
+			<main_frame type="Leadership" head="gobernar">
+				<argument type="Governed" dependent="en Catalunya" /></main_frame>
+			<frame type="Locale" head="el" />
+			<frame type="Obviousness" head="clara">
+				<argument type="Phenomenon" dependent="opción clara de gobernar en Catalunya" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ahora se ha roto el tabú que impedía que tuviese capacidad de influencia.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="que " />
+			<frame type="Capability" head="capacidad">
+				<argument type="Event" dependent="de influencia" /></frame>
+			<frame type="Objective_influence" head="influencia" />
+			<frame type="Possession" head="se ha">
+				<argument type="Owner" dependent="se ha" />
+				<argument type="Possession" dependent="tuviese capacidad de influencia" /></frame>
+			<frame type="Preventing_or_letting" head="impedía">
+				<argument type="Manner" dependent="tabú" />
+				<argument type="Potential_hindrance" dependent="que" />
+				<argument type="Event" dependent="se ha" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y eso permitirá que dentro de cuatro años seamos una realidad de gobierno.
+		</str>
+		<theme concept_ref="c_18">
+			<token pos="pd0ns000">eso</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_5" concept_ref3="c_22" concept_ref4="c_36" concept_ref5="c_41">
+			<token pos="vssp1p0">seamos</token><mention concept_ref="c_22"><token pos="di0fs0">una</token><token pos="ncfs000">realidad</token></mention><token pos="sps00">de</token><token pos="ncms000">gobierno</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming" head="de">
+				<argument type="Entity" dependent="seamos" />
+				<argument type="Final_category" dependent="una realidad de gobierno" />
+				<argument type="Time" dependent="dentro de cuatro años" /></frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="cuatro" /></frame>
+			<frame type="Interior_profile_relation" head="dentro">
+				<argument type="Figure" dependent="una realidad de gobierno" />
+				<argument type="Ground" dependent="cuatro años" /></frame>
+			<frame type="Leadership" head="gobierno" />
+			<frame type="Preventing_or_letting" head="permitirá">
+				<argument type="Event" dependent="dentro de cuatro años seamos una realidad de gobierno" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿No tiene pendiente una transformación de mentalidades y estructura? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Undergo_change" head="transformación">
+				<argument type="Entity" dependent="de mentalidades" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El alza del protagonismo y la capacidad de influencia hará crecer nuestra capacidad para influir en sectores sociales y nuestra consolidación electoral.
+		</str>
+		<theme concept_ref="c_19">
+			<token pos="da0ms0">El</token><token pos="ncfs000">alza</token><token pos="spcms">del</token><token pos="ncms000">protagonismo</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">capacidad</token><token pos="sps00">de</token><token pos="ncfs000">influencia</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_22" concept_ref3="c_5" concept_ref4="c_21" concept_ref5="c_34" concept_ref6="c_36" concept_ref7="c_41" concept_ref8="c_42">
+			<token pos="vmif3s0">hará</token><token pos="vmn0000">crecer</token><mention concept_ref="c_22"><token pos="dp1fsp">nuestra</token><token pos="ncfs000">capacidad</token></mention><token pos="sps00">para</token><token pos="vmn0000">influir</token><token pos="sps00">en</token><token pos="ncmp000">sectores</token><token pos="aq0cp0">sociales</token><token pos="cc">y</token><token pos="dp1fsp">nuestra</token><token pos="ncfs000">consolidación</token><token pos="aq0cs0">electoral</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="capacidad">
+				<argument type="Entity" dependent="nuestra" />
+				<argument type="Event" dependent="influir en sectores sociales y nuestra consolidación electoral" /></frame>
+			<frame type="Change_position_on_a_scale" head="alza del" />
+			<main_frame type="Change_position_on_a_scale" head="crecer">
+				<argument type="Attribute" dependent="nuestra capacidad para influir en sectores sociales y nuestra consolidación electoral" /></main_frame>
+			<frame type="Fields" head="sectores">
+				<argument type="Activity" dependent="sociales" /></frame>
+			<frame type="Objective_influence" head="influencia" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Para ello será necesario que muchos votantes nacionalistas les voten.
+		</str>
+		<theme concept_ref="c_20">
+			<token pos="di0mp0">muchos</token><token pos="nccp000">votantes</token><token pos="aq0cp0">nacionalistas</token>
+		</theme>
+		<rheme concept_ref1="c_18">
+			<mention concept_ref="c_18"><token pos="pp3cpd00">les</token></mention><token pos="vmsp3p0">voten</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Have_as_requirement" head="necesario">
+				<argument type="Requirement" dependent="muchos votantes nacionalistas" />
+				<argument type="Dependent" dependent="les voten" /></frame>
+			<frame type="Quantified_mass" head="muchos">
+				<argument type="Individuals" dependent="votantes nacionalistas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿Cómo facilitarán este trasvase? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Transfer" head="trasvase" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No sólo somos un proyecto abierto a sectores que habían respaldado a CiU sino, fundamentalmente, a quienes han respaldado al partido socialista.
+		</str>
+		<theme concept_ref="c_14">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_40">
+			<token pos="vaii3p0">habían</token><token pos="vmp00sm">respaldado</token><token pos="sps00">a</token><token pos="np00000">CiU</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido">
+				<argument type="Individuals" dependent="socialista" /></frame>
+			<frame type="Fields" head="sectores" />
+			<frame type="Project" head="proyecto" />
+			<frame type="Secrecy_status" head="abierto">
+				<argument type="Phenomenon" dependent="a sectores" /></frame>
+			<main_frame type="Supporting" head="respaldado">
+				<argument type="Supporter" dependent="quienes" />
+				<argument type="Supported" dependent="partido socialista" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La mayor expectativa de crecimiento está en los votantes del PSC, que han visto de lo que es capaz el PP en el Gobierno.
+		</str>
+		<theme concept_ref="c_21">
+			<token pos="da0fs0">La</token><token pos="aq0cs0">mayor</token><token pos="ncfs000">expectativa</token><token pos="sps00">de</token><token pos="ncms000">crecimiento</token>
+		</theme>
+		<rheme concept_ref1="c_20" concept_ref2="c_16" concept_ref3="c_5" concept_ref4="c_36" concept_ref5="c_42">
+			<token pos="vmip3s0">está</token><token pos="sps00">en</token><mention concept_ref="c_42"><token pos="da0mp0">los</token><token pos="nccp000">votantes</token></mention><token pos="spcms">del</token><token pos="np00000">PSC</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="capaz">
+				<argument type="Entity" dependent="PP en el Gobierno" />
+				<argument type="Event" dependent="del" /></frame>
+			<frame type="Change_position_on_a_scale" head="crecimiento" />
+			<frame type="Expectation" head="expectativa">
+				<argument type="Manner" dependent="La mayor" />
+				<argument type="Phenomenon" dependent="de crecimiento" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="La mayor expectativa de crecimiento está" />
+				<argument type="Ground" dependent="los votantes del PSC" /></frame>
+			<frame type="Leadership" head="Gobierno" />
+			<frame type="Perception_experience" head="visto">
+				<argument type="Perceiver_passive" dependent="que" />
+				<argument type="Phenomenon" dependent="el PP en el Gobierno" /></frame>
+			<frame type="Posture" head="han">
+				<argument type="Location" dependent="La mayor expectativa de crecimiento" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La apuesta social permitirá atraer a estos sectores, y la moderación, a aquellos sectores cansados del discurso nacionalista.
+		</str>
+		<theme concept_ref="c_22">
+			<token pos="da0fs0">La</token><token pos="ncfs000">apuesta</token><token pos="aq0cs0">social</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_5" concept_ref3="c_34" concept_ref4="c_36" concept_ref5="c_41">
+			<token pos="vmif3s0">permitirá</token><mention concept_ref="c_34"><token pos="vmn0000">atraer</token><token pos="sps00">a</token><token pos="dd0mp0">estos</token><token pos="ncmp000">sectores</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Commitment" head="cansados">
+				<argument type="Message" dependent="social" /></frame>
+			<frame type="Fields" head="sectores" />
+			<main_frame type="Preventing_or_letting" head="permitirá">
+				<argument type="Event" dependent="social" />
+				<argument type="Event" dependent="atraer a estos sectores" /></main_frame>
+			<frame type="Social_event" head="social" />
+			<frame type="Vehicle_subpart" head="cansados">
+				<argument type="Whole" dependent="aquellos sectores" />
+				<argument type="Whole" dependent="discurso nacionalista" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Piqué apuesta por captar votante nacionalista.
+		</str>
+		<theme concept_ref="c_23">
+			<token pos="np00000">Piqué</token>
+		</theme>
+		<rheme concept_ref1="c_16">
+			<token pos="vmip3s0">apuesta</token><token pos="sps00">por</token><token pos="vmn0000">captar</token><mention concept_ref="c_16"><token pos="nccs000">votante</token></mention><token pos="aq0cs0">nacionalista</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Las últimas elecciones demuestran que el trasvase más importante es desde el partido socialista.
+		</str>
+		<theme concept_ref="c_24">
+			<token pos="da0ms0">el</token><token pos="ncms000">trasvase</token><token pos="rg">más</token><token pos="aq0cs0">importante</token>
+		</theme>
+		<rheme concept_ref1="c_17" concept_ref2="c_36" concept_ref3="c_41">
+			<token pos="vsip3s0">es</token><token pos="sps00">desde</token><mention concept_ref="c_36"><token pos="da0ms0">el</token></mention><token pos="ncms000">partido</token><token pos="aq0cs0">socialista</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Las últimas elecciones " />
+			<frame type="Aggregate" head="partido">
+				<argument type="Individuals" dependent="socialista" /></frame>
+			<main_frame type="Change_of_leadership" head="elecciones" />
+			<frame type="Importance" head="importante">
+				<argument type="Degree" dependent="más" />
+				<argument type="Factor" dependent="trasvase" /></frame>
+			<frame type="Transfer" head="trasvase" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La desorientación del PSC, las contradicciones con el PSOE y las iniciativas de corte nacionalista de Pasqual Maragall harán que éste pierda protagonismo, y contrastarán con la actitud coherente del PP.
+		</str>
+		<theme concept_ref="c_25">
+			<token pos="pd0ms000">éste</token>
+		</theme>
+		<rheme concept_ref1="c_32" concept_ref2="c_34">
+			<mention concept_ref="c_34"><token pos="vmm03s0">pierda</token></mention><mention concept_ref="c_32"><token pos="ncms000">protagonismo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="La desorientación del PSC , las contradicciones con el PSOE y las iniciativas de corte nacionalista de Pasqual Maragall " />
+			<main_frame type="Earnings_and_losses" head="pierda">
+				<argument type="Earner" dependent="la" />
+				<argument type="Earnings" dependent="pierda" /></main_frame>
+			<frame type="Manufacturing" head="las">
+				<argument type="Producer" dependent="Maragall" />
+				<argument type="Product" dependent="la" />
+				<argument type="Purpose" dependent="que éste pierda" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Quién será el candidato a la Generalitat, usted o Piqué? - -.
+		</str>
+		<theme concept_ref="c_26">
+			<token pos="pt0cs000">Quién</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_15" concept_ref3="c_17" concept_ref4="c_23" concept_ref5="c_36">
+			<token pos="vsif3s0">será</token><mention concept_ref="c_36"><token pos="da0ms0">el</token></mention><token pos="ncms000">candidato</token><token pos="sps00">a</token><mention concept_ref="c_15"><token pos="da0fs0">la</token><token pos="np00000">Generalitat</token></mention><token pos="pp2cs00p">usted</token><token pos="cc">o</token><mention concept_ref="c_23"><token pos="np00000">Piqué</token></mention>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 O un tercero.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Ordinal_numbers" head="tercero" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Es un debate que no está abierto y sobre el que no nos debemos pronunciar hasta dentro de tres años.
+		</str>
+		<theme concept_ref="c_14">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vmip3s0">está</token><token pos="aq0msp">abierto</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="tres" /></frame>
+			<frame type="Cardinal_numbers" head="tres">
+				<argument type="Unit" dependent="años" /></frame>
+			<frame type="Desirable_event" head="debemos">
+				<argument type="State_of_affairs" dependent="nos" />
+				<argument type="State_of_affairs" dependent="pronunciar hasta dentro de tres años" /></frame>
+			<frame type="Discussion" head="debate" />
+			<frame type="Secrecy_status" head="abierto" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - En septiembre habrá congreso regional del partido.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido" />
+			<frame type="Locale" head="regional" />
+			<frame type="Locative_relation" head="En">
+				<argument type="Ground" dependent="En septiembre habrá congreso regional del partido" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿Se puede esperar una renovación o sólo continuidad? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Expectation" head="esperar">
+				<argument type="Cognizer" dependent="Se" />
+				<argument type="Phenomenon" dependent="una renovación o sólo continuidad" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Habrá una importante renovación de personas y también se reiterará la línea moderada que hemos imprimido desde 1996.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Boundary" head="línea" />
+			<frame type="Importance" head="importante">
+				<argument type="Factor" dependent="renovación de personas" /></frame>
+			<frame type="Locative_relation" head="se">
+				<argument type="Figure" dependent="importante renovación de personas y también se reiterará la línea moderada que hemos imprimido desde 1996" /></frame>
+			<frame type="People" head="personas" />
+			<frame type="Time_vector" head="desde">
+				<argument type="Event" dependent="línea moderada que hemos imprimido" />
+				<argument type="Landmark_event" dependent="1996" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Se volverá a presentar a la presidencia del partido? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido" />
+			<frame type="Self_motion" head="del">
+				<argument type="Self_mover" dependent="Se" />
+				<argument type="Goal" dependent="volverá a presentar a la presidencia del partido" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Tengo una decisión tomada hace meses y la anunciaré cuando se convoque el congreso.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="meses" />
+			<frame type="Deciding" head="decisión">
+				<argument type="Cognizer" dependent="y" /></frame>
+			<frame type="Manufacturing" head="hace">
+				<argument type="Product" dependent="decisión" /></frame>
+			<frame type="Referring_by_name" head="se convoque">
+				<argument type="Name" dependent="el congreso" /></frame>
+			<frame type="Statement" head="anunciaré">
+				<argument type="Speaker" dependent="y" />
+				<argument type="Message" dependent="se" /></frame>
+			<frame type="Time_vector" head="se">
+				<argument type="Distance" dependent="decisión tomada hace meses" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Qué influencia podrá tener Piqué en el PP catalán desde Asuntos Exteriores? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Objective_influence" head="influencia" />
+			<frame type="Possibility" head="podrá">
+				<argument type="Possible_event" dependent="Qué influencia" />
+				<argument type="Possible_event" dependent="el PP catalán desde Asuntos Exteriores" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Un mayor protagonismo de Piqué en el Gobierno de España es una gran satisfacción para el Partido Popular de Catalunya.
+		</str>
+		<theme concept_ref="c_27">
+			<token pos="di0ms0">Un</token><token pos="aq0cs0">mayor</token><token pos="ncms000">protagonismo</token><token pos="sps00">de</token><token pos="np00000">Piqué</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="np0000o">Gobierno</token><token pos="sps00">de</token><token pos="np0000l">España</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_30" concept_ref3="c_11" concept_ref4="c_36">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_30"><token pos="di0fs0">una</token><token pos="aq0cs0">gran</token><token pos="ncfs000">satisfacción</token></mention><token pos="sps00">para</token><mention concept_ref="c_36"><token pos="da0ms0">el</token></mention><token pos="ncms000">Partido</token><token pos="aq0ms0">Popular</token><token pos="sps00">de</token><mention concept_ref="c_8"><token pos="np0000o">Catalunya</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desirability" head="gran">
+				<argument type="Evaluee" dependent="satisfacción" /></frame>
+			<frame type="Experiencer_focus" head="satisfacción" />
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Governed" dependent="de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Aznar sólo ficha ministros catalanes que no militan en el PP catalán.
+		</str>
+		<theme concept_ref="c_28">
+			<token pos="np00000">Aznar</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_34">
+			<token pos="vmip3s0">ficha</token><mention concept_ref="c_5"><token pos="ncmp000">ministros</token></mention><token pos="aq0mp0">catalanes</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Assistance" head="ficha">
+				<argument type="Benefited_party" dependent="ministros catalanes" />
+				<argument type="Helper" dependent="que" />
+				<argument type="Benefited_party" dependent="en el PP catalán" /></main_frame>
+			<frame type="Intentionally_act" head="en">
+				<argument type="Agent" dependent="ministros catalanes que" />
+				<argument type="Act" dependent="no militan en el PP catalán" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="ministros catalanes que no militan" />
+				<argument type="Ground" dependent="el PP catalán" /></frame>
+			<main_frame type="Text_creation" head="ficha">
+				<argument type="Text" dependent="Aznar" />
+				<argument type="Text" dependent="ministros catalanes que no militan en el PP catalán" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿Acaso desconfía? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Certainty" head="Acaso">
+				<argument type="Cognizer" dependent="¿" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La apuesta por Josep Piqué en 1996 se ha demostrado todo un acierto.
+		</str>
+		<theme concept_ref="c_29">
+			<token pos="da0fs0">La</token><token pos="ncfs000">apuesta</token><token pos="sps00">por</token><token pos="np0000l">Josep</token><token pos="np0000l">Piqué</token><token pos="sps00">en</token><token pos="z">1996</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_10" concept_ref3="c_34" concept_ref4="c_36" concept_ref5="c_42">
+			<token pos="p0000000">se</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">demostrado</token><token pos="di0ms0">todo</token><token pos="di0ms0">un</token><mention concept_ref="c_34"><token pos="ncms000">acierto</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Evidence" head="demostrado">
+				<argument type="Proposition" dependent="apuesta por Josep Piqué en 1996 se" />
+				<argument type="Proposition" dependent="acierto" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La incorporación de Anna Birulés también lo será.
+		</str>
+		<theme concept_ref="c_30">
+			<token pos="da0fs0">La</token><token pos="ncfs000">incorporación</token><token pos="sps00">de</token><token pos="np0000l">Anna</token><token pos="np0000l">Birulés</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_5" concept_ref3="c_36">
+			<mention concept_ref="c_5"><token pos="pp3cna00">lo</token></mention><token pos="vsif3s0">será</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Aceptar formar parte de un Gobierno del Partido Popular es un compromiso con el proyecto político de este partido.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido" />
+			<frame type="Commitment" head="compromiso">
+				<argument type="Message" dependent="proyecto político de este partido" /></frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Descriptor" dependent="partido" /></frame>
+			<frame type="Part_whole" head="parte">
+				<argument type="Whole" dependent="un Gobierno del Partido Popular" /></frame>
+			<frame type="Project" head="proyecto">
+				<argument type="Descriptor" dependent="partido" />
+				<argument type="Field" dependent="político" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Birulés debería afiliarse? - -.
+		</str>
+		<theme concept_ref="c_31">
+			<token pos="np00000">Birulés</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_36">
+			<token pos="vmic3s0">debería</token><token pos="vmn0000">afiliarse</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Becoming_a_member" head="afiliarse">
+				<argument type="Group" dependent="?" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Es una decisión personal.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Deciding" head="decisión">
+				<argument type="Decision" dependent="personal" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Cuando el PP reclama a CiU compromiso y lealtad, ¿le pide incluso que confluya con el PP de Catalunya hasta convertirse en su representante? - -.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">el</token><token pos="np00000">PP</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_5" concept_ref3="c_12" concept_ref4="c_40" concept_ref5="c_42">
+			<token pos="vmip3s0">reclama</token><token pos="sps00">a</token><token pos="np00000">CiU</token><token pos="ncms000">compromiso</token><token pos="cc">y</token><mention concept_ref="c_12"><token pos="ncfs000">lealtad</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming" head="convertirse">
+				<argument type="Entity" dependent="le" />
+				<argument type="Final_quality" dependent="su representante ? - -" /></frame>
+			<frame type="Commitment" head="compromiso">
+				<argument type="Speaker" dependent="PP" /></frame>
+			<frame type="Questioning" head="pide">
+				<argument type="Message" dependent="confluya con el PP de Catalunya hasta convertirse en su representante ? - -" /></frame>
+			<frame type="Request" head="pide">
+				<argument type="Speaker" dependent="PP" />
+				<argument type="Message" dependent="CiU compromiso y lealtad" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El planteamiento es abrir la posibilidad de que CiU se pueda incorporar a un Gobierno de España desde la lealtad constitucional y desde una apuesta de un proyecto de España compartido.
+		</str>
+		<theme concept_ref="c_32">
+			<token pos="da0ms0">El</token><token pos="ncms000">planteamiento</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_3" concept_ref3="c_32" concept_ref4="c_8" concept_ref5="c_12" concept_ref6="c_16" concept_ref7="c_22" concept_ref8="c_34" concept_ref9="c_36" concept_ref10="c_40" concept_ref11="c_42">
+			<token pos="vsip3s0">es</token><token pos="vmn0000">abrir</token><mention concept_ref="c_34"><token pos="da0fs0">la</token><token pos="ncfs000">posibilidad</token><token pos="sps00">de</token><token pos="cs">que</token><token pos="np00000">CiU</token><token pos="p0300000">se</token><token pos="vmsp3s0">pueda</token><token pos="vmn0000">incorporar</token><token pos="sps00">a</token><token pos="di0ms0">un</token><token pos="np0000o">Gobierno</token><token pos="sps00">de</token><token pos="np0000l">España</token><token pos="sps00">desde</token><token pos="da0fs0">la</token><token pos="ncfs000">lealtad</token><token pos="aq0cs0">constitucional</token><token pos="cc">y</token></mention><token pos="sps00">desde</token><token pos="di0fs0">una</token><token pos="ncfs000">apuesta</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">proyecto</token><token pos="sps00">de</token><token pos="np00000">España</token><token pos="aq0msp">compartido</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Capability" head="pueda">
+				<argument type="Entity" dependent="CiU" />
+				<argument type="Event" dependent="incorporar a un Gobierno de España desde la lealtad constitucional y desde una apuesta de un proyecto de" /></main_frame>
+			<frame type="Communication" head="compartido">
+				<argument type="Message" dependent="proyecto" />
+				<argument type="Communicator" dependent="lealtad" /></frame>
+			<main_frame type="Inclusion" head="incorporar">
+				<argument type="Total" dependent="CiU" />
+				<argument type="Part" dependent="se" /></main_frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Governed" dependent="lealtad" /></frame>
+			<frame type="Likelihood" head="posibilidad">
+				<argument type="Hypothetical_event" dependent="la posibilidad de que CiU se pueda incorporar a un Gobierno de España desde la lealtad constitucional y" /></frame>
+			<frame type="Means" head="planteamiento" />
+			<frame type="Project" head="proyecto">
+				<argument type="Descriptor" dependent="compartido" />
+				<argument type="Activity" dependent="lealtad" /></frame>
+			<main_frame type="Secrecy_status" head="abrir">
+				<argument type="Phenomenon" dependent="la posibilidad de que CiU se pueda incorporar a un Gobierno de España desde la lealtad constitucional y" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Aspira a aprovechar su capacidad de influencia para rectificar la política lingüística? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Objective_influence" head="influencia">
+				<argument type="Influencing_entity" dependent="su" />
+				<argument type="Dependent_entity" dependent="para rectificar la política lingüística" /></frame>
+			<frame type="Using" head="aprovechar">
+				<argument type="Agent" dependent="su" />
+				<argument type="Instrument" dependent="influencia" />
+				<argument type="Purpose" dependent="para rectificar la política lingüística" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Nadie puede exigirnos que renunciemos a defender nuestro modelo lingüístico, basado en la libertad y la pluralidad.
+		</str>
+		<theme concept_ref="c_33">
+			<token pos="pi0cs000">Nadie</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_13" concept_ref3="c_22" concept_ref4="c_34" concept_ref5="c_35" concept_ref6="c_36" concept_ref7="c_42">
+			<token pos="vmsp1p0">renunciemos</token><token pos="sps00">a</token><token pos="vmn0000">defender</token><mention concept_ref="c_35"><token pos="dp1msp">nuestro</token></mention><token pos="ncms000">modelo</token><token pos="aq0ms0">lingüístico</token><token pos="fc">,</token><token pos="aq0msp">basado</token><token pos="sps00">en</token><mention concept_ref="c_22"><token pos="da0fs0">la</token><token pos="ncfs000">libertad</token></mention><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">pluralidad</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="puede">
+				<argument type="Entity" dependent="Nadie" />
+				<argument type="Event" dependent="exigirnos que renunciemos a defender nuestro modelo lingüístico , basado en la libertad y la pluralidad" /></frame>
+			<frame type="Cardinal_numbers" head="la" />
+			<main_frame type="Defending" head="defender">
+				<argument type="Assailant" dependent="nuestro" />
+				<argument type="Victim" dependent="nuestro modelo" /></main_frame>
+			<frame type="Direction" head="en">
+				<argument type="Distance" dependent="nuestro" />
+				<argument type="Landmark" dependent="defender nuestro modelo" /></frame>
+			<frame type="Giving" head="en">
+				<argument type="Donor" dependent="nuestro" />
+				<argument type="Theme" dependent="defender nuestro modelo" /></frame>
+			<frame type="Request" head="exigirnos">
+				<argument type="Speaker" dependent="Nadie" />
+				<argument type="Message" dependent="que renunciemos a defender nuestro modelo lingüístico , basado en la libertad y la pluralidad" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="renunciemos a defender nuestro modelo" />
+				<argument type="Ground" dependent="libertad y la pluralidad" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Seguiremos defendiendo la coexistencia del catalán y el castellano.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Defending" head="defendiendo">
+				<argument type="Assailant" dependent="el" />
+				<argument type="Victim" dependent="coexistencia del catalán y el castellano" /></frame>
+			<frame type="Process_continue" head="Seguiremos">
+				<argument type="Event" dependent="el" />
+				<argument type="Event" dependent="defendiendo la coexistencia del catalán y el castellano" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero sólo podremos modificar la actuación de CiU cuando el PSC deje de respaldar los planteamientos de los nacionalistas y se sume sin complejos a la defensa de una sociedad bilingüe.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_a_member" head="se">
+				<argument type="Place" dependent="sin complejos a la defensa de una sociedad bilingüe" /></frame>
+			<frame type="Capability" head="se">
+				<argument type="Entity" dependent="podremos" />
+				<argument type="Event" dependent="modificar la actuación de CiU cuando el PSC deje de respaldar los planteamientos de los nacionalistas y se sume sin complejos a la defensa de una sociedad bilingüe" /></frame>
+			<frame type="Cause_change" head="modificar">
+				<argument type="Entity" dependent="la actuación de" />
+				<argument type="Duration" dependent="cuando el PSC deje de respaldar los planteamientos de los nacionalistas" /></frame>
+			<frame type="Defending" head="defensa">
+				<argument type="Victim" dependent="una sociedad bilingüe" /></frame>
+			<frame type="Means" head="se">
+				<argument type="Purpose" dependent="nacionalistas" /></frame>
+			<frame type="Preventing_or_letting" head="deje">
+				<argument type="Potential_hindrance" dependent="el PSC" />
+				<argument type="Event" dependent="de respaldar los planteamientos de los nacionalistas" /></frame>
+			<frame type="Supporting" head="de respaldar">
+				<argument type="Supporter" dependent="el PSC" />
+				<argument type="Supported" dependent="nacionalistas" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

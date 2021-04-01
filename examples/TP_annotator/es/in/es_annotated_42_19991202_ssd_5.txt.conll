@@ -1,0 +1,12 @@
+{   ('Buildings', 'palacio'): [('Name', 'de la Moncloa')],
+    ('Calendric_unit', 'hora'): [],
+    ('Cardinal_numbers', 'tres'): [('Precision', 'anteriores')],
+    ('Discussion', 'encuentro'): [('Time', 'cuarto'), ('Interlocutor_2', 'entre Aznar e Ibarretxe')],
+    ('Interior_profile_relation', 'entre'): [('Figure', 'El cuarto encuentro'), ('Ground', 'Aznar e Ibarretxe')],
+    ('Make_agreement_on_action', 'voluntad de acuerdo'): [],
+    ('Ordinal_numbers', 'cuarto'): [('Type', 'encuentro')],
+    ('Part_whole', 'y media'): [],
+    ('Proportional_quantity', 'a los'): [('Reference_quantity', 'media , estuvo presidido por una')],
+    ('Relative_time', 'anteriores'): [('Focal_occasion', 'tres')],
+    ('Relative_time', 'se prolongó'): [('Focal_occasion', 'y media')],
+    ('Statement', 'anunciara'): [('Time', 'antes'), ('Speaker', 'se'), ('Message', 'la inminente ruptura de la tregua')]}

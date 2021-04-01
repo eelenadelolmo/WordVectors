@@ -1,0 +1,5 @@
+{   ('Aggregate', 'fiesta'): [('Aggregate_property', 'privada')],
+    ('Collaboration', 'juntos'): [('Partner_1', 'tocamos'), ('Partner_2', 'en alguna fiesta privada')],
+    ('Locative_relation', 'en'): [('Ground', 'el club de jazz Ronnie Scott')],
+    ('Make_noise', 'tocamos'): [('Sound_source', 'tocamos')],
+    ('Weapon', 'club'): [('Name', 'jazz')]}

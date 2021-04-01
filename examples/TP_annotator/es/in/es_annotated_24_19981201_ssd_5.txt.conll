@@ -1,0 +1,6 @@
+{   ('Arriving', 'visita'): [('Theme', 'su'), ('Goal', 'a Madrid')],
+    ('Discussion', 'intercambio'): [('Topic', 'de información'), ('Purpose', 'afecta al dictador')],
+    ('Information', 'información'): [('Topic', 'afecta al dictador')],
+    ('Leadership', 'dictador'): [],
+    ('Objective_influence', 'afecta'): [('Influencing_situation', 'sobre el contencioso'), ('Dependent_entity', 'dictador')],
+    ('Quarreling', 'contencioso'): [('Manner', 'de'), ('Issue', 'que afecta al dictador')]}

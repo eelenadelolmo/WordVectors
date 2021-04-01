@@ -1,0 +1,9 @@
+{   ('Calendric_unit', 'año'): [('Relative_time', 'se')],
+    ('Cardinal_numbers', 'millones'): [('Multiplier', '60')],
+    ('Change_position_on_a_scale', 'rozó'): [('Item', 'la exportación'), ('Path', '250.000 millones')],
+    ('Estimating', 'se'): [('Estimation', 'importaciones españolas de México'), ('Estimation', 'en 280.000 millones de pesetas - - el 60 % en petróleo - - , y la exportación rozó')],
+    ('Exporting', 'exportación'): [('Importing_area', '250.000 millones')],
+    ('Importing', 'importaciones'): [('Time', 'pasado año'), ('Importer', 'españolas'), ('Exporting_area', 'de México')],
+    ('Locative_relation', 'en'): [('Figure', 'importaciones españolas de México'), ('Ground', '280.000 millones de pesetas - - el 60 % en petróleo - - , y la exportación rozó')],
+    ('Relative_time', 'se'): [],
+    ('Substance', 'petróleo'): []}

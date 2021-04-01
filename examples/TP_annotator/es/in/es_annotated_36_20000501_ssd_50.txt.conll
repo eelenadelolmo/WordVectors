@@ -1,0 +1,6 @@
+{   ('Calendric_unit', 'meses'): [],
+    ('Deciding', 'decisión'): [('Cognizer', 'y')],
+    ('Manufacturing', 'hace'): [('Product', 'decisión')],
+    ('Referring_by_name', 'se convoque'): [('Name', 'el congreso')],
+    ('Statement', 'anunciaré'): [('Speaker', 'y'), ('Message', 'se')],
+    ('Time_vector', 'se'): [('Distance', 'decisión tomada hace meses')]}

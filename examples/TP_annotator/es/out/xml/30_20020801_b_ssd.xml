@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="30_20020801_b_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Cristóbal Castro , padre de una alumna de Formación Profesional ( FP ) de Tarragona ,</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Denuncia por la falta de plazas de FP en Tarragona.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="de plazas" />
+				<argument type="Ground" dependent="Tarragona" /></frame>
+			<frame type="Locale" head="plazas">
+				<argument type="Inherent_purpose" dependent="de" /></frame>
+			<frame type="Possession" head="falta">
+				<argument type="Possession" dependent="en Tarragona" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Cristóbal Castro, padre de una alumna de Formación Profesional ( FP ) de Tarragona, denunció ayer la falta de previsión de Ensenyament por excluir por falta de plazas a la mitad de los alumnos que solicitaron un puesto en el nuevo curso puente de grado medio a grado superior en el instituto Vidal i Barraquer.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Cristóbal</token><token pos="ncms000">Castro</token><token pos="fc">,</token><token pos="ncms000">padre</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="ncfs000">alumna</token><token pos="sps00">de</token><token pos="np00000">Formación</token><token pos="ncms000">Profesional</token><token pos="fpa">(</token><token pos="np00000">FP</token><token pos="fpt">)</token><token pos="sps00">de</token><token pos="np00000">Tarragona</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">denunció</token><token pos="da0fs0">la</token><token pos="ncfs000">falta</token><token pos="sps00">de</token><token pos="ncfs000">previsión</token><token pos="sps00">de</token><token pos="np00000">Ensenyament</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevo">
+				<argument type="Entity" dependent="puente" /></frame>
+			<frame type="Being_employed" head="un puesto en">
+				<argument type="Employee" dependent="que" />
+				<argument type="Place_of_employment" dependent="en el nuevo curso puente" /></frame>
+			<frame type="Education_teaching" head="Formación">
+				<argument type="Subject" dependent="Profesional" /></frame>
+			<frame type="Education_teaching" head="alumna">
+				<argument type="Subject" dependent="de Formación Profesional" /></frame>
+			<frame type="Education_teaching" head="alumnos" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="grado superior" />
+				<argument type="Ground" dependent="el instituto Vidal i" /></frame>
+			<frame type="Kinship" head="padre">
+				<argument type="Ego" dependent="de una alumna de Formación Profesional ( FP ) de Tarragona" /></frame>
+			<frame type="Locale" head="puesto" />
+			<frame type="Locale_by_use" head="instituto">
+				<argument type="Name" dependent="el" />
+				<argument type="Container_possessor" dependent="i" />
+				<argument type="Name" dependent="de" /></frame>
+			<frame type="Part_whole" head="mitad">
+				<argument type="Whole" dependent="los alumnos" /></frame>
+			<frame type="Possession" head="falta">
+				<argument type="Possession" dependent="a la mitad de los alumnos que solicitaron un puesto en el nuevo curso puente de grado medio a" /></frame>
+			<frame type="Roadways" head="puente" />
+			<frame type="Temporal_subregion" head="medio">
+				<argument type="Time_period" dependent="grado" /></frame>
+			<frame type="Using" head="puesto">
+				<argument type="Instrument" dependent="que" />
+				<argument type="Purpose" dependent="puesto en el nuevo curso puente de grado medio a grado superior en el instituto" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En una lista provisional aparecida el día 2 figuraban los 68 alumnos peticionarios, pero una semana después, en la lista definitiva, sólo estaban 35.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="día" />
+			<frame type="Calendric_unit" head="semana" />
+			<frame type="Containing" head="en">
+				<argument type="Contents" dependent="los 68 alumnos peticionarios" /></frame>
+			<frame type="Education_teaching" head="alumnos" />
+			<frame type="Give_impression" head="aparecida">
+				<argument type="Phenomenon" dependent="una lista provisional" />
+				<argument type="Characterization" dependent="día" />
+				<argument type="Inference" dependent="35" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="la lista definitiva" />
+				<argument type="Ground" dependent="sólo estaban 35" /></frame>
+			<frame type="Process_end" head="definitiva">
+				<argument type="Process" dependent="lista" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="lista provisional aparecida el día 2 figuraban los 68 alumnos peticionarios , pero una semana después ," />
+				<argument type="Ground" dependent="la lista definitiva" /></frame>
+			<frame type="Temporal_subregion" head="después">
+				<argument type="Time_period" dependent="una semana" />
+				<argument type="Time_period" dependent="en la lista definitiva" /></frame>
+			<frame type="Text" head="lista">
+				<argument type="Descriptor" dependent="definitiva" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ensenyament admitió que ha habido deficiencias en el procedimiento, pero no aportó ninguna solución.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Ensenyament " />
+			<frame type="Locative_relation" head="habido">
+				<argument type="Figure" dependent="que" />
+				<argument type="Ground" dependent="ha habido deficiencias en el procedimiento" /></frame>
+			<frame type="Means" head="procedimiento" />
+			<frame type="Reveal_secret" head="admitió">
+				<argument type="Speaker" dependent="en" />
+				<argument type="Information" dependent="que ha habido deficiencias en el procedimiento" /></frame>
+			<frame type="Supply" head="aportó">
+				<argument type="Theme" dependent="ninguna solución" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

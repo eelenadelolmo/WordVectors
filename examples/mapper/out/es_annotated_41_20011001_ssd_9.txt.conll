@@ -1,0 +1,5 @@
+{   ('Adopt_selection', 'asumido'): [('Attribute', 'nada')],
+    ('Directional_locative_relation', 'sobre'): [('Figure', 'nada'), ('Ground', 'todo')],
+    ('Grasp', 'entendido'): [('Cognizer', 'militares que'), ('Phenomenon', 'nada')],
+    ('Locative_relation', 'Hay'): [('Figure', 'militares que no han entendido nada , no han digerido nada y , sobre todo , no han asumido')],
+    ('Member_of_military', 'militares'): []}

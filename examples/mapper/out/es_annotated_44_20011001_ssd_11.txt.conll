@@ -1,0 +1,8 @@
+{   ('Age', 'nueva'): [('Entity', 'obra')],
+    ('Alternatives', 'futuro'): [],
+    ('Desirability', 'bien'): [('Evaluee', 'más al')],
+    ('Increment', 'más'): [],
+    ('Perception_active', 'mirar'): [('Perceiver_agentive', 'la obra nueva'), ('Phenomenon', 'más al futuro que al pasado')],
+    ('Relative_time', 'pasado'): [],
+    ('Required_event', 'ha'): [('Required_situation', 'la obra nueva'), ('Required_situation', 'mirar más al futuro que al pasado , más al bien común que al beneficio privado')],
+    ('Work', 'obra'): []}

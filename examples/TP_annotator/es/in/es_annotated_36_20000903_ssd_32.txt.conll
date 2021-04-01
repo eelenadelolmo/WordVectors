@@ -1,0 +1,5 @@
+{   ('Desirability', 'buen'): [('Evaluee', 'momento')],
+    ('Inclusion', 'incorporar'): [('Part', 'a Anna')],
+    ('Political_locales', 'nacional'): [],
+    ('Sign_agreement', 'se'): [('Agreement', 'para')],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'buen momento para incorporar a Anna')]}

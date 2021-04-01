@@ -1,0 +1,15 @@
+{   ('Appellations', 'el vicepresidente'): [('Type', 'de The')],
+    ('Cause_harm', 'batiría'): [('Agent', 'es'), ('Victim', 'por 56 % a 39 % al probable candidato demócrata , el vicepresidente')],
+    ('Change_of_leadership', 'elecciones'): [('Selector', 'su')],
+    ('Competition', 'rival'): [('Participant_2', 'es'), ('Competition', 'senador por Arizona John McCain')],
+    ('Leadership', 'vicepresidente'): [('Descriptor', 'más')],
+    ('Likelihood', 'probable'): [('Hypothetical_event', 'candidato demócrata , el vicepresidente')],
+    ('Locative_relation', 'al'): [('Figure', 'el candidato más presidenciable'), ('Ground', 'a escala nacional')],
+    ('Manipulation', 'se'): [('Entity', 'las elecciones'), ('Time', 'ahora')],
+    ('Political_locales', 'nacional'): [],
+    ('Rank', 'escala'): [('Rank', 'nacional')],
+    ('Reveal_secret', 'reveló'): [   ('Speaker', 'una encuesta de The Washington Post reveló'),
+                                     (   'Information',
+                                         'rival , el senador por Arizona John McCain , es el candidato más presidenciable a escala nacional , pues si las elecciones de Estados Unidos se celebrasen '
+                                         'ahora , batiría por 56 % a 39 % al probable candidato demócrata , el vicepresidente')],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'las elecciones de'), ('Trajector_event', 'se')]}

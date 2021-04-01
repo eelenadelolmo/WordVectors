@@ -1,0 +1,6 @@
+{   ('Age', 'nueva'): [('Entity', 'teoría un congreso de arqueólogos')],
+    ('Calendric_unit', 'fin de semana'): [],
+    ('Institutions', 'Institution'): [('Place', 'prestigiosa Smithsonian'), ('Place', 'de Washington')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'este fin de semana'), ('Ground', 'Santa Fe ( Nuevo México , EEUU )')],
+    ('Manipulation', 'su'): [('Agent', 'un congreso de arqueólogos'), ('Entity', 'este fin de semana'), ('Place', 'en Santa')],
+    ('People_by_vocation', 'arqueólogo'): []}

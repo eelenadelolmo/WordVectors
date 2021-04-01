@@ -1,0 +1,12 @@
+{   ('Aiming', 'dirigió'): [   ('Agent', 'periodismo popular'),
+                               ('Targeted', 'que , fiel a sus principios'),
+                               ('Instrument', 'la entrevista'),
+                               ('Targeted', 'a sus trincheras habituales'),
+                               ('Activity', '; le repatea el poeta social & quot ; y que ama a España ( a lo que éste replicó rápido : & quot ; Soy patriota ,')],
+    ('Communication_response', 'replicó'): [('Trigger', '; Soy patriota')],
+    ('Desirability', 'popular'): [('Evaluee', 'periodismo')],
+    ('Experiencer_focus', 'ama'): [('Experiencer', 'lo'), ('Content', 'le repatea')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'su intervención'), ('Ground', 'tercer grado de Carlos')],
+    ('Ordinal_numbers', 'tercer'): [('Type', 'grado de Carlos')],
+    ('People_by_religion', 'fiel'): [],
+    ('Telling', 'fiel'): [('Speaker', 'lo'), ('Message', '; le repatea el poeta social & quot ; y que ama a España ( a lo que éste replicó rápido :')]}

@@ -1,0 +1,13 @@
+{   ('Arriving', 'llegó'): [('Theme', 'lo')],
+    ('Fame', 'famoso'): [],
+    ('Kinship', 'su'): [('Ego', 'Mi')],
+    ('Manufacturing', 'hicieron'): [('Product', 'Eso'), ('Product', 'su')],
+    ('People_by_age', 'juventud'): [('Ethnicity', 'su')],
+    ('Perception_active', 'aparentemente'): [('Perceiver_agentive', 'lo')],
+    ('Process_end', 'pasar'): [('Process', 'pasar en su juventud por el expresionismo , el cubismo y el fauvismo')],
+    ('Relative_time', 'después de'): [   ('Focal_occasion', 'aparentemente'),
+                                         ('Landmark_occasion', 'pasar en su juventud por el expresionismo , el cubismo y el fauvismo'),
+                                         ('Focal_occasion', ', llegó a la fase de signos aparentemente simples que lo hicieron tan famoso , algún escéptico decía :')],
+    ('Sign', 'signos'): [],
+    ('Statement', 'decía'): [('Speaker', 'algún escéptico'), ('Message', '; ¿ Eso ? Mi hijo también lo haría')],
+    ('Thermodynamic_phase', 'fase'): []}

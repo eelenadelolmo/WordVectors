@@ -1,0 +1,4 @@
+{   ('Capability', 'poder hacer'): [('Entity', 'de'), ('Event', 'hacer muchas de las cosas que hacen las personas normales')],
+    ('Intentionally_act', 'de'): [('Agent', 'de'), ('Act', 'muchas de las cosas que hacen las personas normales')],
+    ('People', 'personas'): [],
+    ('Quantified_mass', 'muchas'): [('Individuals', 'las cosas que hacen las personas normales')]}

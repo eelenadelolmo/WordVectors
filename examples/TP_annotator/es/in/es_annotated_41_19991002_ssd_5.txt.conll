@@ -1,0 +1,9 @@
+{   ('Direction', 'en'): [('Distance', 'sus')],
+    ('Event', 'ocurrió'): [('Place', 'con el Sahara')],
+    ('Grasp', 'entendiendo'): [('Cognizer', 'sus'), ('Phenomenon', 'tiene razón en sus reivindicaciones sobre ambos territorios')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'aventuró'), ('Ground', 'sus reivindicaciones sobre ambos territorios')],
+    ('Political_locales', 'territorios'): [],
+    ('Process_end', 'el'): [('Process', 'sus'), ('Process', 'entendiendo que Marruecos tiene razón en sus reivindicaciones sobre ambos territorios')],
+    ('Request', 'reivindicaciones'): [('Speaker', 'el'), ('Message', 'sobre ambos territorios')],
+    ('Spatial_contact', 'en'): [('Figure', 'sus reivindicaciones'), ('Ground', 'ambos territorios')],
+    ('Statement', 'aventuró'): [('Speaker', 'sus')]}

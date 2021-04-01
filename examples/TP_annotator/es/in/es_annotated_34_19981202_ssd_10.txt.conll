@@ -1,0 +1,8 @@
+{   ('Appellations', 'presidente'): [],
+    ('Calendric_unit', 'semana'): [],
+    ('Cause_expansion', 'ampliación'): [('Item', 'de la investigación')],
+    ('Criminal_investigation', 'investigación'): [('Investigator', 'Clinton')],
+    ('Preventing_or_letting', 'impedirá'): [('Event', 'el comité')],
+    ('Process', 'proceso'): [('Process', 'contra el presidente')],
+    ('Statement', 'dijo'): [('Speaker', 'republicano Lindsey Graham'), ('Message', 'no impedirá que el comité lleve a votación la semana próxima la continuación del proceso contra el presidente')],
+    ('Taking_time', 'lleve'): [('Time_length', 'a votación la semana próxima'), ('Activity', 'la continuación del proceso contra el presidente')]}

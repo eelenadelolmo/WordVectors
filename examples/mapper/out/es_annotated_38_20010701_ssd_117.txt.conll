@@ -1,0 +1,4 @@
+{   ('Distributed_position', 'películas'): [('Location', 'sus')],
+    ('Personal_relationship', 'amigo de'): [('Partner_2', 'sus'), ('Manner', 'ido'), ('Partner_2', 'Los Bravos')],
+    ('Remembering_experience', 'recuerdo'): [('Cognizer', 'y'), ('Experience', 'estreno de una de sus películas')],
+    ('Social_connection', 'ido'): [('Individual_1', 'sus'), ('Connection', 'amigo de'), ('Individual_2', 'Los Bravos')]}

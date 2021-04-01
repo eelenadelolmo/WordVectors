@@ -1,0 +1,5 @@
+{   ('Change_position_on_a_scale', 'hasta'): [('Item', 'que nos calman'), ('Final_state', 'hasta el próximo zarpazo de la barbarie')],
+    ('Experiencer_focus', 'calman'): [('Content', 'nos calman hasta el próximo zarpazo de la barbarie')],
+    ('Intentionally_act', 'hacer'): [('Act', 'nos lleva a')],
+    ('Leadership', 'zarpazo de'): [('Governed', 'nos')],
+    ('Needing', 'necesidad'): [('Cognizer', 'Esa'), ('Requirement', 'hacer algo nos lleva a soluciones que nunca lo son')]}

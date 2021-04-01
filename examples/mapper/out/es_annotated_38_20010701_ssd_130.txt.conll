@@ -1,0 +1,3 @@
+{   ('Exchange', 'por'): [('Exchanger_1', 'y'), ('Exchanger_1', 'mis hijas'), ('Time', 'ahora'), ('Exchanger_1', 'y'), ('Theme_1', 'eso por nada')],
+    ('Kinship', 'hijas'): [('Ego', 'mis')],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'mis hijas')]}

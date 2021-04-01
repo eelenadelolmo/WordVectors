@@ -1,0 +1,7 @@
+{   ('Motion', 'se'): [('Theme', 'camareros'), ('Goal', 'voz alta a los espías para')],
+    ('People_by_vocation', 'espías'): [],
+    ('Referring_by_name', 'llaman'): [('Entity', 'les'), ('Name', 'por teléfono')],
+    ('Sleep', 'se'): [('Sleeper', 'camareros')],
+    ('Telling', 'decirles'): [('Speaker', 'camareros'), ('Addressee', 'les'), ('Message', 'les llaman por teléfono')],
+    ('Temporal_collocation', 'cuándo'): [('Landmark_event', 'los camareros se dirigen en voz alta a los espías para decirles que les llaman por teléfono')],
+    ('Time_vector', 'por'): [('Landmark_event', 'cuándo los camareros se dirigen en voz alta a los espías para decirles que les llaman por teléfono')]}

@@ -1,0 +1,6 @@
+{   ('Arriving', 'regresar'): [('Source', 'junto a los demócratas')],
+    ('Leadership', 'Mayor'): [('Governed', 'Jaime'), ('Leader', 'Oreja')],
+    ('Locative_relation', 'en'): [('Figure', 'PNV'), ('Ground', 'encrucijada de regresar junto a los demócratas o seguir con los violentos')],
+    ('Placing', 'situaba al'): [('Theme', 'Mayor Oreja'), ('Goal', 'al PNV en la encrucijada de regresar junto a los demócratas o seguir con los violentos')],
+    ('Process_continue', 'seguir'): [('Event', 'con los violentos')],
+    ('Temporal_collocation', 'Durante'): [('Trajector_event', ', Jaime Mayor Oreja situaba al PNV en la encrucijada de regresar junto a los demócratas o seguir con los violentos')]}

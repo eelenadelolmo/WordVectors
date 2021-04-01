@@ -1,0 +1,4 @@
+{   ('Departing', 'fuga'): [('Theme', 'de soldados'), ('Place', 'a Macedonia')],
+    ('Locative_relation', 'se ha'): [('Figure', 'que'), ('Ground', 'Aseguró que se ha producido una fuga de soldados a Macedonia')],
+    ('Member_of_military', 'soldados'): [],
+    ('Telling', 'se'): [('Speaker', 'se ha'), ('Message', 'Aseguró que se ha producido una fuga de soldados a Macedonia')]}

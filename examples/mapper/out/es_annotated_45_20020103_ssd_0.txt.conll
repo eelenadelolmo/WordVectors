@@ -1,0 +1,8 @@
+{   ('Becoming_aware', 'encontrarse'): [('Cognizer', 'los'), ('Phenomenon', 'en Katmandú , capital de Nepal , donde se celebra una reunión de los siete países de Asia del sur')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Cardinal_numbers', 'siete'): [('Unit', 'países de Asia del sur')],
+    ('Discussion', 'reunión'): [('Interlocutors', 'los siete países de Asia del sur')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'los'), ('Ground', 'Katmandú')],
+    ('Locative_relation', 'donde'): [('Ground', 'una reunión de los siete países de Asia del sur')],
+    ('Political_locales', 'países'): [('Relative_location', 'de Asia del sur')],
+    ('Relational_political_locales', 'capital'): [('Name', 'de Nepal')]}

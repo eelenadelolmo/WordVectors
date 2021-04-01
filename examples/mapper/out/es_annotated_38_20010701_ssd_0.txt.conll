@@ -1,0 +1,4 @@
+{   ('Aggregate', 'grupo'): [],
+    ('Intentionally_act', 'de'): [('Agent', 'su'), ('Act', 'su')],
+    ('Success_or_failure', 'echa de'): [('Agent', 'su'), ('Goal', 'algo de las grandes giras con los Rolling Stones')],
+    ('Travel', 'giras'): [('Descriptor', 'grandes giras'), ('Goal', 'Stones')]}

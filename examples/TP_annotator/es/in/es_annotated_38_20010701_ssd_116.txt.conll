@@ -1,0 +1,8 @@
+{   ('Arriving', 'los'): [('Time', 'Cuando los Stones eran conocidos sólo en'), ('Theme', 'en'), ('Goal', 'mucho a')],
+    ('Awareness', 'conocidos'): [('Content', 'Stones'), ('Content', 'sólo en Gran Bretaña vine mucho a España , porque me')],
+    ('Causation', 'porque'): [('Effect', 'Cuando los Stones eran conocidos sólo en Gran Bretaña'), ('Cause', 'me encanta , a pesar del calor')],
+    ('Destiny', 'mucho'): [],
+    ('Experiencer_focus', 'encanta'): [('Experiencer', 'en'), ('Content', 'del')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'Stones eran conocidos sólo'), ('Ground', 'Bretaña'), ('Figure', 'porque me encanta , a pesar del calor')],
+    ('Sole_instance', 'sólo'): [('Type', 'Stones'), ('Item', 'en Gran Bretaña vine mucho a España , porque me')],
+    ('Temporal_collocation', 'Cuando'): [('Landmark_event', 'los Stones eran conocidos sólo en Gran Bretaña vine mucho a España , porque me encanta , a pesar'), ('Trajector_event', 'del calor')]}

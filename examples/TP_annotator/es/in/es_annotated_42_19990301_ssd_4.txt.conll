@@ -1,0 +1,6 @@
+{   ('Cardinal_numbers', 'dos'): [('Entity', 'cosmonautas')],
+    ('Locative_relation', 'donde'): [('Figure', 'dos cosmonautas tomaron un avión para trasladarse a')],
+    ('Measure_linear_extent', 'kilómetros'): [('Count', '58')],
+    ('Motion', 'trasladarse'): [('Theme', 'los dos cosmonautas'), ('Goal', 'para')],
+    ('Natural_features', 'cayó'): [('Container_possessor', 'cápsula'), ('Name', '58 kilómetros'), ('Relative_location', 'norte de')],
+    ('Part_orientational', 'norte'): [('Whole', '58 kilómetros'), ('Whole', 'de')]}

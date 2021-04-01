@@ -1,0 +1,6 @@
+{   ('Desirability', 'bien'): [],
+    ('Importance', 'vital'): [('Factor', 'bien')],
+    ('Instance', 'ejemplo'): [('Type', 'conciencia y una cultura colectiva')],
+    ('Interior_profile_relation', 'por'): [('Figure', 'lo'), ('Ground', 'además')],
+    ('Questioning', 'pedirla'): [('Message', ', además , a través del ejemplo de una conciencia y una cultura colectiva que reconoce el agua como un bien')],
+    ('Scarcity', 'escaso'): []}

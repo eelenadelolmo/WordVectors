@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="38_19990902_c_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Gil</concept>
+		<concept id="c_1">El presidente del GIL y alcalde de Marbella</concept>
+		<concept id="c_2">La querella , que se presentó ayer ante el Supremo por la condición de aforado del secretario general del PSOE ,</concept>
+		<concept id="c_3">presenta una querella contra Almunia y</concept>
+		<concept id="c_4">los términos</concept>
+		<concept id="c_5">Almunia</concept>
+		<concept id="c_6">los delitos</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Gil presenta una querella contra Almunia y Jáuregui.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Gil</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_3" concept_ref3="c_5">
+			<mention concept_ref="c_3"><token pos="vmip3s0">presenta</token><token pos="di0fs0">una</token><token pos="ncfs000">querella</token><token pos="sps00">contra</token><token pos="np00000">Almunia</token><token pos="cc">y</token></mention><token pos="np00000">Jáuregui</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Submitting_documents" head="presenta">
+				<argument type="Submittor" dependent="Gil" />
+				<argument type="Documents" dependent="presenta una querella contra Almunia y" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El presidente del GIL y alcalde de Marbella acusa a los dos dirigentes socialistas de los delitos de injurias y calumnias por referirse a su partido utilizando los términos de "organización mafiosa" y "organización de métodos gansteriles".
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">presidente</token><token pos="spcms">del</token><token pos="np00000">GIL</token><token pos="cc">y</token><token pos="ncms000">alcalde</token><token pos="sps00">de</token><token pos="np00000">Marbella</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_4" concept_ref3="c_5" concept_ref4="c_6">
+			<token pos="vmip3s0">acusa</token><token pos="sps00">a</token><mention concept_ref="c_2"><token pos="da0mp0">los</token><token pos="dn0cp0">dos</token><token pos="nccp000">dirigentes</token></mention><token pos="aq0cp0">socialistas</token><token pos="sps00">de</token><mention concept_ref="c_6"><token pos="da0mp0">los</token><token pos="ncmp000">delitos</token></mention><token pos="sps00">de</token><token pos="ncfp000">injurias</token><token pos="cc">y</token><token pos="ncfp000">calumnias</token><token pos="sps00">por</token><token pos="vmn0000">referirse</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="ncms000">partido</token><token pos="vmg0000">utilizando</token><mention concept_ref="c_4"><token pos="da0mp0">los</token><token pos="ncmp000">términos</token></mention><token pos="sps00">de</token><token pos="fe">quot;</token><token pos="ncfs000">organización</token><token pos="aq0fs0">mafiosa</token><token pos="fe">quot;</token><token pos="cc">y</token><token pos="fe">quot;</token><token pos="ncfs000">organización</token><token pos="sps00">de</token><token pos="ncmp000">métodos</token><token pos="aq0cp0">gansteriles</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido">
+				<argument type="Individuals" dependent="los" /></frame>
+			<frame type="Appellations" head="presidente" />
+			<frame type="Committing_crime" head="delitos" />
+			<frame type="Leadership" head="alcalde">
+				<argument type="Governed" dependent="de Marbella acusa a los" /></frame>
+			<frame type="Leadership" head="dirigentes">
+				<argument type="Type" dependent="socialistas" />
+				<argument type="Governed" dependent="los delitos de" /></frame>
+			<frame type="Means" head="métodos">
+				<argument type="Descriptor" dependent="mafiosa" /></frame>
+			<frame type="Organization" head="organización">
+				<argument type="Purpose" dependent="de métodos gansteriles" /></frame>
+			<main_frame type="Using" head="utilizando">
+				<argument type="Instrument" dependent="los términos" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Gil también considera ofensivas las acusaciones de malversación de caudales públicos, prevaricación y cohecho que los socialistas hicieron contra los miembros del GIL.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Gil</token>
+		</theme>
+		<rheme concept_ref1="c_5">
+			<token pos="vmip3s0">considera</token><token pos="aq0fp0">ofensivas</token><mention concept_ref="c_5"><token pos="da0fp0">las</token><token pos="ncfp000">acusaciones</token></mention><token pos="sps00">de</token><token pos="ncfs000">malversación</token><token pos="sps00">de</token><token pos="ncmp000">caudales</token><token pos="aq0mp0">públicos</token><token pos="fc">,</token><token pos="ncfs000">prevaricación</token><token pos="cc">y</token><token pos="ncms000">cohecho</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="ofensivas">
+				<argument type="Assailant" dependent="GIL" />
+				<argument type="Weapon" dependent="las acusaciones de malversación de caudales públicos , prevaricación y cohecho que los socialistas hicieron contra los miembros" /></frame>
+			<main_frame type="Categorization" head="considera">
+				<argument type="Cognizer" dependent="GIL" />
+				<argument type="Item" dependent="ofensivas las acusaciones de malversación de caudales públicos , prevaricación y cohecho que los socialistas hicieron contra los miembros" /></main_frame>
+			<frame type="Judgment_communication" head="acusaciones">
+				<argument type="Reason" dependent="de caudales públicos" /></frame>
+			<frame type="Membership" head="miembros">
+				<argument type="Group" dependent="del GIL" /></frame>
+			<frame type="Money" head="los">
+				<argument type="Possessor" dependent="públicos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La querella, que se presentó ayer ante el Supremo por la condición de aforado del secretario general del PSOE, viene firmada por los cuatro alcaldes del GIL y sus 90 concejales.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">La</token><token pos="ncfs000">querella</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="p0000000">se</token><token pos="vmis3s0">presentó</token><token pos="rg">ayer</token><token pos="sps00">ante</token><token pos="da0ms0">el</token><token pos="np00000">Supremo</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">condición</token><token pos="sps00">de</token><token pos="aq0ms0">aforado</token><token pos="spcms">del</token><token pos="ncms000">secretario</token><token pos="aq0cs0">general</token><token pos="spcms">del</token><token pos="np00000">PSOE</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_6" concept_ref3="c_5">
+			<token pos="vmip3s0">viene</token><token pos="aq0fsp">firmada</token><token pos="sps00">por</token><token pos="da0mp0">los</token><token pos="dn0cp0">cuatro</token><token pos="ncmp000">alcaldes</token><token pos="spcms">del</token><token pos="np00000">GIL</token><token pos="cc">y</token><token pos="dp3cp0">sus</token><token pos="z">90</token><mention concept_ref="c_5"><token pos="ncmp000">concejales</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Causation" head="por los">
+				<argument type="Effect" dependent="que se presentó ayer ante el Supremo por la condición de aforado del" />
+				<argument type="Cause" dependent="la condición de aforado del secretario general" /></frame>
+			<frame type="Leadership" head="alcaldes">
+				<argument type="Descriptor" dependent="cuatro" />
+				<argument type="Governed" dependent="del GIL y sus 90 concejales" /></frame>
+			<frame type="Posture" head="ante">
+				<argument type="Agent" dependent="general del" />
+				<argument type="Location" dependent="condición" /></frame>
+			<frame type="Sign_agreement" head="firmada">
+				<argument type="Signatory" dependent="por los cuatro alcaldes del GIL y sus 90 concejales" /></frame>
+			<main_frame type="Submitting_documents" head="presentó">
+				<argument type="Documents" dependent="que" />
+				<argument type="Documents" dependent="ante el Supremo por" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

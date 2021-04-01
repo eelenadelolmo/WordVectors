@@ -1,0 +1,10 @@
+{   ('Avoiding', 'evitar'): [('Agent', 'Ceuta y de Melilla'), ('Undesirable_situation', 'especulación urbanística por parte del Grupo Independiente Liberal ( GIL ) , que gobierna en Ceuta')],
+    ('Being_in_control', 'control'): [('Manner', 'urbanístico'), ('Controlling_entity', 'las ciudades autónomas de Ceuta y de Melilla')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Cause_harm', 'tuerca'): [('Victim', 'al control urbanístico de las ciudades autónomas de Ceuta y de Melilla para')],
+    ('Giving', 'su'): [('Donor', 'Consejo de Ministros dio ayer'), ('Theme', 'otra'), ('Recipient', 'al control urbanístico de las ciudades autónomas de Ceuta y de Melilla para')],
+    ('Increment', 'otra'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'que gobierna'), ('Ground', 'Ceuta')],
+    ('Part_whole', 'parte'): [('Whole', 'su')],
+    ('Partitive', 'del'): [('Subset', 'las ciudades autónomas'), ('Group', 'Ceuta y de Melilla')],
+    ('Political_locales', 'ciudades'): [('Descriptor', 'autónomas'), ('Name', 'Ceuta y de Melilla')]}

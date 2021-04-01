@@ -1,0 +1,4 @@
+{   ('Foreign_or_domestic_country', 'ameno'): [],
+    ('Mental_property', 'astuto'): [('Behavior', 'hombre')],
+    ('People', 'hombre'): [('Descriptor', 'curioso')],
+    ('Social_interaction_evaluation', 'ameno'): []}

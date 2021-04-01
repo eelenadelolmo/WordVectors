@@ -1,0 +1,4 @@
+{   ('Agree_or_refuse_to_act', 'dejar'): [('Speaker', 'Wiranto'), ('Proposed_action', 'a dejar el cargo')],
+    ('Businesses', 'firme'): [],
+    ('Departing', 'dejar'): [('Path', 'el cargo')],
+    ('Posture', 'mantiene'): [('Agent', 'Wiranto'), ('Location', 'firme')]}

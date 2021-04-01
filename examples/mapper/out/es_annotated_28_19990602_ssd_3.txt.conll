@@ -1,0 +1,9 @@
+{   ('Direction', 'el sur del'): [('Independent_variable', 'del país')],
+    ('Emotion_directed', 'preocupación'): [('Experiencer', 'Nuestra')],
+    ('Increment', 'otras'): [('Class', 'zonas más seguras')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'otras zonas más seguras'), ('Ground', 'el sur del país')],
+    ('Locale', 'zonas'): [('Descriptor', 'seguras')],
+    ('Political_locales', 'país'): [],
+    ('Removing', 'evacuados'): [('Theme', 'están'), ('Goal', 'a otras zonas más seguras en el sur del país')],
+    ('Risky_situation', 'seguras'): [('Asset', 'los refugiados de Kukes'), ('Situation', ',')],
+    ('Statement', 'dijo'): [('Speaker', 'lo'), ('Message', ', por lo que están siendo evacuados a otras zonas más seguras en el sur del país')]}

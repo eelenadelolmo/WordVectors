@@ -1,0 +1,10 @@
+{   ('Body_parts', 'mano'): [('Possessor', 'él')],
+    ('Cause_to_start', 'emocionado'): [('Effect', 'Bardem')],
+    ('Education_teaching', 'un maestro'): [],
+    ('Giving', 'dar'): [   ('Donor', 'quien'),
+                           ('Theme', 'la mano y el premio a'),
+                           ('Recipient', 'a quien'),
+                           ('Purpose', 'para él es & quot ; un maestro y una escuela & quot ; , podía dar fe de su fugaz presencia')],
+    ('Locale_by_use', 'escuela'): [],
+    ('Possibility', 'podía'): [('Possible_event', 'un maestro y una escuela'), ('Possible_event', 'su fugaz presencia')],
+    ('Presence', 'presencia'): [('Entity', 'él'), ('Location', 'fugaz')]}

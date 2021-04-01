@@ -1,0 +1,57 @@
+1	Expedientada	expedientado	aq0fsp	aq0fsp	rep=no|t=no|r=no|m=yes|c=no	3	amod
+2	una	uno	di0fs0	di0fs0	rep=no|t=no|r=no|m=yes|c=no	3	det
+3	disco	disco	ncms000	ncms000	rep=no|t=no|r=no|m=yes|c=no	0	root
+4	de	de	sps00	sps00	rep=no|t=no|r=no|m=yes|c=no	3	prepn
+5	Sant	Sant	np0000l	np0000l	rep=no|t=no|r=no|m=yes|c=no	4	pobj
+6	Joan	Joan	np0000l	np0000l	rep=no|t=no|r=no|m=yes|c=no	5	appos
+7	por	por	sps00	sps00	rep=no|t=no|r=no|m=yes|c=no	3	prepn
+8	drogas	droga	ncfp000	ncfp000	rep=no|t=no|r=no|m=yes|c=no	7	pobj
+9	.	.	fp	fp	rep=no|t=no|r=no|m=no|c=no	3	punct
+
+1	Los	el	da0fs0	da0fs0	rep=no|t=yes|r=no|m=yes|c=no	2	det
+2	Mossos	Mossos	np0000l	np0000l	rep=no|t=yes|r=no|m=yes|c=no	4	nsubj
+3	d'Esquadra	d'Esquadra	np0000l	np0000l	rep=no|t=yes|r=no|m=yes|c=no	2	appos
+4	localizaron	localizar	vmis3p0	vmis3p0	rep=no|t=no|r=yes|m=yes|c=no	14	coord
+5	en	en	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	4	prepv
+6	el	el	da0ms0	da0ms0	rep=no|t=no|r=yes|m=yes|c=no	7	det
+7	local	local	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	5	pobj
+8	a	a	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	4	dobj
+9	10	10	z	z	rep=no|t=no|r=yes|m=yes|c=no	10	num
+10	menores	menor	aq0cp0	aq0cp0	rep=no|t=no|r=yes|m=yes|c=no	8	pobj
+11	que	que	pr0cn000	pr0cn000	rep=no|t=no|r=no|m=yes|c=no	12	nsubj
+12	consumían	consumir	vmii3p0	vmii3p0	rep=no|t=no|r=no|m=yes|c=no	10	rcmod
+13	alcohol	alcohol	ncms000	ncms000	rep=no|t=no|r=no|m=yes|c=no	12	dobj
+14	y	y	cc	cc	rep=no|t=no|r=no|m=yes|c=no	0	root
+15	en	en	sps00	sps00	rep=no|t=no|r=no|m=yes|c=no	18	prepv
+16	el	el	da0ms0	da0ms0	rep=no|t=no|r=no|m=yes|c=no	17	det
+17	suelo	suelo	ncms000	ncms000	rep=no|t=no|r=no|m=yes|c=no	15	pobj
+18	encontraron	encontrar	vmis3p0	vmis3p0	rep=no|t=no|r=no|m=yes|c=no	14	coord
+19	además	además	rg	rg	rep=no|t=no|r=no|m=yes|c=no	18	advmod
+20	hachís	hachís	ncmn000	ncmn000	rep=no|t=no|r=no|m=yes|c=yes	18	dobj
+21	y	y	cc	cc	rep=no|t=no|r=no|m=yes|c=no	18	coord_fixed
+22	tres	tres	dn0cp0	dn0cp0	rep=no|t=no|r=no|m=yes|c=no	23	det
+23	bolas	bola	ncfp000	ncfp000	rep=no|t=no|r=no|m=yes|c=yes	18	dobj
+24	de	de	sps00	sps00	rep=no|t=no|r=no|m=yes|c=no	23	prepn
+25	cocaína	cocaína	ncfs000	ncfs000	rep=no|t=no|r=no|m=yes|c=no	24	pobj
+26	.	.	fp	fp	rep=no|t=no|r=no|m=no|c=no	14	punct
+
+1	Este	este	dd0ms0	dd0ms0	rep=no|t=yes|r=no|m=yes|c=no	2	det
+2	local	local	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=yes	8	nsubj
+3	y	y	cc	cc	rep=no|t=yes|r=no|m=yes|c=no	8	coord_fixed
+4	un	uno	di0ms0	di0ms0	rep=no|t=yes|r=no|m=yes|c=no	5	det
+5	bar	bar	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=yes	8	nsubj
+6	de	de	sps00	sps00	rep=no|t=yes|r=no|m=yes|c=no	5	prepn
+7	Ripoll	Ripoll	np00000	np00000	rep=no|t=yes|r=no|m=yes|c=no	6	pobj
+8	tenían	tener	vmii3p0	vmii3p0	rep=no|t=no|r=yes|m=yes|c=no	0	root
+9	también	también	rg	rg	rep=no|t=no|r=yes|m=yes|c=no	10	advmod
+10	obstruidas	obstruido	aq0fpp	aq0fpp	rep=no|t=no|r=yes|m=yes|c=no	8	cpred
+11	las	el	da0fp0	da0fp0	rep=no|t=no|r=yes|m=yes|c=no	12	det
+12	salidas	salida	ncfp000	ncfp000	rep=no|t=no|r=yes|m=yes|c=no	8	dobj
+13	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	12	prepn
+14	emergencia	emergencia	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	13	pobj
+15	.	.	fp	fp	rep=no|t=no|r=no|m=no|c=no	8	punct
+
+1	A.P.	A.P.	np00000	np00000	rep=no|t=no|r=no|m=yes|c=no	0	root
+2	.	.	fp	fp	rep=no|t=no|r=no|m=no|c=no	1	punct
+
+

@@ -1,0 +1,11 @@
+{   ('Cardinal_numbers', 'dos'): [('Entity', 'líderes')],
+    ('Cardinal_numbers', 'tres'): [('Entity', 'líderes')],
+    ('Cardinal_numbers', 'uno'): [],
+    ('Cause_to_amalgamate', 'unido'): [('Parts', 'o')],
+    ('Emotion_directed', 'contentos'): [('Stimulus', 'les'), ('Experiencer', 'los que'), ('Stimulus', 'en la división interna')],
+    ('Judgment', 'respetaran'): [('Cognizer', 'les'), ('Evaluee', 'PP')],
+    ('Leadership', 'líderes'): [],
+    ('Level_of_force_exertion', 'fuerte'): [],
+    ('Non-commutative_process', 'división'): [],
+    ('Questioning', 'pidió'): [('Message', '; Respetamos a los que están contentos en la división interna , con uno , dos o tres líderes'), ('Addressee', 'les'), ('Message', 'respetaran al PP')],
+    ('Statement', 'afirmó'): [('Message', '; Respetamos a los que están contentos en la división interna , con uno , dos o tres líderes'), ('Speaker', 'los')]}

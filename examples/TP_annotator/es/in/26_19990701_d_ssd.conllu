@@ -1,0 +1,62 @@
+1	Deteriorar	deteriorar	vmn0000	vmn0000	rep=no|t=no|r=no|m=yes|c=no	3	dep
+2	un	uno	di0ms0	di0ms0	rep=no|t=no|r=no|m=yes|c=no	3	det
+3	barrio	barrio	ncms000	ncms000	rep=no|t=no|r=no|m=yes|c=no	0	root
+4	.	.	fp	fp	rep=no|t=no|r=no|m=no|c=no	3	punct
+
+1	Irán	ir	vmif3p0	vmif3p0	rep=no|t=no|r=no|m=yes|c=no	15	coord
+2	a	a	sps00	sps00	rep=no|t=no|r=no|m=yes|c=no	1	prepv
+3	los	el	da0mp0	da0mp0	rep=no|t=no|r=no|m=yes|c=no	4	det
+4	aparcamientos	aparcamiento	ncmp000	ncmp000	rep=no|t=no|r=no|m=yes|c=no	2	pobj
+5	,	,	fc	fc	rep=no|t=no|r=no|m=yes|c=no	1	punct
+6	al	al	spcms	spcms	rep=no|t=no|r=no|m=yes|c=no	1	prepv
+7	ser	ser	vsn0000	vsn0000	rep=no|t=no|r=no|m=yes|c=no	6	pobj
+8	de	de	sps00	sps00	rep=no|t=no|r=no|m=yes|c=no	7	prepv
+9	pago	pago	ncms000	ncms000	rep=no|t=no|r=no|m=yes|c=no	8	pobj
+10	;	;	fx	fx	rep=no|t=no|r=no|m=no|c=no	15	punct
+11	que	que	cs	cs	rep=no|t=no|r=no|m=yes|c=no	15	coord
+12	se	se	p0000000	p0000000	rep=no|t=no|r=no|m=yes|c=no	13	reflec
+13	escuchen	escuchar	vmsp3p0	vmsp3p0	rep=no|t=no|r=no|m=yes|c=no	11	cobj
+14	ruidos	ruido	ncmp000	ncmp000	rep=no|t=no|r=no|m=yes|c=no	13	nsubj
+15	;	;	fx	fx	rep=no|t=no|r=no|m=yes|c=no	0	root
+16	y	y	cc	cc	rep=no|t=no|r=no|m=yes|c=no	15	coord_fixed
+17	algún	alguno	di0ms0	di0ms0	rep=no|t=no|r=no|m=yes|c=no	18	det
+18	caco	caco	ncms000	ncms000	rep=no|t=no|r=no|m=yes|c=yes	15	coord
+19	como	como	cs	cs	rep=no|t=no|r=no|m=yes|c=no	18	dep
+20	símbolo	símbolo	ncms000	ncms000	rep=no|t=no|r=no|m=yes|c=no	19	cobj
+21	del	del	spcms	spcms	rep=no|t=no|r=no|m=yes|c=no	20	prepn
+22	posible	posible	aq0cs0	aq0cs0	rep=no|t=no|r=no|m=yes|c=no	23	amod
+23	aumento	aumento	ncms000	ncms000	rep=no|t=no|r=no|m=yes|c=no	21	pobj
+24	de	de	sps00	sps00	rep=no|t=no|r=no|m=yes|c=no	23	prepn
+25	la	el	da0fs0	da0fs0	rep=no|t=no|r=no|m=yes|c=no	26	det
+26	inseguridad	inseguridad	ncfs000	ncfs000	rep=no|t=no|r=no|m=yes|c=no	24	pobj
+27	ciudadana	ciudadano	aq0fs0	aq0fs0	rep=no|t=no|r=no|m=yes|c=no	26	amod
+28	.	.	fp	fp	rep=no|t=no|r=no|m=no|c=no	15	punct
+
+1	Comprobará	comprobar	vmif3s0	vmif3s0	rep=no|t=no|r=no|m=yes|c=no	0	root
+2	que	que	cs	cs	rep=no|t=no|r=no|m=yes|c=no	1	dobj
+3	el	el	da0ms0	da0ms0	rep=no|t=yes|r=no|m=yes|c=no	4	det
+4	proyecto	proyecto	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=no	5	nsubj
+5	traerá	traer	vmif3s0	vmif3s0	rep=no|t=no|r=yes|m=yes|c=no	2	cobj
+6	problemas	problema	ncmp000	ncmp000	rep=no|t=no|r=yes|m=yes|c=no	5	dobj
+7	al	al	spcms	spcms	rep=no|t=no|r=yes|m=yes|c=no	5	prepv
+8	barrio	barrio	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	7	pobj
+9	.	.	fp	fp	rep=no|t=no|r=no|m=no|c=no	1	punct
+
+1	Todo	todo	pi0ms000	pi0ms000	rep=no|t=no|r=no|m=yes|c=no	8	dobj
+2	,	,	fc	fc	rep=no|t=no|r=no|m=yes|c=no	1	punct
+3	por	por	sps00	sps00	rep=no|t=no|r=no|m=yes|c=no	1	prepn
+4	dinamizar	dinamizar	vmn0000	vmn0000	rep=no|t=no|r=no|m=yes|c=no	3	pobj
+5	el	el	da0ms0	da0ms0	rep=no|t=no|r=no|m=yes|c=no	6	det
+6	barrio	barrio	ncms000	ncms000	rep=no|t=no|r=no|m=yes|c=no	4	dobj
+7	,	,	fc	fc	rep=no|t=no|r=no|m=yes|c=no	1	punct
+8	dicen	decir	vmip3p0	vmip3p0	rep=no|t=no|r=no|m=yes|c=no	0	root
+9	los	el	da0mp0	da0mp0	rep=no|t=no|r=no|m=no|c=no	13	det
+10	que	que	pr0cn000	pr0cn000	rep=no|t=no|r=no|m=no|c=no	12	nsubj
+11	lo	él	pp3msa00	pp3msa00	rep=no|t=no|r=no|m=no|c=no	13	dobj
+12	han	haber	vaip3p0	vaip3p0	rep=no|t=no|r=no|m=no|c=no	8	rcmod
+13	admitido	admitir	vmp00sm	vmp00sm	rep=no|t=no|r=no|m=no|c=no	12	vobj
+14	a	a	sps00	sps00	rep=no|t=no|r=no|m=no|c=no	13	prepv
+15	trámite	trámite	ncms000	ncms000	rep=no|t=no|r=no|m=no|c=no	14	pobj
+16	.	.	fp	fp	rep=no|t=no|r=no|m=no|c=no	8	punct
+
+

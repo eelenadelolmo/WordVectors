@@ -1,0 +1,13 @@
+{   ('Attempt', 'se'): [('Goal', 'llenar el depósito de su Volvo S40 en una gasolinera de Malmoe , al')],
+    ('Calendric_unit', 'Hoy'): [('Trajector_event', 'se paga a 9,15 coronas el litro ( 174 pesetas ) y & quot ; menos mal que ha bajado & quot ; ,')],
+    ('Change_position_on_a_scale', 'bajado'): [('Correlated_variable', 'Hoy se paga a 9,15 coronas el litro ( 174 pesetas ) y & quot ; menos mal que ha'), ('Manner', 'bajado'), ('Item', 'ha')],
+    ('Commerce_pay', 'país'): [('Buyer', 'se'), ('Goods', '9,15 coronas el litro ( 174 pesetas ) y & quot ; menos mal que ha bajado & quot ; , dice con')],
+    ('Containers', 'depósito'): [('Relative_location', 'de su Volvo S40')],
+    ('Desirability', 'mal'): [],
+    ('Direction', 'al sur del'): [('Independent_variable', 'del país')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'una gasolinera'), ('Ground', 'Malmoe')],
+    ('Motion', 'bajado'): [('Theme', 'se'), ('Goal', 'bajado')],
+    ('Political_locales', 'país'): [],
+    ('Statement', 'dice'): [   ('Message', 'Hoy se paga a 9,15 coronas el litro ( 174 pesetas ) y & quot ; menos mal que ha bajado'),
+                               ('Message', 'con resignación un conductor sueco mientras trata de llenar el depósito de su Volvo S40 en una gasolinera de Malmoe , al sur del país')],
+    ('Substance', 'gasolinera'): []}

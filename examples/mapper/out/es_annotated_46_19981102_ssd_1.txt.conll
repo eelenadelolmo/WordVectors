@@ -1,0 +1,4 @@
+{   ('Activity_finish', 'completó'): [('Activity', 'traspaso de competencias')],
+    ('Electricity', 'competencias'): [],
+    ('Take_place_of', 'traspaso'): [('Old', 'la Guardia Civil de Tráfico')],
+    ('Transfer', 'traspaso de'): [('Theme', 'competencias')]}

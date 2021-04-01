@@ -1,0 +1,12 @@
+{   ('Awareness', 'entendimiento'): [],
+    ('Departing', 'dejar'): [   ('Time', 'Conscientes de que no había posibilidad de entendimiento'),
+                                ('Theme', 'Aznar e Ibarretxe'),
+                                ('Path', 'el debate'),
+                                ('Goal', 'el diálogo con EH para mejor ocasión')],
+    ('Discussion', 'debate'): [('Interlocutor_1', 'Aznar e Ibarretxe')],
+    ('Likelihood', 'posibilidad'): [('Hypothetical_event', 'de entendimiento')],
+    ('Locative_relation', 'había'): [   ('Figure', 'Conscientes de que'),
+                                        ('Ground', 'había'),
+                                        ('Figure', 'que no había posibilidad de entendimiento , Aznar e Ibarretxe acordaron dejar el debate sobre el diálogo con')],
+    ('Make_agreement_on_action', 'con'): [('Party_1', 'Aznar e Ibarretxe'), ('Obligation', 'dejar el debate sobre el diálogo con EH para mejor ocasión')],
+    ('Required_event', 'mejor'): [('Required_situation', 'ocasión')]}

@@ -1,0 +1,4 @@
+{   ('Body_parts', 'cabeza'): [('Possessor', 'sus')],
+    ('Body_parts', 'cuerpos'): [('Possessor', 'sus')],
+    ('Earnings_and_losses', 'perdido'): [('Earner', 'les'), ('Earnings', 'parte de sus cuerpos')],
+    ('Proportional_quantity', 'les'): [('Mass', 'de sus cuerpos')]}

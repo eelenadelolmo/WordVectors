@@ -1,0 +1,7 @@
+{   ('Appellations', 'presidente'): [('Type', 'de')],
+    ('Finish_competition', 'ganar'): [],
+    ('Getting', 'ganar'): [('Theme', 'la nominación del Partido Republicano')],
+    ('Increment', 'otros'): [],
+    ('Kinship', 'los'): [('Alter', 'de')],
+    ('Needing', 'necesarios'): [('Degree', '1.034'), ('Dependent', 'para ganar la nominación del Partido Republicano')],
+    ('Time_vector', 'del ex'): [('Event', 'presidente')]}

@@ -1,0 +1,7 @@
+{   ('Cause_change_of_position_on_a_scale', 'reducir'): [('Attribute', 'presencia en suelo kosovar de una fuerza militar serbia hasta los 11.000 o 12.000 hombres')],
+    ('Coming_up_with', 'formulado'): [],
+    ('Inclusion', 'incluye'): [('Total', 'El plan formulado por Milosevic'), ('Part', 'reducir la presencia en suelo kosovar de una fuerza militar serbia hasta los 11.000 o 12.000 hombres')],
+    ('Military', 'fuerza'): [('Domain', 'militar serbia'), ('Goal', '11.000 o 12.000 hombres')],
+    ('Military', 'militar'): [],
+    ('Presence', 'presencia'): [('Location', 'en suelo kosovar de una fuerza militar serbia hasta los 11.000 o 12.000 hombres')],
+    ('Purpose', 'plan'): []}

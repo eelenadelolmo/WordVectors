@@ -1,0 +1,10 @@
+{   ('Categorization', 'considerar'): [('Item', 'lo')],
+    ('Damaging', 'daños'): [],
+    ('Expectation', 'indicios'): [('Cognizer', 'lo'), ('Phenomenon', ',')],
+    ('Identicality', 'la misma'): [('Type', 'fuente')],
+    ('Intentionally_act', 'actuar'): [],
+    ('Locative_relation', 'hubo'): [('Figure', 'lo'), ('Ground', 'hubo indicios & quot ; de estafa & quot ; y actuar incluso por la vía penal , manifestó la misma fuente')],
+    ('Manufacturing', 'se'): [('Product', 'por lo que se podría considerar que hubo indicios & quot ; de estafa & quot ; y actuar')],
+    ('Sign', 'quot'): [('Indicated', 'indicios & quot ; de estafa & quot ; y actuar')],
+    ('Source_of_getting', 'fuente'): [],
+    ('Statement', 'quot'): [('Message', 'por lo que se podría considerar que hubo indicios & quot ; de estafa & quot ; y actuar incluso por la vía penal'), ('Message', 'la misma fuente')]}

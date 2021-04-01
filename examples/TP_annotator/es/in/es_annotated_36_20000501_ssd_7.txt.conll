@@ -1,0 +1,5 @@
+{   ('Cardinal_numbers', 'un'): [],
+    ('Desiring', 'quiere'): [('Experiencer', 'quien'), ('Event', 'gobernar')],
+    ('Leadership', 'gobernar'): [('Leader', 'quien')],
+    ('Make_agreement_on_action', 'un acuerdo'): [('Manner', 'estable')],
+    ('Needing', 'precisa'): [('Cognizer', 'quien'), ('Requirement', 'un acuerdo estable')]}

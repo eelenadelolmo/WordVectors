@@ -1,0 +1,4 @@
+{   ('Age', 'nueva'): [('Entity', 'filosofía')],
+    ('Medical_conditions', 'gripe'): [],
+    ('Operational_testing', 'prueba'): [('Product', 'esta nueva filosofía')],
+    ('Shoot_projectiles', 'iniciada'): [('Manner', 'oficialmente'), ('Time', 'día 30')]}

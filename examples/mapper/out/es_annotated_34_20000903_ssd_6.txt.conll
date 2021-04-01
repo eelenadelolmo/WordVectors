@@ -1,0 +1,13 @@
+{   ('Attack', 'atentados'): [],
+    ('Calendric_unit', 'agosto'): [],
+    ('Calendric_unit', 'verano'): [('Count', 'el'), ('Count', 'este')],
+    ('Cardinal_numbers', 'siete'): [('Unit', 'muertos')],
+    ('Cause_harm', 'heridos'): [('Degree', '20')],
+    ('Dead_or_alive', 'muertos'): [('Degree', 'siete')],
+    ('Intentionally_act', 'acción'): [('Domain', 'policial')],
+    ('Interior_profile_relation', 'entre'): [('Ground', 'julio')],
+    ('Law_enforcement_agency', 'policial'): [],
+    ('Likelihood', 'ha'): [('Hypothetical_event', 'acción policial')],
+    ('Predicting', 'previsiones'): [],
+    ('Quantified_mass', 'varios'): [('Individuals', 'atentados')],
+    ('Verification', 'confirmado'): [('Inspector', 'el'), ('Unconfirmed_content', 'este verano las más macabras previsiones')]}

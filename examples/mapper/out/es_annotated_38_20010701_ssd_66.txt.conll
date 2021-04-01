@@ -1,0 +1,8 @@
+{   ('Becoming', 'se hizo'): [('Entity', 'y'), ('Final_category', 'famoso por servir durante tres años la mejor hamburguesa de Londres')],
+    ('Calendric_unit', 'años'): [('Count', 'tres')],
+    ('Cardinal_numbers', 'tres'): [('Unit', 'años')],
+    ('Direction', 'se'): [('Landmark', 'ese establecimiento')],
+    ('Fame', 'famoso'): [],
+    ('Intentionally_create', 'establecimiento'): [],
+    ('Placing', 'Monté'): [('Agent', 'y'), ('Goal', 'establecimiento y se hizo muy famoso por servir durante tres años la mejor hamburguesa de Londres')],
+    ('Required_event', 'mejor'): [('Required_situation', 'hamburguesa')]}

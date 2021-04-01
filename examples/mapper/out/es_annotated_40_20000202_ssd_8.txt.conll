@@ -1,0 +1,7 @@
+{   ('Activity_prepare', 'preparado'): [('Agent', 'Bush'), ('Activity', 'para ello')],
+    ('Arriving', 'acercan'): [('Source', 'sus fondos electorales'), ('Goal', 'los 11.000 millones de pesetas')],
+    ('Buildings', 'Casa'): [],
+    ('Cardinal_numbers', 'millones'): [('Precision', 'siete'), ('Unit', 'pesetas')],
+    ('Cardinal_numbers', 'siete'): [('Unit', 'Casa Blanca')],
+    ('Color', 'Blanca'): [('Entity', 'Casa')],
+    ('Money', 'fondos'): [('Inherent_purpose', 'electorales')]}

@@ -1,0 +1,4 @@
+{   ('Difficulty', 'imposibles'): [('Activity', 'Sus puntas'), ('Activity', 'nada en Clovis que no esté en')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'No hay nada'), ('Ground', 'Clovis')],
+    ('Locative_relation', 'hay'): [('Figure', 'de'), ('Ground', 'nada')],
+    ('Statement', 'dice'): [('Message', 'quot ; Sus puntas de lanza son imposibles de'), ('Speaker', 'Stanford')]}

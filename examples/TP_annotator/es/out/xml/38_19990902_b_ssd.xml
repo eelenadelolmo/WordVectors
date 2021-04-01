@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="38_19990902_b_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Aberchan</concept>
+		<concept id="c_1">El presidente de Melilla , que ayer formalizó el pacto con el PIM de Enrique Palacios ,</concept>
+		<concept id="c_2">Los populares y los localistas de UPM</concept>
+		<concept id="c_3">su Gobierno</concept>
+		<concept id="c_4">PP y al</concept>
+		<concept id="c_5">ahora</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Aberchan invita al PP y al PSOE a sumarse a su Gobierno.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Aberchan</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_4">
+			<token pos="vmip3s0">invita</token><token pos="spcms">al</token><mention concept_ref="c_4"><token pos="np00000">PP</token><token pos="cc">y</token><token pos="spcms">al</token></mention><token pos="np00000">PSOE</token><token pos="sps00">a</token><token pos="vmn0000">sumarse</token><token pos="sps00">a</token><mention concept_ref="c_3"><token pos="dp3cs0">su</token><token pos="np00000">Gobierno</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Becoming_a_member" head="invita">
+				<argument type="Group" dependent="su Gobierno" /></main_frame>
+			<main_frame type="Request" head="invita">
+				<argument type="Addressee" dependent="PP y al" />
+				<argument type="Message" dependent="sumarse a su Gobierno" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El presidente de Melilla, que ayer formalizó el pacto con el PIM de Enrique Palacios, apeló a la responsabilidad de populares y socialistas, y destacó que la incorporación de éstos a su Gobierno supondría un hecho histórico en la democracia española "porque sería la primera vez que las dos fuerzas se unirían en un Ejecutivo autonómico".
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">presidente</token><token pos="sps00">de</token><token pos="np00000">Melilla</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="rg">ayer</token><token pos="vmis3s0">formalizó</token><token pos="da0ms0">el</token><token pos="ncms000">pacto</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="np00000">PIM</token><token pos="sps00">de</token><token pos="ncfs000">Enrique</token><token pos="nc00000">Palacios</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_2">
+			<token pos="vmis3s0">apeló</token><token pos="sps00">a</token><mention concept_ref="c_2"><token pos="da0fs0">la</token><token pos="ncfs000">responsabilidad</token></mention><token pos="sps00">de</token><token pos="aq0cp0">populares</token><token pos="cc">y</token><token pos="aq0cp0">socialistas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="Melilla" /></frame>
+			<frame type="Becoming_a_member" head="incorporación">
+				<argument type="New_member" dependent="las dos fuerzas" />
+				<argument type="Group" dependent="un Ejecutivo autonómico" /></frame>
+			<frame type="Being_obligated" head="responsabilidad">
+				<argument type="Duty" dependent="responsabilidad de populares y socialistas" /></frame>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="fuerzas" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Cause" dependent="un hecho histórico en la democracia española" />
+				<argument type="Cause" dependent="sería la primera vez que las dos fuerzas se unirían en un Ejecutivo autonómico" /></frame>
+			<frame type="Desirability" head="populares">
+				<argument type="Evaluee" dependent="socialistas" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="un hecho histórico" />
+				<argument type="Ground" dependent="democracia española" /></frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Governed" dependent="su" /></frame>
+			<frame type="Military" head="fuerzas" />
+			<frame type="Ordinal_numbers" head="primera" />
+			<frame type="Request" head="destacó">
+				<argument type="Speaker" dependent="presidente de Melilla , que ayer formalizó el pacto con el PIM de Enrique Palacios ," />
+				<argument type="Message" dependent="a la responsabilidad de populares y socialistas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los populares y los localistas de UPM han declinado, por ahora, la oferta del presidente, mientras que el PSOE está a la espera de que estos dos partidos se sumen al Gobierno.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0mp0">Los</token><token pos="aq0cp0">populares</token><token pos="cc">y</token><token pos="da0mp0">los</token><token pos="nccp000">localistas</token><token pos="sps00">de</token><token pos="np00000">UPM</token>
+		</theme>
+		<rheme concept_ref1="c_5">
+			<token pos="vaip3p0">han</token><token pos="vmp00sm">declinado</token><token pos="fc">,</token><token pos="sps00">por</token><mention concept_ref="c_5"><token pos="rg">ahora</token></mention><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="ncfs000">oferta</token><token pos="spcms">del</token><token pos="ncms000">presidente</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partidos" />
+			<frame type="Appellations" head="presidente" />
+			<frame type="Becoming_a_member" head="se">
+				<argument type="New_member" dependent="estos dos partidos se" />
+				<argument type="Group" dependent="Gobierno" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="partidos" /></frame>
+			<main_frame type="Change_position_on_a_scale" head="han declinado">
+				<argument type="Item" dependent="populares y los" />
+				<argument type="Time" dependent="ahora" />
+				<argument type="Item" dependent=", la oferta del presidente , mientras que el PSOE está a la espera de que estos dos partidos se sumen al Gobierno" /></main_frame>
+			<frame type="Concessive" head="mientras">
+				<argument type="Main_assertion" dependent="populares y los localistas de UPM han declinado , por ahora , la oferta del presidente" />
+				<argument type="Main_assertion" dependent="está a la espera de que estos dos partidos se sumen al Gobierno" /></frame>
+			<frame type="Desirability" head="populares">
+				<argument type="Evaluee" dependent="del" /></frame>
+			<frame type="Leadership" head="Gobierno" />
+			<frame type="Temporal_collocation" head="ahora">
+				<argument type="Trajector_event" dependent="populares y los" /></frame>
+			<frame type="Waiting" head="espera">
+				<argument type="Protagonist" dependent="el" />
+				<argument type="Salient_entity" dependent="estos dos partidos se sumen al Gobierno" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

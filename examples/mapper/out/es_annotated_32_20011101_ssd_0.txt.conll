@@ -1,0 +1,13 @@
+{   ('Age', 'Nueva'): [('Entity', 'York')],
+    ('Appellations', 'presidente'): [('Type', 'George Bush')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Difficulty', 'desafío'): [],
+    ('Evaluative_comparison', 'entre'): [('Profiled_attribute', 'la Serie Mundial de béisbol'), ('Standard_attribute', 'entre los Yankees de Nueva York')],
+    ('Interior_profile_relation', 'entre'): [('Figure', 'tercer partido de la Serie Mundial de béisbol entre'), ('Ground', 'Nueva York')],
+    ('Locative_relation', 'en'): [('Figure', 'Nueva York y los Diamonds Backs de'), ('Ground', 'el Yankee Stadium'), ('Time', 'de Nueva York')],
+    ('Ordinal_numbers', 'tercer'): [('Type', 'Mundial')],
+    ('Risky_situation', 'amenaza'): [('Situation', 'terrorista')],
+    ('Shoot_projectiles', 'lanzó'): [   ('Projectile', 'presidente George Bush'),
+                                        ('Time', 'ayer'),
+                                        ('Projectile', 'un desafío a la amenaza terrorista al asistir al tercer partido de la Serie Mundial de béisbol entre los Yankees de Nueva York y')],
+    ('Terrorism', 'terrorista'): []}

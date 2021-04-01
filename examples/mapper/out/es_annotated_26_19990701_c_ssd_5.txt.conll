@@ -1,0 +1,10 @@
+{   ('Being_necessary', 'necesario'): [('Requirement', 'son')],
+    ('Calendric_unit', 'fin de semana'): [],
+    ('Categorization', 'categorías'): [],
+    ('Fields', 'sector'): [],
+    ('Intentionally_create', 'establecimientos'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'un chanchullo para rentabilizar propiedades de fin de semana'), ('Ground', 'que los dueños no son profesionales del sector')],
+    ('Opinion', 'Creo'): [('Cognizer', 'y'), ('Opinion', 'necesario regular el sector , catalogando los establecimientos por categorías y que no sea un')],
+    ('People_by_vocation', 'profesionales'): [('Person', 'los dueños'), ('Employer', 'del sector')],
+    ('Possession', 'dueños'): [],
+    ('Possession', 'propiedades'): [('Depictive', 'fin de semana')]}

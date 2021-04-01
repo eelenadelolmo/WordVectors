@@ -1,0 +1,5 @@
+{   ('Businesses', 'operaciones'): [('Product', 'militares')],
+    ('Calendric_unit', 'meses'): [('Count', 'tres')],
+    ('Cardinal_numbers', 'tres'): [('Unit', 'meses')],
+    ('Process_continue', 'se'): [('Event', 'operaciones militares'), ('Event', '; entre uno y tres meses & quot ; , dijo')],
+    ('Statement', 'dijo'): [('Message', 'se')]}

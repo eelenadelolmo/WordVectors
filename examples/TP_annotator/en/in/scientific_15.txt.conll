@@ -1,0 +1,39 @@
+1	however	_	However	_	RB	0	_	_	_	_	_	_	_	O
+2	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+3	progress	_	progress	_	NN	0	_	_	_	_	_	progress.n	Progression	O
+4	in	_	in	_	IN	0	_	_	_	_	_	_	_	O
+5	identifying	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+6	the	_	the	_	DT	0	_	_	_	_	_	_	_	O
+7	relevant	_	relevant	_	NN	0	_	_	_	_	_	_	_	O
+8	loci	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+9	has	_	have	_	VBZ	0	_	_	_	_	_	_	_	O
+10	been	_	be	_	VBN	0	_	_	_	_	_	_	_	O
+11	slow	_	slow	_	JJ	0	_	_	_	_	_	_	_	O
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	however	_	However	_	RB	0	_	_	_	_	_	_	_	O
+2	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+3	progress	_	progress	_	NN	0	_	_	_	_	_	_	_	O
+4	in	_	in	_	IN	0	_	_	_	_	_	_	_	O
+5	identifying	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+6	the	_	the	_	DT	0	_	_	_	_	_	_	_	O
+7	relevant	_	relevant	_	NN	0	_	_	_	_	_	relevant.a	Being_relevant	O
+8	loci	_	UNK	_	NN	0	_	_	_	_	_	_	_	S-Phenomenon
+9	has	_	have	_	VBZ	0	_	_	_	_	_	_	_	O
+10	been	_	be	_	VBN	0	_	_	_	_	_	_	_	O
+11	slow	_	slow	_	JJ	0	_	_	_	_	_	_	_	O
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	however	_	However	_	RB	0	_	_	_	_	_	_	_	O
+2	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+3	progress	_	progress	_	NN	0	_	_	_	_	_	_	_	B-Activity
+4	in	_	in	_	IN	0	_	_	_	_	_	_	_	I-Activity
+5	identifying	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Activity
+6	the	_	the	_	DT	0	_	_	_	_	_	_	_	I-Activity
+7	relevant	_	relevant	_	NN	0	_	_	_	_	_	_	_	I-Activity
+8	loci	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Activity
+9	has	_	have	_	VBZ	0	_	_	_	_	_	_	_	O
+10	been	_	be	_	VBN	0	_	_	_	_	_	_	_	O
+11	slow	_	slow	_	JJ	0	_	_	_	_	_	slow.a	Taking_time	O
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

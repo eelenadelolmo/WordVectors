@@ -1,0 +1,11 @@
+{   ('Appellations', 'presidente'): [('Type', 'Bill')],
+    ('Calendric_unit', 'anoche'): [('Relative_time', 'el')],
+    ('Calendric_unit', 'hoy'): [('Whole', 'Bill')],
+    ('Discussion', 'reunirse'): [('Interlocutor_2', 'con el presidente estadounidense , Bill')],
+    ('Likelihood', 'probablemente'): [('Hypothetical_event', 'quien'), ('Hypothetical_event', 'le presente algunas modificaciones en su propuesta de paz')],
+    ('Manufacturing', 'su'): [('Producer', 'quien'), ('Product', 'algunas modificaciones')],
+    ('Proportional_quantity', 'algunas'): [('Individuals', 'modificaciones')],
+    ('Purpose', 'intención'): [],
+    ('Statement', 'propuesta de'): [('Speaker', 'su'), ('Message', 'paz')],
+    ('Travel', 'viajar'): [('Goal', 'a Washington'), ('Time', 'anoche')],
+    ('Undergo_change', 'modificaciones'): [('Final_situation', 'su propuesta de paz')]}

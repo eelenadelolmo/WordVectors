@@ -1,0 +1,7 @@
+{   ('Arriving', 'llegar'): [('Place', 'a Madrid')],
+    ('Arriving', 'visita'): [('Theme', 'información')],
+    ('Calendric_unit', 'minutos'): [],
+    ('Expectation', 'expectativa'): [('Cognizer', 'de')],
+    ('Information', 'información'): [],
+    ('Relative_time', 'después de'): [('Focal_occasion', 'afirmó Insulza minutos'), ('Landmark_occasion', 'de llegar a Madrid')],
+    ('Statement', 'afirmó'): [('Speaker', 'Insulza'), ('Time', 'minutos después de llegar'), ('Speaker', 'a Madrid')]}

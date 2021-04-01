@@ -1,0 +1,6 @@
+{   ('Activity_ongoing', 'se mantenga'): [('Activity', 'el diálogo entre el PSE e Ibarretxe')],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'dos partes')],
+    ('Categorization', 'consideró'): [('Item', 'El líder de los socialistas'), ('Item', '; positivo & quot ; que se mantenga el diálogo entre el PSE e Ibarretxe , pese a que reconoció que las dos')],
+    ('Communication_response', 'reconoció'): [('Speaker', 'sus'), ('Trigger', 'que las dos partes & quot ; se encuentran en sus respectivas posiciones')],
+    ('Leadership', 'líder'): [('Governed', 'de los socialistas vascos')],
+    ('Part_orientational', 'dos partes'): []}

@@ -1,0 +1,7 @@
+{   ('Aggregate', 'asambleas'): [],
+    ('Calendric_unit', 'ayer'): [],
+    ('Calendric_unit', 'martes'): [('Relative_time', 'próximo')],
+    ('First_rank', 'primarias'): [],
+    ('Leadership', 'estados'): [],
+    ('Manipulation', 'hasta'): [('Agent', '16 estados'), ('Entity', 'primarias')],
+    ('Receiving', 'recibirán'): [('Recipient', 'ni Bush ni'), ('Theme', 'el impulso definitivo'), ('Time', 'hacia la nominación hasta el próximo martes')]}

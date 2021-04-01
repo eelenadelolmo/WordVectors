@@ -1,0 +1,12 @@
+{   ('Appellations', 'presidente'): [('Name', 'chileno'), ('Type', 'Frei')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Concessive', 'pesar de'): [('Main_assertion', 'diferencias que separan a los chilenos , hemos dado nuestra solución a la tensión , siempre presente en los periodos de transición ,')],
+    ('Frequency', 'periodos'): [],
+    ('Frequency', 'siempre'): [('Event', 'nuestra solución a la tensión'), ('Event', 'presente en los periodos de transición')],
+    ('Giving', 'dado'): [('Donor', 'hemos'), ('Theme', 'nuestra solución'), ('Purpose', 'a la tensión')],
+    ('Interior_profile_relation', 'entre'): [('Figure', 'a la tensión , siempre presente en los periodos de transición'), ('Ground', 'necesidad de justicia y la necesidad de reconciliación')],
+    ('Needing', 'necesidad de'): [('Dependent', 'de reconciliación')],
+    ('Non-commutative_statement', 'diferencias'): [],
+    ('Statement', 'dijo'): [   ('Speaker', 'El presidente chileno , Eduardo Frei'),
+                               ('Message', ', dijo ayer : & quot ; A pesar de las diferencias que separan a los chilenos , hemos dado nuestra solución a la tensión , siempre presente en')],
+    ('Undergo_change', 'transición'): [('Attribute', 'periodos')]}

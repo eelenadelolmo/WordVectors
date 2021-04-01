@@ -1,0 +1,7 @@
+{   ('Attack', 'ataque'): [('Weapon', 'granadas'), ('Victim', 'Parlamento provincial de')],
+    ('Calendric_unit', 'invierno'): [],
+    ('Calendric_unit', 'meses'): [('Relative_time', 'invierno')],
+    ('Closure', 'cerrado'): [('Container_portal', 'que'), ('Time', 'durante los meses de invierno')],
+    ('Intentionally_act', 'acción'): [],
+    ('People_by_religion', 'musulmanes'): [],
+    ('Spatial_contact', 'en'): [('Figure', 'un ataque con granadas'), ('Ground', 'el Parlamento provincial de')]}

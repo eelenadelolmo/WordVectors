@@ -1,0 +1,6 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Causation', 'por los'): [('Effect', 'que se presentó ayer ante el Supremo por la condición de aforado del'), ('Cause', 'la condición de aforado del secretario general')],
+    ('Leadership', 'alcaldes'): [('Descriptor', 'cuatro'), ('Governed', 'del GIL y sus 90 concejales')],
+    ('Posture', 'ante'): [('Agent', 'general del'), ('Location', 'condición')],
+    ('Sign_agreement', 'firmada'): [('Signatory', 'por los cuatro alcaldes del GIL y sus 90 concejales')],
+    ('Submitting_documents', 'presentó'): [('Documents', 'que'), ('Documents', 'ante el Supremo por')]}

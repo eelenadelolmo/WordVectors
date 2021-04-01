@@ -1,0 +1,4 @@
+{   ('Accomplishment', 'alcanza'): [('Goal', 'progreso'), ('Time', 'en un solo día')],
+    ('Calendric_unit', 'día'): [('Relative_time', 'un solo')],
+    ('Progression', 'progreso'): [],
+    ('Sole_instance', 'un solo'): [('Type', 'día')]}

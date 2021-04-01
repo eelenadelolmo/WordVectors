@@ -1,0 +1,7 @@
+{   ('Criminal_investigation', 'investigación'): [('Investigator', 'comité judicial')],
+    ('Increment', 'otros'): [('Class', 'cargos')],
+    ('Reasoning', 'quot'): [   ('Arguer', 'Conyers'),
+                               ('Content', 'otros cargos para fortalecer el proceso contra Lewinsky lo que hace es & quot ; desacreditar & quot ; la investigación del comité judicial')],
+    ('Seeking_to_achieve', 'buscar'): [   (   'State_of_affairs',
+                                              'otros cargos para fortalecer el proceso contra Lewinsky lo que hace es & quot ; desacreditar & quot ; la investigación del comité judicial')],
+    ('Trial', 'judicial'): [('Defendant', 'contra Lewinsky')]}

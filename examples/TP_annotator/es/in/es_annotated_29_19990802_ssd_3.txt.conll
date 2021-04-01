@@ -1,0 +1,5 @@
+{   ('Cardinal_numbers', 'dos'): [('Entity', 'otras')],
+    ('Death', 'murieron'): [('Place', 'otras dos personas')],
+    ('Experience_bodily_harm', 'heridas'): [('Body_part', 'otras dos personas')],
+    ('Medical_conditions', 'choque'): [],
+    ('Resolve_problem', 'resultaron'): [('Problem', 'choque'), ('Problem', 'del choque murieron dos')]}

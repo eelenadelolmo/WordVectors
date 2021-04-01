@@ -1,0 +1,6 @@
+{   ('Being_born', 'nacer de'): [('Child', 'y')],
+    ('Cause_harm', 'stone'): [],
+    ('Locale_by_use', 'museo'): [],
+    ('Obviousness', 'quede claro'): [('Phenomenon', 'es')],
+    ('People_by_vocation', 'investigador'): [],
+    ('Possession', 'ser'): [('Owner', 'y'), ('Possession', 'sido un stone')]}

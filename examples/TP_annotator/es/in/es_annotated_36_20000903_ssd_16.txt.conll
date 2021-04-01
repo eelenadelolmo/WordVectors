@@ -1,0 +1,7 @@
+{   ('Age', 'nueva'): [('Entity', 'cultura')],
+    ('Body_parts', 'frente'): [('Body_part', 'frente')],
+    ('Cause_change_of_position_on_a_scale', 'ocupar'): [('Item', 'pluralismo frente al uniformismo y el aperturismo frente al')],
+    ('Desiring', 'quiere'): [('Experiencer', 'PP'), ('Event', 'ocupar este mismo espacio impulsando una nueva cultura que sustituya la reivindicación por la corresponsabilidad y la eficacia ,')],
+    ('Identicality', 'mismo'): [('Type', 'espacio')],
+    ('Request', 'quiere'): [('Message', 'eficacia , que impulse el pluralismo frente al uniformismo y el aperturismo frente al')],
+    ('Take_place_of', 'ocupar'): [('New', 'una nueva cultura que'), ('Old', 'reivindicación por la corresponsabilidad y la eficacia , que impulse el pluralismo frente')]}

@@ -1,0 +1,6 @@
+{   ('Attack', 'bombardeos'): [],
+    ('Causation', 'porque'): [('Effect', 'ingleses ganaron la guerra entre otras razones'), ('Cause', 'soportaron los bombardeos')],
+    ('Hostile_encounter', 'guerra'): [],
+    ('Increment', 'otras'): [('Class', 'razones')],
+    ('Opinion', 'Creo'): [('Cognizer', 'la'), ('Opinion', 'ingleses ganaron la guerra')],
+    ('Reason', 'razones'): []}

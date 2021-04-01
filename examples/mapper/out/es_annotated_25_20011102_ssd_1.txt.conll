@@ -1,0 +1,10 @@
+{   ('Aggregate', 'partes'): [],
+    ('Arriving', 'alcanzar'): [('Theme', 'partes'), ('Goal', 'un acuerdo')],
+    ('Attempt', 'esfuerzo'): [('Goal', 'pacificación')],
+    ('Communicate_categorization', 'quot'): [('Speaker', 'Aznar'), ('Item', 'la situación'), ('Category', 'en la zona')],
+    ('Locale', 'zona'): [],
+    ('Locative_relation', 'existe'): [('Ground', 'no existe la voluntad de las partes para alcanzar un acuerdo')],
+    ('Make_agreement_on_action', 'un acuerdo'): [],
+    ('Part_whole', 'partes'): [('Whole', 'de las partes')],
+    ('Warning', 'advirtió'): [('Message', 'que cualquier esfuerzo de pacificación será inútil si no existe la voluntad de las partes para alcanzar un')],
+    ('Willingness', 'voluntad'): [('Cognizer', 'de las partes'), ('Activity', 'alcanzar un acuerdo')]}

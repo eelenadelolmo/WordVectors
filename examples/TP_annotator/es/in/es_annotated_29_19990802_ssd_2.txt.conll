@@ -1,0 +1,8 @@
+{   ('Cardinal_numbers', 'dos'): [('Entity', 'otros dos coches')],
+    ('Impact', 'estrelló'): [('Impactor', 'el vehículo'), ('Impactee', 'otros dos coches')],
+    ('Increment', 'otros'): [('Class', 'coches')],
+    ('Invading', 'invadió'): [('Invader', 'el vehículo'), ('Land', 'el carril del sentido contrario')],
+    ('Non-gradable_proximity', 'contrario'): [('Ground', 'el carril')],
+    ('Roadways', 'el carril'): [],
+    ('Vehicle', 'coches'): [],
+    ('Vehicle', 'vehículo'): []}

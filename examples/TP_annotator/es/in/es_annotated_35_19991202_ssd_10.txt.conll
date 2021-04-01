@@ -1,0 +1,5 @@
+{   ('Departing', 'abandone'): [('Theme', 'la diplomática'), ('Goal', 'el país')],
+    ('Leadership', 'diplomática'): [],
+    ('Origin', 'ruso'): [('Entity', 'Gobierno')],
+    ('Political_locales', 'país'): [],
+    ('Request', 'pedido'): [('Speaker', 'El Gobierno ruso'), ('Manner', 'oficialmente'), ('Message', 'que la diplomática abandone el país')]}

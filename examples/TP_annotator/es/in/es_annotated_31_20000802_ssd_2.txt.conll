@@ -1,0 +1,7 @@
+{   ('Activity_ongoing', 'mantiene'): [('Activity', 'la postura que'), ('Agent', 'dirección de su'), ('Time', 'en este asunto')],
+    ('Being_employed', 'postura que'): [],
+    ('Change_position_on_a_scale', 'se'): [('Item', 'de la postura que mantiene la dirección de su partido en este asunto')],
+    ('Compliance', 'contrariamente'): [('Act', 'el'), ('Norm', 'al PP')],
+    ('Deciding', 'decidido'): [('Decision', ', contrariamente al PP , ha'), ('Decision', 'no exigir un adelanto electoral en Euskadi')],
+    ('Motion', 'movió'): [('Theme', 'Redondo se')],
+    ('Request', 'exigir'): [('Message', 'un adelanto electoral en Euskadi')]}

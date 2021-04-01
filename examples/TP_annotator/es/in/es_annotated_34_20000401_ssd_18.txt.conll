@@ -1,0 +1,7 @@
+{   ('Adopt_selection', 'en'): [('Agent', 'un presidente'), ('Attribute', 'problema de los desaparecidos')],
+    ('Appellations', 'presidente'): [],
+    ('Becoming_aware', 'hallazgo de'): [('Phenomenon', 'de la nieta de')],
+    ('Causation', 'provocado'): [('Cause', 'noticia del hallazgo de la nieta de'), ('Effect', 'provocado una auténtica conmoción en Uruguay')],
+    ('Ordinal_numbers', 'primera'): [('Type', 'primera vez')],
+    ('People', 'los'): [],
+    ('Predicament', 'problema'): [('Experiencer', 'los desaparecidos')]}

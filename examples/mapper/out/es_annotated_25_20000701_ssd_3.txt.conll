@@ -1,0 +1,4 @@
+{   ('Attack', 'ataque'): [('Weapon', 'paranoia y esquizofrenia')],
+    ('Attempt', 'intentó'): [('Goal', 'rebaja en la pena alegando un ataque de paranoia y esquizofrenia')],
+    ('Cause_change_of_position_on_a_scale', 'rebaja'): [],
+    ('Reveal_secret', 'admitido'): [('Information', 'Copeland'), ('Information', 'un ingeniero de 24 años'), ('Information', 'pena alegando un ataque de')]}

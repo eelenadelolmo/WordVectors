@@ -1,0 +1,10 @@
+{   ('Be_in_agreement_on_action', 'según'): [('Obligation', 'la campaña electoral de 1996'), ('Obligation', 'fuentes del comité')],
+    ('Change_of_leadership', 'electoral'): [],
+    ('Criminal_investigation', 'investigación'): [('Investigator', 'su')],
+    ('Goal', 'para'): [('Trajector', 'la campaña electoral de 1996'), ('Landmark', 'fuentes del comité')],
+    ('Intentionally_act', 'actividades'): [('Agent', 'su')],
+    ('Likelihood', 'posible'): [   ('Hypothetical_event', 'su investigación'),
+                                   ('Hypothetical_event', 'actividades destinadas a obtener dinero para la campaña electoral de 1996 , según fuentes del comité')],
+    ('Money', 'dinero'): [],
+    ('Purpose', 'destinadas'): [('Agent', 'su'), ('Goal', 'actividades'), ('Goal', 'a obtener dinero para la campaña electoral de 1996 ,')],
+    ('Source_of_getting', 'fuentes del'): [('Descriptor', 'comité')]}

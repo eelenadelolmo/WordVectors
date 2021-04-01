@@ -1,0 +1,7 @@
+{   ('Attack', 'bombardeos'): [],
+    ('Hostile_encounter', 'guerra'): [],
+    ('Invading', 'invadir'): [('Invader', 'los bombardeos'), ('Land', 'Yugoslavia'), ('Land', 'Tony Blair')],
+    ('Leadership', 'dirigente'): [('Descriptor', 'único')],
+    ('Scrutiny', 'Mira'): [],
+    ('Sole_instance', 'único'): [('Item', 'dirigente que dijo que además de los bombardeos se tenía que invadir Yugoslavia')],
+    ('Statement', 'dijo'): [('Speaker', 'el único dirigente que'), ('Message', 'que además de los bombardeos se tenía que invadir Yugoslavia')]}

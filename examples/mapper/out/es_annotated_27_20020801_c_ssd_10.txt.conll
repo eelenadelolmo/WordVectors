@@ -1,0 +1,8 @@
+{   ('Calendric_unit', 'anoche'): [('Relative_time', 'nueve de anoche')],
+    ('Calendric_unit', 'la tarde'): [],
+    ('Cardinal_numbers', 'nueve'): [('Unit', 'la tarde')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'estaban'), ('Ground', 'Barcelona')],
+    ('Locative_relation', 'en'): [('Ground', 'ocho de la tarde'), ('Time', 'de la tarde'), ('Figure', 'lograron volar')],
+    ('Operating_a_system', 'lograron'): [],
+    ('Relative_time', 'antes'): [('Degree', 'anoche'), ('Focal_occasion', 'estaban en Barcelona')],
+    ('Time_vector', 'antes'): [('Landmark_event', 'de las nueve de anoche estaban en Barcelona')]}

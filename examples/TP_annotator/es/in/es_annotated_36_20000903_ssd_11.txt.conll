@@ -1,0 +1,3 @@
+{   ('Leadership', 'Gobierno'): [('Governed', 'supeditado')],
+    ('Ordinal_numbers', 'primero'): [('Comparison_set', 'con el Gobierno del')],
+    ('Subordinates_and_superiors', 'supeditado'): [('Subordinate', 'CiU quien'), ('Superior', 'política catalana')]}

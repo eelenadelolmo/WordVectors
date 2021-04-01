@@ -1,0 +1,4 @@
+{   ('Body_parts', 'cara'): [],
+    ('Categorization', 'implicación'): [('Item', 'el congreso'), ('Category', 'como un paso cara a su candidatura a la Generalitat')],
+    ('Intentionally_act', 'paso'): [('Place', 'cara a su candidatura a la Generalitat')],
+    ('Participation', 'implicación'): [('Institution', '-')]}

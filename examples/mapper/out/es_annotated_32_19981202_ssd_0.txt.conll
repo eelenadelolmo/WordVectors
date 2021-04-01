@@ -1,0 +1,10 @@
+{   ('Calendric_unit', 'Lunes'): [],
+    ('Change_of_leadership', 'elecciones'): [],
+    ('Change_of_leadership', 'independencia de'): [('Selector', 'Quebec')],
+    ('Goal', 'para'): [('Trajector', 'camino'), ('Landmark', 'un tercer referendo')],
+    ('Increment', 'más'): [('Class', 'complicado')],
+    ('Ordinal_numbers', 'tercer'): [('Type', 'elecciones')],
+    ('Purpose', 'previsto'): [('Agent', 'por el Partido Quebequés'), ('Time', 'antes de las elecciones del Lunes')],
+    ('Roadways', 'camino'): [],
+    ('Spatial_contact', 'por'): [('Figure', 'las elecciones'), ('Ground', 'Lunes')],
+    ('Time_vector', 'antes'): [('Event', 'el Partido Quebequés'), ('Landmark_event', 'las elecciones'), ('Direction', 'Lunes')]}

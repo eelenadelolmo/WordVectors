@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="33_20010202_ssd">
+
+
+	<concepts>
+		<concept id="c_0">su padre</concept>
+		<concept id="c_1">Él</concept>
+		<concept id="c_2">Fuentes del Hospital Militar de Santiago</concept>
+		<concept id="c_3">ser</concept>
+		<concept id="c_4">la urbanización Los</concept>
+		<concept id="c_5">su gente</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Lucía Pinochet Hiriart negó ayer que su padre vaya a abandonar la urbanización Los Boldos, en Bucalemu, donde cumple el arresto domiciliario, para ser trasladado al Hospital Militar de Santiago.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="dp3cs0">su</token><token pos="ncms000">padre</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_3" concept_ref3="c_4">
+			<token pos="vmm03s0">vaya</token><token pos="sps00">a</token><token pos="vmn0000">abandonar</token><mention concept_ref="c_4"><token pos="da0fs0">la</token><token pos="ncfs000">urbanización</token><token pos="np0000l">Los</token></mention><token pos="np0000l">Boldos</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="np00000">Bucalemu</token><token pos="fc">,</token><token pos="fc">,</token><token pos="sps00">para</token><mention concept_ref="c_3"><token pos="vsn0000">ser</token></mention><token pos="vmp00sm">trasladado</token><token pos="spcms">al</token><mention concept_ref="c_2"><token pos="ncms000">Hospital</token><token pos="ncms000">Militar</token><token pos="spcms">de</token><token pos="np00000">Santiago</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Lucía Pinochet Hiriart " />
+			<main_frame type="Affirm_or_deny" head="abandonar">
+				<argument type="Speaker" dependent="ser" />
+				<argument type="Manner" dependent="negó ayer" />
+				<argument type="Message" dependent="que su padre vaya a abandonar la urbanización Los Boldos , en Bucalemu , donde cumple el arresto domiciliario ," /></main_frame>
+			<frame type="Arrest" head="arresto">
+				<argument type="Suspect" dependent="su padre vaya a abandonar" />
+				<argument type="Charges" dependent="ser trasladado al Hospital Militar de Santiago" /></frame>
+			<main_frame type="Bringing" head="ser">
+				<argument type="Theme" dependent="su" />
+				<argument type="Goal" dependent="domiciliario" /></main_frame>
+			<frame type="Buildings" head="Hospital">
+				<argument type="Relative_location" dependent="Militar" />
+				<argument type="Relative_location" dependent="de Santiago" /></frame>
+			<frame type="Containing" head="domiciliario" />
+			<main_frame type="Departing" head="abandonar">
+				<argument type="Theme" dependent="su padre" />
+				<argument type="Path" dependent="la urbanización Los" /></main_frame>
+			<frame type="Kinship" head="padre">
+				<argument type="Ego" dependent="su" /></frame>
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="cumple el" /></frame>
+			<main_frame type="Sleep" head="abandonar">
+				<argument type="Sleeper" dependent="su" /></main_frame>
+			<main_frame type="Transfer" head="trasladado">
+				<argument type="Recipient" dependent="al Hospital Militar de Santiago" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "No quiero ni pensar en eso. Lo lógico sería que estuviera cerca del hospital, pero también hay que mirar el lado humano. Él aquí está rodeado de su gente, el aire es bueno y se respira tranquilidad", dijo.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="pp3ms000">Él</token>
+		</theme>
+		<rheme concept_ref1="c_5">
+			<token pos="vmip3s0">está</token><token pos="aq0msp">rodeado</token><token pos="sps00">de</token><mention concept_ref="c_5"><token pos="dp3cs0">su</token><token pos="ncfs000">gente</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Biological_entity" head="humano" />
+			<frame type="Breathing" head="respira">
+				<argument type="Agent" dependent="Él" />
+				<argument type="Air" dependent="tranquilidad  quot" /></frame>
+			<frame type="Buildings" head="hospital" />
+			<frame type="Desirability" head="bueno">
+				<argument type="Evaluee" dependent="el aire" /></frame>
+			<frame type="Desiring" head="quiero">
+				<argument type="Experiencer" dependent="y" />
+				<argument type="Event" dependent="Lo lógico sería que estuviera cerca del hospital" /></frame>
+			<frame type="Locative_relation" head="aquí">
+				<argument type="Figure" dependent="Él" /></frame>
+			<frame type="Locative_relation" head="cerca del">
+				<argument type="Figure" dependent="lógico" />
+				<argument type="Ground" dependent="del hospital" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="su" />
+				<argument type="Ground" dependent="humano" />
+				<argument type="Figure" dependent=". Él aquí está rodeado de su gente , el aire es bueno y se respira tranquilidad  quot ; ," /></frame>
+			<frame type="Opinion" head="pensar">
+				<argument type="Cognizer" dependent="y" />
+				<argument type="Opinion" dependent="Lo lógico sería que estuviera cerca del hospital" /></frame>
+			<frame type="People" head="gente">
+				<argument type="Origin" dependent="Él" /></frame>
+			<frame type="Perception_active" head="mirar">
+				<argument type="Perceiver_agentive" dependent="su" />
+				<argument type="Phenomenon" dependent="humano . Él aquí está rodeado de su gente , el aire es bueno y se respira tranquilidad  quot ;" /></frame>
+			<frame type="Proportional_quantity" head="del">
+				<argument type="Individuals" dependent="lógico" /></frame>
+			<frame type="Statement" head="dijo">
+				<argument type="Message" dependent="del hospital , pero también hay que mirar el lado humano . Él aquí está rodeado de su gente , el aire es bueno y se respira tranquilidad  quot ; ," />
+				<argument type="Speaker" dependent="Él" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Fuentes del Hospital Militar de Santiago descartaron también los rumores del ingreso de Pinochet en el centro.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="ncfp000">Fuentes</token><token pos="spcms">del</token><token pos="ncms000">Hospital</token><token pos="ncms000">Militar</token><token pos="spcms">de</token><token pos="np00000">Santiago</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_5">
+			<token pos="vmis3p0">descartaron</token><token pos="da0mp0">los</token><token pos="ncmp000">rumores</token><token pos="spcms">del</token><token pos="ncms000">ingreso</token><token pos="sps00">de</token><mention concept_ref="c_2"><token pos="np00000">Pinochet</token></mention><token pos="sps00">en</token><mention concept_ref="c_5"><token pos="da0ms0">el</token><token pos="ncms000">centro</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="Hospital">
+				<argument type="Descriptor" dependent="Militar de Santiago" /></frame>
+			<frame type="Leadership" head="el">
+				<argument type="Leader" dependent="Fuentes del Hospital Militar de Santiago" />
+				<argument type="Activity" dependent="rumores del ingreso de Pinochet en el centro" /></frame>
+			<frame type="Locale_by_use" head="centro" />
+			<frame type="Unattributed_information" head="rumores">
+				<argument type="Reported_fact" dependent="Fuentes del Hospital Militar de Santiago" />
+				<argument type="Reported_fact" dependent="ingreso de Pinochet" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

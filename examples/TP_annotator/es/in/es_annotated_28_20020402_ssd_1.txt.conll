@@ -1,0 +1,4 @@
+{   ('Killing', 'asesinato'): [],
+    ('Statement', 'quot'): [('Message', 'Estados como Irán , Irak y Siria inspiran y financian una cultura del asesinato político y del atentado suicida & quot ; ,'), ('Speaker', 'del')],
+    ('Subjective_influence', 'inspiran'): [('Agent', 'Irak y Siria')],
+    ('Weapon', 'atentado'): [('Type', ',')]}

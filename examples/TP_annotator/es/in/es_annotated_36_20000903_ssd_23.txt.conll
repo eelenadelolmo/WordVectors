@@ -1,0 +1,4 @@
+{   ('Alliance', 'alianza'): [('Descriptor', 'con una fuerza como Unió al estilo de la')],
+    ('Cause_change_of_strength', 'reforzada'): [('Agent', 'su'), ('Patient', 'una alianza con una fuerza como Unió al estilo de la')],
+    ('Military', 'fuerza'): [('Goal', 'como Unió al estilo de la UPN en Navarra')],
+    ('Perception_experience', 'vería'): [('Perceiver_passive', 'PP'), ('Phenomenon', 'reforzada su estrategia con una alianza con una fuerza como Unió al estilo de la')]}

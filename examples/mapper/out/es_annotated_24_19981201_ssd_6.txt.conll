@@ -1,0 +1,8 @@
+{   ('Deciding', 'decisión'): [('Manner', 'judicial')],
+    ('Expressing_publicly', 'expresó'): [   ('Place', 'En sus primeras declaraciones en Madrid'),
+                                            ('Communicator', 'el ministro de Exteriores'),
+                                            ('Content', 'su convencimiento de que el ambiente político en España & quot ; no es favorable')],
+    ('Opinion', 'opinión'): [('Cognizer', 'sus')],
+    ('Ordinal_numbers', 'primeras'): [('Type', 'declaraciones en Madrid')],
+    ('State_of_entity', 'condicionar'): [('Entity', 'la decisión judicial')],
+    ('Statement', 'declaraciones'): [('Speaker', 'sus'), ('Speaker', 'en Madrid')]}

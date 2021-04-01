@@ -1,0 +1,13 @@
+{   ('Cardinal_numbers', 'Uno'): [('Entity', 'de ellos')],
+    ('Cardinal_numbers', 'cientos'): [('Precision', 'unos'), ('Unit', 'metros')],
+    ('Importance', 'importantes'): [('Degree', 'más'), ('Factor', 'lugares más importantes del islamismo'), ('Place', 'en la Ciudad Santa')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'islamismo'), ('Ground', 'la Ciudad Santa')],
+    ('Leadership', 'Estado'): [('Governed', 'palestino')],
+    ('Locale', 'lugares'): [('Descriptor', 'más importantes')],
+    ('Measure_linear_extent', 'metros'): [('Count', 'unos cientos de')],
+    ('Origin', 'de los'): [('Entity', 'unos cientos de metros'), ('Origin', 'los lugares más importantes del islamismo en la Ciudad Santa')],
+    ('Political_locales', 'Ciudad'): [('Descriptor', ',')],
+    ('Possibility', 'podría'): [('Possible_event', 'la Ciudad Santa'), ('Possible_event', 'declarado como la capital del futuro Estado palestino')],
+    ('Quantified_mass', 'unos'): [('Individuals', 'cientos de metros')],
+    ('Relational_political_locales', 'capital'): [('Container_possessor', 'del futuro Estado palestino')],
+    ('Statement', 'declarado'): [('Message', 'capital del futuro Estado palestino')]}

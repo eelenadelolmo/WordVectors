@@ -1,0 +1,4 @@
+{   ('Body_parts', 'armas'): [],
+    ('Body_parts', 'jefe'): [('Possessor', 'de una banda delictiva dedicada al contrabando de armas')],
+    ('Legality', 'delictiva'): [('Action', 'banda')],
+    ('Proportional_quantity', 'de'): [('Individuals', 'Argentina')]}

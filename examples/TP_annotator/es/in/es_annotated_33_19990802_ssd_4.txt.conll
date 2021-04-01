@@ -1,0 +1,13 @@
+{   ('Calendric_unit', 'año'): [('Count', 'a')],
+    ('Causation', 'causó'): [('Effect', 'menos estragos')],
+    ('Causation', 'porque'): [('Effect', 'provincia británica fue autorizada a exportar carne de vacuno hace más de un año , en junio de 1998 ,'), ('Cause', 'epidemia causó allí menos estragos')],
+    ('Commerce_sell', 'ventas'): [('Seller', 'la')],
+    ('Damaging', 'causó'): [],
+    ('Deny_or_grant_permission', 'autorizada'): [('Action', 'provincia británica'), ('Action', 'a exportar carne de vacuno hace más de un año , en junio de 1998')],
+    ('Exporting', 'exportar'): [('Exporter', 'provincia británica'), ('Goods', 'carne de vacuno hace más de un año'), ('Time', 'de 1998')],
+    ('Increment', 'más'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'provincia británica fue autorizada a exportar carne de vacuno hace más de un año ,'), ('Ground', '1998')],
+    ('Locative_relation', 'allí'): [('Figure', 'la epidemia'), ('Ground', 'causó allí menos estragos')],
+    ('Political_locales', 'provincia'): [('Name', 'británica')],
+    ('State_continue', 'siguen'): [('Entity', 'sus ventas'), ('State', 'siendo casi nulas')],
+    ('Time_vector', 'fue'): [('Distance', 'un año')]}

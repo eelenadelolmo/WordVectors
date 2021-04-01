@@ -1,0 +1,10 @@
+{   ('Aggregate', 'partido'): [('Aggregate_property', 'nuestro')],
+    ('Alternatives', 'alternativa de'): [('Situation', 'gobierno')],
+    ('Direction', 'en'): [('Distance', 'el'), ('Path', 'en')],
+    ('Execute_plan', 'aplicar'): [('Plan', 'políticas que nuestro partido ya ha hecho realidad en el Gobierno de España')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'realidad'), ('Ground', 'Gobierno de España')],
+    ('Law', 'políticas'): [('Required', 'nuestro partido ya ha hecho realidad en el Gobierno de España')],
+    ('Leadership', 'gobierno'): [('Governed', 'España')],
+    ('Manufacturing', 'hecho'): [('Product', 'nuestro partido'), ('Manner', 'ya ha hecho'), ('Product', 'hecho realidad en el Gobierno de España')],
+    ('Placing', 'configurarse'): [('Theme', 'el')],
+    ('Purpose', 'objetivo'): [('Agent', 'del PP')]}

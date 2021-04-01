@@ -1,0 +1,4 @@
+{   ('Aggregate', 'partido'): [],
+    ('Being_employed', 'posturas'): [('Employer', 'es'), ('Field', 'actitud política'), ('Field', 'extremas')],
+    ('Locale_by_use', 'centro'): [],
+    ('Process_end', 'acaban'): [('Process', 'una actitud política y las posturas extremas'), ('Process', 'contigo')]}

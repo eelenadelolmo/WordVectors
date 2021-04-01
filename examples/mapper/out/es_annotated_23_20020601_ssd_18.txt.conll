@@ -1,0 +1,7 @@
+{   ('Cause_change_of_strength', 'reforzar'): [('Agent', 'ha'), ('Patient', 'cárcel de La Roca con funcionarios del'), ('Circumstances', 'con funcionarios del resto de centros')],
+    ('Choosing', 'optado'): [('Cognizer', 'ha'), ('Chosen', 'reforzar la plantilla de la cárcel de La Roca con funcionarios del resto de centros')],
+    ('Employing', 'funcionarios'): [('Employee', 'cárcel de La Roca con funcionarios')],
+    ('Increment', 'del resto'): [('Class', 'centros')],
+    ('Leadership', 'funcionarios del'): [('Governed', 'del resto de centros')],
+    ('Locale_by_use', 'centros'): [],
+    ('Prison', 'cárcel'): [('Location', 'Roca')]}

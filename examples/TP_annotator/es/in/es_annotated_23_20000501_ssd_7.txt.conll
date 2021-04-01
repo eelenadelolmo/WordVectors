@@ -1,0 +1,8 @@
+{   ('Attempt', 'intentó'): [('Agent', 'que'), ('Goal', 'ampliar el asentamiento de Tel Rumeida , en la cisjordana Hebrón')],
+    ('Cause_expansion', 'ampliar'): [('Cause', 'la evacuación de decenas de judíos'), ('Agent', 'que'), ('Item', 'el asentamiento de Tel'), ('Result_size', 'en la cisjordana Hebrón')],
+    ('Colonization', 'los colonos'): [],
+    ('Identicality', 'aunque'): [('Type', 'los')],
+    ('Intentionally_act', 'acción'): [],
+    ('Locale_by_use', 'asentamiento'): [('Formational_cause', 'de Tel')],
+    ('Removing', 'evacuación'): [('Theme', 'de decenas de judíos que intentaron ampliar el asentamiento de Tel')],
+    ('Request', 'ordenó'): [('Speaker', 'el'), ('Message', 'evacuación de decenas de judíos que intentaron ampliar el asentamiento de')]}

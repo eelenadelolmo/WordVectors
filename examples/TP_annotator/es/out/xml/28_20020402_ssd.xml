@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="28_20020402_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El secretario de Defensa de EEUU , Donald Rumsfeld ,</concept>
+		<concept id="c_1">que</concept>
+		<concept id="c_2">un atentado suicida</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El secretario de Defensa de EEUU, Donald Rumsfeld, criticó a Irán, Siria e Irak por respaldar a terroristas y contribuir a aumentar la violencia en Oriente Próximo.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">secretario</token><token pos="sps00">de</token><token pos="np00000">Defensa</token><token pos="sps00">de</token><token pos="np00000">EEUU</token><token pos="fc">,</token><token pos="np0000l">Donald</token><token pos="np0000l">Rumsfeld</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">criticó</token><token pos="sps00">a</token><token pos="np00000">Irán</token><token pos="fc">,</token><token pos="np00000">Siria</token><token pos="cc">e</token><token pos="np00000">Irak</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Change_position_on_a_scale" head="aumentar">
+				<argument type="Item" dependent="violencia" /></frame>
+			<frame type="Giving" head="contribuir">
+				<argument type="Theme" dependent="a aumentar la violencia en Oriente" /></frame>
+			<main_frame type="Judgment_communication" head="criticó">
+				<argument type="Communicator" dependent="secretario de Defensa de EEUU , Donald Rumsfeld" />
+				<argument type="Evaluee" dependent="a Irán , Siria e Irak por respaldar a terroristas y contribuir a aumentar la violencia en Oriente" /></main_frame>
+			<frame type="Terrorism" head="terroristas" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Estados como Irán, Irak y Siria inspiran y financian una cultura del asesinato político y del atentado suicida", declaró.
+		</str>
+		<theme>
+			<token pos="ncmp000">Estados</token><token pos="cs">como</token><token pos="np00000">Irán</token><token pos="fc">,</token><token pos="np00000">Irak</token><token pos="cc">y</token><token pos="np00000">Siria</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Killing" head="asesinato" />
+			<frame type="Statement" head="quot">
+				<argument type="Message" dependent="Estados como Irán , Irak y Siria inspiran y financian una cultura del asesinato político y del atentado suicida  quot ; ," />
+				<argument type="Speaker" dependent="del" /></frame>
+			<frame type="Subjective_influence" head="inspiran">
+				<argument type="Agent" dependent="Irak y Siria" /></frame>
+			<frame type="Weapon" head="atentado">
+				<argument type="Type" dependent="," /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Rumsfeld recriminó a Irak que ofreciera sustanciosas cantidades de dinero a los que han decidido cometer un atentado suicida, pero no hizo comentarios sobre las últimas operaciones militares israelís.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_2">
+			<token pos="vaip3p0">han</token><token pos="vmp00sm">decidido</token><token pos="vmn0000">cometer</token><mention concept_ref="c_2"><token pos="di0ms0">un</token><token pos="ncms000">atentado</token><token pos="aq0cs0">suicida</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Rumsfeld " />
+			<frame type="Businesses" head="operaciones">
+				<argument type="Descriptor" dependent="últimas" />
+				<argument type="Proprietor" dependent="israelís" />
+				<argument type="Service_provider" dependent="militares" /></frame>
+			<main_frame type="Commitment" head="cometer">
+				<argument type="Speaker" dependent="los que" />
+				<argument type="Message" dependent="un atentado suicida" /></main_frame>
+			<main_frame type="Deciding" head="decidido">
+				<argument type="Cognizer" dependent="los que" />
+				<argument type="Decision" dependent="cometer un atentado suicida" /></main_frame>
+			<frame type="Judgment_communication" head="comentarios">
+				<argument type="Communicator" dependent="Rumsfeld" />
+				<argument type="Evaluee" dependent="Irak" />
+				<argument type="Reason" dependent="cantidades de dinero a los que han decidido cometer un atentado suicida , pero no hizo comentarios sobre las últimas operaciones militares israelís" /></frame>
+			<frame type="Military" head="militares" />
+			<frame type="Money" head="dinero" />
+			<frame type="Quantified_mass" head="cantidades">
+				<argument type="Q_prop" dependent="cantidades" />
+				<argument type="Mass" dependent="de dinero" /></frame>
+			<frame type="Statement" head="comentarios">
+				<argument type="Message" dependent="los que" />
+				<argument type="Message" dependent="las últimas operaciones militares israelís" /></frame>
+			<frame type="Weapon" head="atentado">
+				<argument type="Type" dependent="suicida" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

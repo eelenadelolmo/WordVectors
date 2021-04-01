@@ -1,0 +1,10 @@
+{   ('Age', 'joven'): [('Entity', 'esposa')],
+    ('Be_in_agreement_on_action', 'según la'): [('Obligation', 'su esposa en El Prat de Llobregat para que & quot ; cuidaran de ella & quot ; , lo que no sucedió'), ('Obligation', 'según la joven')],
+    ('Buildings', 'casa'): [('Function', 'del acusado')],
+    ('Event', 'sucedió'): [],
+    ('Goal', 'para'): [('Trajector', 'su esposa en El Prat de Llobregat para que & quot ; cuidaran de ella & quot ; , lo que no sucedió'), ('Landmark', 'la joven')],
+    ('Judgment_communication', 'acusado'): [('Evaluee', 'su esposa'), ('Place', 'en El Prat de')],
+    ('Kinship', 'madre'): [('Ego', 'A. T. , de'), ('Descriptor', '15 años')],
+    ('People', 'esposa'): [('Descriptor', 'joven')],
+    ('Personal_relationship', 'esposa'): [('Partner_1', 'su'), ('Partner_2', 'esposa en El Prat de')],
+    ('Statement', 'su'): [('Message', 'sentencia señala que la madre de A. T. , de 15 años , la envió en agosto de 1996 a casa del acusado y de su esposa en'), ('Message', 'la joven')]}

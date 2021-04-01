@@ -1,0 +1,6 @@
+{   ('Appellations', 'presidente'): [('Name', 'la Generalitat')],
+    ('Attack', 'asaltaron'): [('Assailant', 'Unos desconocidos'), ('Weapon', 'casa que el presidente de la Generalitat , Jordi Pujol , posee en la calle'), ('Victim', 'Dalt ( El Maresme )')],
+    ('Buildings', 'casa'): [],
+    ('Indigenous_origin', 'desconocidos'): [],
+    ('Possession', 'posee'): [('Possession', 'presidente de la Generalitat , Jordi'), ('Owner', 'en la calle de Fèlix Millet de Premià de Dalt ( El Maresme )')],
+    ('Roadways', 'calle'): [('Name', 'Millet de Premià de Dalt')]}

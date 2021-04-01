@@ -1,0 +1,10 @@
+{   ('Calendric_unit', 'ayer por'): [],
+    ('Event', 'se'): [('Event', 'lo mismo')],
+    ('Identicality', 'lo mismo'): [],
+    ('Information', 'información'): [],
+    ('Moving_in_place', 'sacudida'): [('Time', 'Ahora'), ('Theme', 'la república')],
+    ('Network', 'se'): [('Possessor', 'pública'), ('Descriptor', 'televisión')],
+    ('Ordinal_numbers', 'segunda'): [('Type', 'televisión pública ( ZDF )')],
+    ('Statement', 'dijo'): [('Speaker', 'Weyrauch'), ('Message', '; Ahora se verá sacudida la república y luego sucederá lo mismo con Europa & quot')],
+    ('Supply', 'proporcionada'): [('Theme', 'información'), ('Manner', 'ayer por'), ('Supplier', 'por la segunda cadena de televisión pública ( ZDF')],
+    ('Temporal_collocation', 'Ahora'): [('Trajector_event', 'se verá sacudida la república')]}

@@ -1,0 +1,7 @@
+{   ('Completeness', 'completa'): [('Whole', 'pactado')],
+    ('Inclusion', 'incluía'): [('Part', 'precio'), ('Total', 'que'), ('Part', 'pernoctar una noche , pensión completa y utilización de todas las instalaciones')],
+    ('Locale_by_use', 'instalaciones'): [],
+    ('Make_agreement_on_action', 'pactado que'): [   ('Party_1', 'Teníamos'),
+                                                     ('Obligation', 'precio pactado que incluía pernoctar una noche , pensión completa y utilización de todas las instalaciones')],
+    ('Temporary_stay', 'pensión'): [('Descriptor', 'noche')],
+    ('Using', 'utilización'): [('Instrument', 'todas las instalaciones')]}

@@ -1,0 +1,4 @@
+{   ('Buildings', 'casa'): [],
+    ('Dead_or_alive', 'abatido'): [('Protagonist', 'Thabet')],
+    ('Hit_target', 'a tiros'): [('Target', 'Thabet')],
+    ('Locative_relation', 'cerca de'): [('Figure', 'su'), ('Ground', 'su casa')]}

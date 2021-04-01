@@ -1,0 +1,18 @@
+1	Azulgranas	azulgrana	nccp000	nccp000	rep=no|t=yes|r=no|m=yes|c=yes	4	nsubj
+2	y	y	cc	cc	rep=no|t=yes|r=no|m=yes|c=no	4	coord_fixed
+3	valencianistas	valencianista	aq0cp0	aq0cp0	rep=no|t=yes|r=no|m=yes|c=yes	4	nsubj
+4	jugarán	jugar	vmif3p0	vmif3p0	rep=no|t=no|r=yes|m=yes|c=no	0	root
+5	el	el	da0ms0	da0ms0	rep=no|t=no|r=yes|m=yes|c=no	6	det
+6	partido	partido	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	4	dobj
+7	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	6	prepn
+8	ida	ida	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	7	pobj
+9	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	6	prepn
+10	cuartos	cuarto	ncmp000	ncmp000	rep=no|t=no|r=yes|m=yes|c=no	9	pobj
+11	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	6	prepn
+12	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	13	det
+13	Liga	Liga	np0000a	np0000a	rep=no|t=no|r=yes|m=yes|c=no	11	pobj
+14	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	13	prepn
+15	Campeones	campeón	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	14	pobj
+16	.	.	fp	fp	rep=no|t=no|r=no|m=no|c=no	4	punct
+
+

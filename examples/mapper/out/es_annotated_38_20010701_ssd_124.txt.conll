@@ -1,0 +1,6 @@
+{   ('Calendric_unit', 'edad'): [],
+    ('Cardinal_numbers', 'uno'): [],
+    ('Cause_change', 'cambiar'): [('Entity', 'cosas importantes')],
+    ('Coming_to_believe', 'conclusión'): [('Content', 'conclusión de que es imposible cambiar las cosas importantes')],
+    ('Difficulty', 'imposible'): [('Activity', 'cambiar las cosas importantes')],
+    ('Importance', 'importantes'): [('Factor', 'cosas')]}

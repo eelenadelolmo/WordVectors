@@ -1,0 +1,10 @@
+{   ('Activity_start', 'empezar'): [('Agent', 'su país'), ('Activity', 'una guerra')],
+    ('Appellations', 'presidente'): [('Type', 'Pervez')],
+    ('Attack', 'atacar'): [('Victim', 'Pakistán')],
+    ('Commerce_pay', 'pagarán'): [('Buyer', 'su'), ('Goods', '; si cometen el & quot ; error & quot ; de atacar a Pakistán , aunque también afirmó que su país')],
+    ('Hostile_encounter', 'guerra'): [],
+    ('Ordinal_numbers', 'primero'): [('Type', 'en empezar una guerra')],
+    ('Origin', 'indias'): [('Entity', 'autoridades')],
+    ('Political_locales', 'país'): [],
+    ('Statement', 'afirmó'): [('Speaker', 'lo'), ('Message', 'que su país no será el primero en empezar una guerra')],
+    ('Warning', 'advirtió'): [('Speaker', 'el presidente paquistaní , Pervez Musharraf')]}

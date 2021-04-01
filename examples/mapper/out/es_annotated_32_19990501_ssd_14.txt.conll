@@ -1,0 +1,4 @@
+{   ('Certainty', 'duda de'): [('Content', 'que Milosevic perderá sus apoyos')],
+    ('Earnings_and_losses', 'perderá'): [('Earner', 'Milosevic'), ('Earnings', 'sus apoyos')],
+    ('Locative_relation', 'sus'): [('Ground', 'No albergó ninguna duda de que Milosevic perderá sus apoyos')],
+    ('Supporting', 'apoyos'): [('Supporter', 'Milosevic'), ('Supporter', 'sus')]}

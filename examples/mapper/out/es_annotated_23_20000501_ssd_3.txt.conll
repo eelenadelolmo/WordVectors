@@ -1,0 +1,9 @@
+{   ('Ammunition', 'rondas'): [('Type', 'de negociaciones')],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'rondas de negociaciones')],
+    ('Deciding', 'decidieron'): [('Cognizer', 'ambas partes'), ('Decision', 'intensificar el diálogo')],
+    ('Discussion', 'negociaciones'): [('Interlocutor_2', 'en la base militar norteamericana de Bolling , en los alrededores de Washington')],
+    ('Locale_by_use', 'base'): [('Container_possessor', 'norteamericana'), ('Use', 'militar')],
+    ('Military', 'militar'): [],
+    ('Part_orientational', 'partes'): [],
+    ('People_by_origin', 'norteamericana'): [],
+    ('Relative_time', 'Después de'): [('Landmark_occasion', 'dos rondas de negociaciones en la base militar norteamericana de')]}

@@ -1,0 +1,10 @@
+{   ('Age', 'jóvenes'): [],
+    ('Aggregate', 'celebraban'): [('Aggregate_property', 'soltero')],
+    ('Being_obligated', 'funciones'): [('Responsible_party', 'sus')],
+    ('Calendric_unit', 'verano'): [('Relative_time', 'de 1996')],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'de')],
+    ('Categorization', 'se'): [('Item', 'juez')],
+    ('Judgment_direct_address', 'increparon'): [('Communicator', 'los'), ('Addressee', 'jóvenes'), ('Reason', 'que celebraban una despedida de soltero')],
+    ('People_by_vocation', 'juez'): [],
+    ('Personal_relationship', 'soltero'): [('Partner_2', 'celebraban')],
+    ('Surpassing', 'increparon'): [('Profiled_attribute', 'dos'), ('Profiled_item', 'sus funciones')]}

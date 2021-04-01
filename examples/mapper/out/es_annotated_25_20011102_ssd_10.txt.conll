@@ -1,0 +1,9 @@
+{   ('Affirm_or_deny', 'niega'): [('Speaker', 'su tierra'), ('Message', 'el derecho de sentarse en una mesa de negociación')],
+    ('Capability', 'puede'): [('Entity', 'qué'), ('Event', 'un pueblo si su tierra está ocupada')],
+    ('Guilt_or_innocence', 'inocentes'): [],
+    ('Killing', 'asesinatos'): [('Killer', 'Estamos')],
+    ('Locative_relation', 'en'): [('Figure', 'su tierra'), ('Ground', 'una mesa de negociación')],
+    ('People', 'pueblo'): [],
+    ('Residence', 'ocupada'): [('Resident', 'su tierra')],
+    ('Statement', 'dijo'): [('Medium', 'inocentes - - dijo Mubarak')],
+    ('Taking_sides', 'contra de'): [('Cognizer', 'Estamos')]}

@@ -1,0 +1,10 @@
+{   ('Correctness', 'malo'): [('Information', 'Qué'), ('Information', 'los chicos se diviertan')],
+    ('Employing', 'jefe'): [('Employer', 'del Ejército')],
+    ('Event', 'ocurriera'): [('Event', 'eso')],
+    ('Leadership', 'jefe del'): [('Governed', 'del Ejército')],
+    ('Leadership', 'mandos'): [],
+    ('Military', 'Ejército'): [],
+    ('People_by_age', 'chicos'): [],
+    ('Possession', 'se'): [('Owner', 'los chicos'), ('Possession', 'se')],
+    ('Size', 'Mayor del'): [('Dimension', 'representación de mandos')],
+    ('Time_vector', 'ante'): [('Distance', 'eso ocurriera'), ('Landmark_event', 'Mayor del Ejército , señor Pardo de Santayana , y una nutrida representación de mandos ,')]}

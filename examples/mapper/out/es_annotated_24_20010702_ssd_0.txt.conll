@@ -1,0 +1,4 @@
+{   ('Activity_start', 'entró'): [('Agent', 'EL DICTADOR chileno , de 85 años'), ('Activity', 'hospital militar'), ('Time', 'escoltado por motoristas de la policía')],
+    ('Buildings', 'hospital'): [],
+    ('Leadership', 'militar'): [('Governed', '85 años')],
+    ('Military', 'militar'): []}

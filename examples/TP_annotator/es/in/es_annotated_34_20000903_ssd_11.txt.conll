@@ -1,0 +1,5 @@
+{   ('Body_mark', 'cicatrices'): [('Possessor', 'sus')],
+    ('Cause_harm', 'herido'): [],
+    ('Entity', 'que'): [],
+    ('Ordinal_numbers', 'primero'): [('Type', 'que')],
+    ('Preventing_or_letting', 'permitir'): [('Event', 'sanen sus cicatrices')]}

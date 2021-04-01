@@ -1,0 +1,6 @@
+{   ('Activity_ongoing', 'mantiene'): [('Agent', 'Yeltsin'), ('Activity', 'un régimen calificado')],
+    ('Documents', 'documentos'): [('Obligation', 'correo y estudia')],
+    ('Kinship', 'sus allegados'): [('Ego', 'sus')],
+    ('Leadership', 'régimen'): [],
+    ('Receiving', 'recibe'): [('Recipient', 'sus'), ('Theme', 'correo y estudia documentos')],
+    ('Scrutiny', 'estudia'): []}

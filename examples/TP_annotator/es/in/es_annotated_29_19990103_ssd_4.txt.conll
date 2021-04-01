@@ -1,0 +1,11 @@
+{   ('Calendric_unit', 'hoy'): [],
+    ('Chatting', 'hablar'): [('Topic', 'de hablar de él usando los verbos en pasado')],
+    ('Experiencer_focus', 'dejar'): [],
+    ('Judgment', 'admirarlo'): [('Evaluee', 'él')],
+    ('Just_found_out', 'sorprenda'): [('Experiencer', 'él')],
+    ('Preventing_or_letting', 'permiten'): [('Agent', 'Las fotografías de Brossa en periódicos o revistas'), ('Event', 'me')],
+    ('Remembering_experience', 'recordarlo'): [('Cognizer', 'me'), ('Salient_entity', 'él')],
+    ('Statement', 'hablar'): [('Message', 'admirarlo y dejar que me sorprenda - - , ahora ya con el pesar de hablar de él usando los')],
+    ('Text', 'periódicos'): [],
+    ('Text', 'revistas'): [],
+    ('Using', 'usando'): [('Agent', 'él'), ('Instrument', 'los verbos'), ('Time', 'en pasado')]}

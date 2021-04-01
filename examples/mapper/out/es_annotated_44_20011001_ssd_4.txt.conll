@@ -1,0 +1,5 @@
+{   ('Age', 'antigua'): [('Entity', 'Barcelona')],
+    ('Awareness', 'imaginar'): [('Content', 'esa Barcelona antigua con una única calle')],
+    ('Difficulty', 'difícil'): [('Activity', 'esa'), ('Activity', 'imaginar esa Barcelona antigua con una única calle')],
+    ('Roadways', 'calle'): [('Characteristic', 'única')],
+    ('Sole_instance', 'única'): [('Type', 'calle')]}

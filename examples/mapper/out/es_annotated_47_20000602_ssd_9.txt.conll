@@ -1,0 +1,8 @@
+{   ('Activity_start', 'acceder'): [('Agent', 'su'), ('Activity', 'la presidencia del Parlamento vasco')],
+    ('Being_named', 'nombre'): [('Entity', 'su')],
+    ('Documents', 'documentación'): [],
+    ('Explaining_the_facts', 'Explicó'): [('Fact', 'su')],
+    ('Give_impression', 'aparecía'): [('Phenomenon', 'su nombre'), ('Characterization', 'en documentación incautada a')],
+    ('Receiving', 'recibió'): [('Recipient', 'su'), ('Theme', 'una llamada')],
+    ('Request', 'llamada'): [('Message', 'Mayor en la que le informaba que su nombre aparecía en documentación incautada a')],
+    ('Taking', 'incautada'): [('Theme', 'su nombre aparecía en documentación'), ('Place', 'del')]}

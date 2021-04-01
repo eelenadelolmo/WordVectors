@@ -1,0 +1,4 @@
+{   ('Arriving', 'por'): [('Theme', 'y'), ('Source', 'coche desde Montreaux')],
+    ('Ingestion', 'comer'): [],
+    ('Preventing_or_letting', 'pare'): [('Potential_hindrance', 'y'), ('Event', 'por ahí a comer o a')],
+    ('Vehicle', 'coche'): []}

@@ -1,0 +1,17 @@
+1	breast	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+2	cancer	_	cancer	_	NN	0	_	_	_	_	_	_	_	O
+3	exhibits	_	exhibit	_	VBZ	0	_	_	_	_	_	_	_	O
+4	familial	_	UNK	_	JJ	0	_	_	_	_	_	_	_	O
+5	aggregation	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+6	,	_	,	_	,	0	_	_	_	_	_	_	_	O
+7	consistent	_	UNK	_	NN	0	_	_	_	_	_	_	_	O
+8	with	_	with	_	IN	0	_	_	_	_	_	_	_	O
+9	variation	_	variation	_	NN	0	_	_	_	_	_	variation.n	Cause_change	O
+10	in	_	in	_	IN	0	_	_	_	_	_	_	_	B-Final_category
+11	genetic	_	genetic	_	JJ	0	_	_	_	_	_	_	_	I-Final_category
+12	susceptibility	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Final_category
+13	to	_	to	_	TO	0	_	_	_	_	_	_	_	I-Final_category
+14	the	_	the	_	DT	0	_	_	_	_	_	_	_	I-Final_category
+15	disease	_	disease	_	NN	0	_	_	_	_	_	_	_	I-Final_category
+16	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

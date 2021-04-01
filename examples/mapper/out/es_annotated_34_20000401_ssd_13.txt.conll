@@ -1,0 +1,4 @@
+{   ('Activity_start', 'inició'): [('Agent', 'Gelman'), ('Agent', 'que'), ('Activity', 'la búsqueda desesperada de su nieta en 1976')],
+    ('Attempt', 'intentará'): [('Goal', 'reencontrarse con ella en la intimidad')],
+    ('Make_acquaintance', 'reencontrarse'): [('Individual_1', 'que'), ('Individual_2', 'ella'), ('Time', 'en la intimidad')],
+    ('Scrutiny', 'búsqueda'): [('Ground', 'de su nieta'), ('Time', 'en 1976')]}

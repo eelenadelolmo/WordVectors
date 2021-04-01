@@ -1,0 +1,7 @@
+{   ('Adducing', 'señaló'): [('Speaker', 'el sindicalista'), ('Specified_entity', 'a determinados abogados')],
+    ('Aggregate', 'grupos'): [('Aggregate_property', 'de')],
+    ('Appellations', 'presidente'): [('Type', 'del crítico sindicato')],
+    ('Cause_to_start', 'provocado'): [],
+    ('Idiosyncrasy', 'determinados'): [('Entity', 'abogados')],
+    ('Importance', 'crítico'): [('Factor', 'sindicato')],
+    ('Origin', 'origen'): [('Entity', 'del motín por parte de grupos')]}

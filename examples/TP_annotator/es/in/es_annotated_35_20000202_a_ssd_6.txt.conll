@@ -1,0 +1,6 @@
+{   ('Appellations', 'presidente'): [('Type', 'Weyrauch han')],
+    ('Discussion', 'un encuentro'): [('Place', 'con el comerciante de armas Karlheinz Schreiber')],
+    ('Relative_time', 'después de'): [   ('Focal_occasion', 'la situación del presidente de la CDU , Wolfgang'),
+                                         ('Landmark_occasion', 'que admitiese haber mantenido más de un encuentro con el comerciante de armas Karlheinz Schreiber')],
+    ('Reveal_secret', 'admitiese'): [('Speaker', 'el'), ('Information', 'haber mantenido más de un encuentro con el comerciante de armas Karlheinz Schreiber')],
+    ('Statement', 'declaraciones'): [('Occasion', 'de')]}

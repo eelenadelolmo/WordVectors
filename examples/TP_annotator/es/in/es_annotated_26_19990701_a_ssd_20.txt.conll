@@ -1,0 +1,8 @@
+{   ('Attack', 'bombardeos'): [],
+    ('Participation', 'participó'): [('Participant_1', 'que'), ('Event', 'en varios de esos bombardeos')],
+    ('People', 'mujer'): [],
+    ('People_by_origin', 'norteamericana'): [],
+    ('Quantified_mass', 'varios'): [('Individuals', 'esos bombardeos')],
+    ('Reading_activity', 'leí'): [('Reader', 'un diario francés'), ('Text', 'las declaraciones de una mujer')],
+    ('Statement', 'declaraciones'): [('Speaker', 'en'), ('Speaker', 'una mujer')],
+    ('Text', 'un diario'): [('Author', 'francés')]}

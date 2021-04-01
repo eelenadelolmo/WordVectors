@@ -1,0 +1,7 @@
+{   ('Aggregate', 'banda'): [('Individuals', 'dos de los mejores guitarristas del mundo')],
+    ('Cardinal_numbers', 'dos de los'): [('Entity', 'los mejores guitarristas del')],
+    ('Goal', 'en'): [('Trajector', 'tu'), ('Landmark', 'Me')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'dos de los mejores guitarristas del'), ('Ground', 'del mundo')],
+    ('Political_locales', 'mundo'): [],
+    ('Required_event', 'mejores'): [('Required_situation', 'guitarristas'), ('Place', 'del mundo')],
+    ('Statement', 'dijo'): [('Speaker', 'tu'), ('Message', "si tienes en tu banda a dos de los mejores guitarristas del mundo ! '")]}

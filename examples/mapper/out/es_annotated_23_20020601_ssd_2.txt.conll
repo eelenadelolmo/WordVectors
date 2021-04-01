@@ -1,0 +1,8 @@
+{   ('Activity_start', 'entrar'): [],
+    ('Agree_or_refuse_to_act', 'se negaron'): [('Proposed_action', 'a entrar si antes la Administración no garantizaba su seguridad')],
+    ('Being_at_risk', 'seguridad'): [('Asset', 'su')],
+    ('Leadership', 'funcionarios'): [],
+    ('Part_orientational', 'ante'): [('Whole', 'la prisión')],
+    ('Prison', 'prisión'): [],
+    ('Relative_time', 'después de'): [('Focal_occasion', 'funcionarios se concentraron ante la prisión poco'), ('Landmark_occasion', 'siete de')],
+    ('Time_vector', 'antes'): [('Event', 'la Administración')]}

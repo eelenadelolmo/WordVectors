@@ -1,0 +1,5 @@
+{   ('Affirm_or_deny', 'negó'): [('Message', 'Zacarias Moussaoui , de 33 años')],
+    ('Age', 'años'): [('Time', '33 años')],
+    ('Attack', 'atentados'): [('Assailant', 'de Nueva York y de Washington'), ('Time', '11 de septiembre')],
+    ('Calendric_unit', 'años'): [('Count', '33')],
+    ('Participation', 'participado'): [('Participants', 'EEUU )'), ('Manner', 'ser')]}

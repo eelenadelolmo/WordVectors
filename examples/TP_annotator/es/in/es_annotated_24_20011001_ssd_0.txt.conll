@@ -1,0 +1,10 @@
+{   ('Calendric_unit', 'año'): [],
+    ('Cause_change', 'cambiado'): [('Entity', 'coordenadas del conflicto palestino-israelí')],
+    ('Change_of_leadership', 'independencia'): [],
+    ('Change_position_on_a_scale', 'cambiado'): [   ('Attribute', 'diálogo en la mesa de negociaciones se'),
+                                                    ('Attribute', 'sangrientos enfrentamientos que en un año se han cobrado las vidas de 684 palestinos y 160 israelís .')],
+    ('Hostile_encounter', 'conflicto'): [('Depictive', 'palestino-israelí')],
+    ('Hostile_encounter', 'enfrentamientos'): [],
+    ('Hostile_encounter', 'guerra'): [('Sides', 'palestina'), ('Depictive', 'independencia')],
+    ('Referring_by_name', 'llamada'): [('Name', 'guerra de la independencia palestina')],
+    ('Statement', 'se'): [('Medium', 'sangrientos enfrentamientos'), ('Speaker', 'que'), ('Message', 'vidas de 684 palestinos y 160 israelís'), ('Time', 'en un año')]}

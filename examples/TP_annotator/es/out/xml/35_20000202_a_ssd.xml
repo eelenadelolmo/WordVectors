@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="35_20000202_a_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El ex asesor fiscal de la Unión Cristianodemócrata ( CDU ) y cerebro de la financiación irregular del ex canciller Helmut Kohl , Horst Weyrauch ,</concept>
+		<concept id="c_1">su opinión</concept>
+		<concept id="c_2">El ex asesor fiscal</concept>
+		<concept id="c_3">Las declaraciones de Weyrauch</concept>
+		<concept id="c_4">Ésta</concept>
+		<concept id="c_5">Schäuble</concept>
+		<concept id="c_6">el partido</concept>
+		<concept id="c_7">la CDU</concept>
+		<concept id="c_8">cuentas secretas</concept>
+		<concept id="c_9">en los años noventa</concept>
+		<concept id="c_10">una constatación</concept>
+		<concept id="c_11">Liechtenstein</concept>
+		<concept id="c_12">los años noventa</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 "Ahora temblará la república y después lo hará Europa", afirma el ex asesor fiscal de Kohl.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el ex asesor fiscal de Kohl " />
+			<frame type="Statement" head="afirma">
+				<argument type="Speaker" dependent="Europa" />
+				<argument type="Speaker" dependent="ex asesor fiscal de Kohl" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El ex asesor fiscal de la Unión Cristianodemócrata ( CDU ) y cerebro de la financiación irregular del ex canciller Helmut Kohl, Horst Weyrauch, abrió también cuentas secretas para la dirección federal del partido cristianodemócrata ( CDU ).
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="aq0cn0">ex</token><token pos="ncms000">asesor</token><token pos="aq0cs0">fiscal</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np0000l">Unión</token><token pos="np0000l">Cristianodemócrata</token><token pos="fpa">(</token><token pos="np00000">CDU</token><token pos="fpt">)</token><token pos="cc">y</token><token pos="ncms000">cerebro</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">financiación</token><token pos="aq0cs0">irregular</token><token pos="spcms">del</token><token pos="aq0cn0">ex</token><token pos="nccs000">canciller</token><token pos="np0000l">Helmut</token><token pos="np0000l">Kohl</token><token pos="fc">,</token><token pos="np0000l">Horst</token><token pos="np0000l">Weyrauch</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_6" concept_ref3="c_8">
+			<token pos="vmis3s0">abrió</token><mention concept_ref="c_3"><token pos="ncfp000">cuentas</token></mention><token pos="aq0fp0">secretas</token><token pos="sps00">para</token><token pos="da0fs0">la</token><token pos="ncfs000">dirección</token><token pos="aq0cs0">federal</token><token pos="spcms">del</token><mention concept_ref="c_6"><token pos="ncms000">partido</token></mention><token pos="aq0cs0">cristianodemócrata</token><token pos="fpa">(</token><token pos="np00000">CDU</token><token pos="fpt">)</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Closure" head="abrió">
+				<argument type="Container_portal" dependent="cuentas secretas" /></main_frame>
+			<frame type="Leadership" head="dirección">
+				<argument type="Governed" dependent="federal" />
+				<argument type="Governed" dependent="partido cristianodemócrata ( CDU )" /></frame>
+			<frame type="People_by_religion" head="cristianodemócrata">
+				<argument type="Religion" dependent="partido cristianodemócrata" /></frame>
+			<frame type="Political_locales" head="federal" />
+			<frame type="Secrecy_status" head="secretas">
+				<argument type="Phenomenon" dependent="cuentas" /></frame>
+			<frame type="Text" head="cuentas" />
+			<frame type="Time_vector" head="del ex">
+				<argument type="Event" dependent="canciller Helmut" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La información fue proporcionada ayer por la segunda cadena de televisión pública ( ZDF ), a la que Weyrauch dijo: "Ahora se verá sacudida la república y luego sucederá lo mismo con Europa".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Weyrauch " />
+			<frame type="Calendric_unit" head="ayer por" />
+			<frame type="Event" head="se">
+				<argument type="Event" dependent="lo mismo" /></frame>
+			<frame type="Identicality" head="lo mismo" />
+			<frame type="Information" head="información" />
+			<frame type="Moving_in_place" head="sacudida">
+				<argument type="Time" dependent="Ahora" />
+				<argument type="Theme" dependent="la república" /></frame>
+			<frame type="Network" head="se">
+				<argument type="Possessor" dependent="pública" />
+				<argument type="Descriptor" dependent="televisión" /></frame>
+			<frame type="Ordinal_numbers" head="segunda">
+				<argument type="Type" dependent="televisión pública ( ZDF )" /></frame>
+			<frame type="Statement" head="dijo">
+				<argument type="Speaker" dependent="Weyrauch" />
+				<argument type="Message" dependent="; Ahora se verá sacudida la república y luego sucederá lo mismo con Europa  quot" /></frame>
+			<frame type="Supply" head="proporcionada">
+				<argument type="Theme" dependent="información" />
+				<argument type="Manner" dependent="ayer por" />
+				<argument type="Supplier" dependent="por la segunda cadena de televisión pública ( ZDF" /></frame>
+			<frame type="Temporal_collocation" head="Ahora">
+				<argument type="Trajector_event" dependent="se verá sacudida la república" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Preguntado por los reporteros de la ZDZ sobre si sus palabras eran una amenaza, Weyrauch agregó que su opinión era tan sólo "una constatación de hechos de un especialista".
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="dp3cs0">su</token><token pos="ncfs000">opinión</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_2" concept_ref3="c_10">
+			<token pos="vsii3s0">era</token><token pos="rg">tan</token><token pos="rg">sólo</token><token pos="fe">quot;</token><mention concept_ref="c_10"><token pos="di0fs0">una</token><token pos="ncfs000">constatación</token></mention><token pos="sps00">de</token><mention concept_ref="c_5"><token pos="ncmp000">hechos</token></mention><token pos="sps00">de</token><mention concept_ref="c_2"><token pos="di0ms0">un</token><token pos="nccs000">especialista</token></mention><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Preguntado por los reporteros de la ZDZ sobre si sus palabras eran una amenaza , Weyrauch " />
+			<frame type="Documents" head="constatación">
+				<argument type="Bearer" dependent="de un especialista" /></frame>
+			<frame type="Expertise" head="especialista" />
+			<frame type="Opinion" head="opinión">
+				<argument type="Cognizer" dependent="sus" /></frame>
+			<frame type="Risky_situation" head="amenaza" />
+			<frame type="Statement" head="agregó que">
+				<argument type="Message" dependent="reporteros de la ZDZ sobre si sus palabras eran una amenaza ," />
+				<argument type="Speaker" dependent="Weyrauch" />
+				<argument type="Message" dependent="que su opinión era tan sólo  quot ; una constatación de hechos de un especialista" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El ex asesor fiscal viajó constantemente a Suiza y a Liechtenstein en los años noventa.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="aq0cn0">ex</token><token pos="ncms000">asesor</token><token pos="aq0cs0">fiscal</token>
+		</theme>
+		<rheme concept_ref1="c_9" concept_ref2="c_11" concept_ref3="c_12">
+			<token pos="vmis3s0">viajó</token><token pos="sps00">a</token><token pos="np00000">Suiza</token><token pos="cc">y</token><token pos="sps00">a</token><mention concept_ref="c_11"><token pos="np00000">Liechtenstein</token></mention><mention concept_ref="c_9"><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="ncmp000">años</token><token pos="zm">noventa</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Time_vector" head="ex">
+				<argument type="Event" dependent="fiscal" /></frame>
+			<main_frame type="Travel" head="viajó">
+				<argument type="Traveler" dependent="ex asesor fiscal" />
+				<argument type="Goal" dependent="constantemente a Suiza y a Liechtenstein" />
+				<argument type="Time" dependent="en los años noventa" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sólo entre 1991 y 1992 estuvo siete veces por cuenta de la dirección de la CDU en Zúrich y Vaduz.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_in_control" head="dirección">
+				<argument type="Controlling_entity" dependent="de" /></frame>
+			<frame type="Cardinal_numbers" head="siete">
+				<argument type="Unit" dependent="veces" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="siete veces" />
+				<argument type="Ground" dependent="de la dirección de la CDU en Zúrich y Vaduz" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Las declaraciones de Weyrauch han agravado la situación del presidente de la CDU, Wolfgang Schäuble, después de que admitiese haber mantenido más de un encuentro con el comerciante de armas Karlheinz Schreiber.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fp0">Las</token><token pos="ncfp000">declaraciones</token><token pos="sps00">de</token><token pos="np00000">Weyrauch</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_6" concept_ref3="c_7" concept_ref4="c_5" concept_ref5="c_10" concept_ref6="c_11">
+			<token pos="vaip3p0">han</token><token pos="vmp00sm">agravado</token><token pos="da0fs0">la</token><token pos="ncfs000">situación</token><token pos="spcms">del</token><token pos="ncms000">presidente</token><token pos="sps00">de</token><mention concept_ref="c_7"><token pos="da0fs0">la</token><token pos="np00000">CDU</token></mention><token pos="fc">,</token><mention concept_ref="c_5"><token pos="np0000l">Wolfgang</token><token pos="np0000l">Schäuble</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="Weyrauch han" /></frame>
+			<frame type="Discussion" head="un encuentro">
+				<argument type="Place" dependent="con el comerciante de armas Karlheinz Schreiber" /></frame>
+			<frame type="Relative_time" head="después de">
+				<argument type="Focal_occasion" dependent="la situación del presidente de la CDU , Wolfgang" />
+				<argument type="Landmark_occasion" dependent="que admitiese haber mantenido más de un encuentro con el comerciante de armas Karlheinz Schreiber" /></frame>
+			<frame type="Reveal_secret" head="admitiese">
+				<argument type="Speaker" dependent="el" />
+				<argument type="Information" dependent="haber mantenido más de un encuentro con el comerciante de armas Karlheinz Schreiber" /></frame>
+			<frame type="Statement" head="declaraciones">
+				<argument type="Occasion" dependent="de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ésta es la segunda vez que Schäuble entra en rectificaciones después de haber declarado inicialmente ante el Parlamento federal que sólo se reunió una vez con Schreiber y que no recibió dinero.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="pd0fs000">Ésta</token>
+		</theme>
+		<rheme concept_ref1="c_3">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_3"><token pos="da0fs0">la</token><token pos="ao0fs0">segunda</token><token pos="ncfs000">vez</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_start" head="entra en">
+				<argument type="Activity" dependent="de" />
+				<argument type="Activity" dependent="en rectificaciones" /></frame>
+			<frame type="Money" head="dinero" />
+			<frame type="Ordinal_numbers" head="segunda">
+				<argument type="Type" dependent="vez" /></frame>
+			<frame type="Political_locales" head="federal" />
+			<frame type="Receiving" head="recibió">
+				<argument type="Recipient" dependent="el" />
+				<argument type="Theme" dependent="dinero" /></frame>
+			<main_frame type="Relative_time" head="después de">
+				<argument type="Focal_occasion" dependent="la segunda vez que Schäuble entra en rectificaciones" />
+				<argument type="Focal_occasion" dependent="declarado inicialmente ante el Parlamento federal que sólo se reunió una vez con Schreiber y que no recibió dinero" /></main_frame>
+			<frame type="Statement" head="declarado">
+				<argument type="Message" dependent="reunió una vez con Schreiber y que no recibió dinero" /></frame>
+			<frame type="Time_vector" head="ante">
+				<argument type="Landmark_event" dependent="Parlamento federal que sólo se reunió una vez con Schreiber y que no recibió dinero" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por esta declaración, Schäuble debió pedir perdón en el Parlamento.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="np00000">Schäuble</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_6" concept_ref3="c_10">
+			<token pos="sps00">Por</token><token pos="dd0fs0">esta</token><token pos="ncfs000">declaración</token><token pos="vmis3s0">debió</token><token pos="vmn0000">pedir</token><token pos="ncms000">perdón</token><token pos="sps00">en</token><mention concept_ref="c_6"><token pos="da0ms0">el</token><token pos="np00000">Parlamento</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Statement" head="declaración" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El diputado del partido Los Verdes, Hans-Christian Ströbele, dijo que "debe investigarse si Schäuble no dijo la verdad intencionadamente".
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="np00000">Schäuble</token>
+		</theme>
+		<rheme concept_ref1="c_6">
+			<token pos="rn">no</token><token pos="vmis3s0">dijo</token><mention concept_ref="c_6"><token pos="da0fs0">la</token><token pos="ncfs000">verdad</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El diputado del partido Los Verdes , Hans-Christian Ströbele , " />
+			<frame type="Aggregate" head="partido">
+				<argument type="Individuals" dependent="Verdes" /></frame>
+			<frame type="Scrutiny" head="investigarse">
+				<argument type="Ground" dependent="la" /></frame>
+			<main_frame type="Statement" head="dijo">
+				<argument type="Speaker" dependent="diputado del partido Los Verdes ," />
+				<argument type="Message" dependent="; debe investigarse si Schäuble no dijo la verdad intencionadamente" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La portavoz de la CDU, Eva Christiansen, dijo que el partido no dispone de pruebas que demuestren la existencia de cuentas secretas en paraísos fiscales, y aseguró que es "de sobra conocido" que Weyrauch efectuó varios viajes a Suiza y Liechtenstein a cuenta de la CDU.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0ms0">el</token><token pos="ncms000">partido</token>
+		</theme>
+		<rheme concept_ref1="c_3">
+			<token pos="rn">no</token><token pos="vmip3s0">dispone</token><token pos="sps00">de</token><mention concept_ref="c_3"><token pos="ncfp000">pruebas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="La portavoz de la CDU , Eva Christiansen , " />
+			<frame type="Aggregate" head="partido" />
+			<frame type="Awareness" head="conocido">
+				<argument type="Degree" dependent="es" />
+				<argument type="Content" dependent="; de sobra conocido  quot ; que Weyrauch efectuó varios viajes a Suiza y Liechtenstein" /></frame>
+			<frame type="Evidence" head="demuestren">
+				<argument type="Proposition" dependent="de pruebas que demuestren la existencia de cuentas secretas en paraísos fiscales" /></frame>
+			<frame type="Evidence" head="pruebas">
+				<argument type="Proposition" dependent="la existencia de cuentas secretas en paraísos fiscales" /></frame>
+			<frame type="Existence" head="existencia">
+				<argument type="Entity" dependent="portavoz" /></frame>
+			<frame type="Quantified_mass" head="varios">
+				<argument type="Individuals" dependent="viajes" /></frame>
+			<frame type="Representative" head="quot">
+				<argument type="Represented" dependent="de" />
+				<argument type="Representative" dependent="Christiansen" /></frame>
+			<frame type="Secrecy_status" head="secretas">
+				<argument type="Phenomenon" dependent="cuentas" /></frame>
+			<frame type="Statement" head="dijo">
+				<argument type="Message" dependent="Christiansen , dijo que el partido no dispone de pruebas que demuestren la existencia de cuentas secretas en paraísos fiscales" />
+				<argument type="Message" dependent="de sobra conocido  quot ; que Weyrauch efectuó varios viajes a Suiza y Liechtenstein" /></frame>
+			<frame type="Text" head="cuentas">
+				<argument type="Genre" dependent="secretas" /></frame>
+			<frame type="Travel" head="viajes">
+				<argument type="Traveler" dependent="Weyrauch" />
+				<argument type="Goal" dependent="y Liechtenstein a" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No obstante, agregó que la CDU está todavía a la espera de las respuestas de Weyrauch a un extenso cuestionario, relativo también a todos sus viajes y a los movimientos de medios en cuentas de la CDU en el extranjero, del 1 de enero de 1989 al 31 de diciembre de 1999.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0fs0">la</token><token pos="np00000">CDU</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_7" concept_ref3="c_2" concept_ref4="c_10" concept_ref5="c_12">
+			<token pos="vmip3s0">está</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">espera</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">respuestas</token><token pos="sps00">de</token><token pos="np00000">Weyrauch</token><token pos="sps00">a</token><token pos="di0ms0">un</token><token pos="aq0ms0">extenso</token><token pos="ncms000">cuestionario</token><token pos="fc">,</token><token pos="aq0ms0">relativo</token><token pos="rg">también</token><token pos="sps00">a</token><token pos="di0mp0">todos</token><token pos="dp3cp0">sus</token><token pos="ncmp000">viajes</token><token pos="cc">y</token><token pos="sps00">a</token><mention concept_ref="c_12"><token pos="da0mp0">los</token><token pos="ncmp000">movimientos</token></mention><token pos="sps00">de</token><token pos="ncmp000">medios</token><token pos="sps00">en</token><mention concept_ref="c_3"><token pos="ncfp000">cuentas</token></mention><token pos="sps00">de</token><mention concept_ref="c_7"><token pos="da0fs0">la</token><token pos="np00000">CDU</token></mention><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">extranjero</token><token pos="fc">,</token><token pos="spcms">del</token><token pos="z">1</token><token pos="sps00">de</token><token pos="ncfp000">enero</token><token pos="sps00">de</token><token pos="z">1989</token><token pos="spcms">al</token><token pos="z">31</token><token pos="sps00">de</token><token pos="ncfp000">diciembre</token><token pos="sps00">de</token><token pos="z">1999</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Communication_response" head="respuestas">
+				<argument type="Speaker" dependent="Weyrauch" /></frame>
+			<frame type="Continued_state_of_affairs" head="todavía">
+				<argument type="State_of_affairs" dependent="el" />
+				<argument type="State_of_affairs" dependent="a la espera de las respuestas de Weyrauch a un extenso cuestionario" /></frame>
+			<frame type="Expectation" head="espera de">
+				<argument type="Cognizer" dependent="del" />
+				<argument type="Phenomenon" dependent="de las respuestas de Weyrauch a un extenso cuestionario" /></frame>
+			<frame type="Statement" head="agregó que">
+				<argument type="Speaker" dependent="sus" />
+				<argument type="Message" dependent="todavía a la espera de las respuestas de Weyrauch a un extenso cuestionario , relativo también a todos sus viajes y a los movimientos de medios en cuentas de la CDU en el extranjero , del 1 de enero de 1989 al 31 de diciembre de 1999 ." /></frame>
+			<frame type="Text" head="cuentas de">
+				<argument type="Author" dependent="de" /></frame>
+			<frame type="Topic" head="relativo">
+				<argument type="Topic" dependent="todos sus viajes y a los movimientos de medios en cuentas de la CDU en el extranjero" /></frame>
+			<frame type="Travel" head="viajes">
+				<argument type="Traveler" dependent="la" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

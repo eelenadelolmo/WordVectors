@@ -1,0 +1,18 @@
+{   ('Being_employed', 'posición'): [('Employee', 'lo'), ('Employee', 'del Ejecutivo español')],
+    ('Calendric_unit', 'Ayer'): [],
+    ('Compliance', 'de ajustarse'): [('Norm', 'a lo que determine la justicia española')],
+    ('Deciding', 'decisión'): [('Cognizer', 'lo')],
+    ('Identicality', 'mismo'): [('Set_of_instances', 'la posición del Ejecutivo español')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'cumbre'), ('Ground', 'Vilamoura')],
+    ('Leadership', 'Gobierno'): [('Governed', 'británico')],
+    ('Locative_relation', 'en'): [('Figure', 'al'), ('Ground', 'al terminar la cumbre hispano-lusa en Vilamoura')],
+    ('Manufacturing', 'lo'): [('Producer', 'el Gobierno británico'), ('Product', 'su decisión')],
+    ('Process_end', 'terminar'): [('Process', 'la cumbre'), ('Place', 'en Vilamoura')],
+    ('State_continue', 'seguirá'): [('Entity', 'del Ejecutivo español'), ('State', 'la misma')],
+    ('Statement', 'afirmó'): [   ('Time', 'Ayer'),
+                                 ('Speaker', 'Aznar , al terminar la cumbre hispano-lusa en Vilamoura'),
+                                 (   'Message',
+                                     '; Cuando el Gobierno británico tome su decisión , la posición del Ejecutivo español seguirá siendo la misma , la de ajustarse a lo que determine la justicia '
+                                     'española')],
+    ('Temporal_collocation', 'Cuando'): [   ('Landmark_event', 'el Gobierno británico tome su decisión'),
+                                            ('Trajector_event', ', la posición del Ejecutivo español seguirá siendo la misma , la de ajustarse a lo que determine la justicia')]}

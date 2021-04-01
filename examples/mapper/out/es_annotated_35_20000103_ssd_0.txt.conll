@@ -1,0 +1,4 @@
+{   ('Buildings', 'hospitales'): [],
+    ('Hiring', 'contraten'): [('Employee', 'médicos'), ('Task', 'que precisen')],
+    ('Needing', 'pide'): [('Cognizer', 'médicos'), ('Requirement', 'los')],
+    ('Questioning', 'pide'): [('Speaker', 'precisen'), ('Speaker', 'hospitales'), ('Message', 'contraten a los médicos que precisen')]}

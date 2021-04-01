@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="38_19990902_a_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Jordi Pujol</concept>
+		<concept id="c_1">que</concept>
+		<concept id="c_2">El resto de candidatos a las próximas elecciones catalanas</concept>
+		<concept id="c_3">Estas mediciones</concept>
+		<concept id="c_4">Iniciativa-Verds</concept>
+		<concept id="c_5">El candidato socialista , a través de su oficina de campaña , y el PSC</concept>
+		<concept id="c_6">en los informativos</concept>
+		<concept id="c_7">mediciones de audiencia de la Corporació Catalana de</concept>
+		<concept id="c_8">que la</concept>
+		<concept id="c_9">su</concept>
+		<concept id="c_10">un total</concept>
+		<concept id="c_11">Televisió</concept>
+		<concept id="c_12">se</concept>
+		<concept id="c_13">semana</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Jordi Pujol apareció en los informativos de TV-3 durante el mes de julio durante un total de 36 minutos y 50 segundos, mientras que el tiempo destinado a Pasqual Maragall fue de 15 minutos y 20 segundos.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np0000l">Jordi</token><token pos="np0000l">Pujol</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_6" concept_ref3="c_10" concept_ref4="c_12">
+			<token pos="vmis3s0">apareció</token><mention concept_ref="c_6"><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="ncmp000">informativos</token></mention><token pos="sps00">de</token><token pos="np00000">TV-3</token><token pos="sps00">durante</token><token pos="da0ms0">el</token><token pos="ncms000">mes</token><token pos="spcms">de</token><token pos="ncms000">julio</token><token pos="sps00">durante</token><mention concept_ref="c_10"><token pos="di0ms0">un</token><token pos="aq0cs0">total</token></mention><token pos="sps00">de</token><token pos="z">36</token><token pos="ncmp000">minutos</token><token pos="cc">y</token><token pos="z">50</token><token pos="ncmp000">segundos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Amounting_to" head="total">
+				<argument type="Attribute" dependent="de 36 minutos y 50 segundos" /></frame>
+			<frame type="Calendric_unit" head="mes de">
+				<argument type="Relative_time" dependent="de julio" /></frame>
+			<frame type="Calendric_unit" head="minutos">
+				<argument type="Count" dependent="15" /></frame>
+			<frame type="Concessive" head="durante">
+				<argument type="Main_assertion" dependent="de julio durante un total de 36 minutos y 50 segundos" />
+				<argument type="Main_assertion" dependent="Maragall fue de 15 minutos y 20 segundos" /></frame>
+			<main_frame type="Give_impression" head="apareció">
+				<argument type="Phenomenon" dependent="Jordi Pujol" />
+				<argument type="Characterization" dependent="en los informativos" /></main_frame>
+			<frame type="Measure_duration" head="segundos">
+				<argument type="Count" dependent="20" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="tiempo" />
+				<argument type="Ground" dependent="Maragall" /></frame>
+			<frame type="Used_up" head="fue">
+				<argument type="Resource" dependent="Maragall" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Son datos de Sofres, la empresa que realiza las mediciones de audiencia de la Corporació Catalana de Ràdio i Televisió ( CCRTV ).
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_4" concept_ref3="c_5" concept_ref4="c_7" concept_ref5="c_11">
+			<token pos="vmip3s0">realiza</token><mention concept_ref="c_3"><token pos="da0fp0">las</token><token pos="ncfp000">mediciones</token></mention><token pos="sps00">de</token><mention concept_ref="c_4"><token pos="ncfs000">audiencia</token></mention><token pos="sps00">de</token><mention concept_ref="c_5"><token pos="da0fs0">la</token><token pos="np00000">Corporació</token><token pos="ncfs000">Catalana</token><token pos="sps00">de</token><token pos="np00000">Ràdio</token></mention><token pos="ncfs000">i</token><mention concept_ref="c_11"><token pos="np00000">Televisió</token></mention><token pos="fpa">(</token><token pos="np00000">CCRTV</token><token pos="fpt">)</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Businesses" head="empresa">
+				<argument type="Product" dependent="que realiza las mediciones de audiencia de la Corporació Catalana de" /></frame>
+			<frame type="Information" head="datos" />
+			<main_frame type="Intentionally_act" head="realiza">
+				<argument type="Agent" dependent="que" />
+				<argument type="Act" dependent="mediciones de audiencia de la Corporació Catalana de" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El resto de candidatos a las próximas elecciones catalanas se repartieron así las apariciones en la televisión pública catalana: Rafael Ribó, de Iniciativa per Catalunya-Verds, acaparó 11 minutos y 29 segundos ; Alberto Fernández Díaz, presidenciable del PP, 11 minutos exactos, mientras que el de ERC, Josep Lluís Carod-Rovira, ocupó nueve minutos de pantalla.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="ncms000">resto</token><token pos="sps00">de</token><token pos="ncmp000">candidatos</token><token pos="sps00">a</token><token pos="da0fp0">las</token><token pos="aq0fp0">próximas</token><token pos="ncfp000">elecciones</token><token pos="aq0fp0">catalanas</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_11" concept_ref3="c_12">
+			<mention concept_ref="c_12"><token pos="p0300000">se</token></mention><token pos="vmis3p0">repartieron</token><mention concept_ref="c_4"><token pos="da0fp0">las</token><token pos="ncfp000">apariciones</token></mention><token pos="sps00">en</token><mention concept_ref="c_11"><token pos="da0fs0">la</token><token pos="ncfs000">televisión</token></mention><token pos="aq0fs0">pública</token><token pos="aq0fs0">catalana</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="minutos">
+				<argument type="Count" dependent="nueve" /></frame>
+			<frame type="Change_of_leadership" head="elecciones">
+				<argument type="Selector" dependent="catalana" /></frame>
+			<main_frame type="Dispersal" head="repartieron">
+				<argument type="Individuals" dependent="la televisión pública catalana : Rafael Ribó , de Iniciativa per Catalunya-Verds , acaparó 11 minutos y 29" /></main_frame>
+			<frame type="Leadership" head="presidenciable del">
+				<argument type="Governed" dependent="del PP" /></frame>
+			<frame type="Measure_duration" head="segundos">
+				<argument type="Count" dependent="29" /></frame>
+			<frame type="Rest" head="resto">
+				<argument type="Whole" dependent="de candidatos" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="las apariciones" />
+				<argument type="Ground" dependent="televisión pública catalana : Rafael Ribó , de Iniciativa per Catalunya-Verds , acaparó 11 minutos y 29 segundos ;" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Estas mediciones incluyen los informativos Telenotícies migdia, Telenotícies vespre y el Telenotícies última hora, además de los de los fines de semana.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="dd0fp0">Estas</token><token pos="ncfp000">mediciones</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_2" concept_ref3="c_5" concept_ref4="c_3" concept_ref5="c_6" concept_ref6="c_10" concept_ref7="c_11" concept_ref8="c_12" concept_ref9="c_13">
+			<token pos="vmip3p0">incluyen</token><mention concept_ref="c_4"><token pos="da0mp0">los</token><token pos="ncmp000">informativos</token></mention><token pos="np0000l">Telenotícies</token><token pos="np0000l">migdia</token><token pos="fc">,</token><token pos="np0000l">Telenotícies</token><token pos="np0000l">vespre</token><token pos="cc">y</token><mention concept_ref="c_5"><token pos="da0ms0">el</token><token pos="ncfp000">Telenotícies</token><token pos="aq0fp0">última</token><token pos="ncfp000">hora</token></mention><token pos="fc">,</token><token pos="rg">además</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">fines</token><token pos="sps00">de</token><mention concept_ref="c_13"><token pos="ncfs000">semana</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="fines de semana">
+				<argument type="Count" dependent="el" /></frame>
+			<main_frame type="Inclusion" head="incluyen">
+				<argument type="Total" dependent="Estas mediciones" />
+				<argument type="Part" dependent="los informativos Telenotícies migdia , Telenotícies vespre y el Telenotícies última hora , además de los de los fines de semana" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Iniciativa-Verds ya publicó recientemente un estudio en el que abordaba el mismo asunto y en el que también se concluía con que la presencia de Pujol era muy superior a la de Maragall.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="np00000">Iniciativa-Verds</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_5" concept_ref3="c_0" concept_ref4="c_6" concept_ref5="c_7" concept_ref6="c_8" concept_ref7="c_9" concept_ref8="c_10" concept_ref9="c_12">
+			<token pos="vmis3s0">publicó</token><token pos="rg">recientemente</token><token pos="di0ms0">un</token><token pos="ncms000">estudio</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="pr0cn000">que</token><token pos="vmii3s0">abordaba</token><token pos="da0ms0">el</token><token pos="di0ms0">mismo</token><token pos="ncms000">asunto</token><token pos="cc">y</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="pr0cn000">que</token><token pos="rg">también</token><mention concept_ref="c_12"><token pos="p0000000">se</token></mention><token pos="vmii3s0">concluía</token><token pos="sps00">con</token><mention concept_ref="c_8"><token pos="cs">que</token><token pos="da0fs0">la</token></mention><token pos="ncfs000">presencia</token><token pos="sps00">de</token><mention concept_ref="c_0"><token pos="np00000">Pujol</token></mention><mention concept_ref="c_7"><token pos="vsii3s0">era</token><token pos="rg">muy</token><token pos="aq0cs0">superior</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="sps00">de</token><token pos="np00000">Maragall</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_finish" head="concluía">
+				<argument type="Agent" dependent="que la" />
+				<argument type="Activity" dependent="era muy superior a la de Maragall" /></main_frame>
+			<frame type="Identicality" head="el mismo">
+				<argument type="Type" dependent="asunto" /></frame>
+			<frame type="Point_of_dispute" head="asunto">
+				<argument type="Descriptor" dependent="a la de Maragall" /></frame>
+			<frame type="Presence" head="presencia">
+				<argument type="Location" dependent="a la de Maragall" /></frame>
+			<frame type="Scrutiny" head="estudio">
+				<argument type="Ground" dependent="abordaba el mismo asunto" /></frame>
+			<main_frame type="Statement" head="abordaba">
+				<argument type="Message" dependent="el mismo asunto" /></main_frame>
+			<frame type="Temporal_collocation" head="recientemente">
+				<argument type="Trajector_event" dependent="de" />
+				<argument type="Trajector_event" dependent="un estudio en el que abordaba el mismo asunto y en el que también se concluía con que la presencia de Pujol era muy superior a la de Maragall ." /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El candidato socialista, a través de su oficina de campaña, y el PSC han reclamado en las últimas semanas a la dirección de TV-3 que corrija su política informativa por considerar que promociona de forma "sistemática" al president y margina al resto de aspirantes a la presidencia de la Generalitat.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0ms0">El</token><token pos="ncms000">candidato</token><token pos="aq0cs0">socialista</token><token pos="fc">,</token><token pos="sps00">a</token><token pos="ncfs000">través</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncfs000">oficina</token><token pos="sps00">de</token><token pos="ncfs000">campaña</token><token pos="fc">,</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="np00000">PSC</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_5" concept_ref3="c_2" concept_ref4="c_9" concept_ref5="c_10" concept_ref6="c_12" concept_ref7="c_13">
+			<token pos="vaip3p0">han</token><token pos="vmp00sm">reclamado</token><token pos="sps00">en</token><mention concept_ref="c_3"><token pos="da0fp0">las</token><token pos="ao0fp0">últimas</token><token pos="ncfp000">semanas</token></mention><token pos="sps00">a</token><mention concept_ref="c_5"><token pos="da0fs0">la</token><token pos="ncfs000">dirección</token></mention><token pos="sps00">de</token><token pos="np00000">TV-3</token><token pos="cs">que</token><token pos="vmsp3s0">corrija</token><mention concept_ref="c_9"><token pos="dp3cs0">su</token></mention><token pos="ncfs000">política</token><token pos="aq0fs0">informativa</token><token pos="sps00">por</token><token pos="vmn0000">considerar</token><token pos="cs">que</token><token pos="vmip3s0">promociona</token><token pos="sps00">de</token><token pos="ncfs000">forma</token><token pos="fe">quot;</token><token pos="aq0fs0">sistemática</token><token pos="fe">quot;</token><token pos="spcms">al</token><token pos="ncms000">president</token><token pos="cc">y</token><token pos="vmip3s0">margina</token><token pos="spcms">al</token><token pos="ncms000">resto</token><token pos="sps00">de</token><mention concept_ref="c_2"><token pos="nccp000">aspirantes</token></mention><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">presidencia</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Generalitat</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="president" />
+			<frame type="Building_subparts" head="oficina">
+				<argument type="Whole" dependent="su" />
+				<argument type="Use" dependent="campaña" /></frame>
+			<frame type="Calendric_unit" head="semanas">
+				<argument type="Relative_time" dependent="últimas" /></frame>
+			<main_frame type="Cause_change_of_position_on_a_scale" head="promociona de">
+				<argument type="Agent" dependent="su" />
+				<argument type="Item" dependent="sistemática  quot ; al president y margina al resto de aspirantes a la presidencia de la Generalitat" /></main_frame>
+			<frame type="Increment" head="resto">
+				<argument type="Class" dependent="candidato" /></frame>
+			<frame type="Information" head="informativa">
+				<argument type="Cognizer" dependent="su" /></frame>
+			<frame type="Law" head="política">
+				<argument type="Jurisdiction" dependent="informativa" />
+				<argument type="Name" dependent="por considerar" /></frame>
+			<frame type="Means" head="través">
+				<argument type="Purpose" dependent="al resto de aspirantes a la presidencia de la Generalitat" /></frame>
+			<frame type="Referring_by_name" head="quot">
+				<argument type="Time" dependent="últimas" />
+				<argument type="Name" dependent="semanas" />
+				<argument type="Name" dependent="en las" /></frame>
+			<frame type="Resolve_problem" head="en">
+				<argument type="Problem" dependent="su política informativa" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="41_19991002_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Marruecos</concept>
+		<concept id="c_1">el titular de Comunicación</concept>
+		<concept id="c_2">el Consejo de Ministros</concept>
+		<concept id="c_3">El Gobierno</concept>
+		<concept id="c_4">con</concept>
+		<concept id="c_5">la soberanía de Ceuta y Melilla</concept>
+		<concept id="c_6">la mesa</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Marruecos ha vuelto a poner sobre la mesa su vieja reclamación de discutir con España la soberanía de Ceuta y Melilla.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Marruecos</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_4" concept_ref4="c_5" concept_ref5="c_6">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">vuelto</token><token pos="sps00">a</token><token pos="vmn0000">poner</token><token pos="sps00">sobre</token><mention concept_ref="c_6"><token pos="da0fs0">la</token><token pos="ncfs000">mesa</token></mention><mention concept_ref="c_1"><token pos="dp3cs0">su</token><token pos="aq0fs0">vieja</token><token pos="ncfs000">reclamación</token></mention><token pos="sps00">de</token><token pos="vmn0000">discutir</token><mention concept_ref="c_4"><token pos="sps00">con</token></mention><token pos="np00000">España</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="ncfs000">soberanía</token></mention><token pos="sps00">de</token><token pos="np00000">Ceuta</token><token pos="cc">y</token><token pos="np00000">Melilla</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="vieja">
+				<argument type="Entity" dependent="su" />
+				<argument type="Entity" dependent="de discutir con España la soberanía de Ceuta y Melilla" /></frame>
+			<main_frame type="Discussion" head="discutir">
+				<argument type="Interlocutor_2" dependent="con" />
+				<argument type="Topic" dependent="la soberanía de Ceuta y Melilla" /></main_frame>
+			<frame type="Statement" head="reclamación">
+				<argument type="Speaker" dependent="su" />
+				<argument type="Message" dependent="vieja" />
+				<argument type="Message" dependent="de discutir con España la soberanía de Ceuta y Melilla" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Si el pasado agosto fue el primer ministro Abderramán Yusufi quien destacó la necesidad de que los Gobiernos marroquí y español reflexionen "conjuntamente sobre un nuevo estatuto para Ceuta y Melilla", ayer fue el ministro de Comunicación, Mohamed Messari, el que reivindicó al Ejecutivo de José María Aznar un foro de debate sobre el futuro de las dos ciudades.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevo">
+				<argument type="Entity" dependent="estatuto" /></frame>
+			<frame type="Alternatives" head="futuro">
+				<argument type="Salient_entity" dependent="las dos ciudades" /></frame>
+			<frame type="Calendric_unit" head="agosto">
+				<argument type="Relative_time" dependent="ayer" /></frame>
+			<frame type="Calendric_unit" head="ayer fue" />
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="ciudades" /></frame>
+			<frame type="Cogitation" head="reflexionen" />
+			<frame type="Collaboration" head="conjuntamente">
+				<argument type="Duration" dependent="Si el pasado agosto" />
+				<argument type="Partner_2" dependent="sobre un nuevo estatuto" />
+				<argument type="Undertaking" dependent="para Ceuta y Melilla" /></frame>
+			<frame type="Discussion" head="debate">
+				<argument type="Topic" dependent="futuro de las dos ciudades" /></frame>
+			<frame type="Leadership" head="Gobiernos">
+				<argument type="Governed" dependent="español" /></frame>
+			<frame type="Needing" head="necesidad de">
+				<argument type="Cognizer" dependent="Gobiernos marroquí y español" /></frame>
+			<frame type="Political_locales" head="ciudades" />
+			<frame type="Request" head="necesidad de">
+				<argument type="Speaker" dependent="quien" />
+				<argument type="Message" dependent="Aznar un foro de" /></frame>
+			<frame type="Spatial_contact" head="de">
+				<argument type="Figure" dependent="reflexionen  quot ; conjuntamente" />
+				<argument type="Ground" dependent="un nuevo estatuto para Ceuta y Melilla" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Messari, que ayer participó en Tetuán en un encuentro organizado por la UGT sobre las relaciones entre Andalucía y el norte de Marruecos, propuso la organización de reuniones entre autoridades españolas y marroquís para analizar los intereses comunes en la zona.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Messari</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="rg">ayer</token><token pos="vmis3s0">participó</token><token pos="sps00">en</token><token pos="np00000">Tetuán</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="ncms000">encuentro</token><token pos="aq0msp">organizado</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="np00000">UGT</token><token pos="sps00">sobre</token><token pos="da0fp0">las</token><token pos="ncfp000">relaciones</token><token pos="sps00">entre</token><token pos="np00000">Andalucía</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">norte</token><token pos="sps00">de</token><token pos="np00000">Marruecos</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_3" concept_ref3="c_0" concept_ref4="c_2" concept_ref5="c_5" concept_ref6="c_6">
+			<token pos="vmis3s0">propuso</token><mention concept_ref="c_1"><token pos="da0fs0">la</token><token pos="ncfs000">organización</token></mention><token pos="sps00">de</token><mention concept_ref="c_3"><token pos="ncfp000">reuniones</token></mention><token pos="sps00">entre</token><mention concept_ref="c_0"><token pos="ncfp000">autoridades</token></mention><token pos="aq0fp0">españolas</token><token pos="cc">y</token><token pos="aq0cp0">marroquís</token><token pos="sps00">para</token><token pos="vmn0000">analizar</token><mention concept_ref="c_2"><token pos="da0mp0">los</token><token pos="ncmp000">intereses</token></mention><token pos="aq0cp0">comunes</token><token pos="sps00">en</token><mention concept_ref="c_6"><token pos="da0fs0">la</token><token pos="ncfs000">zona</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Discussion" head="reuniones">
+				<argument type="Interlocutor_2" dependent="entre autoridades españolas y" />
+				<argument type="Purpose" dependent="analizar los intereses comunes en la zona" /></frame>
+			<frame type="Emotion_directed" head="intereses" />
+			<frame type="Leadership" head="autoridades">
+				<argument type="Governed" dependent="marroquís" /></frame>
+			<frame type="Locale" head="zona" />
+			<frame type="Organization" head="organización">
+				<argument type="Purpose" dependent="de reuniones" /></frame>
+			<frame type="Part_orientational" head="norte">
+				<argument type="Whole" dependent="marroquís" /></frame>
+			<main_frame type="Participation" head="participó" />
+			<frame type="Relation" head="las relaciones">
+				<argument type="Entity_2" dependent="entre Andalucía y el norte de Marruecos" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="de" />
+				<argument type="Ground" dependent="relaciones entre Andalucía y el norte de Marruecos" /></frame>
+			<main_frame type="Statement" head="propuso">
+				<argument type="Message" dependent="organización de reuniones entre autoridades españolas y marroquís para analizar los intereses comunes en la zona" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El ministro admitió las dificultades que encierra este asunto, por la negativa del Gobierno español a plantearse siquiera la cesión de las dos ciudades, y reconoció que el Ejecutivo de Aznar "seguirá pensando que Ceuta y Melilla le pertenecen, y el marroquí, por su parte, que también".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el Ejecutivo de Aznar " />
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="ciudades" /></frame>
+			<frame type="Categorization" head="pensando">
+				<argument type="Item" dependent="la cesión de las dos ciudades" /></frame>
+			<frame type="Causation" head="por la">
+				<argument type="Effect" dependent="ministro admitió las dificultades que encierra este asunto" />
+				<argument type="Cause" dependent="negativa del Gobierno español a plantearse siquiera la cesión de las dos ciudades ," /></frame>
+			<frame type="Communication_response" head="admitió">
+				<argument type="Trigger" dependent="que el Ejecutivo de Aznar  quot ; seguirá pensando que Ceuta y Melilla le pertenecen , y el marroquí , por su parte , que también" /></frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Governed" dependent="español" /></frame>
+			<frame type="Leadership" head="ministro" />
+			<frame type="Opinion" head="pensando">
+				<argument type="Opinion" dependent="que Ceuta y Melilla" /></frame>
+			<frame type="Part_whole" head="parte">
+				<argument type="Whole" dependent="su" /></frame>
+			<frame type="Political_locales" head="ciudades" />
+			<frame type="Possession" head="pertenecen">
+				<argument type="Owner" dependent="Ceuta y Melilla" />
+				<argument type="Possession" dependent="por su" /></frame>
+			<frame type="Process_continue" head="seguirá">
+				<argument type="Event" dependent="el Ejecutivo de Aznar" />
+				<argument type="Event" dependent="pensando que Ceuta y Melilla le pertenecen , y el marroquí , por su parte , que" /></frame>
+			<frame type="Reveal_secret" head="admitió">
+				<argument type="Speaker" dependent="ministro" />
+				<argument type="Information" dependent="las dificultades" />
+				<argument type="Time" dependent="este asunto" />
+				<argument type="Information" dependent=", y reconoció que el Ejecutivo de Aznar  quot ; seguirá pensando que Ceuta y Melilla le pertenecen" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A pesar de esto, el titular de Comunicación expresó su confianza en que España cederá.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">el</token><token pos="ncms000">titular</token><token pos="sps00">de</token><token pos="np00000">Comunicación</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_4" concept_ref3="c_5" concept_ref4="c_6">
+			<token pos="vmis3s0">expresó</token><mention concept_ref="c_0"><token pos="dp3cs0">su</token><token pos="ncfs000">confianza</token></mention><token pos="sps00">en</token><token pos="cs">que</token><mention concept_ref="c_6"><token pos="np00000">España</token></mention><token pos="vmif3s0">cederá</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Certainty" head="confianza">
+				<argument type="Content" dependent="cederá" /></frame>
+			<main_frame type="Expressing_publicly" head="expresó">
+				<argument type="Communicator" dependent="el titular de Comunicación" />
+				<argument type="Content" dependent="su confianza en que España cederá" /></main_frame>
+			<frame type="Giving" head="su">
+				<argument type="Recipient" dependent="su" />
+				<argument type="Means" dependent="en" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Acabará entendiendo que Marruecos tiene razón en sus reivindicaciones sobre ambos territorios, como ya ocurrió con el Sahara", aventuró.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Marruecos</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_6">
+			<token pos="vmip3s0">tiene</token><mention concept_ref="c_6"><token pos="ncfs000">razón</token></mention><token pos="sps00">en</token><mention concept_ref="c_0"><token pos="dp3cp0">sus</token><token pos="ncfp000">reivindicaciones</token></mention><token pos="sps00">sobre</token><token pos="dn0mp0">ambos</token><token pos="ncmp000">territorios</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Direction" head="en">
+				<argument type="Distance" dependent="sus" /></frame>
+			<frame type="Event" head="ocurrió">
+				<argument type="Place" dependent="con el Sahara" /></frame>
+			<frame type="Grasp" head="entendiendo">
+				<argument type="Cognizer" dependent="sus" />
+				<argument type="Phenomenon" dependent="tiene razón en sus reivindicaciones sobre ambos territorios" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="aventuró" />
+				<argument type="Ground" dependent="sus reivindicaciones sobre ambos territorios" /></frame>
+			<frame type="Political_locales" head="territorios" />
+			<frame type="Process_end" head="el">
+				<argument type="Process" dependent="sus" />
+				<argument type="Process" dependent="entendiendo que Marruecos tiene razón en sus reivindicaciones sobre ambos territorios" /></frame>
+			<frame type="Request" head="reivindicaciones">
+				<argument type="Speaker" dependent="el" />
+				<argument type="Message" dependent="sobre ambos territorios" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="sus reivindicaciones" />
+				<argument type="Ground" dependent="ambos territorios" /></frame>
+			<frame type="Statement" head="aventuró">
+				<argument type="Speaker" dependent="sus" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Más control urbanístico.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_in_control" head="control">
+				<argument type="Dependent_entity" dependent="urbanístico" /></frame>
+			<frame type="Increment" head="Más">
+				<argument type="Class" dependent="control urbanístico" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por su parte, el Consejo de Ministros dio ayer otra vuelta de tuerca al control urbanístico de las ciudades autónomas de Ceuta y de Melilla para evitar la especulación urbanística por parte del Grupo Independiente Liberal ( GIL ), que gobierna en Ceuta.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">el</token><token pos="ncms000">Consejo</token><token pos="spcms">de</token><token pos="ncms000">Ministros</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_3" concept_ref4="c_4" concept_ref5="c_6">
+			<token pos="vmis3s0">dio</token><token pos="rg">ayer</token><mention concept_ref="c_1"><token pos="di0fs0">otra</token><token pos="ncfs000">vuelta</token></mention><token pos="sps00">de</token><token pos="ncfs000">tuerca</token><token pos="spcms">al</token><mention concept_ref="c_3"><token pos="ncms000">control</token></mention><token pos="aq0ms0">urbanístico</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">ciudades</token><token pos="aq0fp0">autónomas</token><token pos="sps00">de</token><mention concept_ref="c_0"><token pos="np00000">Ceuta</token></mention><token pos="cc">y</token><token pos="sps00">de</token><mention concept_ref="c_6"><token pos="np00000">Melilla</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Avoiding" head="evitar">
+				<argument type="Agent" dependent="Ceuta y de Melilla" />
+				<argument type="Undesirable_situation" dependent="especulación urbanística por parte del Grupo Independiente Liberal ( GIL ) , que gobierna en Ceuta" /></frame>
+			<frame type="Being_in_control" head="control">
+				<argument type="Manner" dependent="urbanístico" />
+				<argument type="Controlling_entity" dependent="las ciudades autónomas de Ceuta y de Melilla" /></frame>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Cause_harm" head="tuerca">
+				<argument type="Victim" dependent="al control urbanístico de las ciudades autónomas de Ceuta y de Melilla para" /></frame>
+			<frame type="Giving" head="su">
+				<argument type="Donor" dependent="Consejo de Ministros dio ayer" />
+				<argument type="Theme" dependent="otra" />
+				<argument type="Recipient" dependent="al control urbanístico de las ciudades autónomas de Ceuta y de Melilla para" /></frame>
+			<frame type="Increment" head="otra" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="que gobierna" />
+				<argument type="Ground" dependent="Ceuta" /></frame>
+			<frame type="Part_whole" head="parte">
+				<argument type="Whole" dependent="su" /></frame>
+			<frame type="Partitive" head="del">
+				<argument type="Subset" dependent="las ciudades autónomas" />
+				<argument type="Group" dependent="Ceuta y de Melilla" /></frame>
+			<frame type="Political_locales" head="ciudades">
+				<argument type="Descriptor" dependent="autónomas" />
+				<argument type="Name" dependent="Ceuta y de Melilla" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El Gobierno añadió en la ley de acompañamiento de los Presupuestos Generales del Estado para el año 2000 una nueva modificación de la ley del suelo de 1998 para que no sólo los planes generales de ordenación urbana, sino tambien los planes parciales en ambas ciudades, queden bajo el control del Ministerio de Fomento.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">El</token><token pos="np00000">Gobierno</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_6">
+			<token pos="vmis3s0">añadió</token><mention concept_ref="c_1"><token pos="di0fs0">una</token><token pos="aq0fs0">nueva</token><token pos="ncfs000">modificación</token></mention><token pos="sps00">de</token><mention concept_ref="c_6"><token pos="da0fs0">la</token><token pos="ncfs000">ley</token></mention><token pos="spcms">del</token><mention concept_ref="c_0"><token pos="ncms000">suelo</token></mention><token pos="sps00">de</token><token pos="z">1998</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nueva">
+				<argument type="Entity" dependent="modificación" /></frame>
+			<frame type="Being_in_control" head="control">
+				<argument type="Dependent_entity" dependent="del Ministerio de" /></frame>
+			<frame type="Calendric_unit" head="año" />
+			<frame type="Goal" head="para">
+				<argument type="Trajector" dependent="una nueva modificación de la" />
+				<argument type="Landmark" dependent="la ley del suelo" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="los planes parciales" />
+				<argument type="Ground" dependent="ambas ciudades" /></frame>
+			<frame type="Law" head="ley">
+				<argument type="Type" dependent="suelo" />
+				<argument type="Required" dependent="de 1998" /></frame>
+			<frame type="Leadership" head="Estado" />
+			<frame type="Leadership" head="Gobierno" />
+			<frame type="Leadership" head="generales" />
+			<frame type="Political_locales" head="ciudades" />
+			<frame type="Purpose" head="los planes">
+				<argument type="Agent" dependent="en ambas ciudades" /></frame>
+			<main_frame type="Statement" head="añadió">
+				<argument type="Speaker" dependent="Gobierno" />
+				<argument type="Place" dependent="en la ley" />
+				<argument type="Message" dependent="acompañamiento de los Presupuestos Generales del Estado para el año 2000 una nueva modificación de la ley del suelo de 1998 para que no sólo los planes generales de ordenación urbana , sino tambien los planes parciales en ambas ciudades ," /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Con esta nueva reforma, el proyecto de recalificación de terrenos rústicos en las playas de Calamocarro ( Ceuta ) para construir un complejo turístico deberá ser aprobado también por el Ministerio de Fomento.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">proyecto</token><token pos="sps00">de</token><token pos="ncfs000">recalificación</token><token pos="sps00">de</token><token pos="ncmp000">terrenos</token><token pos="aq0mp0">rústicos</token><token pos="sps00">en</token><token pos="da0fp0">las</token><token pos="ncfp000">playas</token><token pos="sps00">de</token><token pos="np00000">Calamocarro</token><token pos="fpa">(</token><token pos="np00000">Ceuta</token><token pos="fpt">)</token><token pos="sps00">para</token><token pos="vmn0000">construir</token><token pos="di0ms0">un</token><token pos="ncms000">complejo</token><token pos="aq0ms0">turístico</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_5">
+			<token pos="sps00">Con</token><mention concept_ref="c_0"><token pos="dd0fs0">esta</token><token pos="aq0fs0">nueva</token><token pos="ncfs000">reforma</token></mention><token pos="vsn0000">ser</token><token pos="vmp00sm">aprobado</token><token pos="rg">también</token><mention concept_ref="c_5"><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="ncms000">Ministerio</token><token pos="spcms">de</token></mention><token pos="ncms000">Fomento</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nueva">
+				<argument type="Entity" dependent="reforma" /></frame>
+			<main_frame type="Building" head="construir">
+				<argument type="Created_entity" dependent="complejo turístico" /></main_frame>
+			<main_frame type="Deny_or_grant_permission" head="aprobado">
+				<argument type="Action" dependent="complejo turístico" />
+				<argument type="Action" dependent="por el Ministerio de" /></main_frame>
+			<frame type="Locale_by_use" head="complejo">
+				<argument type="Use" dependent="turístico" /></frame>
+			<frame type="Natural_features" head="playas de">
+				<argument type="Container_possessor" dependent="Ceuta )" /></frame>
+			<frame type="Project" head="proyecto">
+				<argument type="Goal" dependent="de recalificación de terrenos rústicos en las playas de" /></frame>
+			<frame type="Reforming_a_system" head="reforma">
+				<argument type="Cause" dependent="nueva" /></frame>
+			<frame type="Required_event" head="deberá">
+				<argument type="Required_situation" dependent="complejo turístico" />
+				<argument type="Required_situation" dependent="ser aprobado también por el Ministerio de" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="el proyecto de recalificación de terrenos rústicos en" />
+				<argument type="Ground" dependent="las playas de Calamocarro ( Ceuta )" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

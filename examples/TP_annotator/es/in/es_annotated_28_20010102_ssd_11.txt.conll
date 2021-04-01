@@ -1,0 +1,6 @@
+{   ('Attempt', 'intento'): [('Goal', 'mediador')],
+    ('Being_at_risk', 'de seguridad'): [],
+    ('Foreign_or_domestic_country', 'exterior'): [],
+    ('Interior_profile_relation', 'En'): [('Ground', 'intento mediador')],
+    ('Law', 'política'): [('Required', 'el representante de la política exterior y de seguridad'), ('Creator', 'de la Unión Europea (')],
+    ('Origin', 'Europea'): [('Entity', 'Unión')]}

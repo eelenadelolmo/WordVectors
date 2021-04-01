@@ -1,0 +1,12 @@
+{   ('Awareness', 'idea'): [('Cognizer', 'central')],
+    ('Body_parts', 'jefes'): [('Possessor', 'Estado y de Gobierno recuerda')],
+    ('Capability', 'puede'): [('Entity', 'detención'), ('Event', 'no puede reducirse al mero castigo social')],
+    ('Cause_change_of_position_on_a_scale', 'reducirse'): [('Value_2', 'al mero castigo social')],
+    ('Intentionally_act', 'de'): [('Agent', 'poderes públicos')],
+    ('Leadership', 'Estado'): [],
+    ('Leadership', 'Gobierno'): [],
+    ('Leadership', 'los poderes públicos'): [('Governed', 'públicos')],
+    ('Part_inner_outer', 'central'): [],
+    ('Remembering_experience', 'recuerda'): [('Cognizer', 'Gobierno')],
+    ('Secrecy_status', 'públicos'): [('Phenomenon', 'los poderes públicos')],
+    ('Text', 'carta'): []}

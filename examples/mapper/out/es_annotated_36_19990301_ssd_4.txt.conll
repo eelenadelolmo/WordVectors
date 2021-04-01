@@ -1,0 +1,4 @@
+{   ('Certainty', 'ser'): [('Cognizer', 'vivimos'), ('Content', 'equivale a la sociedad plural en que vivimos . Si la sociedad es así , la escuela ha de ser')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'la sociedad plural'), ('Ground', 'que vivimos . Si la sociedad es así , la')],
+    ('Locale_by_use', 'escuela'): [],
+    ('Required_event', 'ha de ser'): [('Required_situation', 'la escuela'), ('Required_situation', 'ser un reflejo de')]}

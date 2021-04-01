@@ -1,0 +1,4 @@
+{   ('Chatting', 'hablar'): [('Topic', 'otra gente')],
+    ('Increment', 'otra'): [('Class', 'gente')],
+    ('People', 'gente'): [],
+    ('Perception_active', 'se le ve'): [('Phenomenon', 'foto'), ('Perceiver_agentive', 'se le'), ('State', 'relajado hablar con otra gente')]}

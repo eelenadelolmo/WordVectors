@@ -1,0 +1,4 @@
+{   ('Activity_start', 'empezó'): [('Agent', 'el negocio'), ('Activity', 'matar a la música')],
+    ('Businesses', 'negocio'): [],
+    ('Killing', 'matar'): [('Killer', 'el negocio'), ('Victim', 'la música')],
+    ('Performing_arts', 'música'): []}

@@ -1,0 +1,8 @@
+{   ('Capability', 'pueden'): [('Entity', 'son'), ('Event', 'hacer para cambiar el mundo')],
+    ('Cause_change', 'cambiar'): [('Entity', 'el mundo')],
+    ('Desirability', 'buen'): [],
+    ('Experiencer_focus', 'disfrutar'): [('Content', 'vida')],
+    ('Intentionally_act', 'de'): [('Agent', 'son'), ('Act', 'para cambiar el mundo')],
+    ('Kinship', 'padre'): [('Descriptor', 'buen')],
+    ('Political_locales', 'mundo'): [],
+    ('Required_event', 'mejores'): [('Required_situation', 'cosas que se pueden hacer para cambiar el mundo')]}

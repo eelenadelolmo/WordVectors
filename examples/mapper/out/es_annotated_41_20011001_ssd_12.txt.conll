@@ -1,0 +1,6 @@
+{   ('Certainty', 'duda de'): [('Content', 'que están a la altura de tan gloriosa imbecilidad')],
+    ('Direction', 'estar'): [('Path', 'están'), ('Landmark', 'de tan gloriosa imbecilidad')],
+    ('Emotion_directed', 'contentos'): [('Stimulus', 'pronunció')],
+    ('Judgment', 'admiran'): [('Cognizer', 'quienes'), ('Evaluee', 'prohombre que lo pronunció pueden estar contentos')],
+    ('Locative_relation', 'hay'): [('Ground', 'no hay duda de que están a la altura de tan gloriosa imbecilidad')],
+    ('Statement', 'pronunció'): [('Speaker', 'quienes'), ('Message', 'pueden estar contentos')]}

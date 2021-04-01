@@ -1,0 +1,9 @@
+{   ('Age', 'nueva'): [('Entity', 'economía productiva')],
+    ('Animals', 'animal'): [('Animal', 'holocausto animal')],
+    ('Arriving', 'como'): [('Theme', 'de que'), ('Manner', 'lo'), ('Goal', 'a ganaderos')],
+    ('Awareness', 'conscientes'): [   ('Cognizer', 'políticos y la Administración'),
+                                      ('Content', 'que en principio se presentó como una nueva economía productiva resulta destructiva , poluciona el medio ambiente , propicia el holocausto animal')],
+    ('Destroying', 'destructiva'): [('Patient', 'a pequeños empresarios recién venidos a ganaderos')],
+    ('Economy', 'economía'): [('Descriptor', 'productiva')],
+    ('People_by_vocation', 'políticos'): [],
+    ('Size', 'pequeños'): [('Entity', 'empresarios')]}

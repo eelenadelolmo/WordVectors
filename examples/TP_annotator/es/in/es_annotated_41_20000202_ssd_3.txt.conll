@@ -1,0 +1,7 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Calendric_unit', 'días'): [('Relative_time', 'de elecciones')],
+    ('Change_of_leadership', 'de elecciones'): [],
+    ('Killing', 'matar'): [('Victim', 'la ansiedad yéndose al cine')],
+    ('Motion', 'yéndose'): [('Goal', 'al cine')],
+    ('Reason', 'por'): [],
+    ('Statement', 'dijo'): [('Message', 'como hace todos los días de elecciones'), ('Speaker', 'yéndose')]}

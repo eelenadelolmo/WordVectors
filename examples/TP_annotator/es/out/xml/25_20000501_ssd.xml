@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="25_20000501_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El Gobierno austriaco</concept>
+		<concept id="c_1">esta cantidad</concept>
+		<concept id="c_2">El dinero</concept>
+		<concept id="c_3">la cifra</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El Gobierno austriaco baraja la cifra de unos 6.000 millones de chelines ( casi 70.000 millones de pesetas ) para indemnizar a los esclavos del nazismo, según informó ayer la responsable gubernamental sobre este tema, Maria Schaumayer.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="np00000">Gobierno</token><token pos="aq0ms0">austriaco</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_3">
+			<token pos="vmm02s0">baraja</token><mention concept_ref="c_3"><token pos="da0fs0">la</token><token pos="ncfs000">cifra</token></mention><token pos="sps00">de</token><token pos="di0mp0">unos</token><token pos="z">6.000</token><token pos="ncmp000">millones</token><token pos="sps00">de</token><token pos="zm">chelines</token><token pos="fpa">(</token><token pos="rg">casi</token><token pos="z">70.000</token><token pos="ncmp000">millones</token><token pos="sps00">de</token><token pos="zm">pesetas</token><token pos="fpt">)</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="la responsable gubernamental sobre este tema , Maria Schaumayer " />
+			<frame type="Be_in_agreement_on_action" head="según">
+				<argument type="Obligation" dependent="esclavos del nazismo ," />
+				<argument type="Party_2" dependent="gubernamental sobre este tema , Maria" /></frame>
+			<frame type="Cardinal_numbers" head="millones">
+				<argument type="Precision" dependent="70.000" />
+				<argument type="Unit" dependent="pesetas" /></frame>
+			<frame type="Goal" head="para">
+				<argument type="Landmark" dependent="Gobierno" /></frame>
+			<frame type="Leadership" head="gubernamental">
+				<argument type="Governed" dependent="gubernamental" /></frame>
+			<frame type="Proportional_quantity" head="sobre">
+				<argument type="Reference_quantity" dependent="la" />
+				<argument type="Individuals" dependent="millones de chelines" /></frame>
+			<frame type="Spatial_contact" head="a los">
+				<argument type="Figure" dependent="Gobierno" />
+				<argument type="Ground" dependent="este tema , Maria" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Según explicó, esta cantidad saldría de un Fondo para la Reconciliación, Paz y Colaboración, que crearían el Estado austriaco y las empresas que emplearon mano de obra gratuita durante el régimen de Adolf Hitler.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="dd0fs0">esta</token><token pos="ncfs000">cantidad</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_3">
+			<token pos="vmic3s0">saldría</token><token pos="sps00">de</token><mention concept_ref="c_0"><token pos="di0ms0">un</token><token pos="ncfs000">Fondo</token><token pos="sps00">para</token><token pos="da0fp0">la</token><token pos="ncfp000">Reconciliación</token></mention><token pos="fc">,</token><token pos="ncfp000">Paz</token><token pos="cc">y</token><mention concept_ref="c_3"><token pos="ncmp000">Colaboración</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="de">
+				<argument type="Theme" dependent="esta cantidad" /></frame>
+			<frame type="Businesses" head="empresas">
+				<argument type="Descriptor" dependent="austriaco" /></frame>
+			<frame type="Explaining_the_facts" head="explicó">
+				<argument type="Fact" dependent="el" /></frame>
+			<frame type="Intentionally_create" head="crearían el">
+				<argument type="Created_entity" dependent="Estado austriaco y las empresas que emplearon mano de obra gratuita durante el régimen de Adolf" /></frame>
+			<frame type="Leadership" head="Estado">
+				<argument type="Governed" dependent="austriaco" /></frame>
+			<frame type="Leadership" head="régimen">
+				<argument type="Domain" dependent="Hitler" /></frame>
+			<frame type="Quantified_mass" head="cantidad" />
+			<frame type="Using" head="emplearon">
+				<argument type="Agent" dependent="el Estado austriaco y las empresas que" />
+				<argument type="Instrument" dependent="de obra gratuita" />
+				<argument type="Circumstances" dependent="durante el régimen de Adolf" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El dinero iría a parar a las 150.000 víctimas del Tercer Reich que aún viven.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="ncms000">dinero</token>
+		</theme>
+		<rheme>
+			<token pos="vmic3s0">iría</token><token pos="sps00">a</token><token pos="vmn0000">parar</token><token pos="sps00">a</token><token pos="da0fp0">las</token><token pos="z">150.000</token><token pos="ncfp000">víctimas</token><token pos="spcms">del</token><token pos="ao0fs0">Tercer</token><token pos="ncfs000">Reich</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Catastrophe" head="víctimas">
+				<argument type="Patient" dependent="víctimas del Tercer" />
+				<argument type="Undesirable_event" dependent="que aún viven" /></frame>
+			<frame type="Continued_state_of_affairs" head="aún">
+				<argument type="State_of_affairs" dependent="las 150.000 víctimas del Tercer" />
+				<argument type="State_of_affairs" dependent="viven" /></frame>
+			<frame type="Money" head="dinero" />
+			<main_frame type="Motion" head="parar a">
+				<argument type="Theme" dependent="dinero" />
+				<argument type="Goal" dependent="a las 150.000 víctimas del Tercer Reich que aún viven" /></main_frame>
+			<frame type="Residence" head="viven">
+				<argument type="Resident" dependent="las 150.000 víctimas del Tercer" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

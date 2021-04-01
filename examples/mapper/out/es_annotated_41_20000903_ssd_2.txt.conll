@@ -1,0 +1,7 @@
+{   ('Being_employed', 'posiciones'): [('Manner', 'aisladas'), ('Employer', 'nacionales')],
+    ('Committing_crime', 'delincuencia'): [('Perpetrator', 'internacional')],
+    ('Hostile_encounter', 'luchar'): [],
+    ('Interior_profile_relation', 'la'): [('Figure', 'nada'), ('Ground', 'luchar contra la delincuencia internacional')],
+    ('Locative_relation', 'ya'): [('Ground', 'luchar contra la delincuencia internacional desde posiciones nacionales aisladas')],
+    ('Political_locales', 'internacional'): [],
+    ('Political_locales', 'nacionales'): []}

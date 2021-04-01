@@ -1,0 +1,4 @@
+{   ('Affirm_or_deny', 'de'): [('Speaker', 'autoridades israelís'), ('Message', 'Barak traspase tres barrios árabes de los alrededores de Jerusalén al control palestino')],
+    ('Being_in_control', 'control'): [('Controlling_entity', 'palestino')],
+    ('Calendric_unit', 'ayer que'): [],
+    ('Transfer', 'traspase'): [('Donor', 'Barak'), ('Theme', 'tres barrios árabes'), ('Recipient', 'de los alrededores de Jerusalén al control palestino')]}

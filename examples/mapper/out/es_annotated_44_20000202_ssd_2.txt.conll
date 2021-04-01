@@ -1,0 +1,8 @@
+{   ('Being_in_effect', 'válida'): [('Binding_principle', 'su línea')],
+    ('Boundary', 'línea'): [('Entities', 'con los socialistas')],
+    ('Desiring', 'quería'): [('Event', 'de'), ('Event', 'ratificar así el triunfo de su línea colaboracionista con los socialistas')],
+    ('Directional_locative_relation', 'sobre'): [('Ground', 'todo')],
+    ('Evidence', 'demostrar'): [('Proposition', 'al sector más ortodoxo del PCE de Madrid que su línea es la válida y es la que ahora apoya la dirección del')],
+    ('Fields', 'sector'): [('Salient_entity', 'del PCE de Madrid que')],
+    ('Ratification', 'ratificar'): [('Proposal', 'el triunfo de su línea colaboracionista con los socialistas')],
+    ('Supporting', 'apoya'): [('Supported', 'la dirección del PCE y de')]}

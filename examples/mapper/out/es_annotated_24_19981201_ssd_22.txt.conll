@@ -1,0 +1,4 @@
+{   ('Leadership', 'dictador'): [],
+    ('Leadership', 'dirigentes'): [('Governed', 'pone')],
+    ('Roadways', 'vía'): [('Relative_location', 'chilena'), ('Characteristic', 'democrática')],
+    ('Suasion', 'convencidos'): [('Speaker', 'Los dirigentes del'), ('Content', 'que la situación judicial del dictador no pone en peligro la vía democrática')]}

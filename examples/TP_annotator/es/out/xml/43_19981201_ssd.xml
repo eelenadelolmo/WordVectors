@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="43_19981201_ssd">
+
+
+	<concepts>
+		<concept id="c_0">el presidente de la Generalitat , Jordi Pujol ,</concept>
+		<concept id="c_1">Los ladrones</concept>
+		<concept id="c_2">La policía autonómica</concept>
+		<concept id="c_3">los autores</concept>
+		<concept id="c_4">la casa</concept>
+		<concept id="c_5">la torre de Premià de Dalt</concept>
+		<concept id="c_6">en la calle de Fèlix Millet de Premià de Dalt ( El Maresme )</concept>
+		<concept id="c_7">la cerradura</concept>
+		<concept id="c_8">la cerradura</concept>
+		<concept id="c_9">la vivienda</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Unos desconocidos asaltaron el pasado día 27 la casa que el presidente de la Generalitat, Jordi Pujol, posee en la calle de Fèlix Millet de Premià de Dalt ( El Maresme ).
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">presidente</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Generalitat</token><token pos="fc">,</token><token pos="np0000l">Jordi</token><token pos="np0000l">Pujol</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_5" concept_ref3="c_6">
+			<token pos="vmip3s0">posee</token><mention concept_ref="c_6"><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">calle</token><token pos="sps00">de</token><token pos="np0000l">Fèlix</token><token pos="np0000l">Millet</token><token pos="sps00">de</token><token pos="np0000o">Premià</token><token pos="sps00">de</token><token pos="np0000l">Dalt</token><token pos="fpa">(</token><token pos="np0000l">El</token><token pos="np0000l">Maresme</token><token pos="fpt">)</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente">
+				<argument type="Name" dependent="la Generalitat" /></frame>
+			<frame type="Attack" head="asaltaron">
+				<argument type="Assailant" dependent="Unos desconocidos" />
+				<argument type="Weapon" dependent="casa que el presidente de la Generalitat , Jordi Pujol , posee en la calle" />
+				<argument type="Victim" dependent="Dalt ( El Maresme )" /></frame>
+			<frame type="Buildings" head="casa" />
+			<frame type="Indigenous_origin" head="desconocidos" />
+			<main_frame type="Possession" head="posee">
+				<argument type="Possession" dependent="presidente de la Generalitat , Jordi" />
+				<argument type="Owner" dependent="en la calle de Fèlix Millet de Premià de Dalt ( El Maresme )" /></main_frame>
+			<frame type="Roadways" head="calle">
+				<argument type="Name" dependent="Millet de Premià de Dalt" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los ladrones destrozaron la cerradura de la vivienda.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">ladrones</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_7" concept_ref3="c_8" concept_ref4="c_9">
+			<token pos="vmis3p0">destrozaron</token><token pos="da0fs0">la</token><token pos="ncfs000">cerradura</token><mention concept_ref="c_6"><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">vivienda</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="vivienda" />
+			<main_frame type="Cause_to_fragment" head="destrozaron">
+				<argument type="Agent" dependent="ladrones" />
+				<argument type="Whole_patient" dependent="la cerradura" />
+				<argument type="Pieces" dependent="de la vivienda" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sin embargo, sólo se llevaron cosas de escaso valor, según fuentes de los Mossos d'Esquadra, que se han hecho cargo de la investigación.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="fuentes de los Mossos d'Esquadra , que se han hecho cargo de la investigación " />
+			<frame type="Be_in_agreement_on_action" head="según">
+				<argument type="Party_2" dependent="sólo se llevaron cosas de escaso valor" />
+				<argument type="Obligation" dependent="fuentes de los" /></frame>
+			<frame type="Criminal_investigation" head="investigación" />
+			<frame type="Goal" head="se">
+				<argument type="Trajector" dependent="sólo se llevaron cosas de escaso valor" />
+				<argument type="Landmark" dependent="fuentes de" /></frame>
+			<frame type="Leadership" head="cargo">
+				<argument type="Leader" dependent="que" />
+				<argument type="Governed" dependent="de la investigación" /></frame>
+			<frame type="Source_of_getting" head="fuentes de">
+				<argument type="Descriptor" dependent="de" /></frame>
+			<frame type="Taking_time" head="llevaron">
+				<argument type="Activity" dependent="sólo se llevaron cosas de escaso valor" />
+				<argument type="Time_length" dependent="llevaron" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La policía autonómica trabaja en la hipótesis de que el asalto a esta residencia de la familia Pujol fue obra de delincuentes comunes.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">La</token><token pos="nccs000">policía</token><token pos="aq0fs0">autonómica</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_1" concept_ref3="c_0" concept_ref4="c_6" concept_ref5="c_8" concept_ref6="c_9">
+			<token pos="vmip3s0">trabaja</token><token pos="sps00">en</token><mention concept_ref="c_3"><token pos="da0fs0">la</token><token pos="ncfn000">hipótesis</token></mention><token pos="sps00">de</token><token pos="cs">que</token><token pos="da0ms0">el</token><token pos="ncms000">asalto</token><token pos="sps00">a</token><mention concept_ref="c_9"><token pos="dd0fs0">esta</token><token pos="ncfs000">residencia</token></mention><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">familia</token><token pos="np00000">Pujol</token><token pos="vsis3s0">fue</token><token pos="ncfs000">obra</token><mention concept_ref="c_6"><token pos="sps00">de</token><token pos="nccp000">delincuentes</token><token pos="aq0cp0">comunes</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Being_employed" head="trabaja">
+				<argument type="Employee" dependent="policía autonómica" />
+				<argument type="Task" dependent="hipótesis de que el asalto a esta residencia de la familia Pujol fue obra de delincuentes comunes ." /></main_frame>
+			<frame type="Experimentation" head="hipótesis">
+				<argument type="Phenomenon" dependent="que el asalto a esta residencia de la familia Pujol fue obra de delincuentes comunes" /></frame>
+			<frame type="Kinship" head="familia" />
+			<frame type="Legality" head="delincuentes" />
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="asalto" />
+				<argument type="Ground" dependent="esta residencia de la familia Pujol fue obra de delincuentes comunes" /></frame>
+			<main_frame type="Work" head="trabaja">
+				<argument type="Salient_entity" dependent="de delincuentes comunes" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ese mismo día se produjeron otras cuatro denuncias de personas de la misma urbanización del Maresme por un delito de robo con fuerza en las cosas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="día">
+				<argument type="Relative_time" dependent="mismo" /></frame>
+			<frame type="Committing_crime" head="delito de">
+				<argument type="Crime" dependent="delito de robo" /></frame>
+			<frame type="Identicality" head="mismo">
+				<argument type="Type" dependent="urbanización del Maresme" /></frame>
+			<frame type="Increment" head="otras">
+				<argument type="Class" dependent="denuncias de" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="otras cuatro denuncias de personas de la misma urbanización del Maresme por un delito de robo con fuerza en las" /></frame>
+			<frame type="Military" head="fuerza">
+				<argument type="Goal" dependent="en las cosas" /></frame>
+			<frame type="People" head="personas" />
+			<frame type="Spatial_contact" head="en">
+				<argument type="Ground" dependent="mismo día" /></frame>
+			<frame type="Statement" head="denuncias de">
+				<argument type="Message" dependent="de personas de la misma urbanización del" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Según los investigadores, los autores desconocían que se trataba de una vivienda del president, por lo que descartan otra motivación no relacionada con la delincuencia habitual.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0mp0">los</token><token pos="ncmp000">autores</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_9">
+			<token pos="p0000000">se</token><token pos="vmii3s0">trataba</token><token pos="sps00">de</token><mention concept_ref="c_9"><token pos="di0fs0">una</token><token pos="ncfs000">vivienda</token></mention><token pos="spcms">del</token><mention concept_ref="c_0"><token pos="ncms000">president</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="president" />
+			<frame type="Awareness" head="lo">
+				<argument type="Cognizer" dependent="los autores" />
+				<argument type="Content" dependent="trataba de una vivienda del president" /></frame>
+			<frame type="Buildings" head="vivienda">
+				<argument type="Type" dependent="del president" /></frame>
+			<frame type="Committing_crime" head="delincuencia" />
+			<frame type="Goal" head="por">
+				<argument type="Landmark" dependent="los investigadores" /></frame>
+			<frame type="Increment" head="otra">
+				<argument type="Class" dependent="motivación" /></frame>
+			<frame type="Leadership" head="habitual">
+				<argument type="Leader" dependent="los" />
+				<argument type="Activity" dependent="otra motivación no relacionada con la delincuencia habitual" /></frame>
+			<frame type="Reason" head="motivación" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Las mismas fuentes agregaron que los ladrones buscaban joyas y dinero, que no hallaron.
+		</str>
+		<theme>
+			<token pos="da0mp0">los</token><token pos="ncmp000">ladrones</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Las mismas fuentes " />
+			<frame type="Becoming_aware" head="buscaban">
+				<argument type="Phenomenon" dependent="que" />
+				<argument type="Cognizer" dependent="los" /></frame>
+			<frame type="Identicality" head="mismas">
+				<argument type="Type" dependent="fuentes" /></frame>
+			<frame type="Money" head="dinero" />
+			<frame type="Perception_active" head="buscaban">
+				<argument type="Perceiver_agentive" dependent="los ladrones" />
+				<argument type="Phenomenon" dependent="joyas y dinero" /></frame>
+			<frame type="Source_of_getting" head="fuentes" />
+			<frame type="Statement" head="agregaron">
+				<argument type="Speaker" dependent="Las mismas fuentes" />
+				<argument type="Message" dependent="que los ladrones buscaban joyas y dinero" /></frame>
+			<frame type="Theft" head="ladrones" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Esto explicaría que la casa registrase un cierto desorden.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0fs0">la</token><token pos="ncfs000">casa</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_6">
+			<token pos="vmsi3s0">registrase</token><token pos="di0ms0">un</token><token pos="aq0ms0">cierto</token><token pos="ncms000">desorden</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Esto " />
+			<main_frame type="Becoming_aware" head="registrase">
+				<argument type="Cognizer" dependent="la casa" />
+				<argument type="Phenomenon" dependent="un cierto desorden" /></main_frame>
+			<frame type="Buildings" head="casa" />
+			<frame type="Explaining_the_facts" head="explicaría">
+				<argument type="Fact" dependent="Esto" />
+				<argument type="State_of_affairs" dependent="la casa registrase un cierto desorden" /></frame>
+			<frame type="Idiosyncrasy" head="cierto">
+				<argument type="Entity" dependent="desorden" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los Mossos d'Esquadra subrayaron que la torre de Premià de Dalt no tiene una escolta las 24 horas del día como sucede con otras residencias de Pujol porque uno de sus hijos la utiliza en la actualidad como residencia habitual.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0fs0">la</token><token pos="ncfs000">torre</token><token pos="sps00">de</token><token pos="np0000o">Premià</token><token pos="sps00">de</token><token pos="np0000l">Dalt</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_1" concept_ref3="c_8">
+			<token pos="rn">no</token><token pos="vmip3s0">tiene</token><token pos="di0fs0">una</token><token pos="nccs000">escolta</token><token pos="da0fp0">las</token><token pos="z">24</token><token pos="ncfp000">horas</token><token pos="spcms">del</token><token pos="ncms000">día</token><token pos="cs">como</token><token pos="vmip3s0">sucede</token><token pos="sps00">con</token><token pos="di0fp0">otras</token><token pos="ncfp000">residencias</token><token pos="sps00">de</token><mention concept_ref="c_3"><token pos="np00000">Pujol</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Los Mossos d'Esquadra " />
+			<frame type="Buildings" head="torre">
+				<argument type="Descriptor" dependent="de" />
+				<argument type="Name" dependent="Dalt" /></frame>
+			<frame type="Increment" head="otras">
+				<argument type="Class" dependent="residencias" /></frame>
+			<main_frame type="Instance" head="sucede" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="otras residencias" />
+				<argument type="Ground" dependent="escolta" /></frame>
+			<frame type="Kinship" head="hijos">
+				<argument type="Ego" dependent="sus" /></frame>
+			<frame type="Using" head="utiliza">
+				<argument type="Agent" dependent="sus hijos" />
+				<argument type="Time" dependent="actualidad" />
+				<argument type="Instrument" dependent="la" />
+				<argument type="Purpose" dependent="como residencia habitual" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

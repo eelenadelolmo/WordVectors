@@ -1,0 +1,4 @@
+{   ('Arriving', 'visita'): [],
+    ('Destroying', 'ruinas'): [('Destroyer', 'romanas')],
+    ('Experiencer_focus', 'interesa'): [('Experiencer', 'y'), ('Content', 'su cultura')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'y'), ('Ground', 'su cultura')]}

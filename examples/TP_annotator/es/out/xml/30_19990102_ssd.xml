@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="30_19990102_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Radovan Karadzic , ex líder serbobosnio acusado de genocidio y de crímenes de guerra por el Tribunal Penal Internacional de La Haya ,</concept>
+		<concept id="c_1">que</concept>
+		<concept id="c_2">La esposa de Karadzic</concept>
+		<concept id="c_3">Las palabras de Milosevic</concept>
+		<concept id="c_4">Las relaciones entre los dos políticos</concept>
+		<concept id="c_5">en un lugar inaccesible de</concept>
+		<concept id="c_6">Momir Bulatovic</concept>
+		<concept id="c_7">Bosnia</concept>
+		<concept id="c_8">intenciones</concept>
+		<concept id="c_9">quot</concept>
+		<concept id="c_10">Milo Djukanovic</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Radovan Karadzic, ex líder serbobosnio acusado de genocidio y de crímenes de guerra por el Tribunal Penal Internacional de La Haya, vive en un lugar inaccesible de Bosnia donde se dedica a leer y a escribir poesía, según declaró su esposa, Biljana, al diario belgradense Blic.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np0000l">Radovan</token><token pos="np0000l">Karadzic</token><token pos="fc">,</token><token pos="aq0cn0">ex</token><token pos="nccs000">líder</token><token pos="aq0ms0">serbobosnio</token><token pos="aq0msp">acusado</token><token pos="sps00">de</token><token pos="ncms000">genocidio</token><token pos="cc">y</token><token pos="sps00">de</token><token pos="ncmp000">crímenes</token><token pos="sps00">de</token><token pos="ncfs000">guerra</token><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="ncms000">Tribunal</token><token pos="aq0msp">Penal</token><token pos="ncfp000">Internacional</token><token pos="sps00">de</token><token pos="da0fs0">La</token><token pos="ncfs000">Haya</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_7">
+			<token pos="vmip3s0">vive</token><mention concept_ref="c_5"><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="ncms000">lugar</token><token pos="aq0cs0">inaccesible</token><token pos="sps00">de</token></mention><mention concept_ref="c_7"><token pos="np00000">Bosnia</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="su esposa , Biljana , al diario belgradense Blic " />
+			<frame type="Committing_crime" head="crímenes">
+				<argument type="Purpose" dependent="genocidio y de crímenes de guerra" /></frame>
+			<frame type="Frequency" head="diario">
+				<argument type="Salient_entity" dependent="Blic" /></frame>
+			<frame type="Hostile_encounter" head="guerra" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="lugar inaccesible de" />
+				<argument type="Ground" dependent="Bosnia" /></frame>
+			<frame type="Judgment_communication" head="acusado">
+				<argument type="Medium" dependent="Radovan Karadzic" />
+				<argument type="Evaluee" dependent="ex líder serbobosnio" />
+				<argument type="Reason" dependent="genocidio y de crímenes de guerra" />
+				<argument type="Place" dependent="por el Tribunal Penal Internacional de" />
+				<argument type="Reason" dependent=", según declaró su esposa , Biljana , al diario belgradense" /></frame>
+			<frame type="Killing" head="genocidio" />
+			<frame type="Leadership" head="líder">
+				<argument type="Descriptor" dependent="Bosnia" />
+				<argument type="Domain" dependent="serbobosnio" /></frame>
+			<frame type="Linguistic_meaning" head="a leer" />
+			<frame type="Locale" head="lugar">
+				<argument type="Relative_location" dependent="de Bosnia" /></frame>
+			<frame type="Personal_relationship" head="esposa">
+				<argument type="Partner_1" dependent="su" />
+				<argument type="Partner_2" dependent="Biljana" /></frame>
+			<main_frame type="Residence" head="vive">
+				<argument type="Location" dependent="el" />
+				<argument type="Location" dependent="en un lugar inaccesible de" /></main_frame>
+			<frame type="Statement" head="declaró">
+				<argument type="Manner" dependent="su esposa" />
+				<argument type="Message" dependent="Biljana" />
+				<argument type="Message" dependent="al diario belgradense" /></frame>
+			<frame type="Text" head="poesía" />
+			<frame type="Text_creation" head="escribir">
+				<argument type="Author" dependent="su" />
+				<argument type="Text" dependent="poesía" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Resulta muy difícil llegar hasta Radovan, incluso para aquellos que van con buenas intenciones, y mucho más para los que las tienen malas", explicó Biljana al rotativo durante su breve permanencia en Belgrado para recibir un premio literario en nombre de su marido.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_8">
+			<token pos="vmip3p0">van</token><token pos="sps00">con</token><token pos="aq0fp0">buenas</token><mention concept_ref="c_8"><token pos="ncfp000">intenciones</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desirability" head="buenas">
+				<argument type="Evaluee" dependent="intenciones" /></frame>
+			<frame type="Desirability" head="malas">
+				<argument type="Evaluee" dependent="intenciones" /></frame>
+			<frame type="Difficulty" head="difícil">
+				<argument type="Degree" dependent="muy" />
+				<argument type="Activity" dependent="para recibir un" /></frame>
+			<frame type="Duration_description" head="breve">
+				<argument type="Eventuality" dependent="su" /></frame>
+			<frame type="Explaining_the_facts" head="explicó">
+				<argument type="Fact" dependent="Biljana" />
+				<argument type="State_of_affairs" dependent="para los" /></frame>
+			<frame type="Fields" head="literario">
+				<argument type="Salient_entity" dependent="premio" /></frame>
+			<frame type="Getting" head="llegar">
+				<argument type="Recipient" dependent="su" />
+				<argument type="Theme" dependent="para" /></frame>
+			<frame type="Personal_relationship" head="marido">
+				<argument type="Partner_2" dependent="su" /></frame>
+			<frame type="Purpose" head="intenciones">
+				<argument type="Agent" dependent="aquellos que" /></frame>
+			<frame type="Receiving" head="recibir">
+				<argument type="Recipient" dependent="malas" />
+				<argument type="Theme" dependent="un premio literario en" /></frame>
+			<frame type="Temporary_stay" head="permanencia en">
+				<argument type="Guest" dependent="su" />
+				<argument type="Manner" dependent="breve" />
+				<argument type="Location" dependent="en Belgrado" /></frame>
+			<frame type="Text" head="quot" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Respecto a la posibilidad de que Karadzic sea juzgado por el Tribunal de La Haya, Biljana fue tajante: "Mi marido no reconoce a ese tribunal, por lo que no puede ser acusado por él ni puede comparecer en calidad de testigo".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attempt" head="testigo">
+				<argument type="Agent" dependent="por el Tribunal de" /></frame>
+			<frame type="Becoming_aware" head="reconoce">
+				<argument type="Phenomenon" dependent="ese tribunal" /></frame>
+			<frame type="Capability" head="puede">
+				<argument type="Entity" dependent="él" />
+				<argument type="Event" dependent="ser acusado por él ni" /></frame>
+			<frame type="Give_impression" head="ser">
+				<argument type="Characterization" dependent="de testigo  quot" /></frame>
+			<frame type="Judicial_body" head="tribunal" />
+			<frame type="Likelihood" head="posibilidad">
+				<argument type="Hypothetical_event" dependent="Karadzic sea juzgado por el Tribunal" /></frame>
+			<frame type="Personal_relationship" head="marido" />
+			<frame type="Sharpness" head="tajante">
+				<argument type="Entity" dependent="Biljana" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La esposa de Karadzic restó importancia a las órdenes de captura emitidas contra su marido.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">La</token><token pos="ncfs000">esposa</token><token pos="sps00">de</token><token pos="np00000">Karadzic</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_7">
+			<token pos="vmis3s0">restó</token><mention concept_ref="c_7"><token pos="ncfs000">importancia</token></mention><token pos="sps00">a</token><mention concept_ref="c_4"><token pos="da0fp0">las</token><token pos="ncfp000">órdenes</token></mention><token pos="sps00">de</token><token pos="ncfs000">captura</token><token pos="aq0fpp">emitidas</token><token pos="sps00">contra</token><token pos="dp3cs0">su</token><token pos="ncms000">marido</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arrest" head="captura">
+				<argument type="Suspect" dependent="emitidas" /></frame>
+			<frame type="Documents" head="emitidas">
+				<argument type="Descriptor" dependent="captura" /></frame>
+			<frame type="Personal_relationship" head="esposa">
+				<argument type="Partner_1" dependent="Karadzic" /></frame>
+			<frame type="Personal_relationship" head="marido">
+				<argument type="Partner_2" dependent="su" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Me gustaría ver a la persona a la que EEUU pagaría 5 millones de dólares ( 750 millones de pesetas ) por la cabeza de Radovan. Además, ¿cómo pagaría los impuestos por esa cantidad?", comentó con ironía Biljana Karadzic.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="millones">
+				<argument type="Multiplier" dependent="750" />
+				<argument type="Unit" dependent="pesetas" /></frame>
+			<frame type="Commerce_pay" head="pagaría">
+				<argument type="Buyer" dependent="Me" />
+				<argument type="Goods" dependent="impuestos por esa cantidad ?" /></frame>
+			<frame type="People" head="persona" />
+			<frame type="Perception_experience" head="ver">
+				<argument type="Perceiver_passive" dependent="de" />
+				<argument type="Phenomenon" dependent="persona a la que EEUU pagaría 5 millones de dólares ( 750 millones de pesetas ) por la cabeza de Radovan" /></frame>
+			<frame type="Quantified_mass" head="cantidad" />
+			<frame type="Similarity" head="cómo">
+				<argument type="Entity_1" dependent="de" />
+				<argument type="Entity_2" dependent="ver a la persona a la que EEUU pagaría 5 millones de dólares ( 750 millones de pesetas ) por" /></frame>
+			<frame type="Statement" head="quot">
+				<argument type="Message" dependent="pesetas ) por la cabeza de Radovan . Además , ¿ cómo pagaría los impuestos por esa cantidad ?  quot ; ," />
+				<argument type="Message" dependent="con ironía Biljana Karadzic" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por su parte, el presidente yugoslavo Slobodan Milosevic afirmó en su mensaje de Año Nuevo que durante 1999 se debe "encontrar una solución política a la crisis de Kosovo" que ponga fin a "las dudas del mundo y Europa" y que implique "la igualdad para todos".
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_9">
+			<token pos="vmp00sm">ponga</token><token pos="ncfp000">fin</token><token pos="sps00">a</token><token pos="fe">quot;</token><token pos="da0fp0">las</token><token pos="ncfp000">dudas</token><token pos="spcms">del</token><token pos="ncms000">mundo</token><token pos="cc">y</token><token pos="np00000">Europa</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el presidente yugoslavo Slobodan Milosevic " />
+			<frame type="Appellations" head="presidente">
+				<argument type="Name" dependent="yugoslavo" />
+				<argument type="Type" dependent="Slobodan Milosevic" /></frame>
+			<frame type="Becoming_aware" head="encontrar">
+				<argument type="Phenomenon" dependent="que ponga fin a  quot ; las dudas del mundo y Europa  quot ; y que implique  quot ; la igualdad para" /></frame>
+			<frame type="Catastrophe" head="crisis">
+				<argument type="Cause" dependent="Kosovo" /></frame>
+			<frame type="Certainty" head="dudas del">
+				<argument type="Cognizer" dependent="del mundo y Europa" /></frame>
+			<frame type="Desirable_event" head="debe">
+				<argument type="State_of_affairs" dependent="una solución política a la crisis de Kosovo" />
+				<argument type="State_of_affairs" dependent="que ponga fin a  quot ; las dudas del mundo y Europa  quot ; y" /></frame>
+			<frame type="Part_whole" head="parte">
+				<argument type="Whole" dependent="su" /></frame>
+			<frame type="Placing" head="se">
+				<argument type="Theme" dependent="que" />
+				<argument type="Theme" dependent="fin a  quot ; las dudas del mundo y Europa  quot ; y que implique  quot ; la igualdad para todos" /></frame>
+			<frame type="Political_locales" head="mundo" />
+			<frame type="Process_end" head="fin">
+				<argument type="Process" dependent="quot ; las dudas del mundo y Europa  quot ; y que implique  quot ; la igualdad para todos" /></frame>
+			<frame type="Statement" head="afirmó">
+				<argument type="Speaker" dependent="el presidente yugoslavo Slobodan Milosevic" />
+				<argument type="Message" dependent="que ponga fin a  quot ; las dudas del mundo y Europa  quot ; y que implique  quot ; la igualdad para" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Las palabras de Milosevic no tranquilizaron al presidente montenegrino, Milo Djukanovic, quien expresó, también en el mensaje de Año Nuevo, sus temores de que Milosevic emprenda una acción contra Montenegro "para convertirlo en propiedad autocrática de un sólo hombre".
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fp0">Las</token><token pos="ncfp000">palabras</token><token pos="sps00">de</token><token pos="np00000">Milosevic</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_10">
+			<token pos="rn">no</token><token pos="vmis3p0">tranquilizaron</token><token pos="spcms">al</token><mention concept_ref="c_8"><token pos="ncms000">presidente</token></mention><token pos="aq0ms0">montenegrino</token><token pos="fc">,</token><mention concept_ref="c_10"><token pos="np0000l">Milo</token><token pos="np0000l">Djukanovic</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="Nuevo">
+				<argument type="Entity" dependent="mensaje de Año" /></frame>
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="Milo Djukanovic" /></frame>
+			<frame type="Expressing_publicly" head="expresó">
+				<argument type="Content" dependent="Las palabras de Milosevic no tranquilizaron al presidente montenegrino" />
+				<argument type="Communicator" dependent="quien" />
+				<argument type="Content" dependent="también en el mensaje de Año Nuevo" />
+				<argument type="Content" dependent="," /></frame>
+			<frame type="Fear" head="temores">
+				<argument type="Experiencer" dependent="sus" />
+				<argument type="Stimulus" dependent="de que Milosevic emprenda una acción contra Montenegro  quot ; para convertirlo en propiedad autocrática de un sólo hombre" /></frame>
+			<frame type="Intentionally_act" head="acción">
+				<argument type="Agent" dependent="Milosevic" />
+				<argument type="Purpose" dependent="contra Montenegro  quot ; para convertirlo en propiedad autocrática de un sólo hombre" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="Las palabras de Milosevic no tranquilizaron al presidente montenegrino , Milo Djukanovic , quien expresó , también" />
+				<argument type="Ground" dependent="mensaje de Año Nuevo" />
+				<argument type="Figure" dependent=", sus temores de que Milosevic emprenda una acción contra Montenegro  quot ; para convertirlo en propiedad autocrática de un sólo hombre" /></frame>
+			<frame type="People" head="hombre" />
+			<frame type="Possession" head="propiedad">
+				<argument type="Depictive" dependent="autocrática" />
+				<argument type="Owner" dependent="un sólo hombre" /></frame>
+			<frame type="Taking_sides" head="contra">
+				<argument type="Cognizer" dependent="Milosevic" />
+				<argument type="Side" dependent="montenegrino" />
+				<argument type="Action" dependent="quot ; para convertirlo en propiedad autocrática de un sólo hombre" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Las relaciones entre los dos políticos son tensas desde que Djukanovic batió a Momir Bulatovic, el protegido de Milosevic, en las elecciones de 1997.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0fp0">Las</token><token pos="ncfp000">relaciones</token><token pos="sps00">entre</token><token pos="da0mp0">los</token><token pos="dn0cp0">dos</token><token pos="ncmp000">políticos</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_3" concept_ref3="c_6" concept_ref4="c_8" concept_ref5="c_7" concept_ref6="c_10">
+			<token pos="vsip3p0">son</token><token pos="aq0fp0">tensas</token><token pos="sps00">desde</token><token pos="cs">que</token><mention concept_ref="c_10"><token pos="np00000">Djukanovic</token></mention><token pos="vmis3s0">batió</token><token pos="sps00">a</token><token pos="np0000l">Momir</token><token pos="np0000l">Bulatovic</token><token pos="fc">,</token><mention concept_ref="c_4"><token pos="da0ms0">el</token><token pos="ncms000">protegido</token></mention><token pos="sps00">de</token><mention concept_ref="c_3"><token pos="np00000">Milosevic</token></mention><token pos="fc">,</token><token pos="sps00">en</token><mention concept_ref="c_8"><token pos="da0fp0">las</token><token pos="ncfp000">elecciones</token></mention><token pos="sps00">de</token><token pos="z">1997</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Change_of_leadership" head="elecciones">
+				<argument type="Time" dependent="1997" /></frame>
+			<frame type="People_by_vocation" head="políticos" />
+			<main_frame type="Temporal_pattern" head="batió">
+				<argument type="Process" dependent="Momir Bulatovic" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

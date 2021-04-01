@@ -1,0 +1,5 @@
+{   ('Appellations', 'presidente'): [],
+    ('Medical_conditions', 'salud'): [('Patient', 'del presidente')],
+    ('Military', 'militar'): [],
+    ('Military_operation', 'campaña'): [('Goal', 'militar'), ('Place', 'en Chechenia')],
+    ('Process_continue', 'prosigue'): [('Time', 'Mientras'), ('Event', 'la campaña militar en Chechenia'), ('Event', 'ajena a las noticias sobre la salud del presidente')]}

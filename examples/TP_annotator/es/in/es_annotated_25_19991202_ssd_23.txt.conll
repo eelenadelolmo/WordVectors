@@ -1,0 +1,4 @@
+{   ('Causation', 'porque'): [('Effect', 'No hablo'), ('Cause', 'No hablo porque me pagan para que no diga nada & quot ; es una vergüenza')],
+    ('Chatting', 'hablo'): [('Interlocutor_1', 'es')],
+    ('Commerce_pay', 'pagan'): [('Buyer', 'es'), ('Goods', 'no diga nada & quot ; es una vergüenza')],
+    ('Statement', 'diga'): [('Speaker', 'es'), ('Message', 'nada & quot ; es una vergüenza')]}

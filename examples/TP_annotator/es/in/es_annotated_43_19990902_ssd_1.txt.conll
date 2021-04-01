@@ -1,0 +1,12 @@
+{   ('Appellations', 'presidente'): [('Title', 'del Gobierno')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Calendric_unit', 'vacaciones'): [],
+    ('Custom', 'tradicionalmente'): [('Behavior', 'la cita que')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'el Palacio de'), ('Time', 'ayer'), ('Ground', 'cita que tradicionalmente pone fin a las vacaciones oficiales')],
+    ('Leadership', 'Gobierno'): [],
+    ('Leadership', 'oficiales'): [],
+    ('Leadership', 'rey'): [('Leader', 'Juan Carlos')],
+    ('Locative_relation', 'en'): [('Figure', 'al'), ('Ground', 'el Palacio de')],
+    ('Placing', 'pone'): [('Cause', 'cita que tradicionalmente'), ('Goal', 'fin a las vacaciones oficiales')],
+    ('Process_end', 'fin'): [],
+    ('Receiving', 'recibió'): [('Recipient', 'Juan Carlos'), ('Theme', 'presidente del Gobierno ,')]}

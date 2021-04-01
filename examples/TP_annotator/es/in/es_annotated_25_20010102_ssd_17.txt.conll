@@ -1,0 +1,5 @@
+{   ('Communication_noise', 'clamó'): [('Message', 'su esposa'), ('Message', 'a la venganza')],
+    ('Leadership', 'líder'): [('Governed', 'israelí'), ('Descriptor', 'de')],
+    ('Personal_relationship', 'esposa'): [('Partner_1', 'su')],
+    ('Quantified_mass', 'multitudinario'): [],
+    ('Revenge', 'venganza'): [('Punishment', 'su esposa')]}

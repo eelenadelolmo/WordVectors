@@ -1,0 +1,4 @@
+{   ('Hostile_encounter', 'guerra'): [('Sides', 'civil')],
+    ('Intentionally_act', 'en'): [('Act', 'de periodista')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'un suicidio colectivo'), ('Ground', 'de'), ('Figure', 'yo no hice de periodista')],
+    ('Social_interaction_evaluation', 'civil'): [('Behavior', 'guerra')]}

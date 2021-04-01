@@ -1,0 +1,7 @@
+{   ('Activity_start', 'comenzado'): [('Activity', 'condiciones ganadoras que había estipulado para su celebración el primer ministro separatista'), ('Activity', 'a materializarse')],
+    ('Coming_to_be', 'materializarse'): [],
+    ('Finish_competition', 'la victoria'): [('Margin', 'electoral')],
+    ('Leadership', 'ministro'): [('Domain', 'separatista'), ('Descriptor', 'primer'), ('Leader', 'Bouchard')],
+    ('Ordinal_numbers', 'primera'): [('Type', 'de ellas')],
+    ('Social_event', 'celebración'): [('Occasion', 'pues la'), ('Place', 'primer ministro separatista')],
+    ('State_of_entity', 'las condiciones'): []}

@@ -1,0 +1,4 @@
+{   ('Earnings_and_losses', 'perdería'): [('Earner', 'el'), ('Earnings', 'posibilidad de pactar con el Gobierno')],
+    ('Leadership', 'Gobierno'): [],
+    ('Likelihood', 'posibilidad'): [('Hypothetical_event', 'de pactar con el Gobierno')],
+    ('Make_agreement_on_action', 'con'): [('Obligation', 'con el Gobierno')]}

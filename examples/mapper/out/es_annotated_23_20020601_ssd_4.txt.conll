@@ -1,0 +1,7 @@
+{   ('Arriving', 'alcanzó'): [('Goal', 'el acuerdo')],
+    ('Arriving', 'llegó'): [('Time', 'media mañana se alcanzó el acuerdo'), ('Theme', 'refuerzo policial'), ('Time', 'a mediodía'), ('Time', 'tras una decisión sin precedentes')],
+    ('Deciding', 'decisión'): [('Manner', 'sin precedentes')],
+    ('Law_enforcement_agency', 'policial'): [],
+    ('Locative_relation', 'se'): [('Figure', 'refuerzo policial'), ('Ground', 'mediodía')],
+    ('Make_agreement_on_action', 'el acuerdo'): [],
+    ('Relative_time', 'se'): [('Landmark_occasion', 'una decisión sin precedentes')]}

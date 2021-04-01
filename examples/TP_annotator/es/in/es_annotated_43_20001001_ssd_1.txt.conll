@@ -1,0 +1,5 @@
+{   ('Aggregate', 'grupo'): [('Individuals', 'terrorista')],
+    ('Attack', 'asaltó'): [('Time', 'Seis días antes'), ('Assailant', 'el grupo terrorista'), ('Victim', 'barrio de la Verneda un furgón y robó 3,5 millones de pesetas')],
+    ('Calendric_unit', 'días'): [('Count', 'Seis')],
+    ('Temporal_subregion', 'antes'): [('Time_period', 'Seis días')],
+    ('Terrorism', 'terrorista'): []}

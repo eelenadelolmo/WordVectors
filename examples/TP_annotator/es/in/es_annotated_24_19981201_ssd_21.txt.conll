@@ -1,0 +1,7 @@
+{   ('Attempt', 'ponen'): [('Goal', 'no ponen'), ('Agent', 'en su país')],
+    ('Commitment', 'ponen'): [('Speaker', 'socialistas españoles'), ('Message', 'por la vía judicial')],
+    ('Explaining_the_facts', 'ponen'): [('State_of_affairs', 'socialistas españoles también apuestan por la vía judicial y no ponen')],
+    ('Political_locales', 'país'): [('Population', 'los')],
+    ('Process', 'vía'): [],
+    ('Purpose', 'su'): [('Goal', 'sea juzgado en su país')],
+    ('Quantified_mass', 'Ambos'): [('Individuals', 'que los socialistas españoles también apuestan por la vía judicial y no ponen')]}

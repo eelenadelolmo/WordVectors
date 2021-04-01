@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="33_20010601_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Un breve comunicado en una página web habitualmente utilizada por las Autodefensas Unidas de Colombia ( AUC )</concept>
+		<concept id="c_1">la quot</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Un breve comunicado en una página web habitualmente utilizada por las Autodefensas Unidas de Colombia ( AUC ) anunció ayer la "renuncia" de su máximo jefe, aunque no se ha podido establecer su veracidad.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="di0ms0">Un</token><token pos="aq0cs0">breve</token><token pos="ncms000">comunicado</token><token pos="sps00">en</token><token pos="di0fs0">una</token><token pos="ncms000">página</token><token pos="np00000">web</token><token pos="rg">habitualmente</token><token pos="aq0fsp">utilizada</token><token pos="sps00">por</token><token pos="da0fp0">las</token><token pos="ncms000">Autodefensas</token><token pos="ncms000">Unidas</token><token pos="sps00">de</token><token pos="ncms000">Colombia</token><token pos="fpa">(</token><token pos="np00000">AUC</token><token pos="fpt">)</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1">
+			<token pos="vmis3s0">anunció</token><token pos="da0fs0">la</token><token pos="fe">quot;</token><mention concept_ref="c_0"><token pos="ncfs000">renuncia</token></mention><token pos="fe">quot;</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="aq0ms0">máximo</token><token pos="ncms000">jefe</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Duration_description" head="breve">
+				<argument type="Eventuality" dependent="quot" /></frame>
+			<frame type="Intentionally_create" head="establecer">
+				<argument type="Creator" dependent="se" />
+				<argument type="Created_entity" dependent="veracidad" /></frame>
+			<frame type="Leadership" head="jefe">
+				<argument type="Governed" dependent="se ha" /></frame>
+			<frame type="Likelihood" head="podido">
+				<argument type="Hypothetical_event" dependent="establecer su veracidad" /></frame>
+			<main_frame type="Statement" head="anunció">
+				<argument type="Message" dependent="Un breve comunicado en una página web habitualmente utilizada por las Autodefensas Unidas de Colombia (" />
+				<argument type="Manner" dependent="ayer la" />
+				<argument type="Message" dependent="renuncia  quot ; de su máximo jefe" /></main_frame>
+			<frame type="Statement" head="quot">
+				<argument type="Manner" dependent="breve" />
+				<argument type="Speaker" dependent="web habitualmente utilizada por las Autodefensas Unidas de Colombia (" /></frame>
+			<frame type="Using" head="utilizada">
+				<argument type="Instrument" dependent="Un breve comunicado en una página web" />
+				<argument type="Agent" dependent="de Colombia ( AUC )" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

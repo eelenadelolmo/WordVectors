@@ -1,0 +1,6 @@
+{   ('Bringing', 'a las'): [   ('Carrier', 'fuerzas especiales'),
+                               ('Theme', 'una unidad militar de élite'),
+                               ('Goal', 'realiza misiones de reconocimiento y apoyo al Ejército y a las fuerzas paramilitares que operan en Kosovo')],
+    ('Military', 'fuerzas'): [('Possessor', 'paramilitares')],
+    ('Military', 'militar'): [],
+    ('Operating_a_system', 'operan'): [('Place', 'en Kosovo')]}

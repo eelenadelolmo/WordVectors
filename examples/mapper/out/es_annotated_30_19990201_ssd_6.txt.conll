@@ -1,0 +1,7 @@
+{   ('Board_vehicle', 'expuso'): [('Traveller', 'los militantes'), ('Traveller', 'en el viaje al centro')],
+    ('Calendric_unit', 'minutos'): [('Count', '45')],
+    ('Desirability', 'populares'): [('Evaluee', 'militantes populares que se han embarcado en el viaje al centro')],
+    ('Irregular_combatants', 'militantes'): [('Side_2', 'que se han embarcado en el viaje al centro')],
+    ('Locale_by_use', 'centro'): [],
+    ('Spatial_contact', 'en'): [('Figure', 'militantes populares que'), ('Ground', 'el viaje al centro')],
+    ('Travel', 'viaje'): [('Traveler', 'los militantes'), ('Goal', 'al centro')]}

@@ -1,0 +1,5 @@
+{   ('Appellations', 'presidente'): [('Title', 'del PP de Galicia')],
+    ('Building_subparts', 'al cargo'): [],
+    ('Calendric_unit', 'ayer'): [],
+    ('Delivery', 'al cargo'): [('Theme', 'de'), ('Manner', 'ayer'), ('Goal', 'al presidente del PP de Galicia')],
+    ('Text', 'carta'): [('Author', 'al cargo')]}

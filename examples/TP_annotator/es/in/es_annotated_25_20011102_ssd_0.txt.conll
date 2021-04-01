@@ -1,0 +1,7 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Hostile_encounter', 'conflicto'): [('Manner', 'de Oriente')],
+    ('Intentionally_act', 'acción'): [('Domain', 'conjunta'), ('Agent', 'de Estados Unidos')],
+    ('Means', 'para'): [('Purpose', 'salida al conflicto de Oriente')],
+    ('Political_locales', 'mundo'): [('Name', 'árabe')],
+    ('Referring_by_name', 'el'): [('Time', 'ayer'), ('Entity', 'el'), ('Name', 'acción conjunta de Estados Unidos , Rusia , la Unión Europea y el mundo árabe para buscar')],
+    ('Seeking_to_achieve', 'buscar'): [('Agent', 'Rusia'), ('Agent', 'la Unión Europea y el mundo árabe'), ('State_of_affairs', 'una salida al conflicto de Oriente')]}

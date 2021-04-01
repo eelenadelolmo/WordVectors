@@ -1,0 +1,9 @@
+{   ('Containers', 'contenedor'): [],
+    ('Inclusion', 'enteras'): [('Total', 'Familias enteras'), ('Part', 'niños')],
+    ('Kinship', 'Familias'): [],
+    ('Kinship', 'niños'): [],
+    ('Locale_by_use', 'lugar'): [],
+    ('Member_of_military', 'soldados'): [],
+    ('Motion', 'sacadas'): [],
+    ('Placing', 'colocado'): [('Theme', 'un contenedor que habían'), ('Goal', 'en el lugar')],
+    ('Spatial_contact', 'en'): [('Figure', 'contenedor que habían colocado'), ('Ground', 'lugar')]}

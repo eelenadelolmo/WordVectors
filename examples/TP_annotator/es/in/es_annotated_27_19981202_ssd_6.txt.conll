@@ -1,0 +1,11 @@
+{   ('Artificiality', 'falsa'): [('Reference_category', 'bomba')],
+    ('Building', 'construida'): [('Created_entity', 'del automóvil de una empleada de la embajada británica'), ('Place', 'de tal forma que sólo le faltaba el explosivo')],
+    ('Employing', 'empleada de'): [('Employer', 'embajada británica')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'del automóvil de una empleada de la embajada británica'), ('Time', 'construida'), ('Ground', 'tal forma que sólo le faltaba el explosivo')],
+    ('Leadership', 'autoridades'): [],
+    ('Means', 'forma que'): [('Purpose', 'que sólo le faltaba el explosivo')],
+    ('Part_orientational', 'bajos del'): [('Whole', 'del automóvil de una empleada de la embajada británica')],
+    ('Topic', 'preocupado a'): [('Text', 'las autoridades')],
+    ('Vehicle', 'automóvil'): [('Use', 'de una empleada de la embajada británica')],
+    ('Weapon', 'bomba'): [('Type', 'falsa')],
+    ('Weapon', 'explosivo'): []}

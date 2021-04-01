@@ -1,0 +1,4 @@
+{   ('Causation', 'porque'): [('Effect', 'nada'), ('Cause', 'la investigación está en marcha & quot ; , manifestó Wallander')],
+    ('Criminal_investigation', 'investigación'): [],
+    ('Process_continue', 'en marcha'): [('Event', 'la investigación'), ('Event', 'quot ; , manifestó Wallander')],
+    ('Statement', 'decir'): [('Speaker', 'Wallander')]}

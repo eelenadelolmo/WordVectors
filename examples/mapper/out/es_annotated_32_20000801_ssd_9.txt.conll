@@ -1,0 +1,7 @@
+{   ('Becoming_aware', 'guardaron'): [('Cognizer', 'los eurofuncionarios españoles'), ('Ground', 'diez minutos de silencio en un acto convocado por la Coordinadora por la Paz')],
+    ('Becoming_silent', 'silencio'): [],
+    ('Calendric_unit', 'minutos'): [('Count', 'diez')],
+    ('Cardinal_numbers', 'diez'): [('Unit', 'minutos')],
+    ('Event', 'acto'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'eurofuncionarios españoles guardaron diez minutos de silencio en'), ('Ground', 'un acto convocado por la Coordinadora por la Paz')],
+    ('Leadership', 'la Coordinadora'): [('Governed', 'eurofuncionarios españoles')]}

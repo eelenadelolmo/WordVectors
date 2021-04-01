@@ -1,0 +1,8 @@
+{   ('Arriving', 'entrada'): [],
+    ('Level_of_force_resistance', 'robustas'): [('Resisting_entity', 'poeta')],
+    ('Locale_by_use', 'museo'): [],
+    ('Locative_relation', 'en'): [('Figure', 'se colocará'), ('Ground', 'la entrada del museo')],
+    ('Placing', 'consta'): [('Theme', 'simples e inconfundibles - - que'), ('Goal', 'en la entrada del museo sobre una columna con la leyenda A de cinema')],
+    ('Relational_political_locales', 'mayúscula'): [],
+    ('Spatial_contact', 'en'): [('Figure', 'la entrada del museo'), ('Ground', 'una columna')],
+    ('Work', 'obra'): []}

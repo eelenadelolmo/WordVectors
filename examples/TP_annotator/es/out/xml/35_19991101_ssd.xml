@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="35_19991101_ssd">
+
+
+	<concepts>
+		<concept id="c_0">que</concept>
+		<concept id="c_1">El problema</concept>
+		<concept id="c_2">El socio pequeño de la coalición electoral PNV-EA</concept>
+		<concept id="c_3">El fracaso de la alianza formada para hacerse con el gobierno de las tres capitales vascas y el control de las diputaciones forales</concept>
+		<concept id="c_4">Las voces críticas que se alzaron contra la estrategia diseñada por la dirección</concept>
+		<concept id="c_5">EA</concept>
+		<concept id="c_6">las enfrentadas posiciones de partida</concept>
+		<concept id="c_7">el PNV</concept>
+		<concept id="c_8">Garaikoetxea</concept>
+		<concept id="c_9">magros</concept>
+		<concept id="c_10">el que</concept>
+		<concept id="c_11">enfrentamiento</concept>
+		<concept id="c_12">la vista</concept>
+		<concept id="c_13">la pelea</concept>
+		<concept id="c_14">Inazio Oliveri</concept>
+		<concept id="c_15">el congreso</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Al presidente de Eusko Arkatasuna ( EA ), Carlos Garaikoetxea, le ha salido un sector crítico encabezado por el consejero de Vivienda del Gobierno vasco, Patxi Ormazabal, que ha puesto la vista en el próximo congreso del partido que tendrá lugar este mes en Pamplona ( Navarra ).
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_1" concept_ref3="c_12">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">puesto</token><mention concept_ref="c_12"><token pos="da0fs0">la</token><token pos="ncfs000">vista</token></mention><token pos="sps00">en</token><mention concept_ref="c_2"><token pos="da0ms0">el</token><token pos="aq0ms0">próximo</token><token pos="ncms000">congreso</token></mention><token pos="spcms">del</token><mention concept_ref="c_1"><token pos="ncms000">partido</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido" />
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="de Eusko" /></frame>
+			<frame type="Buildings" head="Vivienda">
+				<argument type="Name" dependent="vasco" /></frame>
+			<frame type="Calendric_unit" head="mes" />
+			<main_frame type="Coming_to_be" head="ha puesto">
+				<argument type="Entity" dependent="un sector crítico encabezado por el consejero de Vivienda del Gobierno vasco , Patxi Ormazabal , que ha puesto la vista" /></main_frame>
+			<frame type="Fields" head="sector" />
+			<frame type="Importance" head="crítico">
+				<argument type="Factor" dependent="sector" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="este mes" />
+				<argument type="Ground" dependent="Pamplona ( Navarra )" /></frame>
+			<frame type="Leadership" head="encabezado">
+				<argument type="Leader" dependent="un sector crítico" />
+				<argument type="Governed" dependent="por el consejero de Vivienda del Gobierno vasco , Patxi" /></frame>
+			<frame type="Locale" head="lugar" />
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="consejero de Vivienda del Gobierno vasco , Patxi Ormazabal , que" />
+				<argument type="Figure" dependent="que" />
+				<argument type="Figure" dependent="vista" />
+				<argument type="Ground" dependent="el próximo congreso del partido" />
+				<argument type="Figure" dependent="tendrá lugar este mes en Pamplona ( Navarra )" /></frame>
+			<frame type="Scrutiny" head="vista">
+				<argument type="Cognizer" dependent="que" /></frame>
+			<main_frame type="Taking_time" head="puesto">
+				<argument type="Agent" dependent="que" />
+				<argument type="Activity" dependent="vista en el próximo congreso del partido que tendrá lugar este mes en" /></main_frame>
+			<main_frame type="Taking_time" head="puesto la">
+				<argument type="Activity" dependent="el consejero de Vivienda del Gobierno vasco , Patxi Ormazabal , que ha puesto la vista en el próximo congreso del partido" />
+				<argument type="Time_length" dependent="lugar este mes en Pamplona ( Navarra )" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El problema, sin embargo, es que la pelea entre oficialistas y renovadores amenaza con desestabilizar el Ejecutivo del lehendakari Juan José Ibarretxe.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">problema</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_2" concept_ref3="c_8" concept_ref4="c_12" concept_ref5="c_13">
+			<token pos="vsip3s0">es</token><token pos="cs">que</token><mention concept_ref="c_13"><token pos="da0fs0">la</token><token pos="ncfs000">pelea</token></mention><token pos="sps00">entre</token><token pos="nccp000">oficialistas</token><token pos="cc">y</token><token pos="ncmp000">renovadores</token><token pos="vmip3s0">amenaza</token><token pos="sps00">con</token><token pos="vmn0000">desestabilizar</token><mention concept_ref="c_2"><token pos="da0ms0">el</token><token pos="np00000">Ejecutivo</token></mention><token pos="spcms">del</token><mention concept_ref="c_8"><token pos="nccs000">lehendakari</token></mention><token pos="ncfs000">Juan</token><token pos="np0000l">José</token><token pos="np0000l">Ibarretxe</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Hostile_encounter" head="pelea">
+				<argument type="Side_2" dependent="entre oficialistas y renovadores amenaza con" /></frame>
+			<frame type="Leadership" head="oficialistas" />
+			<frame type="Predicament" head="problema" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El socio pequeño de la coalición electoral PNV-EA es el que está pagando los platos rotos de los magros resultados cosechados por ambos partidos en las urnas el pasado 13 de junio.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="ncms000">socio</token><token pos="aq0ms0">pequeño</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">coalición</token><token pos="aq0cs0">electoral</token><token pos="np00000">PNV-EA</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_6" concept_ref3="c_9" concept_ref4="c_10" concept_ref5="c_12">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_10"><token pos="da0ms0">el</token><token pos="pr0cn000">que</token></mention><token pos="vmip3s0">está</token><token pos="vmg0000">pagando</token><token pos="da0mp0">los</token><token pos="ncmp000">platos</token><token pos="aq0mpp">rotos</token><token pos="sps00">de</token><mention concept_ref="c_6"><token pos="da0mp0">los</token><token pos="aq0mp0">magros</token><token pos="ncmp000">resultados</token></mention><token pos="aq0mpp">cosechados</token><token pos="sps00">por</token><token pos="dn0mp0">ambos</token><token pos="ncmp000">partidos</token><token pos="sps00">en</token><mention concept_ref="c_12"><token pos="da0fp0">las</token><token pos="ncfp000">urnas</token></mention><token pos="da0ms0">el</token><token pos="aq0msp">pasado</token><token pos="zp">13</token><token pos="spcms">de</token><token pos="ncms000">junio</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partidos" />
+			<frame type="Alliance" head="coalición">
+				<argument type="Descriptor" dependent="electoral" /></frame>
+			<frame type="Being_operational" head="rotos" />
+			<frame type="Calendric_unit" head="el" />
+			<frame type="Cardinal_numbers" head="el que">
+				<argument type="Entity" dependent="el que" /></frame>
+			<main_frame type="Causation" head="resultados">
+				<argument type="Manner" dependent="magros" />
+				<argument type="Cause" dependent="por ambos partidos" />
+				<argument type="Time" dependent="en las urnas el pasado 13" /></main_frame>
+			<main_frame type="Commerce_pay" head="pagando">
+				<argument type="Buyer" dependent="el que" />
+				<argument type="Goods" dependent="los platos rotos de los magros resultados cosechados por ambos partidos en las urnas el pasado 13 de" /></main_frame>
+			<frame type="Containers" head="los platos">
+				<argument type="Descriptor" dependent="rotos" />
+				<argument type="Contents" dependent="de los magros resultados" /></frame>
+			<main_frame type="Getting" head="resultados">
+				<argument type="Theme" dependent="los platos rotos de los magros resultados" />
+				<argument type="Recipient" dependent="por ambos partidos" />
+				<argument type="Time" dependent="en las urnas el pasado 13" /></main_frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="ambos partidos" />
+				<argument type="Ground" dependent="las urnas" /></frame>
+			<frame type="Means" head="de la">
+				<argument type="Purpose" dependent="los platos rotos de los magros resultados cosechados por" />
+				<argument type="Means" dependent="ambos partidos" />
+				<argument type="Time" dependent="en las urnas el pasado 13" /></frame>
+			<frame type="Quantified_mass" head="ambos">
+				<argument type="Individuals" dependent="partidos" /></frame>
+			<frame type="Relative_time" head="pasado">
+				<argument type="Manner" dependent="13 de" /></frame>
+			<frame type="Size" head="pequeño">
+				<argument type="Entity" dependent="socio" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El fracaso de la alianza formada para hacerse con el gobierno de las tres capitales vascas y el control de las diputaciones forales ya desembocó en un agrio enfrentamiento entre el presidente de EA, Carlos Garaikoetxea, y el secretario general, Inazio Oliveri, que presentó su dimisión.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">El</token><token pos="ncms000">fracaso</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">alianza</token><token pos="aq0fsp">formada</token><token pos="sps00">para</token><token pos="vmn0000">hacerse</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">gobierno</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="dn0cp0">tres</token><token pos="ncfp000">capitales</token><token pos="aq0fp0">vascas</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">control</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">diputaciones</token><token pos="aq0cp0">forales</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_8" concept_ref3="c_11" concept_ref4="c_14">
+			<token pos="vmis3s0">desembocó</token><token pos="sps00">en</token><mention concept_ref="c_6"><token pos="di0ms0">un</token><token pos="aq0ms0">agrio</token><token pos="ncms000">enfrentamiento</token></mention><token pos="sps00">entre</token><token pos="da0ms0">el</token><token pos="ncms000">presidente</token><token pos="sps00">de</token><token pos="np00000">EA</token><token pos="fc">,</token><mention concept_ref="c_8"><token pos="np0000l">Carlos</token><token pos="np0000l">Garaikoetxea</token></mention><token pos="fc">,</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">secretario</token><token pos="aq0cs0">general</token><token pos="fc">,</token><mention concept_ref="c_14"><token pos="np0000l">Inazio</token><token pos="np0000l">Oliveri</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Alliance" head="alianza" />
+			<frame type="Appellations" head="presidente">
+				<argument type="Title" dependent="de EA , Carlos" /></frame>
+			<frame type="Being_in_control" head="control">
+				<argument type="Controlling_entity" dependent="el gobierno de las" /></frame>
+			<frame type="Cardinal_numbers" head="tres">
+				<argument type="Entity" dependent="capitales vascas" /></frame>
+			<main_frame type="Chemical-sense_description" head="desembocó">
+				<argument type="Sensory_attribute" dependent="enfrentamiento" /></main_frame>
+			<frame type="Creating" head="formada">
+				<argument type="Created_entity" dependent="la alianza" />
+				<argument type="Created_entity" dependent="gobierno de las tres capitales vascas y el control de las" /></frame>
+			<frame type="Hostile_encounter" head="enfrentamiento">
+				<argument type="Depictive" dependent="desembocó" />
+				<argument type="Side_2" dependent="entre el presidente de" /></frame>
+			<frame type="Interior_profile_relation" head="entre">
+				<argument type="Figure" dependent="enfrentamiento" />
+				<argument type="Ground" dependent="Garaikoetxea , y el secretario general , Inazio Oliveri , que presentó su dimisión" /></frame>
+			<frame type="Leadership" head="dimisión">
+				<argument type="Leader" dependent="gobierno de las tres capitales vascas y el control de las" />
+				<argument type="Activity" dependent="agrio enfrentamiento entre el presidente de EA , Carlos Garaikoetxea , y el secretario general , Inazio Oliveri , que" /></frame>
+			<frame type="Leadership" head="gobierno">
+				<argument type="Governed" dependent="las tres capitales vascas y el control de las diputaciones" /></frame>
+			<frame type="Process_completed_state" head="en">
+				<argument type="Process" dependent="el gobierno" /></frame>
+			<frame type="Relational_political_locales" head="capitales">
+				<argument type="Name" dependent="vascas" />
+				<argument type="Container_possessor" dependent="el gobierno de las" /></frame>
+			<frame type="Success_or_failure" head="fracaso" />
+			<main_frame type="Taking_time" head="hacerse">
+				<argument type="Activity" dependent="gobierno de las tres capitales vascas y el control de las" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Las voces críticas que se alzaron contra la estrategia diseñada por la dirección tomaron entonces el acuerdo de plantar cara en el congreso del partido y el pasado Sábado se presentaron en público, con nombres y apellidos, durante una rueda de prensa celebrada en la capital vizcaína.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0fp0">Las</token><token pos="ncfp000">voces</token><token pos="aq0fp0">críticas</token><token pos="pr0cn000">que</token><token pos="p0300000">se</token><token pos="vmis3p0">alzaron</token><token pos="sps00">contra</token><token pos="da0fs0">la</token><token pos="ncfs000">estrategia</token><token pos="aq0fsp">diseñada</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">dirección</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_12" concept_ref3="c_15">
+			<token pos="vmis3p0">tomaron</token><token pos="da0ms0">el</token><token pos="ncms000">acuerdo</token><token pos="sps00">de</token><token pos="vmp00sm">plantar</token><token pos="ncfp000">cara</token><token pos="sps00">en</token><mention concept_ref="c_15"><token pos="da0ms0">el</token><token pos="ncms000">congreso</token></mention><token pos="spcms">del</token><token pos="ncms000">partido</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido" />
+			<frame type="Being_named" head="nombres" />
+			<frame type="Body_parts" head="cara en" />
+			<frame type="Calendric_unit" head="Sábado">
+				<argument type="Relative_time" dependent="se" /></frame>
+			<main_frame type="Change_position_on_a_scale" head="plantar">
+				<argument type="Item" dependent="Las voces críticas que" />
+				<argument type="Item" dependent="contra la estrategia diseñada por la dirección" /></main_frame>
+			<frame type="Coming_up_with" head="diseñada" />
+			<frame type="Discussion" head="congreso del">
+				<argument type="Interlocutors" dependent="prensa" /></frame>
+			<frame type="Expressing_publicly" head="voces">
+				<argument type="Content" dependent="la estrategia diseñada por la dirección tomaron entonces el acuerdo de plantar cara en el congreso del partido y" /></frame>
+			<frame type="Give_impression" head="se presentaron">
+				<argument type="Phenomenon" dependent="se" /></frame>
+			<frame type="Importance" head="críticas">
+				<argument type="Factor" dependent="voces" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="de prensa celebrada" />
+				<argument type="Ground" dependent="la capital vizcaína" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="voces críticas que se alzaron contra la estrategia diseñada por la dirección tomaron entonces el acuerdo de" />
+				<argument type="Ground" dependent="el congreso del partido" /></frame>
+			<frame type="Make_agreement_on_action" head="el acuerdo de" />
+			<main_frame type="Manipulation" head="tomaron">
+				<argument type="Agent" dependent="de prensa celebrada" />
+				<argument type="Place" dependent="en la capital" /></main_frame>
+			<frame type="Posture" head="se">
+				<argument type="Location" dependent="cara en" /></frame>
+			<frame type="Relational_political_locales" head="capital">
+				<argument type="Name" dependent="vizcaína" /></frame>
+			<frame type="Relative_time" head="se">
+				<argument type="Degree" dependent="Sábado" /></frame>
+			<frame type="Taking_sides" head="contra" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Con el consejero Ormazabal también están 12 cargos, entre ellos, el parlamentario Yon Goikoetxea ; el presidente de las Juntas de Guipúzcoa, Iñaki Alkiza ; el número dos de EA en Alava, Avelino Fernández de Quincoces, y el alcalde de Amurrio, Pablo Isasi.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente">
+				<argument type="Title" dependent=", entre ellos , el" /></frame>
+			<frame type="Being_employed" head="cargos">
+				<argument type="Employer" dependent="el consejero" />
+				<argument type="Rank" dependent="12" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="el" /></frame>
+			<frame type="Leadership" head="alcalde">
+				<argument type="Leader" dependent="de" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="consejero" />
+				<argument type="Figure" dependent="también están 12 cargos , entre ellos , el parlamentario Yon Goikoetxea ; el presidente de las Juntas de" /></frame>
+			<frame type="Quantified_mass" head="número">
+				<argument type="Individuals" dependent="el" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Coincide, además, que Oliveri, y el portavoz de los renovadores, Patxi Ormazabal, son dos de los tres consejeros que EA tiene en el Ejecutivo de Vitoria.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="np00000">EA</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_6" concept_ref3="c_14">
+			<token pos="vmip3s0">tiene</token><token pos="sps00">en</token><mention concept_ref="c_2"><token pos="da0ms0">el</token><token pos="np0000o">Ejecutivo</token></mention><token pos="sps00">de</token><token pos="np0000l">Vitoria</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="dos de los">
+				<argument type="Entity" dependent="tres consejeros que" /></frame>
+			<frame type="Representative" head="son">
+				<argument type="Represented" dependent="de los renovadores" />
+				<argument type="Representative" dependent="Patxi" /></frame>
+			<frame type="Simultaneity" head="Coincide">
+				<argument type="Events" dependent=", que Oliveri , y el portavoz de los renovadores , Patxi Ormazabal , son dos de los tres consejeros que" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Se sospecha que si las enfrentadas posiciones de partida no logran sellar un acuerdo - - y se anuncia difícil que así sea - -, los resultados del cónclave podrían forzar el relevo de los dos consejeros disidentes si es el sector afín a Garaikoetxea quien revalida sus posiciones.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0fp0">las</token><token pos="aq0fpp">enfrentadas</token><token pos="ncfp000">posiciones</token><token pos="sps00">de</token><token pos="ncfs000">partida</token>
+		</theme>
+		<rheme>
+			<token pos="vmn0000">sellar</token><token pos="di0ms0">un</token><token pos="ncms000">acuerdo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_start" head="partida">
+				<argument type="Agent" dependent="las enfrentadas" />
+				<argument type="Activity" dependent="posiciones" /></frame>
+			<frame type="Being_employed" head="posiciones">
+				<argument type="Employer" dependent="sus" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="consejeros disidentes" /></frame>
+			<frame type="Causation" head="forzar">
+				<argument type="Cause" dependent="sea - - , los resultados del cónclave" />
+				<argument type="Effect" dependent="forzar el relevo de los dos consejeros disidentes si es el sector afín a" /></frame>
+			<frame type="Causation" head="resultados">
+				<argument type="Cause" dependent="del cónclave" />
+				<argument type="Effect" dependent="posiciones" /></frame>
+			<main_frame type="Closure" head="sellar">
+				<argument type="Container_portal" dependent="un acuerdo - - y se" /></main_frame>
+			<frame type="Difficulty" head="difícil">
+				<argument type="Activity" dependent="que así sea - - , los resultados del cónclave podrían forzar el relevo de los dos consejeros disidentes" /></frame>
+			<frame type="Fields" head="sector" />
+			<frame type="Make_agreement_on_action" head="un acuerdo" />
+			<frame type="Possibility" head="podrían">
+				<argument type="Possible_event" dependent="del cónclave" />
+				<argument type="Possible_event" dependent="forzar el relevo de los dos consejeros disidentes si es el sector afín a" /></frame>
+			<frame type="Social_connection" head="forzar">
+				<argument type="Connection" dependent="el sector" />
+				<argument type="Individual_2" dependent="revalida sus posiciones" /></frame>
+			<frame type="Statement" head="se anuncia">
+				<argument type="Message" dependent="difícil que así sea - - , los resultados del cónclave podrían forzar el relevo de los dos consejeros disidentes" /></frame>
+			<frame type="Successful_action" head="forzar">
+				<argument type="Instrument" dependent="posiciones" /></frame>
+			<frame type="Suspicion" head="sospecha">
+				<argument type="Suspect" dependent="es" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 De momento, el PNV no valora en público la refriega interna de EA.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0ms0">el</token><token pos="np00000">PNV</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_13">
+			<token pos="rn">no</token><token pos="vmip3s0">valora</token><token pos="da0fs0">la</token><token pos="ncfs000">refriega</token><token pos="aq0fs0">interna</token><token pos="sps00">de</token><token pos="np00000">EA</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Secrecy_status" head="público la">
+				<argument type="Phenomenon" dependent="valora en público la refriega interna" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Además, Garaikoetxea no ha aclarado si se presentará o no a la reelección como presidente del partido que él mismo formó en 1986 tras escindirse del PNV.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="np00000">Garaikoetxea</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_2" concept_ref3="c_6" concept_ref4="c_12" concept_ref5="c_15">
+			<token pos="rg">Además</token><token pos="rn">no</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">aclarado</token><token pos="cs">si</token><token pos="p0300000">se</token><token pos="vmif3s0">presentará</token><token pos="cc">o</token><token pos="rn">no</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">reelección</token><token pos="cs">como</token><mention concept_ref="c_6"><token pos="ncms000">presidente</token></mention><token pos="spcms">del</token><token pos="ncms000">partido</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido" />
+			<frame type="Appellations" head="presidente">
+				<argument type="Name" dependent="partido" /></frame>
+			<frame type="Creating" head="formó">
+				<argument type="Created_entity" dependent="él" />
+				<argument type="Time" dependent="en 1986 tras escindirse del PNV" /></frame>
+			<frame type="Relative_time" head="del">
+				<argument type="Focal_occasion" dependent="formó en 1986" />
+				<argument type="Landmark_occasion" dependent="tras escindirse del PNV" /></frame>
+			<frame type="Self_motion" head="se">
+				<argument type="Self_mover" dependent="él" />
+				<argument type="Path" dependent="a la reelección" />
+				<argument type="Time" dependent="presidente del partido que él mismo formó en 1986 tras escindirse del" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

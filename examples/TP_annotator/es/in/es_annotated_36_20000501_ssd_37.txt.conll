@@ -1,0 +1,5 @@
+{   ('Aggregate', 'partido'): [('Individuals', 'socialista')],
+    ('Fields', 'sectores'): [],
+    ('Project', 'proyecto'): [],
+    ('Secrecy_status', 'abierto'): [('Phenomenon', 'a sectores')],
+    ('Supporting', 'respaldado'): [('Supporter', 'quienes'), ('Supported', 'partido socialista')]}

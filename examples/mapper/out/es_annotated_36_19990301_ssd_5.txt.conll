@@ -1,0 +1,7 @@
+{   ('Arriving', 'consigna de'): [],
+    ('Attempt', 'intentó'): [('Goal', 'construir un gran edificio escolar conjunto')],
+    ('Building', 'construir'): [('Created_entity', 'un gran edificio escolar conjunto')],
+    ('Buildings', 'edificio'): [('Descriptor', 'escolar conjunto')],
+    ('Locale_by_use', 'escuela'): [('Descriptor', 'enorme')],
+    ('Manufacturing', 'construir'): [('Product', 'un enorme cubo de madera con el que se intentó'), ('Product', 'construir un gran edificio escolar conjunto')],
+    ('Size', 'enorme'): [('Entity', 'edificio escolar conjunto')]}

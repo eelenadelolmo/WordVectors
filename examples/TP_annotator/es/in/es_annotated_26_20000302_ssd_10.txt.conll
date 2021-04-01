@@ -1,0 +1,5 @@
+{   ('Avoiding', 'fuga'): [('Time', 'Tras el choque'), ('Agent', 'el conductor')],
+    ('Cause_impact', 'choque'): [],
+    ('Desiring', 'buscado'): [('Duration', 'Tras el choque'), ('Time', 'actualmente'), ('Experiencer', 'por la policía')],
+    ('Law_enforcement_agency', 'policía'): [],
+    ('Relative_time', 'por'): [('Landmark_occasion', 'el choque'), ('Focal_occasion', 'el conductor se dio a la fuga y actualmente es buscado por la policía')]}

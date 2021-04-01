@@ -1,0 +1,5 @@
+{   ('Aggregate', 'partido'): [],
+    ('Appellations', 'presidente'): [('Name', 'partido')],
+    ('Creating', 'formó'): [('Created_entity', 'él'), ('Time', 'en 1986 tras escindirse del PNV')],
+    ('Relative_time', 'del'): [('Focal_occasion', 'formó en 1986'), ('Landmark_occasion', 'tras escindirse del PNV')],
+    ('Self_motion', 'se'): [('Self_mover', 'él'), ('Path', 'a la reelección'), ('Time', 'presidente del partido que él mismo formó en 1986 tras escindirse del')]}

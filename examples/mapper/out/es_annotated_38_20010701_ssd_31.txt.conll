@@ -1,0 +1,7 @@
+{   ('Age', 'jóvenes'): [('Entity', 'les')],
+    ('Becoming_aware', 'esa'): [('Cognizer', 'muchos jóvenes'), ('Phenomenon', 'esa postura')],
+    ('Being_employed', 'postura'): [('Employer', 'muchos jóvenes'), ('Employer', 'esa'), ('Task', 'anticuada')],
+    ('Certainty', 'Seguro'): [('Cognizer', 'a'), ('Content', 'muchos jóvenes esa postura suya les parece')],
+    ('Destiny', 'muchos'): [('State_of_affairs', 'jóvenes')],
+    ('People', 'les'): [],
+    ('Stage_of_progress', 'anticuada'): [('Degree', 'postura')]}

@@ -1,0 +1,5 @@
+{   ('Calendric_unit', 'día'): [],
+    ('Causation', 'porque'): [('Effect', 'El mejor es el día que los dejé , porque sentí una'), ('Cause', 'sentí una gran liberación')],
+    ('Departing', 'dejé'): [('Theme', 'el'), ('Path', 'los')],
+    ('Desirability', 'gran'): [('Evaluee', 'liberación')],
+    ('Required_event', 'mejor'): []}

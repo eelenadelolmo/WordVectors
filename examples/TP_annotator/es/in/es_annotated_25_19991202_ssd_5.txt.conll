@@ -1,0 +1,8 @@
+{   ('Attempt', 'comprometa'): [('Agent', 'se ha'), ('Goal', 'no comentar en público nada del club')],
+    ('Desiring', 'quiere'): [('Experiencer', 'el club'), ('Event', 'entrenador firme un documento por el que se comprometa a no comentar en público nada del club')],
+    ('Documents', 'documento'): [],
+    ('Publishing', 'publicado'): [('Author', 'se')],
+    ('Sign_agreement', 'firme un'): [('Agreement', 'documento por el que se comprometa a no comentar en público nada del club')],
+    ('Statement', 'comentar'): [('Speaker', 'se ha'), ('Message', 'nada del club')],
+    ('Vehicle', 'entrenador'): [],
+    ('Weapon', 'club'): []}

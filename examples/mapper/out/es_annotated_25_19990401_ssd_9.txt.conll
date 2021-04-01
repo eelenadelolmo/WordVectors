@@ -1,0 +1,6 @@
+{   ('Being_obligated', 'de actuar'): [],
+    ('Body_parts', 'frente'): [],
+    ('Goal', 'de'): [('Landmark', 'deber de')],
+    ('Intentionally_act', 'actuar'): [('Agent', 'de actuar')],
+    ('Representative', 'quot'): [('Represented', 'su'), ('Representative', 'Colonna')],
+    ('Statement', 'quot'): [('Speaker', 'su portavoz , Catherine Colonna')]}

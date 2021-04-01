@@ -1,0 +1,5 @@
+{   ('Earnings_and_losses', 'ingresos'): [],
+    ('Increment', 'más'): [('Class', 'ingresos')],
+    ('Money', 'financiación'): [('Creator', 'Proponemos'), ('Material', 'que permita que Catalunya tenga más ingresos')],
+    ('Preventing_or_letting', 'permita'): [('Potential_hindrance', 'que'), ('Event', 'Catalunya tenga más ingresos')],
+    ('Statement', 'Proponemos'): [('Speaker', 'Proponemos'), ('Message', 'financiación que permita que Catalunya tenga más ingresos')]}

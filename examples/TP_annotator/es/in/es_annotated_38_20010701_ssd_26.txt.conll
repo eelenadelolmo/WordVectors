@@ -1,0 +1,13 @@
+{   ('Calendric_unit', 'minutos'): [('Count', '15')],
+    ('Cardinal_numbers', 'uno'): [('Precision', 'número')],
+    ('Color', 'blues'): [],
+    ('Contacting', 'radio'): [('Communicator', 'The Rhythm Kings')],
+    ('Intentionally_act', 'de'): [('Agent', 'nos'), ('Act', 'tocamos en estadios')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'no tocamos'), ('Ground', 'estadios')],
+    ('Locative_relation', 'en'): [('Figure', 'nos'), ('Ground', 'nuestros conciertos la gente nos despide con 15 minutos de aplausos')],
+    ('Make_noise', 'tocamos'): [('Sound_source', 'nos'), ('Place', 'en estadios')],
+    ('People', 'gente'): [('Descriptor', 'conciertos')],
+    ('Quantified_mass', 'número'): [('Individuals', 'uno en las listas británicas de jazz y blues y en nuestros conciertos la gente nos despide con 15 minutos')],
+    ('Shoot_projectiles', 'The'): [('Depictive', 'conciertos'), ('Agent', 'gente'), ('Projectile', 'nos')],
+    ('Spatial_contact', 'en'): [('Figure', 'somos número uno'), ('Ground', 'británicas de jazz y blues')],
+    ('Trendiness', 'moda'): [('Evaluee', 'The Rhythm Kings')]}

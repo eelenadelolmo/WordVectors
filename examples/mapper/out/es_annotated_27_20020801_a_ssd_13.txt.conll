@@ -1,0 +1,6 @@
+{   ('Businesses', 'la'): [('Product', 'portavoz')],
+    ('Capability', 'podemos'): [('Entity', 'Hacemos')],
+    ('Difficulty', 'difícil'): [('Degree', 'muy'), ('Activity', 'época')],
+    ('Intentionally_act', 'de'): [('Agent', 'Hacemos'), ('Act', '; Hacemos lo que podemos , pero es una época muy difícil & quot ; , manifestó un portavoz de la naviera')],
+    ('Representative', 'quot'): [('Represented', 'de la naviera')],
+    ('Statement', 'quot'): [('Message', 'un portavoz de la naviera')]}

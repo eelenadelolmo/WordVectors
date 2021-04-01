@@ -1,0 +1,6 @@
+{   ('Attack', 'incursión'): [('Victim', 'en Rafah')],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'Otros dos adultos')],
+    ('Death', 'murieron'): [('Protagonist', 'Otros dos adultos'), ('Time', 'durante la misma incursión en Rafah')],
+    ('Identicality', 'la misma'): [('Type', 'incursión en Rafah')],
+    ('Increment', 'Otros'): [('Increment', 'dos'), ('Class', 'adultos')],
+    ('People_by_age', 'adultos'): []}

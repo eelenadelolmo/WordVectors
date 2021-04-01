@@ -1,0 +1,6 @@
+{   ('Appellations', 'vicepresidente'): [('Type', 'paseó')],
+    ('Clothing', 'vestido'): [('Garment', 'vestido de campo')],
+    ('Make_cognitive_connection', 'corbata'): [],
+    ('Political_locales', 'campo'): [],
+    ('Political_locales', 'locales'): [],
+    ('Self_motion', 'paseó'): [('Source', 'vestido de campo')]}

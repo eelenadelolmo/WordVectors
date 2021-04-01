@@ -1,0 +1,5 @@
+{   ('Activity_stop', 'continuará'): [('Activity', 'esta entrada masiva insostenible para el territorio')],
+    ('Arriving', 'masiva'): [('Manner', 'masiva insostenible'), ('Goal', 'territorio')],
+    ('Political_locales', 'territorio'): [],
+    ('Process_continue', 'continuará'): [('Event', 'continuará si no cesa esta entrada masiva insostenible para el territorio')],
+    ('Quantified_mass', 'masiva'): []}

@@ -1,0 +1,21 @@
+{   ('Becoming_aware', 'observaba'): [('Cognizer', 'su')],
+    ('Body_parts', 'cara de'): [('Descriptor', 'característica'), ('Possessor', 'de pocos amigos')],
+    ('Causation', 'porque'): [   ('Effect', 'nadie ... quizá'),
+                                 ('Cause', 'apenas dijo nada & quot ; , observaba en El Mundo Borja Hermoso , quien resumía el sentir de'),
+                                 (   'Effect',
+                                     'Niro adjetivos como & quot ; - lacónico & quot ; , & quot ; aburrido & quot ; , & quot ; hermético & quot ; y & quot ; parco en palabras & quot ; y subrayó su & '
+                                     'quot ; característica cara de pocos amigos')],
+    ('Distinctiveness', 'característica'): [('Feature', 'cara de pocos amigos')],
+    ('Emotion_directed', 'defraudó'): [('Experiencer', 'su'), ('Stimulus', ',')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'observaba en'), ('Ground', 'El Mundo Borja')],
+    ('Obviousness', 'visible'): [('Phenomenon', 'aburrido')],
+    ('Personal_relationship', 'amigos'): [],
+    ('Quantified_mass', 'pocos'): [('Individuals', 'amigos')],
+    ('Sensation', 'sentir'): [],
+    ('Statement', 'dijo'): [   ('Speaker', 'su'),
+                               (   'Message',
+                                   'observaba en El Mundo Borja Hermoso , quien resumía el sentir de una prensa que dedicó a De Niro adjetivos como & quot ; - lacónico & quot ; , & quot ; aburrido & '
+                                   'quot ; , & quot ; hermético & quot ; y & quot ; parco en palabras & quot ; y subrayó su & quot ; característica cara de pocos amigos')],
+    ('Summarizing', 'resumía'): [   ('State_of_affairs', 'El Mundo Borja'),
+                                    ('Communicator', 'quien'),
+                                    ('State_of_affairs', 'el sentir de una prensa que dedicó a De Niro adjetivos como & quot ; - lacónico')]}

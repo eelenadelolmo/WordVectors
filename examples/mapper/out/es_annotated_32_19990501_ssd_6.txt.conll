@@ -1,0 +1,4 @@
+{   ('Desirability', 'malas'): [('Evaluee', 'condiciones climáticas')],
+    ('Fleeing', 'vuelos'): [],
+    ('Preventing_or_letting', 'impedido que'): [('Potential_hindrance', 'malas condiciones climáticas'), ('Event', 'alrededor del 40 % de los vuelos cumpla su misión')],
+    ('Weather', 'climáticas'): []}

@@ -1,0 +1,7 @@
+{   ('Leadership', 'alcaldesa'): [('Governed', 'Málaga')],
+    ('Leadership', 'directora'): [('Governed', 'del Centro de Investigaciones Sociológicas')],
+    ('Locale_by_use', 'Centro'): [('Descriptor', 'Sociológicas'), ('Use', 'de Investigaciones')],
+    ('Make_noise', 'suenan'): [('Sound_source', 'Soledad Becerril , y la alcaldesa de Málaga , Celia Villalobos'), ('Sound_source', 'para ello')],
+    ('Purpose', 'para'): [],
+    ('Research', 'de Investigaciones'): [('Field', 'Sociológicas')],
+    ('Time_vector', 'del'): [('Event', 'exministra Soledad')]}

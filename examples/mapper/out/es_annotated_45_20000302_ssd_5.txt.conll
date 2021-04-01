@@ -1,0 +1,10 @@
+{   ('Arriving', 'vuelta a'): [('Goal', 'a Marruecos')],
+    ('Avoiding', 'evitar'): [('Agent', 'objetivo'), ('Undesirable_situation', 'dificultades de convivencia y económicas & quot')],
+    ('Judicial_body', 'su'): [],
+    ('Kinship', 'familia'): [],
+    ('Kinship', 'madre'): [('Ego', 'su')],
+    ('Locative_relation', 'donde'): [('Figure', 'su madre')],
+    ('Motion', 'vuelta'): [('Theme', 'la familia'), ('Path', 'su')],
+    ('Possibility', 'podía'): [('Possible_event', 'objetivo'), ('Possible_event', 'evitar tanto & quot ; las dificultades de convivencia y económicas & quot ; que pasaba la familia')],
+    ('Purpose', 'objetivo'): [('Goal', 'la denuncia')],
+    ('Residence', 'vivía'): [('Resident', 'su madre'), ('Location', ',')]}

@@ -1,0 +1,11 @@
+{   ('Attaching', 'conectar'): [('Items', 'avanzó'), ('Item', 'con Madrid'), ('Time', 'a finales de año en poco más de dos horas')],
+    ('Calendric_unit', 'año'): [],
+    ('Calendric_unit', 'horas'): [('Count', 'dos')],
+    ('Cardinal_numbers', 'dos'): [('Unit', 'horas')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'año'), ('Ground', 'en poco más de dos horas')],
+    ('Locative_relation', 'en'): [('Figure', 'conectar Lleida con Madrid'), ('Ground', 'finales de año')],
+    ('Preventing_or_letting', 'permitirán'): [('Agent', 'Los dos convoyes'), ('Event', 'conectar Lleida con Madrid a finales de año en poco más de dos horas')],
+    ('Process_end', 'finales'): [],
+    ('Progression', 'avanzó'): [('Entity', 'este diario')],
+    ('Proportional_quantity', 'avanzó'): [('Degree', 'en'), ('Reference_quantity', 'dos horas')],
+    ('Text', 'diario'): []}

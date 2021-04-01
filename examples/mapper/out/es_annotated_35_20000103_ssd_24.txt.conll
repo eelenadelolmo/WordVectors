@@ -1,0 +1,5 @@
+{   ('Activity_ongoing', 'hacer'): [('Agent', 'hemos'), ('Activity', 'lo')],
+    ('Capability', 'posible'): [('Entity', 'hemos'), ('Event', 'para que no esperen')],
+    ('Intentionally_act', 'de'): [('Agent', 'hemos'), ('Act', 'hemos de hacer todo lo posible para que no esperen')],
+    ('Required_event', 'de hacer'): [('Required_situation', 'hemos'), ('Required_situation', 'hemos de hacer todo lo posible para que no esperen')],
+    ('Waiting', 'esperen'): [('Protagonist', 'lo')]}

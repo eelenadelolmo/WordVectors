@@ -1,0 +1,13 @@
+{   ('Aggregate', 'partidos'): [],
+    ('Appellations', 'presidente'): [],
+    ('Becoming_a_member', 'se'): [('New_member', 'estos dos partidos se'), ('Group', 'Gobierno')],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'partidos')],
+    ('Change_position_on_a_scale', 'han declinado'): [   ('Item', 'populares y los'),
+                                                         ('Time', 'ahora'),
+                                                         ('Item', ', la oferta del presidente , mientras que el PSOE está a la espera de que estos dos partidos se sumen al Gobierno')],
+    ('Concessive', 'mientras'): [   ('Main_assertion', 'populares y los localistas de UPM han declinado , por ahora , la oferta del presidente'),
+                                    ('Main_assertion', 'está a la espera de que estos dos partidos se sumen al Gobierno')],
+    ('Desirability', 'populares'): [('Evaluee', 'del')],
+    ('Leadership', 'Gobierno'): [],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'populares y los')],
+    ('Waiting', 'espera'): [('Protagonist', 'el'), ('Salient_entity', 'estos dos partidos se sumen al Gobierno')]}

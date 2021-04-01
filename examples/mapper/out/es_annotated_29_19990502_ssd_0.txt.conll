@@ -1,0 +1,10 @@
+{   ('Appellations', 'presidente'): [('Title', 'de Yugoslavia')],
+    ('Attack', 'bombardeos'): [('Purpose', 'por no responder a las exigencias')],
+    ('Make_acquaintance', 'con'): [('Individual_2', 'exigencias de la')],
+    ('Process_end', 'acabar'): [],
+    ('Purpose', 'plan'): [],
+    ('Representative', 'presidente'): [('Representative', 'del Pentágono'), ('Represented', 'ayer')],
+    ('Request', 'exigencias'): [('Message', 'del')],
+    ('Respond_to_proposal', 'rechazó'): [('Speaker', 'del Pentágono rechazó ayer'), ('Proposal', 'el plan de seis puntos propuesto por el presidente de Yugoslavia')],
+    ('Statement', 'propuesto'): [('Message', 'el plan de seis puntos'), ('Speaker', 'por el presidente de Yugoslavia'), ('Message', 'Slobodan Milosevic')],
+    ('Successful_action', 'rechazó'): [('Goal', 'a las exigencias de la')]}

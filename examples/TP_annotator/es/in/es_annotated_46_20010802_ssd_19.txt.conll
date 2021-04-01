@@ -1,0 +1,10 @@
+{   ('Being_in_control', 'controladas'): [('Dependent_entity', 'ilegalidades')],
+    ('Completeness', 'total'): [('Whole', 'transparencia')],
+    ('Institutions', 'instituciones'): [('Domain', 'suecas')],
+    ('Money', 'dinero'): [('Creator', 'el')],
+    ('Process_end', 'termine'): [('Manner', 'como')],
+    ('Receiving', 'recibirá'): [('Recipient', 'el'), ('Theme', 'ningún dinero'), ('Manner', 'de vuelta')],
+    ('Rewards_and_punishments', 'castigadas'): [('Agent', 'por las instituciones suecas')],
+    ('Suasion', 'convencido'): [('Speaker', 'consumidor medio'), ('Content', 'que las ilegalidades serán controladas')],
+    ('Type', 'tipo de'): [('Category', 'el asunto')],
+    ('Typicality', 'medio'): [('State_of_affairs', 'consumidor')]}

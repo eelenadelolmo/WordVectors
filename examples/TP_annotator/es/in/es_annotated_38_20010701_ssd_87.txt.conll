@@ -1,0 +1,3 @@
+{   ('Getting', 'se'): [('Recipient', 'se'), ('Theme', 'lleva mejor con los Beatles que con los Stones')],
+    ('Locative_relation', 'se'): [('Figure', 'se'), ('Ground', 'mejor')],
+    ('Required_event', 'mejor'): [('Required_situation', 'con los Stones')]}

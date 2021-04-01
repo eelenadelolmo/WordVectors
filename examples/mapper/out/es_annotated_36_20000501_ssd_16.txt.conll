@@ -1,0 +1,5 @@
+{   ('Alternatives', 'futuro'): [('Salient_entity', 'de Catalunya')],
+    ('Awareness', 'Sabe que'): [('Cognizer', 'el'), ('Content', 'que el futuro de Catalunya está en la moderación y la colaboración entre la Generalitat y el Gobierno de')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'el futuro de Catalunya'), ('Ground', 'moderación y la colaboración entre la Generalitat y el Gobierno de')],
+    ('Leadership', 'Gobierno'): [('Governed', 'Sabe')],
+    ('Posture', 'la'): [('Agent', 'Catalunya')]}

@@ -1,0 +1,7 @@
+{   ('Body_parts', 'frente'): [('Possessor', 'la crisis')],
+    ('Bringing', 'llevaron'): [('Theme', 'aficionados'), ('Theme', 'símbolos y pancartas que'), ('Goal', 'invitaban al optimismo frente a la crisis')],
+    ('Catastrophe', 'crisis'): [],
+    ('Communicate_categorization', 'pintadas'): [   ('Category', 'frente'),
+                                                    ('Category', 'con los colores de la bandera de EEUU y los aficionados llevaron símbolos y pancartas que invitaban al optimismo frente a la')],
+    ('Posture', 'frente'): [],
+    ('Request', 'invitaban'): [('Message', 'optimismo frente a la crisis')]}

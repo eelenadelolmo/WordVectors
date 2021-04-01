@@ -1,0 +1,5 @@
+{   ('Increment', 'incluso'): [('Class', 'decirse')],
+    ('Interior_profile_relation', 'ese'): [('Ground', 'decirse'), ('Figure', 'podría decirse que ese artículo incluso era')],
+    ('Possibility', 'podría'): [('Possible_event', 'ese'), ('Possible_event', 'decirse que ese artículo incluso era')],
+    ('Statement', 'decirse'): [('Message', 'ese artículo incluso era')],
+    ('Text', 'artículo'): []}

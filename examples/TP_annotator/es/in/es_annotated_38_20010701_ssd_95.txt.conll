@@ -1,0 +1,4 @@
+{   ('Activity_start', 'empezó'): [('Agent', 'artistas'), ('Activity', 'a sufrir delirios de grandeza')],
+    ('Catastrophe', 'sufrir'): [('Patient', 'artistas'), ('Undesirable_event', 'delirios de grandeza')],
+    ('Create_physical_artwork', 'artistas'): [],
+    ('Death', 'los'): [('Protagonist', 'rock and roll')]}

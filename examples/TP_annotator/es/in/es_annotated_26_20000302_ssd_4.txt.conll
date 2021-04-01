@@ -1,0 +1,4 @@
+{   ('Cause_harm', 'heridas'): [('Victim', 'ocho personas')],
+    ('Interior_profile_relation', 'y'): [('Figure', 'Además , murieron 11 hombres y ocho personas resultaron heridas')],
+    ('Killing', 'murieron'): [('Victim', '11 hombres')],
+    ('People', 'personas'): []}

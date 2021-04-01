@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="23_20000201_b_ssd">
+
+
+	<concepts>
+		<concept id="c_0">todos los partidos</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Esta semana, primera de febrero, se está realizando la labor de campo de la macroencuesta del Centro de Investigaciones Sociológicas previa a las elecciones generales, con una muestra de 20.000 entrevistados, que todos los partidos consideran el sondeo tradicionalmente más fiable de todos cuantos se llevan a cabo antes de unos comicios.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="di0mp0">todos</token><token pos="da0mp0">los</token><token pos="ncmp000">partidos</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">consideran</token><token pos="da0ms0">el</token><token pos="ncms000">sondeo</token><token pos="rg">tradicionalmente</token><token pos="rg">más</token><token pos="aq0cs0">fiable</token><token pos="sps00">de</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partidos" />
+			<frame type="Bringing" head="llevan">
+				<argument type="Theme" dependent="del Centro de Investigaciones Sociológicas previa a las elecciones generales" /></frame>
+			<frame type="Calendric_unit" head="semana">
+				<argument type="Relative_time" dependent="Esta" /></frame>
+			<main_frame type="Categorization" head="consideran">
+				<argument type="Item" dependent="que" />
+				<argument type="Cognizer" dependent="todos los partidos" />
+				<argument type="Category" dependent="las elecciones generales , con una muestra de 20.000 entrevistados , que todos los partidos consideran el sondeo tradicionalmente más fiable de todos cuantos se llevan a cabo antes" /></main_frame>
+			<frame type="Change_of_leadership" head="elecciones" />
+			<frame type="Locale" head="se" />
+			<frame type="Locale_by_use" head="Centro">
+				<argument type="Use" dependent="de Investigaciones Sociológicas" /></frame>
+			<frame type="Ordinal_numbers" head="primera">
+				<argument type="Comparison_set" dependent="de febrero" /></frame>
+			<frame type="Research" head="de Investigaciones">
+				<argument type="Topic" dependent="Sociológicas" /></frame>
+			<frame type="Sleep" head="se">
+				<argument type="Sleeper" dependent="del Centro de Investigaciones Sociológicas previa a las elecciones generales" /></frame>
+			<frame type="Taking_time" head="se">
+				<argument type="Agent" dependent="que" />
+				<argument type="Time_length" dependent="se" />
+				<argument type="Activity" dependent="previa a las elecciones" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Event" dependent="más fiable de todos cuantos se llevan a cabo" />
+				<argument type="Landmark_event" dependent="elecciones" /></frame>
+			<frame type="Trust" head="fiable">
+				<argument type="Information" dependent="previa a las elecciones" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sus resultados se harán públicos hacia el día 25 de este mes de febrero.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Causation" head="resultados">
+				<argument type="Cause" dependent="se" />
+				<argument type="Effect" dependent="públicos hacia el día 25 de este mes de febrero" /></frame>
+			<frame type="Manufacturing" head="se">
+				<argument type="Product" dependent="resultados se" />
+				<argument type="Product" dependent="públicos" />
+				<argument type="Time" dependent="hacia el día 25 de este mes de febrero" /></frame>
+			<frame type="Secrecy_status" head="públicos">
+				<argument type="Phenomenon" dependent="resultados se" />
+				<argument type="Time" dependent="hacia el día 25 de este mes de febrero" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

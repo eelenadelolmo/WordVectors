@@ -1,0 +1,5 @@
+{   ('Age', 'nuevos'): [('Entity', 'afiliados')],
+    ('Body_parts', 'los'): [('Descriptor', 'otro')],
+    ('Cardinal_numbers', 'miles de'): [('Precision', 'nuevos'), ('Entity', 'de nuevos afiliados')],
+    ('Increment', 'otro'): [('Class', 'los')],
+    ('Membership', 'afiliados'): []}

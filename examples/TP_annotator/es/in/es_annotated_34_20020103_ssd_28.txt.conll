@@ -1,0 +1,7 @@
+{   ('Capability', 'potencial'): [],
+    ('Give_impression', 'aparecido'): [('Phenomenon', 'producto similar al mío')],
+    ('Just_found_out', 'extraña'): [('Experiencer', 'en')],
+    ('Political_locales', 'países'): [],
+    ('Position_on_a_scale', 'alto'): [('Item', 'potencial gay')],
+    ('Similarity', 'como'): [('Entity_2', 'al')],
+    ('Similarity', 'similar'): [('Entity_2', 'al mío')]}

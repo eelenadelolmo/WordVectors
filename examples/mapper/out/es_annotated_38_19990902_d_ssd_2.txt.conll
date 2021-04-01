@@ -1,0 +1,11 @@
+{   ('Avoiding', 'evitar'): [('Agent', 'conductor del coche en el que'), ('Undesirable_situation', 'el impacto')],
+    ('Leadership', 'presidencial'): [],
+    ('Locative_relation', 'en'): [   ('Figure', 'conductor del coche en el que viajaba Pujol frenó para evitar el impacto ,'),
+                                     ('Ground', 'momento'),
+                                     ('Figure', 'recibió un golpe trasero del tercer automóvil de la comitiva presidencial')],
+    ('Objective_influence', 'impacto'): [],
+    ('Ordinal_numbers', 'tercer'): [('Type', 'automóvil de la comitiva presidencial')],
+    ('Preventing_or_letting', 'evitar'): [('Event', 'El conductor del coche en el que viajaba'), ('Event', 'evitar el impacto')],
+    ('Receiving', 'recibió'): [('Recipient', 'el'), ('Theme', 'un golpe trasero del tercer automóvil de la comitiva presidencial')],
+    ('Travel', 'viajaba'): [('Traveler', 'conductor del coche en el que')],
+    ('Vehicle', 'coche'): [('Use', 'de la comitiva presidencial')]}

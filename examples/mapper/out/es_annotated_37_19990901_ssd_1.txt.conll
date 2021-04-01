@@ -1,0 +1,9 @@
+{   ('Aggregate', 'partido'): [('Aggregate_property', 'Xabier Arzalluz')],
+    ('Calendric_unit', 'años'): [('Count', 'unos')],
+    ('Cardinal_numbers', 'ambas'): [('Entity', 'formaciones nacionalistas')],
+    ('Cause_change_of_position_on_a_scale', 'Evidenciando'): [('Agent', 'la'), ('Item', 'el proceso de paz')],
+    ('Fairness_evaluation', 'injustas'): [('Action', 'injustas & quot ; las descalificaciones')],
+    ('Process', 'proceso'): [('Process', 'proceso de paz')],
+    ('Quantified_mass', 'unos'): [('Individuals', 'años')],
+    ('Referring_by_name', 'quot'): [('Name', 'injustas & quot ; las descalificaciones')],
+    ('Time_vector', 'en'): [('Distance', 'unos años'), ('Event', 'no dudó en alabar al partido de Xabier Arzalluz & quot ; porque ha impulsado el proceso de paz & quot ; ,')]}

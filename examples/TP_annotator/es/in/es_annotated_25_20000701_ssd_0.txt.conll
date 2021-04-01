@@ -1,0 +1,8 @@
+{   ('Cardinal_numbers', 'tres'): [('Entity', 'bombas')],
+    ('Imprisonment', 'condenado'): [('Prisoner', 'perpetua')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'tres bombas'), ('Ground', 'Londres')],
+    ('Natural_features', 'primavera'): [],
+    ('Placing', 'colocó'): [('Cause', 'David Copeland'), ('Cause', 'el nazi que la pasada primavera'), ('Theme', 'tres bombas'), ('Place', 'en Londres')],
+    ('Relative_time', 'pasada'): [],
+    ('Terms_of_agreement', 'de'): [('Descriptor', 'seis'), ('Agreement', 'cadena perpetua')],
+    ('Weapon', 'bombas'): []}

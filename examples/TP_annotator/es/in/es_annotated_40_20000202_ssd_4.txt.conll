@@ -1,0 +1,12 @@
+{   ('Accomplishment', 'logró'): [('Agent', 'Gore'), ('Goal', '54 % de los votos frente al 46 % para Bradley , una diferencia que entraba dentro de los cálculos de')],
+    ('Activity_start', 'entraba'): [('Activity', 'diferencia'), ('Agent', 'que'), ('Activity', 'dentro de los cálculos de')],
+    ('Appellations', 'el vicepresidente'): [('Type', 'Gore y el ex senador Bill Bradley')],
+    ('Concessive', 'aunque'): [   ('Main_assertion', 'En el bando demócrata , la pugna entre el vicepresidente Al Gore y el ex senador Bill Bradley se presentó más igualada , aunque'),
+                                  ('Conceded_state_of_affairs', 'logró el 54 % de los votos frente al 46 % para Bradley , una diferencia que entraba dentro de los cálculos de')],
+    ('Give_impression', 'se presentó'): [('Phenomenon', 'entre el vicepresidente Al Gore y el ex senador Bill Bradley'), ('Characterization', 'más'), ('Inference', 'los cálculos de')],
+    ('Hostile_encounter', 'pugna entre'): [('Side_2', 'entre el vicepresidente Al Gore y el ex senador Bill Bradley')],
+    ('Increment', 'más'): [('Added_set', 'entre el vicepresidente Al Gore y el ex senador Bill Bradley'), ('Class', 'aunque')],
+    ('Non-commutative_statement', 'diferencia'): [],
+    ('Part_orientational', 'frente'): [('Part_prop', 'demócrata')],
+    ('Spatial_contact', 'se'): [('Ground', 'demócrata')],
+    ('Taking_sides', 'entre'): [('Side', '46 %')]}

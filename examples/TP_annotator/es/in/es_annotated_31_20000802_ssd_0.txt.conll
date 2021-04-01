@@ -1,0 +1,8 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Categorization', 'consideró'): [   ('Item', 'Redondo Terreros'),
+                                         (   'Category',
+                                             ', consideró ayer & quot ; inevitable & quot ; que el lehendakari adelante las elecciones en Euskadi dada la situación de minoría de su Ejecutivo')],
+    ('Change_of_leadership', 'elecciones'): [],
+    ('Giving', 'dada la'): [('Donor', 'Euskadi'), ('Recipient', 'de minoría'), ('Place', 'situación'), ('Recipient', 'de su Ejecutivo')],
+    ('Leadership', 'líder'): [('Governed', 'de los socialistas vascos')],
+    ('Progression', 'adelante'): [('Entity', 'las elecciones'), ('Place', 'en Euskadi')]}

@@ -1,0 +1,7 @@
+{   ('Age', 'nuevas'): [('Entity', 'sospechas se han sucedido casi continuamente')],
+    ('Awareness', 'sospechas'): [('Content', 'han sucedido casi continuamente')],
+    ('Calendric_unit', 'diciembre'): [('Whole', '1999')],
+    ('Event', 'han sucedido'): [('Manner', 'casi continuamente')],
+    ('Give_impression', 'han sucedido'): [('Phenomenon', 'se han'), ('Inference', 'por primera vez en diciembre de 1999')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'primera vez'), ('Ground', 'diciembre de 1999')],
+    ('Ordinal_numbers', 'primera'): [('Type', 'vez')]}

@@ -1,0 +1,5 @@
+{   ('Hostile_encounter', 'luchas'): [('Sides', 'sus')],
+    ('Level_of_force_exertion', 'fuerte'): [('Exerter', 'Nuestro'), ('Degree', 'muy')],
+    ('People', 'pueblo'): [],
+    ('Process_continue', 'continuará'): [('Event', 'sus luchas')],
+    ('Statement', 'quot'): [('Speaker', 'sus')]}

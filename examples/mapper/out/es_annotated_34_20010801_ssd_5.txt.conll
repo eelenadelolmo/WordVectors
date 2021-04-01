@@ -1,0 +1,7 @@
+{   ('Cardinal_numbers', 'cinco'): [('Unit', 'otros')],
+    ('Increment', 'otros'): [('Class', 'cárcel')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'y los otros cinco'), ('Ground', 'prisión')],
+    ('Prison', 'prisión'): [],
+    ('Self_motion', 'se'): [('Self_mover', 'se'), ('Path', 'se')],
+    ('Statement', 'declaró'): [('Speaker', 'se'), ('Time', 'en la'), ('Message', 'para')],
+    ('Verification', 'confirmó'): [('Unconfirmed_content', 'de'), ('Unconfirmed_content', 'de prisión')]}

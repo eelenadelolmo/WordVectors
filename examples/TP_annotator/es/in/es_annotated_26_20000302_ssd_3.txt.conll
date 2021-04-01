@@ -1,0 +1,4 @@
+{   ('Be_subset_of', 'Entre'): [('Total', 'las víctimas había 24 mujeres')],
+    ('Catastrophe', 'víctimas'): [('Undesirable_event', '24 mujeres')],
+    ('People', 'mujeres'): [('Descriptor', '24')],
+    ('People', 'niñas'): []}

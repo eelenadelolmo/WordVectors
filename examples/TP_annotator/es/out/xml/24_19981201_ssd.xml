@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="24_19981201_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El titular de Exteriores de Chile</concept>
+		<concept id="c_1">El presidente</concept>
+		<concept id="c_2">El ministro de Exteriores de Chile , José Miguel Insulza , que hoy se entrevistará con José María Aznar y con su homólogo , Abel Matutes ,</concept>
+		<concept id="c_3">Insulza</concept>
+		<concept id="c_4">Ese ambiente</concept>
+		<concept id="c_5">su país</concept>
+		<concept id="c_6">Chile</concept>
+		<concept id="c_7">que</concept>
+		<concept id="c_8">los socialistas españoles</concept>
+		<concept id="c_9">su mediación en Madrid</concept>
+		<concept id="c_10">se</concept>
+		<concept id="c_11">su visita</concept>
+		<concept id="c_12">España</concept>
+		<concept id="c_13">objeto</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Acoso al dictador chileno.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="dictador">
+				<argument type="Governed" dependent="chileno" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El titular de Exteriores de Chile inicia sin esperanzas su mediación en Madrid.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="nccs000">titular</token><token pos="sps00">de</token><token pos="np00000">Exteriores</token><token pos="sps00">de</token><token pos="np00000">Chile</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_0" concept_ref3="c_9">
+			<token pos="vmip3s0">inicia</token><mention concept_ref="c_4"><token pos="dp3cs0">su</token><token pos="ncfs000">mediación</token></mention><token pos="sps00">en</token><mention concept_ref="c_0"><token pos="np00000">Madrid</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_start" head="inicia">
+				<argument type="Agent" dependent="El titular de Exteriores" />
+				<argument type="Activity" dependent="su mediación en Madrid" />
+				<argument type="Time" dependent="sin esperanzas" /></main_frame>
+			<frame type="Desiring" head="esperanzas" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Enfoca su visita como un intercambio de información sobre el contencioso.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="visita">
+				<argument type="Theme" dependent="su" />
+				<argument type="Goal" dependent="como un intercambio de información sobre el contencioso" /></frame>
+			<frame type="Discussion" head="intercambio">
+				<argument type="Topic" dependent="de información" />
+				<argument type="Purpose" dependent="sobre el contencioso" /></frame>
+			<frame type="Emphasizing" head="Enfoca">
+				<argument type="Consideration" dependent="su visita como un intercambio de información sobre el contencioso" /></frame>
+			<frame type="Information" head="información">
+				<argument type="Topic" dependent="sobre el contencioso" /></frame>
+			<frame type="Quarreling" head="contencioso" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El presidente reitera que se ajustará a las decisiones de los magistrados
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">presidente</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_10">
+			<mention concept_ref="c_10"><token pos="p0300000">se</token></mention><token pos="vmif3s0">ajustará</token><token pos="sps00">a</token><mention concept_ref="c_1"><token pos="da0fp0">las</token><token pos="ncfp000">decisiones</token></mention><token pos="sps00">de</token><mention concept_ref="c_0"><token pos="da0mp0">los</token><token pos="ncmp000">magistrados</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente" />
+			<frame type="Compliance" head="se">
+				<argument type="Protagonist" dependent="se" />
+				<argument type="Norm" dependent="a las decisiones de los" /></frame>
+			<frame type="Deciding" head="decisiones">
+				<argument type="Cognizer" dependent="se" />
+				<argument type="Decision" dependent="los" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El ministro de Exteriores de Chile, José Miguel Insulza, que hoy se entrevistará con José María Aznar y con su homólogo, Abel Matutes, sólo aspira a que las autoridades españolas comprendan su posición y considera que la justicia española no puede ser imparcial en el caso Pinochet.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="ncms000">ministro</token><token pos="sps00">de</token><token pos="np00000">Exteriores</token><token pos="sps00">de</token><token pos="np00000">Chile</token><token pos="fc">,</token><token pos="ncfs000">José</token><token pos="ncms000">Miguel</token><token pos="np00000">Insulza</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="rg">hoy</token><token pos="p0300000">se</token><token pos="vmif3s0">entrevistará</token><token pos="sps00">con</token><token pos="ncfs000">José</token><token pos="ncms000">María</token><token pos="np00000">Aznar</token><token pos="cc">y</token><token pos="sps00">con</token><token pos="dp3cs0">su</token><token pos="ncms000">homólogo</token><token pos="fc">,</token><token pos="np00000">Abel</token><token pos="ncms000">Matutes</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_9">
+			<token pos="vmip3s0">aspira</token><token pos="sps00">a</token><token pos="cs">que</token><mention concept_ref="c_1"><token pos="da0fp0">las</token><token pos="ncfp000">autoridades</token></mention><token pos="aq0fp0">españolas</token><token pos="vmsp3p0">comprendan</token><mention concept_ref="c_0"><token pos="dp3cs0">su</token><token pos="ncfs000">posición</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_employed" head="posición">
+				<argument type="Employee" dependent="su" /></frame>
+			<frame type="Calendric_unit" head="hoy" />
+			<main_frame type="Grasp" head="comprendan">
+				<argument type="Cognizer" dependent="autoridades españolas" />
+				<argument type="Phenomenon" dependent="su posición y considera que la justicia española no puede ser imparcial en el caso" /></main_frame>
+			<frame type="Make_acquaintance" head="se">
+				<argument type="Individual_1" dependent="El ministro de Exteriores de Chile , José Miguel Insulza , que" />
+				<argument type="Individual_1" dependent="a que" />
+				<argument type="Time" dependent="hoy" />
+				<argument type="Individual_2" dependent="Aznar y con su homólogo , Abel Matutes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Insulza enfoca su visita a Madrid como un intercambio de información sobre el contencioso jurídico-político que afecta al dictador.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="np00000">Insulza</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_4" concept_ref3="c_11">
+			<token pos="vmip3s0">enfoca</token><mention concept_ref="c_11"><token pos="dp3cs0">su</token><token pos="ncfs000">visita</token></mention><token pos="sps00">a</token><mention concept_ref="c_0"><token pos="np00000">Madrid</token></mention><token pos="cs">como</token><mention concept_ref="c_4"><token pos="di0ms0">un</token><token pos="ncms000">intercambio</token></mention><token pos="sps00">de</token><token pos="ncfs000">información</token><token pos="sps00">sobre</token><token pos="da0ms0">el</token><token pos="ncms000">contencioso</token><token pos="aq0ms0">jurídico-político</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="visita">
+				<argument type="Theme" dependent="su" />
+				<argument type="Goal" dependent="a Madrid" /></frame>
+			<frame type="Discussion" head="intercambio">
+				<argument type="Topic" dependent="de información" />
+				<argument type="Purpose" dependent="afecta al dictador" /></frame>
+			<frame type="Information" head="información">
+				<argument type="Topic" dependent="afecta al dictador" /></frame>
+			<frame type="Leadership" head="dictador" />
+			<frame type="Objective_influence" head="afecta">
+				<argument type="Influencing_situation" dependent="sobre el contencioso" />
+				<argument type="Dependent_entity" dependent="dictador" /></frame>
+			<frame type="Quarreling" head="contencioso">
+				<argument type="Manner" dependent="de" />
+				<argument type="Issue" dependent="que afecta al dictador" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En sus primeras declaraciones en Madrid, el ministro de Exteriores chileno expresó su convencimiento de que el ambiente político en España "no es favorable" a Pinochet, lo que, en su opinión, puede condicionar la decisión judicial, a pesar de la "voluntad de imparcialidad".
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">ministro</token><token pos="sps00">de</token><token pos="np00000">Exteriores</token><token pos="aq0ms0">chileno</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_7" concept_ref3="c_6" concept_ref4="c_9" concept_ref5="c_12">
+			<token pos="vmis3s0">expresó</token><mention concept_ref="c_0"><token pos="dp3cs0">su</token><token pos="ncms000">convencimiento</token></mention><token pos="sps00">de</token><token pos="cs">que</token><token pos="da0ms0">el</token><token pos="ncms000">ambiente</token><token pos="aq0ms0">político</token><token pos="sps00">en</token><mention concept_ref="c_12"><token pos="np00000">España</token></mention><token pos="fe">quot;</token><token pos="rn">no</token><token pos="vsip3s0">es</token><token pos="aq0cs0">favorable</token><token pos="fe">quot;</token><token pos="sps00">a</token><token pos="np00000">Pinochet</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Deciding" head="decisión">
+				<argument type="Manner" dependent="judicial" /></frame>
+			<main_frame type="Expressing_publicly" head="expresó">
+				<argument type="Place" dependent="En sus primeras declaraciones en Madrid" />
+				<argument type="Communicator" dependent="el ministro de Exteriores" />
+				<argument type="Content" dependent="su convencimiento de que el ambiente político en España  quot ; no es favorable" /></main_frame>
+			<frame type="Opinion" head="opinión">
+				<argument type="Cognizer" dependent="sus" /></frame>
+			<frame type="Ordinal_numbers" head="primeras">
+				<argument type="Type" dependent="declaraciones en Madrid" /></frame>
+			<frame type="State_of_entity" head="condicionar">
+				<argument type="Entity" dependent="la decisión judicial" /></frame>
+			<main_frame type="Statement" head="declaraciones">
+				<argument type="Speaker" dependent="sus" />
+				<argument type="Speaker" dependent="en Madrid" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ese ambiente lleva a las autoridades españolas a ser prudentes con la decisión de la justicia en el país.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="dd0ms0">Ese</token><token pos="ncms000">ambiente</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_5" concept_ref4="c_9" concept_ref5="c_10" concept_ref6="c_11">
+			<token pos="vmip3s0">lleva</token><token pos="sps00">a</token><mention concept_ref="c_1"><token pos="da0fp0">las</token><token pos="ncfp000">autoridades</token></mention><token pos="aq0fp0">españolas</token><token pos="sps00">a</token><token pos="vsn0000">ser</token><token pos="aq0cp0">prudentes</token><token pos="sps00">con</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="ncfs000">decisión</token></mention><token pos="sps00">de</token><mention concept_ref="c_11"><token pos="da0fs0">la</token><token pos="ncfs000">justicia</token></mention><token pos="sps00">en</token><mention concept_ref="c_5"><token pos="da0ms0">el</token><token pos="ncms000">país</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Deciding" head="decisión">
+				<argument type="Decision" dependent="la justicia en el país" /></frame>
+			<main_frame type="Leadership" head="lleva">
+				<argument type="Type" dependent="ambiente" />
+				<argument type="Governed" dependent="autoridades españolas" /></main_frame>
+			<frame type="Political_locales" head="país" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ayer mismo, José María Aznar, al terminar la cumbre hispano-lusa en Vilamoura afirmó: "Cuando el Gobierno británico tome su decisión, la posición del Ejecutivo español seguirá siendo la misma, la de ajustarse a lo que determine la justicia española".
+		</str>
+		<theme>
+			<token pos="ncfs000">José</token><token pos="ncms000">María</token><token pos="np00000">Aznar</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_employed" head="posición">
+				<argument type="Employee" dependent="lo" />
+				<argument type="Employee" dependent="del Ejecutivo español" /></frame>
+			<frame type="Calendric_unit" head="Ayer" />
+			<frame type="Compliance" head="de ajustarse">
+				<argument type="Norm" dependent="a lo que determine la justicia española" /></frame>
+			<frame type="Deciding" head="decisión">
+				<argument type="Cognizer" dependent="lo" /></frame>
+			<frame type="Identicality" head="mismo">
+				<argument type="Set_of_instances" dependent="la posición del Ejecutivo español" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="cumbre" />
+				<argument type="Ground" dependent="Vilamoura" /></frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Governed" dependent="británico" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="al" />
+				<argument type="Ground" dependent="al terminar la cumbre hispano-lusa en Vilamoura" /></frame>
+			<frame type="Manufacturing" head="lo">
+				<argument type="Producer" dependent="el Gobierno británico" />
+				<argument type="Product" dependent="su decisión" /></frame>
+			<frame type="Process_end" head="terminar">
+				<argument type="Process" dependent="la cumbre" />
+				<argument type="Place" dependent="en Vilamoura" /></frame>
+			<frame type="State_continue" head="seguirá">
+				<argument type="Entity" dependent="del Ejecutivo español" />
+				<argument type="State" dependent="la misma" /></frame>
+			<frame type="Statement" head="afirmó">
+				<argument type="Time" dependent="Ayer" />
+				<argument type="Speaker" dependent="Aznar , al terminar la cumbre hispano-lusa en Vilamoura" />
+				<argument type="Message" dependent="; Cuando el Gobierno británico tome su decisión , la posición del Ejecutivo español seguirá siendo la misma , la de ajustarse a lo que determine la justicia española" /></frame>
+			<frame type="Temporal_collocation" head="Cuando">
+				<argument type="Landmark_event" dependent="el Gobierno británico tome su decisión" />
+				<argument type="Trajector_event" dependent=", la posición del Ejecutivo español seguirá siendo la misma , la de ajustarse a lo que determine la justicia" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Explicaciones oficiales.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "No tengo ninguna expectativa sobre este viaje. Más bien es una visita de información", afirmó Insulza minutos después de llegar a Madrid.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="llegar">
+				<argument type="Place" dependent="a Madrid" /></frame>
+			<frame type="Arriving" head="visita">
+				<argument type="Theme" dependent="información" /></frame>
+			<frame type="Calendric_unit" head="minutos" />
+			<frame type="Expectation" head="expectativa">
+				<argument type="Cognizer" dependent="de" /></frame>
+			<frame type="Information" head="información" />
+			<frame type="Relative_time" head="después de">
+				<argument type="Focal_occasion" dependent="afirmó Insulza minutos" />
+				<argument type="Landmark_occasion" dependent="de llegar a Madrid" /></frame>
+			<frame type="Statement" head="afirmó">
+				<argument type="Speaker" dependent="Insulza" />
+				<argument type="Time" dependent="minutos después de llegar" />
+				<argument type="Speaker" dependent="a Madrid" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Como ha hecho durante su visita a Londres, el ministro de Exteriores chileno explicará a los representantes de instituciones y partidos el deseo del Gobierno de Eduardo Frei de que Pinochet pueda volver a Chile.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">ministro</token><token pos="sps00">de</token><token pos="np00000">Exteriores</token><token pos="aq0ms0">chileno</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_1" concept_ref3="c_0" concept_ref4="c_9" concept_ref5="c_10" concept_ref6="c_11">
+			<token pos="vmif3s0">explicará</token><mention concept_ref="c_9"><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="nccp000">representantes</token><token pos="sps00">de</token><token pos="ncfp000">instituciones</token><token pos="cc">y</token><token pos="ncmp000">partidos</token><token pos="da0ms0">el</token><token pos="ncms000">deseo</token><token pos="spcms">del</token><token pos="np00000">Gobierno</token><token pos="sps00">de</token><token pos="np0000l">Eduardo</token><token pos="np0000l">Frei</token><token pos="sps00">de</token><token pos="cs">que</token></mention><mention concept_ref="c_6"><token pos="np00000">Pinochet</token></mention><token pos="vmsp3s0">pueda</token><token pos="vmn0000">volver</token><token pos="sps00">a</token><token pos="np00000">Chile</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partidos" />
+			<frame type="Arriving" head="visita">
+				<argument type="Theme" dependent="su" />
+				<argument type="Goal" dependent="a Londres" /></frame>
+			<main_frame type="Arriving" head="volver">
+				<argument type="Theme" dependent="Pinochet" />
+				<argument type="Goal" dependent="a los" /></main_frame>
+			<main_frame type="Capability" head="pueda">
+				<argument type="Entity" dependent="Pinochet" />
+				<argument type="Event" dependent="volver a Chile" /></main_frame>
+			<frame type="Desiring" head="el deseo">
+				<argument type="Experiencer" dependent="partidos" />
+				<argument type="Experiencer" dependent="del Gobierno de Eduardo Frei de que" /></frame>
+			<main_frame type="Explaining_the_facts" head="explicará">
+				<argument type="Fact" dependent="el ministro de Exteriores" />
+				<argument type="State_of_affairs" dependent="a los representantes de instituciones y partidos el deseo del Gobierno de Eduardo Frei de que" /></main_frame>
+			<frame type="Foreign_or_domestic_country" head="Exteriores" />
+			<frame type="Institutions" head="instituciones" />
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Governed" dependent="Frei de" /></frame>
+			<frame type="Leadership" head="ministro">
+				<argument type="Governed" dependent="Exteriores chileno" /></frame>
+			<frame type="Leadership" head="representantes">
+				<argument type="Governed" dependent="de instituciones" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No obstante, desmintió que exista un pacto secreto entre las autoridades británicas y chilenas para evitar que el dictador sea extraditado a España.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">dictador</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_12">
+			<token pos="vssp3s0">sea</token><token pos="vmp00sm">extraditado</token><token pos="sps00">a</token><mention concept_ref="c_12"><token pos="np00000">España</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Affirm_or_deny" head="desmintió">
+				<argument type="Speaker" dependent="el" />
+				<argument type="Message" dependent=", desmintió que exista un pacto secreto entre las autoridades británicas y chilenas para evitar que el dictador sea extraditado a" /></frame>
+			<main_frame type="Extradition" head="extraditado">
+				<argument type="Suspect" dependent="el dictador" />
+				<argument type="Crime_jurisdiction" dependent="para" /></main_frame>
+			<frame type="Leadership" head="autoridades">
+				<argument type="Governed" dependent="chilenas" /></frame>
+			<frame type="Leadership" head="dictador" />
+			<frame type="Locative_relation" head="exista">
+				<argument type="Figure" dependent="desmintió que" />
+				<argument type="Figure" dependent="desmintió que exista un pacto secreto entre las autoridades británicas y chilenas para evitar que el dictador sea extraditado a" /></frame>
+			<frame type="Preventing_or_letting" head="evitar">
+				<argument type="Event" dependent="el dictador sea extraditado a" /></frame>
+			<frame type="Secrecy_status" head="secreto">
+				<argument type="Phenomenon" dependent="pacto" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 para el jefe de la diplomacia chilena lo importante es que su país no sea humillado en este conflicto y pueda hacer "justicia y verdad", por lo que puso el acento en el derecho de Chile a defenderse como Estado soberano frente a otros estados.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="dp3cs0">su</token><token pos="ncms000">país</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_10">
+			<token pos="rn">no</token><token pos="vssp3s0">sea</token><token pos="vmp00sm">humillado</token><token pos="sps00">en</token><mention concept_ref="c_0"><token pos="dd0ms0">este</token><token pos="ncms000">conflicto</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="jefe" />
+			<frame type="Capability" head="pueda">
+				<argument type="Entity" dependent="su país" />
+				<argument type="Event" dependent="hacer  quot ; justicia y verdad " /></frame>
+			<frame type="Defending" head="defenderse">
+				<argument type="Victim" dependent="su" /></frame>
+			<frame type="Desirable_event" head="hacer">
+				<argument type="State_of_affairs" dependent="su país" />
+				<argument type="State_of_affairs" dependent="no sea humillado en este conflicto y pueda hacer  quot ; justicia y verdad  quot ;" /></frame>
+			<main_frame type="Emphasizing" head="humillado">
+				<argument type="Agent" dependent="lo" />
+				<argument type="Consideration" dependent="derecho de Chile a defenderse como Estado soberano frente a otros estados" /></main_frame>
+			<frame type="Entity" head="lo que">
+				<argument type="Entity" dependent="lo importante" /></frame>
+			<frame type="Hostile_encounter" head="conflicto" />
+			<frame type="Importance" head="importante">
+				<argument type="Factor" dependent="lo que" /></frame>
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="estados" /></frame>
+			<frame type="Intentionally_act" head="de">
+				<argument type="Agent" dependent="su país" />
+				<argument type="Act" dependent="justicia y verdad " /></frame>
+			<frame type="Leadership" head="estados" />
+			<frame type="Political_locales" head="país" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En su opinión, los elementos políticos no pueden ser dejados de lado, ni deben estar reñidos con los aspectos judiciales.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">los</token><token pos="ncmp000">elementos</token><token pos="aq0mp0">políticos</token>
+		</theme>
+		<rheme concept_ref1="c_10">
+			<token pos="rn">no</token><token pos="vsn0000">ser</token><token pos="vmp00pm">dejados</token><token pos="sps00">de</token><token pos="ncms000">lado</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desirable_event" head="deben">
+				<argument type="State_of_affairs" dependent="estar reñidos con los aspectos judiciales" /></frame>
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Ground" dependent="su opinión , los elementos políticos" />
+				<argument type="Figure" dependent="pueden ser dejados de lado , ni deben estar reñidos con los aspectos judiciales" /></frame>
+			<frame type="Opinion" head="opinión">
+				<argument type="Cognizer" dependent="su" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Según Insulza, Chile es un Estado democrático con un proceso de transición que dura ocho años y que "ha sido escrupuloso con el respeto a los derechos humanos y a la ley".
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="np00000">Chile</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_0" concept_ref3="c_1" concept_ref4="c_9" concept_ref5="c_10" concept_ref6="c_11" concept_ref7="c_12">
+			<token pos="vsip3s0">es</token><token pos="di0ms0">un</token><token pos="np00000">Estado</token><token pos="aq0ms0">democrático</token><token pos="sps00">con</token><mention concept_ref="c_0"><token pos="di0ms0">un</token><token pos="ncms000">proceso</token></mention><token pos="sps00">de</token><mention concept_ref="c_11"><token pos="ncfs000">transición</token></mention><token pos="pr0cn000">que</token><token pos="vmip3s0">dura</token><token pos="dn0cp0">ocho</token><mention concept_ref="c_12"><token pos="ncmp000">años</token></mention><token pos="cc">y</token><token pos="pr0cn000">que</token><token pos="fe">quot;</token><token pos="vaip3s0">ha</token><token pos="vsp00sm">sido</token><token pos="aq0ms0">escrupuloso</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">respeto</token><mention concept_ref="c_9"><token pos="sps00">a</token><token pos="da0mp0">los</token></mention><token pos="ncms000">derechos</token><token pos="aq0ms0">humanos</token><token pos="cc">y</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">ley</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="ocho" /></frame>
+			<frame type="Goal" head="a los">
+				<argument type="Landmark" dependent="Insulza" /></frame>
+			<main_frame type="Judgment" head="respeto">
+				<argument type="Reason" dependent="a los derechos humanos y a la ley" /></main_frame>
+			<frame type="Law" head="ley" />
+			<frame type="Leadership" head="Estado">
+				<argument type="Descriptor" dependent="democrático" /></frame>
+			<frame type="People" head="humanos" />
+			<main_frame type="Process" head="proceso">
+				<argument type="Process" dependent="que dura ocho años y que  quot ; ha sido escrupuloso con el respeto a los derechos humanos y a la ley  quot ;" /></main_frame>
+			<frame type="Undergo_change" head="transición">
+				<argument type="Entity" dependent="proceso de transición que dura ocho años y que  quot ; ha sido escrupuloso con el respeto a los derechos humanos y a la ley  quot ;" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero el abogado Eduardo Contreras, que dirige la acusación en la primera querella contra el dictador en Chile, acusó el diplomático chileno de "mentir" a Madrid y a Londres cuando asegura que si el dictador regresa se aceleraría el proceso judicial en marcha.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">abogado</token><token pos="np00000">Eduardo</token><token pos="ncms000">Contreras</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vmip2s0">dirige</token><token pos="da0fs0">la</token><token pos="ncfs000">acusación</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ao0fs0">primera</token><token pos="ncfs000">querella</token><token pos="sps00">contra</token><token pos="da0ms0">el</token><token pos="ncms000">dictador</token><token pos="sps00">en</token><token pos="np00000">Chile</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_7" concept_ref3="c_1" concept_ref4="c_9" concept_ref5="c_10">
+			<token pos="vmis3s0">acusó</token><mention concept_ref="c_9"><token pos="da0ms0">el</token><token pos="ncms000">diplomático</token><token pos="aq0ms0">chileno</token></mention><token pos="sps00">de</token><token pos="fe">quot;</token><token pos="vmn0000">mentir</token><token pos="fe">quot;</token><token pos="sps00">a</token><mention concept_ref="c_0"><token pos="np00000">Madrid</token></mention><token pos="cc">y</token><token pos="sps00">a</token><token pos="np00000">Londres</token><token pos="cs">cuando</token><token pos="vmip3s0">asegura</token><token pos="cs">que</token><token pos="cs">si</token><token pos="da0ms0">el</token><token pos="ncms000">dictador</token><token pos="vmm02s0">regresa</token><mention concept_ref="c_10"><token pos="p0000000">se</token></mention><token pos="vmic3s0">aceleraría</token><mention concept_ref="c_1"><token pos="da0ms0">el</token><token pos="ncms000">proceso</token></mention><token pos="aq0cs0">judicial</token><token pos="sps00">en</token><token pos="ncfs000">marcha</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Being_located" head="mentir">
+				<argument type="Theme" dependent="el diplomático chileno" /></main_frame>
+			<main_frame type="Intoxicants" head="aceleraría">
+				<argument type="Intoxicant" dependent="el proceso judicial en" /></main_frame>
+			<frame type="Judgment_communication" head="acusación">
+				<argument type="Reason" dependent="Pero el abogado Eduardo Contreras , que dirige la acusación en la primera querella contra el dictador en Chile , acusó" />
+				<argument type="Evaluee" dependent="el diplomático chileno" />
+				<argument type="Reason" dependent="quot ; mentir  quot ; a Madrid y a Londres cuando asegura que si el dictador regresa se aceleraría el proceso judicial" /></frame>
+			<frame type="Leadership" head="dictador" />
+			<frame type="Leadership" head="diplomático">
+				<argument type="Governed" dependent="querella" /></frame>
+			<frame type="Ordinal_numbers" head="primera">
+				<argument type="Type" dependent="judicial" />
+				<argument type="Basis_of_order" dependent="contra el dictador en Chile" /></frame>
+			<frame type="People_by_vocation" head="abogado">
+				<argument type="Person" dependent="el abogado Eduardo Contreras" /></frame>
+			<frame type="Process" head="proceso">
+				<argument type="Process" dependent="aceleraría" /></frame>
+			<frame type="Process_continue" head="se">
+				<argument type="Event" dependent="proceso judicial" /></frame>
+			<frame type="Statement" head="acusación">
+				<argument type="Speaker" dependent="el" />
+				<argument type="Message" dependent="que si el dictador regresa" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En la apretada agenda de Insulza figuran algunos encuentros destacables, como con el presidente de la CEOE, José María Cuevas, que tienen por objeto repasar las relaciones comerciales entre ambos países.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_5" concept_ref3="c_10" concept_ref4="c_13">
+			<token pos="vmip3p0">tienen</token><token pos="sps00">por</token><mention concept_ref="c_13"><token pos="ncms000">objeto</token></mention><token pos="vmn0000">repasar</token><mention concept_ref="c_0"><token pos="da0fp0">las</token><token pos="ncfp000">relaciones</token></mention><token pos="aq0cp0">comerciales</token><token pos="sps00">entre</token><token pos="dn0mp0">ambos</token><mention concept_ref="c_5"><token pos="ncmp000">países</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="Cuevas" /></frame>
+			<frame type="Cardinal_numbers" head="ambos">
+				<argument type="Entity" dependent="países" /></frame>
+			<frame type="Discussion" head="encuentros">
+				<argument type="Depictive" dependent="destacables" /></frame>
+			<main_frame type="Inclusion" head="tienen">
+				<argument type="Total" dependent="apretada agenda" />
+				<argument type="Part" dependent="algunos encuentros destacables , como con el presidente de la CEOE , José María Cuevas , que tienen por objeto repasar las relaciones comerciales entre ambos países" /></main_frame>
+			<frame type="Political_locales" head="países" />
+			<frame type="Proportional_quantity" head="algunos">
+				<argument type="Individuals" dependent="encuentros destacables" /></frame>
+			<frame type="Purpose" head="objeto">
+				<argument type="Goal" dependent="repasar las relaciones comerciales entre ambos países" /></frame>
+			<frame type="Relation" head="las relaciones">
+				<argument type="Relation_type" dependent="comerciales" />
+				<argument type="Entities" dependent="entre ambos países" /></frame>
+			<frame type="Timetable" head="agenda" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sin embargo, tras reunirse ayer con el ministro de Defensa, Eduardo Serra, fuentes de este departamento aseguraron que "el acuerdo sobre la venta de dos submarinos a Chile no ha sido el objeto de la conversación".
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="ncms000">acuerdo</token><token pos="sps00">sobre</token><token pos="da0fs0">la</token><token pos="ncfs000">venta</token><token pos="sps00">de</token><token pos="dn0cp0">dos</token><token pos="ncmp000">submarinos</token><token pos="sps00">a</token><token pos="np00000">Chile</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_0" concept_ref3="c_13">
+			<token pos="rn">no</token><token pos="vaip3s0">ha</token><token pos="vsp00sm">sido</token><mention concept_ref="c_0"><token pos="da0ms0">el</token><token pos="ncms000">objeto</token></mention><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">conversación</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="fuentes de este departamento " />
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="submarinos" /></frame>
+			<frame type="Chatting" head="conversación" />
+			<frame type="Commerce_sell" head="venta">
+				<argument type="Goods" dependent="de dos submarinos" />
+				<argument type="Buyer" dependent="a Chile" /></frame>
+			<frame type="Discussion" head="reunirse">
+				<argument type="Duration" dependent="ayer" /></frame>
+			<frame type="Make_agreement_on_action" head="el acuerdo">
+				<argument type="Party_2" dependent="la venta de dos submarinos a Chile" /></frame>
+			<frame type="Relative_time" head="de la">
+				<argument type="Focal_occasion" dependent=", tras reunirse ayer con el ministro de Defensa , Eduardo Serra , fuentes de este departamento aseguraron que  quot ; el acuerdo sobre la venta de dos submarinos a Chile no ha sido el objeto de la conversación" /></frame>
+			<frame type="Source_of_getting" head="fuentes de">
+				<argument type="Theme" dependent="de este departamento" /></frame>
+			<frame type="Telling" head="aseguraron">
+				<argument type="Time" dependent="reunirse ayer con el ministro de Defensa" />
+				<argument type="Speaker" dependent="fuentes de este departamento" />
+				<argument type="Message" dependent="quot ; el acuerdo sobre la venta de dos submarinos a Chile no ha sido el objeto de la conversación" /></frame>
+			<frame type="Vehicle" head="submarinos" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Insulza descartó que la ruptura de relaciones o las sanciones económicas sean el camino adecuado.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Insulza " />
+			<frame type="Economy" head="económicas" />
+			<frame type="Leadership" head="descartó">
+				<argument type="Leader" dependent="Insulza" />
+				<argument type="Activity" dependent="que la ruptura de relaciones o las sanciones económicas sean el camino adecuado" /></frame>
+			<frame type="Means" head="camino" />
+			<frame type="Relation" head="de relaciones">
+				<argument type="Entities" dependent="sanciones" /></frame>
+			<frame type="Revenge" head="sanciones">
+				<argument type="Offender" dependent="económicas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El último encuentro de ayer de Insulza, acompañado del embajador de Chile en Madrid, Sergio Pizarro, tuvo lugar en la sede del PSOE con Joaquín Almunia y Josep Borrell.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ao0ms0">último</token><token pos="ncms000">encuentro</token><token pos="sps00">de</token><token pos="rg">ayer</token><token pos="sps00">de</token><token pos="np00000">Insulza</token><token pos="fc">,</token><token pos="aq0msp">acompañado</token><token pos="spcms">del</token><token pos="ncms000">embajador</token><token pos="sps00">de</token><token pos="np00000">Chile</token><token pos="sps00">en</token><token pos="np00000">Madrid</token><token pos="fc">,</token><token pos="np0000l">Sergio</token><token pos="np0000l">Pizarro</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmp00sm">tuvo</token><token pos="ncfp000">lugar</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="ayer de" />
+			<frame type="Discussion" head="encuentro">
+				<argument type="Time" dependent="ayer de" />
+				<argument type="Interlocutors" dependent="de Insulza" /></frame>
+			<frame type="Locale" head="lugar" />
+			<frame type="Locale_by_use" head="sede del">
+				<argument type="Container_possessor" dependent="del" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="la sede del PSOE con Joaquín Almunia y" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ambos expusieron al canciller chileno que los socialistas españoles también apuestan por la vía judicial y no ponen reparos a que Pinochet sea juzgado en su país.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="da0mp0">los</token><token pos="nccp000">socialistas</token><token pos="aq0mp0">españoles</token>
+		</theme>
+		<rheme concept_ref1="c_12">
+			<token pos="vmip3p0">apuestan</token><token pos="sps00">por</token><mention concept_ref="c_12"><token pos="da0fs0">la</token><token pos="ncfs000">vía</token></mention><token pos="aq0cs0">judicial</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Ambos " />
+			<frame type="Attempt" head="ponen">
+				<argument type="Goal" dependent="no ponen" />
+				<argument type="Agent" dependent="en su país" /></frame>
+			<frame type="Commitment" head="ponen">
+				<argument type="Speaker" dependent="socialistas españoles" />
+				<argument type="Message" dependent="por la vía judicial" /></frame>
+			<frame type="Explaining_the_facts" head="ponen">
+				<argument type="State_of_affairs" dependent="socialistas españoles también apuestan por la vía judicial y no ponen" /></frame>
+			<frame type="Political_locales" head="país">
+				<argument type="Population" dependent="los" /></frame>
+			<frame type="Process" head="vía" />
+			<frame type="Purpose" head="su">
+				<argument type="Goal" dependent="sea juzgado en su país" /></frame>
+			<frame type="Quantified_mass" head="Ambos">
+				<argument type="Individuals" dependent="que los socialistas españoles también apuestan por la vía judicial y no ponen" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los dirigentes del PSOE están convencidos de que la situación judicial del dictador no pone en peligro la vía democrática chilena.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">Los</token><token pos="nccp000">dirigentes</token><token pos="spcms">del</token><token pos="np00000">PSOE</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_11" concept_ref3="c_12">
+			<token pos="vmip3p0">están</token><token pos="aq0mpp">convencidos</token><token pos="sps00">de</token><token pos="cs">que</token><mention concept_ref="c_11"><token pos="da0fs0">la</token><token pos="ncfs000">situación</token></mention><token pos="aq0cs0">judicial</token><token pos="spcms">del</token><token pos="ncms000">dictador</token><token pos="rn">no</token><token pos="vmip3s0">pone</token><token pos="sps00">en</token><token pos="ncms000">peligro</token><mention concept_ref="c_12"><token pos="da0fs0">la</token><token pos="ncfs000">vía</token></mention><token pos="aq0fs0">democrática</token><token pos="aq0fs0">chilena</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="dictador" />
+			<frame type="Leadership" head="dirigentes">
+				<argument type="Governed" dependent="pone" /></frame>
+			<frame type="Roadways" head="vía">
+				<argument type="Relative_location" dependent="chilena" />
+				<argument type="Characteristic" dependent="democrática" /></frame>
+			<frame type="Suasion" head="convencidos">
+				<argument type="Speaker" dependent="Los dirigentes del" />
+				<argument type="Content" dependent="que la situación judicial del dictador no pone en peligro la vía democrática" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

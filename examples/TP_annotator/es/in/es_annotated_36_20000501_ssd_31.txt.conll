@@ -1,0 +1,4 @@
+{   ('Capability', 'capacidad'): [('Event', 'de influencia')],
+    ('Objective_influence', 'influencia'): [],
+    ('Possession', 'se ha'): [('Owner', 'se ha'), ('Possession', 'tuviese capacidad de influencia')],
+    ('Preventing_or_letting', 'impedía'): [('Manner', 'tabú'), ('Potential_hindrance', 'que'), ('Event', 'se ha')]}

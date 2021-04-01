@@ -1,0 +1,4 @@
+{   ('Causation', 'porque'): [('Effect', 'Dejé los Stones'), ('Cause', 'aspiraba a tener motivaciones diferentes al dinero')],
+    ('Money', 'dinero'): [],
+    ('Reason', 'motivaciones'): [],
+    ('Similarity', 'diferentes'): [('Entities', 'motivaciones')]}

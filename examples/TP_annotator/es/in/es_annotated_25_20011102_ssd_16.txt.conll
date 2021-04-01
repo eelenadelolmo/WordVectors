@@ -1,0 +1,9 @@
+{   ('Arriving', 'llega'): [('Manner', 'momento de'), ('Goal', 'de tomar decisiones')],
+    ('Awareness', 'sabe'): [('Cognizer', 'lo'), ('Content', '. El problema es que llega el momento de tomar decisiones , y ese momento es muy duro')],
+    ('Deciding', 'decisiones'): [],
+    ('Difficulty', 'duro'): [('Time', 'muy')],
+    ('Frequency', 'a veces'): [('Event', 'no interesa tomar decisiones & quot ; , dijo')],
+    ('Importance', 'interesa'): [('Factor', 'lo'), ('Undertaking', 'de tomar decisiones')],
+    ('Manufacturing', 'hacer'): [('Producer', 'lo'), ('Product', 'decisiones')],
+    ('Predicament', 'problema'): [],
+    ('Statement', 'dijo'): [('Speaker', 'lo')]}

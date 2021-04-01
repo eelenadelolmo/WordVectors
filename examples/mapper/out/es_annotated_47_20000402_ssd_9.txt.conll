@@ -1,0 +1,5 @@
+{   ('Aggregate', 'partido'): [],
+    ('Body_parts', 'manos'): [('Possessor', 'la oposición y la')],
+    ('Difficulty', 'desafío'): [('Parameter', 'serio'), ('Activity', 'de manos de la oposición y la')],
+    ('Documents', 'oposición'): [('Obligation', 'partido en el poder encara un serio desafío de manos de la oposición y')],
+    ('Statement', 'afirman'): [('Speaker', 'analistas'), ('Message', 'partido en el poder encara un serio desafío de manos de la oposición y la')]}

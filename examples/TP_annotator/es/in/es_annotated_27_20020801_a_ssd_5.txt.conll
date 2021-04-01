@@ -1,0 +1,8 @@
+{   ('Arriving', 'devolver'): [('Goal', 'dinero y les remitía a las')],
+    ('Becoming_aware', 'encontraron'): [   ('Cognizer', 'pasajes a través de las agencias de viajes'),
+                                           ('Phenomenon', 'que Naviera Universal no les iba a devolver el dinero y les remitía a las agencias')],
+    ('Commerce_buy', 'adquirido'): [('Seller', 'les'), ('Buyer', 'quienes'), ('Goods', 'pasajes'), ('Seller', 'a través de las agencias de viajes')],
+    ('Money', 'dinero'): [('Inherent_purpose', 'y les remitía a')],
+    ('Motion', 'iba'): [('Theme', 'Naviera Universal'), ('Goal', 'a devolver el dinero y les remitía a las agencias')],
+    ('Temporal_subregion', 'iba'): [],
+    ('Travel', 'viajes'): []}

@@ -1,0 +1,12 @@
+{   ('Attempt_suasion', 'defienden'): [('Content', 'modelo económico'), ('Speaker', 'socialistas pasa por')],
+    ('Being_employed', 'empleo'): [],
+    ('Cause_to_make_progress', 'desarrollar'): [('Project', 'su propia política de empleo')],
+    ('Economy', 'económico'): [('Political_region', 'modelo económico que defienden los socialistas')],
+    ('Electricity', 'poder'): [],
+    ('Exemplar', 'modelo'): [],
+    ('Increment', 'más'): [('Class', 'poder')],
+    ('Instance', 'ejemplo'): [],
+    ('Political_locales', 'ayuntamientos'): [('Descriptor', 'de más competencias y de la correspondiente financiación para')],
+    ('Predicament', 'problemas'): [],
+    ('Resolve_problem', 'pasa'): [('Problem', 'por ejemplo')],
+    ('Supply', 'para'): [('Supplier', 'los socialistas'), ('Recipient', 'ayuntamientos de más competencias y de la correspondiente financiación'), ('Source', 'hacer')]}

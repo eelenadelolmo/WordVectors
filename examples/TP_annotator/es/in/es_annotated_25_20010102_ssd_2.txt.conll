@@ -1,0 +1,4 @@
+{   ('Attack', 'atentado'): [],
+    ('Awareness', 'sospecha'): [('Content', 'policía'), ('Content', 'que la única víctima grave participó en el')],
+    ('Catastrophe', 'víctima'): [('Manner', 'grave')],
+    ('Law_enforcement_agency', 'policía'): []}

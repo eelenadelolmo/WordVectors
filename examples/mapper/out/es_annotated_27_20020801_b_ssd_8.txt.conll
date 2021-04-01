@@ -1,0 +1,9 @@
+{   ('Businesses', 'empresa'): [],
+    ('Businesses', 'funcionando'): [('Product', 'de la línea y empresa')],
+    ('Contingency', 'dependen'): [],
+    ('Cotheme', 'los guías'): [],
+    ('Operating_a_system', 'funcionando'): [('Operator', 'los autobuses para turistas'), ('System', 'aun sin el servicio de los guías')],
+    ('Possession', 'titular de'): [('Owner', 'Transportes Metropolitanos de Barcelona'), ('Possession', 'de la explotación de la línea y empresa de')],
+    ('Process_continue', 'aun'): [('Event', 'los autobuses para turistas'), ('Event', 'funcionando aun sin el servicio de los guías')],
+    ('Public_services', 'servicio'): [('Service_action', 'de los guías')],
+    ('Vehicle', 'autobuses'): []}

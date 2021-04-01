@@ -1,0 +1,4 @@
+{   ('Committing_crime', 'criminalidad'): [('Manner', 'global')],
+    ('Hostile_encounter', 'luchar'): [('Issue', 'criminalidad mundial organizada')],
+    ('Needing', 'necesita'): [('Requirement', 'un derecho global'), ('Dependent', 'luchar contra una criminalidad mundial organizada')],
+    ('Political_locales', 'global'): []}

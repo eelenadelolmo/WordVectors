@@ -1,0 +1,5 @@
+{   ('Boundary', 'línea'): [],
+    ('Buildings', 'las torres'): [],
+    ('Certainty', 'duda'): [('Content', 'la niebla de')],
+    ('Expensiveness', 'cuesta'): [('Goods', 'es'), ('Intended_event', 'desplazar las torres')],
+    ('Motion', 'desplazar'): [('Theme', 'las torres')]}

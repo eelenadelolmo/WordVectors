@@ -1,0 +1,10 @@
+{   ('Arriving', 'regresó'): [('Goal', 'su toril en'), ('Place', 'en Manhattan')],
+    ('Attempt', 'se'): [],
+    ('Cardinal_numbers', 'un par de'): [('Unit', 'de embestidas')],
+    ('Causation', 'levantó'): [('Cause', 'salvaje se asomó al ruedo del festival de cine'), ('Effect', 'una polvareda de expectación')],
+    ('Cause_to_end', 'levantar'): [('State', 'el')],
+    ('Coming_to_believe', 'cuenta de que'): [('Cognizer', 'el público'), ('Content', 'que había terminado la')],
+    ('Distributed_position', 'cine'): [('Location', 'festival')],
+    ('Posture', 'levantó'): [('Agent', 'salvaje'), ('Location', 'al ruedo del festival de cine')],
+    ('Proportional_quantity', 'en'): [('Individuals', 'el')],
+    ('Work', 'se'): []}

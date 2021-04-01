@@ -1,0 +1,11 @@
+{   ('Architectural_part', 'la pared'): [],
+    ('Building_subparts', 'espacio'): [],
+    ('Buildings', 'casa'): [],
+    ('Capability', 'poder'): [('Event', 'colgar en la pared todos los recuerdos de los Stones')],
+    ('Desirability', 'buen'): [('Evaluee', 'lugar')],
+    ('Goal', 'para'): [('Trajector', 'un buen lugar'), ('Landmark', 'poder colgar en la pared todos los recuerdos de los Stones y así tener más espacio en casa')],
+    ('Increment', 'más'): [('Class', 'espacio')],
+    ('Locale', 'lugar'): [('Descriptor', 'buen')],
+    ('Locative_relation', 'en'): [('Figure', 'más espacio'), ('Ground', 'casa')],
+    ('Memory', 'recuerdos'): [('Content', 'Stones')],
+    ('Spatial_contact', 'en'): [('Figure', 'sólo un buen lugar para poder colgar en'), ('Ground', 'la pared')]}

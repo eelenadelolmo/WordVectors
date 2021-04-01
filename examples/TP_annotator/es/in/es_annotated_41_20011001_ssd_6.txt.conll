@@ -1,0 +1,7 @@
+{   ('Give_impression', 'ha parecido'): [('Inference', 'Personalmente , me ha parecido de una especial significación que el hombre que lanzó el simpático grito de & quot ; Muera la inteligencia')],
+    ('Importance', 'significación'): [],
+    ('Information', 'inteligencia'): [],
+    ('People', 'hombre'): [],
+    ('Remembering_experience', 'recordado'): [('Experience', 'momentos tan trágicos justamente para la ilustración y la inteligencia')],
+    ('Shoot_projectiles', 'lanzó'): [('Agent', 'el hombre que'), ('Projectile', 'el simpático grito de & quot ; Muera la inteligencia')],
+    ('Vocalizations', 'grito'): [('Sound_source', 'la inteligencia & quot ; , sea recordado en momentos tan trágicos justamente para la ilustración')]}

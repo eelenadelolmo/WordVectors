@@ -1,0 +1,11 @@
+{   ('Becoming_aware', 'reconoció'): [   ('Phenomenon', 'que'),
+                                         ('Cognizer', 'Lo'),
+                                         ('Phenomenon', 'que la trayectoria del PNV durante los últimos meses & quot ; no aporta la confianza suficiente para compartir un')],
+    ('Calendric_unit', 'meses'): [('Relative_time', 'últimos'), ('Count', 'un')],
+    ('Certainty', 'confianza'): [('Content', 'confianza suficiente para compartir un proyecto en')],
+    ('Project', 'proyecto'): [],
+    ('Proportional_quantity', 'en'): [('Q_prop', 'PNV'), ('Individuals', 'los últimos meses')],
+    ('Quantified_mass', 'un'): [('Individuals', 'meses')],
+    ('Relative_time', 'últimos'): [('Focal_occasion', 'meses')],
+    ('Sufficiency', 'suficiente'): [('Item', 'la confianza suficiente para compartir un proyecto en defensa de la paz')],
+    ('Supply', 'aporta'): [('Theme', 'la confianza suficiente para compartir un proyecto en defensa de la paz')]}

@@ -1,0 +1,6 @@
+{   ('Appellations', 'presidente'): [],
+    ('Direction', 'ya derecho'): [],
+    ('Law', 'ley'): [],
+    ('Leadership', 'legisladores'): [],
+    ('Process_end', 'aprobada por'): [('Process', 'ley de reforma constitucional'), ('Process', 'por la gran mayoría de los legisladores')],
+    ('Reforming_a_system', 'reforma'): []}

@@ -1,0 +1,12 @@
+{   ('Being_obligated', 'responsabilidades'): [],
+    ('Causation', 'porque'): [('Cause', 'el empeño'), ('Cause', 'sólo se le ha ocurrido presentar a una mujer a la presidencia del Senado cuando Aznar propuso a Esperanza'), ('Effect', 'empeño')],
+    ('Commitment', 'responsabilidades'): [('Speaker', 'Aznar'), ('Message', 'incorporar mujeres a')],
+    ('Event', 'ocurrido'): [('Event', 'presentar a una mujer a la presidencia del Senado cuando Aznar propuso a Esperanza')],
+    ('Judgment_communication', 'criticó'): [   ('Communicator', 'le ha'),
+                                               ('Evaluee', 'el empeño'),
+                                               ('Reason', 'porque sólo se le ha ocurrido presentar a una mujer a la presidencia del Senado cuando Aznar propuso'),
+                                               ('Evaluee', 'Esperanza')],
+    ('People', 'mujer'): [],
+    ('People', 'mujeres'): [('Descriptor', 'incorporar')],
+    ('Position_on_a_scale', 'altas'): [('Item', 'responsabilidades')],
+    ('Statement', 'propuso'): [('Speaker', 'empeño'), ('Message', 'Esperanza')]}

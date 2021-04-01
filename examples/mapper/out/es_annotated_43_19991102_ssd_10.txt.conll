@@ -1,0 +1,10 @@
+{   ('Aggregate', 'grupos'): [('Aggregate_property', 'nómadas')],
+    ('Calendric_unit', 'hoy'): [],
+    ('Cause_to_amalgamate', 'unió'): [('Part_2', 'que la última glaciación'), ('Part_1', 'ambas'), ('Part_2', 'con un puente de hielo')],
+    ('Quantified_mass', 'ambas'): [('Individuals', 'el estrecho')],
+    ('Receiving', 'aceptada'): [('Theme', 'teoría')],
+    ('Relational_natural_features', 'el estrecho'): [],
+    ('Relative_time', 'última'): [('Focal_occasion', 'glaciación')],
+    ('Roadways', 'puente'): [('Name', 'hielo')],
+    ('Taking_time', 'hasta'): [('Activity', 'aprovechando que la última glaciación unió ambas costas con un puente de hielo')],
+    ('Traversing', 'cruzaron'): [('Theme', 'grupos nómadas'), ('Path', 'desde Siberia'), ('Goal', 'hasta Alaska'), ('Time', 'por el estrecho de')]}

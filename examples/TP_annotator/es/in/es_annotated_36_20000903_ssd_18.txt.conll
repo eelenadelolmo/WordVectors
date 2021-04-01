@@ -1,0 +1,4 @@
+{   ('Communication', 'compartido'): [('Message', 'proyecto')],
+    ('Locative_relation', 'hay'): [('Ground', 'No hay que contraponer catalanismo con un proyecto compartido')],
+    ('Needing', 'hay que'): [('Requirement', 'contraponer')],
+    ('Project', 'proyecto'): [('Descriptor', 'compartido'), ('Goal', 'para')]}

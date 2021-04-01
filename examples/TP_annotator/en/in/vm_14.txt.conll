@@ -1,0 +1,14 @@
+1	how	_	How	_	WRB	0	_	_	_	_	_	_	_	O
+2	do	_	do	_	VBP	0	_	_	_	_	_	_	_	O
+3	virtual	_	UNK	_	JJ	0	_	_	_	_	_	_	_	S-Descriptor
+4	machines	_	machine	_	NNS	0	_	_	_	_	_	machine.n	Gizmo	S-Gizmo
+5	work	_	work	_	NN	0	_	_	_	_	_	_	_	O
+6	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	how	_	How	_	WRB	0	_	_	_	_	_	_	_	O
+2	do	_	do	_	VBP	0	_	_	_	_	_	_	_	O
+3	virtual	_	UNK	_	JJ	0	_	_	_	_	_	_	_	B-Salient_entity
+4	machines	_	machine	_	NNS	0	_	_	_	_	_	_	_	I-Salient_entity
+5	work	_	work	_	NN	0	_	_	_	_	_	work.n	Work	O
+6	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

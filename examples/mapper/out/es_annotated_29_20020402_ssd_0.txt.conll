@@ -1,0 +1,13 @@
+{   ('Being_named', 'nombre'): [('Entity', 'un islam fanático')],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'guerras')],
+    ('Cardinal_numbers', 'un'): [],
+    ('Certainty', 'considera'): [   ('Cognizer', 'escritor israelí Amos Oz , partidario del establecimiento de un Estado palestino independiente , considera'),
+                                    ('Content', 'que los palestinos & quot ; mantienen en paralelo dos guerras')],
+    ('Change_of_leadership', 'independencia'): [('Selector', 'los')],
+    ('Destroying', 'destruir'): [('Patient', 'israelí')],
+    ('Hostile_encounter', 'guerras'): [],
+    ('Increment', 'otra'): [('Class', 'para destruir Israel')],
+    ('Intentionally_create', 'establecimiento'): [('Created_entity', 'un Estado palestino independiente')],
+    ('Leadership', 'Estado'): [('Governed', 'palestino')],
+    ('People', 'persona'): [],
+    ('Similarity', 'paralelo'): [('Entity_1', 'los palestinos'), ('Entity_1', 'dos guerras')]}

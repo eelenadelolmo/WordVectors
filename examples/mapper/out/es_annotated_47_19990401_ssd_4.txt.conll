@@ -1,0 +1,17 @@
+{   ('Buildings', 'construcción'): [],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'de')],
+    ('Desirability', 'popular'): [],
+    ('Hostile_encounter', 'lucha'): [('Depictive', 'popular')],
+    ('Leadership', 'líder'): [('Leader', 'Arnaldo Otegi'), ('Leader', 'Herritarrok')],
+    ('Political_locales', 'nacional'): [],
+    ('Possibility', 'puede'): [   ('Possible_event', 'esa lucha popular'),
+                                  ('Possible_event', '; proceso de construcción & quot ; ( nacional ) , ni que Arnaldo Otegi , líder de Euskal Herritarrok , subrayara que la')],
+    ('Process', 'proceso'): [('Process', 'construcción')],
+    ('Questioning', 'preguntaran'): [   ('Speaker', 'esa'),
+                                        (   'Message',
+                                            'lucha popular puede entorpecer el & quot ; proceso de construcción & quot ; ( nacional ) , ni que Arnaldo Otegi , líder de Euskal Herritarrok , subrayara '
+                                            'que la Mejor respuesta a las & quot ; agresiones & quot ;')],
+    ('Referring_by_name', 'convocado'): [('Name', 'el paro'), ('Name', 'por')],
+    ('Required_event', 'Mejor'): [('Required_situation', 'respuesta'), ('Purpose', 'agresiones & quot ; del Estado será el')],
+    ('Response', 'respuesta'): [('Manner', 'Mejor'), ('Trigger', 'agresiones & quot ; del Estado será el')],
+    ('Using', 'sirvió'): [('Purpose', 'dos')]}

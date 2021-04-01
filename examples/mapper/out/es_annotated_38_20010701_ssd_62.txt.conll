@@ -1,0 +1,3 @@
+{   ('Attempt', 'intento'): [('Agent', 'que'), ('Goal', 'ahora junto con The Rhythm Kings')],
+    ('Identicality', 'Lo mismo'): [('Type', 'que')],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'intento'), ('Trajector_event', 'con The Rhythm Kings')]}

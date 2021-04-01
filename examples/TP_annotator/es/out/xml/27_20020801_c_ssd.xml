@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="27_20020801_c_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Las desventuras que un pasajero del Turbocat , Joel Manrique , comenzó a narrar a este diario el pasado Martes</concept>
+		<concept id="c_1">Este barcelonés y dos amigos suyos , que habían llegado el pasado viernes a Ciutadella ,</concept>
+		<concept id="c_2">La compañía</concept>
+		<concept id="c_3">La única persona de Turbocat que les atendió</concept>
+		<concept id="c_4">el grupo</concept>
+		<concept id="c_5">El desastre de Turbocat</concept>
+		<concept id="c_6">una odisea</concept>
+		<concept id="c_7">del servicio</concept>
+		<concept id="c_8">el martes a</concept>
+		<concept id="c_9">de</concept>
+		<concept id="c_10">la anulación</concept>
+		<concept id="c_11">otro transporte</concept>
+		<concept id="c_12">Joel</concept>
+		<concept id="c_13">quot</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 14 horas de espera en el aeropuerto de Maó.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="aeropuerto">
+				<argument type="Name" dependent="Maó" /></frame>
+			<frame type="Calendric_unit" head="horas">
+				<argument type="Count" dependent="14" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="el aeropuerto de Maó" /></frame>
+			<frame type="Waiting" head="espera">
+				<argument type="Place" dependent="14 horas" />
+				<argument type="Place" dependent="en el aeropuerto de Maó" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Las desventuras que un pasajero del Turbocat, Joel Manrique, comenzó a narrar a este diario el pasado Martes se convirtieron ayer en una odisea.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fp0">Las</token><token pos="ncfp000">desventuras</token><token pos="pr0cn000">que</token><token pos="di0ms0">un</token><token pos="ncms000">pasajero</token><token pos="spcms">del</token><token pos="np00000">Turbocat</token><token pos="fc">,</token><token pos="np0000l">Joel</token><token pos="np0000l">Manrique</token><token pos="fc">,</token><token pos="vmis3s0">comenzó</token><token pos="sps00">a</token><token pos="vmn0000">narrar</token><token pos="sps00">a</token><token pos="dd0ms0">este</token><token pos="ncms000">diario</token><token pos="da0ms0">el</token><token pos="aq0msp">pasado</token><token pos="ncms000">Martes</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_6">
+			<token pos="p0300000">se</token><token pos="vmis3p0">convirtieron</token><token pos="sps00">en</token><token pos="di0fs0">una</token><token pos="ncfs000">odisea</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_start" head="comenzó">
+				<argument type="Agent" dependent="un pasajero del Turbocat , Joel Manrique ," />
+				<argument type="Activity" dependent="a narrar a este diario el" />
+				<argument type="Time" dependent="pasado Martes" /></main_frame>
+			<main_frame type="Becoming" head="convirtieron">
+				<argument type="Final_quality" dependent="ayer" />
+				<argument type="Final_category" dependent="una odisea" /></main_frame>
+			<frame type="Calendric_unit" head="Martes" />
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Relative_time" head="ayer">
+				<argument type="Focal_occasion" dependent="Martes" /></frame>
+			<frame type="Text" head="diario" />
+			<frame type="Travel" head="odisea" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Su colofón fueron 14 horas de espera en el aeropuerto de Maó ( Menorca ).
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_finish" head="de espera">
+				<argument type="Agent" dependent="el" /></frame>
+			<frame type="Buildings" head="aeropuerto">
+				<argument type="Name" dependent="( Menorca )" /></frame>
+			<frame type="Calendric_unit" head="horas">
+				<argument type="Count" dependent="14" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="el aeropuerto de Maó (" /></frame>
+			<frame type="Waiting" head="espera">
+				<argument type="Place" dependent="en el aeropuerto de Maó (" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Este barcelonés y dos amigos suyos, que habían llegado el pasado viernes a Ciutadella, no pudieron regresar el martes a causa de la avería y la anulación del servicio.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="dd0ms0">Este</token><token pos="ncms000">barcelonés</token><token pos="cc">y</token><token pos="dn0cp0">dos</token><token pos="ncmp000">amigos</token><token pos="dp3mp0">suyos</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vaii3p0">habían</token><token pos="vmp00sm">llegado</token><token pos="da0ms0">el</token><token pos="aq0msp">pasado</token><token pos="ncms000">viernes</token><token pos="sps00">a</token><token pos="np00000">Ciutadella</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_6" concept_ref3="c_7" concept_ref4="c_8" concept_ref5="c_9" concept_ref6="c_10">
+			<token pos="rn">no</token><token pos="vmis3p0">pudieron</token><mention concept_ref="c_6"><token pos="vmn0000">regresar</token><token pos="da0ms0">el</token><token pos="ncms000">martes</token><token pos="sps00">a</token><token pos="ncfs000">causa</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">avería</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">anulación</token><token pos="spcms">del</token><token pos="ncms000">servicio</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Arriving" head="llegado">
+				<argument type="Theme" dependent="que" />
+				<argument type="Goal" dependent="del servicio" /></main_frame>
+			<main_frame type="Arriving" head="regresar">
+				<argument type="Time" dependent="el martes a" /></main_frame>
+			<frame type="Calendric_unit" head="martes" />
+			<frame type="Calendric_unit" head="viernes" />
+			<main_frame type="Capability" head="no pudieron">
+				<argument type="Entity" dependent="dos amigos suyos , que habían llegado el pasado viernes a Ciutadella ," />
+				<argument type="Event" dependent="regresar el martes a causa de la avería y la anulación del servicio" /></main_frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="amigos" /></frame>
+			<frame type="Interior_profile_relation" head="de">
+				<argument type="Figure" dependent="viernes" />
+				<argument type="Ground" dependent="Ciutadella" /></frame>
+			<frame type="Personal_relationship" head="amigos">
+				<argument type="Partner_2" dependent="suyos" /></frame>
+			<frame type="Public_services" head="servicio" />
+			<frame type="Relative_time" head="pasado">
+				<argument type="Focal_occasion" dependent="viernes a Ciutadella" /></frame>
+			<frame type="Spatial_contact" head="de">
+				<argument type="Figure" dependent="dos amigos suyos , que habían llegado el pasado viernes a Ciutadella , no pudieron regresar el" />
+				<argument type="Ground" dependent="martes" />
+				<argument type="Figure" dependent="causa de la avería y la anulación del servicio" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La compañía no logró reubicarlos en otro transporte el martes, por lo que los citó ayer - - a las cinco de la mañana - - en el puerto.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">La</token><token pos="ncfs000">compañía</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_11">
+			<token pos="rn">no</token><token pos="vmis3s0">logró</token><token pos="vmn0000">reubicarlos</token><token pos="sps00">en</token><mention concept_ref="c_11"><token pos="di0ms0">otro</token><token pos="ncms000">transporte</token></mention><mention concept_ref="c_5"><token pos="da0ms0">el</token><token pos="ncms000">martes</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Bringing" head="transporte">
+				<argument type="Theme" dependent="los" /></frame>
+			<frame type="Businesses" head="compañía" />
+			<frame type="Calendric_unit" head="la mañana" />
+			<frame type="Calendric_unit" head="martes" />
+			<frame type="Increment" head="otro">
+				<argument type="Class" dependent="transporte" /></frame>
+			<frame type="Locale_by_use" head="puerto" />
+			<frame type="Operating_a_system" head="los">
+				<argument type="Operator" dependent="compañía" />
+				<argument type="System" dependent="reubicarlos en otro transporte el" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Ground" dependent="martes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Desde allí les llevaron, junto a otros 45 sufridos pasajeros, hasta el aeropuerto de Maó ( en el otro extremo de la isla ), donde supieron - - a las seis - - que no tendrían billete para viajar por la mañana.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="supieron">
+				<argument type="Cognizer" dependent="les" />
+				<argument type="Content" dependent="- a las seis - - que no tendrían billete para viajar por la mañana" /></frame>
+			<frame type="Buildings" head="aeropuerto">
+				<argument type="Type" dependent="Maó" /></frame>
+			<frame type="Calendric_unit" head="la mañana" />
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="extremo de la isla" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="billete para viajar" />
+				<argument type="Ground" dependent="la mañana" /></frame>
+			<frame type="Locative_relation" head="allí">
+				<argument type="Ground" dependent="allí les" /></frame>
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="supieron - - a las seis - - que no tendrían billete para viajar por la mañana" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="llevaron , junto a otros 45 sufridos pasajeros , hasta el aeropuerto de Maó" />
+				<argument type="Ground" dependent="el otro extremo de la isla" /></frame>
+			<frame type="Locative_relation" head="hasta">
+				<argument type="Figure" dependent="les" />
+				<argument type="Ground" dependent="otros 45 sufridos pasajeros" /></frame>
+			<frame type="Natural_features" head="isla" />
+			<frame type="Origin" head="de la">
+				<argument type="Origin" dependent="allí les llevaron" /></frame>
+			<frame type="Process_end" head="extremo de">
+				<argument type="Process" dependent="la isla" /></frame>
+			<frame type="Taking_time" head="llevaron">
+				<argument type="Activity" dependent="les" /></frame>
+			<frame type="Travel" head="viajar">
+				<argument type="Time" dependent="la mañana" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Nos hemos tenido que levantar a las cuatro de la mañana para nada", lamentaba agotado a mediodía Joel, tras haber dormido en asientos y lavabos del aeropuerto.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="aeropuerto" />
+			<frame type="Calendric_unit" head="la mañana" />
+			<frame type="Expend_resource" head="agotado" />
+			<frame type="Getting" head="de">
+				<argument type="Recipient" dependent="hemos" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="dormido" />
+				<argument type="Ground" dependent="asientos y" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="dormido en asientos y" />
+				<argument type="Ground" dependent="del aeropuerto" /></frame>
+			<frame type="Possession" head="tenido">
+				<argument type="Possession" dependent="dormido en asientos y lavabos del aeropuerto" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La única persona de Turbocat que les atendió no tenía capacidad decisoria y esperaba unas órdenes que nunca llegaron.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fs0">La</token><token pos="aq0fs0">única</token><token pos="ncfs000">persona</token><token pos="sps00">de</token><token pos="np00000">Turbocat</token><token pos="pr0cn000">que</token><token pos="pp3cpd00">les</token><token pos="vmis3s0">atendió</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_6" concept_ref3="c_9">
+			<mention concept_ref="c_6"><token pos="rn">no</token><token pos="vmii3s0">tenía</token><token pos="ncfs000">capacidad</token><token pos="aq0fs0">decisoria</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="llegaron">
+				<argument type="Theme" dependent="órdenes que" /></frame>
+			<main_frame type="Assistance" head="atendió">
+				<argument type="Focal_entity" dependent="de" />
+				<argument type="Helper" dependent="persona de" />
+				<argument type="Benefited_party" dependent="les" />
+				<argument type="Goal" dependent="no tenía capacidad decisoria" /></main_frame>
+			<frame type="Electricity" head="capacidad">
+				<argument type="Source" dependent="decisoria" /></frame>
+			<frame type="People" head="persona" />
+			<frame type="Sequence" head="órdenes" />
+			<frame type="Sole_instance" head="única">
+				<argument type="Item" dependent="persona" /></frame>
+			<frame type="Waiting" head="esperaba">
+				<argument type="Protagonist" dependent="les" />
+				<argument type="Salient_entity" dependent="órdenes que nunca llegaron" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Finalmente, tramitó a todo el grupo unos billetes de avión para las 18.15 horas, con Spanair.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="grupo" />
+			<frame type="Communicate_categorization" head="tramitó">
+				<argument type="Speaker" dependent="el" />
+				<argument type="Item" dependent="todo el grupo unos billetes de avión para las 18.15" /></frame>
+			<frame type="Ranked_expectation" head="a todo">
+				<argument type="Entity" dependent="el" />
+				<argument type="Entity" dependent="grupo unos billetes de avión" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Tras 12 horas de espera, el grupo tuvo un nuevo sobresalto: un retraso de dos horas en el avión y el temor a un overbooking.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0ms0">el</token><token pos="ncms000">grupo</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_1" concept_ref3="c_3" concept_ref4="c_4" concept_ref5="c_9" concept_ref6="c_10" concept_ref7="c_11">
+			<token pos="vmis3s0">tuvo</token><mention concept_ref="c_5"><token pos="di0ms0">un</token><token pos="aq0ms0">nuevo</token><token pos="ncms000">sobresalto</token></mention><token pos="fd">:</token><mention concept_ref="c_11"><token pos="di0ms0">un</token><token pos="ncms000">retraso</token></mention><mention concept_ref="c_9"><token pos="sps00">de</token></mention><token pos="dn0cp0">dos</token><mention concept_ref="c_1"><token pos="ncfp000">horas</token></mention><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">avión</token><token pos="cc">y</token><mention concept_ref="c_4"><token pos="da0ms0">el</token><token pos="ncms000">temor</token></mention><token pos="sps00">a</token><token pos="di0ms0">un</token><token pos="ncms000">overbooking</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevo">
+				<argument type="Entity" dependent="en" /></frame>
+			<frame type="Aggregate" head="grupo" />
+			<frame type="Calendric_unit" head="horas">
+				<argument type="Count" dependent="12" /></frame>
+			<frame type="Fear" head="temor">
+				<argument type="Stimulus" dependent="a un overbooking" /></frame>
+			<frame type="Relative_time" head="en">
+				<argument type="Landmark_occasion" dependent="12 horas de espera" />
+				<argument type="Focal_occasion" dependent=", el grupo tuvo un nuevo sobresalto : un retraso de dos horas en el avión y el temor a un overbooking" /></frame>
+			<frame type="Temporal_subregion" head="en" />
+			<frame type="Waiting" head="espera" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A las ocho de la tarde lograron volar, y antes de las nueve de anoche estaban en Barcelona.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="anoche">
+				<argument type="Relative_time" dependent="nueve de anoche" /></frame>
+			<frame type="Calendric_unit" head="la tarde" />
+			<frame type="Cardinal_numbers" head="nueve">
+				<argument type="Unit" dependent="la tarde" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="estaban" />
+				<argument type="Ground" dependent="Barcelona" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="ocho de la tarde" />
+				<argument type="Time" dependent="de la tarde" />
+				<argument type="Figure" dependent="lograron volar" /></frame>
+			<frame type="Operating_a_system" head="lograron" />
+			<frame type="Relative_time" head="antes">
+				<argument type="Degree" dependent="anoche" />
+				<argument type="Focal_occasion" dependent="estaban en Barcelona" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Landmark_event" dependent="de las nueve de anoche estaban en Barcelona" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El desastre de Turbocat supuso a Joel y sus dos amigos "29 horas de retraso, perder un día de trabajo y gastar más de 300 euros" ( 50.000 pesetas, entre hotel y manutención ) que nadie les abonará.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0ms0">El</token><token pos="ncms000">desastre</token><token pos="sps00">de</token><token pos="np00000">Turbocat</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_5" concept_ref3="c_4" concept_ref4="c_3" concept_ref5="c_9" concept_ref6="c_10" concept_ref7="c_11" concept_ref8="c_12" concept_ref9="c_13">
+			<token pos="vmis3s0">supuso</token><token pos="sps00">a</token><mention concept_ref="c_12"><token pos="np00000">Joel</token></mention><token pos="cc">y</token><token pos="dp3cp0">sus</token><token pos="dn0cp0">dos</token><token pos="ncmp000">amigos</token><token pos="fe">quot;</token><token pos="z">29</token><mention concept_ref="c_1"><token pos="ncfp000">horas</token></mention><token pos="sps00">de</token><token pos="ncms000">retraso</token><token pos="fc">,</token><token pos="vmn0000">perder</token><token pos="di0ms0">un</token><token pos="ncms000">día</token><token pos="sps00">de</token><token pos="ncms000">trabajo</token><token pos="cc">y</token><token pos="vmn0000">gastar</token><token pos="rg">más</token><token pos="sps00">de</token><token pos="z">300</token><mention concept_ref="c_4"><token pos="zm">euros</token></mention><token pos="fe">quot;</token><token pos="fpa">(</token><token pos="z">50.000</token><token pos="zm">pesetas</token><token pos="fc">,</token><token pos="sps00">entre</token><token pos="ncms000">hotel</token><token pos="cc">y</token><token pos="ncfs000">manutención</token><token pos="fpt">)</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_ongoing" head="manutención" />
+			<frame type="Buildings" head="hotel" />
+			<frame type="Calendric_unit" head="día" />
+			<frame type="Calendric_unit" head="horas">
+				<argument type="Relative_time" dependent="29" /></frame>
+			<frame type="Cardinal_numbers" head="un" />
+			<frame type="Catastrophe" head="desastre de">
+				<argument type="Cause" dependent="de" /></frame>
+			<main_frame type="Commerce_pay" head="gastar">
+				<argument type="Buyer" dependent="nadie" />
+				<argument type="Unit" dependent="les" /></main_frame>
+			<main_frame type="Earnings_and_losses" head="perder">
+				<argument type="Earnings" dependent="día de trabajo y gastar más de 300 euros  quot ; ( 50.000 pesetas , entre hotel y manutención" /></main_frame>
+			<frame type="Evidence" head="que">
+				<argument type="Support" dependent="desastre de" />
+				<argument type="Proposition" dependent="sus dos amigos  quot ; 29 horas de retraso , perder un día de trabajo y gastar más de 300" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="de 300 euros" /></frame>
+			<frame type="Personal_relationship" head="amigos" />
+			<frame type="Temporal_subregion" head="retraso">
+				<argument type="Time_period" dependent="horas" /></frame>
+			<frame type="Work" head="trabajo">
+				<argument type="Degree" dependent="día" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

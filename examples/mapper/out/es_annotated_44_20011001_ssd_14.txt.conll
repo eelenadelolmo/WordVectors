@@ -1,0 +1,5 @@
+{   ('Change_position_on_a_scale', 'viraje'): [],
+    ('Fields', 'cuentas'): [],
+    ('People_by_residence', 'vecinos'): [('Descriptor', 'Llagostera')],
+    ('Progression', 'progreso'): [],
+    ('Questioning', 'solicitan'): [('Speaker', 'los vecinos de'), ('Message', 'de')]}

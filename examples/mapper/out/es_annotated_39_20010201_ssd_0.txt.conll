@@ -1,0 +1,12 @@
+{   ('Bringing', 'llevada'): [('Theme', 'manipulación'), ('Goal', 'llevada'), ('Source', 'por el diario Gara')],
+    ('Collaboration', 'colaborador'): [('Manner', 'denunciado'), ('Partner_2', 'del')],
+    ('Frequency', 'semanario'): [],
+    ('Give_impression', 'figuran'): [('Phenomenon', 'semanario'), ('Appraisal', 'como firmantes')],
+    ('Imprisonment', 'encarcelado'): [('Prisoner', 'del periodista Pepe Rei'), ('Offense', 'como presunto colaborador de')],
+    ('People_by_vocation', 'profesionales'): [('Descriptor', '27'), ('Place_of_employment', 'de aquel semanario')],
+    ('Preference', 'favor'): [('Event', 'del periodista Pepe Rei')],
+    ('Sign_agreement', 'firmantes'): [],
+    ('Sleep', 'llevada'): [('Sleeper', 'redacción de la revista Interviú ha denunciado la manipulación')],
+    ('Text', 'el diario'): [],
+    ('Text', 'revista'): [],
+    ('Unattributed_information', 'denunciado'): [('Reported_fact', 'colaborador de')]}

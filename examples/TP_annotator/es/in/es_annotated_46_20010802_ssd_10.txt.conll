@@ -1,0 +1,12 @@
+{   ('Businesses', 'empresas'): [],
+    ('Calendric_unit', 'verano'): [('Relative_time', 'pasado')],
+    ('Event', 'ocurría'): [],
+    ('Locative_relation', 'Hay'): [('Ground', 'Hay informes que indican que esto ocurría el verano pasado')],
+    ('Process_continue', 'seguir'): [('Event', 'debemos'), ('Event', 'investigando a estas empresas')],
+    ('Relative_time', 'pasado'): [('Focal_occasion', 'verano')],
+    ('Required_event', 'debemos'): [   ('Required_situation', 'debemos'),
+                                       ('Required_situation', 'seguir investigando a estas empresas & quot ; , dijo Thomas Wallander , de la Oficina de Control de la Competencia')],
+    ('Scrutiny', 'investigando'): [('Cognizer', 'debemos'), ('Ground', 'estas empresas')],
+    ('Statement', 'dijo'): [   ('Message', '; Hay informes que indican que esto ocurría el verano pasado y por eso debemos seguir investigando a estas empresas &'),
+                               ('Message', 'la Oficina de Control de la Competencia')],
+    ('Statement', 'informes'): [('Message', 'el verano pasado y por eso debemos seguir investigando a estas empresas & quot ; , dijo')]}

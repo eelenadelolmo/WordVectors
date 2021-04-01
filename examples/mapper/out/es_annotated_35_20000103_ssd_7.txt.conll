@@ -1,0 +1,9 @@
+{   ('Accomplishment', 'conseguirlo'): [('Goal', 'la'), ('Goal', 'en la contratación de médicos y personal sanitario')],
+    ('Buildings', 'barra'): [('Descriptor', 'libre')],
+    ('Buildings', 'hospitales'): [],
+    ('Employing', 'personal'): [('Field', 'médicos y')],
+    ('Locale_by_use', 'Centro'): [],
+    ('Medical_conditions', 'sanitario'): [],
+    ('Statement', 'afirma'): [   (   'Message',
+                                     ', la Generalitat ha ofrecido a los hospitales y al Centro Coordinador de Emergencias 061 & quot ; barra libre & quot ; en la contratación de médicos y '
+                                     'personal')]}

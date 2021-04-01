@@ -1,0 +1,11 @@
+{   ('Agree_or_refuse_to_act', 'niega'): [('Speaker', 'la empresa')],
+    ('Be_in_agreement_on_action', 'según'): [('Obligation', 'abogada de la asociación')],
+    ('Businesses', 'empresa'): [],
+    ('Choosing', 'optar'): [('Chosen', 'la vía civil'), ('Chosen', 'asociación , Cristina Chueca')],
+    ('Goal', 'por'): [('Landmark', 'la abogada de la asociación')],
+    ('Instance', 'caso'): [('Type', 'quot ; fuerza mayor')],
+    ('Likelihood', 'puede'): [('Hypothetical_event', 'es'), ('Hypothetical_event', 'optar por la vía civil , ya que la avería no es un caso de & quot ; fuerza mayor')],
+    ('Military', 'fuerza'): [],
+    ('People_by_vocation', 'civil'): [('Employer', 'de la asociación')],
+    ('Roadways', 'vía'): [('Relative_location', 'civil')],
+    ('Time_vector', 'por'): [('Landmark_event', 'no es un caso de & quot ; fuerza mayor & quot ; , según explicó la abogada de la asociación'), ('Event', 'Cristina Chueca')]}

@@ -1,0 +1,4 @@
+{   ('Hiding_objects', 'escondida'): [('Manner', 'en')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'Está escondida'), ('Ground', 'de')],
+    ('Posture', 'parados'): [('Location', 'los camiones')],
+    ('Vehicle', 'camiones'): []}

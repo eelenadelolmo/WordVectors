@@ -1,0 +1,4 @@
+{   ('Arriving', 'afluencia'): [('Goal', 'a los hospitales')],
+    ('Buildings', 'hospitales'): [],
+    ('Change_position_on_a_scale', 'a los'): [('Item', 'insistente promoción de los CAC'), ('Manner', 'apenas ha frenado'), ('Item', 'esa afluencia'), ('Final_value', 'a los hospitales')],
+    ('Hindering', 'frenado'): [('Hindrance', 'insistente promoción de los CAC'), ('Action', 'frenado esa afluencia a los hospitales')]}

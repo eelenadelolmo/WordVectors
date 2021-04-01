@@ -1,0 +1,11 @@
+{   ('Activity_ongoing', 'mantienen'): [   ('Agent', 'de presentadores simpatiquísimos ( ahora son Guillermo Romero y Patricia Betancort )'),
+                                           ('Activity', 'diálogos surrealistas para dar entrada a actuaciones con la música enlatada')],
+    ('Arriving', 'entrada'): [('Goal', 'a actuaciones con la música')],
+    ('Calendric_unit', 'noches'): [('Relative_time', 'musicales'), ('Whole', 'de esta tele')],
+    ('Cardinal_numbers', 'pareja de'): [('Unit', 'de presentadores simpatiquísimos')],
+    ('Frequency', 'siempre'): [('Event', 'las noches musicales de esta tele'), ('Event', 'riman igual')],
+    ('Giving', 'dar'): [('Theme', 'dar entrada a actuaciones con la música enlatada')],
+    ('Identicality', 'igual'): [],
+    ('Performing_arts', 'actuaciones'): [],
+    ('Performing_arts', 'música'): [('Type', 'enlatada')],
+    ('Predicament', 'problema'): []}

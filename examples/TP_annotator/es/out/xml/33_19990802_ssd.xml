@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="33_19990802_ssd">
+
+
+	<concepts>
+		<concept id="c_0">La carne de vacuno británica</concept>
+		<concept id="c_1">Alemania</concept>
+		<concept id="c_2">el Gobierno</concept>
+		<concept id="c_3">Las manifestaciones de Brown</concept>
+		<concept id="c_4">La provincia británica</concept>
+		<concept id="c_5">La Comisión Europea</concept>
+		<concept id="c_6">La prohibición impuesta a las exportaciones de ganado vivo</concept>
+		<concept id="c_7">El embargo</concept>
+		<concept id="c_8">el mal de las vacas locas</concept>
+		<concept id="c_9">en los países de la Unión Europea desde</concept>
+		<concept id="c_10">no será fácil</concept>
+		<concept id="c_11">de 1998</concept>
+		<concept id="c_12">un año</concept>
+		<concept id="c_13">salud humana</concept>
+		<concept id="c_14">los países</concept>
+		<concept id="c_15">el veto</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 La carne de vacuno británica puede volver a comercializarse en los países de la Unión Europea desde ayer, tras levantarse el veto impuesto hace 40 meses por la Comisión Europea como respuesta a la detección del denominado mal de las vacas locas, pero la desconfianza que despierta su consumo va a seguir penalizando las exportaciones por un largo periodo de tiempo.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="ncfs000">carne</token><token pos="sps00">de</token><token pos="ncms000">vacuno</token><token pos="aq0fs0">británica</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_3" concept_ref3="c_8" concept_ref4="c_9" concept_ref5="c_14" concept_ref6="c_15">
+			<token pos="vmip3s0">puede</token><token pos="vmn0000">volver</token><token pos="sps00">a</token><token pos="vmn0000">comercializarse</token><mention concept_ref="c_9"><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="ncmp000">países</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Unión</token><token pos="aq0ms0">Europea</token><token pos="sps00">desde</token></mention><token pos="rg">ayer</token><token pos="fc">,</token><token pos="sps00">tras</token><token pos="vmn0000">levantarse</token><mention concept_ref="c_15"><token pos="da0ms0">el</token><token pos="ncms000">veto</token></mention><token pos="aq0msp">impuesto</token><token pos="vmip3s0">hace</token><token pos="z">40</token><token pos="ncmp000">meses</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="np00000">Comisión</token><token pos="aq0ms0">Europea</token><token pos="cs">como</token><token pos="ncfs000">respuesta</token><token pos="sps00">a</token><mention concept_ref="c_3"><token pos="da0fs0">la</token><token pos="ncfs000">detección</token></mention><token pos="spcms">del</token><token pos="aq0msp">denominado</token><token pos="ncms000">mal</token><token pos="sps00">de</token><mention concept_ref="c_8"><token pos="da0fp0">las</token><token pos="ncfp000">vacas</token></mention><token pos="aq0fp0">locas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Calendric_unit" head="meses">
+				<argument type="Count" dependent="40" /></frame>
+			<main_frame type="Capability" head="puede">
+				<argument type="Entity" dependent="carne de vacuno británica" />
+				<argument type="Event" dependent="en los países de la Unión Europea desde" /></main_frame>
+			<main_frame type="Cause_to_end" head="levantarse" />
+			<frame type="Exporting" head="exportaciones">
+				<argument type="Importing_area" dependent="por un largo periodo de tiempo" /></frame>
+			<frame type="Frequency" head="periodo">
+				<argument type="Event" dependent="de tiempo" /></frame>
+			<frame type="Medical_conditions" head="de vacuno">
+				<argument type="Symptom" dependent="vacas" /></frame>
+			<frame type="Origin" head="Europea">
+				<argument type="Entity" dependent="Unión" /></frame>
+			<frame type="Political_locales" head="países">
+				<argument type="Container_possessor" dependent="de la Unión Europea" /></frame>
+			<frame type="Process_continue" head="seguir">
+				<argument type="Event" dependent="su consumo" />
+				<argument type="Event" dependent="exportaciones por un largo periodo de tiempo" /></frame>
+			<frame type="Response" head="respuesta">
+				<argument type="Trigger" dependent="a la detección del denominado mal de las vacas locas" /></frame>
+			<frame type="Time_vector" head="ayer">
+				<argument type="Distance" dependent="40 meses" />
+				<argument type="Landmark_event" dependent="por la Comisión Europea como respuesta a la detección del denominado mal de las vacas locas" /></frame>
+			<frame type="Time_vector" head="desde">
+				<argument type="Event" dependent="La carne de vacuno británica puede volver a comercializarse en los países de la Unión" />
+				<argument type="Landmark_event" dependent="ayer" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 De entrada, Alemania ha retrasado el levantamiento de la prohibición hasta finales de septiembre y, en Francia, el ministro de Agricultura, Jean Glavany, ya ha advertido de que tomará medidas "para tener informados a los consumidores y decirles qué carne están comprando".
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np00000">Alemania</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_6" concept_ref3="c_1" concept_ref4="c_15">
+			<token pos="sps00">De</token><token pos="ncmp000">entrada</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">retrasado</token><token pos="da0ms0">el</token><token pos="ncms000">levantamiento</token><token pos="sps00">de</token><mention concept_ref="c_6"><token pos="da0fs0">la</token><token pos="ncfs000">prohibición</token></mention><token pos="sps00">hasta</token><mention concept_ref="c_1"><token pos="ncmp000">finales</token></mention><token pos="sps00">de</token><token pos="ncms000">septiembre</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_ongoing" head="tener">
+				<argument type="Agent" dependent="ha" />
+				<argument type="Activity" dependent="informados a los consumidores" /></frame>
+			<frame type="Cause_to_end" head="levantamiento" />
+			<frame type="Commerce_buy" head="comprando">
+				<argument type="Buyer" dependent="están" /></frame>
+			<main_frame type="Hindering" head="retrasado">
+				<argument type="Hindrance" dependent="Alemania" /></main_frame>
+			<frame type="Intentionally_act" head="medidas">
+				<argument type="Agent" dependent="ha" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="Francia" /></frame>
+			<frame type="Process_end" head="finales">
+				<argument type="Process" dependent="de septiembre y , en Francia" /></frame>
+			<frame type="Prohibiting_or_licensing" head="prohibición" />
+			<frame type="Taking_time" head="tener">
+				<argument type="Agent" dependent="ha" />
+				<argument type="Time_length" dependent="medidas" />
+				<argument type="Activity" dependent="quot ; para tener informados a los consumidores y decirles qué carne están comprando " /></frame>
+			<frame type="Telling" head="decirles">
+				<argument type="Speaker" dependent="ha" />
+				<argument type="Addressee" dependent="los" />
+				<argument type="Message" dependent="qué carne están comprando" /></frame>
+			<frame type="Telling" head="informados">
+				<argument type="Speaker" dependent="consumidores" />
+				<argument type="Addressee" dependent="los" />
+				<argument type="Message" dependent="qué carne están comprando" /></frame>
+			<frame type="Temporal_subregion" head="advertido de" />
+			<frame type="Warning" head="advertido de">
+				<argument type="Speaker" dependent="Francia , el ministro de Agricultura , Jean Glavany ," />
+				<argument type="Message" dependent="ha advertido de que tomará medidas  quot ; para tener informados a los consumidores y decirles qué carne están comprando " /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El secretario de Estado de Agricultura británico, Nick Brown, admitió ayer que "habrá que luchar para tener éxito en los mercados y el Gobierno sabe que no será fácil".
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">el</token><token pos="np00000">Gobierno</token>
+		</theme>
+		<rheme concept_ref1="c_10">
+			<token pos="vmip3s0">sabe</token><token pos="cs">que</token><mention concept_ref="c_10"><token pos="rn">no</token><token pos="vsif3s0">será</token><token pos="aq0cs0">fácil</token></mention><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El secretario de Estado de Agricultura británico , Nick Brown , " />
+			<main_frame type="Awareness" head="sabe">
+				<argument type="Cognizer" dependent="el Gobierno" />
+				<argument type="Content" dependent="no será fácil" /></main_frame>
+			<frame type="Calendric_unit" head="ayer que" />
+			<frame type="Difficulty" head="fácil">
+				<argument type="Experiencer" dependent="el" />
+				<argument type="Activity" dependent="," /></frame>
+			<frame type="Hostile_encounter" head="luchar">
+				<argument type="Side_1" dependent="los" />
+				<argument type="Issue" dependent="tener éxito en los mercados" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="habrá que luchar para tener éxito" />
+				<argument type="Ground" dependent="mercados" /></frame>
+			<frame type="Leadership" head="Gobierno" />
+			<frame type="Possession" head="tener">
+				<argument type="Owner" dependent="los" />
+				<argument type="Possession" dependent="luchar para tener éxito en los mercados" /></frame>
+			<frame type="Reveal_secret" head="admitió">
+				<argument type="Speaker" dependent="secretario de Estado de Agricultura británico , Nick Brown" />
+				<argument type="Time" dependent="ayer que" />
+				<argument type="Information" dependent="quot ; habrá que luchar para tener éxito en los mercados y el Gobierno sabe que no será fácil" /></frame>
+			<frame type="Success_or_failure" head="éxito">
+				<argument type="Agent" dependent="los" />
+				<argument type="Agent" dependent="en los mercados y el Gobierno" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Las manifestaciones de Brown remiten a la experiencia de Irlanda del Norte.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fp0">Las</token><token pos="ncfp000">manifestaciones</token><token pos="sps00">de</token><token pos="np00000">Brown</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_0">
+			<token pos="vmip3p0">remiten</token><token pos="sps00">a</token><mention concept_ref="c_2"><token pos="da0fs0">la</token><token pos="ncfs000">experiencia</token></mention><token pos="sps00">de</token><mention concept_ref="c_0"><token pos="ncms000">Irlanda</token><token pos="spcms">del</token><token pos="ncms000">Norte</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Expertise" head="experiencia">
+				<argument type="Protagonist" dependent="Irlanda del Norte" /></frame>
+			<frame type="Reasoning" head="manifestaciones de">
+				<argument type="Arguer" dependent="Brown" /></frame>
+			<frame type="Referring_by_name" head="del">
+				<argument type="Entity" dependent="manifestaciones de Brown" />
+				<argument type="Descriptor" dependent="a la experiencia de Irlanda del Norte" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La provincia británica fue autorizada a exportar carne de vacuno hace más de un año, en junio de 1998, porque la epidemia causó allí menos estragos, pero sus ventas siguen siendo casi nulas.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0fs0">La</token><token pos="ncfs000">provincia</token><token pos="aq0fs0">británica</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_3" concept_ref4="c_9" concept_ref5="c_11" concept_ref6="c_12" concept_ref7="c_14">
+			<token pos="vsis3s0">fue</token><token pos="vmp00sf">autorizada</token><mention concept_ref="c_9"><token pos="sps00">a</token><token pos="vmn0000">exportar</token><token pos="ncfs000">carne</token><token pos="sps00">de</token><token pos="ncms000">vacuno</token><token pos="vmip3s0">hace</token><token pos="rg">más</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">año</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="ncfs000">junio</token><token pos="spcms">de</token><token pos="zp">1998</token></mention><token pos="fc">,</token><token pos="cs">porque</token><mention concept_ref="c_1"><token pos="da0fs0">la</token><token pos="ncfs000">epidemia</token></mention><token pos="vmis3s0">causó</token><token pos="rg">allí</token><token pos="rg">menos</token><token pos="ncmp000">estragos</token><token pos="fc">,</token><token pos="cc">pero</token><token pos="dp3cp0">sus</token><token pos="ncfp000">ventas</token><token pos="vmip3p0">siguen</token><token pos="vsg0000">siendo</token><token pos="rg">casi</token><token pos="aq0fp0">nulas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="año">
+				<argument type="Count" dependent="a" /></frame>
+			<main_frame type="Causation" head="causó">
+				<argument type="Effect" dependent="menos estragos" /></main_frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="provincia británica fue autorizada a exportar carne de vacuno hace más de un año , en junio de 1998 ," />
+				<argument type="Cause" dependent="epidemia causó allí menos estragos" /></frame>
+			<frame type="Commerce_sell" head="ventas">
+				<argument type="Seller" dependent="la" /></frame>
+			<main_frame type="Damaging" head="causó" />
+			<main_frame type="Deny_or_grant_permission" head="autorizada">
+				<argument type="Action" dependent="provincia británica" />
+				<argument type="Action" dependent="a exportar carne de vacuno hace más de un año , en junio de 1998" /></main_frame>
+			<main_frame type="Exporting" head="exportar">
+				<argument type="Exporter" dependent="provincia británica" />
+				<argument type="Goods" dependent="carne de vacuno hace más de un año" />
+				<argument type="Time" dependent="de 1998" /></main_frame>
+			<frame type="Increment" head="más" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="provincia británica fue autorizada a exportar carne de vacuno hace más de un año ," />
+				<argument type="Ground" dependent="1998" /></frame>
+			<frame type="Locative_relation" head="allí">
+				<argument type="Figure" dependent="la epidemia" />
+				<argument type="Ground" dependent="causó allí menos estragos" /></frame>
+			<frame type="Political_locales" head="provincia">
+				<argument type="Name" dependent="británica" /></frame>
+			<main_frame type="State_continue" head="siguen">
+				<argument type="Entity" dependent="sus ventas" />
+				<argument type="State" dependent="siendo casi nulas" /></main_frame>
+			<main_frame type="Time_vector" head="fue">
+				<argument type="Distance" dependent="un año" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La Comisión Europea, además, no ha levantado el embargo para todo el ganado vacuno.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0fs0">La</token><token pos="np00000">Comisión</token><token pos="aq0ms0">Europea</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_7" concept_ref3="c_9">
+			<token pos="rg">además</token><token pos="rn">no</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">levantado</token><mention concept_ref="c_7"><token pos="da0ms0">el</token><token pos="ncms000">embargo</token></mention><token pos="sps00">para</token><token pos="di0ms0">todo</token><token pos="da0ms0">el</token><token pos="ncms000">ganado</token><mention concept_ref="c_0"><token pos="aq0ms0">vacuno</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Cause_to_end" head="levantado">
+				<argument type="State" dependent="el embargo para todo el ganado" /></main_frame>
+			<frame type="Origin" head="Europea">
+				<argument type="Entity" dependent="Comisión" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 De las medidas liberalizadoras únicamente se beneficia la carne deshuesada de los animales mayores de seis meses y menores de 30, y sólo en aquellos casos en que existan pruebas de que la madre no ha sufrido el mal de las vacas locas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Animals" head="animales" />
+			<frame type="Calendric_unit" head="meses">
+				<argument type="Count" dependent="30" /></frame>
+			<frame type="Cardinal_numbers" head="seis">
+				<argument type="Unit" dependent="meses" /></frame>
+			<frame type="Catastrophe" head="sufrido">
+				<argument type="Patient" dependent="la madre" />
+				<argument type="Undesirable_event" dependent="de las vacas locas" /></frame>
+			<frame type="Emptying" head="deshuesada de">
+				<argument type="Theme" dependent="carne" /></frame>
+			<frame type="Evidence" head="pruebas">
+				<argument type="Proposition" dependent="que la madre no ha sufrido el mal de las vacas locas" /></frame>
+			<frame type="Instance" head="casos" />
+			<frame type="Kinship" head="madre" />
+			<frame type="Locative_relation" head="en que">
+				<argument type="Figure" dependent="sólo en aquellos casos" />
+				<argument type="Figure" dependent="existan pruebas de que la madre no ha sufrido el mal de las vacas locas" /></frame>
+			<frame type="Locative_relation" head="existan">
+				<argument type="Figure" dependent="sólo en aquellos casos en que" />
+				<argument type="Ground" dependent="existan pruebas de que la madre no ha sufrido el mal de las vacas locas" /></frame>
+			<frame type="Quantified_mass" head="medidas" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La prohibición impuesta a las exportaciones de ganado vivo continúa vigente.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0fs0">La</token><token pos="ncfs000">prohibición</token><token pos="aq0fsp">impuesta</token><token pos="sps00">a</token><token pos="da0fp0">las</token><token pos="ncfp000">exportaciones</token><token pos="sps00">de</token><token pos="ncms000">ganado</token><token pos="aq0ms0">vivo</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">continúa</token><token pos="aq0cs0">vigente</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Exporting" head="exportaciones">
+				<argument type="Goods" dependent="de ganado" />
+				<argument type="Importing_area" dependent="impuesta" /></frame>
+			<frame type="Military" head="impuesta" />
+			<frame type="Prohibiting_or_licensing" head="prohibición">
+				<argument type="State_of_affairs" dependent="a las exportaciones de ganado vivo continúa vigente" /></frame>
+			<frame type="Residence" head="vivo">
+				<argument type="Location" dependent="exportaciones de ganado" /></frame>
+			<main_frame type="State_continue" head="continúa">
+				<argument type="State" dependent="prohibición impuesta a las exportaciones de ganado vivo" />
+				<argument type="State" dependent="impuesta" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El embargo fue decretado tras la detección de la enfermedad, denominada encefalopatía espongiforme bovina, que el ganado habría contraído al ingerir harinas elaboradas con vísceras de corderos aquejados de una enfermedad cerebral.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0ms0">El</token><token pos="ncms000">embargo</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_1" concept_ref3="c_0" concept_ref4="c_15">
+			<token pos="vsis3s0">fue</token><token pos="vmp00sm">decretado</token><token pos="sps00">tras</token><token pos="da0fs0">la</token><token pos="ncfs000">detección</token><token pos="sps00">de</token><mention concept_ref="c_1"><token pos="da0fs0">la</token><token pos="ncfs000">enfermedad</token></mention><token pos="fc">,</token><token pos="aq0fsp">denominada</token><mention concept_ref="c_0"><token pos="ncfs000">encefalopatía</token></mention><token pos="ncms000">espongiforme</token><token pos="aq0fs0">bovina</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Catastrophe" head="enfermedad">
+				<argument type="Time" dependent="de" />
+				<argument type="Undesirable_event" dependent="contraído al ingerir harinas elaboradas con vísceras de corderos" />
+				<argument type="Undesirable_event" dependent="enfermedad cerebral" /></frame>
+			<main_frame type="Come_down_with" head="decretado">
+				<argument type="Disease" dependent="que el ganado" />
+				<argument type="Source" dependent="al ingerir harinas elaboradas con vísceras de corderos aquejados de una enfermedad cerebral" /></main_frame>
+			<frame type="Referring_by_name" head="denominada">
+				<argument type="Name" dependent="encefalopatía espongiforme bovina" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El Gobierno británico reconoció que el mal de las vacas locas podía afectar a la salud humana.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="da0ms0">el</token><token pos="ncms000">mal</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">vacas</token><token pos="aq0fp0">locas</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_9" concept_ref3="c_13">
+			<token pos="vmii3s0">podía</token><mention concept_ref="c_9"><token pos="vmn0000">afectar</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">salud</token><token pos="aq0fs0">humana</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El Gobierno británico " />
+			<frame type="Communication_response" head="reconoció">
+				<argument type="Speaker" dependent="Gobierno británico" />
+				<argument type="Trigger" dependent="mal de las vacas locas podía afectar a la salud humana" /></frame>
+			<frame type="Medical_conditions" head="mal de">
+				<argument type="Symptom" dependent="vacas locas" /></frame>
+			<main_frame type="Objective_influence" head="afectar">
+				<argument type="Influencing_entity" dependent="mal de las vacas locas" />
+				<argument type="Dependent_entity" dependent="salud humana" /></main_frame>
+			<main_frame type="Possibility" head="podía">
+				<argument type="Possible_event" dependent="mal de las vacas locas" />
+				<argument type="Possible_event" dependent="afectar a la salud humana" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

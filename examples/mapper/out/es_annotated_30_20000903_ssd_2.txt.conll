@@ -1,0 +1,5 @@
+{   ('Appellations', 'presidente'): [],
+    ('Communication_response', 'replica'): [('Speaker', 'Gobierno'), ('Trigger', 'al presidente que su mensaje busca el enfrentamiento')],
+    ('Hostile_encounter', 'enfrentamiento'): [('Side_2', 'su mensaje')],
+    ('Leadership', 'Gobierno'): [('Governed', 'vasco')],
+    ('Seeking_to_achieve', 'busca'): [('Agent', 'su'), ('State_of_affairs', 'mensaje'), ('Sought_entity', 'enfrentamiento')]}

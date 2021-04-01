@@ -1,0 +1,12 @@
+{   ('Being_at_risk', 'de seguridad'): [('Asset', 'palestinas')],
+    ('Body_parts', 'armado'): [('Body_part', 'incidente')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Calendric_unit', 'madrugada'): [('Relative_time', 'ayer')],
+    ('Catastrophe', 'incidente'): [],
+    ('Causation', 'fuerzas'): [('Cause', 'de seguridad palestinas')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'armado con tropas israelís'), ('Ground', 'dos miembros de las fuerzas de seguridad palestinas')],
+    ('Killing', 'murieron'): [('Victim', 'dos miembros de las fuerzas de seguridad palestinas'), ('Time', 'en situación confusa')],
+    ('Locative_relation', 'en'): [   ('Time', 'madrugada de ayer'),
+                                     ('Ground', 'se produjo en'),
+                                     ('Figure', 'incidente armado con tropas israelís en el que murieron dos miembros de las fuerzas de seguridad palestinas en situación confusa')],
+    ('Membership', 'miembros'): [('Group', 'fuerzas de seguridad palestinas')]}

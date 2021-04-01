@@ -1,0 +1,5 @@
+{   ('Arriving', 'volver'): [('Goal', 'a sus puestos de trabajo')],
+    ('Being_employed', 'trabajo'): [('Employee', 'sus')],
+    ('Deciding', 'decidieron'): [('Time', 'Al final'), ('Decision', 'decidieron por unanimidad'), ('Decision', 'volver a sus puestos de trabajo')],
+    ('Interior_profile_relation', 'por'): [('Ground', 'final'), ('Figure', 'decidieron por unanimidad volver a sus puestos de trabajo')],
+    ('Process_end', 'final'): []}

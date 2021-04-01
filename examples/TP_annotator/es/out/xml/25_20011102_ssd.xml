@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="25_20011102_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Aznar</concept>
+		<concept id="c_1">Los dos mandatarios , que comparecieron ante la prensa tras un encuentro en el palacio de la Moncloa ,</concept>
+		<concept id="c_2">Mubarak , que agradeció la invitación de su quot; hermano quot; Aznar para visitar España ,</concept>
+		<concept id="c_3">la falta de una salida al conflicto</concept>
+		<concept id="c_4">El rais egipcio y el presidente español</concept>
+		<concept id="c_5">su tierra</concept>
+		<concept id="c_6">La desesperación</concept>
+		<concept id="c_7">todos los actos de violencia</concept>
+		<concept id="c_8">violencia israelí</concept>
+		<concept id="c_9">de que</concept>
+		<concept id="c_10">a Mallorca</concept>
+		<concept id="c_11">el terreno</concept>
+		<concept id="c_12">Estado</concept>
+		<concept id="c_13">mismo tiempo</concept>
+		<concept id="c_14">alas</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Reclamaron ayer una acción conjunta de Estados Unidos, Rusia, la Unión Europea y el mundo árabe para buscar una salida al conflicto de Oriente Próximo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Hostile_encounter" head="conflicto">
+				<argument type="Manner" dependent="de Oriente" /></frame>
+			<frame type="Intentionally_act" head="acción">
+				<argument type="Domain" dependent="conjunta" />
+				<argument type="Agent" dependent="de Estados Unidos" /></frame>
+			<frame type="Means" head="para">
+				<argument type="Purpose" dependent="salida al conflicto de Oriente" /></frame>
+			<frame type="Political_locales" head="mundo">
+				<argument type="Name" dependent="árabe" /></frame>
+			<frame type="Referring_by_name" head="el">
+				<argument type="Time" dependent="ayer" />
+				<argument type="Entity" dependent="el" />
+				<argument type="Name" dependent="acción conjunta de Estados Unidos , Rusia , la Unión Europea y el mundo árabe para buscar" /></frame>
+			<frame type="Seeking_to_achieve" head="buscar">
+				<argument type="Agent" dependent="Rusia" />
+				<argument type="Agent" dependent="la Unión Europea y el mundo árabe" />
+				<argument type="State_of_affairs" dependent="una salida al conflicto de Oriente" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Aznar calificó de "profundamente indeseable" la situación en la zona y advirtió de que cualquier esfuerzo de pacificación será inútil si no existe la voluntad de las partes para alcanzar un acuerdo.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Aznar</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_3" concept_ref3="c_10" concept_ref4="c_11">
+			<token pos="vmis3s0">calificó</token><token pos="sps00">de</token><token pos="fe">quot;</token><token pos="rg">profundamente</token><token pos="aq0cs0">indeseable</token><token pos="fe">quot;</token><mention concept_ref="c_3"><token pos="da0fs0">la</token><token pos="ncfs000">situación</token></mention><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">zona</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partes" />
+			<frame type="Arriving" head="alcanzar">
+				<argument type="Theme" dependent="partes" />
+				<argument type="Goal" dependent="un acuerdo" /></frame>
+			<frame type="Attempt" head="esfuerzo">
+				<argument type="Goal" dependent="pacificación" /></frame>
+			<frame type="Communicate_categorization" head="quot">
+				<argument type="Speaker" dependent="Aznar" />
+				<argument type="Item" dependent="la situación" />
+				<argument type="Category" dependent="en la zona" /></frame>
+			<frame type="Locale" head="zona" />
+			<frame type="Locative_relation" head="existe">
+				<argument type="Ground" dependent="no existe la voluntad de las partes para alcanzar un acuerdo" /></frame>
+			<frame type="Make_agreement_on_action" head="un acuerdo" />
+			<frame type="Part_whole" head="partes">
+				<argument type="Whole" dependent="de las partes" /></frame>
+			<frame type="Warning" head="advirtió">
+				<argument type="Message" dependent="que cualquier esfuerzo de pacificación será inútil si no existe la voluntad de las partes para alcanzar un" /></frame>
+			<frame type="Willingness" head="voluntad">
+				<argument type="Cognizer" dependent="de las partes" />
+				<argument type="Activity" dependent="alcanzar un acuerdo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Mubarak, por su parte, avisó de que la "violencia israelí" puede abonar el terreno al terrorismo en la región.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Mubarak</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_0" concept_ref3="c_6" concept_ref4="c_5" concept_ref5="c_8" concept_ref6="c_9" concept_ref7="c_10" concept_ref8="c_11">
+			<token pos="vmis3s0">avisó</token><mention concept_ref="c_9"><token pos="sps00">de</token><token pos="cs">que</token></mention><token pos="da0fs0">la</token><token pos="fe">quot;</token><mention concept_ref="c_6"><token pos="ncfs000">violencia</token></mention><token pos="aq0cs0">israelí</token><token pos="fe">quot;</token><token pos="vmip3s0">puede</token><token pos="vmn0000">abonar</token><mention concept_ref="c_11"><token pos="da0ms0">el</token><token pos="ncms000">terreno</token></mention><token pos="spcms">al</token><mention concept_ref="c_5"><token pos="ncms000">terrorismo</token></mention><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">región</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Capability" head="puede">
+				<argument type="Entity" dependent="violencia israelí" />
+				<argument type="Event" dependent="terreno al terrorismo en la región" /></main_frame>
+			<frame type="Giving" head="su">
+				<argument type="Theme" dependent="violencia israelí" />
+				<argument type="Theme" dependent="al terrorismo" />
+				<argument type="Donor" dependent="en la región" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="terrorismo" />
+				<argument type="Ground" dependent="la región" /></frame>
+			<frame type="Locale" head="región" />
+			<frame type="Part_whole" head="parte">
+				<argument type="Whole" dependent="su" /></frame>
+			<frame type="Terrorism" head="terrorismo">
+				<argument type="Place" dependent="en la región" /></frame>
+			<main_frame type="Warning" head="avisó">
+				<argument type="Message" dependent="; violencia israelí  quot ; puede abonar el terreno al terrorismo en la región" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los dos mandatarios, que comparecieron ante la prensa tras un encuentro en el palacio de la Moncloa, coincidieron en la necesidad de que se consolide la creación del Estado palestino y de que se respete al mismo tiempo el derecho de Israel a existir en un marco de seguridad.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0mp0">Los</token><token pos="dn0cp0">dos</token><token pos="ncmp000">mandatarios</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vmis3p0">comparecieron</token><token pos="sps00">ante</token><token pos="da0fs0">la</token><token pos="ncfs000">prensa</token><token pos="sps00">tras</token><token pos="di0ms0">un</token><token pos="ncms000">encuentro</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">palacio</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Moncloa</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_5" concept_ref3="c_0" concept_ref4="c_8" concept_ref5="c_9" concept_ref6="c_10" concept_ref7="c_11" concept_ref8="c_12" concept_ref9="c_13">
+			<token pos="vmis3p0">coincidieron</token><token pos="sps00">en</token><mention concept_ref="c_6"><token pos="da0fs0">la</token><token pos="ncfs000">necesidad</token></mention><token pos="sps00">de</token><token pos="cs">que</token><token pos="p0000000">se</token><token pos="vmsp3s0">consolide</token><mention concept_ref="c_8"><token pos="da0fs0">la</token><token pos="ncfs000">creación</token><token pos="spcms">del</token><token pos="np00000">Estado</token><token pos="aq0ms0">palestino</token></mention><token pos="cc">y</token><token pos="sps00">de</token><token pos="cs">que</token><token pos="p0000000">se</token><token pos="vmsp3s0">respete</token><token pos="spcms">al</token><mention concept_ref="c_13"><token pos="di0ms0">mismo</token><token pos="ncms000">tiempo</token></mention><mention concept_ref="c_11"><token pos="da0ms0">el</token><token pos="ncms000">derecho</token></mention><token pos="sps00">de</token><mention concept_ref="c_5"><token pos="np00000">Israel</token></mention><token pos="sps00">a</token><token pos="vmn0000">existir</token><token pos="sps00">en</token><mention concept_ref="c_0"><token pos="di0ms0">un</token><token pos="ncms000">marco</token></mention><token pos="sps00">de</token><token pos="ncfs000">seguridad</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_at_risk" head="de seguridad" />
+			<frame type="Buildings" head="palacio">
+				<argument type="Name" dependent="la Moncloa" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="mandatarios" /></frame>
+			<main_frame type="Cause_to_amalgamate" head="consolide">
+				<argument type="Parts" dependent="la creación del Estado palestino" /></main_frame>
+			<frame type="Discussion" head="un encuentro">
+				<argument type="Place" dependent="en el palacio de la Moncloa" /></frame>
+			<main_frame type="Existence" head="existir">
+				<argument type="Place" dependent="en un marco de seguridad" /></main_frame>
+			<main_frame type="Give_impression" head="comparecieron">
+				<argument type="Phenomenon" dependent="Los dos mandatarios" />
+				<argument type="Phenomenon" dependent="de que" /></main_frame>
+			<frame type="Intentionally_create" head="creación">
+				<argument type="Created_entity" dependent="del Estado palestino" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="un encuentro" />
+				<argument type="Ground" dependent="el palacio de la Moncloa" /></frame>
+			<frame type="Leadership" head="Estado">
+				<argument type="Governed" dependent="palestino" /></frame>
+			<frame type="Leadership" head="mandatarios" />
+			<main_frame type="Make_agreement_on_action" head="coincidieron">
+				<argument type="Obligation" dependent="necesidad de que se consolide la creación del Estado palestino y de que se respete al mismo tiempo el derecho de Israel a existir en un marco de seguridad" /></main_frame>
+			<frame type="Needing" head="necesidad de">
+				<argument type="Dependent" dependent="consolide la creación del Estado palestino y de que se respete al mismo tiempo el derecho de Israel a existir en un marco de seguridad" /></frame>
+			<frame type="Relative_time" head="ante la">
+				<argument type="Focal_occasion" dependent="Los dos mandatarios , que comparecieron ante la prensa" />
+				<argument type="Landmark_occasion" dependent="un encuentro en el palacio de la Moncloa" />
+				<argument type="Focal_occasion" dependent="en un marco de seguridad" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="Los dos mandatarios , que comparecieron ante la prensa tras un encuentro en el palacio de la Moncloa" />
+				<argument type="Figure" dependent="necesidad de que se consolide la creación del Estado palestino y de que se respete al mismo tiempo el derecho de Israel a existir en un marco de seguridad" />
+				<argument type="Ground" dependent="marco de" /></frame>
+			<frame type="Time_vector" head="ante">
+				<argument type="Event" dependent="Los dos mandatarios , que comparecieron" />
+				<argument type="Landmark_event" dependent="la prensa tras un encuentro en el palacio de la Moncloa" />
+				<argument type="Direction" dependent="necesidad de que se consolide la creación del Estado palestino y de que se respete al mismo tiempo el derecho de Israel a existir en un" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Mubarak fue recibido posteriormente por el rey Juan Carlos en el palacio de la Zarzuela antes de desplazarse a Mallorca, donde participa hoy y mañana en la cumbre euromediterránea de Formentor.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Mubarak</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_4" concept_ref3="c_8" concept_ref4="c_10" concept_ref5="c_11">
+			<token pos="vsis3s0">fue</token><token pos="vmp00sm">recibido</token><token pos="rg">posteriormente</token><mention concept_ref="c_8"><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="ncms000">rey</token><token pos="ncms000">Juan</token><token pos="np00000">Carlos</token></mention><token pos="sps00">en</token><mention concept_ref="c_4"><token pos="da0ms0">el</token><token pos="ncms000">palacio</token></mention><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Zarzuela</token><token pos="rg">antes</token><token pos="sps00">de</token><token pos="vmn0000">desplazarse</token><mention concept_ref="c_10"><token pos="sps00">a</token><token pos="np00000">Mallorca</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="palacio">
+				<argument type="Name" dependent="de la Zarzuela" /></frame>
+			<frame type="Calendric_unit" head="hoy" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="participa hoy y mañana en la" />
+				<argument type="Ground" dependent="la cumbre euromediterránea de" /></frame>
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="participa hoy y mañana en la cumbre euromediterránea de" /></frame>
+			<main_frame type="Motion" head="desplazarse">
+				<argument type="Goal" dependent="a Mallorca" /></main_frame>
+			<frame type="Participation" head="participa">
+				<argument type="Participant_1" dependent="el" /></frame>
+			<main_frame type="Receiving" head="recibido">
+				<argument type="Theme" dependent="Mubarak" />
+				<argument type="Recipient" dependent="por el rey Juan Carlos" />
+				<argument type="Donor" dependent="en el palacio de la Zarzuela" /></main_frame>
+			<frame type="Temporal_subregion" head="posteriormente">
+				<argument type="Time_period" dependent="recibido posteriormente por el rey Juan Carlos" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Event" dependent="Mubarak fue recibido posteriormente por el rey Juan Carlos en el palacio de la Zarzuela" />
+				<argument type="Landmark_event" dependent="de desplazarse a Mallorca" />
+				<argument type="Landmark_event" dependent=", donde participa hoy y mañana en la cumbre euromediterránea de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "GRAVES REPERCUSIONES".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Mubarak, que agradeció la invitación de su "hermano" Aznar para visitar España, advirtió de que dejar por mucho tiempo el proceso de paz en su actual estado de estancamiento pude tener "gravísimas repercusiones" y "acarrear peligros para toda la región que pueden repercutir en otras regiones".
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="np00000">Mubarak</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vmis3s0">agradeció</token><token pos="da0fs0">la</token><token pos="ncfs000">invitación</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="fe">quot;</token><token pos="ncms000">hermano</token><token pos="fe">quot;</token><token pos="np00000">Aznar</token><token pos="sps00">para</token><token pos="vmn0000">visitar</token><token pos="np00000">España</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_6" concept_ref3="c_0" concept_ref4="c_5" concept_ref5="c_4" concept_ref6="c_8" concept_ref7="c_9" concept_ref8="c_10" concept_ref9="c_11" concept_ref10="c_12" concept_ref11="c_13">
+			<token pos="vmis3s0">advirtió</token><mention concept_ref="c_9"><token pos="sps00">de</token><token pos="cs">que</token></mention><token pos="vmn0000">dejar</token><token pos="sps00">por</token><token pos="di0ms0">mucho</token><token pos="ncms000">tiempo</token><mention concept_ref="c_11"><token pos="da0ms0">el</token><token pos="ncms000">proceso</token></mention><token pos="sps00">de</token><mention concept_ref="c_0"><token pos="ncfs000">paz</token></mention><token pos="sps00">en</token><token pos="dp3cs0">su</token><token pos="aq0cs0">actual</token><token pos="ncms000">estado</token><token pos="sps00">de</token><token pos="ncms000">estancamiento</token><token pos="vmis1s0">pude</token><token pos="vmn0000">tener</token><token pos="fe">quot;</token><mention concept_ref="c_8"><token pos="aq0fp0">gravísimas</token><token pos="ncfp000">repercusiones</token></mention><token pos="fe">quot;</token><token pos="cc">y</token><token pos="fe">quot;</token><token pos="vmn0000">acarrear</token><token pos="ncmp000">peligros</token><token pos="sps00">para</token><token pos="di0fs0">toda</token><mention concept_ref="c_10"><token pos="da0fs0">la</token></mention><token pos="ncfs000">región</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Arriving" head="visitar">
+				<argument type="Goal" dependent="pude" /></main_frame>
+			<main_frame type="Bringing" head="tener">
+				<argument type="Carrier" dependent="gravísimas repercusiones" />
+				<argument type="Theme" dependent="peligros" />
+				<argument type="Goal" dependent="para toda la región" /></main_frame>
+			<main_frame type="Departing" head="dejar">
+				<argument type="Theme" dependent="mucho tiempo el proceso de paz en su actual estado de estancamiento" /></main_frame>
+			<frame type="Duration_description" head="mucho tiempo">
+				<argument type="Period" dependent="tiempo" /></frame>
+			<frame type="Increment" head="otras">
+				<argument type="Class" dependent="regiones" /></frame>
+			<main_frame type="Judgment" head="agradeció">
+				<argument type="Cognizer" dependent="de que" />
+				<argument type="Evaluee" dependent="la invitación de su  quot ; hermano  quot ; Aznar para visitar" /></main_frame>
+			<frame type="Kinship" head="hermano" />
+			<frame type="Leadership" head="estado">
+				<argument type="Leader" dependent="estado de estancamiento" /></frame>
+			<frame type="Locale" head="regiones" />
+			<frame type="Locale" head="región" />
+			<frame type="Process" head="proceso">
+				<argument type="Process" dependent="paz" />
+				<argument type="Process" dependent="en su actual estado de estancamiento" /></frame>
+			<frame type="Ranked_expectation" head="toda">
+				<argument type="Entity" dependent="región" /></frame>
+			<frame type="Request" head="invitación">
+				<argument type="Message" dependent="hermano  quot ; Aznar para visitar" /></frame>
+			<frame type="Risky_situation" head="peligros" />
+			<frame type="Temporal_collocation" head="actual">
+				<argument type="Trajector_entity" dependent="estado de estancamiento" /></frame>
+			<frame type="Warning" head="peligros">
+				<argument type="Message" dependent="que dejar por mucho tiempo el proceso de paz en su actual estado de estancamiento pude tener  quot ; gravísimas repercusiones" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Citó en concreto la posibilidad de que la falta de una salida al conflicto dé alas a las facciones radicales y contribuya a que se produzca un incremento en la acción de los terroristas.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fs0">la</token><token pos="ncfs000">falta</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="ncfs000">salida</token><token pos="spcms">al</token><token pos="ncms000">conflicto</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_10" concept_ref3="c_14">
+			<token pos="vmsp3s0">dé</token><mention concept_ref="c_14"><token pos="ncfp000">alas</token></mention><token pos="sps00">a</token><mention concept_ref="c_6"><token pos="da0fp0">las</token><token pos="ncfp000">facciones</token></mention><token pos="aq0cp0">radicales</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Adducing" head="dé">
+				<argument type="Speaker" dependent="se" />
+				<argument type="Specified_entity" dependent="posibilidad de que la falta de una salida al conflicto dé alas a las facciones radicales y contribuya a que se produzca un incremento en la acción de los terroristas" /></main_frame>
+			<frame type="Building_subparts" head="alas" />
+			<frame type="Change_position_on_a_scale" head="incremento">
+				<argument type="Attribute" dependent="en la acción de los terroristas" /></frame>
+			<frame type="Giving" head="se">
+				<argument type="Recipient" dependent="dé alas a las facciones radicales" /></frame>
+			<frame type="Hostile_encounter" head="conflicto" />
+			<frame type="Intentionally_act" head="acción">
+				<argument type="Act" dependent="terroristas" /></frame>
+			<frame type="Likelihood" head="posibilidad">
+				<argument type="Hypothetical_event" dependent="que la falta de una salida al conflicto dé alas a las facciones radicales y contribuya a que se produzca un incremento" /></frame>
+			<frame type="Possession" head="falta">
+				<argument type="Possession" dependent="un" /></frame>
+			<frame type="Terrorism" head="terroristas" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 DOS VISIONES DEL TERROR.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El rais egipcio y el presidente español expresaron dos visiones algo diferenciadas respecto al problema del terrorismo en el caso palestino.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0ms0">El</token><token pos="ncmn000">rais</token><token pos="aq0ms0">egipcio</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">presidente</token><token pos="aq0ms0">español</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_1" concept_ref3="c_6" concept_ref4="c_8" concept_ref5="c_11">
+			<token pos="vmis3p0">expresaron</token><mention concept_ref="c_8"><token pos="dn0cp0">dos</token><token pos="ncfp000">visiones</token><token pos="rg">algo</token><token pos="aq0fpp">diferenciadas</token><token pos="ncfp000">respecto</token><token pos="sps00">al</token><token pos="ncms000">problema</token><token pos="spcms">del</token><token pos="ncms000">terrorismo</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">caso</token><token pos="aq0ms0">palestino</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente">
+				<argument type="Name" dependent="español" /></frame>
+			<main_frame type="Expressing_publicly" head="expresaron">
+				<argument type="Communicator" dependent="rais egipcio y el presidente español" />
+				<argument type="Content" dependent="dos visiones algo diferenciadas respecto al problema del terrorismo en el caso palestino" /></main_frame>
+			<frame type="Opinion" head="visiones">
+				<argument type="Manner" dependent="diferenciadas" />
+				<argument type="Opinion" dependent="respecto al problema del terrorismo en el caso palestino" /></frame>
+			<frame type="Predicament" head="problema">
+				<argument type="Situation" dependent="terrorismo" />
+				<argument type="Time" dependent="en el caso palestino" /></frame>
+			<frame type="Terrorism" head="terrorismo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Estamos en contra de asesinatos de inocentes - - dijo Mubarak - - pero qué puede hacer un pueblo si su tierra está ocupada y se le niega el derecho de sentarse en una mesa de negociación".
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="dp3cs0">su</token><token pos="ncfs000">tierra</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3s0">está</token><token pos="aq0fsp">ocupada</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Affirm_or_deny" head="niega">
+				<argument type="Speaker" dependent="su tierra" />
+				<argument type="Message" dependent="el derecho de sentarse en una mesa de negociación" /></frame>
+			<frame type="Capability" head="puede">
+				<argument type="Entity" dependent="qué" />
+				<argument type="Event" dependent="un pueblo si su tierra está ocupada" /></frame>
+			<frame type="Guilt_or_innocence" head="inocentes" />
+			<frame type="Killing" head="asesinatos">
+				<argument type="Killer" dependent="Estamos" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="su tierra" />
+				<argument type="Ground" dependent="una mesa de negociación" /></frame>
+			<frame type="People" head="pueblo" />
+			<frame type="Residence" head="ocupada">
+				<argument type="Resident" dependent="su tierra" /></frame>
+			<frame type="Statement" head="dijo">
+				<argument type="Medium" dependent="inocentes - - dijo Mubarak" /></frame>
+			<frame type="Taking_sides" head="contra de">
+				<argument type="Cognizer" dependent="Estamos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "La desesperación lleva a la explosión, a los actos de violencia", concluyó.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0fs0">La</token><token pos="ncfs000">desesperación</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_6" concept_ref3="c_10" concept_ref4="c_12">
+			<token pos="vmip3s0">lleva</token><token pos="sps00">a</token><mention concept_ref="c_10"><token pos="da0fs0">la</token></mention><token pos="ncfs000">explosión</token><token pos="fc">,</token><token pos="sps00">a</token><mention concept_ref="c_12"><token pos="da0mp0">los</token><token pos="ncmp000">actos</token></mention><token pos="sps00">de</token><mention concept_ref="c_6"><token pos="ncfs000">violencia</token></mention><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_finish" head="concluyó">
+				<argument type="Agent" dependent="los" /></frame>
+			<frame type="Intentionally_act" head="actos">
+				<argument type="Act" dependent="de violencia  quot ; , concluyó" /></frame>
+			<frame type="Leadership" head="los">
+				<argument type="Governed" dependent="desesperación" />
+				<argument type="Governed" dependent="a la explosión" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Aznar tomó a continuación la palabra para dejar claro que él no distingue entre terroristas.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Aznar</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_10" concept_ref3="c_14">
+			<token pos="vmis3s0">tomó</token><mention concept_ref="c_10"><token pos="da0fs0">la</token></mention><token pos="ncfs000">palabra</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Architectural_part" head="la" />
+			<frame type="Differentiation" head="distingue">
+				<argument type="Cognizer" dependent="él" />
+				<argument type="Phenomena" dependent="entre terroristas" /></frame>
+			<main_frame type="Manufacturing" head="tomó">
+				<argument type="Product" dependent="la" /></main_frame>
+			<frame type="Removing" head="dejar claro">
+				<argument type="Agent" dependent="la" />
+				<argument type="Theme" dependent="que él no distingue entre terroristas" /></frame>
+			<frame type="Terrorism" head="terroristas" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Dijo que todos los actos de violencia son iguales y que quienes los cometen deben ser tratados "como lo que son: terroristas".
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="di0mp0">todos</token><token pos="da0mp0">los</token><token pos="ncmp000">actos</token><token pos="sps00">de</token><token pos="ncfs000">violencia</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3p0">son</token><token pos="aq0cp0">iguales</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Commitment" head="cometen">
+				<argument type="Speaker" dependent="quienes los" />
+				<argument type="Message" dependent="los" /></frame>
+			<frame type="Communicate_categorization" head="ser tratados">
+				<argument type="Item" dependent="quienes los cometen" /></frame>
+			<frame type="Identicality" head="iguales">
+				<argument type="Type" dependent="todos los actos de violencia" /></frame>
+			<frame type="Intentionally_act" head="actos">
+				<argument type="Act" dependent="de violencia" /></frame>
+			<frame type="Required_event" head="deben">
+				<argument type="Required_situation" dependent="quienes los cometen" />
+				<argument type="Required_situation" dependent="ser tratados  quot ; como lo que son" /></frame>
+			<frame type="Statement" head="quot">
+				<argument type="Speaker" dependent="son" />
+				<argument type="Message" dependent="que todos los actos de violencia son iguales y que quienes los cometen deben ser tratados  quot ;" /></frame>
+			<frame type="Terrorism" head="terroristas" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "No hay posible justificación para un ataque terrorista, ni por ideas, ni por proyectos, ni por situaciones", subrayó.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="ataque">
+				<argument type="Assailant" dependent="terrorista" /></frame>
+			<frame type="Likelihood" head="posible">
+				<argument type="Hypothetical_event" dependent="justificación para un ataque terrorista , ni por ideas , ni por proyectos , ni por situaciones  quot ;" /></frame>
+			<frame type="Project" head="proyectos" />
+			<frame type="Terrorism" head="terrorista" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Preguntado sobre qué iniciativas puede plantear la Unión Europea para desbloquear la situación en la zona, Aznar respondió que ya existen muchas iniciativas sobre la mesa, y citó en concreto los acuerdos de Camp David y del balneario egipcio de Taba.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Preguntado sobre qué iniciativas puede plantear la Unión Europea para desbloquear la situación en la zona , Aznar " />
+			<frame type="Adducing" head="citó">
+				<argument type="Specified_entity" dependent="muchas iniciativas sobre la mesa" />
+				<argument type="Specified_entity" dependent="en concreto los acuerdos de Camp David y del balneario egipcio" /></frame>
+			<frame type="Capability" head="puede">
+				<argument type="Entity" dependent="Preguntado sobre qué iniciativas puede plantear la Unión Europea" />
+				<argument type="Event" dependent="desbloquear la situación en la zona" /></frame>
+			<frame type="Communication_response" head="respondió">
+				<argument type="Trigger" dependent="existen muchas iniciativas sobre la mesa , y citó en concreto los acuerdos de Camp David y del balneario egipcio de Taba" /></frame>
+			<frame type="Idiosyncrasy" head="concreto los">
+				<argument type="Idiosyncrasy" dependent="los acuerdos de Camp David y del balneario egipcio" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="muchas iniciativas sobre la mesa" />
+				<argument type="Ground" dependent="en concreto los acuerdos de Camp David y del balneario egipcio" /></frame>
+			<frame type="Locale" head="zona" />
+			<frame type="Locative_relation" head="existen">
+				<argument type="Figure" dependent="que" />
+				<argument type="Ground" dependent="ya existen muchas iniciativas sobre la mesa" /></frame>
+			<frame type="Make_agreement_on_action" head="los acuerdos de">
+				<argument type="Party_2" dependent="Camp David y del balneario egipcio de" /></frame>
+			<frame type="Placing" head="citó">
+				<argument type="Theme" dependent="Preguntado sobre qué iniciativas puede plantear la Unión Europea" />
+				<argument type="Goal" dependent="desbloquear la situación en la zona" /></frame>
+			<frame type="Quantified_mass" head="muchas">
+				<argument type="Individuals" dependent="iniciativas" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="muchas iniciativas" />
+				<argument type="Ground" dependent="la mesa" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Se sabe lo que hay que hacer. El problema es que llega el momento de tomar decisiones, y ese momento es muy duro, y a veces no interesa tomar decisiones", dijo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="llega">
+				<argument type="Manner" dependent="momento de" />
+				<argument type="Goal" dependent="de tomar decisiones" /></frame>
+			<frame type="Awareness" head="sabe">
+				<argument type="Cognizer" dependent="lo" />
+				<argument type="Content" dependent=". El problema es que llega el momento de tomar decisiones , y ese momento es muy duro" /></frame>
+			<frame type="Deciding" head="decisiones" />
+			<frame type="Difficulty" head="duro">
+				<argument type="Time" dependent="muy" /></frame>
+			<frame type="Frequency" head="a veces">
+				<argument type="Event" dependent="no interesa tomar decisiones  quot ; , dijo" /></frame>
+			<frame type="Importance" head="interesa">
+				<argument type="Factor" dependent="lo" />
+				<argument type="Undertaking" dependent="de tomar decisiones" /></frame>
+			<frame type="Manufacturing" head="hacer">
+				<argument type="Producer" dependent="lo" />
+				<argument type="Product" dependent="decisiones" /></frame>
+			<frame type="Predicament" head="problema" />
+			<frame type="Statement" head="dijo">
+				<argument type="Speaker" dependent="lo" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

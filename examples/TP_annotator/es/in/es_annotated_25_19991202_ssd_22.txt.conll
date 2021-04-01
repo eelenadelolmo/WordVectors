@@ -1,0 +1,6 @@
+{   ('Businesses', 'empresa'): [],
+    ('Departing', 'dejado'): [('Path', 'o')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'No me corresponde hablar en'), ('Ground', 'público de la empresa')],
+    ('Response', 'reacción'): [],
+    ('Statement', 'hablar'): [('Speaker', 'me')],
+    ('Weapon', 'club'): []}

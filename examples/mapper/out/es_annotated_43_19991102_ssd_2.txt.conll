@@ -1,0 +1,6 @@
+{   ('Arriving', 'llegaron'): [('Theme', 'Los primeros pobladores'), ('Place', 'desde la Península Ibérica')],
+    ('Be_in_agreement_on_action', 'según'): [('Party_2', 'primeros pobladores llegaron desde la Península Ibérica'), ('Party_2', 'según dos expertos')],
+    ('Colonization', 'pobladores'): [('Descriptor', 'primeros')],
+    ('Expertise', 'expertos'): [],
+    ('Goal', 'según'): [('Landmark', 'dos expertos')],
+    ('Ordinal_numbers', 'primeros'): [('Type', 'pobladores')]}

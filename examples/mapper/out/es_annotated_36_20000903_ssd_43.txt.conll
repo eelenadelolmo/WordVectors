@@ -1,0 +1,9 @@
+{   ('Arriving', 'alcanzar'): [('Goal', 'alcanzar acuerdos factibles debe hacerlo con quien tiene responsabilidad de gobierno')],
+    ('Being_obligated', 'responsabilidad'): [('Responsible_party', 'quien'), ('Duty', 'de gobierno')],
+    ('Causation', 'porque'): [('Effect', 'CiU haría bien en no menospreciar al PP catalán'), ('Effect', 'para alcanzar acuerdos factibles debe hacerlo con quien tiene responsabilidad de gobierno')],
+    ('Intentionally_act', 'de'): [('Act', 'acuerdos'), ('Agent', 'de'), ('Act', 'en')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'para alcanzar acuerdos factibles debe hacerlo con quien tiene responsabilidad de gobierno')],
+    ('Leadership', 'gobierno'): [],
+    ('Make_agreement_on_action', 'acuerdos'): [],
+    ('Required_event', 'debe'): [('Required_situation', 'hacerlo con quien tiene responsabilidad de gobierno')],
+    ('Sequence', 'de'): [('Entity_2', 'para alcanzar acuerdos factibles debe hacerlo con quien tiene responsabilidad de gobierno')]}

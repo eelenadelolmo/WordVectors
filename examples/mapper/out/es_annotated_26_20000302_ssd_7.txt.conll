@@ -1,0 +1,4 @@
+{   ('Awareness', 'percibiera'): [('Cognizer', 'los'), ('Content', 'la presencia del ferrocarril')],
+    ('Presence', 'presencia'): [('Entity', 'del ferrocarril')],
+    ('Roadways', 'ferrocarril'): [],
+    ('Spatial_contact', 'del'): [('Figure', 'los'), ('Ground', 'ferrocarril')]}

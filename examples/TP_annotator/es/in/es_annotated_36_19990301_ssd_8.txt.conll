@@ -1,0 +1,10 @@
+{   ('Becoming_aware', 'inscriban'): [('Cognizer', 'padres'), ('Phenomenon', 'sus hijos')],
+    ('Event', 'acto'): [],
+    ('Frequency', 'siempre'): [('Event', 'presidido por el lema La escuela pública'), ('Event', 'abierta')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'sus hijos'), ('Ground', 'escuela pública')],
+    ('Kinship', 'hijos'): [('Ego', 'sus')],
+    ('Kinship', 'padres'): [],
+    ('Locale_by_use', 'escuela'): [('Container_possessor', 'pública')],
+    ('Questioning', 'sus'): [('Addressee', 'padres'), ('Message', 'inscriban a sus hijos en centros públicos')],
+    ('Secrecy_status', 'abierta'): [('Phenomenon', 'presidido por el lema La escuela pública')],
+    ('Secrecy_status', 'pública'): [('Phenomenon', 'escuela')]}

@@ -1,0 +1,11 @@
+{   ('Activity_finish', 'concluya'): [('Agent', 'Comisión Nacional del Mercado de'), ('Activity', 'investigación para aclarar si éste utilizó información privilegiada en operaciones bursátiles')],
+    ('Change_event_time', 'aplazó'): [   ('Agent', 'consejo de administración de'),
+                                         ('Event', 'debate sobre la continuidad de Juan Villalonga hasta que la Comisión Nacional del Mercado de Valores concluya la investigación para aclarar si')],
+    ('Commercial_transaction', 'operaciones'): [('Goods', 'en')],
+    ('Criminal_investigation', 'investigación'): [],
+    ('Discussion', 'debate'): [],
+    ('Information', 'información'): [],
+    ('Leadership', 'administración'): [],
+    ('Part_inner_outer', 'en'): [('Whole', 'información')],
+    ('Political_locales', 'Nacional'): [],
+    ('Using', 'utilizó'): [('Agent', 'el'), ('Purpose', 'información privilegiada en operaciones bursátiles')]}

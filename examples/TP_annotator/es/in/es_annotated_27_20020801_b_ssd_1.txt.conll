@@ -1,0 +1,7 @@
+{   ('Activity_start', 'empezará'): [('Agent', 'que'), ('Time', 'próximo día 10')],
+    ('Attack', 'huelga'): [('Assailant', 'de los guías del')],
+    ('Calendric_unit', 'día'): [('Relative_time', 'próximo')],
+    ('Color', 'rojas'): [('Entity', 'chaquetas')],
+    ('Cotheme', 'los guías'): [('Source', 'Bus Turístic de Barcelona')],
+    ('Referring_by_name', 'convocado'): [('Entity', 'ha')],
+    ('Spatial_contact', 'de'): [('Figure', 'que'), ('Ground', 'el próximo día 10')]}

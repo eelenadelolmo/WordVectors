@@ -1,0 +1,11 @@
+{   ('Activity_ongoing', 'de manutención'): [],
+    ('Adopt_selection', 'asumir'): [('Agent', 'están')],
+    ('Buildings', 'hotel'): [],
+    ('Choosing', 'optar'): [   ('Cognizer', 'están'),
+                               ('Chosen', 'solicitar una mediación o un arbitraje con objeto de pactar daños y perjuicios por los costes de manutención , hotel y cancelaciones que están')],
+    ('Damaging', 'daños'): [],
+    ('Expensiveness', 'costes'): [('Goods', 'de manutención')],
+    ('Make_agreement_on_action', 'asumir'): [('Obligation', 'daños y perjuicios por los costes de manutención , hotel y cancelaciones que están teniendo que asumir')],
+    ('Possession', 'teniendo'): [('Owner', 'están'), ('Possession', 'asumir')],
+    ('Request', 'solicitar'): [('Message', 'mediación o un arbitraje')],
+    ('Sequence', 'expediente'): [('Entities', 'de pactar daños')]}

@@ -1,0 +1,7 @@
+{   ('Body_parts', 'cabeza'): [('Possessor', 'su')],
+    ('Capability', 'potencialidad'): [('Entity', 'su'), ('Relevant_feature', 'creadora')],
+    ('Cause_motion', 'su'): [('Theme', 'de'), ('Goal', 'dibujó alrededor de la cabeza - - lunas , flechas , triángulos , montañas ... - - eran ya la confirmación de su potencialidad creadora')],
+    ('Identicality', 'la misma'): [('Type', 'misma que lucirá casi toda la vida')],
+    ('Natural_features', 'montañas'): [('Descriptor', 'alrededor de la cabeza - - lunas , flechas , triángulos ,')],
+    ('Perception_active', 'su'): [('Perceiver_agentive', 'es'), ('Phenomenon', 'casi toda la vida')],
+    ('Verification', 'confirmación'): [('Inspector', 'alrededor de la cabeza - - lunas , flechas , triángulos , montañas ... -'), ('Unconfirmed_content', 'su potencialidad creadora')]}

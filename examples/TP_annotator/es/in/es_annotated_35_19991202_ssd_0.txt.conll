@@ -1,0 +1,5 @@
+{   ('Ammunition', 'vuelta'): [('Type', 'presidenciales para el')],
+    ('Change_of_leadership', 'presidenciales'): [('Old_leader', 'presidenciales')],
+    ('Leadership', 'presidenciales'): [],
+    ('Ordinal_numbers', 'primera'): [('Comparison_set', 'presidenciales para el')],
+    ('Placing', 'las'): [('Agent', 'Duma'), ('Theme', 'la primera vuelta de las presidenciales')]}

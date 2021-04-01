@@ -1,0 +1,5 @@
+{   ('Desirable_event', 'debe'): [('State_of_affairs', 'del Govern'), ('State_of_affairs', '? - -')],
+    ('Frequency', 'cotidiana'): [('Event', 'la acción cotidiana del Govern')],
+    ('Intentionally_act', 'acción'): [('Manner', 'cotidiana'), ('Act', 'del Govern')],
+    ('Purpose', 'ser'): [],
+    ('Sign', 'marcar'): [('Indicator', 'PP'), ('Indicated', 'cuál debe ser la acción cotidiana del Govern ? - -')]}

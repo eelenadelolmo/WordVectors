@@ -1,0 +1,7 @@
+{   ('Calendric_unit', 'ayer que'): [],
+    ('Foreign_or_domestic_country', 'Patria'): [],
+    ('Interior_profile_relation', 'fuera de'): [('Figure', 'cualquier reorganización de Patria y Libertad'), ('Ground', 'la ley')],
+    ('Law', 'ley'): [],
+    ('Legality', 'legales'): [],
+    ('Quantified_mass', 'cualquier'): [('Individuals', 'reorganización de Patria y Libertad')],
+    ('Statement', 'anunció'): [('Speaker', 'subsecretario del Interior , Belisario'), ('Manner', 'ayer que'), ('Message', 'que cualquier reorganización de Patria y Libertad')]}

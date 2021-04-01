@@ -1,0 +1,9 @@
+{   ('Buildings', 'Casa'): [('Descriptor', 'Blanca')],
+    ('Calendric_unit', 'horas'): [('Relative_time', 'inadecuadas'), ('Count', '24')],
+    ('Cause_change_of_strength', 'reforzaron'): [],
+    ('Relative_time', 'últimas'): [('Focal_participant', 'propuestas')],
+    ('Representative', 'pronunciadas'): [('Represented', 'Casa Blanca'), ('Representative', 'Joe Lockhart')],
+    ('Statement', 'dijo'): [   ('Speaker', 'Las palabras de Bacon reforzaron las pronunciadas 24 horas antes por Joe Lockhart , portavoz de la Casa Blanca'),
+                               ('Speaker', 'quien'),
+                               ('Message', 'últimas propuestas de Milosevic eran & quot ; claramente inadecuadas')],
+    ('Temporal_subregion', 'antes'): []}

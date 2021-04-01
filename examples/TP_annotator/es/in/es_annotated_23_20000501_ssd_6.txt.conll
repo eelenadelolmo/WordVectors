@@ -1,0 +1,7 @@
+{   ('Arriving', 'volver'): [('Theme', 'quienes'), ('Goal', 'a la mesa de negociaciones')],
+    ('Calendric_unit', 'horas'): [('Count', 'varias')],
+    ('Make_agreement_on_action', 'en'): [('Party_1', 'quienes'), ('Manner', 'sólo'), ('Obligation', 'volver a la mesa de negociaciones tras varias horas de diálogo informal previo en')],
+    ('Point_of_dispute', 'tema'): [('Descriptor', 'irritó a los palestinos')],
+    ('Quantified_mass', 'varias'): [('Individuals', 'horas')],
+    ('Relative_time', 'previo'): [('Focal_occasion', 'de diálogo informal')],
+    ('Relative_time', 'previo en'): [('Focal_occasion', 'quienes sólo accedieron a volver a la mesa de negociaciones'), ('Landmark_occasion', 'varias horas de diálogo informal previo en')]}

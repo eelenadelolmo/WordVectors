@@ -1,0 +1,7 @@
+{   ('Employing', 'trabajadores'): [('Field', 'de')],
+    ('Frequency', 'siempre'): [('Event', 'no han'), ('Event', 'condenado las acusaciones')],
+    ('Judgment_communication', 'acusaciones'): [('Communicator', 'lo')],
+    ('Judgment_communication', 'condenado'): [('Communicator', 'Los'), ('Degree', 'siempre'), ('Evaluee', 'acusaciones')],
+    ('Request', 'exigen'): [('Speaker', 'Los'), ('Message', 'que rectifique')],
+    ('Sign_agreement', 'firmado'): [('Signatory', 'Los')],
+    ('Statement', 'afirman'): [('Speaker', 'trabajadores'), ('Message', 'que no han firmado nada en relación con Rei y reiteran que siempre han condenado las acusaciones y')]}

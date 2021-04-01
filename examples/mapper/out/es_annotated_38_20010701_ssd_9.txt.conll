@@ -1,0 +1,9 @@
+{   ('Age', 'nuevo'): [('Entity', 'grupo toco jazz')],
+    ('Aggregate', 'grupo'): [('Aggregate_property', 'jazz')],
+    ('Calendric_unit', 'años'): [('Relative_time', '31')],
+    ('Color', 'blues'): [],
+    ('Identicality', 'la misma'): [('Type', 'música')],
+    ('Intentionally_act', 'haciendo'): [('Agent', 'y'), ('Act', 'la misma música'), ('Time', '31 años')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'y'), ('Ground', 'música , y en mi nuevo grupo toco jazz , blues , gospel , rockabilly , reggae , country , funk , pop')],
+    ('Performing_arts', 'música'): [('Type', 'la misma')],
+    ('Political_locales', 'country'): [('Descriptor', 'gospel , rockabilly , reggae ,')]}

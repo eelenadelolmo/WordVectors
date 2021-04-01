@@ -1,0 +1,13 @@
+{   ('Calendric_unit', 'noche'): [('Relative_time', 'cada')],
+    ('Cardinal_numbers', 'cinco'): [('Unit', 'cantantes maravillosos')],
+    ('Desirability', 'maravillosos'): [('Evaluee', 'cantantes')],
+    ('Feeling', 'apetece'): [('Experiencer', 'y'), ('Emotional_state', 'lo')],
+    ('Frequency', 'cada'): [('Interval', 'noche')],
+    ('Frequency', 'siempre'): [('Event', 'que'), ('Event', 'improvisando'), ('Event', 'bien tocando')],
+    ('Interior_profile_relation', 'por'): [('Ground', 'por cinco cantantes maravillosos')],
+    ('Make_noise', 'tocando'): [   ('Sound_source', 'y'),
+                                   ('Degree', 'muy bien'),
+                                   ('Sound', 'cada noche lo que me apetece , improvisando siempre , divirtiéndome , arropado por cinco cantantes maravillosos y')],
+    ('Placing', 'apetece'): [('Goal', 'bien tocando'), ('Goal', 'por cinco cantantes maravillosos')],
+    ('Possession', 'tener'): [('Possession', 'que soportar ningún ego subido de tono')],
+    ('Similarity', 'lo'): [('Entities', 'que'), ('Entity_1', 'y')]}

@@ -1,0 +1,13 @@
+{   ('Being_at_risk', 'de Seguridad'): [],
+    ('Being_relevant', 'relevante'): [('Phenomenon', 'información')],
+    ('Compliance', 'incautados'): [('Norm', '; los acuerdos de la Junta de Seguridad y el Estatuto')],
+    ('Documents', 'documentos'): [],
+    ('Explaining_the_facts', 'explique'): [('Fact', 'sus'), ('State_of_affairs', 'sus criterios sobre información relevante')],
+    ('Information', 'información'): [],
+    ('Judgment_communication', 'incautados'): [   ('Communicator', 'Imaz'),
+                                                  ('Reason', 'Mayor de & quot ; vulnerar & quot ; los acuerdos de la Junta de Seguridad y el Estatuto'),
+                                                  ('Reason', 'al comando Basurde , que el PNV reclamará por vía parlamentaria')],
+    ('Leadership', 'comando'): [('Governed', 'de')],
+    ('Receiving', 'recibir'): [('Recipient', 'la Junta'), ('Theme', 'documentos')],
+    ('Statement', 'quot'): [('Message', 'que el'), ('Speaker', 'el PNV'), ('Message', 'por vía parlamentaria')],
+    ('Taking', 'incautados'): [('Theme', 'la consejería sigue sin recibir documentos'), ('Time', 'al comando')]}

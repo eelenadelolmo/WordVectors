@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="43_19991102_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Dos arqueólogos estadounidenses</concept>
+		<concept id="c_1">Esta</concept>
+		<concept id="c_2">Stanford</concept>
+		<concept id="c_3">los solutrenses</concept>
+		<concept id="c_4">La teoría hoy aceptada</concept>
+		<concept id="c_5">Sus puntas de lanza</concept>
+		<concept id="c_6">hace 18.000 años</concept>
+		<concept id="c_7">desde la Península Ibérica</concept>
+		<concept id="c_8">América</concept>
+		<concept id="c_9">ser</concept>
+		<concept id="c_10">el</concept>
+		<concept id="c_11">ambas</concept>
+		<concept id="c_12">nómadas</concept>
+		<concept id="c_13">este fin</concept>
+		<concept id="c_14">la caza</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Dos arqueólogos estadounidenses acaban de armar un gran revuelo con una nueva teoría.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="dn0cp0">Dos</token><token pos="ncmp000">arqueólogos</token><token pos="aq0cp0">estadounidenses</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_4" concept_ref3="c_10">
+			<token pos="vmip3p0">acaban</token><token pos="sps00">de</token><token pos="vmn0000">armar</token><mention concept_ref="c_0"><token pos="di0ms0">un</token><token pos="aq0cs0">gran</token><token pos="ncms000">revuelo</token></mention><token pos="sps00">con</token><mention concept_ref="c_4"><token pos="di0fs0">una</token><token pos="aq0fs0">nueva</token><token pos="ncfs000">teoría</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nueva">
+				<argument type="Entity" dependent="teoría" /></frame>
+			<frame type="People_by_origin" head="estadounidenses" />
+			<frame type="People_by_vocation" head="arqueólogos" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Según sus investigaciones, los primeros pobladores de América llegaron por mar desde la Península Ibérica hace 18.000 años, casi 5.000 años antes de lo que se creía.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">los</token><token pos="ao0mp0">primeros</token><token pos="ncmp000">pobladores</token><token pos="sps00">de</token><token pos="np00000">América</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_6" concept_ref3="c_10">
+			<token pos="vmis3p0">llegaron</token><mention concept_ref="c_6"><token pos="vmip3s0">hace</token><token pos="z">18.000</token><token pos="ncmp000">años</token></mention><token pos="rg">casi</token><token pos="z">5.000</token><token pos="ncmp000">años</token><token pos="rg">antes</token><mention concept_ref="c_10"><token pos="sps00">de</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Arriving" head="llegaron">
+				<argument type="Theme" dependent="los primeros pobladores de América" />
+				<argument type="Goal" dependent="por mar" />
+				<argument type="Place" dependent="desde la Península Ibérica" />
+				<argument type="Time" dependent="hace 18.000 años" /></main_frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="casi 5.000" /></frame>
+			<frame type="Certainty" head="creía">
+				<argument type="Content" dependent="casi 5.000 años antes de" /></frame>
+			<frame type="Goal" head="por">
+				<argument type="Landmark" dependent="sus investigaciones" /></frame>
+			<frame type="Natural_features" head="mar" />
+			<frame type="Ordinal_numbers" head="primeros">
+				<argument type="Type" dependent="pobladores de América llegaron por mar desde la Península Ibérica hace 18.000 años" /></frame>
+			<frame type="Research" head="investigaciones">
+				<argument type="Researcher" dependent="sus" /></frame>
+			<frame type="Residence" head="pobladores" />
+			<frame type="Temporal_subregion" head="antes" />
+			<frame type="Time_vector" head="antes">
+				<argument type="Distance" dependent="Península Ibérica hace 18.000 años" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los primeros pobladores llegaron desde la Península Ibérica, según dos expertos.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">Los</token><token pos="ao0mp0">primeros</token><token pos="ncmp000">pobladores</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_7" concept_ref3="c_10">
+			<token pos="vmis3p0">llegaron</token><mention concept_ref="c_7"><token pos="sps00">desde</token><token pos="da0fs0">la</token><token pos="np0000l">Península</token><token pos="np0000l">Ibérica</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="dos expertos " />
+			<main_frame type="Arriving" head="llegaron">
+				<argument type="Theme" dependent="Los primeros pobladores" />
+				<argument type="Place" dependent="desde la Península Ibérica" /></main_frame>
+			<frame type="Be_in_agreement_on_action" head="según">
+				<argument type="Party_2" dependent="primeros pobladores llegaron desde la Península Ibérica" />
+				<argument type="Party_2" dependent="según dos expertos" /></frame>
+			<frame type="Colonization" head="pobladores">
+				<argument type="Descriptor" dependent="primeros" /></frame>
+			<frame type="Expertise" head="expertos" />
+			<frame type="Goal" head="según">
+				<argument type="Landmark" dependent="dos expertos" /></frame>
+			<frame type="Ordinal_numbers" head="primeros">
+				<argument type="Type" dependent="pobladores" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los primeros pobladores del continente americano podrían haber sido habitantes de la Península Ibérica que hace 18.000 años cruzaron el Atlántico y alcanzaron la costa Este de lo que hoy es EEUU.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">Los</token><token pos="ao0mp0">primeros</token><token pos="ncmp000">pobladores</token><token pos="spcms">del</token><token pos="ncms000">continente</token><token pos="aq0ms0">americano</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_10">
+			<token pos="vsp00sm">sido</token><token pos="nccp000">habitantes</token><mention concept_ref="c_10"><token pos="sps00">de</token></mention><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="np0000l">Península</token><token pos="np0000l">Ibérica</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="alcanzaron">
+				<argument type="Goal" dependent="la costa" /></frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="18.000" /></frame>
+			<frame type="Natural_features" head="Península">
+				<argument type="Container_possessor" dependent="Ibérica" /></frame>
+			<frame type="Natural_features" head="continente">
+				<argument type="Container_possessor" dependent="americano" /></frame>
+			<frame type="Ordinal_numbers" head="primeros">
+				<argument type="Type" dependent="pobladores del continente americano" /></frame>
+			<frame type="Part_orientational" head="del continente">
+				<argument type="Whole" dependent="la costa" /></frame>
+			<frame type="People_by_origin" head="americano" />
+			<frame type="Possibility" head="podrían">
+				<argument type="Possible_event" dependent="Los primeros pobladores del continente americano" />
+				<argument type="Possible_event" dependent="sido habitantes de la Península Ibérica que hace 18.000 años cruzaron el Atlántico y alcanzaron la costa Este de lo que hoy es EEUU" /></frame>
+			<frame type="Relational_natural_features" head="la costa">
+				<argument type="Relative_location" dependent="del continente" /></frame>
+			<frame type="Residence" head="habitantes">
+				<argument type="Resident" dependent="habitantes de la Península Ibérica" /></frame>
+			<frame type="Temporal_collocation" head="hoy">
+				<argument type="Trajector_event" dependent="lo que" />
+				<argument type="Trajector_event" dependent="EEUU" /></frame>
+			<main_frame type="Time_vector" head="sido">
+				<argument type="Distance" dependent="18.000 años" /></main_frame>
+			<frame type="Traversing" head="cruzaron">
+				<argument type="Path" dependent="el Atlántico" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Esta es la provocativa teoría de dos arqueólogos norteamericanos, en abierta contradicción con la generalmente aceptada de que América fue poblada hace 13.500 años por nómadas procedentes de Asia que entraron en ella por Alaska.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="pd0fs000">Esta</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_0" concept_ref3="c_2" concept_ref4="c_1" concept_ref5="c_6" concept_ref6="c_8" concept_ref7="c_10" concept_ref8="c_12">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="aq0fs0">provocativa</token><token pos="ncfs000">teoría</token></mention><token pos="sps00">de</token><token pos="dn0cp0">dos</token><token pos="ncmp000">arqueólogos</token><token pos="aq0mp0">norteamericanos</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="aq0fsp">abierta</token><mention concept_ref="c_2"><token pos="ncfs000">contradicción</token></mention><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="rg">generalmente</token><token pos="aq0fsp">aceptada</token><token pos="sps00">de</token><token pos="cs">que</token><mention concept_ref="c_8"><token pos="np00000">América</token></mention><token pos="vsis3s0">fue</token><token pos="vmp00sf">poblada</token><token pos="vmip3s0">hace</token><mention concept_ref="c_6"><token pos="z">13.500</token><token pos="ncmp000">años</token></mention><token pos="sps00">por</token><mention concept_ref="c_12"><token pos="nccp000">nómadas</token></mention><token pos="aq0cp0">procedentes</token><token pos="sps00">de</token><mention concept_ref="c_1"><token pos="np00000">Asia</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_start" head="entraron">
+				<argument type="Agent" dependent="Asia que" />
+				<argument type="Activity" dependent="es" />
+				<argument type="Place" dependent="por Alaska" /></frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Relative_time" dependent="procedentes" />
+				<argument type="Count" dependent="13.500" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="arqueólogos norteamericanos" /></frame>
+			<main_frame type="Colonization" head="procedentes">
+				<argument type="Homeland" dependent="América" />
+				<argument type="New_area" dependent="13.500 años" /></main_frame>
+			<frame type="People_by_origin" head="norteamericanos" />
+			<frame type="People_by_vocation" head="arqueólogos">
+				<argument type="Descriptor" dependent="norteamericanos" /></frame>
+			<frame type="Receiving" head="aceptada">
+				<argument type="Manner" dependent="generalmente" />
+				<argument type="Theme" dependent="América fue poblada hace 13.500 años por nómadas procedentes de Asia que entraron en ella por Alaska" /></frame>
+			<frame type="Secrecy_status" head="abierta">
+				<argument type="Phenomenon" dependent="contradicción" /></frame>
+			<main_frame type="Time_vector" head="fue">
+				<argument type="Distance" dependent="13.500 años" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Dennis Stanford, comisario de Antropología de la prestigiosa Smithsonian Institution de Washington, y el arqueólogo independiente Bruce Bradley revolucionaron con su nueva teoría un congreso de arqueólogos celebrado este fin de semana en Santa Fe ( Nuevo México, EEUU ).
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np0000l">Dennis</token><token pos="np0000l">Stanford</token><token pos="fc">,</token><token pos="ncms000">comisario</token><token pos="sps00">de</token><token pos="np00000">Antropología</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="aq0fs0">prestigiosa</token><token pos="ncms000">Smithsonian</token><token pos="ncms000">Institution</token><token pos="sps00">de</token><token pos="ncms000">Washington</token><token pos="fc">,</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">arqueólogo</token><token pos="aq0cs0">independiente</token><token pos="np0000l">Bruce</token><token pos="np0000l">Bradley</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_10" concept_ref3="c_12" concept_ref4="c_13">
+			<token pos="vmis3p0">revolucionaron</token><token pos="di0ms0">un</token><token pos="ncms000">congreso</token><token pos="sps00">de</token><mention concept_ref="c_0"><token pos="ncmp000">arqueólogos</token></mention><token pos="aq0msp">celebrado</token><mention concept_ref="c_13"><token pos="dd0ms0">este</token><token pos="ncms000">fin</token></mention><token pos="sps00">de</token><mention concept_ref="c_12"><token pos="ncfs000">semana</token></mention><token pos="sps00">en</token><token pos="ncms000">Santa</token><token pos="np00000">Fe</token><token pos="fpa">(</token><token pos="aq0ms0">Nuevo</token><token pos="np00000">México</token><token pos="fc">,</token><token pos="np00000">EEUU</token><token pos="fpt">)</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nueva">
+				<argument type="Entity" dependent="teoría un congreso de arqueólogos" /></frame>
+			<frame type="Calendric_unit" head="fin de semana" />
+			<frame type="Institutions" head="Institution">
+				<argument type="Place" dependent="prestigiosa Smithsonian" />
+				<argument type="Place" dependent="de Washington" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="este fin de semana" />
+				<argument type="Ground" dependent="Santa Fe ( Nuevo México , EEUU )" /></frame>
+			<frame type="Manipulation" head="su">
+				<argument type="Agent" dependent="un congreso de arqueólogos" />
+				<argument type="Entity" dependent="este fin de semana" />
+				<argument type="Place" dependent="en Santa" /></frame>
+			<frame type="People_by_vocation" head="arqueólogo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Basándose en la comparación de puntas de lanza y otros restos hallados en Norteamérica y en la Península Ibérica, Stanford y Bradley afirman que los primeros pobladores de América pudieron ser solutrenses, que hace más de 18.000 años vivían en lo que hoy es España, Portugal y el sur de Francia.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">los</token><token pos="ao0mp0">primeros</token><token pos="ncmp000">pobladores</token><token pos="sps00">de</token><token pos="np00000">América</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_9">
+			<token pos="vmis3p0">pudieron</token><mention concept_ref="c_9"><token pos="vsn0000">ser</token></mention><mention concept_ref="c_3"><token pos="ncmp000">solutrenses</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Stanford y Bradley " />
+			<frame type="Becoming_aware" head="es">
+				<argument type="Phenomenon" dependent="la comparación de puntas de lanza y otros restos" />
+				<argument type="Cognizer" dependent="Norteamérica y en la Península Ibérica" /></frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="18.000" /></frame>
+			<frame type="Colonization" head="pobladores">
+				<argument type="Descriptor" dependent="primeros" />
+				<argument type="New_area" dependent="de América" /></frame>
+			<frame type="Direction" head="el sur de">
+				<argument type="Independent_variable" dependent="de Francia" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="más de 18.000 años" /></frame>
+			<frame type="Increment" head="otros" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="más de 18.000 años" />
+				<argument type="Ground" dependent="que hoy es España , Portugal y el sur de Francia" /></frame>
+			<frame type="Ordinal_numbers" head="primeros">
+				<argument type="Type" dependent="pobladores" /></frame>
+			<main_frame type="Possibility" head="pudieron">
+				<argument type="Possible_event" dependent="los primeros pobladores de América" />
+				<argument type="Possible_event" dependent="ser" /></main_frame>
+			<frame type="Remainder" head="restos">
+				<argument type="Resource" dependent="otros" /></frame>
+			<frame type="Residence" head="vivían">
+				<argument type="Resident" dependent="que" />
+				<argument type="Manner" dependent="más de 18.000 años" />
+				<argument type="Location" dependent="que hoy es España , Portugal y el sur de Francia" /></frame>
+			<frame type="Statement" head="afirman">
+				<argument type="Speaker" dependent="Stanford y Bradley" />
+				<argument type="Message" dependent="que los primeros pobladores de América pudieron ser solutrenses , que hace más de 18.000 años vivían en lo que" /></frame>
+			<frame type="Temporal_collocation" head="hoy">
+				<argument type="Trajector_event" dependent="lo que" />
+				<argument type="Trajector_event" dependent=", Portugal y el sur de Francia" /></frame>
+			<frame type="Time_vector" head="lo">
+				<argument type="Distance" dependent="más de 18.000 años" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No se sabe cómo cruzaron el Atlántico, pero según su conocimiento de culturas nativas del Artico, Stanford especula con que los solutrenses pudieron hacer la travesía en balsas fabricadas con pieles de animales porque, con buen tiempo y una corriente fuerte, la travesía hubiera podido hacerse en apenas un mes.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="np00000">Stanford</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_0" concept_ref3="c_1" concept_ref4="c_7" concept_ref5="c_10" concept_ref6="c_12" concept_ref7="c_13">
+			<token pos="vmip3s0">especula</token><token pos="sps00">con</token><token pos="cs">que</token><token pos="da0mp0">los</token><mention concept_ref="c_3"><token pos="ncmp000">solutrenses</token></mention><token pos="vmis3p0">pudieron</token><token pos="vmn0000">hacer</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="ncfs000">travesía</token></mention><token pos="sps00">en</token><mention concept_ref="c_1"><token pos="ncfp000">balsas</token></mention><token pos="aq0fpp">fabricadas</token><token pos="sps00">con</token><mention concept_ref="c_13"><token pos="ncfp000">pieles</token></mention><token pos="sps00">de</token><mention concept_ref="c_12"><token pos="ncmp000">animales</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="su conocimiento de culturas nativas del Artico " />
+			<frame type="Animals" head="animales">
+				<argument type="Animal" dependent="pieles de animales" /></frame>
+			<frame type="Awareness" head="conocimiento">
+				<argument type="Cognizer" dependent="los" />
+				<argument type="Content" dependent="conocimiento de culturas nativas del" /></frame>
+			<frame type="Awareness" head="sabe">
+				<argument type="Content" dependent="cómo cruzaron el Atlántico" /></frame>
+			<frame type="Be_in_agreement_on_action" head="según">
+				<argument type="Obligation" dependent="su conocimiento de culturas nativas del Artico , Stanford especula con que los solutrenses pudieron hacer la travesía en balsas fabricadas con pieles de animales porque , con buen tiempo y una corriente fuerte ," /></frame>
+			<frame type="Calendric_unit" head="un mes">
+				<argument type="Relative_time" dependent="apenas" />
+				<argument type="Count" dependent="de" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="pudieron hacer la travesía en balsas fabricadas con pieles de animales" /></frame>
+			<frame type="Desirability" head="buen">
+				<argument type="Evaluee" dependent="tiempo" /></frame>
+			<frame type="Goal" head="en">
+				<argument type="Landmark" dependent="su conocimiento de culturas nativas del" /></frame>
+			<frame type="Indigenous_origin" head="nativas">
+				<argument type="Entity" dependent="culturas nativas del" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="buen tiempo y una corriente fuerte , la travesía hubiera podido" />
+				<argument type="Ground" dependent="apenas un mes" /></frame>
+			<frame type="Level_of_force_exertion" head="fuerte">
+				<argument type="Exerter" dependent="corriente" /></frame>
+			<frame type="Manufacturing" head="fabricadas">
+				<argument type="Product" dependent="buen tiempo y una corriente fuerte" />
+				<argument type="Product" dependent="cruzaron" />
+				<argument type="Time" dependent="en apenas un mes" /></frame>
+			<main_frame type="Manufacturing" head="hacerse">
+				<argument type="Producer" dependent="el" />
+				<argument type="Product" dependent="la travesía en balsas fabricadas con pieles de animales" /></main_frame>
+			<frame type="Possibility" head="podido">
+				<argument type="Possible_event" dependent="buen tiempo y una corriente fuerte" />
+				<argument type="Possible_event" dependent="cruzaron" />
+				<argument type="Possible_event" dependent="podido hacerse en apenas un mes" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="pudieron hacer la travesía" />
+				<argument type="Ground" dependent="travesía" /></frame>
+			<frame type="Temporal_collocation" head="corriente" />
+			<frame type="Traversing" head="cruzaron">
+				<argument type="Theme" dependent="los" />
+				<argument type="Path" dependent="el Atlántico" /></frame>
+			<frame type="Weather" head="tiempo">
+				<argument type="Specification" dependent="buen" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El arqueólogo recordó que los isleños del sur del Pacífico llevan navegando en mar abierto y con medios muy precarios más de 20.000 años.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">los</token><token pos="ncmp000">isleños</token><token pos="spcms">del</token><token pos="ncms000">sur</token><token pos="spcms">del</token><token pos="np00000">Pacífico</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_10">
+			<token pos="vmip3p0">llevan</token><token pos="vmg0000">navegando</token><token pos="rg">más</token><mention concept_ref="c_10"><token pos="sps00">de</token></mention><token pos="z">20.000</token><mention concept_ref="c_3"><token pos="ncmp000">años</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El arqueólogo " />
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="20.000" /></frame>
+			<frame type="Causation" head="que">
+				<argument type="Manner" dependent="muy precarios" />
+				<argument type="Effect" dependent="más de 20.000 años" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="de 20.000" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="los isleños del sur del Pacífico llevan navegando" />
+				<argument type="Ground" dependent="mar abierto" /></frame>
+			<frame type="Natural_features" head="mar">
+				<argument type="Descriptor" dependent="abierto" /></frame>
+			<frame type="People_by_vocation" head="arqueólogo" />
+			<frame type="Remembering_experience" head="recordó">
+				<argument type="Cognizer" dependent="arqueólogo" />
+				<argument type="Experience" dependent="que los isleños del sur del Pacífico llevan navegando en mar abierto y con medios muy precarios más de 20.000 años" /></frame>
+			<frame type="Secrecy_status" head="abierto">
+				<argument type="Phenomenon" dependent="mar" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Tras llegar a América y durante 6.000 años, los solutrenses se habrían extendido hacia los desiertos estadounidenses, la tundra canadiense y Suramérica, llevando con ellos su cultura de la caza.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0mp0">los</token><token pos="ncmp000">solutrenses</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_0" concept_ref3="c_2" concept_ref4="c_6" concept_ref5="c_7" concept_ref6="c_8" concept_ref7="c_10" concept_ref8="c_12" concept_ref9="c_14">
+			<token pos="sps00">Tras</token><token pos="vmn0000">llegar</token><mention concept_ref="c_6"><token pos="sps00">a</token><token pos="np00000">América</token><token pos="cc">y</token><token pos="sps00">durante</token><token pos="z">6.000</token><token pos="ncmp000">años</token></mention><token pos="p0300000">se</token><token pos="vaic3p0">habrían</token><token pos="vmp00sm">extendido</token><token pos="sps00">hacia</token><token pos="da0mp0">los</token><token pos="ncmp000">desiertos</token><token pos="aq0cp0">estadounidenses</token><token pos="fc">,</token><mention concept_ref="c_7"><token pos="da0fs0">la</token><token pos="ncfs000">tundra</token><token pos="aq0cs0">canadiense</token><token pos="cc">y</token><token pos="np00000">Suramérica</token></mention><token pos="vmg0000">llevando</token><token pos="sps00">con</token><token pos="pp3mp000">ellos</token><token pos="dp3cs0">su</token><token pos="ncfs000">cultura</token><token pos="sps00">de</token><mention concept_ref="c_14"><token pos="da0fs0">la</token><token pos="ncfs000">caza</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Arriving" head="llevando">
+				<argument type="Time" dependent="a América y durante 6.000 años" /></main_frame>
+			<frame type="Biological_area" head="desiertos">
+				<argument type="Relative_location" dependent="estadounidenses" /></frame>
+			<main_frame type="Bringing" head="llevando">
+				<argument type="Carrier" dependent="la tundra canadiense y Suramérica" />
+				<argument type="Goal" dependent="con ellos su cultura de la caza" /></main_frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="6.000" /></frame>
+			<main_frame type="Expansion" head="llevando">
+				<argument type="Result_size" dependent="llegar a América y durante 6.000 años ," />
+				<argument type="Item" dependent="de" />
+				<argument type="Goal" dependent="hacia los desiertos estadounidenses" /></main_frame>
+			<frame type="Hunting" head="caza" />
+			<frame type="Interior_profile_relation" head="se">
+				<argument type="Time" dependent="Tras llegar" />
+				<argument type="Ground" dependent="América" /></frame>
+			<frame type="Origin" head="canadiense">
+				<argument type="Entity" dependent="tundra" /></frame>
+			<frame type="People_by_origin" head="estadounidenses" />
+			<frame type="Possession" head="se">
+				<argument type="Possession" dependent="habrían" />
+				<argument type="Possession" dependent="extendido hacia los desiertos estadounidenses , la tundra canadiense y Suramérica , llevando con ellos su cultura de la caza" /></frame>
+			<frame type="Relative_time" head="durante">
+				<argument type="Landmark_occasion" dependent="llevando" />
+				<argument type="Focal_occasion" dependent="habrían extendido hacia los desiertos estadounidenses , la tundra canadiense y Suramérica , llevando con ellos su cultura de la caza" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La teoría hoy aceptada es que grupos nómadas cruzaron desde Siberia hasta Alaska por el estrecho de Bering, aprovechando que la última glaciación unió ambas costas con un puente de hielo.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0fs0">La</token><token pos="nc00000">teoría</token><token pos="rg">hoy</token><token pos="aq0fsp">aceptada</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_3" concept_ref4="c_7" concept_ref5="c_10" concept_ref6="c_11" concept_ref7="c_12" concept_ref8="c_14">
+			<token pos="vsip3s0">es</token><token pos="cs">que</token><mention concept_ref="c_0"><token pos="ncmp000">grupos</token></mention><mention concept_ref="c_12"><token pos="aq0cp0">nómadas</token></mention><token pos="vmis3p0">cruzaron</token><mention concept_ref="c_7"><token pos="sps00">desde</token><token pos="np00000">Siberia</token></mention><token pos="sps00">hasta</token><token pos="np00000">Alaska</token><token pos="sps00">por</token><mention concept_ref="c_10"><token pos="da0ms0">el</token></mention><token pos="ncms000">estrecho</token><token pos="sps00">de</token><token pos="np00000">Bering</token><token pos="fc">,</token><token pos="vmg0000">aprovechando</token><token pos="cs">que</token><token pos="da0fs0">la</token><token pos="ao0fs0">última</token><token pos="ncfs000">glaciación</token><token pos="vmis3s0">unió</token><mention concept_ref="c_11"><token pos="dn0fp0">ambas</token></mention><token pos="ncfp000">costas</token><token pos="sps00">con</token><token pos="di0ms0">un</token><token pos="ncms000">puente</token><token pos="sps00">de</token><token pos="ncms000">hielo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="grupos">
+				<argument type="Aggregate_property" dependent="nómadas" /></frame>
+			<frame type="Calendric_unit" head="hoy" />
+			<main_frame type="Cause_to_amalgamate" head="unió">
+				<argument type="Part_2" dependent="que la última glaciación" />
+				<argument type="Part_1" dependent="ambas" />
+				<argument type="Part_2" dependent="con un puente de hielo" /></main_frame>
+			<frame type="Quantified_mass" head="ambas">
+				<argument type="Individuals" dependent="el estrecho" /></frame>
+			<frame type="Receiving" head="aceptada">
+				<argument type="Theme" dependent="teoría" /></frame>
+			<main_frame type="Relational_natural_features" head="el estrecho" />
+			<frame type="Relative_time" head="última">
+				<argument type="Focal_occasion" dependent="glaciación" /></frame>
+			<frame type="Roadways" head="puente">
+				<argument type="Name" dependent="hielo" /></frame>
+			<frame type="Taking_time" head="hasta">
+				<argument type="Activity" dependent="aprovechando que la última glaciación unió ambas costas con un puente de hielo" /></frame>
+			<main_frame type="Traversing" head="cruzaron">
+				<argument type="Theme" dependent="grupos nómadas" />
+				<argument type="Path" dependent="desde Siberia" />
+				<argument type="Goal" dependent="hasta Alaska" />
+				<argument type="Time" dependent="por el estrecho de" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Desde allí poblaron América dando pie a una cultura conocida como Clovis.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="conocida">
+				<argument type="Content" dependent="una cultura" />
+				<argument type="Content" dependent="como Clovis" /></frame>
+			<frame type="Change_position_on_a_scale" head="dando">
+				<argument type="Item" dependent="allí poblaron América dando" />
+				<argument type="Final_state" dependent="a una cultura conocida como Clovis" /></frame>
+			<frame type="Colonization" head="dando">
+				<argument type="Homeland" dependent="dando" />
+				<argument type="New_area" dependent="América dando pie a una cultura conocida como Clovis" /></frame>
+			<frame type="Locative_relation" head="allí">
+				<argument type="Ground" dependent="dando" />
+				<argument type="Figure" dependent="América dando pie a una cultura conocida como Clovis" /></frame>
+			<frame type="Origin" head="Desde">
+				<argument type="Origin" dependent="allí poblaron América dando pie a una cultura conocida como" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero Stanford y Bradley sostienen que Clovis y Solutrea son casi idénticas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Stanford y Bradley " />
+			<frame type="Activity_ongoing" head="sostienen">
+				<argument type="Agent" dependent="Stanford y Bradley" />
+				<argument type="Activity" dependent="que Clovis y Solutrea son casi idénticas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Sus puntas de lanza son imposibles de distinguir. No hay nada en Clovis que no esté en Solutrea", dice Stanford.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="dp2cp0">Sus</token><token pos="ncfp000">puntas</token><token pos="sps00">de</token><token pos="ncfs000">lanza</token>
+		</theme>
+		<rheme concept_ref1="c_10">
+			<token pos="vsip3p0">son</token><token pos="aq0cp0">imposibles</token><mention concept_ref="c_10"><token pos="sps00">de</token></mention><token pos="vmn0000">distinguir</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Difficulty" head="imposibles">
+				<argument type="Activity" dependent="Sus puntas" />
+				<argument type="Activity" dependent="nada en Clovis que no esté en" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="No hay nada" />
+				<argument type="Ground" dependent="Clovis" /></frame>
+			<frame type="Locative_relation" head="hay">
+				<argument type="Figure" dependent="de" />
+				<argument type="Ground" dependent="nada" /></frame>
+			<frame type="Statement" head="dice">
+				<argument type="Message" dependent="quot ; Sus puntas de lanza son imposibles de" />
+				<argument type="Speaker" dependent="Stanford" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La teoría de ambos arqueólogos tardará años en ser evaluada, pero no son los únicos que consideran superada la creencia de que los pobladores de América llegaron hace 13.500 años por Alaska, ya que se han detectado restos de hasta 16.000 años de antigüedad en Chile, Pensilvania, Virginia y Carolina del Sur.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="nc00000">teoría</token><token pos="sps00">de</token><token pos="dn0mp0">ambos</token><token pos="ncmp000">arqueólogos</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_9">
+			<token pos="vmif3s0">tardará</token><mention concept_ref="c_3"><token pos="ncmp000">años</token></mention><token pos="sps00">en</token><mention concept_ref="c_9"><token pos="vsn0000">ser</token></mention><token pos="vmp00sf">evaluada</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="antigüedad">
+				<argument type="Time" dependent="16.000 años" />
+				<argument type="Attribute" dependent="detectado" /></frame>
+			<frame type="Arriving" head="llegaron">
+				<argument type="Theme" dependent="los pobladores de América" />
+				<argument type="Time" dependent="hace 13.500 años" />
+				<argument type="Place" dependent="por Alaska" /></frame>
+			<frame type="Becoming_aware" head="detectado">
+				<argument type="Manner" dependent="años" />
+				<argument type="Phenomenon" dependent="antigüedad" />
+				<argument type="Topic" dependent="en Chile , Pensilvania , Virginia y Carolina del Sur" /></frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="16.000" /></frame>
+			<frame type="Categorization" head="consideran">
+				<argument type="Cognizer" dependent="los únicos que" />
+				<argument type="Category" dependent="creencia de que los pobladores de América llegaron hace 13.500 años por Alaska ," /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="han detectado" />
+				<argument type="Ground" dependent="Chile , Pensilvania , Virginia y Carolina del Sur" /></frame>
+			<frame type="Opinion" head="creencia">
+				<argument type="Opinion" dependent="que los pobladores de América llegaron hace 13.500 años por Alaska ," /></frame>
+			<frame type="People_by_vocation" head="arqueólogos" />
+			<frame type="Remainder" head="restos" />
+			<frame type="Residence" head="los pobladores">
+				<argument type="Location" dependent="de América" /></frame>
+			<frame type="Sole_instance" head="únicos que">
+				<argument type="Item" dependent="los" /></frame>
+			<frame type="Taking_time" head="se">
+				<argument type="Activity" dependent="teoría de ambos arqueólogos" />
+				<argument type="Time_length" dependent="años" />
+				<argument type="Activity" dependent="ser evaluada" /></frame>
+			<frame type="Time_vector" head="se">
+				<argument type="Distance" dependent="pobladores de América llegaron hace 13.500 años" />
+				<argument type="Landmark_event" dependent="por Alaska" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

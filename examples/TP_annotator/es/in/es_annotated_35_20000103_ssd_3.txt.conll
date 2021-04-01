@@ -1,0 +1,10 @@
+{   ('Adopt_selection', 'asumido'): [],
+    ('Buildings', 'hospitales'): [],
+    ('Causation', 'que'): [('Cause', 'técnicos y económicos en'), ('Effect', 'en reforzar los servicios de urgencias de los hospitales')],
+    ('Choosing', 'optado'): [   ('Chosen', ', de momento , en los centros de atención continuada ( CAC ) de los barrios'),
+                                ('Chosen', 'técnicos y económicos en reforzar los servicios de urgencias de los hospitales')],
+    ('Desiring', 'atención'): [],
+    ('Economy', 'económicos'): [],
+    ('Judgment_communication', 'optado'): [('Evaluee', 'técnicos y económicos en reforzar los servicios de urgencias de los hospitales')],
+    ('Locale_by_use', 'centros'): [],
+    ('Public_services', 'servicios'): [('Domain', 'de urgencias'), ('Service_action', 'los hospitales')]}

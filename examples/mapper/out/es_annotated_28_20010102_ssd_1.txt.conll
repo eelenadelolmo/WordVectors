@@ -1,0 +1,10 @@
+{   ('Activity_start', 'iniciarse'): [('Agent', 'el')],
+    ('Calendric_unit', 'día'): [],
+    ('Calendric_unit', 'hora'): [],
+    ('Change_position_on_a_scale', 'alimentó'): [('Item', 'pesimismo')],
+    ('Desiring', 'esperanzas'): [],
+    ('Experiencer_obj', 'sorpresa'): [],
+    ('Idiosyncrasy', 'ciertas'): [],
+    ('Statement', 'anunciado'): [('Message', 'viaje'), ('Message', 'por sorpresa tan solo una hora')],
+    ('Time_vector', 'antes'): [('Distance', 'una hora'), ('Landmark_event', 'de iniciarse')],
+    ('Travel', 'viaje'): []}

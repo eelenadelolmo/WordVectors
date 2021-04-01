@@ -1,0 +1,8 @@
+{   ('Cardinal_numbers', 'uno'): [],
+    ('Increment', 'más'): [('Class', 'el')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'el PP , Javier Arenas , número uno por Sevilla'), ('Ground', 'las generales , y más el')],
+    ('Leadership', 'Gobierno'): [],
+    ('Leadership', 'generales'): [],
+    ('Leadership', 'lleva'): [('Leader', 'más'), ('Governed', 'que'), ('Governed', 'a Manuel Chaves')],
+    ('Locative_relation', 'está'): [('Ground', 'está'), ('Figure', ', por el PP , Javier Arenas , número uno por Sevilla en las generales , y')],
+    ('Quantified_mass', 'número'): []}

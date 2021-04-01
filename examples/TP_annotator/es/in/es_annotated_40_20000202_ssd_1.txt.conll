@@ -1,0 +1,11 @@
+{   ('Age', 'Nueva'): [('Entity', 'Hampshire')],
+    ('Buildings', 'Casa'): [],
+    ('Calendric_unit', 'ayer'): [],
+    ('Color', 'Blanca'): [('Entity', 'Casa')],
+    ('Difficulty', 'duro'): [('Activity', 'golpe')],
+    ('Dimension', 'amplia'): [('Object', 'victoria en')],
+    ('Finish_competition', 'victoria en'): [('Manner', 'amplia')],
+    ('First_rank', 'primarias'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'una amplia victoria en las'), ('Ground', 'el estado norteamericano de Nueva Hampshire')],
+    ('Leadership', 'estado'): [('Governed', 'W.'), ('Leader', 'el estado norteamericano de Nueva Hampshire')],
+    ('Manipulation', 'asestó'): [('Time', 'al conseguir una amplia victoria'), ('Entity', 'primarias'), ('Place', 'en el estado norteamericano de Nueva Hampshire')]}

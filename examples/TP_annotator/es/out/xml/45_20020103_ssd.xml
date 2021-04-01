@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="45_20020103_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Los ministros de Asuntos Exteriores de Pakistán y la India</concept>
+		<concept id="c_1">la tensión entre los dos países</concept>
+		<concept id="c_2">El jefe de la diplomacia paquistaní , Abdul Sattar , y el de la india , Jasuant Singh ,</concept>
+		<concept id="c_3">un atentado en la parte de Cachemira administrada por la India</concept>
+		<concept id="c_4">La acción , atribuida a separatistas musulmanes ,</concept>
+		<concept id="c_5">Los terroristas</concept>
+		<concept id="c_6">los atacantes</concept>
+		<concept id="c_7">Nueva Delhi</concept>
+		<concept id="c_8">El ministro de Defensa , George Fernandes ,</concept>
+		<concept id="c_9">los Ejércitos de ambos estados</concept>
+		<concept id="c_10">el primer ministro británico , Tony Blair ,</concept>
+		<concept id="c_11">el presidente paquistaní , Pervez Musharraf ,</concept>
+		<concept id="c_12">excepcional</concept>
+		<concept id="c_13">un muerto</concept>
+		<concept id="c_14">veintena de heridos</concept>
+		<concept id="c_15">varias granadas</concept>
+		<concept id="c_16">policial</concept>
+		<concept id="c_17">la</concept>
+		<concept id="c_18">se</concept>
+		<concept id="c_19">un muerto</concept>
+		<concept id="c_20">granadas</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Los ministros de Asuntos Exteriores de Pakistán y la India rompieron ayer el hielo al encontrarse en Katmandú, capital de Nepal, donde se celebra una reunión de los siete países de Asia del sur.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">ministros</token><token pos="sps00">de</token><token pos="ncms000">Asuntos</token><token pos="aq0ms0">Exteriores</token><token pos="sps00">de</token><token pos="np00000">Pakistán</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="np00000">India</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_19">
+			<token pos="vmis3p0">rompieron</token><mention concept_ref="c_7"><token pos="da0ms0">el</token><token pos="ncms000">hielo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_aware" head="encontrarse">
+				<argument type="Cognizer" dependent="los" />
+				<argument type="Phenomenon" dependent="en Katmandú , capital de Nepal , donde se celebra una reunión de los siete países de Asia del sur" /></frame>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Cardinal_numbers" head="siete">
+				<argument type="Unit" dependent="países de Asia del sur" /></frame>
+			<frame type="Discussion" head="reunión">
+				<argument type="Interlocutors" dependent="los siete países de Asia del sur" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="los" />
+				<argument type="Ground" dependent="Katmandú" /></frame>
+			<frame type="Locative_relation" head="donde">
+				<argument type="Ground" dependent="una reunión de los siete países de Asia del sur" /></frame>
+			<frame type="Political_locales" head="países">
+				<argument type="Relative_location" dependent="de Asia del sur" /></frame>
+			<frame type="Relational_political_locales" head="capital">
+				<argument type="Name" dependent="de Nepal" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A pesar de ello, la tensión entre los dos países sigue siendo excepcional.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">la</token><token pos="ncfs000">tensión</token><token pos="sps00">entre</token><token pos="da0mp0">los</token><token pos="dn0cp0">dos</token><token pos="ncmp000">países</token>
+		</theme>
+		<rheme concept_ref1="c_12">
+			<token pos="vmip3s0">sigue</token><token pos="vsg0000">siendo</token><mention concept_ref="c_12"><token pos="aq0cs0">excepcional</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="países" /></frame>
+			<frame type="Political_locales" head="países" />
+			<main_frame type="State_continue" head="sigue">
+				<argument type="Entity" dependent="la tensión entre los dos países" />
+				<argument type="State" dependent="excepcional" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El jefe de la diplomacia paquistaní, Abdul Sattar, y el de la india, Jasuant Singh, se sonrieron, se saludaron calurosamente y hablaron durante un breve espacio de tiempo, según explicó su homólogo de Sri Lanka, Tyrone Fernando.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="ncms000">jefe</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">diplomacia</token><token pos="aq0cs0">paquistaní</token><token pos="fc">,</token><token pos="np0000l">Abdul</token><token pos="np0000l">Sattar</token><token pos="fc">,</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="aq0fs0">india</token><token pos="fc">,</token><token pos="np0000l">Jasuant</token><token pos="np0000l">Singh</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_18">
+			<mention concept_ref="c_18"><token pos="p0300000">se</token></mention><token pos="vmis3p0">sonrieron</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="jefe" />
+			<frame type="Duration_description" head="breve">
+				<argument type="Eventuality" dependent="tiempo" /></frame>
+			<frame type="Explaining_the_facts" head="explicó" />
+			<main_frame type="Making_faces" head="sonrieron">
+				<argument type="Agent" dependent="la india , Jasuant" /></main_frame>
+			<frame type="Origin" head="india">
+				<argument type="Entity" dependent="se" /></frame>
+			<frame type="Statement" head="hablaron" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ATAQUE TERRORISTA EN CACHEMIRA.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Al mismo tiempo que se registraban esos gestos de cordialidad, un atentado en la parte de Cachemira administrada por la India causó un muerto y una veintena de heridos.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="di0ms0">un</token><token pos="ncms000">atentado</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">parte</token><token pos="sps00">de</token><token pos="np00000">Cachemira</token><token pos="aq0fsp">administrada</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="np00000">India</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_5" concept_ref3="c_13" concept_ref4="c_14" concept_ref5="c_19">
+			<token pos="vmis3s0">causó</token><token pos="di0ms0">un</token><token pos="ncms000">muerto</token><token pos="cc">y</token><mention concept_ref="c_7"><token pos="di0fs0">una</token><token pos="ncfs000">veintena</token></mention><token pos="sps00">de</token><mention concept_ref="c_5"><token pos="ncmp000">heridos</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="atentado">
+				<argument type="Victim" dependent="la parte de Cachemira administrada por la India" /></frame>
+			<frame type="Death" head="muerto" />
+			<frame type="Experience_bodily_harm" head="heridos" />
+			<frame type="Identicality" head="Al mismo">
+				<argument type="Type" dependent="tiempo" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="un atentado en la parte de Cachemira administrada por la India causó" />
+				<argument type="Ground" dependent="un muerto" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="mismo tiempo" /></frame>
+			<frame type="Part_whole" head="parte">
+				<argument type="Part_prop" dependent="administrada por la India" />
+				<argument type="Whole" dependent="de Cachemira" /></frame>
+			<frame type="Recording" head="registraban">
+				<argument type="Time" dependent="Al mismo tiempo que se" />
+				<argument type="Phenomenon" dependent="esos gestos de cordialidad" /></frame>
+			<main_frame type="Resolve_problem" head="causó">
+				<argument type="Problem" dependent="un atentado en la parte de Cachemira administrada por la India" />
+				<argument type="Problem" dependent="un muerto" />
+				<argument type="Problem" dependent="veintena de heridos" /></main_frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="un atentado" />
+				<argument type="Ground" dependent="la parte de Cachemira administrada por la India" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La acción, atribuida a separatistas musulmanes, consistió en un ataque con granadas contra el Parlamento provincial de Srinagar, que se encuentra cerrado durante los meses de invierno.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0fs0">La</token><token pos="ncfs000">acción</token><token pos="fc">,</token><token pos="aq0fsp">atribuida</token><token pos="sps00">a</token><token pos="nccp000">separatistas</token><token pos="aq0mp0">musulmanes</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_17" concept_ref3="c_19" concept_ref4="c_20">
+			<token pos="vmis3s0">consistió</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="ncms000">ataque</token><token pos="sps00">con</token><mention concept_ref="c_20"><token pos="ncfp000">granadas</token></mention><token pos="sps00">contra</token><token pos="da0ms0">el</token><token pos="np00000">Parlamento</token><token pos="aq0cs0">provincial</token><token pos="sps00">de</token><token pos="np00000">Srinagar</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="ataque">
+				<argument type="Weapon" dependent="granadas" />
+				<argument type="Victim" dependent="Parlamento provincial de" /></frame>
+			<frame type="Calendric_unit" head="invierno" />
+			<frame type="Calendric_unit" head="meses">
+				<argument type="Relative_time" dependent="invierno" /></frame>
+			<frame type="Closure" head="cerrado">
+				<argument type="Container_portal" dependent="que" />
+				<argument type="Time" dependent="durante los meses de invierno" /></frame>
+			<frame type="Intentionally_act" head="acción" />
+			<frame type="People_by_religion" head="musulmanes" />
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="un ataque con granadas" />
+				<argument type="Ground" dependent="el Parlamento provincial de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los terroristas lanzaron varias granadas contra la sede parlamentaria.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0mp0">Los</token><token pos="nccp000">terroristas</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_15" concept_ref3="c_17" concept_ref4="c_20">
+			<token pos="vmis3p0">lanzaron</token><token pos="di0fp0">varias</token><mention concept_ref="c_20"><token pos="ncfp000">granadas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Locale_by_use" head="la sede">
+				<argument type="Descriptor" dependent="parlamentaria" /></frame>
+			<frame type="Locative_relation" head="la">
+				<argument type="Figure" dependent="terroristas lanzaron varias granadas" />
+				<argument type="Ground" dependent="la sede parlamentaria" /></frame>
+			<frame type="Quantified_mass" head="varias">
+				<argument type="Individuals" dependent="granadas" /></frame>
+			<main_frame type="Shoot_projectiles" head="lanzaron">
+				<argument type="Agent" dependent="terroristas" />
+				<argument type="Projectile" dependent="varias granadas" />
+				<argument type="Place" dependent="la sede parlamentaria" /></main_frame>
+			<frame type="Terrorism" head="terroristas" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Situados a unos 30 metros de la entrada de la cámara, los atacantes arrojaron el primer explosivo contra una furgoneta policial, pero la granada no estalló.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0mp0">los</token><token pos="nccp000">atacantes</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_3" concept_ref3="c_12" concept_ref4="c_16" concept_ref5="c_19">
+			<token pos="vmis3p0">arrojaron</token><token pos="da0ms0">el</token><token pos="ao0ms0">primer</token><token pos="ncms000">explosivo</token><token pos="sps00">contra</token><token pos="di0fs0">una</token><token pos="ncfs000">furgoneta</token><mention concept_ref="c_16"><token pos="aq0cs0">policial</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="entrada">
+				<argument type="Theme" dependent="la cámara" /></frame>
+			<frame type="Attack" head="atacantes" />
+			<main_frame type="Cause_motion" head="arrojaron">
+				<argument type="Cause" dependent="los atacantes" />
+				<argument type="Theme" dependent="el primer explosivo" />
+				<argument type="Area" dependent="policial" /></main_frame>
+			<frame type="Change_position_on_a_scale" head="explosivo">
+				<argument type="Item" dependent="la granada" /></frame>
+			<frame type="Goal" head="entrada">
+				<argument type="Trajector" dependent="el primer explosivo" />
+				<argument type="Landmark" dependent="policial" /></frame>
+			<frame type="Law_enforcement_agency" head="policial" />
+			<frame type="Measure_linear_extent" head="metros">
+				<argument type="Count" dependent="30" /></frame>
+			<frame type="Ordinal_numbers" head="primer">
+				<argument type="Type" dependent="explosivo" /></frame>
+			<frame type="Proportional_quantity" head="de la">
+				<argument type="Q_prop" dependent="Situados a" />
+				<argument type="Reference_quantity" dependent="30" />
+				<argument type="Individuals" dependent="metros" /></frame>
+			<frame type="Weapon" head="explosivo">
+				<argument type="Name" dependent="primer" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El fallecido, así como varios heridos, era policía.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cause_harm" head="heridos">
+				<argument type="Degree" dependent="varios" /></frame>
+			<frame type="Death" head="fallecido" />
+			<frame type="Law_enforcement_agency" head="policía" />
+			<frame type="Quantified_mass" head="varios">
+				<argument type="Individuals" dependent="heridos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Nueva Delhi anunció ayer que ha completado sus movimientos de tropas en la frontera con Pakistán.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="aq0ms0">Nueva</token><token pos="np00000">Delhi</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_6" concept_ref3="c_11" concept_ref4="c_14" concept_ref5="c_17" concept_ref6="c_15" concept_ref7="c_19" concept_ref8="c_20">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">completado</token><mention concept_ref="c_14"><token pos="dp3cp0">sus</token><token pos="ncmp000">movimientos</token><token pos="sps00">de</token><token pos="ncfp000">tropas</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">frontera</token><token pos="sps00">con</token><token pos="np00000">Pakistán</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_finish" head="completado">
+				<argument type="Agent" dependent="la" />
+				<argument type="Activity" dependent="sus movimientos de tropas en la frontera con Pakistán" /></main_frame>
+			<frame type="Statement" head="anunció">
+				<argument type="Speaker" dependent="Nueva" />
+				<argument type="Manner" dependent="ayer que" />
+				<argument type="Message" dependent="que ha completado sus movimientos de tropas en la frontera con Pakistán" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El ministro de Defensa, George Fernandes, explicó que, pese a que la tensión se mantiene, se están haciendo "esfuerzos a otra escala" para que las disputas entre los dos países sean resueltas en el terreno diplomático.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="da0ms0">El</token><token pos="ncms000">ministro</token><token pos="sps00">de</token><token pos="np00000">Defensa</token><token pos="fc">,</token><token pos="np0000l">George</token><token pos="np0000l">Fernandes</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_5" concept_ref3="c_6" concept_ref4="c_8" concept_ref5="c_14" concept_ref6="c_17" concept_ref7="c_18" concept_ref8="c_19">
+			<token pos="fc">,</token><token pos="vmis3s0">pese</token><token pos="sps00">a</token><token pos="pi0ms000">que</token><mention concept_ref="c_17"><token pos="da0fs0">la</token></mention><token pos="ncfs000">tensión</token><token pos="p0300000">se</token><token pos="vmip3s0">mantiene</token><token pos="fc">,</token><token pos="p0000000">se</token><token pos="vmip3p0">están</token><token pos="vmg0000">haciendo</token><token pos="fe">quot;</token><token pos="ncmp000">esfuerzos</token><token pos="sps00">a</token><mention concept_ref="c_5"><token pos="di0fs0">otra</token><token pos="ncfs000">escala</token></mention><token pos="fe">quot;</token><token pos="sps00">para</token><token pos="cs">que</token><mention concept_ref="c_6"><token pos="da0fp0">las</token><token pos="ncfp000">disputas</token></mention><token pos="sps00">entre</token><token pos="da0mp0">los</token><token pos="dn0cp0">dos</token><token pos="ncmp000">países</token><token pos="vssp3p0">sean</token><token pos="vmp00pf">resueltas</token><token pos="sps00">en</token><mention concept_ref="c_8"><token pos="da0ms0">el</token><token pos="ncms000">terreno</token></mention><token pos="aq0ms0">diplomático</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attempt" head="esfuerzos" />
+			<frame type="Explaining_the_facts" head="explicó">
+				<argument type="Fact" dependent="ministro de Defensa , George" /></frame>
+			<frame type="Increment" head="otra">
+				<argument type="Class" dependent="escala" /></frame>
+			<frame type="Leadership" head="ministro">
+				<argument type="Type" dependent="Defensa" /></frame>
+			<frame type="Political_locales" head="países">
+				<argument type="Relative_location" dependent="en el terreno diplomático" /></frame>
+			<main_frame type="Process_continue" head="mantiene">
+				<argument type="Event" dependent="esfuerzos a otra escala  quot ; para que las disputas entre los dos países sean resueltas en el terreno diplomático" /></main_frame>
+			<frame type="Quarreling" head="disputas">
+				<argument type="Manner" dependent="resueltas" />
+				<argument type="Arguers" dependent="entre los dos países sean resueltas en el terreno diplomático" /></frame>
+			<main_frame type="Resolve_problem" head="resueltas">
+				<argument type="Problem" dependent="disputas entre los dos países sean resueltas en el terreno diplomático" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 De momento, los Ejércitos de ambos estados siguen en estado de alerta.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="da0mp0">los</token><token pos="np00000">Ejércitos</token><token pos="sps00">de</token><token pos="dn0mp0">ambos</token><token pos="ncmp000">estados</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_6" concept_ref3="c_14">
+			<token pos="vmip3p0">siguen</token><token pos="sps00">en</token><mention concept_ref="c_5"><token pos="ncms000">estado</token></mention><mention concept_ref="c_14"><token pos="sps00">de</token><token pos="ncfs000">alerta</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attention" head="alerta">
+				<argument type="Perceiver" dependent="los Ejércitos de ambos estados" /></frame>
+			<frame type="Leadership" head="estados" />
+			<main_frame type="State_continue" head="siguen">
+				<argument type="Entity" dependent="los Ejércitos de ambos estados" />
+				<argument type="State" dependent="de alerta" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Con la intención de avanzar en esa senda, el primer ministro británico, Tony Blair, empezará mañana una gira por Pakistán y la India.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="da0ms0">el</token><token pos="ao0ms0">primer</token><token pos="ncms000">ministro</token><token pos="aq0ms0">británico</token><token pos="fc">,</token><token pos="np0000l">Tony</token><token pos="np0000l">Blair</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_11" concept_ref2="c_3" concept_ref3="c_15" concept_ref4="c_17" concept_ref5="c_20">
+			<token pos="vmif3s0">empezará</token><mention concept_ref="c_15"><token pos="rg">mañana</token><token pos="di0fs0">una</token><token pos="ncfs000">gira</token><token pos="sps00">por</token><token pos="np00000">Pakistán</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="np00000">India</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_start" head="empezará">
+				<argument type="Time" dependent="de avanzar en esa senda" />
+				<argument type="Agent" dependent="primer ministro británico , Tony Blair" />
+				<argument type="Activity" dependent="mañana una gira por Pakistán y la India" /></main_frame>
+			<frame type="Roadways" head="gira por">
+				<argument type="Roadway" dependent="esa" /></frame>
+			<frame type="Travel" head="gira">
+				<argument type="Traveler" dependent="primer ministro británico , Tony Blair" />
+				<argument type="Traveler" dependent="Pakistán y la India" />
+				<argument type="Descriptor" dependent="mañana" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por lo pronto, el presidente paquistaní, Pervez Musharraf, advirtió ayer a las autoridades indias de que "lo pagarán caro" si cometen el "error" de atacar a Pakistán, aunque también afirmó que su país no será el primero en empezar una guerra.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="da0ms0">el</token><token pos="ncms000">presidente</token><token pos="aq0cs0">paquistaní</token><token pos="fc">,</token><token pos="np0000l">Pervez</token><token pos="np0000l">Musharraf</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_11" concept_ref2="c_5" concept_ref3="c_17" concept_ref4="c_15" concept_ref5="c_19" concept_ref6="c_20" concept_ref7="c_18">
+			<token pos="vmis3s0">advirtió</token><token pos="sps00">a</token><mention concept_ref="c_5"><token pos="da0fp0">las</token><token pos="ncfp000">autoridades</token></mention><token pos="aq0fp0">indias</token><token pos="sps00">de</token><token pos="cs">que</token><token pos="fe">quot;</token><token pos="pp3msa00">lo</token><token pos="vmif3p0">pagarán</token><token pos="aq0ms0">caro</token><token pos="fe">quot;</token><token pos="cs">si</token><token pos="vmip3p0">cometen</token><token pos="da0ms0">el</token><token pos="fe">quot;</token><mention concept_ref="c_18"><token pos="ncms000">error</token></mention><token pos="fe">quot;</token><token pos="sps00">de</token><token pos="vmn0000">atacar</token><token pos="sps00">a</token><token pos="np00000">Pakistán</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_start" head="empezar">
+				<argument type="Agent" dependent="su país" />
+				<argument type="Activity" dependent="una guerra" /></frame>
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="Pervez" /></frame>
+			<main_frame type="Attack" head="atacar">
+				<argument type="Victim" dependent="Pakistán" /></main_frame>
+			<main_frame type="Commerce_pay" head="pagarán">
+				<argument type="Buyer" dependent="su" />
+				<argument type="Goods" dependent="; si cometen el  quot ; error  quot ; de atacar a Pakistán , aunque también afirmó que su país" /></main_frame>
+			<frame type="Hostile_encounter" head="guerra" />
+			<frame type="Ordinal_numbers" head="primero">
+				<argument type="Type" dependent="en empezar una guerra" /></frame>
+			<frame type="Origin" head="indias">
+				<argument type="Entity" dependent="autoridades" /></frame>
+			<frame type="Political_locales" head="país" />
+			<frame type="Statement" head="afirmó">
+				<argument type="Speaker" dependent="lo" />
+				<argument type="Message" dependent="que su país no será el primero en empezar una guerra" /></frame>
+			<main_frame type="Warning" head="advirtió">
+				<argument type="Speaker" dependent="el presidente paquistaní , Pervez Musharraf" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

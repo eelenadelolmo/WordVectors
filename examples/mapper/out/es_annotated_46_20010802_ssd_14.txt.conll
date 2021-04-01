@@ -1,0 +1,13 @@
+{   ('Awareness', 'sabido'): [('Cognizer', 'se'), ('Content', 'los directivos de Shell')],
+    ('Body_parts', 'jefes'): [('Possessor', 'de la Oficina de Control de la Competencia y los directivos de Shell')],
+    ('Discussion', 'reunión'): [('Interlocutor_2', 'entre los jefes de la Oficina de Control de la Competencia y los directivos')],
+    ('Increment', 'Otros'): [('Class', 'periódicos')],
+    ('Information', 'información'): [('Topic', 'en los resúmenes e informes de los juzgados')],
+    ('Interior_profile_relation', 'entre'): [('Figure', 'una reunión'), ('Ground', 'los jefes de la Oficina de Control de la Competencia y los directivos')],
+    ('Judicial_body', 'juzgados'): [],
+    ('Locative_relation', 'se ha'): [('Ground', 'hubo una reunión entre los jefes de la Oficina de Control de la Competencia y los directivos')],
+    ('People_by_vocation', 'los directivos'): [('Persistent_characteristic', 'Shell')],
+    ('Perception_active', 'se'): [('Perceiver_agentive', 'Otros periódicos , como el Svenska'), ('Phenomenon', 'información en los resúmenes e informes de los juzgados y por')],
+    ('Statement', 'informes'): [],
+    ('Temporal_collocation', 'recientemente'): [('Trajector_event', 'por éstos se ha sabido que')],
+    ('Text', 'periódicos'): []}

@@ -1,0 +1,5 @@
+{   ('Body_parts', 'cara le'): [('Possessor', 'sus')],
+    ('Body_parts', 'ojos'): [('Possessor', 'sus')],
+    ('Color', 'negros'): [('Entity', 'sus ojos')],
+    ('Location_of_light', 'brillantes'): [],
+    ('Reveal_secret', 'admitía'): [('Speaker', 'sus'), ('Time', 'y la'), ('Information', 'quot ; pese a todo , sus ojos negros y muy brillantes y la violencia que transmite su cara le')]}

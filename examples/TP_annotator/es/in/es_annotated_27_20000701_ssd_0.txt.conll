@@ -1,0 +1,5 @@
+{   ('Frequency', 'a veces'): [('Event', 'cárceles'), ('Event', 'crean a veces más problemas de los que resuelven')],
+    ('Increment', 'más'): [('Class', 'problemas')],
+    ('Intentionally_create', 'crean a'): [('Creator', 'cárceles'), ('Time', 'a veces'), ('Created_entity', 'más problemas'), ('Place', 'que resuelven')],
+    ('Predicament', 'problemas'): [],
+    ('Resolve_problem', 'resuelven'): [('Agent', 'los')]}

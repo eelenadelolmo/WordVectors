@@ -1,0 +1,1692 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="vm">
+
+
+	<concepts>
+		<concept id="c_0">A Virtual Machine ( VM )</concept>
+		<concept id="c_1">This</concept>
+		<concept id="c_2">public cloud services</concept>
+		<concept id="c_3">For_example , a Linux virtual machine running a distribution of Linux as the guest operating system</concept>
+		<concept id="c_4">Most enterprises</concept>
+		<concept id="c_5">All the components of a traditional data center or IT infrastructure</concept>
+		<concept id="c_6">A hypervisor</concept>
+		<concept id="c_7">Android OS</concept>
+		<concept id="c_8">applications</concept>
+		<concept id="c_9">Storage</concept>
+		<concept id="c_10">Benefits</concept>
+		<concept id="c_11">Multiple sub-networks</concept>
+		<concept id="c_12">container technology such as Kubernetes</concept>
+		<concept id="c_13">a compute resource</concept>
+		<concept id="c_14">that</concept>
+		<concept id="c_15">to run programs and deploy apps</concept>
+		<concept id="c_16">its own operating system and functions</concept>
+		<concept id="c_17">on the same host</concept>
+		<concept id="c_18">for many use cases across on-premises and cloud environments</concept>
+		<concept id="c_19">virtual machines</concept>
+		<concept id="c_20">to provide virtual application resources to multiple users at once</concept>
+		<concept id="c_21">more</concept>
+		<concept id="c_22">to accommodate different levels of processing power needs</concept>
+		<concept id="c_23">specific tasks</concept>
+		<concept id="c_24">considered too risky</concept>
+		<concept id="c_25">on a single physical computer</concept>
+		<concept id="c_26">options</concept>
+		<concept id="c_27">a combination of physical and virtual infrastructure</concept>
+		<concept id="c_28">to balance the corresponding advantages and disadvantages</concept>
+		<concept id="c_29">a single process to run as an application on a host machine</concept>
+		<concept id="c_30">they were native to that system</concept>
+		<concept id="c_31">natively</concept>
+		<concept id="c_32">employees to access centrally hosted applications</concept>
+		<concept id="c_33">increased performance and speed , load balancing and reduced costs</concept>
+		<concept id="c_34">costs</concept>
+		<concept id="c_35">available bandwidth</concept>
+		<concept id="c_36">increased reliability , network speed , security and better monitoring of data usage</concept>
+		<concept id="c_37">users</concept>
+		<concept id="c_38">at all times</concept>
+		<concept id="c_39">users to access their desktops from anywhere on any device</concept>
+		<concept id="c_40">better data security , cost savings on software licenses and updates , and ease of management</concept>
+		<concept id="c_41">together</concept>
+		<concept id="c_42">many guides online that walk users through the process</concept>
+		<concept id="c_43">through the process</concept>
+		<concept id="c_44">a compute resource</concept>
+		<concept id="c_45">its own operating system</concept>
+		<concept id="c_46">functions</concept>
+		<concept id="c_47">the same host</concept>
+		<concept id="c_48">many use cases</concept>
+		<concept id="c_49">premises</concept>
+		<concept id="c_50">a business</concept>
+		<concept id="c_51">a completely separate computer</concept>
+		<concept id="c_52">a desktop</concept>
+		<concept id="c_53">different levels</concept>
+		<concept id="c_54">efficiency</concept>
+		<concept id="c_55">a log file</concept>
+		<concept id="c_56">time and management costs</concept>
+		<concept id="c_57">a combination</concept>
+		<concept id="c_58">a single process</concept>
+		<concept id="c_59">the information</concept>
+		<concept id="c_60">the underlying hardware</concept>
+		<concept id="c_61">an end user ’ s device</concept>
+		<concept id="c_62">reduced costs</concept>
+		<concept id="c_63">security</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 What is a virtual machine?
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machine">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A   Virtual Machine ( VM ) is a compute resource that uses software instead_of a physical computer to run programs and deploy apps.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="DT">A</token><token pos="Fz">Virtual</token><token pos="JJ">Machine</token><token pos="NN">(</token><token pos="Fpa">VM</token><token pos="NP00O00">)</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_8" concept_ref3="c_13" concept_ref4="c_14" concept_ref5="c_15" concept_ref6="c_44">
+			<token pos="VBZ">is</token><token pos="DT">a</token><token pos="VBP">compute</token><token pos="NN">resource</token><mention concept_ref="c_14"><token pos="WDT">that</token></mention><token pos="VBZ">uses</token><mention concept_ref="c_0"><token pos="NN">software</token></mention><token pos="IN">instead_of</token><token pos="DT">a</token><token pos="JJ">physical</token><token pos="NN">computer</token><mention concept_ref="c_15"><token pos="TO">to</token><token pos="VB">run</token><token pos="NNS">programs</token><token pos="CC">and</token><token pos="VB">deploy</token><token pos="NNS">apps</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Using" head="uses">
+				<argument type="Instrument" dependent="a compute resource" />
+				<argument type="Agent" dependent="that" />
+				<argument type="Instrument" dependent="software unk a physical computer" />
+				<argument type="Purpose" dependent="to run programs and deploy apps" /></main_frame>
+			<main_frame type="Self_motion" head="run">
+				<argument type="Goal" dependent="programs and deploy apps" /></main_frame>
+			<frame type="Project" head="programs" />
+			<main_frame type="Arranging" head="deploy">
+				<argument type="Theme" dependent="apps" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 One or more virtual “ guest ” machines run on a physical “ host ” machine.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="one">
+				<argument type="Entity" dependent="virtual unk guest" /></frame>
+			<frame type="Increment" head="more">
+				<argument type="Class" dependent="virtual unk guest" /></frame>
+			<frame type="Temporary_stay" head="guest">
+				<argument type="Descriptor" dependent="virtual unk" /></frame>
+			<frame type="Gizmo" head="machines" />
+			<frame type="Self_motion" head="run">
+				<argument type="Self_mover" dependent="machines" />
+				<argument type="Goal" dependent="on a physical unk host" /></frame>
+			<frame type="Spatial_contact" head="on">
+				<argument type="Ground" dependent="a physical unk host ” machine" /></frame>
+			<frame type="Aggregate" head="host">
+				<argument type="Aggregate_property" dependent="physical" />
+				<argument type="Individuals" dependent="unk" /></frame>
+			<frame type="Gizmo" head="machine" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Each virtual machine runs its own operating system and functions separately from the other VMs, even when they are all running on the same host.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="DT">Each</token><token pos="JJ">virtual</token><token pos="NN">machine</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_14" concept_ref4="c_16" concept_ref5="c_17" concept_ref6="c_45" concept_ref7="c_46" concept_ref8="c_47" concept_ref9="c_49">
+			<mention concept_ref="c_49"><token pos="VBZ">runs</token></mention><mention concept_ref="c_45"><token pos="PRP$">its</token><token pos="JJ">own</token><token pos="VBG">operating</token><token pos="NN">system</token></mention><token pos="CC">and</token><mention concept_ref="c_46"><token pos="NNS">functions</token></mention><token pos="RB">separately</token><token pos="Fc">,</token><token pos="RB">even</token><token pos="WRB">when</token><token pos="PRP">they</token><token pos="VBP">are</token><token pos="RB">all</token><token pos="VBG">running</token><mention concept_ref="c_17"><token pos="IN">on</token><token pos="DT">the</token><token pos="JJ">same</token><token pos="NN">host</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machine">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<main_frame type="Self_motion" head="runs">
+				<argument type="Self_mover" dependent="each virtual machine" />
+				<argument type="Source" dependent="its own operating system and functions" />
+				<argument type="Direction" dependent="separately from the other vms" /></main_frame>
+			<main_frame type="Operating_a_system" head="operating">
+				<argument type="Operator" dependent="virtual machine" /></main_frame>
+			<frame type="System" head="system" />
+			<frame type="Contingency" head="functions" />
+			<frame type="Increment" head="other">
+				<argument type="Class" dependent="vms" /></frame>
+			<main_frame type="Self_motion" head="running">
+				<argument type="Self_mover" dependent="they" />
+				<argument type="Goal" dependent="on the same host" /></main_frame>
+			<frame type="Spatial_contact" head="on">
+				<argument type="Figure" dependent="they" />
+				<argument type="Figure" dependent="all running" />
+				<argument type="Ground" dependent="the same host" /></frame>
+			<frame type="Identicality" head="same">
+				<argument type="Type" dependent="host" /></frame>
+			<frame type="Aggregate" head="host">
+				<argument type="Aggregate_property" dependent="same" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 This means that, for_example, a virtual MacOS virtual machine can run on a physical PC.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="DT">This</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_14" concept_ref3="c_19">
+			<token pos="VBZ">means</token><mention concept_ref="c_14"><token pos="WDT">that</token></mention><token pos="Fc">,</token><token pos="RB">for_example</token><token pos="Fc">,</token><mention concept_ref="c_0"><token pos="DT">a</token><token pos="JJ">virtual</token><token pos="NP00V00">MacOS</token><token pos="JJ">virtual</token><token pos="NN">machine</token></mention><token pos="MD">can</token><token pos="VB">run</token><token pos="IN">on</token><token pos="DT">a</token><token pos="JJ">physical</token><token pos="NP00O00">PC</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Evidence" head="means">
+				<argument type="Support" dependent="this" />
+				<argument type="Proposition" dependent="that , unk , a virtual macos virtual machine can run on a physical pc" /></main_frame>
+			<frame type="Gizmo" head="machine">
+				<argument type="Descriptor" dependent="macos virtual" /></frame>
+			<frame type="Capability" head="can">
+				<argument type="Entity" dependent="unk , a virtual macos virtual machine" />
+				<argument type="Event" dependent="run on a physical pc" /></frame>
+			<main_frame type="Self_motion" head="run">
+				<argument type="Self_mover" dependent="unk , a virtual macos virtual machine" />
+				<argument type="Source" dependent="on a physical pc" /></main_frame>
+			<frame type="Spatial_contact" head="on">
+				<argument type="Figure" dependent="unk , a virtual macos virtual machine" />
+				<argument type="Ground" dependent="a physical pc" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Virtual machine technology is used for many use cases across on-premises and cloud environments.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="JJ">Virtual</token><token pos="NN">machine</token><token pos="NN">technology</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_8" concept_ref3="c_18" concept_ref4="c_48" concept_ref5="c_49">
+			<token pos="VBZ">is</token><token pos="VBN">used</token><mention concept_ref="c_18"><token pos="IN">for</token><token pos="DT">many</token><token pos="NN">use</token><token pos="NNS">cases</token><token pos="IN">across</token><token pos="NNS">on-premises</token><token pos="CC">and</token><token pos="NN">cloud</token><token pos="NNS">environments</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machine">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<frame type="Artifact" head="technology">
+				<argument type="Type" dependent="machine" /></frame>
+			<main_frame type="Using" head="used">
+				<argument type="Instrument" dependent="virtual machine technology" />
+				<argument type="Purpose" dependent="for many use cases across on-premises and cloud environments" /></main_frame>
+			<frame type="Using" head="use" />
+			<frame type="Instance" head="cases">
+				<argument type="Type" dependent="use" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 More recently, public cloud services are using virtual machines to provide virtual application resources to multiple users at once, for even more cost efficient and flexible compute.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="JJ">public</token><token pos="NN">cloud</token><token pos="NNS">services</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_11" concept_ref3="c_13" concept_ref4="c_15" concept_ref5="c_19" concept_ref6="c_20" concept_ref7="c_21" concept_ref8="c_37" concept_ref9="c_44" concept_ref10="c_48" concept_ref11="c_61">
+			<token pos="VBP">are</token><token pos="VBG">using</token><token pos="JJ">virtual</token><token pos="NNS">machines</token><mention concept_ref="c_20"><token pos="TO">to</token><token pos="VB">provide</token><token pos="JJ">virtual</token><token pos="NN">application</token><token pos="NNS">resources</token><token pos="TO">to</token><token pos="JJ">multiple</token><token pos="NNS">users</token><token pos="IN">at</token><token pos="RB">once</token></mention><token pos="Fc">,</token><token pos="IN">for</token><token pos="RB">even</token><mention concept_ref="c_21"><token pos="RB">more</token></mention><token pos="VB">cost</token><token pos="JJ">efficient</token><token pos="CC">and</token><token pos="JJ">flexible</token><token pos="VB">compute</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Increment" head="more" />
+			<frame type="Temporal_collocation" head="recently">
+				<argument type="Trajector_event" dependent="more" /></frame>
+			<frame type="Secrecy_status" head="public" />
+			<frame type="Public_services" head="services">
+				<argument type="Domain" dependent="public cloud" /></frame>
+			<main_frame type="Using" head="using">
+				<argument type="Agent" dependent="public cloud services" />
+				<argument type="Instrument" dependent="virtual machines" />
+				<argument type="Purpose" dependent="to provide virtual application resources to multiple users at once" /></main_frame>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<main_frame type="Supply" head="provide">
+				<argument type="Theme" dependent="virtual application resources" /></main_frame>
+			<frame type="Using" head="application">
+				<argument type="Instrument" dependent="resources" /></frame>
+			<frame type="Quantified_mass" head="multiple">
+				<argument type="Individuals" dependent="users" /></frame>
+			<frame type="Locative_relation" head="at">
+				<argument type="Figure" dependent="public cloud services are using virtual machines to provide virtual application resources to multiple users" />
+				<argument type="Ground" dependent="once" /></frame>
+			<main_frame type="Expensiveness" head="cost">
+				<argument type="Degree" dependent="more" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 What are virtual machines used for?
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<frame type="Using" head="used">
+				<argument type="Instrument" dependent="what" />
+				<argument type="Instrument" dependent="virtual machines" />
+				<argument type="Purpose" dependent="for" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Virtual machines   ( VMs ) allow a business to run an operating system that behaves like a completely separate computer in an app window on a desktop.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="JJ">Virtual</token><token pos="NNS">machines</token><token pos="Fz">(</token><token pos="Fpa">VMs</token><token pos="NP00O00">)</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_8" concept_ref3="c_14" concept_ref4="c_16" concept_ref5="c_45" concept_ref6="c_50" concept_ref7="c_51" concept_ref8="c_52">
+			<token pos="VB">allow</token><mention concept_ref="c_50"><token pos="DT">a</token><token pos="NN">business</token></mention><token pos="TO">to</token><token pos="VB">run</token><mention concept_ref="c_16"><token pos="DT">an</token><token pos="VBG">operating</token><token pos="NN">system</token><token pos="WDT">that</token><token pos="VBZ">behaves</token><token pos="IN">like</token><token pos="DT">a</token><token pos="RB">completely</token><token pos="JJ">separate</token><token pos="NN">computer</token><token pos="IN">in</token><token pos="DT">an</token><token pos="NN">app</token><token pos="NN">window</token><token pos="IN">on</token><token pos="DT">a</token><token pos="JJ">desktop</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<main_frame type="Preventing_or_letting" head="allow">
+				<argument type="Agent" dependent="virtual machines unk ( vms )" />
+				<argument type="Event" dependent="a business to run an operating system that behaves like a completely separate computer in an app window on a desktop" /></main_frame>
+			<frame type="Businesses" head="business" />
+			<main_frame type="Self_motion" head="run">
+				<argument type="Goal" dependent="an operating system that behaves like a completely separate computer in an app window on a desktop" /></main_frame>
+			<frame type="System" head="system">
+				<argument type="Function" dependent="operating" /></frame>
+			<frame type="Connecting_architecture" head="window">
+				<argument type="Whole" dependent="app" />
+				<argument type="Whole" dependent="on a desktop" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 VMs may be deployed to accommodate different levels of processing power needs, to run software that requires a different operating system, or to test applications in a safe, sandboxed environment.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="NP00V00">VMs</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_8" concept_ref3="c_14" concept_ref4="c_15" concept_ref5="c_16" concept_ref6="c_22" concept_ref7="c_45" concept_ref8="c_53">
+			<token pos="MD">may</token><token pos="VB">be</token><token pos="VBN">deployed</token><mention concept_ref="c_22"><token pos="TO">to</token><token pos="VB">accommodate</token><token pos="JJ">different</token><token pos="NNS">levels</token><token pos="IN">of</token><token pos="VBG">processing</token><token pos="NN">power</token><token pos="NNS">needs</token></mention><token pos="Fc">,</token><token pos="TO">to</token><token pos="VB">run</token><mention concept_ref="c_0"><token pos="NN">software</token></mention><mention concept_ref="c_14"><token pos="WDT">that</token></mention><token pos="VBZ">requires</token><mention concept_ref="c_16"><token pos="DT">a</token><token pos="JJ">different</token><token pos="VBG">operating</token><token pos="NN">system</token></mention><token pos="Fc">,</token><token pos="CC">or</token><token pos="TO">to</token><token pos="VB">test</token><token pos="NNS">applications</token><token pos="IN">in</token><token pos="DT">a</token><token pos="JJ">safe</token><token pos="Fc">,</token><token pos="VBN">sandboxed</token><token pos="NN">environment</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Arranging" head="deployed">
+				<argument type="Theme" dependent="vms" />
+				<argument type="Theme" dependent="to accommodate different levels of processing power needs" /></main_frame>
+			<frame type="Similarity" head="different">
+				<argument type="Entities" dependent="operating system" /></frame>
+			<frame type="Rank" head="levels">
+				<argument type="Rank" dependent="different levels of processing power" /></frame>
+			<frame type="Electricity" head="power" />
+			<frame type="Needing" head="needs">
+				<argument type="Requirement" dependent="levels of processing power" />
+				<argument type="Requirement" dependent="to run software that requires a different operating system , or to test applications in a safe , unk environment" /></frame>
+			<main_frame type="Self_motion" head="run">
+				<argument type="Goal" dependent="software that requires a different operating system" /></main_frame>
+			<main_frame type="Have_as_requirement" head="requires">
+				<argument type="Dependent" dependent="vms may be deployed to accommodate different levels of processing power needs , to run software that" />
+				<argument type="Requirement" dependent="a different operating system" /></main_frame>
+			<frame type="System" head="system">
+				<argument type="Function" dependent="operating" /></frame>
+			<main_frame type="Operational_testing" head="test">
+				<argument type="Product" dependent="applications" /></main_frame>
+			<frame type="Using" head="applications">
+				<argument type="Purpose" dependent="test" />
+				<argument type="Purpose" dependent="in a safe , unk environment" /></frame>
+			<frame type="Containers" head="safe" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Virtual machines have historically been used for server virtualization, which   enables IT teams to consolidate their computing resources and improve efficiency.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="JJ">Virtual</token><token pos="NNS">machines</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_13" concept_ref3="c_19" concept_ref4="c_44" concept_ref5="c_47" concept_ref6="c_54">
+			<token pos="VBP">have</token><token pos="VBN">been</token><token pos="VBN">used</token><token pos="IN">for</token><mention concept_ref="c_47"><token pos="NN">server</token></mention><token pos="NN">virtualization</token><token pos="Fc">,</token><token pos="WDT">which</token><token pos="Fz">enables</token><token pos="VBZ">IT</token><token pos="PRP">teams</token><token pos="NNS">to</token><token pos="TO">consolidate</token><mention concept_ref="c_44"><token pos="VB">their</token><token pos="PRP$">computing</token><token pos="VBG">resources</token></mention><token pos="NNS">and</token><token pos="CC">improve</token><mention concept_ref="c_54"><token pos="VB">efficiency</token></mention><token pos="NN">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<frame type="Domain" head="historically">
+				<argument type="Predicate" dependent="virtual machines have" />
+				<argument type="Predicate" dependent="been used for server virtualization , which unk enables it teams to consolidate their computing resources and improve efficiency" /></frame>
+			<main_frame type="Using" head="used">
+				<argument type="Instrument" dependent="virtual machines" />
+				<argument type="Purpose" dependent="for server virtualization" /></main_frame>
+			<frame type="Aggregate" head="teams">
+				<argument type="Individuals" dependent="to consolidate their computing resources and improve efficiency" /></frame>
+			<main_frame type="Cause_to_amalgamate" head="consolidate">
+				<argument type="Parts" dependent="their computing resources and improve efficiency" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Additionally, virtual machines can perform specific tasks considered too risky to carry out in a host environment, such as accessing virus-infected data or testing operating systems.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="JJ">virtual</token><token pos="NNS">machines</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_16" concept_ref3="c_23" concept_ref4="c_24" concept_ref5="c_32" concept_ref6="c_45" concept_ref7="c_46" concept_ref8="c_47">
+			<token pos="MD">can</token><token pos="VB">perform</token><token pos="JJ">specific</token><token pos="NNS">tasks</token><mention concept_ref="c_24"><token pos="VBN">considered</token><token pos="RB">too</token><token pos="JJ">risky</token></mention><token pos="TO">to</token><token pos="VB">carry</token><token pos="RP">out</token><token pos="IN">in</token><mention concept_ref="c_47"><token pos="DT">a</token><token pos="NN">host</token><token pos="NN">environment</token></mention><token pos="Fc">,</token><token pos="JJ">such</token><token pos="IN">as</token><token pos="VBG">accessing</token><token pos="VBN">virus-infected</token><token pos="NNS">data</token><token pos="CC">or</token><token pos="VBG">testing</token><token pos="VBG">operating</token><token pos="NNS">systems</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<frame type="Capability" head="can">
+				<argument type="Entity" dependent="virtual machines" />
+				<argument type="Event" dependent="perform specific tasks considered too risky to carry out in a host environment , such as accessing unk data or testing operating systems" /></frame>
+			<main_frame type="Intentionally_act" head="perform">
+				<argument type="Agent" dependent="virtual machines" />
+				<argument type="Act" dependent="specific tasks" />
+				<argument type="Means" dependent="considered too risky to carry out in a host environment , such as accessing unk data or testing operating systems" /></main_frame>
+			<frame type="Being_obligated" head="tasks" />
+			<main_frame type="Categorization" head="considered">
+				<argument type="Category" dependent="specific tasks" />
+				<argument type="Item" dependent="too risky to carry out in a host environment , such as accessing unk data or testing operating systems" /></main_frame>
+			<frame type="Risky_situation" head="risky">
+				<argument type="Situation" dependent="specific tasks" /></frame>
+			<main_frame type="Bringing" head="carry">
+				<argument type="Carrier" dependent="virtual machines" />
+				<argument type="Theme" dependent="specific tasks" />
+				<argument type="Carrier" dependent="considered too risky" /></main_frame>
+			<frame type="Aggregate" head="host" />
+			<frame type="Information" head="data" />
+			<main_frame type="Operational_testing" head="testing">
+				<argument type="Product" dependent="operating systems" /></main_frame>
+			<frame type="System" head="systems">
+				<argument type="Function" dependent="testing operating" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Since the virtual machine is separated from the rest of the system, the software inside the virtual machine can not tamper with the host computer.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="DT">the</token><token pos="JJ">virtual</token><token pos="NN">machine</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_19" concept_ref3="c_16" concept_ref4="c_45" concept_ref5="c_47" concept_ref6="c_49">
+			<token pos="VBZ">is</token><token pos="VBN">separated</token><token pos="IN">from</token><mention concept_ref="c_49"><token pos="DT">the</token><token pos="NN">rest</token></mention><token pos="IN">of</token><mention concept_ref="c_45"><token pos="DT">the</token><token pos="NN">system</token></mention><token pos="Fc">,</token><token pos="DT">the</token><mention concept_ref="c_0"><token pos="NN">software</token></mention><token pos="IN">inside</token><mention concept_ref="c_19"><token pos="DT">the</token><token pos="JJ">virtual</token><token pos="NN">machine</token></mention><token pos="MD">can</token><token pos="RB">not</token><token pos="VB">tamper</token><token pos="IN">with</token><mention concept_ref="c_47"><token pos="DT">the</token><token pos="NN">host</token><token pos="NN">computer</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Time_vector" head="since">
+				<argument type="Event" dependent="the virtual machine is separated from the rest of the system , the software inside the virtual machine can not tamper with the host computer" /></frame>
+			<frame type="Gizmo" head="machine">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<main_frame type="Separating" head="separated">
+				<argument type="Whole" dependent="the virtual machine" /></main_frame>
+			<frame type="Rest" head="rest">
+				<argument type="Whole" dependent="of the system" /></frame>
+			<frame type="System" head="system" />
+			<frame type="Part_inner_outer" head="inside">
+				<argument type="Whole" dependent="the software" />
+				<argument type="Whole" dependent="the virtual machine" /></frame>
+			<frame type="Capability" head="can">
+				<argument type="Entity" dependent="the software inside the virtual machine" />
+				<argument type="Event" dependent="not tamper with the host computer" /></frame>
+			<frame type="Aggregate" head="host" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 How do virtual machines work?
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<frame type="Work" head="work">
+				<argument type="Salient_entity" dependent="virtual machines" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 The virtual machine runs as a process in an application window, similar to any other application, on the operating system of the physical machine.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="DT">The</token><token pos="JJ">virtual</token><token pos="NN">machine</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_49">
+			<token pos="VBZ">runs</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machine">
+				<argument type="Descriptor" dependent="physical" /></frame>
+			<main_frame type="Self_motion" head="runs">
+				<argument type="Self_mover" dependent="the virtual machine" />
+				<argument type="Path" dependent="the physical machine" /></main_frame>
+			<frame type="Process" head="process">
+				<argument type="Process" dependent="the virtual machine" />
+				<argument type="Process" dependent="in an application window , similar to any other application , on the operating system of the physical machine" /></frame>
+			<frame type="Using" head="application" />
+			<frame type="Connecting_architecture" head="window">
+				<argument type="Descriptor" dependent="application" /></frame>
+			<frame type="Similarity" head="similar">
+				<argument type="Entity_2" dependent="to any other application" /></frame>
+			<frame type="Increment" head="other">
+				<argument type="Class" dependent="application" /></frame>
+			<frame type="System" head="system">
+				<argument type="Function" dependent="operating" />
+				<argument type="Component_entities" dependent="of the physical machine" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Key files that make up a virtual machine include a log file, NVRAM setting file, virtual disk file and configuration file.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="NN">Key</token><token pos="NNS">files</token><token pos="WDT">that</token><token pos="VBP">make</token><token pos="RP">up</token><token pos="DT">a</token><token pos="JJ">virtual</token><token pos="NN">machine</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_19" concept_ref3="c_55">
+			<token pos="VBP">include</token><mention concept_ref="c_55"><token pos="DT">a</token><token pos="NN">log</token><token pos="NN">file</token></mention><token pos="Fc">,</token><token pos="NP00O00">NVRAM</token><token pos="VBG">setting</token><token pos="NN">file</token><token pos="Fc">,</token><mention concept_ref="c_19"><token pos="JJ">virtual</token></mention><token pos="NN">disk</token><token pos="NN">file</token><token pos="CC">and</token><token pos="NN">configuration</token><token pos="NN">file</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Importance" head="key">
+				<argument type="Factor" dependent="files" /></frame>
+			<frame type="Submitting_documents" head="files">
+				<argument type="Manner" dependent="key" /></frame>
+			<main_frame type="Manufacturing" head="make">
+				<argument type="Product" dependent="key files that" />
+				<argument type="Product" dependent="up a virtual machine" /></main_frame>
+			<frame type="Direction" head="up">
+				<argument type="Distance" dependent="key files" />
+				<argument type="Path" dependent="that" />
+				<argument type="Path" dependent="up a virtual machine" /></frame>
+			<frame type="Gizmo" head="machine">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<main_frame type="Inclusion" head="include">
+				<argument type="Total" dependent="key files that make up a virtual machine" />
+				<argument type="Part" dependent="a log file , unk setting file , virtual disk file and configuration file" /></main_frame>
+			<frame type="Records" head="log" />
+			<frame type="Submitting_documents" head="file" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Advantages of virtual machines Virtual machines are easy to manage and maintain, and they offer several advantages over physical machines: VMs can run multiple operating system environments on a single physical computer, saving physical space, time and management costs.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="NNS">Advantages</token><token pos="IN">of</token><token pos="JJ">virtual</token><token pos="NNS">machines</token><token pos="JJ">Virtual</token><token pos="NNS">machines</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_10" concept_ref3="c_0" concept_ref4="c_14" concept_ref5="c_16" concept_ref6="c_19" concept_ref7="c_25" concept_ref8="c_34" concept_ref9="c_45" concept_ref10="c_51" concept_ref11="c_56">
+			<token pos="VBP">are</token><token pos="JJ">easy</token><token pos="TO">to</token><token pos="VB">manage</token><token pos="CC">and</token><token pos="VB">maintain</token><token pos="Fc">,</token><token pos="CC">and</token><token pos="PRP">they</token><token pos="VBP">offer</token><mention concept_ref="c_10"><token pos="DT">several</token><token pos="NNS">advantages</token></mention><token pos="IN">over</token><mention concept_ref="c_0"><token pos="JJ">physical</token><token pos="NNS">machines</token></mention><token pos="Fd">:</token><token pos="NNS">VMs</token><token pos="MD">can</token><token pos="VB">run</token><mention concept_ref="c_16"><token pos="JJ">multiple</token><token pos="VBG">operating</token><token pos="NN">system</token><token pos="NNS">environments</token></mention><mention concept_ref="c_25"><token pos="IN">on</token><token pos="DT">a</token><token pos="JJ">single</token><token pos="JJ">physical</token><token pos="NN">computer</token></mention><token pos="Fc">,</token><token pos="VBG">saving</token><token pos="JJ">physical</token><token pos="NN">space</token><token pos="Fc">,</token><mention concept_ref="c_56"><token pos="NN">time</token><token pos="CC">and</token><token pos="NN">management</token><token pos="NNS">costs</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="physical" /></frame>
+			<frame type="Difficulty" head="easy">
+				<argument type="Activity" dependent="advantages of virtual machines virtual machines" /></frame>
+			<main_frame type="Operating_a_system" head="manage">
+				<argument type="System" dependent="machines" /></main_frame>
+			<main_frame type="Activity_ongoing" head="maintain">
+				<argument type="Agent" dependent="advantages of virtual machines virtual machines" />
+				<argument type="Activity" dependent="they offer several advantages over physical machines : vms can run multiple operating system environments on a single physical computer" /></main_frame>
+			<frame type="Quantified_mass" head="several">
+				<argument type="Individuals" dependent="advantages" /></frame>
+			<frame type="Proportional_quantity" head="over">
+				<argument type="Individuals" dependent="physical machines" /></frame>
+			<frame type="Capability" head="can">
+				<argument type="Entity" dependent="vms" />
+				<argument type="Event" dependent="run multiple operating system environments on a single physical computer , saving physical space , time and management costs" /></frame>
+			<main_frame type="Self_motion" head="run">
+				<argument type="Self_mover" dependent="vms" />
+				<argument type="Path" dependent="multiple operating system environments" />
+				<argument type="Duration" dependent="on a single physical computer" /></main_frame>
+			<frame type="Quantified_mass" head="multiple">
+				<argument type="Individuals" dependent="operating system environments" /></frame>
+			<frame type="System" head="system">
+				<argument type="Function" dependent="operating" />
+				<argument type="Function" dependent="environments" /></frame>
+			<frame type="Sole_instance" head="single">
+				<argument type="Type" dependent="physical computer" /></frame>
+			<frame type="Expensiveness" head="costs">
+				<argument type="Goods" dependent="management" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Virtual machines support legacy applications, reducing the cost of migrating to a new operating system.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="JJ">Virtual</token><token pos="NNS">machines</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_14" concept_ref3="c_15">
+			<token pos="VBP">support</token><token pos="NN">legacy</token><token pos="NNS">applications</token><token pos="Fc">,</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<main_frame type="Supporting" head="support">
+				<argument type="Supported" dependent="virtual machines" /></main_frame>
+			<frame type="Using" head="applications">
+				<argument type="Purpose" dependent="virtual machines support legacy" /></frame>
+			<frame type="Cause_change_of_position_on_a_scale" head="reducing">
+				<argument type="Attribute" dependent="the cost of migrating to a new operating system" /></frame>
+			<frame type="Expensiveness" head="cost">
+				<argument type="Goods" dependent="of migrating to a new operating system" /></frame>
+			<frame type="Age" head="new">
+				<argument type="Entity" dependent="operating system" /></frame>
+			<frame type="System" head="system">
+				<argument type="Descriptor" dependent="new" />
+				<argument type="Function" dependent="operating" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 For_example, a   Linux virtual machine running a distribution of   Linux   as the guest operating system can exist on a   host   server that is running a non-Linux   operating system, such as Windows.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="RB">For_example</token><token pos="Fc">,</token><token pos="DT">a</token><token pos="Fz">Linux</token><token pos="NN">virtual</token><token pos="JJ">machine</token><token pos="NN">running</token><token pos="VBG">a</token><token pos="DT">distribution</token><token pos="NN">of</token><token pos="IN">Linux</token><token pos="Fz">as</token><token pos="NN">the</token><token pos="Fz">guest</token><token pos="IN">operating</token><token pos="DT">system</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_0" concept_ref3="c_14" concept_ref4="c_16" concept_ref5="c_45" concept_ref6="c_47" concept_ref7="c_52">
+			<token pos="MD">can</token><token pos="VB">exist</token><token pos="IN">on</token><mention concept_ref="c_47"><token pos="DT">a</token><token pos="Fz">host</token><token pos="NN">server</token></mention><mention concept_ref="c_14"><token pos="Fz">that</token></mention><token pos="NN">is</token><token pos="WDT">running</token><mention concept_ref="c_3"><token pos="VBZ">a</token><token pos="VBG">non-Linux</token><token pos="DT">operating</token><token pos="NN">system</token></mention><token pos="Fz">,</token><token pos="VBG">such</token><token pos="NN">as</token><token pos="Fc">Windows</token><token pos="DT">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machine">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<main_frame type="Self_motion" head="running">
+				<argument type="Self_mover" dependent="a unk host unk server that" />
+				<argument type="Goal" dependent="a unk unk operating system , such as windows" /></main_frame>
+			<main_frame type="Dispersal" head="distribution">
+				<argument type="Individuals" dependent="of unk linux unk" /></main_frame>
+			<frame type="Temporary_stay" head="guest" />
+			<main_frame type="Operating_a_system" head="operating">
+				<argument type="Operator" dependent="the guest" />
+				<argument type="System" dependent="system" /></main_frame>
+			<frame type="System" head="system">
+				<argument type="Descriptor" dependent="unk" />
+				<argument type="Function" dependent="unk operating" /></frame>
+			<frame type="Capability" head="can">
+				<argument type="Entity" dependent="the guest operating system" />
+				<argument type="Event" dependent="exist on a unk host unk server that is running a unk unk operating system , such as windows" /></frame>
+			<main_frame type="Existence" head="exist">
+				<argument type="Entity" dependent="a distribution of unk linux unk as the guest operating system" />
+				<argument type="Entity" dependent="on a unk host unk server that is running a unk unk operating system , such as windows" /></main_frame>
+			<frame type="Spatial_contact" head="on">
+				<argument type="Figure" dependent="a unk linux virtual machine running a distribution of unk linux unk as the guest operating system can exist" />
+				<argument type="Ground" dependent="a unk host unk server" />
+				<argument type="Figure" dependent="that is running a unk unk operating system , such as windows" /></frame>
+			<frame type="Aggregate" head="host">
+				<argument type="Aggregate_property" dependent="unk" />
+				<argument type="Individuals" dependent="unk server that is running a unk unk operating system , such as windows" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 VMs can also provide integrated   disaster recovery   and application provisioning options.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="NP00O00">VMs</token>
+		</theme>
+		<rheme concept_ref1="c_15" concept_ref2="c_26">
+			<token pos="MD">can</token><token pos="VB">provide</token><token pos="VBN">integrated</token><token pos="Fz">disaster</token><token pos="NN">recovery</token><token pos="NN">and</token><mention concept_ref="c_15"><token pos="Fz">application</token></mention><token pos="CC">provisioning</token><mention concept_ref="c_26"><token pos="NN">options</token></mention><token pos="VBG">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Supply" head="provide">
+				<argument type="Supplier" dependent="vms" />
+				<argument type="Theme" dependent="integrated unk disaster recovery unk and application provisioning options" /></main_frame>
+			<frame type="Catastrophe" head="disaster" />
+			<frame type="Using" head="application">
+				<argument type="Instrument" dependent="provisioning options" /></frame>
+			<main_frame type="Supply" head="provisioning">
+				<argument type="Theme" dependent="application" />
+				<argument type="Theme" dependent="options" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Disadvantages of virtual machines While virtual machines have several advantages over physical machines, there are also some potential disadvantages: Running multiple virtual machines on one physical machine can result in unstable performance if infrastructure requirements are not met.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" />
+				<argument type="Use" dependent="on one physical machine" /></frame>
+			<frame type="Quantified_mass" head="several">
+				<argument type="Individuals" dependent="advantages" /></frame>
+			<frame type="Proportional_quantity" head="over">
+				<argument type="Q_prop" dependent="several advantages" />
+				<argument type="Individuals" dependent="physical machines" /></frame>
+			<frame type="Locative_relation" head="there">
+				<argument type="Figure" dependent="several advantages over physical machines" />
+				<argument type="Ground" dependent="there are also some potential disadvantages" /></frame>
+			<frame type="Capability" head="potential">
+				<argument type="Event" dependent="disadvantages" /></frame>
+			<frame type="Quantified_mass" head="multiple">
+				<argument type="Individuals" dependent="virtual machines" /></frame>
+			<frame type="Gizmo" head="machine">
+				<argument type="Descriptor" dependent="physical" /></frame>
+			<frame type="Infrastructure" head="infrastructure" />
+			<frame type="Being_necessary" head="requirements">
+				<argument type="Dependent" dependent="infrastructure" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Virtual machines are less efficient and run slower than a full physical computer.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="JJ">Virtual</token><token pos="NNS">machines</token>
+		</theme>
+		<rheme concept_ref1="c_25" concept_ref2="c_51">
+			<token pos="VBP">are</token><token pos="RB">less</token><token pos="JJ">efficient</token><token pos="CC">and</token><token pos="VB">run</token><mention concept_ref="c_25"><token pos="JJR">slower</token><token pos="IN">than</token><token pos="DT">a</token><token pos="JJ">full</token><token pos="JJ">physical</token><token pos="NN">computer</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<main_frame type="Self_motion" head="run">
+				<argument type="Self_mover" dependent="virtual machines" />
+				<argument type="Goal" dependent="slower than a full physical computer" /></main_frame>
+			<frame type="Completeness" head="full">
+				<argument type="Whole" dependent="physical computer" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Most enterprises use a combination of physical and virtual infrastructure to balance the corresponding advantages and disadvantages.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="DT">Most</token><token pos="NNS">enterprises</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_10" concept_ref3="c_19" concept_ref4="c_27" concept_ref5="c_28" concept_ref6="c_57">
+			<token pos="VBP">use</token><mention concept_ref="c_57"><token pos="DT">a</token><token pos="NN">combination</token></mention><token pos="IN">of</token><mention concept_ref="c_0"><token pos="JJ">physical</token><token pos="CC">and</token><token pos="JJ">virtual</token><token pos="NN">infrastructure</token></mention><mention concept_ref="c_28"><token pos="TO">to</token><token pos="VB">balance</token><token pos="DT">the</token><token pos="VBG">corresponding</token><token pos="NNS">advantages</token><token pos="CC">and</token><token pos="NNS">disadvantages</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Using" head="use">
+				<argument type="Agent" dependent="most enterprises" />
+				<argument type="Instrument" dependent="a combination of physical and virtual infrastructure" />
+				<argument type="Purpose" dependent="to balance the corresponding advantages and disadvantages" /></main_frame>
+			<frame type="Infrastructure" head="infrastructure">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 The two types of virtual machines Users can choose from two different types of virtual machines — process VMs and system VMs: A process virtual machine allows a single process to run as an application on a host machine, providing a platform-independent programming environment by masking the information of the underlying hardware or operating system.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="DT">The</token><token pos="Z">two</token><token pos="NNS">types</token><token pos="IN">of</token><token pos="JJ">virtual</token><token pos="NNS">machines</token><token pos="NP00V00">Users</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_8" concept_ref3="c_15" concept_ref4="c_16" concept_ref5="c_17" concept_ref6="c_19" concept_ref7="c_29" concept_ref8="c_45" concept_ref9="c_47" concept_ref10="c_53" concept_ref11="c_58" concept_ref12="c_59" concept_ref13="c_60">
+			<token pos="MD">can</token><token pos="VB">choose</token><token pos="IN">from</token><mention concept_ref="c_53"><token pos="Z">two</token><token pos="JJ">different</token><token pos="NNS">types</token></mention><token pos="IN">of</token><token pos="JJ">virtual</token><token pos="NNS">machines</token><token pos="Fz">—</token><token pos="NN">process</token><token pos="NP00V00">VMs</token><token pos="CC">and</token><token pos="NN">system</token><token pos="NNS">VMs</token><token pos="Fd">:</token><token pos="DT">A</token><token pos="NN">process</token><token pos="JJ">virtual</token><token pos="NN">machine</token><token pos="VBZ">allows</token><mention concept_ref="c_58"><token pos="DT">a</token><token pos="JJ">single</token><token pos="NN">process</token></mention><token pos="TO">to</token><token pos="VB">run</token><mention concept_ref="c_17"><token pos="IN">as</token><token pos="DT">an</token><token pos="NN">application</token><token pos="IN">on</token><token pos="DT">a</token><token pos="NN">host</token><token pos="NN">machine</token></mention><token pos="Fc">,</token><token pos="VBG">providing</token><token pos="DT">a</token><token pos="JJ">platform-independent</token><token pos="NN">programming</token><token pos="NN">environment</token><token pos="IN">by</token><token pos="VBG">masking</token><mention concept_ref="c_59"><token pos="DT">the</token><token pos="NN">information</token></mention><token pos="IN">of</token><mention concept_ref="c_60"><token pos="DT">the</token><token pos="VBG">underlying</token><token pos="NN">hardware</token></mention><token pos="CC">or</token><mention concept_ref="c_16"><token pos="VBG">operating</token></mention><token pos="NN">system</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Type" head="types">
+				<argument type="Type_property" dependent="two different" />
+				<argument type="Category" dependent="of virtual machines" /></frame>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<main_frame type="Choosing" head="choose">
+				<argument type="Cognizer" dependent="the two types of virtual machines users" />
+				<argument type="Chosen" dependent="from two different types of virtual machines unk process vms and system vms" />
+				<argument type="Chosen" dependent="a platform-independent programming environment by masking the information of the underlying hardware or operating system" /></main_frame>
+			<frame type="Similarity" head="different">
+				<argument type="Entities" dependent="types" /></frame>
+			<frame type="Process" head="process">
+				<argument type="Process" dependent="a process virtual machine" />
+				<argument type="Process" dependent="to run as an application on a host machine" /></frame>
+			<frame type="System" head="system" />
+			<frame type="Gizmo" head="machine">
+				<argument type="Descriptor" dependent="host" /></frame>
+			<main_frame type="Preventing_or_letting" head="allows">
+				<argument type="Agent" dependent="a process virtual machine" />
+				<argument type="Event" dependent="a single process to run as an application on a host machine" /></main_frame>
+			<frame type="Sole_instance" head="single">
+				<argument type="Type" dependent="process" /></frame>
+			<main_frame type="Self_motion" head="run">
+				<argument type="Goal" dependent="as an application on a host machine" /></main_frame>
+			<frame type="Using" head="application">
+				<argument type="Purpose" dependent="on a host machine" /></frame>
+			<frame type="Aggregate" head="host">
+				<argument type="Individuals" dependent="machine" /></frame>
+			<main_frame type="Supply" head="providing">
+				<argument type="Supplier" dependent="system vms : a process virtual machine allows a single process to run as an application on a host machine" />
+				<argument type="Theme" dependent="a platform-independent programming environment" />
+				<argument type="Supplier" dependent="by masking the information of the underlying hardware or operating system" /></main_frame>
+			<frame type="Information" head="information">
+				<argument type="Topic" dependent="of the underlying hardware or operating system" /></frame>
+			<main_frame type="Operating_a_system" head="operating" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 An example of a process VM is the Java_Virtual_Machine, which enables any operating system to run Java applications as_if they were native to that system.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="DT">An</token><token pos="NN">example</token><token pos="IN">of</token><token pos="DT">a</token><token pos="NN">process</token><token pos="NP00O00">VM</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_8" concept_ref3="c_0" concept_ref4="c_14" concept_ref5="c_15" concept_ref6="c_16" concept_ref7="c_30" concept_ref8="c_45">
+			<token pos="VBZ">is</token><token pos="DT">the</token><token pos="NP00O00">Java_Virtual_Machine</token><token pos="Fc">,</token><token pos="WDT">which</token><token pos="VBZ">enables</token><token pos="DT">any</token><mention concept_ref="c_16"><token pos="VBG">operating</token></mention><token pos="NN">system</token><token pos="TO">to</token><token pos="VB">run</token><token pos="NP00V00">Java</token><token pos="NNS">applications</token><token pos="CC">as_if</token><mention concept_ref="c_1"><token pos="PRP">they</token></mention><token pos="VBD">were</token><token pos="JJ">native</token><token pos="TO">to</token><mention concept_ref="c_14"><token pos="DT">that</token></mention><token pos="NN">system</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Instance" head="example">
+				<argument type="Type" dependent="of a process vm" /></frame>
+			<frame type="Process" head="process">
+				<argument type="Process" dependent="vm" /></frame>
+			<frame type="System" head="system" />
+			<main_frame type="Self_motion" head="run">
+				<argument type="Manner" dependent="they were native to that system" /></main_frame>
+			<frame type="Using" head="applications">
+				<argument type="Instrument" dependent="java" /></frame>
+			<frame type="Indigenous_origin" head="native">
+				<argument type="Entity" dependent="they" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A system virtual machine is fully virtualized to substitute for a physical machine.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="DT">A</token><token pos="NN">system</token><token pos="JJ">virtual</token><token pos="NN">machine</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_19" concept_ref3="c_51">
+			<token pos="VBZ">is</token><token pos="RB">fully</token><token pos="VBN">virtualized</token><token pos="TO">to</token><token pos="VB">substitute</token><token pos="IN">for</token><token pos="DT">a</token><token pos="JJ">physical</token><token pos="NN">machine</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="System" head="system">
+				<argument type="Function" dependent="virtual machine" /></frame>
+			<frame type="Gizmo" head="machine">
+				<argument type="Descriptor" dependent="physical" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A system platform supports the sharing of a host computer ’ s physical resources between multiple virtual machines, each running its own copy of the operating system.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="DT">A</token><token pos="NN">system</token><token pos="NN">platform</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_14" concept_ref3="c_16" concept_ref4="c_19" concept_ref5="c_44" concept_ref6="c_45" concept_ref7="c_57">
+			<token pos="VBZ">supports</token><mention concept_ref="c_57"><token pos="DT">the</token><token pos="VBG">sharing</token></mention><token pos="IN">of</token><mention concept_ref="c_44"><token pos="DT">a</token><token pos="NN">host</token><token pos="NN">computer</token><token pos="Frc">’</token><token pos="VBZ">s</token><token pos="JJ">physical</token><token pos="NNS">resources</token></mention><token pos="IN">between</token><token pos="JJ">multiple</token><token pos="JJ">virtual</token><token pos="NNS">machines</token><token pos="Fc">,</token><token pos="DT">each</token><token pos="VBG">running</token><mention concept_ref="c_16"><token pos="PRP$">its</token><token pos="JJ">own</token><token pos="NN">copy</token><token pos="IN">of</token><token pos="DT">the</token><token pos="VBG">operating</token><token pos="NN">system</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="System" head="system">
+				<argument type="Function" dependent="operating" /></main_frame>
+			<main_frame type="Supporting" head="supports">
+				<argument type="Supporter" dependent="a system platform" /></main_frame>
+			<main_frame type="Aggregate" head="host" />
+			<frame type="Quantified_mass" head="multiple">
+				<argument type="Individuals" dependent="virtual machines" /></frame>
+			<main_frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></main_frame>
+			<main_frame type="Self_motion" head="running">
+				<argument type="Goal" dependent="its own copy of the operating system" /></main_frame>
+			<frame type="Duplication" head="copy">
+				<argument type="Creator" dependent="its" />
+				<argument type="Original" dependent="of the operating system" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 This virtualization process relies on a hypervisor, which can run on bare hardware, such as VMware_ESXi, or on top of an operating system.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="DT">This</token><token pos="NN">virtualization</token><token pos="NN">process</token>
+		</theme>
+		<rheme>
+			<token pos="VBZ">relies</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Process" head="process">
+				<argument type="Process" dependent="virtualization" /></frame>
+			<frame type="Capability" head="can">
+				<argument type="Entity" dependent="which" />
+				<argument type="Event" dependent="run on bare hardware , such as unk" /></frame>
+			<frame type="Self_motion" head="run">
+				<argument type="Self_mover" dependent="which" />
+				<argument type="Goal" dependent="on bare hardware , such as unk" /></frame>
+			<frame type="Occupy_rank" head="top">
+				<argument type="Item" dependent="of an operating system" /></frame>
+			<frame type="System" head="system">
+				<argument type="Function" dependent="operating" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 What are 5 types of virtualization?
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Type" head="types">
+				<argument type="Category" dependent="what" />
+				<argument type="Type_property" dependent="5" />
+				<argument type="Category" dependent="of virtualization" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 All the components of a traditional data center or IT infrastructure can be virtualized today, with various specific types of virtualization: Hardware virtualization: When virtualizing hardware, virtual versions of computers and operating systems ( VMs ) are created and consolidated into a single, primary, physical server.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="DT">All</token><token pos="DT">the</token><token pos="NNS">components</token><token pos="IN">of</token><token pos="DT">a</token><token pos="JJ">traditional</token><token pos="NN">data</token><token pos="NN">center</token><token pos="CC">or</token><token pos="PRP">IT</token><token pos="NN">infrastructure</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_16" concept_ref3="c_19" concept_ref4="c_25" concept_ref5="c_44" concept_ref6="c_45" concept_ref7="c_47" concept_ref8="c_53" concept_ref9="c_51" concept_ref10="c_60">
+			<token pos="MD">can</token><token pos="VB">be</token><token pos="VBN">virtualized</token><token pos="NN">today</token><token pos="Fc">,</token><token pos="IN">with</token><mention concept_ref="c_53"><token pos="JJ">various</token><token pos="JJ">specific</token><token pos="NNS">types</token></mention><token pos="IN">of</token><token pos="NN">virtualization</token><token pos="Fd">:</token><token pos="NN">Hardware</token><token pos="NN">virtualization</token><token pos="Fd">:</token><token pos="WRB">When</token><token pos="VBG">virtualizing</token><mention concept_ref="c_60"><token pos="NN">hardware</token></mention><token pos="Fc">,</token><mention concept_ref="c_19"><token pos="JJ">virtual</token></mention><token pos="NNS">versions</token><token pos="IN">of</token><mention concept_ref="c_44"><token pos="NNS">computers</token></mention><token pos="CC">and</token><token pos="VBG">operating</token><token pos="NNS">systems</token><token pos="Fpa">(</token><token pos="NP00V00">VMs</token><token pos="Fpt">)</token><token pos="VBP">are</token><token pos="VBN">created</token><token pos="CC">and</token><token pos="VBN">consolidated</token><mention concept_ref="c_25"><token pos="IN">into</token><token pos="DT">a</token><token pos="JJ">single</token><token pos="Fc">,</token><token pos="JJ">primary</token><token pos="Fc">,</token><token pos="JJ">physical</token><token pos="NN">server</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Quantified_mass" head="all">
+				<argument type="Individuals" dependent="the components of a traditional data center or it infrastructure" /></frame>
+			<frame type="Ingredients" head="components">
+				<argument type="Product" dependent="of a traditional data center or it infrastructure" /></frame>
+			<frame type="Custom" head="traditional">
+				<argument type="Behavior" dependent="data center or it infrastructure" /></frame>
+			<frame type="Information" head="data" />
+			<frame type="Locale_by_use" head="center">
+				<argument type="Use" dependent="data" /></frame>
+			<frame type="Infrastructure" head="infrastructure">
+				<argument type="Resource" dependent="it" /></frame>
+			<frame type="Capability" head="can">
+				<argument type="Entity" dependent="all the components of a traditional data center or it infrastructure" />
+				<argument type="Event" dependent="be virtualized today" /></frame>
+			<frame type="Calendric_unit" head="today" />
+			<frame type="Type" head="types">
+				<argument type="Type_property" dependent="specific" />
+				<argument type="Category" dependent="of virtualization" /></frame>
+			<frame type="Type" head="versions">
+				<argument type="Type_property" dependent="virtual" />
+				<argument type="Category" dependent="of computers and operating systems ( vms )" /></frame>
+			<frame type="System" head="systems">
+				<argument type="Function" dependent="operating" /></frame>
+			<main_frame type="Intentionally_create" head="created">
+				<argument type="Created_entity" dependent="virtual versions of computers and operating systems ( vms )" /></main_frame>
+			<main_frame type="Cause_to_amalgamate" head="consolidated">
+				<argument type="Part_2" dependent="of virtualization : hardware virtualization : when unk hardware , virtual versions of computers and operating systems ( vms )" />
+				<argument type="Parts" dependent="into a single , primary , physical server" /></main_frame>
+			<frame type="Sole_instance" head="single" />
+			<frame type="First_rank" head="primary" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A hypervisor communicates directly with a physical server ’ s disk space and CPU to manage the VMs.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="DT">A</token><token pos="NN">hypervisor</token>
+		</theme>
+		<rheme concept_ref1="c_59">
+			<mention concept_ref="c_59"><token pos="VBZ">communicates</token></mention><token pos="RB">directly</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Communication" head="communicates">
+				<argument type="Message" dependent="a hypervisor" />
+				<argument type="Message" dependent="directly with a physical server unk s disk space and cpu to manage the vms" /></main_frame>
+			<frame type="Operating_a_system" head="manage">
+				<argument type="Operator" dependent="cpu" />
+				<argument type="System" dependent="the vms" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Hardware virtualization, which is also known as server virtualization, allows hardware resources to be utilized more efficiently and for one machine to simultaneously run different operating systems.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="NN">Hardware</token><token pos="NN">virtualization</token><token pos="Fc">,</token><token pos="WDT">which</token><token pos="VBZ">is</token><token pos="RB">also</token><token pos="VBN">known</token><token pos="IN">as</token><token pos="NN">server</token><token pos="NN">virtualization</token><token pos="Fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_16" concept_ref3="c_19" concept_ref4="c_21" concept_ref5="c_44" concept_ref6="c_45" concept_ref7="c_52" concept_ref8="c_60">
+			<token pos="VBZ">allows</token><mention concept_ref="c_60"><token pos="NN">hardware</token></mention><token pos="NNS">resources</token><token pos="TO">to</token><token pos="VB">be</token><token pos="VBN">utilized</token><mention concept_ref="c_21"><token pos="RB">more</token></mention><token pos="RB">efficiently</token><token pos="CC">and</token><token pos="IN">for</token><token pos="Z">one</token><token pos="NN">machine</token><token pos="TO">to</token><token pos="RB">simultaneously</token><token pos="VB">run</token><token pos="JJ">different</token><token pos="VBG">operating</token><token pos="NNS">systems</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Awareness" head="known">
+				<argument type="Content" dependent="hardware virtualization" />
+				<argument type="Content" dependent="which" />
+				<argument type="Content" dependent="as server virtualization" /></main_frame>
+			<main_frame type="Preventing_or_letting" head="allows">
+				<argument type="Event" dependent="hardware resources to be utilized more efficiently and for one machine to simultaneously run different operating systems" /></main_frame>
+			<frame type="Gizmo" head="machine" />
+			<main_frame type="Self_motion" head="run">
+				<argument type="Self_mover" dependent="one machine" />
+				<argument type="Goal" dependent="different operating systems" /></main_frame>
+			<frame type="Similarity" head="different">
+				<argument type="Entities" dependent="operating systems" /></frame>
+			<frame type="System" head="systems">
+				<argument type="Function" dependent="operating" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Software virtualization: Software virtualization creates a computer system complete with hardware that allows one or more guest operating systems to run on a physical host machine.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="NN">Software</token><token pos="NN">virtualization</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_14" concept_ref3="c_16" concept_ref4="c_17" concept_ref5="c_21" concept_ref6="c_45" concept_ref7="c_47" concept_ref8="c_60">
+			<token pos="VBZ">creates</token><token pos="DT">a</token><token pos="NN">computer</token><token pos="NN">system</token><token pos="JJ">complete</token><token pos="IN">with</token><mention concept_ref="c_60"><token pos="NN">hardware</token></mention><mention concept_ref="c_14"><token pos="WDT">that</token></mention><token pos="VBZ">allows</token><token pos="Z">one</token><token pos="CC">or</token><mention concept_ref="c_21"><token pos="DT">more</token></mention><token pos="NN">guest</token><token pos="VBG">operating</token><token pos="NNS">systems</token><token pos="TO">to</token><token pos="VB">run</token><mention concept_ref="c_17"><token pos="IN">on</token><token pos="DT">a</token><token pos="JJ">physical</token><token pos="NN">host</token><token pos="NN">machine</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Intentionally_create" head="creates">
+				<argument type="Created_entity" dependent="a computer system complete with hardware that allows one or more guest operating systems to run on a physical host" /></main_frame>
+			<frame type="System" head="system">
+				<argument type="Function" dependent="computer" /></frame>
+			<frame type="Completeness" head="complete">
+				<argument type="Whole" dependent="a computer system" />
+				<argument type="Whole" dependent="with hardware that allows one or more guest operating systems to run on a physical host machine" /></frame>
+			<main_frame type="Preventing_or_letting" head="allows">
+				<argument type="Potential_hindrance" dependent="that" />
+				<argument type="Event" dependent="one or more guest operating systems to run on a physical host machine" /></main_frame>
+			<frame type="System" head="systems">
+				<argument type="Function" dependent="guest operating" /></frame>
+			<main_frame type="Self_motion" head="run">
+				<argument type="Self_mover" dependent="one or more guest operating systems" />
+				<argument type="Goal" dependent="on a physical host machine" /></main_frame>
+			<frame type="Aggregate" head="host">
+				<argument type="Aggregate_property" dependent="physical" />
+				<argument type="Individuals" dependent="machine" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 For_example, Android OS can run on a host machine that is natively using a Microsoft_Windows_OS, utilizing the same hardware as the host machine does.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="JJ">Android</token><token pos="NNS">OS</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_7" concept_ref3="c_14" concept_ref4="c_17" concept_ref5="c_31" concept_ref6="c_47" concept_ref7="c_52" concept_ref8="c_60">
+			<token pos="MD">can</token><token pos="VB">run</token><token pos="IN">on</token><mention concept_ref="c_17"><token pos="DT">a</token><token pos="NN">host</token><token pos="NN">machine</token></mention><mention concept_ref="c_14"><token pos="WDT">that</token></mention><token pos="VBZ">is</token><mention concept_ref="c_31"><token pos="RB">natively</token></mention><token pos="VBG">using</token><mention concept_ref="c_7"><token pos="DT">a</token><token pos="NP00O00">Microsoft_Windows_OS</token></mention><token pos="Fc">,</token><token pos="VBG">utilizing</token><mention concept_ref="c_47"><token pos="DT">the</token><token pos="JJ">same</token><token pos="NN">hardware</token></mention><token pos="IN">as</token><token pos="DT">the</token><token pos="NN">host</token><token pos="NN">machine</token><token pos="VBZ">does</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="can">
+				<argument type="Entity" dependent="android os" />
+				<argument type="Event" dependent="run on a host machine that is natively using a unk" /></frame>
+			<main_frame type="Self_motion" head="run">
+				<argument type="Self_mover" dependent="android os" />
+				<argument type="Goal" dependent="on a host machine that is natively using a unk" /></main_frame>
+			<frame type="Aggregate" head="host">
+				<argument type="Individuals" dependent="machine" /></frame>
+			<frame type="Gizmo" head="machine">
+				<argument type="Descriptor" dependent="host" /></frame>
+			<main_frame type="Using" head="using">
+				<argument type="Instrument" dependent="a host machine" />
+				<argument type="Agent" dependent="that" />
+				<argument type="Time" dependent="natively" />
+				<argument type="Instrument" dependent="a unk" /></main_frame>
+			<frame type="Identicality" head="same">
+				<argument type="Type" dependent="hardware" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Additionally, applications can be virtualized and delivered from a server to an end user ’ s device, such as a laptop or smartphone.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="NNS">applications</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_0" concept_ref3="c_17" concept_ref4="c_19" concept_ref5="c_47" concept_ref6="c_51" concept_ref7="c_61">
+			<token pos="MD">can</token><token pos="VB">be</token><token pos="VBN">virtualized</token><token pos="CC">and</token><token pos="VBN">delivered</token><mention concept_ref="c_17"><token pos="IN">from</token><token pos="DT">a</token><token pos="NN">server</token></mention><token pos="TO">to</token><mention concept_ref="c_61"><token pos="DT">an</token><token pos="NN">end</token><token pos="NN">user</token><token pos="Frc">’</token><token pos="NNS">s</token><token pos="NN">device</token></mention><token pos="Fc">,</token><token pos="DT">such</token><token pos="IN">as</token><mention concept_ref="c_51"><token pos="DT">a</token><token pos="NN">laptop</token></mention><token pos="CC">or</token><mention concept_ref="c_7"><token pos="NN">smartphone</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Using" head="applications" />
+			<frame type="Capability" head="can">
+				<argument type="Entity" dependent="applications" />
+				<argument type="Event" dependent="be virtualized and delivered" /></frame>
+			<main_frame type="Delivery" head="delivered">
+				<argument type="Recipient" dependent="from a server" />
+				<argument type="Goal" dependent="to an end user unk s device , such as a laptop or smartphone" /></main_frame>
+			<frame type="Process_end" head="end">
+				<argument type="Process" dependent="user unk s device" /></frame>
+			<frame type="Gizmo" head="device">
+				<argument type="Use" dependent="unk s" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 This allows employees to access centrally hosted applications when working remotely.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="DT">This</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_15" concept_ref3="c_31" concept_ref4="c_32">
+			<token pos="VBZ">allows</token><mention concept_ref="c_32"><token pos="NNS">employees</token><token pos="TO">to</token><token pos="VB">access</token><token pos="RB">centrally</token><token pos="VBN">hosted</token><token pos="NNS">applications</token></mention><token pos="WRB">when</token><token pos="VBG">working</token><mention concept_ref="c_31"><token pos="RB">remotely</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Preventing_or_letting" head="allows">
+				<argument type="Event" dependent="employees to access centrally hosted applications" /></main_frame>
+			<frame type="Employing" head="employees">
+				<argument type="Purpose" dependent="to access centrally hosted applications" /></frame>
+			<main_frame type="Social_event" head="hosted">
+				<argument type="Style" dependent="access centrally" />
+				<argument type="Social_event" dependent="applications" /></main_frame>
+			<frame type="Using" head="applications" />
+			<main_frame type="Being_employed" head="working">
+				<argument type="Task" dependent="remotely" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Storage virtualization: Storage can be virtualized by consolidating multiple physical storage devices to appear as a single storage device.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="NN">Storage</token>
+		</theme>
+		<rheme concept_ref1="c_9" concept_ref2="c_19" concept_ref3="c_25" concept_ref4="c_51">
+			<token pos="MD">can</token><token pos="VB">be</token><token pos="VBN">virtualized</token><token pos="IN">by</token><token pos="VBG">consolidating</token><mention concept_ref="c_9"><token pos="JJ">multiple</token><token pos="JJ">physical</token><token pos="NN">storage</token><token pos="NNS">devices</token></mention><token pos="TO">to</token><token pos="VB">appear</token><mention concept_ref="c_25"><token pos="IN">as</token><token pos="DT">a</token><token pos="JJ">single</token><token pos="NN">storage</token><token pos="NN">device</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Storing" head="storage" />
+			<frame type="Gizmo" head="devices">
+				<argument type="Use" dependent="storage" /></frame>
+			<main_frame type="Give_impression" head="appear">
+				<argument type="Characterization" dependent="as a single storage device" /></main_frame>
+			<frame type="Gizmo" head="device">
+				<argument type="Use" dependent="storage" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Benefits include increased performance and speed, load balancing and reduced costs.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="NNS">Benefits</token>
+		</theme>
+		<rheme concept_ref1="c_16" concept_ref2="c_33" concept_ref3="c_34" concept_ref4="c_49" concept_ref5="c_54" concept_ref6="c_62">
+			<token pos="VBP">include</token><mention concept_ref="c_54"><token pos="VBN">increased</token><token pos="NN">performance</token></mention><token pos="CC">and</token><token pos="NN">speed</token><token pos="Fc">,</token><token pos="NN">load</token><token pos="VBG">balancing</token><token pos="CC">and</token><mention concept_ref="c_62"><token pos="VBN">reduced</token><token pos="NNS">costs</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Inclusion" head="include">
+				<argument type="Total" dependent="benefits" />
+				<argument type="Part" dependent="increased performance and speed , load balancing and reduced costs" /></main_frame>
+			<main_frame type="Change_position_on_a_scale" head="increased">
+				<argument type="Attribute" dependent="performance" /></main_frame>
+			<frame type="Quantified_mass" head="load">
+				<argument type="Individuals" dependent="balancing and reduced costs" /></frame>
+			<main_frame type="Cause_change_of_position_on_a_scale" head="reduced">
+				<argument type="Attribute" dependent="costs" /></main_frame>
+			<frame type="Expensiveness" head="costs" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Storage virtualization also helps with disaster recovery planning, as virtual storage data can be duplicated and quickly transferred to another location, reducing downtime.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="NN">Storage</token><token pos="NN">virtualization</token>
+		</theme>
+		<rheme>
+			<token pos="VBZ">helps</token><token pos="Fc">,</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Assistance" head="helps">
+				<argument type="Benefited_party" dependent="storage virtualization" />
+				<argument type="Goal" dependent="with disaster recovery planning" /></main_frame>
+			<frame type="Catastrophe" head="disaster" />
+			<frame type="Purpose" head="planning">
+				<argument type="Goal" dependent="disaster recovery" /></frame>
+			<frame type="Storing" head="storage" />
+			<frame type="Information" head="data">
+				<argument type="Topic" dependent="storage" /></frame>
+			<frame type="Capability" head="can">
+				<argument type="Entity" dependent="virtual storage data" />
+				<argument type="Event" dependent="be duplicated" /></frame>
+			<frame type="Transfer" head="transferred">
+				<argument type="Manner" dependent="quickly" />
+				<argument type="Theme" dependent="to another location , reducing downtime" /></frame>
+			<frame type="Increment" head="another">
+				<argument type="Class" dependent="location" /></frame>
+			<frame type="Locale" head="location" />
+			<frame type="Cause_change_of_position_on_a_scale" head="reducing">
+				<argument type="Attribute" dependent="downtime" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Network virtualization: Multiple sub-networks can be created on the same physical network by combining equipment into a single, software-based virtual network resource.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="JJ">Multiple</token><token pos="NNS">sub-networks</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_19" concept_ref3="c_47" concept_ref4="c_49">
+			<token pos="MD">can</token><token pos="VB">be</token><token pos="VBN">created</token><token pos="IN">on</token><mention concept_ref="c_47"><token pos="DT">the</token><token pos="JJ">same</token><token pos="JJ">physical</token><token pos="NN">network</token></mention><token pos="IN">by</token><token pos="VBG">combining</token><mention concept_ref="c_49"><token pos="NN">equipment</token></mention><token pos="IN">into</token><token pos="DT">a</token><token pos="JJ">single</token><token pos="Fc">,</token><token pos="VBN">software-based</token><mention concept_ref="c_19"><token pos="JJ">virtual</token></mention><token pos="NN">network</token><token pos="NN">resource</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Intentionally_create" head="created">
+				<argument type="Created_entity" dependent="multiple unk" /></main_frame>
+			<frame type="Identicality" head="same">
+				<argument type="Type" dependent="physical network" /></frame>
+			<frame type="Network" head="network">
+				<argument type="Descriptor" dependent="software-based virtual" /></frame>
+			<frame type="Gizmo" head="equipment">
+				<argument type="Descriptor" dependent="combining" /></frame>
+			<frame type="Sole_instance" head="single" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Network virtualization also divides available bandwidth into multiple, independent channels, each of which can be assigned to servers and devices in real time.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="NN">Network</token><token pos="NN">virtualization</token>
+		</theme>
+		<rheme concept_ref1="c_35">
+			<token pos="VBZ">divides</token><mention concept_ref="c_35"><token pos="JJ">available</token><token pos="NN">bandwidth</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Network" head="network" />
+			<main_frame type="Separating" head="divides">
+				<argument type="Whole" dependent="network virtualization" />
+				<argument type="Criterion" dependent="available bandwidth" /></main_frame>
+			<frame type="Quantified_mass" head="multiple" />
+			<frame type="Capability" head="can">
+				<argument type="Entity" dependent="each of which" />
+				<argument type="Event" dependent="be assigned to servers and devices in real time" /></frame>
+			<frame type="Gizmo" head="devices" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Advantages include increased reliability, network speed, security and better monitoring of data usage.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="NNS">Advantages</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_8" concept_ref3="c_36" concept_ref4="c_49" concept_ref5="c_54" concept_ref6="c_59" concept_ref7="c_63">
+			<token pos="VBP">include</token><mention concept_ref="c_36"><token pos="VBN">increased</token><token pos="NN">reliability</token><token pos="Fc">,</token><token pos="NN">network</token><token pos="NN">speed</token><token pos="Fc">,</token><token pos="NN">security</token><token pos="CC">and</token><token pos="JJR">better</token><token pos="NN">monitoring</token><token pos="IN">of</token><token pos="NNS">data</token><token pos="NN">usage</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Inclusion" head="include">
+				<argument type="Total" dependent="advantages" />
+				<argument type="Part" dependent="increased reliability , network speed , security and better monitoring of data usage" /></main_frame>
+			<main_frame type="Change_position_on_a_scale" head="increased">
+				<argument type="Item" dependent="reliability , network speed , security and better monitoring of data usage" /></main_frame>
+			<frame type="Trust" head="reliability">
+				<argument type="Manner" dependent="increased" />
+				<argument type="Information" dependent="network speed , security and better monitoring of data usage" /></frame>
+			<frame type="Network" head="network" />
+			<frame type="Being_at_risk" head="security" />
+			<frame type="Information" head="data" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Network virtualization can be a good choice for companies with a high volume of users who need access at all times.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="NN">Network</token><token pos="NN">virtualization</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_6" concept_ref3="c_1" concept_ref4="c_14" concept_ref5="c_32" concept_ref6="c_37" concept_ref7="c_38" concept_ref8="c_50" concept_ref9="c_61">
+			<token pos="MD">can</token><token pos="VB">be</token><token pos="DT">a</token><token pos="JJ">good</token><token pos="NN">choice</token><token pos="IN">for</token><token pos="NNS">companies</token><token pos="IN">with</token><mention concept_ref="c_6"><token pos="DT">a</token><token pos="JJ">high</token><token pos="NN">volume</token></mention><token pos="IN">of</token><token pos="NNS">users</token><token pos="WP">who</token><token pos="VBP">need</token><mention concept_ref="c_32"><token pos="NN">access</token></mention><mention concept_ref="c_38"><token pos="IN">at</token><token pos="DT">all</token><token pos="NNS">times</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Network" head="network" />
+			<frame type="Capability" head="can">
+				<argument type="Entity" dependent="network virtualization" />
+				<argument type="Event" dependent="be a good choice for companies with a high volume of users who need access at all times" /></frame>
+			<frame type="Desirability" head="good">
+				<argument type="Evaluee" dependent="choice" /></frame>
+			<frame type="Choosing" head="choice">
+				<argument type="Topic" dependent="for companies" /></frame>
+			<frame type="Businesses" head="companies" />
+			<frame type="Position_on_a_scale" head="high">
+				<argument type="Item" dependent="volume" /></frame>
+			<frame type="Text" head="volume">
+				<argument type="Genre" dependent="high" />
+				<argument type="Topic" dependent="of users who need access at all times" /></frame>
+			<main_frame type="Needing" head="need">
+				<argument type="Requirement" dependent="users" />
+				<argument type="Cognizer" dependent="who" />
+				<argument type="Requirement" dependent="access" />
+				<argument type="Time" dependent="at all times" /></main_frame>
+			<frame type="Having_or_lacking_access" head="access" />
+			<frame type="Locative_relation" head="at">
+				<argument type="Figure" dependent="a good choice for companies with a high volume of users who need access" />
+				<argument type="Ground" dependent="all times" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Desktop virtualization: This common type of virtualization separates the desktop environment from the physical device and stores a desktop on a remote server, allowing users to access their desktops from anywhere on any device.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="DT">This</token><token pos="JJ">common</token><token pos="NN">type</token><token pos="IN">of</token><token pos="NN">virtualization</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_14" concept_ref4="c_32" concept_ref5="c_37" concept_ref6="c_39" concept_ref7="c_47" concept_ref8="c_52" concept_ref9="c_51" concept_ref10="c_60" concept_ref11="c_61">
+			<token pos="VBZ">separates</token><mention concept_ref="c_0"><token pos="DT">the</token><token pos="JJ">desktop</token><token pos="NN">environment</token></mention><token pos="IN">from</token><mention concept_ref="c_51"><token pos="DT">the</token><token pos="JJ">physical</token><token pos="NN">device</token></mention><token pos="CC">and</token><token pos="NNS">stores</token><mention concept_ref="c_52"><token pos="DT">a</token><token pos="JJ">desktop</token></mention><token pos="IN">on</token><token pos="DT">a</token><token pos="JJ">remote</token><mention concept_ref="c_47"><token pos="NN">server</token></mention><token pos="Fc">,</token><token pos="VBG">allowing</token><mention concept_ref="c_39"><token pos="NNS">users</token><token pos="TO">to</token><token pos="VB">access</token><token pos="PRP$">their</token><token pos="NNS">desktops</token><token pos="IN">from</token><token pos="RB">anywhere</token><token pos="IN">on</token><token pos="DT">any</token><token pos="NN">device</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Type" head="type">
+				<argument type="Category" dependent="of virtualization separates the desktop environment" /></frame>
+			<frame type="Gizmo" head="device" />
+			<frame type="Businesses" head="stores">
+				<argument type="Product" dependent="a desktop on a remote server" /></frame>
+			<main_frame type="Preventing_or_letting" head="allowing">
+				<argument type="Event" dependent="users to access their desktops from anywhere on any device" /></main_frame>
+			<main_frame type="Having_or_lacking_access" head="access">
+				<argument type="Useful_location" dependent="their desktops" /></main_frame>
+			<frame type="Spatial_contact" head="on">
+				<argument type="Figure" dependent="access their desktops from anywhere" />
+				<argument type="Ground" dependent="any device" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 In_addition to easy accessibility, benefits of virtual desktops include better data security, cost savings on software licenses and updates, and ease of management.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="NNS">benefits</token><token pos="IN">of</token><token pos="JJ">virtual</token><token pos="NNS">desktops</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_14" concept_ref3="c_40" concept_ref4="c_49" concept_ref5="c_56" concept_ref6="c_62" concept_ref7="c_63">
+			<token pos="VBP">include</token><mention concept_ref="c_40"><token pos="JJR">better</token><token pos="NNS">data</token><token pos="NN">security</token><token pos="Fc">,</token><token pos="NN">cost</token><token pos="NNS">savings</token><token pos="IN">on</token><token pos="NN">software</token><token pos="NNS">licenses</token><token pos="CC">and</token><token pos="NNS">updates</token><token pos="Fc">,</token><token pos="CC">and</token><token pos="VB">ease</token><token pos="IN">of</token><token pos="NN">management</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Difficulty" head="easy">
+				<argument type="Activity" dependent="accessibility" /></frame>
+			<main_frame type="Inclusion" head="include">
+				<argument type="Total" dependent="virtual desktops" />
+				<argument type="Part" dependent="better data security , cost savings on software licenses and updates , and ease of management" /></main_frame>
+			<frame type="Required_event" head="better">
+				<argument type="Required_situation" dependent="data security" /></frame>
+			<frame type="Information" head="data" />
+			<frame type="Being_at_risk" head="security" />
+			<frame type="Expensiveness" head="cost" />
+			<frame type="Spatial_contact" head="on">
+				<argument type="Ground" dependent="software licenses and updates" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Container vs virtual machine Like   virtual machines, container technology such as Kubernetes is similar in the sense of running isolated applications on a single platform.
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="NN">container</token><token pos="NN">technology</token><token pos="JJ">such</token><token pos="IN">as</token><token pos="NP00G00">Kubernetes</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_0" concept_ref3="c_15" concept_ref4="c_52">
+			<token pos="VBZ">is</token><token pos="JJ">similar</token><token pos="IN">in</token><token pos="DT">the</token><token pos="NN">sense</token><token pos="IN">of</token><token pos="VBG">running</token><token pos="VBN">isolated</token><token pos="NNS">applications</token><token pos="IN">on</token><token pos="DT">a</token><token pos="JJ">single</token><token pos="NN">platform</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machine">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<frame type="Similarity" head="like">
+				<argument type="Entity_1" dependent="container vs virtual machine" />
+				<argument type="Entity_2" dependent="unk virtual machines" /></frame>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<frame type="Containers" head="container" />
+			<frame type="Artifact" head="technology">
+				<argument type="Type" dependent="container" /></frame>
+			<frame type="Similarity" head="similar">
+				<argument type="Entity_1" dependent="container technology such as unk" />
+				<argument type="Entity_2" dependent="in the sense of running isolated applications on a single platform" /></frame>
+			<frame type="Using" head="applications">
+				<argument type="Manner" dependent="running" />
+				<argument type="Purpose" dependent="isolated" />
+				<argument type="Purpose" dependent="on a single platform" /></frame>
+			<frame type="Sole_instance" head="single">
+				<argument type="Type" dependent="platform" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 While virtual machines virtualize the hardware layer to create a “ computer, ” containers package up just a single app along_with its dependencies.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="JJ">virtual</token><token pos="NNS">machines</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_9" concept_ref3="c_14" concept_ref4="c_19" concept_ref5="c_31" concept_ref6="c_44" concept_ref7="c_58" concept_ref8="c_60" concept_ref9="c_57">
+			<token pos="VBP">virtualize</token><token pos="DT">the</token><mention concept_ref="c_60"><token pos="NN">hardware</token></mention><token pos="NN">layer</token><token pos="TO">to</token><token pos="VB">create</token><token pos="DT">a</token><token pos="Fra">“</token><token pos="NN">computer</token><token pos="Fc">,</token><token pos="Frc">”</token><mention concept_ref="c_9"><token pos="NNS">containers</token></mention><token pos="NN">package</token><mention concept_ref="c_14"><token pos="IN">up</token></mention><mention concept_ref="c_58"><token pos="RB">just</token><token pos="DT">a</token><token pos="JJ">single</token><token pos="NN">app</token></mention><token pos="IN">along_with</token><mention concept_ref="c_57"><token pos="PRP$">its</token><token pos="NNS">dependencies</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Concessive" head="while">
+				<argument type="Main_assertion" dependent="virtual machines unk the hardware layer to create a unk computer" />
+				<argument type="Main_assertion" dependent="” containers package up just a single app unk its dependencies" /></frame>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<main_frame type="Intentionally_create" head="create">
+				<argument type="Created_entity" dependent="a unk computer" /></main_frame>
+			<frame type="Containers" head="containers" />
+			<frame type="Aggregate" head="package">
+				<argument type="Individuals" dependent="containers" />
+				<argument type="Aggregate_property" dependent="up just a single app unk its dependencies" /></frame>
+			<frame type="Sole_instance" head="single">
+				<argument type="Type" dependent="app" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Virtual machines are often managed by a hypervisor, whereas container systems provide shared operating system services from the underlying host and isolate the applications using virtual-memory hardware.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="JJ">Virtual</token><token pos="NNS">machines</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_17" concept_ref3="c_52">
+			<token pos="VBP">are</token><token pos="RB">often</token><token pos="VBN">managed</token><mention concept_ref="c_17"><token pos="IN">by</token><token pos="DT">a</token><token pos="NN">hypervisor</token></mention><token pos="Fc">,</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<main_frame type="Operating_a_system" head="managed">
+				<argument type="System" dependent="virtual machines" />
+				<argument type="Operator" dependent="by a hypervisor" /></main_frame>
+			<frame type="Containers" head="container" />
+			<frame type="System" head="systems">
+				<argument type="Function" dependent="container" /></frame>
+			<frame type="Supply" head="provide">
+				<argument type="Supplier" dependent="container systems" />
+				<argument type="Theme" dependent="shared operating system services from the underlying host and isolate the applications using unk hardware" /></frame>
+			<frame type="System" head="system">
+				<argument type="Function" dependent="operating" /></frame>
+			<frame type="Public_services" head="services">
+				<argument type="Service_action" dependent="operating system" /></frame>
+			<frame type="Aggregate" head="host" />
+			<frame type="Using" head="applications">
+				<argument type="Purpose" dependent="using unk hardware" /></frame>
+			<frame type="Using" head="using">
+				<argument type="Instrument" dependent="unk hardware" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A key benefit of containers is that they have less overhead compared to virtual machines.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="DT">A</token><token pos="NN">key</token><token pos="NN">benefit</token><token pos="IN">of</token><token pos="NNS">containers</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_14" concept_ref4="c_19">
+			<token pos="VBZ">is</token><mention concept_ref="c_14"><token pos="IN">that</token></mention><mention concept_ref="c_1"><token pos="PRP">they</token></mention><token pos="VBP">have</token><token pos="RB">less</token><token pos="RB">overhead</token><token pos="VBN">compared</token><token pos="TO">to</token><token pos="JJ">virtual</token><token pos="NNS">machines</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Importance" head="key">
+				<argument type="Factor" dependent="benefit of containers" /></frame>
+			<frame type="Containers" head="containers" />
+			<main_frame type="Evaluative_comparison" head="compared">
+				<argument type="Profiled_item" dependent="they" />
+				<argument type="Standard_item" dependent="to virtual machines" /></main_frame>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Containers include only the binaries, libraries and other required dependencies, and the application.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="NNS">Containers</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_15" concept_ref3="c_31" concept_ref4="c_49" concept_ref5="c_57">
+			<token pos="VBP">include</token><mention concept_ref="c_49"><token pos="DT">the</token><token pos="NNS">binaries</token></mention><token pos="Fc">,</token><token pos="NNS">libraries</token><token pos="CC">and</token><mention concept_ref="c_57"><token pos="JJ">other</token><token pos="VBN">required</token><token pos="NNS">dependencies</token></mention><token pos="Fc">,</token><token pos="CC">and</token><mention concept_ref="c_8"><token pos="DT">the</token><token pos="NN">application</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Inclusion" head="include">
+				<argument type="Total" dependent="containers" />
+				<argument type="Part" dependent="only the binaries , libraries and other required dependencies , and the application" /></main_frame>
+			<frame type="Sole_instance" head="only">
+				<argument type="Item" dependent="the binaries , libraries and other required dependencies" /></frame>
+			<frame type="Buildings" head="libraries" />
+			<frame type="Increment" head="other">
+				<argument type="Class" dependent="required dependencies" /></frame>
+			<main_frame type="Have_as_requirement" head="required">
+				<argument type="Requirement" dependent="dependencies" /></main_frame>
+			<frame type="Reliance" head="dependencies" />
+			<frame type="Using" head="application" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Containers that are on the same host share the same operating system kernel, making containers much smaller than virtual machines.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="WDT">that</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_9" concept_ref3="c_16" concept_ref4="c_17" concept_ref5="c_19" concept_ref6="c_45" concept_ref7="c_47">
+			<token pos="VBP">are</token><mention concept_ref="c_17"><token pos="IN">on</token><token pos="DT">the</token><token pos="JJ">same</token><token pos="NN">host</token></mention><token pos="NN">share</token><token pos="DT">the</token><token pos="JJ">same</token><mention concept_ref="c_16"><token pos="VBG">operating</token></mention><token pos="NN">system</token><token pos="NN">kernel</token><token pos="Fc">,</token><token pos="VBG">making</token><mention concept_ref="c_9"><token pos="NNS">containers</token></mention><token pos="RB">much</token><token pos="JJR">smaller</token><token pos="IN">than</token><token pos="JJ">virtual</token><token pos="NNS">machines</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Spatial_contact" head="on">
+				<argument type="Figure" dependent="containers that" />
+				<argument type="Ground" dependent="the same host share the same operating system kernel" /></frame>
+			<frame type="Identicality" head="same">
+				<argument type="Type" dependent="operating system kernel" /></frame>
+			<frame type="Aggregate" head="host" />
+			<frame type="System" head="system">
+				<argument type="Function" dependent="operating" /></frame>
+			<main_frame type="Manufacturing" head="making">
+				<argument type="Product" dependent="containers much smaller than virtual machines" /></main_frame>
+			<frame type="Containers" head="containers" />
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 As a result, containers boot faster, maximize server resources, and make delivering applications easier.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="NNS">containers</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_0" concept_ref3="c_15" concept_ref4="c_21" concept_ref5="c_47">
+			<token pos="VBP">boot</token><token pos="RBR">faster</token><token pos="Fc">,</token><token pos="VB">maximize</token><token pos="NN">server</token><token pos="NNS">resources</token><token pos="Fc">,</token><token pos="CC">and</token><token pos="VB">make</token><token pos="VBG">delivering</token><token pos="NNS">applications</token><mention concept_ref="c_21"><token pos="JJR">easier</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Causation" head="result" />
+			<frame type="Containers" head="containers" />
+			<main_frame type="Manufacturing" head="make">
+				<argument type="Product" dependent="delivering applications easier" /></main_frame>
+			<main_frame type="Delivery" head="delivering">
+				<argument type="Theme" dependent="applications" />
+				<argument type="Source" dependent="easier" /></main_frame>
+			<frame type="Using" head="applications" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Containers have become popluar for use cases such as web applications, DevOps testing, microservices and maximizing the number of apps that can be deployed per server.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="NNS">Containers</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_0" concept_ref3="c_14" concept_ref4="c_15" concept_ref5="c_17" concept_ref6="c_47" concept_ref7="c_48">
+			<token pos="VBP">have</token><token pos="VBN">become</token><token pos="NN">popluar</token><token pos="IN">for</token><mention concept_ref="c_48"><token pos="NN">use</token><token pos="NNS">cases</token></mention><token pos="JJ">such</token><token pos="IN">as</token><token pos="NN">web</token><token pos="NNS">applications</token><token pos="Fc">,</token><token pos="NP00V00">DevOps</token><token pos="NN">testing</token><token pos="Fc">,</token><token pos="NNS">microservices</token><token pos="CC">and</token><token pos="VBG">maximizing</token><token pos="DT">the</token><token pos="NN">number</token><mention concept_ref="c_15"><token pos="IN">of</token><token pos="NNS">apps</token><token pos="WDT">that</token><token pos="MD">can</token><token pos="VB">be</token><token pos="VBN">deployed</token><token pos="IN">per</token><token pos="NN">server</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Becoming" head="become">
+				<argument type="Entity" dependent="containers" />
+				<argument type="Final_category" dependent="unk for use cases such as web applications" /></main_frame>
+			<frame type="Using" head="use" />
+			<frame type="Instance" head="cases">
+				<argument type="Type" dependent="use" /></frame>
+			<frame type="Using" head="applications">
+				<argument type="Instrument" dependent="web" /></frame>
+			<frame type="Operational_testing" head="testing">
+				<argument type="Tested_property" dependent="unk" /></frame>
+			<main_frame type="Quantified_mass" head="number">
+				<argument type="Individuals" dependent="of apps that can be deployed per server" /></main_frame>
+			<main_frame type="Arranging" head="deployed">
+				<argument type="Theme" dependent="apps that" />
+				<argument type="Location" dependent="per server" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Virtual machines are larger and slower to boot than containers.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="JJ">Virtual</token><token pos="NNS">machines</token>
+		</theme>
+		<rheme concept_ref1="c_9">
+			<token pos="VBP">are</token><token pos="JJR">larger</token><token pos="CC">and</token><token pos="JJR">slower</token><token pos="TO">to</token><token pos="VB">boot</token><token pos="IN">than</token><mention concept_ref="c_9"><token pos="NNS">containers</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<frame type="Containers" head="containers" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 They are logically isolated from one another, with their own operating system kernel, and offer the benefits of a completely separate operating system.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="PRP">They</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_10" concept_ref3="c_16" concept_ref4="c_45" concept_ref5="c_46">
+			<token pos="VBP">are</token><token pos="RB">logically</token><token pos="VBN">isolated</token><token pos="IN">from</token><token pos="Z">one</token><token pos="DT">another</token><token pos="Fc">,</token><token pos="Fc">,</token><token pos="CC">and</token><token pos="VB">offer</token><token pos="DT">the</token><token pos="NNS">benefits</token><token pos="IN">of</token><mention concept_ref="c_45"><token pos="DT">a</token><token pos="RB">completely</token><token pos="JJ">separate</token><token pos="VBG">operating</token><token pos="NN">system</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="one">
+				<argument type="Unit" dependent="another" /></frame>
+			<frame type="Increment" head="another">
+				<argument type="Increment" dependent="one" /></frame>
+			<main_frame type="Operating_a_system" head="operating">
+				<argument type="Operator" dependent="their own" />
+				<argument type="System" dependent="system kernel" /></main_frame>
+			<frame type="System" head="system">
+				<argument type="Function" dependent="operating" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Virtual machines are best for running multiple applications together, monolithic applications, isolation between apps, and for legacy apps running on older operating systems.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="JJ">Virtual</token><token pos="NNS">machines</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_0" concept_ref3="c_15" concept_ref4="c_16" concept_ref5="c_41" concept_ref6="c_45" concept_ref7="c_48" concept_ref8="c_58" concept_ref9="c_57">
+			<token pos="VBP">are</token><token pos="IN">for</token><token pos="VBG">running</token><mention concept_ref="c_48"><token pos="JJ">multiple</token><token pos="NNS">applications</token></mention><mention concept_ref="c_41"><token pos="RB">together</token></mention><token pos="Fc">,</token><mention concept_ref="c_58"><token pos="JJ">monolithic</token><token pos="NNS">applications</token></mention><token pos="Fc">,</token><mention concept_ref="c_57"><token pos="NN">isolation</token></mention><token pos="IN">between</token><token pos="NN">apps</token><token pos="Fc">,</token><token pos="CC">and</token><token pos="IN">for</token><token pos="NN">legacy</token><token pos="NNS">apps</token><token pos="VBG">running</token><token pos="IN">on</token><token pos="JJR">older</token><token pos="VBG">operating</token><token pos="NNS">systems</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<frame type="Required_event" head="best">
+				<argument type="Required_situation" dependent="virtual machines" /></frame>
+			<main_frame type="Self_motion" head="running">
+				<argument type="Self_mover" dependent="virtual machines" />
+				<argument type="Goal" dependent="multiple applications together , monolithic applications , isolation between apps , and for legacy apps running on older operating systems" /></main_frame>
+			<frame type="Quantified_mass" head="multiple">
+				<argument type="Individuals" dependent="applications" /></frame>
+			<frame type="Using" head="applications">
+				<argument type="Manner" dependent="monolithic" /></frame>
+			<frame type="Collaboration" head="together">
+				<argument type="Undertaking" dependent="running multiple applications" />
+				<argument type="Undertaking" dependent="monolithic applications" /></frame>
+			<frame type="Interior_profile_relation" head="between">
+				<argument type="Figure" dependent="virtual machines are best for running multiple applications together , monolithic applications , isolation" />
+				<argument type="Ground" dependent="apps" /></frame>
+			<frame type="System" head="systems">
+				<argument type="Function" dependent="operating" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Containers and virtual machines may also be used together.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="NNS">Containers</token><token pos="CC">and</token><token pos="JJ">virtual</token><token pos="NNS">machines</token>
+		</theme>
+		<rheme concept_ref1="c_41">
+			<token pos="MD">may</token><token pos="VB">be</token><token pos="VBN">used</token><mention concept_ref="c_41"><token pos="RB">together</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Gizmo" head="machines">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<main_frame type="Using" head="used">
+				<argument type="Instrument" dependent="containers and virtual machines" />
+				<argument type="Purpose" dependent="together" /></main_frame>
+			<frame type="Collaboration" head="together">
+				<argument type="Partner_2" dependent="containers and virtual machines" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Setting up a virtual machine Virtual machines can be simple to set up, and there are many guides online that walk users through the process.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="VBG">Setting</token><token pos="RP">up</token><token pos="DT">a</token><token pos="JJ">virtual</token><token pos="NN">machine</token><token pos="JJ">Virtual</token><token pos="NNS">machines</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_14" concept_ref3="c_37" concept_ref4="c_42" concept_ref5="c_43" concept_ref6="c_48" concept_ref7="c_58" concept_ref8="c_61">
+			<token pos="MD">can</token><token pos="VB">be</token><token pos="JJ">simple</token><token pos="TO">to</token><token pos="VB">set</token><token pos="RP">up</token><token pos="Fc">,</token><token pos="CC">and</token><token pos="EX">there</token><token pos="VBP">are</token><mention concept_ref="c_48"><token pos="DT">many</token><token pos="NNS">guides</token></mention><token pos="JJ">online</token><mention concept_ref="c_14"><token pos="WDT">that</token></mention><token pos="VBP">walk</token><token pos="NNS">users</token><mention concept_ref="c_43"><token pos="IN">through</token><token pos="DT">the</token><token pos="NN">process</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Locative_relation" head="up">
+				<argument type="Ground" dependent="a virtual machine virtual machines" /></frame>
+			<frame type="Gizmo" head="machine">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<frame type="Gizmo" head="machines">
+				<argument type="Use" dependent="virtual machine" />
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<frame type="Capability" head="can">
+				<argument type="Entity" dependent="a virtual machine virtual machines" />
+				<argument type="Event" dependent="be simple to set up" /></frame>
+			<main_frame type="Placing" head="set">
+				<argument type="Theme" dependent="a virtual machine virtual machines" />
+				<argument type="Theme" dependent="up" /></main_frame>
+			<frame type="Direction" head="up" />
+			<frame type="Locative_relation" head="there">
+				<argument type="Ground" dependent="there are many guides online that walk users through the process" /></frame>
+			<main_frame type="Performers_and_roles" head="are">
+				<argument type="Performance" dependent="many guides online that walk users through the process" /></main_frame>
+			<frame type="Quantified_mass" head="many">
+				<argument type="Individuals" dependent="guides" /></frame>
+			<frame type="Cotheme" head="guides">
+				<argument type="Time" dependent="online that walk users through the process" /></frame>
+			<main_frame type="Self_motion" head="walk">
+				<argument type="Self_mover" dependent="that" />
+				<argument type="Self_mover" dependent="users" />
+				<argument type="Purpose" dependent="through the process" /></main_frame>
+			<frame type="Process" head="process" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 VMware offers one such useful virtual machine set-up guide.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="NP00V00">VMware</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_14" concept_ref3="c_19">
+			<token pos="VBZ">offers</token><mention concept_ref="c_0"><token pos="Z">one</token><token pos="JJ">such</token><token pos="JJ">useful</token><token pos="JJ">virtual</token><token pos="NN">machine</token><token pos="NN">set-up</token><token pos="NN">guide</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Usefulness" head="useful">
+				<argument type="Entity" dependent="virtual machine set-up guide" /></frame>
+			<frame type="Gizmo" head="machine">
+				<argument type="Descriptor" dependent="virtual" /></frame>
+			<frame type="Cotheme" head="guide">
+				<argument type="Manner" dependent="machine set-up" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

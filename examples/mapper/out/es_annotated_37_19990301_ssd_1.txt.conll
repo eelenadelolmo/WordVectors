@@ -1,0 +1,10 @@
+{   ('Arriving', 'visitar'): [('Theme', 'muchos de los'), ('Goal', 'las playas')],
+    ('Calendric_unit', 'semanas'): [('Relative_time', 'últimas'), ('Count', 'tres')],
+    ('Cardinal_numbers', 'tres'): [('Unit', 'semanas')],
+    ('Catastrophe', 'padecido'): [('Undesirable_event', 'ola de explosiones que'), ('Time', 'en las últimas tres semanas')],
+    ('Fear', 'temor'): [('Stimulus', 'de la Costa')],
+    ('Natural_features', 'playas'): [],
+    ('People_by_residence', 'vecinos'): [('Location', 'de la Costa')],
+    ('Quantified_mass', 'muchos'): [('Individuals', 'de los')],
+    ('Quantified_mass', 'ola de'): [],
+    ('Renunciation', 'renunciado'): [('Content', 'muchos de los'), ('Content', 'a visitar las playas')]}

@@ -1,0 +1,9 @@
+{   ('Aggregate', 'las multitudes'): [('Aggregate_property', 'democráticas')],
+    ('Feeling', 'sentirnos'): [('Emotional_state', 'seguros')],
+    ('Fire_burning', 'quemar'): [('Fire', 'muñecos'), ('Fuel', 'para sentirnos seguros')],
+    ('Getting', 'sacude la'): [('Recipient', 'nos'), ('Theme', 'ira')],
+    ('Motion', 'ira las'): [('Theme', 'las multitudes democráticas'), ('Path', 'sacude la'), ('Goal', 'a la calle a quemar muñecos para sentirnos seguros')],
+    ('Risky_situation', 'seguros'): [],
+    ('Roadways', 'calle'): [],
+    ('Sleep', 'sacude la'): [('Sleeper', 'las multitudes democráticas')],
+    ('Temporal_collocation', 'cuando'): [('Landmark_event', 'nos sacude la ira'), ('Trajector_event', 'las multitudes democráticas saldríamos a la calle a quemar muñecos para sentirnos seguros')]}

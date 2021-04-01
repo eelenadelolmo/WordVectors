@@ -1,0 +1,7 @@
+{   ('Activity_ongoing', 'guardaron'): [('Agent', '600 personas'), ('Activity', '15 minutos de silencio')],
+    ('Becoming_silent', 'silencio'): [('Speaker', '600 personas')],
+    ('Calendric_unit', 'minutos'): [('Count', '15')],
+    ('Death', 'muerte'): [('Protagonist', 'de')],
+    ('Interior_profile_relation', 'En'): [('Ground', 'Vitoria')],
+    ('People', 'personas'): [('Descriptor', '600')],
+    ('Sign', 'muestra'): [('Indicated', 'dolor y de condena por la muerte de')]}

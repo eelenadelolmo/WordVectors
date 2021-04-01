@@ -1,0 +1,6 @@
+{   ('Appellations', 'presidente'): [('Title', ', entre ellos , el')],
+    ('Being_employed', 'cargos'): [('Employer', 'el consejero'), ('Rank', '12')],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'el')],
+    ('Leadership', 'alcalde'): [('Leader', 'de')],
+    ('Locative_relation', 'en'): [('Figure', 'consejero'), ('Figure', 'también están 12 cargos , entre ellos , el parlamentario Yon Goikoetxea ; el presidente de las Juntas de')],
+    ('Quantified_mass', 'número'): [('Individuals', 'el')]}

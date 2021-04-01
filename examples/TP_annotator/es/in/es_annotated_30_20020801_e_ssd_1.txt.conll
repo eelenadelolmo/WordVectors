@@ -1,0 +1,7 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Fire_burning', 'bomberos'): [('Name', 'ayer'), ('Time', 'a mediodía')],
+    ('Locative_relation', 'en'): [('Figure', 'industrial que almacenaba derivados de plástico , en el número 61 de la calle de Gaspar Fàbregas , ardió ayer'), ('Ground', 'mediodía')],
+    ('People_by_vocation', 'bomberos'): [],
+    ('Quantified_mass', 'número'): [],
+    ('Roadways', 'calle'): [('Name', 'ardió')],
+    ('Storing', 'almacenaba'): [('Theme', 'industrial que almacenaba'), ('Agent', 'que'), ('Location', 'derivados de plástico')]}

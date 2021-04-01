@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="34_20000302_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Francisco Alvarez , ex jefe superior de policía de Bilbao y del mando único de la lucha antiterrorista ,</concept>
+		<concept id="c_1">el GAL</concept>
+		<concept id="c_2">Izaskun Ugarte</concept>
+		<concept id="c_3">su marido</concept>
+		<concept id="c_4">Txapela</concept>
+		<concept id="c_5">su vida familiar</concept>
+		<concept id="c_6">que</concept>
+		<concept id="c_7">El testigo</concept>
+		<concept id="c_8">Este acusado</concept>
+		<concept id="c_9">Fariños</concept>
+		<concept id="c_10">Tres guardias civiles y un policía</concept>
+		<concept id="c_11">Lasa y Zabala</concept>
+		<concept id="c_12">les</concept>
+		<concept id="c_13">trasladó</concept>
+		<concept id="c_14">que su familia se trasladó de Biarritz a San Juan de Luz en octubre de 1983 y que Lasa y Zabala les ayudaron en la mudanza</concept>
+		<concept id="c_15">que</concept>
+		<concept id="c_16">Lasa</concept>
+		<concept id="c_17">Biarritz</concept>
+		<concept id="c_18">palacio</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Francisco Alvarez, ex jefe superior de policía de Bilbao y del mando único de la lucha antiterrorista, declaró ayer que, pese a sus cargos, no dispuso de ninguna información sobre el caso Lasa y Zabala.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="ncms000">Francisco</token><token pos="np00000">Alvarez</token><token pos="fc">,</token><token pos="aq0cn0">ex</token><token pos="ncms000">jefe</token><token pos="aq0cs0">superior</token><token pos="sps00">de</token><token pos="nccs000">policía</token><token pos="sps00">de</token><token pos="np00000">Bilbao</token><token pos="cc">y</token><token pos="spcms">del</token><token pos="ncms000">mando</token><token pos="aq0ms0">único</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">lucha</token><token pos="aq0cs0">antiterrorista</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_10" concept_ref3="c_4" concept_ref4="c_1" concept_ref5="c_11" concept_ref6="c_12" concept_ref7="c_16">
+			<token pos="fc">,</token><token pos="vmip2s0">pese</token><token pos="sps00">a</token><mention concept_ref="c_8"><token pos="dp3cp0">sus</token><token pos="ncmp000">cargos</token></mention><token pos="fc">,</token><token pos="rn">no</token><token pos="vmis3s0">dispuso</token><mention concept_ref="c_12"><token pos="sps00">de</token></mention><mention concept_ref="c_10"><token pos="di0fs0">ninguna</token><token pos="ncfs000">información</token></mention><token pos="sps00">sobre</token><token pos="da0ms0">el</token><token pos="ncms000">caso</token><mention concept_ref="c_16"><token pos="np00000">Lasa</token></mention><token pos="cc">y</token><mention concept_ref="c_4"><token pos="np00000">Zabala</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Hostile_encounter" head="lucha">
+				<argument type="Purpose" dependent="antiterrorista" /></frame>
+			<frame type="Information" head="información">
+				<argument type="Topic" dependent="sobre el caso Lasa y Zabala" /></frame>
+			<frame type="Leadership" head="cargos">
+				<argument type="Leader" dependent="sus cargos" /></frame>
+			<frame type="Leadership" head="jefe">
+				<argument type="Descriptor" dependent="superior" />
+				<argument type="Governed" dependent="de policía de Bilbao" /></frame>
+			<frame type="Leadership" head="mando">
+				<argument type="Activity" dependent="la lucha antiterrorista" /></frame>
+			<frame type="Sole_instance" head="único">
+				<argument type="Type" dependent="lucha antiterrorista" /></frame>
+			<frame type="Statement" head="declaró">
+				<argument type="Message" dependent="Francisco Alvarez , ex jefe superior de policía de Bilbao y del mando único de la lucha antiterrorista" />
+				<argument type="Manner" dependent="ayer que" />
+				<argument type="Message" dependent=", pese a sus cargos , no dispuso de ninguna información sobre el caso Lasa y Zabala" /></frame>
+			<frame type="Terrorism" head="antiterrorista" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ayer también testificó Izaskun Ugarte, viuda del etarra Mikel Goicoetxea, Txapela, asesinado por el GAL en diciembre de 1983, que declaró que José Antonio Lasa y José Ignacio Zabala eran de las pocas personas que conocían su domicilio.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="que " />
+			<frame type="Be_subset_of" head="en">
+				<argument type="Part" dependent="Lasa y José Ignacio Zabala" />
+				<argument type="Total" dependent="pocas personas que conocían su domicilio" /></frame>
+			<frame type="Buildings" head="domicilio">
+				<argument type="Possessor" dependent="su" /></frame>
+			<frame type="Calendric_unit" head="Ayer" />
+			<frame type="Evidence" head="testificó">
+				<argument type="Proposition" dependent="Ugarte , viuda del etarra Mikel Goicoetxea , Txapela , asesinado por el GAL en diciembre de 1983" /></frame>
+			<frame type="Killing" head="asesinado">
+				<argument type="Place" dependent="por el" />
+				<argument type="Time" dependent="en diciembre de 1983" /></frame>
+			<frame type="People" head="personas" />
+			<frame type="Quantified_mass" head="pocas">
+				<argument type="Individuals" dependent="personas" /></frame>
+			<frame type="Statement" head="declaró">
+				<argument type="Time" dependent="diciembre de 1983" />
+				<argument type="Speaker" dependent="personas que" />
+				<argument type="Message" dependent="Lasa y José Ignacio Zabala eran de las pocas personas que conocían su domicilio" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Alvarez confirmó que el GAL estaba dividido en cuatro grupos que eran identificados con los colores de los uniformes de sus supuestos miembros.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">el</token><token pos="np00000">GAL</token>
+		</theme>
+		<rheme>
+			<token pos="vmii3s0">estaba</token><token pos="aq0msp">dividido</token><token pos="sps00">en</token><token pos="dn0cp0">cuatro</token><token pos="ncmp000">grupos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Alvarez " />
+			<frame type="Aggregate" head="grupos" />
+			<frame type="Diversity" head="uniformes">
+				<argument type="Group" dependent="miembros" /></frame>
+			<frame type="Membership" head="miembros" />
+			<frame type="Separating" head="dividido">
+				<argument type="Whole" dependent="el" />
+				<argument type="Criterion" dependent="en cuatro grupos que eran identificados con los colores de los uniformes de sus supuestos miembros" /></frame>
+			<frame type="Verification" head="confirmó">
+				<argument type="Inspector" dependent="el" />
+				<argument type="Unconfirmed_content" dependent="dividido en cuatro grupos que eran identificados con los colores de los uniformes de sus supuestos miembros" /></frame>
+			<frame type="Verification" head="identificados">
+				<argument type="Unconfirmed_content" dependent="que" />
+				<argument type="Unconfirmed_content" dependent="con los colores de los uniformes de sus supuestos miembros" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El azul era empleado para la Policía, el verde para la Guardia Civil, el marrón para los militares y el francés para los empresarios.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Color" head="azul" />
+			<frame type="Color" head="marrón">
+				<argument type="Entity" dependent="para los militares y el francés para los empresarios" /></frame>
+			<frame type="Color" head="verde">
+				<argument type="Entity" dependent="para la Guardia Civil" /></frame>
+			<frame type="Law_enforcement_agency" head="Policía" />
+			<frame type="Military" head="militares" />
+			<frame type="Using" head="empleado para">
+				<argument type="Instrument" dependent="azul" />
+				<argument type="Purpose" dependent="para la Policía" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Izaskun Ugarte recordó que su familia se trasladó de Biarritz a San Juan de Luz en octubre de 1983 y que Lasa y Zabala les ayudaron en la mudanza.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="np0000l">Izaskun</token><token pos="np0000l">Ugarte</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_5" concept_ref3="c_1" concept_ref4="c_2" concept_ref5="c_11" concept_ref6="c_12" concept_ref7="c_13" concept_ref8="c_14" concept_ref9="c_15" concept_ref10="c_16" concept_ref11="c_17">
+			<token pos="vmis3s0">recordó</token><mention concept_ref="c_14"><token pos="cs">que</token><token pos="dp3cs0">su</token><token pos="ncfs000">familia</token><token pos="p0300000">se</token><token pos="vmis3s0">trasladó</token><token pos="sps00">de</token><token pos="np00000">Biarritz</token><token pos="sps00">a</token><token pos="ncms000">San</token><token pos="ncms000">Juan</token><token pos="sps00">de</token><token pos="ncms000">Luz</token><token pos="sps00">en</token><token pos="ncfs000">octubre</token><token pos="spcms">de</token><token pos="zp">1983</token><token pos="cc">y</token><token pos="cs">que</token><token pos="np00000">Lasa</token><token pos="cc">y</token><token pos="np00000">Zabala</token><token pos="pp3mpa00">les</token><token pos="vmis3p0">ayudaron</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">mudanza</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Assistance" head="ayudaron">
+				<argument type="Helper" dependent="Lasa y Zabala" />
+				<argument type="Benefited_party" dependent="les" />
+				<argument type="Goal" dependent="trasladó" /></main_frame>
+			<frame type="Kinship" head="familia">
+				<argument type="Ego" dependent="su" /></frame>
+			<main_frame type="Motion" head="trasladó">
+				<argument type="Theme" dependent="les" /></main_frame>
+			<main_frame type="Remembering_experience" head="recordó">
+				<argument type="Cognizer" dependent="Ugarte" />
+				<argument type="Experience" dependent="que su familia se trasladó de Biarritz a San Juan de Luz en octubre de 1983 y que Lasa y Zabala les ayudaron en la mudanza" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La viuda admitió que su marido se preocupó cuando se enteró de la desaparición de los jóvenes y adoptó medidas de seguridad después de observar "movimientos extraños" en torno a su domicilio.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="dp3cs0">su</token><token pos="ncms000">marido</token>
+		</theme>
+		<rheme concept_ref1="c_1">
+			<mention concept_ref="c_1"><token pos="p0300000">se</token></mention><token pos="vmis3s0">preocupó</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="La viuda " />
+			<frame type="Age" head="jóvenes">
+				<argument type="Entity" dependent="los" /></frame>
+			<frame type="Becoming_aware" head="de observar">
+				<argument type="Phenomenon" dependent="movimientos extraños  quot ; en torno a su domicilio" /></frame>
+			<frame type="Becoming_aware" head="enteró">
+				<argument type="Cognizer" dependent="su" />
+				<argument type="Phenomenon" dependent="la desaparición de los jóvenes" /></frame>
+			<frame type="Being_at_risk" head="de seguridad" />
+			<frame type="Buildings" head="domicilio" />
+			<frame type="Departing" head="desaparición de">
+				<argument type="Theme" dependent="los jóvenes" /></frame>
+			<frame type="People" head="los">
+				<argument type="Descriptor" dependent="jóvenes" /></frame>
+			<frame type="Personal_relationship" head="marido">
+				<argument type="Partner_2" dependent="su" /></frame>
+			<frame type="Relative_time" head="después de">
+				<argument type="Focal_occasion" dependent="se enteró de la desaparición de los jóvenes y adoptó medidas de seguridad" />
+				<argument type="Landmark_occasion" dependent="de observar  quot ; movimientos extraños  quot ; en torno a su domicilio" /></frame>
+			<frame type="Reveal_secret" head="admitió">
+				<argument type="Speaker" dependent="viuda" />
+				<argument type="Information" dependent="que su marido se preocupó cuando se enteró de la desaparición de los jóvenes y adoptó medidas de seguridad después de observar  quot ; movimientos extraños  quot ; en torno a su domicilio" /></frame>
+			<main_frame type="Topic" head="preocupó">
+				<argument type="Topic" dependent="su marido" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Txapela fue asesinado por dos individuos que le dispararon en el portal de su casa en presencia de su mujer y de su hija pequeña.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="np00000">Txapela</token>
+		</theme>
+		<rheme concept_ref1="c_1">
+			<token pos="vsis3s0">fue</token><token pos="vmp00sm">asesinado</token><token pos="sps00">por</token><token pos="dn0cp0">dos</token><token pos="ncmp000">individuos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="pequeña">
+				<argument type="Entity" dependent="hija" /></frame>
+			<frame type="Attempt" head="dispararon">
+				<argument type="Agent" dependent="dos individuos que le" /></frame>
+			<frame type="Buildings" head="casa" />
+			<main_frame type="Killing" head="asesinado">
+				<argument type="Victim" dependent="de" /></main_frame>
+			<frame type="Kinship" head="hija" />
+			<frame type="People" head="individuos" />
+			<frame type="Personal_relationship" head="su mujer">
+				<argument type="Partner_1" dependent="su" /></frame>
+			<frame type="Presence" head="presencia">
+				<argument type="Entity" dependent="su mujer y de su hija pequeña" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ugarte declaró que su vida familiar era íntima.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="dp3cs0">su</token><token pos="ncfs000">vida</token><token pos="aq0cs0">familiar</token>
+		</theme>
+		<rheme>
+			<token pos="vsii3s0">era</token><token pos="aq0fs0">íntima</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Ugarte " />
+			<frame type="Kinship" head="familiar" />
+			<frame type="Statement" head="declaró">
+				<argument type="Speaker" dependent="Ugarte" />
+				<argument type="Message" dependent="que su vida familiar era íntima" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "No teníamos mucha relación con los otros refugiados. Eramos considerados como gente que hacía su vida", matizó.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Categorization" head="considerados">
+				<argument type="Item" dependent="Eramos" />
+				<argument type="Category" dependent="como gente que hacía su vida  quot ; , matizó" /></frame>
+			<frame type="Cognitive_connection" head="relación">
+				<argument type="Concept_1" dependent="Eramos" />
+				<argument type="Degree" dependent="mucha" />
+				<argument type="Concept_1" dependent="con los otros" /></frame>
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="que" /></frame>
+			<frame type="People" head="gente" />
+			<frame type="Proportional_quantity" head="mucha">
+				<argument type="Mass" dependent="relación con los otros" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En la sesión de ayer también declaró el arquitecto Angel Fariños, que en 1987 remodeló el Palacio de la Cumbre de San Sebastián.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_12">
+			<token pos="sps00">en</token><token pos="z">1987</token><token pos="vmis3s0">remodeló</token><mention concept_ref="c_0"><token pos="da0ms0">el</token><token pos="ncms000">Palacio</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">Cumbre</token><token pos="sps00">de</token><token pos="ncfs000">San</token><token pos="np0000o">Sebastián</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="que" />
+				<argument type="Ground" dependent="1987 remodeló el Palacio de la Cumbre de San" /></frame>
+			<frame type="Statement" head="declaró">
+				<argument type="Time" dependent="de ayer" />
+				<argument type="Message" dependent="el arquitecto Angel Fariños , que en 1987 remodeló el Palacio de la Cumbre de San" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El testigo ofreció explicaciones confusas en las que confirmó detalles declarados por Felipe Bayo.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0ms0">El</token><token pos="ncms000">testigo</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_12" concept_ref3="c_14" concept_ref4="c_15">
+			<token pos="vmis3s0">ofreció</token><mention concept_ref="c_10"><token pos="ncfp000">explicaciones</token></mention><token pos="aq0fp0">confusas</token><token pos="sps00">en</token><token pos="da0fp0">las</token><mention concept_ref="c_15"><token pos="pr0cn000">que</token></mention><token pos="vmis3s0">confirmó</token><token pos="ncmp000">detalles</token><token pos="aq0mpp">declarados</token><token pos="sps00">por</token><token pos="np0000l">Felipe</token><token pos="np0000l">Bayo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Experiencer_obj" head="confusas">
+				<argument type="Stimulus" dependent="El testigo" />
+				<argument type="Stimulus" dependent="explicaciones" /></frame>
+			<frame type="Statement" head="declarados">
+				<argument type="Message" dependent="explicaciones confusas en las que confirmó detalles declarados" />
+				<argument type="Speaker" dependent="por Felipe Bayo" /></frame>
+			<main_frame type="Supply" head="ofreció">
+				<argument type="Supplier" dependent="El testigo" />
+				<argument type="Theme" dependent="explicaciones confusas en las que confirmó detalles declarados por Felipe Bayo" /></main_frame>
+			<main_frame type="Verification" head="confirmó">
+				<argument type="Medium" dependent="El testigo ofreció explicaciones confusas en" />
+				<argument type="Unconfirmed_content" dependent="detalles" />
+				<argument type="Manner" dependent="declarados por Felipe Bayo" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Este acusado identificó en 1997, cuando se arrepintió, las habitaciones del palacio en las que supuestamente se interrogó a Lasa y Zabala.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="dd0ms0">Este</token><token pos="ncms000">acusado</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_1" concept_ref3="c_9" concept_ref4="c_11" concept_ref5="c_12" concept_ref6="c_14" concept_ref7="c_15" concept_ref8="c_16" concept_ref9="c_18">
+			<token pos="vmis3s0">identificó</token><mention concept_ref="c_9"><token pos="da0fp0">las</token><token pos="ncfp000">habitaciones</token></mention><token pos="spcms">del</token><mention concept_ref="c_18"><token pos="ncms000">palacio</token></mention><token pos="sps00">en</token><token pos="da0fp0">las</token><mention concept_ref="c_15"><token pos="pr0cn000">que</token></mention><token pos="rg">supuestamente</token><mention concept_ref="c_1"><token pos="p0000000">se</token></mention><token pos="vmis3s0">interrogó</token><token pos="sps00">a</token><mention concept_ref="c_16"><token pos="np00000">Lasa</token></mention><token pos="cc">y</token><mention concept_ref="c_4"><token pos="np00000">Zabala</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Building_subparts" head="habitaciones">
+				<argument type="Whole" dependent="palacio en las que supuestamente se interrogó a Lasa y Zabala" /></frame>
+			<frame type="Buildings" head="palacio">
+				<argument type="Place" dependent="a Lasa y Zabala" /></frame>
+			<main_frame type="Questioning" head="interrogó">
+				<argument type="Message" dependent="habitaciones del palacio en las que supuestamente se interrogó a Lasa y Zabala" /></main_frame>
+			<frame type="Unattributed_information" head="acusado">
+				<argument type="Reported_fact" dependent="habitaciones del palacio en las que supuestamente se interrogó a Lasa y Zabala" />
+				<argument type="Reported_fact" dependent="interrogó" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Fariños desmintió algunos extremos de la versión del policía Angel López Carrillo, que confesó haber marcado con un número las estancias donde estuvieron los presuntos etarras.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="np00000">Fariños</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_3" concept_ref3="c_9" concept_ref4="c_0" concept_ref5="c_12" concept_ref6="c_14" concept_ref7="c_15" concept_ref8="c_16" concept_ref9="c_17" concept_ref10="c_18">
+			<token pos="vmis3s0">desmintió</token><mention concept_ref="c_8"><token pos="di0mp0">algunos</token><token pos="ncmp000">extremos</token></mention><mention concept_ref="c_12"><token pos="sps00">de</token></mention><token pos="da0fs0">la</token><token pos="ncfs000">versión</token><token pos="spcms">del</token><token pos="nccs000">policía</token><mention concept_ref="c_0"><token pos="ncfs000">Angel</token><token pos="ncms000">López</token><token pos="np00000">Carrillo</token></mention><token pos="fc">,</token><mention concept_ref="c_15"><token pos="pr0cn000">que</token></mention><token pos="vmis3s0">confesó</token><token pos="van0000">haber</token><token pos="vmp00sm">marcado</token><token pos="sps00">con</token><token pos="di0ms0">un</token><token pos="ncms000">número</token><mention concept_ref="c_16"><token pos="da0fp0">las</token><token pos="ncfp000">estancias</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Affirm_or_deny" head="desmintió">
+				<argument type="Speaker" dependent="de" />
+				<argument type="Message" dependent="algunos extremos de la versión del policía Angel López Carrillo , que confesó haber marcado con un número" /></main_frame>
+			<frame type="Law_enforcement_agency" head="policía" />
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="un número las estancias" />
+				<argument type="Figure" dependent="estuvieron los presuntos" /></frame>
+			<frame type="Quantified_mass" head="número">
+				<argument type="Individuals" dependent="las estancias" /></frame>
+			<main_frame type="Reveal_secret" head="confesó">
+				<argument type="Speaker" dependent="que" />
+				<argument type="Information" dependent="marcado con un número las estancias donde estuvieron los presuntos" /></main_frame>
+			<main_frame type="Sign" head="marcado">
+				<argument type="Indicator" dependent="algunos extremos de la versión del policía Angel" />
+				<argument type="Indicator" dependent="que confesó haber" />
+				<argument type="Indicated" dependent="con un número las estancias donde estuvieron los presuntos" /></main_frame>
+			<frame type="Type" head="versión">
+				<argument type="Category" dependent="policía Angel" /></frame>
+			<main_frame type="Unattributed_information" head="confesó">
+				<argument type="Reported_fact" dependent="de" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Tres guardias civiles y un policía ratificaron punto por punto la versión ofrecida por los acusados.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="dn0cp0">Tres</token><token pos="nccp000">guardias</token><token pos="aq0cp0">civiles</token><token pos="cc">y</token><token pos="di0ms0">un</token><token pos="nccs000">policía</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_8" concept_ref3="c_16" concept_ref4="c_17">
+			<token pos="vmis3p0">ratificaron</token><token pos="da0fs0">la</token><token pos="ncfs000">versión</token><token pos="aq0fsp">ofrecida</token><token pos="sps00">por</token><token pos="da0mp0">los</token><token pos="ncmp000">acusados</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Law_enforcement_agency" head="policía" />
+			<main_frame type="Ratification" head="ratificaron">
+				<argument type="Ratifier" dependent="Tres guardias civiles y un policía" />
+				<argument type="Proposal" dependent="punto la versión ofrecida por los acusados" /></main_frame>
+			<frame type="Type" head="versión">
+				<argument type="Category" dependent="ratificaron" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

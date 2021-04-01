@@ -1,0 +1,4 @@
+{   ('Categorization', 'interpretes'): [('Cognizer', 'te'), ('Item', 'lo he hecho como un elogio')],
+    ('Intentionally_act', 'hecho'): [('Agent', 'te'), ('Act', 'lo')],
+    ('Intentionally_act', 'lo'): [('Agent', 'te'), ('Act', 'interpretes que lo he hecho como un elogio')],
+    ('Scrutiny', 'te'): []}

@@ -1,0 +1,10 @@
+{   ('Attempt_suasion', 'emprenda'): [   ('Depictive', 'exhorta además al'),
+                                         (   'Content',
+                                             'al Tribunal Superior de Justicia de Euskadi a que emprenda acciones contra los parlamentarios vascos José Antonio Urrutikoetxea , Josu Ternera ,')],
+    ('Building_subparts', 'cargo de'): [('Descriptor', 'Superior'), ('Use', 'de Ekin')],
+    ('Categorization', 'considera'): [('Item', 'quien'), ('Cognizer', 'el')],
+    ('Increment', 'además'): [('Increment', 'de')],
+    ('Intentionally_act', 'acciones'): [('Act', 'Justicia'), ('Purpose', 'contra los parlamentarios vascos José Antonio Urrutikoetxea , Josu Ternera , a quien')],
+    ('Organization', 'organización'): [('Purpose', 'en el')],
+    ('Part_inner_outer', 'interior'): [('Whole', 'emprenda')],
+    ('Sequence', 'emprenda'): []}

@@ -1,0 +1,6 @@
+{   ('Coming_to_believe', 'conclusión'): [('Content', 'la negociación que mantenía Renfe con su homóloga alemana para alquilar dos trenes AVE IC3 de')],
+    ('Education_teaching', 'trenes'): [('Student', 'AVE IC3')],
+    ('Make_agreement_on_action', 'convenio'): [],
+    ('Relative_time', 'Tras la'): [('Landmark_occasion', 'la firma del convenio'), ('Focal_occasion', 'alquilar dos trenes AVE IC3')],
+    ('Sign_agreement', 'firma del'): [('Agreement', 'del convenio')],
+    ('Statement', 'anunció'): [('Message', 'la conclusión de la negociación que mantenía Renfe con su homóloga alemana para alquilar dos trenes AVE IC3')]}

@@ -1,0 +1,7 @@
+{   ('Attack', 'atentado'): [('Assailant', 'su'), ('Manner', 'sangriento')],
+    ('Cause_harm', 'heridos'): [('Degree', '40')],
+    ('Dead_or_alive', 'muertos'): [('Degree', 'ocho')],
+    ('Food', 'cafetería'): [],
+    ('Locale_by_use', 'su'): [('Constituent_parts', 'cafetería California'), ('Relative_location', 'de Madrid')],
+    ('Placing', 'colocada'): [('Theme', 'La bomba'), ('Time', 'en 1979'), ('Goal', 'en la cafetería California de Madrid')],
+    ('Weapon', 'bomba'): []}

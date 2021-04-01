@@ -1,0 +1,15 @@
+{   ('Age', 'jóvenes'): [('Entity', 'los')],
+    ('Becoming_aware', 'de observar'): [('Phenomenon', 'movimientos extraños & quot ; en torno a su domicilio')],
+    ('Becoming_aware', 'enteró'): [('Cognizer', 'su'), ('Phenomenon', 'la desaparición de los jóvenes')],
+    ('Being_at_risk', 'de seguridad'): [],
+    ('Buildings', 'domicilio'): [],
+    ('Departing', 'desaparición de'): [('Theme', 'los jóvenes')],
+    ('People', 'los'): [('Descriptor', 'jóvenes')],
+    ('Personal_relationship', 'marido'): [('Partner_2', 'su')],
+    ('Relative_time', 'después de'): [   ('Focal_occasion', 'se enteró de la desaparición de los jóvenes y adoptó medidas de seguridad'),
+                                         ('Landmark_occasion', 'de observar & quot ; movimientos extraños & quot ; en torno a su domicilio')],
+    ('Reveal_secret', 'admitió'): [   ('Speaker', 'viuda'),
+                                      (   'Information',
+                                          'que su marido se preocupó cuando se enteró de la desaparición de los jóvenes y adoptó medidas de seguridad después de observar & quot ; movimientos '
+                                          'extraños & quot ; en torno a su domicilio')],
+    ('Topic', 'preocupó'): [('Topic', 'su marido')]}

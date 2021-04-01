@@ -1,0 +1,9 @@
+{   ('Calendric_unit', 'las mañanas'): [],
+    ('Calendric_unit', 'noche'): [],
+    ('Concessive', 'durante'): [('Main_assertion', 'durante las mañanas'), ('Main_assertion', 'en la ciudad norteafricana , las protestas arrecian por la noche')],
+    ('Fire_burning', 'arrecian'): [('Place', 'durante las mañanas y las tardes la normalidad reina en la ciudad norteafricana , las protestas arrecian por la noche'), ('Time', 'la noche')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'las mañanas y las tardes la normalidad reina'), ('Ground', 'la ciudad norteafricana')],
+    ('Leadership', 'reina'): [],
+    ('Locative_relation', 'en'): [('Figure', 'la ciudad norteafricana , las protestas'), ('Ground', 'noche')],
+    ('Political_locales', 'ciudad'): [('Descriptor', 'norteafricana')],
+    ('Protest', 'protestas'): []}

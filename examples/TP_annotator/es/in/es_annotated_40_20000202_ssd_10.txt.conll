@@ -1,0 +1,9 @@
+{   ('Appellations', 'el vicepresidente'): [('Type', 'vicepresidente')],
+    ('Beat_opponent', 'derrota'): [('Competition', 'para el vicepresidente demócrata y heredero político de Bill')],
+    ('Cause_harm', 'batir'): [('Agent', 'Gore'), ('Degree', 'fácilmente'), ('Body_part', 'Bradley')],
+    ('Interior_profile_relation', 'En'): [('Ground', 'la carrera demócrata')],
+    ('Possibility', 'ya'): [('Possible_event', 'Gore'), ('Possible_event', 'no lograse batir fácilmente'), ('Possible_event', 'sondeos')],
+    ('Predicting', 'los'): [('Eventuality', 'los'), ('Eventuality', 'ya una derrota para el vicepresidente demócrata y heredero político de Bill')],
+    ('Time_vector', 'fue ya'): [   ('Event', 'Gore no lograse batir fácilmente a Bradley , como vaticinaban los sondeos ,'),
+                                   ('Event', 'una derrota para el vicepresidente demócrata y heredero político de Bill')],
+    ('Type', 'la carrera'): [('Type_property', 'demócrata')]}

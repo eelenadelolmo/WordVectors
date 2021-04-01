@@ -1,0 +1,6 @@
+{   ('Avoiding', 'evitar'): [('Undesirable_situation', 'heridos')],
+    ('Chaos', 'disturbios'): [],
+    ('Experience_bodily_harm', 'heridos'): [],
+    ('Intentionally_act', 'actúa'): [('Act', 'salvajemente')],
+    ('Law_enforcement_agency', 'policía'): [],
+    ('Statement', 'diga'): []}

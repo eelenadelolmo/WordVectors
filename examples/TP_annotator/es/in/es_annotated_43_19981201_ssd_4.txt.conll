@@ -1,0 +1,9 @@
+{   ('Calendric_unit', 'día'): [('Relative_time', 'mismo')],
+    ('Committing_crime', 'delito de'): [('Crime', 'delito de robo')],
+    ('Identicality', 'mismo'): [('Type', 'urbanización del Maresme')],
+    ('Increment', 'otras'): [('Class', 'denuncias de')],
+    ('Locative_relation', 'en'): [('Figure', 'otras cuatro denuncias de personas de la misma urbanización del Maresme por un delito de robo con fuerza en las')],
+    ('Military', 'fuerza'): [('Goal', 'en las cosas')],
+    ('People', 'personas'): [],
+    ('Spatial_contact', 'en'): [('Ground', 'mismo día')],
+    ('Statement', 'denuncias de'): [('Message', 'de personas de la misma urbanización del')]}

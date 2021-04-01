@@ -1,0 +1,8 @@
+{   ('Attack', 'ofensiva'): [('Weapon', 'aviación aliada')],
+    ('Emphasizing', 'centró'): [   ('Agent', 'Kosovo'),
+                                   (   'Consideration',
+                                       'parte de la ofensiva de la aviación aliada , que bombardeó puestos de las fuerzas especiales de la policía serbia , así como líneas de comunicación y')],
+    ('Law_enforcement_agency', 'policía'): [('Jurisdiction', 'serbia')],
+    ('Military', 'fuerzas'): [],
+    ('System', 'sistemas'): [('Descriptor', 'como líneas de comunicación y sistemas integrados de'), ('Function', 'de defensa antiaérea')],
+    ('Weapon', 'bombardeó'): [('Weapon', 'policía serbia')]}

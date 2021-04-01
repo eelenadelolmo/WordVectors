@@ -1,0 +1,5 @@
+{   ('Calendric_unit', 'años'): [('Count', 'tres')],
+    ('Cardinal_numbers', 'tres'): [('Unit', 'años')],
+    ('Desirable_event', 'debemos'): [('State_of_affairs', 'nos'), ('State_of_affairs', 'pronunciar hasta dentro de tres años')],
+    ('Discussion', 'debate'): [],
+    ('Secrecy_status', 'abierto'): []}

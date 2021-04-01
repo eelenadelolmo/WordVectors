@@ -1,0 +1,12 @@
+{   ('Be_in_agreement_on_action', 'según el'): [('Obligation', 'firmar un decreto'), ('Obligation', 'cual , a partir')],
+    ('Goal', 'en'): [('Trajector', 'firmar un decreto'), ('Landmark', 'cual')],
+    ('Money', 'dinero'): [('Time_of_creation', 'privado'), ('Time_of_creation', 'procedente de patrocinadores')],
+    ('Money', 'fondos'): [('Possessor', 'federales')],
+    ('Origin', 'ruso'): [('Entity', 'primer ministro')],
+    ('Political_locales', 'federales'): [],
+    ('Receiving', 'recibir'): [('Recipient', 'la estación'), ('Theme', 'fondos federales')],
+    ('Relative_time', 'a partir'): [   ('Focal_occasion', 'Hasta entonces , será explotada de forma comercial , tal y como anunció en enero el primer ministro ruso , Yevgueni Primakov'),
+                                       ('Landmark_occasion', 'firmar un decreto'),
+                                       ('Focal_occasion', ', la estación dejará de recibir fondos federales y deberá costearse con dinero privado procedente de patrocinadores')],
+    ('Sign_agreement', 'firmar'): [('Time', 'Hasta entonces'), ('Agreement', 'un decreto'), ('Place', 'según el cual'), ('Time', ', a partir del próximo')],
+    ('Statement', 'anunció'): [('Message', 'primer ministro ruso'), ('Time', 'en enero')]}

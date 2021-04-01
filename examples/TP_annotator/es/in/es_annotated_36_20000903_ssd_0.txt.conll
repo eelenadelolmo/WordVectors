@@ -1,0 +1,13 @@
+{   ('Aggregate', 'partido'): [],
+    ('Appellations', 'presidente'): [('Type', 'del PP de Catalunya')],
+    ('Cause_change_of_strength', 'reforzará'): [('Agent', 'que el'), ('Patient', 'la independencia de la formación respecto a la dirección de')],
+    ('Change_of_leadership', 'independencia de'): [('Old_leader', 'de la formación'), ('Time', 'a la dirección de Madrid')],
+    ('Creating', 'formación'): [('Cause', 'a la dirección de Madrid')],
+    ('Interior_profile_relation', 'en'): [('Figure', '17'), ('Ground', 'Barcelona')],
+    ('Leadership', 'presidente'): [('Governed', 'Madrid')],
+    ('Leadership', 'rumbo al'): [('Leader', 'presidente del PP de Catalunya'), ('Governed', 'al centro catalanista')],
+    ('Locale_by_use', 'centro'): [('Container_possessor', 'catalanista')],
+    ('Manipulation', 'pone'): [('Entity', 'el noveno congreso del partido'), ('Entity', 'que el'), ('Time', '16 y 17 en'), ('Place', 'en Barcelona')],
+    ('Ordinal_numbers', 'noveno'): [('Type', 'congreso del partido')],
+    ('Spatial_contact', 'en'): [('Figure', 'el noveno congreso del partido'), ('Figure', 'que el')],
+    ('Statement', 'afirmando'): [('Speaker', 'centro catalanista'), ('Message', 'que el noveno congreso del partido'), ('Message', 'presidente del')]}

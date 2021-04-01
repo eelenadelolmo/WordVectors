@@ -1,0 +1,4 @@
+{   ('Beat_opponent', 'derrotar'): [('Competition', 'nacionalismo en las urnas')],
+    ('Businesses', 'operación'): [('Product', 'cuyo objetivo último es derrotar al nacionalismo en las urnas')],
+    ('Locative_relation', 'en'): [('Figure', 'Una operación cuyo objetivo último es derrotar al nacionalismo en'), ('Ground', 'las urnas')],
+    ('Purpose', 'objetivo'): [('Goal', 'operación'), ('Agent', 'cuyo'), ('Goal', 'derrotar al nacionalismo en las urnas')]}

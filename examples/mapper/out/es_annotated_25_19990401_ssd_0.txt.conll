@@ -1,0 +1,5 @@
+{   ('Activity_start', 'empezado'): [('Activity', 'una salida política a la guerra de Kosovo'), ('Activity', 'a emerger')],
+    ('Becoming_aware', 'encontrar'): [('Phenomenon', 'salida política a la guerra de Kosovo han empezado a emerger')],
+    ('Coming_to_be', 'emerger'): [],
+    ('Hostile_encounter', 'guerra'): [('Sides', 'Kosovo')],
+    ('Means', 'para'): [('Purpose', 'política'), ('Purpose', 'a la guerra de Kosovo')]}

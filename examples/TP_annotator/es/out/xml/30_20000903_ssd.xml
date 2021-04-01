@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="30_20000903_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El líder del PSOE</concept>
+		<concept id="c_1">su mensaje</concept>
+		<concept id="c_2">El PSOE</concept>
+		<concept id="c_3">El secretario general de los socialistas , José Luis Rodríguez Zapatero ,</concept>
+		<concept id="c_4">Los socialistas</concept>
+		<concept id="c_5">el Gobierno</concept>
+		<concept id="c_6">El líder de los socialistas vascos , Nicolás Redondo ,</concept>
+		<concept id="c_7">Ibarretxe</concept>
+		<concept id="c_8">la trayectoria del PNV durante los últimos meses</concept>
+		<concept id="c_9">Redondo</concept>
+		<concept id="c_10">el Pacto de Estella</concept>
+		<concept id="c_11">El dirigente socialista vasco</concept>
+		<concept id="c_12">el tiempo</concept>
+		<concept id="c_13">enfrentamiento</concept>
+		<concept id="c_14">una velada</concept>
+		<concept id="c_15">que esa actitud</concept>
+		<concept id="c_16">a Juan José Ibarretxe</concept>
+		<concept id="c_17">que</concept>
+		<concept id="c_18">impulsar</concept>
+		<concept id="c_19">PNV</concept>
+		<concept id="c_20">acusó</concept>
+		<concept id="c_21">Aznar</concept>
+		<concept id="c_22">el PNV</concept>
+		<concept id="c_23">velada</concept>
+		<concept id="c_24">una quot</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El líder del PSOE se distancia del duro discurso de Aznar contra el PNV.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="nccs000">líder</token><token pos="spcms">del</token><token pos="np00000">PSOE</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_4" concept_ref3="c_19" concept_ref4="c_21" concept_ref5="c_22">
+			<mention concept_ref="c_1"><token pos="p0300000">se</token></mention><token pos="vmip3s0">distancia</token><token pos="spcms">del</token><token pos="aq0ms0">duro</token><mention concept_ref="c_4"><token pos="ncms000">discurso</token></mention><token pos="sps00">de</token><mention concept_ref="c_21"><token pos="np00000">Aznar</token></mention><token pos="sps00">contra</token><mention concept_ref="c_22"><token pos="da0ms0">el</token><token pos="np00000">PNV</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Difficulty" head="duro">
+				<argument type="Experiencer" dependent="Aznar" />
+				<argument type="Activity" dependent="discurso" /></frame>
+			<frame type="Leadership" head="líder">
+				<argument type="Governed" dependent="se" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Aboga por tejer una unidad sólida y de fondo de todos los demócratas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attempt_suasion" head="los">
+				<argument type="Speaker" dependent="los" />
+				<argument type="Content" dependent="tejer una unidad sólida y de fondo de todos los demócratas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El Gobierno vasco replica al presidente que su mensaje busca el enfrentamiento.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="dp3cs0">su</token><token pos="ncms000">mensaje</token>
+		</theme>
+		<rheme concept_ref1="c_12" concept_ref2="c_13">
+			<token pos="vmip3s0">busca</token><mention concept_ref="c_12"><token pos="da0ms0">el</token><token pos="ncms000">enfrentamiento</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El Gobierno vasco " />
+			<frame type="Appellations" head="presidente" />
+			<frame type="Communication_response" head="replica">
+				<argument type="Speaker" dependent="Gobierno" />
+				<argument type="Trigger" dependent="al presidente que su mensaje busca el enfrentamiento" /></frame>
+			<frame type="Hostile_encounter" head="enfrentamiento">
+				<argument type="Side_2" dependent="su mensaje" /></frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Governed" dependent="vasco" /></frame>
+			<main_frame type="Seeking_to_achieve" head="busca">
+				<argument type="Agent" dependent="su" />
+				<argument type="State_of_affairs" dependent="mensaje" />
+				<argument type="Sought_entity" dependent="enfrentamiento" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El PSOE se distanció ayer del implacable discurso de José María Aznar contra el nacionalismo democrático vasco.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="np00000">PSOE</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_4" concept_ref3="c_3" concept_ref4="c_11" concept_ref5="c_21" concept_ref6="c_22">
+			<mention concept_ref="c_1"><token pos="p0300000">se</token></mention><token pos="vmis3s0">distanció</token><token pos="spcms">del</token><token pos="aq0cs0">implacable</token><mention concept_ref="c_4"><token pos="ncms000">discurso</token></mention><token pos="sps00">de</token><mention concept_ref="c_3"><token pos="ncfs000">José</token><token pos="ncms000">María</token><token pos="np00000">Aznar</token></mention><token pos="sps00">contra</token><mention concept_ref="c_11"><token pos="da0ms0">el</token><token pos="ncms000">nacionalismo</token></mention><token pos="aq0ms0">democrático</token><token pos="aq0ms0">vasco</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="ayer del" />
+			<frame type="Communication" head="discurso">
+				<argument type="Communicator" dependent="Aznar" />
+				<argument type="Message" dependent="implacable discurso" />
+				<argument type="Topic" dependent="contra el nacionalismo democrático" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El secretario general de los socialistas, José Luis Rodríguez Zapatero, aunque fiel a su consigna de no arremeter contra el PP en materia antiterrorista, sí se permitió hacer una velada crítica al tremendismo del presidente del Gobierno al reclamarle que mantenga "la esperanza de la sociedad española sobre un horizonte de paz".
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">El</token><token pos="ncms000">secretario</token><token pos="aq0cs0">general</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="nccp000">socialistas</token><token pos="fc">,</token><token pos="ncms000">José</token><token pos="np0000o">Luis</token><token pos="ncms000">Rodríguez</token><token pos="np0000a">Zapatero</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_12" concept_ref3="c_5" concept_ref4="c_14" concept_ref5="c_23">
+			<mention concept_ref="c_1"><token pos="pp140000">se</token></mention><token pos="vmis3s0">permitió</token><token pos="vmn0000">hacer</token><mention concept_ref="c_14"><token pos="di0fs0">una</token><token pos="ncfs000">velada</token></mention><token pos="aq0fs0">crítica</token><token pos="spcms">al</token><mention concept_ref="c_12"><token pos="ncms000">tremendismo</token></mention><token pos="spcms">del</token><token pos="ncms000">presidente</token><token pos="spcms">del</token><mention concept_ref="c_5"><token pos="np00000">Gobierno</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_ongoing" head="que mantenga">
+				<argument type="Agent" dependent="su" />
+				<argument type="Activity" dependent="quot ; la esperanza de la sociedad española sobre un horizonte de paz" /></frame>
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="del Gobierno" /></frame>
+			<frame type="Attack" head="arremeter contra">
+				<argument type="Victim" dependent="el PP en materia antiterrorista" /></frame>
+			<frame type="Calendric_unit" head="se" />
+			<frame type="Desiring" head="esperanza de">
+				<argument type="Experiencer" dependent="sociedad española" /></frame>
+			<frame type="Importance" head="crítica">
+				<argument type="Degree" dependent="se" />
+				<argument type="Factor" dependent="del presidente del Gobierno al" /></frame>
+			<frame type="Leadership" head="Gobierno" />
+			<main_frame type="Manufacturing" head="hacer">
+				<argument type="Product" dependent="una velada" /></main_frame>
+			<frame type="Organization" head="sociedad">
+				<argument type="Container_possessor" dependent="española" /></frame>
+			<frame type="People_by_religion" head="fiel" />
+			<main_frame type="Preventing_or_letting" head="permitió">
+				<argument type="Event" dependent="su" /></main_frame>
+			<frame type="Request" head="reclamarle">
+				<argument type="Message" dependent="quot ; la esperanza de la sociedad española sobre un horizonte de paz" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="sociedad española" />
+				<argument type="Ground" dependent="un horizonte de paz" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los socialistas, según se desprende de las palabras de su secretario general, juzgan que dar portazo al PNV, como hace Aznar, puede no ser el mejor modo de recomponer la unidad democrática.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0mp0">Los</token><token pos="nccp000">socialistas</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_3" concept_ref3="c_12" concept_ref4="c_19" concept_ref5="c_21">
+			<token pos="vmn0000">dar</token><token pos="ncms000">portazo</token><token pos="spcms">al</token><mention concept_ref="c_19"><token pos="np00000">PNV</token></mention><token pos="fc">,</token><token pos="fc">,</token><token pos="vmip3s0">puede</token><token pos="rn">no</token><token pos="vsn0000">ser</token><mention concept_ref="c_12"><token pos="da0ms0">el</token><token pos="aq0cs0">mejor</token><token pos="ncms000">modo</token></mention><token pos="sps00">de</token><token pos="vmn0000">recomponer</token><token pos="da0fs0">la</token><token pos="ncfs000">unidad</token><token pos="aq0fs0">democrática</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Be_in_agreement_on_action" head="según">
+				<argument type="Party_1" dependent="socialistas" />
+				<argument type="Obligation" dependent="de las palabras de su secretario general" />
+				<argument type="Obligation" dependent=", juzgan que dar portazo al PNV , como hace Aznar , puede no ser el mejor modo de recomponer la unidad democrática" /></frame>
+			<frame type="Certainty" head="según">
+				<argument type="Cognizer" dependent="socialistas" />
+				<argument type="Content" dependent="al PNV , como hace Aznar , puede no ser el mejor modo de recomponer la unidad democrática" /></frame>
+			<frame type="Goal" head="se">
+				<argument type="Trajector" dependent="socialistas" />
+				<argument type="Landmark" dependent="las palabras de su secretario general" /></frame>
+			<frame type="Means" head="modo">
+				<argument type="Descriptor" dependent="mejor" />
+				<argument type="Purpose" dependent="de recomponer la unidad democrática" /></frame>
+			<frame type="Required_event" head="mejor">
+				<argument type="Required_situation" dependent="modo de recomponer la unidad democrática" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Desde León, Rodríguez Zapatero apostó por una "unidad de fondo sólidamente arraigada" entre todos los partidos democráticos para compartir "día a día los objetivos y las estrategias".
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="np0000l">Rodríguez</token><token pos="np0000l">Zapatero</token>
+		</theme>
+		<rheme concept_ref1="c_9" concept_ref2="c_3" concept_ref3="c_4" concept_ref4="c_21" concept_ref5="c_24">
+			<token pos="vmis3s0">apostó</token><token pos="sps00">por</token><token pos="di0fs0">una</token><token pos="fe">quot;</token><mention concept_ref="c_21"><token pos="ncfs000">unidad</token></mention><token pos="sps00">de</token><mention concept_ref="c_9"><token pos="ncms000">fondo</token></mention><token pos="rg">sólidamente</token><token pos="aq0fsp">arraigada</token><token pos="fe">quot;</token><token pos="sps00">entre</token><token pos="di0mp0">todos</token><mention concept_ref="c_4"><token pos="da0mp0">los</token><token pos="ncmp000">partidos</token></mention><token pos="aq0mp0">democráticos</token><token pos="sps00">para</token><token pos="vmn0000">compartir</token><token pos="fe">quot;</token><token pos="ncms000">día</token><token pos="sps00">a</token><token pos="ncms000">día</token><token pos="da0mp0">los</token><token pos="ncmp000">objetivos</token><token pos="cc">y</token><token pos="da0fp0">las</token><token pos="ncfp000">estrategias</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partidos">
+				<argument type="Aggregate_property" dependent="democráticos" /></frame>
+			<frame type="Be_subset_of" head="entre">
+				<argument type="Total" dependent="todos los partidos democráticos" /></frame>
+			<frame type="Part_orientational" head="de fondo">
+				<argument type="Whole" dependent="unidad" /></frame>
+			<frame type="Purpose" head="objetivos" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por ello, pidió que el portavoz del PNV, Iñaki Anasagasti, y el ministro del Interior, Jaime Mayor Oreja, aprovechen el encuentro de mañana y se "digan las cosas claras".
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">el</token><token pos="nccs000">portavoz</token><token pos="spcms">del</token><token pos="np00000">PNV</token><token pos="fc">,</token><token pos="np0000l">Iñaki</token><token pos="np0000l">Anasagasti</token><token pos="fc">,</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">ministro</token><token pos="spcms">del</token><token pos="np00000">Interior</token><token pos="fc">,</token><token pos="ncfp000">Jaime</token><token pos="aq0fp0">Mayor</token><token pos="ncfp000">Oreja</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_12">
+			<token pos="vmm03p0">aprovechen</token><mention concept_ref="c_12"><token pos="da0ms0">el</token><token pos="ncms000">encuentro</token></mention><token pos="sps00">de</token><token pos="rg">mañana</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Discussion" head="el encuentro">
+				<argument type="Depictive" dependent="mañana" /></frame>
+			<frame type="Leadership" head="Mayor">
+				<argument type="Governed" dependent="digan" />
+				<argument type="Leader" dependent="Oreja" /></frame>
+			<frame type="Obviousness" head="claras">
+				<argument type="Phenomenon" dependent="cosas" /></frame>
+			<frame type="Questioning" head="pidió">
+				<argument type="Speaker" dependent="el" />
+				<argument type="Message" dependent="que el portavoz del PNV , Iñaki Anasagasti , y el ministro del Interior , Jaime Mayor Oreja ," /></frame>
+			<frame type="Reason" head="Por">
+				<argument type="State_of_affairs" dependent=", pidió que el portavoz del PNV , Iñaki Anasagasti , y el ministro del Interior ," /></frame>
+			<frame type="Representative" head="quot">
+				<argument type="Represented" dependent="Por" />
+				<argument type="Representative" dependent="Anasagasti" /></frame>
+			<frame type="Telling" head="digan las">
+				<argument type="Speaker" dependent="del Interior , Jaime Mayor Oreja" />
+				<argument type="Addressee" dependent="cosas claras" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Insistió en que el Gobierno tiene "la lealtad y cooperación permanente" del PSOE a la hora de definir una política de Estado frente al terrorismo.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0ms0">el</token><token pos="np00000">Gobierno</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_3" concept_ref3="c_12" concept_ref4="c_21">
+			<token pos="vmip3s0">tiene</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">hora</token><token pos="sps00">de</token><token pos="vmn0000">definir</token><mention concept_ref="c_3"><token pos="di0fs0">una</token><token pos="ncfs000">política</token></mention><token pos="sps00">de</token><token pos="np00000">Estado</token><token pos="rg">frente</token><token pos="sps00">al</token><mention concept_ref="c_12"><token pos="ncms000">terrorismo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Collaboration" head="cooperación" />
+			<frame type="Process_continue" head="permanente">
+				<argument type="Event" dependent="de definir una política de Estado frente al terrorismo" /></frame>
+			<frame type="Terrorism" head="terrorismo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El líder de los socialistas vascos, Nicolás Redondo, fue más lejos al precisar que esa actitud, "que no tuvo el PP en su día", es la que les diferencia de los conservadores.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0ms0">El</token><token pos="nccs000">líder</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="nccp000">socialistas</token><token pos="aq0mp0">vascos</token><token pos="fc">,</token><token pos="np00000">Nicolás</token><token pos="aq0ms0">Redondo</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_10" concept_ref3="c_4" concept_ref4="c_15" concept_ref5="c_17" concept_ref6="c_22" concept_ref7="c_21">
+			<token pos="vsis3s0">fue</token><token pos="spcms">al</token><token pos="vmn0000">precisar</token><mention concept_ref="c_15"><token pos="cs">que</token><token pos="dd0fs0">esa</token><token pos="ncfs000">actitud</token></mention><token pos="fc">,</token><token pos="fc">,</token><token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="pr0cn000">que</token><token pos="pp3cpd00">les</token><token pos="vmip3s0">diferencia</token><token pos="sps00">de</token><mention concept_ref="c_4"><token pos="da0mp0">los</token><token pos="ncmp000">conservadores</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="día">
+				<argument type="Count" dependent="es" /></frame>
+			<frame type="Increment" head="más" />
+			<frame type="Leadership" head="líder">
+				<argument type="Governed" dependent="de los socialistas vascos" /></frame>
+			<main_frame type="Motion" head="fue">
+				<argument type="Theme" dependent="Redondo" />
+				<argument type="Path" dependent="más" />
+				<argument type="Goal" dependent="que esa actitud" /></main_frame>
+			<main_frame type="People_along_political_spectrum" head="los conservadores" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sin embargo, desde el compromiso y la voluntad de trabajar juntos, espetó al presidente que es la hora de que "gobierne" y "optimice" la eficacia policial.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente" />
+			<frame type="Being_employed" head="trabajar">
+				<argument type="Task" dependent="juntos" /></frame>
+			<frame type="Commitment" head="compromiso" />
+			<frame type="Evoking" head="quot">
+				<argument type="Cognizer" dependent="el" />
+				<argument type="Stimulus" dependent="al presidente que es la hora de que  quot ; gobierne  quot ; y  quot ; optimice  quot ; la eficacia policial" /></frame>
+			<frame type="Leadership" head="gobierne">
+				<argument type="Leader" dependent="el" /></frame>
+			<frame type="Willingness" head="voluntad">
+				<argument type="Activity" dependent="de trabajar juntos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Rodríguez Zapatero se mostró muy cuidadoso a la hora de referirse a Juan José Ibarretxe.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="np0000l">Rodríguez</token><token pos="np0000l">Zapatero</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_4" concept_ref3="c_7" concept_ref4="c_16" concept_ref5="c_21">
+			<mention concept_ref="c_1"><token pos="p0300000">se</token></mention><token pos="vmis3s0">mostró</token><token pos="rg">muy</token><token pos="aq0ms0">cuidadoso</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">hora</token><token pos="sps00">de</token><token pos="vmn0000">referirse</token><mention concept_ref="c_16"><token pos="sps00">a</token><token pos="ncfs000">Juan</token><token pos="np0000l">José</token><token pos="np0000l">Ibarretxe</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Referring_by_name" head="referirse">
+				<argument type="Name" dependent="a Juan José Ibarretxe" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Anunció que trasladará al lehendakari la posición del PSOE y su "exigencia" de que "se garantice la seguridad y libertad de todos los ciudadanos", pero evitó pronunciarse sobre el nuevo foro de partidos que Ibarretxe quiere impulsar.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="np00000">Ibarretxe</token>
+		</theme>
+		<rheme concept_ref1="c_17" concept_ref2="c_18">
+			<mention concept_ref="c_17"><token pos="pr0cn000">que</token></mention><token pos="vmip3s0">quiere</token><mention concept_ref="c_18"><token pos="vmn0000">impulsar</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevo">
+				<argument type="Entity" dependent="foro de partidos" /></frame>
+			<frame type="Aggregate" head="partidos" />
+			<frame type="Avoiding" head="evitó">
+				<argument type="Agent" dependent="la seguridad y libertad de todos los ciudadanos" />
+				<argument type="Undesirable_situation" dependent="pronunciarse sobre el nuevo foro de partidos que Ibarretxe quiere" /></frame>
+			<frame type="Being_at_risk" head="seguridad" />
+			<frame type="Being_employed" head="posición">
+				<argument type="Employer" dependent="lehendakari" />
+				<argument type="Employer" dependent="exigencia  quot ; de que " /></frame>
+			<main_frame type="Cause_change_of_position_on_a_scale" head="impulsar">
+				<argument type="Item" dependent="que" />
+				<argument type="Agent" dependent="Ibarretxe" /></main_frame>
+			<frame type="Deciding" head="Anunció">
+				<argument type="Cognizer" dependent="la seguridad y libertad de todos los ciudadanos" />
+				<argument type="Decision" dependent="sobre el nuevo foro de partidos que Ibarretxe quiere" /></frame>
+			<main_frame type="Desiring" head="quiere">
+				<argument type="Event" dependent="que" />
+				<argument type="Experiencer" dependent="Ibarretxe" />
+				<argument type="Event" dependent="impulsar" /></main_frame>
+			<frame type="People_by_jurisdiction" head="ciudadanos" />
+			<frame type="Request" head="exigencia" />
+			<frame type="Statement" head="Anunció">
+				<argument type="Speaker" dependent="su" />
+				<argument type="Message" dependent="Anunció que trasladará al lehendakari la posición del PSOE y su  quot ; exigencia  quot ; de que" /></frame>
+			<frame type="Transfer" head="trasladará">
+				<argument type="Recipient" dependent="su" />
+				<argument type="Theme" dependent="lehendakari la posición del PSOE y su  quot ; exigencia  quot ; de que  quot ; se garantice la seguridad y libertad" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Lo que sí reconoció es que la trayectoria del PNV durante los últimos meses "no aporta la confianza suficiente para compartir un proyecto en defensa de la paz".
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="da0fs0">la</token><token pos="ncfs000">trayectoria</token><token pos="spcms">del</token><token pos="np00000">PNV</token><token pos="sps00">durante</token><token pos="da0mp0">los</token><token pos="ao0mp0">últimos</token><token pos="ncmp000">meses</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_1" concept_ref3="c_15" concept_ref4="c_21" concept_ref5="c_24">
+			<token pos="fe">quot;</token><token pos="rn">no</token><token pos="vmip3s0">aporta</token><mention concept_ref="c_15"><token pos="da0fs0">la</token><token pos="ncfs000">confianza</token><token pos="aq0cs0">suficiente</token><token pos="sps00">para</token><token pos="vmn0000">compartir</token><token pos="di0ms0">un</token><token pos="ncms000">proyecto</token><token pos="sps00">en</token><token pos="nccs000">defensa</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">paz</token></mention><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_aware" head="reconoció">
+				<argument type="Phenomenon" dependent="que" />
+				<argument type="Cognizer" dependent="Lo" />
+				<argument type="Phenomenon" dependent="que la trayectoria del PNV durante los últimos meses  quot ; no aporta la confianza suficiente para compartir un" /></frame>
+			<frame type="Calendric_unit" head="meses">
+				<argument type="Relative_time" dependent="últimos" />
+				<argument type="Count" dependent="un" /></frame>
+			<frame type="Certainty" head="confianza">
+				<argument type="Content" dependent="confianza suficiente para compartir un proyecto en" /></frame>
+			<frame type="Project" head="proyecto" />
+			<frame type="Proportional_quantity" head="en">
+				<argument type="Q_prop" dependent="PNV" />
+				<argument type="Individuals" dependent="los últimos meses" /></frame>
+			<frame type="Quantified_mass" head="un">
+				<argument type="Individuals" dependent="meses" /></frame>
+			<frame type="Relative_time" head="últimos">
+				<argument type="Focal_occasion" dependent="meses" /></frame>
+			<frame type="Sufficiency" head="suficiente">
+				<argument type="Item" dependent="la confianza suficiente para compartir un proyecto en defensa de la paz" /></frame>
+			<main_frame type="Supply" head="aporta">
+				<argument type="Theme" dependent="la confianza suficiente para compartir un proyecto en defensa de la paz" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Redondo fue mucho menos remilgado.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="np00000">Redondo</token>
+		</theme>
+		<rheme>
+			<token pos="vsis3s0">fue</token><token pos="rg">mucho</token><token pos="rg">menos</token><token pos="aq0ms0">remilgado</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El secretario general del PSE-EE replicó a Ibarretxe que el Pacto de Estella no está invalidado por la acción de ETA, sino que fue una "equivocación" desde el primer momento porque "no reconoció" la pluralidad vasca.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="da0ms0">el</token><token pos="ncfs000">Pacto</token><token pos="sps00">de</token><token pos="np00000">Estella</token>
+		</theme>
+		<rheme concept_ref1="c_21">
+			<token pos="rn">no</token><token pos="vmip3s0">está</token><token pos="aq0msp">invalidado</token><token pos="sps00">por</token><mention concept_ref="c_21"><token pos="da0fs0">la</token><token pos="ncfs000">acción</token></mention><token pos="sps00">de</token><token pos="np00000">ETA</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El secretario general del PSE-EE " />
+			<frame type="Becoming_aware" head="reconoció">
+				<argument type="Phenomenon" dependent="la pluralidad" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="equivocación  quot ; desde el" />
+				<argument type="Cause" dependent="no reconoció  quot ; la pluralidad" /></frame>
+			<frame type="Intentionally_act" head="acción">
+				<argument type="Act" dependent="Estella" /></frame>
+			<frame type="Temporal_subregion" head="invalidado" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Añadió también que el Ejecutivo de Vitoria es "débil, incapaz de liderar una situación sin precedentes y con el pecado original de haber sido votado por EH".
+		</str>
+		<theme>
+			<token pos="da0ms0">el</token><token pos="np0000o">Ejecutivo</token><token pos="sps00">de</token><token pos="np0000l">Vitoria</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="incapaz">
+				<argument type="Entity" dependent="el Ejecutivo de Vitoria" />
+				<argument type="Event" dependent="liderar una situación sin precedentes" /></frame>
+			<frame type="Leadership" head="liderar">
+				<argument type="Leader" dependent="el Ejecutivo de Vitoria" />
+				<argument type="Leader" dependent="una situación sin precedentes" /></frame>
+			<frame type="Misdeed" head="sin">
+				<argument type="Manner" dependent="original" />
+				<argument type="Wrongdoer" dependent="de haber sido votado por" /></frame>
+			<frame type="Statement" head="Añadió">
+				<argument type="Speaker" dependent="el" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El dirigente socialista vasco puso interés en recalcar que su partido "siempre tendrá la puerta abierta" al PNV para luchar contra ETA, pero enfatizó que esa unidad sólo será posible si los nacionalistas aceptan las reglas del juego democrático y convienen en que el Estatuto, "que han estado torpedeando", es el instrumento más amplio de convivencia que jamás han tenido los vascos.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="da0ms0">El</token><token pos="nccs000">dirigente</token><token pos="aq0cs0">socialista</token><token pos="aq0ms0">vasco</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_11" concept_ref3="c_17" concept_ref4="c_19" concept_ref5="c_21" concept_ref6="c_24">
+			<token pos="vmis3s0">puso</token><token pos="ncms000">interés</token><token pos="sps00">en</token><token pos="vmn0000">recalcar</token><mention concept_ref="c_17"><token pos="cs">que</token></mention><mention concept_ref="c_11"><token pos="dp3cs0">su</token><token pos="ncms000">partido</token></mention><token pos="fe">quot;</token><token pos="rg">siempre</token><token pos="vmif3s0">tendrá</token><mention concept_ref="c_21"><token pos="da0fs0">la</token><token pos="ncfs000">puerta</token></mention><token pos="aq0fsp">abierta</token><token pos="fe">quot;</token><token pos="spcms">al</token><mention concept_ref="c_19"><token pos="np00000">PNV</token></mention><token pos="sps00">para</token><token pos="vmn0000">luchar</token><token pos="sps00">contra</token><token pos="np00000">ETA</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido" />
+			<frame type="Connecting_architecture" head="puerta" />
+			<frame type="Emotion_directed" head="interés">
+				<argument type="Stimulus" dependent="dirigente socialista vasco puso" /></frame>
+			<frame type="Emphasizing" head="enfatizó" />
+			<frame type="Expressing_publicly" head="quot">
+				<argument type="Content" dependent="El dirigente socialista" />
+				<argument type="Content" dependent="interés en recalcar que su partido  quot ; siempre tendrá la puerta abierta" /></frame>
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="su partido " />
+				<argument type="Event" dependent="la puerta abierta  quot ; al PNV para luchar contra" /></frame>
+			<frame type="Gizmo" head="instrumento">
+				<argument type="Descriptor" dependent="más amplio de" /></frame>
+			<main_frame type="Hostile_encounter" head="luchar">
+				<argument type="Side_1" dependent="PNV" />
+				<argument type="Side_2" dependent="el" /></main_frame>
+			<frame type="Leadership" head="dirigente">
+				<argument type="Domain" dependent="vasco" />
+				<argument type="Type" dependent="socialista" /></frame>
+			<frame type="Likelihood" head="posible">
+				<argument type="Hypothetical_event" dependent="esa unidad" /></frame>
+			<frame type="Make_agreement_on_action" head="aceptan">
+				<argument type="Obligation" dependent="que el Estatuto" /></frame>
+			<frame type="Receiving" head="aceptan">
+				<argument type="Donor" dependent="los nacionalistas" />
+				<argument type="Theme" dependent="las reglas del juego democrático" /></frame>
+			<frame type="Secrecy_status" head="abierta">
+				<argument type="Phenomenon" dependent="al PNV para luchar contra" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Advirtió a sus antiguos socios de que si siguen por la senda de los últimos meses, dejarán de ser un partido necesario y se convertirán en un "lastre" para sí mismos y para la sociedad.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_stop" head="lastre">
+				<argument type="Agent" dependent="los" />
+				<argument type="Activity" dependent="de ser un partido necesario" /></frame>
+			<frame type="Aggregate" head="partido">
+				<argument type="Aggregate_property" dependent="necesario" /></frame>
+			<frame type="Becoming" head="ser">
+				<argument type="Entity" dependent="los" />
+				<argument type="Final_category" dependent="quot ; para sí mismos y para la sociedad" /></frame>
+			<frame type="Being_necessary" head="necesario">
+				<argument type="Required_entity" dependent="partido" /></frame>
+			<frame type="Calendric_unit" head="meses">
+				<argument type="Relative_time" dependent="últimos" />
+				<argument type="Count" dependent="un" /></frame>
+			<frame type="Process_continue" head="siguen">
+				<argument type="Event" dependent="los" />
+				<argument type="Time" dependent="senda de los últimos meses" /></frame>
+			<frame type="Quantified_mass" head="un">
+				<argument type="Individuals" dependent="meses" /></frame>
+			<frame type="Relative_time" head="últimos">
+				<argument type="Focal_occasion" dependent="meses" /></frame>
+			<frame type="Roadways" head="siguen por">
+				<argument type="Goal" dependent="de los últimos meses" /></frame>
+			<frame type="Warning" head="quot">
+				<argument type="Speaker" dependent="sus" />
+				<argument type="Message" dependent="sus antiguos socios de que si siguen por la senda de los últimos meses ," /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En este sentido, avisó a Ibarretxe de que a su Gobierno el tiempo se le "acaba".
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="da0ms0">el</token><token pos="ncms000">tiempo</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_3" concept_ref3="c_22" concept_ref4="c_24">
+			<mention concept_ref="c_1"><token pos="p0300000">se</token></mention><mention concept_ref="c_22"><token pos="pp3csd00">le</token></mention><token pos="fe">quot;</token><token pos="vmip3s0">acaba</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attempt_suasion" head="avisó">
+				<argument type="Speaker" dependent="se le" />
+				<argument type="Addressee" dependent="Ibarretxe" />
+				<argument type="Content" dependent="su Gobierno el tiempo se le  quot ; acaba" /></frame>
+			<main_frame type="Process_end" head="acaba" />
+			<frame type="Regard" head="se" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El portavoz del Ejecutivo de Vitoria, Josu Jon Imaz, acusó a Aznar de lanzar un "mensaje basado en la confrontación y la ausencia de diálogo", pero aseguró que PNV y EA acudirán a sus respectivas reuniones con Mayor Oreja dispuestos a buscar "espacios de entendimiento", porque no desean potenciar "mensajes de crispación, fractura o división".
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">El</token><token pos="nccs000">portavoz</token><token pos="spcms">del</token><token pos="np0000o">Ejecutivo</token><token pos="sps00">de</token><token pos="np0000l">Vitoria</token><token pos="fc">,</token><token pos="ncfs000">Josu</token><token pos="ncms000">Jon</token><token pos="np00000">Imaz</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_3" concept_ref3="c_20" concept_ref4="c_21" concept_ref5="c_23" concept_ref6="c_24">
+			<mention concept_ref="c_20"><token pos="vmis3s0">acusó</token></mention><token pos="sps00">a</token><mention concept_ref="c_21"><token pos="np00000">Aznar</token></mention><token pos="sps00">de</token><token pos="vmn0000">lanzar</token><token pos="di0ms0">un</token><token pos="fe">quot;</token><token pos="ncms000">mensaje</token><token pos="aq0msp">basado</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">confrontación</token><token pos="cc">y</token><mention concept_ref="c_23"><token pos="da0fs0">la</token><token pos="ncfs000">ausencia</token></mention><token pos="sps00">de</token><token pos="ncms000">diálogo</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attending" head="aseguró">
+				<argument type="Agent" dependent="PNV y" />
+				<argument type="Means" dependent="sus respectivas reuniones" /></frame>
+			<frame type="Catastrophe" head="de crispación" />
+			<frame type="Causation" head="porque">
+				<argument type="Cause" dependent="acudirán a sus respectivas reuniones con Mayor Oreja dispuestos a buscar  quot ; espacios de entendimiento" />
+				<argument type="Cause" dependent="no desean potenciar  quot ; mensajes de crispación , fractura o división" /></frame>
+			<frame type="Cause_change_of_position_on_a_scale" head="potenciar">
+				<argument type="Agent" dependent="sus" />
+				<argument type="Item" dependent="mensajes de crispación , fractura o división " /></frame>
+			<frame type="Desiring" head="desean">
+				<argument type="Experiencer" dependent="sus" />
+				<argument type="Event" dependent="quot ; mensajes de crispación" /></frame>
+			<frame type="Discussion" head="reuniones">
+				<argument type="Place" dependent="con Mayor Oreja" /></frame>
+			<frame type="Grasp" head="entendimiento" />
+			<frame type="Hostile_encounter" head="confrontación" />
+			<frame type="Judgment_communication" head="aseguró">
+				<argument type="Medium" dependent="del Ejecutivo de Vitoria , Josu Jon Imaz , acusó" />
+				<argument type="Reason" dependent="a Aznar de lanzar un  quot ; mensaje basado en la confrontación y la ausencia de diálogo " /></frame>
+			<frame type="Leadership" head="Mayor">
+				<argument type="Leader" dependent="Oreja" /></frame>
+			<frame type="Non-commutative_process" head="división" />
+			<frame type="Presence" head="ausencia">
+				<argument type="Location" dependent="de diálogo" /></frame>
+			<frame type="Representative" head="diálogo">
+				<argument type="Represented" dependent="del Ejecutivo de" /></frame>
+			<frame type="Seeking_to_achieve" head="buscar">
+				<argument type="Agent" dependent="Mayor Oreja" />
+				<argument type="Sought_entity" dependent="espacios de entendimiento" /></frame>
+			<main_frame type="Shoot_projectiles" head="lanzar">
+				<argument type="Agent" dependent="acusó" />
+				<argument type="Projectile" dependent="quot ; mensaje basado en la confrontación y la ausencia de diálogo " /></main_frame>
+			<frame type="Telling" head="dispuestos">
+				<argument type="Speaker" dependent="del Ejecutivo de Vitoria , Josu Jon Imaz , acusó" />
+				<argument type="Message" dependent="acudirán a sus respectivas reuniones con Mayor Oreja dispuestos a buscar  quot ; espacios de entendimiento" /></frame>
+			<frame type="Willingness" head="dispuestos">
+				<argument type="Cognizer" dependent="Mayor Oreja" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

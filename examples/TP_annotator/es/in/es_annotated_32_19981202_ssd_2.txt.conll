@@ -1,0 +1,12 @@
+{   ('Activity_start', 'comienza'): [('Agent', 'lista de los politólogos'), ('Activity', 'por la eliminación del déficit público')],
+    ('Cause_change_of_strength', 'reforzar'): [('Patient', 'la confianza de los quebequeses')],
+    ('Certainty', 'confianza'): [('Cognizer', 'de los quebequeses')],
+    ('Interior_profile_relation', 'en'): [   ('Figure', 'del déficit público , para reforzar la confianza de los quebequeses , mayoritariamente opuestos a la secesión ,'),
+                                             ('Ground', 'que un estado soberano resultaría viable económicamente')],
+    ('Leadership', 'estado'): [('Governed', 'soberano')],
+    ('People_by_vocation', 'los politólogos'): [('Employer', 'politólogos')],
+    ('Removing', 'eliminación'): [('Theme', 'del déficit público')],
+    ('Reveal_secret', 'revelado'): [('Speaker', 'Bouchard'), ('Information', 'otras')],
+    ('Sequence', 'los'): [],
+    ('Taking_sides', 'opuestos'): [('Action', 'a la secesión')],
+    ('Text', 'lista'): [('Text', 'politólogos')]}

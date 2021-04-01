@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="35_20000202_c_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Una gripe</concept>
+		<concept id="c_1">El presidente checo , de 63 años y con una salud muy frágil desde que fue operado de cáncer de pulmón en 1996 ,</concept>
+		<concept id="c_2">Havel</concept>
+		<concept id="c_3">Vaclav</concept>
+		<concept id="c_4">a hospitalizar de nuevo</concept>
+		<concept id="c_5">el</concept>
+		<concept id="c_6">la noche</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Una gripe obliga a hospitalizar de nuevo a Vaclav Havel.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="di0fs0">Una</token><token pos="ncfs000">gripe</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_3" concept_ref3="c_4" concept_ref4="c_5">
+			<token pos="vmip3s0">obliga</token><mention concept_ref="c_4"><token pos="sps00">a</token><token pos="vmn0000">hospitalizar</token><token pos="sps00">de</token><token pos="aq0msp">nuevo</token></mention><token pos="sps00">a</token><mention concept_ref="c_3"><token pos="np0000l">Vaclav</token></mention><token pos="np0000l">Havel</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Causation" head="obliga">
+				<argument type="Cause" dependent="gripe" />
+				<argument type="Affected" dependent="Vaclav" />
+				<argument type="Effect" dependent="a hospitalizar de nuevo" /></main_frame>
+			<main_frame type="Institutionalization" head="hospitalizar">
+				<argument type="Affliction" dependent="Vaclav" /></main_frame>
+			<frame type="Medical_conditions" head="gripe" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El presidente checo, de 63 años y con una salud muy frágil desde que fue operado de cáncer de pulmón en 1996, fue ingresado ayer en el Hospital de Praga tras sufrir una subida de la fiebre durante la noche.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">presidente</token><token pos="aq0ms0">checo</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="z">63</token><token pos="ncmp000">años</token><token pos="cc">y</token><token pos="sps00">con</token><token pos="di0fs0">una</token><token pos="ncfs000">salud</token><token pos="rg">muy</token><token pos="aq0cs0">frágil</token><token pos="sps00">desde</token><token pos="cs">que</token><token pos="vsis3s0">fue</token><token pos="vmp00sm">operado</token><token pos="sps00">de</token><token pos="nccn000">cáncer</token><token pos="sps00">de</token><token pos="ncms000">pulmón</token><token pos="sps00">en</token><token pos="z">1996</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_4" concept_ref3="c_5" concept_ref4="c_6">
+			<token pos="vsis3s0">fue</token><token pos="vmp00sm">ingresado</token><token pos="rg">ayer</token><mention concept_ref="c_4"><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncfs000">Hospital</token></mention><token pos="sps00">de</token><token pos="np00000">Praga</token><token pos="sps00">tras</token><token pos="vmn0000">sufrir</token><token pos="di0fs0">una</token><token pos="ncfs000">subida</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">fiebre</token><token pos="sps00">durante</token><mention concept_ref="c_6"><token pos="da0fs0">la</token><token pos="ncfs000">noche</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente">
+				<argument type="Name" dependent="63 años" /></frame>
+			<frame type="Buildings" head="Hospital">
+				<argument type="Name" dependent="tras" /></frame>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Calendric_unit" head="noche" />
+			<frame type="Change_position_on_a_scale" head="subida">
+				<argument type="Final_state" dependent="fiebre" /></frame>
+			<frame type="Medical_conditions" head="cáncer">
+				<argument type="Body_part" dependent="pulmón" /></frame>
+			<frame type="Medical_conditions" head="salud">
+				<argument type="Name" dependent="muy frágil" /></frame>
+			<main_frame type="Operating_a_system" head="operado">
+				<argument type="System" dependent="el" />
+				<argument type="System" dependent="de cáncer de pulmón en" />
+				<argument type="Time" dependent="en 1996" /></main_frame>
+			<frame type="Relative_time" head="desde">
+				<argument type="Focal_occasion" dependent="presidente checo , de 63 años y con una salud muy frágil desde que fue operado de cáncer de pulmón en 1996 ," />
+				<argument type="Focal_occasion" dependent="ayer en el Hospital" />
+				<argument type="Landmark_occasion" dependent="sufrir una subida de la fiebre" /></frame>
+			<main_frame type="Reveal_secret" head="ingresado">
+				<argument type="Information" dependent="presidente checo , de 63 años y con una salud muy frágil desde que fue operado de cáncer de pulmón en 1996 ," />
+				<argument type="Information" dependent="en el Hospital" />
+				<argument type="Time" dependent="sufrir una subida de la fiebre durante la noche" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Havel deberá permanecer en el centro sanitario por lo menos hasta el fin de semana.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="np00000">Havel</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_5" concept_ref3="c_6">
+			<token pos="vmif3s0">deberá</token><mention concept_ref="c_4"><token pos="vmn0000">permanecer</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">centro</token><token pos="aq0ms0">sanitario</token><token pos="sps00">por</token><token pos="da0ms0">lo</token><token pos="rg">menos</token><token pos="sps00">hasta</token><token pos="da0ms0">el</token><token pos="ncms000">fin</token><token pos="sps00">de</token><token pos="ncfs000">semana</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="fin de semana" />
+			<main_frame type="Desirable_event" head="deberá">
+				<argument type="State_of_affairs" dependent="Havel" />
+				<argument type="State_of_affairs" dependent="permanecer en el centro sanitario por lo menos hasta el fin de semana" /></main_frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="el centro sanitario" />
+				<argument type="Ground" dependent="menos hasta el fin de semana" /></frame>
+			<frame type="Medical_conditions" head="sanitario" />
+			<main_frame type="Residence" head="permanecer">
+				<argument type="Resident" dependent="Havel" />
+				<argument type="Location" dependent="en el centro sanitario por lo menos hasta el fin de semana" /></main_frame>
+			<frame type="Time_vector" head="hasta el">
+				<argument type="Event" dependent="Havel deberá permanecer en el centro sanitario por lo menos" />
+				<argument type="Landmark_event" dependent="el fin de semana" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

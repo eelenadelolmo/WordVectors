@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="44_20000202_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Los dirigentes del PSOE y de IU en Madrid , Valencia , Castilla y León y Murcia</concept>
+		<concept id="c_1">El secretario general de la Federación Socialista Madrileña , Jaime Lisavessky y su homólogo de IU , Angel Pérez ,</concept>
+		<concept id="c_2">Pérez</concept>
+		<concept id="c_3">También el coordinador de IU en Valencia , Joan Ribó ,</concept>
+		<concept id="c_4">a convocar reuniones para pactar las candidaturas comunes al Senado</concept>
+		<concept id="c_5">pacto</concept>
+		<concept id="c_6">hoy el</concept>
+		<concept id="c_7">se</concept>
+		<concept id="c_8">reuniones</concept>
+		<concept id="c_9">las candidaturas</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Los dirigentes del PSOE y de IU en Madrid, Valencia, Castilla y León y Murcia se apresuraron ayer a convocar reuniones para pactar las candidaturas comunes al Senado.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">Los</token><token pos="nccp000">dirigentes</token><token pos="spcms">del</token><token pos="np00000">PSOE</token><token pos="cc">y</token><token pos="sps00">de</token><token pos="np00000">IU</token><token pos="sps00">en</token><token pos="np00000">Madrid</token><token pos="fc">,</token><token pos="np00000">Valencia</token><token pos="fc">,</token><token pos="np00000">Castilla</token><token pos="cc">y</token><token pos="np00000">León</token><token pos="cc">y</token><token pos="np00000">Murcia</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_4" concept_ref3="c_7" concept_ref4="c_8" concept_ref5="c_9">
+			<mention concept_ref="c_7"><token pos="p0300000">se</token></mention><token pos="vmis3p0">apresuraron</token><mention concept_ref="c_4"><token pos="sps00">a</token><token pos="vmn0000">convocar</token><token pos="ncfp000">reuniones</token><token pos="sps00">para</token><token pos="vmn0000">pactar</token><token pos="da0fp0">las</token><token pos="ncfp000">candidaturas</token><token pos="aq0cp0">comunes</token><token pos="spcms">al</token><token pos="np00000">Senado</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Discussion" head="reuniones">
+				<argument type="Topic" dependent="a convocar reuniones para pactar las candidaturas comunes al Senado" /></frame>
+			<frame type="Leadership" head="dirigentes">
+				<argument type="Governed" dependent="y de IU" /></frame>
+			<frame type="Make_agreement_on_action" head="se">
+				<argument type="Parties" dependent="convocar reuniones" />
+				<argument type="Obligation" dependent="candidaturas comunes al Senado" /></frame>
+			<main_frame type="Self_motion" head="apresuraron">
+				<argument type="Self_mover" dependent="dirigentes del PSOE y de IU en Madrid , Valencia , Castilla y" />
+				<argument type="Direction" dependent="ayer" />
+				<argument type="Goal" dependent="a convocar reuniones para pactar las candidaturas comunes al Senado" /></main_frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="a convocar reuniones para" />
+				<argument type="Ground" dependent="candidaturas comunes al Senado" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El secretario general de la Federación Socialista Madrileña, Jaime Lisavessky y su homólogo de IU, Angel Pérez, se citaron para firmar hoy el pacto a la Cámara Alta.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">secretario</token><token pos="aq0cs0">general</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">Federación</token><token pos="ncms000">Socialista</token><token pos="np00000">Madrileña</token><token pos="fc">,</token><token pos="np0000l">Jaime</token><token pos="np0000l">Lisavessky</token><token pos="cc">y</token><token pos="dp3cs0">su</token><token pos="ncms000">homólogo</token><token pos="sps00">de</token><token pos="np00000">IU</token><token pos="fc">,</token><token pos="np0000l">Angel</token><token pos="np0000l">Pérez</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_6" concept_ref3="c_7">
+			<mention concept_ref="c_7"><token pos="p0300000">se</token></mention><token pos="vmis3p0">citaron</token><token pos="sps00">para</token><token pos="vmn0000">firmar</token><mention concept_ref="c_6"><token pos="rg">hoy</token><token pos="da0ms0">el</token></mention><mention concept_ref="c_5"><token pos="ncms000">pacto</token></mention><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="np00000">Cámara</token><token pos="aq0ms0">Alta</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="se" />
+			<frame type="Calendric_unit" head="hoy" />
+			<main_frame type="Sign_agreement" head="firmar">
+				<argument type="Agreement" dependent="pacto" />
+				<argument type="Time" dependent="hoy el" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pérez quería ratificar así el triunfo de su línea colaboracionista con los socialistas y, sobre todo, demostrar al sector más ortodoxo del PCE de Madrid que su línea es la válida y es la que ahora apoya la dirección del PCE y de IU.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="np00000">Pérez</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_0" concept_ref3="c_4" concept_ref4="c_7" concept_ref5="c_8" concept_ref6="c_9">
+			<token pos="vmn0000">ratificar</token><mention concept_ref="c_4"><token pos="da0ms0">el</token><token pos="ncms000">triunfo</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncfs000">línea</token><token pos="aq0cs0">colaboracionista</token><token pos="sps00">con</token><token pos="da0mp0">los</token><token pos="nccp000">socialistas</token></mention><token pos="fc">,</token><token pos="sps00">sobre</token><token pos="pi0cs000">todo</token><token pos="fc">,</token><token pos="vmn0000">demostrar</token><token pos="spcms">al</token><mention concept_ref="c_8"><token pos="ncms000">sector</token></mention><token pos="rg">más</token><token pos="aq0ms0">ortodoxo</token><token pos="spcms">del</token><mention concept_ref="c_0"><token pos="np00000">PCE</token><token pos="sps00">de</token><token pos="np00000">Madrid</token></mention><token pos="cs">que</token><token pos="dp3cs0">su</token><token pos="ncfs000">línea</token><token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="aq0fs0">válida</token><token pos="cc">y</token><token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="pr0cn000">que</token><token pos="rg">ahora</token><token pos="vmip3s0">apoya</token><token pos="da0fs0">la</token><token pos="ncfs000">dirección</token><token pos="spcms">del</token><token pos="np00000">PCE</token><token pos="cc">y</token><token pos="sps00">de</token><token pos="np00000">IU</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_in_effect" head="válida">
+				<argument type="Binding_principle" dependent="su línea" /></frame>
+			<frame type="Boundary" head="línea">
+				<argument type="Entities" dependent="con los socialistas" /></frame>
+			<frame type="Desiring" head="quería">
+				<argument type="Event" dependent="de" />
+				<argument type="Event" dependent="ratificar así el triunfo de su línea colaboracionista con los socialistas" /></frame>
+			<frame type="Directional_locative_relation" head="sobre">
+				<argument type="Ground" dependent="todo" /></frame>
+			<main_frame type="Evidence" head="demostrar">
+				<argument type="Proposition" dependent="al sector más ortodoxo del PCE de Madrid que su línea es la válida y es la que ahora apoya la dirección del" /></main_frame>
+			<frame type="Fields" head="sector">
+				<argument type="Salient_entity" dependent="del PCE de Madrid que" /></frame>
+			<main_frame type="Ratification" head="ratificar">
+				<argument type="Proposal" dependent="el triunfo de su línea colaboracionista con los socialistas" /></main_frame>
+			<main_frame type="Supporting" head="apoya">
+				<argument type="Supported" dependent="la dirección del PCE y de" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Además, quiere garantizar la colaboración con los socialistas situándose él mismo en la candidatura.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desiring" head="quiere">
+				<argument type="Experiencer" dependent="él" />
+				<argument type="Event" dependent="garantizar la colaboración con los socialistas" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="él mismo" />
+				<argument type="Ground" dependent="la candidatura" /></frame>
+			<frame type="Placing" head="situándose">
+				<argument type="Theme" dependent="él mismo" />
+				<argument type="Goal" dependent="en la candidatura" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 También el coordinador de IU en Valencia, Joan Ribó, negociaba anoche con el PSOE valenciano.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="rg">También</token><token pos="da0ms0">el</token><token pos="ncms000">coordinador</token><token pos="sps00">de</token><token pos="np00000">IU</token><token pos="sps00">en</token><token pos="np00000">Valencia</token><token pos="fc">,</token><token pos="np0000l">Joan</token><token pos="np0000l">Ribó</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_7">
+			<token pos="vmii3s0">negociaba</token><mention concept_ref="c_4"><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="np00000">PSOE</token><token pos="aq0ms0">valenciano</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="anoche">
+				<argument type="Name" dependent="valenciano" />
+				<argument type="Relative_time" dependent="el" /></frame>
+			<main_frame type="Discussion" head="negociaba">
+				<argument type="Interlocutor_2" dependent="con el PSOE valenciano" />
+				<argument type="Time" dependent="anoche" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

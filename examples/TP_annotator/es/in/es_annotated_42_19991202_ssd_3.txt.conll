@@ -1,0 +1,10 @@
+{   ('Adopt_selection', 'asumir'): [('Attribute', 'sus responsabilidades')],
+    ('Attempt', 'intentar'): [('Goal', 'no rompa el alto el fuego')],
+    ('Be_in_agreement_on_action', 'según'): [('Party_2', 'intentar que ETA no rompa el alto el fuego'), ('Party_2', 'fuentes gubernamentales')],
+    ('Being_obligated', 'responsabilidades'): [('Responsible_party', 'que el')],
+    ('Goal', 'para'): [('Landmark', 'fuentes gubernamentales')],
+    ('Leadership', 'Gobierno'): [],
+    ('Make_agreement_on_action', 'convino'): [('Party_1', 'en')],
+    ('Required_event', 'debe'): [('Required_situation', 'el Gobierno vasco'), ('Required_situation', 'asumir sus responsabilidades & quot ; para intentar que ETA no rompa el alto el fuego')],
+    ('Sequence', 'quot'): [('Entity_2', '; para intentar que ETA no rompa el alto el fuego')],
+    ('Source_of_getting', 'fuentes'): [('Descriptor', 'Gobierno')]}

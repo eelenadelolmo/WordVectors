@@ -1,0 +1,7 @@
+{   ('Arriving', 'regreso'): [('Theme', 'refugiados palestinos')],
+    ('Attempt_suasion', 'de presionar'): [('Addressee', 'palestinos'), ('Content', 'acepten la propuesta de Bill')],
+    ('Deciding', 'decisión'): [('Cognizer', 'del Gobierno'), ('Decision', 'endurecer el regreso de los refugiados palestinos')],
+    ('Part_whole', 'parte'): [('Whole', 'la estrategia israelí de presionar a los palestinos para que acepten la propuesta de')],
+    ('Receiving', 'acepten'): [('Recipient', 'palestinos'), ('Theme', 'propuesta de Bill')],
+    ('Simultaneity', 'coincidieron'): [('Events', 'Estas advertencias'), ('Events', 'con una decisión del Gobierno')],
+    ('Statement', 'propuesta de'): [('Speaker', 'de Bill')]}

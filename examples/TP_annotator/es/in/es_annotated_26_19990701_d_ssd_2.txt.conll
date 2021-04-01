@@ -1,0 +1,4 @@
+{   ('Bringing', 'traerá'): [('Agent', 'el proyecto'), ('Theme', 'problemas'), ('Goal', 'al barrio')],
+    ('Perception_experience', 'el'): [('Perceiver_passive', 'el'), ('Phenomenon', 'que el proyecto traerá problemas al barrio')],
+    ('Predicament', 'problemas'): [],
+    ('Project', 'proyecto'): []}

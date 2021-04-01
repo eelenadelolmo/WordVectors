@@ -1,0 +1,7 @@
+{   ('Activity_start', 'comenzó'): [('Agent', 'un pasajero del Turbocat , Joel Manrique ,'), ('Activity', 'a narrar a este diario el'), ('Time', 'pasado Martes')],
+    ('Becoming', 'convirtieron'): [('Final_quality', 'ayer'), ('Final_category', 'una odisea')],
+    ('Calendric_unit', 'Martes'): [],
+    ('Calendric_unit', 'ayer'): [],
+    ('Relative_time', 'ayer'): [('Focal_occasion', 'Martes')],
+    ('Text', 'diario'): [],
+    ('Travel', 'odisea'): []}

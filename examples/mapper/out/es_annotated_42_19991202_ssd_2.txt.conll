@@ -1,0 +1,3 @@
+{   ('Discussion', 'debate'): [],
+    ('Make_agreement_on_action', 'con'): [('Obligation', 'coordinar estrategias')],
+    ('Placing', 'pactan'): [('Agent', 'el'), ('Goal', 'debate sobre el diálogo con EH y pactan coordinar estrategias')]}

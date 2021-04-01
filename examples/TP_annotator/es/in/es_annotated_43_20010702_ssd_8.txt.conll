@@ -1,0 +1,5 @@
+{   ('Cognitive_connection', 'relación'): [('Concept_1', 'es'), ('Specification', 'política'), ('Concept_2', 'con México')],
+    ('Desirability', 'excelente'): [('Evaluee', 'Gobierno español , su relación política con México')],
+    ('Exporting', 'exportaciones'): [('Exporter', 'sus')],
+    ('Leadership', 'Gobierno'): [('Governed', 'español')],
+    ('Text', 'sus'): []}

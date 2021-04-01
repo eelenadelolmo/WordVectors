@@ -1,0 +1,6 @@
+{   ('Being_employed', 'trabaja'): [('Employee', 'policía autonómica'), ('Task', 'hipótesis de que el asalto a esta residencia de la familia Pujol fue obra de delincuentes comunes .')],
+    ('Experimentation', 'hipótesis'): [('Phenomenon', 'que el asalto a esta residencia de la familia Pujol fue obra de delincuentes comunes')],
+    ('Kinship', 'familia'): [],
+    ('Legality', 'delincuentes'): [],
+    ('Spatial_contact', 'en'): [('Figure', 'asalto'), ('Ground', 'esta residencia de la familia Pujol fue obra de delincuentes comunes')],
+    ('Work', 'trabaja'): [('Salient_entity', 'de delincuentes comunes')]}

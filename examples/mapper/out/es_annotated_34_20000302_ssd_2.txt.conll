@@ -1,0 +1,6 @@
+{   ('Aggregate', 'grupos'): [],
+    ('Diversity', 'uniformes'): [('Group', 'miembros')],
+    ('Membership', 'miembros'): [],
+    ('Separating', 'dividido'): [('Whole', 'el'), ('Criterion', 'en cuatro grupos que eran identificados con los colores de los uniformes de sus supuestos miembros')],
+    ('Verification', 'confirmó'): [('Inspector', 'el'), ('Unconfirmed_content', 'dividido en cuatro grupos que eran identificados con los colores de los uniformes de sus supuestos miembros')],
+    ('Verification', 'identificados'): [('Unconfirmed_content', 'que'), ('Unconfirmed_content', 'con los colores de los uniformes de sus supuestos miembros')]}

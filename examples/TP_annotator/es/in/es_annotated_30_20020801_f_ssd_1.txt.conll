@@ -1,0 +1,11 @@
+{   ('Architectural_part', 'del tejado'): [],
+    ('Architectural_part', 'piso'): [],
+    ('Becoming_aware', 'situado'): [('Phenomenon', 'inmueble'), ('Evidence', 'en la Riera')],
+    ('Buildings', 'inmueble'): [],
+    ('Calendric_unit', 'un mes'): [],
+    ('Causation', 'provocó'): [('Cause', 'el tercer piso'), ('Effect', 'piso provocó importantes grietas en el inmueble situado en la Riera')],
+    ('Importance', 'importantes'): [('Factor', 'grietas')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'grietas en el inmueble'), ('Ground', 'la Riera')],
+    ('Ordinal_numbers', 'tercer'): [('Type', 'piso')],
+    ('Spatial_contact', 'en'): [('Figure', 'hundimiento del tejado'), ('Time', 'hace un mes'), ('Ground', 'el tercer piso')],
+    ('Time_vector', 'del'): [('Distance', 'un mes')]}

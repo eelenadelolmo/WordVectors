@@ -1,0 +1,11 @@
+{   ('Be_in_agreement_on_action', 'según el'): [('Obligation', 'lehendakari , quien ante Aznar defendió la conveniencia de blindar la participación de la formación aberzale en las instituciones')],
+    ('Body_parts', 'manos'): [('Possessor', 'aberzale')],
+    ('Creating', 'formación'): [],
+    ('Defending', 'defendió'): [('Assailant', 'Aznar'), ('Victim', 'conveniencia de blindar la participación de la formación aberzale en las instituciones')],
+    ('Departing', 'dejaría de'): [('Theme', 'la'), ('Path', 'de nuevo en manos de')],
+    ('Goal', 'en'): [('Landmark', 'el lehendakari')],
+    ('Institutions', 'instituciones'): [],
+    ('Participation', 'participación'): [('Event', 'de la formación aberzale'), ('Participant_2', 'en las instituciones')],
+    ('Protecting', 'defendió'): [('Danger', 'la participación de la formación aberzale en las instituciones')],
+    ('Time_vector', 'ante'): [('Event', 'el lehendakari , quien'), ('Landmark_event', 'defendió la conveniencia de blindar la participación de la formación aberzale en las instituciones')],
+    ('Wealthiness', 'rompiera'): [('Person', 'el PNV'), ('Institution', 'con EH')]}

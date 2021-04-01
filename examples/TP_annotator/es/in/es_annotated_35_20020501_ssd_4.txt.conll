@@ -1,0 +1,6 @@
+{   ('Death', 'muerte'): [('Protagonist', 'de otro destacado dirigente guerrillero ,')],
+    ('Increment', 'otro'): [('Class', 'destacado dirigente guerrillero ,')],
+    ('Irregular_combatants', 'guerrillero'): [('Descriptor', 'destacado')],
+    ('Leadership', 'dirigente'): [('Descriptor', 'destacado'), ('Type', 'guerrillero')],
+    ('Relative_time', 'de'): [('Focal_occasion', 'sería un duro golpe para'), ('Landmark_occasion', 'fallecimiento confirmado de otro destacado dirigente guerrillero ,')],
+    ('Verification', 'confirmado de'): [('Unconfirmed_content', 'fallecimiento confirmado de otro destacado dirigente guerrillero ,')]}

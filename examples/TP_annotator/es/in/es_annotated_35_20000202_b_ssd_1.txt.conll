@@ -1,0 +1,4 @@
+{   ('Building_subparts', 'fiscalía'): [('Descriptor', 'fiscalía de Fráncfort')],
+    ('Capability', 'poder'): [('Event', 'para poder juzgar al eurodiputado ecologista')],
+    ('People_by_vocation', 'juzgar'): [('Person', 'juzgar al eurodiputado ecologista')],
+    ('Request', 'petición'): [('Message', 'para poder juzgar al eurodiputado ecologista')]}

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="26_19990701_c_ssd">
+
+
+	<concepts>
+		<concept id="c_0">que</concept>
+		<concept id="c_1">La sorpresa</concept>
+		<concept id="c_2">los dueños</concept>
+		<concept id="c_3">pernoctar una noche , pensión completa y utilización de todas las instalaciones</concept>
+		<concept id="c_4">las instalaciones</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Casas rurales.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="Casas">
+				<argument type="Type" dependent="rurales" /></frame>
+			<frame type="Locale_by_use" head="rurales">
+				<argument type="Locale" dependent="Casas rurales" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Junto a mi familia, tuve la oportunidad de pasar un día en la casa rural Mas Culladas de Balsareny.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="día" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="la casa rural Mas" />
+				<argument type="Ground" dependent="de" /></frame>
+			<frame type="Kinship" head="familia">
+				<argument type="Ego" dependent="mi" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="un día" />
+				<argument type="Ground" dependent="en la casa rural Mas" /></frame>
+			<frame type="Locative_relation" head="pasar">
+				<argument type="Ground" dependent="mi familia" />
+				<argument type="Figure" dependent="tuve la oportunidad de pasar un día en la casa rural Mas" /></frame>
+			<frame type="Opportunity" head="oportunidad de">
+				<argument type="Agent" dependent="en" />
+				<argument type="Desirable_situation" dependent="de pasar un día en la casa rural Mas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Teníamos un precio pactado que incluía pernoctar una noche, pensión completa y utilización de todas las instalaciones.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_4">
+			<token pos="vmii3s0">incluía</token><mention concept_ref="c_3"><token pos="vmn0000">pernoctar</token><token pos="di0fs0">una</token><token pos="ncfs000">noche</token><token pos="fc">,</token><token pos="ncfs000">pensión</token><token pos="aq0fs0">completa</token><token pos="cc">y</token><token pos="ncfs000">utilización</token><token pos="sps00">de</token><token pos="di0fp0">todas</token><token pos="da0fp0">las</token><token pos="ncfp000">instalaciones</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Completeness" head="completa">
+				<argument type="Whole" dependent="pactado" /></frame>
+			<main_frame type="Inclusion" head="incluía">
+				<argument type="Part" dependent="precio" />
+				<argument type="Total" dependent="que" />
+				<argument type="Part" dependent="pernoctar una noche , pensión completa y utilización de todas las instalaciones" /></main_frame>
+			<frame type="Locale_by_use" head="instalaciones" />
+			<frame type="Make_agreement_on_action" head="pactado que">
+				<argument type="Party_1" dependent="Teníamos" />
+				<argument type="Obligation" dependent="precio pactado que incluía pernoctar una noche , pensión completa y utilización de todas las instalaciones" /></frame>
+			<frame type="Temporary_stay" head="pensión">
+				<argument type="Descriptor" dependent="noche" /></frame>
+			<frame type="Using" head="utilización">
+				<argument type="Instrument" dependent="todas las instalaciones" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La sorpresa fue el trato recibido por parte de los dueños, que nos hicieron sentir como intrusos durante la estancia y, para colmo, no cumplieron con lo pactado, ya que incrementaron la factura en 40.000 pesetas en concepto de extras absurdos: aceite aliño, 600 pesetas ; un ajo, 300 ; leche biberón niño, 200, etcétera.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="ncfs000">sorpresa</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_2">
+			<token pos="vsis3s0">fue</token><mention concept_ref="c_1"><token pos="da0ms0">el</token><token pos="ncms000">trato</token></mention><token pos="aq0msp">recibido</token><token pos="sps00">por</token><token pos="ncfs000">parte</token><token pos="sps00">de</token><mention concept_ref="c_2"><token pos="da0mp0">los</token><token pos="ncmp000">dueños</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Change_position_on_a_scale" head="incrementaron">
+				<argument type="Attribute" dependent="la factura en 40.000 pesetas" />
+				<argument type="Final_value" dependent="en concepto de extras absurdos" /></frame>
+			<frame type="Compliance" head="lo">
+				<argument type="Norm" dependent="con" /></frame>
+			<frame type="Cure" head="trato" />
+			<frame type="Experiencer_obj" head="sorpresa" />
+			<frame type="Feeling" head="sentir">
+				<argument type="Experiencer" dependent="nos" />
+				<argument type="Emotional_state" dependent="como intrusos" /></frame>
+			<frame type="Filling" head="ajo">
+				<argument type="Theme" dependent="ajo" /></frame>
+			<frame type="Food" head="leche" />
+			<frame type="Make_agreement_on_action" head="el trato" />
+			<frame type="Mental_property" head="absurdos">
+				<argument type="Behavior" dependent="extras" /></frame>
+			<frame type="Occupy_rank" head="parte">
+				<argument type="Item" dependent="lo" />
+				<argument type="Dimension" dependent="por" /></frame>
+			<frame type="People_by_age" head="niño">
+				<argument type="Person" dependent="; leche biberón niño , 200 , etcétera" /></frame>
+			<frame type="Possession" head="dueños" />
+			<frame type="Receiving" head="recibido">
+				<argument type="Theme" dependent="el trato" />
+				<argument type="Donor" dependent="de los dueños" /></frame>
+			<frame type="Substance" head="ajo" />
+			<frame type="Temporary_stay" head="estancia" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Nos despidieron a pedradas y con signos obscenos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Shoot_projectiles" head="obscenos">
+				<argument type="Agent" dependent="Nos" />
+				<argument type="Projectile" dependent="pedradas y con signos obscenos" /></frame>
+			<frame type="Sign" head="signos">
+				<argument type="Descriptor" dependent="pedradas y" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Creo necesario regular el sector, catalogando los establecimientos por categorías y que no sea un chanchullo para rentabilizar propiedades de fin de semana en que los dueños no son profesionales del sector.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0mp0">los</token><token pos="ncmp000">dueños</token>
+		</theme>
+		<rheme concept_ref1="c_4">
+			<token pos="rn">no</token><token pos="vsip3p0">son</token><mention concept_ref="c_4"><token pos="nccp000">profesionales</token></mention><token pos="spcms">del</token><token pos="ncms000">sector</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_necessary" head="necesario">
+				<argument type="Requirement" dependent="son" /></frame>
+			<frame type="Calendric_unit" head="fin de semana" />
+			<frame type="Categorization" head="categorías" />
+			<frame type="Fields" head="sector" />
+			<frame type="Intentionally_create" head="establecimientos" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="un chanchullo para rentabilizar propiedades de fin de semana" />
+				<argument type="Ground" dependent="que los dueños no son profesionales del sector" /></frame>
+			<frame type="Opinion" head="Creo">
+				<argument type="Cognizer" dependent="y" />
+				<argument type="Opinion" dependent="necesario regular el sector , catalogando los establecimientos por categorías y que no sea un" /></frame>
+			<frame type="People_by_vocation" head="profesionales">
+				<argument type="Person" dependent="los dueños" />
+				<argument type="Employer" dependent="del sector" /></frame>
+			<frame type="Possession" head="dueños" />
+			<frame type="Possession" head="propiedades">
+				<argument type="Depictive" dependent="fin de semana" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

@@ -1,0 +1,7 @@
+{   ('Bringing', 'transportaba'): [('Theme', 'La nave'), ('Goal', 'uno de los dos comandantes de la Mir')],
+    ('Leadership', 'comandantes'): [('Governed', 'Mir')],
+    ('Manufacturing', 'hace'): [('Producer', 'país'), ('Product', 'una incursión al espacio')],
+    ('Ordinal_numbers', 'primer'): [('Type', 'cosmonauta')],
+    ('Origin', 'ruso'): [('Entity', 'cosmonauta de')],
+    ('Political_locales', 'país'): [],
+    ('Vehicle', 'nave'): []}

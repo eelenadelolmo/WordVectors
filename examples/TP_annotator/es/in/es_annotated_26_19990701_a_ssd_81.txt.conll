@@ -1,0 +1,4 @@
+{   ('Cardinal_numbers', 'pues dos'): [('Entity', 'generaciones')],
+    ('Intentionally_create', 'generaciones'): [],
+    ('Kinship', 'familia'): [('Ego', 'su')],
+    ('Time_vector', 'anteriores'): [('Landmark_event', 'su')]}

@@ -1,0 +1,5 @@
+{   ('Aggregate', 'bandas'): [('Aggregate_property', 'de hoy en día')],
+    ('Calendric_unit', 'hoy'): [],
+    ('Make_noise', 'tocan en'): [('Sound_source', 'Muchas de las bandas de hoy'), ('Path', 'en')],
+    ('Quantified_mass', 'Muchas'): [('Individuals', 'bandas de hoy')],
+    ('Residence', 'en'): [('Location', 'Muchas de las bandas de hoy')]}

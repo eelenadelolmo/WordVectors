@@ -1,0 +1,6 @@
+{   ('Appellations', 'presidente'): [],
+    ('Being_employed', 'trabajar'): [('Task', 'juntos')],
+    ('Commitment', 'compromiso'): [],
+    ('Evoking', 'quot'): [('Cognizer', 'el'), ('Stimulus', 'al presidente que es la hora de que & quot ; gobierne & quot ; y & quot ; optimice & quot ; la eficacia policial')],
+    ('Leadership', 'gobierne'): [('Leader', 'el')],
+    ('Willingness', 'voluntad'): [('Activity', 'de trabajar juntos')]}

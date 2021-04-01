@@ -1,0 +1,10 @@
+{   ('Activity_finish', 'concluía'): [('Agent', 'que la'), ('Activity', 'era muy superior a la de Maragall')],
+    ('Identicality', 'el mismo'): [('Type', 'asunto')],
+    ('Point_of_dispute', 'asunto'): [('Descriptor', 'a la de Maragall')],
+    ('Presence', 'presencia'): [('Location', 'a la de Maragall')],
+    ('Scrutiny', 'estudio'): [('Ground', 'abordaba el mismo asunto')],
+    ('Statement', 'abordaba'): [('Message', 'el mismo asunto')],
+    ('Temporal_collocation', 'recientemente'): [   ('Trajector_event', 'de'),
+                                                   (   'Trajector_event',
+                                                       'un estudio en el que abordaba el mismo asunto y en el que también se concluía con que la presencia de Pujol era muy superior a la de Maragall '
+                                                       '.')]}

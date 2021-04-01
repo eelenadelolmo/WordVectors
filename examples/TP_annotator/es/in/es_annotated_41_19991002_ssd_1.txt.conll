@@ -1,0 +1,13 @@
+{   ('Age', 'nuevo'): [('Entity', 'estatuto')],
+    ('Alternatives', 'futuro'): [('Salient_entity', 'las dos ciudades')],
+    ('Calendric_unit', 'agosto'): [('Relative_time', 'ayer')],
+    ('Calendric_unit', 'ayer fue'): [],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'ciudades')],
+    ('Cogitation', 'reflexionen'): [],
+    ('Collaboration', 'conjuntamente'): [('Duration', 'Si el pasado agosto'), ('Partner_2', 'sobre un nuevo estatuto'), ('Undertaking', 'para Ceuta y Melilla')],
+    ('Discussion', 'debate'): [('Topic', 'futuro de las dos ciudades')],
+    ('Leadership', 'Gobiernos'): [('Governed', 'español')],
+    ('Needing', 'necesidad de'): [('Cognizer', 'Gobiernos marroquí y español')],
+    ('Political_locales', 'ciudades'): [],
+    ('Request', 'necesidad de'): [('Speaker', 'quien'), ('Message', 'Aznar un foro de')],
+    ('Spatial_contact', 'de'): [('Figure', 'reflexionen & quot ; conjuntamente'), ('Ground', 'un nuevo estatuto para Ceuta y Melilla')]}

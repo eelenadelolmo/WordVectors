@@ -1,0 +1,9 @@
+{   ('Awareness', 'desconocido'): [('Content', ',')],
+    ('Protecting', 'portada'): [('Asset', 'lo')],
+    ('Self_motion', 'desliza'): [   ('Self_mover', 'Europa'),
+                                    ('Goal', 'hacia lo desconocido'),
+                                    ('Source', 'Daily Telegraph'),
+                                    ('Duration', 'en su portada'),
+                                    ('Time', 'mientras que The Times escogió el titular & quot ; Europa se lanza al agua')],
+    ('Spatial_contact', 'en'): [('Figure', 'Daily Telegraph'), ('Ground', 'su portada')],
+    ('Statement', 'quot'): [('Medium', 'Daily Telegraph'), ('Message', 'en su portada')]}

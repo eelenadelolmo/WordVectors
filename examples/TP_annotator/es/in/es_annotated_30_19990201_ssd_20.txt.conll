@@ -1,0 +1,5 @@
+{   ('Activity_start', 'Comenzó'): [('Agent', 'su')],
+    ('Communication', 'discurso'): [('Communicator', 'su')],
+    ('Judgment_direct_address', 'gracias'): [('Addressee', 'muchos')],
+    ('Process_end', 'terminó'): [('Process', 'su discurso')],
+    ('Quantified_mass', 'muchos'): []}

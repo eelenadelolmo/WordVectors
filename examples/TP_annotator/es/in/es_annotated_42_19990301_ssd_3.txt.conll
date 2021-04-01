@@ -1,0 +1,7 @@
+{   ('Organization', 'agencia'): [('Members', 'Itar-Tass')],
+    ('Process_end', 'aseguró'): [('Process', 'el viaje'), ('Manner', 'aseguró')],
+    ('Relative_time', 'después de'): [('Focal_occasion', 'Padalka aseguró poco'), ('Landmark_occasion', 'tocar tierra que el viaje había transcurrido')],
+    ('Spatial_contact', 'tocar'): [('Ground', 'tierra')],
+    ('Statement', 'informó'): [('Addressee', 'la agencia Itar-Tass')],
+    ('Telling', 'aseguró'): [('Speaker', 'Padalka'), ('Message', 'aseguró poco después de tocar tierra que el viaje había transcurrido')],
+    ('Travel', 'viaje'): []}

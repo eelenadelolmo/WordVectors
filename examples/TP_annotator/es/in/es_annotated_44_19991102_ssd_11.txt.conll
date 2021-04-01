@@ -1,0 +1,9 @@
+{   ('Calendric_unit', 'años'): [('Count', '478')],
+    ('Desirability', 'buenos'): [('Evaluee', 'los')],
+    ('Intentionally_act', 'actos'): [('Act', 'acto ecuménico')],
+    ('Intentionally_act', 'los'): [],
+    ('Interior_profile_relation', 'en'): [   ('Figure', 'cardenal Edward Cassidy y el obispo luterano Christian Krause , en nombre de los protestantes'),
+                                             ('Ground', 'un acto ecuménico'),
+                                             ('Figure', 'que lo que conduce a la salvación eterna es la gracia divina y no los buenos')],
+    ('Leadership', 'conduce'): [('Governed', 'a la salvación eterna')],
+    ('Temporal_subregion', 'después'): [('Time_period', '478 años')]}

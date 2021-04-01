@@ -1,0 +1,10 @@
+{   ('Concessive', 'aunque'): [('Conceded_state_of_affairs', 'han tenido & quot ; algún éxito & quot ; , las fuerzas serbias siguen en la zona')],
+    ('Continued_state_of_affairs', 'siguen'): [('State_of_affairs', 'las fuerzas serbias'), ('State_of_affairs', 'en la zona')],
+    ('Hostile_encounter', 'combates'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'fuerzas serbias'), ('Time', 'siguen'), ('Ground', 'la zona')],
+    ('Locale', 'zona'): [],
+    ('Military', 'fuerzas'): [('Possessor', 'serbias')],
+    ('Possession', 'tenido'): [('Owner', 'las'), ('Possession', 'algún éxito & quot ; , las fuerzas serbias siguen en la zona')],
+    ('Proportional_quantity', 'algún'): [('Individuals', 'éxito')],
+    ('Success_or_failure', 'éxito'): [],
+    ('Taking_time', 'se'): [('Activity', 'fieros combates'), ('Time_length', 'zona')]}

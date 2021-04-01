@@ -1,0 +1,8 @@
+{   ('Expertise', 'experiencia'): [   ('Protagonist', 'ex consejero de Interior'),
+                                      ('Knowledge', 'personal'),
+                                      ('Skill', 'que el ministerio no facilita a la Ertzaintza la información que posee sobre objetivos de')],
+    ('Information', 'información'): [],
+    ('Possession', 'posee'): [('Owner', 'la'), ('Possession', 'sobre objetivos de')],
+    ('Purpose', 'objetivos'): [('Agent', 'el')],
+    ('Supply', 'por'): [('Supplier', 'el ministerio'), ('Recipient', 'Ertzaintza'), ('Theme', 'a la Ertzaintza la información que posee sobre objetivos de')],
+    ('Verification', 'confirmó'): [('Unconfirmed_content', 'ex consejero de Interior')]}

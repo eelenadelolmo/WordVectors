@@ -1,0 +1,5 @@
+{   ('Information', 'información'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'información'), ('Time', 'ya en'), ('Ground', 'poder de la Ertzaintza')],
+    ('Leadership', 'ministro'): [],
+    ('Possession', 'poder'): [('Owner', 'información'), ('Possession', 'de la Ertzaintza')],
+    ('Questioning', 'inquirió'): [('Speaker', 'Atutxa'), ('Message', 'ministro si esa información estaba ya en poder de la Ertzaintza')]}

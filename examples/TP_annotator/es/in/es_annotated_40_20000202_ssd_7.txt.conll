@@ -1,0 +1,10 @@
+{   ('Calendric_unit', 'semanas'): [('Relative_time', 'las próximas'), ('Count', 'cinco')],
+    ('Cardinal_numbers', 'cinco'): [('Precision', 'las próximas'), ('Unit', 'semanas')],
+    ('First_rank', 'primarias'): [('Item', 'catarata')],
+    ('Hostile_encounter', 'agresiva'): [('Depictive', 'agresiva'), ('Time', 'en la catarata de primarias que se sucederán en las próximas cinco semanas')],
+    ('Increment', 'más'): [('Class', 'agresiva')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'una pugna más agresiva en la catarata de primarias que se sucederán en'), ('Ground', 'las próximas cinco semanas')],
+    ('Locale', 'se'): [],
+    ('Locale_by_use', 'cuarteles'): [('Container_possessor', 'Bush')],
+    ('Omen', 'prometiendo'): [('Predictive_phenomenon', 'cuarteles generales de Bush'), ('Future_phenomenon', 'más agresiva')],
+    ('Taking_time', 'se'): [('Activity', 'más agresiva en la catarata de primarias'), ('Time_length', 'se'), ('Time', 'en las próximas cinco semanas')]}

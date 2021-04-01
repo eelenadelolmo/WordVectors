@@ -1,0 +1,5 @@
+{   ('Attaching', 'vincula'): [('Agent', 'los conservadores'), ('Items', 'su futuro al de Aznar')],
+    ('Evoking', 'recuerda'): [('Cognizer', 'su'), ('Cognizer', 'su'), ('Stimulus', 'que debe ser leal')],
+    ('People_along_political_spectrum', 'los conservadores'): [],
+    ('Quantified_mass', 'número'): [],
+    ('Temporal_collocation', 'futuro'): []}

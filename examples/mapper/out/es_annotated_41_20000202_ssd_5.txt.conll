@@ -1,0 +1,10 @@
+{   ('Bringing', 'llevado'): [('Theme', 'le'), ('Goal', 'en el bolsillo la brújula que le')],
+    ('Clothing_parts', 'bolsillo'): [],
+    ('Direction', 'buen'): [('Landmark', 'camino')],
+    ('Frequency', 'siempre'): [('Event', 'que le'), ('Event', 'el buen camino')],
+    ('Giving', 'regaló'): [('Theme', 'ha llevado en el bolsillo la brújula que le'), ('Theme', 'por el'), ('Recipient', 'un votante de este estado')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'Hasta ha llevado'), ('Ground', 'ha llevado en el bolsillo')],
+    ('Leadership', 'estado'): [],
+    ('Means', 'camino'): [('Purpose', 'ha')],
+    ('Motion', 'llevado'): [('Theme', 'le'), ('Degree', 'siempre'), ('Goal', 'el buen camino')],
+    ('Statement', 'dijo'): [('Speaker', 'le')]}

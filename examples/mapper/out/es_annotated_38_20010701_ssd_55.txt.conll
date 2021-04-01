@@ -1,0 +1,5 @@
+{   ('Awareness', 'Sabe lo'): [('Cognizer', 'lo'), ('Content', 'que dijo Einstein cuando le preguntaron qué hubiera querido ser si naciera de nuevo')],
+    ('Bringing', 'naciera de'): [('Theme', 'lo')],
+    ('Desiring', 'querido ser'): [('Event', 'qué'), ('Experiencer', 'lo'), ('Event', 'ser si naciera de nuevo')],
+    ('Questioning', 'preguntaron'): [('Speaker', 'lo'), ('Addressee', 'lo'), ('Message', 'qué hubiera querido ser si naciera de nuevo')],
+    ('Statement', 'dijo'): [('Message', 'qué'), ('Speaker', 'naciera de'), ('Message', 'le preguntaron qué hubiera querido ser si naciera de nuevo')]}

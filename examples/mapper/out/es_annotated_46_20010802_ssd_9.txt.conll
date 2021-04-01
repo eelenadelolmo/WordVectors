@@ -1,0 +1,9 @@
+{   ('Age', 'nueva'): [('Entity', 'sospecha de la existencia de un pacto secreto en los precios del gasóleo')],
+    ('Awareness', 'sospecha de'): [('Time', 'En noviembre del 2000'), ('Content', 'de la existencia de un pacto secreto en los precios del gasóleo')],
+    ('Commerce_scenario', 'precios'): [('Goods', 'del gasóleo')],
+    ('Criminal_investigation', 'investigación'): [],
+    ('Existence', 'existencia'): [],
+    ('Secrecy_status', 'secreto'): [('Phenomenon', 'pacto')],
+    ('Shoot_projectiles', 'inició'): [   ('Time', 'En noviembre del 2000'),
+                                         ('Projectile', 'una nueva investigación'),
+                                         ('Goal', 'ante la nueva sospecha de la existencia de un pacto secreto en los precios del gasóleo')]}

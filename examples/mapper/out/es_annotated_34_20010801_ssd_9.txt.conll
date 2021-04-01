@@ -1,0 +1,4 @@
+{   ('Intentionally_act', 'actividad'): [('Act', 'de los acusados')],
+    ('Reasoning', 'argumentar'): [('Content', 'actividad delictiva de los acusados')],
+    ('Sequence', 'ilicitud'): [],
+    ('Statement', 'declara'): [('Speaker', 'él'), ('Message', 'delictiva')]}

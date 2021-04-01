@@ -1,0 +1,9 @@
+{   ('Appellations', 'presidente'): [('Name', 'mexicano'), ('Type', 'Fox')],
+    ('Becoming_aware', 'reconoció'): [('Phenomenon', 'la reforma constitucional aprobada por el Congreso & quot ; deja a un lado & quot ; buena parte de la iniciativa que él envió al Senado')],
+    ('Being_necessary', 'necesarios'): [('Requirement', 'ajustes')],
+    ('Deny_or_grant_permission', 'aprobada por'): [('Action', 'reforma constitucional'), ('Place', 'por el Congreso')],
+    ('Progression', 'avances'): [],
+    ('Referring_by_name', 'quot'): [('Name', 'buena parte de la iniciativa que él'), ('Entity', 'quot ; realizar los ajustes necesarios para profundizar en los avances')],
+    ('Reforming_a_system', 'reforma'): [('Entity', 'reforma constitucional')],
+    ('Relative_time', 'lado'): [('Focal_occasion', 'quot ; buena parte de la iniciativa que él envió al Senado')],
+    ('Sending', 'envió'): [('Sender', 'él'), ('Goal', 'por el Congreso')]}

@@ -1,0 +1,8 @@
+{   ('Appellations', 'presidente'): [('Type', 'Croacia')],
+    ('Body_parts', 'armas'): [],
+    ('Commerce_sell', 'venta'): [('Buyer', 'a Croacia y Ecuador')],
+    ('Give_impression', 'ante'): [('Phenomenon', 'ex presidente ARGENTINO')],
+    ('Legality', 'ilegal'): [('Object', 'venta')],
+    ('People_by_vocation', 'juez'): [('Person', 'federal'), ('Person', 'Urso')],
+    ('Political_locales', 'federal'): [],
+    ('Time_vector', 'ante'): [('Landmark_event', 'el juez federal Jorge Urso por la venta ilegal de armas a Croacia y Ecuador')]}

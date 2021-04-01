@@ -1,0 +1,9 @@
+{   ('Be_in_agreement_on_action', 'según'): [   ('Obligation', 'quot ; Es hora de sumar esfuerzos y no de restarlos o de repartir culpas & quot ; , llegó a manifestar'),
+                                                ('Obligation', 'según fuentes del Gobierno')],
+    ('Becoming_a_member', 'repartir'): [('New_member', 'Es'), ('Group', 'esfuerzos')],
+    ('Expansion', 'repartir'): [('Item', 'culpas & quot ; , llegó a manifestar Ibarretxe , según fuentes del Gobierno')],
+    ('Goal', 'de'): [('Landmark', 'fuentes del'), ('Trajector', 'según fuentes del Gobierno')],
+    ('Judgment', 'culpas'): [],
+    ('Military', 'esfuerzos'): [],
+    ('Source_of_getting', 'fuentes del'): [],
+    ('Statement', 'quot'): [('Speaker', 'Ibarretxe'), ('Message', 'según fuentes del Gobierno')]}

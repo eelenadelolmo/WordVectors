@@ -1,0 +1,5 @@
+{   ('Choosing', 'elige'): [('Cognizer', 'ser'), ('Chosen', 'seguir siendo músico ahora que tiene dinero para ser cualquier otra cosa')],
+    ('Money', 'dinero'): [],
+    ('People_by_vocation', 'músico'): [],
+    ('State_continue', 'seguir siendo'): [('Entity', 'ser')],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'elige seguir siendo músico'), ('Trajector_event', 'dinero para ser cualquier otra cosa ? - -')]}

@@ -1,0 +1,5 @@
+{   ('Giving', 'cedió'): [('Donor', 'líder histórico , Manuel'), ('Theme', 'el relevo a'), ('Purpose', 'Arenas , cedió el relevo a Fernando Silva Sande , presunto cerebro del secuestro')],
+    ('Historic_event', 'histórico'): [],
+    ('Kidnapping', 'secuestro'): [('Victim', 'de Publio')],
+    ('Leadership', 'líder'): [('Domain', 'histórico')],
+    ('Suspicion', 'presunto'): [('Suspect', 'cerebro')]}

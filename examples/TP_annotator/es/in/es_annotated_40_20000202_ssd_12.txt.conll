@@ -1,0 +1,8 @@
+{   ('Attack', 'agresiva'): [('Assailant', 'su'), ('Victim', 'su carácter')],
+    ('Calendric_unit', 'fin de semana'): [],
+    ('Cardinal_numbers', 'un'): [],
+    ('Change_position_on_a_scale', 'aumento'): [('Path', 'en las'), ('Final_value', 'entre ambos en las próximas contiendas')],
+    ('Predicting', 'auguraron'): [('Eventuality', 'un aumento de las escaramuzas entre ambos en las próximas contiendas')],
+    ('Progression', 'aumento'): [   ('Post_state', 'Estrategia agresiva'),
+                                    ('Entity', 'analistas'),
+                                    ('Entity', 'pudo haberse resentido de la agresividad exhibida por Bradley durante el fin de semana , cuando atacó sin piedad su carácter , y')]}

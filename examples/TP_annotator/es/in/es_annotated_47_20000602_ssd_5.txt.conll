@@ -1,0 +1,10 @@
+{   ('Age', 'nuevo'): [('Entity', 'un')],
+    ('Calendric_unit', 'día'): [('Relative_time', 'cada')],
+    ('Cardinal_numbers', 'un'): [],
+    ('Catastrophe', 'crispación'): [('Undesirable_event', 'que nadie parece querer')],
+    ('Desiring', 'querer'): [('Event', ', cada día más , revelan una crispación'), ('Experiencer', 'nadie'), ('Event', 'de un')],
+    ('Give_impression', 'parece'): [('Phenomenon', 'nadie'), ('Inference', 'querer')],
+    ('Increment', 'más'): [('Increment', 'cada día')],
+    ('Residence', 'vivido'): [('Resident', 'trufado de')],
+    ('Reveal_secret', 'revelan'): [('Manner', 'cada día más'), ('Information', 'una crispación que nadie parece querer')],
+    ('Statement', 'declaraciones'): []}

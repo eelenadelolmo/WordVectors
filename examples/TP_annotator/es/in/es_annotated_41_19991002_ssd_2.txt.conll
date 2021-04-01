@@ -1,0 +1,11 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Discussion', 'reuniones'): [('Interlocutor_2', 'entre autoridades españolas y'), ('Purpose', 'analizar los intereses comunes en la zona')],
+    ('Emotion_directed', 'intereses'): [],
+    ('Leadership', 'autoridades'): [('Governed', 'marroquís')],
+    ('Locale', 'zona'): [],
+    ('Organization', 'organización'): [('Purpose', 'de reuniones')],
+    ('Part_orientational', 'norte'): [('Whole', 'marroquís')],
+    ('Participation', 'participó'): [],
+    ('Relation', 'las relaciones'): [('Entity_2', 'entre Andalucía y el norte de Marruecos')],
+    ('Spatial_contact', 'en'): [('Figure', 'de'), ('Ground', 'relaciones entre Andalucía y el norte de Marruecos')],
+    ('Statement', 'propuso'): [('Message', 'organización de reuniones entre autoridades españolas y marroquís para analizar los intereses comunes en la zona')]}

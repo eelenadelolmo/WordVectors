@@ -1,0 +1,5 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Leadership', 'dirigente'): [('Leader', 'Xavier Navarro'), ('Leader', 'de CCOO y partidario del acuerdo')],
+    ('Make_agreement_on_action', 'del acuerdo'): [],
+    ('Sign_agreement', 'se firma'): [('Agreement', 'nada')],
+    ('Statement', 'afirmó'): [('Speaker', 'Xavier Navarro , dirigente de CCOO y partidario del acuerdo'), ('Message', 'ayer : & quot ; No se firma nada')]}

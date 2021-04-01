@@ -1,0 +1,5 @@
+{   ('Exporting', 'exportaciones'): [('Goods', 'de ganado'), ('Importing_area', 'impuesta')],
+    ('Military', 'impuesta'): [],
+    ('Prohibiting_or_licensing', 'prohibición'): [('State_of_affairs', 'a las exportaciones de ganado vivo continúa vigente')],
+    ('Residence', 'vivo'): [('Location', 'exportaciones de ganado')],
+    ('State_continue', 'continúa'): [('State', 'prohibición impuesta a las exportaciones de ganado vivo'), ('State', 'impuesta')]}

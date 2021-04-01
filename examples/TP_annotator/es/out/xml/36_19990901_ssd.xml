@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="36_19990901_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El ' lehendakari '</concept>
+		<concept id="c_1">los peneuvistas</concept>
+		<concept id="c_2">El lehendakari Juan José Ibarretxe y los portavoces de la mesa nacional de Herri Batasuna</concept>
+		<concept id="c_3">el debate en el ámbito privado</concept>
+		<concept id="c_4">Ibarretxe</concept>
+		<concept id="c_5">la situación</concept>
+		<concept id="c_6">la paz</concept>
+		<concept id="c_7">El diálogo</concept>
+		<concept id="c_8">el proceso de paz</concept>
+		<concept id="c_9">También la mesa nacional de Herri Batasuna</concept>
+		<concept id="c_10">la solución al conflicto</concept>
+		<concept id="c_11">HB</concept>
+		<concept id="c_12">ETA</concept>
+		<concept id="c_13">de</concept>
+		<concept id="c_14">las críticas de la banda</concept>
+		<concept id="c_15">puertas</concept>
+		<concept id="c_16">su</concept>
+		<concept id="c_17">los distintos niveles de enfrentamiento existentes en el País</concept>
+		<concept id="c_18">sociedad</concept>
+		<concept id="c_19">lo</concept>
+		<concept id="c_20">un año</concept>
+		<concept id="c_21">cada vez</concept>
+		<concept id="c_22">lo</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El ' lehendakari ' advierte de que el debate va mejor en privado de lo que trasciende.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="fz">'</token><token pos="nccs000">lehendakari</token><token pos="fz">'</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_13">
+			<token pos="vmip3s0">advierte</token><token pos="sps00">de</token><token pos="cs">que</token><mention concept_ref="c_3"><token pos="da0ms0">el</token><token pos="ncms000">debate</token></mention><token pos="vmip3s0">va</token><token pos="aq0cs0">mejor</token><token pos="sps00">en</token><token pos="aq0msp">privado</token><token pos="sps00">de</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Discussion" head="debate" />
+			<frame type="Required_event" head="mejor">
+				<argument type="Required_situation" dependent="el debate" />
+				<argument type="Circumstances" dependent="en privado de lo que trasciende" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Herri Batasuna afirma que los peneuvistas deben aceptar con deportividad las críticas de la banda.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0mp0">los</token><token pos="nccp000">peneuvistas</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_5" concept_ref3="c_6" concept_ref4="c_13" concept_ref5="c_14">
+			<token pos="vmip3p0">deben</token><token pos="vmn0000">aceptar</token><token pos="sps00">con</token><mention concept_ref="c_1"><token pos="ncfs000">deportividad</token></mention><mention concept_ref="c_5"><token pos="da0fp0">las</token><token pos="ncfp000">críticas</token></mention><mention concept_ref="c_13"><token pos="sps00">de</token></mention><mention concept_ref="c_6"><token pos="da0fs0">la</token><token pos="ncfs000">banda</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Herri Batasuna " />
+			<frame type="Aggregate" head="banda" />
+			<main_frame type="Receiving" head="aceptar">
+				<argument type="Recipient" dependent="de" />
+				<argument type="Theme" dependent="las críticas de la banda" /></main_frame>
+			<frame type="Statement" head="afirma">
+				<argument type="Speaker" dependent="Herri" />
+				<argument type="Message" dependent="que los peneuvistas deben aceptar con deportividad las críticas de la banda" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El lehendakari Juan José Ibarretxe y los portavoces de la mesa nacional de Herri Batasuna coincidieron ayer en un análisis optimista del proceso de paz pese al último comunicado de ETA, en el que responsabilizaba a un sector del PNV de poner trabas a la pacificación.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="nccs000">lehendakari</token><token pos="ncfs000">Juan</token><token pos="np0000l">José</token><token pos="np0000l">Ibarretxe</token><token pos="cc">y</token><token pos="da0mp0">los</token><token pos="nccp000">portavoces</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">mesa</token><token pos="aq0cs0">nacional</token><token pos="sps00">de</token><token pos="np0000l">Herri</token><token pos="np0000l">Batasuna</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_8" concept_ref3="c_6" concept_ref4="c_10" concept_ref5="c_1" concept_ref6="c_4" concept_ref7="c_13">
+			<token pos="vmis3p0">coincidieron</token><token pos="sps00">en</token><mention concept_ref="c_5"><token pos="di0ms0">un</token><token pos="ncmn000">análisis</token></mention><token pos="aq0cs0">optimista</token><token pos="spcms">del</token><mention concept_ref="c_8"><token pos="ncms000">proceso</token></mention><token pos="sps00">de</token><mention concept_ref="c_6"><token pos="ncfs000">paz</token></mention><token pos="vmip2s0">pese</token><token pos="sps00">al</token><token pos="ao0ms0">último</token><mention concept_ref="c_10"><token pos="ncms000">comunicado</token></mention><token pos="sps00">de</token><token pos="np00000">ETA</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="pr0cn000">que</token><token pos="vmii3s0">responsabilizaba</token><token pos="sps00">a</token><mention concept_ref="c_1"><token pos="di0ms0">un</token><token pos="ncms000">sector</token></mention><token pos="spcms">del</token><token pos="np00000">PNV</token><token pos="sps00">de</token><token pos="vmn0000">poner</token><mention concept_ref="c_4"><token pos="ncfp000">trabas</token></mention><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">pacificación</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attitude_description" head="optimista">
+				<argument type="State_of_affairs" dependent="análisis" />
+				<argument type="Cognizer" dependent="del proceso de paz" /></frame>
+			<frame type="Fields" head="sector">
+				<argument type="Activity" dependent="responsabilizaba a un sector del PNV de poner trabas a la pacificación" /></frame>
+			<main_frame type="Make_agreement_on_action" head="coincidieron">
+				<argument type="Party_1" dependent="El lehendakari Juan José Ibarretxe y los portavoces de la mesa nacional de Herri" />
+				<argument type="Obligation" dependent="ayer en un análisis optimista del proceso de paz" /></main_frame>
+			<frame type="Political_locales" head="nacional" />
+			<frame type="Process" head="proceso">
+				<argument type="Process" dependent="proceso de paz" /></frame>
+			<frame type="Relative_time" head="último">
+				<argument type="Focal_participant" dependent="comunicado de" /></frame>
+			<frame type="Representative" head="los portavoces">
+				<argument type="Represented" dependent="de la mesa nacional de Herri" /></frame>
+			<frame type="Scrutiny" head="análisis">
+				<argument type="Ground" dependent="del proceso de paz" /></frame>
+			<frame type="Statement" head="comunicado">
+				<argument type="Speaker" dependent="del" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ibarretxe sostuvo que el debate en el ámbito privado va mejor de lo que trasciende al público, mientras que la coalición radical animó al PNV a que acepte los reproches de ETA "con deportividad", porque "la crítica política es sana".
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">el</token><token pos="ncms000">debate</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">ámbito</token><token pos="aq0msp">privado</token>
+		</theme>
+		<rheme concept_ref1="c_13">
+			<token pos="vmip3s0">va</token><token pos="aq0cs0">mejor</token><mention concept_ref="c_13"><token pos="sps00">de</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Ibarretxe " />
+			<frame type="Alliance" head="coalición">
+				<argument type="Descriptor" dependent="radical" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="coalición radical animó al PNV a que acepte los" />
+				<argument type="Cause" dependent="la crítica política es sana" /></frame>
+			<frame type="Discussion" head="debate" />
+			<frame type="Locative_relation" head="de lo">
+				<argument type="Figure" dependent="que" />
+				<argument type="Ground" dependent="público" /></frame>
+			<frame type="Medical_conditions" head="es sana">
+				<argument type="Patient" dependent="crítica política" />
+				<argument type="Body_part" dependent="," /></frame>
+			<main_frame type="Motion" head="va">
+				<argument type="Theme" dependent="que" />
+				<argument type="Goal" dependent="al público" /></main_frame>
+			<frame type="Receiving" head="acepte">
+				<argument type="Theme" dependent="reproches de" /></frame>
+			<frame type="Required_event" head="mejor" />
+			<frame type="Statement" head="quot">
+				<argument type="Speaker" dependent="Ibarretxe" />
+				<argument type="Message" dependent="que el debate en el ámbito privado va mejor de lo que trasciende al público , mientras que la coalición radical animó al PNV a que acepte los reproches de ETA  quot ; con deportividad  quot ; , porque  quot ; la crítica política es sana  quot ;" /></frame>
+			<frame type="Subjective_influence" head="acepte">
+				<argument type="Product" dependent="coalición radical" />
+				<argument type="Behavior" dependent="PNV a que acepte los reproches de ETA  quot ; con deportividad  quot ; , porque  quot ; la crítica política es sana" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ibarretxe abrió el curso del Parlamento vasco en el palacio de Miramar, en San Sebastián, donde aprovechó para dar su punto de vista sobre los recientes comunicados de ETA.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="np00000">Ibarretxe</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_9" concept_ref3="c_13">
+			<token pos="vmis3s0">abrió</token><mention concept_ref="c_8"><token pos="da0ms0">el</token><token pos="ncms000">curso</token></mention><token pos="spcms">del</token><mention concept_ref="c_9"><token pos="np00000">Parlamento</token></mention><token pos="aq0ms0">vasco</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="palacio">
+				<argument type="Name" dependent="Miramar" /></frame>
+			<frame type="Giving" head="dar">
+				<argument type="Donor" dependent="su" />
+				<argument type="Recipient" dependent="su punto de vista sobre los recientes" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="Ibarretxe abrió el curso del Parlamento vasco en el palacio de Miramar" />
+				<argument type="Ground" dependent="San" />
+				<argument type="Figure" dependent="donde aprovechó para dar su punto de vista sobre los recientes" /></frame>
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="aprovechó para dar su punto de vista sobre los recientes" /></frame>
+			<frame type="Opinion" head="vista">
+				<argument type="Cognizer" dependent="su" />
+				<argument type="Topic" dependent="recientes" /></frame>
+			<frame type="Opportunity" head="aprovechó">
+				<argument type="Agent" dependent="su" />
+				<argument type="Desirable_situation" dependent="para dar su punto de vista sobre los recientes" /></frame>
+			<frame type="Taking_time" head="dar">
+				<argument type="Agent" dependent="su" />
+				<argument type="Activity" dependent="aprovechó para dar su punto de vista sobre los recientes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Destacó de entrada que "la situación es notablemente mejor que la de hace un año", y que Euskadi atraviesa "un buen momento económico, social y político".
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0fs0">la</token><token pos="ncfs000">situación</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_5" concept_ref3="c_13" concept_ref4="c_20">
+			<token pos="vsip3s0">es</token><token pos="rg">notablemente</token><token pos="aq0cs0">mejor</token><token pos="cs">que</token><token pos="da0fs0">la</token><mention concept_ref="c_13"><token pos="sps00">de</token></mention><token pos="vmip3s0">hace</token><mention concept_ref="c_20"><token pos="di0ms0">un</token><token pos="ncms000">año</token></mention><token pos="fe">quot;</token><token pos="fc">,</token><mention concept_ref="c_5"><token pos="np00000">Euskadi</token></mention><token pos="vmip3s0">atraviesa</token><token pos="fe">quot;</token><token pos="di0ms0">un</token><token pos="aq0ms0">buen</token><token pos="ncms000">momento</token><token pos="aq0ms0">económico</token><token pos="fc">,</token><token pos="aq0cs0">social</token><token pos="cc">y</token><token pos="aq0ms0">político</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Adducing" head="quot">
+				<argument type="Speaker" dependent="es" />
+				<argument type="Specified_entity" dependent="quot ; la situación es notablemente mejor que la de hace un año  quot ; , y" /></frame>
+			<frame type="Calendric_unit" head="año" />
+			<frame type="Desirability" head="buen">
+				<argument type="Evaluee" dependent="económico" /></frame>
+			<frame type="Economy" head="económico" />
+			<frame type="Locative_relation" head="de">
+				<argument type="Figure" dependent="es" />
+				<argument type="Figure" dependent="atraviesa" />
+				<argument type="Ground" dependent="Destacó" /></frame>
+			<frame type="Perception_experience" head="situación">
+				<argument type="Phenomenon" dependent="Euskadi" />
+				<argument type="Phenomenon" dependent="quot ; un buen momento económico , social y político " /></frame>
+			<frame type="Required_event" head="mejor">
+				<argument type="Required_situation" dependent="la situación" />
+				<argument type="Degree" dependent="notablemente" /></frame>
+			<main_frame type="Sleep" head="atraviesa">
+				<argument type="Sleeper" dependent="es" /></main_frame>
+			<frame type="Social_event" head="social" />
+			<main_frame type="Temporal_subregion" head="Destacó" />
+			<frame type="Time_vector" head="de">
+				<argument type="Distance" dependent="un año" />
+				<argument type="Event" dependent="," /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Manteniendo su línea optimista, afirmó que "la paz está cada vez más cerca".
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0fs0">la</token><token pos="ncfs000">paz</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_13" concept_ref3="c_20" concept_ref4="c_21">
+			<token pos="vmip3s0">está</token><mention concept_ref="c_21"><token pos="di0cs0">cada</token><token pos="ncfs000">vez</token></mention><token pos="rg">más</token><token pos="rg">cerca</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attitude_description" head="optimista">
+				<argument type="Cognizer" dependent="su" />
+				<argument type="State_of_affairs" dependent="línea" /></frame>
+			<frame type="Getting" head="Manteniendo">
+				<argument type="Theme" dependent="paz" />
+				<argument type="Theme" dependent="más cerca" /></frame>
+			<frame type="Statement" head="afirmó">
+				<argument type="Speaker" dependent="su" />
+				<argument type="Message" dependent="que  quot ; la paz está cada vez más cerca" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En cualquier caso, Ibarretxe reconoció que existen problemas en el panorama vasco, como la aparición de episodios de violencia callejera, que calificó de "inaceptables", y la ruptura de las conversaciones entre el Gobierno central y ETA.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Ibarretxe " />
+			<frame type="Communicate_categorization" head="quot">
+				<argument type="Item" dependent="que" />
+				<argument type="Speaker" dependent="el" /></frame>
+			<frame type="Communication_response" head="reconoció">
+				<argument type="Time" dependent="En cualquier caso" />
+				<argument type="Speaker" dependent="Ibarretxe" />
+				<argument type="Trigger" dependent=", Ibarretxe reconoció que existen problemas en el panorama vasco , como la aparición de episodios de violencia callejera , que calificó de  quot ; inaceptables  quot ; , y la ruptura de las conversaciones entre el Gobierno central y" /></frame>
+			<frame type="Discussion" head="conversaciones">
+				<argument type="Interlocutor_2" dependent="entre el Gobierno central y" /></frame>
+			<frame type="Event" head="episodios">
+				<argument type="Event" dependent="violencia callejera" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="existen problemas" />
+				<argument type="Ground" dependent="el panorama vasco" /></frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Domain" dependent="central" /></frame>
+			<frame type="Locative_relation" head="existen">
+				<argument type="Figure" dependent="Ibarretxe reconoció que" />
+				<argument type="Ground" dependent="existen problemas" />
+				<argument type="Figure" dependent="en el panorama vasco , como la aparición de episodios de violencia callejera , que calificó de " /></frame>
+			<frame type="Path_shape" head="aparición">
+				<argument type="Road" dependent="episodios de violencia callejera" /></frame>
+			<frame type="Predicament" head="problemas" />
+			<frame type="Roadways" head="callejera" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Respecto a la suspensión del diálogo, al que aludió con el término "apagón", Ibarretxe recomendó "no cerrar puertas", porque el futuro del proceso está en "reconocer como válidos parte de los argumentos de los demás".
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="np00000">Ibarretxe</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_1" concept_ref3="c_15" concept_ref4="c_20">
+			<token pos="vmis3s0">recomendó</token><token pos="fe">quot;</token><token pos="rn">no</token><token pos="vmn0000">cerrar</token><token pos="ncfp000">puertas</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_aware" head="reconocer">
+				<argument type="Phenomenon" dependent="futuro del proceso" /></frame>
+			<frame type="Being_in_effect" head="válidos">
+				<argument type="Binding_principle" dependent="parte de los argumentos de los demás" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent=" quot ; no cerrar puertas" />
+				<argument type="Cause" dependent="el futuro del proceso está en  quot ; reconocer como válidos parte de los argumentos de los demás" /></frame>
+			<main_frame type="Closure" head="cerrar">
+				<argument type="Container_portal" dependent="puertas" /></main_frame>
+			<frame type="Connecting_architecture" head="puertas">
+				<argument type="Descriptor" dependent="cerrar" /></frame>
+			<frame type="Part_whole" head="parte">
+				<argument type="Whole" dependent="argumentos de los demás" /></frame>
+			<frame type="Process" head="proceso" />
+			<frame type="Quarreling" head="argumentos">
+				<argument type="Arguers" dependent="los demás" />
+				<argument type="Amount_of_discussion" dependent="apagón" /></frame>
+			<frame type="Regard" head="Respecto" />
+			<frame type="Terms_of_agreement" head="término">
+				<argument type="Agreement" dependent="cerrar" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El diálogo fue su receta para solventar los distintos niveles de enfrentamiento existentes en el País Vasco: "Deben dialogar el Gobierno y ETA, el lehendakari con los partidos políticos, y estas formaciones entre sí".
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0ms0">El</token><token pos="ncms000">diálogo</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_1" concept_ref3="c_4" concept_ref4="c_9" concept_ref5="c_13" concept_ref6="c_16" concept_ref7="c_17" concept_ref8="c_19" concept_ref9="c_22">
+			<token pos="vsis3s0">fue</token><mention concept_ref="c_16"><token pos="dp3cs0">su</token></mention><token pos="ncfs000">receta</token><token pos="sps00">para</token><token pos="vmn0000">solventar</token><mention concept_ref="c_1"><token pos="da0mp0">los</token><token pos="di0mp0">distintos</token><token pos="ncmp000">niveles</token></mention><mention concept_ref="c_13"><token pos="sps00">de</token></mention><mention concept_ref="c_4"><token pos="ncms000">enfrentamiento</token></mention><token pos="aq0cp0">existentes</token><token pos="sps00">en</token><mention concept_ref="c_9"><token pos="da0ms0">el</token><token pos="np00000">País</token><token pos="ncms000">Vasco</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partidos">
+				<argument type="Aggregate_property" dependent="políticos" /></frame>
+			<frame type="Existence" head="existentes">
+				<argument type="Place" dependent="en el País" /></frame>
+			<frame type="Hostile_encounter" head="enfrentamiento">
+				<argument type="Side_2" dependent="existentes en el País" /></frame>
+			<frame type="Increment" head="distintos">
+				<argument type="Class" dependent="," /></frame>
+			<frame type="Leadership" head="Gobierno" />
+			<frame type="Rank" head="niveles">
+				<argument type="Rank" dependent="distintos niveles" />
+				<argument type="Item" dependent="de enfrentamiento existentes en el País" /></frame>
+			<frame type="Required_event" head="los">
+				<argument type="Required_situation" dependent="los" />
+				<argument type="Required_situation" dependent="dialogar el Gobierno y ETA , el lehendakari con los partidos políticos , y estas formaciones entre sí  quot ;" /></frame>
+			<main_frame type="Resolve_problem" head="solventar">
+				<argument type="Agent" dependent="su" />
+				<argument type="Problem" dependent="los distintos niveles de enfrentamiento existentes en el País" /></main_frame>
+			<frame type="Similarity" head="distintos">
+				<argument type="Entities" dependent="niveles de enfrentamiento existentes en el País" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A juicio de Ibarretxe, el proceso de paz se encuentra en fase de maduración, pero sin "marcha atrás", porque "la sociedad no lo permitiría y pediría responsabilidades".
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="da0ms0">el</token><token pos="ncms000">proceso</token><token pos="sps00">de</token><token pos="ncfs000">paz</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_5" concept_ref3="c_1" concept_ref4="c_13" concept_ref5="c_14" concept_ref6="c_18" concept_ref7="c_19" concept_ref8="c_20" concept_ref9="c_21" concept_ref10="c_22">
+			<token pos="p0300000">se</token><token pos="vmip3s0">encuentra</token><token pos="sps00">en</token><token pos="ncfs000">fase</token><mention concept_ref="c_13"><token pos="sps00">de</token></mention><mention concept_ref="c_5"><token pos="ncfs000">maduración</token></mention><token pos="fc">,</token><token pos="sps00">sin</token><token pos="fe">quot;</token><token pos="ncfp000">marcha</token><token pos="rg">atrás</token><token pos="fe">quot;</token><token pos="fc">,</token><token pos="cs">porque</token><token pos="fe">quot;</token><mention concept_ref="c_21"><token pos="da0fs0">la</token><token pos="ncfs000">sociedad</token></mention><token pos="rn">no</token><token pos="pp3msa00">lo</token><token pos="vmic3s0">permitiría</token><token pos="cc">y</token><token pos="vmic3s0">pediría</token><token pos="ncfp000">responsabilidades</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_obligated" head="responsabilidades" />
+			<frame type="Causation" head="porque">
+				<argument type="Cause" dependent="quot ; la sociedad no lo permitiría y pediría responsabilidades " /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="Ibarretxe" />
+				<argument type="Figure" dependent="proceso de paz se encuentra en fase de maduración" /></frame>
+			<frame type="Opinion" head="quot">
+				<argument type="Cognizer" dependent="Ibarretxe" />
+				<argument type="Opinion" dependent="proceso de paz se encuentra en fase de maduración" /></frame>
+			<main_frame type="Preventing_or_letting" head="permitiría">
+				<argument type="Agent" dependent="sociedad" />
+				<argument type="Event" dependent="lo" /></main_frame>
+			<frame type="Process" head="proceso">
+				<argument type="Process" dependent="proceso de paz" /></frame>
+			<main_frame type="Questioning" head="pediría">
+				<argument type="Message" dependent="responsabilidades" /></main_frame>
+			<frame type="Thermodynamic_phase" head="fase">
+				<argument type="Phase" dependent="maduración" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Precisamente, destacó que el protagonismo del proceso de paz corresponde a los ciudadanos y a los partidos políticos.
+		</str>
+		<theme>
+			<token pos="da0ms0">el</token><token pos="ncms000">protagonismo</token><token pos="spcms">del</token><token pos="ncms000">proceso</token><token pos="sps00">de</token><token pos="ncfs000">paz</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partidos">
+				<argument type="Aggregate_property" dependent="políticos" /></frame>
+			<frame type="Importance" head="el">
+				<argument type="Factor" dependent="proceso de paz corresponde a los ciudadanos y a los partidos políticos" /></frame>
+			<frame type="People_by_jurisdiction" head="ciudadanos" />
+			<frame type="Posture" head="los">
+				<argument type="Location" dependent="proceso de paz" />
+				<argument type="Location" dependent="ciudadanos y a los partidos políticos" /></frame>
+			<frame type="Process" head="proceso">
+				<argument type="Process" dependent="proceso de paz" />
+				<argument type="Process" dependent="ciudadanos y a los partidos políticos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 También la mesa nacional de Herri Batasuna compareció para analizar los últimos comunicados de ETA.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="rg">También</token><token pos="da0fs0">la</token><token pos="ncfs000">mesa</token><token pos="aq0cs0">nacional</token><token pos="sps00">de</token><token pos="np0000l">Herri</token><token pos="np0000l">Batasuna</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_1" concept_ref3="c_13" concept_ref4="c_14" concept_ref5="c_19" concept_ref6="c_22">
+			<token pos="vmis3s0">compareció</token><mention concept_ref="c_14"><token pos="sps00">para</token><token pos="vmn0000">analizar</token><token pos="da0mp0">los</token><token pos="ao0mp0">últimos</token></mention><token pos="ncmp000">comunicados</token><mention concept_ref="c_13"><token pos="sps00">de</token></mention><token pos="np00000">ETA</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Give_impression" head="compareció">
+				<argument type="Phenomenon" dependent="la mesa nacional de Herri" />
+				<argument type="Inference" dependent="para analizar los últimos" /></main_frame>
+			<frame type="Political_locales" head="nacional" />
+			<frame type="Relative_time" head="últimos">
+				<argument type="Focal_participant" dependent="de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Su portavoz, Arnaldo Otegi, destacó que la solución al conflicto pasa por garantizar la participación de los seis territorios vascos, incluidos los del otro lado de la frontera, y advirtió de la importancia de dos fechas futuras: el 12 de septiembre, primer aniversario del Pacto de Lizarra, y el 18 de septiembre, convocatoria de la Asamblea de Municipios Vascos.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="da0fs0">la</token><token pos="ncfs000">solución</token><token pos="spcms">al</token><token pos="ncms000">conflicto</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_1" concept_ref3="c_9" concept_ref4="c_13" concept_ref5="c_17" concept_ref6="c_18" concept_ref7="c_19" concept_ref8="c_22">
+			<token pos="vmip3s0">pasa</token><token pos="sps00">por</token><token pos="vmn0000">garantizar</token><mention concept_ref="c_5"><token pos="da0fs0">la</token><token pos="ncfs000">participación</token></mention><token pos="sps00">de</token><mention concept_ref="c_1"><token pos="da0mp0">los</token><token pos="dn0cp0">seis</token><token pos="ncmp000">territorios</token></mention><token pos="aq0mp0">vascos</token><token pos="fc">,</token><token pos="vmp00pm">incluidos</token><mention concept_ref="c_18"><token pos="da0mp0">los</token><token pos="spcms">del</token><token pos="di0ms0">otro</token><token pos="ncms000">lado</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">frontera</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Su portavoz , Arnaldo Otegi , " />
+			<frame type="Boundary" head="frontera" />
+			<frame type="Calendric_unit" head="septiembre">
+				<argument type="Relative_time" dependent="12" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="fechas futuras" /></frame>
+			<frame type="Cardinal_numbers" head="seis">
+				<argument type="Entity" dependent="territorios vascos" /></frame>
+			<frame type="Hostile_encounter" head="conflicto" />
+			<frame type="Importance" head="importancia">
+				<argument type="Factor" dependent="de dos fechas futuras" /></frame>
+			<main_frame type="Inclusion" head="incluidos">
+				<argument type="Total" dependent="territorios vascos" />
+				<argument type="Part" dependent="los del otro lado de la frontera" /></main_frame>
+			<frame type="Increment" head="otro">
+				<argument type="Class" dependent="lado" /></frame>
+			<frame type="Ordinal_numbers" head="primer">
+				<argument type="Type" dependent="aniversario del Pacto de" /></frame>
+			<frame type="Part_orientational" head="lado">
+				<argument type="Whole" dependent="la frontera" /></frame>
+			<frame type="Participation" head="participación">
+				<argument type="Participants" dependent="de los seis territorios" /></frame>
+			<frame type="Political_locales" head="territorios">
+				<argument type="Population" dependent="vascos" /></frame>
+			<frame type="Representative" head="convocatoria">
+				<argument type="Represented" dependent="la" />
+				<argument type="Representative" dependent="Arnaldo Otegi" /></frame>
+			<frame type="Social_event_collective" head="fechas">
+				<argument type="Manner" dependent="futuras" /></frame>
+			<frame type="Temporal_collocation" head="futuras">
+				<argument type="Trajector_entity" dependent="fechas" /></frame>
+			<frame type="Warning" head="advirtió">
+				<argument type="Message" dependent="de la importancia de dos fechas futuras" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Respecto a las descalificaciones que ETA lanzó al PNV a través de su último comunicado, HB matiza que se refieren únicamente a "algunos sectores" del partido nacionalista.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="np00000">HB</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_1" concept_ref3="c_13" concept_ref4="c_20" concept_ref5="c_22">
+			<token pos="p0300000">se</token><token pos="vmip3p0">refieren</token><token pos="sps00">a</token><token pos="fe">quot;</token><mention concept_ref="c_1"><token pos="di0mp0">algunos</token><token pos="ncmp000">sectores</token></mention><token pos="fe">quot;</token><token pos="spcms">del</token><mention concept_ref="c_22"><token pos="ncms000">partido</token></mention><token pos="aq0cs0">nacionalista</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido">
+				<argument type="Aggregate_property" dependent="nacionalista" /></frame>
+			<frame type="Creating" head="comunicado">
+				<argument type="Created_entity" dependent="descalificaciones que" />
+				<argument type="Role" dependent="al PNV a" />
+				<argument type="Time" dependent="a través de su último comunicado" /></frame>
+			<frame type="Fields" head="sectores" />
+			<main_frame type="Referring_by_name" head="refieren">
+				<argument type="Entity" dependent="su" />
+				<argument type="Entity" dependent="únicamente a  quot ; algunos sectores  quot ; del partido nacionalista" /></main_frame>
+			<frame type="Regard" head="se" />
+			<frame type="Relative_time" head="último">
+				<argument type="Focal_occasion" dependent="quot" /></frame>
+			<frame type="Statement" head="quot">
+				<argument type="Speaker" dependent="se" />
+				<argument type="Time" dependent="último" />
+				<argument type="Message" dependent="refieren únicamente a  quot ; algunos sectores  quot ; del partido nacionalista" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En cualquier caso, recomendó al PNV "más deportividad" para asumir las críticas, "que en política siempre vienen bien".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Adopt_selection" head="asumir">
+				<argument type="Attribute" dependent="las críticas" /></frame>
+			<frame type="Arriving" head="en">
+				<argument type="Theme" dependent="política" />
+				<argument type="Manner" dependent="siempre" />
+				<argument type="Goal" dependent="bien" /></frame>
+			<frame type="Desirability" head="bien">
+				<argument type="Evaluee" dependent="," /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Otegi añadió que ETA tiene derecho a expresar su opinión "como cualquier otro agente político, y, además, teniendo en cuenta que es parte fundamental en este conflicto".
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="np00000">ETA</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_8" concept_ref3="c_5" concept_ref4="c_13" concept_ref5="c_16" concept_ref6="c_20">
+			<token pos="vmip3s0">tiene</token><mention concept_ref="c_8"><token pos="ncms000">derecho</token></mention><token pos="sps00">a</token><token pos="vmn0000">expresar</token><mention concept_ref="c_16"><token pos="dp3cs0">su</token></mention><token pos="ncfs000">opinión</token><token pos="fe">quot;</token><token pos="cs">como</token><token pos="di0cs0">cualquier</token><token pos="di0ms0">otro</token><token pos="nccs000">agente</token><token pos="aq0ms0">político</token><token pos="fc">,</token><token pos="fc">,</token><token pos="fc">,</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Otegi " />
+			<frame type="Bringing" head="teniendo">
+				<argument type="Path" dependent="además" /></frame>
+			<frame type="Direction" head="derecho" />
+			<main_frame type="Expressing_publicly" head="expresar">
+				<argument type="Content" dependent="su opinión  quot ; como cualquier otro agente político" /></main_frame>
+			<frame type="Hostile_encounter" head="conflicto" />
+			<frame type="Increment" head="otro">
+				<argument type="Class" dependent="político" /></frame>
+			<frame type="Intentionally_act" head="agente">
+				<argument type="Act" dependent="político" /></frame>
+			<frame type="Opinion" head="opinión">
+				<argument type="Cognizer" dependent="es" /></frame>
+			<frame type="Part_whole" head="parte">
+				<argument type="Whole" dependent="este conflicto" /></frame>
+			<frame type="Statement" head="añadió">
+				<argument type="Speaker" dependent="Otegi" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

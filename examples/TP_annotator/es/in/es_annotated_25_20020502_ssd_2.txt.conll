@@ -1,0 +1,7 @@
+{   ('Attack', 'atentado'): [],
+    ('Frequency', 'Cada'): [('Interval', 'vez'), ('Event', 'hay un atentado')],
+    ('Identicality', 'lo mismo'): [('Type', 'que hay')],
+    ('Locative_relation', 'hay'): [('Figure', 'Cada vez'), ('Ground', 'hay un atentado'), ('Figure', 'hemos de salir a decir lo mismo')],
+    ('Motion', 'salir a'): [('Theme', 'hemos'), ('Goal', 'salir')],
+    ('Sleep', 'salir'): [('Sleeper', 'hemos')],
+    ('Statement', 'decir'): [('Speaker', 'hemos'), ('Message', 'lo mismo')]}

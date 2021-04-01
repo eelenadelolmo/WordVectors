@@ -1,0 +1,10 @@
+{   ('Artifact', 'artefacto'): [],
+    ('Becoming_aware', 'localizado'): [('Cognizer', 'Salou ( Tarragonès ) y Cambrils ( Baix Camp )'), ('Phenomenon', 'ningún artefacto')],
+    ('Calendric_unit', 'fin de semana'): [],
+    ('Military', 'Ejército'): [],
+    ('Natural_features', 'playas de'): [('Container_possessor', ', Salou ( Tarragonès ) y Cambrils ( Baix Camp )')],
+    ('Possession', 'han'): [('Owner', 'la Guardia Civil y del Ejército que'), ('Possession', 'las playas de Tarragona , Salou ( Tarragonès ) y Cambrils ( Baix Camp ) no han localizado ningún')],
+    ('Quantified_mass', 'ningún'): [('Individuals', 'artefacto')],
+    ('Scouring', 'han'): [   ('Searcher', 'que'),
+                             ('Ground', 'las playas de Tarragona , Salou ( Tarragonès ) y Cambrils ( Baix Camp ) no han localizado ningún artefacto'),
+                             ('Time', 'durante el fin de semana')]}

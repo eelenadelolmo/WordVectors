@@ -1,0 +1,12 @@
+{   ('Arriving', 'devueltos'): [('Goal', 'todos los documentos')],
+    ('Body_parts', 'el'): [('Descriptor', 'otra')],
+    ('Bringing', 'ser'): [('Goal', 'por'), ('Time', 'en marzo')],
+    ('Documents', 'documentos'): [],
+    ('Increment', 'otra'): [('Class', 'el')],
+    ('Locale_by_use', 'sede de'): [('Constituent_parts', 'ha'), ('Use', 'de la calle de Urbieta de San')],
+    ('Preventing_or_letting', 'permitió'): [('Event', 'el registro de la sede de HB de la calle de Urbieta de San')],
+    ('Roadways', 'calle'): [('Name', 'de San')],
+    ('Sequence', 'sede'): [('Entities', 'juez')],
+    ('Sleep', 'por'): [('Manner', 'en marzo')],
+    ('Statement', 'declarado'): [('Time', 'Por otra parte'), ('Speaker', 'juez'), ('Message', 'Palacios que permitió el registro de la sede de HB de la')],
+    ('Taking', 'incautados'): [('Theme', 'los documentos')]}

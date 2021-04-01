@@ -1,0 +1,8 @@
+{   ('Arriving', 'visita'): [('Goal', 'en la montaña de')],
+    ('Becoming', 'convirtieron'): [('Entity', 'se'), ('Final_category', 'muy pronto en un punto de visita destacado en la montaña de')],
+    ('Buildings', 'edificio'): [],
+    ('Capability', 'puede'): [('Entity', 'el contenido artístico que'), ('Event', 'contemplar en él se convirtieron muy pronto en un punto de visita destacado en la montaña de')],
+    ('Fields', 'artístico'): [('Salient_entity', 'contenido')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'un punto de visita destacado'), ('Ground', 'la montaña de')],
+    ('Natural_features', 'montaña'): [('Name', 'de')],
+    ('Quantified_mass', 'Tanto el'): [('Individuals', 'el edificio')]}

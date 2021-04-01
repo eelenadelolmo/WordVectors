@@ -1,0 +1,10 @@
+{   ('Bearing_arms', 'tropas'): [('Protagonist', 'Fuerzas')],
+    ('Hostile_encounter', 'enfrentamientos'): [],
+    ('Leadership', 'mando'): [('Governed', 'del Ejército')],
+    ('Likelihood', 'posibles'): [('Hypothetical_event', 'enfrentamientos futuros')],
+    ('Locale_by_use', 'cuartel'): [('Container_possessor', 'Ejército')],
+    ('Locative_relation', 'en'): [('Figure', 'del Ejército'), ('Ground', 'el cuartel')],
+    ('Military', 'Ejército'): [],
+    ('Statement', 'dijo'): [   ('Message', 'Reunido con el mando de las Fuerzas Armadas en el cuartel'),
+                               ('Message', 'Barak'),
+                               ('Message', '; Preparad a vuestras tropas y limpiad todo el polvo innecesario que pueda molestar a posibles enfrentamientos futuros')]}

@@ -1,0 +1,12 @@
+{   ('Being_located', 'mentir'): [('Theme', 'el diplomático chileno')],
+    ('Intoxicants', 'aceleraría'): [('Intoxicant', 'el proceso judicial en')],
+    ('Judgment_communication', 'acusación'): [   ('Reason', 'Pero el abogado Eduardo Contreras , que dirige la acusación en la primera querella contra el dictador en Chile , acusó'),
+                                                 ('Evaluee', 'el diplomático chileno'),
+                                                 ('Reason', 'quot ; mentir & quot ; a Madrid y a Londres cuando asegura que si el dictador regresa se aceleraría el proceso judicial')],
+    ('Leadership', 'dictador'): [],
+    ('Leadership', 'diplomático'): [('Governed', 'querella')],
+    ('Ordinal_numbers', 'primera'): [('Type', 'judicial'), ('Basis_of_order', 'contra el dictador en Chile')],
+    ('People_by_vocation', 'abogado'): [('Person', 'el abogado Eduardo Contreras')],
+    ('Process', 'proceso'): [('Process', 'aceleraría')],
+    ('Process_continue', 'se'): [('Event', 'proceso judicial')],
+    ('Statement', 'acusación'): [('Speaker', 'el'), ('Message', 'que si el dictador regresa')]}

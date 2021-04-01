@@ -1,0 +1,6 @@
+{   ('Accomplishment', 'obtenido'): [('Goal', 'sus objetivos electorales')],
+    ('Aggregate', 'partido'): [],
+    ('Give_impression', 'apareció'): [   ('Phenomenon', 'Shevardnadze'),
+                                         ('Appraisal', 'en las pantallas de televisión'),
+                                         ('Characterization', 'proclamar que su partido & quot ; había obtenido sus objetivos electorales')],
+    ('Purpose', 'objetivos'): [('Agent', 'su'), ('Domain', 'electorales')]}

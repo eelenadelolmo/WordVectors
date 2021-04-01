@@ -1,0 +1,7 @@
+{   ('Cardinal_numbers', 'cincuenta'): [('Unit', 'metros')],
+    ('Closure', 'abre'): [],
+    ('Direction', 'derecha'): [('Landmark', 'calle')],
+    ('Increment', 'más'): [('Increment', 'poco')],
+    ('Measure_linear_extent', 'metros'): [('Count', 'cincuenta')],
+    ('Quantified_mass', 'poco'): [('Individuals', 'cincuenta metros')],
+    ('Roadways', 'calle'): []}

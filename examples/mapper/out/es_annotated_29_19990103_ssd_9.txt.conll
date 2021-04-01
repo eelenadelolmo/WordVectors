@@ -1,0 +1,7 @@
+{   ('Becoming_aware', 'reconocer'): [('Phenomenon', 'a')],
+    ('Difficulty', 'cuesta'): [('Activity', 'esta'), ('Activity', 'reconocer a Brossa y parece , a primera vista , Salvador')],
+    ('Give_impression', 'parece'): [],
+    ('Interior_profile_relation', 'En'): [('Ground', 'esta fotografía retocada')],
+    ('Locative_relation', 'En'): [('Figure', 'En esta fotografía retocada , cuesta reconocer a'), ('Ground', 'primera vista'), ('Ground', 'Salvador')],
+    ('Ordinal_numbers', 'primera'): [('Type', 'vista')],
+    ('Perception_active', 'vista'): []}

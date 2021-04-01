@@ -1,0 +1,13 @@
+{   ('Cardinal_numbers', 'dos'): [('Entity', 'submarinos')],
+    ('Chatting', 'conversación'): [],
+    ('Commerce_sell', 'venta'): [('Goods', 'de dos submarinos'), ('Buyer', 'a Chile')],
+    ('Discussion', 'reunirse'): [('Duration', 'ayer')],
+    ('Make_agreement_on_action', 'el acuerdo'): [('Party_2', 'la venta de dos submarinos a Chile')],
+    ('Relative_time', 'de la'): [   (   'Focal_occasion',
+                                        ', tras reunirse ayer con el ministro de Defensa , Eduardo Serra , fuentes de este departamento aseguraron que & quot ; el acuerdo sobre la venta de dos '
+                                        'submarinos a Chile no ha sido el objeto de la conversación')],
+    ('Source_of_getting', 'fuentes de'): [('Theme', 'de este departamento')],
+    ('Telling', 'aseguraron'): [   ('Time', 'reunirse ayer con el ministro de Defensa'),
+                                   ('Speaker', 'fuentes de este departamento'),
+                                   ('Message', 'quot ; el acuerdo sobre la venta de dos submarinos a Chile no ha sido el objeto de la conversación')],
+    ('Vehicle', 'submarinos'): []}

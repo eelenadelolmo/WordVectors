@@ -1,0 +1,5 @@
+{   ('Experiencer_focus', 'lamentan'): [('Experiencer', 'Vecinos de Salou , Cambrils y Tarragona'), ('Content', 'que la policía')],
+    ('Law_enforcement_agency', 'policía'): [],
+    ('Receiving', 'recibir'): [('Recipient', 'la policía'), ('Theme', 'los anónimos')],
+    ('Relative_time', 'advirtiera del'): [('Focal_occasion', 'policía no les advirtiera del riesgo'), ('Landmark_occasion', 'recibir los anónimos')],
+    ('Run_risk', 'riesgo'): []}

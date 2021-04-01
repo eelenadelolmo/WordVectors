@@ -1,0 +1,3 @@
+{   ('Departing', 'escapar'): [('Theme', 'ser')],
+    ('Operating_a_system', 'logró'): [('Duration', 'Tras ser operado de urgencia'), ('Operator', 'ser'), ('System', 'escapar')],
+    ('Relative_time', 'de'): [('Landmark_occasion', 'operado de urgencia'), ('Focal_occasion', 'logró escapar')]}

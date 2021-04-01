@@ -1,0 +1,4 @@
+{   ('Identicality', 'Lo mismo'): [('Type', 'en')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'vendedor'), ('Ground', 'librería')],
+    ('Manipulation', 'en'): [('Manner', 'Lo mismo'), ('Depictive', 'en')],
+    ('People_by_vocation', 'vendedor'): []}

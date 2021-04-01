@@ -1,0 +1,13 @@
+{   ('Color', 'negros'): [('Entity', 'puntos')],
+    ('Having_or_lacking_access', 'acceso'): [('Useful_location', 'al centro de la Costa Brava desde la A-7')],
+    ('Importance', 'principal'): [('Factor', 'punto de acceso al centro de la Costa Brava desde la A-7')],
+    ('Locale', 'punto'): [('Descriptor', 'principal'), ('Name', 'de acceso al centro de la Costa Brava desde la A-7')],
+    ('Locale_by_use', 'centro'): [('Container_possessor', 'de la Costa Brava')],
+    ('Locative_relation', 'en'): [   ('Figure', 'medidas correctoras'),
+                                     ('Ground', 'puntos negros'),
+                                     ('Figure', "de la red viaria , como la cuesta de L'Alou , el principal punto de acceso al centro de la Costa Brava desde la A-7")],
+    ('Network', 'la red'): [('Descriptor', 'tráfico')],
+    ('Practice', 'ejercicio'): [('Occasion', 'de la unidad de tráfico y destaca que se han adoptado medidas correctoras en puntos negros de la red viaria ,')],
+    ('Roadways', 'tráfico'): [],
+    ('Taking_time', 'se'): [   ('Activity', 'medidas correctoras'),
+                               ('Activity', "puntos negros de la red viaria , como la cuesta de L'Alou , el principal punto de acceso al centro de la Costa Brava desde la A-7")]}

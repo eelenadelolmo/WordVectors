@@ -1,0 +1,6 @@
+{   ('Awareness', 'sabe'): [('Cognizer', 'alguien')],
+    ('Damaging', 'daño'): [],
+    ('Importance', 'importante'): [('Factor', 'lo')],
+    ('Intentionally_act', 'de'): [('Act', 'cuánto daño'), ('Agent', 'lo')],
+    ('Possibility', 'podría'): [('Possible_event', 'cuánto daño'), ('Possible_event', 'de')],
+    ('Required_event', 'debe'): [('Required_situation', 'lo'), ('Required_situation', 'ser lo que sabe el señor')]}

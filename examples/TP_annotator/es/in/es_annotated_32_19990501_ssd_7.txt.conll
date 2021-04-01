@@ -1,0 +1,8 @@
+{   ('Attack', 'ataque'): [('Manner', 'intenso'), ('Victim', 'contra fuerzas serbias')],
+    ('Hostile_encounter', 'combate'): [],
+    ('Military', 'fuerzas'): [('Possessor', 'serbias')],
+    ('Shoot_projectiles', 'lanzar'): [('Agent', 'helicópteros de combate Apache'), ('Projectile', 'un ataque intenso & quot ; contra fuerzas serbias')],
+    ('Statement', 'anunció'): [   ('Speaker', 'El Pentágono'),
+                                  ('Manner', 'ayer que'),
+                                  ('Message', 'los helicópteros de combate Apache pueden lanzar pronto & quot ; un ataque intenso & quot ; contra fuerzas serbias')],
+    ('Vehicle', 'helicópteros'): [('Use', 'combate Apache')]}

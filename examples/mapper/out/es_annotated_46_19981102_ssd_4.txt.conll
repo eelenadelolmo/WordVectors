@@ -1,0 +1,6 @@
+{   ('Collaboration', 'colaboración'): [],
+    ('Interior_profile_relation', 'de'): [('Figure', 'convenios de colaboración con el 90 % de los cuerpos de policía municipal de las'), ('Ground', 'Girona')],
+    ('Law_enforcement_agency', 'policía'): [('Jurisdiction', 'municipal')],
+    ('Locale', 'comarcas de'): [],
+    ('Military', 'los'): [],
+    ('Sign_agreement', 'firmado'): [('Signatory', 'de policía municipal de las comarcas'), ('Agreement', 'convenios de colaboración con el 90 % de los cuerpos de policía municipal de las')]}

@@ -1,0 +1,9 @@
+{   ('Commerce_pay', 'retributivas'): [   (   'Goods',
+                                              'Considerables diferencias retributivas entre plantillas que hacen las mismas funciones , etcétera o que nos afectan a todos ( revalorización digna de '
+                                              'las pensiones mínimas ) .')],
+    ('Contingency', 'funciones'): [],
+    ('Employing', 'las'): [],
+    ('Identicality', 'mismas'): [('Type', 'funciones')],
+    ('Intentionally_act', 'hacen'): [('Agent', 'diferencias retributivas entre'), ('Act', 'mismas funciones , etcétera o que nos afectan a todos ( revalorización digna de las pensiones mínimas')],
+    ('Non-commutative_statement', 'diferencias'): [('Term_1', 'entre')],
+    ('Objective_influence', 'afectan'): [('Influencing_entity', 'que'), ('Dependent_entity', 'todos ( revalorización digna de las pensiones mínimas )')]}

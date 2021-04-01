@@ -29,10 +29,18 @@ import gc
 # Pending: precedence of comparisons
 
 
+# Using CPU instead of GPU
+device = torch.device("cpu")
+
+
+# Using GPU instead of CPU
+"""
+import torch
 torch.cuda.empty_cache()
 torch.cuda.memory_summary(device=None, abbreviated=False)
 del torch
 gc.collect()
+"""
 
 ## Pretrained models
 
@@ -457,11 +465,14 @@ def upload_file():
 @app.route('/TP_annotate', methods=['POST'])
 def TP_annotate():
 
+    # Using GPU instead of CPU
+    """
     import torch
     torch.cuda.empty_cache()
     torch.cuda.memory_summary(device=None, abbreviated=False)
     del torch
     gc.collect()
+    """
 
     ## Pretrained models
 
@@ -474,7 +485,7 @@ def TP_annotate():
 
     # Parameters for sentence transformed based on BETO
     np.set_printoptions(threshold=100)
-    BETO_model = SentenceTransformer('BETO_model')
+    BETO_model = SentenceTransformer('BETO_model', device=devide)
 
     # Loading Word2vec model for Spanish
     w2vec_models = KeyedVectors.load('w2vec_models/complete.kv', mmap='r')
@@ -1893,11 +1904,14 @@ def upload_file_mapper():
 @app.route('/mapping_SRL', methods=['POST'])
 def mappingsrl():
 
+    # Using GPU instead of CPU
+    """
     import torch
     torch.cuda.empty_cache()
     torch.cuda.memory_summary(device=None, abbreviated=False)
     del torch
     gc.collect()
+    """
 
     shutil.rmtree(DOWNLOAD_FOLDER_mapper + '/', ignore_errors=True)
     os.makedirs(DOWNLOAD_FOLDER_mapper + '/')

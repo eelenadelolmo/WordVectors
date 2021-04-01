@@ -1,0 +1,10 @@
+{   ('Awareness', 'idea'): [('Content', 'la gracia divina')],
+    ('Buildings', 'iglesia'): [('Name', 'Wittenberg')],
+    ('Causation', 'provocaron'): [('Cause', 'que'), ('Effect', 'cisma en el seno del cristianismo')],
+    ('Connecting_architecture', 'puerta'): [('Whole', 'la iglesia de Wittenberg')],
+    ('Interior_profile_relation', 'en el'): [('Figure', 'provocaron el cisma'), ('Ground', 'cristianismo')],
+    ('Locative_relation', 'en'): [('Figure', 'Martín Lutero clavó'), ('Ground', 'la puerta')],
+    ('Means', 'vía'): [('Descriptor', 'única'), ('Purpose', 'para la salvación')],
+    ('Part_inner_outer', 'central'): [],
+    ('Sole_instance', 'única'): [('Item', 'vía para la salvación')],
+    ('Spatial_contact', 'en'): [('Figure', 'Martín Lutero clavó en la puerta de la iglesia de Wittenberg'), ('Ground', '1517 , y que provocaron el cisma en el seno del cristianismo')]}

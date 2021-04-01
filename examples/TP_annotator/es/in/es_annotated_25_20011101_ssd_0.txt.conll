@@ -1,0 +1,8 @@
+{   ('Businesses', 'bancarias'): [('Business_name', 'ha')],
+    ('Cotheme', 'perseguir'): [('Theme', 'sus acciones'), ('Theme', 'fuentes de financiación del terrorismo internacional')],
+    ('Intentionally_act', 'acciones'): [('Agent', 'ha'), ('Purpose', 'perseguir las fuentes de financiación del terrorismo internacional ,')],
+    ('Political_locales', 'internacional'): [('Relative_location', 'terrorismo')],
+    ('Source_of_getting', 'fuentes de'): [('Theme', 'de financiación del terrorismo internacional')],
+    ('Statement', 'anunciado'): [('Medium', 'de Acción Financiera'), ('Message', 'que extenderá sus acciones para perseguir las fuentes de financiación del terrorismo internacional ,')],
+    ('Terrorism', 'terrorismo'): [('Descriptor', 'internacional')],
+    ('Text', 'cuentas'): [('Text', 'bancarias de')]}

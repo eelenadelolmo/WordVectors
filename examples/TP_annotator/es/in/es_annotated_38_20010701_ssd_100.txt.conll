@@ -1,0 +1,6 @@
+{   ('Assistance', 'lo'): [('Helper', 'lo'), ('Benefited_party', 'lo')],
+    ('Certainty', 'Sí'): [('Content', 'saldrán de gira')],
+    ('Judgment', 'respeto'): [('Cognizer', 'y'), ('Evaluee', 'lo')],
+    ('Motion', 'lo'): [('Theme', 'lo'), ('Time', 'de gira')],
+    ('Spatial_contact', 'de'): [('Figure', 'lo'), ('Ground', 'gira')],
+    ('Travel', 'gira'): [('Traveler', 'lo')]}

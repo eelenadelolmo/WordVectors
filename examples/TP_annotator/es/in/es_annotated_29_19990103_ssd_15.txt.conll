@@ -1,0 +1,11 @@
+{   ('Architectural_part', 'la pared'): [],
+    ('Color', 'negra'): [('Entity', 'una i minúscula'), ('Entity', 'tipográfica')],
+    ('Frequency', 'siempre'): [('Event', 'aquello que siempre nos habían'), ('Event', 'habían dicho que no podía ser : es el Brossa de la poesía visual , el más directo y efectivo , el más')],
+    ('Identicality', 'ser'): [('Type', 'la vez')],
+    ('Locative_relation', 'a la'): [('Figure', 'un acento'), ('Ground', 'a la vez')],
+    ('Possibility', 'podía'): [('Possible_event', 'es'), ('Possible_event', 'que no')],
+    ('Size', 'minúscula'): [],
+    ('Spatial_contact', 'a la'): [('Figure', 'que'), ('Ground', 'es'), ('Figure', 'un punto y un acento a la vez , aquello que siempre nos habían dicho que no podía ser')],
+    ('Text', 'poesía'): [],
+    ('Usefulness', 'efectivo'): [],
+    ('Work', 'obra'): [('Agent', 'su')]}

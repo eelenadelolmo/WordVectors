@@ -1,0 +1,6 @@
+{   ('Desirability', 'popular'): [('Evaluee', 'Alfonso')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'delegado del gobierno'), ('Ground', 'Euskadi')],
+    ('Leadership', 'alcalde'): [('Governed', 'la ciudad')],
+    ('Leadership', 'gobierno'): [],
+    ('Political_locales', 'ciudad'): [],
+    ('Presence', 'presentes'): [('Entity', 'el alcalde la ciudad , el popular Alfonso Alonso , y el delegado del gobierno en Euskadi ,')]}

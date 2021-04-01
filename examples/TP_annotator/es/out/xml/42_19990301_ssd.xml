@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="42_19990301_ssd">
+
+
+	<concepts>
+		<concept id="c_0">La veterana estación rusa</concept>
+		<concept id="c_1">Dos tripulantes de la estación orbital rusa Mir</concept>
+		<concept id="c_2">La nave</concept>
+		<concept id="c_3">el viaje</concept>
+		<concept id="c_4">La cápsula</concept>
+		<concept id="c_5">que</concept>
+		<concept id="c_6">los cosmonautas</concept>
+		<concept id="c_7">Ivan Bella</concept>
+		<concept id="c_8">El ruso Guennadi Padalka</concept>
+		<concept id="c_9">El cosmonauta francés Jean-Pierre Haignere y los rusos Viktor Afanasyev y Sergei Avdeyev , que viajaron con Ivan Bella</concept>
+		<concept id="c_10">La vieja estación Mir</concept>
+		<concept id="c_11">sus experimentos</concept>
+		<concept id="c_12">a Kazajstán</concept>
+		<concept id="c_13">uno de los dos comandantes de la Mir</concept>
+		<concept id="c_14">para</concept>
+		<concept id="c_15">58 kilómetros</concept>
+		<concept id="c_16">norte de</concept>
+		<concept id="c_17">a la Tierra</concept>
+		<concept id="c_18">sus experimentos</concept>
+		<concept id="c_19">la Mir</concept>
+		<concept id="c_20">norte</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 La veterana estación rusa seguirá sus experimentos hasta el 2002.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="aq0fs0">veterana</token><token pos="ncfs000">estación</token><token pos="aq0fs0">rusa</token>
+		</theme>
+		<rheme concept_ref1="c_11" concept_ref2="c_18">
+			<token pos="vmif3s0">seguirá</token><token pos="dp3cp0">sus</token><token pos="ncmp000">experimentos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Origin" head="rusa">
+				<argument type="Entity" dependent="estación" /></frame>
+			<main_frame type="Process_continue" head="seguirá">
+				<argument type="Event" dependent="sus experimentos" />
+				<argument type="Time" dependent="hasta el 2002" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Dos tripulantes de la estación orbital rusa Mir llegaron ayer por la mañana a Kazajstán a bordo de la cápsula de transporte espacial Soyuz TM-28.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="dn0cp0">Dos</token><token pos="nccp000">tripulantes</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">estación</token><token pos="aq0cs0">orbital</token><token pos="aq0fs0">rusa</token><token pos="np00000">Mir</token>
+		</theme>
+		<rheme concept_ref1="c_12">
+			<token pos="vmis3p0">llegaron</token><mention concept_ref="c_12"><token pos="sps00">a</token><token pos="np00000">Kazajstán</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="bordo">
+				<argument type="Aggregate_property" dependent="Dos" />
+				<argument type="Aggregate_property" dependent="de la estación orbital rusa Mir llegaron ayer por la mañana a Kazajstán a bordo de la cápsula de transporte espacial Soyuz" /></frame>
+			<main_frame type="Arriving" head="llegaron">
+				<argument type="Theme" dependent="Dos tripulantes de la estación orbital rusa Mir llegaron" />
+				<argument type="Path" dependent="ayer por" />
+				<argument type="Time" dependent="la mañana" />
+				<argument type="Place" dependent="a Kazajstán" />
+				<argument type="Circumstances" dependent="a bordo de la cápsula de transporte espacial Soyuz" /></main_frame>
+			<frame type="Bringing" head="transporte">
+				<argument type="Carrier" dependent="Soyuz" />
+				<argument type="Goal" dependent="espacial" /></frame>
+			<frame type="Calendric_unit" head="la mañana">
+				<argument type="Relative_time" dependent="ayer por" /></frame>
+			<frame type="Membership" head="de">
+				<argument type="Place" dependent="de la estación orbital rusa" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La nave transportaba a uno de los dos comandantes de la Mir, el cosmonauta ruso Guennadi Padalka, y el eslovaco Ivan Bella, de 34 años, que es el primer cosmonauta de aquel país que hace una incursión al espacio.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">La</token><token pos="ncfs000">nave</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_6" concept_ref3="c_8" concept_ref4="c_3" concept_ref5="c_7" concept_ref6="c_13" concept_ref7="c_19">
+			<token pos="vmii3s0">transportaba</token><token pos="sps00">a</token><mention concept_ref="c_13"><token pos="pi0ms000">uno</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="dn0cp0">dos</token><token pos="nccp000">comandantes</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Mir</token></mention><token pos="fc">,</token><mention concept_ref="c_6"><token pos="da0ms0">el</token><token pos="nccs000">cosmonauta</token></mention><token pos="aq0ms0">ruso</token><mention concept_ref="c_8"><token pos="np0000l">Guennadi</token><token pos="np0000l">Padalka</token></mention><token pos="fc">,</token><token pos="cc">y</token><mention concept_ref="c_3"><token pos="da0ms0">el</token><token pos="ncms000">eslovaco</token></mention><mention concept_ref="c_7"><token pos="np00000">Ivan</token><token pos="aq0ms0">Bella</token></mention><token pos="fc">,</token><token pos="sps00">de</token><token pos="z">34</token><token pos="ncmp000">años</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Bringing" head="transportaba">
+				<argument type="Theme" dependent="La nave" />
+				<argument type="Goal" dependent="uno de los dos comandantes de la Mir" /></main_frame>
+			<frame type="Leadership" head="comandantes">
+				<argument type="Governed" dependent="Mir" /></frame>
+			<frame type="Manufacturing" head="hace">
+				<argument type="Producer" dependent="país" />
+				<argument type="Product" dependent="una incursión al espacio" /></frame>
+			<frame type="Ordinal_numbers" head="primer">
+				<argument type="Type" dependent="cosmonauta" /></frame>
+			<frame type="Origin" head="ruso">
+				<argument type="Entity" dependent="cosmonauta de" /></frame>
+			<frame type="Political_locales" head="país" />
+			<frame type="Vehicle" head="nave" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Padalka aseguró poco después de tocar tierra que el viaje había transcurrido sin problemas, informó la agencia Itar-Tass.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">el</token><token pos="ncms000">viaje</token>
+		</theme>
+		<rheme concept_ref1="c_1">
+			<token pos="vaii3s0">había</token><token pos="vmp00sm">transcurrido</token><token pos="sps00">sin</token><mention concept_ref="c_1"><token pos="ncmp000">problemas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Padalka " />
+			<frame type="Organization" head="agencia">
+				<argument type="Members" dependent="Itar-Tass" /></frame>
+			<frame type="Process_end" head="aseguró">
+				<argument type="Process" dependent="el viaje" />
+				<argument type="Manner" dependent="aseguró" /></frame>
+			<frame type="Relative_time" head="después de">
+				<argument type="Focal_occasion" dependent="Padalka aseguró poco" />
+				<argument type="Landmark_occasion" dependent="tocar tierra que el viaje había transcurrido" /></frame>
+			<frame type="Spatial_contact" head="tocar">
+				<argument type="Ground" dependent="tierra" /></frame>
+			<frame type="Statement" head="informó">
+				<argument type="Addressee" dependent="la agencia Itar-Tass" /></frame>
+			<frame type="Telling" head="aseguró">
+				<argument type="Speaker" dependent="Padalka" />
+				<argument type="Message" dependent="aseguró poco después de tocar tierra que el viaje había transcurrido" /></frame>
+			<frame type="Travel" head="viaje" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La cápsula cayó a 58 kilómetros al norte de Arkalik, desde donde los dos cosmonautas tomaron un avión para trasladarse a Moscú.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0fs0">La</token><token pos="ncfs000">cápsula</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_6" concept_ref3="c_13" concept_ref4="c_14" concept_ref5="c_15" concept_ref6="c_16" concept_ref7="c_18" concept_ref8="c_19" concept_ref9="c_20">
+			<token pos="vmis3s0">cayó</token><token pos="sps00">a</token><mention concept_ref="c_15"><token pos="z">58</token><token pos="ncmp000">kilómetros</token></mention><token pos="spcms">al</token><mention concept_ref="c_20"><token pos="ncms000">norte</token></mention><token pos="sps00">de</token><mention concept_ref="c_19"><token pos="np00000">Arkalik</token></mention><token pos="fc">,</token><token pos="sps00">desde</token><token pos="pr000000">donde</token><token pos="da0mp0">los</token><token pos="dn0cp0">dos</token><token pos="nccp000">cosmonautas</token><token pos="vmis3p0">tomaron</token><token pos="di0ms0">un</token><token pos="ncms000">avión</token><mention concept_ref="c_14"><token pos="sps00">para</token></mention><token pos="vmn0000">trasladarse</token><token pos="sps00">a</token><token pos="np00000">Moscú</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="cosmonautas" /></frame>
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="dos cosmonautas tomaron un avión para trasladarse a" /></frame>
+			<frame type="Measure_linear_extent" head="kilómetros">
+				<argument type="Count" dependent="58" /></frame>
+			<main_frame type="Motion" head="trasladarse">
+				<argument type="Theme" dependent="los dos cosmonautas" />
+				<argument type="Goal" dependent="para" /></main_frame>
+			<main_frame type="Natural_features" head="cayó">
+				<argument type="Container_possessor" dependent="cápsula" />
+				<argument type="Name" dependent="58 kilómetros" />
+				<argument type="Relative_location" dependent="norte de" /></main_frame>
+			<frame type="Part_orientational" head="norte">
+				<argument type="Whole" dependent="58 kilómetros" />
+				<argument type="Whole" dependent="de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Con este aterrizaje concluye la misión número 26 de la estación Mir, que se encuentra en órbita desde hace 13 años.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_6">
+			<token pos="p0300000">se</token><token pos="vmip3s0">encuentra</token><token pos="sps00">en</token><token pos="ncfs000">órbita</token><token pos="sps00">desde</token><token pos="vmip3s0">hace</token><token pos="z">13</token><mention concept_ref="c_6"><token pos="ncmp000">años</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_finish" head="concluye">
+				<argument type="Agent" dependent="este aterrizaje" />
+				<argument type="Activity" dependent="misión número 26 de la estación Mir , que se encuentra en órbita desde hace 13 años" /></frame>
+			<frame type="Architectural_part" head="aterrizaje" />
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="13" /></frame>
+			<frame type="Path_traveled" head="órbita" />
+			<frame type="Quantified_mass" head="número">
+				<argument type="Individuals" dependent="misión" />
+				<argument type="Individuals" dependent="26 de la estación" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En misiones precedentes, los cosmonautas se dedicaron a reparar los numerosos incidentes y averías que ha sufrido la estación a causa de sus muchos años de vida, pero en esta ocasión han pasado la mayor parte del tiempo haciendo estudios científicos.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0mp0">los</token><token pos="nccp000">cosmonautas</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_7" concept_ref3="c_14" concept_ref4="c_18">
+			<token pos="p0300000">se</token><token pos="vmis3p0">dedicaron</token><token pos="sps00">a</token><token pos="vmn0000">reparar</token><token pos="da0mp0">los</token><token pos="aq0mp0">numerosos</token><token pos="nccp000">incidentes</token><token pos="cc">y</token><mention concept_ref="c_7"><token pos="ncfp000">averías</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_obligated" head="misiones" />
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="muchos" />
+				<argument type="Whole" dependent="de vida" /></frame>
+			<frame type="Catastrophe" head="incidentes" />
+			<frame type="Catastrophe" head="sufrido">
+				<argument type="Patient" dependent="la estación" />
+				<argument type="Time" dependent="a causa de sus muchos años de vida" /></frame>
+			<frame type="Causation" head="causa de">
+				<argument type="Effect" dependent="ha sufrido la estación" />
+				<argument type="Cause" dependent="muchos años de vida" /></frame>
+			<frame type="Intentionally_act" head="haciendo">
+				<argument type="Act" dependent="estudios científicos" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="misiones precedentes" /></frame>
+			<frame type="Quantified_mass" head="muchos">
+				<argument type="Individuals" dependent="años" /></frame>
+			<frame type="Relative_time" head="precedentes">
+				<argument type="Focal_occasion" dependent="misiones" /></frame>
+			<frame type="Scrutiny" head="estudios">
+				<argument type="Ground" dependent="científicos" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="a causa de sus muchos años de vida" />
+				<argument type="Ground" dependent="esta ocasión" />
+				<argument type="Figure" dependent="han pasado la mayor parte del tiempo haciendo estudios científicos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Seis días de experimentos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="días">
+				<argument type="Count" dependent="Seis" />
+				<argument type="Salient_event" dependent="de experimentos" /></frame>
+			<frame type="Cardinal_numbers" head="Seis">
+				<argument type="Unit" dependent="días" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Durante sus seis días en la estación orbital, Ivan Bella realizó experiencias científicas que tienen por objeto contribuir a la preparación de sus compatriotas cosmonautas en futuros viajes al espacio de más larga duración.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="np00000">Ivan</token><token pos="aq0ms0">Bella</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_18">
+			<token pos="vmis3s0">realizó</token><token pos="ncfp000">experiencias</token><token pos="aq0fp0">científicas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_prepare" head="preparación">
+				<argument type="Activity" dependent="sus compatriotas cosmonautas en futuros viajes al espacio de más larga duración" /></frame>
+			<frame type="Calendric_unit" head="días">
+				<argument type="Count" dependent="seis" />
+				<argument type="Relative_time" dependent="en la estación orbital" /></frame>
+			<frame type="Expertise" head="experiencias">
+				<argument type="Knowledge" dependent="científicas" /></frame>
+			<frame type="Purpose" head="objeto">
+				<argument type="Goal" dependent="experiencias científicas" />
+				<argument type="Goal" dependent="contribuir a la preparación de sus compatriotas cosmonautas en futuros viajes al espacio de más larga duración" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El ruso Guennadi Padalka llevaba en la estación desde el mes de agosto de 1998.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="da0ms0">El</token><token pos="ncms000">ruso</token><token pos="np0000l">Guennadi</token><token pos="np0000l">Padalka</token>
+		</theme>
+		<rheme concept_ref1="c_10">
+			<token pos="vmii3s0">llevaba</token><token pos="sps00">en</token><mention concept_ref="c_10"><token pos="da0fs0">la</token><token pos="ncfs000">estación</token></mention><token pos="sps00">desde</token><token pos="da0ms0">el</token><token pos="ncfs000">mes</token><token pos="sps00">de</token><token pos="ncms000">agosto</token><token pos="spcms">de</token><token pos="zp">1998</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="El ruso Guennadi Padalka" />
+				<argument type="Ground" dependent="la estación" />
+				<argument type="Time" dependent="de agosto de 1998" /></frame>
+			<frame type="Origin" head="ruso">
+				<argument type="Entity" dependent="Padalka" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El cosmonauta francés Jean-Pierre Haignere y los rusos Viktor Afanasyev y Sergei Avdeyev, que viajaron con Ivan Bella, tienen previsto regresar a la Tierra el próximo mes de agosto.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="da0ms0">El</token><token pos="nccs000">cosmonauta</token><token pos="aq0ms0">francés</token><token pos="np0000l">Jean-Pierre</token><token pos="np0000l">Haignere</token><token pos="cc">y</token><token pos="da0mp0">los</token><token pos="ncmp000">rusos</token><token pos="np0000l">Viktor</token><token pos="np0000l">Afanasyev</token><token pos="cc">y</token><token pos="np0000l">Sergei</token><token pos="np0000l">Avdeyev</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vmis3p0">viajaron</token><token pos="sps00">con</token><token pos="np00000">Ivan</token><token pos="aq0ms0">Bella</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_11" concept_ref3="c_17" concept_ref4="c_19">
+			<token pos="vmip3p0">tienen</token><token pos="aq0msp">previsto</token><token pos="vmn0000">regresar</token><mention concept_ref="c_17"><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="np00000">Tierra</token></mention><token pos="da0ms0">el</token><mention concept_ref="c_11"><token pos="aq0ms0">próximo</token><token pos="ncms000">mes</token><token pos="spcms">de</token><token pos="ncms000">agosto</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Arriving" head="regresar">
+				<argument type="Goal" dependent="a la Tierra" />
+				<argument type="Time" dependent="próximo mes de agosto" /></main_frame>
+			<frame type="Calendric_unit" head="agosto" />
+			<frame type="Purpose" head="previsto">
+				<argument type="Agent" dependent="cosmonauta francés Jean-Pierre Haignere y los rusos Viktor Afanasyev y Sergei Avdeyev , que viajaron con Ivan Bella" />
+				<argument type="Goal" dependent="regresar a la Tierra" />
+				<argument type="Time" dependent="próximo mes de agosto" /></frame>
+			<main_frame type="Travel" head="viajaron">
+				<argument type="Traveler" dependent="cosmonauta francés Jean-Pierre Haignere y los rusos Viktor Afanasyev y Sergei Avdeyev" />
+				<argument type="Traveler" dependent="que" />
+				<argument type="Area" dependent="con Ivan Bella" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La vieja estación Mir estará girando alrededor de la Tierra hasta el año 2002, según ha decidido el Gobierno ruso.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="da0fs0">La</token><token pos="aq0fs0">vieja</token><token pos="ncfs000">estación</token><token pos="np00000">Mir</token>
+		</theme>
+		<rheme>
+			<token pos="vmif3s0">estará</token><token pos="vmg0000">girando</token><token pos="sps00">hasta</token><token pos="da0ms0">el</token><token pos="ncmp000">año</token><token pos="zm">2002</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el Gobierno ruso " />
+			<frame type="Age" head="vieja">
+				<argument type="Entity" dependent="estación" /></frame>
+			<frame type="Deciding" head="decidido">
+				<argument type="Cognizer" dependent="el Gobierno ruso" /></frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Governed" dependent="ruso" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Hasta entonces, será explotada de forma comercial, tal y como anunció en enero el primer ministro ruso, Yevgueni Primakov, tras firmar un decreto según el cual, a partir del próximo junio, la estación dejará de recibir fondos federales y deberá costearse con dinero privado procedente de patrocinadores.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Be_in_agreement_on_action" head="según el">
+				<argument type="Obligation" dependent="firmar un decreto" />
+				<argument type="Obligation" dependent="cual , a partir" /></frame>
+			<frame type="Goal" head="en">
+				<argument type="Trajector" dependent="firmar un decreto" />
+				<argument type="Landmark" dependent="cual" /></frame>
+			<frame type="Money" head="dinero">
+				<argument type="Time_of_creation" dependent="privado" />
+				<argument type="Time_of_creation" dependent="procedente de patrocinadores" /></frame>
+			<frame type="Money" head="fondos">
+				<argument type="Possessor" dependent="federales" /></frame>
+			<frame type="Origin" head="ruso">
+				<argument type="Entity" dependent="primer ministro" /></frame>
+			<frame type="Political_locales" head="federales" />
+			<frame type="Receiving" head="recibir">
+				<argument type="Recipient" dependent="la estación" />
+				<argument type="Theme" dependent="fondos federales" /></frame>
+			<frame type="Relative_time" head="a partir">
+				<argument type="Focal_occasion" dependent="Hasta entonces , será explotada de forma comercial , tal y como anunció en enero el primer ministro ruso , Yevgueni Primakov" />
+				<argument type="Landmark_occasion" dependent="firmar un decreto" />
+				<argument type="Focal_occasion" dependent=", la estación dejará de recibir fondos federales y deberá costearse con dinero privado procedente de patrocinadores" /></frame>
+			<frame type="Sign_agreement" head="firmar">
+				<argument type="Time" dependent="Hasta entonces" />
+				<argument type="Agreement" dependent="un decreto" />
+				<argument type="Place" dependent="según el cual" />
+				<argument type="Time" dependent=", a partir del próximo" /></frame>
+			<frame type="Statement" head="anunció">
+				<argument type="Message" dependent="primer ministro ruso" />
+				<argument type="Time" dependent="en enero" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

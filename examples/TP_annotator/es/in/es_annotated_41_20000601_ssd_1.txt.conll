@@ -1,0 +1,13 @@
+{   ('Age', 'jóvenes'): [('Entity', 'leones convergentes')],
+    ('Aggregate', 'grupo'): [('Individuals', 'los jóvenes leones convergentes')],
+    ('Certainty', 'dudas'): [('Cognizer', 'la')],
+    ('Documents', 'documento'): [],
+    ('Leadership', 'ficha'): [('Leader', 'el grupo de los jóvenes leones convergentes'), ('Governed', 'por Artur Mas')],
+    ('Motion', 'hacia'): [('Theme', 'los'), ('Theme', 'y la presentación de un documento de mínimos')],
+    ('Possession', 'sus'): [('Possession', 'lanzado cantos de sirena por parte de Pere Esteve hacia los republicanos y de que éstos movieran ficha con las declaraciones de Josep')],
+    ('Relative_time', 'Después de'): [   (   'Landmark_occasion',
+                                             'haber lanzado cantos de sirena por parte de Pere Esteve hacia los republicanos y de que éstos movieran ficha con las declaraciones de Josep'),
+                                         (   'Focal_occasion',
+                                             'y la presentación de un documento de mínimos , ahora el grupo de los jóvenes leones convergentes liderados por Artur Mas tiene sus dudas')],
+    ('Statement', 'declaraciones'): [('Speaker', 'de Josep')],
+    ('Text', 'cantos de'): [('Text', 'haber lanzado cantos de sirena')]}

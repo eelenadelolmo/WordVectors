@@ -1,0 +1,7 @@
+{   ('Activity_prepare', 'preparado'): [('Agent', 'te'), ('Time', 'por si'), ('Activity', 'te la declara alguien')],
+    ('Desirable_event', 'ha de estar'): [('State_of_affairs', 'te'), ('State_of_affairs', 'no debas estar preparado por si te la declara alguien')],
+    ('Hostile_encounter', 'guerras'): [],
+    ('Instance', 'se'): [],
+    ('Quantified_mass', 'Todas'): [('Individuals', 'guerras')],
+    ('Required_event', 'ha de estar'): [('Required_situation', 'ellas'), ('Required_situation', 'estar contra ellas')],
+    ('Taking_sides', 'contra'): [('Cognizer', 'ellas'), ('Side', 'ellas')]}

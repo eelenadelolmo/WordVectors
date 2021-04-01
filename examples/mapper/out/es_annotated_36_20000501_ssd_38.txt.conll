@@ -1,0 +1,7 @@
+{   ('Capability', 'capaz'): [('Entity', 'PP en el Gobierno'), ('Event', 'del')],
+    ('Change_position_on_a_scale', 'crecimiento'): [],
+    ('Expectation', 'expectativa'): [('Manner', 'La mayor'), ('Phenomenon', 'de crecimiento')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'La mayor expectativa de crecimiento está'), ('Ground', 'los votantes del PSC')],
+    ('Leadership', 'Gobierno'): [],
+    ('Perception_experience', 'visto'): [('Perceiver_passive', 'que'), ('Phenomenon', 'el PP en el Gobierno')],
+    ('Posture', 'han'): [('Location', 'La mayor expectativa de crecimiento')]}

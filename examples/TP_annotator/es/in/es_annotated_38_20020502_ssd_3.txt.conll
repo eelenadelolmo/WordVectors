@@ -1,0 +1,4 @@
+{   ('Buildings', 'casa'): [],
+    ('Kinship', 'niños'): [],
+    ('Make_noise', 'jugaban'): [('Sound_source', 'cerca')],
+    ('Self_motion', 'escapado'): [('Self_mover', 'los niños'), ('Direction', 'escapado'), ('Time', 'de casa y jugaban cerca')]}

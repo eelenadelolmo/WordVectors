@@ -1,0 +1,6 @@
+{   ('Appellations', 'presidente'): [('Name', 'español')],
+    ('Expressing_publicly', 'expresaron'): [   ('Communicator', 'rais egipcio y el presidente español'),
+                                               ('Content', 'dos visiones algo diferenciadas respecto al problema del terrorismo en el caso palestino')],
+    ('Opinion', 'visiones'): [('Manner', 'diferenciadas'), ('Opinion', 'respecto al problema del terrorismo en el caso palestino')],
+    ('Predicament', 'problema'): [('Situation', 'terrorismo'), ('Time', 'en el caso palestino')],
+    ('Terrorism', 'terrorismo'): []}

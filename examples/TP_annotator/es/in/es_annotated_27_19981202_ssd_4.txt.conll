@@ -1,0 +1,6 @@
+{   ('Activity_ongoing', 'sostiene'): [('Agent', 'sus miembros'), ('Activity', 'guardia permanente')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'guardia permanente'), ('Ground', 'cercanías de todas las instalaciones británicas y españolas &')],
+    ('Locale_by_use', 'instalaciones'): [('Container_possessor', 'españolas')],
+    ('Membership', 'miembros'): [('Group', 'el')],
+    ('Social_connection', 'cerca'): [('Degree', 'muy'), ('Individual_2', 'quot ; del juez Baltasar')],
+    ('Spatial_contact', 'en'): [('Ground', '11 de diciembre')]}

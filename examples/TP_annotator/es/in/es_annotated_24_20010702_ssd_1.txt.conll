@@ -1,0 +1,6 @@
+{   ('Adducing', 'quot'): [('Speaker', 'Fuentes médicas'), ('Specified_entity', 'que la presencia del senador desaforado se')],
+    ('Being_in_control', 'control'): [],
+    ('Compliance', 'desaforado'): [('Protagonist', 'senador')],
+    ('Likelihood', 'posiblemente'): [('Hypothetical_event', 'presencia del senador desaforado'), ('Hypothetical_event', 'a un control de rutina')],
+    ('Presence', 'presencia'): [('Entity', 'del senador desaforado')],
+    ('Source_of_getting', 'Fuentes'): [('Descriptor', 'médicas')]}

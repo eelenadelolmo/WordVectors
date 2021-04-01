@@ -1,0 +1,4 @@
+{   ('Calendric_unit', 'años'): [('Count', 'dos')],
+    ('Cardinal_numbers', 'dos'): [('Unit', 'años')],
+    ('Likelihood', 'no'): [('Hypothetical_event', 'en'), ('Hypothetical_event', 'no tardamos dos años en hacer un')],
+    ('Manufacturing', 'hacer'): [('Producer', 'en'), ('Product', 'un disco')]}

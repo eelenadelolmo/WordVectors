@@ -1,0 +1,9 @@
+{   ('Difficulty', 'imposible'): [],
+    ('Importance', 'crítico'): [('Factor', 'El líder de'), ('Degree', 'muy'), ('Factor', 'el Gobierno central por')],
+    ('Intentionally_act', 'hacer'): [('Act', 'imposible para evitar el desarrollo del proceso de paz')],
+    ('Leadership', 'Gobierno'): [('Governed', 'central')],
+    ('Leadership', 'líder'): [('Type', 'el')],
+    ('Part_inner_outer', 'central'): [('Whole', 'Gobierno')],
+    ('Preventing_or_letting', 'evitar'): [('Event', 'el desarrollo del proceso de paz')],
+    ('Process', 'proceso'): [('Process', 'proceso de paz')],
+    ('Progression', 'desarrollo'): [('Entity', 'del proceso de paz')]}

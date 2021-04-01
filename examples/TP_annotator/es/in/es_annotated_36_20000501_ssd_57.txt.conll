@@ -1,0 +1,5 @@
+{   ('Aggregate', 'partido'): [],
+    ('Commitment', 'compromiso'): [('Message', 'proyecto político de este partido')],
+    ('Leadership', 'Gobierno'): [('Descriptor', 'partido')],
+    ('Part_whole', 'parte'): [('Whole', 'un Gobierno del Partido Popular')],
+    ('Project', 'proyecto'): [('Descriptor', 'partido'), ('Field', 'político')]}

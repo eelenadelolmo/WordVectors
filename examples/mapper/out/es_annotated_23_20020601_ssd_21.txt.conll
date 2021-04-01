@@ -1,0 +1,4 @@
+{   ('Agree_or_refuse_to_act', 'rehusado'): [('Speaker', 'Los sindicatos CATAC , CCOO , UGT y'), ('Proposed_action', 'rehusado firmar el convenio colectivo con Justícia tras los altercados')],
+    ('Make_agreement_on_action', 'convenio'): [('Manner', 'colectivo'), ('Party_2', 'con Justícia'), ('Time', 'tras los altercados')],
+    ('Relative_time', 'los'): [('Focal_occasion', 'Los sindicatos CATAC , CCOO , UGT y CSIF han rehusado firmar el convenio colectivo con Justícia'), ('Landmark_occasion', 'altercados')],
+    ('Sign_agreement', 'firmar'): [('Signatory', 'Los sindicatos CATAC , CCOO , UGT y'), ('Agreement', 'el convenio colectivo con Justícia tras los altercados')]}

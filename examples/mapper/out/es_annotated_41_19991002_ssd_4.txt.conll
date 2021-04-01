@@ -1,0 +1,3 @@
+{   ('Certainty', 'confianza'): [('Content', 'cederá')],
+    ('Expressing_publicly', 'expresó'): [('Communicator', 'el titular de Comunicación'), ('Content', 'su confianza en que España cederá')],
+    ('Giving', 'su'): [('Recipient', 'su'), ('Means', 'en')]}

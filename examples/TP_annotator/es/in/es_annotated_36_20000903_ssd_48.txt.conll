@@ -1,0 +1,4 @@
+{   ('Commitment', 'se'): [('Message', 'del pasado y en la guerra civil se cometieron demasiadas barbaries'), ('Message', 'en la guerra civil')],
+    ('Hostile_encounter', 'guerra'): [('Sides', 'civil')],
+    ('Quantified_mass', 'demasiadas'): [('Individuals', 'barbaries')],
+    ('Relative_time', 'pasado'): [('Focal_occasion', 'demasiadas barbaries')]}

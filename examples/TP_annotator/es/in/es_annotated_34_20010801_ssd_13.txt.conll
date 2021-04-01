@@ -1,0 +1,10 @@
+{   ('Being_in_captivity', 'recluso'): [],
+    ('Idiosyncrasy', 'concreto'): [],
+    ('Political_locales', 'Nacional'): [('Descriptor', 'Vasco')],
+    ('Removing', 'expulsado'): [('Cause', 'quedaría & quot ; automáticamente'), ('Theme', 'quot ; del Movimiento de Liberación Nacional')],
+    ('Statement', 'cuenta'): [   ('Speaker', 'le'),
+                                 (   'Message',
+                                     'cuenta que se presentó ante un recluso como & quot ; comisario político & quot ; y le advirtió de que , en caso de solicitar la libertad condicional , '
+                                     'quedaría')],
+    ('Using', 'de solicitar'): [('Agent', 'le'), ('Purpose', 'quot')],
+    ('Warning', 'presentó'): [('Addressee', 'le')]}

@@ -1,0 +1,11 @@
+{   ('Calendric_unit', 'años'): [('Count', '25'), ('Whole', 'de la Fundació')],
+    ('Calendric_unit', 'meses'): [('Count', 'pocos')],
+    ('Desirability', 'popular'): [],
+    ('Increment', 'más'): [('Class', 'preciso')],
+    ('Means', 'modo'): [],
+    ('Placing', 'se'): [('Theme', 'se'), ('Goal', 'modo'), ('Goal', 'quizá más preciso')],
+    ('Quantified_mass', 'pocos'): [('Individuals', 'meses')],
+    ('Time_vector', 'para'): [   ('Distance', 'pocos meses'),
+                                 ('Landmark_event', '25 años de la Fundació'),
+                                 ('Direction', 'modo , quizá más preciso , pero menos popular , el Centre'),
+                                 ('Event', "d'Estudis d'Art")]}

@@ -1,0 +1,11 @@
+{   ('Awareness', 'sabe'): [('Cognizer', 'el Gobierno'), ('Content', 'no será fácil')],
+    ('Calendric_unit', 'ayer que'): [],
+    ('Difficulty', 'fácil'): [('Experiencer', 'el'), ('Activity', ',')],
+    ('Hostile_encounter', 'luchar'): [('Side_1', 'los'), ('Issue', 'tener éxito en los mercados')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'habrá que luchar para tener éxito'), ('Ground', 'mercados')],
+    ('Leadership', 'Gobierno'): [],
+    ('Possession', 'tener'): [('Owner', 'los'), ('Possession', 'luchar para tener éxito en los mercados')],
+    ('Reveal_secret', 'admitió'): [   ('Speaker', 'secretario de Estado de Agricultura británico , Nick Brown'),
+                                      ('Time', 'ayer que'),
+                                      ('Information', 'quot ; habrá que luchar para tener éxito en los mercados y el Gobierno sabe que no será fácil')],
+    ('Success_or_failure', 'éxito'): [('Agent', 'los'), ('Agent', 'en los mercados y el Gobierno')]}

@@ -1,0 +1,7 @@
+{   ('Causation', 'provoca'): [('Effect', 'el')],
+    ('Experiencer_focus', 'calmando'): [('Content', 'las indigestiones que provoca el Estado de derecho en determinados estómagos')],
+    ('Idiosyncrasy', 'determinados'): [('Entity', 'estómagos')],
+    ('Law', 'de derecho'): [],
+    ('Leadership', 'el'): [('Leader', 'de derecho')],
+    ('Motion', 'pasear'): [('Theme', 'Franco'), ('Goal', 'a pasear')],
+    ('Self_motion', 'pasear'): [('Self_mover', 'Franco')]}

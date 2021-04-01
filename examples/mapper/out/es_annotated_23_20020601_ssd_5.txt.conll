@@ -1,0 +1,10 @@
+{   ('Activity_ongoing', 'guardia que'): [('Activity', 'posibles incidentes en el cuerpo de guardia que los Mossos tienen en la prisión')],
+    ('Being_in_control', 'se'): [('Dependent_entity', 'atentos')],
+    ('Body_parts', 'se'): [],
+    ('Catastrophe', 'incidentes'): [('Undesirable_event', 'tienen en la prisión')],
+    ('Gizmo', 'equipados'): [('Use', 'antidisturbios')],
+    ('Law_enforcement_agency', 'policías'): [],
+    ('Likelihood', 'posibles'): [('Hypothetical_event', 'incidentes en el cuerpo de guardia que los Mossos tienen en la prisión')],
+    ('Military', 'atentos'): [('Members', 'guardia'), ('Goal', 'tienen en la prisión')],
+    ('Prison', 'prisión'): [],
+    ('Supply', 'equipados'): [('Theme', 'equipados con')]}

@@ -1,0 +1,8 @@
+{   ('Being_employed', 'obras'): [('Place_of_employment', 'del club')],
+    ('Duplication', 'ejemplares'): [],
+    ('Improvement_or_decline', 'mejora del'): [],
+    ('Increment', 'otros'): [('Class', '150 ejemplares')],
+    ('Locale_by_use', 'plantar'): [('Use', 'otros 150 ejemplares')],
+    ('Part_whole', 'parte'): [('Whole', 'tala'), ('Whole', 'obras de mejora del club')],
+    ('Purpose', 'prevé'): [('Agent', 'que'), ('Goal', 'plantar otros 150 ejemplares')],
+    ('Weapon', 'club'): []}

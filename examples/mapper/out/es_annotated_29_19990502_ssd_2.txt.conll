@@ -1,0 +1,8 @@
+{   ('Arranging', 'despliegue de'): [('Theme', 'de una fuerza de')],
+    ('Arriving', 'regreso'): [('Theme', 'refugiados')],
+    ('Military', 'fuerza'): [('Domain', 'de')],
+    ('Military', 'fuerzas'): [('Domain', 'militares serbias de')],
+    ('Military', 'militares'): [],
+    ('Political_locales', 'provincia'): [],
+    ('Quitting_a_place', 'retirada'): [('Self_mover', 'todas las fuerzas militares serbias de'), ('Source', 'de Kosovo')],
+    ('Statement', 'mencionó'): [('Medium', 'Bacon'), ('Message', 'la retirada de todas las fuerzas militares serbias de Kosovo y el despliegue de una fuerza de la OTAN en la provincia para')]}

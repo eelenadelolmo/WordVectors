@@ -1,0 +1,1705 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="26_19990701_a_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Nada</concept>
+		<concept id="c_1">la Fundació Grup Set</concept>
+		<concept id="c_2">la siesta</concept>
+		<concept id="c_3">Churchill</concept>
+		<concept id="c_4">los ingleses</concept>
+		<concept id="c_5">ellos , los ingleses ,</concept>
+		<concept id="c_6">Nosotros</concept>
+		<concept id="c_7">que</concept>
+		<concept id="c_8">yo</concept>
+		<concept id="c_9">algunos</concept>
+		<concept id="c_10">Los franceses</concept>
+		<concept id="c_11">la propaganda antimilitarista y pacifista</concept>
+		<concept id="c_12">Los grandes animadores de ese pacifismo</concept>
+		<concept id="c_13">Los corresponsales de guerra</concept>
+		<concept id="c_14">el estamento militar</concept>
+		<concept id="c_15">ésa</concept>
+		<concept id="c_16">Catalunya</concept>
+		<concept id="c_17">ese artículo</concept>
+		<concept id="c_18">Las leyendas</concept>
+		<concept id="c_19">los camareros</concept>
+		<concept id="c_20">señor espía</concept>
+		<concept id="c_21">esto</concept>
+		<concept id="c_22">Alguien</concept>
+		<concept id="c_23">Casi todos</concept>
+		<concept id="c_24">Sólo los proletarios , militares , sacerdotes o personas que por ideología están en contra de la burguesía</concept>
+		<concept id="c_25">Los demás</concept>
+		<concept id="c_26">mis dos bisabuelos</concept>
+		<concept id="c_27">El señor de la fotografía</concept>
+		<concept id="c_28">Ese invento</concept>
+		<concept id="c_29">El centro</concept>
+		<concept id="c_30">bondades</concept>
+		<concept id="c_31">hemos</concept>
+		<concept id="c_32">te</concept>
+		<concept id="c_33">te</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Arturo San Agustín.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Suele cerrar los ojos cuando habla.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="ojos">
+				<argument type="Possessor" dependent="los" /></frame>
+			<frame type="Chatting" head="habla">
+				<argument type="Interlocutors" dependent="los" /></frame>
+			<frame type="Closure" head="cerrar">
+				<argument type="Agent" dependent="los" />
+				<argument type="Container_portal" dependent="los ojos" />
+				<argument type="Time" dependent="cuando habla" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y así, con los ojos cerrados, lo encuentra todo: balcones históricos, sombreros absurdos de reinas, juicios de nazis, puertos cosmopolitas en tiempos bélicos o estadistas inteligentes, que también los hubo y frecuentó.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Accoutrements" head="sombreros">
+				<argument type="Style" dependent="reinas" /></frame>
+			<frame type="Becoming_aware" head="encuentra">
+				<argument type="Cognizer" dependent="lo" />
+				<argument type="Phenomenon" dependent="todo : balcones históricos , sombreros absurdos de reinas , juicios de nazis , puertos cosmopolitas en tiempos bélicos o estadistas inteligentes ," /></frame>
+			<frame type="Body_parts" head="ojos">
+				<argument type="Possessor" dependent="lo" /></frame>
+			<frame type="Closure" head="cerrados">
+				<argument type="Container_portal" dependent="los ojos" /></frame>
+			<frame type="Frequency" head="frecuentó">
+				<argument type="Salient_entity" dependent="los" /></frame>
+			<frame type="Historic_event" head="históricos">
+				<argument type="Event" dependent="balcones" /></frame>
+			<frame type="Legal_rulings" head="juicios de">
+				<argument type="Defendant" dependent="nazis" /></frame>
+			<frame type="Locale_by_use" head="puertos">
+				<argument type="Descriptor" dependent="cosmopolitas" /></frame>
+			<frame type="Mental_property" head="absurdos">
+				<argument type="Behavior" dependent="sombreros absurdos de reinas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Nada le es ajeno a este hombre culto, ameno, astuto y curioso.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="pi0cs000">Nada</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_17" concept_ref3="c_32" concept_ref4="c_33">
+			<mention concept_ref="c_7"><token pos="pp3csd00">le</token></mention><token pos="vsip3s0">es</token><token pos="aq0ms0">ajeno</token><token pos="sps00">a</token><mention concept_ref="c_17"><token pos="dd0ms0">este</token><token pos="ncms000">hombre</token></mention><token pos="aq0ms0">culto</token><token pos="fc">,</token><token pos="aq0ms0">ameno</token><token pos="fc">,</token><token pos="aq0ms0">astuto</token><token pos="cc">y</token><token pos="aq0ms0">curioso</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Foreign_or_domestic_country" head="ameno" />
+			<frame type="Mental_property" head="astuto">
+				<argument type="Behavior" dependent="hombre" /></frame>
+			<frame type="People" head="hombre">
+				<argument type="Descriptor" dependent="curioso" /></frame>
+			<frame type="Social_interaction_evaluation" head="ameno" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Anoche, la Fundació Grup Set le concedió el premio Conciudadano que nos honra.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">la</token><token pos="ncfs000">Fundació</token><token pos="ncms000">Grup</token><token pos="np00000">Set</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_14" concept_ref3="c_1" concept_ref4="c_32">
+			<token pos="pp3csd00">le</token><token pos="vmis3s0">concedió</token><mention concept_ref="c_14"><token pos="da0ms0">el</token><token pos="ncms000">premio</token></mention><mention concept_ref="c_1"><token pos="np00000">Conciudadano</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="Anoche">
+				<argument type="Relative_time" dependent="el" /></frame>
+			<frame type="Relative_time" head="el">
+				<argument type="Focal_occasion" dependent="Anoche" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Le he interrumpido la siesta?.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - No, porque te esperaba.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Causation" head="porque">
+				<argument type="Cause" dependent="te esperaba" /></frame>
+			<frame type="Expectation" head="esperaba">
+				<argument type="Cognizer" dependent="te" />
+				<argument type="Phenomenon" dependent="te" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero la siesta es una costumbre muy sana.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">la</token><token pos="ncfs000">siesta</token>
+		</theme>
+		<rheme concept_ref1="c_17">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_17"><token pos="di0fs0">una</token><token pos="ncfs000">costumbre</token></mention><token pos="rg">muy</token><token pos="aq0fs0">sana</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Custom" head="costumbre">
+				<argument type="Behavior" dependent="siesta" />
+				<argument type="Descriptor" dependent="muy sana" /></frame>
+			<frame type="Medical_conditions" head="muy sana">
+				<argument type="Name" dependent="muy" />
+				<argument type="Body_part" dependent="costumbre" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Churchill aprendió las bondades de la siesta en Cuba, cuando estuvo en la isla como corresponsal, porque, además de militar y político, fue periodista ; un periodista que amaba la siesta.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="np00000">Churchill</token>
+		</theme>
+		<rheme concept_ref1="c_13" concept_ref2="c_2" concept_ref3="c_30">
+			<token pos="vmis3s0">aprendió</token><mention concept_ref="c_13"><token pos="da0fp0">las</token><token pos="ncfp000">bondades</token></mention><token pos="sps00">de</token><mention concept_ref="c_2"><token pos="da0fs0">la</token><token pos="ncfs000">siesta</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Becoming_aware" head="aprendió">
+				<argument type="Cognizer" dependent="bondades" />
+				<argument type="Phenomenon" dependent="bondades de la siesta en Cuba" /></main_frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="estuvo en la isla como corresponsal" /></frame>
+			<frame type="Experiencer_focus" head="que amaba">
+				<argument type="Experiencer" dependent="un periodista que" />
+				<argument type="Content" dependent="siesta" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="aprendió las bondades de la siesta en Cuba , cuando estuvo en la isla como corresponsal , porque ," />
+				<argument type="Ground" dependent="además de militar y político" />
+				<argument type="Figure" dependent="fue periodista ; un periodista que amaba la siesta" /></frame>
+			<frame type="Military" head="militar" />
+			<frame type="Natural_features" head="isla" />
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="la" />
+				<argument type="Ground" dependent="la isla" />
+				<argument type="Figure" dependent=", porque , además de militar y político , fue periodista ;" /></frame>
+			<frame type="Temporal_collocation" head="cuando">
+				<argument type="Landmark_event" dependent="estuvo en la isla como corresponsal" />
+				<argument type="Trajector_event" dependent=", porque , además de militar y político , fue periodista ;" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Nada de cabezadas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Siesta, siesta.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En plena guerra mundial, pasara lo que pasara, él cumplía puntualmente con su siesta.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Event" head="pasara" />
+			<frame type="Hostile_encounter" head="guerra">
+				<argument type="Sides" dependent="mundial" /></frame>
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Ground" dependent="plena guerra mundial" /></frame>
+			<frame type="Political_locales" head="mundial" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En pijama, por supuesto.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Ground" dependent="pijama" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 O sea, que nada de cabezadas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Creo que los ingleses ganaron la guerra entre otras razones porque soportaron los bombardeos.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0mp0">los</token><token pos="ncmp000">ingleses</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_9" concept_ref3="c_10" concept_ref4="c_6">
+			<token pos="vmis3p0">ganaron</token><mention concept_ref="c_1"><token pos="da0fs0">la</token><token pos="ncfs000">guerra</token></mention><token pos="sps00">entre</token><mention concept_ref="c_9"><token pos="di0fp0">otras</token><token pos="ncfp000">razones</token></mention><token pos="cs">porque</token><token pos="vmis3p0">soportaron</token><mention concept_ref="c_10"><token pos="da0mp0">los</token><token pos="ncmp000">bombardeos</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="bombardeos" />
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="ingleses ganaron la guerra entre otras razones" />
+				<argument type="Cause" dependent="soportaron los bombardeos" /></frame>
+			<frame type="Hostile_encounter" head="guerra" />
+			<frame type="Increment" head="otras">
+				<argument type="Class" dependent="razones" /></frame>
+			<frame type="Opinion" head="Creo">
+				<argument type="Cognizer" dependent="la" />
+				<argument type="Opinion" dependent="ingleses ganaron la guerra" /></frame>
+			<frame type="Reason" head="razones" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y dando un salto en la historia, ellos, los ingleses, son los únicos - - ellos y los norteamericanos - - que han bombardeado Yugoslavia.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="pp3mp000">ellos</token><token pos="fc">,</token><token pos="da0mp0">los</token><token pos="ncmp000">ingleses</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_21" concept_ref2="c_10" concept_ref3="c_6" concept_ref4="c_32" concept_ref5="c_33">
+			<token pos="vsip3p0">son</token><token pos="da0mp0">los</token><token pos="aq0mp0">únicos</token><token pos="fg">-</token><token pos="fg">-</token><mention concept_ref="c_21"><token pos="pp3mp000">ellos</token></mention><token pos="cc">y</token><mention concept_ref="c_10"><token pos="da0mp0">los</token><token pos="ncmp000">norteamericanos</token></mention><token pos="fg">-</token><token pos="fg">-</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Individual_history" head="historia" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="un salto" />
+				<argument type="Ground" dependent="historia" /></frame>
+			<frame type="Manufacturing" head="dando">
+				<argument type="Product" dependent="un salto en la historia" /></frame>
+			<frame type="Sole_instance" head="únicos">
+				<argument type="Type" dependent="ellos" /></frame>
+			<frame type="Weapon" head="bombardeado">
+				<argument type="Weapon" dependent="bombardeado Yugoslavia" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - También los españoles.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - No.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Nosotros nos hemos añadido y con la boca pequeña.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="pp1mp000">Nosotros</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_31">
+			<mention concept_ref="c_6"><token pos="pp1cp000">nos</token></mention><mention concept_ref="c_31"><token pos="vaip1p0">hemos</token></mention><token pos="vmp00sm">añadido</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="boca">
+				<argument type="Descriptor" dependent="pequeña" /></frame>
+			<frame type="Size" head="pequeña">
+				<argument type="Entity" dependent="boca" /></frame>
+			<main_frame type="Statement" head="añadido">
+				<argument type="Speaker" dependent="hemos" />
+				<argument type="Message" dependent="y con la boca pequeña" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Mira, no se trata de hacer un elogio de la guerra, pero el único dirigente que dijo que además de los bombardeos se tenía que invadir Yugoslavia fue Tony Blair.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="que " />
+			<frame type="Attack" head="bombardeos" />
+			<frame type="Hostile_encounter" head="guerra" />
+			<frame type="Invading" head="invadir">
+				<argument type="Invader" dependent="los bombardeos" />
+				<argument type="Land" dependent="Yugoslavia" />
+				<argument type="Land" dependent="Tony Blair" /></frame>
+			<frame type="Leadership" head="dirigente">
+				<argument type="Descriptor" dependent="único" /></frame>
+			<frame type="Scrutiny" head="Mira" />
+			<frame type="Sole_instance" head="único">
+				<argument type="Item" dependent="dirigente que dijo que además de los bombardeos se tenía que invadir Yugoslavia" /></frame>
+			<frame type="Statement" head="dijo">
+				<argument type="Speaker" dependent="el único dirigente que" />
+				<argument type="Message" dependent="que además de los bombardeos se tenía que invadir Yugoslavia" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En un diario francés leí las declaraciones de una mujer, de una piloto norteamericana, que participó en varios de esos bombardeos.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_9" concept_ref2="c_10" concept_ref3="c_21" concept_ref4="c_30">
+			<token pos="vmis3s0">participó</token><mention concept_ref="c_30"><token pos="sps00">en</token><token pos="pi0mp000">varios</token><token pos="sps00">de</token><token pos="dd0mp0">esos</token><token pos="ncmp000">bombardeos</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="bombardeos" />
+			<main_frame type="Participation" head="participó">
+				<argument type="Participant_1" dependent="que" />
+				<argument type="Event" dependent="en varios de esos bombardeos" /></main_frame>
+			<frame type="People" head="mujer" />
+			<frame type="People_by_origin" head="norteamericana" />
+			<frame type="Quantified_mass" head="varios">
+				<argument type="Individuals" dependent="esos bombardeos" /></frame>
+			<frame type="Reading_activity" head="leí">
+				<argument type="Reader" dependent="un diario francés" />
+				<argument type="Text" dependent="las declaraciones de una mujer" /></frame>
+			<frame type="Statement" head="declaraciones">
+				<argument type="Speaker" dependent="en" />
+				<argument type="Speaker" dependent="una mujer" /></frame>
+			<frame type="Text" head="un diario">
+				<argument type="Author" dependent="francés" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A la pregunta de por qué se había alistado voluntaria respondió que lo había hecho por una cosa que los europeos no sienten: la patria.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Commitment" head="voluntaria">
+				<argument type="Speaker" dependent="lo" /></frame>
+			<frame type="Communication_response" head="respondió">
+				<argument type="Speaker" dependent="lo" />
+				<argument type="Trigger" dependent="que lo había hecho por una cosa que los europeos no sienten :" /></frame>
+			<frame type="Feeling" head="sienten">
+				<argument type="Experiencer" dependent="lo" />
+				<argument type="Experiencer" dependent="una cosa que los europeos" /></frame>
+			<frame type="Foreign_or_domestic_country" head="patria" />
+			<frame type="Intentionally_act" head="hecho">
+				<argument type="Agent" dependent="lo" />
+				<argument type="Act" dependent="lo" /></frame>
+			<frame type="Questioning" head="pregunta">
+				<argument type="Message" dependent="de por qué se había alistado voluntaria" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Cuénteme qué es la patria.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Political_locales" head="patria" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Je, Je.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ojo, yo te he contado esta historia, pero no interpretes que lo he hecho como un elogio.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="pp1csn00">yo</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_32" concept_ref3="c_33">
+			<token pos="ncms000">Ojo</token><token pos="pp2cs000">te</token><token pos="vaip1s0">he</token><token pos="vmp00sm">contado</token><mention concept_ref="c_2"><token pos="dd0fs0">esta</token><token pos="ncfs000">historia</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Categorization" head="interpretes">
+				<argument type="Cognizer" dependent="te" />
+				<argument type="Item" dependent="lo he hecho como un elogio" /></frame>
+			<main_frame type="Intentionally_act" head="hecho">
+				<argument type="Agent" dependent="te" />
+				<argument type="Act" dependent="lo" /></main_frame>
+			<frame type="Intentionally_act" head="lo">
+				<argument type="Agent" dependent="te" />
+				<argument type="Act" dependent="interpretes que lo he hecho como un elogio" /></frame>
+			<frame type="Scrutiny" head="te" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sí pienso que aunque algunos no sientan eso que se llama patria podrían sentirse más europeístas, pero tampoco ese sentimiento es mayoritario.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="pi0mp000">algunos</token>
+		</theme>
+		<rheme concept_ref1="c_21" concept_ref2="c_30" concept_ref3="c_33">
+			<token pos="rn">no</token><mention concept_ref="c_30"><token pos="vmip3p0">sientan</token><token pos="pd0ns000">eso</token></mention><token pos="vmic3p0">podrían</token><token pos="vmn0000">sentirse</token><token pos="rg">más</token><token pos="aq0cp0">europeístas</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Feeling" head="sentirse">
+				<argument type="Experiencer" dependent="ese" />
+				<argument type="Emotional_state" dependent="es mayoritario" /></main_frame>
+			<frame type="Foreign_or_domestic_country" head="patria" />
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="europeístas" /></frame>
+			<frame type="Intentionally_act" head="se">
+				<argument type="Act" dependent="algunos" />
+				<argument type="Act" dependent="no sientan eso que se llama patria podrían sentirse" /></frame>
+			<main_frame type="Likelihood" head="podrían">
+				<argument type="Hypothetical_event" dependent="sientan eso" />
+				<argument type="Hypothetical_event" dependent="sentirse más europeístas" /></main_frame>
+			<frame type="Opinion" head="pienso">
+				<argument type="Cognizer" dependent="se" /></frame>
+			<frame type="Origin" head="europeístas" />
+			<frame type="Proportional_quantity" head="algunos" />
+			<frame type="Referring_by_name" head="se llama">
+				<argument type="Speaker" dependent="es" />
+				<argument type="Name" dependent="patria" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Todas las guerras son infames, se ha de estar contra ellas, pero eso no significa que no debas estar preparado por si te la declara alguien.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="eso " />
+			<frame type="Activity_prepare" head="preparado">
+				<argument type="Agent" dependent="te" />
+				<argument type="Time" dependent="por si" />
+				<argument type="Activity" dependent="te la declara alguien" /></frame>
+			<frame type="Desirable_event" head="ha de estar">
+				<argument type="State_of_affairs" dependent="te" />
+				<argument type="State_of_affairs" dependent="no debas estar preparado por si te la declara alguien" /></frame>
+			<frame type="Hostile_encounter" head="guerras" />
+			<frame type="Instance" head="se" />
+			<frame type="Quantified_mass" head="Todas">
+				<argument type="Individuals" dependent="guerras" /></frame>
+			<frame type="Required_event" head="ha de estar">
+				<argument type="Required_situation" dependent="ellas" />
+				<argument type="Required_situation" dependent="estar contra ellas" /></frame>
+			<frame type="Taking_sides" head="contra">
+				<argument type="Cognizer" dependent="ellas" />
+				<argument type="Side" dependent="ellas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los franceses tienen una triste experiencia en este tema.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">franceses</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_32" concept_ref3="c_33">
+			<token pos="vmip3p0">tienen</token><mention concept_ref="c_1"><token pos="di0fs0">una</token><token pos="aq0cs0">triste</token><token pos="ncfs000">experiencia</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Expertise" head="experiencia">
+				<argument type="Manner" dependent="triste" />
+				<argument type="Skill" dependent="en este tema" /></frame>
+			<frame type="Stimulus_focus" head="triste">
+				<argument type="Stimulus" dependent="experiencia" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Qué tema? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El del pacifismo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="del">
+				<argument type="Entity" dependent="pacifismo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Antes de la segunda guerra mundial la propaganda antimilitarista y pacifista inundaba París.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="da0fs0">la</token><token pos="ncfs000">propaganda</token><token pos="aq0cs0">antimilitarista</token><token pos="cc">y</token><token pos="aq0cs0">pacifista</token>
+		</theme>
+		<rheme>
+			<token pos="vmii3s0">inundaba</token><token pos="np00000">París</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Time_vector" head="Antes">
+				<argument type="Landmark_event" dependent="la segunda guerra mundial la propaganda antimilitarista y pacifista inundaba París" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los grandes animadores de ese pacifismo eran los alemanes y muy concretamente Otto Abtez, que trabajaba de ascensorista en el diario France Soir.
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="da0mp0">Los</token><token pos="aq0cp0">grandes</token><token pos="ncmp000">animadores</token><token pos="sps00">de</token><token pos="dd0ms0">ese</token><token pos="ncms000">pacifismo</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_10" concept_ref3="c_6" concept_ref4="c_32">
+			<token pos="vsii3p0">eran</token><mention concept_ref="c_10"><token pos="da0mp0">los</token><token pos="ncmp000">alemanes</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_employed" head="trabajaba">
+				<argument type="Employee" dependent="que" />
+				<argument type="Place_of_employment" dependent=", que trabajaba de ascensorista en el diario France" /></frame>
+			<frame type="Desirability" head="muy">
+				<argument type="Evaluee" dependent="animadores" /></frame>
+			<frame type="Text" head="el diario" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Posteriormente fue embajador de Alemania en Vichy.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Assistance" head="fue">
+				<argument type="Helper" dependent="fue" />
+				<argument type="Benefited_party" dependent="embajador de Alemania" />
+				<argument type="Goal" dependent="en" /></frame>
+			<frame type="Temporal_subregion" head="Posteriormente">
+				<argument type="Subpart" dependent="fue" />
+				<argument type="Time_period" dependent="fue embajador de Alemania en" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Los corresponsales de guerra estaban antes un poco mejor informados? - -.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="da0mp0">Los</token><token pos="nccp000">corresponsales</token><token pos="sps00">de</token><token pos="ncfs000">guerra</token>
+		</theme>
+		<rheme>
+			<token pos="vmii3p0">estaban</token><token pos="di0mp0">un</token><token pos="rg">poco</token><token pos="rg">mejor</token><token pos="aq0mpp">informados</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Hostile_encounter" head="guerra" />
+			<frame type="Telling" head="informados">
+				<argument type="Manner" dependent="antes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Nunca han estado bien informados.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Telling" head="informados">
+				<argument type="Speaker" dependent="han" />
+				<argument type="Manner" dependent="bien" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 O quizá sí, durante la primera guerra mundial.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="First_experience" head="primera">
+				<argument type="Experience" dependent="guerra mundial" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Aquello fue un mal ejemplo.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="pd0ns000">Aquello</token>
+		</theme>
+		<rheme concept_ref1="c_17" concept_ref2="c_6">
+			<token pos="vsis3s0">fue</token><mention concept_ref="c_17"><token pos="di0ms0">un</token><token pos="aq0ms0">mal</token><token pos="ncms000">ejemplo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desirability" head="mal">
+				<argument type="Evaluee" dependent="ejemplo" /></frame>
+			<frame type="Instance" head="ejemplo">
+				<argument type="Type" dependent="Aquello" />
+				<argument type="Instance_prop" dependent="mal" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Desde entonces el estamento militar se limita a contarles sólo lo que le conviene.
+		</str>
+		<theme concept_ref="c_14">
+			<token pos="da0ms0">el</token><token pos="ncms000">estamento</token><token pos="aq0cs0">militar</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_21" concept_ref3="c_30" concept_ref4="c_31" concept_ref5="c_32" concept_ref6="c_33">
+			<token pos="p0300000">se</token><token pos="vmip3s0">limita</token><token pos="sps00">a</token><mention concept_ref="c_30"><token pos="vmn0000">contarles</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Clothing" head="contarles" />
+			<main_frame type="Inhibit_movement" head="limita">
+				<argument type="Theme" dependent="militar" /></main_frame>
+			<frame type="Military" head="militar" />
+			<main_frame type="Telling" head="contarles">
+				<argument type="Speaker" dependent="militar" />
+				<argument type="Addressee" dependent="contarles" />
+				<argument type="Message" dependent="sólo lo que" /></main_frame>
+			<frame type="Time_vector" head="Desde">
+				<argument type="Landmark_event" dependent="entonces el estamento militar se limita a contarles sólo lo que le" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Para qué sirven, pues, los corresponsales? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Para contar cosas, porque las cuentan.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Categorization" head="cuentan">
+				<argument type="Cognizer" dependent="las" />
+				<argument type="Item" dependent="las" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="contar cosas" />
+				<argument type="Cause" dependent="las cuentan" /></frame>
+			<frame type="Telling" head="contar">
+				<argument type="Message" dependent="cosas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Estando en Argelia nunca se nos informaba del movimiento de tropas, pero los corresponsales sabíamos que se producían.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="los corresponsales " />
+			<frame type="Awareness" head="sabíamos">
+				<argument type="Cognizer" dependent="los corresponsales" />
+				<argument type="Content" dependent="se producían" /></frame>
+			<frame type="Concessive" head="en">
+				<argument type="Main_assertion" dependent="en Argelia nunca se nos informaba del movimiento de tropas , pero los corresponsales sabíamos que se" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="nos" />
+				<argument type="Ground" dependent="Argelia" />
+				<argument type="Figure" dependent="nunca se nos informaba del movimiento de tropas , pero los corresponsales sabíamos que se" /></frame>
+			<frame type="Locale" head="se" />
+			<frame type="Member_of_military" head="tropas" />
+			<frame type="Taking_time" head="se">
+				<argument type="Activity" dependent="los" />
+				<argument type="Time_length" dependent="se" /></frame>
+			<frame type="Telling" head="informaba">
+				<argument type="Speaker" dependent="nos" />
+				<argument type="Speaker" dependent="nos" />
+				<argument type="Addressee" dependent="del movimiento de tropas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿Cómo?.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pues visitando los bares.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="visitando">
+				<argument type="Goal" dependent="los bares" /></frame>
+			<frame type="Buildings" head="bares" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y disculpa si te hablo de la Segunda guerra mundial, pero es que ésa fue mi guerra.
+		</str>
+		<theme concept_ref="c_15">
+			<token pos="pd0fs000">ésa</token>
+		</theme>
+		<rheme concept_ref1="c_1">
+			<token pos="vsis3s0">fue</token><mention concept_ref="c_1"><token pos="dp1css">mi</token><token pos="ncfs000">guerra</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Chatting" head="hablo de">
+				<argument type="Interlocutors" dependent="de" />
+				<argument type="Topic" dependent="guerra mundial" /></frame>
+			<frame type="Hostile_encounter" head="guerra">
+				<argument type="Sides" dependent="mi" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿No ha habido más guerras en su vida? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Hostile_encounter" head="guerras" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Je, Je.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La guerra civil fue, desgraciadamente, de todos los españoles.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="ncfs000">guerra</token><token pos="aq0cs0">civil</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_10" concept_ref3="c_6" concept_ref4="c_31" concept_ref5="c_32">
+			<token pos="vsis3s0">fue</token><token pos="sps00">de</token><token pos="di0mp0">todos</token><mention concept_ref="c_10"><token pos="da0mp0">los</token><token pos="ncmp000">españoles</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Hostile_encounter" head="guerra">
+				<argument type="Sides" dependent="civil" /></frame>
+			<frame type="Social_interaction_evaluation" head="civil">
+				<argument type="Behavior" dependent="guerra" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La guerra civil fue un suicidio colectivo, y en ella yo no hice de periodista.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="ncfs000">guerra</token><token pos="aq0cs0">civil</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_32">
+			<token pos="vsis3s0">fue</token><token pos="di0ms0">un</token><token pos="ncms000">suicidio</token><token pos="aq0ms0">colectivo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Hostile_encounter" head="guerra">
+				<argument type="Sides" dependent="civil" /></frame>
+			<frame type="Intentionally_act" head="en">
+				<argument type="Act" dependent="de periodista" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="un suicidio colectivo" />
+				<argument type="Ground" dependent="de" />
+				<argument type="Figure" dependent="yo no hice de periodista" /></frame>
+			<frame type="Social_interaction_evaluation" head="civil">
+				<argument type="Behavior" dependent="guerra" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Simplemente me cayó encima, nos cayó encima a todos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Natural_features" head="cayó">
+				<argument type="Locale" dependent="," />
+				<argument type="Name" dependent="Simplemente" />
+				<argument type="Relative_location" dependent="me" /></frame>
+			<frame type="Spatial_contact" head="nos">
+				<argument type="Figure" dependent="Simplemente me cayó" />
+				<argument type="Ground" dependent="todos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿De qué te ríes? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Make_noise" head="te ríes">
+				<argument type="Sound" dependent="qué" />
+				<argument type="Sound_source" dependent="te" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 De lo que usted intuye.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ta de mí es injusto.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Fairness_evaluation" head="injusto" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por supuesto que no todo lo he hecho bien, pero si algunos siempre se remiten al mismo artículo que publiqué a los pocos días de acabada la guerra civil, eso quiere decir que no han encontrado ninguno más.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="eso " />
+			<frame type="Becoming_aware" head="encontrado">
+				<argument type="Cognizer" dependent="los" />
+				<argument type="Phenomenon" dependent="más" /></frame>
+			<frame type="Calendric_unit" head="días">
+				<argument type="Count" dependent="pocos" />
+				<argument type="Whole" dependent="de acabada la guerra civil" /></frame>
+			<frame type="Causation" head="quiere decir">
+				<argument type="Effect" dependent="no han encontrado ninguno más" /></frame>
+			<frame type="Direction" head="bien">
+				<argument type="Domain" dependent="todo" /></frame>
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="algunos" /></frame>
+			<frame type="Hostile_encounter" head="guerra">
+				<argument type="Sides" dependent="civil" /></frame>
+			<frame type="Identicality" head="mismo">
+				<argument type="Type" dependent="artículo" /></frame>
+			<frame type="Intentionally_act" head="hecho">
+				<argument type="Agent" dependent="de" />
+				<argument type="Act" dependent="todo" /></frame>
+			<frame type="Interior_profile_relation" head="a los">
+				<argument type="Figure" dependent="publiqué a" />
+				<argument type="Ground" dependent="pocos días de acabada la guerra civil" /></frame>
+			<frame type="Process_end" head="acabada">
+				<argument type="Process" dependent="la guerra civil" /></frame>
+			<frame type="Proportional_quantity" head="algunos">
+				<argument type="Mass" dependent="siempre" /></frame>
+			<frame type="Publishing" head="publiqué">
+				<argument type="Author" dependent="de" /></frame>
+			<frame type="Quantified_mass" head="pocos">
+				<argument type="Individuals" dependent="días" /></frame>
+			<frame type="Referring_by_name" head="decir">
+				<argument type="Name" dependent="algunos siempre" /></frame>
+			<frame type="Text" head="artículo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ese artículo comenzaron a divulgarlo durante las elecciones de 1977.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_start" head="comenzaron">
+				<argument type="Activity" dependent="Ese artículo" />
+				<argument type="Activity" dependent="a divulgarlo" />
+				<argument type="Time" dependent="durante las elecciones de 1977" /></frame>
+			<frame type="Change_of_leadership" head="elecciones" />
+			<frame type="Dispersal" head="de">
+				<argument type="Individuals" dependent="Ese artículo" /></frame>
+			<frame type="Text" head="artículo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Qué decía ese artículo? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Statement" head="decía">
+				<argument type="Message" dependent="artículo" /></frame>
+			<frame type="Text" head="artículo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Que Catalunya no se había acabado, que no desaparecería.
+		</str>
+		<theme concept_ref="c_16">
+			<token pos="np00000">Catalunya</token>
+		</theme>
+		<rheme concept_ref1="c_21" concept_ref2="c_33">
+			<token pos="rn">no</token><token pos="p0300000">se</token><token pos="vaii3s0">había</token><token pos="vmp00sm">acabado</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_finish" head="acabado">
+				<argument type="Agent" dependent="Catalunya" /></main_frame>
+			<frame type="Departing" head="desaparecería">
+				<argument type="Theme" dependent="se" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 O sea, que podría decirse que ese artículo incluso era catalanista.
+		</str>
+		<theme concept_ref="c_17">
+			<token pos="dd0ms0">ese</token><token pos="ncms000">artículo</token>
+		</theme>
+		<rheme>
+			<token pos="vsii3s0">era</token><token pos="aq0cs0">catalanista</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Increment" head="incluso">
+				<argument type="Class" dependent="decirse" /></frame>
+			<frame type="Interior_profile_relation" head="ese">
+				<argument type="Ground" dependent="decirse" />
+				<argument type="Figure" dependent="podría decirse que ese artículo incluso era" /></frame>
+			<frame type="Possibility" head="podría">
+				<argument type="Possible_event" dependent="ese" />
+				<argument type="Possible_event" dependent="decirse que ese artículo incluso era" /></frame>
+			<frame type="Statement" head="decirse">
+				<argument type="Message" dependent="ese artículo incluso era" /></frame>
+			<frame type="Text" head="artículo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Las leyendas benefician a sus protagonistas? - -.
+		</str>
+		<theme concept_ref="c_18">
+			<token pos="da0fp0">Las</token><token pos="ncfp000">leyendas</token>
+		</theme>
+		<rheme concept_ref1="c_6">
+			<token pos="vmip3p0">benefician</token><token pos="sps00">a</token><mention concept_ref="c_6"><token pos="dp3cp0">sus</token><token pos="nccp000">protagonistas</token></mention>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Je, Je.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Si son falsas, no.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Forging" head="falsas">
+				<argument type="Agent" dependent="son" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿Desde cuándo los camareros se dirigen en voz alta a los espías para decirles que les llaman por teléfono?.
+		</str>
+		<theme concept_ref="c_19">
+			<token pos="da0mp0">los</token><token pos="ncmp000">camareros</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_21" concept_ref3="c_20" concept_ref4="c_17" concept_ref5="c_6" concept_ref6="c_31" concept_ref7="c_30" concept_ref8="c_32" concept_ref9="c_33">
+			<mention concept_ref="c_21"><token pos="p0300000">se</token></mention><token pos="vmip3p0">dirigen</token><token pos="sps00">a</token><mention concept_ref="c_20"><token pos="da0mp0">los</token><token pos="nccp000">espías</token></mention><token pos="sps00">para</token><token pos="vmn0000">decirles</token><token pos="cs">que</token><mention concept_ref="c_31"><token pos="pp3cpd00">les</token></mention><token pos="vmip3p0">llaman</token><token pos="sps00">por</token><mention concept_ref="c_17"><token pos="ncms000">teléfono</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Motion" head="se">
+				<argument type="Theme" dependent="camareros" />
+				<argument type="Goal" dependent="voz alta a los espías para" /></frame>
+			<frame type="People_by_vocation" head="espías" />
+			<main_frame type="Referring_by_name" head="llaman">
+				<argument type="Entity" dependent="les" />
+				<argument type="Name" dependent="por teléfono" /></main_frame>
+			<frame type="Sleep" head="se">
+				<argument type="Sleeper" dependent="camareros" /></frame>
+			<main_frame type="Telling" head="decirles">
+				<argument type="Speaker" dependent="camareros" />
+				<argument type="Addressee" dependent="les" />
+				<argument type="Message" dependent="les llaman por teléfono" /></main_frame>
+			<frame type="Temporal_collocation" head="cuándo">
+				<argument type="Landmark_event" dependent="los camareros se dirigen en voz alta a los espías para decirles que les llaman por teléfono" /></frame>
+			<frame type="Time_vector" head="por">
+				<argument type="Landmark_event" dependent="cuándo los camareros se dirigen en voz alta a los espías para decirles que les llaman por teléfono" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Oiga, señor espía, que le llaman por teléfono.
+		</str>
+		<theme concept_ref="c_20">
+			<token pos="ncms000">señor</token><token pos="nccs000">espía</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_17" concept_ref3="c_30" concept_ref4="c_32" concept_ref5="c_33">
+			<mention concept_ref="c_7"><token pos="pp3csd00">le</token></mention><token pos="vmip3p0">llaman</token><mention concept_ref="c_30"><token pos="sps00">por</token><token pos="ncms000">teléfono</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Referring_by_name" head="llaman">
+				<argument type="Speaker" dependent="le" />
+				<argument type="Entity" dependent="le" />
+				<argument type="Name" dependent="por teléfono" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Si esto se cuenta es porque tiene gracia, pero es evidente que si se reflexiona no se sostiene.
+		</str>
+		<theme concept_ref="c_21">
+			<token pos="pd0ns000">esto</token>
+		</theme>
+		<rheme concept_ref1="c_21" concept_ref2="c_33">
+			<token pos="p0000000">se</token><token pos="vmip3s0">cuenta</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Causation" head="porque">
+				<argument type="Cause" dependent="tiene gracia" /></frame>
+			<frame type="Obviousness" head="evidente">
+				<argument type="Phenomenon" dependent="que si se reflexiona no se sostiene" /></frame>
+			<frame type="Telling" head="se">
+				<argument type="Speaker" dependent="esto" />
+				<argument type="Addressee" dependent="es" />
+				<argument type="Message" dependent="es porque tiene gracia" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Alguien inventó esa gracia, esa mentira, que yo, francamente, no me he molestado en desmentir porque no vale la pena.
+		</str>
+		<theme concept_ref="c_22">
+			<token pos="pi0cs000">Alguien</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_28" concept_ref3="c_30">
+			<token pos="vmis3s0">inventó</token><token pos="dd0fs0">esa</token><token pos="ncfs000">gracia</token><token pos="fc">,</token><mention concept_ref="c_28"><token pos="dd0fs0">esa</token><token pos="ncfs000">mentira</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Affirm_or_deny" head="desmentir">
+				<argument type="Speaker" dependent="en" />
+				<argument type="Message" dependent="porque no vale la pena" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Cause" dependent="no vale la pena" /></frame>
+			<main_frame type="Coming_up_with" head="inventó">
+				<argument type="Idea" dependent="Alguien" />
+				<argument type="Idea" dependent="esa gracia" /></main_frame>
+			<frame type="Posture" head="mentira" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Ser espía en una guerra es un papel como otro.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Hostile_encounter" head="guerra" />
+			<frame type="Increment" head="otro" />
+			<frame type="Similarity" head="como">
+				<argument type="Entity_1" dependent="un papel como" />
+				<argument type="Entity_2" dependent="otro" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Je, Je.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Es verdad.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Incluso puede que más brillante que otros.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Lo que llamamos sociedad civil - - ésa que le premió a usted anoche - - quiere decir burguesía? - -.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_21" concept_ref3="c_32" concept_ref4="c_31" concept_ref5="c_33">
+			<mention concept_ref="c_7"><token pos="pp3csd00">le</token></mention><token pos="vmis3s0">premió</token><token pos="sps00">a</token><token pos="pp2cs00p">usted</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="anoche" />
+			<frame type="Referring_by_name" head="llamamos">
+				<argument type="Name" dependent="que" />
+				<argument type="Speaker" dependent="usted" />
+				<argument type="Name" dependent="sociedad civil" /></frame>
+			<main_frame type="Rewards_and_punishments" head="premió">
+				<argument type="Agent" dependent="que" />
+				<argument type="Evaluee" dependent="usted" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sí.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - O sea, que eso es cosa de unos, que siempre son los mismos.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_6">
+			<token pos="vsip3p0">son</token><mention concept_ref="c_4"><token pos="da0mp0">los</token><token pos="pi0mp000">mismos</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="son los" />
+				<argument type="Event" dependent="los mismos" /></frame>
+			<frame type="Identicality" head="los mismos">
+				<argument type="Type" dependent="son los" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - No, no.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Casi todos somos burguesía.
+		</str>
+		<theme concept_ref="c_23">
+			<token pos="rg">Casi</token><token pos="pi0mp000">todos</token>
+		</theme>
+		<rheme concept_ref1="c_1">
+			<token pos="vsip1p0">somos</token><mention concept_ref="c_1"><token pos="ncfs000">burguesía</token></mention>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sólo los proletarios, militares, sacerdotes o personas que por ideología están en contra de la burguesía no son burgueses.
+		</str>
+		<theme concept_ref="c_24">
+			<token pos="rg">Sólo</token><token pos="da0mp0">los</token><token pos="ncmp000">proletarios</token><token pos="fc">,</token><token pos="nccp000">militares</token><token pos="fc">,</token><token pos="ncmp000">sacerdotes</token><token pos="cc">o</token><token pos="ncfp000">personas</token><token pos="pr0cn000">que</token><token pos="sps00">por</token><token pos="ncfs000">ideología</token><token pos="vmip3p0">están</token><token pos="sps00">en</token><token pos="sps00">contra</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">burguesía</token>
+		</theme>
+		<rheme concept_ref1="c_21" concept_ref2="c_13" concept_ref3="c_33">
+			<token pos="rn">no</token><token pos="vsip3p0">son</token><mention concept_ref="c_13"><token pos="ncmp000">burgueses</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Military" head="militares" />
+			<main_frame type="People" head="personas" />
+			<frame type="Taking_sides" head="contra de">
+				<argument type="Cognizer" dependent="sacerdotes o personas que por ideología" />
+				<argument type="Side" dependent="la burguesía" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los demás sí lo son.
+		</str>
+		<theme concept_ref="c_25">
+			<token pos="da0mp0">Los</token><token pos="pi0cp000">demás</token>
+		</theme>
+		<rheme concept_ref1="c_6">
+			<mention concept_ref="c_6"><token pos="pp3cna00">lo</token></mention><token pos="vsip3p0">son</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Pero con diferentes apellidos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Similarity" head="diferentes">
+				<argument type="Entities" dependent="apellidos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Je, Je.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Mira, mis dos bisabuelos eran médicos, pero sus padres eran payeses.
+		</str>
+		<theme concept_ref="c_26">
+			<token pos="dp1cps">mis</token><token pos="dn0cp0">dos</token><token pos="ncmp000">bisabuelos</token>
+		</theme>
+		<rheme>
+			<token pos="vsii3p0">eran</token><token pos="ncmp000">médicos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="bisabuelos" /></frame>
+			<frame type="Kinship" head="padres">
+				<argument type="Ego" dependent="sus" /></frame>
+			<frame type="Medical_professionals" head="médicos" />
+			<frame type="Scrutiny" head="Mira" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El señor de la fotografía es el padre de mi mujer, Fernando Casablancas, que inventó y patentó un sistema de grandes estirajes.
+		</str>
+		<theme concept_ref="c_27">
+			<token pos="da0ms0">El</token><token pos="ncms000">señor</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">fotografía</token>
+		</theme>
+		<rheme concept_ref1="c_1">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_1"><token pos="da0ms0">el</token><token pos="ncms000">padre</token></mention><token pos="sps00">de</token><token pos="dp1css">mi</token><token pos="ncfs000">mujer</token><token pos="fc">,</token><token pos="np0000l">Fernando</token><token pos="np0000l">Casablancas</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Coming_up_with" head="inventó">
+				<argument type="Idea" dependent="Casablancas" />
+				<argument type="Cognizer" dependent="que" />
+				<argument type="Idea" dependent="un sistema de grandes estirajes" /></frame>
+			<frame type="Kinship" head="padre">
+				<argument type="Alter" dependent="El señor de la fotografía" />
+				<argument type="Ego" dependent="mi mujer" /></frame>
+			<frame type="Personal_relationship" head="mujer">
+				<argument type="Partner_1" dependent="mi" />
+				<argument type="Partner_2" dependent="Casablancas" /></frame>
+			<frame type="Subordinates_and_superiors" head="señor">
+				<argument type="Superior" dependent="fotografía" /></frame>
+			<frame type="System" head="sistema">
+				<argument type="Function" dependent="grandes estirajes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ese invento permitía estirar el hilo de algodón mecánicamente sin que se rompiera.
+		</str>
+		<theme concept_ref="c_28">
+			<token pos="dd0ms0">Ese</token><token pos="ncms000">invento</token>
+		</theme>
+		<rheme concept_ref1="c_21" concept_ref2="c_6" concept_ref3="c_1" concept_ref4="c_9" concept_ref5="c_30" concept_ref6="c_32" concept_ref7="c_33">
+			<token pos="vmii3s0">permitía</token><token pos="vmn0000">estirar</token><mention concept_ref="c_1"><token pos="da0ms0">el</token><token pos="ncms000">hilo</token></mention><token pos="sps00">de</token><mention concept_ref="c_9"><token pos="ncms000">algodón</token></mention><token pos="rg">mecánicamente</token><token pos="sps00">sin</token><token pos="cs">que</token><mention concept_ref="c_21"><token pos="p0300000">se</token></mention><token pos="vmsi3s0">rompiera</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Cause_to_fragment" head="rompiera" />
+			<main_frame type="Preventing_or_letting" head="permitía">
+				<argument type="Event" dependent="Ese invento" />
+				<argument type="Event" dependent="el hilo de algodón" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Bueno, pues dos generaciones anteriores a la suya, vuelve a surgir en su familia el payés.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="pues dos">
+				<argument type="Entity" dependent="generaciones" /></frame>
+			<frame type="Intentionally_create" head="generaciones" />
+			<frame type="Kinship" head="familia">
+				<argument type="Ego" dependent="su" /></frame>
+			<frame type="Time_vector" head="anteriores">
+				<argument type="Landmark_event" dependent="su" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Y en política, centrista.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Lo fui cuando estuve en ella, en la política.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="en" />
+				<argument type="Ground" dependent="política" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No abundan los centristas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Abundance" head="abundan">
+				<argument type="Collection" dependent="centristas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A ser centrista me enseñó Cambó, un político que se adelantó a su tiempo, un político europeo.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_21" concept_ref2="c_28" concept_ref3="c_33">
+			<token pos="p0300000">se</token><token pos="vmis3s0">adelantó</token><token pos="sps00">a</token><mention concept_ref="c_28"><token pos="dp3cs0">su</token><token pos="ncms000">tiempo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Goal" head="se">
+				<argument type="Landmark" dependent="ser centrista me enseñó" /></frame>
+			<frame type="Origin" head="europeo">
+				<argument type="Entity" dependent="político" /></frame>
+			<frame type="People_by_vocation" head="político">
+				<argument type="Age" dependent="europeo" /></frame>
+			<frame type="Relative_time" head="se">
+				<argument type="Focal_occasion" dependent="un político que se" />
+				<argument type="Landmark_occasion" dependent="su tiempo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Lo que pasa es que si eres centrista de verdad duras poco.
+		</str>
+		<theme>
+			<token pos="da0ns0">Lo</token><token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Difficulty" head="duras">
+				<argument type="Activity" dependent="es" />
+				<argument type="Activity" dependent="poco" /></frame>
+			<frame type="Entity" head="Lo que" />
+			<frame type="Sufficiency" head="poco">
+				<argument type="Item" dependent="es" />
+				<argument type="Scale" dependent="duras" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - En política.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Je, Je.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sí.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El centro no es ningún partido, es una actitud política y las posturas extremas acaban contigo.
+		</str>
+		<theme concept_ref="c_29">
+			<token pos="da0ms0">El</token><token pos="ncms000">centro</token>
+		</theme>
+		<rheme concept_ref1="c_1">
+			<token pos="rn">no</token><token pos="vsip3s0">es</token><mention concept_ref="c_1"><token pos="di0ms0">ningún</token><token pos="ncms000">partido</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido" />
+			<frame type="Being_employed" head="posturas">
+				<argument type="Employer" dependent="es" />
+				<argument type="Field" dependent="actitud política" />
+				<argument type="Field" dependent="extremas" /></frame>
+			<frame type="Locale_by_use" head="centro" />
+			<frame type="Process_end" head="acaban">
+				<argument type="Process" dependent="una actitud política y las posturas extremas" />
+				<argument type="Process" dependent="contigo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Sólo en política.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Je, Je.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En política.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Qué memorias las suyas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Memory" head="memorias">
+				<argument type="Content" dependent="las suyas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Esas que no escribirá.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Text_creation" head="escribirá">
+				<argument type="Author" dependent="que" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

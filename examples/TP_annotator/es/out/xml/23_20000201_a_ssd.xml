@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="23_20000201_a_ssd">
+
+
+	<concepts>
+		<concept id="c_0">que</concept>
+		<concept id="c_1">esto</concept>
+		<concept id="c_2">los</concept>
+		<concept id="c_3">el Gobierno</concept>
+		<concept id="c_4">se</concept>
+		<concept id="c_5">electoralistas</concept>
+		<concept id="c_6">el Gobierno</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Cien años de Seguro.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Relative_time" dependent="de" /></frame>
+			<frame type="Cardinal_numbers" head="de">
+				<argument type="Unit" dependent="años" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Considerables diferencias retributivas entre plantillas que hacen las mismas funciones, etcétera o que nos afectan a todos ( revalorización digna de las pensiones mínimas ).
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+			<token pos="vmip3p0">hacen</token><token pos="da0fp0">las</token><token pos="di0fp0">mismas</token><token pos="ncfp000">funciones</token><token pos="fc">,</token><token pos="fs">etcétera</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Commerce_pay" head="retributivas">
+				<argument type="Goods" dependent="Considerables diferencias retributivas entre plantillas que hacen las mismas funciones , etcétera o que nos afectan a todos ( revalorización digna de las pensiones mínimas ) ." /></frame>
+			<frame type="Contingency" head="funciones" />
+			<frame type="Employing" head="las" />
+			<frame type="Identicality" head="mismas">
+				<argument type="Type" dependent="funciones" /></frame>
+			<main_frame type="Intentionally_act" head="hacen">
+				<argument type="Agent" dependent="diferencias retributivas entre" />
+				<argument type="Act" dependent="mismas funciones , etcétera o que nos afectan a todos ( revalorización digna de las pensiones mínimas" /></main_frame>
+			<frame type="Non-commutative_statement" head="diferencias">
+				<argument type="Term_1" dependent="entre" /></frame>
+			<frame type="Objective_influence" head="afectan">
+				<argument type="Influencing_entity" dependent="que" />
+				<argument type="Dependent_entity" dependent="todos ( revalorización digna de las pensiones mínimas )" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por otro lado, vale la pena comentar los tan cacareados, por parte del Gobierno, nuevos miles de nuevos afiliados.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevos">
+				<argument type="Entity" dependent="afiliados" /></frame>
+			<frame type="Body_parts" head="los">
+				<argument type="Descriptor" dependent="otro" /></frame>
+			<frame type="Cardinal_numbers" head="miles de">
+				<argument type="Precision" dependent="nuevos" />
+				<argument type="Entity" dependent="de nuevos afiliados" /></frame>
+			<frame type="Increment" head="otro">
+				<argument type="Class" dependent="los" /></frame>
+			<frame type="Membership" head="afiliados" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En este sentido parece que cuando hacen mención al hecho se les olvida añadir la palabra virtuales, porque esto es lo que son los nuevos afiliados, virtuales y no reales, ya que el Gobierno se está limitando a dar número de afiliación a los jóvenes que cumplan 16 años, trabajen o no, lo que lógicamente infla y desvirtúa las estadísticas con intenciones electoralistas.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="pd0ns000">esto</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_2" concept_ref3="c_3" concept_ref4="c_4" concept_ref5="c_5" concept_ref6="c_6">
+			<token pos="p0000000">se</token><token pos="pp3cpd00">les</token><token pos="vmip3s0">olvida</token><token pos="vmn0000">añadir</token><token pos="da0fs0">la</token><token pos="ncfs000">palabra</token><token pos="nc00000">virtuales</token><token pos="fc">,</token><token pos="vsip3s0">es</token><token pos="rg">ya</token><token pos="pi0ms000">que</token><token pos="da0ms0">el</token><token pos="np00000">Gobierno</token><token pos="p0300000">se</token><token pos="vmip3s0">está</token><token pos="vmg0000">limitando</token><token pos="sps00">a</token><token pos="vmn0000">dar</token><token pos="ncms000">número</token><token pos="sps00">de</token><token pos="ncfs000">afiliación</token><token pos="sps00">a</token><mention concept_ref="c_2"><token pos="da0mp0">los</token></mention><token pos="nccp000">jóvenes</token><token pos="da0ns0">lo</token><token pos="pr0cn000">que</token><token pos="rg">lógicamente</token><token pos="vmip3s0">infla</token><token pos="cc">y</token><token pos="vmip3s0">desvirtúa</token><token pos="da0fp0">las</token><token pos="ncfp000">estadísticas</token><token pos="sps00">con</token><token pos="ncfp000">intenciones</token><mention concept_ref="c_5"><token pos="aq0cp0">electoralistas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="años">
+				<argument type="Time" dependent="16 años" /></frame>
+			<main_frame type="Age" head="jóvenes">
+				<argument type="Entity" dependent="los" /></main_frame>
+			<frame type="Age" head="nuevos">
+				<argument type="Entity" dependent="afiliados" /></frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="16" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="se les olvida añadir la palabra virtuales , porque esto es lo que" />
+				<argument type="Cause" dependent="esto es lo que son los nuevos afiliados , virtuales y no reales , ya que el Gobierno se está limitando" />
+				<argument type="Effect" dependent="desvirtúa las estadísticas con intenciones electoralistas" /></frame>
+			<frame type="Give_impression" head="parece">
+				<argument type="Perceiver_passive" dependent="En este sentido" /></frame>
+			<main_frame type="Giving" head="dar">
+				<argument type="Donor" dependent="esto es lo que son los nuevos afiliados , virtuales y no reales , ya que el Gobierno se está limitando" />
+				<argument type="Theme" dependent="número de afiliación a los jóvenes que cumplan 16 años" /></main_frame>
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Figure" dependent="En este sentido parece que cuando hacen mención al hecho se les olvida añadir la palabra virtuales , porque esto es lo que" /></frame>
+			<frame type="Leadership" head="Gobierno" />
+			<main_frame type="Limitation" head="limitando">
+				<argument type="Entity" dependent="el Gobierno" />
+				<argument type="Entity" dependent="se" /></main_frame>
+			<frame type="Membership" head="afiliados">
+				<argument type="Standing" dependent="dar" /></frame>
+			<frame type="Opinion" head="sentido" />
+			<frame type="People" head="los">
+				<argument type="Descriptor" dependent="jóvenes" />
+				<argument type="Age" dependent="que cumplan 16 años , trabajen o no , lo que lógicamente infla y desvirtúa las estadísticas con intenciones electoralistas" /></frame>
+			<main_frame type="Purpose" head="intenciones">
+				<argument type="Restrictor" dependent="electoralistas" /></main_frame>
+			<frame type="Quantified_mass" head="número">
+				<argument type="Individuals" dependent="afiliados" /></frame>
+			<main_frame type="Remembering_experience" head="olvida">
+				<argument type="Cognizer" dependent="se les" />
+				<argument type="Experience" dependent="añadir la palabra virtuales" /></main_frame>
+			<main_frame type="Statement" head="añadir">
+				<argument type="Message" dependent="la palabra virtuales" />
+				<argument type="Message" dependent="a dar número de afiliación a los jóvenes que cumplan 16 años , trabajen o no , lo que lógicamente" /></main_frame>
+			<frame type="Statement" head="mención">
+				<argument type="Speaker" dependent="se les" />
+				<argument type="Message" dependent="al hecho se les olvida añadir la palabra virtuales" /></frame>
+			<frame type="Time_vector" head="cuando">
+				<argument type="Event" dependent="esto es lo que son los nuevos afiliados , virtuales y no reales ," />
+				<argument type="Event" dependent="el Gobierno se está limitando a dar número de afiliación a los jóvenes que cumplan 16 años , trabajen o no , lo que lógicamente infla y desvirtúa las estadísticas con intenciones electoralistas" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

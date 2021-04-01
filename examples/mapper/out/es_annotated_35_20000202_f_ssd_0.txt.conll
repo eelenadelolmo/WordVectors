@@ -1,0 +1,5 @@
+{   ('Arrest', 'criminales'): [('Suspect', 'dos presuntos criminales de guerra serbios en'), ('Time', 'en Kosovo')],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'presuntos criminales de guerra serbios')],
+    ('Hostile_encounter', 'guerra'): [('Sides', 'serbios')],
+    ('Legality', 'criminales'): [],
+    ('Statement', 'presuntos'): [('Message', 'criminales de guerra serbios')]}

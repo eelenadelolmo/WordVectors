@@ -1,0 +1,7 @@
+{   ('Becoming', 'asumir'): [('Final_quality', 'conservador')],
+    ('Being_obligated', 'responsabilidades'): [],
+    ('Causation', 'implica'): [('Effect', 'responsabilidades')],
+    ('Experiencer_focus', 'comodidad'): [],
+    ('Needing', 'Necesito'): [('Cognizer', 'y'), ('Requirement', 'paz y comodidad')],
+    ('Opinion', 'crea que'): [('Cognizer', 'alguien'), ('Opinion', 'que asumir responsabilidades implica volverse conservador')],
+    ('Taking_time', 'asumir'): [('Activity', 'asumir responsabilidades implica volverse conservador')]}

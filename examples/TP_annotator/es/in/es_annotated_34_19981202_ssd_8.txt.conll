@@ -1,0 +1,14 @@
+{   ('Appellations', 'presidente'): [('Type', 'escándalo del presidente Clinton')],
+    ('Chatting', 'hablar'): [('Interlocutor_1', 'republicanos'), ('Time', 'ahora'), ('Topic', 'de ampliar la investigación a los donativos irregulares')],
+    ('Criminal_investigation', 'investigación'): [('Incident', 'a los donativos irregulares')],
+    ('Giving', 'donativos'): [('Depictive', 'irregulares')],
+    ('Intentionally_act', 'de'): [('Act', 'que'), ('Act', 'con el informe del')],
+    ('Judgment_communication', 'criticó'): [   ('Communicator', 'demócrata , John Conyers , por su parte'),
+                                               ('Evaluee', 'republicanos'),
+                                               (   'Reason',
+                                                   'por hablar ahora de ampliar la investigación a los donativos irregulares , & quot ; un asunto que nada tiene que ver con el informe del fiscal & '
+                                                   'quot ; ( Kenneth Starr ) , que se limitó al escándalo del presidente Clinton con Monica')],
+    ('Part_whole', 'parte'): [('Whole', 'su')],
+    ('Representative', 'hablar'): [('Descriptor', 'demócrata'), ('Representative', 'John Conyers')],
+    ('Statement', 'informe del'): [('Speaker', 'al escándalo')],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'republicanos por'), ('Trajector_event', 'de ampliar la investigación a los donativos irregulares')]}

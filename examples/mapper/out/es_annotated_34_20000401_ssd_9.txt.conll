@@ -1,0 +1,6 @@
+{   ('Buildings', 'hospital'): [('Place', 'en un')],
+    ('Imprisonment', 'encarcelada'): [('Prisoner', 'fue'), ('Time', 'y'), ('Offense', 'en un centro clandestino de')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'un hospital'), ('Ground', 'Montevideo')],
+    ('Locale_by_use', 'centro'): [('Descriptor', 'clandestino'), ('Relative_location', 'en un')],
+    ('Secrecy_status', 'clandestino'): [('Phenomenon', 'centro'), ('Cognizer', 'en un')],
+    ('Taking_time', 'en'): [('Activity', 'a un hospital de Montevideo')]}

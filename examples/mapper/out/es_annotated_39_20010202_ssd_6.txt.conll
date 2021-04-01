@@ -1,0 +1,3 @@
+{   ('Committing_crime', 'delito del'): [('Perpetrator', 'del que se le')],
+    ('Evidence', 'demuestran'): [('Support', 'Todos ellos'), ('Proposition', 'delito del que se le acusa : estafa a gran escala')],
+    ('Judgment_communication', 'acusa'): [('Evaluee', 'se le'), ('Reason', 'gran escala')]}

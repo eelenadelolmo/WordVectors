@@ -1,0 +1,7 @@
+{   ('Attack', 'ofensiva'): [('Manner', 'de'), ('Victim', 'nacionalismo')],
+    ('Becoming_aware', 'reconoció'): [('Phenomenon', 'lo')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'ministro del Interior , Jaime Mayor Oreja , lo reconoció sin ambages el pasado julio'), ('Ground', 'comparecencia parlamentaria')],
+    ('Law', 'política de'): [],
+    ('Leadership', 'Mayor'): [('Governed', 'Jaime'), ('Leader', 'Oreja')],
+    ('Leadership', 'ministro'): [('Governed', 'del Interior')],
+    ('Relative_time', 'pasado'): [('Focal_occasion', 'julio')]}

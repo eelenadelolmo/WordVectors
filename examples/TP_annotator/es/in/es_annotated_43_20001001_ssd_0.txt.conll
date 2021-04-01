@@ -1,0 +1,12 @@
+{   ('Causation', 'causando'): [   ('Cause', 'en su reaparición en Barcelona , colocó un artefacto explosivo en la sede del diario El Mundo ,'),
+                                   ('Effect', 'causando heridas leves a cuatro policías y a un transeúnte e importantes daños materiales')],
+    ('Damaging', 'daños'): [('Patient', 'materiales')],
+    ('Experience_bodily_harm', 'heridas'): [('Containing_event', 'a cuatro policías y a un transeúnte e importantes daños materiales')],
+    ('Gizmo', 'un'): [('Use', 'explosivo')],
+    ('Importance', 'importantes'): [('Factor', 'daños materiales')],
+    ('Ingredients', 'materiales'): [],
+    ('Locale_by_use', 'sede del'): [('Container_possessor', 'del diario El Mundo')],
+    ('Locative_relation', 'en'): [('Figure', 'un artefacto explosivo en'), ('Ground', 'la sede del diario El Mundo')],
+    ('Placing', 'colocó'): [('Cause', 'su reaparición en Barcelona , colocó'), ('Goal', 'explosivo en la sede del diario El Mundo')],
+    ('Text', 'del diario'): [],
+    ('Weapon', 'explosivo'): [('Type', 'un')]}

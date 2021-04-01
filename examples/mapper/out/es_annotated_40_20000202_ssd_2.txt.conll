@@ -1,0 +1,8 @@
+{   ('Calendric_unit', 'se'): [],
+    ('Locale', 'puntos'): [('Descriptor', '10')],
+    ('Non-commutative_statement', 'diferencia'): [('Term_1', 'muy superior a los 10 puntos que')],
+    ('Part_whole', 'cuarta'): [('Whole', 'de los votos escrutados')],
+    ('Predicting', 'pronosticaban'): [('Eventuality', 'diferencia muy superior a los 10 puntos que'), ('Eventuality', 'el'), ('Accuracy', 'a los')],
+    ('Proportional_quantity', 'muy'): [('Mass', 'diferencia'), ('Mass', 'superior a los 10 puntos')],
+    ('Taking_time', 'hizo'): [('Agent', 'víspera'), ('Time_length', '47 % de los votos , y Bush')],
+    ('Time_vector', 'a los'): [('Event', '31 %'), ('Event', 'una diferencia muy superior a los 10 puntos que pronosticaban'), ('Distance', 'el')]}

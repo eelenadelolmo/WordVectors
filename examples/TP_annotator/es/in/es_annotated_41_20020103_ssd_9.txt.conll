@@ -1,0 +1,7 @@
+{   ('Attack', 'atentados'): [],
+    ('Categorization', 'considerado'): [('Category', 'proximidad del primer aniversario de los atentados'), ('Criteria', 'por los abogados'), ('Category', 'contrario a los intereses de su cliente')],
+    ('Compliance', 'contrario'): [('Norm', 'los abogados'), ('Norm', 'a los intereses de su cliente')],
+    ('Emotion_directed', 'intereses'): [('Stimulus', 'de su cliente')],
+    ('Gradable_proximity', 'proximidad'): [('Figure', 'primer aniversario de los atentados')],
+    ('Ordinal_numbers', 'primer'): [('Type', 'aniversario de los atentados')],
+    ('People_by_vocation', 'abogados'): []}

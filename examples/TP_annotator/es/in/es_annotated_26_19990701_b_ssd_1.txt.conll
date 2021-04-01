@@ -1,0 +1,4 @@
+{   ('Body_parts', 'boca'): [('Possessor', 'la')],
+    ('Causation', 'porque'): [('Effect', 'no comió'), ('Cause', 'tenía la boca hinchada')],
+    ('Locative_relation', 'había'): [('Figure', 'no había ; sólo galletas y')],
+    ('Questioning', 'Pedí'): [('Speaker', 'y'), ('Message', 'la')]}

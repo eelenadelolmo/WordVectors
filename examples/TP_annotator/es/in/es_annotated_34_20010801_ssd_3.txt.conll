@@ -1,0 +1,5 @@
+{   ('Being_in_captivity', 'los presos'): [('Holding_location', 'etarras')],
+    ('Expertise', 'pro'): [],
+    ('People_by_vocation', 'abogados'): [('Employer', 'presunto coordinador de los presos etarras , y Natale Landa')],
+    ('Text', 'lista'): [('Text', 'la lista de procesados figuran los abogados')],
+    ('Unattributed_information', 'presunto'): [('Reported_fact', 'coordinador de')]}

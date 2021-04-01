@@ -1,0 +1,5 @@
+{   ('Affirm_or_deny', 'negara'): [('Speaker', 'en'), ('Message', 'su tutela sobre la violencia callejera')],
+    ('Attack', 'atacaron'): [('Assailant', 'radicales')],
+    ('Calendric_unit', 'horas'): [('Relative_time', 'apenas'), ('Count', '48')],
+    ('Relative_time', 'después de'): [('Focal_occasion', 'radicales atacaron ayer de nuevo en Euskadi , apenas 48 horas'), ('Landmark_occasion', 'negara su tutela sobre la violencia callejera')],
+    ('Roadways', 'callejera'): []}

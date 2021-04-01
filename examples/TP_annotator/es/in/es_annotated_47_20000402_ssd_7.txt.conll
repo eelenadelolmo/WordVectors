@@ -1,0 +1,12 @@
+{   ('Aggregate', 'partido'): [('Individuals', 'los')],
+    ('Change_of_leadership', 'elecciones'): [('Degree', 'parlamentarias')],
+    ('Commitment', 'amenazas'): [('Speaker', 'veteranos'), ('Message', 'de respaldar un Gobierno militar si el partido de Mugabe ( ZANU-PF ) perdiera las elecciones parlamentarias , previstas para')],
+    ('Earnings_and_losses', 'perdiera'): [('Earner', 'partido de Mugabe ( ZANU-PF )'), ('Earnings', 'elecciones parlamentarias')],
+    ('Leadership', 'Gobierno'): [('Type', 'militar')],
+    ('Military', 'militar'): [],
+    ('Reasoning', 'manifestación'): [],
+    ('Referring_by_name', 'convocado la'): [('Speaker', 'el'), ('Name', 'manifestación')],
+    ('Relative_time', 'de los'): [   ('Focal_occasion', 'manifestación'),
+                                     ('Landmark_occasion', 'veteranos'),
+                                     ('Focal_occasion', 'de respaldar un Gobierno militar si el partido de Mugabe ( ZANU-PF ) perdiera las elecciones parlamentarias , previstas para')],
+    ('Supporting', 'de respaldar'): [('Supporter', 'veteranos'), ('Supported', 'un Gobierno militar')]}

@@ -1,0 +1,8 @@
+{   ('Cause_temperature_change', 'caldearon'): [('Temperature_change', 'el ambiente que dos diputados se enzarzaron a puñetazos')],
+    ('Desiring', 'querer'): [('Event', 'separar a Kosovo de'), ('Place', 'de Yugoslavia')],
+    ('Discussion', 'discusiones'): [('Language', 'Duma'), ('Topic', 'caldearon tanto el ambiente que dos')],
+    ('Judgment_communication', 'enzarzaron'): [   ('Communicator', 'ministro de Exteriores'),
+                                                  (   'Reason',
+                                                      'de querer separar a Kosovo de Yugoslavia , y en la Duma las discusiones caldearon tanto el ambiente que dos diputados se enzarzaron a '
+                                                      'puñetazos')],
+    ('Weather', 'clima'): [('Specification', 'tenso')]}

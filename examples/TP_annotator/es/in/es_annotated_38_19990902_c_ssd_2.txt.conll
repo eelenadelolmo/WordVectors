@@ -1,0 +1,6 @@
+{   ('Attack', 'ofensivas'): [('Assailant', 'GIL'), ('Weapon', 'las acusaciones de malversación de caudales públicos , prevaricación y cohecho que los socialistas hicieron contra los miembros')],
+    ('Categorization', 'considera'): [   ('Cognizer', 'GIL'),
+                                         ('Item', 'ofensivas las acusaciones de malversación de caudales públicos , prevaricación y cohecho que los socialistas hicieron contra los miembros')],
+    ('Judgment_communication', 'acusaciones'): [('Reason', 'de caudales públicos')],
+    ('Membership', 'miembros'): [('Group', 'del GIL')],
+    ('Money', 'los'): [('Possessor', 'públicos')]}

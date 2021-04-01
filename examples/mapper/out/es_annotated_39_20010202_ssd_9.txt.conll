@@ -1,0 +1,3 @@
+{   ('Building_subparts', 'el departamento'): [('Descriptor', 'alcaldía de Moscú')],
+    ('Leadership', 'Encabeza'): [('Leader', 'el'), ('Governed', 'el departamento financiero de la alcaldía de Moscú')],
+    ('Leadership', 'el'): [('Governed', 'Moscú'), ('Leader', 'el departamento')]}

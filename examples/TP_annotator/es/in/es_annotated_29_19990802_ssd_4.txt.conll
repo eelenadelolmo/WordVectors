@@ -1,0 +1,8 @@
+{   ('Death', 'falleció'): [('Place', 'en la'), ('Protagonist', 'una persona'), ('Place', 'en la localidad de Manzanilla')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'una persona falleció'), ('Ground', 'localidad de Manzanilla también después de atropellar a un caballo a las 4.05')],
+    ('Locative_relation', 'en'): [('Figure', 'un caballo'), ('Ground', '4.05')],
+    ('People', 'persona'): [],
+    ('Political_locales', 'localidad'): [('Name', 'de Manzanilla')],
+    ('Proportional_quantity', 'a las'): [('Degree', 'en'), ('Reference_quantity', 'un caballo')],
+    ('Relative_time', 'después de'): [('Focal_occasion', 'una persona falleció en la localidad de Manzanilla también'), ('Landmark_occasion', 'atropellar a un caballo a las 4.05')],
+    ('Self_motion', 'en'): []}

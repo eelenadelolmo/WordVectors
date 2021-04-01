@@ -1,0 +1,8 @@
+{   ('Judgment_communication', 'acusándole'): [   ('Time', 'Tras 12 asesinatos en siete meses'),
+                                                  ('Medium', 'Gobierno crucifica sin complejos a Xabier Arzalluz'),
+                                                  ('Evaluee', 'el'),
+                                                  ('Reason', 'de legitimar')],
+    ('Killing', 'asesinatos'): [('Degree', '12'), ('Time', 'en siete meses')],
+    ('Leadership', 'Gobierno'): [],
+    ('Locale_by_use', 'complejos'): [],
+    ('Relative_time', 'en'): [('Landmark_occasion', '12 asesinatos en siete meses'), ('Focal_occasion', 'Gobierno crucifica sin complejos a Xabier Arzalluz acusándole de legitimar a')]}

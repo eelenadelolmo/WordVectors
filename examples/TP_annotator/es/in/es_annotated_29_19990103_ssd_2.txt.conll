@@ -1,0 +1,10 @@
+{   ('Buildings', 'abrigo'): [('Function', 'poesía')],
+    ('Capability', 'habilidad'): [('Entity', 'que'), ('Event', 'de interrelacionar diferentes formas artísticas')],
+    ('Create_physical_artwork', 'artista'): [('Descriptor', 'puro')],
+    ('Fields', 'artísticas'): [('Salient_entity', 'formas')],
+    ('Idiosyncrasy', 'singular'): [('Entity', 'poeta')],
+    ('Interior_profile_relation', 'al'): [('Figure', '; todas , eso sí ,'), ('Ground', 'abrigo de la poesía')],
+    ('Similarity', 'diferentes'): [('Entities', 'formas artísticas')],
+    ('Text', 'poesía'): [],
+    ('Text_creation', 'escrita'): [('Text', 'abrigo de la poesía'), ('Text', 'visual , escénica ,')],
+    ('Type', 'formas'): [('Type_property', 'artísticas')]}

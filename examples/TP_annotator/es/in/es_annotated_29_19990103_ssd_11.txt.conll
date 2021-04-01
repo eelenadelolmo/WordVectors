@@ -1,0 +1,12 @@
+{   ('Accomplishment', 'logrando'): [('Goal', 'con sus malabarismos verbales efectos sorprendentes del lenguaje')],
+    ('Age', 'nuevas'): [],
+    ('Desirability', 'populares'): [('Evaluee', 'clases')],
+    ('Experiencer_obj', 'sorprendentes'): [('Stimulus', 'sus malabarismos verbales'), ('Stimulus', 'efectos sorprendentes del lenguaje')],
+    ('Frequency', 'siempre'): [('Event', 'experimentando siempre para buscar nuevas formas')],
+    ('Giving', 'dando'): [('Recipient', 'lector'), ('Imposed_purpose', 'con su mente de ilusionista imágenes del todo nuevas')],
+    ('Impression', 'imágenes'): [('Figure', 'ilusionista'), ('Figure', 'del todo nuevas')],
+    ('Objective_influence', 'efectos'): [('Dependent_entity', 'del lenguaje')],
+    ('Reading_perception', 'lector'): [],
+    ('Scrutiny', 'buscar'): [('Ground', 'nuevas formas')],
+    ('Type', 'clases'): [('Type_property', 'populares')],
+    ('Type', 'formas'): [('Type_property', 'nuevas')]}

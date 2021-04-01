@@ -1,0 +1,13 @@
+{   ('Activity_ongoing', 'manutención'): [],
+    ('Buildings', 'hotel'): [],
+    ('Calendric_unit', 'día'): [],
+    ('Calendric_unit', 'horas'): [('Relative_time', '29')],
+    ('Cardinal_numbers', 'un'): [],
+    ('Catastrophe', 'desastre de'): [('Cause', 'de')],
+    ('Commerce_pay', 'gastar'): [('Buyer', 'nadie'), ('Unit', 'les')],
+    ('Earnings_and_losses', 'perder'): [('Earnings', 'día de trabajo y gastar más de 300 euros & quot ; ( 50.000 pesetas , entre hotel y manutención')],
+    ('Evidence', 'que'): [('Support', 'desastre de'), ('Proposition', 'sus dos amigos & quot ; 29 horas de retraso , perder un día de trabajo y gastar más de 300')],
+    ('Increment', 'más'): [('Class', 'de 300 euros')],
+    ('Personal_relationship', 'amigos'): [],
+    ('Temporal_subregion', 'retraso'): [('Time_period', 'horas')],
+    ('Work', 'trabajo'): [('Degree', 'día')]}

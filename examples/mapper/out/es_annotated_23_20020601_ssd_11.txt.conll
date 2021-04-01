@@ -1,0 +1,8 @@
+{   ('Activity_ongoing', 'los'): [('Agent', 'de'), ('Activity', 'otros 25 agentes'), ('Time', 'en la comisaría de Granollers')],
+    ('Arriving', 'llegarían'): [('Theme', 'que'), ('Goal', 'a Quatre'), ('Time', 'en unos cinco minutos')],
+    ('Calendric_unit', 'minutos'): [('Count', 'cinco')],
+    ('Cardinal_numbers', 'cinco'): [('Unit', 'minutos')],
+    ('Increment', 'otros'): [('Class', '25 agentes')],
+    ('Interior_profile_relation', 'en'): [('Ground', 'Además')],
+    ('Leadership', 'agentes'): [('Descriptor', '25')],
+    ('Locative_relation', 'en'): [('Figure', 'que'), ('Ground', 'Quatre'), ('Time', 'en unos cinco minutos')]}

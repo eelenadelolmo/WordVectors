@@ -1,0 +1,8 @@
+{   ('Calendric_unit', 'hoy'): [],
+    ('Death', 'murieron'): [('Protagonist', 'los socialistas'), ('Result', 'de éxito')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'están'), ('Ground', 'que hoy están en la oposición')],
+    ('Leadership', 'dirigente'): [('Domain', 'conservador')],
+    ('People_along_political_spectrum', 'conservador'): [('Individual', 'dirigente conservador')],
+    ('Remembering_experience', 'recordó'): [('Cognizer', 'los socialistas'), ('Experience', 'que hoy están en la oposición')],
+    ('Statement', 'de'): [('Speaker', 'El dirigente conservador'), ('Message', 'que los socialistas murieron de éxito')],
+    ('Success_or_failure', 'éxito'): []}

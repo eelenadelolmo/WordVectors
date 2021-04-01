@@ -1,0 +1,11 @@
+{   ('Age', 'Nueva'): [('Entity', 'Hampshire')],
+    ('Locative_relation', 'en'): [('Figure', 'que se cifró en'), ('Ground', 'del 80 % de todos los inscritos para votar')],
+    ('Proportional_quantity', 'a las'): [('Individuals', 'del 80 % de todos los inscritos para votar')],
+    ('Reveal_secret', 'revelaron'): [   ('Information', 'recuentos iniciales'),
+                                        ('Information', 'gran volumen de independientes 37 % de los votantes de Nueva Hampshire - - , en un récord de asistencia a las urnas que se cifró en')],
+    ('Size', 'gran'): [('Dimension', 'volumen de')],
+    ('Statement', 'recuentos'): [   ('Manner', 'iniciales'),
+                                    ('Message', 'gran volumen de independientes 37 % de los votantes de Nueva Hampshire - - , en un récord de asistencia a las urnas que se cifró en')],
+    ('Text', 'récord'): [('Text', 'inscritos para votar')],
+    ('Text', 'volumen de'): [],
+    ('Version_sequence', 'iniciales'): [('Item', 'recuentos')]}

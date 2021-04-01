@@ -1,0 +1,7 @@
+{   ('Being_named', 'nombre'): [],
+    ('Installing', 'instalar'): [('Place', 'en el Museu del Cinema')],
+    ('Interior_profile_relation', 'en'): [('Ground', 'Figueres')],
+    ('Locale_by_use', 'Museu'): [('Formational_cause', 'del Cinema')],
+    ('Opinion', 'pensar'): [('Cognizer', 'le'), ('Opinion', 'que le acababa de hacer el Ayuntamiento de Girona')],
+    ('Political_locales', 'Ayuntamiento'): [],
+    ('Text', 'poema'): []}

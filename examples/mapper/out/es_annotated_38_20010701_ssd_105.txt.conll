@@ -1,0 +1,8 @@
+{   ('Being_in_captivity', 'preso de'): [('Theme', 'en'), ('Holding_location', 'fama')],
+    ('Buildings', 'hoteles'): [],
+    ('Direction', 'en'): [('Path', 'en los hoteles')],
+    ('Fame', 'famoso'): [],
+    ('Frequency', 'siempre'): [('Event', 'un famoso preso de la fama'), ('Event', 'encerrado en los hoteles')],
+    ('Hair_configuration', 'encerrado'): [('Location', 'un famoso preso de la fama'), ('Location', 'siempre'), ('Location', 'en los hoteles')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'un famoso preso de la fama'), ('Figure', 'siempre encerrado'), ('Ground', 'hoteles')],
+    ('Temporal_collocation', 'Durante'): [('Landmark_period', 'mi vida'), ('Trajector_event', 'Durante mi vida en los Stones era un famoso preso de la fama , siempre encerrado en los hoteles')]}

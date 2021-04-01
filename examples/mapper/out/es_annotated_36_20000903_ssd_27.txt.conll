@@ -1,0 +1,5 @@
+{   ('Discussion', 'debate'): [('Topic', 'nominalista')],
+    ('Emphasizing', 'se enfoca'): [('Agent', 'el congreso'), ('Consideration', 'como una oportunidad para relanzar el proyecto huyendo del debate nominalista')],
+    ('Expectation', 'se'): [('Phenomenon', 'prevé un adelanto electoral')],
+    ('Fleeing', 'huyendo'): [('Self_mover', 'el proyecto'), ('Goal', 'del debate nominalista')],
+    ('Project', 'proyecto'): []}

@@ -1,0 +1,6 @@
+{   ('Being_in_captivity', 'prisionero'): [('Holding_location', 'palabra')],
+    ('Being_named', 'nombre'): [('Entity', 'de Alá')],
+    ('Color', 'verde'): [('Entity', 'vestía')],
+    ('Statement', 'declarar'): [('Speaker', 'en'), ('Message', 'nada')],
+    ('Statement', 'dijo'): [   ('Message', '; En nombre de Alá , no tengo nada que declarar ; no declaro nada & quot ;'),
+                               ('Message', 'Moussaoui , que vestía una sudadera verde con la palabra prisionero en la espalda')]}

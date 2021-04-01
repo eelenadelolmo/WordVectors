@@ -1,0 +1,12 @@
+{   ('Appellations', 'presidente'): [('Type', 'Cuevas')],
+    ('Cardinal_numbers', 'ambos'): [('Entity', 'países')],
+    ('Discussion', 'encuentros'): [('Depictive', 'destacables')],
+    ('Inclusion', 'tienen'): [   ('Total', 'apretada agenda'),
+                                 (   'Part',
+                                     'algunos encuentros destacables , como con el presidente de la CEOE , José María Cuevas , que tienen por objeto repasar las relaciones comerciales entre ambos '
+                                     'países')],
+    ('Political_locales', 'países'): [],
+    ('Proportional_quantity', 'algunos'): [('Individuals', 'encuentros destacables')],
+    ('Purpose', 'objeto'): [('Goal', 'repasar las relaciones comerciales entre ambos países')],
+    ('Relation', 'las relaciones'): [('Relation_type', 'comerciales'), ('Entities', 'entre ambos países')],
+    ('Timetable', 'agenda'): []}

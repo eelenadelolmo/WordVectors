@@ -1,0 +1,13 @@
+{   ('Give_impression', 'según'): [('Phenomenon', 'órdenes'), ('Inference', 'al director del FBI ( policía federal de Estados Unidos ) , Louis Freeh ,')],
+    ('Identicality', 'mismas'): [('Type', 'fuentes')],
+    ('Leadership', 'director'): [('Governed', 'del')],
+    ('Likelihood', 'posibilidad'): [('Hypothetical_event', 'de enviar órdenes de comparecer al director del FBI ( policía federal de Estados Unidos ) ,')],
+    ('Political_locales', 'federal'): [],
+    ('Sending', 'enviar'): [('Theme', 'órdenes'), ('Purpose', 'de comparecer al director del FBI ( policía federal de Estados')],
+    ('Sequence', 'órdenes'): [],
+    ('Source_of_getting', 'fuentes'): [],
+    ('Statement', 'añadieron'): [   (   'Message',
+                                        'comité judicial examinó la posibilidad de enviar órdenes de comparecer al director del FBI ( policía federal de Estados Unidos ) , Louis Freeh , y a un '
+                                        'fiscal del Ministerio de Justicia ,'),
+                                    ('Time', 'al'),
+                                    ('Message', 'las mismas fuentes')]}

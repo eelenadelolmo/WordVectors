@@ -1,0 +1,5 @@
+{   ('Chatting', 'charlar'): [],
+    ('Direction', 'darle'): [('Landmark', 'mi pequeña')],
+    ('Food_gathering', 'darle'): [('Crop', 'o a'), ('Manner', 'darle'), ('Source', 'mi pequeña')],
+    ('Motion', 'darle'): [('Goal', 'tomar algo , a charlar o a darle de comer a los patos')],
+    ('People', 'mi'): []}

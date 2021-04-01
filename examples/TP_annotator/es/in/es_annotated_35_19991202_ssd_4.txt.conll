@@ -1,0 +1,5 @@
+{   ('Calendric_unit', 'meses'): [('Count', 'dos')],
+    ('Cardinal_numbers', 'dos'): [('Unit', 'meses')],
+    ('Institutionalization', 'hospitalización'): [('Patient', 'del líder del Kremlin'), ('Manner', 'segunda'), ('Time', 'en dos meses')],
+    ('Leadership', 'líder'): [('Descriptor', 'Kremlin')],
+    ('Ordinal_numbers', 'segunda'): []}

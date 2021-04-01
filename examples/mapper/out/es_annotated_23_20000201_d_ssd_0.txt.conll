@@ -1,0 +1,5 @@
+{   ('Change_of_leadership', 'elecciones'): [],
+    ('Give_impression', 'parece'): [('Phenomenon', 'Ser exministro de Trabajo'), ('Inference', 'para presentarse a las elecciones en Andalucía')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'elecciones'), ('Ground', 'Andalucía')],
+    ('Self_motion', 'exministro'): [('Goal', 'a las elecciones en Andalucía')],
+    ('Time_vector', 'exministro'): [('Event', 'exministro de Trabajo parece un aval para presentarse a las elecciones en Andalucía')]}

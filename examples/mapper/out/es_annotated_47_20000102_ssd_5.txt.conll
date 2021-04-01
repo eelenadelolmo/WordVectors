@@ -1,0 +1,6 @@
+{   ('Attempt_suasion', 'presión'): [('Addressee', 'sobre ellos')],
+    ('Becoming_silent', 'silencio'): [('Speaker', 'Él')],
+    ('Grasp', 'entendía'): [('Cognizer', 'Él'), ('Phenomenon', 'bien con los líderes occidentales')],
+    ('Leadership', 'líderes'): [('Type', 'occidentales')],
+    ('Part_orientational', 'occidentales'): [('Whole', 'líderes')],
+    ('Statement', 'añade'): [('Message', '; Él se entendía bien con los líderes occidentales , en ocasiones , incluso su silencio ejercía una presión sobre ellos & quot ; ,'), ('Speaker', 'Él')]}

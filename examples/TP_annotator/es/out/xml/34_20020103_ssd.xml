@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="34_20020103_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Muchos</concept>
+		<concept id="c_1">pocos como Recio</concept>
+		<concept id="c_2">El príncipe enamorado</concept>
+		<concept id="c_3">que</concept>
+		<concept id="c_4">su difusión</concept>
+		<concept id="c_5">Los cuentos tradicionales</concept>
+		<concept id="c_6">Jaume , heredero de la corona ,</concept>
+		<concept id="c_7">Los historiadores</concept>
+		<concept id="c_8">Usted</concept>
+		<concept id="c_9">la historia</concept>
+		<concept id="c_10">Las editoriales de Madrid</concept>
+		<concept id="c_11">el cuento</concept>
+		<concept id="c_12">Yo</concept>
+		<concept id="c_13">Su familia</concept>
+		<concept id="c_14">los camiones</concept>
+		<concept id="c_15">Fecsa</concept>
+		<concept id="c_16">de educar en la diversidad</concept>
+		<concept id="c_17">la boca</concept>
+		<concept id="c_18">un cuento infantil en</concept>
+		<concept id="c_19">que</concept>
+		<concept id="c_20">el lápiz</concept>
+		<concept id="c_21">30 años que</concept>
+		<concept id="c_22">su voz - - que</concept>
+		<concept id="c_23">un tupido</concept>
+		<concept id="c_24">nos</concept>
+		<concept id="c_25">el</concept>
+		<concept id="c_26">la boca</concept>
+		<concept id="c_27">Dios</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Muchos se llenan la boca hablando de educar en la diversidad.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="pi0mp000">Muchos</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_9" concept_ref3="c_16" concept_ref4="c_17" concept_ref5="c_26">
+			<mention concept_ref="c_8"><token pos="p0300000">se</token></mention><token pos="vmip3p0">llenan</token><token pos="da0fs0">la</token><token pos="ncfs000">boca</token><token pos="vmg0000">hablando</token><mention concept_ref="c_16"><token pos="sps00">de</token><token pos="vmn0000">educar</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">diversidad</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Chatting" head="hablando">
+				<argument type="Topic" dependent="de educar en la diversidad" /></main_frame>
+			<main_frame type="Education_teaching" head="educar">
+				<argument type="Skill" dependent="en la diversidad" /></main_frame>
+			<main_frame type="Filling" head="llenan">
+				<argument type="Cause" dependent="Muchos" />
+				<argument type="Goal" dependent="la boca" />
+				<argument type="Time" dependent="hablando de educar en la diversidad" /></main_frame>
+			<frame type="Quantified_mass" head="Muchos">
+				<argument type="Individuals" dependent="llenan la boca" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero pocos como Recio se atreven a lanzar un cuento infantil en el que el príncipe no se pirra por la buena de turno, sino por el esclavo musulmán.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="pi0mp000">pocos</token><token pos="cs">como</token><token pos="np00000">Recio</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_11" concept_ref3="c_2" concept_ref4="c_18" concept_ref5="c_19" concept_ref6="c_16" concept_ref7="c_25">
+			<token pos="p0300000">se</token><token pos="vmip3p0">atreven</token><token pos="sps00">a</token><token pos="vmn0000">lanzar</token><mention concept_ref="c_11"><token pos="di0ms0">un</token><token pos="ncms000">cuento</token></mention><token pos="aq0cs0">infantil</token><token pos="sps00">en</token><token pos="da0ms0">el</token><mention concept_ref="c_19"><token pos="pr0cn000">que</token></mention><token pos="da0ms0">el</token><token pos="ncms000">príncipe</token><token pos="rn">no</token><token pos="p0300000">se</token><token pos="vmip3s0">pirra</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="aq0fs0">buena</token><token pos="sps00">de</token><token pos="ncms000">turno</token><token pos="fc">,</token><token pos="cc">sino</token><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="ncms000">esclavo</token><token pos="aq0ms0">musulmán</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desirability" head="buena">
+				<argument type="Evaluee" dependent="turno" /></frame>
+			<frame type="Kinship" head="infantil" />
+			<frame type="Leadership" head="príncipe" />
+			<frame type="People_by_religion" head="musulmán" />
+			<frame type="Quantified_mass" head="pocos" />
+			<main_frame type="Shoot_projectiles" head="lanzar">
+				<argument type="Projectile" dependent="un cuento infantil en" /></main_frame>
+			<frame type="Similarity" head="como">
+				<argument type="Degree" dependent="pocos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El príncipe enamorado es un libro basado en un episodio histórico que si en algo milita, es en la libertad.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">El</token><token pos="ncfs000">príncipe</token><token pos="aq0fs0">enamorado</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_5">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_2"><token pos="di0ms0">un</token><token pos="ncms000">libro</token></mention><token pos="aq0msp">basado</token><token pos="sps00">en</token><mention concept_ref="c_5"><token pos="di0ms0">un</token><token pos="ncms000">episodio</token></mention><token pos="aq0ms0">histórico</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Event" head="episodio" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="algo milita" />
+				<argument type="Ground" dependent="libertad" /></frame>
+			<frame type="Leadership" head="príncipe" />
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="un libro basado" />
+				<argument type="Ground" dependent="un episodio histórico que si en algo milita , es en la libertad" /></frame>
+			<frame type="Text" head="libro" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¡ Vaya debut! - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Antes ya escribí un cuento protagonizado por un personaje con síndrome de Down.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Performers_and_roles" head="protagonizado">
+				<argument type="Time" dependent="Antes ya escribí un cuento" />
+				<argument type="Role" dependent="un personaje con síndrome de" /></frame>
+			<frame type="Text_creation" head="escribí">
+				<argument type="Author" dependent="de" />
+				<argument type="Text" dependent="un cuento" /></frame>
+			<frame type="Time_vector" head="Antes">
+				<argument type="Landmark_event" dependent="escribí un cuento protagonizado por un personaje con síndrome" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Localicé a José Sanchís, el creador de Pumby, que hacía 30 años que no cogía el lápiz, y le pedí que me dibujara a un gatito con esa discapacidad.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_19" concept_ref3="c_20" concept_ref4="c_21" concept_ref5="c_25">
+			<token pos="vmii3s0">hacía</token><mention concept_ref="c_21"><token pos="z">30</token><token pos="ncmp000">años</token><token pos="cs">que</token></mention><token pos="rn">no</token><token pos="vmii3s0">cogía</token><mention concept_ref="c_25"><token pos="da0ms0">el</token></mention><token pos="ncms000">lápiz</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_aware" head="Localicé">
+				<argument type="Cognizer" dependent="y" />
+				<argument type="Phenomenon" dependent="Sanchís , el creador de" /></frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Relative_time" dependent="30" /></frame>
+			<frame type="Cause_motion" head="dibujara a">
+				<argument type="Agent" dependent="le" />
+				<argument type="Theme" dependent="me" />
+				<argument type="Goal" dependent="a un gatito con esa discapacidad" /></frame>
+			<frame type="Questioning" head="pedí">
+				<argument type="Message" dependent="Localicé a José Sanchís , el creador de Pumby , que hacía 30 años que no cogía el lápiz" />
+				<argument type="Addressee" dependent="le" />
+				<argument type="Message" dependent="me dibujara a un gatito con esa discapacidad" /></frame>
+			<main_frame type="Taking_time" head="hacía">
+				<argument type="Agent" dependent="que" />
+				<argument type="Time_length" dependent="el lápiz" />
+				<argument type="Activity" dependent="30 años que" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero su difusión, lamentablemente, fue muy limitada.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="dp2cs0">su</token><token pos="ncfs000">difusión</token>
+		</theme>
+		<rheme>
+			<token pos="vsis3s0">fue</token><token pos="rg">muy</token><token pos="aq0fsp">limitada</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Expansion" head="difusión">
+				<argument type="Item" dependent="su" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Es un cruzado de la diferencia? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Non-commutative_statement" head="diferencia">
+				<argument type="Term_2" dependent="cruzado" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Simplemente soy alguien que percibe que hay temas que nadie toca.
+		</str>
+		<theme>
+			<token pos="pi0cs000">nadie</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="que " />
+			<frame type="Cardinal_numbers" head="alguien">
+				<argument type="Entity" dependent="toca" /></frame>
+			<frame type="Locative_relation" head="hay">
+				<argument type="Figure" dependent="alguien que percibe que" />
+				<argument type="Ground" dependent="hay temas" />
+				<argument type="Figure" dependent="que nadie toca" /></frame>
+			<frame type="Point_of_dispute" head="temas">
+				<argument type="Question" dependent="que nadie toca" /></frame>
+			<frame type="Spatial_contact" head="toca">
+				<argument type="Figure" dependent="alguien" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los cuentos tradicionales han pasado por el tamiz de Disney, que es un tamiz fascista.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">cuentos</token><token pos="aq0cp0">tradicionales</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_2" concept_ref3="c_16" concept_ref4="c_25">
+			<token pos="vaip3p0">han</token><token pos="vmp00sm">pasado</token><mention concept_ref="c_16"><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="ncms000">tamiz</token><token pos="sps00">de</token></mention><mention concept_ref="c_2"><token pos="np00000">Disney</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Custom" head="tradicionales">
+				<argument type="Behavior" dependent="cuentos" /></frame>
+			<main_frame type="Process_end" head="han pasado">
+				<argument type="Process" dependent="cuentos tradicionales" />
+				<argument type="Manner" dependent="por el tamiz de" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Cómo de fascista? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¡ Fíjese en la lectura racista de la Sirenita!.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Linguistic_meaning" head="lectura">
+				<argument type="Form" dependent="racista" />
+				<argument type="Form" dependent="de la Sirenita" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="la lectura racista de la" /></frame>
+			<frame type="Scrutiny" head="en">
+				<argument type="Ground" dependent="en la lectura racista de la" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Presentan al humano como a un ser superior y a la Sirenita, como a un ser minusválido que tiene que vender su voz - - que es como vender su alma - - para tener dos piernas como Dios manda y así poder casarse con el príncipe.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_2" concept_ref3="c_0" concept_ref4="c_13" concept_ref5="c_16" concept_ref6="c_19" concept_ref7="c_22" concept_ref8="c_25" concept_ref9="c_26" concept_ref10="c_27">
+			<token pos="vmip3s0">tiene</token><token pos="cs">que</token><token pos="vmn0000">vender</token><mention concept_ref="c_0"><token pos="dp3cs0">su</token><token pos="ncfs000">voz</token></mention><token pos="fg">-</token><token pos="fg">-</token><token pos="cs">que</token><token pos="vsip3s0">es</token><token pos="cs">como</token><token pos="vmn0000">vender</token><token pos="dp3cs0">su</token><token pos="ncfs000">alma</token><token pos="fg">-</token><token pos="fg">-</token><token pos="sps00">para</token><token pos="vmn0000">tener</token><token pos="dn0cp0">dos</token><token pos="ncfp000">piernas</token><token pos="cs">como</token><mention concept_ref="c_27"><token pos="np00000">Dios</token></mention><token pos="vmis3s0">manda</token><token pos="cc">y</token><token pos="rg">así</token><token pos="vmn0000">poder</token><mention concept_ref="c_16"><token pos="vmn0000">casarse</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">príncipe</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Capability" head="poder">
+				<argument type="Event" dependent="casarse con el príncipe" /></main_frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Unit" dependent="piernas" /></frame>
+			<main_frame type="Commerce_sell" head="vender">
+				<argument type="Seller" dependent="que" />
+				<argument type="Buyer" dependent="su voz - - que" /></main_frame>
+			<main_frame type="Forming_relationships" head="casarse">
+				<argument type="Partner_2" dependent="el príncipe" /></main_frame>
+			<main_frame type="Leadership" head="manda" />
+			<frame type="People" head="humano" />
+			<frame type="Subordinates_and_superiors" head="superior" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¡ Qué bonito habría sido que el príncipe se cortase las suyas y se lanzase al mar por amor! - -.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">el</token><token pos="ncms000">príncipe</token>
+		</theme>
+		<rheme concept_ref1="c_8">
+			<mention concept_ref="c_8"><token pos="p0300000">se</token></mention><token pos="vmsi3s0">cortase</token><token pos="di0mp0">las</token><token pos="dn0cp0">suyas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aesthetics" head="bonito">
+				<argument type="Entity" dependent="se" /></frame>
+			<main_frame type="Cutting" head="cortase">
+				<argument type="Item" dependent="el príncipe" /></main_frame>
+			<frame type="Experiencer_focus" head="amor" />
+			<frame type="Leadership" head="príncipe" />
+			<frame type="Natural_features" head="mar" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El suyo sale del armario.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Sleep" head="sale del">
+				<argument type="Sleeper" dependent="suyo" />
+				<argument type="Sleeper" dependent="del armario" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - El mío está inspirado en el primogénito de Jaume II, conde de Barcelona y rey de Valencia.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Subjective_influence" head="inspirado">
+				<argument type="Action" dependent="- - El mío" />
+				<argument type="Cognizer" dependent="primogénito de Jaume II , conde de Barcelona y rey de Valencia" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Jaume, heredero de la corona, tenía a sus pies a Catalunya, Aragón y Valencia.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="np00000">Jaume</token><token pos="fc">,</token><token pos="ncms000">heredero</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">corona</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_15">
+			<token pos="vmii3s0">tenía</token><token pos="sps00">a</token><token pos="np00000">Catalunya</token><token pos="fc">,</token><token pos="np00000">Aragón</token><token pos="cc">y</token><mention concept_ref="c_15"><token pos="np00000">Valencia</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="sus pies">
+				<argument type="Possessor" dependent="sus" /></frame>
+			<frame type="Change_of_leadership" head="corona" />
+			<frame type="Locative_relation" head="de">
+				<argument type="Figure" dependent="Jaume , heredero de la corona" />
+				<argument type="Ground" dependent="sus pies a Catalunya , Aragón y Valencia" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero dejó a su novia plantada en el altar y se esfumó.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Building_subparts" head="altar" />
+			<frame type="Departing" head="dejó" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los historiadores corren un tupido velo y afirman que se fue a tierra de moros.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">historiadores</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_23" concept_ref3="c_25">
+			<token pos="vmip3p0">corren</token><mention concept_ref="c_23"><token pos="di0ms0">un</token><token pos="aq0msp">tupido</token></mention><token pos="ncms000">velo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Motion" head="fue">
+				<argument type="Theme" dependent="se" />
+				<argument type="Goal" dependent="a tierra de moros" /></frame>
+			<main_frame type="Self_motion" head="corren un">
+				<argument type="Self_mover" dependent="historiadores" />
+				<argument type="Path" dependent="un tupido" /></main_frame>
+			<frame type="Statement" head="afirman">
+				<argument type="Speaker" dependent="historiadores" />
+				<argument type="Message" dependent="que se fue a tierra de moros" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Usted concluye que era gay.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="pp2cs00p">Usted</token>
+		</theme>
+		<rheme>
+			<token pos="vsii3s0">era</token><token pos="aq0cs0">gay</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_finish" head="concluye">
+				<argument type="Agent" dependent="Usted" />
+				<argument type="Activity" dependent="era gay" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - No quería estar con mujeres.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desiring" head="quería">
+				<argument type="Experiencer" dependent="-" />
+				<argument type="Event" dependent="estar con mujeres" /></frame>
+			<frame type="People" head="mujeres" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En mi cuento, el príncipe se enamora de Karim, el sirviente musulmán.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">el</token><token pos="ncms000">príncipe</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_13" concept_ref3="c_2" concept_ref4="c_16" concept_ref5="c_25">
+			<mention concept_ref="c_8"><token pos="p0300000">se</token></mention><token pos="vmip3s0">enamora</token><token pos="sps00">de</token><mention concept_ref="c_13"><token pos="np00000">Karim</token></mention><mention concept_ref="c_16"><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="nccs000">sirviente</token><token pos="aq0ms0">musulmán</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Change_position_on_a_scale" head="se">
+				<argument type="Correlated_variable" dependent="En mi cuento" />
+				<argument type="Item" dependent="el príncipe" />
+				<argument type="Attribute" dependent="enamora de Karim , el sirviente musulmán" /></frame>
+			<main_frame type="Experiencer_focus" head="enamora">
+				<argument type="Experiencer" dependent="el príncipe" />
+				<argument type="Content" dependent=", el sirviente musulmán" /></main_frame>
+			<frame type="Leadership" head="príncipe" />
+			<frame type="People_by_religion" head="musulmán" />
+			<frame type="People_by_vocation" head="sirviente">
+				<argument type="Age" dependent="musulmán" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y así la historia rompe no sólo con el concepto tradicional de sexo, sino con los de clase y de religión.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="da0fs0">la</token><token pos="ncfs000">historia</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_14" concept_ref3="c_2" concept_ref4="c_25">
+			<token pos="vmip3s0">rompe</token><token pos="rn">no</token><token pos="rg">sólo</token><token pos="sps00">con</token><mention concept_ref="c_25"><token pos="da0ms0">el</token></mention><token pos="ncms000">concepto</token><token pos="aq0cs0">tradicional</token><token pos="sps00">de</token><token pos="ncms000">sexo</token><token pos="fc">,</token><token pos="cc">sino</token><token pos="sps00">con</token><token pos="da0mp0">los</token><token pos="sps00">de</token><token pos="ncfs000">clase</token><token pos="cc">y</token><token pos="sps00">de</token><mention concept_ref="c_2"><token pos="ncfs000">religión</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Compliance" head="rompe">
+				<argument type="Means" dependent="historia" /></main_frame>
+			<frame type="Custom" head="tradicional">
+				<argument type="Behavior" dependent="concepto tradicional de sexo" /></frame>
+			<frame type="Individual_history" head="historia">
+				<argument type="Events" dependent="rompe" /></frame>
+			<frame type="Type" head="clase" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Lo vieron así los editores? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Means" head="así">
+				<argument type="Agent" dependent="Lo" /></frame>
+			<frame type="Perception_experience" head="Lo vieron">
+				<argument type="Perceiver_passive" dependent="los editores" />
+				<argument type="Phenomenon" dependent="así" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Las editoriales de Madrid nos devolvieron las primeras muestras que enviamos diciendo que la historia no tenía ni pies ni cabeza, que era una provocación.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="da0fp0">Las</token><token pos="ncfp000">editoriales</token><token pos="sps00">de</token><token pos="np00000">Madrid</token>
+		</theme>
+		<rheme concept_ref1="c_14" concept_ref2="c_9" concept_ref3="c_8" concept_ref4="c_15" concept_ref5="c_2" concept_ref6="c_16" concept_ref7="c_19" concept_ref8="c_24" concept_ref9="c_26" concept_ref10="c_27">
+			<token pos="pp1cp000">nos</token><token pos="vmis3p0">devolvieron</token><mention concept_ref="c_14"><token pos="da0fp0">las</token><token pos="ao0fp0">primeras</token><token pos="ncfp000">muestras</token></mention><token pos="vmg0000">diciendo</token><mention concept_ref="c_16"><token pos="cs">que</token><token pos="da0fs0">la</token><token pos="ncfs000">historia</token><token pos="rn">no</token><token pos="vmii3s0">tenía</token><token pos="cc">ni</token><token pos="ncmp000">pies</token><token pos="cc">ni</token><token pos="ncfs000">cabeza</token><token pos="fc">,</token><token pos="cs">que</token><token pos="vsii3s0">era</token><token pos="di0fs0">una</token><token pos="ncfs000">provocación</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Arriving" head="devolvieron">
+				<argument type="Theme" dependent="editoriales de Madrid" />
+				<argument type="Goal" dependent="nos" /></main_frame>
+			<frame type="Body_parts" head="cabeza" />
+			<main_frame type="Ordinal_numbers" head="primeras">
+				<argument type="Type" dependent="muestras" /></main_frame>
+			<frame type="Sending" head="enviamos">
+				<argument type="Theme" dependent="muestras" />
+				<argument type="Sender" dependent="nos" />
+				<argument type="Theme" dependent="diciendo que la historia no tenía ni pies ni cabeza , que era una provocación" /></frame>
+			<main_frame type="Statement" head="diciendo">
+				<argument type="Message" dependent="que la historia no tenía ni pies ni cabeza , que era una provocación" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¡ Una provocación!.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Incluso me extraña que en países con un alto potencial gay como EEUU no haya aparecido un producto similar al mío.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="potencial" />
+			<frame type="Give_impression" head="aparecido">
+				<argument type="Phenomenon" dependent="producto similar al mío" /></frame>
+			<frame type="Just_found_out" head="extraña">
+				<argument type="Experiencer" dependent="en" /></frame>
+			<frame type="Political_locales" head="países" />
+			<frame type="Position_on_a_scale" head="alto">
+				<argument type="Item" dependent="potencial gay" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_2" dependent="al" /></frame>
+			<frame type="Similarity" head="similar">
+				<argument type="Entity_2" dependent="al mío" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿A quién se lo recomienda? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A los amantes del arte, porque el cuento es estético.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="da0ms0">el</token><token pos="ncms000">cuento</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="aq0ms0">estético</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="A los amantes del arte" />
+				<argument type="Cause" dependent="el cuento es estético" /></frame>
+			<frame type="Fields" head="arte" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A parejas gays, para que expliquen a sus sobrinos que su relación es normal.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="parejas">
+				<argument type="Multiplier" dependent="gays" /></frame>
+			<frame type="Explaining_the_facts" head="expliquen">
+				<argument type="State_of_affairs" dependent="parejas gays" />
+				<argument type="State_of_affairs" dependent="a sus sobrinos que su relación es normal" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 E incluso a los inquisidores, para que disfruten sufriendo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Experiencer_focus" head="disfruten">
+				<argument type="Content" dependent="sufriendo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Es iconoclasta por valenciano? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿Por valenciano?.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¡ Con el Gobierno que tenemos!.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="Gobierno" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Bueno, hay una alcaldesa lesbiana, pero es más dura que una monja de Léfèbvre...
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="más">
+				<argument type="Domain" dependent="lesbiana" /></frame>
+			<frame type="Locative_relation" head="hay">
+				<argument type="Ground" dependent="hay una alcaldesa lesbiana" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¡ Hombre! ¡ Así no conseguirá una sola subvención! - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Sole_instance" head="sola">
+				<argument type="Type" dependent="subvención" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Yo me conformaría con que la Generalitat comprara el cuento, como cualquier otro libro, para que fuera a las bibliotecas públicas.
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="pp1csn00">Yo</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_11" concept_ref3="c_2" concept_ref4="c_14" concept_ref5="c_18" concept_ref6="c_19" concept_ref7="c_25">
+			<token pos="p010s000">me</token><token pos="vmic3s0">conformaría</token><token pos="sps00">con</token><token pos="cs">que</token><mention concept_ref="c_10"><token pos="da0fs0">la</token><token pos="np00000">Generalitat</token></mention><token pos="vmsi3s0">comprara</token><mention concept_ref="c_25"><token pos="da0ms0">el</token></mention><token pos="ncms000">cuento</token><token pos="fc">,</token><token pos="cs">como</token><mention concept_ref="c_2"><token pos="di0cs0">cualquier</token><token pos="di0ms0">otro</token><token pos="ncms000">libro</token></mention><token pos="fc">,</token><token pos="sps00">para</token><token pos="cs">que</token><token pos="vmic3s0">fuera</token><token pos="sps00">a</token><mention concept_ref="c_14"><token pos="da0fp0">las</token><token pos="ncfp000">bibliotecas</token></mention><token pos="aq0fp0">públicas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="bibliotecas">
+				<argument type="Name" dependent="públicas" /></frame>
+			<main_frame type="Commerce_buy" head="comprara">
+				<argument type="Buyer" dependent="el" />
+				<argument type="Goods" dependent="el cuento" /></main_frame>
+			<frame type="Goal" head="para">
+				<argument type="Trajector" dependent="cualquier otro libro" />
+				<argument type="Landmark" dependent="a las bibliotecas públicas" /></frame>
+			<frame type="Increment" head="otro">
+				<argument type="Class" dependent="libro" /></frame>
+			<frame type="Motion" head="a las">
+				<argument type="Theme" dependent="cualquier otro libro" />
+				<argument type="Goal" dependent="a las bibliotecas públicas" /></frame>
+			<frame type="Quantified_mass" head="cualquier">
+				<argument type="Individuals" dependent="otro libro" /></frame>
+			<frame type="Secrecy_status" head="públicas">
+				<argument type="Phenomenon" dependent="bibliotecas" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_1" dependent="el" />
+				<argument type="Entity_2" dependent="cualquier otro libro" /></frame>
+			<frame type="Text" head="libro" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Usted es profesor universitario.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="pp2cs00p">Usted</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_16">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_2"><token pos="ncms000">profesor</token></mention><mention concept_ref="c_16"><token pos="aq0ms0">universitario</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Education_teaching" head="profesor">
+				<argument type="Institution" dependent="universitario" /></main_frame>
+			<frame type="Locale_by_use" head="universitario" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿Se puede saber qué enseña?.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Education_teaching" head="enseña">
+				<argument type="Teacher" dependent="qué" />
+				<argument type="Teacher" dependent="¿" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ( Ríe ) Ciencias Políticas Anarquistas, que están muy olvidadas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Craft" head="Ciencias">
+				<argument type="Practitioner" dependent="Anarquistas" />
+				<argument type="Culture" dependent="Políticas" /></frame>
+			<frame type="Remembering_experience" head="olvidadas">
+				<argument type="Salient_entity" dependent="Ciencias Políticas Anarquistas" />
+				<argument type="Salient_entity" dependent="que" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Algún día publicaré La política humana según un terrorista cultural.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Be_in_agreement_on_action" head="según">
+				<argument type="Obligation" dependent="política humana" />
+				<argument type="Obligation" dependent="según un terrorista cultural" /></frame>
+			<frame type="Biological_entity" head="humana">
+				<argument type="Organism" dependent="política" /></frame>
+			<frame type="Goal" head="según">
+				<argument type="Trajector" dependent="La" />
+				<argument type="Landmark" dependent="un terrorista cultural" /></frame>
+			<frame type="Law" head="política">
+				<argument type="Required" dependent="según un terrorista cultural" /></frame>
+			<frame type="Terrorism" head="terrorista">
+				<argument type="Purpose" dependent="cultural" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Su familia debe de estar escondida en Tora Bora, como mínimo.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="dp3cs0">Su</token><token pos="ncfs000">familia</token>
+		</theme>
+		<rheme concept_ref1="c_26">
+			<token pos="vmip3s0">debe</token><token pos="vmn0000">estar</token><token pos="aq0fsp">escondida</token><token pos="sps00">en</token><mention concept_ref="c_26"><token pos="np0000l">Tora</token><token pos="np0000l">Bora</token></mention><token pos="fc">,</token><token pos="cs">como</token><token pos="aq0cs0">mínimo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Hiding_objects" head="escondida">
+				<argument type="Hidden_object" dependent="Su familia" />
+				<argument type="Place" dependent="en Tora Bora" />
+				<argument type="Time" dependent="mínimo" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="familia debe de estar escondida" />
+				<argument type="Ground" dependent="Tora Bora" /></frame>
+			<frame type="Kinship" head="familia" />
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="mínimo" /></frame>
+			<main_frame type="Required_event" head="debe">
+				<argument type="Required_situation" dependent="Su familia" />
+				<argument type="Required_situation" dependent="de estar escondida en Tora Bora" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¡ Está escondida en Ruzafa, el corazoncito de Valencia! los camiones estuvieran parados.
+		</str>
+		<theme concept_ref="c_14">
+			<token pos="da0mp0">los</token><token pos="ncmp000">camiones</token>
+		</theme>
+		<rheme>
+			<token pos="vmsi3p0">estuvieran</token><token pos="aq0mpp">parados</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Hiding_objects" head="escondida">
+				<argument type="Manner" dependent="en" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="Está escondida" />
+				<argument type="Ground" dependent="de" /></frame>
+			<frame type="Posture" head="parados">
+				<argument type="Location" dependent="los camiones" /></frame>
+			<frame type="Vehicle" head="camiones" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Fecsa tiene que mejorar muchísimo sus instalaciones y tendrá que hacer frente a muchas demandas justas, pero seamos serios y demos al César lo que es del César.
+		</str>
+		<theme concept_ref="c_15">
+			<token pos="np00000">Fecsa</token>
+		</theme>
+		<rheme concept_ref1="c_14" concept_ref2="c_16" concept_ref3="c_19">
+			<token pos="vmip3s0">tiene</token><mention concept_ref="c_19"><token pos="cs">que</token></mention><token pos="vmn0000">mejorar</token><token pos="rg">muchísimo</token><token pos="dp3cp0">sus</token><token pos="ncfp000">instalaciones</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Cause_to_make_progress" head="mejorar">
+				<argument type="Project" dependent="sus instalaciones" /></main_frame>
+			<frame type="Confronting_problem" head="frente">
+				<argument type="Agent" dependent="lo" />
+				<argument type="Issue" dependent="muchas demandas" /></frame>
+			<frame type="Giving" head="sus">
+				<argument type="Recipient" dependent="César" />
+				<argument type="Theme" dependent="lo que es del" />
+				<argument type="Recipient" dependent="al César" /></frame>
+			<frame type="Locale_by_use" head="instalaciones">
+				<argument type="Container_possessor" dependent="sus" /></frame>
+			<frame type="Quantified_mass" head="muchas">
+				<argument type="Individuals" dependent="demandas" /></frame>
+			<frame type="Request" head="demandas">
+				<argument type="Speaker" dependent="lo" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

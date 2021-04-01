@@ -1,0 +1,12 @@
+{   ('Body_parts', 'manos'): [('Possessor', 'del')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Judgment_communication', 'condenar'): [('Communicator', 'Miles de ciudadanos'), ('Evaluee', 'asesinato , a manos de ETA , del ex gobernador civil de')],
+    ('Killing', 'asesinato'): [],
+    ('Leadership', 'gobernador'): [('Descriptor', 'del ex'), ('Domain', 'civil'), ('Activity', 'de')],
+    ('Locative_relation', 'en'): [   ('Figure', 'Miles de ciudadanos se manifestaron ayer en toda España para condenar el asesinato , a'),
+                                     ('Ground', 'manos de'),
+                                     ('Figure', 'del ex gobernador civil de')],
+    ('People_by_jurisdiction', 'ciudadanos'): [],
+    ('Quantified_mass', 'Miles de'): [('Individuals', 'de ciudadanos')],
+    ('Social_interaction_evaluation', 'civil'): [('Behavior', 'ex gobernador civil de')],
+    ('Time_vector', 'del ex'): [('Event', 'gobernador civil de')]}

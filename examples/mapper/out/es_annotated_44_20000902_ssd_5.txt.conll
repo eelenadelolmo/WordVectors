@@ -1,0 +1,4 @@
+{   ('Being_necessary', 'necesario'): [('Dependent', 'como arma')],
+    ('Desirability', 'bien'): [('Depictive', 'imprescindible')],
+    ('Using', 'utilizada'): [('Purpose', 'como arma')],
+    ('Weapon', 'arma'): []}

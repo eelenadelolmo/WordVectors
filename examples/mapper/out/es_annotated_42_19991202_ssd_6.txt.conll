@@ -1,0 +1,6 @@
+{   ('Body_parts', 'a orillar'): [],
+    ('Contingency', 'decididos'): [('Outcome', 'les'), ('Determinant', 'orillar las diferencias que les separan y a no ponerse zancadillas en el camino de la paz')],
+    ('Non-commutative_statement', 'diferencias'): [('Term_1', 'que les separan')],
+    ('Placing', 'ponerse'): [('Theme', 'a orillar'), ('Goal', 'en el camino de la paz')],
+    ('Roadways', 'camino'): [('Goal', 'de la paz')],
+    ('Spatial_contact', 'en'): [('Figure', 'separan y a no ponerse zancadillas en'), ('Ground', 'camino de la paz')]}

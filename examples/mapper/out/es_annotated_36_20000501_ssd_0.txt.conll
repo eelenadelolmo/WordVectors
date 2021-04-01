@@ -1,0 +1,13 @@
+{   ('Activity_prepare', 'prepara'): [('Activity', 'renovar su cargo de presidente del PP catalán en el congreso que el partido')],
+    ('Activity_resume', 'renovar'): [('Agent', 'sus'), ('Activity', 'su cargo de presidente del PP catalán en el congreso que el partido celebrará tras el verano')],
+    ('Aggregate', 'partido'): [],
+    ('Appellations', 'presidente'): [('Title', 'del PP catalán')],
+    ('Being_employed', 'en el'): [('Employee', 'sus'), ('Task', 'de presidente del PP catalán en'), ('Place_of_employment', 'en el congreso')],
+    ('Calendric_unit', 'verano'): [],
+    ('Continued_state_of_affairs', 'aún'): [   ('State_of_affairs', 'sus'),
+                                               ('State_of_affairs', 'no enseña sus cartas , Alberto Fernández Díaz se prepara para renovar su cargo de presidente del PP catalán en el')],
+    ('Education_teaching', 'enseña'): [('Teacher', 'sus'), ('Student', 'sus cartas')],
+    ('Locative_relation', 'en'): [('Figure', 'presidente del PP catalán'), ('Ground', 'el congreso'), ('Figure', 'que el partido celebrará tras el verano')],
+    ('Manipulation', 'se'): [('Agent', 'partido'), ('Time', 'tras el verano')],
+    ('Relative_time', 'del'): [('Focal_occasion', 'partido celebrará'), ('Landmark_occasion', 'el verano')],
+    ('Text', 'cartas'): [('Author', 'sus'), ('Text', 'se')]}

@@ -1,0 +1,14 @@
+{   ('Aggregate', 'partido'): [('Aggregate_property', 'en Euskadi')],
+    ('Calendric_unit', 'son'): [('Whole', 'elecciones municipales')],
+    ('Change_of_leadership', 'elecciones'): [('Place', 'municipales')],
+    ('Importance', 'prioridad'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'partido'), ('Ground', 'Euskadi')],
+    ('Organization', 'organización'): [],
+    ('Ranked_expectation', 'toda'): [('Entity', 'organización')],
+    ('Referring_by_name', 'llamamiento a'): [('Speaker', 'son'), ('Name', 'a toda la organización')],
+    ('Spatial_contact', 'en'): [('Figure', 'son'), ('Ground', 'toda la organización'), ('Figure', 'para & quot ; no fallar')],
+    ('Statement', 'dijo'): [   ('Speaker', 'Arenas'),
+                               (   'Message',
+                                   'dijo que las elecciones municipales de Junio son & quot ; una prioridad & quot ; del partido en Euskadi , por lo que hizo un llamamiento a toda la organización '
+                                   'para & quot ; no fallar & quot ;')],
+    ('Successful_action', 'fallar'): []}

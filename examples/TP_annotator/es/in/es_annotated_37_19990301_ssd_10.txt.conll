@@ -1,0 +1,10 @@
+{   ('Cause_change', 'variado'): [('Entity', 'su comportamiento')],
+    ('Conduct', 'comportamiento'): [('Agent', 'su')],
+    ('Increment', 'Otra'): [('Class', 'vecina')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'afirma que'), ('Ground', 'la zona reina la tranquilidad')],
+    ('Leadership', 'reina'): [('Leader', 'reina la tranquilidad')],
+    ('Locale', 'zona'): [],
+    ('People_by_residence', 'vecina'): [],
+    ('Statement', 'afirma'): [   ('Speaker', 'Otra vecina'),
+                                 ('Message', 'manifiesta que su comportamiento no ha variado y afirma que en la zona reina la tranquilidad : & quot ; La bomba del día 21 fue una anécdota &')],
+    ('Weapon', 'bomba'): [('Type', 'del día 21')]}

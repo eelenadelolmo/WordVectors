@@ -1,0 +1,7 @@
+{   ('Aggregate', 'partido'): [('Aggregate_property', 'nacionalista')],
+    ('Creating', 'comunicado'): [('Created_entity', 'descalificaciones que'), ('Role', 'al PNV a'), ('Time', 'a través de su último comunicado')],
+    ('Fields', 'sectores'): [],
+    ('Referring_by_name', 'refieren'): [('Entity', 'su'), ('Entity', 'únicamente a & quot ; algunos sectores & quot ; del partido nacionalista')],
+    ('Regard', 'se'): [],
+    ('Relative_time', 'último'): [('Focal_occasion', 'quot')],
+    ('Statement', 'quot'): [('Speaker', 'se'), ('Time', 'último'), ('Message', 'refieren únicamente a & quot ; algunos sectores & quot ; del partido nacionalista')]}

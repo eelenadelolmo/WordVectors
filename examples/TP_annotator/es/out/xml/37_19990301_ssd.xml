@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="37_19990301_ssd">
+
+
+	<concepts>
+		<concept id="c_0">la policía</concept>
+		<concept id="c_1">La ola de explosiones que ha padecido Salou en las últimas tres semanas</concept>
+		<concept id="c_2">Algunos habitantes de las localidades incluidas en la campaña de amenazas</concept>
+		<concept id="c_3">La mujer</concept>
+		<concept id="c_4">Los residentes en este tranquilo paraje de la Costa Daurada</concept>
+		<concept id="c_5">Marta Toledo , española de origen peruano , y su marido , John Ross , británico</concept>
+		<concept id="c_6">una locura</concept>
+		<concept id="c_7">su comportamiento</concept>
+		<concept id="c_8">que</concept>
+		<concept id="c_9">Cándida Lasbats , su viuda ,</concept>
+		<concept id="c_10">El rotativo británico The Times y las agencias Associated Press y France Presse</concept>
+		<concept id="c_11">El impacto de los aludes en los Alpes y el hecho de que las explosiones de Salou no se vincularan con una actuación terrorista</concept>
+		<concept id="c_12">Los artificieros de la Guardia Civil y del Ejército que han peinado las playas de Tarragona , Salou ( Tarragonès ) y Cambrils ( Baix Camp )</concept>
+		<concept id="c_13">Los responsables de la investigación</concept>
+		<concept id="c_14">los anónimos</concept>
+		<concept id="c_15">las playas</concept>
+		<concept id="c_16">sus</concept>
+		<concept id="c_17">es</concept>
+		<concept id="c_18">les</concept>
+		<concept id="c_19">riesgo</concept>
+		<concept id="c_20">muchos</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Vecinos de Salou, Cambrils y Tarragona lamentan que la policía no les advirtiera del riesgo tras recibir los anónimos.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">la</token><token pos="nccs000">policía</token>
+		</theme>
+		<rheme concept_ref1="c_13" concept_ref2="c_14" concept_ref3="c_17" concept_ref4="c_18" concept_ref5="c_19">
+			<token pos="rn">no</token><mention concept_ref="c_18"><token pos="pp3cpd00">les</token></mention><token pos="vmsi3s0">advirtiera</token><token pos="spcms">del</token><mention concept_ref="c_19"><token pos="ncms000">riesgo</token></mention><token pos="sps00">tras</token><token pos="vmn0000">recibir</token><token pos="da0mp0">los</token><token pos="ncmp000">anónimos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Vecinos de Salou , Cambrils y Tarragona " />
+			<frame type="Experiencer_focus" head="lamentan">
+				<argument type="Experiencer" dependent="Vecinos de Salou , Cambrils y Tarragona" />
+				<argument type="Content" dependent="que la policía" /></frame>
+			<frame type="Law_enforcement_agency" head="policía" />
+			<main_frame type="Receiving" head="recibir">
+				<argument type="Recipient" dependent="la policía" />
+				<argument type="Theme" dependent="los anónimos" /></main_frame>
+			<main_frame type="Relative_time" head="advirtiera del">
+				<argument type="Focal_occasion" dependent="policía no les advirtiera del riesgo" />
+				<argument type="Landmark_occasion" dependent="recibir los anónimos" /></main_frame>
+			<frame type="Run_risk" head="riesgo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La ola de explosiones que ha padecido Salou en las últimas tres semanas ha desatado el temor de los vecinos de la Costa Daurada, muchos de los cuales han renunciado a visitar las playas.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="ncfs000">ola</token><token pos="sps00">de</token><token pos="ncfp000">explosiones</token><token pos="pr0cn000">que</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">padecido</token><token pos="np00000">Salou</token><token pos="sps00">en</token><token pos="da0fp0">las</token><token pos="ao0fp0">últimas</token><token pos="dn0cp0">tres</token><token pos="ncfp000">semanas</token>
+		</theme>
+		<rheme concept_ref1="c_13" concept_ref2="c_4" concept_ref3="c_0" concept_ref4="c_7" concept_ref5="c_14" concept_ref6="c_15" concept_ref7="c_17" concept_ref8="c_18" concept_ref9="c_19" concept_ref10="c_20">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">desatado</token><token pos="da0ms0">el</token><token pos="ncms000">temor</token><token pos="sps00">de</token><mention concept_ref="c_13"><token pos="da0mp0">los</token><token pos="ncmp000">vecinos</token></mention><token pos="sps00">de</token><mention concept_ref="c_4"><token pos="da0fs0">la</token><token pos="ncms000">Costa</token><token pos="np00000">Daurada</token></mention><token pos="fc">,</token><mention concept_ref="c_20"><token pos="pi0mp000">muchos</token></mention><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="pr0cp000">cuales</token><token pos="vaip3p0">han</token><token pos="vmp00sm">renunciado</token><token pos="sps00">a</token><token pos="vmn0000">visitar</token><token pos="da0fp0">las</token><token pos="ncfp000">playas</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Arriving" head="visitar">
+				<argument type="Theme" dependent="muchos de los" />
+				<argument type="Goal" dependent="las playas" /></main_frame>
+			<frame type="Calendric_unit" head="semanas">
+				<argument type="Relative_time" dependent="últimas" />
+				<argument type="Count" dependent="tres" /></frame>
+			<frame type="Cardinal_numbers" head="tres">
+				<argument type="Unit" dependent="semanas" /></frame>
+			<main_frame type="Catastrophe" head="padecido">
+				<argument type="Undesirable_event" dependent="ola de explosiones que" />
+				<argument type="Time" dependent="en las últimas tres semanas" /></main_frame>
+			<frame type="Fear" head="temor">
+				<argument type="Stimulus" dependent="de la Costa" /></frame>
+			<frame type="Natural_features" head="playas" />
+			<frame type="People_by_residence" head="vecinos">
+				<argument type="Location" dependent="de la Costa" /></frame>
+			<frame type="Quantified_mass" head="muchos">
+				<argument type="Individuals" dependent="de los" /></frame>
+			<frame type="Quantified_mass" head="ola de" />
+			<main_frame type="Renunciation" head="renunciado">
+				<argument type="Content" dependent="muchos de los" />
+				<argument type="Content" dependent="a visitar las playas" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Algunos habitantes de las localidades incluidas en la campaña de amenazas han recriminado a las autoridades que no se les hubiera alertado con anterioridad del peligro que corrían.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="di0mp0">Algunos</token><token pos="nccp000">habitantes</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">localidades</token><token pos="aq0fpp">incluidas</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">campaña</token><token pos="sps00">de</token><token pos="ncfp000">amenazas</token>
+		</theme>
+		<rheme concept_ref1="c_13" concept_ref2="c_10" concept_ref3="c_7" concept_ref4="c_14" concept_ref5="c_17" concept_ref6="c_18" concept_ref7="c_19">
+			<token pos="vaip3p0">han</token><token pos="vmp00sm">recriminado</token><token pos="sps00">a</token><mention concept_ref="c_13"><token pos="da0fp0">las</token><token pos="ncfp000">autoridades</token></mention><token pos="cs">que</token><token pos="rn">no</token><token pos="p0000000">se</token><mention concept_ref="c_18"><token pos="pp3cpd00">les</token></mention><token pos="vasi3s0">hubiera</token><token pos="vmp00sm">alertado</token><token pos="sps00">con</token><mention concept_ref="c_10"><token pos="ncfs000">anterioridad</token></mention><token pos="spcms">del</token><token pos="ncms000">peligro</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Attention" head="alertado">
+				<argument type="Perceiver" dependent="autoridades que" /></main_frame>
+			<frame type="Inclusion" head="incluidas">
+				<argument type="Total" dependent="Algunos habitantes de las localidades" />
+				<argument type="Contrast_set" dependent="en la campaña de amenazas" /></frame>
+			<main_frame type="Judgment_communication" head="recriminado">
+				<argument type="Medium" dependent="Algunos habitantes de las localidades incluidas en la campaña de amenazas" />
+				<argument type="Evaluee" dependent="autoridades que no se les hubiera alertado con anterioridad del peligro" /></main_frame>
+			<frame type="Leadership" head="autoridades" />
+			<frame type="Locale" head="localidades" />
+			<frame type="Residence" head="habitantes" />
+			<frame type="Risky_situation" head="amenazas" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "No he vuelto a la playa, y por ahora no pienso hacerlo", sostiene Rebeca López, vecina de Cala Crancs, el lugar donde resultó herido el artificiero de la Guardia Civil Luis Marfil, al estallarle una bomba colocada en la arena.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="vuelto">
+				<argument type="Theme" dependent="y" />
+				<argument type="Goal" dependent="a la playa" /></frame>
+			<frame type="Cause_harm" head="herido">
+				<argument type="Victim" dependent="la Guardia Civil" /></frame>
+			<frame type="Change_position_on_a_scale" head="bomba">
+				<argument type="Item" dependent="la arena" /></frame>
+			<frame type="Intentionally_act" head="de">
+				<argument type="Agent" dependent="y" />
+				<argument type="Act" dependent=", y por" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="una bomba colocada" />
+				<argument type="Ground" dependent="bomba colocada en la arena" /></frame>
+			<frame type="Locale" head="lugar" />
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="el lugar" />
+				<argument type="Figure" dependent="herido el artificiero de la Guardia Civil Luis Marfil , al estallarle una bomba colocada en la arena" /></frame>
+			<frame type="Natural_features" head="playa" />
+			<frame type="People_by_residence" head="vecina">
+				<argument type="Location" dependent="de Cala" /></frame>
+			<frame type="Placing" head="colocada">
+				<argument type="Theme" dependent="una bomba" />
+				<argument type="Time" dependent="bomba colocada en la arena" /></frame>
+			<frame type="Purpose" head="colocada">
+				<argument type="Time" dependent="ahora" />
+				<argument type="Agent" dependent="y" /></frame>
+			<frame type="Statement" head="quot">
+				<argument type="Message" dependent="quot ; No he vuelto a la playa , y por ahora no pienso hacerlo " />
+				<argument type="Message" dependent="vecina de Cala Crancs , el lugar donde resultó herido el artificiero de la Guardia Civil Luis Marfil , al estallarle una bomba colocada en la arena" /></frame>
+			<frame type="Substance" head="la arena" />
+			<frame type="Temporal_collocation" head="ahora" />
+			<frame type="Weapon" head="bomba" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La mujer asegura que ha cambiado sus hábitos a raíz de la explosión: "Yo bajaba cada día a pasear a los perros y desde entonces voy a otro sitio".
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fs0">La</token><token pos="ncfs000">mujer</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_14" concept_ref3="c_16">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">cambiado</token><mention concept_ref="c_16"><token pos="dp3cp0">sus</token></mention><token pos="ncmp000">hábitos</token><token pos="sps00">a</token><token pos="ncfs000">raíz</token><mention concept_ref="c_14"><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">explosión</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="día">
+				<argument type="Relative_time" dependent="cada" /></frame>
+			<main_frame type="Cause_change" head="cambiado">
+				<argument type="Agent" dependent="sus" />
+				<argument type="Entity" dependent="sus hábitos a" />
+				<argument type="Final_value" dependent="de la explosión" /></main_frame>
+			<frame type="Change_position_on_a_scale" head="explosión" />
+			<frame type="Custom" head="hábitos">
+				<argument type="Protagonist" dependent="sus" />
+				<argument type="Behavior" dependent="hábitos a raíz de la explosión" /></frame>
+			<frame type="Direction" head="bajaba">
+				<argument type="Landmark" dependent="cada día" /></frame>
+			<frame type="Frequency" head="cada">
+				<argument type="Interval" dependent="día" /></frame>
+			<frame type="Increment" head="otro">
+				<argument type="Class" dependent="sitio" /></frame>
+			<frame type="Locale" head="sitio" />
+			<frame type="Motion" head="pasear a">
+				<argument type="Theme" dependent="y" />
+				<argument type="Goal" dependent="a otro sitio" /></frame>
+			<frame type="Motion" head="voy">
+				<argument type="Theme" dependent="y" />
+				<argument type="Goal" dependent="cada día a" /></frame>
+			<frame type="People" head="mujer" />
+			<frame type="Self_motion" head="pasear">
+				<argument type="Self_mover" dependent="y" />
+				<argument type="Source" dependent="los perros" /></frame>
+			<frame type="Statement" head="quot">
+				<argument type="Speaker" dependent="La mujer" />
+				<argument type="Message" dependent="que ha cambiado sus hábitos a raíz de la explosión" /></frame>
+			<frame type="Time_vector" head="desde">
+				<argument type="Event" dependent="cada día a pasear a los perros y" />
+				<argument type="Landmark_event" dependent="voy a otro sitio" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los residentes en este tranquilo paraje de la Costa Daurada viven con temor.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0mp0">Los</token><token pos="nccp000">residentes</token><token pos="sps00">en</token><token pos="dd0ms0">este</token><token pos="aq0ms0">tranquilo</token><token pos="ncms000">paraje</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncms000">Costa</token><token pos="np00000">Daurada</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_14" concept_ref3="c_19">
+			<token pos="vmip3p0">viven</token><token pos="sps00">con</token><token pos="ncms000">temor</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_silent" head="tranquilo" />
+			<frame type="Fear" head="temor" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="residentes" />
+				<argument type="Ground" dependent="este tranquilo" /></frame>
+			<frame type="Locale" head="de la">
+				<argument type="Descriptor" dependent="tranquilo" /></frame>
+			<main_frame type="Residence" head="viven">
+				<argument type="Location" dependent="residentes en este tranquilo paraje de la Costa" />
+				<argument type="Location" dependent="temor" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Marta Toledo, española de origen peruano, y su marido, John Ross, británico, regentan un bar y también han tomado precauciones.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="ncms000">Marta</token><token pos="np00000">Toledo</token><token pos="fc">,</token><token pos="ncfs000">española</token><token pos="sps00">de</token><token pos="ncms000">origen</token><token pos="aq0ms0">peruano</token><token pos="fc">,</token><token pos="cc">y</token><token pos="dp3cs0">su</token><token pos="ncms000">marido</token><token pos="fc">,</token><token pos="np0000l">John</token><token pos="np0000l">Ross</token><token pos="fc">,</token><token pos="aq0ms0">británico</token>
+		</theme>
+		<rheme concept_ref1="c_6">
+			<token pos="fc">,</token><token pos="vmip3p0">regentan</token><mention concept_ref="c_6"><token pos="di0ms0">un</token><token pos="ncms000">bar</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Origin" head="origen">
+				<argument type="Origin" dependent="peruano" /></frame>
+			<frame type="Personal_relationship" head="marido">
+				<argument type="Partner_2" dependent="su" /></frame>
+			<frame type="Self_motion" head="tomado">
+				<argument type="Self_mover" dependent=", española de origen peruano , y su marido" />
+				<argument type="Self_mover" dependent="John Ross" />
+				<argument type="Self_mover" dependent="británico" />
+				<argument type="Path" dependent="un bar" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Pienso que es una locura bajar a la playa hasta que no se haya resuelto el caso", dice Marta.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="di0fs0">una</token><token pos="ncfs000">locura</token>
+		</theme>
+		<rheme concept_ref1="c_13" concept_ref2="c_14" concept_ref3="c_15" concept_ref4="c_17" concept_ref5="c_18">
+			<token pos="vmn0000">bajar</token><mention concept_ref="c_15"><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">playa</token></mention><token pos="sps00">hasta</token><token pos="cs">que</token><token pos="rn">no</token><mention concept_ref="c_18"><token pos="p0000000">se</token></mention><token pos="vasp3s0">haya</token><token pos="vmp00sm">resuelto</token><token pos="da0ms0">el</token><token pos="ncms000">caso</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Marta " />
+			<main_frame type="Change_position_on_a_scale" head="bajar">
+				<argument type="Item" dependent="es" />
+				<argument type="Manner" dependent="locura bajar a" />
+				<argument type="Final_value" dependent="a la playa" />
+				<argument type="Correlated_variable" dependent="hasta que no se haya resuelto el caso  quot ; , dice Marta" /></main_frame>
+			<frame type="Mental_property" head="locura">
+				<argument type="Protagonist" dependent="es" />
+				<argument type="Behavior" dependent="bajar a la playa hasta que" /></frame>
+			<frame type="Motion" head="se">
+				<argument type="Theme" dependent="es" />
+				<argument type="Degree" dependent="locura" />
+				<argument type="Path" dependent="bajar" />
+				<argument type="Goal" dependent="a la playa" /></frame>
+			<frame type="Natural_features" head="playa" />
+			<frame type="Opinion" head="Pienso">
+				<argument type="Cognizer" dependent="el" />
+				<argument type="Opinion" dependent="es una locura bajar a la playa hasta que no se haya resuelto el caso  quot ; , dice" /></frame>
+			<main_frame type="Resolve_problem" head="resuelto">
+				<argument type="Problem" dependent="el caso" /></main_frame>
+			<frame type="Statement" head="dice">
+				<argument type="Message" dependent="; Pienso que es una locura bajar a la playa hasta que no se haya resuelto el caso  quot ; ," />
+				<argument type="Addressee" dependent="Marta" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 También se queja de que existe poca vigilancia: "Es un rincón muy solitario".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Locative_relation" head="existe">
+				<argument type="Figure" dependent="que" />
+				<argument type="Ground" dependent="existe poca vigilancia" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La mujer recuerda que en Cala Crancs juegan familias enteras en la arena, por lo que pudo ocurrir una tragedia.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="La mujer " />
+			<frame type="Catastrophe" head="tragedia" />
+			<frame type="Event" head="ocurrir">
+				<argument type="Event" dependent="una tragedia" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="familias enteras" />
+				<argument type="Ground" dependent="la arena" /></frame>
+			<frame type="Kinship" head="familias" />
+			<frame type="Make_noise" head="juegan">
+				<argument type="Sound_source" dependent="lo" />
+				<argument type="Sound_source" dependent="familias enteras" />
+				<argument type="Place" dependent="en la arena" /></frame>
+			<frame type="People" head="mujer" />
+			<frame type="Possibility" head="pudo">
+				<argument type="Possible_event" dependent="una tragedia" />
+				<argument type="Possible_event" dependent="ocurrir" /></frame>
+			<frame type="Ranked_expectation" head="enteras">
+				<argument type="Entity" dependent="familias" /></frame>
+			<frame type="Substance" head="la arena" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Otra vecina manifiesta que su comportamiento no ha variado y afirma que en la zona reina la tranquilidad: "La bomba del día 21 fue una anécdota".
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="dp3cs0">su</token><token pos="ncms000">comportamiento</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">variado</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Otra vecina " />
+			<main_frame type="Cause_change" head="variado">
+				<argument type="Entity" dependent="su comportamiento" /></main_frame>
+			<frame type="Conduct" head="comportamiento">
+				<argument type="Agent" dependent="su" /></frame>
+			<frame type="Increment" head="Otra">
+				<argument type="Class" dependent="vecina" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="afirma que" />
+				<argument type="Ground" dependent="la zona reina la tranquilidad" /></frame>
+			<frame type="Leadership" head="reina">
+				<argument type="Leader" dependent="reina la tranquilidad" /></frame>
+			<frame type="Locale" head="zona" />
+			<frame type="People_by_residence" head="vecina" />
+			<frame type="Statement" head="afirma">
+				<argument type="Speaker" dependent="Otra vecina" />
+				<argument type="Message" dependent="manifiesta que su comportamiento no ha variado y afirma que en la zona reina la tranquilidad :  quot ; La bomba del día 21 fue una anécdota " /></frame>
+			<frame type="Weapon" head="bomba">
+				<argument type="Type" dependent="del día 21" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Todo lo contrario de Rebeca, que augura: "Pondrán más explosivos".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="explosivos" /></frame>
+			<frame type="Non-gradable_proximity" head="contrario">
+				<argument type="Ground" dependent="de Rebeca" /></frame>
+			<frame type="Placing" head="lo">
+				<argument type="Agent" dependent="lo" />
+				<argument type="Theme" dependent="más explosivos" /></frame>
+			<frame type="Weapon" head="explosivos" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No aparecen más artefactos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Artifact" head="artefactos" />
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="artefactos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La mayoría piensa que el Ayuntamiento de Salou y la policía, que conocían las amenazas, debían haber avisado a la población.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_2">
+			<token pos="vmii3p0">conocían</token><mention concept_ref="c_2"><token pos="da0fp0">las</token><token pos="ncfp000">amenazas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="La mayoría " />
+			<frame type="Aggregate" head="población" />
+			<frame type="Desirable_event" head="debían">
+				<argument type="State_of_affairs" dependent="las amenazas" />
+				<argument type="State_of_affairs" dependent="haber avisado a la población" /></frame>
+			<frame type="Law_enforcement_agency" head="policía" />
+			<frame type="Opinion" head="piensa">
+				<argument type="Opinion" dependent="que el Ayuntamiento de Salou y la policía" /></frame>
+			<frame type="Political_locales" head="Ayuntamiento">
+				<argument type="Name" dependent="Salou y la policía" /></frame>
+			<frame type="Risky_situation" head="amenazas">
+				<argument type="Situation" dependent="población" /></frame>
+			<frame type="Warning" head="avisado">
+				<argument type="Addressee" dependent="la población" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Si se hubiera advertido a la gente de que no tocaran objetos sospechosos, no hubiera muerto aquel anciano", afirma David, en referencia a Juan Manuel Sarmiento, el jubilado fallecido el día 13 al manipular un artefacto que había encontrado en la playa de Llevant.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="anciano">
+				<argument type="Entity" dependent="se" /></frame>
+			<frame type="Artifact" head="artefacto" />
+			<frame type="Becoming_aware" head="encontrado">
+				<argument type="Phenomenon" dependent="un artefacto" />
+				<argument type="Cognizer" dependent="el" />
+				<argument type="Phenomenon" dependent="en la playa de" /></frame>
+			<frame type="Being_questionable" head="sospechosos">
+				<argument type="Behavior" dependent="objetos" /></frame>
+			<frame type="Death" head="muerto">
+				<argument type="Protagonist" dependent="aquel" />
+				<argument type="Time" dependent="el día 13 al manipular un artefacto que había encontrado en la playa de" /></frame>
+			<frame type="Manipulate_into_doing" head="manipular">
+				<argument type="Manipulator" dependent="el" />
+				<argument type="Goods" dependent="un artefacto que había encontrado en la playa" /></frame>
+			<frame type="Natural_features" head="playa">
+				<argument type="Formational_cause" dependent="de" /></frame>
+			<frame type="People" head="gente" />
+			<frame type="People" head="se" />
+			<frame type="Purpose" head="objetos" />
+			<frame type="Referring_by_name" head="referencia">
+				<argument type="Name" dependent="David" />
+				<argument type="Name" dependent="a Juan Manuel" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="un artefacto que había encontrado en" />
+				<argument type="Ground" dependent="playa de" /></frame>
+			<frame type="Spatial_contact" head="tocaran">
+				<argument type="Figure" dependent="gente" />
+				<argument type="Ground" dependent="objetos sospechosos" /></frame>
+			<frame type="Statement" head="afirma">
+				<argument type="Speaker" dependent="David" />
+				<argument type="Message" dependent="había encontrado en la playa" /></frame>
+			<frame type="Warning" head="advertido a">
+				<argument type="Speaker" dependent="gente" />
+				<argument type="Message" dependent="no tocaran objetos sospechosos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Cándida Lasbats, su viuda, echó en cara hace una semana a Esteve Ferran, alcalde de Salou, que no se hubiese alertado del peligro.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="np0000l">Cándida</token><token pos="np0000l">Lasbats</token><token pos="fc">,</token><token pos="dp3cs0">su</token><token pos="ncfs000">viuda</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_17" concept_ref3="c_18" concept_ref4="c_19">
+			<token pos="rn">no</token><mention concept_ref="c_18"><token pos="p0000000">se</token></mention><token pos="vasi3s0">hubiese</token><token pos="vmp00sm">alertado</token><token pos="spcms">del</token><token pos="ncms000">peligro</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Attention" head="alertado">
+				<argument type="Perceiver" dependent="que" /></main_frame>
+			<frame type="Calendric_unit" head="semana" />
+			<frame type="Leadership" head="alcalde">
+				<argument type="Governed" dependent="Lasbats , su viuda , echó en cara" />
+				<argument type="Leader" dependent="Salou" /></frame>
+			<frame type="Risky_situation" head="peligro" />
+			<frame type="Time_vector" head="se">
+				<argument type="Event" dependent="viuda , echó en cara hace una semana a Esteve Ferran , alcalde de Salou ," />
+				<argument type="Distance" dependent="una semana" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Aunque se justificó la discreción en necesidades de la propia investigación, fuentes municipales de Salou reconocieron que inicialmente no se había dado credibilidad a la extorsión y se quería evitar la alarma por las negativas consecuencias que pudiera tener en el sector turístico.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="fuentes municipales de Salou " />
+			<frame type="Avoiding" head="evitar">
+				<argument type="Undesirable_situation" dependent="alarma" /></frame>
+			<frame type="Communication_response" head="reconocieron">
+				<argument type="Speaker" dependent="fuentes municipales de Salou" />
+				<argument type="Trigger" dependent="que inicialmente no se había dado credibilidad a la extorsión y se quería evitar la alarma por las negativas consecuencias que pudiera tener en el sector turístico" /></frame>
+			<frame type="Criminal_investigation" head="investigación" />
+			<frame type="Desiring" head="quería">
+				<argument type="Event" dependent="evitar la alarma por las negativas consecuencias que pudiera tener en el sector turístico" /></frame>
+			<frame type="Fields" head="sector">
+				<argument type="Activity" dependent="turístico" /></frame>
+			<frame type="Giving" head="dado">
+				<argument type="Donor" dependent="extorsión" />
+				<argument type="Theme" dependent="credibilidad" /></frame>
+			<frame type="Likelihood" head="pudiera">
+				<argument type="Hypothetical_event" dependent="negativas consecuencias que" />
+				<argument type="Hypothetical_event" dependent="en el sector turístico" /></frame>
+			<frame type="Needing" head="necesidades">
+				<argument type="Dependent" dependent="la propia investigación" /></frame>
+			<frame type="Source_of_getting" head="fuentes">
+				<argument type="Descriptor" dependent="municipales" />
+				<argument type="Theme" dependent="Salou" /></frame>
+			<frame type="Touring" head="turístico" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El rotativo británico The Times y las agencias Associated Press y France Presse informaron de los sucesos, aunque no le dedicaron excesivo espacio y el tratamiento no fue sensacionalista.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="da0ms0">El</token><token pos="ncms000">rotativo</token><token pos="aq0ms0">británico</token><token pos="np0000l">The</token><token pos="np0000l">Times</token><token pos="cc">y</token><token pos="da0fp0">las</token><token pos="ncfp000">agencias</token><token pos="np0000l">Associated</token><token pos="np0000l">Press</token><token pos="cc">y</token><token pos="np0000l">France</token><token pos="np0000l">Presse</token>
+		</theme>
+		<rheme concept_ref1="c_14" concept_ref2="c_17" concept_ref3="c_18">
+			<token pos="vmis3p0">informaron</token><token pos="sps00">de</token><mention concept_ref="c_18"><token pos="da0mp0">los</token><token pos="ncmp000">sucesos</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cure" head="tratamiento" />
+			<frame type="Event" head="sucesos" />
+			<main_frame type="Statement" head="informaron de">
+				<argument type="Speaker" dependent="británico The Times y las agencias Associated Press y France Presse" />
+				<argument type="Message" dependent="sucesos" /></main_frame>
+			<frame type="Text" head="Presse">
+				<argument type="Author" dependent="británico" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El impacto de los aludes en los Alpes y el hecho de que las explosiones de Salou no se vincularan con una actuación terrorista desviaron la atención informativa, según explicaron fuentes de los turoperadores de la zona.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="da0ms0">El</token><token pos="ncms000">impacto</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">aludes</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="np00000">Alpes</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">hecho</token><token pos="sps00">de</token><token pos="cs">que</token><token pos="da0fp0">las</token><token pos="ncfp000">explosiones</token><token pos="sps00">de</token><token pos="np00000">Salou</token><token pos="rn">no</token><token pos="p0000000">se</token><token pos="vmsi3p0">vincularan</token><token pos="sps00">con</token><token pos="di0fs0">una</token><token pos="ncfs000">actuación</token><token pos="aq0cs0">terrorista</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_14" concept_ref3="c_17">
+			<token pos="vmis3p0">desviaron</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="ncfs000">atención</token></mention><token pos="aq0fs0">informativa</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="fuentes de los turoperadores de la zona " />
+			<main_frame type="Attaching" head="vincularan">
+				<argument type="Item" dependent="las explosiones de" />
+				<argument type="Goal" dependent="actuación terrorista desviaron la atención informativa" /></main_frame>
+			<frame type="Attention" head="atención">
+				<argument type="Perceiver" dependent="informativa" /></frame>
+			<frame type="Be_in_agreement_on_action" head="según">
+				<argument type="Obligation" dependent="que las explosiones de Salou no se vincularan con una actuación terrorista desviaron la atención informativa ," />
+				<argument type="Obligation" dependent="fuentes de los" />
+				<argument type="Party_2" dependent="de los turoperadores de la zona" /></frame>
+			<main_frame type="Cause_to_experience" head="desviaron">
+				<argument type="Agent" dependent="una actuación terrorista" />
+				<argument type="Instrument" dependent="la atención informativa" /></main_frame>
+			<frame type="Goal" head="en">
+				<argument type="Trajector" dependent="actuación terrorista" />
+				<argument type="Landmark" dependent="fuentes de" /></frame>
+			<frame type="Information" head="informativa">
+				<argument type="Topic" dependent="atención" /></frame>
+			<frame type="Intentionally_act" head="actuación">
+				<argument type="Act" dependent="terrorista" /></frame>
+			<frame type="Locale" head="zona" />
+			<frame type="Objective_influence" head="impacto">
+				<argument type="Influencing_situation" dependent="de los aludes" />
+				<argument type="Place" dependent="aludes en los" /></frame>
+			<frame type="Source_of_getting" head="fuentes de" />
+			<frame type="Terrorism" head="terrorista" />
+			<frame type="Travel" head="turoperadores" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los artificieros de la Guardia Civil y del Ejército que han peinado las playas de Tarragona, Salou ( Tarragonès ) y Cambrils ( Baix Camp ) no han localizado ningún artefacto durante el fin de semana.
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">artificieros</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncms000">Guardia</token><token pos="aq0ms0">Civil</token><token pos="cc">y</token><token pos="spcms">del</token><token pos="np00000">Ejército</token><token pos="pr0cn000">que</token><token pos="vaip3p0">han</token><token pos="vmp00sm">peinado</token><token pos="da0fp0">las</token><token pos="ncfp000">playas</token><token pos="sps00">de</token><token pos="np00000">Tarragona</token><token pos="fc">,</token><token pos="np00000">Salou</token><token pos="fpa">(</token><token pos="np00000">Tarragonès</token><token pos="fpt">)</token><token pos="cc">y</token><token pos="np00000">Cambrils</token><token pos="fpa">(</token><token pos="np0000l">Baix</token><token pos="np0000l">Camp</token><token pos="fpt">)</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_14" concept_ref3="c_18">
+			<token pos="rn">no</token><token pos="vaip3p0">han</token><token pos="vmp00sm">localizado</token><token pos="di0ms0">ningún</token><token pos="ncms000">artefacto</token><token pos="sps00">durante</token><token pos="da0ms0">el</token><token pos="ncms000">fin</token><token pos="sps00">de</token><token pos="ncfs000">semana</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Artifact" head="artefacto" />
+			<main_frame type="Becoming_aware" head="localizado">
+				<argument type="Cognizer" dependent="Salou ( Tarragonès ) y Cambrils ( Baix Camp )" />
+				<argument type="Phenomenon" dependent="ningún artefacto" /></main_frame>
+			<frame type="Calendric_unit" head="fin de semana" />
+			<frame type="Military" head="Ejército" />
+			<frame type="Natural_features" head="playas de">
+				<argument type="Container_possessor" dependent=", Salou ( Tarragonès ) y Cambrils ( Baix Camp )" /></frame>
+			<main_frame type="Possession" head="han">
+				<argument type="Owner" dependent="la Guardia Civil y del Ejército que" />
+				<argument type="Possession" dependent="las playas de Tarragona , Salou ( Tarragonès ) y Cambrils ( Baix Camp ) no han localizado ningún" /></main_frame>
+			<frame type="Quantified_mass" head="ningún">
+				<argument type="Individuals" dependent="artefacto" /></frame>
+			<main_frame type="Scouring" head="han">
+				<argument type="Searcher" dependent="que" />
+				<argument type="Ground" dependent="las playas de Tarragona , Salou ( Tarragonès ) y Cambrils ( Baix Camp ) no han localizado ningún artefacto" />
+				<argument type="Time" dependent="durante el fin de semana" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los responsables de la investigación creen poco probable que haya más bombas enterradas en la Costa Daurada, como indicaban los anónimos recibidos por los patronatos de turismo de las tres localidades.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="da0mp0">Los</token><token pos="nccp000">responsables</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">investigación</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_20">
+			<token pos="vasp3s0">haya</token><token pos="rg">más</token><mention concept_ref="c_20"><token pos="ncfp000">bombas</token></mention><token pos="aq0fpp">enterradas</token><token pos="sps00">en</token><mention concept_ref="c_4"><token pos="da0fs0">la</token><token pos="ncms000">Costa</token><token pos="np00000">Daurada</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="tres">
+				<argument type="Entity" dependent="localidades" /></frame>
+			<frame type="Certainty" head="creen">
+				<argument type="Cognizer" dependent="la investigación" />
+				<argument type="Content" dependent="poco probable que haya más bombas enterradas en la Costa Daurada , como indicaban los anónimos recibidos por los patronatos de turismo de las tres localidades" /></frame>
+			<frame type="Communication" head="indicaban">
+				<argument type="Message" dependent="responsables de la investigación creen poco probable que haya más bombas enterradas en la Costa" />
+				<argument type="Message" dependent="recibidos por los patronatos de turismo de las tres localidades" /></frame>
+			<frame type="Criminal_investigation" head="investigación" />
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="bombas" /></frame>
+			<frame type="Likelihood" head="poco probable">
+				<argument type="Hypothetical_event" dependent="probable que haya más bombas enterradas en la Costa" /></frame>
+			<main_frame type="Locative_relation" head="haya">
+				<argument type="Figure" dependent="que" />
+				<argument type="Ground" dependent="probable que haya más bombas enterradas en la Costa" /></main_frame>
+			<frame type="Political_locales" head="localidades" />
+			<frame type="Receiving" head="recibidos">
+				<argument type="Theme" dependent="los" />
+				<argument type="Recipient" dependent="por los patronatos de turismo de las tres localidades" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="haya más bombas enterradas en" />
+				<argument type="Ground" dependent="la Costa" /></frame>
+			<frame type="Touring" head="turismo" />
+			<frame type="Weapon" head="bombas" />
+		</semantic_roles>
+	</sentence>
+	
+</text>

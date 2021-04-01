@@ -1,0 +1,17 @@
+{   ('Aggregate', 'partidos'): [],
+    ('Bringing', 'llevan'): [('Theme', 'del Centro de Investigaciones Sociológicas previa a las elecciones generales')],
+    ('Calendric_unit', 'semana'): [('Relative_time', 'Esta')],
+    ('Categorization', 'consideran'): [   ('Item', 'que'),
+                                          ('Cognizer', 'todos los partidos'),
+                                          (   'Category',
+                                              'las elecciones generales , con una muestra de 20.000 entrevistados , que todos los partidos consideran el sondeo tradicionalmente más fiable de todos '
+                                              'cuantos se llevan a cabo antes')],
+    ('Change_of_leadership', 'elecciones'): [],
+    ('Locale', 'se'): [],
+    ('Locale_by_use', 'Centro'): [('Use', 'de Investigaciones Sociológicas')],
+    ('Ordinal_numbers', 'primera'): [('Comparison_set', 'de febrero')],
+    ('Research', 'de Investigaciones'): [('Topic', 'Sociológicas')],
+    ('Sleep', 'se'): [('Sleeper', 'del Centro de Investigaciones Sociológicas previa a las elecciones generales')],
+    ('Taking_time', 'se'): [('Agent', 'que'), ('Time_length', 'se'), ('Activity', 'previa a las elecciones')],
+    ('Time_vector', 'antes'): [('Event', 'más fiable de todos cuantos se llevan a cabo'), ('Landmark_event', 'elecciones')],
+    ('Trust', 'fiable'): [('Information', 'previa a las elecciones')]}

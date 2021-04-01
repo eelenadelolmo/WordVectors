@@ -1,0 +1,5 @@
+{   ('Awareness', 'sospechas'): [('Content', 'de la existencia de acuerdos entre las gasolineras es un hecho')],
+    ('Cause_change', 'varían'): [('Cause', 'cual sea la marca del combustible'), ('Cause', 'Suecia los precios')],
+    ('Existence', 'existencia'): [],
+    ('Substance', 'gasolineras'): [],
+    ('Type', 'la marca'): [('Category', 'combustible')]}

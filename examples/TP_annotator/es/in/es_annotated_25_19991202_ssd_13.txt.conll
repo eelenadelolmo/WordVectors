@@ -1,0 +1,4 @@
+{   ('Causation', 'Porque'): [('Cause', 'no valdría nada lo que yo pudiera contar')],
+    ('Deserving', 'valdría'): [('State_of_affairs', 'nada'), ('State_of_affairs', 'lo que yo pudiera contar')],
+    ('Possibility', 'pudiera'): [('Possible_event', 'que yo'), ('Possible_event', 'contar')],
+    ('Telling', 'contar'): [('Message', 'que'), ('Speaker', 'lo')]}

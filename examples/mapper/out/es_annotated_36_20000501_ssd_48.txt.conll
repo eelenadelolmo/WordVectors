@@ -1,0 +1,5 @@
+{   ('Boundary', 'línea'): [],
+    ('Importance', 'importante'): [('Factor', 'renovación de personas')],
+    ('Locative_relation', 'se'): [('Figure', 'importante renovación de personas y también se reiterará la línea moderada que hemos imprimido desde 1996')],
+    ('People', 'personas'): [],
+    ('Time_vector', 'desde'): [('Event', 'línea moderada que hemos imprimido'), ('Landmark_event', '1996')]}

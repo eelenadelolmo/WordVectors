@@ -1,0 +1,7 @@
+{   ('Aggregate', 'población'): [],
+    ('Desirable_event', 'debían'): [('State_of_affairs', 'las amenazas'), ('State_of_affairs', 'haber avisado a la población')],
+    ('Law_enforcement_agency', 'policía'): [],
+    ('Opinion', 'piensa'): [('Opinion', 'que el Ayuntamiento de Salou y la policía')],
+    ('Political_locales', 'Ayuntamiento'): [('Name', 'Salou y la policía')],
+    ('Risky_situation', 'amenazas'): [('Situation', 'población')],
+    ('Warning', 'avisado'): [('Addressee', 'la población')]}

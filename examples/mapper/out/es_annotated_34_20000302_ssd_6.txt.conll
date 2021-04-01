@@ -1,0 +1,8 @@
+{   ('Age', 'pequeña'): [('Entity', 'hija')],
+    ('Attempt', 'dispararon'): [('Agent', 'dos individuos que le')],
+    ('Buildings', 'casa'): [],
+    ('Killing', 'asesinado'): [('Victim', 'de')],
+    ('Kinship', 'hija'): [],
+    ('People', 'individuos'): [],
+    ('Personal_relationship', 'su mujer'): [('Partner_1', 'su')],
+    ('Presence', 'presencia'): [('Entity', 'su mujer y de su hija pequeña')]}

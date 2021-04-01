@@ -1,0 +1,4 @@
+{   ('Compliance', 'cuente'): [('Protagonist', 'afirmación del titular de Interior'), ('Norm', 'la convicción')],
+    ('Leadership', 'Gobierno'): [('Governed', 'vasco')],
+    ('Organization', 'organización'): [('Members', 'terrorista')],
+    ('Terrorism', 'terrorista'): []}

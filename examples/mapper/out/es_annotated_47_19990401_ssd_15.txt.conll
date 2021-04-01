@@ -1,0 +1,5 @@
+{   ('Creating', 'formación'): [('Created_entity', 'de')],
+    ('People_by_vocation', 'abogado'): [('Employer', 'de la formación aberzale ,')],
+    ('Request', 'recurso'): [('Message', 'recurso que presentó el abogado de la formación')],
+    ('Reveal_secret', 'admitido'): [('Speaker', 'de'), ('Time', 'así el'), ('Information', 'recurso que presentó el abogado de la formación aberzale'), ('Information', 'de')],
+    ('Submitting_documents', 'admitido'): [('Documents', 'el recurso'), ('Documents', 'el abogado de la formación aberzale ,')]}

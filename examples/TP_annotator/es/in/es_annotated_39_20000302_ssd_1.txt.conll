@@ -1,0 +1,11 @@
+{   ('Avoiding', 'evitar'): [('Agent', 'la policía'), ('Undesirable_situation', '20 heridos - - como justificó el delegado del Gobierno en la ciudad')],
+    ('Calendric_unit', 'ayer la'): [],
+    ('Cause_harm', 'heridos'): [('Degree', '20')],
+    ('Intentionally_act', 'actúa'): [('Agent', 'se'), ('Act', 'salvajemente')],
+    ('Law_enforcement_agency', 'policía'): [],
+    ('Leadership', 'Gobierno'): [],
+    ('Political_locales', 'ciudad'): [],
+    ('Prohibiting_or_licensing', 'prohibición'): [('Principle', 'de importar')],
+    ('Protest', 'protestas'): [('Descriptor', 'Violentas')],
+    ('Spatial_contact', 'en'): [('Figure', 'Violentas protestas contra la prohibición de importar cordero sacudieron nuevamente ayer la ciudad de Melilla'), ('Ground', 'esta ocasión')],
+    ('Statement', 'diga'): [('Speaker', 'se'), ('Message', 'que actúa salvajemente')]}

@@ -1,0 +1,4 @@
+{   ('Commerce_sell', 'vendido'): [('Seller', 'Cuaderno')],
+    ('Desirability', 'buena'): [('Evaluee', 'alternativa')],
+    ('Grasp', 'entiende'): [('Phenomenon', 'que se hayan vendido 11 ediciones de su Cuaderno de Nueva York - - , es una buena alternativa')],
+    ('Text', 'ediciones'): [('Descriptor', '11'), ('Containing_text', 'de Nueva York')]}

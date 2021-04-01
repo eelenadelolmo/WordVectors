@@ -1,0 +1,7 @@
+{   ('Arrest', 'detenciones'): [],
+    ('Bringing', 'llevadas'): [('Theme', 'KFOR'), ('Goal', 'algunas detenciones en')],
+    ('Businesses', 'operaciones'): [],
+    ('Importance', 'significativa'): [('Factor', 'cantidad de armas')],
+    ('Political_locales', 'provincia'): [],
+    ('Quantified_mass', 'cantidad'): [('Q_prop', 'significativa'), ('Mass', 'de armas')],
+    ('Weapon', 'armas'): []}

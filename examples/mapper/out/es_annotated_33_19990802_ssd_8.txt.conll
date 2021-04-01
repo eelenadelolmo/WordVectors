@@ -1,0 +1,3 @@
+{   ('Catastrophe', 'enfermedad'): [('Time', 'de'), ('Undesirable_event', 'contraído al ingerir harinas elaboradas con vísceras de corderos'), ('Undesirable_event', 'enfermedad cerebral')],
+    ('Come_down_with', 'decretado'): [('Disease', 'que el ganado'), ('Source', 'al ingerir harinas elaboradas con vísceras de corderos aquejados de una enfermedad cerebral')],
+    ('Referring_by_name', 'denominada'): [('Name', 'encefalopatía espongiforme bovina')]}

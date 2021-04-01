@@ -1,0 +1,8 @@
+{   ('Calendric_unit', 'martes'): [],
+    ('Calendric_unit', 'noche'): [('Relative_time', 'martes')],
+    ('Locale_by_use', 'cuartel'): [('Name', 'fuerzas especiales serbias'), ('Descriptor', 'martes por la')],
+    ('Military', 'fuerzas'): [],
+    ('Representative', 'según'): [('Represented', 'Pentágono'), ('Representative', 'Bacon')],
+    ('Social_connection', 'muy próximo'): [('Degree', 'muy'), ('Individual_2', 'centro de Belgrado , según informó ayer el portavoz del Pentágono , Kenneth Bacon')],
+    ('Statement', 'informó'): [('Speaker', 'del Pentágono , Kenneth Bacon'), ('Addressee', 'ayer')],
+    ('Weapon', 'bombardeó'): [('Type', 'del'), ('Weapon', 'la noche el cuartel general de las fuerzas especiales serbias')]}

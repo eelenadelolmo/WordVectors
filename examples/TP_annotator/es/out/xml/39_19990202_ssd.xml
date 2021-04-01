@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="39_19990202_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El escritor y periodista</concept>
+		<concept id="c_1">líder</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El escritor y periodista trazó un paralelismo entre la intervención del líder de EH y el proceso de paz que se ha vivido en Irlanda del Norte, impulsado, entre otros, por el líder del Sinn Fein, Gerry Adams.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">escritor</token><token pos="cc">y</token><token pos="nccs000">periodista</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1">
+			<token pos="vmis3s0">trazó</token><token pos="di0ms0">un</token><token pos="ncms000">paralelismo</token><token pos="sps00">entre</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="ncfs000">intervención</token></mention><token pos="spcms">del</token><token pos="nccs000">líder</token><token pos="sps00">de</token><token pos="np00000">EH</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">proceso</token><token pos="sps00">de</token><token pos="ncfs000">paz</token><token pos="fc">,</token><token pos="aq0msp">impulsado</token><token pos="fc">,</token><token pos="sps00">entre</token><token pos="pi0mp000">otros</token><token pos="fc">,</token><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="nccs000">líder</token><token pos="spcms">del</token><token pos="np0000l">Sinn</token><token pos="np0000l">Fein</token><token pos="fc">,</token><token pos="np0000l">Gerry</token><token pos="np0000l">Adams</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cause_motion" head="se">
+				<argument type="Agent" dependent="escritor y periodista" />
+				<argument type="Theme" dependent="paralelismo entre la intervención del líder de EH y el proceso de paz que se ha vivido en Irlanda del Norte ," /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="el proceso de paz que se ha" />
+				<argument type="Ground" dependent="Irlanda del Norte" /></frame>
+			<frame type="Leadership" head="líder">
+				<argument type="Descriptor" dependent="Sinn" />
+				<argument type="Leader" dependent="Gerry" /></frame>
+			<frame type="Perception_experience" head="vivido">
+				<argument type="Phenomenon" dependent="proceso de paz que" />
+				<argument type="Perceiver_passive" dependent="en Irlanda del Norte , impulsado , entre otros , por el líder del Sinn" /></frame>
+			<frame type="Process" head="proceso">
+				<argument type="Process" dependent="que se ha vivido en Irlanda del Norte , impulsado , entre otros , por el líder del Sinn" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Creo que en ambos dirigentes existe un deseo sincero de cambiar el marco de la violencia por un escenario de democracia", afirmó Bru de Sala.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Bru de Sala " />
+			<frame type="Cause_change" head="cambiar">
+				<argument type="Entity" dependent="marco de la violencia por un escenario de democracia" /></frame>
+			<frame type="Certainty" head="Creo">
+				<argument type="Cognizer" dependent="en" />
+				<argument type="Content" dependent="que en ambos dirigentes existe un deseo sincero de cambiar el marco de la violencia por un escenario de democracia" /></frame>
+			<frame type="Desiring" head="deseo">
+				<argument type="Manner" dependent="sincero" /></frame>
+			<frame type="Leadership" head="dirigentes" />
+			<frame type="Locative_relation" head="existe">
+				<argument type="Figure" dependent="que" />
+				<argument type="Ground" dependent="existe" />
+				<argument type="Figure" dependent="ambos dirigentes existe un deseo sincero de cambiar el marco de la violencia por un escenario de democracia  quot ; , afirmó" /></frame>
+			<frame type="Statement" head="afirmó">
+				<argument type="Speaker" dependent="Bru de Sala" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No obstante, constató una gran diferencia entre los dos procesos de paz: "En Irlanda del Norte se está logrando la reconciliación de una sociedad dividida, mientras que en el País Vasco se está dando un proceso de división, impulsado desde la política, de una sociedad que no lo está".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Accomplishment" head="logrando">
+				<argument type="Goal" dependent="la reconciliación de una sociedad dividida" />
+				<argument type="Goal" dependent="En Irlanda del Norte" /></frame>
+			<frame type="Becoming_aware" head="constató">
+				<argument type="Cognizer" dependent="lo" />
+				<argument type="Phenomenon" dependent="una gran diferencia entre los dos procesos de paz" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="procesos de paz" /></frame>
+			<frame type="Desirability" head="gran">
+				<argument type="Evaluee" dependent="diferencia entre los dos procesos de paz" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="se está logrando la reconciliación de una sociedad dividida" />
+				<argument type="Ground" dependent="Irlanda del Norte" /></frame>
+			<frame type="Locative_relation" head="está">
+				<argument type="Figure" dependent="el País" />
+				<argument type="Ground" dependent="un proceso de división , impulsado desde la política , de una sociedad que no lo está" /></frame>
+			<frame type="Non-commutative_process" head="división">
+				<argument type="Calculator" dependent="una sociedad" /></frame>
+			<frame type="Non-commutative_statement" head="diferencia">
+				<argument type="Term_1" dependent="entre los dos procesos de paz" /></frame>
+			<frame type="Process" head="proceso">
+				<argument type="Process" dependent="de una sociedad dividida" /></frame>
+			<frame type="Process" head="procesos">
+				<argument type="Process" dependent="procesos de paz" /></frame>
+			<frame type="Separating" head="dividida">
+				<argument type="Recipients" dependent="sociedad" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

@@ -1,0 +1,18 @@
+{   ('Awareness', 'comprensión'): [('Content', 'su propia realidad , tengan')],
+    ('Awareness', 'conocimiento'): [('Content', 'su propia realidad , tengan')],
+    ('Being_employed', 'trabajar'): [],
+    ('Capability', 'puedan'): [('Event', 'trabajar en la transformación de la sociedad a')],
+    ('Cause_change', 'transformación'): [('Entity', 'la sociedad')],
+    ('Creating', 'de formar'): [('Created_entity', 'personas cultas , equilibradas')],
+    ('Education_teaching', 'conocimiento'): [('Institution', 'personas')],
+    ('Emotion_directed', 'felices'): [('Stimulus', ', a partir del conocimiento y comprensión de su propia realidad , tengan recursos para entender el mundo en que')],
+    ('Grasp', 'entender'): [('Cognizer', 'tengan'), ('Phenomenon', 'el mundo en que viven , se integren en el mercado laboral y puedan trabajar en la transformación de la sociedad a partir del')],
+    ('Locale_by_use', 'escuela'): [('Relative_location', 'pública')],
+    ('People', 'personas'): [('Descriptor', 'conocimiento')],
+    ('Political_locales', 'mundo'): [],
+    ('Purpose', 'objetivo'): [('Goal', 'formar personas cultas , equilibradas y felices para que , a partir del conocimiento y comprensión de su propia realidad')],
+    ('Residence', 'viven'): [('Resident', 'tengan')],
+    ('Statement', 'dijo'): [   (   'Message',
+                                   'escuela pública - - dijo Soler - - tiene el objetivo de formar personas cultas , equilibradas y felices para que , a partir del conocimiento y comprensión de su '
+                                   'propia realidad , tengan recursos para entender el mundo en que viven , se integren en el mercado laboral y puedan trabajar en la transformación de la sociedad a '
+                                   'partir del diálogo & quot ;')]}

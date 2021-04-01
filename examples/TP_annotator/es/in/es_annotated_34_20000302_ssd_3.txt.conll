@@ -1,0 +1,6 @@
+{   ('Color', 'azul'): [],
+    ('Color', 'marrón'): [('Entity', 'para los militares y el francés para los empresarios')],
+    ('Color', 'verde'): [('Entity', 'para la Guardia Civil')],
+    ('Law_enforcement_agency', 'Policía'): [],
+    ('Military', 'militares'): [],
+    ('Using', 'empleado para'): [('Instrument', 'azul'), ('Purpose', 'para la Policía')]}

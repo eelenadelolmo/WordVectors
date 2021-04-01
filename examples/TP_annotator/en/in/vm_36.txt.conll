@@ -1,0 +1,65 @@
+1	this	_	This	_	DT	0	_	_	_	_	_	_	_	O
+2	allows	_	allow	_	VBZ	0	_	_	_	_	_	allow.v	Preventing_or_letting	O
+3	employees	_	employee	_	NNS	0	_	_	_	_	_	_	_	B-Event
+4	to	_	to	_	TO	0	_	_	_	_	_	_	_	I-Event
+5	access	_	access	_	NN	0	_	_	_	_	_	_	_	I-Event
+6	centrally	_	UNK	_	RB	0	_	_	_	_	_	_	_	I-Event
+7	hosted	_	host	_	VBN	0	_	_	_	_	_	_	_	I-Event
+8	applications	_	application	_	NNS	0	_	_	_	_	_	_	_	I-Event
+9	when	_	when	_	WRB	0	_	_	_	_	_	_	_	O
+10	working	_	work	_	VBG	0	_	_	_	_	_	_	_	O
+11	remotely	_	UNK	_	RB	0	_	_	_	_	_	_	_	O
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	this	_	This	_	DT	0	_	_	_	_	_	_	_	O
+2	allows	_	allow	_	VBZ	0	_	_	_	_	_	_	_	O
+3	employees	_	employee	_	NNS	0	_	_	_	_	_	employee.n	Employing	S-Employee
+4	to	_	to	_	TO	0	_	_	_	_	_	_	_	B-Purpose
+5	access	_	access	_	NN	0	_	_	_	_	_	_	_	I-Purpose
+6	centrally	_	UNK	_	RB	0	_	_	_	_	_	_	_	I-Purpose
+7	hosted	_	host	_	VBN	0	_	_	_	_	_	_	_	I-Purpose
+8	applications	_	application	_	NNS	0	_	_	_	_	_	_	_	I-Purpose
+9	when	_	when	_	WRB	0	_	_	_	_	_	_	_	O
+10	working	_	work	_	VBG	0	_	_	_	_	_	_	_	O
+11	remotely	_	UNK	_	RB	0	_	_	_	_	_	_	_	O
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	this	_	This	_	DT	0	_	_	_	_	_	_	_	O
+2	allows	_	allow	_	VBZ	0	_	_	_	_	_	_	_	O
+3	employees	_	employee	_	NNS	0	_	_	_	_	_	_	_	O
+4	to	_	to	_	TO	0	_	_	_	_	_	_	_	O
+5	access	_	access	_	NN	0	_	_	_	_	_	_	_	B-Style
+6	centrally	_	UNK	_	RB	0	_	_	_	_	_	_	_	I-Style
+7	hosted	_	host	_	VBN	0	_	_	_	_	_	host.v	Social_event	O
+8	applications	_	application	_	NNS	0	_	_	_	_	_	_	_	S-Social_event
+9	when	_	when	_	WRB	0	_	_	_	_	_	_	_	O
+10	working	_	work	_	VBG	0	_	_	_	_	_	_	_	O
+11	remotely	_	UNK	_	RB	0	_	_	_	_	_	_	_	O
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	this	_	This	_	DT	0	_	_	_	_	_	_	_	O
+2	allows	_	allow	_	VBZ	0	_	_	_	_	_	_	_	O
+3	employees	_	employee	_	NNS	0	_	_	_	_	_	_	_	O
+4	to	_	to	_	TO	0	_	_	_	_	_	_	_	O
+5	access	_	access	_	NN	0	_	_	_	_	_	_	_	O
+6	centrally	_	UNK	_	RB	0	_	_	_	_	_	_	_	O
+7	hosted	_	host	_	VBN	0	_	_	_	_	_	_	_	O
+8	applications	_	application	_	NNS	0	_	_	_	_	_	application.n	Using	O
+9	when	_	when	_	WRB	0	_	_	_	_	_	_	_	O
+10	working	_	work	_	VBG	0	_	_	_	_	_	_	_	O
+11	remotely	_	UNK	_	RB	0	_	_	_	_	_	_	_	O
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	this	_	This	_	DT	0	_	_	_	_	_	_	_	O
+2	allows	_	allow	_	VBZ	0	_	_	_	_	_	_	_	O
+3	employees	_	employee	_	NNS	0	_	_	_	_	_	_	_	O
+4	to	_	to	_	TO	0	_	_	_	_	_	_	_	O
+5	access	_	access	_	NN	0	_	_	_	_	_	_	_	O
+6	centrally	_	UNK	_	RB	0	_	_	_	_	_	_	_	O
+7	hosted	_	host	_	VBN	0	_	_	_	_	_	_	_	O
+8	applications	_	application	_	NNS	0	_	_	_	_	_	_	_	O
+9	when	_	when	_	WRB	0	_	_	_	_	_	_	_	O
+10	working	_	work	_	VBG	0	_	_	_	_	_	work.v	Being_employed	O
+11	remotely	_	UNK	_	RB	0	_	_	_	_	_	_	_	S-Task
+12	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

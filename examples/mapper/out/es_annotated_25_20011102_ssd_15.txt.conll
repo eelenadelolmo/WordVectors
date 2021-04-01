@@ -1,0 +1,11 @@
+{   ('Adducing', 'citó'): [('Specified_entity', 'muchas iniciativas sobre la mesa'), ('Specified_entity', 'en concreto los acuerdos de Camp David y del balneario egipcio')],
+    ('Capability', 'puede'): [('Entity', 'Preguntado sobre qué iniciativas puede plantear la Unión Europea'), ('Event', 'desbloquear la situación en la zona')],
+    ('Communication_response', 'respondió'): [('Trigger', 'existen muchas iniciativas sobre la mesa , y citó en concreto los acuerdos de Camp David y del balneario egipcio de Taba')],
+    ('Idiosyncrasy', 'concreto los'): [('Idiosyncrasy', 'los acuerdos de Camp David y del balneario egipcio')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'muchas iniciativas sobre la mesa'), ('Ground', 'en concreto los acuerdos de Camp David y del balneario egipcio')],
+    ('Locale', 'zona'): [],
+    ('Locative_relation', 'existen'): [('Figure', 'que'), ('Ground', 'ya existen muchas iniciativas sobre la mesa')],
+    ('Make_agreement_on_action', 'los acuerdos de'): [('Party_2', 'Camp David y del balneario egipcio de')],
+    ('Placing', 'citó'): [('Theme', 'Preguntado sobre qué iniciativas puede plantear la Unión Europea'), ('Goal', 'desbloquear la situación en la zona')],
+    ('Quantified_mass', 'muchas'): [('Individuals', 'iniciativas')],
+    ('Spatial_contact', 'en'): [('Figure', 'muchas iniciativas'), ('Ground', 'la mesa')]}

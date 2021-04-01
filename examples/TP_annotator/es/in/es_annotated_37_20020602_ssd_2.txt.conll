@@ -1,0 +1,3 @@
+{   ('Cardinal_numbers', 'Una'): [('Entity', 'de ellas')],
+    ('Cause_harm', 'torturas'): [('Victim', 'Una de ellas calificaba a la conselleria de Departament')],
+    ('Communicate_categorization', 'de'): [('Speaker', 'Una de ellas'), ('Item', 'de Departament')]}

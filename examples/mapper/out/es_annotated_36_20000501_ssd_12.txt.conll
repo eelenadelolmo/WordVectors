@@ -1,0 +1,5 @@
+{   ('Desiring', 'queremos'): [('Experiencer', 'se'), ('Event', 'conseguir que Catalunya se gobierne desde la moderación')],
+    ('Economy', 'económicas'): [],
+    ('Emphasizing', 'carácter'): [('Consideration', 'en cuestiones sociales y económicas')],
+    ('Interior_profile_relation', 'en'): [   ('Ground', 'previo'),
+                                             ('Figure', ', queremos conseguir que Catalunya se gobierne desde la moderación , poniendo el acento en cuestiones sociales y económicas .')]}

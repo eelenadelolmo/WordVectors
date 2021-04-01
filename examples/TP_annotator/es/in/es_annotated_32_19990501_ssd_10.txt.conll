@@ -1,0 +1,7 @@
+{   ('Arrest', 'arresto'): [('Authorities', 'domiciliario')],
+    ('Being_in_control', 'control'): [('Controlling_entity', 'movimientos')],
+    ('Buildings', 'domiciliario'): [],
+    ('Cause_change', 'cambiando'): [('Agent', 'Milosevic'), ('Degree', 'constantemente'), ('Entity', 'de generales')],
+    ('Leadership', 'de generales'): [],
+    ('Locative_relation', 'hay'): [('Figure', 'señaló que'), ('Ground', 'actualidad hay nueve exgenerales yugoslavos en situación de arresto domiciliario o bajo control de movimientos')],
+    ('Statement', 'quot'): [('Speaker', 'Shea'), ('Message', 'señaló que en la actualidad hay nueve exgenerales yugoslavos en situación de arresto domiciliario o bajo control de movimientos')]}

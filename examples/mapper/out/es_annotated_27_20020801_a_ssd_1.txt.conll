@@ -1,0 +1,10 @@
+{   ('Attempt', 'intentaban'): [('Agent', 'pasajeros'), ('Goal', 'recuperar su dinero')],
+    ('Businesses', 'compañías'): [('Descriptor', 'otras')],
+    ('Increment', 'otras'): [('Class', 'compañías')],
+    ('Locale', 'plaza'): [('Relative_location', 'en aviones o barcos de otras compañías')],
+    ('Money', 'dinero'): [('Possessor', 'los')],
+    ('Part_inner_outer', 'medio'): [('Whole', 'gran caos')],
+    ('Spatial_contact', 'en'): [('Figure', 'plaza'), ('Ground', 'aviones o barcos de otras compañías en')],
+    ('Travel', 'viajes'): [('Traveler', 'ferry'), ('Traveler', 'Naviera Universal')],
+    ('Vehicle', 'barcos'): [('Use', 'de otras compañías')],
+    ('Vehicle', 'ferry'): []}

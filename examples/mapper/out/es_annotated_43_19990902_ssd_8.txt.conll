@@ -1,0 +1,13 @@
+{   ('Animals', 'animales'): [('Animal', 'reservas animales')],
+    ('Appellations', 'presidente'): [('Type', 'Sam Nujoma')],
+    ('Arriving', 'regresó'): [('Theme', 'El Rey'), ('Time', 'jueves de')],
+    ('Calendric_unit', 'jueves'): [],
+    ('Calendric_unit', 'semanas'): [('Count', 'dos')],
+    ('Cardinal_numbers', 'dos'): [('Unit', 'semanas')],
+    ('Leadership', 'El Rey'): [],
+    ('Locative_relation', 'donde'): [],
+    ('Relative_time', 'de'): [('Focal_occasion', 'recorrió reservas animales'), ('Landmark_occasion', 'una invitación personal del presidente , Sam Nujoma')],
+    ('Request', 'invitación'): [('Message', 'personal'), ('Speaker', 'del presidente , Sam Nujoma')],
+    ('Spatial_contact', 'de'): [('Figure', 'El Rey'), ('Ground', 'jueves'), ('Figure', 'de un viaje privado a')],
+    ('Store', 'reservas'): [('Use', 'animales')],
+    ('Travel', 'viaje'): [('Traveler', 'el'), ('Goal', 'reservas animales')]}

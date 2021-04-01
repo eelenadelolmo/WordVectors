@@ -1,0 +1,10 @@
+{   ('Age', 'años'): [('Time', '24 años')],
+    ('Appellations', 'presidente'): [('Name', 'uruguayo')],
+    ('Bringing', 'a cabo'): [('Theme', 'exámenes médicos')],
+    ('Calendric_unit', 'años'): [('Relative_time', 'actualidad'), ('Count', '24')],
+    ('Fame', 'célebre'): [('Entity', 'poeta')],
+    ('Locative_relation', 'tiene'): [('Figure', 'que'), ('Ground', 'existe una relación de parentesco entre la chica')],
+    ('People', 'chica'): [],
+    ('Scrutiny', 'exámenes'): [('Ground', 'médicos')],
+    ('Statement', 'añadió'): [('Speaker', 'presidente uruguayo'), ('Message', 'que se llevarán a cabo exámenes médicos para confirmar que existe una relación de parentesco entre la chica ,')],
+    ('Verification', 'confirmar'): [('Unconfirmed_content', 'que existe una relación de parentesco entre la chica , que en la actualidad tiene 24 años , y el célebre')]}

@@ -1,0 +1,8 @@
+{   ('Becoming', 'se adentra'): [],
+    ('Categorization', 'considera'): [('Item', 'que'), ('Category', 'en el país se considera una & quot ; agresión & quot ; contra un & quot ; Estado soberano')],
+    ('Change_position_on_a_scale', 'incrementar'): [('Item', 'tensión , como respuesta a')],
+    ('Change_position_on_a_scale', 'más en'): [],
+    ('Hostile_encounter', 'guerra'): [],
+    ('Medical_conditions', 'fría'): [],
+    ('Political_locales', 'país'): [],
+    ('Response', 'respuesta'): [('Trigger', 'a lo que en el país se considera una & quot ; agresión')]}

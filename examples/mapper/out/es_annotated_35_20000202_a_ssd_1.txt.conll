@@ -1,0 +1,7 @@
+{   ('Closure', 'abrió'): [('Container_portal', 'cuentas secretas')],
+    ('Leadership', 'dirección'): [('Governed', 'federal'), ('Governed', 'partido cristianodemócrata ( CDU )')],
+    ('People_by_religion', 'cristianodemócrata'): [('Religion', 'partido cristianodemócrata')],
+    ('Political_locales', 'federal'): [],
+    ('Secrecy_status', 'secretas'): [('Phenomenon', 'cuentas')],
+    ('Text', 'cuentas'): [],
+    ('Time_vector', 'del ex'): [('Event', 'canciller Helmut')]}

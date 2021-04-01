@@ -1,0 +1,4 @@
+{   ('Experience_bodily_harm', 'lesiones'): [],
+    ('People', 'chica'): [],
+    ('Response', 'respondían'): [('Response', 'lesiones que tenía la chica'), ('Trigger', 'a una violación')],
+    ('Successful_action', 'tampoco'): [('Protagonist', 'forenses'), ('Goal', 'aclararon si las lesiones que tenía la chica respondían a una violación')]}

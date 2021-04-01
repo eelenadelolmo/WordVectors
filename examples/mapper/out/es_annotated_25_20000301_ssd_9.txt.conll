@@ -1,0 +1,4 @@
+{   ('Cardinal_numbers', 'uno'): [('Entity', 'los artistas catalanes con más fama internacional')],
+    ('Create_physical_artwork', 'artistas'): [('Descriptor', 'catalanes con más fama internacional')],
+    ('Fame', 'fama'): [('Degree', 'más fama internacional'), ('Entity', 'artistas catalanes')],
+    ('Political_locales', 'internacional'): [('Descriptor', 'más'), ('Locale', 'artistas catalanes con más fama internacional')]}

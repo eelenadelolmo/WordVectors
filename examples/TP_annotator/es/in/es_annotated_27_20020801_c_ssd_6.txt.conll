@@ -1,0 +1,7 @@
+{   ('Buildings', 'aeropuerto'): [],
+    ('Calendric_unit', 'la mañana'): [],
+    ('Expend_resource', 'agotado'): [],
+    ('Getting', 'de'): [('Recipient', 'hemos')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'dormido'), ('Ground', 'asientos y')],
+    ('Locative_relation', 'en'): [('Figure', 'dormido en asientos y'), ('Ground', 'del aeropuerto')],
+    ('Possession', 'tenido'): [('Possession', 'dormido en asientos y lavabos del aeropuerto')]}

@@ -1,0 +1,10 @@
+{   ('Appellations', 'president'): [],
+    ('Inclusion', 'incluya'): [('Total', 'el modelo de fiscal que'), ('Part', 'propuesta para solucionar el problema de la financiación de los ayuntamientos')],
+    ('Political_locales', 'ayuntamientos'): [],
+    ('Predicament', 'problema'): [('Experiencer', 'la financiación de los ayuntamientos')],
+    ('Resolve_problem', 'solucionar'): [('Problem', 'el problema de la financiación de los ayuntamientos')],
+    ('Scrutiny', 'búsqueda'): [],
+    ('Spatial_contact', 'de'): [   ('Figure', 'un consenso'),
+                                   ('Ground', 'el modelo de fiscal'),
+                                   ('Figure', 'que incluya también una propuesta para solucionar el problema de la financiación de los ayuntamientos')],
+    ('Statement', 'propuesta'): [('Message', 'solucionar el problema de la financiación de los ayuntamientos')]}

@@ -1,0 +1,8 @@
+{   ('Body_parts', 'jefe'): [('Possessor', 'del Gobierno')],
+    ('Calendric_unit', 'vacaciones'): [],
+    ('Frequency', 'semanal'): [('Event', 'del')],
+    ('Interior_profile_relation', 'entre'): [('Figure', 'encuentros'), ('Ground', 'el Rey y el jefe del Gobierno')],
+    ('Leadership', 'Gobierno'): [],
+    ('Leadership', 'el Rey'): [],
+    ('Reason', 'del'): [('State_of_affairs', 'semanal')],
+    ('Spatial_contact', 'en'): [('Ground', 'vacaciones')]}

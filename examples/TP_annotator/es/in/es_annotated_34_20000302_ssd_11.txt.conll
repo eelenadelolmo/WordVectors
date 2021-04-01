@@ -1,0 +1,4 @@
+{   ('Building_subparts', 'habitaciones'): [('Whole', 'palacio en las que supuestamente se interrogó a Lasa y Zabala')],
+    ('Buildings', 'palacio'): [('Place', 'a Lasa y Zabala')],
+    ('Questioning', 'interrogó'): [('Message', 'habitaciones del palacio en las que supuestamente se interrogó a Lasa y Zabala')],
+    ('Unattributed_information', 'acusado'): [('Reported_fact', 'habitaciones del palacio en las que supuestamente se interrogó a Lasa y Zabala'), ('Reported_fact', 'interrogó')]}

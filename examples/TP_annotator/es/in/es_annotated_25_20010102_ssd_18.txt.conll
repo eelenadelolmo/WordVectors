@@ -1,0 +1,6 @@
+{   ('Attack', 'atentado'): [],
+    ('Cardinal_numbers', 'pareja'): [],
+    ('Death', 'murió'): [('Protagonist', 'pareja'), ('Place', 'en un atentado realizado en Cisjordania contra el vehículo en el que'), ('Containing_event', 'en el que viajaban')],
+    ('Part_orientational', 'Cisjordania'): [('Whole', 'el')],
+    ('Travel', 'viajaban'): [('Traveler', 'el')],
+    ('Vehicle', 'vehículo'): []}

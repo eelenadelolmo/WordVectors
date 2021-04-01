@@ -1,0 +1,6 @@
+{   ('Awareness', 'conscientes'): [('Cognizer', 'nuestro'), ('Content', 'de ello')],
+    ('Degree', 'hasta'): [('Gradable_attribute', 'habita')],
+    ('Evidence', 'demuestra'): [('Support', 'nuestro'), ('Proposition', 'hasta qué punto Miró habita en nuestro mundo visual')],
+    ('Frequency', 'a menudo'): [('Event', 'somos'), ('Event', 'conscientes de ello')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'hasta qué'), ('Ground', 'nuestro mundo visual')],
+    ('Political_locales', 'mundo'): [('Descriptor', 'visual')]}

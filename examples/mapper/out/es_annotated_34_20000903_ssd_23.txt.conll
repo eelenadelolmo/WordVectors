@@ -1,0 +1,11 @@
+{   ('Awareness', 'saben'): [('Expressor', 'lehendakari'), ('Content', ', venza quien venza en las próximas elecciones vascas')],
+    ('Besieging', 'venza'): [],
+    ('Change_of_leadership', 'elecciones'): [('Selector', 'vascas')],
+    ('Getting', 'venza'): [('Recipient', 'quien')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'quien venza'), ('Ground', 'las próximas elecciones vascas')],
+    ('Leadership', 'gobernar'): [],
+    ('Possession', 'estrechan'): [('Possession', 'apoyos suficientes'), ('Manner', 'para gobernar en solitario')],
+    ('Proportional_quantity', 'sobre'): [('Reference_quantity', 'venza'), ('Individuals', 'el PNV')],
+    ('Relative_time', 'las próximas'): [('Focal_occasion', 'elecciones vascas')],
+    ('Sufficiency', 'suficientes'): [('Item', 'apoyos'), ('Enabled_situation', 'para gobernar en solitario')],
+    ('Supporting', 'apoyos'): []}

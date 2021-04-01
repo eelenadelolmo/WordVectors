@@ -1,0 +1,5 @@
+{   ('Awareness', 'conocida'): [('Content', 'una cultura'), ('Content', 'como Clovis')],
+    ('Change_position_on_a_scale', 'dando'): [('Item', 'allí poblaron América dando'), ('Final_state', 'a una cultura conocida como Clovis')],
+    ('Colonization', 'dando'): [('Homeland', 'dando'), ('New_area', 'América dando pie a una cultura conocida como Clovis')],
+    ('Locative_relation', 'allí'): [('Ground', 'dando'), ('Figure', 'América dando pie a una cultura conocida como Clovis')],
+    ('Origin', 'Desde'): [('Origin', 'allí poblaron América dando pie a una cultura conocida como')]}

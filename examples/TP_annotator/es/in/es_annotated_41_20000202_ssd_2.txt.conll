@@ -1,0 +1,3 @@
+{   ('Personal_relationship', 'esposa'): [('Partner_1', 'su'), ('Partner_2', 'esposa')],
+    ('Personal_relationship', 'marido'): [('Partner_2', 'Mi')],
+    ('Verification', 'confirmó'): [('Manner', 'ayer'), ('Unconfirmed_content', 'su esposa')]}

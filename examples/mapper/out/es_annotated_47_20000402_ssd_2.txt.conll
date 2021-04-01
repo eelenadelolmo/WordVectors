@@ -1,0 +1,5 @@
+{   ('Cardinal_numbers', 'Dos'): [('Entity', 'personas')],
+    ('Hostile_encounter', 'los choques'): [],
+    ('Importance', 'gravemente'): [('Factor', 'gravemente heridas')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'Dos personas resultaron gravemente heridas'), ('Ground', 'los choques')],
+    ('People', 'personas'): []}

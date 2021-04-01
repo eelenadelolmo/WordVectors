@@ -1,0 +1,12 @@
+{   ('Desirability', 'buenas'): [('Evaluee', 'intenciones')],
+    ('Desirability', 'malas'): [('Evaluee', 'intenciones')],
+    ('Difficulty', 'difícil'): [('Degree', 'muy'), ('Activity', 'para recibir un')],
+    ('Duration_description', 'breve'): [('Eventuality', 'su')],
+    ('Explaining_the_facts', 'explicó'): [('Fact', 'Biljana'), ('State_of_affairs', 'para los')],
+    ('Fields', 'literario'): [('Salient_entity', 'premio')],
+    ('Getting', 'llegar'): [('Recipient', 'su'), ('Theme', 'para')],
+    ('Personal_relationship', 'marido'): [('Partner_2', 'su')],
+    ('Purpose', 'intenciones'): [('Agent', 'aquellos que')],
+    ('Receiving', 'recibir'): [('Recipient', 'malas'), ('Theme', 'un premio literario en')],
+    ('Temporary_stay', 'permanencia en'): [('Guest', 'su'), ('Manner', 'breve'), ('Location', 'en Belgrado')],
+    ('Text', 'quot'): []}

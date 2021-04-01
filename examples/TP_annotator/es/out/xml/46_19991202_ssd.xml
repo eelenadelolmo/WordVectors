@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="46_19991202_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Los obispos de Navarra y el País Vasco</concept>
+		<concept id="c_1">El obispo de Pamplona y los de Bilbao , San Sebastián y Vitoria</concept>
+		<concept id="c_2">se</concept>
+		<concept id="c_3">replantee su decisión de romper la tregua y que anuncie definitivamente el cese de la violencia</concept>
+		<concept id="c_4">su disposición</concept>
+		<concept id="c_5">problema</concept>
+		<concept id="c_6">se</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Los obispos de Navarra y el País Vasco han redactado un comunicado conjunto en el que reiteran su disposición a hacer cuanto esté en su mano para facilitar una salida "justa" al problema del terrorismo.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">obispos</token><token pos="sps00">de</token><token pos="np00000">Navarra</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="np00000">País</token><token pos="ncms000">Vasco</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_5">
+			<token pos="vaip3p0">han</token><token pos="vmp00sm">redactado</token><token pos="di0ms0">un</token><token pos="ncms000">comunicado</token><token pos="aq0ms0">conjunto</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="pr0cn000">que</token><token pos="vmip3p0">reiteran</token><mention concept_ref="c_4"><token pos="dp3cs0">su</token><token pos="ncfs000">disposición</token></mention><token pos="sps00">a</token><token pos="vmn0000">hacer</token><token pos="sps00">para</token><token pos="vmn0000">facilitar</token><token pos="di0fs0">una</token><token pos="ncfs000">salida</token><token pos="fe">quot;</token><token pos="aq0fs0">justa</token><token pos="fe">quot;</token><token pos="spcms">al</token><mention concept_ref="c_5"><token pos="ncms000">problema</token></mention><token pos="spcms">del</token><token pos="ncms000">terrorismo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Electricity" head="disposición">
+				<argument type="Source" dependent="su" /></frame>
+			<frame type="Intentionally_act" head="de">
+				<argument type="Act" dependent="que" /></frame>
+			<frame type="Predicament" head="problema">
+				<argument type="Situation" dependent="terrorismo" /></frame>
+			<frame type="Terrorism" head="terrorismo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El obispo de Pamplona y los de Bilbao, San Sebastián y Vitoria piden a ETA que se replantee su decisión de romper la tregua y que anuncie definitivamente el cese de la violencia.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">obispo</token><token pos="sps00">de</token><token pos="np00000">Pamplona</token><token pos="cc">y</token><token pos="da0mp0">los</token><token pos="sps00">de</token><token pos="np00000">Bilbao</token><token pos="fc">,</token><token pos="np0000l">San</token><token pos="np0000l">Sebastián</token><token pos="cc">y</token><token pos="np00000">Vitoria</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_2" concept_ref3="c_3" concept_ref4="c_4" concept_ref5="c_6">
+			<token pos="vmip3p0">piden</token><token pos="sps00">a</token><token pos="np00000">ETA</token><token pos="cs">que</token><token pos="p0300000">se</token><mention concept_ref="c_3"><token pos="vmsp3s0">replantee</token><token pos="dp3cs0">su</token><token pos="ncfs000">decisión</token><token pos="sps00">de</token><token pos="vmn0000">romper</token><token pos="da0fs0">la</token><token pos="ncfs000">tregua</token><token pos="cc">y</token><token pos="cs">que</token><token pos="vmsp3s0">anuncie</token><token pos="rg">definitivamente</token><token pos="da0ms0">el</token><token pos="ncms000">cese</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">violencia</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Deciding" head="decisión">
+				<argument type="Cognizer" dependent="se" />
+				<argument type="Decision" dependent="de romper la" /></frame>
+			<main_frame type="Questioning" head="piden">
+				<argument type="Message" dependent="obispo de Pamplona y los de Bilbao ," />
+				<argument type="Speaker" dependent="San Sebastián y Vitoria" />
+				<argument type="Addressee" dependent="se" />
+				<argument type="Message" dependent="replantee su decisión de romper la tregua y que anuncie definitivamente el cese de la violencia" /></main_frame>
+			<main_frame type="Statement" head="anuncie">
+				<argument type="Message" dependent="definitivamente el cese de la violencia" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="39_20011102_ssd">
+
+
+	<concepts>
+		<concept id="c_0">EL AEROPUERTO milanés , en el que murieron 118 personas por un choque a principios de octubre ,</concept>
+		<concept id="c_1">incumple varias normas de la Organización Internacional de la Aviación Civil</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 EL AEROPUERTO milanés, en el que murieron 118 personas por un choque a principios de octubre, incumple varias normas de la Organización Internacional de la Aviación Civil, informó ayer El Corriere della Sera citando un informe del Gobierno en el que se critica al organismo italiano encargado del control aéreo.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">EL</token><token pos="ncms000">AEROPUERTO</token><token pos="aq0ms0">milanés</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="pr0cn000">que</token><token pos="vmis3p0">murieron</token><token pos="z">118</token><token pos="ncfp000">personas</token><token pos="sps00">por</token><token pos="di0ms0">un</token><token pos="ncms000">choque</token><token pos="sps00">a</token><token pos="ncfs000">principios</token><token pos="sps00">de</token><token pos="ncms000">octubre</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1">
+			<mention concept_ref="c_1"><token pos="vmip3s0">incumple</token><token pos="di0fp0">varias</token><token pos="ncfp000">normas</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncms000">Organización</token><token pos="ncms000">Internacional</token><token pos="sps00">de</token><token pos="da0ms0">la</token><token pos="ncms000">Aviación</token><token pos="aq0cs0">Civil</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_in_control" head="control">
+				<argument type="Dependent_entity" dependent="aéreo" /></frame>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Compliance" head="citando">
+				<argument type="Norm" dependent="incumple varias normas de la Organización Internacional de la Aviación Civil" /></frame>
+			<frame type="Impact" head="choque" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="un choque" />
+				<argument type="Ground" dependent="a principios de" /></frame>
+			<frame type="Judgment_communication" head="se critica">
+				<argument type="Communicator" dependent="El Corriere della Sera citando un informe del Gobierno" />
+				<argument type="Evaluee" dependent="organismo italiano encargado" />
+				<argument type="Reason" dependent="del control aéreo" /></frame>
+			<main_frame type="Killing" head="murieron">
+				<argument type="Victim" dependent="118 personas" />
+				<argument type="Time" dependent="por un choque a principios de" /></main_frame>
+			<frame type="Leadership" head="Gobierno" />
+			<frame type="People" head="personas">
+				<argument type="Descriptor" dependent="118" /></frame>
+			<frame type="Quantified_mass" head="varias">
+				<argument type="Individuals" dependent="normas" /></frame>
+			<frame type="Statement" head="informe">
+				<argument type="Speaker" dependent="incumple varias normas de la Organización Internacional de la Aviación Civil" />
+				<argument type="Manner" dependent="ayer" />
+				<argument type="Message" dependent="Corriere della Sera citando un informe del Gobierno en el que se critica al organismo italiano encargado del control aéreo" /></frame>
+			<frame type="Statement" head="informe del">
+				<argument type="Speaker" dependent="Gobierno" /></frame>
+			<main_frame type="Successful_action" head="incumple">
+				<argument type="Goal" dependent="incumple varias normas de la Organización Internacional de la Aviación Civil" /></main_frame>
+			<frame type="Temporal_subregion" head="a principios">
+				<argument type="Time_period" dependent="incumple" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

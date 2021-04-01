@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="44_19981102_ssd">
+
+
+	<concepts>
+		<concept id="c_0">el GRAPO</concept>
+		<concept id="c_1">La organización</concept>
+		<concept id="c_2">El líder histórico , Manuel Pérez Martínez , Camarada Arenas</concept>
+		<concept id="c_3">La bomba colocada en 1979 en la cafetería California de Madrid , con ocho muertos y más de 40 heridos ,</concept>
+		<concept id="c_4">Arenas</concept>
+		<concept id="c_5">El diálogo entre el GRAPO y el Cesid</concept>
+		<concept id="c_6">atentados</concept>
+		<concept id="c_7">el relevo a</concept>
+		<concept id="c_8">se</concept>
+		<concept id="c_9">ocasiones</concept>
+		<concept id="c_10">el aparato</concept>
+		<concept id="c_11">fondos</concept>
+		<concept id="c_12">cerebro</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Desde su aparición, el 1 de octubre de 1975, y a pesar de que se le ha dado por desactivado en numerosas ocasiones, el GRAPO no ha dejado de perpetrar atentados.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="np00000">GRAPO</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_4" concept_ref4="c_6" concept_ref5="c_8" concept_ref6="c_9">
+			<token pos="sps00">Desde</token><mention concept_ref="c_1"><token pos="dp3cs0">su</token><token pos="ncfs000">aparición</token></mention><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="z">1</token><token pos="sps00">de</token><token pos="ncfp000">octubre</token><token pos="sps00">de</token><token pos="z">1975</token><token pos="fc">,</token><token pos="cc">y</token><token pos="spcms">a</token><token pos="vmn0000">pesar</token><token pos="sps00">de</token><token pos="pp3fs000">que</token><mention concept_ref="c_8"><token pos="p0000000">se</token></mention><mention concept_ref="c_0"><token pos="pp3csd00">le</token></mention><token pos="vaip3s0">ha</token><token pos="vmp00sm">dado</token><token pos="sps00">por</token><token pos="aq0msp">desactivado</token><token pos="sps00">en</token><token pos="aq0fp0">numerosas</token><mention concept_ref="c_9"><token pos="ncfp000">ocasiones</token></mention><token pos="rn">no</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">dejado</token><token pos="sps00">de</token><token pos="vmn0000">perpetrar</token><token pos="ncmp000">atentados</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="atentados">
+				<argument type="Assailant" dependent="GRAPO" /></frame>
+			<main_frame type="Bringing" head="dado">
+				<argument type="Agent" dependent="GRAPO" />
+				<argument type="Goal" dependent="atentados" /></main_frame>
+			<main_frame type="Process_continue" head="dejado">
+				<argument type="Event" dependent="GRAPO" />
+				<argument type="Event" dependent="perpetrar atentados" /></main_frame>
+			<frame type="Quantified_mass" head="numerosas">
+				<argument type="Individuals" dependent="ocasiones" /></frame>
+			<frame type="Time_vector" head="por">
+				<argument type="Landmark_event" dependent="su aparición , el 1" />
+				<argument type="Event" dependent="perpetrar atentados" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La organización surgió como el aparato militar del Partido Comunista ( Reconstituido ), dedicado inicialmente a la expropiación de fondos.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="ncfs000">organización</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_1" concept_ref3="c_10" concept_ref4="c_11">
+			<token pos="vmis3s0">surgió</token><token pos="cs">como</token><mention concept_ref="c_10"><token pos="da0ms0">el</token><token pos="ncms000">aparato</token></mention><token pos="aq0cs0">militar</token><token pos="spcms">del</token><mention concept_ref="c_3"><token pos="ncms000">Partido</token><token pos="aq0ms0">Comunista</token></mention><token pos="fpa">(</token><token pos="aq0msp">Reconstituido</token><token pos="fpt">)</token><token pos="fc">,</token><token pos="aq0msp">dedicado</token><token pos="rg">inicialmente</token><token pos="sps00">a</token><mention concept_ref="c_1"><token pos="da0fs0">la</token><token pos="ncfs000">expropiación</token></mention><token pos="sps00">de</token><mention concept_ref="c_11"><token pos="ncmp000">fondos</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Coming_to_be" head="surgió">
+				<argument type="Entity" dependent="organización" /></main_frame>
+			<frame type="Military" head="militar" />
+			<frame type="Money" head="fondos" />
+			<frame type="Organization" head="organización" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En 1993, el GRAPO decidió continuar sus actividades.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="np00000">GRAPO</token>
+		</theme>
+		<rheme concept_ref1="c_6">
+			<token pos="vmis3s0">decidió</token><mention concept_ref="c_6"><token pos="vmn0000">continuar</token><token pos="dp3cp0">sus</token><token pos="ncfp000">actividades</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Deciding" head="decidió">
+				<argument type="Time" dependent="En 1993" />
+				<argument type="Cognizer" dependent="GRAPO" />
+				<argument type="Decision" dependent="continuar sus actividades" /></main_frame>
+			<frame type="Intentionally_act" head="actividades">
+				<argument type="Agent" dependent="el" /></frame>
+			<main_frame type="Process_continue" head="continuar">
+				<argument type="Event" dependent="sus actividades" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El líder histórico, Manuel Pérez Martínez, Camarada Arenas, cedió el relevo a Fernando Silva Sande, presunto cerebro del secuestro de Publio Cordón.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="nccs000">líder</token><token pos="aq0ms0">histórico</token><token pos="fc">,</token><token pos="ncfs000">Manuel</token><token pos="ncms000">Pérez</token><token pos="np00000">Martínez</token><token pos="fc">,</token><token pos="ncfs000">Camarada</token><token pos="nc00000">Arenas</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_7" concept_ref4="c_8" concept_ref5="c_12">
+			<token pos="vmis3s0">cedió</token><mention concept_ref="c_7"><token pos="da0ms0">el</token><token pos="ncms000">relevo</token><token pos="sps00">a</token></mention><mention concept_ref="c_2"><token pos="ncfs000">Fernando</token><token pos="ncms000">Silva</token><token pos="np00000">Sande</token></mention><token pos="fc">,</token><token pos="aq0ms0">presunto</token><mention concept_ref="c_12"><token pos="ncms000">cerebro</token></mention><token pos="spcms">del</token><token pos="ncms000">secuestro</token><token pos="sps00">de</token><token pos="np0000l">Publio</token><token pos="np0000l">Cordón</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Giving" head="cedió">
+				<argument type="Donor" dependent="líder histórico , Manuel" />
+				<argument type="Theme" dependent="el relevo a" />
+				<argument type="Purpose" dependent="Arenas , cedió el relevo a Fernando Silva Sande , presunto cerebro del secuestro" /></main_frame>
+			<frame type="Historic_event" head="histórico" />
+			<frame type="Kidnapping" head="secuestro">
+				<argument type="Victim" dependent="de Publio" /></frame>
+			<frame type="Leadership" head="líder">
+				<argument type="Domain" dependent="histórico" /></frame>
+			<frame type="Suspicion" head="presunto">
+				<argument type="Suspect" dependent="cerebro" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La bomba colocada en 1979 en la cafetería California de Madrid, con ocho muertos y más de 40 heridos, ha sido su atentado más sangriento.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fs0">La</token><token pos="ncfs000">bomba</token><token pos="aq0fsp">colocada</token><token pos="sps00">en</token><token pos="z">1979</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">cafetería</token><token pos="np00000">California</token><token pos="sps00">de</token><token pos="np00000">Madrid</token><token pos="fc">,</token><token pos="sps00">con</token><token pos="dn0cp0">ocho</token><token pos="ncmp000">muertos</token><token pos="cc">y</token><token pos="rg">más</token><token pos="sps00">de</token><token pos="z">40</token><token pos="ncmp000">heridos</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_10">
+			<token pos="vsp00sm">sido</token><token pos="dp3cs0">su</token><token pos="ncms000">atentado</token><token pos="rg">más</token><token pos="aq0ms0">sangriento</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="atentado">
+				<argument type="Assailant" dependent="su" />
+				<argument type="Manner" dependent="sangriento" /></frame>
+			<frame type="Cause_harm" head="heridos">
+				<argument type="Degree" dependent="40" /></frame>
+			<frame type="Dead_or_alive" head="muertos">
+				<argument type="Degree" dependent="ocho" /></frame>
+			<frame type="Food" head="cafetería" />
+			<frame type="Locale_by_use" head="su">
+				<argument type="Constituent_parts" dependent="cafetería California" />
+				<argument type="Relative_location" dependent="de Madrid" /></frame>
+			<frame type="Placing" head="colocada">
+				<argument type="Theme" dependent="La bomba" />
+				<argument type="Time" dependent="en 1979" />
+				<argument type="Goal" dependent="en la cafetería California de Madrid" /></frame>
+			<frame type="Weapon" head="bomba" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En una publicación clandestina del PCE-R, Arenas señaló recientemente: "El Estado ha ensayado con nosotros la negociación con ETA".
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="np00000">Arenas</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_9" concept_ref3="c_11">
+			<token pos="vmp00sm">ensayado</token><token pos="sps00">con</token><mention concept_ref="c_11"><token pos="pp1mp000">nosotros</token></mention><token pos="da0fs0">la</token><token pos="ncfs000">negociación</token><token pos="sps00">con</token><token pos="np00000">ETA</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_aware" head="señaló">
+				<argument type="Cognizer" dependent="Arenas" />
+				<argument type="Phenomenon" dependent="quot ; El Estado ha ensayado con nosotros la negociación con" /></frame>
+			<frame type="Secrecy_status" head="clandestina">
+				<argument type="Phenomenon" dependent="publicación" /></frame>
+			<frame type="Temporal_collocation" head="recientemente">
+				<argument type="Trajector_event" dependent="Arenas" />
+				<argument type="Trajector_event" dependent="señaló" /></frame>
+			<frame type="Text" head="publicación">
+				<argument type="Descriptor" dependent="clandestina" />
+				<argument type="Text" dependent=", Arenas señaló recientemente :  quot ; El Estado ha ensayado con nosotros la negociación con" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El diálogo entre el GRAPO y el Cesid quedó roto en el mes de diciembre de 1996.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0ms0">El</token><token pos="ncms000">diálogo</token><token pos="sps00">entre</token><token pos="da0ms0">el</token><token pos="np00000">GRAPO</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="np00000">Cesid</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">quedó</token><token pos="aq0msp">roto</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="np00000">mes</token><token pos="np00000">de</token><token pos="np00000">diciembre</token><token pos="np00000">de</token><token pos="np00000">1996</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	
+</text>

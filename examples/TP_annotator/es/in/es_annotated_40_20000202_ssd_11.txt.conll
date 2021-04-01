@@ -1,0 +1,6 @@
+{   ('Appellations', 'presidente'): [],
+    ('Competition', 'rival'): [('Competition', 'esgrimir el espectro del actual presidente')],
+    ('Law', 'ley'): [('Use', 'financiación electoral')],
+    ('Questioning', 'cuestionando'): [('Message', 'honestidad de su delfín en temas como la reforma de la ley de financiación electoral y el aborto')],
+    ('Reforming_a_system', 'reforma'): [('Entity', 'ley de financiación electoral')],
+    ('Temporal_collocation', 'del actual'): [('Trajector_entity', 'presidente')]}

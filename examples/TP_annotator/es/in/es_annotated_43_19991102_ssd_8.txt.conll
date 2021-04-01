@@ -1,0 +1,9 @@
+{   ('Calendric_unit', 'años'): [('Count', '20.000')],
+    ('Causation', 'que'): [('Manner', 'muy precarios'), ('Effect', 'más de 20.000 años')],
+    ('Increment', 'más'): [('Class', 'de 20.000')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'los isleños del sur del Pacífico llevan navegando'), ('Ground', 'mar abierto')],
+    ('Natural_features', 'mar'): [('Descriptor', 'abierto')],
+    ('People_by_vocation', 'arqueólogo'): [],
+    ('Remembering_experience', 'recordó'): [   ('Cognizer', 'arqueólogo'),
+                                               ('Experience', 'que los isleños del sur del Pacífico llevan navegando en mar abierto y con medios muy precarios más de 20.000 años')],
+    ('Secrecy_status', 'abierto'): [('Phenomenon', 'mar')]}

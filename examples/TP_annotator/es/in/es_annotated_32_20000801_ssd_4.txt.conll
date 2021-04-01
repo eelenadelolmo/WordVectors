@@ -1,0 +1,6 @@
+{   ('Becoming_silent', 'silenciosa'): [('Topic', 'cinco minutos')],
+    ('Bringing', 'reunió a'): [('Theme', 'una concentración silenciosa de cinco minutos en la plaza de Sant Jaume'), ('Goal', 'reunió a un centenar de personas')],
+    ('Cardinal_numbers', 'un'): [('Entity', 'personas')],
+    ('Collaboration', 'reunió'): [('Undertaking', 'centenar de personas')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'silenciosa de cinco minutos en la'), ('Ground', 'plaza de Sant Jaume')],
+    ('People', 'personas'): []}

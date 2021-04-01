@@ -1,0 +1,4 @@
+{   ('Calendric_unit', 'Ayer'): [],
+    ('Certainty', 'seguro de que'): [('Cognizer', 'nadie'), ('Content', 'De Niro hubiera hablado o pasado por el festival')],
+    ('Process_end', 'pasado por'): [('Process', 'De Niro'), ('Time', 'por el festival')],
+    ('Statement', 'hablado'): [('Speaker', 'De Niro')]}

@@ -1,0 +1,9 @@
+{   ('Collaboration', 'colaboraron'): [('Partner_2', 'personas'), ('Partner_1', 'los que'), ('Partner_2', 'con los antiguos servicios secretos soviéticos en el marco de una ley de verificación que')],
+    ('Commitment', 'amenaza'): [('Speaker', 'una ley de verificación que'), ('Message', 'excluir de la vida pública a los que no revelen voluntariamente sus relaciones con el')],
+    ('Law', 'ley'): [],
+    ('People', 'personas'): [],
+    ('Public_services', 'servicios'): [('Domain', 'secretos soviéticos')],
+    ('Relation', 'relaciones'): [('Entity_1', 'sus'), ('Entity_2', 'con el')],
+    ('Reveal_secret', 'pública'): [('Time', 'excluir de la vida pública a los que no revelen voluntariamente'), ('Information', 'sus relaciones con')],
+    ('Secrecy_status', 'secretos'): [('Cognizer', 'soviéticos'), ('Phenomenon', 'servicios')],
+    ('Verification', 'verificación'): []}

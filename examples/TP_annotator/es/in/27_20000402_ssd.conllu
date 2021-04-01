@@ -1,0 +1,44 @@
+1	La	el	da0fs0	da0fs0	rep=no|t=yes|r=no|m=yes|c=no	2	det
+2	Audiencia	audiencia	ncms000	ncms000	rep=no|t=yes|r=no|m=yes|c=no	4	nsubj
+3	Nacional	nacional	aq0ms0	aq0ms0	rep=no|t=yes|r=no|m=yes|c=no	2	amod
+4	investigará	investigar	vmif3s0	vmif3s0	rep=no|t=no|r=yes|m=yes|c=no	0	root
+5	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	6	det
+6	querella	querella	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	4	dobj
+7	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	6	prepn
+8	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	9	det
+9	premio	premio	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	7	pobj
+10	Nobel	nobel	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	9	appos
+11	de	de	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	10	prepn
+12	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	13	det
+13	Paz	paz	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	11	pobj
+14	Rigoberta	Rigoberta	np0000l	np0000l	rep=no|t=no|r=yes|m=yes|c=no	9	appos
+15	Menchú	Menchú	np0000l	np0000l	rep=no|t=no|r=yes|m=yes|c=no	14	appos
+16	por	por	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	6	prepn
+17	el	el	da0ms0	da0ms0	rep=no|t=no|r=yes|m=yes|c=no	18	det
+18	exterminio	exterminio	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	16	pobj
+19	del	del	spcms	spcms	rep=no|t=no|r=yes|m=yes|c=no	18	prepn
+20	pueblo	pueblo	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	19	pobj
+21	maya	maya	aq0cs0	aq0cs0	rep=no|t=no|r=yes|m=yes|c=no	20	amod
+22	durante	durante	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	18	prepn
+23	la	el	da0fs0	da0fs0	rep=no|t=no|r=yes|m=yes|c=no	24	det
+24	dictadura	dictadura	ncfs000	ncfs000	rep=no|t=no|r=yes|m=yes|c=no	22	pobj
+25	en	en	sps00	sps00	rep=no|t=no|r=yes|m=yes|c=no	24	prepn
+26	Guatemala	Guatemala	np00000	np00000	rep=no|t=no|r=yes|m=yes|c=no	25	pobj
+27	.	.	fp	fp	rep=no|t=no|r=no|m=no|c=no	4	punct
+
+1	El	el	da0ms0	da0ms0	rep=no|t=yes|r=no|m=yes|c=no	2	det
+2	fiscal	fiscal	nccs000	nccs000	rep=no|t=yes|r=no|m=yes|c=no	9	nsubj
+3	jefe	jefe	nccs000	nccs000	rep=no|t=yes|r=no|m=yes|c=no	2	appos
+4	,	,	fc	fc	rep=no|t=yes|r=no|m=yes|c=no	2	punct
+5	Eduardo	Eduardo	np0000l	np0000l	rep=no|t=yes|r=no|m=yes|c=no	2	appos
+6	Fungairiño	Fungairiño	np0000l	np0000l	rep=no|t=yes|r=no|m=yes|c=no	5	appos
+7	,	,	fc	fc	rep=no|t=yes|r=no|m=yes|c=no	2	punct
+8	también	también	rg	rg	rep=no|t=no|r=no|m=no|c=no	9	advmod
+9	trata	tratar	vmip3s0	vmip3s0	rep=no|t=no|r=yes|m=yes|c=no	0	root
+10	de	de	sps00	sps00	rep=no|t=no|r=no|m=no|c=no	9	prepv
+11	parar	parar	vmn0000	vmn0000	rep=no|t=no|r=yes|m=yes|c=no	9	dobj
+12	el	el	da0ms0	da0ms0	rep=no|t=no|r=yes|m=yes|c=no	13	det
+13	procedimiento	procedimiento	ncms000	ncms000	rep=no|t=no|r=yes|m=yes|c=no	9	dobj
+14	.	.	fp	fp	rep=no|t=no|r=no|m=no|c=no	9	punct
+
+

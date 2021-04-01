@@ -1,0 +1,5 @@
+{   ('Being_named', 'nombres'): [('Entity', 'de las empresas')],
+    ('Businesses', 'empresas'): [],
+    ('Desiring', 'los'): [('Experiencer', 'los'), ('Event', 'revelar los nombres de las empresas que están siendo investigadas')],
+    ('Reveal_secret', 'revelar'): [('Speaker', 'los'), ('Information', 'los nombres de las empresas que están siendo investigadas')],
+    ('Scrutiny', 'investigadas'): [('Ground', 'los nombres de las empresas')]}

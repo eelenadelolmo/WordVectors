@@ -1,0 +1,5 @@
+{   ('Be_in_agreement_on_action', 'según'): [('Obligation', 'política humana'), ('Obligation', 'según un terrorista cultural')],
+    ('Biological_entity', 'humana'): [('Organism', 'política')],
+    ('Goal', 'según'): [('Trajector', 'La'), ('Landmark', 'un terrorista cultural')],
+    ('Law', 'política'): [('Required', 'según un terrorista cultural')],
+    ('Terrorism', 'terrorista'): [('Purpose', 'cultural')]}

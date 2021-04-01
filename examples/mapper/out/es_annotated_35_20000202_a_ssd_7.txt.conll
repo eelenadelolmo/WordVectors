@@ -1,0 +1,9 @@
+{   ('Activity_start', 'entra en'): [('Activity', 'de'), ('Activity', 'en rectificaciones')],
+    ('Money', 'dinero'): [],
+    ('Ordinal_numbers', 'segunda'): [('Type', 'vez')],
+    ('Political_locales', 'federal'): [],
+    ('Receiving', 'recibió'): [('Recipient', 'el'), ('Theme', 'dinero')],
+    ('Relative_time', 'después de'): [   ('Focal_occasion', 'la segunda vez que Schäuble entra en rectificaciones'),
+                                         ('Focal_occasion', 'declarado inicialmente ante el Parlamento federal que sólo se reunió una vez con Schreiber y que no recibió dinero')],
+    ('Statement', 'declarado'): [('Message', 'reunió una vez con Schreiber y que no recibió dinero')],
+    ('Time_vector', 'ante'): [('Landmark_event', 'Parlamento federal que sólo se reunió una vez con Schreiber y que no recibió dinero')]}

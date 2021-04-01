@@ -1,0 +1,9 @@
+{   ('Activity_ongoing', 'mantener'): [('Activity', 'abiertos los cauces de comunicación que les permita coordinar estrategias')],
+    ('Cardinal_numbers', 'ambos'): [],
+    ('Cognitive_connection', 'relación'): [('Degree', 'institucional')],
+    ('Interior_profile_relation', 'de'): [('Ground', 'Además'), ('Figure', 'de comunicación que les permita coordinar estrategias')],
+    ('Make_agreement_on_action', 'permita'): [('Party_1', 'ambos'), ('Obligation', 'mantener abiertos los cauces de comunicación que les permita coordinar estrategias')],
+    ('Preventing_or_letting', 'permita'): [('Event', 'les permita coordinar estrategias')],
+    ('Protecting', 'salvaguardar'): [('Asset', 'la relación institucional')],
+    ('Purpose', 'objetivo'): [('Goal', 'salvaguardar la relación institucional')],
+    ('Secrecy_status', 'abiertos'): [('Phenomenon', 'cauces de comunicación')]}

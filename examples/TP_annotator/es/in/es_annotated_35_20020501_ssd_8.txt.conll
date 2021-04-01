@@ -1,0 +1,12 @@
+{   ('Change_of_leadership', 'independentista'): [],
+    ('Change_of_leadership', 'rebelión'): [('Depictive', 'independentista'), ('Degree', 'lejos'), ('Time', 'de ser sofocada')],
+    ('Contacting', 'páginas'): [('Addressee', 'de la prensa internacional')],
+    ('Degree', 'lejos'): [('Gradable_attribute', 'independentista'), ('Gradable_attribute', 'de ser sofocada')],
+    ('Evidence', 'demostró'): [('Proposition', 'mundo que la rebelión independentista estaba lejos de ser sofocada')],
+    ('Hostile_encounter', 'guerra'): [('Sides', 'Chechenia')],
+    ('Kidnapping', 'secuestro'): [],
+    ('Part_orientational', 'primeras'): [],
+    ('Placing', 'colocó'): [('Theme', 'secuestro'), ('Goal', 'la guerra de Chechenia en las primeras páginas de la prensa internacional')],
+    ('Political_locales', 'internacional'): [('Population', 'prensa')],
+    ('Political_locales', 'mundo'): [],
+    ('Spatial_contact', 'en'): [('Figure', 'la guerra de Chechenia'), ('Ground', 'páginas de la prensa internacional')]}

@@ -1,0 +1,4 @@
+{   ('Amounting_to', 'total'): [],
+    ('Cardinal_numbers', 'millones'): [('Multiplier', '37,5'), ('Unit', 'euros')],
+    ('Expensiveness', 'coste'): [('Rate', 'total'), ('Goods', 'de los trabajos')],
+    ('Work', 'trabajos'): []}

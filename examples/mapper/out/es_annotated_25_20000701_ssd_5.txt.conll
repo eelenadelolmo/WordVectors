@@ -1,0 +1,5 @@
+{   ('Desiring', 'quería'): [('Experiencer', 'que'), ('Event', 'desencadenar una guerra racial en el Reino Unido')],
+    ('Hostile_encounter', 'guerra'): [],
+    ('Political_locales', 'Reino'): [('Name', 'Unido')],
+    ('Statement', 'proclamó'): [   ('Speaker', 'Copeland'),
+                                   ('Message', 'nazi & quot ; creyente en & quot ; la supremacía de una raza superior & quot ; que quería desencadenar una guerra racial en el Reino Unido')]}

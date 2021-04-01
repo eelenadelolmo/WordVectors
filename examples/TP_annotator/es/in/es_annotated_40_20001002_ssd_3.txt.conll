@@ -1,0 +1,3 @@
+{   ('Change_position_on_a_scale', 'pocos'): [('Item', 'la guardia')],
+    ('Locative_relation', 'son'): [('Ground', 'No son pocos avisos para que nadie baje la guardia')],
+    ('Quantified_mass', 'pocos'): [('Individuals', 'avisos para que nadie baje la guardia')]}

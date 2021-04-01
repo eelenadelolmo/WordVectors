@@ -1,0 +1,4 @@
+{   ('Motion', 'ir a la'): [('Theme', 'la'), ('Goal', 'a la fuente a por agua')],
+    ('Possession', 'había'): [('Owner', 'la'), ('Possession', 'de ir a la fuente a por agua')],
+    ('Sleep', 'sale del'): [('Sleeper', 'la'), ('Sleeper', 'sale del')],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'sale del')]}

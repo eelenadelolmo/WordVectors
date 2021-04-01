@@ -1,0 +1,7 @@
+{   ('Cardinal_numbers', 'tres'): [('Entity', 'personas')],
+    ('Causation', 'causaron'): [('Effect', 'un centenar de heridos')],
+    ('Change_position_on_a_scale', 'explosiones'): [],
+    ('Death', 'muerte'): [],
+    ('Experience_bodily_harm', 'heridos'): [],
+    ('People', 'mujer'): [('Descriptor', 'embarazada')],
+    ('People', 'personas'): []}

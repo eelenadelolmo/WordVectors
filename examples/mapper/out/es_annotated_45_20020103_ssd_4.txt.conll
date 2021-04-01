@@ -1,0 +1,10 @@
+{   ('Attack', 'atentado'): [('Victim', 'la parte de Cachemira administrada por la India')],
+    ('Death', 'muerto'): [],
+    ('Experience_bodily_harm', 'heridos'): [],
+    ('Identicality', 'Al mismo'): [('Type', 'tiempo')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'un atentado en la parte de Cachemira administrada por la India causó'), ('Ground', 'un muerto')],
+    ('Locative_relation', 'en'): [('Ground', 'mismo tiempo')],
+    ('Part_whole', 'parte'): [('Part_prop', 'administrada por la India'), ('Whole', 'de Cachemira')],
+    ('Recording', 'registraban'): [('Time', 'Al mismo tiempo que se'), ('Phenomenon', 'esos gestos de cordialidad')],
+    ('Resolve_problem', 'causó'): [('Problem', 'un atentado en la parte de Cachemira administrada por la India'), ('Problem', 'un muerto'), ('Problem', 'veintena de heridos')],
+    ('Spatial_contact', 'en'): [('Figure', 'un atentado'), ('Ground', 'la parte de Cachemira administrada por la India')]}

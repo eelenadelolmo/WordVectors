@@ -1,0 +1,10 @@
+{   ('Aggregate', 'grupo'): [],
+    ('Causation', 'Porque'): [('Effect', 'ahora hago música en libertad'), ('Cause', 'a nada ni a nadie')],
+    ('Make_noise', 'tocaba en'): [('Sound_source', 'en'), ('Path', 'en un grupo llamado The')],
+    ('Manufacturing', 'ser'): [('Producer', 'en'), ('Time', 'ahora'), ('Product', 'música en libertad')],
+    ('Performing_arts', 'música'): [('Type', 'libertad')],
+    ('Referring_by_name', 'llamado'): [('Speaker', 'un grupo'), ('Name', 'de')],
+    ('Similarity', 'como'): [('Entity_1', 'a nada ni a nadie')],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'en'), ('Trajector_event', 'hago música en libertad')],
+    ('Temporal_subregion', 'antes'): [('Time_period', 'los años 60')],
+    ('Time_vector', 'antes'): [('Distance', 'años'), ('Landmark_event', 'ser un stone')]}

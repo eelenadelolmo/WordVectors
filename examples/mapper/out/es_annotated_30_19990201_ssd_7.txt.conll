@@ -1,0 +1,7 @@
+{   ('Aggregate', 'partido'): [('Aggregate_property', 'la gente & quot ; - - , así como convertirlo en el & quot ; eje vertebrador de la España plural')],
+    ('Bringing', 'acercar'): [('Agent', 'su misión'), ('Theme', 'la de acercar al PP'), ('Goal', 'a la mayoría de los casi 10 millones de electores - - & quot ; tenemos que ser el partido de')],
+    ('Cardinal_numbers', 'millones'): [('Multiplier', '10'), ('Multiplier', 'electores')],
+    ('Manufacturing', 'ser'): [('Product', 'quot ; eje vertebrador de la España plural')],
+    ('People', 'gente'): [],
+    ('Proportional_quantity', 'casi'): [('Reference_quantity', '10 millones')],
+    ('Telling', 'aseguró'): [('Speaker', 'su'), ('Message', ', aseguró que su misión será la de acercar al PP a la mayoría de los casi 10 millones de electores -')]}

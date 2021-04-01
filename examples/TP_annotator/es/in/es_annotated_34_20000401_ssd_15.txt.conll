@@ -1,0 +1,6 @@
+{   ('Appellations', 'presidente'): [],
+    ('Attempt', 'búsqueda'): [('Agent', 'Gelman'), ('Goal', 'amplia solidaridad internacional tras la')],
+    ('Cause_to_start', 'despertó'): [('Cause', 'Gelman'), ('Manner', 'búsqueda'), ('Effect', 'amplia solidaridad internacional')],
+    ('Information', 'datos'): [('Topic', 'sobre el paradero de su nieta')],
+    ('Political_locales', 'internacional'): [],
+    ('Supply', 'a aportar'): [('Theme', 'al poeta'), ('Recipient', 'a aportar datos al poeta sobre el paradero de su nieta')]}

@@ -1,0 +1,12 @@
+{   ('Age', 'nueva'): [('Entity', 'victoria en')],
+    ('Buildings', 'Casa'): [('Descriptor', 'Blanca')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Color', 'Blanca'): [('Entity', 'Casa')],
+    ('Finish_competition', 'victoria en'): [('Margin', 'nueva')],
+    ('First_rank', 'primarias'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'una nueva victoria en las'), ('Ground', 'el estado de Virginia')],
+    ('Leadership', 'estado'): [('Governed', 'victoria')],
+    ('Leadership', 'gobernador de'): [('Leader', 'George W. Bush'), ('Leader', 'de Tejas')],
+    ('Manipulation', 'apuntó'): [('Time', 'una nueva victoria en'), ('Entity', 'primarias'), ('Place', 'en el estado de')],
+    ('Sign', 'apuntó'): [   ('Indicator', 'George W. Bush , gobernador de Tejas y candidato favorito del Partido Republicano a la Casa Blanca , se apuntó ayer'),
+                            ('Indicated', 'una nueva victoria en las primarias celebradas en el estado de')]}

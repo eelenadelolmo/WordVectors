@@ -1,0 +1,7 @@
+{   ('Arriving', 'llegamos'): [('Theme', 'nos'), ('Time', 'a Bonn')],
+    ('Attack', 'ataques'): [],
+    ('Coming_to_believe', 'cuenta de que'): [('Cognizer', 'nos'), ('Content', 'que existe una acción concertada para continuar los ataques')],
+    ('Intentionally_act', 'acción'): [('Purpose', 'para continuar los ataques')],
+    ('Locative_relation', 'existe'): [('Figure', 'dimos cuenta de que'), ('Ground', 'existe una acción concertada para continuar los ataques')],
+    ('Process_continue', 'continuar'): [('Event', 'los ataques')],
+    ('Statement', 'dijo'): [('Message', '; Cuando llegamos a Bonn , nos dimos cuenta de que existe una acción concertada para continuar los ataques'), ('Speaker', 'los')]}

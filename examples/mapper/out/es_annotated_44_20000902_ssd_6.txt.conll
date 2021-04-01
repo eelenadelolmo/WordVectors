@@ -1,0 +1,8 @@
+{   ('Aggregate', 'comunidades'): [('Aggregate_property', 'agua')],
+    ('Being_necessary', 'imprescindible'): [('Requirement', 'el agua del Ebro'), ('Dependent', 'para el desarrollo de las comunidades')],
+    ('Capability', 'si'): [('Event', 'conciliar los legítimos y comprensibles derechos del Gobierno aragonés con los de las otras autonomías sedientas')],
+    ('Direction', 'derechos'): [('Distance', 'del Gobierno aragonés')],
+    ('Increment', 'otras'): [('Class', 'autonomías sedientas')],
+    ('Leadership', 'Gobierno'): [('Descriptor', 'aragonés')],
+    ('Legality', 'legítimos'): [],
+    ('Progression', 'desarrollo'): [('Entity', 'de las comunidades')]}

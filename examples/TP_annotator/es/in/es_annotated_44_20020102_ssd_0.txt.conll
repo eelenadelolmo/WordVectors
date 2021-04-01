@@ -1,0 +1,10 @@
+{   ('Desirability', 'increíble'): [('Evaluee', 'política')],
+    ('Getting', 'teniendo'): [('Recipient', 'Maradona meterse'), ('Theme', 'sin complejos en la política')],
+    ('Identicality', 'la misma'): [('Type', 'soberbia de')],
+    ('Leadership', 'dirigentes'): [],
+    ('Locale_by_use', 'complejos'): [],
+    ('Political_locales', 'país'): [],
+    ('Preventing_or_letting', 'permite'): [('Agent', 'condición de astro absoluto de la mayoría de los argentinos'), ('Event', 'Maradona meterse sin complejos en la política')],
+    ('Process_continue', 'siguen'): [('Event', 'los dirigentes'), ('Event', 'teniendo la misma soberbia de antes &')],
+    ('State_of_entity', 'condición'): [('Entity', 'de astro absoluto de la mayoría de los argentinos')],
+    ('Time_vector', 'antes'): [('Event', 'dirigentes & quot ; siguen teniendo la misma soberbia de'), ('Landmark_event', 'le')]}

@@ -1,0 +1,13 @@
+{   ('Being_necessary', 'haga falta'): [],
+    ('Being_obligated', 'obligación'): [('Responsible_party', 'Nuestra')],
+    ('Buildings', 'hospital'): [],
+    ('Buildings', 'hospitales'): [],
+    ('Cardinal_numbers', 'dos'): [],
+    ('Cardinal_numbers', 'tres'): [('Entity', 'Nuestra obligación')],
+    ('Expensiveness', 'costará'): [('Goods', 'centro de barrio'), ('Goods', 'dos o tres años . Nuestra obligación')],
+    ('Getting', 'conseguir'): [('Recipient', 'el hospital'), ('Theme', 'el usuario confíe en un centro de barrio costará dos o tres')],
+    ('Give_impression', 'Parece'): [('Characterization', 'una situación perversa')],
+    ('Locale_by_use', 'centro'): [('Descriptor', 'barrio')],
+    ('Locative_relation', 'existe'): [('Figure', 'haga'), ('Figure', 'la mentalidad de que el hospital está para todo . Cambiar esa cultura y conseguir que el usuario confíe en un centro de barrio')],
+    ('Response', 'respuesta'): [('Response', 'en los hospitales')],
+    ('Similarity', 'como'): [('Entity_1', 'es'), ('Entity_2', 'situación perversa')]}

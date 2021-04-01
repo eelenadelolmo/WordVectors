@@ -1,0 +1,8 @@
+{   ('Difficulty', 'desafío'): [('Activity', 'del Ejecutivo central')],
+    ('Identicality', 'el mismo'): [],
+    ('Locative_relation', 'en'): [('Figure', 'es'), ('Ground', 'las urnas')],
+    ('Part_inner_outer', 'central'): [],
+    ('Sleep', 'desgastar'): [('Sleeper', 'PNV')],
+    ('Taking_time', 'hasta'): [('Activity', 'hegemonía política del País'), ('Time_length', 'desgastar'), ('Activity', 'en las urnas la')],
+    ('Time_vector', 'hasta'): [('Event', ') : desgastar al PNV'), ('Landmark_event', 'hegemonía política del País')],
+    ('Wearing', 'desgastar'): [('Clothing', 'desgastar al PNV')]}

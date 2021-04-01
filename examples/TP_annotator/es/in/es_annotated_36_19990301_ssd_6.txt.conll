@@ -1,0 +1,7 @@
+{   ('Age', 'antiguo'): [('Entity', 'escolapio')],
+    ('Documents', 'documento'): [],
+    ('Locale_by_use', 'escolapio'): [('Descriptor', 'antiguo')],
+    ('Reading_activity', 'leyó'): [('Reader', 'el'), ('Text', 'documento que enumeró los valores de esta enseñanza')],
+    ('Request', 'invitar'): [('Addressee', 'este antiguo escolapio')],
+    ('Statement', 'dijo'): [('Speaker', 'el'), ('Message', 'documento que enumeró los valores de esta enseñanza')],
+    ('Text_creation', 'enumeró los'): [('Text', 'el documento que'), ('Text', 'valores de esta enseñanza')]}

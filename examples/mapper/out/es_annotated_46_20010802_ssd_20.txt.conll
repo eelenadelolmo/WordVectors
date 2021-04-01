@@ -1,0 +1,7 @@
+{   ('Attempt', 'intenta'): [('Agent', 'es'), ('Goal', 'recuperar lo perdido')],
+    ('Cardinal_numbers', 'unos'): [],
+    ('Commerce_pay', 'pagado'): [('Buyer', 'los conductores'), ('Goods', 'precios demasiado altos por el combustible')],
+    ('Concessive', 'tanto'): [('Main_assertion', 'conductores han pagado unos precios demasiado altos por el combustible'), ('Main_assertion', 'es quien intenta recuperar lo perdido')],
+    ('Earnings_and_losses', 'perder'): [('Earner', 'es'), ('Earnings', 'los impuestos')],
+    ('Leadership', 'Estado'): [],
+    ('Position_on_a_scale', 'altos'): [('Degree', 'tanto'), ('Item', 'unos precios demasiado altos por el combustible')]}

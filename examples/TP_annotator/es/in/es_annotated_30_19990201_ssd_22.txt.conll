@@ -1,0 +1,16 @@
+{   ('Aggregate', 'partido'): [],
+    ('Appellations', 'presidente'): [('Name', 'PP')],
+    ('Being_employed', 'trabajo'): [('Employee', 'tu')],
+    ('Capability', 'capacidad'): [('Entity', 'tu'), ('Event', '. No debes olvidar tu lealtad al partido , al proyecto y al país &')],
+    ('Change_of_leadership', 'elegido'): [('New_leader', 'le')],
+    ('Giving', 'debes'): [('Donor', 'tu'), ('Recipient', 'tu')],
+    ('Locative_relation', 'ahí'): [('Figure', 'Estás'), ('Figure', 'tu capacidad de trabajo y tu competencia . No debes olvidar tu lealtad al partido , al proyecto')],
+    ('Political_locales', 'país'): [],
+    ('Project', 'proyecto'): [],
+    ('Relative_time', 'después'): [   ('Landmark_occasion', 'el presidente del PP le eximió de la deuda'),
+                                      ('Focal_occasion', 'Estás ahí por tu capacidad de trabajo y tu competencia . No debes olvidar tu lealtad al partido')],
+    ('Remembering_experience', 'olvidar'): [('Salient_entity', 'tu'), ('Cognizer', 'tu'), ('Salient_entity', 'tu lealtad'), ('Experience', 'al partido'), ('Experience', 'proyecto y al país')],
+    ('Telling', 'quot'): [   ('Addressee', 'tu'),
+                             (   'Message',
+                                 'le indicó por qué había sido el elegido : & quot ; No tienes que devolverme nada . Estás ahí por tu capacidad de trabajo y tu competencia . No debes olvidar tu '
+                                 'lealtad al partido , al proyecto')]}

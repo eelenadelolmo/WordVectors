@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="31_20000802_ssd">
+
+
+	<concepts>
+		<concept id="c_0">el lehendakari</concept>
+		<concept id="c_1">la quot; parálisis quot; institucional</concept>
+		<concept id="c_2">Redondo</concept>
+		<concept id="c_3">El líder de los socialistas vascos y el lehendakari</concept>
+		<concept id="c_4">El encuentro</concept>
+		<concept id="c_5">las elecciones</concept>
+		<concept id="c_6">en Euskadi</concept>
+		<concept id="c_7">Euskadi</concept>
+		<concept id="c_8">las urnas</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El líder de los socialistas vascos, Nicolás Redondo Terreros, consideró ayer "inevitable" que el lehendakari adelante las elecciones en Euskadi dada la situación de minoría de su Ejecutivo.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">el</token><token pos="nccs000">lehendakari</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_5" concept_ref3="c_6" concept_ref4="c_7">
+			<token pos="vmsp3s0">adelante</token><token pos="da0fp0">las</token><token pos="ncfp000">elecciones</token><mention concept_ref="c_6"><token pos="sps00">en</token><token pos="np00000">Euskadi</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El líder de los socialistas vascos , Nicolás Redondo Terreros , " />
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Categorization" head="consideró">
+				<argument type="Item" dependent="Redondo Terreros" />
+				<argument type="Category" dependent=", consideró ayer  quot ; inevitable  quot ; que el lehendakari adelante las elecciones en Euskadi dada la situación de minoría de su Ejecutivo" /></frame>
+			<frame type="Change_of_leadership" head="elecciones" />
+			<frame type="Giving" head="dada la">
+				<argument type="Donor" dependent="Euskadi" />
+				<argument type="Recipient" dependent="de minoría" />
+				<argument type="Place" dependent="situación" />
+				<argument type="Recipient" dependent="de su Ejecutivo" /></frame>
+			<frame type="Leadership" head="líder">
+				<argument type="Governed" dependent="de los socialistas vascos" /></frame>
+			<main_frame type="Progression" head="adelante">
+				<argument type="Entity" dependent="las elecciones" />
+				<argument type="Place" dependent="en Euskadi" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Redondo declaró a Europa Press que la "parálisis" institucional hará "necesario" que los vascos acudan de nuevo a las urnas.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">la</token><token pos="fe">quot;</token><token pos="ncfn000">parálisis</token><token pos="fe">quot;</token><token pos="aq0cs0">institucional</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_8">
+			<token pos="vmif3s0">hará</token><token pos="fe">quot;</token><token pos="aq0ms0">necesario</token><token pos="fe">quot;</token><mention concept_ref="c_3"><token pos="da0mp0">los</token><token pos="ncmp000">vascos</token></mention><token pos="vmsp3p0">acudan</token><token pos="sps00">de</token><token pos="aq0msp">nuevo</token><token pos="sps00">a</token><mention concept_ref="c_8"><token pos="da0fp0">las</token><token pos="ncfp000">urnas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Redondo " />
+			<frame type="Arriving" head="de nuevo">
+				<argument type="Theme" dependent="los vascos" />
+				<argument type="Goal" dependent="a las urnas" /></frame>
+			<frame type="Being_necessary" head="necesario">
+				<argument type="Requirement" dependent="; que los vascos acudan de nuevo a las urnas" /></frame>
+			<frame type="Manufacturing" head="los">
+				<argument type="Product" dependent="parálisis  quot ; institucional" />
+				<argument type="Product" dependent="; necesario  quot ; que los vascos acudan de nuevo a las urnas" /></frame>
+			<frame type="Telling" head="declaró">
+				<argument type="Speaker" dependent="Redondo" />
+				<argument type="Addressee" dependent="Europa Press" />
+				<argument type="Message" dependent="institucional hará  quot ; necesario  quot ; que los vascos acudan de nuevo a las urnas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Redondo se movió así en el filo de la postura que mantiene la dirección de su partido en este asunto, ya que el PSOE, contrariamente al PP, ha decidido no exigir un adelanto electoral en Euskadi.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="np00000">Redondo</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_8">
+			<token pos="p0300000">se</token><token pos="vmis3s0">movió</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">filo</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">postura</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_ongoing" head="mantiene">
+				<argument type="Activity" dependent="la postura que" />
+				<argument type="Agent" dependent="dirección de su" />
+				<argument type="Time" dependent="en este asunto" /></frame>
+			<frame type="Being_employed" head="postura que" />
+			<frame type="Change_position_on_a_scale" head="se">
+				<argument type="Item" dependent="de la postura que mantiene la dirección de su partido en este asunto" /></frame>
+			<frame type="Compliance" head="contrariamente">
+				<argument type="Act" dependent="el" />
+				<argument type="Norm" dependent="al PP" /></frame>
+			<frame type="Deciding" head="decidido">
+				<argument type="Decision" dependent=", contrariamente al PP , ha" />
+				<argument type="Decision" dependent="no exigir un adelanto electoral en Euskadi" /></frame>
+			<main_frame type="Motion" head="movió">
+				<argument type="Theme" dependent="Redondo se" /></main_frame>
+			<frame type="Request" head="exigir">
+				<argument type="Message" dependent="un adelanto electoral en Euskadi" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El líder de los socialistas vascos y el lehendakari mantuvieron ayer una reunión de dos horas en Vitoria en la que analizaron la situación política vasca y constataron las discrepancias que mantienen al respecto.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">El</token><token pos="nccs000">líder</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="nccp000">socialistas</token><token pos="aq0mp0">vascos</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="nccs000">lehendakari</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_3" concept_ref3="c_7" concept_ref4="c_8">
+			<token pos="vmis3p0">mantuvieron</token><token pos="rg">ayer</token><token pos="di0fs0">una</token><token pos="ncfs000">reunión</token><token pos="sps00">de</token><token pos="dn0cp0">dos</token><mention concept_ref="c_8"><token pos="ncfp000">horas</token></mention><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="pr0cn000">que</token><token pos="vmis3p0">analizaron</token><token pos="da0fs0">la</token><token pos="ncfs000">situación</token><token pos="aq0fs0">política</token><token pos="aq0fs0">vasca</token><token pos="cc">y</token><token pos="vmis3p0">constataron</token><mention concept_ref="c_3"><token pos="da0fp0">las</token><token pos="ncfp000">discrepancias</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_ongoing" head="mantienen">
+				<argument type="Agent" dependent="los" />
+				<argument type="Activity" dependent="al respecto" /></frame>
+			<frame type="Becoming_aware" head="respecto">
+				<argument type="Phenomenon" dependent="discrepancias que mantienen al respecto" /></frame>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Discussion" head="reunión">
+				<argument type="Interlocutor_2" dependent="situación política vasca" /></frame>
+			<frame type="Leadership" head="líder">
+				<argument type="Governed" dependent="socialistas vascos y el lehendakari" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El encuentro estuvo rodeado de gran discreción y se desarrolló entre las tres y las cinco de la tarde.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0ms0">El</token><token pos="ncms000">encuentro</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">estuvo</token><token pos="aq0msp">rodeado</token><token pos="sps00">de</token><token pos="aq0cs0">gran</token><token pos="ncfs000">discreción</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desirability" head="gran">
+				<argument type="Evaluee" dependent="discreción" /></frame>
+			<frame type="Discussion" head="El encuentro" />
+			<frame type="Interior_profile_relation" head="entre">
+				<argument type="Ground" dependent="tres" /></frame>
+			<frame type="Locale" head="rodeado" />
+			<frame type="Means" head="de la">
+				<argument type="Purpose" dependent="El encuentro estuvo rodeado" />
+				<argument type="Means" dependent="gran discreción" /></frame>
+			<main_frame type="Taking_time" head="estuvo">
+				<argument type="Time_length" dependent="entre las tres y las cinco de" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En él, según manifestó Redondo Terreros a Europa Press, no se abordó el plan de paz propuesto por Ibarretxe en Junio, tal y como se había anunciado.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Redondo Terreros " />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="se" /></frame>
+			<frame type="Purpose" head="plan" />
+			<frame type="Statement" head="anunciado">
+				<argument type="Message" dependent="el plan de paz propuesto por Ibarretxe en" /></frame>
+			<frame type="Statement" head="propuesto">
+				<argument type="Message" dependent="el plan de paz" />
+				<argument type="Speaker" dependent="por Ibarretxe" />
+				<argument type="Time" dependent="En él" /></frame>
+			<frame type="Statement" head="según">
+				<argument type="Speaker" dependent=", según manifestó Redondo Terreros a Europa Press , no se abordó el plan de paz propuesto" /></frame>
+			<frame type="Telling" head="según">
+				<argument type="Speaker" dependent="Redondo Terreros" />
+				<argument type="Addressee" dependent="Europa Press" />
+				<argument type="Medium" dependent="plan de paz propuesto por" />
+				<argument type="Time" dependent="En él" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El líder de los socialistas vascos consideró "positivo" que se mantenga el diálogo entre el PSE e Ibarretxe, pese a que reconoció que las dos partes "se encuentran en sus respectivas posiciones".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El líder de los socialistas vascos " />
+			<frame type="Activity_ongoing" head="se mantenga">
+				<argument type="Activity" dependent="el diálogo entre el PSE e Ibarretxe" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="dos partes" /></frame>
+			<frame type="Categorization" head="consideró">
+				<argument type="Item" dependent="El líder de los socialistas" />
+				<argument type="Item" dependent="; positivo  quot ; que se mantenga el diálogo entre el PSE e Ibarretxe , pese a que reconoció que las dos" /></frame>
+			<frame type="Communication_response" head="reconoció">
+				<argument type="Speaker" dependent="sus" />
+				<argument type="Trigger" dependent="que las dos partes  quot ; se encuentran en sus respectivas posiciones" /></frame>
+			<frame type="Leadership" head="líder">
+				<argument type="Governed" dependent="de los socialistas vascos" /></frame>
+			<frame type="Part_orientational" head="dos partes" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Esta reunión llega después de la que celebraron el Lunes por la noche delegaciones del Gobierno central y del PSOE, que reafirmaron su acuerdo básico en la lucha contra el terrorismo, sobre el fundamento de suscribir los principios democráticos frente a la violencia.
+		</str>
+		<theme>
+			<token pos="dd0fs0">Esta</token><token pos="ncfs000">reunión</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="frente">
+				<argument type="Body_part" dependent="frente a la violencia" /></frame>
+			<frame type="Calendric_unit" head="Lunes" />
+			<frame type="Calendric_unit" head="noche">
+				<argument type="Whole" dependent="Lunes" /></frame>
+			<frame type="Cardinal_numbers" head="el" />
+			<frame type="Discussion" head="reunión" />
+			<frame type="Hostile_encounter" head="lucha">
+				<argument type="Side_2" dependent="contra el terrorismo" /></frame>
+			<frame type="Make_agreement_on_action" head="su acuerdo">
+				<argument type="Party_1" dependent="los" />
+				<argument type="Manner" dependent="básico" />
+				<argument type="Party_2" dependent="en la lucha contra el terrorismo" /></frame>
+			<frame type="Relative_time" head="después de">
+				<argument type="Focal_occasion" dependent="Esta reunión llega" />
+				<argument type="Landmark_occasion" dependent="celebraron el Lunes por la noche delegaciones del Gobierno central y del" />
+				<argument type="Focal_occasion" dependent="frente a la violencia" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="el" />
+				<argument type="Ground" dependent="Lunes" /></frame>
+			<frame type="Statement" head="reafirmaron su acuerdo">
+				<argument type="Speaker" dependent="que" />
+				<argument type="Message" dependent="su acuerdo básico en la lucha contra el terrorismo" /></frame>
+			<frame type="Taking_sides" head="contra">
+				<argument type="Side" dependent="terrorismo" /></frame>
+			<frame type="Taking_sides" head="lucha">
+				<argument type="Action" dependent="los principios democráticos frente a la violencia" /></frame>
+			<frame type="Terrorism" head="terrorismo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En un segundo encuentro entre representantes del Gobierno y el PSOE que tuvo lugar ayer, el secretario de Estado de Seguridad, Pedro Morenés, y algunos responsables del PSOE trataron cuestiones relacionadas con operativos generales de seguridad, entre las cuales se encontraba la protección de los cargos socialistas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_at_risk" head="de seguridad" />
+			<frame type="Being_employed" head="lugar">
+				<argument type="Field" dependent="la protección" />
+				<argument type="Field" dependent="socialistas" /></frame>
+			<frame type="Businesses" head="operativos">
+				<argument type="Service_provider" dependent="de seguridad" /></frame>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Discussion" head="cuestiones">
+				<argument type="Interlocutors" dependent="algunos responsables del" />
+				<argument type="Topic" dependent="cuestiones relacionadas con operativos generales de seguridad" /></frame>
+			<frame type="Discussion" head="encuentro" />
+			<frame type="Inclusion" head="se">
+				<argument type="Total" dependent="Estado de Seguridad , Pedro Morenés , y algunos responsables del PSOE trataron cuestiones relacionadas" />
+				<argument type="Total" dependent="operativos generales de seguridad" />
+				<argument type="Part" dependent="la protección de los cargos socialistas" /></frame>
+			<frame type="Interior_profile_relation" head="entre">
+				<argument type="Figure" dependent="un segundo encuentro" /></frame>
+			<frame type="Leadership" head="Estado" />
+			<frame type="Leadership" head="Gobierno" />
+			<frame type="Leadership" head="secretario">
+				<argument type="Governed" dependent="se" /></frame>
+			<frame type="Locale" head="lugar" />
+			<frame type="Locative_relation" head="se">
+				<argument type="Ground" dependent="un segundo encuentro entre representantes del Gobierno" />
+				<argument type="Figure" dependent="cuestiones relacionadas con operativos generales de seguridad , entre las cuales se encontraba la protección de los cargos socialistas" /></frame>
+			<frame type="Ordinal_numbers" head="segundo">
+				<argument type="Type" dependent="encuentro" /></frame>
+			<frame type="Statement" head="relacionadas">
+				<argument type="Message" dependent="Estado de Seguridad , Pedro Morenés , y algunos responsables del PSOE trataron cuestiones relacionadas" />
+				<argument type="Message" dependent="operativos generales de seguridad" /></frame>
+			<frame type="Taking_time" head="tuvo">
+				<argument type="Activity" dependent="que" />
+				<argument type="Time_length" dependent="ayer" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

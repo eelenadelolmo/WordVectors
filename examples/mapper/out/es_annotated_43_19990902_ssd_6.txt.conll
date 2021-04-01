@@ -1,0 +1,3 @@
+{   ('Calendric_unit', 'agosto'): [],
+    ('Interior_profile_relation', 'En'): [('Ground', 'agosto'), ('Ground', 'Aznar se desplaza a Marivent dos veces')],
+    ('Motion', 'desplaza'): [('Time', 'En agosto'), ('Theme', 'Aznar'), ('Goal', 'dos veces')]}

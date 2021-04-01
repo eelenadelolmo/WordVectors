@@ -1,0 +1,5 @@
+{   ('Causation', 'levantado'): [   ('Cause', 'parlamentario Joseba Arregi , los hermanos Guevara y hasta Iñaki Anasagasti han'),
+                                    ('Effect', 'han levantado la voz , pero Arzalluz ha acallado las críticas de forma abrupta')],
+    ('Kinship', 'hermanos'): [('Ego', 'Arregi')],
+    ('Leadership', 'manda'): [('Leader', 'abrupta'), ('Governed', 'marinero')],
+    ('Locative_relation', 'hay'): [('Figure', 'Donde'), ('Ground', 'hay patrón no manda marinero')]}

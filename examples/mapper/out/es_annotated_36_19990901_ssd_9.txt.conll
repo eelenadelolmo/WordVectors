@@ -1,0 +1,10 @@
+{   ('Aggregate', 'partidos'): [('Aggregate_property', 'políticos')],
+    ('Existence', 'existentes'): [('Place', 'en el País')],
+    ('Hostile_encounter', 'enfrentamiento'): [('Side_2', 'existentes en el País')],
+    ('Increment', 'distintos'): [('Class', ',')],
+    ('Leadership', 'Gobierno'): [],
+    ('Rank', 'niveles'): [('Rank', 'distintos niveles'), ('Item', 'de enfrentamiento existentes en el País')],
+    ('Required_event', 'los'): [   ('Required_situation', 'los'),
+                                   ('Required_situation', 'dialogar el Gobierno y ETA , el lehendakari con los partidos políticos , y estas formaciones entre sí & quot ;')],
+    ('Resolve_problem', 'solventar'): [('Agent', 'su'), ('Problem', 'los distintos niveles de enfrentamiento existentes en el País')],
+    ('Similarity', 'distintos'): [('Entities', 'niveles de enfrentamiento existentes en el País')]}

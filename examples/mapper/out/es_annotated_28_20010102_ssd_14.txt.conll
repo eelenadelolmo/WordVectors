@@ -1,0 +1,11 @@
+{   ('Arriving', 'llegar'): [('Goal', 'un acuerdo con los palestinos'), ('Time', 'antes de las elecciones del próximo día 6 de febrero')],
+    ('Capability', 'capacidad'): [('Entity', 'legal del primer'), ('Event', 'llegar a un acuerdo con los palestinos antes de las elecciones del próximo día 6 de febrero')],
+    ('Change_of_leadership', 'elecciones'): [],
+    ('Increment', 'más'): [('Class', 'complicar')],
+    ('Leadership', 'Gobierno'): [('Governed', 'israelí')],
+    ('Legality', 'legal'): [('Action', 'primer')],
+    ('Make_agreement_on_action', 'un acuerdo'): [('Party_2', 'con los palestinos'), ('Time', 'antes de las elecciones del próximo día 6 de febrero')],
+    ('Questioning', 'que'): [('Message', 'capacidad legal del primer ministro de llegar a un acuerdo con los palestinos antes de las elecciones del próximo día 6 de febrero')],
+    ('Text', 'carta a'): [],
+    ('Text_creation', 'escrito'): [('Author', 'el consejero jurídico del Gobierno israelí , Eliakim Rubinstein'), ('Text', 'carta a')],
+    ('Time_vector', 'antes'): [('Event', 'capacidad legal del primer ministro de llegar a un acuerdo con los palestinos'), ('Landmark_event', 'las elecciones'), ('Direction', '6 de febrero')]}

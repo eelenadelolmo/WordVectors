@@ -1,0 +1,12 @@
+{   ('Body_parts', 'jefe'): [],
+    ('Capability', 'pueda'): [('Entity', 'su país'), ('Event', 'hacer & quot ; justicia y verdad &')],
+    ('Defending', 'defenderse'): [('Victim', 'su')],
+    ('Desirable_event', 'hacer'): [('State_of_affairs', 'su país'), ('State_of_affairs', 'no sea humillado en este conflicto y pueda hacer & quot ; justicia y verdad & quot ;')],
+    ('Emphasizing', 'humillado'): [('Agent', 'lo'), ('Consideration', 'derecho de Chile a defenderse como Estado soberano frente a otros estados')],
+    ('Entity', 'lo que'): [('Entity', 'lo importante')],
+    ('Hostile_encounter', 'conflicto'): [],
+    ('Importance', 'importante'): [('Factor', 'lo que')],
+    ('Increment', 'otros'): [('Class', 'estados')],
+    ('Intentionally_act', 'de'): [('Agent', 'su país'), ('Act', 'justicia y verdad &')],
+    ('Leadership', 'estados'): [],
+    ('Political_locales', 'país'): []}

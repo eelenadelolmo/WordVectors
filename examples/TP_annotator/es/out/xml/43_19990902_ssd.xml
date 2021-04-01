@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="43_19990902_ssd">
+
+
+	<concepts>
+		<concept id="c_0">La Cumbre de La Habana y las elecciones catalanas</concept>
+		<concept id="c_1">El rey Juan Carlos</concept>
+		<concept id="c_2">el monarca y el jefe del Ejecutivo</concept>
+		<concept id="c_3">El contenido del despacho</concept>
+		<concept id="c_4">que</concept>
+		<concept id="c_5">Los encuentros entre el Rey y el jefe del Gobierno</concept>
+		<concept id="c_6">Aznar</concept>
+		<concept id="c_7">El Rey</concept>
+		<concept id="c_8">la cita</concept>
+		<concept id="c_9">presidente del Gobierno ,</concept>
+		<concept id="c_10">la cita</concept>
+		<concept id="c_11">Gobierno</concept>
+		<concept id="c_12">veces</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 La Cumbre de La Habana y las elecciones catalanas centraron la cita.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="np00000">Cumbre</token><token pos="sps00">de</token><token pos="da0fs0">La</token><token pos="np00000">Habana</token><token pos="cc">y</token><token pos="da0fp0">las</token><token pos="ncfp000">elecciones</token><token pos="aq0fp0">catalanas</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_10">
+			<token pos="vmis3p0">centraron</token><token pos="da0fs0">la</token><token pos="ncfs000">cita</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Change_of_leadership" head="elecciones">
+				<argument type="Selector" dependent="catalanas" /></frame>
+			<frame type="Discussion" head="cita" />
+			<main_frame type="Emphasizing" head="centraron">
+				<argument type="Agent" dependent="Cumbre de La Habana y las elecciones catalanas" />
+				<argument type="Consideration" dependent="la cita" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El rey Juan Carlos recibió ayer en el Palacio de Marivent al presidente del Gobierno, José María Aznar, en la cita que tradicionalmente pone fin a las vacaciones oficiales.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">rey</token><token pos="ncms000">Juan</token><token pos="np00000">Carlos</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_6" concept_ref3="c_9" concept_ref4="c_11">
+			<token pos="vmis3s0">recibió</token><token pos="spcms">al</token><mention concept_ref="c_5"><token pos="ncms000">presidente</token></mention><token pos="spcms">del</token><mention concept_ref="c_11"><token pos="np00000">Gobierno</token></mention><token pos="fc">,</token><mention concept_ref="c_6"><token pos="ncfs000">José</token><token pos="ncms000">María</token><token pos="np00000">Aznar</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente">
+				<argument type="Title" dependent="del Gobierno" /></frame>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Calendric_unit" head="vacaciones" />
+			<frame type="Custom" head="tradicionalmente">
+				<argument type="Behavior" dependent="la cita que" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="el Palacio de" />
+				<argument type="Time" dependent="ayer" />
+				<argument type="Ground" dependent="cita que tradicionalmente pone fin a las vacaciones oficiales" /></frame>
+			<frame type="Leadership" head="Gobierno" />
+			<frame type="Leadership" head="oficiales" />
+			<frame type="Leadership" head="rey">
+				<argument type="Leader" dependent="Juan Carlos" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="al" />
+				<argument type="Ground" dependent="el Palacio de" /></frame>
+			<frame type="Placing" head="pone">
+				<argument type="Cause" dependent="cita que tradicionalmente" />
+				<argument type="Goal" dependent="fin a las vacaciones oficiales" /></frame>
+			<frame type="Process_end" head="fin" />
+			<main_frame type="Receiving" head="recibió">
+				<argument type="Recipient" dependent="Juan Carlos" />
+				<argument type="Theme" dependent="presidente del Gobierno ," /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Tras el encuentro, al igual que en años anteriores, el monarca y el jefe del Ejecutivo compartieron con la Reina y con Ana Botella un almuerzo - - gazpacho, merluza, solomillo y helados - - que, en esta ocasión, se realizó en alta mar a bordo del Fortuna.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">el</token><token pos="nccs000">monarca</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">jefe</token><token pos="spcms">del</token><token pos="np00000">Ejecutivo</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_10">
+			<token pos="vmis3p0">compartieron</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="np00000">Reina</token><token pos="cc">y</token><token pos="sps00">con</token><mention concept_ref="c_1"><token pos="np00000">Ana</token><token pos="ncms000">Botella</token></mention><token pos="di0ms0">un</token><token pos="ncms000">almuerzo</token><token pos="fg">-</token><token pos="fg">-</token><token pos="ncms000">gazpacho</token><token pos="fc">,</token><token pos="ncfs000">merluza</token><token pos="fc">,</token><token pos="ncms000">solomillo</token><token pos="cc">y</token><token pos="ncmp000">helados</token><token pos="fg">-</token><token pos="fg">-</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Relative_time" dependent="anteriores" /></frame>
+			<frame type="Discussion" head="el encuentro" />
+			<frame type="Ingestion" head="almuerzo">
+				<argument type="Ingestibles" dependent="gazpacho" /></frame>
+			<frame type="Leadership" head="Reina">
+				<argument type="Leader" dependent="Botella" /></frame>
+			<frame type="Leadership" head="jefe del">
+				<argument type="Governed" dependent="Ejecutivo" /></frame>
+			<frame type="Manipulation" head="se">
+				<argument type="Entity" dependent="Botella un almuerzo - - gazpacho , merluza , solomillo y helados - - que" />
+				<argument type="Time" dependent="en esta ocasión" />
+				<argument type="Locus" dependent="en alta mar" />
+				<argument type="Manner" dependent="a bordo del Fortuna" /></frame>
+			<frame type="Natural_features" head="mar">
+				<argument type="Descriptor" dependent="alta" /></frame>
+			<frame type="Position_on_a_scale" head="alta">
+				<argument type="Item" dependent="mar" /></frame>
+			<frame type="Relative_time" head="anteriores">
+				<argument type="Focal_occasion" dependent="años" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="Botella un almuerzo - - gazpacho , merluza , solomillo y helados - - que , en esta ocasión" />
+				<argument type="Ground" dependent="alta mar a bordo del Fortuna" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El contenido del despacho, como es habitual, no se hizo público.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">El</token><token pos="ncms000">contenido</token><token pos="spcms">del</token><token pos="ncms000">despacho</token>
+		</theme>
+		<rheme concept_ref1="c_5">
+			<token pos="rn">no</token><mention concept_ref="c_5"><token pos="p0000000">se</token></mention><token pos="vmis3s0">hizo</token><token pos="aq0ms0">público</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Building_subparts" head="público" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Entre los asuntos a tratar por el monarca y el presidente figuraban las elecciones catalanas y las dificultades en la preparación de la Cumbre Iberoamericana que se celebrará en La Habana en noviembre.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_11">
+			<mention concept_ref="c_5"><token pos="p0000000">se</token></mention><token pos="vmif3s0">celebrará</token><token pos="sps00">en</token><token pos="np0000l">La</token><token pos="np0000l">Habana</token><token pos="sps00">en</token><mention concept_ref="c_11"><token pos="ncms000">noviembre</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_prepare" head="preparación">
+				<argument type="Activity" dependent="de la Cumbre Iberoamericana que se" />
+				<argument type="Time" dependent="en noviembre" /></frame>
+			<frame type="Appellations" head="presidente" />
+			<frame type="Be_subset_of" head="Entre">
+				<argument type="Total" dependent="los asuntos" />
+				<argument type="Part" dependent="a tratar por el monarca y el presidente figuraban las elecciones catalanas y las dificultades en la preparación de la" /></frame>
+			<frame type="Change_of_leadership" head="elecciones">
+				<argument type="Degree" dependent="catalanas" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="en la preparación de la Cumbre Iberoamericana que se" />
+				<argument type="Ground" dependent="noviembre" /></frame>
+			<frame type="Manipulation" head="se">
+				<argument type="Entity" dependent="la Cumbre Iberoamericana que" />
+				<argument type="Place" dependent="en la" />
+				<argument type="Time" dependent="en noviembre" /></frame>
+			<frame type="Point_of_dispute" head="las dificultades" />
+			<frame type="Resolve_problem" head="tratar">
+				<argument type="Problem" dependent="los asuntos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los encuentros entre el Rey y el jefe del Gobierno tienen periodicidad semanal, salvo en vacaciones.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">encuentros</token><token pos="sps00">entre</token><token pos="da0ms0">el</token><token pos="np00000">Rey</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">jefe</token><token pos="spcms">del</token><token pos="np00000">Gobierno</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_3">
+			<token pos="vmip3p0">tienen</token><mention concept_ref="c_3"><token pos="ncfs000">periodicidad</token></mention><token pos="aq0cs0">semanal</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="jefe">
+				<argument type="Possessor" dependent="del Gobierno" /></frame>
+			<frame type="Calendric_unit" head="vacaciones" />
+			<frame type="Frequency" head="semanal">
+				<argument type="Event" dependent="del" /></frame>
+			<frame type="Interior_profile_relation" head="entre">
+				<argument type="Figure" dependent="encuentros" />
+				<argument type="Ground" dependent="el Rey y el jefe del Gobierno" /></frame>
+			<frame type="Leadership" head="Gobierno" />
+			<frame type="Leadership" head="el Rey" />
+			<frame type="Reason" head="del">
+				<argument type="State_of_affairs" dependent="semanal" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Ground" dependent="vacaciones" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En agosto, Aznar se desplaza a Marivent dos veces.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="np00000">Aznar</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_9" concept_ref3="c_12">
+			<mention concept_ref="c_5"><token pos="p0300000">se</token></mention><token pos="vmip3s0">desplaza</token><mention concept_ref="c_9"><token pos="dn0cp0">dos</token><token pos="ncfp000">veces</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="agosto" />
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Ground" dependent="agosto" />
+				<argument type="Ground" dependent="Aznar se desplaza a Marivent dos veces" /></frame>
+			<main_frame type="Motion" head="desplaza">
+				<argument type="Time" dependent="En agosto" />
+				<argument type="Theme" dependent="Aznar" />
+				<argument type="Goal" dependent="dos veces" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Este año, el primero tuvo lugar el día 9 y ayer se celebró el segundo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="ayer se" />
+			<frame type="Calendric_unit" head="año">
+				<argument type="Relative_time" dependent="Este" /></frame>
+			<frame type="Locale" head="lugar" />
+			<frame type="Manipulation" head="se">
+				<argument type="Time" dependent="ayer se" />
+				<argument type="Entity" dependent="el segundo" /></frame>
+			<frame type="Ordinal_numbers" head="primero" />
+			<frame type="Ordinal_numbers" head="segundo" />
+			<frame type="Spatial_contact" head="se">
+				<argument type="Figure" dependent="primero tuvo lugar" />
+				<argument type="Ground" dependent="el día 9" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El Rey regresó el jueves de un viaje privado a Namibia, donde, durante dos semanas, recorrió reservas animales atendiendo a una invitación personal del presidente, Sam Nujoma.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0ms0">El</token><token pos="np00000">Rey</token>
+		</theme>
+		<rheme concept_ref1="c_12">
+			<token pos="vmis3s0">regresó</token><mention concept_ref="c_12"><token pos="da0ms0">el</token><token pos="ncms000">jueves</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Animals" head="animales">
+				<argument type="Animal" dependent="reservas animales" /></frame>
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="Sam Nujoma" /></frame>
+			<main_frame type="Arriving" head="regresó">
+				<argument type="Theme" dependent="El Rey" />
+				<argument type="Time" dependent="jueves de" /></main_frame>
+			<frame type="Calendric_unit" head="jueves" />
+			<frame type="Calendric_unit" head="semanas">
+				<argument type="Count" dependent="dos" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Unit" dependent="semanas" /></frame>
+			<frame type="Leadership" head="El Rey" />
+			<frame type="Locative_relation" head="donde" />
+			<frame type="Relative_time" head="de">
+				<argument type="Focal_occasion" dependent="recorrió reservas animales" />
+				<argument type="Landmark_occasion" dependent="una invitación personal del presidente , Sam Nujoma" /></frame>
+			<frame type="Request" head="invitación">
+				<argument type="Message" dependent="personal" />
+				<argument type="Speaker" dependent="del presidente , Sam Nujoma" /></frame>
+			<frame type="Spatial_contact" head="de">
+				<argument type="Figure" dependent="El Rey" />
+				<argument type="Ground" dependent="jueves" />
+				<argument type="Figure" dependent="de un viaje privado a" /></frame>
+			<frame type="Store" head="reservas">
+				<argument type="Use" dependent="animales" /></frame>
+			<frame type="Travel" head="viaje">
+				<argument type="Traveler" dependent="el" />
+				<argument type="Goal" dependent="reservas animales" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

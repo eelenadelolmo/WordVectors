@@ -1,0 +1,6 @@
+{   ('Calendric_unit', 'Ayer'): [],
+    ('Death', 'muerte'): [],
+    ('Evoking', 'recordó'): [('Stimulus', 'el pánico de la bomba cerca del'), ('Stimulus', 'que la muerte indiscriminada es algo muy próximo')],
+    ('Increment', 'más'): [],
+    ('Locative_relation', 'cerca del'): [('Ground', 'algo muy')],
+    ('Weapon', 'bomba'): []}

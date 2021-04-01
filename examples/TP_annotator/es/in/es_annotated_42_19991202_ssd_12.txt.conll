@@ -1,0 +1,9 @@
+{   ('Body_parts', 'armas'): [],
+    ('Commitment', 'exigir'): [('Speaker', 'su'), ('Message', 'vías políticas')],
+    ('Communicate_categorization', 'describió'): [   ('Speaker', 'Ibarretxe'),
+                                                     ('Category', 'disyuntiva ante la que se encuentra la formación que lidera Arnaldo Otegi , que mantiene su apuesta por las vías políticas ,')],
+    ('Creating', 'formación'): [],
+    ('Interior_profile_relation', 'por'): [('Figure', 'dificultades muy'), ('Ground', 'no vuelva a empuñar las armas')],
+    ('Leadership', 'se'): [('Governed', 'la formación'), ('Governed', 'Arnaldo Otegi')],
+    ('Roadways', 'las vías'): [('Characteristic', 'políticas')],
+    ('Taking_time', 'se'): [('Agent', 'se'), ('Time_length', 'vuelva a empuñar las armas')]}

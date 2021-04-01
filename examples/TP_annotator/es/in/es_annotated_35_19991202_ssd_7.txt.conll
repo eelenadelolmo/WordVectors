@@ -1,0 +1,6 @@
+{   ('Activity_pause', 'suspende'): [('Agent', 'el decreto presidencial'), ('Completeness', 'a Yuri Skuratov')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Law', 'ley'): [],
+    ('Leadership', 'presidencial'): [],
+    ('People_by_vocation', 'Tribunal'): [],
+    ('Receiving', 'recibió'): [('Recipient', 'Kremlin'), ('Theme', 'un espaldarazo'), ('Donor', 'por parte del Tribunal Constitucional')]}

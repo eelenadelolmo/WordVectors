@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="30_20010902_ssd">
+
+
+	<concepts>
+		<concept id="c_0">su autor</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Pese a que los grupos antisistema emplean como estandarte la tasa Tobin, impuesto sobre el movimiento especulativo de los capitales, su autor declaró ayer que no tiene ningún punto en común con los "rompedores de ventanas" antimundialización.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="dp3cs0">su</token><token pos="ncms000">autor</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<token pos="rn">no</token><token pos="vmip3s0">tiene</token><token pos="di0ms0">ningún</token><token pos="ncms000">punto</token><token pos="sps00">en</token><token pos="aq0msp">común</token><token pos="sps00">con</token><token pos="da0mp0">los</token><token pos="fe">quot;</token><token pos="aq0mp0">rompedores</token><token pos="sps00">de</token><token pos="ncfp000">ventanas</token><token pos="fe">quot;</token><token pos="aq0cs0">antimundialización</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="grupos">
+				<argument type="Aggregate_property" dependent="de" /></frame>
+			<frame type="Calendric_unit" head="ayer que" />
+			<frame type="Concessive" head="en">
+				<argument type="Conceded_state_of_affairs" dependent="a que los grupos antisistema emplean como estandarte la tasa Tobin , impuesto sobre el movimiento especulativo de los capitales ," /></frame>
+			<frame type="Connecting_architecture" head="ventanas">
+				<argument type="Whole" dependent="rompedores" /></frame>
+			<frame type="Relational_political_locales" head="capitales" />
+			<frame type="Statement" head="declaró">
+				<argument type="Speaker" dependent="su autor" />
+				<argument type="Manner" dependent="ayer que" />
+				<argument type="Message" dependent="que no tiene ningún punto en común con los  quot ; rompedores de ventanas  quot ; antimundialización" /></frame>
+			<frame type="Using" head="emplean">
+				<argument type="Agent" dependent="grupos" />
+				<argument type="Instrument" dependent="impuesto sobre" />
+				<argument type="Purpose" dependent=", impuesto sobre el movimiento especulativo de los capitales ," /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

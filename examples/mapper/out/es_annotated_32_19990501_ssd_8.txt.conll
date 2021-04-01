@@ -1,0 +1,7 @@
+{   ('Age', 'nueva'): [('Entity', 'masacre de refugiados')],
+    ('Awareness', 'conocimiento'): [('Cognizer', 'la'), ('Content', 'de una nueva masacre de refugiados en la localidad de Mega , Según informó el')],
+    ('Killing', 'masacre'): [('Degree', 'nueva'), ('Victim', 'de refugiados'), ('Place', 'localidad de Mega , Según informó el')],
+    ('Political_locales', 'localidad'): [('Name', 'de Mega , Según informó el')],
+    ('Representative', 'haber'): [('Representative', 'de'), ('Representative', 'Jamie Shea')],
+    ('Reveal_secret', 'reveló'): [('Speaker', 'de'), ('Information', 'reveló haber tenido conocimiento de una nueva masacre de refugiados en la localidad de Mega ,')],
+    ('Statement', 'informó'): [('Message', 'Jamie Shea')]}

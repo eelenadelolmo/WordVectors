@@ -1,0 +1,6 @@
+{   ('Bringing', 'reunió a'): [('Theme', 'protesta'), ('Theme', 'centenar de ciudadanos'), ('Goal', 'en la plaza de la Villa , en Madrid')],
+    ('Cardinal_numbers', 'un'): [('Entity', 'ciudadanos')],
+    ('Collaboration', 'reunió'): [('Partner_2', 'protesta'), ('Undertaking', 'centenar de ciudadanos'), ('Partner_2', 'en la plaza de la Villa , en Madrid')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'plaza de la Villa'), ('Ground', 'Madrid')],
+    ('People_by_jurisdiction', 'ciudadanos'): [],
+    ('Protest', 'protesta'): []}

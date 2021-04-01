@@ -1,0 +1,4 @@
+{   ('Cardinal_numbers', 'alguien'): [('Entity', 'toca')],
+    ('Locative_relation', 'hay'): [('Figure', 'alguien que percibe que'), ('Ground', 'hay temas'), ('Figure', 'que nadie toca')],
+    ('Point_of_dispute', 'temas'): [('Question', 'que nadie toca')],
+    ('Spatial_contact', 'toca'): [('Figure', 'alguien')]}

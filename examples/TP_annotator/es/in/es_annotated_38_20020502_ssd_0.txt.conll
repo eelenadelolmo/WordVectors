@@ -1,0 +1,5 @@
+{   ('Catastrophe', 'víctimas'): [],
+    ('Direction', 'se'): [],
+    ('Increment', 'más'): [('Class', 'víctimas')],
+    ('Locative_relation', 'hubo'): [('Ground', 'más víctimas')],
+    ('Spatial_contact', 'se'): [('Ground', 'el terreno')]}

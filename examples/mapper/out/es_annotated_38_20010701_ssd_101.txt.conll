@@ -1,0 +1,8 @@
+{   ('Calendric_unit', 'año'): [('Relative_time', 'Ultimamente')],
+    ('Departing', 'dejan'): [('Time', 'Ultimamente'), ('Theme', 'todos ellos'), ('Path', 'me')],
+    ('Gizmo', 'el'): [('Descriptor', 'contestador')],
+    ('Needing', 'hace falta'): [('Cognizer', 'te'), ('Requirement', 'trabajo')],
+    ('Relative_time', 'Ultimamente'): [('Focal_occasion', 'año')],
+    ('Spatial_contact', 'en'): [('Figure', 'todos ellos me dejan mensajes'), ('Ground', "el contestador : ' ¡ Hey , Bill , si te hace falta trabajo , el")],
+    ('Travel', 'gira'): [('Time', 'año que viene'), ('Traveler', 'tenemos')],
+    ('Work', 'trabajo'): [('Agent', 'te')]}

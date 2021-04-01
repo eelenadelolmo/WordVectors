@@ -1,0 +1,10 @@
+{   ('Aggregate', 'bordo'): [   ('Aggregate_property', 'Dos'),
+                                ('Aggregate_property', 'de la estación orbital rusa Mir llegaron ayer por la mañana a Kazajstán a bordo de la cápsula de transporte espacial Soyuz')],
+    ('Arriving', 'llegaron'): [   ('Theme', 'Dos tripulantes de la estación orbital rusa Mir llegaron'),
+                                  ('Path', 'ayer por'),
+                                  ('Time', 'la mañana'),
+                                  ('Place', 'a Kazajstán'),
+                                  ('Circumstances', 'a bordo de la cápsula de transporte espacial Soyuz')],
+    ('Bringing', 'transporte'): [('Carrier', 'Soyuz'), ('Goal', 'espacial')],
+    ('Calendric_unit', 'la mañana'): [('Relative_time', 'ayer por')],
+    ('Membership', 'de'): [('Place', 'de la estación orbital rusa')]}

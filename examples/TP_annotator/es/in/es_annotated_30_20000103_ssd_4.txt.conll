@@ -1,0 +1,9 @@
+{   ('Adopt_selection', 'adoptar'): [('Attribute', 'líder del Partido de los Trabajadores del Kurdistán ( PKK ) , condenado a muerte en Junio por traición y separatismo')],
+    ('Alliance', 'coalición'): [('Members', 'su')],
+    ('Calendric_unit', 'semana'): [('Relative_time', 'próxima')],
+    ('Death', 'muerte'): [],
+    ('Deciding', 'decidir'): [('Decision', 'actitud a adoptar respecto al líder del Partido de los Trabajadores del Kurdistán (')],
+    ('Leadership', 'líder'): [('Governed', 'del Partido de los Trabajadores del Kurdistán (')],
+    ('Make_acquaintance', 'reunirá'): [   ('Individual_1', 'Ecevit'),
+                                          ('Time', 'próxima semana'),
+                                          ('Individual_2', 'con su coalición para decidir la actitud a adoptar respecto al líder del Partido de los Trabajadores del Kurdistán (')]}

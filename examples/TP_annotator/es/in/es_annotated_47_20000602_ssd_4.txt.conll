@@ -1,0 +1,6 @@
+{   ('Attack', 'atacar'): [('Assailant', 'Mayor'), ('Victim', 'PNV')],
+    ('Communicate_categorization', 'quot'): [('Speaker', 'socialistas'), ('Item', 'quot ; la falta de relación institucional entre los responsables de Interior español y')],
+    ('Judgment_communication', 'escándalo'): [('Communicator', 'Mayor'), ('Evaluee', 'lo'), ('Reason', 'acusó de orquestar una & quot ; campaña política infame')],
+    ('Leadership', 'Mayor'): [('Leader', 'Mayor')],
+    ('Part_inner_outer', 'de Interior'): [('Whole', 'vasco')],
+    ('Possession', 'falta'): [('Possession', 'de relación institucional entre los responsables de Interior español y vasco , y')]}

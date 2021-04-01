@@ -1,0 +1,11 @@
+{   ('Attack', 'huelga'): [],
+    ('Calendric_unit', 'el mes'): [],
+    ('Expectation', 'esperan'): [('Phenomenon', 'más turistas'), ('Phenomenon', 'en Barcelona')],
+    ('Increment', 'más'): [('Class', 'turistas')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'más turistas'), ('Time', 'esperan'), ('Ground', 'Barcelona')],
+    ('Locale', 'se'): [],
+    ('Part_inner_outer', 'mes'): [('Whole', 'temporada alta')],
+    ('Position_on_a_scale', 'alta'): [('Item', 'temporada')],
+    ('Request', 'se'): [('Message', 'de huelga se produce en plena temporada alta')],
+    ('Simultaneity', 'coincidiendo'): [],
+    ('Taking_time', 'esperan'): [('Activity', 'huelga'), ('Time_length', 'se'), ('Activity', 'en plena temporada alta')]}

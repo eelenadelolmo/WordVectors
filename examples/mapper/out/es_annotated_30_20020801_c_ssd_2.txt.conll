@@ -1,0 +1,11 @@
+{   ('Ammunition', 'ronda'): [],
+    ('Cause_to_make_progress', 'mejorar'): [   (   'Project',
+                                                   'integración de la ronda & quot ; en el entramado urbano de la zona y calificó como & quot ; un impulso definitivo & quot ; la aprobación del '
+                                                   'proyecto')],
+    ('Communicate_categorization', 'quot'): [('Item', 'la aprobación del proyecto de')],
+    ('Deny_or_grant_permission', 'aprobación'): [('Purpose', 'del proyecto de')],
+    ('Locale', 'zona'): [],
+    ('Project', 'proyecto'): [],
+    ('Statement', 'anunció'): [   ('Speaker', 'el'),
+                                  ('Manner', 'ayer que'),
+                                  ('Message', 'que adoptará & quot ; medidas complementarias & quot ; para & quot ; mejorar la integración de la ronda & quot ; en el entramado urbano de la')]}

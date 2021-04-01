@@ -1,0 +1,12 @@
+{   ('Buildings', 'hospitales'): [('Place', 'de Barcelona')],
+    ('Calendric_unit', 'fin de semana'): [('Relative_time', 'fin de')],
+    ('Calendric_unit', 'invierno'): [('Relative_time', 'este')],
+    ('Cause_change', 'cambiado'): [('Agent', 'se'), ('Degree', 'radical'), ('Entity', 'su mensaje hacia médicos y ciudadanos')],
+    ('Event', 'se produjeron'): [('Event', 'que'), ('Place', 'pasado fin de semana en varios hospitales de Barcelona')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'varios hospitales'), ('Ground', 'Barcelona')],
+    ('Medical_professionals', 'médicos'): [],
+    ('Ordinal_numbers', 'primeras'): [('Type', 'este invierno')],
+    ('People_by_jurisdiction', 'ciudadanos'): [],
+    ('Quantified_mass', 'varios'): [('Individuals', 'hospitales')],
+    ('Relative_time', 'fin de'): [('Focal_occasion', 'fin de semana')],
+    ('Response', 'reacción'): []}

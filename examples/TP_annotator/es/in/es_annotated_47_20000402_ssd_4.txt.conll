@@ -1,0 +1,10 @@
+{   ('Arriving', 'se'): [('Theme', 'las personas de raza blanca que'), ('Goal', 'a la manifestación')],
+    ('Change_of_leadership', 'independencia'): [],
+    ('Color', 'blanca'): [('Entity', 'personas')],
+    ('Goal', 'a los'): [('Landmark', 'testigos')],
+    ('Hostile_encounter', 'guerra'): [('Depictive', 'independencia')],
+    ('People', 'personas'): [('Descriptor', 'blanca')],
+    ('Perception_experience', 'testigos'): [],
+    ('Reasoning', 'manifestación'): [],
+    ('Statement', 'informa'): [('Speaker', 'ensañaron')],
+    ('Taking_sides', 'agresores'): []}

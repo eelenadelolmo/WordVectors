@@ -1,0 +1,12 @@
+{   ('Age', 'nuevo'): [('Entity', 'foro de partidos')],
+    ('Aggregate', 'partidos'): [],
+    ('Avoiding', 'evitó'): [('Agent', 'la seguridad y libertad de todos los ciudadanos'), ('Undesirable_situation', 'pronunciarse sobre el nuevo foro de partidos que Ibarretxe quiere')],
+    ('Being_at_risk', 'seguridad'): [],
+    ('Being_employed', 'posición'): [('Employer', 'lehendakari'), ('Employer', 'exigencia & quot ; de que &')],
+    ('Cause_change_of_position_on_a_scale', 'impulsar'): [('Item', 'que'), ('Agent', 'Ibarretxe')],
+    ('Deciding', 'Anunció'): [('Cognizer', 'la seguridad y libertad de todos los ciudadanos'), ('Decision', 'sobre el nuevo foro de partidos que Ibarretxe quiere')],
+    ('Desiring', 'quiere'): [('Event', 'que'), ('Experiencer', 'Ibarretxe'), ('Event', 'impulsar')],
+    ('People_by_jurisdiction', 'ciudadanos'): [],
+    ('Request', 'exigencia'): [],
+    ('Statement', 'Anunció'): [('Speaker', 'su'), ('Message', 'Anunció que trasladará al lehendakari la posición del PSOE y su & quot ; exigencia & quot ; de que')],
+    ('Transfer', 'trasladará'): [('Recipient', 'su'), ('Theme', 'lehendakari la posición del PSOE y su & quot ; exigencia & quot ; de que & quot ; se garantice la seguridad y libertad')]}

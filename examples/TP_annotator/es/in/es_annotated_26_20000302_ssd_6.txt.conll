@@ -1,0 +1,11 @@
+{   ('Catastrophe', 'accidente'): [('Undesirable_event', 'accidente se produjo')],
+    ('Deciding', 'decidiera'): [('Cognizer', 'el conductor'), ('Decision', 'vía del tren pese a la intensa niebla que cubría la zona')],
+    ('Dynamism', 'intensa'): [('Force', 'niebla')],
+    ('Emotion_directed', 'cruzar'): [('Experiencer', 'el conductor'), ('Stimulus', 'la vía del tren')],
+    ('Event', 'produjo'): [('Event', 'accidente')],
+    ('Locale', 'zona'): [],
+    ('Protecting', 'cubría'): [('Asset', 'la zona')],
+    ('Relative_time', 'después de'): [   ('Focal_occasion', 'accidente se produjo'),
+                                         ('Landmark_occasion', 'el conductor se decidiera a cruzar la vía del tren pese a la intensa niebla que cubría la zona')],
+    ('Roadways', 'vía'): [('Use', 'tren')],
+    ('Vehicle', 'tren'): []}

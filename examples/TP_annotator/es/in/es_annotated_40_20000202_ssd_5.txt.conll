@@ -1,0 +1,16 @@
+{   ('Age', 'Nueva'): [('Entity', 'Hampshire')],
+    ('Aggregate', 'partido'): [],
+    ('Arriving', 'se'): [('Theme', 'candidatos que'), ('Goal', 'salen de lo marcado')],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'grandes partidos')],
+    ('Desirability', 'grande'): [('Evaluee', ',')],
+    ('Difficulty', 'desafío'): [('Activity', 'a la ortodoxia del partido republicano')],
+    ('Expectation', 'esperaba'): [('Cognizer', 'de'), ('Phenomenon', 'la victoria')],
+    ('Experiencer_obj', 'agradó'): [('Stimulus', 'ortodoxia del partido republicano'), ('Stimulus', 'los correosos votantes de Nueva Hampshire')],
+    ('Fame', 'famosos'): [('Reason', 'por su apoyo a los')],
+    ('Finish_competition', 'la victoria'): [],
+    ('Just_found_out', 'sorprendido'): [('Experiencer', 'propio')],
+    ('Sign', 'marcado'): [('Indicator', 'marcado por los dos grandes partidos')],
+    ('Statement', 'quot'): [   (   'Message',
+                                   'comentó sorprendido el propio McCain , cuyo desafío a la ortodoxia del partido republicano agradó particularmente a los correosos votantes de Nueva Hampshire , '
+                                   'famosos por su apoyo a los candidatos que se salen de lo marcado por los dos grandes partidos .')],
+    ('Supporting', 'apoyo'): [('Supporter', 'los')]}

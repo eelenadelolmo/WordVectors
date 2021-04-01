@@ -1,0 +1,5 @@
+{   ('Clothing', 'contarles'): [],
+    ('Inhibit_movement', 'limita'): [('Theme', 'militar')],
+    ('Military', 'militar'): [],
+    ('Telling', 'contarles'): [('Speaker', 'militar'), ('Addressee', 'contarles'), ('Message', 'sólo lo que')],
+    ('Time_vector', 'Desde'): [('Landmark_event', 'entonces el estamento militar se limita a contarles sólo lo que le')]}

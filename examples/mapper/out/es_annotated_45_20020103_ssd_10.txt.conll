@@ -1,0 +1,8 @@
+{   ('Attempt', 'esfuerzos'): [],
+    ('Explaining_the_facts', 'explicó'): [('Fact', 'ministro de Defensa , George')],
+    ('Increment', 'otra'): [('Class', 'escala')],
+    ('Leadership', 'ministro'): [('Type', 'Defensa')],
+    ('Political_locales', 'países'): [('Relative_location', 'en el terreno diplomático')],
+    ('Process_continue', 'mantiene'): [('Event', 'esfuerzos a otra escala & quot ; para que las disputas entre los dos países sean resueltas en el terreno diplomático')],
+    ('Quarreling', 'disputas'): [('Manner', 'resueltas'), ('Arguers', 'entre los dos países sean resueltas en el terreno diplomático')],
+    ('Resolve_problem', 'resueltas'): [('Problem', 'disputas entre los dos países sean resueltas en el terreno diplomático')]}

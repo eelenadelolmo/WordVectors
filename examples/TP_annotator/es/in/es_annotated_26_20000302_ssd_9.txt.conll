@@ -1,0 +1,12 @@
+{   ('Attack', 'arremetida'): [('Manner', 'brutal'), ('Victim', 'del ferrocarril')],
+    ('Cause_motion', 'arrastró'): [('Agent', 'el tractor'), ('Theme', 'remolque donde viajaban hasta colocarlo a merced de la brutal arremetida del ferrocarril')],
+    ('Judgment_communication', 'arremetida'): [('Evaluee', 'todos los campesinos')],
+    ('Locative_relation', 'al'): [('Figure', 'lo'), ('Ground', 'merced de la brutal arremetida del ferrocarril')],
+    ('Locative_relation', 'donde'): [('Figure', 'tractor'), ('Figure', 'viajaban hasta colocarlo a merced de la brutal arremetida del ferrocarril')],
+    ('Placing', 'donde'): [('Agent', 'los'), ('Theme', 'lo'), ('Goal', 'a merced de la brutal arremetida del ferrocarril')],
+    ('Rescuing', 'salvó'): [('Agent', 'que el'), ('Patient', 'vida del')],
+    ('Roadways', 'ferrocarril'): [],
+    ('Roadways', 'vía'): [],
+    ('Time_vector', 'hasta'): [('Event', 'lo que condenó a todos los campesinos'), ('Landmark_event', 'el tractor')],
+    ('Travel', 'viajaban'): [('Traveler', 'los'), ('Goal', 'a merced de la brutal arremetida del ferrocarril')],
+    ('Vehicle', 'vehículo'): []}

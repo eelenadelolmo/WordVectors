@@ -1,0 +1,10 @@
+{   ('Architectural_part', 'la pared'): [],
+    ('Building', 'construyó'): [('Created_entity', 'la primera alcantarilla cubierta de la ciudad')],
+    ('Ordinal_numbers', 'primera'): [('Type', 'cubierta de la ciudad')],
+    ('Political_locales', 'ciudad'): [],
+    ('Protecting', 'cubierta'): [('Asset', 'la ciudad')],
+    ('Roadways', 'calle'): [],
+    ('Spatial_contact', 'en'): [('Figure', 'se'), ('Ground', 'esta calle'), ('Figure', 'se construyó la primera alcantarilla cubierta de la ciudad')],
+    ('Telling', 'cuenta la'): [   ('Speaker', 'una lápida en la pared'),
+                                  ('Addressee', 'la historia de'),
+                                  ('Message', 'que fue en esta calle donde se construyó la primera alcantarilla cubierta de la ciudad .')]}

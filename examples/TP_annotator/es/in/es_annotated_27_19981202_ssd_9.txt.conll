@@ -1,0 +1,8 @@
+{   ('Appellations', 'presidente'): [('Type', 'de la Corte Suprema de Justicia de Chile')],
+    ('Arrest', 'detención'): [('Suspect', 'de Pinochet')],
+    ('Calendric_unit', 'ayer que'): [],
+    ('Judicial_body', 'la Corte'): [('Rank', 'Suprema'), ('Jurisdiction', 'de Chile')],
+    ('Political_locales', 'Reino'): [('Descriptor', 'Unido')],
+    ('Statement', 'dijo'): [   ('Speaker', 'presidente de la Corte Suprema de Justicia de Chile , Roberto'),
+                               ('Time', 'ayer que'),
+                               ('Message', 'que el Reino Unido y España & quot ; han pisoteado & quot ; la soberanía de Chile con la detención de')]}

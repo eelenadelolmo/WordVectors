@@ -1,0 +1,6 @@
+{   ('Architectural_part', 'suelo'): [],
+    ('Becoming_aware', 'encontraron'): [('Cognizer', 'el suelo'), ('Phenomenon', 'hachís y tres bolas de cocaína')],
+    ('Becoming_aware', 'local'): [('Phenomenon', 'el'), ('Evidence', 'local a 10 menores que consumían alcohol')],
+    ('Expend_resource', 'consumían'): [('Agent', 'que'), ('Resource', 'alcohol')],
+    ('Intoxicants', 'alcohol'): [('Descriptor', 'consumían')],
+    ('Intoxicants', 'cocaína'): []}

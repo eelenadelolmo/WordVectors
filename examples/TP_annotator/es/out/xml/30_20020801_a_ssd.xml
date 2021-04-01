@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="30_20020801_a_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El ministro de Fomento , Francisco Álvarez-Cascos , el alcalde de Lleida , Antoni Siurana , y el conseller de Política Territorial , Felip Puig ,</concept>
+		<concept id="c_1">El convenio</concept>
+		<concept id="c_2">Los 24 millones de euros</concept>
+		<concept id="c_3">Siurana</concept>
+		<concept id="c_4">el secretario de Estado de Infraestructuras , Benigno Blanco ,</concept>
+		<concept id="c_5">Los dos convoyes</concept>
+		<concept id="c_6">con Madrid</concept>
+		<concept id="c_7">a finales de año en poco más de dos horas</concept>
+		<concept id="c_8">una inversión</concept>
+		<concept id="c_9">pesetas</concept>
+		<concept id="c_10">un nuevo puente</concept>
+		<concept id="c_11">el río</concept>
+		<concept id="c_12">las vías</concept>
+		<concept id="c_13">final</concept>
+		<concept id="c_14">Lleida</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El ministro de Fomento, Francisco Álvarez-Cascos, el alcalde de Lleida, Antoni Siurana, y el conseller de Política Territorial, Felip Puig, sellaron ayer en Madrid el pacto que permitirá integrar urbanísticamente el AVE en la capital del Segrià.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">ministro</token><token pos="sps00">de</token><token pos="np00000">Fomento</token><token pos="fc">,</token><token pos="np0000l">Francisco</token><token pos="np0000l">Álvarez-Cascos</token><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="ncms000">alcalde</token><token pos="sps00">de</token><token pos="np00000">Lleida</token><token pos="fc">,</token><token pos="np0000l">Antoni</token><token pos="np0000l">Siurana</token><token pos="fc">,</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">conseller</token><token pos="sps00">de</token><token pos="np00000">Política</token><token pos="aq0ms0">Territorial</token><token pos="fc">,</token><token pos="np0000l">Felip</token><token pos="np0000l">Puig</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_9">
+			<token pos="vmis3p0">sellaron</token><mention concept_ref="c_4"><token pos="da0ms0">el</token><token pos="ncms000">pacto</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Closure" head="Fomento">
+				<argument type="Agent" dependent="ministro de Fomento , Francisco Álvarez-Cascos , el alcalde de Lleida , Antoni Siurana , y el conseller de Política Territorial ," />
+				<argument type="Degree" dependent="ayer" />
+				<argument type="Agent" dependent="en Madrid" /></frame>
+			<frame type="Leadership" head="alcalde">
+				<argument type="Governed" dependent="sellaron" /></frame>
+			<frame type="Preventing_or_letting" head="permitirá">
+				<argument type="Event" dependent="pacto que" />
+				<argument type="Event" dependent="integrar urbanísticamente el AVE en la capital" /></frame>
+			<frame type="Relational_political_locales" head="capital">
+				<argument type="Name" dependent="de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El convenio prevé una inversión de 24,1 millones de euros ( 4.010 de pesetas ) destinados a un nuevo puente sobre el río Segre, el cubrimiento de las vías, la creación de un parque urbano al final de la avenida de Prat de la Riba y la urbanización de todo el entorno de la estación.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">convenio</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_1" concept_ref3="c_0" concept_ref4="c_3" concept_ref5="c_4" concept_ref6="c_8" concept_ref7="c_9" concept_ref8="c_10" concept_ref9="c_11" concept_ref10="c_12" concept_ref11="c_13">
+			<token pos="vmip3s0">prevé</token><mention concept_ref="c_8"><token pos="di0fs0">una</token><token pos="ncfs000">inversión</token></mention><token pos="sps00">de</token><token pos="z">24,1</token><mention concept_ref="c_2"><token pos="ncmp000">millones</token></mention><token pos="sps00">de</token><token pos="zm">euros</token><token pos="fpa">(</token><token pos="z">4.010</token><token pos="sps00">de</token><mention concept_ref="c_9"><token pos="zm">pesetas</token></mention><token pos="fpt">)</token><token pos="aq0mpp">destinados</token><token pos="sps00">a</token><mention concept_ref="c_10"><token pos="di0ms0">un</token><token pos="aq0ms0">nuevo</token><token pos="ncms000">puente</token></mention><token pos="sps00">sobre</token><mention concept_ref="c_11"><token pos="da0ms0">el</token><token pos="ncms000">río</token></mention><token pos="np00000">Segre</token><token pos="fc">,</token><mention concept_ref="c_1"><token pos="da0ms0">el</token><token pos="ncms000">cubrimiento</token></mention><token pos="sps00">de</token><mention concept_ref="c_12"><token pos="da0fp0">las</token><token pos="ncfp000">vías</token></mention><token pos="fc">,</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="ncfs000">creación</token></mention><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">parque</token><token pos="aq0ms0">urbano</token><token pos="spcms">al</token><mention concept_ref="c_13"><token pos="ncms000">final</token></mention><token pos="sps00">de</token><mention concept_ref="c_3"><token pos="da0fs0">la</token><token pos="ncfs000">avenida</token></mention><token pos="sps00">de</token><token pos="np00000">Prat</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Riba</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">urbanización</token><token pos="sps00">de</token><token pos="di0ms0">todo</token><token pos="da0ms0">el</token><token pos="ncms000">entorno</token><token pos="sps00">de</token><mention concept_ref="c_4"><token pos="da0fs0">la</token><token pos="ncfs000">estación</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevo">
+				<argument type="Entity" dependent="puente" /></frame>
+			<frame type="Cardinal_numbers" head="millones">
+				<argument type="Multiplier" dependent="24,1" />
+				<argument type="Unit" dependent="euros" /></frame>
+			<frame type="Intentionally_create" head="creación">
+				<argument type="Created_entity" dependent="de un parque urbano" /></frame>
+			<frame type="Locale_by_use" head="parque">
+				<argument type="Use" dependent="urbano" /></frame>
+			<frame type="Locative_relation" head="al">
+				<argument type="Figure" dependent="un parque urbano" />
+				<argument type="Ground" dependent="al final de la avenida de Prat de la Riba y la urbanización de todo el entorno de la estación" /></frame>
+			<frame type="Make_agreement_on_action" head="convenio" />
+			<frame type="Process_end" head="final de">
+				<argument type="Process" dependent="Riba y la urbanización de todo el entorno de la estación" /></frame>
+			<frame type="Proportional_quantity" head="sobre">
+				<argument type="Q_prop" dependent="un nuevo puente" />
+				<argument type="Individuals" dependent="el río" /></frame>
+			<frame type="Ranked_expectation" head="de todo">
+				<argument type="Entity" dependent="entorno de la estación" /></frame>
+			<frame type="Roadways" head="avenida">
+				<argument type="Goal" dependent="Riba y la urbanización de todo el entorno de la estación" /></frame>
+			<frame type="Roadways" head="puente">
+				<argument type="Characteristic" dependent="nuevo" />
+				<argument type="Characteristic" dependent="sobre el río" /></frame>
+			<frame type="Roadways" head="vías" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los 24 millones de euros se obtendrán de las plusvalías generadas en los terrenos que ya resultan innecesarios para la explotación ferroviaria.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0mp0">Los</token><token pos="z">24</token><token pos="ncmp000">millones</token><token pos="sps00">de</token><token pos="zm">euros</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_9" concept_ref3="c_11" concept_ref4="c_12">
+			<mention concept_ref="c_9"><token pos="p0000000">se</token></mention><token pos="vmif3p0">obtendrán</token><token pos="sps00">de</token><mention concept_ref="c_12"><token pos="da0fp0">las</token><token pos="ncfp000">plusvalías</token></mention><token pos="aq0fpp">generadas</token><token pos="sps00">en</token><token pos="da0mp0">los</token><token pos="ncmp000">terrenos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Businesses" head="explotación">
+				<argument type="Service_provider" dependent="ferroviaria" /></frame>
+			<frame type="Change_position_on_a_scale" head="resultan" />
+			<frame type="Getting" head="resultan">
+				<argument type="Theme" dependent="24 millones" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Siurana se felicitó por la culminación de un proceso "duro y largo", y explicó que el acuerdo permitirá que la zona de la estación deje de ser el límite de la ciudad para convertirse "en el mismo centro".
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="np00000">Siurana</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_1" concept_ref3="c_8" concept_ref4="c_9" concept_ref5="c_10">
+			<mention concept_ref="c_9"><token pos="pp3cn000">se</token></mention><token pos="vmis3s0">felicitó</token><token pos="sps00">por</token><token pos="da0fs0">la</token><token pos="ncfs000">culminación</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">proceso</token><token pos="fe">quot;</token><token pos="aq0ms0">duro</token><token pos="cc">y</token><token pos="aq0ms0">largo</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_finish" head="culminación">
+				<argument type="Activity" dependent="un proceso  quot ; duro y largo" /></frame>
+			<frame type="Activity_stop" head="se">
+				<argument type="Activity" dependent="zona de la estación" /></frame>
+			<frame type="Becoming" head="convertirse">
+				<argument type="Entity" dependent="el límite de la ciudad" />
+				<argument type="Final_category" dependent="el mismo centro" /></frame>
+			<frame type="Difficulty" head="duro">
+				<argument type="Activity" dependent="proceso" /></frame>
+			<frame type="Duration_description" head="largo">
+				<argument type="Eventuality" dependent="proceso" /></frame>
+			<frame type="Explaining_the_facts" head="explicó">
+				<argument type="State_of_affairs" dependent="que el acuerdo permitirá que la zona de la estación deje de ser el límite de la ciudad para convertirse" /></frame>
+			<frame type="Identicality" head="el mismo">
+				<argument type="Type" dependent="centro" /></frame>
+			<frame type="Locale" head="zona" />
+			<frame type="Make_agreement_on_action" head="el acuerdo" />
+			<frame type="Political_locales" head="ciudad" />
+			<frame type="Preventing_or_letting" head="permitirá">
+				<argument type="Event" dependent="el acuerdo" />
+				<argument type="Event" dependent="zona de la estación" /></frame>
+			<frame type="Process" head="proceso" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Tras la firma del convenio, el secretario de Estado de Infraestructuras, Benigno Blanco, anunció la conclusión de la negociación que mantenía Renfe con su homóloga alemana para alquilar dos trenes AVE IC3 de Siemens.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0ms0">el</token><token pos="ncms000">secretario</token><token pos="sps00">de</token><token pos="np00000">Estado</token><token pos="sps00">de</token><token pos="np00000">Infraestructuras</token><token pos="fc">,</token><token pos="np0000l">Benigno</token><token pos="np0000l">Blanco</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_8" concept_ref3="c_9">
+			<token pos="vmis3s0">anunció</token><mention concept_ref="c_1"><token pos="da0fs0">la</token><token pos="ncfs000">conclusión</token></mention><token pos="sps00">de</token><mention concept_ref="c_8"><token pos="da0fs0">la</token><token pos="ncfs000">negociación</token></mention><token pos="sps00">para</token><token pos="vmn0000">alquilar</token><token pos="dn0cp0">dos</token><mention concept_ref="c_9"><token pos="ncmp000">trenes</token></mention><token pos="np0000l">AVE</token><token pos="np0000l">IC3</token><token pos="sps00">de</token><token pos="np00000">Siemens</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Coming_to_believe" head="conclusión">
+				<argument type="Content" dependent="la negociación que mantenía Renfe con su homóloga alemana para alquilar dos trenes AVE IC3 de" /></frame>
+			<frame type="Education_teaching" head="trenes">
+				<argument type="Student" dependent="AVE IC3" /></frame>
+			<frame type="Make_agreement_on_action" head="convenio" />
+			<frame type="Relative_time" head="Tras la">
+				<argument type="Landmark_occasion" dependent="la firma del convenio" />
+				<argument type="Focal_occasion" dependent="alquilar dos trenes AVE IC3" /></frame>
+			<frame type="Sign_agreement" head="firma del">
+				<argument type="Agreement" dependent="del convenio" /></frame>
+			<main_frame type="Statement" head="anunció">
+				<argument type="Message" dependent="la conclusión de la negociación que mantenía Renfe con su homóloga alemana para alquilar dos trenes AVE IC3" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los dos convoyes permitirán conectar Lleida con Madrid a finales de año en poco más de dos horas, como avanzó este diario.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0mp0">Los</token><token pos="dn0cp0">dos</token><token pos="ncmp000">convoyes</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_7" concept_ref3="c_13" concept_ref4="c_14">
+			<token pos="vmif3p0">permitirán</token><token pos="vmn0000">conectar</token><mention concept_ref="c_14"><token pos="np00000">Lleida</token></mention><mention concept_ref="c_6"><token pos="sps00">con</token><token pos="np00000">Madrid</token></mention><mention concept_ref="c_7"><token pos="sps00">a</token><token pos="ncmp000">finales</token><token pos="sps00">de</token><token pos="ncms000">año</token><token pos="sps00">en</token><token pos="rg">poco</token><token pos="rg">más</token><token pos="sps00">de</token><token pos="dn0cp0">dos</token><token pos="ncfp000">horas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Attaching" head="conectar">
+				<argument type="Items" dependent="avanzó" />
+				<argument type="Item" dependent="con Madrid" />
+				<argument type="Time" dependent="a finales de año en poco más de dos horas" /></main_frame>
+			<frame type="Calendric_unit" head="año" />
+			<frame type="Calendric_unit" head="horas">
+				<argument type="Count" dependent="dos" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Unit" dependent="horas" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="año" />
+				<argument type="Ground" dependent="en poco más de dos horas" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="conectar Lleida con Madrid" />
+				<argument type="Ground" dependent="finales de año" /></frame>
+			<main_frame type="Preventing_or_letting" head="permitirán">
+				<argument type="Agent" dependent="Los dos convoyes" />
+				<argument type="Event" dependent="conectar Lleida con Madrid a finales de año en poco más de dos horas" /></main_frame>
+			<frame type="Process_end" head="finales" />
+			<frame type="Progression" head="avanzó">
+				<argument type="Entity" dependent="este diario" /></frame>
+			<frame type="Proportional_quantity" head="avanzó">
+				<argument type="Degree" dependent="en" />
+				<argument type="Reference_quantity" dependent="dos horas" /></frame>
+			<frame type="Text" head="diario" />
+		</semantic_roles>
+	</sentence>
+	
+</text>

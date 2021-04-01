@@ -1,0 +1,6 @@
+{   ('Buildings', 'casa'): [],
+    ('Change_position_on_a_scale', 'inflamable'): [('Time', 'A esa hora'), ('Item', 'de camping gas y cuatro botellas de líquido inflamable'), ('Correlated_variable', 'en la puerta de su casa')],
+    ('Connecting_architecture', 'puerta'): [('Whole', 'su casa')],
+    ('Locative_relation', 'en'): [('Figure', 'una bombona de camping gas y cuatro botellas de líquido inflamable'), ('Ground', 'la puerta de su casa')],
+    ('Substance', 'gas'): [],
+    ('Substance', 'líquido'): []}

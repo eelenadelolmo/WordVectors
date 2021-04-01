@@ -1,0 +1,6 @@
+{   ('Dispersal', 'repartidos'): [],
+    ('Gizmo', 'dispositivo'): [],
+    ('Interior_profile_relation', 'en'): [('Ground', 'agentes')],
+    ('Law_enforcement_agency', 'agentes'): [],
+    ('Leadership', 'agentes'): [('Descriptor', '1.750')],
+    ('Locale_by_use', 'repartidos'): []}

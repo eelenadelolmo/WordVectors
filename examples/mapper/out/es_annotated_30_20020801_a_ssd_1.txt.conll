@@ -1,0 +1,12 @@
+{   ('Age', 'nuevo'): [('Entity', 'puente')],
+    ('Cardinal_numbers', 'millones'): [('Multiplier', '24,1'), ('Unit', 'euros')],
+    ('Intentionally_create', 'creación'): [('Created_entity', 'de un parque urbano')],
+    ('Locale_by_use', 'parque'): [('Use', 'urbano')],
+    ('Locative_relation', 'al'): [('Figure', 'un parque urbano'), ('Ground', 'al final de la avenida de Prat de la Riba y la urbanización de todo el entorno de la estación')],
+    ('Make_agreement_on_action', 'convenio'): [],
+    ('Process_end', 'final de'): [('Process', 'Riba y la urbanización de todo el entorno de la estación')],
+    ('Proportional_quantity', 'sobre'): [('Q_prop', 'un nuevo puente'), ('Individuals', 'el río')],
+    ('Ranked_expectation', 'de todo'): [('Entity', 'entorno de la estación')],
+    ('Roadways', 'avenida'): [('Goal', 'Riba y la urbanización de todo el entorno de la estación')],
+    ('Roadways', 'puente'): [('Characteristic', 'nuevo'), ('Characteristic', 'sobre el río')],
+    ('Roadways', 'vías'): []}

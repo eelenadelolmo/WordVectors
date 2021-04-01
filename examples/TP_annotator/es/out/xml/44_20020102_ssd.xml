@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="44_20020102_ssd">
+
+
+	<concepts>
+		<concept id="c_0">La condición de astro absoluto de la mayoría de los argentinos</concept>
+		<concept id="c_1">Maradona</concept>
+		<concept id="c_2">El ex futbolista</concept>
+		<concept id="c_3">sin complejos en la política</concept>
+		<concept id="c_4">y</concept>
+		<concept id="c_5">cómo llamarlo</concept>
+		<concept id="c_6">como</concept>
+		<concept id="c_7">Esto</concept>
+		<concept id="c_8">la política</concept>
+		<concept id="c_9">su país</concept>
+		<concept id="c_10">un quot</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 La condición de astro absoluto de la mayoría de los argentinos le permite a Diego Maradona meterse sin complejos en la política y asegurar que su país está inmerso en un "salvajismo político increíble", y que los dirigentes "siguen teniendo la misma soberbia de antes".
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="ncfs000">condición</token><token pos="sps00">de</token><token pos="ncms000">astro</token><token pos="aq0ms0">absoluto</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">mayoría</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">argentinos</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_3" concept_ref3="c_4" concept_ref4="c_8" concept_ref5="c_9" concept_ref6="c_10">
+			<token pos="vmn0000">meterse</token><mention concept_ref="c_3"><token pos="sps00">sin</token><token pos="ncmp000">complejos</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">política</token></mention><token pos="vmn0000">asegurar</token><token pos="cs">que</token><mention concept_ref="c_9"><token pos="dp3cs0">su</token><token pos="ncms000">país</token></mention><token pos="vmip3s0">está</token><token pos="aq0ms0">inmerso</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="fe">quot;</token><token pos="ncms000">salvajismo</token><token pos="aq0ms0">político</token><token pos="aq0cs0">increíble</token><token pos="fe">quot;</token><token pos="fc">,</token><mention concept_ref="c_4"><token pos="cc">y</token></mention><token pos="cs">que</token><mention concept_ref="c_0"><token pos="da0mp0">los</token><token pos="nccp000">dirigentes</token></mention><token pos="fe">quot;</token><token pos="vmip3p0">siguen</token><token pos="vmg0000">teniendo</token><token pos="da0fs0">la</token><token pos="di0fs0">misma</token><token pos="ncfs000">soberbia</token><token pos="sps00">de</token><token pos="rg">antes</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desirability" head="increíble">
+				<argument type="Evaluee" dependent="política" /></frame>
+			<main_frame type="Getting" head="teniendo">
+				<argument type="Recipient" dependent="Maradona meterse" />
+				<argument type="Theme" dependent="sin complejos en la política" /></main_frame>
+			<frame type="Identicality" head="la misma">
+				<argument type="Type" dependent="soberbia de" /></frame>
+			<frame type="Leadership" head="dirigentes" />
+			<frame type="Locale_by_use" head="complejos" />
+			<frame type="Political_locales" head="país" />
+			<frame type="Preventing_or_letting" head="permite">
+				<argument type="Agent" dependent="condición de astro absoluto de la mayoría de los argentinos" />
+				<argument type="Event" dependent="Maradona meterse sin complejos en la política" /></frame>
+			<main_frame type="Process_continue" head="siguen">
+				<argument type="Event" dependent="los dirigentes" />
+				<argument type="Event" dependent="teniendo la misma soberbia de antes " /></main_frame>
+			<frame type="State_of_entity" head="condición">
+				<argument type="Entity" dependent="de astro absoluto de la mayoría de los argentinos" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Event" dependent="dirigentes  quot ; siguen teniendo la misma soberbia de" />
+				<argument type="Landmark_event" dependent="le" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Maradona criticó agriamente a Fernando de la Rúa y Adolfo Rodríguez Saá: "Esto yo no sé cómo llamarlo, ya no me sorprende nada. ¿Cómo se puede renunciar así a algo tan preciado como la presidencia de un país?".
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np00000">Maradona</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_3" concept_ref4="c_4" concept_ref5="c_5" concept_ref6="c_6" concept_ref7="c_7" concept_ref8="c_9" concept_ref9="c_10">
+			<token pos="vmis3s0">criticó</token><token pos="sps00">a</token><mention concept_ref="c_0"><token pos="np00000">Fernando</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Rúa</token></mention><mention concept_ref="c_4"><token pos="cc">y</token></mention><token pos="ncfs000">Adolfo</token><token pos="ncms000">Rodríguez</token><token pos="np00000">Saá</token><token pos="fd">:</token><token pos="fe">quot;</token><mention concept_ref="c_7"><token pos="pd0ns000">Esto</token></mention><token pos="pp1csn00">yo</token><token pos="rn">no</token><token pos="vmip1s0">sé</token><mention concept_ref="c_5"><token pos="pt000000">cómo</token><token pos="vmn0000">llamarlo</token></mention><token pos="fc">,</token><token pos="rg">ya</token><token pos="rn">no</token><token pos="pp1cs000">me</token><token pos="vmip3s0">sorprende</token><mention concept_ref="c_1"><token pos="pi0cs000">nada</token></mention><token pos="fp">.</token><token pos="fia">¿</token><token pos="pt000000">Cómo</token><token pos="p0000000">se</token><token pos="vmip3s0">puede</token><token pos="vmn0000">renunciar</token><token pos="rg">así</token><token pos="sps00">a</token><mention concept_ref="c_3"><token pos="pi0cs000">algo</token><token pos="rg">tan</token><token pos="aq0msp">preciado</token><token pos="cs">como</token><token pos="da0fs0">la</token><token pos="ncfs000">presidencia</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">país</token></mention><token pos="fit">?</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Awareness" head="sé">
+				<argument type="Cognizer" dependent="y" />
+				<argument type="Content" dependent="cómo llamarlo" /></main_frame>
+			<main_frame type="Capability" head="puede">
+				<argument type="Entity" dependent="como" />
+				<argument type="Event" dependent="algo tan preciado como la presidencia de un país" /></main_frame>
+			<frame type="Direction" head="se">
+				<argument type="Distance" dependent="se" />
+				<argument type="Independent_variable" dependent="algo tan preciado" /></frame>
+			<frame type="Giving" head="se">
+				<argument type="Donor" dependent="yo" />
+				<argument type="Theme" dependent="algo tan preciado como la presidencia de un país" /></frame>
+			<main_frame type="Judgment_communication" head="criticó">
+				<argument type="Communicator" dependent="Maradona" />
+				<argument type="Evaluee" dependent="agriamente a Fernando de la Rúa y Adolfo" /></main_frame>
+			<main_frame type="Just_found_out" head="sorprende">
+				<argument type="Experiencer" dependent="y" /></main_frame>
+			<frame type="Political_locales" head="país" />
+			<main_frame type="Referring_by_name" head="llamarlo">
+				<argument type="Name" dependent="Esto" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Para Maradona, Argentina está "fuera de control", y los políticos, "primero prometen y después van al Congreso y pelean por estar calculando qué más pueden robar".
+		</str>
+		<theme>
+			<token pos="np00000">Argentina</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_in_control" head="control">
+				<argument type="Controlling_entity" dependent="Argentina" /></frame>
+			<frame type="Capability" head="pueden">
+				<argument type="Entity" dependent="los" />
+				<argument type="Event" dependent="robar" /></frame>
+			<frame type="Commitment" head="prometen">
+				<argument type="Manner" dependent="primero" /></frame>
+			<frame type="Hostile_encounter" head="pelean">
+				<argument type="Issue" dependent="por estar calculando qué más pueden robar" /></frame>
+			<frame type="Motion" head="estar">
+				<argument type="Goal" dependent="van al Congreso" /></frame>
+			<frame type="Ordinal_numbers" head="primero">
+				<argument type="Type" dependent="prometen" /></frame>
+			<frame type="People_by_vocation" head="políticos" />
+			<frame type="Theft" head="robar">
+				<argument type="Goods" dependent="qué más" />
+				<argument type="Perpetrator" dependent="los" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El ex futbolista lamentó las 28 muertes que dejaron las protestas del 20 de diciembre, se manifestó en contra de la violencia de los últimos días y pidió a los argentinos que "no se confundan y eviten desmanes como el del pasado sábado, cuando una turba entró al Parlamento y realizó destrozos", dijo.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="aq0cn0">ex</token><token pos="nccs000">futbolista</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">lamentó</token><token pos="da0fp0">las</token><token pos="z">28</token><token pos="ncfp000">muertes</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_start" head="entró">
+				<argument type="Time" dependent="cuando" />
+				<argument type="Agent" dependent="una turba" />
+				<argument type="Activity" dependent="Parlamento" /></frame>
+			<frame type="Avoiding" head="eviten">
+				<argument type="Agent" dependent="argentinos" />
+				<argument type="Undesirable_situation" dependent="destrozos" /></frame>
+			<frame type="Bringing" head="turba">
+				<argument type="Carrier" dependent="el" />
+				<argument type="Carrier" dependent="una turba" />
+				<argument type="Goal" dependent="destrozos" /></frame>
+			<frame type="Calendric_unit" head="días">
+				<argument type="Relative_time" dependent="últimos" /></frame>
+			<frame type="Death" head="muertes" />
+			<frame type="Departing" head="destrozos">
+				<argument type="Theme" dependent="28 muertes que" />
+				<argument type="Path" dependent="las protestas" />
+				<argument type="Time" dependent="20 de diciembre" /></frame>
+			<frame type="Destroying" head="destrozos" />
+			<frame type="Experiencer_obj" head="confundan">
+				<argument type="Stimulus" dependent="argentinos" />
+				<argument type="Stimulus" dependent="destrozos" />
+				<argument type="Time" dependent="como el del pasado sábado ," /></frame>
+			<frame type="Protest" head="protestas" />
+			<frame type="Questioning" head="pidió">
+				<argument type="Message" dependent="futbolista lamentó las 28 muertes que dejaron las protestas del 20 de diciembre ," />
+				<argument type="Message" dependent="argentinos que  quot ; no se confundan y eviten desmanes como el del pasado sábado ," /></frame>
+			<frame type="Relative_time" head="últimos">
+				<argument type="Focal_occasion" dependent="días" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_1" dependent="destrozos" />
+				<argument type="Entity_2" dependent="pasado sábado , cuando una turba entró al Parlamento y realizó destrozos  quot ; , dijo" /></frame>
+			<frame type="Sleep" head="entró">
+				<argument type="Degree" dependent="cuando" />
+				<argument type="Sleeper" dependent="una turba" />
+				<argument type="Sleeper" dependent="destrozos" /></frame>
+			<frame type="Statement" head="dijo">
+				<argument type="Message" dependent="últimos días y pidió a los argentinos que  quot ; no se confundan y eviten desmanes como el del pasado sábado ," />
+				<argument type="Time" dependent="cuando una turba entró al Parlamento y realizó destrozos" />
+				<argument type="Speaker" dependent="el" /></frame>
+			<frame type="Taking_sides" head="contra de">
+				<argument type="Action" dependent="violencia de los últimos días" /></frame>
+			<frame type="Time_vector" head="pasado">
+				<argument type="Event" dependent="futbolista" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

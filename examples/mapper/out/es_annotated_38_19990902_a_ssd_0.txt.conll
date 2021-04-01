@@ -1,0 +1,8 @@
+{   ('Amounting_to', 'total'): [('Attribute', 'de 36 minutos y 50 segundos')],
+    ('Calendric_unit', 'mes de'): [('Relative_time', 'de julio')],
+    ('Calendric_unit', 'minutos'): [('Count', '15')],
+    ('Concessive', 'durante'): [('Main_assertion', 'de julio durante un total de 36 minutos y 50 segundos'), ('Main_assertion', 'Maragall fue de 15 minutos y 20 segundos')],
+    ('Give_impression', 'apareció'): [('Phenomenon', 'Jordi Pujol'), ('Characterization', 'en los informativos')],
+    ('Measure_duration', 'segundos'): [('Count', '20')],
+    ('Spatial_contact', 'en'): [('Figure', 'tiempo'), ('Ground', 'Maragall')],
+    ('Used_up', 'fue'): [('Resource', 'Maragall')]}

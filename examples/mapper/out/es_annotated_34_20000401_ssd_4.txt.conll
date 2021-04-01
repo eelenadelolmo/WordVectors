@@ -1,0 +1,6 @@
+{   ('Becoming_aware', 'encontrar'): [('Phenomenon', 'la persona')],
+    ('Capability', 'podido'): [('Event', 'encontrar a la persona')],
+    ('Certainty', 'que cree'): [('Cognizer', 'persona , que'), ('Content', 'que es su nieta')],
+    ('Locative_relation', 'a la'): [('Figure', 'el poeta argentino'), ('Ground', 'fin & quot ; ha podido encontrar a la persona , que cree con toda seguridad que es su nieta')],
+    ('People', 'persona'): [],
+    ('Statement', 'quot'): [('Speaker', 'Batlle'), ('Message', 'aseguró que el poeta argentino por fin & quot ; ha podido encontrar a la persona , que cree con toda seguridad que es su nieta')]}

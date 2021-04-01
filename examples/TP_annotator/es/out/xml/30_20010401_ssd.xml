@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="30_20010401_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Bosnia y Croacia</concept>
+		<concept id="c_1">el arresto del expresidente yugoslavo</concept>
+		<concept id="c_2">Macedonia</concept>
+		<concept id="c_3">El primer ministro macedonio , Ljubco Georgievski ,</concept>
+		<concept id="c_4">Milosevic</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Bosnia y Croacia no sólo saludaron ayer la detención de Slobodan Milosevic, sino que reclamaron su entrega al Tribunal Penal Internacional para la antigua Yugoslavia ( TPI ), que lo acusa de crímenes de guerra.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Bosnia</token><token pos="cc">y</token><token pos="np00000">Croacia</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_4">
+			<token pos="vmis3p0">saludaron</token><mention concept_ref="c_2"><token pos="da0fs0">la</token><token pos="ncfs000">detención</token></mention><token pos="sps00">de</token><mention concept_ref="c_4"><token pos="np0000l">Slobodan</token><token pos="np0000l">Milosevic</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arrest" head="detención">
+				<argument type="Time" dependent="ayer la" />
+				<argument type="Suspect" dependent="de Slobodan Milosevic" /></frame>
+			<frame type="Committing_crime" head="crímenes">
+				<argument type="Purpose" dependent="guerra" /></frame>
+			<frame type="Hostile_encounter" head="guerra" />
+			<frame type="Referring_by_name" head="sino" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los dirigentes albaneses de Kosovo consideraron que el arresto del expresidente yugoslavo es "un primer paso" hacia la democratización de Serbia, que quedará en nada si las autoridades de Belgrado no transfieren a Milosevic al tribunal internacional de La Haya.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">el</token><token pos="ncms000">arresto</token><token pos="spcms">del</token><token pos="ncms000">expresidente</token><token pos="aq0ms0">yugoslavo</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_0" concept_ref3="c_2">
+			<token pos="vsip3s0">es</token><token pos="fe">quot;</token><mention concept_ref="c_3"><token pos="di0ms0">un</token><token pos="ao0ms0">primer</token><token pos="ncms000">paso</token></mention><token pos="fe">quot;</token><token pos="sps00">hacia</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="ncfs000">democratización</token></mention><token pos="sps00">de</token><mention concept_ref="c_2"><token pos="np00000">Serbia</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Los dirigentes albaneses de Kosovo " />
+			<main_frame type="Appellations" head="expresidente" />
+			<main_frame type="Arrest" head="arresto">
+				<argument type="Authorities" dependent="dirigentes albaneses de Kosovo" />
+				<argument type="Suspect" dependent="del expresidente yugoslavo" />
+				<argument type="Charges" dependent="un primer paso  quot ; hacia la democratización de Serbia" /></main_frame>
+			<frame type="Categorization" head="consideraron">
+				<argument type="Cognizer" dependent="dirigentes albaneses de Kosovo" />
+				<argument type="Item" dependent="arresto del expresidente yugoslavo es  quot ; un primer paso  quot ; hacia la democratización de Serbia ," /></frame>
+			<frame type="Intentionally_act" head="paso">
+				<argument type="Manner" dependent="primer" />
+				<argument type="Act" dependent="paso  quot ; hacia la democratización de Serbia" /></frame>
+			<main_frame type="Leadership" head="dirigentes">
+				<argument type="Descriptor" dependent="Kosovo" />
+				<argument type="Governed" dependent="albaneses" /></main_frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="la democratización de Serbia" />
+				<argument type="Figure" dependent="que el" />
+				<argument type="Ground" dependent="si las autoridades de Belgrado no transfieren a Milosevic al tribunal internacional" /></frame>
+			<frame type="Ordinal_numbers" head="primer">
+				<argument type="Type" dependent="paso" /></frame>
+			<frame type="Political_locales" head="internacional" />
+			<main_frame type="State_continue" head="arresto" />
+			<frame type="Transfer" head="transfieren">
+				<argument type="Donor" dependent="las autoridades de" />
+				<argument type="Recipient" dependent="a Milosevic al tribunal internacional" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Macedonia fue la voz crítica.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="np00000">Macedonia</token>
+		</theme>
+		<rheme>
+			<token pos="vsis3s0">fue</token><token pos="da0fs0">la</token><token pos="ncfs000">voz</token><token pos="aq0fs0">crítica</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Importance" head="crítica">
+				<argument type="Factor" dependent="voz" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El primer ministro macedonio, Ljubco Georgievski, reprobó a EEUU por condicionar su ayuda a Serbia al arresto y la extradición del ex mandatario.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">El</token><token pos="ao0ms0">primer</token><token pos="ncms000">ministro</token><token pos="aq0ms0">macedonio</token><token pos="fc">,</token><token pos="np0000l">Ljubco</token><token pos="np0000l">Georgievski</token><token pos="fc">,</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">reprobó</token><token pos="sps00">a</token><token pos="np00000">EEUU</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="ministro" />
+			<frame type="Arrest" head="arresto">
+				<argument type="Suspect" dependent="primer ministro" /></frame>
+			<frame type="Assistance" head="ayuda">
+				<argument type="Helper" dependent="su" />
+				<argument type="Goal" dependent="a Serbia al" /></frame>
+			<frame type="Extradition" head="extradición">
+				<argument type="Suspect" dependent="primer ministro" /></frame>
+			<frame type="Spatial_contact" head="por">
+				<argument type="Figure" dependent="primer ministro macedonio , Ljubco Georgievski , reprobó a EEUU por condicionar su ayuda a Serbia" />
+				<argument type="Ground" dependent="arresto y la extradición del ex mandatario" /></frame>
+			<frame type="State_of_entity" head="condicionar">
+				<argument type="Entity" dependent="su ayuda a" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Por supuesto, Milosevic debe recibir el castigo que se pueda merecer", añadió.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="np00000">Milosevic</token>
+		</theme>
+		<rheme concept_ref1="c_2">
+			<token pos="sps00">Por</token><token pos="ncmp000">supuesto</token><token pos="vmip3s0">debe</token><token pos="vmn0000">recibir</token><mention concept_ref="c_2"><token pos="da0ms0">el</token><token pos="ncms000">castigo</token></mention><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Deserving" head="merecer">
+				<argument type="State_of_affairs" dependent="el" />
+				<argument type="Action" dependent="," /></frame>
+			<main_frame type="Receiving" head="recibir">
+				<argument type="Recipient" dependent="Milosevic" />
+				<argument type="Theme" dependent="el castigo que se pueda merecer  quot ; , añadió" /></main_frame>
+			<main_frame type="Required_event" head="debe">
+				<argument type="Required_situation" dependent="Milosevic" />
+				<argument type="Required_situation" dependent="recibir el castigo que se pueda merecer  quot ; , añadió" /></main_frame>
+			<frame type="Statement" head="añadió">
+				<argument type="Speaker" dependent="el" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

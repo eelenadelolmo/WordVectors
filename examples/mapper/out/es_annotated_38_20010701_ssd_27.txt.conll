@@ -1,0 +1,4 @@
+{   ('Experiencer_focus', 'amor'): [('Experiencer', 'ponemos'), ('Content', 'a la música')],
+    ('Opinion', 'Creo'): [('Cognizer', 'la'), ('Opinion', 'notan que ponemos amor a la música')],
+    ('Performing_arts', 'música'): [],
+    ('Placing', 'ponemos'): [('Agent', 'ponemos'), ('Goal', 'amor a la música')]}

@@ -1,0 +1,8 @@
+{   ('Being_in_control', 'control'): [('Controlling_entity', 'Argentina')],
+    ('Capability', 'pueden'): [('Entity', 'los'), ('Event', 'robar')],
+    ('Commitment', 'prometen'): [('Manner', 'primero')],
+    ('Hostile_encounter', 'pelean'): [('Issue', 'por estar calculando qué más pueden robar')],
+    ('Motion', 'estar'): [('Goal', 'van al Congreso')],
+    ('Ordinal_numbers', 'primero'): [('Type', 'prometen')],
+    ('People_by_vocation', 'políticos'): [],
+    ('Theft', 'robar'): [('Goods', 'qué más'), ('Perpetrator', 'los')]}

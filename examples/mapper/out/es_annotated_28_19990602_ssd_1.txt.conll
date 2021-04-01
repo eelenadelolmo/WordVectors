@@ -1,0 +1,13 @@
+{   ('Arriving', 'alcanzaron'): [('Theme', 'frontera de'), ('Goal', 'territorio albanés')],
+    ('Boundary', 'frontera'): [('Entities', 'de')],
+    ('Communication_response', 'reconoció'): [   ('Speaker', 'de'),
+                                                 (   'Trigger',
+                                                     'varios de los proyectiles lanzados contra las fuerzas serbias en la frontera de Kosovo con Albania alcanzaron territorio albanés y destruyeron '
+                                                     'un búnker en este país')],
+    ('Destroying', 'destruyeron'): [('Patient', 'un búnker en este país')],
+    ('Military', 'fuerzas'): [('Possessor', 'serbias')],
+    ('Political_locales', 'país'): [],
+    ('Political_locales', 'territorio'): [('Container_possessor', 'albanés')],
+    ('Quantified_mass', 'varios'): [('Individuals', 'de los proyectiles')],
+    ('Shoot_projectiles', 'lanzados'): [('Projectile', 'varios de los proyectiles'), ('Goal', 'contra las fuerzas serbias en la frontera de Kosovo con Albania alcanzaron territorio albanés')],
+    ('Spatial_contact', 'en'): [('Figure', 'fuerzas serbias'), ('Ground', 'frontera de')]}

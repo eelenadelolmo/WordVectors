@@ -1,0 +1,7 @@
+{   ('Arrest', 'arresto'): [('Suspect', 'al juez emitir'), ('Suspect', 'arresto')],
+    ('Awareness', 'Sabemos'): [('Cognizer', 'Sabemos'), ('Content', 'ha propuesto enmiendas que sólo permiten al juez emitir órdenes de arresto')],
+    ('Documents', 'arresto'): [],
+    ('People_by_vocation', 'juez'): [],
+    ('Point_of_dispute', 'de'): [('Descriptor', 'de arresto')],
+    ('Preventing_or_letting', 'permiten'): [('Event', 'al juez emitir órdenes de arresto')],
+    ('Statement', 'propuesto'): [('Speaker', 'ha'), ('Message', 'enmiendas que sólo permiten al juez emitir órdenes de arresto')]}

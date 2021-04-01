@@ -1,0 +1,5 @@
+{   ('Capability', 'capacidad'): [('Entity', 'nuestra'), ('Event', 'influir en sectores sociales y nuestra consolidación electoral')],
+    ('Change_position_on_a_scale', 'alza del'): [],
+    ('Change_position_on_a_scale', 'crecer'): [('Attribute', 'nuestra capacidad para influir en sectores sociales y nuestra consolidación electoral')],
+    ('Fields', 'sectores'): [('Activity', 'sociales')],
+    ('Objective_influence', 'influencia'): []}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="35_20000202_b_ssd">
+
+
+	<concepts>
+		<concept id="c_0">La fiscalía de Fráncfort</concept>
+		<concept id="c_1">Cohn-Bendit , conocido como Dani el Rojo durante la revuelta estudiantil de mayo del 68 ,</concept>
+		<concept id="c_2">a huir y de apoyar económicamente a Hans-Joachim Klein</concept>
+		<concept id="c_3">presunto</concept>
+		<concept id="c_4">esta petición</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Alemania pide que se levante la inmunidad a Cohn-Bendit.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Alemania " />
+			<frame type="Cause_to_end" head="levante" />
+			<frame type="Referring_by_name" head="pide">
+				<argument type="Speaker" dependent="Alemania" />
+				<argument type="Name" dependent="la inmunidad a Cohn-Bendit" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La fiscalía de Fráncfort hizo ayer esta petición para poder juzgar al eurodiputado ecologista.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="ncfs000">fiscalía</token><token pos="sps00">de</token><token pos="np00000">Fráncfort</token>
+		</theme>
+		<rheme concept_ref1="c_4">
+			<token pos="vmis3s0">hizo</token><mention concept_ref="c_4"><token pos="dd0fs0">esta</token><token pos="ncfs000">petición</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Building_subparts" head="fiscalía">
+				<argument type="Descriptor" dependent="fiscalía de Fráncfort" /></frame>
+			<frame type="Capability" head="poder">
+				<argument type="Event" dependent="para poder juzgar al eurodiputado ecologista" /></frame>
+			<frame type="People_by_vocation" head="juzgar">
+				<argument type="Person" dependent="juzgar al eurodiputado ecologista" /></frame>
+			<frame type="Request" head="petición">
+				<argument type="Message" dependent="para poder juzgar al eurodiputado ecologista" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Cohn-Bendit, conocido como Dani el Rojo durante la revuelta estudiantil de mayo del 68, es sospechoso de haber ayudado a huir y de apoyar económicamente a Hans-Joachim Klein, un presunto cómplice del terrorista Carlos, según indicó un portavoz de la fiscalía.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np00000">Cohn-Bendit</token><token pos="fc">,</token><token pos="aq0msp">conocido</token><token pos="cs">como</token><token pos="np0000l">Dani</token><token pos="di0fs0">el</token><token pos="ncfs000">Rojo</token><token pos="sps00">durante</token><token pos="da0fs0">la</token><token pos="ncfs000">revuelta</token><token pos="aq0cs0">estudiantil</token><token pos="sps00">de</token><token pos="ncfs000">mayo</token><token pos="spcms">del</token><token pos="zp">68</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_2" concept_ref3="c_3" concept_ref4="c_4">
+			<token pos="vsip3s0">es</token><token pos="aq0ms0">sospechoso</token><token pos="sps00">de</token><token pos="van0000">haber</token><token pos="vmp00sm">ayudado</token><mention concept_ref="c_2"><token pos="sps00">a</token><token pos="vmn0000">huir</token><token pos="cc">y</token><token pos="sps00">de</token><token pos="vmn0000">apoyar</token><token pos="rg">económicamente</token><token pos="sps00">a</token><token pos="np0000l">Hans-Joachim</token><token pos="np0000l">Klein</token></mention><token pos="fc">,</token><mention concept_ref="c_4"><token pos="di0ms0">un</token><token pos="aq0ms0">presunto</token><token pos="nccs000">cómplice</token></mention><token pos="spcms">del</token><token pos="nccs000">terrorista</token><token pos="np00000">Carlos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="un portavoz de la fiscalía " />
+			<main_frame type="Assistance" head="ayudado">
+				<argument type="Goal" dependent="a huir y de apoyar económicamente a Hans-Joachim Klein" /></main_frame>
+			<frame type="Awareness" head="conocido">
+				<argument type="Content" dependent="Cohn-Bendit" /></frame>
+			<frame type="Be_in_agreement_on_action" head="según">
+				<argument type="Party_2" dependent="huir y de apoyar económicamente a Hans-Joachim Klein , un presunto cómplice del terrorista" />
+				<argument type="Obligation" dependent="según indicó un portavoz de la fiscalía" /></frame>
+			<frame type="Change_of_leadership" head="revuelta">
+				<argument type="Body" dependent="estudiantil" /></frame>
+			<main_frame type="Education_teaching" head="estudiantil" />
+			<main_frame type="Fleeing" head="huir">
+				<argument type="Goal" dependent="de apoyar económicamente a Hans-Joachim Klein" /></main_frame>
+			<main_frame type="Representative" head="de haber">
+				<argument type="Represented" dependent="fiscalía" /></main_frame>
+			<frame type="Suspicion" head="sospechoso" />
+			<frame type="Terrorism" head="terrorista" />
+			<main_frame type="Unattributed_information" head="presunto">
+				<argument type="Reported_fact" dependent="presunto" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

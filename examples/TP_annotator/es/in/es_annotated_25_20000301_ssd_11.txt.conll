@@ -1,0 +1,8 @@
+{   ('Coming_up_with', 'diseños'): [('Cognizer', 'interiorismo')],
+    ('Locative_relation', 'sea en alguno'): [('Ground', 'Existen muchas obras')],
+    ('Part_inner_outer', 'interiorismo'): [],
+    ('Part_piece', 'piezas'): [('Substance', 'diseños')],
+    ('Purpose', 'objetos de'): [('Goal', 'uso cotidiano que')],
+    ('Quantified_mass', 'muchas'): [('Individuals', 'obras')],
+    ('Using', 'uso'): [('Purpose', 'cotidiano')],
+    ('Work', 'obras'): [('Manner', 'de')]}

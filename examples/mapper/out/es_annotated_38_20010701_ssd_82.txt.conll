@@ -1,0 +1,4 @@
+{   ('Artifact', 'telefoneé'): [('Creator', 'y'), ('Material', 'lo')],
+    ('Noise_makers', 'guitarra'): [('Type', 'Harrison')],
+    ('Opinion', 'Pensé'): [('Cognizer', 'y'), ('Opinion', 'guitarra de Harrison')],
+    ('Text', 'canción'): []}

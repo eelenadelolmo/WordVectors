@@ -1,0 +1,4 @@
+{   ('Roadways', 'camino'): [('Name', 'de la unión Barcelona Roma')],
+    ('Sign_agreement', 'la firma'): [('Agreement', 'de Augsburgo')],
+    ('Spatial_contact', 'en'): [('Figure', 'una piedra miliar'), ('Ground', 'el camino de la unión Barcelona Roma')],
+    ('Telling', 'asegura'): [('Speaker', 'Juan Pablo'), ('Message', 'que la firma de Augsburgo es & quot ; una piedra miliar & quot ; en el camino de la unión Barcelona Roma')]}

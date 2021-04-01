@@ -1,0 +1,6 @@
+{   ('Discussion', 'negociar'): [('Interlocutor_2', 'con los representantes de los trabajadores')],
+    ('Employing', 'trabajadores'): [],
+    ('Leadership', 'directora'): [('Governed', 'general de prisiones')],
+    ('Leadership', 'general'): [('Descriptor', 'directora'), ('Leader', 'prisiones')],
+    ('Motion', 'acudió a'): [('Source', 'acudió'), ('Goal', 'a Quatre Camins para negociar con los representantes de los trabajadores')],
+    ('Prison', 'prisiones'): []}

@@ -1,0 +1,4 @@
+{   ('Aggregate', 'partido'): [('Individuals', 'socialista')],
+    ('Change_of_leadership', 'elecciones'): [],
+    ('Importance', 'importante'): [('Degree', 'más'), ('Factor', 'trasvase')],
+    ('Transfer', 'trasvase'): []}

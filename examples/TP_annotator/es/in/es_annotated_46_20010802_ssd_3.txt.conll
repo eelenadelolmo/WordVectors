@@ -1,0 +1,8 @@
+{   ('Age', 'nuevo'): [],
+    ('Being_questionable', 'dudoso'): [('Behavior', 'método de las empresas de carburantes')],
+    ('Businesses', 'empresas'): [('Product', 'carburantes')],
+    ('Change_position_on_a_scale', 'bajar'): [('Item', 'el precio')],
+    ('Defending', 'defienden'): [('Defender', 'las instituciones del Estado que'), ('Victim', 'consumidor')],
+    ('Institutions', 'instituciones'): [],
+    ('Leadership', 'Estado'): [],
+    ('Means', 'método'): [('Descriptor', 'dudoso'), ('Agent', 'empresas de carburantes')]}

@@ -1,0 +1,3 @@
+{   ('Calendric_unit', 'anoche'): [],
+    ('Referring_by_name', 'llamamos'): [('Name', 'que'), ('Speaker', 'usted'), ('Name', 'sociedad civil')],
+    ('Rewards_and_punishments', 'premió'): [('Agent', 'que'), ('Evaluee', 'usted')]}

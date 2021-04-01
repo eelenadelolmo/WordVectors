@@ -1,0 +1,7 @@
+{   ('Cardinal_numbers', 'millón'): [('Multiplier', 'nos'), ('Multiplier', 'medio'), ('Entity', 'catalanes de origen aragonés - - con impuestos')],
+    ('Communicate_categorization', 'pintada'): [('Category', 'misma solidaridad que tan a menudo se nos reclama y que tan abnegadamente satisfacemos los catalanes - - y')],
+    ('Frequency', 'a menudo'): [('Time_span', 'ese'), ('Event', 'nos reclama')],
+    ('Identicality', 'misma'): [('Current_instance', 'ni pintada para reclamar'), ('Type', 'ese'), ('Type', 'solidaridad')],
+    ('Origin', 'origen'): [('Origin', 'aragonés')],
+    ('Part_whole', 'medio'): [('Whole', 'millón de catalanes de origen aragonés - - con impuestos')],
+    ('Request', 'reclama'): [('Message', 'nos')]}

@@ -1,0 +1,5 @@
+{   ('Economy', 'económicas'): [],
+    ('Leadership', 'descartó'): [('Leader', 'Insulza'), ('Activity', 'que la ruptura de relaciones o las sanciones económicas sean el camino adecuado')],
+    ('Means', 'camino'): [],
+    ('Relation', 'de relaciones'): [('Entities', 'sanciones')],
+    ('Revenge', 'sanciones'): [('Offender', 'económicas')]}

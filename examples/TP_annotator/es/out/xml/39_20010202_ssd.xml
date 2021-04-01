@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="39_20010202_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Vasili Kolmogorov</concept>
+		<concept id="c_1">su oficina</concept>
+		<concept id="c_2">Gusinski , detenido en España ,</concept>
+		<concept id="c_3">Todos ellos</concept>
+		<concept id="c_4">todo esto</concept>
+		<concept id="c_5">Esto</concept>
+		<concept id="c_6">la pregunta</concept>
+		<concept id="c_7">Putin</concept>
+		<concept id="c_8">delito del que se le acusa : estafa a gran escala</concept>
+		<concept id="c_9">se le</concept>
+		<concept id="c_10">ha</concept>
+		<concept id="c_11">se</concept>
+		<concept id="c_12">la Fiscalía</concept>
+		<concept id="c_13">el delito</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Vasili Kolmogorov se irrita cuando se le menciona el nombre de NTV, la cadena de televisión propiedad del magnate Vladimir Gusinski.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np0000l">Vasili</token><token pos="np0000l">Kolmogorov</token>
+		</theme>
+		<rheme concept_ref1="c_11">
+			<mention concept_ref="c_11"><token pos="p0300000">se</token></mention><token pos="vmip3s0">irrita</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Possession" head="propiedad">
+				<argument type="Possession" dependent="de televisión" />
+				<argument type="Owner" dependent="de" /></frame>
+			<frame type="Statement" head="menciona">
+				<argument type="Medium" dependent="se le" />
+				<argument type="Topic" dependent="de NTV" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En su despacho, el vicefiscal general de Rusia reconoce en esta entrevista a EL PERIODICO que su oficina filtró deliberadamente información judicial sobre los profesionales de NTV como respuesta a las acusaciones que lanzaban los informadores desde la cadena de televisión contra la Fiscalía rusa.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="dp3cs0">su</token><token pos="ncfs000">oficina</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_3" concept_ref3="c_6" concept_ref4="c_11" concept_ref5="c_12">
+			<token pos="vmis3s0">filtró</token><mention concept_ref="c_1"><token pos="ncfs000">información</token></mention><token pos="aq0cs0">judicial</token><token pos="sps00">sobre</token><mention concept_ref="c_3"><token pos="da0mp0">los</token><token pos="nccp000">profesionales</token></mention><token pos="sps00">de</token><token pos="np00000">NTV</token><mention concept_ref="c_6"><token pos="ncfs000">respuesta</token></mention><token pos="sps00">a</token><token pos="da0fp0">las</token><token pos="ncfp000">acusaciones</token><token pos="sps00">contra</token><mention concept_ref="c_12"><token pos="da0fs0">la</token><token pos="np00000">Fiscalía</token></mention><token pos="aq0fs0">rusa</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el vicefiscal general de Rusia " />
+			<frame type="Building_subparts" head="oficina" />
+			<frame type="Information" head="información">
+				<argument type="Means_of_gathering" dependent="judicial" />
+				<argument type="Topic" dependent="deliberadamente información judicial sobre los profesionales de NTV como respuesta a las acusaciones que lanzaban los informadores desde la cadena de televisión contra la Fiscalía rusa" /></frame>
+			<frame type="Judgment_communication" head="acusaciones" />
+			<frame type="Network" head="las">
+				<argument type="Descriptor" dependent="televisión" /></frame>
+			<frame type="People_by_vocation" head="profesionales">
+				<argument type="Employer" dependent="NTV" /></frame>
+			<frame type="Response" head="respuesta">
+				<argument type="Trigger" dependent="a las acusaciones que lanzaban los informadores desde la cadena de televisión contra la Fiscalía rusa" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Para el número dos del poder judicial en Rusia, Gusinski, detenido en España, es un "estafador a gran escala" y debe ser extraditado.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="np00000">Gusinski</token><token pos="fc">,</token><token pos="aq0msp">detenido</token><token pos="sps00">en</token><token pos="np00000">España</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_6" concept_ref3="c_8" concept_ref4="c_12">
+			<token pos="vsip3s0">es</token><token pos="di0ms0">un</token><token pos="fe">quot;</token><mention concept_ref="c_6"><token pos="ncms000">estafador</token></mention><token pos="sps00">a</token><mention concept_ref="c_8"><token pos="aq0cs0">gran</token><token pos="ncfs000">escala</token></mention><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arrest" head="detenido">
+				<argument type="Suspect" dependent="el número dos del poder judicial en Rusia ," />
+				<argument type="Place" dependent="en" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="judicial" /></frame>
+			<frame type="Extradition" head="extraditado">
+				<argument type="Legal_basis" dependent="Para el número dos del poder judicial en Rusia , Gusinski , detenido en España , es un  quot ; estafador a gran escala" /></frame>
+			<frame type="Quantified_mass" head="número" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Puede concretarnos las pruebas contra Gusinski?.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Evidence" head="pruebas">
+				<argument type="Proposition" dependent="contra" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Disponemos de todo un abanico de pruebas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Operational_testing" head="de pruebas" />
+			<frame type="Range" head="de">
+				<argument type="Distance" dependent="de todo" />
+				<argument type="Distance" dependent="de pruebas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Se trata de documentos bancarios y fiscales.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Businesses" head="bancarios">
+				<argument type="Business_name" dependent="trata" /></frame>
+			<frame type="Documents" head="documentos">
+				<argument type="Obligation" dependent="fiscales" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Todos ellos demuestran la culpabilidad de Gusinski en el delito del que se le acusa: estafa a gran escala.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="di0mp0">Todos</token><token pos="pp3mp000">ellos</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_7" concept_ref3="c_8" concept_ref4="c_9" concept_ref5="c_11" concept_ref6="c_12" concept_ref7="c_13">
+			<token pos="vmip3p0">demuestran</token><mention concept_ref="c_12"><token pos="da0fs0">la</token><token pos="ncfs000">culpabilidad</token></mention><token pos="sps00">de</token><mention concept_ref="c_7"><token pos="np00000">Gusinski</token></mention><token pos="sps00">en</token><mention concept_ref="c_13"><token pos="da0ms0">el</token><token pos="ncms000">delito</token></mention><token pos="spcms">del</token><token pos="pr0cn000">que</token><mention concept_ref="c_11"><token pos="p0000000">se</token></mention><token pos="pp3csd00">le</token><token pos="vmip3s0">acusa</token><token pos="fd">:</token><token pos="ncfs000">estafa</token><token pos="sps00">a</token><token pos="aq0cs0">gran</token><mention concept_ref="c_6"><token pos="ncfs000">escala</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Committing_crime" head="delito del">
+				<argument type="Perpetrator" dependent="del que se le" /></frame>
+			<main_frame type="Evidence" head="demuestran">
+				<argument type="Support" dependent="Todos ellos" />
+				<argument type="Proposition" dependent="delito del que se le acusa : estafa a gran escala" /></main_frame>
+			<main_frame type="Judgment_communication" head="acusa">
+				<argument type="Evaluee" dependent="se le" />
+				<argument type="Reason" dependent="gran escala" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero también investigamos los tratos de Vladimir Gusisnki con la alcaldía de Moscú y con el Banco Central.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Building_subparts" head="el">
+				<argument type="Descriptor" dependent="alcaldía de Moscú" /></frame>
+			<frame type="Leadership" head="el">
+				<argument type="Governed" dependent="Moscú" />
+				<argument type="Leader" dependent="el Banco" /></frame>
+			<frame type="Scrutiny" head="investigamos">
+				<argument type="Cognizer" dependent="los" />
+				<argument type="Ground" dependent="los tratos de Vladimir Gusisnki con la alcaldía de Moscú y con el Banco Central" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ya tenemos un acusado.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Judgment_communication" head="acusado">
+				<argument type="Communicator" dependent="tenemos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Encabeza el departamento financiero de la alcaldía de Moscú.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Building_subparts" head="el departamento">
+				<argument type="Descriptor" dependent="alcaldía de Moscú" /></frame>
+			<frame type="Leadership" head="Encabeza">
+				<argument type="Leader" dependent="el" />
+				<argument type="Governed" dependent="el departamento financiero de la alcaldía de Moscú" /></frame>
+			<frame type="Leadership" head="el">
+				<argument type="Governed" dependent="Moscú" />
+				<argument type="Leader" dependent="el departamento" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Por qué no han hecho públicas las pruebas contra Gusinski?.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Evidence" head="pruebas">
+				<argument type="Proposition" dependent="contra" /></frame>
+			<frame type="Taking_sides" head="contra">
+				<argument type="Side" dependent="públicas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Por qué cree que debíamos publicarlas?.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desirable_event" head="debíamos">
+				<argument type="State_of_affairs" dependent="debíamos" />
+				<argument type="State_of_affairs" dependent="publicarlas" /></frame>
+			<frame type="Opinion" head="cree que">
+				<argument type="Cognizer" dependent="¿" />
+				<argument type="Opinion" dependent="debíamos publicarlas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿No cree que todo esto merma la credibilidad en la justicia rusa?.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="di0ms0">todo</token><token pos="pd0ns000">esto</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_12">
+			<token pos="vmip3s0">merma</token><token pos="da0fs0">la</token><token pos="ncfs000">credibilidad</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">justicia</token><token pos="aq0fs0">rusa</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Opinion" head="cree que">
+				<argument type="Cognizer" dependent="la" />
+				<argument type="Opinion" dependent="todo esto merma la credibilidad en la justicia rusa" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Esto es cierto.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="pd0ns000">Esto</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="aq0ms0">cierto</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero hay un capítulo en la Constitución que establece que en el periodo transitorio son vigentes las leyes anteriores.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Frequency" head="periodo">
+				<argument type="Event" dependent="las leyes anteriores" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="las leyes anteriores" />
+				<argument type="Ground" dependent="son" /></frame>
+			<frame type="Law" head="leyes">
+				<argument type="Descriptor" dependent="anteriores" /></frame>
+			<frame type="Leadership" head="vigentes" />
+			<frame type="Locative_relation" head="hay">
+				<argument type="Figure" dependent="un capítulo en la Constitución que establece que en el periodo transitorio son vigentes las leyes anteriores" /></frame>
+			<frame type="Military" head="son" />
+			<frame type="Part_ordered_segments" head="capítulo" />
+			<frame type="Performers_and_roles" head="son">
+				<argument type="Performance" dependent="capítulo en la Constitución que establece que en el periodo transitorio son vigentes las leyes anteriores" /></frame>
+			<frame type="Relative_time" head="anteriores">
+				<argument type="Focal_occasion" dependent="leyes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por eso, la pregunta hay que dirigirla a los legisladores.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0fs0">la</token><token pos="ncfs000">pregunta</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_3" concept_ref3="c_8" concept_ref4="c_10" concept_ref5="c_11" concept_ref6="c_13">
+			<token pos="sps00">Por</token><token pos="pd0ns000">eso</token><token pos="vaip3s0">hay</token><token pos="cs">que</token><mention concept_ref="c_8"><token pos="vmn0000">dirigirla</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="ncmp000">legisladores</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="legisladores" />
+			<frame type="Questioning" head="pregunta">
+				<argument type="Message" dependent="dirigirla a los legisladores" /></frame>
+			<main_frame type="Required_event" head="hay que">
+				<argument type="Required_situation" dependent="la pregunta" />
+				<argument type="Required_situation" dependent="dirigirla a los legisladores" /></main_frame>
+			<frame type="Statement" head="los">
+				<argument type="Message" dependent="la pregunta" />
+				<argument type="Message" dependent="a los legisladores" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sabemos que Putin ha propuesto enmiendas que sólo permiten al juez emitir órdenes de arresto.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="np00000">Putin</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_10">
+			<mention concept_ref="c_10"><token pos="vaip3s0">ha</token></mention><token pos="vmp00sm">propuesto</token><mention concept_ref="c_2"><token pos="ncfp000">enmiendas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arrest" head="arresto">
+				<argument type="Suspect" dependent="al juez emitir" />
+				<argument type="Suspect" dependent="arresto" /></frame>
+			<frame type="Awareness" head="Sabemos">
+				<argument type="Cognizer" dependent="Sabemos" />
+				<argument type="Content" dependent="ha propuesto enmiendas que sólo permiten al juez emitir órdenes de arresto" /></frame>
+			<frame type="Documents" head="arresto" />
+			<frame type="People_by_vocation" head="juez" />
+			<frame type="Point_of_dispute" head="de">
+				<argument type="Descriptor" dependent="de arresto" /></frame>
+			<frame type="Preventing_or_letting" head="permiten">
+				<argument type="Event" dependent="al juez emitir órdenes de arresto" /></frame>
+			<main_frame type="Statement" head="propuesto">
+				<argument type="Speaker" dependent="ha" />
+				<argument type="Message" dependent="enmiendas que sólo permiten al juez emitir órdenes de arresto" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Enmiendas que fueron retiradas bajo la presión de la fiscalía....
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attempt_suasion" head="presión" />
+			<frame type="Removing" head="retiradas">
+				<argument type="Theme" dependent="que" />
+				<argument type="Source" dependent="bajo la presión de la fiscalía" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - No sé por qué culpan a la fiscalía.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="sé">
+				<argument type="Cognizer" dependent="la" />
+				<argument type="Content" dependent="por qué culpan a la fiscalía" /></frame>
+			<frame type="Judgment" head="culpan">
+				<argument type="Cognizer" dependent="sé" />
+				<argument type="Evaluee" dependent="fiscalía" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Si nosotros hubiéramos tenido tanta fuerza como dicen, no existiría esta NTV.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Level_of_force_exertion" head="fuerza">
+				<argument type="Exerter" dependent="nosotros" />
+				<argument type="Degree" dependent="tanta" />
+				<argument type="Time" dependent="como dicen" /></frame>
+			<frame type="Locative_relation" head="esta">
+				<argument type="Ground" dependent="esta NTV" /></frame>
+			<frame type="Possession" head="tenido">
+				<argument type="Owner" dependent="nosotros" />
+				<argument type="Possession" dependent="tanta fuerza como dicen" /></frame>
+			<frame type="Proportional_quantity" head="tanta">
+				<argument type="Mass" dependent="fuerza" /></frame>
+			<frame type="Statement" head="dicen">
+				<argument type="Speaker" dependent="dicen" />
+				<argument type="Message" dependent="no existiría esta NTV" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

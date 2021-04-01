@@ -1,0 +1,5 @@
+{   ('Arriving', 'devolvieron'): [('Theme', 'editoriales de Madrid'), ('Goal', 'nos')],
+    ('Body_parts', 'cabeza'): [],
+    ('Ordinal_numbers', 'primeras'): [('Type', 'muestras')],
+    ('Sending', 'enviamos'): [('Theme', 'muestras'), ('Sender', 'nos'), ('Theme', 'diciendo que la historia no tenía ni pies ni cabeza , que era una provocación')],
+    ('Statement', 'diciendo'): [('Message', 'que la historia no tenía ni pies ni cabeza , que era una provocación')]}

@@ -1,0 +1,4 @@
+{   ('Businesses', 'empresas'): [],
+    ('Locative_relation', 'ahí'): [('Figure', 'los acuerdos entre las empresas')],
+    ('Make_agreement_on_action', 'los acuerdos'): [('Party_2', 'entre las empresas')],
+    ('Process_end', 'terminaron'): [('Process', 'los acuerdos entre las empresas'), ('Process', 'ahí')]}

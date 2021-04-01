@@ -1,0 +1,5 @@
+{   ('Businesses', 'empresa'): [],
+    ('Change_of_leadership', 'elecciones'): [('Selector', 'sindicales')],
+    ('Employing', 'trabajadores'): [],
+    ('Hostile_encounter', 'conflicto'): [],
+    ('Statement', 'propusieron'): [('Speaker', 'los trabajadores'), ('Message', 'realizar elecciones sindicales para tener un comité de empresa')]}

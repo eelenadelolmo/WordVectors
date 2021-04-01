@@ -1,0 +1,4 @@
+{   ('Businesses', 'Companys'): [],
+    ('Leadership', 'Gobierno'): [],
+    ('Opinion', 'opina'): [('Cognizer', 'la'), ('Cognizer', 'CiU')],
+    ('Questioning', 'pida'): [('Speaker', 'CiU'), ('Message', 'al Gobierno una reparación a la figura de Companys')]}

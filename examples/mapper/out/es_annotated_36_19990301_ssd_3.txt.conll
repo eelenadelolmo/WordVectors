@@ -1,0 +1,8 @@
+{   ('Aggregate', 'Comunitat'): [('Aggregate_property', 'Educativa')],
+    ('Arriving', 'por'): [('Theme', '. Hemos'), ('Goal', 'decir que la escuela pública no discrimina ni por el sexo , ni por la raza , ni por la situación económica & quot ; explicó Maria')],
+    ('Economy', 'económica'): [],
+    ('Locale_by_use', 'escuela'): [('Use', 'pública')],
+    ('Membership', 'miembro'): [('Group', 'de la Comunitat Educativa')],
+    ('Statement', 'decir'): [('Message', '. Hemos venido a decir que la escuela pública no discrimina ni por el sexo'), ('Message', 'Massip , miembro del Marc Unitari de la Comunitat Educativa')],
+    ('Statement', 'reivindicamos'): [('Speaker', '. Hemos'), ('Message', 'Hemos venido a decir que la escuela pública no discrimina ni por el sexo , ni por la raza')],
+    ('Type', 'raza'): []}

@@ -1,0 +1,5 @@
+{   ('Event', 'episodio'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'algo milita'), ('Ground', 'libertad')],
+    ('Leadership', 'príncipe'): [],
+    ('Spatial_contact', 'en'): [('Figure', 'un libro basado'), ('Ground', 'un episodio histórico que si en algo milita , es en la libertad')],
+    ('Text', 'libro'): []}

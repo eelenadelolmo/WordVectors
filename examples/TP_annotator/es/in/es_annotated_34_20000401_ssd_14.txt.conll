@@ -1,0 +1,6 @@
+{   ('Bringing', 'nació'): [('Agent', 'y'), ('Time', 'en Uruguay')],
+    ('Goal', 'por'): [('Landmark', 'el poeta')],
+    ('Kinship', 'padres'): [],
+    ('People', 'persona'): [],
+    ('Residence', 'vive'): [('Resident', 'y'), ('Location', 'en Uruguay')],
+    ('Seeking_to_achieve', 'busco'): [('Agent', 'y'), ('State_of_affairs', 'nació en Uruguay , vive en Uruguay')]}

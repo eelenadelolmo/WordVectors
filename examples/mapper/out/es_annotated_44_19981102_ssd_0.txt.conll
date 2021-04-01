@@ -1,0 +1,5 @@
+{   ('Attack', 'atentados'): [('Assailant', 'GRAPO')],
+    ('Bringing', 'dado'): [('Agent', 'GRAPO'), ('Goal', 'atentados')],
+    ('Process_continue', 'dejado'): [('Event', 'GRAPO'), ('Event', 'perpetrar atentados')],
+    ('Quantified_mass', 'numerosas'): [('Individuals', 'ocasiones')],
+    ('Time_vector', 'por'): [('Landmark_event', 'su aparición , el 1'), ('Event', 'perpetrar atentados')]}

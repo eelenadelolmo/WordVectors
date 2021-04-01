@@ -1,0 +1,11 @@
+{   ('Activity_start', 'empezar'): [('Activity', 'lejos')],
+    ('Calendric_unit', 'días'): [('Count', '33'), ('Whole', 'de contactos entre el Gobierno y el Ejército Zapatista')],
+    ('Concessive', 'mientras'): [   ('Main_assertion', 'Si no , volver a empezar , mientras'),
+                                    ('Main_assertion', ', mientras la paz vuelve a estar lejos después de 33 días de contactos entre el Gobierno y el Ejército Zapatista')],
+    ('Contacting', 'contactos'): [('Medium', 'entre el Gobierno y el Ejército Zapatista')],
+    ('Degree', 'lejos'): [('Gradable_attribute', 'paz'), ('Gradable_attribute', 'lejos')],
+    ('Interior_profile_relation', 'entre'): [('Figure', 'contactos'), ('Ground', 'el Gobierno y el Ejército Zapatista')],
+    ('Leadership', 'Gobierno'): [],
+    ('Military', 'Ejército'): [('Descriptor', 'Zapatista')],
+    ('Proportional_quantity', 'lejos'): [],
+    ('Relative_time', 'después de'): [('Focal_occasion', 'la paz vuelve a estar lejos'), ('Landmark_occasion', '33 días de contactos entre el Gobierno y el Ejército Zapatista')]}

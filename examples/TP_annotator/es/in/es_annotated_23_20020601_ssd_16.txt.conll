@@ -1,0 +1,7 @@
+{   ('Being_in_captivity', 'cárceles'): [],
+    ('Calendric_unit', 'ayer'): [],
+    ('Change_of_leadership', 'revuelta'): [('Old_leader', 'a otras cárceles catalanas')],
+    ('Increment', 'otras'): [('Class', 'cárceles catalanas')],
+    ('Leadership', 'los cabecillas'): [('Governed', 'la revuelta')],
+    ('Prison', 'cárceles'): [('Location', 'catalanas')],
+    ('Process_continue', 'acogido ya'): [('Event', 'de'), ('Manner', 'ayer')]}

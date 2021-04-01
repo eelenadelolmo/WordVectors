@@ -1,0 +1,16 @@
+{   ('Communicate_categorization', 'quot'): [('Item', 'que'), ('Speaker', 'el')],
+    ('Communication_response', 'reconoció'): [   ('Time', 'En cualquier caso'),
+                                                 ('Speaker', 'Ibarretxe'),
+                                                 (   'Trigger',
+                                                     ', Ibarretxe reconoció que existen problemas en el panorama vasco , como la aparición de episodios de violencia callejera , que calificó de & '
+                                                     'quot ; inaceptables & quot ; , y la ruptura de las conversaciones entre el Gobierno central y')],
+    ('Discussion', 'conversaciones'): [('Interlocutor_2', 'entre el Gobierno central y')],
+    ('Event', 'episodios'): [('Event', 'violencia callejera')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'existen problemas'), ('Ground', 'el panorama vasco')],
+    ('Leadership', 'Gobierno'): [('Domain', 'central')],
+    ('Locative_relation', 'existen'): [   ('Figure', 'Ibarretxe reconoció que'),
+                                          ('Ground', 'existen problemas'),
+                                          ('Figure', 'en el panorama vasco , como la aparición de episodios de violencia callejera , que calificó de &')],
+    ('Path_shape', 'aparición'): [('Road', 'episodios de violencia callejera')],
+    ('Predicament', 'problemas'): [],
+    ('Roadways', 'callejera'): []}

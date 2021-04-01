@@ -1,0 +1,4 @@
+{   ('Buildings', 'aeropuerto'): [('Name', 'Maó')],
+    ('Calendric_unit', 'horas'): [('Count', '14')],
+    ('Locative_relation', 'en'): [('Ground', 'el aeropuerto de Maó')],
+    ('Waiting', 'espera'): [('Place', '14 horas'), ('Place', 'en el aeropuerto de Maó')]}

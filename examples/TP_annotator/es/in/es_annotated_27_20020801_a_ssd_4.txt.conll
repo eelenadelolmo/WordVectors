@@ -1,0 +1,6 @@
+{   ('Building_subparts', 'oficinas de'): [('Descriptor', 'empresa')],
+    ('Businesses', 'empresa'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'oficinas de la empresa'), ('Ground', 'el puerto de Barcelona')],
+    ('Locale_by_use', 'puerto'): [('Container_possessor', 'de Barcelona')],
+    ('People', 'personas'): [],
+    ('Quantified_mass', 'Cientos de'): [('Individuals', 'de personas')]}

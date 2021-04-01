@@ -1,0 +1,7 @@
+{   ('Being_in_effect', 'válido'): [],
+    ('Expressing_publicly', 'expresaba'): [   ('Content', 'es'),
+                                              ('Content', 'simultáneamente expresaba el ministro del Interior'),
+                                              ('Content', 'Mayor Oreja , quien ratificó que el único foro válido es el de Ajuria Enea')],
+    ('Leadership', 'Mayor'): [('Governed', 'Jaime'), ('Leader', 'Oreja')],
+    ('Sole_instance', 'único'): [('Type', 'foro válido')],
+    ('Verification', 'ratificó que'): [('Inspector', 'quien'), ('Unconfirmed_content', 'que el único foro válido es el de Ajuria Enea , & quot ; el marco de convivencia de los vascos')]}

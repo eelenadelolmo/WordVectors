@@ -1,0 +1,5 @@
+{   ('Communicate_categorization', 'representa'): [('Category', 'la rescisión del contrato de alquiler de los terrenos de Pals que los estadounidenses habían suscrito hasta el 2015 y')],
+    ('Destroying', 'desmantelamiento'): [('Patient', 'de las gigantescas antenas')],
+    ('Increment', 'más'): [('Class', 'paso')],
+    ('Intentionally_act', 'paso'): [('Agent', 'los estadounidenses'), ('Manner', 'más'), ('Purpose', 'desmantelamiento de las gigantescas antenas')],
+    ('Sign_agreement', 'contrato'): [('Signatory', 'los estadounidenses'), ('Manner', 'hasta'), ('Time', 'hasta el 2015')]}

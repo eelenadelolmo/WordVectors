@@ -1,0 +1,3 @@
+{   ('Ordinal_numbers', 'primer'): [('Type', 'lanzamiento luciendo una chaqueta de los bomberos de Nueva York')],
+    ('People_by_vocation', 'bomberos'): [],
+    ('Shoot_projectiles', 'lanzamiento'): [('Distance', 'primer'), ('Projectile', 'luciendo una chaqueta de los bomberos de Nueva York')]}

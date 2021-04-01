@@ -1,0 +1,6 @@
+{   ('Calendric_unit', 'fin de semana'): [],
+    ('Desirable_event', 'deberá'): [('State_of_affairs', 'Havel'), ('State_of_affairs', 'permanecer en el centro sanitario por lo menos hasta el fin de semana')],
+    ('Locative_relation', 'en'): [('Figure', 'el centro sanitario'), ('Ground', 'menos hasta el fin de semana')],
+    ('Medical_conditions', 'sanitario'): [],
+    ('Residence', 'permanecer'): [('Resident', 'Havel'), ('Location', 'en el centro sanitario por lo menos hasta el fin de semana')],
+    ('Time_vector', 'hasta el'): [('Event', 'Havel deberá permanecer en el centro sanitario por lo menos'), ('Landmark_event', 'el fin de semana')]}

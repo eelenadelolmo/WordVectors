@@ -1,0 +1,7 @@
+{   ('Appellations', 'presidente'): [('Title', 'los planes del Gobierno de Vitoria')],
+    ('Leadership', 'Gobierno'): [('Type', 'Vitoria')],
+    ('Preventing_or_letting', 'evitar'): [('Event', 'el')],
+    ('Purpose', 'planes del'): [('Attribute', 'del Gobierno de')],
+    ('Risky_situation', 'amenaza'): [('Situation', 'su'), ('Situation', 'de resucitar el terrorismo a')],
+    ('Telling', 'los'): [('Speaker', 'el lehendakari'), ('Addressee', 'al presidente'), ('Message', 'los planes del Gobierno de Vitoria')],
+    ('Terrorism', 'terrorismo'): []}

@@ -1,0 +1,10 @@
+{   ('Cutting', 'se'): [],
+    ('Deny_or_grant_permission', 'aprobado'): [('Action', 'el plan'), ('Action', 'en un pleno del 2001')],
+    ('Inclusion', 'incluye'): [('Part', 'árboles en el club de golf , denunciada por ERC ,'), ('Contrast_set', 'el plan aprobado en un pleno del 2001')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'árboles en el club de golf , denunciada por ERC , se incluye'), ('Ground', 'el plan')],
+    ('Locative_relation', 'en'): [('Figure', 'el plan'), ('Ground', 'pleno del 2001')],
+    ('Purpose', 'plan'): [],
+    ('Statement', 'dijo'): [   ('Speaker', 'convergente'),
+                               ('Time', 'ayer que'),
+                               ('Message', 'la tala de árboles en el club de golf , denunciada por ERC , se incluye en el plan aprobado en un pleno del 2001')],
+    ('Weapon', 'club'): [('Type', 'golf')]}

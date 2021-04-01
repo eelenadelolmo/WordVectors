@@ -1,0 +1,6 @@
+{   ('Causation', 'porque'): [('Effect', 'Si se plantea la negociación alegando el expolio fiscal habrá confrontación ,'), ('Cause', 'otros alegarán que hay explotación comercial')],
+    ('Coming_to_be', 'se'): [('Entity', 'la negociación'), ('Entity', 'alegando el expolio fiscal')],
+    ('Discussion', 'negociación'): [],
+    ('Hostile_encounter', 'confrontación'): [('Purpose', 'que hay explotación comercial')],
+    ('Locative_relation', 'hay'): [('Figure', 'que'), ('Ground', 'hay explotación comercial')],
+    ('Reasoning', 'plantea'): [('Arguer', 'otros'), ('Content', 'que hay explotación comercial')]}

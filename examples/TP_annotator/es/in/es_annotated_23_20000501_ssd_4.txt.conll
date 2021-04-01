@@ -1,0 +1,5 @@
+{   ('Calendric_unit', 'semana'): [('Relative_time', 'próxima')],
+    ('Discussion', 'negociarán'): [('Interlocutor_1', 'se'), ('Interlocutor_2', 'en Eilat')],
+    ('Motion', 'trasladarán'): [('Theme', 'se'), ('Goal', 'a la localidad egipcia de Taba')],
+    ('Origin', 'egipcia'): [('Entity', 'localidad')],
+    ('Political_locales', 'localidad'): [('Name', 'egipcia'), ('Name', 'de Taba')]}

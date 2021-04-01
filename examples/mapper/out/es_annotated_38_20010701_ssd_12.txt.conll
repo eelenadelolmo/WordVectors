@@ -1,0 +1,5 @@
+{   ('Age', 'nuevo'): [('Entity', 'álbum')],
+    ('Calendric_unit', 'días'): [('Relative_time', '8')],
+    ('Interior_profile_relation', 'En'): [('Ground', '8 días')],
+    ('Recording', 'grabamos'): [('Time', 'En 8 días'), ('Agent', 'grabamos'), ('Phenomenon', 'las 22 canciones del nuevo álbum')],
+    ('Text', 'canciones'): [('Topic', 'del nuevo álbum')]}

@@ -1,0 +1,8 @@
+{   ('Calendric_unit', 'años'): [('Count', 'ocho')],
+    ('Goal', 'a los'): [('Landmark', 'Insulza')],
+    ('Judgment', 'respeto'): [('Reason', 'a los derechos humanos y a la ley')],
+    ('Law', 'ley'): [],
+    ('Leadership', 'Estado'): [('Descriptor', 'democrático')],
+    ('People', 'humanos'): [],
+    ('Process', 'proceso'): [('Process', 'que dura ocho años y que & quot ; ha sido escrupuloso con el respeto a los derechos humanos y a la ley & quot ;')],
+    ('Undergo_change', 'transición'): [('Entity', 'proceso de transición que dura ocho años y que & quot ; ha sido escrupuloso con el respeto a los derechos humanos y a la ley & quot ;')]}

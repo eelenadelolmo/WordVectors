@@ -1,0 +1,8 @@
+{   ('Hostile_encounter', 'guerra'): [],
+    ('Hostile_encounter', 'luchar'): [('Side_1', 'nuestras')],
+    ('Level_of_force_exertion', 'fuerzas'): [('Exerter', 'nuestras')],
+    ('Ordinal_numbers', 'segunda'): [('Type', 'forma')],
+    ('Required_event', 'Debemos'): [('Required_situation', 'nuestras'), ('Required_situation', 'luchar con todas nuestras fuerzas')],
+    ('Statement', 'quot'): [('Speaker', 'de'), ('Message', 'contra & quot ; esta segunda forma de guerra')],
+    ('Taking_sides', 'contra'): [('Cognizer', 'de'), ('Side', 'quot ; esta segunda forma de guerra')],
+    ('Type', 'forma'): [('Category', 'de guerra')]}

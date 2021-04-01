@@ -1,0 +1,12 @@
+{   ('Arriving', 'visita'): [('Goal', 'para el')],
+    ('Being_employed', 'postura'): [('Manner', 'papal'), ('Task', 'de firmar esta declaración')],
+    ('Buildings', 'iglesias'): [],
+    ('Calendric_unit', 'año'): [],
+    ('Cardinal_numbers', 'ambas'): [('Entity', 'iglesias')],
+    ('Communicate_categorization', 'declaración'): [('Category', 'evangélicos españoles , que en el comunicado insisten en las enormes diferencias existentes entre ambas iglesias ,')],
+    ('Non-commutative_statement', 'diferencias'): [('Term_1', 'entre ambas iglesias')],
+    ('Sign_agreement', 'firmar'): [('Agreement', 'esta declaración a')],
+    ('Size', 'enormes'): [('Entity', 'diferencias existentes entre ambas iglesias')],
+    ('Statement', 'anuncian'): [('Message', 'indulgencias a través de la confesión')],
+    ('Statement', 'declaración'): [],
+    ('Statement', 'insisten'): [('Speaker', 'que')]}

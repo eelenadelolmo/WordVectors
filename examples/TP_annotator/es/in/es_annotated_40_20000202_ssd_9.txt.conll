@@ -1,0 +1,9 @@
+{   ('Body_parts', 'Frente'): [],
+    ('Cardinal_numbers', 'millones'): [('Precision', 'de'), ('Unit', 'pesetas')],
+    ('Causation', 'ingente'): [('Effect', 'pagar los enormes gastos de una campaña electoral auguran una lucha muy desigual')],
+    ('Commerce_pay', 'pagar'): [('Buyer', 'McCain'), ('Goods', 'los enormes gastos de una campaña electoral auguran una lucha muy desigual')],
+    ('Commutative_statement', 'suma'): [],
+    ('Expensiveness', 'gastos de'): [('Rate', 'enormes'), ('Asset', 'de una campaña electoral auguran')],
+    ('Hostile_encounter', 'lucha'): [('Degree', 'muy'), ('Depictive', 'desigual')],
+    ('Operating_a_system', 'logrado'): [('System', 'McCain')],
+    ('Size', 'enormes'): [('Entity', 'gastos de')]}

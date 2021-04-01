@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="38_19990902_g_ssd">
+
+
+	<concepts>
+		<concept id="c_0">José Cuiña</concept>
+		<concept id="c_1">quot; nadie quot;</concept>
+		<concept id="c_2">retirase</concept>
+		<concept id="c_3">le</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El secretario general del PP gallego dimite oficialmente.
+		</str>
+		<theme>
+			<token pos="da0ms0">El</token><token pos="ncms000">secretario</token><token pos="aq0cs0">general</token><token pos="spcms">del</token><token pos="np00000">PP</token><token pos="aq0ms0">gallego</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 José Cuiña entregó ayer al presidente del PP de Galicia, Manuel Fraga, su carta de renuncia al cargo.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np0000l">José</token><token pos="np0000l">Cuiña</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">entregó</token><token pos="spcms">al</token><token pos="ncms000">presidente</token><token pos="spcms">del</token><token pos="np0000o">PP</token><token pos="sps00">de</token><token pos="np0000l">Galicia</token><token pos="fc">,</token><token pos="np00000">Manuel</token><token pos="ncms000">Fraga</token><token pos="fc">,</token><token pos="dp3cs0">su</token><token pos="ncfs000">carta</token><token pos="sps00">de</token><token pos="ncfs000">renuncia</token><token pos="spcms">al</token><token pos="ncms000">cargo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente">
+				<argument type="Title" dependent="del PP de Galicia" /></frame>
+			<frame type="Building_subparts" head="al cargo" />
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Delivery" head="al cargo">
+				<argument type="Theme" dependent="de" />
+				<argument type="Manner" dependent="ayer" />
+				<argument type="Goal" dependent="al presidente del PP de Galicia" /></frame>
+			<frame type="Text" head="carta">
+				<argument type="Author" dependent="al cargo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Cuiña aseguró que "nadie" le pidió que se retirase, sino que fue él mismo quien, desde 1997, venía reclamando el recambio.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="fe">quot;</token><token pos="pi0cs000">nadie</token><token pos="fe">quot;</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_3">
+			<mention concept_ref="c_3"><token pos="pp3csd00">le</token></mention><token pos="vmis3s0">pidió</token><token pos="p0300000">se</token><mention concept_ref="c_2"><token pos="vmsi3s0">retirase</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Cuiña " />
+			<frame type="Cardinal_numbers" head="el" />
+			<main_frame type="Questioning" head="pidió">
+				<argument type="Addressee" dependent="él" />
+				<argument type="Message" dependent="retirase" /></main_frame>
+			<main_frame type="Removing" head="retirase">
+				<argument type="Agent" dependent="él" /></main_frame>
+			<frame type="Statement" head="quot ; le">
+				<argument type="Message" dependent="se" />
+				<argument type="Message" dependent="; le pidió que se retirase , sino que fue él mismo quien , desde 1997 , venía reclamando el recambio" /></frame>
+			<frame type="Take_place_of" head="recambio" />
+		</semantic_roles>
+	</sentence>
+	
+</text>

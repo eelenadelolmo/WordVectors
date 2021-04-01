@@ -1,0 +1,4 @@
+{   ('Have_as_requirement', 'exige'): [('Dependent', 'cuota de sexo femenino del 50 %'), ('Required_entity', 'aquí')],
+    ('Interior_profile_relation', 'se'): [('Figure', 'ya se buscan ministras'), ('Ground', 'además de ministros')],
+    ('Locative_relation', 'aquí'): [],
+    ('Seeking_to_achieve', 'buscan'): [('Agent', 'ministros')]}

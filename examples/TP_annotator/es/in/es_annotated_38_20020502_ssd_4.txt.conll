@@ -1,0 +1,9 @@
+{   ('Becoming_aware', 'situada'): [('Phenomenon', 'la localidad de Rafah'), ('Evidence', ', situada en el sur de la franja de Gaza')],
+    ('Containers', 'tanque'): [('Relative_location', 'israelí')],
+    ('Earnings_and_losses', 'perdió'): [('Earner', 'una niña de 2 años'), ('Earnings', 'la vida')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'la localidad de Rafah'), ('Ground', 'el sur de la franja de Gaza')],
+    ('Objective_influence', 'impacto'): [('Dependent_entity', 'disparado por un tanque israelí')],
+    ('Part_orientational', 'el sur de'): [('Whole', 'franja de Gaza')],
+    ('People', 'niña'): [('Descriptor', 'niña de 2 años')],
+    ('Political_locales', 'localidad'): [('Name', 'de Rafah')],
+    ('Shoot_projectiles', 'disparado'): [('Projectile', 'un obús'), ('Source', 'por un tanque israelí')]}

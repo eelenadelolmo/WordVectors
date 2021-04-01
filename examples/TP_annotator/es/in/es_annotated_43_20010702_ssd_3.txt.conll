@@ -1,0 +1,9 @@
+{   ('Becoming', 'convertido en'): [('Entity', 'se'), ('Final_category', 'la guerrilla mexicana más activa')],
+    ('Being_active', 'activa'): [('Agent', 'guerrilla mexicana')],
+    ('Body_parts', 'espaldas'): [('Possessor', 'se ha')],
+    ('Bringing', 'nacer'): [('Time', 'aquel entonces ,'), ('Theme', 'el EPR'), ('Manner', 'se')],
+    ('Calendric_unit', 'hoy'): [],
+    ('Dead_or_alive', 'muertos a'): [],
+    ('Irregular_combatants', 'guerrilla'): [('Descriptor', 'más activa'), ('Side_1', 'mexicana')],
+    ('Locative_relation', 'en'): [('Ground', 'aquel entonces'), ('Figure', 'el EPR acababa de nacer')],
+    ('Relative_time', 'espaldas'): [('Focal_occasion', 'guerrilla mexicana más activa , con decenas de muertos'), ('Landmark_occasion', 'espaldas')]}

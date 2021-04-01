@@ -1,0 +1,10 @@
+{   ('Activity_stop', 'lastre'): [('Agent', 'los'), ('Activity', 'de ser un partido necesario')],
+    ('Aggregate', 'partido'): [('Aggregate_property', 'necesario')],
+    ('Becoming', 'ser'): [('Entity', 'los'), ('Final_category', 'quot ; para sí mismos y para la sociedad')],
+    ('Being_necessary', 'necesario'): [('Required_entity', 'partido')],
+    ('Calendric_unit', 'meses'): [('Relative_time', 'últimos'), ('Count', 'un')],
+    ('Process_continue', 'siguen'): [('Event', 'los'), ('Time', 'senda de los últimos meses')],
+    ('Quantified_mass', 'un'): [('Individuals', 'meses')],
+    ('Relative_time', 'últimos'): [('Focal_occasion', 'meses')],
+    ('Roadways', 'siguen por'): [('Goal', 'de los últimos meses')],
+    ('Warning', 'quot'): [('Speaker', 'sus'), ('Message', 'sus antiguos socios de que si siguen por la senda de los últimos meses ,')]}

@@ -1,0 +1,5 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Catastrophe', 'accidente'): [('Cause', 'ferroviario')],
+    ('Causation', 'causó'): [('Cause', 'accidente ferroviario causó ayer'), ('Effect', '35 muertos'), ('Place', 'en el norte')],
+    ('Death', 'muertos'): [('Place', 'en el norte')],
+    ('Part_orientational', 'norte'): [('Whole', 'Marruecos')]}

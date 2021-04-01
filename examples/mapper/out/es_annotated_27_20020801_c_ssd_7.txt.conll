@@ -1,0 +1,7 @@
+{   ('Arriving', 'llegaron'): [('Theme', 'órdenes que')],
+    ('Assistance', 'atendió'): [('Focal_entity', 'de'), ('Helper', 'persona de'), ('Benefited_party', 'les'), ('Goal', 'no tenía capacidad decisoria')],
+    ('Electricity', 'capacidad'): [('Source', 'decisoria')],
+    ('People', 'persona'): [],
+    ('Sequence', 'órdenes'): [],
+    ('Sole_instance', 'única'): [('Item', 'persona')],
+    ('Waiting', 'esperaba'): [('Protagonist', 'les'), ('Salient_entity', 'órdenes que nunca llegaron')]}

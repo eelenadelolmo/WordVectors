@@ -1,0 +1,12 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Calendric_unit', 'domingo'): [],
+    ('Discussion', 'intercambio'): [('Topic', 'de fuego'), ('Place', 'en esta zona'), ('Time', 'el domingo había resultado gravemente')],
+    ('Fire_burning', 'fuego'): [('Place', 'en esta zona')],
+    ('Importance', 'gravemente'): [('Factor', 'herido')],
+    ('Interior_profile_relation', 'en'): [   ('Figure', 'un niño de 10 años que el domingo había resultado gravemente herido en un intercambio de fuego en'),
+                                             ('Ground', 'esta zona'),
+                                             ('Time', 'el domingo había resultado gravemente')],
+    ('Killing', 'gravemente'): [('Victim', 'domingo'), ('Manner', 'ayer')],
+    ('Locale', 'zona'): [],
+    ('People_by_age', 'niño'): [('Age', 'niño de 10 años')],
+    ('Spatial_contact', 'en'): [('Figure', 'esta zona'), ('Ground', 'domingo')]}

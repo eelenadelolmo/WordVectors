@@ -1,0 +1,7 @@
+{   ('Being_at_risk', 'seguridad'): [('Asset', 'nuestro país')],
+    ('Commitment', 'amenaza'): [('Speaker', 'de'), ('Message', 'la seguridad de nuestro país , Rusia está preparada para emplear el arma nuclear & quot ; , dijo')],
+    ('Political_locales', 'país'): [],
+    ('Statement', 'dijo'): [('Message', 'amenaza la seguridad de nuestro país , Rusia está preparada para emplear el arma nuclear & quot'), ('Speaker', 'el')],
+    ('Using', 'emplear el'): [('Agent', 'Rusia'), ('Instrument', 'el arma nuclear')],
+    ('Weapon', 'arma'): [('Type', 'nuclear')],
+    ('Weapon', 'nuclear'): []}

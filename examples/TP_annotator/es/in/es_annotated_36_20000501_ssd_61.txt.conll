@@ -1,0 +1,8 @@
+{   ('Capability', 'pueda'): [('Entity', 'CiU'), ('Event', 'incorporar a un Gobierno de España desde la lealtad constitucional y desde una apuesta de un proyecto de')],
+    ('Communication', 'compartido'): [('Message', 'proyecto'), ('Communicator', 'lealtad')],
+    ('Inclusion', 'incorporar'): [('Total', 'CiU'), ('Part', 'se')],
+    ('Leadership', 'Gobierno'): [('Governed', 'lealtad')],
+    ('Likelihood', 'posibilidad'): [('Hypothetical_event', 'la posibilidad de que CiU se pueda incorporar a un Gobierno de España desde la lealtad constitucional y')],
+    ('Means', 'planteamiento'): [],
+    ('Project', 'proyecto'): [('Descriptor', 'compartido'), ('Activity', 'lealtad')],
+    ('Secrecy_status', 'abrir'): [('Phenomenon', 'la posibilidad de que CiU se pueda incorporar a un Gobierno de España desde la lealtad constitucional y')]}

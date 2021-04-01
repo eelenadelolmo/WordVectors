@@ -1,0 +1,9 @@
+{   ('Adducing', 'señalar'): [('Manner', 'se'), ('Specified_entity', 'quot ; eso es algo que hay que decidir dentro de la')],
+    ('Deciding', 'decidir'): [('Manner', 'dentro de')],
+    ('Desiring', 'se'): [('Experiencer', 'Fischer'), ('Event', 'comentar la posibilidad de crear un protectorado internacional en la zona')],
+    ('Intentionally_create', 'crear'): [('Created_entity', 'un protectorado internacional en'), ('Place', 'en la zona')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'un protectorado internacional en'), ('Ground', 'la zona')],
+    ('Likelihood', 'posibilidad'): [('Hypothetical_event', 'crear un protectorado internacional en la zona')],
+    ('Locale', 'zona'): [],
+    ('Political_locales', 'internacional'): [],
+    ('Statement', 'comentar'): [('Message', 'la posibilidad de crear un protectorado internacional en la zona')]}

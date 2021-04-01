@@ -1,0 +1,5 @@
+{   ('Aggregate', 'partidos'): [('Aggregate_property', 'políticos')],
+    ('Importance', 'el'): [('Factor', 'proceso de paz corresponde a los ciudadanos y a los partidos políticos')],
+    ('People_by_jurisdiction', 'ciudadanos'): [],
+    ('Posture', 'los'): [('Location', 'proceso de paz'), ('Location', 'ciudadanos y a los partidos políticos')],
+    ('Process', 'proceso'): [('Process', 'proceso de paz'), ('Process', 'ciudadanos y a los partidos políticos')]}

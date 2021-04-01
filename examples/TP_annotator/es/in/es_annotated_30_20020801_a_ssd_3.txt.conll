@@ -1,0 +1,12 @@
+{   ('Activity_finish', 'culminación'): [('Activity', 'un proceso & quot ; duro y largo')],
+    ('Activity_stop', 'se'): [('Activity', 'zona de la estación')],
+    ('Becoming', 'convertirse'): [('Entity', 'el límite de la ciudad'), ('Final_category', 'el mismo centro')],
+    ('Difficulty', 'duro'): [('Activity', 'proceso')],
+    ('Duration_description', 'largo'): [('Eventuality', 'proceso')],
+    ('Explaining_the_facts', 'explicó'): [('State_of_affairs', 'que el acuerdo permitirá que la zona de la estación deje de ser el límite de la ciudad para convertirse')],
+    ('Identicality', 'el mismo'): [('Type', 'centro')],
+    ('Locale', 'zona'): [],
+    ('Make_agreement_on_action', 'el acuerdo'): [],
+    ('Political_locales', 'ciudad'): [],
+    ('Preventing_or_letting', 'permitirá'): [('Event', 'el acuerdo'), ('Event', 'zona de la estación')],
+    ('Process', 'proceso'): []}

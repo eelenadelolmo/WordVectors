@@ -1,0 +1,4 @@
+{   ('Arriving', 'por'): [('Theme', 'el acuerdo definitivo')],
+    ('Make_agreement_on_action', 'el acuerdo'): [('Descriptor', 'definitivo')],
+    ('Money', 'dinero'): [],
+    ('Process_end', 'definitivo'): [('Process', 'el acuerdo')]}

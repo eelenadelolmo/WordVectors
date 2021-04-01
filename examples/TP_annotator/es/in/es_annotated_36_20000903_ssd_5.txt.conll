@@ -1,0 +1,10 @@
+{   ('Age', 'nuevo'): [('Entity', 'escenario')],
+    ('Being_necessary', 'imprescindible'): [('Required_entity', 'PP'), ('Dependent', 'transmitir las inquietudes y la defensa de los intereses de Catalunya ante el Gobierno de')],
+    ('Bringing', 'transmitir'): [('Theme', 'inquietudes y la defensa de los intereses de Catalunya ante el Gobierno de')],
+    ('Causation', 'porque'): [   ('Effect', 'nuevo escenario refrenda esta línea'),
+                                 ('Cause', 'decisivo en el Parlament e imprescindible para transmitir las inquietudes y la defensa de los intereses de'),
+                                 ('Effect', 'Catalunya ante el Gobierno de')],
+    ('Defending', 'defensa'): [('Victim', 'intereses de Catalunya')],
+    ('Emotion_directed', 'inquietudes'): [],
+    ('Emotion_directed', 'intereses'): [('Stimulus', 'de Catalunya')],
+    ('Importance', 'decisivo'): [('Factor', 'PP')]}

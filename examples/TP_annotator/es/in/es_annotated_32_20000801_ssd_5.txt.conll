@@ -1,0 +1,8 @@
+{   ('Appellations', 'presidente'): [('Name', 'la Generalitat')],
+    ('Attending', 'acudieron'): [('Event', 'acto'), ('Means', 'presidente de la Generalitat , Jordi Pujol , y el primer secretario del PSC , José Montilla ,')],
+    ('Departing', 'abandonen'): [('Theme', 'su actitud')],
+    ('Event', 'acto'): [],
+    ('Leadership', 'dirigentes'): [('Governed', 'del PNV que')],
+    ('Obviousness', 'poco clara'): [('Phenomenon', 'su actitud')],
+    ('Ordinal_numbers', 'primer'): [('Comparison_set', 'secretario del PSC , José Montilla , quien pidió a los dirigentes del PNV que & quot ; abandonen su actitud')],
+    ('Questioning', 'pidió'): [('Speaker', 'PSC ,'), ('Speaker', 'quien'), ('Message', 'dirigentes del PNV que & quot ; abandonen su actitud poco clara y ambivalente')]}

@@ -1,0 +1,4 @@
+{   ('Medical_conditions', 'enfermedad'): [],
+    ('Preventing_or_letting', 'impedían'): [('Potential_hindrance', 'sistemas que'), ('Event', 'transmisión de la enfermedad por el aire o los insectos')],
+    ('Statement', 'propuso'): [('Message', 'de'), ('Time', 'en 1997'), ('Message', 'sistemas que impedían la transmisión de la enfermedad por el aire o los insectos')],
+    ('System', 'sistemas'): []}

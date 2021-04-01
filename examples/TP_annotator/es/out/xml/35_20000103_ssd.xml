@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="35_20000103_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Eduard Rius</concept>
+		<concept id="c_1">Los centros</concept>
+		<concept id="c_2">el usuario</concept>
+		<concept id="c_3">El conseller de Sanitat , Eduard Rius ,</concept>
+		<concept id="c_4">Rius</concept>
+		<concept id="c_5">El conseller</concept>
+		<concept id="c_6">la Generalitat</concept>
+		<concept id="c_7">el Servei Català de la Salut</concept>
+		<concept id="c_8">los servicios de urgencias</concept>
+		<concept id="c_9">La insistente promoción de los CAC</concept>
+		<concept id="c_10">esa</concept>
+		<concept id="c_11">un CAC</concept>
+		<concept id="c_12">el hospital</concept>
+		<concept id="c_13">La idea de Sanitat</concept>
+		<concept id="c_14">una persona con gripe</concept>
+		<concept id="c_15">dos hospitales de Barcelona - - Sant Pau y Vall d'Hebron - -</concept>
+		<concept id="c_16">El Hospital Clínic</concept>
+		<concept id="c_17">El servicio del 061</concept>
+		<concept id="c_18">La epidemia de gripe , iniciada oficialmente el pasado día 30 ,</concept>
+		<concept id="c_19">la gente</concept>
+		<concept id="c_20">Nosotros</concept>
+		<concept id="c_21">médicos</concept>
+		<concept id="c_22">crear áreas de atención inmediata para casos leves</concept>
+		<concept id="c_23">radical</concept>
+		<concept id="c_24">un CAC</concept>
+		<concept id="c_25">la</concept>
+		<concept id="c_26">es</concept>
+		<concept id="c_27">casos</concept>
+		<concept id="c_28">su mensaje</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Eduard Rius pide a los hospitales que contraten a los médicos que precisen.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np0000l">Eduard</token><token pos="np0000l">Rius</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_4" concept_ref3="c_20" concept_ref4="c_21" concept_ref5="c_25">
+			<token pos="vmsp3p0">contraten</token><token pos="sps00">a</token><mention concept_ref="c_8"><token pos="da0mp0">los</token><token pos="ncmp000">médicos</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="hospitales" />
+			<main_frame type="Hiring" head="contraten">
+				<argument type="Employee" dependent="médicos" />
+				<argument type="Task" dependent="que precisen" /></main_frame>
+			<frame type="Needing" head="pide">
+				<argument type="Cognizer" dependent="médicos" />
+				<argument type="Requirement" dependent="los" /></frame>
+			<frame type="Questioning" head="pide">
+				<argument type="Speaker" dependent="precisen" />
+				<argument type="Speaker" dependent="hospitales" />
+				<argument type="Message" dependent="contraten a los médicos que precisen" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los centros deberán crear áreas de atención inmediata para casos leves.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">centros</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_13" concept_ref3="c_22" concept_ref4="c_26" concept_ref5="c_27">
+			<token pos="vmif3p0">deberán</token><mention concept_ref="c_22"><token pos="vmn0000">crear</token><token pos="ncfp000">áreas</token><token pos="sps00">de</token><token pos="ncfs000">atención</token><token pos="aq0fs0">inmediata</token><token pos="sps00">para</token><token pos="ncmp000">casos</token><token pos="aq0cp0">leves</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Desirable_event" head="deberán">
+				<argument type="State_of_affairs" dependent="centros" />
+				<argument type="State_of_affairs" dependent="crear áreas de atención inmediata para casos leves" /></main_frame>
+			<frame type="Instance" head="casos">
+				<argument type="Type" dependent="leves" /></frame>
+			<main_frame type="Intentionally_create" head="crear">
+				<argument type="Creator" dependent="centros" />
+				<argument type="Created_entity" dependent="áreas de atención inmediata para casos leves" /></main_frame>
+			<frame type="Locale" head="áreas" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La Generalitat asume que el usuario no confía en los CAC de los barrios
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">el</token><token pos="ncms000">usuario</token>
+		</theme>
+		<rheme concept_ref1="c_20" concept_ref2="c_12" concept_ref3="c_25" concept_ref4="c_26" concept_ref5="c_27">
+			<token pos="rn">no</token><token pos="vmip3s0">confía</token><token pos="sps00">en</token><mention concept_ref="c_20"><token pos="da0mp0">los</token><token pos="np00000">CAC</token></mention><mention concept_ref="c_26"><token pos="sps00">de</token></mention><token pos="da0mp0">los</token><token pos="ncmp000">barrios</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="La Generalitat " />
+			<frame type="Adopt_selection" head="los">
+				<argument type="Agent" dependent="Generalitat" />
+				<argument type="Attribute" dependent="que el usuario no confía en los" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El conseller de Sanitat, Eduard Rius, ha asumido como "una realidad" el hecho de que los usuarios no confían, de momento, en los centros de atención continuada ( CAC ) de los barrios, y ha optado por volcar sus medios técnicos y económicos en reforzar los servicios de urgencias de los hospitales.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">El</token><token pos="ncms000">conseller</token><token pos="sps00">de</token><token pos="np00000">Sanitat</token><token pos="fc">,</token><token pos="np0000l">Eduard</token><token pos="np0000l">Rius</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_13" concept_ref2="c_12" concept_ref3="c_4" concept_ref4="c_5" concept_ref5="c_2" concept_ref6="c_1" concept_ref7="c_20" concept_ref8="c_25" concept_ref9="c_26" concept_ref10="c_27">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">asumido</token><token pos="cs">como</token><token pos="fe">quot;</token><token pos="di0fs0">una</token><token pos="ncfs000">realidad</token><token pos="fe">quot;</token><mention concept_ref="c_5"><token pos="da0ms0">el</token><token pos="ncms000">hecho</token></mention><token pos="sps00">de</token><token pos="cs">que</token><token pos="da0mp0">los</token><token pos="ncmp000">usuarios</token><token pos="rn">no</token><token pos="vmip3p0">confían</token><token pos="fc">,</token><token pos="sps00">de</token><token pos="vmn0000">momento</token><token pos="fc">,</token><token pos="sps00">en</token><mention concept_ref="c_1"><token pos="da0mp0">los</token><token pos="ncmp000">centros</token></mention><token pos="sps00">de</token><mention concept_ref="c_13"><token pos="ncfs000">atención</token></mention><token pos="aq0fsp">continuada</token><token pos="fpa">(</token><token pos="np00000">CAC</token><token pos="fpt">)</token><token pos="sps00">de</token><mention concept_ref="c_12"><token pos="da0mp0">los</token><token pos="ncmp000">barrios</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Adopt_selection" head="asumido" />
+			<frame type="Buildings" head="hospitales" />
+			<frame type="Causation" head="que">
+				<argument type="Cause" dependent="técnicos y económicos en" />
+				<argument type="Effect" dependent="en reforzar los servicios de urgencias de los hospitales" /></frame>
+			<frame type="Choosing" head="optado">
+				<argument type="Chosen" dependent=", de momento , en los centros de atención continuada ( CAC ) de los barrios" />
+				<argument type="Chosen" dependent="técnicos y económicos en reforzar los servicios de urgencias de los hospitales" /></frame>
+			<frame type="Desiring" head="atención" />
+			<frame type="Economy" head="económicos" />
+			<frame type="Judgment_communication" head="optado">
+				<argument type="Evaluee" dependent="técnicos y económicos en reforzar los servicios de urgencias de los hospitales" /></frame>
+			<frame type="Locale_by_use" head="centros" />
+			<frame type="Public_services" head="servicios">
+				<argument type="Domain" dependent="de urgencias" />
+				<argument type="Service_action" dependent="los hospitales" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Rius ha cambiado de forma radical su mensaje hacia médicos y ciudadanos como reacción tras las primeras saturaciones de este invierno, que se produjeron el pasado fin de semana en varios hospitales de Barcelona.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="np00000">Rius</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_0" concept_ref3="c_14" concept_ref4="c_8" concept_ref5="c_21" concept_ref6="c_23" concept_ref7="c_25" concept_ref8="c_26" concept_ref9="c_27" concept_ref10="c_28">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">cambiado</token><token pos="sps00">de</token><token pos="ncfs000">forma</token><mention concept_ref="c_23"><token pos="aq0cs0">radical</token></mention><mention concept_ref="c_28"><token pos="dp3cs0">su</token><token pos="ncms000">mensaje</token></mention><token pos="sps00">hacia</token><token pos="ncmp000">médicos</token><token pos="cc">y</token><token pos="ncmp000">ciudadanos</token><token pos="cs">como</token><mention concept_ref="c_14"><token pos="ncfs000">reacción</token></mention><token pos="sps00">tras</token><mention concept_ref="c_8"><token pos="da0fp0">las</token><token pos="ao0fp0">primeras</token><token pos="ncfp000">saturaciones</token></mention><token pos="sps00">de</token><token pos="dd0ms0">este</token><token pos="ncms000">invierno</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="hospitales">
+				<argument type="Place" dependent="de Barcelona" /></frame>
+			<frame type="Calendric_unit" head="fin de semana">
+				<argument type="Relative_time" dependent="fin de" /></frame>
+			<frame type="Calendric_unit" head="invierno">
+				<argument type="Relative_time" dependent="este" /></frame>
+			<main_frame type="Cause_change" head="cambiado">
+				<argument type="Agent" dependent="se" />
+				<argument type="Degree" dependent="radical" />
+				<argument type="Entity" dependent="su mensaje hacia médicos y ciudadanos" /></main_frame>
+			<frame type="Event" head="se produjeron">
+				<argument type="Event" dependent="que" />
+				<argument type="Place" dependent="pasado fin de semana en varios hospitales de Barcelona" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="varios hospitales" />
+				<argument type="Ground" dependent="Barcelona" /></frame>
+			<frame type="Medical_professionals" head="médicos" />
+			<frame type="Ordinal_numbers" head="primeras">
+				<argument type="Type" dependent="este invierno" /></frame>
+			<frame type="People_by_jurisdiction" head="ciudadanos" />
+			<frame type="Quantified_mass" head="varios">
+				<argument type="Individuals" dependent="hospitales" /></frame>
+			<frame type="Relative_time" head="fin de">
+				<argument type="Focal_occasion" dependent="fin de semana" /></frame>
+			<frame type="Response" head="reacción" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El conseller se muestra decidido a conseguir que nadie deba esperar cinco horas - - "ni dos, tampoco" - - para ser atendido en el servicio de urgencias de un hospital catalán, aunque el caso no sea muy grave y al margen de que exista un CAC junto a su casa.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0ms0">El</token><token pos="ncms000">conseller</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_10" concept_ref3="c_13" concept_ref4="c_20" concept_ref5="c_2" concept_ref6="c_12" concept_ref7="c_11" concept_ref8="c_22" concept_ref9="c_21" concept_ref10="c_24" concept_ref11="c_26" concept_ref12="c_27" concept_ref13="c_28">
+			<token pos="p0300000">se</token><token pos="vmip3s0">muestra</token><token pos="aq0msp">decidido</token><token pos="sps00">a</token><token pos="vmn0000">conseguir</token><token pos="cs">que</token><mention concept_ref="c_13"><token pos="pi0cs000">nadie</token></mention><token pos="vmsp3s0">deba</token><token pos="vmn0000">esperar</token><token pos="dn0cp0">cinco</token><mention concept_ref="c_20"><token pos="ncfp000">horas</token></mention><token pos="fg">-</token><token pos="fg">-</token><token pos="fe">quot;</token><token pos="cc">ni</token><token pos="pn0cp000">dos</token><token pos="fc">,</token><token pos="rg">tampoco</token><token pos="fe">quot;</token><token pos="fg">-</token><token pos="fg">-</token><token pos="sps00">para</token><token pos="vsn0000">ser</token><token pos="vmp00sm">atendido</token><mention concept_ref="c_22"><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">servicio</token><token pos="sps00">de</token><token pos="ncfp000">urgencias</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">hospital</token><token pos="aq0ms0">catalán</token></mention><token pos="fc">,</token><token pos="cs">aunque</token><token pos="da0ms0">el</token><token pos="ncms000">caso</token><token pos="rn">no</token><token pos="vssp3s0">sea</token><token pos="rg">muy</token><token pos="aq0cs0">grave</token><token pos="cc">y</token><token pos="sps00">al</token><token pos="ncfs000">margen</token><token pos="sps00">de</token><token pos="cs">que</token><token pos="vmsp3s0">exista</token><token pos="di0ms0">un</token><token pos="np00000">CAC</token><mention concept_ref="c_21"><token pos="rg">junto</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="ncfs000">casa</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="casa" />
+			<frame type="Buildings" head="hospital">
+				<argument type="Name" dependent="catalán" /></frame>
+			<frame type="Calendric_unit" head="horas">
+				<argument type="Count" dependent="cinco" /></frame>
+			<frame type="Cardinal_numbers" head="cinco">
+				<argument type="Unit" dependent="horas" /></frame>
+			<frame type="Cardinal_numbers" head="dos" />
+			<main_frame type="Communicate_categorization" head="atendido">
+				<argument type="Speaker" dependent="en el servicio de urgencias de un hospital catalán" /></main_frame>
+			<frame type="Contingency" head="decidido">
+				<argument type="Outcome" dependent="el" />
+				<argument type="Determinant" dependent="a conseguir que nadie deba esperar cinco horas - -  quot ; ni dos ," /></frame>
+			<main_frame type="Desirable_event" head="ser">
+				<argument type="State_of_affairs" dependent="nadie" />
+				<argument type="State_of_affairs" dependent="esperar cinco horas - -  quot ; ni dos , tampoco  quot ; - - para ser atendido en el servicio de urgencias de un" /></main_frame>
+			<main_frame type="Existence" head="exista">
+				<argument type="Entity" dependent="un CAC" />
+				<argument type="Time" dependent="junto a su casa" /></main_frame>
+			<main_frame type="Waiting" head="esperar">
+				<argument type="Protagonist" dependent="nadie" />
+				<argument type="Manner" dependent="cinco horas" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Rius ha pedido a todos los hospitales que establezcan junto a las áreas de urgencias unas consultas que atiendan de forma inmediata a las personas que sufran gripe u otros procesos leves.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="np00000">Rius</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_4" concept_ref3="c_8" concept_ref4="c_6" concept_ref5="c_20" concept_ref6="c_21" concept_ref7="c_25" concept_ref8="c_26" concept_ref9="c_27">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">pedido</token><token pos="sps00">a</token><token pos="di0mp0">todos</token><mention concept_ref="c_8"><token pos="da0mp0">los</token><token pos="ncmp000">hospitales</token></mention><token pos="cs">que</token><token pos="vmsp3p0">establezcan</token><token pos="rg">junto</token><token pos="sps00">a</token><mention concept_ref="c_6"><token pos="da0fp0">las</token><token pos="ncfp000">áreas</token></mention><token pos="sps00">de</token><token pos="ncfp000">urgencias</token><token pos="di0fp0">unas</token><token pos="ncfp000">consultas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="hospitales" />
+			<frame type="Catastrophe" head="sufran">
+				<argument type="Patient" dependent="personas" />
+				<argument type="Undesirable_event" dependent="sufran gripe u otros procesos leves" /></frame>
+			<frame type="Discussion" head="consultas">
+				<argument type="Topic" dependent="a las áreas de urgencias unas consultas que atiendan de forma inmediata a las personas que sufran gripe u otros procesos leves" /></frame>
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="procesos leves" /></frame>
+			<frame type="Locale" head="áreas">
+				<argument type="Descriptor" dependent="de urgencias" /></frame>
+			<frame type="Medical_conditions" head="gripe" />
+			<frame type="People" head="personas" />
+			<frame type="Placing" head="atiendan de">
+				<argument type="Agent" dependent="todos los hospitales" />
+				<argument type="Theme" dependent="áreas de urgencias unas consultas que atiendan de forma inmediata a las personas que sufran gripe u otros procesos leves" /></frame>
+			<frame type="Process" head="procesos" />
+			<main_frame type="Questioning" head="pedido">
+				<argument type="Speaker" dependent="sufran" />
+				<argument type="Message" dependent="todos los hospitales que establezcan junto a las áreas de urgencias unas consultas que atiendan de forma inmediata a las personas que sufran gripe u otros procesos leves" /></main_frame>
+			<main_frame type="Supply" head="pedido a">
+				<argument type="Theme" dependent="inmediata a las personas que sufran gripe u otros procesos leves" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Para conseguirlo, afirma el conseller, la Generalitat ha ofrecido a los hospitales y al Centro Coordinador de Emergencias 061 "barra libre" en la contratación de médicos y personal sanitario.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0fs0">la</token><token pos="np00000">Generalitat</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_10" concept_ref3="c_8" concept_ref4="c_5" concept_ref5="c_17" concept_ref6="c_6" concept_ref7="c_20" concept_ref8="c_1" concept_ref9="c_21" concept_ref10="c_22" concept_ref11="c_25" concept_ref12="c_26" concept_ref13="c_27" concept_ref14="c_28">
+			<token pos="sps00">Para</token><token pos="vmn0000">conseguirlo</token><token pos="vmip3s0">afirma</token><mention concept_ref="c_5"><token pos="da0ms0">el</token><token pos="ncms000">conseller</token></mention><token pos="vaip3s0">ha</token><token pos="vmp00sm">ofrecido</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="ncmp000">hospitales</token><token pos="cc">y</token><token pos="spcms">al</token><token pos="ncms000">Centro</token><token pos="np00000">Coordinador</token><token pos="sps00">de</token><token pos="ncfp000">Emergencias</token><token pos="z">061</token><token pos="fe">quot;</token><token pos="ncfs000">barra</token><token pos="aq0cs0">libre</token><token pos="fe">quot;</token><mention concept_ref="c_22"><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">contratación</token><token pos="sps00">de</token><token pos="ncmp000">médicos</token><token pos="cc">y</token><token pos="aq0cs0">personal</token><token pos="aq0ms0">sanitario</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Accomplishment" head="conseguirlo">
+				<argument type="Goal" dependent="la" />
+				<argument type="Goal" dependent="en la contratación de médicos y personal sanitario" /></main_frame>
+			<frame type="Buildings" head="barra">
+				<argument type="Descriptor" dependent="libre" /></frame>
+			<frame type="Buildings" head="hospitales" />
+			<frame type="Employing" head="personal">
+				<argument type="Field" dependent="médicos y" /></frame>
+			<frame type="Locale_by_use" head="Centro" />
+			<frame type="Medical_conditions" head="sanitario" />
+			<main_frame type="Statement" head="afirma">
+				<argument type="Message" dependent=", la Generalitat ha ofrecido a los hospitales y al Centro Coordinador de Emergencias 061  quot ; barra libre  quot ; en la contratación de médicos y personal" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "No tienen limitaciones, el Servei Català de la Salut pagará el coste de ese personal" afirma Rius.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0ms0">el</token><token pos="ncfp000">Servei</token><token pos="ncfp000">Català</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Salut</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_5" concept_ref3="c_12" concept_ref4="c_1" concept_ref5="c_26" concept_ref6="c_28">
+			<token pos="vmif3s0">pagará</token><mention concept_ref="c_5"><token pos="da0ms0">el</token><token pos="ncms000">coste</token></mention><token pos="sps00">de</token><token pos="dd0ms0">ese</token><mention concept_ref="c_1"><token pos="ncms000">personal</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Commerce_pay" head="pagará">
+				<argument type="Buyer" dependent="la Salut" />
+				<argument type="Goods" dependent="el coste de ese personal  quot ; afirma" /></main_frame>
+			<frame type="Employing" head="personal" />
+			<frame type="Expensiveness" head="coste">
+				<argument type="Asset" dependent="ese personal" /></frame>
+			<frame type="Limitation" head="limitaciones" />
+			<frame type="Statement" head="afirma">
+				<argument type="Message" dependent="; No tienen limitaciones , el Servei Català de la Salut pagará el coste de ese personal" />
+				<argument type="Speaker" dependent="el" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Cada hospital debe planificar su método. Ninguno podrá decir que ponemos límite económico".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Ninguno " />
+			<frame type="Buildings" head="hospital" />
+			<frame type="Capability" head="podrá">
+				<argument type="Entity" dependent="Ninguno" />
+				<argument type="Event" dependent="decir que ponemos límite económico" /></frame>
+			<frame type="Economy" head="económico" />
+			<frame type="Placing" head="su">
+				<argument type="Agent" dependent="ponemos" />
+				<argument type="Theme" dependent="límite económico" /></frame>
+			<frame type="Purpose" head="planificar">
+				<argument type="Agent" dependent="Cada hospital" /></frame>
+			<frame type="Required_event" head="debe">
+				<argument type="Required_situation" dependent="Cada hospital" />
+				<argument type="Required_situation" dependent="planificar su método . Ninguno podrá decir que ponemos límite económico" /></frame>
+			<frame type="Statement" head="decir">
+				<argument type="Speaker" dependent="Ninguno" />
+				<argument type="Message" dependent="que ponemos límite económico" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Como ocurrió en los últimos años, los servicios de urgencias recibieron anteayer casi un 40% más de demanda que hace dos semanas, a consecuencia de la gripe.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="da0mp0">los</token><token pos="ncmp000">servicios</token><token pos="sps00">de</token><token pos="ncfp000">urgencias</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_13" concept_ref3="c_26" concept_ref4="c_28">
+			<token pos="vmis3p0">recibieron</token><token pos="rg">casi</token><token pos="di0ms0">un</token><token pos="z">40%</token><token pos="rg">más</token><mention concept_ref="c_26"><token pos="sps00">de</token></mention><mention concept_ref="c_13"><token pos="ncfs000">demanda</token></mention><token pos="cs">que</token><token pos="vmip3s0">hace</token><token pos="dn0cp0">dos</token><token pos="ncfp000">semanas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Relative_time" dependent="últimos" /></frame>
+			<main_frame type="Calendric_unit" head="hace dos semanas" />
+			<frame type="Calendric_unit" head="semanas">
+				<argument type="Count" dependent="dos" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Unit" dependent="semanas" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="demanda" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Time" dependent="en" />
+				<argument type="Ground" dependent="últimos años" /></frame>
+			<frame type="Medical_conditions" head="gripe" />
+			<frame type="Proportional_quantity" head="casi un">
+				<argument type="Reference_quantity" dependent="40 % más de demanda" /></frame>
+			<frame type="Public_services" head="servicios">
+				<argument type="Domain" dependent="de urgencias" /></frame>
+			<main_frame type="Receiving" head="recibieron">
+				<argument type="Time" dependent="en los últimos años" />
+				<argument type="Theme" dependent="servicios de urgencias" />
+				<argument type="Theme" dependent="40 % más de demanda que" /></main_frame>
+			<frame type="Relative_time" head="últimos">
+				<argument type="Focal_occasion" dependent="años" /></frame>
+			<frame type="Request" head="demanda">
+				<argument type="Message" dependent="los" /></frame>
+			<frame type="Time_vector" head="anteayer">
+				<argument type="Distance" dependent="dos semanas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La insistente promoción de los CAC apenas ha frenado esa afluencia a los hospitales.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="da0fs0">La</token><token pos="aq0cs0">insistente</token><token pos="ncfs000">promoción</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="np00000">CAC</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_13" concept_ref3="c_20" concept_ref4="c_22" concept_ref5="c_21" concept_ref6="c_25" concept_ref7="c_26" concept_ref8="c_27" concept_ref9="c_28">
+			<token pos="rg">apenas</token><token pos="vaip3s0">ha</token><mention concept_ref="c_22"><token pos="vmp00sm">frenado</token><token pos="dd0fs0">esa</token><token pos="ncfs000">afluencia</token><token pos="sps00">a</token><token pos="da0mp0">los</token><token pos="ncmp000">hospitales</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="afluencia">
+				<argument type="Goal" dependent="a los hospitales" /></frame>
+			<frame type="Buildings" head="hospitales" />
+			<frame type="Change_position_on_a_scale" head="a los">
+				<argument type="Item" dependent="insistente promoción de los CAC" />
+				<argument type="Manner" dependent="apenas ha frenado" />
+				<argument type="Item" dependent="esa afluencia" />
+				<argument type="Final_value" dependent="a los hospitales" /></frame>
+			<main_frame type="Hindering" head="frenado">
+				<argument type="Hindrance" dependent="insistente promoción de los CAC" />
+				<argument type="Action" dependent="frenado esa afluencia a los hospitales" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sanitat "ha aceptado que esa es la realidad", advierte Rius.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="pd0fs000">esa</token>
+		</theme>
+		<rheme concept_ref1="c_13" concept_ref2="c_25" concept_ref3="c_26">
+			<mention concept_ref="c_26"><token pos="vsip3s0">es</token></mention><mention concept_ref="c_25"><token pos="da0fs0">la</token></mention><token pos="ncfs000">realidad</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Receiving" head="aceptado">
+				<argument type="Theme" dependent="esa es la realidad  quot ; , advierte" /></frame>
+			<frame type="Warning" head="quot">
+				<argument type="Speaker" dependent="ha" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Es difícil que un CAC pueda competir con los recursos de un hospital" explica.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="di0ms0">un</token><token pos="np00000">CAC</token>
+		</theme>
+		<rheme concept_ref1="c_12" concept_ref2="c_8" concept_ref3="c_20" concept_ref4="c_21" concept_ref5="c_25" concept_ref6="c_26" concept_ref7="c_27">
+			<token pos="vmsp3s0">pueda</token><token pos="vmn0000">competir</token><token pos="sps00">con</token><mention concept_ref="c_8"><token pos="da0mp0">los</token><token pos="ncmp000">recursos</token></mention><mention concept_ref="c_26"><token pos="sps00">de</token></mention><token pos="di0ms0">un</token><mention concept_ref="c_21"><token pos="ncms000">hospital</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="hospital" />
+			<frame type="Difficulty" head="difícil">
+				<argument type="Activity" dependent="competir con los recursos de un hospital  quot ; explica" /></frame>
+			<frame type="Explaining_the_facts" head="explica">
+				<argument type="Fact" dependent="Es" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Parece una situación perversa, pero en España existe la mentalidad de que el hospital está para todo. Cambiar esa cultura y conseguir que el usuario confíe en un centro de barrio costará dos o tres años. Nuestra obligación, mientras, es dar respuesta en los hospitales, tanta como haga falta y de inmediato".
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="da0ms0">el</token><token pos="ncms000">hospital</token>
+		</theme>
+		<rheme concept_ref1="c_20" concept_ref2="c_26">
+			<token pos="vmip3s0">está</token><token pos="sps00">para</token><mention concept_ref="c_20"><token pos="pi0ms000">todo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_necessary" head="haga falta" />
+			<frame type="Being_obligated" head="obligación">
+				<argument type="Responsible_party" dependent="Nuestra" /></frame>
+			<frame type="Buildings" head="hospital" />
+			<frame type="Buildings" head="hospitales" />
+			<frame type="Cardinal_numbers" head="dos" />
+			<frame type="Cardinal_numbers" head="tres">
+				<argument type="Entity" dependent="Nuestra obligación" /></frame>
+			<frame type="Expensiveness" head="costará">
+				<argument type="Goods" dependent="centro de barrio" />
+				<argument type="Goods" dependent="dos o tres años . Nuestra obligación" /></frame>
+			<frame type="Getting" head="conseguir">
+				<argument type="Recipient" dependent="el hospital" />
+				<argument type="Theme" dependent="el usuario confíe en un centro de barrio costará dos o tres" /></frame>
+			<frame type="Give_impression" head="Parece">
+				<argument type="Characterization" dependent="una situación perversa" /></frame>
+			<frame type="Locale_by_use" head="centro">
+				<argument type="Descriptor" dependent="barrio" /></frame>
+			<frame type="Locative_relation" head="existe">
+				<argument type="Figure" dependent="haga" />
+				<argument type="Figure" dependent="la mentalidad de que el hospital está para todo . Cambiar esa cultura y conseguir que el usuario confíe en un centro de barrio" /></frame>
+			<frame type="Response" head="respuesta">
+				<argument type="Response" dependent="en los hospitales" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_1" dependent="es" />
+				<argument type="Entity_2" dependent="situación perversa" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La idea de Sanitat es que, desde la puerta de acceso a urgencias, se diferencie lo que son las emergencias clásicas en un hospital - - infartos, insuficiencia coronaria, etcétera - - de las patologías respiratorias que generan largas esperas.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="da0fs0">La</token><token pos="ncfs000">idea</token><token pos="sps00">de</token><token pos="np00000">Sanitat</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_4" concept_ref3="c_12" concept_ref4="c_20" concept_ref5="c_8" concept_ref6="c_14" concept_ref7="c_16" concept_ref8="c_22" concept_ref9="c_21" concept_ref10="c_25" concept_ref11="c_26" concept_ref12="c_27" concept_ref13="c_28">
+			<mention concept_ref="c_26"><token pos="vsip3s0">es</token></mention><token pos="cs">que</token><token pos="fc">,</token><token pos="sps00">desde</token><mention concept_ref="c_25"><token pos="da0fs0">la</token></mention><token pos="ncfs000">puerta</token><token pos="sps00">de</token><token pos="ncms000">acceso</token><token pos="sps00">a</token><token pos="ncfp000">urgencias</token><token pos="fc">,</token><mention concept_ref="c_10"><token pos="p0300000">se</token></mention><token pos="vmsp3s0">diferencie</token><mention concept_ref="c_20"><token pos="da0ns0">lo</token></mention><token pos="pr0cn000">que</token><token pos="vsip3p0">son</token><token pos="da0fp0">las</token><token pos="ncfp000">emergencias</token><token pos="aq0fp0">clásicas</token><token pos="sps00">en</token><mention concept_ref="c_12"><token pos="di0ms0">un</token><token pos="ncms000">hospital</token></mention><token pos="fg">-</token><token pos="fg">-</token><mention concept_ref="c_14"><token pos="ncmp000">infartos</token></mention><token pos="fc">,</token><token pos="ncfs000">insuficiencia</token><token pos="aq0fs0">coronaria</token><token pos="fc">,</token><token pos="fs">etcétera</token><token pos="fg">-</token><token pos="fg">-</token><token pos="sps00">de</token><mention concept_ref="c_16"><token pos="da0fp0">las</token><token pos="ncfp000">patologías</token></mention><token pos="aq0fp0">respiratorias</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="infartos">
+				<argument type="Weapon" dependent="hospital - - infartos" /></frame>
+			<frame type="Awareness" head="idea">
+				<argument type="Cognizer" dependent="de" /></frame>
+			<frame type="Building_subparts" head="se">
+				<argument type="Use" dependent="emergencias" /></frame>
+			<frame type="Buildings" head="hospital" />
+			<frame type="Connecting_architecture" head="puerta">
+				<argument type="Goal" dependent="a urgencias" /></frame>
+			<frame type="Emergency" head="emergencias">
+				<argument type="Manner" dependent="clásicas" /></frame>
+			<main_frame type="Similarity" head="diferencie">
+				<argument type="Entity_1" dependent="lo" />
+				<argument type="Entity_2" dependent="lo que son las emergencias clásicas en un hospital - - infartos , insuficiencia coronaria , etcétera - -" /></main_frame>
+			<frame type="Success_or_failure" head="insuficiencia" />
+			<main_frame type="Waiting" head="esperas">
+				<argument type="Protagonist" dependent="es" />
+				<argument type="Manner" dependent="generan largas" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "No es lógico que una persona con gripe aguarde seis horas para que se la visite en un hospital" admite Rius.
+		</str>
+		<theme concept_ref="c_14">
+			<token pos="di0fs0">una</token><token pos="ncfs000">persona</token><token pos="sps00">con</token><token pos="ncfs000">gripe</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_20" concept_ref3="c_12" concept_ref4="c_22" concept_ref5="c_21" concept_ref6="c_25" concept_ref7="c_26" concept_ref8="c_27" concept_ref9="c_28">
+			<token pos="vmsp3s0">aguarde</token><mention concept_ref="c_22"><token pos="dn0cp0">seis</token><token pos="ncfp000">horas</token></mention><token pos="sps00">para</token><token pos="cs">que</token><token pos="p0000000">se</token><mention concept_ref="c_25"><token pos="pp3fsa00">la</token></mention><token pos="vmsp3s0">visite</token><token pos="sps00">en</token><mention concept_ref="c_12"><token pos="di0ms0">un</token><token pos="ncms000">hospital</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Rius " />
+			<main_frame type="Arriving" head="visite">
+				<argument type="Theme" dependent="hospital" /></main_frame>
+			<frame type="Buildings" head="hospital" />
+			<frame type="Calendric_unit" head="horas">
+				<argument type="Count" dependent="seis" /></frame>
+			<frame type="Medical_conditions" head="gripe" />
+			<frame type="People" head="persona" />
+			<frame type="Reveal_secret" head="admite">
+				<argument type="Speaker" dependent="se" /></frame>
+			<main_frame type="Waiting" head="aguarde">
+				<argument type="Protagonist" dependent="gripe" />
+				<argument type="Manner" dependent="seis horas" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "No hace falta una gran instalación".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Installing" head="instalación">
+				<argument type="Agent" dependent="hace" /></frame>
+			<frame type="Needing" head="hace falta">
+				<argument type="Cognizer" dependent="hace" />
+				<argument type="Requirement" dependent="una gran instalación" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 De momento, dos hospitales de Barcelona - - Sant Pau y Vall d'Hebron - - han recogido ese mensaje y han establecido consultorios adosados a urgencias en los que atienden de inmediato, o antes de 24 horas, a las personas con patologías leves, que suponen casi un 20% de la demanda de urgencias.
+		</str>
+		<theme concept_ref="c_15">
+			<token pos="dn0cp0">dos</token><token pos="ncmp000">hospitales</token><token pos="sps00">de</token><token pos="np00000">Barcelona</token><token pos="fg">-</token><token pos="fg">-</token><token pos="np0000l">Sant</token><token pos="np0000l">Pau</token><token pos="cc">y</token><token pos="np0000o">Vall</token><token pos="vmip3s0">d'Hebron</token><token pos="fg">-</token><token pos="fg">-</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_19" concept_ref3="c_26" concept_ref4="c_28">
+			<token pos="sps00">De</token><token pos="vmn0000">momento</token><token pos="vaip3p0">han</token><token pos="vmp00sm">recogido</token><token pos="dd0ms0">ese</token><token pos="ncms000">mensaje</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Attaching" head="recogido">
+				<argument type="Agent" dependent="establecido" />
+				<argument type="Goal" dependent="a las" /></main_frame>
+			<frame type="Building_subparts" head="las" />
+			<frame type="Buildings" head="hospitales" />
+			<frame type="Calendric_unit" head="horas">
+				<argument type="Count" dependent="24" /></frame>
+			<main_frame type="Gathering_up" head="recogido">
+				<argument type="Manner" dependent="Vall" />
+				<argument type="Aggregate" dependent="ese mensaje" /></main_frame>
+			<frame type="Intentionally_create" head="establecido">
+				<argument type="Created_entity" dependent="las" /></frame>
+			<frame type="People" head="personas">
+				<argument type="Descriptor" dependent="con patologías leves" /></frame>
+			<frame type="Request" head="demanda">
+				<argument type="Message" dependent="a urgencias" /></frame>
+			<main_frame type="Supply" head="recogido">
+				<argument type="Supplier" dependent="los" />
+				<argument type="Theme" dependent="atienden de inmediato" />
+				<argument type="Theme" dependent="demanda de urgencias" /></main_frame>
+			<frame type="Text" head="los">
+				<argument type="Author" dependent="que" />
+				<argument type="Text" dependent="casi un 20 % de la demanda de urgencias" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Landmark_event" dependent="24 horas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El Hospital Clínic está incorporando el sistema.
+		</str>
+		<theme concept_ref="c_16">
+			<token pos="da0ms0">El</token><token pos="ncms000">Hospital</token><token pos="np00000">Clínic</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_22" concept_ref3="c_26" concept_ref4="c_28">
+			<token pos="vmip3s0">está</token><token pos="vmg0000">incorporando</token><token pos="da0ms0">el</token><token pos="ncms000">sistema</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="Hospital" />
+			<main_frame type="Inclusion" head="incorporando">
+				<argument type="Total" dependent="Hospital" />
+				<argument type="Part" dependent="el sistema" /></main_frame>
+			<frame type="System" head="sistema" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Todos se han comprometido a hacerlo", asegura el conseller.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Commitment" head="comprometido">
+				<argument type="Speaker" dependent="Todos" />
+				<argument type="Message" dependent="a hacerlo" /></frame>
+			<frame type="Intentionally_act" head="se">
+				<argument type="Agent" dependent="Todos" />
+				<argument type="Act" dependent="se" /></frame>
+			<frame type="Statement" head="quot">
+				<argument type="Message" dependent="el" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El servicio del 061, informó Sanitat, pudo disponer este fin de semana "del triple" de personal que en Navidad, cuando batió su récord de asistencia.
+		</str>
+		<theme concept_ref="c_17">
+			<token pos="da0ms0">El</token><token pos="ncms000">servicio</token><token pos="spcms">del</token><token pos="z">061</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_10" concept_ref3="c_6" concept_ref4="c_19" concept_ref5="c_1" concept_ref6="c_26" concept_ref7="c_28">
+			<token pos="vmis3s0">informó</token><mention concept_ref="c_6"><token pos="np00000">Sanitat</token></mention><token pos="vmis3s0">pudo</token><token pos="vmn0000">disponer</token><mention concept_ref="c_19"><token pos="dd0ms0">este</token><token pos="ncms000">fin</token></mention><token pos="sps00">de</token><token pos="ncfs000">semana</token><token pos="fe">quot;</token><token pos="spcms">del</token><token pos="pn0cs000">triple</token><token pos="fe">quot;</token><token pos="sps00">de</token><mention concept_ref="c_1"><token pos="ncms000">personal</token></mention><token pos="cs">que</token><token pos="sps00">en</token><token pos="np00000">Navidad</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attending" head="de asistencia">
+				<argument type="Agent" dependent="su" /></frame>
+			<frame type="Calendric_unit" head="fin de semana" />
+			<main_frame type="Capability" head="pudo">
+				<argument type="Entity" dependent="servicio del 061 , informó" />
+				<argument type="Event" dependent="disponer este fin de semana  quot ; del triple  quot ; de personal que en Navidad , cuando batió su récord de" /></main_frame>
+			<frame type="Cause_to_fragment" head="batió">
+				<argument type="Agent" dependent="su" />
+				<argument type="Whole_patient" dependent="su" />
+				<argument type="Manner" dependent="récord" /></frame>
+			<frame type="Employing" head="de personal" />
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="de personal que" />
+				<argument type="Ground" dependent="Navidad" /></frame>
+			<frame type="Public_services" head="servicio">
+				<argument type="Service_action" dependent="del 061" /></frame>
+			<main_frame type="Statement" head="informó">
+				<argument type="Message" dependent="de" /></main_frame>
+			<frame type="Text" head="récord">
+				<argument type="Text" dependent="su" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La epidemia de gripe, iniciada oficialmente el pasado día 30, pondrá a prueba esta nueva filosofía.
+		</str>
+		<theme concept_ref="c_18">
+			<token pos="da0fs0">La</token><token pos="ncfs000">epidemia</token><token pos="sps00">de</token><token pos="ncfs000">gripe</token><token pos="fc">,</token><token pos="aq0fsp">iniciada</token><token pos="rg">oficialmente</token><token pos="da0ms0">el</token><token pos="aq0msp">pasado</token><token pos="ncmp000">día</token><token pos="zm">30</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_20" concept_ref2="c_9" concept_ref3="c_25" concept_ref4="c_26">
+			<token pos="vmif3s0">pondrá</token><mention concept_ref="c_9"><token pos="dd0fs0">esta</token><token pos="aq0fs0">nueva</token><token pos="ncfs000">filosofía</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nueva">
+				<argument type="Entity" dependent="filosofía" /></frame>
+			<frame type="Medical_conditions" head="gripe" />
+			<frame type="Operational_testing" head="prueba">
+				<argument type="Product" dependent="esta nueva filosofía" /></frame>
+			<frame type="Shoot_projectiles" head="iniciada">
+				<argument type="Manner" dependent="oficialmente" />
+				<argument type="Time" dependent="día 30" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Cuando hay epidemia, la gente se ha de hacer cargo" advierte Rius.
+		</str>
+		<theme concept_ref="c_19">
+			<token pos="da0fs0">la</token><token pos="ncfs000">gente</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_10" concept_ref3="c_26" concept_ref4="c_27" concept_ref5="c_28">
+			<token pos="p0300000">se</token><token pos="vaip3s0">ha</token><mention concept_ref="c_26"><token pos="sps00">de</token></mention><token pos="vmp00sm">hacer</token><mention concept_ref="c_27"><token pos="ncfp000">cargo</token></mention><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Rius " />
+			<main_frame type="Locative_relation" head="hay">
+				<argument type="Ground" dependent="hay epidemia" />
+				<argument type="Figure" dependent=", la gente se ha de hacer cargo" /></main_frame>
+			<frame type="People" head="gente" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Nosotros hemos de hacer todo lo posible para que no esperen".
+		</str>
+		<theme concept_ref="c_20">
+			<token pos="pp1mp000">Nosotros</token>
+		</theme>
+		<rheme concept_ref1="c_20" concept_ref2="c_21" concept_ref3="c_22" concept_ref4="c_25" concept_ref5="c_26">
+			<mention concept_ref="c_21"><token pos="vaip1p0">hemos</token></mention><token pos="sps00">de</token><token pos="vmn0000">hacer</token><mention concept_ref="c_20"><token pos="di0ms0">todo</token></mention><mention concept_ref="c_25"><token pos="da0ns0">lo</token></mention><token pos="aq0cs0">posible</token><token pos="sps00">para</token><token pos="cs">que</token><token pos="rn">no</token><token pos="vmsp3p0">esperen</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_ongoing" head="hacer">
+				<argument type="Agent" dependent="hemos" />
+				<argument type="Activity" dependent="lo" /></main_frame>
+			<frame type="Capability" head="posible">
+				<argument type="Entity" dependent="hemos" />
+				<argument type="Event" dependent="para que no esperen" /></frame>
+			<frame type="Intentionally_act" head="de">
+				<argument type="Agent" dependent="hemos" />
+				<argument type="Act" dependent="hemos de hacer todo lo posible para que no esperen" /></frame>
+			<main_frame type="Required_event" head="de hacer">
+				<argument type="Required_situation" dependent="hemos" />
+				<argument type="Required_situation" dependent="hemos de hacer todo lo posible para que no esperen" /></main_frame>
+			<main_frame type="Waiting" head="esperen">
+				<argument type="Protagonist" dependent="lo" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

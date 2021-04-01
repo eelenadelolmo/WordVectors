@@ -1,0 +1,4 @@
+{   ('Causation', 'causas'): [('Effect', 'del conflicto')],
+    ('Hostile_encounter', 'conflicto'): [],
+    ('Leadership', 'del'): [('Leader', 'la'), ('Activity', 'provocado una inusual unanimidad a la hora de valorar las causas del conflicto')],
+    ('Typicality', 'inusual'): [('State_of_affairs', 'de valorar las causas del conflicto')]}

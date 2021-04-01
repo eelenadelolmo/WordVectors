@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="26_19991101_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Los poco más de tres millones de electores de Georgia</concept>
+		<concept id="c_1">Los pronósticos</concept>
+		<concept id="c_2">El ex titular de Exteriores soviético</concept>
+		<concept id="c_3">Abachidze</concept>
+		<concept id="c_4">más de un 60% de los electores</concept>
+		<concept id="c_5">Shevardnadze</concept>
+		<concept id="c_6">Los observadores internacionales</concept>
+		<concept id="c_7">la Unión de Ciudadanos de Georgia , el partido de Shevardnadze , y el bloque Renovación , del actual presidente</concept>
+		<concept id="c_8">las urnas</concept>
+		<concept id="c_9">el bloque</concept>
+		<concept id="c_10">presidente</concept>
+		<concept id="c_11">sombra</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Los poco más de tres millones de electores de Georgia fueron llamados ayer a las urnas para renovar los 233 escaños del Parlamento de Tbilisi, en una consulta que servirá de termómetro para medir la popularidad del actual presidente y ex ministro prooccidental de Asuntos Exteriores de la antigua URSS, Eduard Shevardnadze, cara a las elecciones presidenciales que se celebrarán dentro de seis meses.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">Los</token><token pos="rg">poco</token><token pos="rg">más</token><token pos="sps00">de</token><token pos="ncms000">tres</token><token pos="ncmp000">millones</token><token pos="sps00">de</token><token pos="ncmp000">electores</token><token pos="sps00">de</token><token pos="np00000">Georgia</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_3" concept_ref3="c_8">
+			<token pos="vsis3p0">fueron</token><token pos="vmp00pm">llamados</token><token pos="rg">ayer</token><token pos="sps00">a</token><mention concept_ref="c_8"><token pos="da0fp0">las</token><token pos="ncfp000">urnas</token></mention><token pos="sps00">para</token><token pos="vmn0000">renovar</token><token pos="da0mp0">los</token><token pos="z">233</token><mention concept_ref="c_6"><token pos="ncmp000">escaños</token></mention><token pos="spcms">del</token><mention concept_ref="c_3"><token pos="np00000">Parlamento</token><token pos="sps00">de</token><token pos="np00000">Tbilisi</token></mention><token pos="sps00">en</token><token pos="di0fs0">una</token><token pos="ncfs000">consulta</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_resume" head="renovar">
+				<argument type="Activity" dependent="los 233 escaños del Parlamento de Tbilisi , en una" /></main_frame>
+			<frame type="Appellations" head="presidente" />
+			<frame type="Assistance" head="servirá">
+				<argument type="Benefited_party" dependent="una consulta que" />
+				<argument type="Manner" dependent="de termómetro" />
+				<argument type="Goal" dependent="medir la popularidad del actual presidente y ex ministro prooccidental de Asuntos Exteriores de la antigua" /></frame>
+			<frame type="Body_parts" head="cara a las">
+				<argument type="Descriptor" dependent="elecciones presidenciales que" /></frame>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Cardinal_numbers" head="millones">
+				<argument type="Multiplier" dependent="tres" />
+				<argument type="Entity" dependent="las urnas" /></frame>
+			<frame type="Cardinal_numbers" head="tres">
+				<argument type="Unit" dependent="millones de electores" /></frame>
+			<frame type="Change_of_leadership" head="elecciones">
+				<argument type="Old_leader" dependent="presidente" /></frame>
+			<frame type="Dimension" head="medir">
+				<argument type="Measurement" dependent="popularidad del actual presidente y ex ministro prooccidental de Asuntos Exteriores de la antigua URSS , Eduard Shevardnadze ," /></frame>
+			<frame type="Discussion" head="consulta" />
+			<frame type="Foreign_or_domestic_country" head="Exteriores" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="del actual presidente y ex ministro prooccidental de Asuntos Exteriores de la antigua URSS , Eduard Shevardnadze" />
+				<argument type="Ground" dependent="cara a las elecciones presidenciales" />
+				<argument type="Time" dependent="celebrarán dentro de seis" /></frame>
+			<frame type="Leadership" head="ministro">
+				<argument type="Descriptor" dependent="prooccidental" />
+				<argument type="Domain" dependent="Exteriores" />
+				<argument type="Governed" dependent="de la antigua" /></frame>
+			<frame type="Leadership" head="presidente" />
+			<frame type="Proportional_quantity" head="a las">
+				<argument type="Individuals" dependent="tres millones de electores" /></frame>
+			<main_frame type="Referring_by_name" head="llamados">
+				<argument type="Entity" dependent="más de tres millones de electores" /></main_frame>
+			<frame type="Temporal_collocation" head="del actual">
+				<argument type="Trajector_entity" dependent="presidente" /></frame>
+			<frame type="Time_vector" head="antigua">
+				<argument type="Event" dependent="se" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los pronósticos situaban como principales favoritos a la Unión de Ciudadanos de Georgia, el partido de Shevardnadze, y el bloque Renovación, del actual presidente de la región autónoma de Adjaria, Aslan Abachidze, el único líder capaz de hacer sombra al jefe del Estado.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">pronósticos</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_0" concept_ref3="c_5" concept_ref4="c_3" concept_ref5="c_2" concept_ref6="c_7" concept_ref7="c_9" concept_ref8="c_10" concept_ref9="c_11">
+			<token pos="vmii3p0">situaban</token><token pos="cs">como</token><token pos="aq0cp0">principales</token><mention concept_ref="c_6"><token pos="ncmp000">favoritos</token></mention><token pos="sps00">a</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="np00000">Unión</token><token pos="sps00">de</token><token pos="ncfs000">Ciudadanos</token><token pos="sps00">de</token><token pos="np00000">Georgia</token></mention><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="ncms000">partido</token><token pos="sps00">de</token><mention concept_ref="c_5"><token pos="np00000">Shevardnadze</token></mention><token pos="fc">,</token><token pos="cc">y</token><mention concept_ref="c_9"><token pos="da0ms0">el</token><token pos="ncms000">bloque</token></mention><token pos="np00000">Renovación</token><token pos="fc">,</token><token pos="spcms">del</token><token pos="aq0cs0">actual</token><mention concept_ref="c_10"><token pos="ncms000">presidente</token></mention><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">región</token><token pos="aq0fs0">autónoma</token><token pos="sps00">de</token><token pos="np00000">Adjaria</token><token pos="fc">,</token><mention concept_ref="c_3"><token pos="np0000l">Aslan</token><token pos="np0000l">Abachidze</token></mention><token pos="fc">,</token><mention concept_ref="c_2"><token pos="da0ms0">el</token><token pos="aq0ms0">único</token><token pos="nccs000">líder</token></mention><token pos="aq0cs0">capaz</token><token pos="sps00">de</token><token pos="vmn0000">hacer</token><mention concept_ref="c_11"><token pos="ncfs000">sombra</token></mention><token pos="spcms">al</token><token pos="ncms000">jefe</token><token pos="spcms">del</token><token pos="np00000">Estado</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="partido">
+				<argument type="Aggregate_property" dependent="de" /></frame>
+			<frame type="Appellations" head="presidente">
+				<argument type="Title" dependent="de la región autónoma de" /></frame>
+			<frame type="Body_parts" head="jefe">
+				<argument type="Possessor" dependent="del Estado" /></frame>
+			<frame type="Capability" head="capaz">
+				<argument type="Event" dependent="sombra al jefe del Estado" /></frame>
+			<frame type="Importance" head="principales">
+				<argument type="Factor" dependent="favoritos" /></frame>
+			<frame type="Leadership" head="Estado" />
+			<frame type="Leadership" head="líder">
+				<argument type="Descriptor" dependent="único" />
+				<argument type="Activity" dependent="capaz de hacer sombra al jefe del Estado" /></frame>
+			<frame type="Locale" head="región">
+				<argument type="Name" dependent="autónoma" /></frame>
+			<main_frame type="Placing" head="situaban">
+				<argument type="Theme" dependent="pronósticos" />
+				<argument type="Theme" dependent="la Unión de Ciudadanos de Georgia , el partido de Shevardnadze , y el bloque Renovación , del actual presidente" /></main_frame>
+			<frame type="Predicting" head="pronósticos">
+				<argument type="Eventuality" dependent="la Unión de Ciudadanos de Georgia , el partido de Shevardnadze , y el bloque Renovación , del actual presidente" /></frame>
+			<frame type="Sole_instance" head="único">
+				<argument type="Item" dependent="líder capaz de hacer sombra al jefe del Estado" /></frame>
+			<frame type="Temporal_collocation" head="del actual">
+				<argument type="Trajector_entity" dependent="presidente de la región autónoma de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El ex titular de Exteriores soviético es partidario de continuar con las reformas económicas y anclar a su país en Occidente solicitando el ingreso en la OTAN.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="aq0cn0">ex</token><token pos="nccs000">titular</token><token pos="sps00">de</token><token pos="np00000">Exteriores</token><token pos="aq0ms0">soviético</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_7" concept_ref3="c_8" concept_ref4="c_10">
+			<token pos="vsip3s0">es</token><token pos="aq0ms0">partidario</token><token pos="sps00">de</token><token pos="vmn0000">continuar</token><token pos="sps00">con</token><token pos="da0fp0">las</token><mention concept_ref="c_7"><token pos="ncfp000">reformas</token><token pos="aq0fp0">económicas</token></mention><token pos="cc">y</token><token pos="vmn0000">anclar</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="ncms000">país</token><token pos="sps00">en</token><token pos="np00000">Occidente</token><token pos="vmg0000">solicitando</token><mention concept_ref="c_10"><token pos="da0ms0">el</token><token pos="ncms000">ingreso</token></mention><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="np00000">OTAN</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Economy" head="económicas" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="su país" />
+				<argument type="Ground" dependent="Occidente" /></frame>
+			<frame type="Membership" head="partidario">
+				<argument type="Group" dependent="país en" /></frame>
+			<frame type="Part_orientational" head="Occidente" />
+			<frame type="Political_locales" head="país" />
+			<main_frame type="Process_continue" head="continuar">
+				<argument type="Event" dependent="reformas económicas" /></main_frame>
+			<frame type="Reforming_a_system" head="reformas">
+				<argument type="Entity" dependent="económicas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El voto de los descontentos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Abachidze, en cambio, prefiere poner el acento en la corrupción e intenta aglutinar el voto de los descontentos con las reformas, que al igual que en la mayoría de las exrepúblicas soviéticas, no han traído a Georgia la prosperidad esperada.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="np00000">Abachidze</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_1" concept_ref3="c_9">
+			<token pos="fc">,</token><token pos="fc">,</token><token pos="vmip3s0">prefiere</token><token pos="vmn0000">poner</token><token pos="da0ms0">el</token><token pos="ncms000">acento</token><token pos="sps00">en</token><mention concept_ref="c_1"><token pos="da0fs0">la</token><token pos="ncfs000">corrupción</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attempt" head="intenta">
+				<argument type="Goal" dependent="aglutinar el voto de los descontentos con las reformas" /></frame>
+			<frame type="Body_parts" head="aglutinar el">
+				<argument type="Descriptor" dependent="en cambio" /></frame>
+			<frame type="Bringing" head="traído a">
+				<argument type="Agent" dependent="la mayoría de las exrepúblicas soviéticas" />
+				<argument type="Theme" dependent="Georgia la prosperidad esperada" /></frame>
+			<main_frame type="Cause_to_amalgamate" head="poner">
+				<argument type="Parts" dependent="el voto de los descontentos con las reformas , que al igual que en la mayoría de las exrepúblicas soviéticas , no han" /></main_frame>
+			<frame type="Emphasizing" head="traído" />
+			<frame type="Expectation" head="esperada">
+				<argument type="Phenomenon" dependent="prosperidad" /></frame>
+			<frame type="Increment" head="en cambio">
+				<argument type="Class" dependent="aglutinar el" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="voto de los descontentos con las reformas" />
+				<argument type="Figure" dependent="que al" />
+				<argument type="Time" dependent="al" />
+				<argument type="Ground" dependent="la mayoría de las exrepúblicas soviéticas" /></frame>
+			<frame type="Reforming_a_system" head="reformas" />
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="de" />
+				<argument type="Ground" dependent="en cambio ," />
+				<argument type="Figure" dependent=", que al igual que en la mayoría de las exrepúblicas soviéticas , no han traído a Georgia la prosperidad esperada" /></frame>
+			<frame type="Thriving" head="prosperidad" />
+			<frame type="Time_vector" head="los">
+				<argument type="Event" dependent="soviéticas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Al cierre de los colegios, más de un 60% de los electores habían votado.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="rg">más</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="zp">60%</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">electores</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_10">
+			<token pos="spcms">Al</token><mention concept_ref="c_10"><token pos="ncms000">cierre</token></mention><token pos="sps00">de</token><mention concept_ref="c_6"><token pos="da0mp0">los</token><token pos="ncmp000">colegios</token></mention><token pos="vaii3p0">habían</token><token pos="vmp00sm">votado</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="más de un 60 % de los electores" /></frame>
+			<frame type="Locale_by_use" head="colegios" />
+			<frame type="Process_end" head="cierre de">
+				<argument type="Process" dependent="los colegios" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Shevardnadze apareció en las pantallas de televisión para proclamar que su partido "había obtenido sus objetivos electorales".
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="np00000">Shevardnadze</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_6" concept_ref3="c_7" concept_ref4="c_8" concept_ref5="c_10" concept_ref6="c_11">
+			<token pos="vmis3s0">apareció</token><mention concept_ref="c_7"><token pos="sps00">en</token><token pos="da0fp0">las</token><token pos="ncfp000">pantallas</token><token pos="sps00">de</token><token pos="ncfs000">televisión</token></mention><token pos="sps00">para</token><token pos="vmn0000">proclamar</token><token pos="cs">que</token><mention concept_ref="c_11"><token pos="dp3cs0">su</token><token pos="ncms000">partido</token></mention><token pos="fe">quot;</token><token pos="vaii3s0">había</token><token pos="vmp00sm">obtenido</token><mention concept_ref="c_6"><token pos="dp3cp0">sus</token><token pos="ncmp000">objetivos</token></mention><token pos="aq0cp0">electorales</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Accomplishment" head="obtenido">
+				<argument type="Goal" dependent="sus objetivos electorales" /></main_frame>
+			<frame type="Aggregate" head="partido" />
+			<main_frame type="Give_impression" head="apareció">
+				<argument type="Phenomenon" dependent="Shevardnadze" />
+				<argument type="Appraisal" dependent="en las pantallas de televisión" />
+				<argument type="Characterization" dependent="proclamar que su partido  quot ; había obtenido sus objetivos electorales" /></main_frame>
+			<frame type="Purpose" head="objetivos">
+				<argument type="Agent" dependent="su" />
+				<argument type="Domain" dependent="electorales" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los observadores internacionales tenían ciertas dudas sobre la limpieza de la consulta.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">observadores</token><token pos="aq0cp0">internacionales</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_8">
+			<token pos="vmii3p0">tenían</token><mention concept_ref="c_6"><token pos="di0fp0">ciertas</token><token pos="ncfp000">dudas</token></mention><token pos="sps00">sobre</token><token pos="da0fs0">la</token><token pos="ncfs000">limpieza</token><token pos="sps00">de</token><mention concept_ref="c_8"><token pos="da0fs0">la</token><token pos="ncfs000">consulta</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Certainty" head="dudas">
+				<argument type="Cognizer" dependent="observadores internacionales" />
+				<argument type="Content" dependent="sobre la limpieza de la consulta" /></frame>
+			<frame type="Discussion" head="consulta" />
+			<frame type="Political_locales" head="internacionales">
+				<argument type="Population" dependent="observadores" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

@@ -1,0 +1,7 @@
+{   ('Becoming_aware', 'buscaban'): [('Phenomenon', 'que'), ('Cognizer', 'los')],
+    ('Identicality', 'mismas'): [('Type', 'fuentes')],
+    ('Money', 'dinero'): [],
+    ('Perception_active', 'buscaban'): [('Perceiver_agentive', 'los ladrones'), ('Phenomenon', 'joyas y dinero')],
+    ('Source_of_getting', 'fuentes'): [],
+    ('Statement', 'agregaron'): [('Speaker', 'Las mismas fuentes'), ('Message', 'que los ladrones buscaban joyas y dinero')],
+    ('Theft', 'ladrones'): []}

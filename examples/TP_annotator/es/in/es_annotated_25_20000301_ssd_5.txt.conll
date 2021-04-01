@@ -1,0 +1,7 @@
+{   ('Desirability', 'excelente'): [('Evaluee', 'directora')],
+    ('Increment', 'otros'): [('Class', 'detalles')],
+    ('Information', 'datos'): [],
+    ('Leadership', 'directora'): [('Governed', 'es'), ('Descriptor', 'excelente')],
+    ('Questioning', 'pedirle'): [('Speaker', 'y'), ('Message', 'datos de visitantes y otros detalles')],
+    ('Statement', 'hablado'): [('Speaker', 'y')],
+    ('Visiting', 'visitantes'): []}

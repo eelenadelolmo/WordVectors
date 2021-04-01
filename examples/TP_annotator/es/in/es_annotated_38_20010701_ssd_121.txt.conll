@@ -1,0 +1,8 @@
+{   ('Being_employed', 'funcionó'): [],
+    ('Change_of_leadership', 'revolución'): [('Old_leader', 'no funcionó')],
+    ('Feeling', 'siente'): [('Experiencer', 'se')],
+    ('Participation', 'participado'): [('Event', 'en una revolución que no funcionó')],
+    ('Possession', 'tener'): [('Owner', 'se'), ('Possession', 'vivir como un recluso tras haber participado activamente en una revolución que no funcionó ? -')],
+    ('Relative_time', 'se'): [('Focal_occasion', 'siente frustrado de tener que vivir como un recluso'), ('Landmark_occasion', 'participado activamente en una revolución que no funcionó')],
+    ('Residence', 'vivir'): [('Resident', 'se'), ('Location', 'como un recluso')],
+    ('Similarity', 'como'): [('Entity_1', 'se')]}

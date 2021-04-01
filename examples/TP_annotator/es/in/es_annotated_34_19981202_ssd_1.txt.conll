@@ -1,0 +1,6 @@
+{   ('Coming_to_believe', 'recopilar'): [('Content', 'previsto recopilar las últimas pruebas contra Clinton en sesiones a puerta cerrada centradas en las consecuencias de cometer perjurio')],
+    ('Emphasizing', 'centradas'): [   ('Consideration', 'republicanos del Comité Judicial del Congreso tienen previsto recopilar las últimas pruebas contra Clinton en sesiones a puerta cerrada'),
+                                      ('Consideration', 'en las consecuencias de cometer perjurio')],
+    ('Evidence', 'pruebas'): [('Proposition', 'en sesiones a puerta cerrada')],
+    ('Purpose', 'previsto'): [('Agent', 'Comité Judicial del Congreso'), ('Goal', 'previsto recopilar las últimas pruebas contra Clinton en sesiones a puerta cerrada centradas')],
+    ('Relative_time', 'últimas'): [('Focal_participant', 'pruebas')]}

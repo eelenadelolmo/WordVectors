@@ -1,0 +1,4 @@
+{   ('Locative_relation', 'allí'): [('Ground', ', recibieron una respuesta similar')],
+    ('Receiving', 'recibieron'): [('Recipient', 'allí'), ('Theme', 'respuesta similar')],
+    ('Response', 'respuesta'): [('Manner', 'similar')],
+    ('Similarity', 'similar'): [('Entity_1', 'respuesta')]}

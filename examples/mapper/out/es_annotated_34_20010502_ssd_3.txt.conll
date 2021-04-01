@@ -1,0 +1,8 @@
+{   ('Hostile_encounter', 'conflicto'): [],
+    ('Law', 'ley'): [],
+    ('Leadership', 'Gobierno'): [('Governed', 'su')],
+    ('Leadership', 'estado'): [('Descriptor', 'sureño')],
+    ('Membership', 'miembros'): [('Group', 'su Gobierno')],
+    ('Part_orientational', 'sureño'): [('Whole', 'estado')],
+    ('Statement', 'relacionados'): [('Message', 'su Gobierno'), ('Message', 'conflicto - - y después con diputados y senadores priístas del estado sureño , a')],
+    ('Topic', 'incipiente'): [('Manner', 'Visiblemente'), ('Topic', 'la suspensión zapatista del incipiente diálogo')]}

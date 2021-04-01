@@ -1,0 +1,7 @@
+{   ('Awareness', 'entendimiento'): [('Cognizer', 'con el Gobierno')],
+    ('Causation', 'porque'): [   ('Effect', 'Es libre de estrellarse'),
+                                 ('Cause', 'PP ha dejado claro que un acuerdo entre CiU y ERC es incompatible con un entendimiento con el'),
+                                 ('Effect', 'Gobierno')],
+    ('Leadership', 'Gobierno'): [],
+    ('Make_agreement_on_action', 'un acuerdo'): [('Party_2', 'entre CiU y')],
+    ('Removing', 'dejado claro'): [('Agent', 'es'), ('Goal', 'que un acuerdo entre CiU y ERC es incompatible con un entendimiento con el Gobierno')]}

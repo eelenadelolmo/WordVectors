@@ -1,0 +1,11 @@
+{   ('Appellations', 'expresidente'): [],
+    ('Arrest', 'arresto'): [('Authorities', 'dirigentes albaneses de Kosovo'), ('Suspect', 'del expresidente yugoslavo'), ('Charges', 'un primer paso & quot ; hacia la democratización de Serbia')],
+    ('Categorization', 'consideraron'): [   ('Cognizer', 'dirigentes albaneses de Kosovo'),
+                                            ('Item', 'arresto del expresidente yugoslavo es & quot ; un primer paso & quot ; hacia la democratización de Serbia ,')],
+    ('Intentionally_act', 'paso'): [('Manner', 'primer'), ('Act', 'paso & quot ; hacia la democratización de Serbia')],
+    ('Leadership', 'dirigentes'): [('Descriptor', 'Kosovo'), ('Governed', 'albaneses')],
+    ('Locative_relation', 'en'): [('Figure', 'la democratización de Serbia'), ('Figure', 'que el'), ('Ground', 'si las autoridades de Belgrado no transfieren a Milosevic al tribunal internacional')],
+    ('Ordinal_numbers', 'primer'): [('Type', 'paso')],
+    ('Political_locales', 'internacional'): [],
+    ('State_continue', 'arresto'): [],
+    ('Transfer', 'transfieren'): [('Donor', 'las autoridades de'), ('Recipient', 'a Milosevic al tribunal internacional')]}

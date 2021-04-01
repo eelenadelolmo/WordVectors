@@ -1,0 +1,9 @@
+{   ('Aggregate', 'comunidades'): [],
+    ('Being_necessary', 'necesario'): [],
+    ('Calendric_unit', 'semana'): [('Relative_time', 'hasta entonces')],
+    ('Containing', 'viene'): [('Container', 'la'), ('Contents', 'elementos de confrontación entre comunidades')],
+    ('Hostile_encounter', 'confrontación'): [('Side_2', 'entre comunidades')],
+    ('Ingredients', 'elementos'): [('Product', 'de confrontación entre comunidades')],
+    ('Leadership', 'ministro'): [('Leader', 'Jaume Matas')],
+    ('Purpose', 'plan'): [],
+    ('Suitability', 'correcto'): [('Evaluee', ', justo y necesario')]}

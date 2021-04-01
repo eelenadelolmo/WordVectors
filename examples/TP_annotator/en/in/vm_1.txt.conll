@@ -1,0 +1,7 @@
+1	what	_	What	_	WP	0	_	_	_	_	_	_	_	O
+2	is	_	be	_	VBZ	0	_	_	_	_	_	_	_	O
+3	a	_	a	_	DT	0	_	_	_	_	_	_	_	O
+4	virtual	_	UNK	_	JJ	0	_	_	_	_	_	_	_	S-Descriptor
+5	machine	_	machine	_	NN	0	_	_	_	_	_	machine.n	Gizmo	S-Gizmo
+6	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

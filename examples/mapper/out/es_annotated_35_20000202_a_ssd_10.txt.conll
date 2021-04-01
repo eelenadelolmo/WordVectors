@@ -1,0 +1,12 @@
+{   ('Aggregate', 'partido'): [],
+    ('Awareness', 'conocido'): [('Degree', 'es'), ('Content', '; de sobra conocido & quot ; que Weyrauch efectuó varios viajes a Suiza y Liechtenstein')],
+    ('Evidence', 'demuestren'): [('Proposition', 'de pruebas que demuestren la existencia de cuentas secretas en paraísos fiscales')],
+    ('Evidence', 'pruebas'): [('Proposition', 'la existencia de cuentas secretas en paraísos fiscales')],
+    ('Existence', 'existencia'): [('Entity', 'portavoz')],
+    ('Quantified_mass', 'varios'): [('Individuals', 'viajes')],
+    ('Representative', 'quot'): [('Represented', 'de'), ('Representative', 'Christiansen')],
+    ('Secrecy_status', 'secretas'): [('Phenomenon', 'cuentas')],
+    ('Statement', 'dijo'): [   ('Message', 'Christiansen , dijo que el partido no dispone de pruebas que demuestren la existencia de cuentas secretas en paraísos fiscales'),
+                               ('Message', 'de sobra conocido & quot ; que Weyrauch efectuó varios viajes a Suiza y Liechtenstein')],
+    ('Text', 'cuentas'): [('Genre', 'secretas')],
+    ('Travel', 'viajes'): [('Traveler', 'Weyrauch'), ('Goal', 'y Liechtenstein a')]}

@@ -1,0 +1,12 @@
+{   ('Calendric_unit', 'día'): [('Relative_time', 'anterior')],
+    ('Cardinal_numbers', 'siete'): [('Entity', 'navíos')],
+    ('Defending', 'Defensa'): [('Assailant', 'ruso')],
+    ('Hostile_encounter', 'conflicto'): [('Sides', 'Kosovo')],
+    ('Locale', 'zona'): [('Descriptor', 'conflicto de Kosovo')],
+    ('Origin', 'ruso'): [('Entity', 'ministro de Defensa')],
+    ('Relative_time', 'a las'): [('Landmark_occasion', 'el fracaso')],
+    ('Relative_time', 'anterior'): [('Focal_occasion', 'día')],
+    ('Sending', 'envío'): [('Theme', 'de siete navíos de guerra')],
+    ('Statement', 'anunció'): [   ('Message', 'ministro de Defensa ruso'),
+                                  ('Message', 'el miércoles el envío de siete navíos de guerra a las proximidades de la zona del conflicto de Kosovo para & quot ; evaluar la situación')],
+    ('Success_or_failure', 'fracaso'): []}

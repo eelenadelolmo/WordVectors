@@ -1,0 +1,7 @@
+{   ('Intentionally_act', 'actividades'): [('Domain', 'electorales'), ('Purpose', 'recaudación de fondos')],
+    ('Questioning', 'solicitud'): [   ('Speaker', 'Freeh y LaBella escribieron a la ministra de Justicia , Janet Reno'),
+                                      ('Addressee', 'su'),
+                                      ('Message', 'independiente para investigar las actividades de Clinton en materia de recaudación de fondos electorales')],
+    ('Request', 'solicitud'): [('Speaker', 'su')],
+    ('Scrutiny', 'investigar'): [('Ground', 'de recaudación de fondos electorales')],
+    ('Text_creation', 'escribieron'): [('Author', 'Freeh y LaBella'), ('Form', 'a la ministra de Justicia , Janet Reno')]}

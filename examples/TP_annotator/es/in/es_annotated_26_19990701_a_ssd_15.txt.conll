@@ -1,0 +1,5 @@
+{   ('Individual_history', 'historia'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'un salto'), ('Ground', 'historia')],
+    ('Manufacturing', 'dando'): [('Product', 'un salto en la historia')],
+    ('Sole_instance', 'únicos'): [('Type', 'ellos')],
+    ('Weapon', 'bombardeado'): [('Weapon', 'bombardeado Yugoslavia')]}

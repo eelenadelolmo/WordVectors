@@ -1,0 +1,10 @@
+{   ('Change_position_on_a_scale', 'bajar'): [   ('Item', 'es'),
+                                                 ('Manner', 'locura bajar a'),
+                                                 ('Final_value', 'a la playa'),
+                                                 ('Correlated_variable', 'hasta que no se haya resuelto el caso & quot ; , dice Marta')],
+    ('Mental_property', 'locura'): [('Protagonist', 'es'), ('Behavior', 'bajar a la playa hasta que')],
+    ('Motion', 'se'): [('Theme', 'es'), ('Degree', 'locura'), ('Path', 'bajar'), ('Goal', 'a la playa')],
+    ('Natural_features', 'playa'): [],
+    ('Opinion', 'Pienso'): [('Cognizer', 'el'), ('Opinion', 'es una locura bajar a la playa hasta que no se haya resuelto el caso & quot ; , dice')],
+    ('Resolve_problem', 'resuelto'): [('Problem', 'el caso')],
+    ('Statement', 'dice'): [('Message', '; Pienso que es una locura bajar a la playa hasta que no se haya resuelto el caso & quot ; ,'), ('Addressee', 'Marta')]}

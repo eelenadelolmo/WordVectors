@@ -1,0 +1,5 @@
+{   ('Death', 'muertes'): [('Protagonist', 'de un líder de la ultraderecha israelí y de su esposa')],
+    ('Leadership', 'líder'): [('Governed', 'palestino Al')],
+    ('Personal_relationship', 'esposa'): [('Partner_1', 'su')],
+    ('Revenge', 'venganza'): [('Offender', 'Israel y en los territorios palestinos')],
+    ('Vocalizations', 'clamores'): []}

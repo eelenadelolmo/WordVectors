@@ -1,0 +1,9 @@
+{   ('Attack', 'infartos'): [('Weapon', 'hospital - - infartos')],
+    ('Awareness', 'idea'): [('Cognizer', 'de')],
+    ('Building_subparts', 'se'): [('Use', 'emergencias')],
+    ('Buildings', 'hospital'): [],
+    ('Connecting_architecture', 'puerta'): [('Goal', 'a urgencias')],
+    ('Emergency', 'emergencias'): [('Manner', 'clásicas')],
+    ('Similarity', 'diferencie'): [('Entity_1', 'lo'), ('Entity_2', 'lo que son las emergencias clásicas en un hospital - - infartos , insuficiencia coronaria , etcétera - -')],
+    ('Success_or_failure', 'insuficiencia'): [],
+    ('Waiting', 'esperas'): [('Protagonist', 'es'), ('Manner', 'generan largas')]}

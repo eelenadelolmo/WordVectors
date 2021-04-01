@@ -1,0 +1,4 @@
+{   ('Increment', 'más'): [('Class', 'explosivos')],
+    ('Non-gradable_proximity', 'contrario'): [('Ground', 'de Rebeca')],
+    ('Placing', 'lo'): [('Agent', 'lo'), ('Theme', 'más explosivos')],
+    ('Weapon', 'explosivos'): []}

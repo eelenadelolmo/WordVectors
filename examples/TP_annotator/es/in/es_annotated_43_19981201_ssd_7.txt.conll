@@ -1,0 +1,4 @@
+{   ('Becoming_aware', 'registrase'): [('Cognizer', 'la casa'), ('Phenomenon', 'un cierto desorden')],
+    ('Buildings', 'casa'): [],
+    ('Explaining_the_facts', 'explicaría'): [('Fact', 'Esto'), ('State_of_affairs', 'la casa registrase un cierto desorden')],
+    ('Idiosyncrasy', 'cierto'): [('Entity', 'desorden')]}

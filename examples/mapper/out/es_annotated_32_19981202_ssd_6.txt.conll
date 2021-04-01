@@ -1,0 +1,12 @@
+{   ('Activity_start', 'se'): [('Agent', 'las provincias canadienses'), ('Activity', 'a calentar motores para la consulta inmediatamente , al negociar con Ottawa sobre la unión social')],
+    ('Cause_temperature_change', 'calentar'): [('Agent', 'las provincias canadienses'), ('Item', 'motores')],
+    ('Deny_or_grant_permission', 'restringir'): [('Action', 'poderes centrales')],
+    ('Discussion', 'consulta'): [],
+    ('Electricity', 'poderes'): [('Source', 'centrales')],
+    ('Expectation', 'espera'): [('Phenomenon', 'a calentar motores para la consulta inmediatamente , al negociar con Ottawa sobre la unión social , el pacto de las provincias canadienses para')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'provincias canadienses para restringir los poderes centrales en'), ('Ground', 'áreas de jurisdicción provincial')],
+    ('Locale', 'áreas'): [],
+    ('Origin', 'canadienses'): [('Entity', 'provincial')],
+    ('Part_inner_outer', 'centrales'): [('Whole', 'poderes')],
+    ('Political_locales', 'jurisdicción'): [('Name', 'provincial')],
+    ('Political_locales', 'provincias'): [('Population', 'canadienses')]}

@@ -1,0 +1,4 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Kinship', 'hijos'): [],
+    ('Locative_relation', 'a la'): [('Figure', 'electricista Carlos Urquijo , su esposa y dos hijos salieron ayer sobresaltados de la cama a'), ('Ground', 'una')],
+    ('Personal_relationship', 'esposa'): [('Partner_1', 'su')]}

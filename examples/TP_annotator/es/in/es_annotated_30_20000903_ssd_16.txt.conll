@@ -1,0 +1,4 @@
+{   ('Capability', 'incapaz'): [('Entity', 'el Ejecutivo de Vitoria'), ('Event', 'liderar una situación sin precedentes')],
+    ('Leadership', 'liderar'): [('Leader', 'el Ejecutivo de Vitoria'), ('Leader', 'una situación sin precedentes')],
+    ('Misdeed', 'sin'): [('Manner', 'original'), ('Wrongdoer', 'de haber sido votado por')],
+    ('Statement', 'Añadió'): [('Speaker', 'el')]}

@@ -1,0 +1,4 @@
+{   ('Direction', 'acaba'): [('Distance', 'Toda la fogosidad acaba'), ('Path', 'diluyéndose')],
+    ('Location_of_light', 'fogosidad'): [],
+    ('Process_end', 'acaba'): [('Process', 'la fogosidad'), ('Process', 'diluyéndose')],
+    ('Quantified_mass', 'Toda'): [('Individuals', 'la fogosidad')]}

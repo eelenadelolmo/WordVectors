@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="31_19990401_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El Kremlin</concept>
+		<concept id="c_1">El ministro de Defensa ruso , Igor Sergueyev ,</concept>
+		<concept id="c_2">Los buques rusos</concept>
+		<concept id="c_3">Rusia</concept>
+		<concept id="c_4">Moscú</concept>
+		<concept id="c_5">la OTAN</concept>
+		<concept id="c_6">Nadie</concept>
+		<concept id="c_7">el ministro de Exteriores Igor Ivanov</concept>
+		<concept id="c_8">El fracaso del viaje de Primakov a Yugoslavia y Alemania</concept>
+		<concept id="c_9">El primer ministro</concept>
+		<concept id="c_10">Milosevic</concept>
+		<concept id="c_11">envío de los buques de la flota del Mar Negro</concept>
+		<concept id="c_12">de</concept>
+		<concept id="c_13">navíos</concept>
+		<concept id="c_14">guerra</concept>
+		<concept id="c_15">la zona</concept>
+		<concept id="c_16">conflicto</concept>
+		<concept id="c_17">el viernes</concept>
+		<concept id="c_18">nuestro país</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El Kremlin dice que la misión de las naves es "evaluar la situación" en Kosovo.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="np00000">Kremlin</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_2" concept_ref3="c_4" concept_ref4="c_12">
+			<mention concept_ref="c_3"><token pos="da0fs0">la</token><token pos="ncfs000">misión</token></mention><mention concept_ref="c_12"><token pos="sps00">de</token></mention><token pos="da0fp0">las</token><token pos="ncfp000">naves</token><token pos="vsip3s0">es</token><token pos="fe">quot;</token><token pos="vmn0000">evaluar</token><token pos="da0fs0">la</token><token pos="ncfs000">situación</token><token pos="fe">quot;</token><token pos="sps00">en</token><mention concept_ref="c_4"><token pos="np00000">Kosovo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Statement" head="dice">
+				<argument type="Speaker" dependent="Kremlin" />
+				<argument type="Message" dependent="dice que la misión de las naves es  quot ; evaluar la situación  quot ; en Kosovo" /></frame>
+			<main_frame type="Vehicle" head="naves" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El ministro de Defensa ruso, Igor Sergueyev, anunció el miércoles el envío de siete navíos de guerra a las proximidades de la zona del conflicto de Kosovo para "evaluar la situación", tras el fracaso, el día anterior, de la mediación del primer ministro, Yevgueni Primakov.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">ministro</token><token pos="sps00">de</token><token pos="np00000">Defensa</token><token pos="aq0ms0">ruso</token><token pos="fc">,</token><token pos="np0000l">Igor</token><token pos="np0000l">Sergueyev</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_0" concept_ref3="c_7" concept_ref4="c_8" concept_ref5="c_12" concept_ref6="c_13" concept_ref7="c_14" concept_ref8="c_15" concept_ref9="c_16">
+			<token pos="vmis3s0">anunció</token><mention concept_ref="c_0"><token pos="da0ms0">el</token><token pos="ncms000">miércoles</token></mention><mention concept_ref="c_7"><token pos="da0ms0">el</token><token pos="ncms000">envío</token></mention><token pos="sps00">de</token><token pos="dn0cp0">siete</token><mention concept_ref="c_13"><token pos="ncmp000">navíos</token></mention><token pos="sps00">de</token><mention concept_ref="c_14"><token pos="ncfs000">guerra</token></mention><token pos="sps00">a</token><mention concept_ref="c_8"><token pos="da0fp0">las</token><token pos="ncfp000">proximidades</token></mention><token pos="sps00">de</token><mention concept_ref="c_15"><token pos="da0fs0">la</token><token pos="ncfs000">zona</token></mention><token pos="spcms">del</token><mention concept_ref="c_16"><token pos="ncms000">conflicto</token></mention><token pos="sps00">de</token><mention concept_ref="c_4"><token pos="np00000">Kosovo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="día">
+				<argument type="Relative_time" dependent="anterior" /></frame>
+			<frame type="Cardinal_numbers" head="siete">
+				<argument type="Entity" dependent="navíos" /></frame>
+			<frame type="Defending" head="Defensa">
+				<argument type="Assailant" dependent="ruso" /></frame>
+			<frame type="Hostile_encounter" head="conflicto">
+				<argument type="Sides" dependent="Kosovo" /></frame>
+			<frame type="Locale" head="zona">
+				<argument type="Descriptor" dependent="conflicto de Kosovo" /></frame>
+			<frame type="Origin" head="ruso">
+				<argument type="Entity" dependent="ministro de Defensa" /></frame>
+			<frame type="Relative_time" head="a las">
+				<argument type="Landmark_occasion" dependent="el fracaso" /></frame>
+			<frame type="Relative_time" head="anterior">
+				<argument type="Focal_occasion" dependent="día" /></frame>
+			<frame type="Sending" head="envío">
+				<argument type="Theme" dependent="de siete navíos de guerra" /></frame>
+			<main_frame type="Statement" head="anunció">
+				<argument type="Message" dependent="ministro de Defensa ruso" />
+				<argument type="Message" dependent="el miércoles el envío de siete navíos de guerra a las proximidades de la zona del conflicto de Kosovo para  quot ; evaluar la situación" /></main_frame>
+			<frame type="Success_or_failure" head="fracaso" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los buques rusos volverán a navegar por las aguas del Mediterráneo, del que se habían retirado tras la caída de la URSS.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">buques</token><token pos="aq0mp0">rusos</token>
+		</theme>
+		<rheme>
+			<token pos="vmif3p0">volverán</token><token pos="vmn0000">navegar</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Origin" head="rusos">
+				<argument type="Entity" dependent="navegar" /></frame>
+			<frame type="Relative_time" head="por">
+				<argument type="Focal_occasion" dependent="se habían retirado" />
+				<argument type="Landmark_occasion" dependent="la caída de la" /></frame>
+			<frame type="Removing" head="retirado">
+				<argument type="Agent" dependent="Los" />
+				<argument type="Source" dependent="tras la caída de" /></frame>
+			<main_frame type="Vehicle" head="navegar">
+				<argument type="Possessor" dependent="rusos" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Rusia desempolva la retórica de la guerra fría y se adentra cada vez más en la estrategia de incrementar la tensión, como respuesta a lo que en el país se considera una "agresión" contra un "Estado soberano".
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="np00000">Rusia</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_8" concept_ref3="c_12" concept_ref4="c_14" concept_ref5="c_17">
+			<token pos="vmip3s0">desempolva</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="ncfs000">retórica</token></mention><mention concept_ref="c_12"><token pos="sps00">de</token></mention><mention concept_ref="c_8"><token pos="da0fs0">la</token><token pos="ncms000">guerra</token><token pos="aq0ms0">fría</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming" head="se adentra" />
+			<frame type="Categorization" head="considera">
+				<argument type="Item" dependent="que" />
+				<argument type="Category" dependent="en el país se considera una  quot ; agresión  quot ; contra un  quot ; Estado soberano" /></frame>
+			<frame type="Change_position_on_a_scale" head="incrementar">
+				<argument type="Item" dependent="tensión , como respuesta a" /></frame>
+			<frame type="Change_position_on_a_scale" head="más en" />
+			<frame type="Hostile_encounter" head="guerra" />
+			<frame type="Medical_conditions" head="fría" />
+			<frame type="Political_locales" head="país" />
+			<frame type="Response" head="respuesta">
+				<argument type="Trigger" dependent="a lo que en el país se considera una  quot ; agresión" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Cediendo a las presiones de nacionalistas y comunistas, Moscú ha decidido el envío de los buques de la flota del Mar Negro, el primero de los cuales zarpará el viernes.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="np00000">Moscú</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_3" concept_ref3="c_2" concept_ref4="c_11" concept_ref5="c_12" concept_ref6="c_13" concept_ref7="c_14" concept_ref8="c_15" concept_ref9="c_16" concept_ref10="c_17">
+			<token pos="vmg0000">Cediendo</token><token pos="sps00">a</token><token pos="da0fp0">las</token><token pos="ncfp000">presiones</token><token pos="sps00">de</token><token pos="nccp000">nacionalistas</token><token pos="cc">y</token><mention concept_ref="c_16"><token pos="nccp000">comunistas</token></mention><token pos="vaip3s0">ha</token><token pos="vmp00sm">decidido</token><mention concept_ref="c_7"><token pos="da0ms0">el</token><token pos="ncms000">envío</token></mention><token pos="sps00">de</token><mention concept_ref="c_2"><token pos="da0mp0">los</token><token pos="ncmp000">buques</token></mention><token pos="sps00">de</token><mention concept_ref="c_15"><token pos="da0fs0">la</token><token pos="ncfs000">flota</token></mention><token pos="spcms">del</token><mention concept_ref="c_14"><token pos="ncfs000">Mar</token><token pos="nc00000">Negro</token></mention><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="ao0ms0">primero</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="pr0cp000">cuales</token><token pos="vmif3s0">zarpará</token><mention concept_ref="c_17"><token pos="da0ms0">el</token><token pos="ncms000">viernes</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attempt_suasion" head="presiones">
+				<argument type="Speaker" dependent="de nacionalistas y comunistas" /></frame>
+			<main_frame type="Deciding" head="decidido">
+				<argument type="Cognizer" dependent="Moscú" />
+				<argument type="Decision" dependent="envío de los buques de la flota del Mar Negro" /></main_frame>
+			<frame type="Ordinal_numbers" head="primero">
+				<argument type="Type" dependent="de los cuales" /></frame>
+			<frame type="Sending" head="flota">
+				<argument type="Sender" dependent="Moscú" />
+				<argument type="Theme" dependent="flota" />
+				<argument type="Recipient" dependent="de la flota del Mar Negro" /></frame>
+			<frame type="Vehicle" head="flota">
+				<argument type="Use" dependent="de la flota del Mar Negro" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Además, el Jefe del Estado Mayor, Anatoli Kvashnin, recordó que, pese a la crisis, Rusia es un país con armas nucleares y que las utilizará para responder un eventual ataque de la OTAN.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="np00000">Rusia</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_13">
+			<token pos="vsip3s0">es</token><token pos="di0ms0">un</token><token pos="ncms000">país</token><token pos="sps00">con</token><token pos="ncfp000">armas</token><token pos="aq0cp0">nucleares</token><token pos="cc">y</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el Jefe del Estado Mayor , Anatoli Kvashnin , " />
+			<frame type="Attack" head="ataque">
+				<argument type="Weapon" dependent="del" /></frame>
+			<frame type="Catastrophe" head="crisis" />
+			<frame type="Likelihood" head="eventual">
+				<argument type="Hypothetical_event" dependent="ataque de" /></frame>
+			<frame type="Political_locales" head="país">
+				<argument type="Descriptor" dependent="con armas nucleares" /></frame>
+			<main_frame type="Response" head="responder">
+				<argument type="Agent" dependent="Rusia" />
+				<argument type="Trigger" dependent="eventual ataque de la" /></main_frame>
+			<frame type="Using" head="utilizará">
+				<argument type="Agent" dependent="Rusia" />
+				<argument type="Instrument" dependent="las" />
+				<argument type="Purpose" dependent="para responder un eventual ataque" /></frame>
+			<frame type="Weapon" head="armas">
+				<argument type="Type" dependent="nucleares" /></frame>
+			<main_frame type="Weapon" head="nucleares" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Si la OTAN amenaza la seguridad de nuestro país, Rusia está preparada para emplear el arma nuclear", dijo.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0fs0">la</token><token pos="np00000">OTAN</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_12" concept_ref3="c_14" concept_ref4="c_17" concept_ref5="c_18">
+			<token pos="vmip3s0">amenaza</token><token pos="da0fs0">la</token><token pos="ncfs000">seguridad</token><mention concept_ref="c_12"><token pos="sps00">de</token></mention><mention concept_ref="c_18"><token pos="dp1msp">nuestro</token><token pos="ncms000">país</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_at_risk" head="seguridad">
+				<argument type="Asset" dependent="nuestro país" /></frame>
+			<main_frame type="Commitment" head="amenaza">
+				<argument type="Speaker" dependent="de" />
+				<argument type="Message" dependent="la seguridad de nuestro país , Rusia está preparada para emplear el arma nuclear  quot ; , dijo" /></main_frame>
+			<frame type="Political_locales" head="país" />
+			<frame type="Statement" head="dijo">
+				<argument type="Message" dependent="amenaza la seguridad de nuestro país , Rusia está preparada para emplear el arma nuclear  quot" />
+				<argument type="Speaker" dependent="el" /></frame>
+			<frame type="Using" head="emplear el">
+				<argument type="Agent" dependent="Rusia" />
+				<argument type="Instrument" dependent="el arma nuclear" /></frame>
+			<frame type="Weapon" head="arma">
+				<argument type="Type" dependent="nuclear" /></frame>
+			<frame type="Weapon" head="nuclear" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Nadie se expresaba en esos términos desde los tiempos de la guerra fría, aunque no suponen ningún cambio de orientación en la doctrina militar rusa, ya que, desde 1993, Rusia se había declarado dispuesta a utilizar el arma nuclear en primera instancia para repeler una agresión con armamento convencional, debido al colapso sufrido por su Ejército.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="pi0cs000">Nadie</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_2" concept_ref3="c_10" concept_ref4="c_11" concept_ref5="c_12" concept_ref6="c_14" concept_ref7="c_16" concept_ref8="c_17" concept_ref9="c_18">
+			<mention concept_ref="c_17"><token pos="p0300000">se</token></mention><token pos="vmii3s0">expresaba</token><mention concept_ref="c_11"><token pos="sps00">en</token><token pos="dd0mp0">esos</token><token pos="ncmp000">términos</token><token pos="sps00">desde</token><token pos="da0mp0">los</token><token pos="ncmp000">tiempos</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncms000">guerra</token><token pos="aq0ms0">fría</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Catastrophe" head="sufrido">
+				<argument type="Undesirable_event" dependent="colapso" />
+				<argument type="Place" dependent="por su Ejército" /></frame>
+			<main_frame type="Expressing_publicly" head="expresaba">
+				<argument type="Communicator" dependent="Nadie" />
+				<argument type="Content" dependent="en esos términos desde los tiempos de la guerra fría" /></main_frame>
+			<frame type="Hostile_encounter" head="guerra" />
+			<frame type="Military" head="militar">
+				<argument type="Possessor" dependent="se" /></frame>
+			<frame type="Ordinal_numbers" head="primera" />
+			<frame type="Statement" head="declarado">
+				<argument type="Speaker" dependent="rusa" />
+				<argument type="Message" dependent="dispuesta a utilizar el arma nuclear" /></frame>
+			<frame type="Undergo_change" head="cambio">
+				<argument type="Attribute" dependent="de orientación" />
+				<argument type="Manner" dependent="en la doctrina militar rusa" /></frame>
+			<frame type="Using" head="utilizar">
+				<argument type="Agent" dependent="rusa" />
+				<argument type="Instrument" dependent="el arma nuclear" /></frame>
+			<frame type="Weapon" head="arma">
+				<argument type="Type" dependent="nuclear" /></frame>
+			<frame type="Weapon" head="armamento">
+				<argument type="Type" dependent="convencional" /></frame>
+			<frame type="Weapon" head="nuclear" />
+			<frame type="Willingness" head="se">
+				<argument type="Cognizer" dependent="rusa" />
+				<argument type="Cognizer" dependent="su" />
+				<argument type="Activity" dependent="a utilizar el arma nuclear" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En un clima tenso, el ministro de Exteriores Igor Ivanov acusó a la OTAN de querer separar a Kosovo de Yugoslavia, y en la Duma las discusiones caldearon tanto el ambiente que dos diputados se enzarzaron a puñetazos.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0ms0">el</token><token pos="ncms000">ministro</token><token pos="sps00">de</token><token pos="np00000">Exteriores</token><token pos="np0000l">Igor</token><token pos="np0000l">Ivanov</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_5" concept_ref3="c_8" concept_ref4="c_11" concept_ref5="c_12" concept_ref6="c_15" concept_ref7="c_17">
+			<token pos="vmis3s0">acusó</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="np00000">OTAN</token><token pos="sps00">de</token><token pos="vmn0000">querer</token><mention concept_ref="c_11"><token pos="vmn0000">separar</token><token pos="sps00">a</token><token pos="np00000">Kosovo</token><token pos="sps00">de</token></mention><mention concept_ref="c_8"><token pos="np00000">Yugoslavia</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cause_temperature_change" head="caldearon">
+				<argument type="Temperature_change" dependent="el ambiente que dos diputados se enzarzaron a puñetazos" /></frame>
+			<main_frame type="Desiring" head="querer">
+				<argument type="Event" dependent="separar a Kosovo de" />
+				<argument type="Place" dependent="de Yugoslavia" /></main_frame>
+			<frame type="Discussion" head="discusiones">
+				<argument type="Language" dependent="Duma" />
+				<argument type="Topic" dependent="caldearon tanto el ambiente que dos" /></frame>
+			<frame type="Judgment_communication" head="enzarzaron">
+				<argument type="Communicator" dependent="ministro de Exteriores" />
+				<argument type="Reason" dependent="de querer separar a Kosovo de Yugoslavia , y en la Duma las discusiones caldearon tanto el ambiente que dos diputados se enzarzaron a puñetazos" /></frame>
+			<frame type="Weather" head="clima">
+				<argument type="Specification" dependent="tenso" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El fracaso del viaje de Primakov a Yugoslavia y Alemania fue atribuido a la intransigencia de la OTAN.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="da0ms0">El</token><token pos="ncms000">fracaso</token><token pos="spcms">del</token><token pos="ncms000">viaje</token><token pos="sps00">de</token><token pos="np00000">Primakov</token><token pos="sps00">a</token><token pos="np00000">Yugoslavia</token><token pos="cc">y</token><token pos="np00000">Alemania</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_3" concept_ref3="c_12" concept_ref4="c_15">
+			<token pos="vsis3s0">fue</token><token pos="vmp00sm">atribuido</token><token pos="sps00">a</token><mention concept_ref="c_3"><token pos="da0fs0">la</token><token pos="ncfs000">intransigencia</token></mention><mention concept_ref="c_12"><token pos="sps00">de</token></mention><token pos="da0fs0">la</token><token pos="np00000">OTAN</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Success_or_failure" head="fracaso" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El primer ministro se sumó a la retórica antioccidental y, al llegar a Moscú, acusó a la OTAN de sabotear sus esfuerzos y de reanudar el bombardeo antes de que él llegara a Alemania.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="da0ms0">El</token><token pos="ao0ms0">primer</token><token pos="ncms000">ministro</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_12" concept_ref3="c_14" concept_ref4="c_17">
+			<mention concept_ref="c_17"><token pos="p0300000">se</token></mention><token pos="vmis3s0">sumó</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">retórica</token><token pos="aq0cs0">antioccidental</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_resume" head="se">
+				<argument type="Activity" dependent="el bombardeo" />
+				<argument type="Time" dependent="antes de que él llegara a Alemania" /></frame>
+			<frame type="Arriving" head="llegar">
+				<argument type="Theme" dependent="él" />
+				<argument type="Goal" dependent="a Alemania" /></frame>
+			<frame type="Attempt" head="esfuerzos">
+				<argument type="Agent" dependent="se" /></frame>
+			<frame type="Becoming_a_member" head="se">
+				<argument type="New_member" dependent="primer ministro" />
+				<argument type="Group" dependent="la retórica antioccidental" />
+				<argument type="Group" dependent="al llegar" />
+				<argument type="Place" dependent="a Moscú" /></frame>
+			<frame type="Judgment_communication" head="sabotear">
+				<argument type="Medium" dependent="primer ministro se sumó a la retórica antioccidental y , al llegar a" />
+				<argument type="Reason" dependent="sabotear sus esfuerzos y de reanudar el bombardeo antes de que él llegara a Alemania" /></frame>
+			<frame type="Weapon" head="bombardeo">
+				<argument type="Name" dependent="antes de que él llegara a Alemania" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Cuando llegamos a Bonn, nos dimos cuenta de que existe una acción concertada para continuar los ataques", dijo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="llegamos">
+				<argument type="Theme" dependent="nos" />
+				<argument type="Time" dependent="a Bonn" /></frame>
+			<frame type="Attack" head="ataques" />
+			<frame type="Coming_to_believe" head="cuenta de que">
+				<argument type="Cognizer" dependent="nos" />
+				<argument type="Content" dependent="que existe una acción concertada para continuar los ataques" /></frame>
+			<frame type="Intentionally_act" head="acción">
+				<argument type="Purpose" dependent="para continuar los ataques" /></frame>
+			<frame type="Locative_relation" head="existe">
+				<argument type="Figure" dependent="dimos cuenta de que" />
+				<argument type="Ground" dependent="existe una acción concertada para continuar los ataques" /></frame>
+			<frame type="Process_continue" head="continuar">
+				<argument type="Event" dependent="los ataques" /></frame>
+			<frame type="Statement" head="dijo">
+				<argument type="Message" dependent="; Cuando llegamos a Bonn , nos dimos cuenta de que existe una acción concertada para continuar los ataques" />
+				<argument type="Speaker" dependent="los" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Primakov, tras señalar que continuará con los esfuerzos para detener el ataque, añadió que Milosevic ha dado prueba de buena voluntad y de que la pelota está ahora en campo de la OTAN.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="np00000">Milosevic</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_12" concept_ref3="c_14" concept_ref4="c_15">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">dado</token><mention concept_ref="c_14"><token pos="ncfs000">prueba</token></mention><token pos="sps00">de</token><token pos="aq0fs0">buena</token><token pos="ncfs000">voluntad</token><token pos="cc">y</token><token pos="sps00">de</token><token pos="cs">que</token><token pos="da0fs0">la</token><token pos="ncfs000">pelota</token><token pos="vmip3s0">está</token><token pos="rg">ahora</token><token pos="sps00">en</token><token pos="ncms000">campo</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">OTAN</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Primakov " />
+			<frame type="Attack" head="ataque" />
+			<frame type="Attempt" head="esfuerzos">
+				<argument type="Agent" dependent="el" />
+				<argument type="Goal" dependent="para detener el ataque" /></frame>
+			<frame type="Becoming_aware" head="señalar">
+				<argument type="Phenomenon" dependent="señalar que continuará con los esfuerzos para detener el ataque , añadió que Milosevic ha dado prueba de buena voluntad y de que la pelota está ahora en campo" /></frame>
+			<frame type="Desirability" head="buena">
+				<argument type="Evaluee" dependent="ha" /></frame>
+			<frame type="Evidence" head="señalar">
+				<argument type="Support" dependent="Milosevic" />
+				<argument type="Proposition" dependent="buena voluntad y de que la pelota está ahora en campo" /></frame>
+			<frame type="Fields" head="campo">
+				<argument type="Activity" dependent="de" /></frame>
+			<frame type="Preventing_or_letting" head="detener">
+				<argument type="Potential_hindrance" dependent="el" />
+				<argument type="Event" dependent="el ataque" /></frame>
+			<frame type="Process_continue" head="continuará">
+				<argument type="Event" dependent="esfuerzos para detener el ataque" /></frame>
+			<frame type="Statement" head="añadió">
+				<argument type="Speaker" dependent="ha" />
+				<argument type="Message" dependent="que Milosevic ha dado prueba de buena voluntad y de que la pelota está ahora en campo" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

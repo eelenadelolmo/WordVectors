@@ -1,0 +1,7 @@
+{   ('Appellations', 'presidente'): [],
+    ('Awareness', 'incógnita del'): [('Content', 'del congreso')],
+    ('Cardinal_numbers', 'dos'): [],
+    ('Importance', 'principal'): [('Factor', 'incógnita del congreso')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'la principal incógnita del congreso'), ('Ground', 'el número dos')],
+    ('Quantified_mass', 'número'): [],
+    ('Taking_time', 'su'): [('Activity', 'lo'), ('Activity', 'su candidatura a la reelección como presidente , por lo que la principal incógnita del congreso está en el número dos')]}

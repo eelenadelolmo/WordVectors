@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="34_20010801_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El juez de la Audiencia Nacional Baltasar Garzón</concept>
+		<concept id="c_1">Ekin</concept>
+		<concept id="c_2">Josu Ternera</concept>
+		<concept id="c_3">procesamiento de 31 miembros de Ekin , el supuesto aparato político de ETA , por los delitos de pertenencia o colaboración con</concept>
+		<concept id="c_4">quien</concept>
+		<concept id="c_5">el</concept>
+		<concept id="c_6">para</concept>
+		<concept id="c_7">de prisión</concept>
+		<concept id="c_8">miembros</concept>
+		<concept id="c_9">los delitos</concept>
+		<concept id="c_10">el máximo cargo</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El juez de la Audiencia Nacional Baltasar Garzón ordenó ayer el procesamiento de 31 miembros de Ekin, el supuesto aparato político de ETA, por los delitos de pertenencia o colaboración con banda armada.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="nccs000">juez</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncms000">Audiencia</token><token pos="aq0ms0">Nacional</token><token pos="np0000l">Baltasar</token><token pos="np0000l">Garzón</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_1" concept_ref3="c_0" concept_ref4="c_3" concept_ref5="c_5" concept_ref6="c_6" concept_ref7="c_8" concept_ref8="c_9">
+			<token pos="vmis3s0">ordenó</token><mention concept_ref="c_2"><token pos="da0ms0">el</token><token pos="ncms000">procesamiento</token></mention><token pos="sps00">de</token><token pos="z">31</token><mention concept_ref="c_8"><token pos="ncmp000">miembros</token></mention><token pos="sps00">de</token><mention concept_ref="c_1"><token pos="np00000">Ekin</token></mention><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="aq0msp">supuesto</token><token pos="ncms000">aparato</token><token pos="aq0ms0">político</token><token pos="sps00">de</token><token pos="np00000">ETA</token><token pos="fc">,</token><token pos="sps00">por</token><mention concept_ref="c_9"><token pos="da0mp0">los</token><token pos="ncmp000">delitos</token></mention><token pos="sps00">de</token><token pos="ncfs000">pertenencia</token><token pos="cc">o</token><mention concept_ref="c_0"><token pos="ncfs000">colaboración</token></mention><token pos="sps00">con</token><token pos="ncfs000">banda</token><token pos="aq0fsp">armada</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="armada">
+				<argument type="Body_part" dependent="banda" /></frame>
+			<frame type="Committing_crime" head="delitos">
+				<argument type="Perpetrator" dependent="de pertenencia o colaboración" /></frame>
+			<frame type="Membership" head="miembros">
+				<argument type="Group" dependent="de Ekin , el supuesto aparato político" /></frame>
+			<frame type="Political_locales" head="Nacional" />
+			<frame type="Possession" head="los">
+				<argument type="Possession" dependent="los delitos de pertenencia o colaboración con banda armada" /></frame>
+			<main_frame type="Request" head="ordenó">
+				<argument type="Speaker" dependent="juez de la Audiencia Nacional Baltasar" />
+				<argument type="Time" dependent="ayer" />
+				<argument type="Message" dependent="procesamiento de 31 miembros de Ekin , el supuesto aparato político de ETA , por los delitos de pertenencia o colaboración con" /></main_frame>
+			<frame type="Statement" head="delitos">
+				<argument type="Message" dependent="aparato político" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En el auto, Garzón exhorta además al Tribunal Superior de Justicia de Euskadi a que emprenda acciones contra los parlamentarios vascos José Antonio Urrutikoetxea, Josu Ternera, a quien considera el máximo cargo de Ekin en el interior de España, y Jon Salaberria, al que señala como responsable de la organización en Guipúzcoa.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Garzón</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_2" concept_ref4="c_3" concept_ref5="c_4" concept_ref6="c_5" concept_ref7="c_8" concept_ref8="c_9" concept_ref9="c_10">
+			<token pos="vmip3s0">exhorta</token><mention concept_ref="c_3"><token pos="spcms">al</token><token pos="ncfp000">Tribunal</token><token pos="ncfp000">Superior</token><token pos="sps00">de</token><token pos="ncms000">Justicia</token><token pos="sps00">de</token><token pos="np00000">Euskadi</token><token pos="sps00">a</token><token pos="cs">que</token><token pos="vmsp3s0">emprenda</token><token pos="ncfp000">acciones</token><token pos="sps00">contra</token><token pos="da0mp0">los</token><token pos="ncmp000">parlamentarios</token><token pos="aq0mp0">vascos</token><token pos="ncfs000">José</token><token pos="ncms000">Antonio</token><token pos="np00000">Urrutikoetxea</token><token pos="fc">,</token><token pos="np00000">Josu</token><token pos="ncms000">Ternera</token><token pos="fc">,</token></mention><token pos="sps00">a</token><mention concept_ref="c_4"><token pos="pr0cs000">quien</token></mention><token pos="vmip3s0">considera</token><mention concept_ref="c_10"><token pos="da0ms0">el</token><token pos="aq0ms0">máximo</token><token pos="ncms000">cargo</token></mention><token pos="sps00">de</token><mention concept_ref="c_1"><token pos="np00000">Ekin</token></mention><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">interior</token><token pos="sps00">de</token><token pos="np00000">España</token><token pos="fc">,</token><token pos="cc">y</token><token pos="np0000l">Jon</token><token pos="np0000l">Salaberria</token><token pos="fc">,</token><token pos="spcms">al</token><token pos="pr0cn000">que</token><token pos="vmip3s0">señala</token><token pos="cs">como</token><token pos="nccs000">responsable</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">organización</token><token pos="sps00">en</token><token pos="np00000">Guipúzcoa</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Attempt_suasion" head="emprenda">
+				<argument type="Depictive" dependent="exhorta además al" />
+				<argument type="Content" dependent="al Tribunal Superior de Justicia de Euskadi a que emprenda acciones contra los parlamentarios vascos José Antonio Urrutikoetxea , Josu Ternera ," /></main_frame>
+			<frame type="Building_subparts" head="cargo de">
+				<argument type="Descriptor" dependent="Superior" />
+				<argument type="Use" dependent="de Ekin" /></frame>
+			<main_frame type="Categorization" head="considera">
+				<argument type="Item" dependent="quien" />
+				<argument type="Cognizer" dependent="el" /></main_frame>
+			<frame type="Increment" head="además">
+				<argument type="Increment" dependent="de" /></frame>
+			<frame type="Intentionally_act" head="acciones">
+				<argument type="Act" dependent="Justicia" />
+				<argument type="Purpose" dependent="contra los parlamentarios vascos José Antonio Urrutikoetxea , Josu Ternera , a quien" /></frame>
+			<frame type="Organization" head="organización">
+				<argument type="Purpose" dependent="en el" /></frame>
+			<frame type="Part_inner_outer" head="interior">
+				<argument type="Whole" dependent="emprenda" /></frame>
+			<main_frame type="Sequence" head="emprenda" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Al estar ambos aforados, corresponde actuar a ese tribunal.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Direction" head="estar">
+				<argument type="Landmark" dependent="ese" />
+				<argument type="Landmark" dependent=", corresponde actuar a ese tribunal" /></frame>
+			<frame type="Intentionally_act" head="actuar" />
+			<frame type="Interior_profile_relation" head="a ese">
+				<argument type="Figure" dependent="ambos" />
+				<argument type="Ground" dependent="corresponde" /></frame>
+			<frame type="Judicial_body" head="tribunal" />
+			<frame type="Leadership" head="corresponde">
+				<argument type="Leader" dependent="ambos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En la lista de procesados figuran los abogados de Gestoras pro Amnistía José María Matanzas, como presunto coordinador de los presos etarras, y Natale Landa.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_in_captivity" head="los presos">
+				<argument type="Holding_location" dependent="etarras" /></frame>
+			<frame type="Expertise" head="pro" />
+			<frame type="People_by_vocation" head="abogados">
+				<argument type="Employer" dependent="presunto coordinador de los presos etarras , y Natale Landa" /></frame>
+			<frame type="Text" head="lista">
+				<argument type="Text" dependent="la lista de procesados figuran los abogados" /></frame>
+			<frame type="Unattributed_information" head="presunto">
+				<argument type="Reported_fact" dependent="coordinador de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 También se encuentran el ex portavoz de KAS Xabier Alegria y la ex portavoz de Jarrai Ana Lizarralde.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Locative_relation" head="se">
+				<argument type="Figure" dependent="También se encuentran el ex portavoz de KAS Xabier Alegria y la ex portavoz de Jarrai Ana" /></frame>
+			<frame type="Representative" head="se">
+				<argument type="Representative" dependent="de Jarrai Ana" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Garzón confirmó la situación de prisión para Lizarralde y los otros cinco procesados que ya se hallan en la cárcel, así como para Carlos Iñigo Blasco, al que declaró en rebeldía por hallarse huido.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Garzón</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_5" concept_ref3="c_6" concept_ref4="c_7" concept_ref5="c_10">
+			<token pos="vmis3s0">confirmó</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="ncfs000">situación</token></mention><mention concept_ref="c_7"><token pos="sps00">de</token><token pos="ncfs000">prisión</token></mention><token pos="sps00">para</token><token pos="np00000">Lizarralde</token><token pos="cc">y</token><token pos="aq0mpp">procesados</token><token pos="fc">,</token><token pos="rg">así</token><token pos="cs">como</token><token pos="sps00">para</token><mention concept_ref="c_10"><token pos="ncfs000">Carlos</token><token pos="ncms000">Iñigo</token><token pos="np00000">Blasco</token></mention><token pos="fc">,</token><token pos="spcms">al</token><token pos="pr0cn000">que</token><token pos="vmis3s0">declaró</token><token pos="sps00">en</token><token pos="ncfs000">rebeldía</token><token pos="sps00">por</token><token pos="vmn0000">hallarse</token><token pos="aq0msp">huido</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="cinco">
+				<argument type="Unit" dependent="otros" /></frame>
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="cárcel" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="y los otros cinco" />
+				<argument type="Ground" dependent="prisión" /></frame>
+			<frame type="Prison" head="prisión" />
+			<frame type="Self_motion" head="se">
+				<argument type="Self_mover" dependent="se" />
+				<argument type="Path" dependent="se" /></frame>
+			<main_frame type="Statement" head="declaró">
+				<argument type="Speaker" dependent="se" />
+				<argument type="Time" dependent="en la" />
+				<argument type="Message" dependent="para" /></main_frame>
+			<main_frame type="Verification" head="confirmó">
+				<argument type="Unconfirmed_content" dependent="de" />
+				<argument type="Unconfirmed_content" dependent="de prisión" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A los restantes les mantuvo su condición de libertad provisional.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_ongoing" head="mantuvo">
+				<argument type="Activity" dependent="los restantes" />
+				<argument type="Activity" dependent="su condición de libertad provisional" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 De las 33 personas para las que el Ministerio Fiscal solicitó el procesamiento, el juez decidió excluir "de momento y a pesar de los indicios existentes" a Alberto Frias y Mario Zubiaga, hasta que les tome declaración el próximo 29 de agosto.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Deciding" head="decidió">
+				<argument type="Decision" dependent="el juez" />
+				<argument type="Decision" dependent="excluir  quot ; de momento y a pesar de los indicios existentes  quot ; a Alberto Frias y Mario" /></frame>
+			<frame type="Existence" head="existentes">
+				<argument type="Entity" dependent="declaración" /></frame>
+			<frame type="People" head="personas" />
+			<frame type="People_by_vocation" head="juez" />
+			<frame type="Request" head="solicitó">
+				<argument type="Message" dependent="las 33 personas para las que el" />
+				<argument type="Speaker" dependent="para las que el Ministerio Fiscal" /></frame>
+			<frame type="Sign" head="declaración" />
+			<frame type="Statement" head="declaración">
+				<argument type="Speaker" dependent="les" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los dos días previos interrogará al conjunto de los procesados.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="días">
+				<argument type="Relative_time" dependent="previos" />
+				<argument type="Count" dependent="dos" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Unit" dependent="días" /></frame>
+			<frame type="Relative_time" head="previos">
+				<argument type="Focal_occasion" dependent="dos días" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Para argumentar la actividad delictiva de los acusados, Garzón invocó un auto que él mismo dictó el pasado 4 de abril y en el que declara la ilicitud de Ekin.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Garzón</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_5">
+			<token pos="vmis3s0">invocó</token><mention concept_ref="c_0"><token pos="di0ms0">un</token><token pos="ncms000">auto</token></mention><token pos="cc">y</token><token pos="sps00">en</token><mention concept_ref="c_5"><token pos="da0ms0">el</token></mention><token pos="pr0cn000">que</token><token pos="vmip3s0">declara</token><token pos="da0fs0">la</token><token pos="ncfs000">ilicitud</token><token pos="sps00">de</token><mention concept_ref="c_1"><token pos="np00000">Ekin</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Intentionally_act" head="actividad">
+				<argument type="Act" dependent="de los acusados" /></frame>
+			<frame type="Reasoning" head="argumentar">
+				<argument type="Content" dependent="actividad delictiva de los acusados" /></frame>
+			<frame type="Sequence" head="ilicitud" />
+			<main_frame type="Statement" head="declara">
+				<argument type="Speaker" dependent="él" />
+				<argument type="Message" dependent="delictiva" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En dicho escrito, el juez sostiene que Ekin es "sin ningún género de dudas" la sucesora de KAS, que funcionó como aparato político de la banda hasta su ilegalización, en noviembre de 1998.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np00000">Ekin</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_5">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="ncfs000">sucesora</token></mention><mention concept_ref="c_5"><token pos="sps00">de</token></mention><token pos="np00000">KAS</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el juez " />
+			<frame type="Activity_ongoing" head="sostiene">
+				<argument type="Activity" dependent="quot ; sin ningún género de dudas  quot ; la sucesora de KAS , que funcionó como aparato político" /></frame>
+			<frame type="Certainty" head="de dudas">
+				<argument type="Cognizer" dependent="Ekin" />
+				<argument type="Content" dependent="; la sucesora de KAS , que funcionó como aparato político de la" /></frame>
+			<frame type="Contingency" head="funcionó">
+				<argument type="Determinant" dependent="que" />
+				<argument type="Determinant" dependent="como aparato político de la banda hasta su ilegalización , en noviembre de 1998 ." /></frame>
+			<frame type="People_by_vocation" head="juez" />
+			<main_frame type="Text" head="escrito" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En el auto de procesamiento, de 321 páginas, Garzón ilustra con numerosos ejemplos los métodos de Ekin.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Garzón</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_5" concept_ref3="c_9">
+			<token pos="vmip3s0">ilustra</token><mention concept_ref="c_9"><token pos="da0mp0">los</token><token pos="ncmp000">métodos</token></mention><mention concept_ref="c_5"><token pos="sps00">de</token></mention><mention concept_ref="c_1"><token pos="np00000">Ekin</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Instance" head="ejemplos" />
+			<frame type="Means" head="métodos">
+				<argument type="Agent" dependent="Ekin" /></frame>
+			<frame type="Quantified_mass" head="numerosos">
+				<argument type="Individuals" dependent="ejemplos" /></frame>
+			<frame type="Sequence" head="los">
+				<argument type="Entities" dependent="métodos de Ekin" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Matanzas afirma que se aprovechó de su condición de abogado para dar instrucciones a los presos de ETA.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">Matanzas</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_6" concept_ref3="c_8" concept_ref4="c_9">
+			<token pos="p0300000">se</token><token pos="vmis3s0">aprovechó</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncfs000">condición</token><token pos="sps00">de</token><token pos="ncms000">abogado</token><mention concept_ref="c_6"><token pos="sps00">para</token></mention><token pos="vmn0000">dar</token><mention concept_ref="c_8"><token pos="ncfp000">instrucciones</token></mention><token pos="sps00">a</token><mention concept_ref="c_9"><token pos="da0mp0">los</token><token pos="ncmp000">presos</token></mention><token pos="sps00">de</token><token pos="np00000">ETA</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_in_captivity" head="los presos">
+				<argument type="Theme" dependent="se" /></frame>
+			<frame type="People_by_vocation" head="abogado" />
+			<frame type="Statement" head="afirma">
+				<argument type="Speaker" dependent="Matanzas" />
+				<argument type="Message" dependent="que se aprovechó de su condición de abogado para dar instrucciones a los presos de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En concreto, cuenta que se presentó ante un recluso como "comisario político" y le advirtió de que, en caso de solicitar la libertad condicional, quedaría "automáticamente expulsado" del Movimiento de Liberación Nacional Vasco.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_in_captivity" head="recluso" />
+			<frame type="Idiosyncrasy" head="concreto" />
+			<frame type="Political_locales" head="Nacional">
+				<argument type="Descriptor" dependent="Vasco" /></frame>
+			<frame type="Removing" head="expulsado">
+				<argument type="Cause" dependent="quedaría  quot ; automáticamente" />
+				<argument type="Theme" dependent="quot ; del Movimiento de Liberación Nacional" /></frame>
+			<frame type="Statement" head="cuenta">
+				<argument type="Speaker" dependent="le" />
+				<argument type="Message" dependent="cuenta que se presentó ante un recluso como  quot ; comisario político  quot ; y le advirtió de que , en caso de solicitar la libertad condicional , quedaría" /></frame>
+			<frame type="Using" head="de solicitar">
+				<argument type="Agent" dependent="le" />
+				<argument type="Purpose" dependent="quot" /></frame>
+			<frame type="Warning" head="presentó">
+				<argument type="Addressee" dependent="le" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Josu Ternera cita su historial de activista etarra desde 1973 y lo presenta como un asiduo a las reuniones de Ekin y Jarrai, haciendo prevaler su condición de aforado.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="np00000">Josu</token><token pos="ncms000">Ternera</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_9">
+			<token pos="vmip3s0">cita</token><mention concept_ref="c_9"><token pos="dp3cs0">su</token><token pos="ncms000">historial</token></mention><mention concept_ref="c_5"><token pos="sps00">de</token></mention><token pos="nccs000">activista</token><token pos="aq0cs0">etarra</token><token pos="sps00">desde</token><token pos="z">1973</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Adducing" head="cita">
+				<argument type="Speaker" dependent="Josu Ternera" />
+				<argument type="Specified_entity" dependent="su historial de activista etarra desde 1973 y lo presenta como un" /></main_frame>
+			<frame type="Beat_opponent" head="prevaler">
+				<argument type="Loser" dependent="su condición de" /></frame>
+			<frame type="Discussion" head="reuniones">
+				<argument type="Interlocutors" dependent="de Ekin y Jarrai" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

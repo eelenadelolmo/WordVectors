@@ -1,0 +1,6 @@
+{   ('Aggregate', 'grupo'): [('Aggregate_property', 'guerrillero')],
+    ('Buildings', 'hospital'): [],
+    ('Irregular_combatants', 'guerrillero'): [('Side_2', 'grupo')],
+    ('Origin', 'rusa'): [('Entity', 'localidad')],
+    ('Political_locales', 'localidad'): [('Container_possessor', 'rusa')],
+    ('Taking_time', 'tomó'): [('Activity', 'Un grupo guerrillero'), ('Time_length', 'el hospital'), ('Activity', 'de esa localidad rusa')]}

@@ -1,0 +1,3 @@
+{   ('Activity_start', 'empezará'): [('Time', 'de avanzar en esa senda'), ('Agent', 'primer ministro británico , Tony Blair'), ('Activity', 'mañana una gira por Pakistán y la India')],
+    ('Roadways', 'gira por'): [('Roadway', 'esa')],
+    ('Travel', 'gira'): [('Traveler', 'primer ministro británico , Tony Blair'), ('Traveler', 'Pakistán y la India'), ('Descriptor', 'mañana')]}

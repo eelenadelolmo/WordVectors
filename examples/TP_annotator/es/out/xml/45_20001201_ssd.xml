@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="45_20001201_ssd">
+
+
+	<concepts>
+		<concept id="c_0">La espantá de Joaquim Molins</concept>
+		<concept id="c_1">La número dos de la lista , Magda Oranich ,</concept>
+		<concept id="c_2">La crisis</concept>
+		<concept id="c_3">El número 12 de la lista electoral , a quien correspondería entrar ahora ,</concept>
+		<concept id="c_4">La pugna interna de CDC</concept>
+		<concept id="c_5">La oposición practicada por CiU</concept>
+		<concept id="c_6">La situación</concept>
+		<concept id="c_7">Fuentes de Unió</concept>
+		<concept id="c_8">de</concept>
+		<concept id="c_9">, un militante de Unió salpicado por el caso de las irregularidades de los fondos</concept>
+		<concept id="c_10">alcalde</concept>
+		<concept id="c_11">de empeorar</concept>
+		<concept id="c_12">para</concept>
+		<concept id="c_13">la toalla</concept>
+		<concept id="c_14">sus peores momentos</concept>
+		<concept id="c_15">un militante</concept>
+		<concept id="c_16">los fondos</concept>
+		<concept id="c_17">Treball</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 La espantá de Joaquim Molins ha cogido al grupo municipal de CiU en Barcelona en uno de sus peores momentos.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="nc00000">espantá</token><token pos="sps00">de</token><token pos="np0000l">Joaquim</token><token pos="np0000l">Molins</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_8" concept_ref3="c_14">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">cogido</token><token pos="spcms">al</token><token pos="ncms000">grupo</token><token pos="aq0cs0">municipal</token><token pos="sps00">de</token><token pos="np00000">CiU</token><token pos="sps00">en</token><mention concept_ref="c_4"><token pos="np00000">Barcelona</token></mention><token pos="sps00">en</token><token pos="pi0ms000">uno</token><token pos="sps00">de</token><mention concept_ref="c_14"><token pos="dp3cp0">sus</token><token pos="aq0cp0">peores</token><token pos="ncmp000">momentos</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="grupo">
+				<argument type="Aggregate_property" dependent="municipal de" />
+				<argument type="Aggregate_property" dependent="en Barcelona" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La número dos de la lista, Magda Oranich, se encuentra convaleciente de una reciente enfermedad, y el número dos a efectos prácticos, Josep Miró Ardèvol, está de baja desde hace semanas.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="ncms000">número</token><token pos="pn0cp000">dos</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">lista</token><token pos="fc">,</token><token pos="np0000l">Magda</token><token pos="np0000l">Oranich</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_8">
+			<token pos="p0300000">se</token><token pos="vmip3s0">encuentra</token><token pos="aq0cs0">convaleciente</token><mention concept_ref="c_8"><token pos="sps00">de</token></mention><mention concept_ref="c_7"><token pos="di0fs0">una</token><token pos="aq0cs0">reciente</token><token pos="ncfs000">enfermedad</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="convaleciente">
+				<argument type="Manner" dependent="se" />
+				<argument type="Content" dependent="de una reciente enfermedad" /></frame>
+			<frame type="Calendric_unit" head="semanas" />
+			<frame type="Cardinal_numbers" head="dos de la">
+				<argument type="Precision" dependent="número" /></frame>
+			<frame type="Medical_conditions" head="enfermedad" />
+			<frame type="Purpose" head="se" />
+			<frame type="Quantified_mass" head="número" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La crisis se acentúa porque el grupo no puede permitirse bajas.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">La</token><token pos="ncfn000">crisis</token>
+		</theme>
+		<rheme>
+			<token pos="p0300000">se</token><token pos="vmip3s0">acentúa</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="grupo" />
+			<frame type="Catastrophe" head="crisis" />
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="La crisis se acentúa" />
+				<argument type="Cause" dependent="grupo no puede permitirse bajas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El número 12 de la lista electoral, a quien correspondería entrar ahora, es Josep Gascón, un militante de Unió salpicado por el caso de las irregularidades de los fondos de Treball.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">El</token><token pos="ncms000">número</token><token pos="z">12</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">lista</token><token pos="aq0cs0">electoral</token><token pos="fc">,</token><token pos="sps00">a</token><token pos="pr0cs000">quien</token><token pos="vmic3s0">correspondería</token><token pos="vmn0000">entrar</token><token pos="rg">ahora</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_3" concept_ref3="c_4" concept_ref4="c_8" concept_ref5="c_9" concept_ref6="c_15" concept_ref7="c_16" concept_ref8="c_17">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_0"><token pos="np0000l">Josep</token><token pos="np0000l">Gascón</token></mention><mention concept_ref="c_9"><token pos="fc">,</token><token pos="di0ms0">un</token><token pos="nccs000">militante</token><token pos="sps00">de</token><token pos="np00000">Unió</token><token pos="aq0msp">salpicado</token><token pos="sps00">por</token><token pos="da0ms0">el</token><token pos="ncms000">caso</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">irregularidades</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">fondos</token></mention><token pos="sps00">de</token><mention concept_ref="c_17"><token pos="np00000">Treball</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Distributed_position" head="salpicado">
+				<argument type="Theme" dependent="de" />
+				<argument type="Location" dependent="por el caso de las irregularidades de los fondos" /></frame>
+			<frame type="Instance" head="caso">
+				<argument type="Type" dependent="de las irregularidades de los fondos" /></frame>
+			<frame type="Irregular_combatants" head="militante">
+				<argument type="Side_2" dependent="de Unió salpicado por el caso de las irregularidades de los fondos" /></frame>
+			<frame type="Money" head="fondos">
+				<argument type="Name" dependent="de" /></frame>
+			<main_frame type="Possession" head="es">
+				<argument type="Possession" dependent="de" />
+				<argument type="Owner" dependent="es" />
+				<argument type="Possession" dependent=", un militante de Unió salpicado por el caso de las irregularidades de los fondos" /></main_frame>
+			<frame type="Spatial_contact" head="por">
+				<argument type="Figure" dependent="número 12" />
+				<argument type="Ground" dependent="la lista electoral" /></frame>
+			<frame type="Temporal_collocation" head="ahora">
+				<argument type="Trajector_event" dependent="un militante de Unió salpicado por el caso de las irregularidades de los fondos" /></frame>
+			<frame type="Text" head="lista">
+				<argument type="Title" dependent="electoral" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Si las bajas fueran dos, la situación sería aún peor: el número 13 es Antoni Marcet, que tras las elecciones abandonó CDC y orbita ahora alrededor de Ciutadans pel Canvi.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="las bajas" /></frame>
+			<frame type="Catastrophe" head="bajas" />
+			<frame type="Change_of_leadership" head="elecciones" />
+			<frame type="Path_traveled" head="orbita">
+				<argument type="Goal" dependent="alrededor de" /></frame>
+			<frame type="Quantified_mass" head="número" />
+			<frame type="Relative_time" head="aún">
+				<argument type="Focal_occasion" dependent="el número 13 es Antoni Marcet" />
+				<argument type="Focal_occasion" dependent="que" />
+				<argument type="Landmark_occasion" dependent="las elecciones abandonó CDC y orbita ahora alrededor" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La pugna interna de CDC ha dejado indiferente al gobierno de Barcelona.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0fs0">La</token><token pos="ncfs000">pugna</token><token pos="aq0fs0">interna</token><token pos="sps00">de</token><token pos="np00000">CDC</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_8">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">dejado</token><token pos="aq0cs0">indiferente</token><token pos="spcms">al</token><token pos="ncms000">gobierno</token><mention concept_ref="c_8"><token pos="sps00">de</token></mention><mention concept_ref="c_4"><token pos="np00000">Barcelona</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Hostile_encounter" head="pugna">
+				<argument type="Depictive" dependent="interna de" />
+				<argument type="Side_2" dependent="de CDC" /></frame>
+			<frame type="Leadership" head="gobierno">
+				<argument type="Governed" dependent="de Barcelona" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La oposición practicada por CiU no ha logrado todavía poner al socialista Joan Clos en un aprieto desde que fue elegido alcalde.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0fs0">La</token><token pos="ncfs000">oposición</token><token pos="aq0fsp">practicada</token><token pos="sps00">por</token><token pos="np00000">CiU</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_0" concept_ref3="c_8" concept_ref4="c_9" concept_ref5="c_10" concept_ref6="c_15" concept_ref7="c_16" concept_ref8="c_17">
+			<token pos="rn">no</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">logrado</token><token pos="rg">todavía</token><mention concept_ref="c_9"><token pos="vmn0000">poner</token><token pos="spcms">al</token><token pos="nccs000">socialista</token><token pos="np0000l">Joan</token><token pos="np0000l">Clos</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="ncms000">aprieto</token><token pos="sps00">desde</token></mention><token pos="cs">que</token><token pos="vsis3s0">fue</token><token pos="vmp00sm">elegido</token><token pos="ncms000">alcalde</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Change_of_leadership" head="elegido">
+				<argument type="Old_leader" dependent="alcalde" /></main_frame>
+			<frame type="Custom" head="practicada">
+				<argument type="Society" dependent="oposición" /></frame>
+			<frame type="Leadership" head="alcalde">
+				<argument type="Descriptor" dependent="elegido" /></frame>
+			<frame type="Predicament" head="aprieto" />
+			<main_frame type="Success_or_failure" head="logrado">
+				<argument type="Agent" dependent="CiU" />
+				<argument type="Goal" dependent="poner al socialista Joan Clos en un aprieto desde" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La situación, con todo, es susceptible de empeorar.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0fs0">La</token><token pos="ncfs000">situación</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_11">
+			<token pos="vsip3s0">es</token><token pos="aq0cs0">susceptible</token><mention concept_ref="c_8"><token pos="sps00">de</token></mention><token pos="vmn0000">empeorar</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Likelihood" head="es susceptible de">
+				<argument type="Hypothetical_event" dependent="situación" />
+				<argument type="Hypothetical_event" dependent="de empeorar" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Fuentes de Unió advirtieron ayer de que si Molins tirara la toalla podrían vetar algunos nombres para sucederle.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="ncfp000">Fuentes</token><token pos="sps00">de</token><token pos="np00000">Unió</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_9" concept_ref3="c_12" concept_ref4="c_13" concept_ref5="c_14" concept_ref6="c_16">
+			<token pos="vmis3p0">advirtieron</token><mention concept_ref="c_8"><token pos="sps00">de</token></mention><token pos="cs">que</token><token pos="cs">si</token><mention concept_ref="c_16"><token pos="np00000">Molins</token></mention><token pos="vmsi3s0">tirara</token><mention concept_ref="c_13"><token pos="da0fs0">la</token><token pos="ncfs000">toalla</token></mention><token pos="vmic3p0">podrían</token><mention concept_ref="c_9"><token pos="vmn0000">vetar</token><token pos="di0mp0">algunos</token><token pos="ncmp000">nombres</token><token pos="sps00">para</token><token pos="vmn0000">sucederle</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_named" head="nombres">
+				<argument type="Name" dependent="la" /></frame>
+			<frame type="Calendric_unit" head="ayer de" />
+			<main_frame type="Event" head="sucederle">
+				<argument type="Event" dependent="para" /></main_frame>
+			<frame type="Interior_profile_relation" head="de">
+				<argument type="Figure" dependent="Molins tirara" />
+				<argument type="Ground" dependent="toalla podrían vetar algunos nombres para sucederle" /></frame>
+			<main_frame type="Possibility" head="podrían">
+				<argument type="Possible_event" dependent="la toalla" />
+				<argument type="Possible_event" dependent="vetar algunos nombres para sucederle" /></main_frame>
+			<frame type="Proportional_quantity" head="algunos">
+				<argument type="Individuals" dependent="nombres" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

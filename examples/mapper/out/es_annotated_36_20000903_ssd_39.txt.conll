@@ -1,0 +1,5 @@
+{   ('Aggregate', 'grupo'): [],
+    ('Appellations', 'vicepresidenta'): [('Title', 'vicepresidenta'), ('Title', 'del Parlament y una portavoz de grupo')],
+    ('Boundary', 'línea'): [],
+    ('Locative_relation', 'seguir'): [('Figure', 'Tenemos'), ('Ground', 'esta línea')],
+    ('Process_continue', 'seguir'): [('Event', 'Tenemos'), ('Place', 'seguir por esta línea')]}

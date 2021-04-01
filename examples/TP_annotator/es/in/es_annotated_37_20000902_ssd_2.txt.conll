@@ -1,0 +1,6 @@
+{   ('Aggregate', 'partidos'): [('Individuals', 'de la izquierda')],
+    ('Contingency', 'en función'): [   ('Circumstances', 'Es decir , pactando con los populares y con los partidos de la izquierda en función del'),
+                                       ('Determinant', 'en función del carácter de cada iniciativa del Govern')],
+    ('Desirability', 'populares'): [('Evaluee', 'partidos de la izquierda')],
+    ('Part_orientational', 'izquierda'): [],
+    ('Statement', 'decir'): [('Speaker', 'Es'), ('Message', 'cada iniciativa del Govern')]}

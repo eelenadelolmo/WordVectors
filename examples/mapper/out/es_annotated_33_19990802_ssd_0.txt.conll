@@ -1,0 +1,13 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Calendric_unit', 'meses'): [('Count', '40')],
+    ('Capability', 'puede'): [('Entity', 'carne de vacuno británica'), ('Event', 'en los países de la Unión Europea desde')],
+    ('Cause_to_end', 'levantarse'): [],
+    ('Exporting', 'exportaciones'): [('Importing_area', 'por un largo periodo de tiempo')],
+    ('Frequency', 'periodo'): [('Event', 'de tiempo')],
+    ('Medical_conditions', 'de vacuno'): [('Symptom', 'vacas')],
+    ('Origin', 'Europea'): [('Entity', 'Unión')],
+    ('Political_locales', 'países'): [('Container_possessor', 'de la Unión Europea')],
+    ('Process_continue', 'seguir'): [('Event', 'su consumo'), ('Event', 'exportaciones por un largo periodo de tiempo')],
+    ('Response', 'respuesta'): [('Trigger', 'a la detección del denominado mal de las vacas locas')],
+    ('Time_vector', 'ayer'): [('Distance', '40 meses'), ('Landmark_event', 'por la Comisión Europea como respuesta a la detección del denominado mal de las vacas locas')],
+    ('Time_vector', 'desde'): [('Event', 'La carne de vacuno británica puede volver a comercializarse en los países de la Unión'), ('Landmark_event', 'ayer')]}

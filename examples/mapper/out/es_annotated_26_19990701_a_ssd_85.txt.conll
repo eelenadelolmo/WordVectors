@@ -1,0 +1,4 @@
+{   ('Goal', 'se'): [('Landmark', 'ser centrista me enseñó')],
+    ('Origin', 'europeo'): [('Entity', 'político')],
+    ('People_by_vocation', 'político'): [('Age', 'europeo')],
+    ('Relative_time', 'se'): [('Focal_occasion', 'un político que se'), ('Landmark_occasion', 'su tiempo')]}

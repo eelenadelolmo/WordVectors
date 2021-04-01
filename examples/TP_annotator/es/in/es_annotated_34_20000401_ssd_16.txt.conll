@@ -1,0 +1,7 @@
+{   ('Departing', 'desaparecido'): [('Theme', 'ningún niño'), ('Place', 'en Uruguay')],
+    ('Electricity', 'poderes'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'ningún niño ha desaparecido'), ('Ground', 'Uruguay')],
+    ('Kinship', 'niño'): [],
+    ('Statement', 'decir'): [('Speaker', 'del traspaso de poderes'), ('Message', 'quot ; ningún niño ha desaparecido en Uruguay')],
+    ('Time_vector', 'antes'): [('Event', 'Sanguinetti'), ('Distance', 'poco'), ('Landmark_event', 'del traspaso de poderes')],
+    ('Transfer', 'traspaso de'): [('Theme', 'de poderes')]}

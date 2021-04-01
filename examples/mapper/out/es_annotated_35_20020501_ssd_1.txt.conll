@@ -1,0 +1,7 @@
+{   ('Becoming_aware', 'localizado'): [('Phenomenon', 'su cadáver')],
+    ('Body_parts', 'cadáver'): [('Possessor', 'su')],
+    ('Communication_response', 'reconoció'): [('Speaker', 'lo'), ('Trigger', 'que su cadáver no había sido localizado')],
+    ('Dead_or_alive', 'muerto'): [],
+    ('Employing', 'jefe'): [('Employer', 'del Ejército ruso')],
+    ('Military', 'Ejército'): [('Possessor', 'ruso')],
+    ('Origin', 'ruso'): [('Entity', 'Ejército')]}

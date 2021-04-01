@@ -1,0 +1,7 @@
+{   ('Attack', 'ataques'): [('Assailant', 'fuerzas federales'), ('Time', 'continuaron ayer'), ('Assailant', 'artillería y la aviación')],
+    ('Military', 'fuerzas'): [('Possessor', 'federales')],
+    ('Political_locales', 'federales'): [],
+    ('Process_continue', 'continuaron'): [('Event', 'fuerzas federales'), ('Depictive', 'ayer los ataques de la artillería y la aviación sobre la capital ,')],
+    ('Relational_political_locales', 'capital'): [],
+    ('Spatial_contact', 'de'): [('Figure', 'ataques de la artillería y la aviación'), ('Ground', 'la capital ,')],
+    ('Weapon', 'artillería'): []}

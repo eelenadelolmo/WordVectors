@@ -1,0 +1,9 @@
+{   ('Feeling', 'sentirse'): [('Experiencer', 'ese'), ('Emotional_state', 'es mayoritario')],
+    ('Foreign_or_domestic_country', 'patria'): [],
+    ('Increment', 'más'): [('Class', 'europeístas')],
+    ('Intentionally_act', 'se'): [('Act', 'algunos'), ('Act', 'no sientan eso que se llama patria podrían sentirse')],
+    ('Likelihood', 'podrían'): [('Hypothetical_event', 'sientan eso'), ('Hypothetical_event', 'sentirse más europeístas')],
+    ('Opinion', 'pienso'): [('Cognizer', 'se')],
+    ('Origin', 'europeístas'): [],
+    ('Proportional_quantity', 'algunos'): [],
+    ('Referring_by_name', 'se llama'): [('Speaker', 'es'), ('Name', 'patria')]}

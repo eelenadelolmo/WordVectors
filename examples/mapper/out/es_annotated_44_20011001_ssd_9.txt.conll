@@ -1,0 +1,5 @@
+{   ('Capability', 'pueden'): [('Entity', 'los'), ('Event', 'no se pueden enterrar todos')],
+    ('Electricity', 'eléctrico'): [('Source', 'aéreo')],
+    ('Locative_relation', 'hay'): [('Figure', 'Catalunya'), ('Ground', 'hay 80.000 kilómetros de tendido eléctrico aéreo')],
+    ('Quantified_mass', 'todos'): [('Mass', 'enterrar')],
+    ('Statement', 'se'): [('Speaker', 'expertos'), ('Message', 'que en Catalunya hay 80.000 kilómetros de tendido eléctrico aéreo y que no se pueden enterrar todos')]}

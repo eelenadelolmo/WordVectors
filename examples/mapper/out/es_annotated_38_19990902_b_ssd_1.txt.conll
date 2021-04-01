@@ -1,0 +1,12 @@
+{   ('Appellations', 'presidente'): [('Type', 'Melilla')],
+    ('Becoming_a_member', 'incorporación'): [('New_member', 'las dos fuerzas'), ('Group', 'un Ejecutivo autonómico')],
+    ('Being_obligated', 'responsabilidad'): [('Duty', 'responsabilidad de populares y socialistas')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'fuerzas')],
+    ('Causation', 'porque'): [('Cause', 'un hecho histórico en la democracia española'), ('Cause', 'sería la primera vez que las dos fuerzas se unirían en un Ejecutivo autonómico')],
+    ('Desirability', 'populares'): [('Evaluee', 'socialistas')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'un hecho histórico'), ('Ground', 'democracia española')],
+    ('Leadership', 'Gobierno'): [('Governed', 'su')],
+    ('Military', 'fuerzas'): [],
+    ('Ordinal_numbers', 'primera'): [],
+    ('Request', 'destacó'): [('Speaker', 'presidente de Melilla , que ayer formalizó el pacto con el PIM de Enrique Palacios ,'), ('Message', 'a la responsabilidad de populares y socialistas')]}

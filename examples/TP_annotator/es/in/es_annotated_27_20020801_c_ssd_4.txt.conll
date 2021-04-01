@@ -1,0 +1,8 @@
+{   ('Bringing', 'transporte'): [('Theme', 'los')],
+    ('Businesses', 'compañía'): [],
+    ('Calendric_unit', 'la mañana'): [],
+    ('Calendric_unit', 'martes'): [],
+    ('Increment', 'otro'): [('Class', 'transporte')],
+    ('Locale_by_use', 'puerto'): [],
+    ('Operating_a_system', 'los'): [('Operator', 'compañía'), ('System', 'reubicarlos en otro transporte el')],
+    ('Spatial_contact', 'en'): [('Ground', 'martes')]}

@@ -1,0 +1,3 @@
+{   ('Aggregate', 'grupo'): [],
+    ('Communicate_categorization', 'tramitó'): [('Speaker', 'el'), ('Item', 'todo el grupo unos billetes de avión para las 18.15')],
+    ('Ranked_expectation', 'a todo'): [('Entity', 'el'), ('Entity', 'grupo unos billetes de avión')]}

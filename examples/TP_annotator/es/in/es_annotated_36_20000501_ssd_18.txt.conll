@@ -1,0 +1,6 @@
+{   ('Aggregate', 'comunidades'): [],
+    ('Exemplar', 'modelo'): [('Type', 'para Catalunya')],
+    ('Improvement_or_decline', 'mejora del'): [('Entity', 'modelo de financiación autonómica para Catalunya y para el conjunto de comunidades')],
+    ('Interior_profile_relation', 'de'): [('Figure', 'mejora del'), ('Ground', 'modelo de financiación autonómica para Catalunya')],
+    ('Locale', 'de comunidades'): [],
+    ('Locative_relation', 'el'): [('Ground', 'Habrá una mejora del modelo de financiación autonómica para Catalunya y para el conjunto de comunidades')]}

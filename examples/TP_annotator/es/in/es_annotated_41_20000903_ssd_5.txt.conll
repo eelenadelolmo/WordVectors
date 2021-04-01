@@ -1,0 +1,4 @@
+{   ('Cardinal_numbers', 'dos'): [('Entity', 'vías')],
+    ('Intentionally_act', 'ello'): [('Act', 'ello')],
+    ('Locative_relation', 'existen'): [('Ground', 'ello existen dos vías a seguir')],
+    ('Means', 'vías'): [('Purpose', 'Para ello')]}

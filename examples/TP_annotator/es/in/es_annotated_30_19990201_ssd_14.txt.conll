@@ -1,0 +1,9 @@
+{   ('Accomplishment', 'lograr'): [('Goal', 'mayorías parlamentarias')],
+    ('Being_necessary', 'esenciales'): [('Requirement', 'pensionistas'), ('Dependent', 'esenciales para lograr mayorías parlamentarias')],
+    ('Cause_to_amalgamate', 'consolidar'): [('Parts', 'organización con vocación de gobierno , Arenas se dirigió a sectores concretos de la sociedad como las mujeres y los pensionistas ,')],
+    ('Fields', 'sectores'): [('Activity', 'sociedad como las mujeres y los pensionistas , esenciales para lograr mayorías parlamentarias')],
+    ('Goal', 'para'): [('Landmark', 'consolidar una organización con vocación de gobierno , Arenas se dirigió a sectores concretos de la sociedad como las mujeres y los pensionistas ,')],
+    ('Leadership', 'gobierno'): [],
+    ('Organization', 'organización'): [],
+    ('People', 'mujeres'): [],
+    ('Statement', 'se'): [('Speaker', 'Arenas'), ('Message', 'sectores concretos de la sociedad como las mujeres y los pensionistas , esenciales para lograr mayorías parlamentarias')]}

@@ -1,0 +1,10 @@
+{   ('Activity_ongoing', 'mantener'): [('Activity', 'su alianza parlamentaria')],
+    ('Aggregate', 'partidos'): [('Aggregate_property', 'vasca')],
+    ('Alliance', 'alianza'): [('Members', 'su'), ('Descriptor', 'parlamentaria')],
+    ('Alliance', 'coalición'): [],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'pilares')],
+    ('Cause_change_of_strength', 'refuerce'): [('Agent', 'coalición'), ('Patient', 'su compromiso con las vías políticas')],
+    ('Commitment', 'compromiso'): [('Speaker', 'su'), ('Message', 'vías políticas')],
+    ('Intentionally_create', 'crear'): [('Creator', 'su'), ('Created_entity', 'una mesa vasca de partidos que supere los foros de Ajuria Enea y')],
+    ('Roadways', 'vías'): [('Use', 'políticas')],
+    ('Statement', 'propuesta'): [('Speaker', 'su')]}

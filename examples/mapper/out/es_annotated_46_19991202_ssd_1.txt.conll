@@ -1,0 +1,6 @@
+{   ('Deciding', 'decisión'): [('Cognizer', 'se'), ('Decision', 'de romper la')],
+    ('Questioning', 'piden'): [   ('Message', 'obispo de Pamplona y los de Bilbao ,'),
+                                  ('Speaker', 'San Sebastián y Vitoria'),
+                                  ('Addressee', 'se'),
+                                  ('Message', 'replantee su decisión de romper la tregua y que anuncie definitivamente el cese de la violencia')],
+    ('Statement', 'anuncie'): [('Message', 'definitivamente el cese de la violencia')]}

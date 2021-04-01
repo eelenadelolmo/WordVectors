@@ -1,0 +1,10 @@
+{   ('Besieging', 'a los'): [('Assailant', 'de'), ('Assailant', 'llenos de compatriotas'), ('Assailant', 'gente'), ('Victim', 'me'), ('Victim', 'me pararía')],
+    ('Completeness', 'llenos de'): [('Whole', 'de compatriotas')],
+    ('Difficulty', 'imposible'): [],
+    ('Frequency', 'siempre'): [('Event', 'esos sitios'), ('Event', 'llenos de compatriotas , la gente me asediaría , me pararía')],
+    ('Goal', 'a los'): [('Trajector', 'de'), ('Landmark', 'sitios de turistas')],
+    ('Locale', 'los sitios de'): [],
+    ('Locale_by_use', 'sitios'): [('Descriptor', 'turistas')],
+    ('Motion', 'fuera a'): [('Theme', 'de'), ('Goal', 'a los sitios de turistas')],
+    ('People', 'gente'): [],
+    ('Preventing_or_letting', 'los'): [('Potential_hindrance', 'de'), ('Event', 'sería imposible')]}

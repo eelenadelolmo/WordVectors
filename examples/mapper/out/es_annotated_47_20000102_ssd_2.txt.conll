@@ -1,0 +1,11 @@
+{   ('Appellations', 'presidente'): [],
+    ('Calendric_unit', 'año'): [],
+    ('Capacity', 'su'): [('Entity', 'nos'), ('Theme', 'hartos de su')],
+    ('Causation', 'porque'): [   ('Effect', 'Todo el mundo está contento'),
+                                 ('Cause', '. Es un regalo que el presidente nos ha hecho este fin de'),
+                                 ('Effect', 'de año & quot ; , estima Boris Kirilov , un actor de 60')],
+    ('Direction', 'su'): [('Distance', 'nos'), ('Independent_variable', 'de su')],
+    ('Emotion_directed', 'contento'): [('Experiencer', 'Todo el mundo')],
+    ('Estimating', 'estima'): [('Estimation', 'Boris Kirilov'), ('Value', 'un actor de 60 años')],
+    ('Giving', 'regalo'): [('Donor', 'el presidente'), ('Recipient', 'nos')],
+    ('Process_end', 'fin de'): [('Process', 'año')]}

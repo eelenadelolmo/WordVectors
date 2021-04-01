@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="scientific">
+
+
+	<concepts>
+		<concept id="c_0">Breast cancer</concept>
+		<concept id="c_1">the residual genetic variance</concept>
+		<concept id="c_2">we</concept>
+		<concept id="c_3">SNPs in five novel independent loci</concept>
+		<concept id="c_4">1,292 SNPs</concept>
+		<concept id="c_5">Inherited mutations in these genes</concept>
+		<concept id="c_6">Subsequent genetic linkage studies</concept>
+		<concept id="c_7">These observations</concept>
+		<concept id="c_8">large case-control association studies</concept>
+		<concept id="c_9">Such studies</concept>
+		<concept id="c_10">A recent study</concept>
+		<concept id="c_11">more than 75_% of the familial risk of the disease</concept>
+		<concept id="c_12">Comparison of the observed and expected distribution of test statistics</concept>
+		<concept id="c_13">Possible explanations for this inflation</concept>
+		<concept id="c_14">One SNP ( dbSNP rs2981582 )</concept>
+		<concept id="c_15">moderate</concept>
+		<concept id="c_16">we</concept>
+		<concept id="c_17">by a third stage</concept>
+		<concept id="c_18">to identify further major breast cancer genes</concept>
+		<concept id="c_19">unexplained</concept>
+		<concept id="c_20">a basis for identifying moderate risk alleles without prior knowledge of position or function</concept>
+		<concept id="c_21">for all the other variants</concept>
+		<concept id="c_22">data</concept>
+		<concept id="c_23">first-degree relatives</concept>
+		<concept id="c_24">susceptibility alleles</concept>
+		<concept id="c_25">a custom-designed oligonucleotide array</concept>
+		<concept id="c_26">population stratification , cryptic relatedness among subjects , and differential genotype calling between cases and controls</concept>
+		<concept id="c_27">differential genotype</concept>
+		<concept id="c_28">stages 1</concept>
+		<concept id="c_29">as appropriate for genome-wide studies</concept>
+		<concept id="c_30">familial aggregation</concept>
+		<concept id="c_31">variants</concept>
+		<concept id="c_32">more moderate risks</concept>
+		<concept id="c_33">a third stage</concept>
+		<concept id="c_34">21,860 cases</concept>
+		<concept id="c_35">Europeans</concept>
+		<concept id="c_36">( FGFR2</concept>
+		<concept id="c_37">the disease</concept>
+		<concept id="c_38">the general population</concept>
+		<concept id="c_39">an approximately twofold risk</concept>
+		<concept id="c_40">platforms</concept>
+		<concept id="c_41">prior knowledge</concept>
+		<concept id="c_42">7_million common SNPs</concept>
+		<concept id="c_43">the human genome</concept>
+		<concept id="c_44">tags</concept>
+		<concept id="c_45">400 controls</concept>
+		<concept id="c_46">Supplementary_Fig</concept>
+		<concept id="c_47">a call rate</concept>
+		<concept id="c_48">95_%</concept>
+		<concept id="c_49">λ=1.03</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Breast cancer exhibits familial aggregation, consistent with variation in genetic susceptibility to the disease.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="NN">Breast</token><token pos="NN">cancer</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_30" concept_ref3="c_31">
+			<token pos="VBZ">exhibits</token><mention concept_ref="c_30"><token pos="JJ">familial</token><token pos="NN">aggregation</token></mention><token pos="Fc">,</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cause_change" head="variation">
+				<argument type="Final_category" dependent="in genetic susceptibility to the disease" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Known susceptibility genes account for less than 25_% of the familial risk of breast cancer, and the residual genetic variance is likely to be due to variants conferring more moderate risks.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="DT">the</token><token pos="JJ">residual</token><token pos="JJ">genetic</token><token pos="NN">variance</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_15" concept_ref3="c_31" concept_ref4="c_32">
+			<token pos="VBZ">is</token><token pos="JJ">likely</token><token pos="TO">to</token><token pos="VB">be</token><token pos="JJ">due</token><token pos="TO">to</token><mention concept_ref="c_31"><token pos="NNS">variants</token></mention><token pos="VBG">conferring</token><mention concept_ref="c_32"><token pos="DT">more</token><token pos="JJ">moderate</token><token pos="NNS">risks</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Explaining_the_facts" head="account">
+				<argument type="Fact" dependent="known susceptibility genes" />
+				<argument type="State_of_affairs" dependent="for less than unk % of the familial risk of breast cancer" /></frame>
+			<main_frame type="Run_risk" head="risk">
+				<argument type="Asset" dependent="familial" />
+				<argument type="Bad_outcome" dependent="of breast cancer" /></main_frame>
+			<frame type="Body_parts" head="breast" />
+			<frame type="Likelihood" head="likely">
+				<argument type="Hypothetical_event" dependent="the residual genetic variance" />
+				<argument type="Hypothetical_event" dependent="to be due to variants conferring more moderate risks" /></frame>
+			<frame type="Similarity" head="variants" />
+			<main_frame type="Run_risk" head="risks">
+				<argument type="Asset" dependent="moderate" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 To identify further susceptibility alleles, we conducted a two-stage genome-wide association study in 4,398 breast cancer cases and 4,316 controls, followed by a third stage in which 30 single nucleotide polymorphisms ( SNPs ) were tested for confirmation in 21,860 cases and 22,578 controls from S22 studies.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="PRP">we</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_0" concept_ref3="c_4" concept_ref4="c_3" concept_ref5="c_2" concept_ref6="c_16" concept_ref7="c_17" concept_ref8="c_18" concept_ref9="c_33" concept_ref10="c_34" concept_ref11="c_31">
+			<token pos="VBD">conducted</token><mention concept_ref="c_6"><token pos="DT">a</token><token pos="NN">two-stage</token><token pos="JJ">genome-wide</token><token pos="NN">association</token><token pos="NN">study</token></mention><token pos="IN">in</token><mention concept_ref="c_0"><token pos="W">4,398</token><token pos="NN">breast</token><token pos="NN">cancer</token><token pos="NNS">cases</token></mention><token pos="CC">and</token><mention concept_ref="c_4"><token pos="Z">4,316</token><token pos="NNS">controls</token></mention><token pos="Fc">,</token><token pos="VBN">followed</token><mention concept_ref="c_17"><token pos="IN">by</token><token pos="DT">a</token><token pos="JJ">third</token><token pos="NN">stage</token></mention><token pos="IN">in</token><token pos="WDT">which</token><token pos="Z">30</token><token pos="JJ">single</token><token pos="NN">nucleotide</token><token pos="NNS">polymorphisms</token><token pos="Fpa">(</token><mention concept_ref="c_3"><token pos="NNS">SNPs</token></mention><token pos="Fpt">)</token><token pos="VBD">were</token><token pos="VBN">tested</token><token pos="IN">for</token><mention concept_ref="c_2"><token pos="NN">confirmation</token></mention><token pos="IN">in</token><mention concept_ref="c_34"><token pos="Z">21,860</token><token pos="NNS">cases</token></mention><token pos="CC">and</token><token pos="Z">22,578</token><token pos="NNS">controls</token><token pos="IN">from</token><token pos="Z">S22</token><token pos="NNS">studies</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Increment" head="further">
+				<argument type="Class" dependent="susceptibility alleles" /></frame>
+			<main_frame type="Intentionally_act" head="conducted">
+				<argument type="Agent" dependent="we" />
+				<argument type="Act" dependent="a two-stage genome-wide association study in unk breast cancer cases and unk controls" /></main_frame>
+			<frame type="Scrutiny" head="study">
+				<argument type="Ground" dependent="in unk breast cancer" /></frame>
+			<frame type="Body_parts" head="breast">
+				<argument type="Descriptor" dependent="unk" /></frame>
+			<frame type="Instance" head="cases">
+				<argument type="Type" dependent="unk" /></frame>
+			<main_frame type="Relative_time" head="followed">
+				<argument type="Focal_occasion" dependent="a two-stage genome-wide association study in unk breast cancer cases and unk controls" />
+				<argument type="Landmark_occasion" dependent="by a third stage" />
+				<argument type="Focal_occasion" dependent="in which 30 single nucleotide polymorphisms ( snps )" /></main_frame>
+			<frame type="Ordinal_numbers" head="third">
+				<argument type="Type" dependent="stage" /></frame>
+			<main_frame type="Operational_testing" head="tested">
+				<argument type="Product" dependent="single nucleotide polymorphisms ( snps )" />
+				<argument type="Product" dependent="for confirmation in unk cases and unk controls from s22 studies" /></main_frame>
+			<frame type="Verification" head="confirmation">
+				<argument type="Unconfirmed_content" dependent="in unk cases and unk controls from s22 studies" /></frame>
+			<frame type="Scrutiny" head="studies">
+				<argument type="Ground" dependent="s22" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 We used 227,876 SNPs that were estimated to correlate with 77_% of known common SNPs in Europeans at r2  0.5.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="PRP">We</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_4" concept_ref3="c_2" concept_ref4="c_16" concept_ref5="c_34" concept_ref6="c_35" concept_ref7="c_31" concept_ref8="c_42">
+			<token pos="VBD">used</token><token pos="Z">227,876</token><token pos="NP00V00">SNPs</token><token pos="WDT">that</token><token pos="VBD">were</token><token pos="VBN">estimated</token><token pos="TO">to</token><token pos="VB">correlate</token><token pos="IN">with</token><token pos="Zp">77_%</token><token pos="IN">of</token><token pos="VBN">known</token><mention concept_ref="c_42"><token pos="JJ">common</token><token pos="NP00V00">SNPs</token></mention><token pos="IN">in</token><mention concept_ref="c_35"><token pos="NP00G00">Europeans</token></mention><token pos="IN">at</token><mention concept_ref="c_2"><token pos="Z">r2</token></mention><token pos="Fz">0.5</token><token pos="Z">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Using" head="used">
+				<argument type="Agent" dependent="we" />
+				<argument type="Role" dependent="unk snps that were estimated to correlate with unk % of known common snps in europeans at r2  0.5" /></main_frame>
+			<main_frame type="Estimating" head="estimated">
+				<argument type="Estimation" dependent="that" />
+				<argument type="Estimation" dependent="to correlate with unk % of known common snps in europeans at r2  0.5" /></main_frame>
+			<main_frame type="Awareness" head="known">
+				<argument type="Content" dependent="common snps" /></main_frame>
+			<frame type="Interior_profile_relation" head="in">
+				<argument type="Figure" dependent="snps" />
+				<argument type="Ground" dependent="europeans" /></frame>
+			<frame type="Locative_relation" head="at">
+				<argument type="Figure" dependent="europeans" />
+				<argument type="Ground" dependent="r2" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 SNPs in five novel independent loci exhibited strong and consistent evidence of association with breast cancer ( P  10 ( -7 ) ).
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="NP00O00">SNPs</token><token pos="IN">in</token><token pos="Z">five</token><token pos="NN">novel</token><token pos="JJ">independent</token><token pos="NNS">loci</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_2" concept_ref3="c_0" concept_ref4="c_18" concept_ref5="c_31" concept_ref6="c_41">
+			<token pos="VBD">exhibited</token><mention concept_ref="c_7"><token pos="JJ">strong</token><token pos="CC">and</token><token pos="JJ">consistent</token><token pos="NN">evidence</token></mention><token pos="IN">of</token><mention concept_ref="c_2"><token pos="NN">association</token></mention><token pos="IN">with</token><token pos="NN">breast</token><token pos="NN">cancer</token><token pos="Fpa">(</token><token pos="RB">P</token><token pos="Fz">10</token><token pos="Z">(</token><token pos="Fpa">-7</token><token pos="Z">)</token><token pos="Fpt">)</token><token pos="Fpt">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Cause_to_perceive" head="exhibited">
+				<argument type="Entity" dependent="snps in five novel independent loci" />
+				<argument type="Phenomenon" dependent="strong and consistent evidence of association with breast cancer ( p  10 ( -7 ) )" /></main_frame>
+			<frame type="Level_of_force_exertion" head="strong">
+				<argument type="Exerter" dependent="evidence of association with breast cancer" /></frame>
+			<frame type="Evidence" head="evidence">
+				<argument type="Support" dependent="of association" />
+				<argument type="Proposition" dependent="with breast cancer" /></frame>
+			<frame type="Body_parts" head="breast" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Four of these contain plausible causative genes ( FGFR2, TNRC9, MAP3K1 and LSP1 ).
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="DT">these</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_5" concept_ref3="c_36" concept_ref4="c_31">
+			<token pos="VB">contain</token><mention concept_ref="c_5"><token pos="JJ">plausible</token><token pos="JJ">causative</token><token pos="NNS">genes</token></mention><mention concept_ref="c_36"><token pos="Fpa">(</token><token pos="Z">FGFR2</token></mention><token pos="Fc">,</token><token pos="Z">TNRC9</token><token pos="Fc">,</token><token pos="Z">MAP3K1</token><token pos="CC">and</token><token pos="Z">LSP1</token><token pos="Fpt">)</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Causation" head="causative">
+				<argument type="Effect" dependent="genes ( unk , unk , unk and unk )" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 At the second stage, 1,792 SNPs were significant at the P  0.05 level compared with an estimated 1,343 that would be expected by_chance, indicating that many additional common susceptibility alleles may be identifiable by this approach.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="Z">1,292</token><token pos="NP00V00">SNPs</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_16" concept_ref3="c_31">
+			<token pos="VBD">were</token><token pos="JJ">significant</token><token pos="IN">at</token><token pos="DT">the</token><mention concept_ref="c_2"><token pos="NN">P</token></mention><token pos="Fz">0.05</token><token pos="Z">level</token><token pos="NN">,</token><token pos="Fc">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Locative_relation" head="at">
+				<argument type="Figure" dependent="1,792 snps" />
+				<argument type="Ground" dependent="the p  0.05 level" /></frame>
+			<frame type="Ordinal_numbers" head="second">
+				<argument type="Type" dependent="stage" /></frame>
+			<frame type="Importance" head="significant">
+				<argument type="Factor" dependent="1,792 snps" />
+				<argument type="Undertaking" dependent="at the p  0.05 level compared with an estimated 1,343 that would be expected unk" /></frame>
+			<frame type="Rank" head="level">
+				<argument type="Rank" dependent="p  0.05 level" /></frame>
+			<frame type="Evaluative_comparison" head="compared">
+				<argument type="Profiled_item" dependent="the p  0.05 level" />
+				<argument type="Standard_item" dependent="with an estimated 1,343 that would be expected unk" /></frame>
+			<frame type="Estimating" head="estimated">
+				<argument type="Estimation" dependent="that would be expected unk , indicating that many additional common susceptibility alleles may be identifiable by this approach" /></frame>
+			<frame type="Expectation" head="expected">
+				<argument type="Phenomenon" dependent="that" />
+				<argument type="Phenomenon" dependent="unk" /></frame>
+			<frame type="Communication" head="indicating">
+				<argument type="Communicator" dependent="that" />
+				<argument type="Message" dependent="that many additional common susceptibility alleles may be identifiable by this approach" /></frame>
+			<frame type="Quantified_mass" head="many">
+				<argument type="Individuals" dependent="additional common susceptibility alleles" /></frame>
+			<frame type="Increment" head="additional">
+				<argument type="Class" dependent="common susceptibility alleles" /></frame>
+			<frame type="Means" head="approach" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Breast cancer is about twice as common in the first-degree relatives of women with the disease as in the general population, consistent with variation in genetic susceptibility to the disease1.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="NN">Breast</token><token pos="NN">cancer</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_2" concept_ref3="c_23" concept_ref4="c_30" concept_ref5="c_31" concept_ref6="c_32" concept_ref7="c_37" concept_ref8="c_38">
+			<token pos="VBZ">is</token><token pos="RB">about</token><token pos="RB">twice</token><token pos="IN">as</token><token pos="JJ">common</token><token pos="IN">in</token><mention concept_ref="c_30"><token pos="DT">the</token><token pos="NN">first-degree</token><token pos="NNS">relatives</token></mention><token pos="IN">of</token><token pos="NNS">women</token><token pos="IN">with</token><mention concept_ref="c_37"><token pos="DT">the</token><token pos="NN">disease</token></mention><token pos="IN">as</token><token pos="IN">in</token><mention concept_ref="c_38"><token pos="DT">the</token><token pos="JJ">general</token><token pos="NN">population</token></mention><token pos="Fc">,</token><token pos="JJ">consistent</token><token pos="IN">with</token><mention concept_ref="c_31"><token pos="NN">variation</token></mention><token pos="IN">in</token><mention concept_ref="c_1"><token pos="JJ">genetic</token><token pos="NN">susceptibility</token></mention><token pos="TO">to</token><token pos="DT">the</token><token pos="Z">disease1</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Medical_conditions" head="cancer">
+				<argument type="Body_part" dependent="breast" /></frame>
+			<frame type="Kinship" head="relatives">
+				<argument type="Descriptor" dependent="first-degree" />
+				<argument type="Ego" dependent="of women" /></frame>
+			<frame type="People" head="women" />
+			<main_frame type="Medical_conditions" head="disease" />
+			<frame type="Aggregate" head="population" />
+			<frame type="Cause_change" head="variation">
+				<argument type="Final_category" dependent="in genetic susceptibility to the unk" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 In the 1990s, two major susceptibility genes for breast cancer, BRCA1 and BRCA2, were identified.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="Z">two</token><token pos="JJ">major</token><token pos="NN">susceptibility</token><token pos="NNS">genes</token><token pos="IN">for</token><token pos="NN">breast</token><token pos="NN">cancer</token><token pos="Fc">,</token><token pos="Z">BRCA1</token><token pos="CC">and</token><token pos="Z">BRCA2</token><token pos="Fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_16">
+			<token pos="VBD">were</token><token pos="VBN">identified</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Importance" head="major">
+				<argument type="Factor" dependent="susceptibility genes for breast cancer , brca1 and brca2" /></frame>
+			<frame type="Body_parts" head="breast" />
+			<main_frame type="Verification" head="identified">
+				<argument type="Time" dependent="in the 1990s" />
+				<argument type="Unconfirmed_content" dependent="two major susceptibility genes for breast cancer" />
+				<argument type="Unconfirmed_content" dependent="brca1 and brca2" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Inherited mutations in these genes lead to a high risk of breast and other cancers.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="VBN">Inherited</token><token pos="NNS">mutations</token><token pos="IN">in</token><token pos="DT">these</token><token pos="NNS">genes</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_31">
+			<mention concept_ref="c_2"><token pos="VBP">lead</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Leadership" head="lead">
+				<argument type="Governed" dependent="genes" />
+				<argument type="Activity" dependent="to a high risk of breast and other cancers" /></main_frame>
+			<frame type="Position_on_a_scale" head="high">
+				<argument type="Item" dependent="risk of breast and other cancers" /></frame>
+			<frame type="Run_risk" head="risk">
+				<argument type="Asset" dependent="high" />
+				<argument type="Bad_outcome" dependent="of breast and other cancers" /></frame>
+			<frame type="Body_parts" head="breast" />
+			<frame type="Increment" head="other">
+				<argument type="Class" dependent="cancers" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 However, the majority of multiple case breast cancer families do not segregate mutations in these genes.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="DT">the</token><token pos="NN">majority</token><token pos="IN">of</token><token pos="JJ">multiple</token><token pos="NN">case</token><token pos="NN">breast</token><token pos="NN">cancer</token><token pos="NNS">families</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_5" concept_ref3="c_31">
+			<mention concept_ref="c_2"><token pos="VBP">do</token><token pos="VB">segregate</token></mention><token pos="NNS">mutations</token><token pos="IN">in</token><token pos="DT">these</token><token pos="NNS">genes</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="breast">
+				<argument type="Descriptor" dependent="case" /></frame>
+			<frame type="Kinship" head="families" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Subsequent genetic linkage studies have failed to identify further major breast cancer genes.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="JJ">Subsequent</token><token pos="JJ">genetic</token><token pos="NN">linkage</token><token pos="NNS">studies</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_18" concept_ref4="c_31">
+			<token pos="VBP">have</token><token pos="VBN">failed</token><mention concept_ref="c_18"><token pos="TO">to</token><token pos="VB">identify</token><token pos="JJ">further</token><token pos="JJ">major</token><token pos="NN">breast</token><token pos="NN">cancer</token><token pos="NNS">genes</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Relative_time" head="subsequent">
+				<argument type="Focal_occasion" dependent="genetic linkage studies" /></frame>
+			<frame type="Scrutiny" head="studies">
+				<argument type="Degree" dependent="subsequent" />
+				<argument type="Phenomenon" dependent="genetic linkage" /></frame>
+			<main_frame type="Successful_action" head="failed">
+				<argument type="Instrument" dependent="subsequent genetic linkage studies" />
+				<argument type="Goal" dependent="to identify further major breast cancer genes" /></main_frame>
+			<main_frame type="Verification" head="identify">
+				<argument type="Unconfirmed_content" dependent="further major breast cancer genes" /></main_frame>
+			<frame type="Increment" head="further">
+				<argument type="Class" dependent="major breast cancer genes" /></frame>
+			<frame type="Importance" head="major">
+				<argument type="Factor" dependent="breast cancer genes" /></frame>
+			<frame type="Body_parts" head="breast">
+				<argument type="Descriptor" dependent="major" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 These observations have led to the proposal that breast cancer susceptibility is largely ‘ polygenic ’: that is, susceptibility is conferred by a large number of loci, each with a small effect on breast cancer risk.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="DT">These</token><token pos="NNS">observations</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_7" concept_ref4="c_16" concept_ref5="c_18" concept_ref6="c_32" concept_ref7="c_31">
+			<token pos="VBP">have</token><token pos="VBN">led</token><token pos="TO">to</token><token pos="DT">the</token><token pos="NN">proposal</token><token pos="IN">that</token><token pos="NN">breast</token><token pos="NN">cancer</token><token pos="NN">susceptibility</token><token pos="VBZ">is</token><token pos="RB">largely</token><token pos="Fra">‘</token><token pos="JJ">polygenic</token><token pos="Frc">’</token><token pos="Fd">:</token><token pos="DT">that</token><token pos="VBZ">is</token><token pos="Fc">,</token><token pos="NN">susceptibility</token><token pos="VBZ">is</token><token pos="VBN">conferred</token><token pos="IN">by</token><mention concept_ref="c_2"><token pos="DT">a</token><token pos="JJ">large</token><token pos="NN">number</token></mention><token pos="IN">of</token><mention concept_ref="c_7"><token pos="NNS">loci</token></mention><token pos="Fc">,</token><token pos="DT">each</token><token pos="IN">with</token><token pos="DT">a</token><token pos="JJ">small</token><token pos="NN">effect</token><token pos="IN">on</token><token pos="NN">breast</token><token pos="NN">cancer</token><token pos="NN">risk</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Perception_active" head="observations" />
+			<main_frame type="Leadership" head="led">
+				<argument type="Governed" dependent="these observations" />
+				<argument type="Activity" dependent="to the proposal that breast cancer susceptibility is largely unk polygenic unk" /></main_frame>
+			<frame type="Body_parts" head="breast" />
+			<frame type="Size" head="large">
+				<argument type="Dimension" dependent="number of loci" /></frame>
+			<frame type="Quantified_mass" head="number">
+				<argument type="Q_prop" dependent="large" />
+				<argument type="Individuals" dependent="of loci" /></frame>
+			<main_frame type="Run_risk" head="risk">
+				<argument type="Asset" dependent="breast cancer" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 This model is consistent with the observed patterns of familial aggregation of breast cancer.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="DT">This</token><token pos="NN">model</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_7" concept_ref3="c_2" concept_ref4="c_18" concept_ref5="c_30" concept_ref6="c_31">
+			<token pos="VBZ">is</token><token pos="JJ">consistent</token><token pos="IN">with</token><mention concept_ref="c_7"><token pos="DT">the</token><token pos="VBN">observed</token><token pos="NNS">patterns</token></mention><token pos="IN">of</token><mention concept_ref="c_30"><token pos="JJ">familial</token><token pos="NN">aggregation</token></mention><token pos="IN">of</token><token pos="NN">breast</token><token pos="NN">cancer</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Becoming_aware" head="observed">
+				<argument type="Phenomenon" dependent="patterns of familial aggregation of breast cancer" /></main_frame>
+			<frame type="Pattern" head="patterns">
+				<argument type="Descriptor" dependent="observed" />
+				<argument type="Entities" dependent="of familial aggregation of breast cancer" /></frame>
+			<frame type="Body_parts" head="breast" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 However, progress in identifying the relevant loci has been slow.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="NN">progress</token><token pos="IN">in</token><token pos="VBG">identifying</token><token pos="DT">the</token><token pos="JJ">relevant</token><token pos="NNS">loci</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_31">
+			<token pos="VBZ">has</token><token pos="VBN">been</token><token pos="JJ">slow</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Progression" head="progress" />
+			<frame type="Being_relevant" head="relevant">
+				<argument type="Phenomenon" dependent="loci" /></frame>
+			<frame type="Taking_time" head="slow">
+				<argument type="Activity" dependent="progress in identifying the relevant loci" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 As linkage studies lack power to detect alleles with moderate effects on risk, large case-control association studies are required.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="JJ">large</token><token pos="NN">case-control</token><token pos="NN">association</token><token pos="NNS">studies</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_31">
+			<token pos="VBP">are</token><token pos="VBN">required</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Scrutiny" head="studies">
+				<argument type="Degree" dependent="large" />
+				<argument type="Ground" dependent="case-control association" /></frame>
+			<frame type="Possession" head="lack">
+				<argument type="Owner" dependent="as linkage studies" />
+				<argument type="Possession" dependent="power to detect alleles with moderate effects on risk , large case-control association studies are required" /></frame>
+			<frame type="Electricity" head="power" />
+			<frame type="Becoming_aware" head="detect">
+				<argument type="Phenomenon" dependent="alleles with moderate effects on risk , large case-control association studies are required" /></frame>
+			<frame type="Objective_influence" head="effects">
+				<argument type="Dependent_entity" dependent="on risk , large case-control association studies" /></frame>
+			<frame type="Run_risk" head="risk" />
+			<frame type="Size" head="large">
+				<argument type="Entity" dependent="case-control association studies" /></frame>
+			<main_frame type="Have_as_requirement" head="required">
+				<argument type="Dependent" dependent="as linkage studies lack power to detect alleles with moderate effects on risk , large case-control association studies" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Such studies have identified variants in the DNA repair genes CHEK2 ​, ATM ​, BRIP1 and PALB2that confer an approximately twofold risk of breast cancer, but these variants are rare in the population -.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="DT">Such</token><token pos="NNS">studies</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_6" concept_ref4="c_14" concept_ref5="c_5" concept_ref6="c_16" concept_ref7="c_18" concept_ref8="c_31" concept_ref9="c_36" concept_ref10="c_38" concept_ref11="c_39">
+			<token pos="VBP">have</token><token pos="VBN">identified</token><token pos="NNS">variants</token><token pos="IN">in</token><mention concept_ref="c_6"><token pos="DT">the</token><token pos="NP00O00">DNA</token><token pos="NN">repair</token><token pos="NNS">genes</token></mention><token pos="Z">CHEK2</token><token pos="Fz">​</token><token pos="Fc">,</token><token pos="NP00G00">ATM</token><token pos="Fz">​</token><token pos="Fc">,</token><token pos="Z">BRIP1</token><token pos="CC">and</token><token pos="Z">PALB2that</token><token pos="VBP">confer</token><mention concept_ref="c_39"><token pos="DT">an</token><token pos="RB">approximately</token><token pos="JJ">twofold</token><token pos="NN">risk</token></mention><token pos="IN">of</token><token pos="NN">breast</token><token pos="NN">cancer</token><token pos="Fc">,</token><token pos="CC">but</token><mention concept_ref="c_5"><token pos="DT">these</token><token pos="NNS">variants</token></mention><token pos="VBP">are</token><token pos="JJ">rare</token><token pos="IN">in</token><mention concept_ref="c_38"><token pos="DT">the</token><token pos="NN">population</token></mention><token pos="Fg">-</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Scrutiny" head="studies">
+				<argument type="Manner" dependent="such" /></frame>
+			<frame type="Run_risk" head="risk">
+				<argument type="Bad_outcome" dependent="of breast cancer" /></frame>
+			<frame type="Body_parts" head="breast" />
+			<frame type="Similarity" head="variants" />
+			<frame type="Aggregate" head="population" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A recent study has shown that a common coding variant in CASP8 is associated with a moderate reduction in breast cancer risk.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="DT">A</token><token pos="JJ">recent</token><token pos="NN">study</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_7" concept_ref4="c_15" concept_ref5="c_16" concept_ref6="c_18" concept_ref7="c_32" concept_ref8="c_31">
+			<token pos="VBZ">has</token><token pos="VBN">shown</token><mention concept_ref="c_16"><token pos="IN">that</token></mention><mention concept_ref="c_7"><token pos="DT">a</token><token pos="JJ">common</token><token pos="NN">coding</token><token pos="NN">variant</token></mention><token pos="IN">in</token><token pos="Z">CASP8</token><token pos="VBZ">is</token><token pos="VBN">associated</token><token pos="IN">with</token><mention concept_ref="c_32"><token pos="DT">a</token><token pos="JJ">moderate</token><token pos="NN">reduction</token></mention><token pos="IN">in</token><token pos="NN">breast</token><token pos="NN">cancer</token><token pos="NN">risk</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Scrutiny" head="study">
+				<argument type="Degree" dependent="recent" /></frame>
+			<main_frame type="Evidence" head="shown">
+				<argument type="Support" dependent="a recent study" />
+				<argument type="Proposition" dependent="that a common coding variant in unk is associated with a moderate reduction in breast cancer risk" /></main_frame>
+			<main_frame type="Collaboration" head="associated">
+				<argument type="Partner_1" dependent="a common coding variant in unk" />
+				<argument type="Partner_2" dependent="with a moderate reduction in breast cancer risk" /></main_frame>
+			<frame type="Cause_change_of_position_on_a_scale" head="reduction">
+				<argument type="Manner" dependent="moderate" />
+				<argument type="Item" dependent="in breast cancer risk" /></frame>
+			<frame type="Body_parts" head="breast" />
+			<main_frame type="Run_risk" head="risk">
+				<argument type="Asset" dependent="breast cancer" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 After accounting for all the known breast cancer loci, more than 75_% of the familial risk of the disease remains unexplained.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="RB">more</token><token pos="IN">than</token><token pos="Zp">75_%</token><token pos="IN">of</token><token pos="DT">the</token><token pos="JJ">familial</token><token pos="NN">risk</token><token pos="IN">of</token><token pos="DT">the</token><token pos="NN">disease</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_19" concept_ref3="c_31">
+			<token pos="VBZ">remains</token><mention concept_ref="c_19"><token pos="JJ">unexplained</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Relative_time" head="after">
+				<argument type="Landmark_occasion" dependent="accounting for all the known breast cancer loci , more than unk % of the familial risk of the disease" />
+				<argument type="Focal_occasion" dependent="remains unexplained" /></frame>
+			<frame type="Explaining_the_facts" head="accounting">
+				<argument type="State_of_affairs" dependent="for all the known breast cancer loci" /></frame>
+			<frame type="Awareness" head="known">
+				<argument type="Content" dependent="breast cancer" /></frame>
+			<frame type="Body_parts" head="breast">
+				<argument type="Descriptor" dependent="known" /></frame>
+			<frame type="Run_risk" head="risk">
+				<argument type="Asset" dependent="familial" />
+				<argument type="Bad_outcome" dependent="of the disease" /></frame>
+			<frame type="Medical_conditions" head="disease" />
+			<main_frame type="State_continue" head="remains">
+				<argument type="Time" dependent="after accounting for all the known breast cancer loci ," />
+				<argument type="Entity" dependent="more than unk % of the familial risk of the disease" />
+				<argument type="State" dependent="unexplained" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Recent technological advances have provided platforms that allow hundreds of thousands of SNPs to be analysed in association studies, thus providing a basis for identifying moderate risk alleles without prior knowledge of position or function.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="JJ">Recent</token><token pos="JJ">technological</token><token pos="NNS">advances</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_2" concept_ref3="c_8" concept_ref4="c_15" concept_ref5="c_16" concept_ref6="c_20" concept_ref7="c_32" concept_ref8="c_31" concept_ref9="c_40" concept_ref10="c_41">
+			<token pos="VBP">have</token><token pos="VBN">provided</token><mention concept_ref="c_40"><token pos="NNS">platforms</token></mention><mention concept_ref="c_16"><token pos="WDT">that</token></mention><token pos="VBP">allow</token><token pos="NNS">hundreds</token><token pos="IN">of</token><token pos="NNS">thousands</token><token pos="IN">of</token><mention concept_ref="c_3"><token pos="NP00V00">SNPs</token></mention><token pos="TO">to</token><token pos="VB">be</token><token pos="VBN">analysed</token><token pos="IN">in</token><mention concept_ref="c_2"><token pos="NN">association</token></mention><token pos="NNS">studies</token><token pos="Fc">,</token><token pos="RB">thus</token><token pos="VBG">providing</token><mention concept_ref="c_31"><token pos="DT">a</token></mention><token pos="NN">basis</token><token pos="IN">for</token><token pos="VBG">identifying</token><mention concept_ref="c_15"><token pos="JJ">moderate</token></mention><token pos="NN">risk</token><token pos="NNS">alleles</token><token pos="IN">without</token><mention concept_ref="c_41"><token pos="JJ">prior</token><token pos="NN">knowledge</token></mention><token pos="IN">of</token><token pos="NN">position</token><token pos="CC">or</token><token pos="NN">function</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Relative_time" head="recent">
+				<argument type="Focal_occasion" dependent="technological advances" /></frame>
+			<frame type="Progression" head="advances">
+				<argument type="Entity" dependent="technological" /></frame>
+			<main_frame type="Supply" head="provided">
+				<argument type="Supplier" dependent="recent technological advances" />
+				<argument type="Theme" dependent="platforms that allow hundreds of thousands of snps to be analysed in association studies" /></main_frame>
+			<main_frame type="Preventing_or_letting" head="allow">
+				<argument type="Event" dependent="hundreds of thousands of snps to be analysed in association studies" /></main_frame>
+			<frame type="Cardinal_numbers" head="hundreds">
+				<argument type="Entity" dependent="of thousands of snps" /></frame>
+			<frame type="Cardinal_numbers" head="thousands">
+				<argument type="Entity" dependent="of snps" />
+				<argument type="Precision" dependent="to be analysed in association studies" /></frame>
+			<main_frame type="Scrutiny" head="analysed">
+				<argument type="Ground" dependent="hundreds of thousands of snps" /></main_frame>
+			<frame type="Scrutiny" head="studies">
+				<argument type="Cognizer" dependent="association" /></frame>
+			<main_frame type="Supply" head="providing">
+				<argument type="Time" dependent="thus" />
+				<argument type="Theme" dependent="a basis for identifying moderate risk alleles without prior knowledge of position or function" /></main_frame>
+			<frame type="Run_risk" head="risk">
+				<argument type="Asset" dependent="moderate" />
+				<argument type="Action" dependent="alleles" /></frame>
+			<frame type="Time_vector" head="prior">
+				<argument type="Landmark_event" dependent="knowledge of position or function" /></frame>
+			<frame type="Awareness" head="knowledge">
+				<argument type="Content" dependent="of position or function" /></frame>
+			<frame type="Being_employed" head="position" />
+			<frame type="Contingency" head="function" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 It has been estimated that there are 7_million common SNPs in the human genome ( with minor allele frequency, m. a. f.,  5_% ).
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="PRP">It</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_2" concept_ref3="c_16" concept_ref4="c_31" concept_ref5="c_32" concept_ref6="c_42" concept_ref7="c_43">
+			<token pos="VBZ">has</token><token pos="VBN">been</token><token pos="VBN">estimated</token><mention concept_ref="c_16"><token pos="IN">that</token></mention><token pos="EX">there</token><token pos="VBP">are</token><mention concept_ref="c_42"><token pos="Z">7_million</token><token pos="JJ">common</token><token pos="NP00V00">SNPs</token></mention><token pos="IN">in</token><mention concept_ref="c_43"><token pos="DT">the</token><token pos="JJ">human</token><token pos="NN">genome</token></mention><token pos="Fpa">(</token><token pos="IN">with</token><mention concept_ref="c_32"><token pos="JJ">minor</token><token pos="NN">allele</token><token pos="NN">frequency</token></mention><token pos="Fc">,</token><token pos="NN">m</token><token pos="Fp">.</token><mention concept_ref="c_31"><token pos="DT">a</token></mention><token pos="Fp">.</token><token pos="NN">f</token><token pos="Fp">.</token><token pos="Fc">,</token><token pos="Fz">5_%</token><token pos="Zp">)</token><token pos="Fpt">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Estimating" head="estimated">
+				<argument type="Estimation" dependent="that there are unk common snps in the human genome ( with minor allele frequency , m. a. f. ," /></main_frame>
+			<frame type="Locative_relation" head="there">
+				<argument type="Figure" dependent="that" />
+				<argument type="Ground" dependent="there are unk common snps in the human genome" /></frame>
+			<frame type="Interior_profile_relation" head="in">
+				<argument type="Figure" dependent="snps" />
+				<argument type="Ground" dependent="the human genome" /></frame>
+			<frame type="Biological_entity" head="human">
+				<argument type="Organism" dependent="genome" /></frame>
+			<frame type="Frequency" head="frequency">
+				<argument type="Event" dependent="allele" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 However, because recombination tends to occur at distinct ‘ hot-spots ’, neighbouring polymorphisms are often strongly correlated ( in ‘ linkage disequilibrium ’, LD ) with each other.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="NN">recombination</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_31">
+			<token pos="VBZ">tends</token><token pos="TO">to</token><token pos="VB">occur</token><token pos="IN">at</token><token pos="JJ">distinct</token><token pos="Fra">‘</token><token pos="NNS">hot-spots</token><token pos="Frc">’</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Event" head="occur">
+				<argument type="Place" dependent="at distinct unk unk unk" /></main_frame>
+			<frame type="Similarity" head="distinct">
+				<argument type="Entities" dependent="unk unk unk" /></frame>
+			<frame type="Increment" head="other" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 The majority of common genetic variants can therefore be evaluated for association using a few hundred thousand SNPs as tags for all the other variants.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="DT">The</token><token pos="NN">majority</token><token pos="IN">of</token><token pos="JJ">common</token><token pos="JJ">genetic</token><token pos="NNS">variants</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_2" concept_ref3="c_5" concept_ref4="c_21" concept_ref5="c_31" concept_ref6="c_44">
+			<token pos="MD">can</token><token pos="VB">be</token><token pos="VBN">evaluated</token><token pos="IN">for</token><mention concept_ref="c_2"><token pos="NN">association</token></mention><token pos="VBG">using</token><token pos="DT">a</token><token pos="DT">few</token><token pos="NN">hundred</token><token pos="NN">thousand</token><mention concept_ref="c_3"><token pos="NP00V00">SNPs</token></mention><token pos="IN">as</token><mention concept_ref="c_44"><token pos="NNS">tags</token></mention><mention concept_ref="c_21"><token pos="IN">for</token><token pos="DT">all</token><token pos="DT">the</token><token pos="JJ">other</token><token pos="NNS">variants</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Similarity" head="variants" />
+			<frame type="Capability" head="can">
+				<argument type="Entity" dependent="the majority of common genetic variants" />
+				<argument type="Event" dependent="therefore be evaluated for association using a few hundred thousand snps as tags for all the other variants" /></frame>
+			<main_frame type="Using" head="using">
+				<argument type="Instrument" dependent="a few hundred thousand snps as tags" />
+				<argument type="Purpose" dependent="for all the other variants" /></main_frame>
+			<frame type="Quantified_mass" head="few">
+				<argument type="Individuals" dependent="hundred thousand snps" /></frame>
+			<frame type="Cardinal_numbers" head="hundred">
+				<argument type="Precision" dependent="few" />
+				<argument type="Unit" dependent="thousand snps" /></frame>
+			<frame type="Cardinal_numbers" head="thousand">
+				<argument type="Precision" dependent="few hundred" />
+				<argument type="Unit" dependent="snps" /></frame>
+			<frame type="Increment" head="other">
+				<argument type="Class" dependent="variants" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 We aimed to identify further breast cancer susceptibility loci in a three-stage association study.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Purpose" head="aimed">
+				<argument type="Agent" dependent="we" />
+				<argument type="Goal" dependent="to identify further breast cancer susceptibility loci in a three-stage association study" /></frame>
+			<frame type="Verification" head="identify">
+				<argument type="Unconfirmed_content" dependent="further breast cancer susceptibility loci in a three-stage association study" /></frame>
+			<frame type="Increment" head="further">
+				<argument type="Class" dependent="breast cancer" /></frame>
+			<frame type="Body_parts" head="breast" />
+			<frame type="Scrutiny" head="study">
+				<argument type="Ground" dependent="three-stage association" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 In the first stage, we used a panel of 266,722 SNPs, selected to tag known common variants across the entire genome18.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="PRP">we</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_2" concept_ref3="c_4" concept_ref4="c_5" concept_ref5="c_31" concept_ref6="c_43" concept_ref7="c_44">
+			<token pos="VBD">used</token><token pos="DT">a</token><token pos="NN">panel</token><token pos="IN">of</token><mention concept_ref="c_4"><token pos="Z">266,722</token><token pos="NP00V00">SNPs</token></mention><token pos="Fc">,</token><token pos="VBN">selected</token><token pos="TO">to</token><token pos="VB">tag</token><token pos="VBN">known</token><token pos="JJ">common</token><mention concept_ref="c_31"><token pos="NNS">variants</token></mention><token pos="IN">across</token><mention concept_ref="c_43"><token pos="DT">the</token><token pos="JJ">entire</token><token pos="Z">genome18</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Interior_profile_relation" head="in">
+				<argument type="Ground" dependent="the first stage" />
+				<argument type="Figure" dependent="we used a panel of unk snps , selected to tag known common variants across the entire unk" /></frame>
+			<frame type="Ordinal_numbers" head="first">
+				<argument type="Type" dependent="stage" /></frame>
+			<main_frame type="Using" head="used">
+				<argument type="Agent" dependent="we" />
+				<argument type="Instrument" dependent="a panel of unk snps" /></main_frame>
+			<main_frame type="Choosing" head="selected">
+				<argument type="Chosen" dependent="a panel of unk snps" />
+				<argument type="Chosen" dependent="to tag known common variants across the entire unk" /></main_frame>
+			<main_frame type="Awareness" head="known">
+				<argument type="Content" dependent="common variants across the entire unk" /></main_frame>
+			<frame type="Similarity" head="variants" />
+			<frame type="Ranked_expectation" head="entire">
+				<argument type="Entity" dependent="unk" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 These SNPs were genotyped in 408 breast cancer cases and 400 controls from the UK ; data were analysed for 390 cases and 364 controls genotyped for ≥ 80_% of the SNPs.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="DT">These</token><token pos="NP00V00">SNPs</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_0" concept_ref3="c_2" concept_ref4="c_16" concept_ref5="c_18" concept_ref6="c_22" concept_ref7="c_34" concept_ref8="c_31" concept_ref9="c_38" concept_ref10="c_45">
+			<token pos="VBD">were</token><token pos="VBN">genotyped</token><token pos="IN">in</token><token pos="W">408</token><token pos="NN">breast</token><token pos="NN">cancer</token><token pos="NNS">cases</token><token pos="CC">and</token><mention concept_ref="c_45"><token pos="Z">400</token><token pos="NNS">controls</token></mention><token pos="IN">from</token><token pos="DT">the</token><token pos="NP00O00">UK</token><token pos="Fx">;</token><token pos="NNS">data</token><token pos="VBD">were</token><token pos="VBN">analysed</token><token pos="IN">for</token><token pos="Z">390</token><token pos="NNS">cases</token><token pos="CC">and</token><mention concept_ref="c_34"><token pos="Z">364</token><token pos="NNS">controls</token></mention><token pos="VBN">genotyped</token><token pos="IN">for</token><token pos="Fz">≥</token><token pos="Zp">80_%</token><token pos="IN">of</token><token pos="DT">the</token><mention concept_ref="c_3"><token pos="NP00V00">SNPs</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="breast" />
+			<frame type="Instance" head="cases">
+				<argument type="Instance_prop" dependent="390" /></frame>
+			<frame type="Information" head="data" />
+			<main_frame type="Scrutiny" head="analysed">
+				<argument type="Ground" dependent="data" />
+				<argument type="Ground" dependent="for 390 cases and 364 controls unk for unk unk % of the snps" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 The cases were selected to have a strong family history of breast cancer, equivalent to at_least two affected female first-degree relatives, because such cases are more likely to carry susceptibility alleles.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="DT">The</token><token pos="NNS">cases</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_16" concept_ref4="c_18" concept_ref5="c_23" concept_ref6="c_24" concept_ref7="c_32" concept_ref8="c_30" concept_ref9="c_31">
+			<token pos="VBD">were</token><token pos="VBN">selected</token><token pos="TO">to</token><token pos="VB">have</token><token pos="DT">a</token><token pos="JJ">strong</token><token pos="NN">family</token><token pos="NN">history</token><token pos="IN">of</token><token pos="NN">breast</token><token pos="NN">cancer</token><token pos="Fc">,</token><token pos="JJ">equivalent</token><token pos="TO">to</token><mention concept_ref="c_30"><token pos="RB">at_least</token><token pos="Z">two</token><token pos="VBN">affected</token><token pos="JJ">female</token><token pos="NN">first-degree</token><token pos="NNS">relatives</token></mention><token pos="Fc">,</token><token pos="IN">because</token><token pos="DT">such</token><token pos="NNS">cases</token><token pos="VBP">are</token><token pos="RB">more</token><token pos="JJ">likely</token><token pos="TO">to</token><token pos="VB">carry</token><mention concept_ref="c_32"><token pos="NN">susceptibility</token></mention><token pos="NNS">alleles</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Instance" head="cases">
+				<argument type="Type" dependent="such" /></frame>
+			<frame type="Level_of_force_exertion" head="strong">
+				<argument type="Exerter" dependent="family" /></frame>
+			<frame type="Kinship" head="family" />
+			<frame type="Individual_history" head="history">
+				<argument type="Participant" dependent="family" />
+				<argument type="Events" dependent="of breast cancer" /></frame>
+			<frame type="Body_parts" head="breast" />
+			<main_frame type="Objective_influence" head="affected">
+				<argument type="Dependent_entity" dependent="first-degree relatives" /></main_frame>
+			<frame type="Kinship" head="relatives">
+				<argument type="Ego" dependent="first-degree" /></frame>
+			<frame type="Likelihood" head="likely">
+				<argument type="Hypothetical_event" dependent="such cases" />
+				<argument type="Degree" dependent="more" />
+				<argument type="Hypothetical_event" dependent="to carry susceptibility alleles" /></frame>
+			<main_frame type="Bringing" head="carry">
+				<argument type="Carrier" dependent="such cases" />
+				<argument type="Theme" dependent="susceptibility alleles" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Initally, we analysed 227,876 SNPs ( 85_% ) with genotypes on at_least 80_% of the subjects.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="PRP">we</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_2" concept_ref3="c_4" concept_ref4="c_34" concept_ref5="c_31" concept_ref6="c_37" concept_ref7="c_38">
+			<token pos="VBD">analysed</token><mention concept_ref="c_4"><token pos="Z">227,874</token><token pos="NP00V00">SNPs</token></mention><token pos="Fpa">(</token><mention concept_ref="c_34"><token pos="Zp">85_%</token></mention><token pos="Fpt">)</token><token pos="IN">with</token><mention concept_ref="c_37"><token pos="NNS">genotypes</token></mention><token pos="IN">on</token><token pos="RB">at_least</token><token pos="Zp">80_%</token><token pos="IN">of</token><mention concept_ref="c_38"><token pos="DT">the</token><token pos="NNS">subjects</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Scrutiny" head="analysed">
+				<argument type="Cognizer" dependent="we" />
+				<argument type="Ground" dependent="unk snps ( unk % ) with genotypes on unk unk % of the subjects" /></main_frame>
+			<frame type="People_by_jurisdiction" head="subjects" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 We estimate that these SNPs are correlated with 58_% of common SNPs in the HapMap_CEPH / CEU ( Utah residents with ancestry from northern and western Europe ) samples at r2  0.8, and 77_% at r2  0.5 ( mean r2=0.75 ; see Supplementary_Fig. 1 ) ( http://www.hapmap.org/ ).
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="DT">these</token><token pos="NP00V00">SNPs</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_2" concept_ref3="c_16" concept_ref4="c_35" concept_ref5="c_30" concept_ref6="c_31" concept_ref7="c_42" concept_ref8="c_46">
+			<token pos="VBP">are</token><token pos="VBN">correlated</token><token pos="IN">with</token><token pos="Zp">55_%</token><token pos="IN">of</token><mention concept_ref="c_42"><token pos="JJ">common</token><token pos="NP00V00">SNPs</token></mention><token pos="IN">in</token><token pos="DT">the</token><token pos="NP00V00">HapMap_CEPH</token><token pos="Fh">/</token><token pos="NN">CEU</token><token pos="Fpa">(</token><token pos="NP00G00">Utah</token><token pos="NNS">residents</token><token pos="IN">with</token><mention concept_ref="c_30"><token pos="NN">ancestry</token></mention><token pos="IN">from</token><mention concept_ref="c_35"><token pos="JJ">northern</token><token pos="CC">and</token><token pos="JJ">western</token><token pos="NP00G00">Europe</token></mention><token pos="Fpt">)</token><token pos="NNS">samples</token><token pos="IN">at</token><token pos="Z">r2</token><token pos="Fz">0.8</token><token pos="Z">,</token><token pos="Fc">and</token><token pos="CC">77_%</token><token pos="Zp">at</token><token pos="IN">r2</token><token pos="Z">0.5</token><token pos="Fz">(</token><token pos="Z">mean</token><token pos="Fpa">r2=0.75</token><token pos="VB">;</token><token pos="Z">see</token><mention concept_ref="c_46"><token pos="Fx">Supplementary_Fig</token></mention><token pos="VB">.</token><token pos="NP00O00">1</token><token pos="Fp">)</token><token pos="Z">(</token><token pos="Fpt">http://www.hapmap.org/</token><token pos="Fpa">)</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="We " />
+			<frame type="Estimating" head="estimate">
+				<argument type="Cognizer" dependent="we" />
+				<argument type="Estimation" dependent="that these snps are correlated with unk % of common snps in the unk / ceu ( utah residents with ancestry from northern and western europe ) samples at r2  0.8 , and unk % at r2  0.5" /></frame>
+			<frame type="Residence" head="residents">
+				<argument type="Location" dependent="utah" /></frame>
+			<frame type="Part_orientational" head="northern">
+				<argument type="Whole" dependent="europe" /></frame>
+			<frame type="Part_orientational" head="western">
+				<argument type="Whole" dependent="europe" /></frame>
+			<frame type="Locative_relation" head="at">
+				<argument type="Figure" dependent="residents with ancestry from northern and western europe ) samples at r2  0.8 ," />
+				<argument type="Figure" dependent="unk %" />
+				<argument type="Ground" dependent="r2" /></frame>
+			<main_frame type="Perception_experience" head="see">
+				<argument type="Phenomenon" dependent="unk 1" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 As expected, coverage was strongly related to m. a. f.: 70_% of SNPs with m. a. f.  10_% were tagged at r2  0.8, compared with 23_% of SNPs with m. a. f. 5 – 10_%.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="NN">coverage</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_2" concept_ref3="c_16" concept_ref4="c_31">
+			<token pos="VBD">was</token><token pos="RB">strongly</token><token pos="VBN">related</token><token pos="TO">to</token><token pos="NN">m</token><token pos="Fp">.</token><token pos="DT">a</token><token pos="Fp">.</token><token pos="NN">f</token><token pos="Fp">.</token><token pos="Fd">:</token><token pos="Zp">70_%</token><token pos="IN">of</token><token pos="NP00V00">SNPs</token><token pos="IN">with</token><token pos="NN">m</token><token pos="Fp">.</token><token pos="DT">a</token><token pos="Fp">.</token><token pos="NN">f</token><token pos="Fp">.</token><token pos="Fz">10_%</token><token pos="Zp">were</token><token pos="VBD">tagged</token><token pos="VBN">at</token><mention concept_ref="c_2"><token pos="IN">r2</token></mention><token pos="Z">0.8</token><token pos="Fz">,</token><token pos="Z">compared</token><token pos="Fc">with</token><token pos="VBN">23_%</token><token pos="IN">of</token><token pos="Zp">SNPs</token><token pos="IN">with</token><token pos="NP00V00">m</token><token pos="IN">.</token><token pos="NN">a</token><token pos="Fp">.</token><token pos="DT">f</token><token pos="Fp">.</token><token pos="NN">5</token><token pos="Fp">–</token><token pos="Z">10_%</token><token pos="Fz">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Expectation" head="expected" />
+			<main_frame type="Statement" head="related">
+				<argument type="Message" dependent="coverage" />
+				<argument type="Message" dependent="to m. a. f." /></main_frame>
+			<frame type="Locative_relation" head="at">
+				<argument type="Figure" dependent=" unk %" />
+				<argument type="Ground" dependent="r2" /></frame>
+			<main_frame type="Evaluative_comparison" head="compared">
+				<argument type="Standard_item" dependent="with unk % of snps with m. a. f. 5 unk unk %" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 The main analyses were restricted to 205,586 SNPs that had a call rate of 90_% and whose genotype distributions did not differ from Hardy – Weinberg equilibrium in controls ( at P  10 − 5 ).
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="DT">The</token><token pos="JJ">main</token><token pos="NNS">analyses</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_2" concept_ref3="c_5" concept_ref4="c_16" concept_ref5="c_34" concept_ref6="c_31" concept_ref7="c_37" concept_ref8="c_47">
+			<token pos="VBD">were</token><token pos="VBN">restricted</token><token pos="TO">to</token><mention concept_ref="c_34"><token pos="Z">205,586</token><token pos="NP00V00">SNPs</token></mention><token pos="WDT">that</token><token pos="VBD">had</token><mention concept_ref="c_31"><token pos="DT">a</token></mention><token pos="NN">call</token><token pos="NN">rate</token><token pos="IN">of</token><token pos="Zp">90_%</token><token pos="CC">and</token><token pos="WP$">whose</token><token pos="NN">genotype</token><token pos="NNS">distributions</token><token pos="VBD">did</token><token pos="RB">not</token><token pos="VB">differ</token><token pos="IN">from</token><token pos="NP00V00">Hardy</token><token pos="Fz">–</token><token pos="NP00G00">Weinberg</token><token pos="NN">equilibrium</token><token pos="IN">in</token><token pos="NNS">controls</token><token pos="Fpa">(</token><token pos="IN">at</token><mention concept_ref="c_2"><token pos="RB">P</token></mention><token pos="Fz">10</token><token pos="Z">−</token><token pos="Fz">5</token><token pos="Z">)</token><token pos="Fpt">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Importance" head="main">
+				<argument type="Factor" dependent="analyses" /></frame>
+			<frame type="Scrutiny" head="analyses" />
+			<main_frame type="Deny_or_grant_permission" head="restricted">
+				<argument type="Action" dependent="the main analyses" /></main_frame>
+			<frame type="Request" head="call">
+				<argument type="Manner" dependent="rate" />
+				<argument type="Message" dependent="of unk % and whose genotype distributions did not differ from hardy unk weinberg equilibrium in controls ( at p" /></frame>
+			<frame type="Proportion" head="rate" />
+			<main_frame type="Similarity" head="differ">
+				<argument type="Entity_1" dependent="a call rate of unk % and whose genotype distributions" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 For the second stage we selected 12,711 SNPs, approximately 5_% of those typed in stage 1, on the basis of the significance of the difference in genotype frequency between cases and controls.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="PRP">we</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_2" concept_ref3="c_4" concept_ref4="c_16" concept_ref5="c_33" concept_ref6="c_31" concept_ref7="c_42">
+			<token pos="VBD">selected</token><token pos="Z">12,711</token><mention concept_ref="c_3"><token pos="NP00SP0">SNPs</token></mention><token pos="Fc">,</token><token pos="RB">approximately</token><token pos="Zp">5_%</token><token pos="IN">of</token><mention concept_ref="c_16"><token pos="DT">those</token></mention><token pos="VBN">typed</token><token pos="IN">in</token><mention concept_ref="c_33"><token pos="NN">stage</token></mention><token pos="Z">1</token><token pos="Fc">,</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Ordinal_numbers" head="second">
+				<argument type="Type" dependent="stage" /></frame>
+			<main_frame type="Choosing" head="selected">
+				<argument type="Chosen" dependent="the second stage" />
+				<argument type="Cognizer" dependent="we" />
+				<argument type="Chosen" dependent="unk snps" /></main_frame>
+			<frame type="Proportional_quantity" head="approximately">
+				<argument type="Individuals" dependent="unk % of those typed in stage" /></frame>
+			<main_frame type="Text_creation" head="typed">
+				<argument type="Text" dependent="those" /></main_frame>
+			<frame type="Importance" head="significance">
+				<argument type="Factor" dependent="of the difference in genotype frequency between cases and controls" /></frame>
+			<frame type="Non-commutative_statement" head="difference">
+				<argument type="Term_1" dependent="in genotype frequency" /></frame>
+			<frame type="Frequency" head="frequency">
+				<argument type="Event" dependent="the basis of the significance of the difference in genotype" /></frame>
+			<frame type="Instance" head="cases" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 These SNPs were then genotyped in a further 3,990 invasive breast cancer cases and 3,916 controls from the SEARCH study, using a custom-designed oligonucleotide array.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="DT">These</token><token pos="NP00V00">SNPs</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_4" concept_ref4="c_9" concept_ref5="c_16" concept_ref6="c_18" concept_ref7="c_25" concept_ref8="c_31" concept_ref9="c_34">
+			<token pos="VBD">were</token><token pos="RB">then</token><token pos="VBN">genotyped</token><token pos="IN">in</token><token pos="DT">a</token><token pos="JJ">further</token><token pos="Z">3,990</token><token pos="JJ">invasive</token><token pos="NN">breast</token><token pos="NN">cancer</token><token pos="NNS">cases</token><token pos="CC">and</token><mention concept_ref="c_4"><token pos="Z">3,916</token><token pos="NNS">controls</token></mention><token pos="IN">from</token><mention concept_ref="c_9"><token pos="DT">the</token><token pos="NP00O00">SEARCH</token><token pos="NN">study</token></mention><token pos="Fc">,</token><token pos="VBG">using</token><mention concept_ref="c_25"><token pos="DT">a</token><token pos="VBN">custom-designed</token><token pos="NN">oligonucleotide</token><token pos="NN">array</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Increment" head="further">
+				<argument type="Class" dependent="3,990 invasive breast cancer" /></frame>
+			<frame type="Body_parts" head="breast">
+				<argument type="Descriptor" dependent="invasive" /></frame>
+			<frame type="Instance" head="cases">
+				<argument type="Type" dependent="invasive breast cancer" /></frame>
+			<frame type="Scrutiny" head="study">
+				<argument type="Ground" dependent="search" /></frame>
+			<main_frame type="Using" head="using">
+				<argument type="Instrument" dependent="a custom-designed oligonucleotide array" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 In the main analyses, we considered 10,405 SNPs with call rate of  95_% that did not deviate from Hardy – Weinberg equilibrium in controls.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="PRP">we</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_2" concept_ref3="c_16" concept_ref4="c_31" concept_ref5="c_34" concept_ref6="c_47" concept_ref7="c_48">
+			<token pos="VBD">considered</token><token pos="Z">10,405</token><mention concept_ref="c_3"><token pos="NP00V00">SNPs</token></mention><token pos="IN">with</token><mention concept_ref="c_47"><token pos="NN">call</token><token pos="NN">rate</token></mention><token pos="IN">of</token><mention concept_ref="c_48"><token pos="Fz">95_%</token></mention><mention concept_ref="c_16"><token pos="Zp">that</token></mention><token pos="WDT">did</token><token pos="VBD">not</token><token pos="RB">deviate</token><token pos="VB">from</token><token pos="IN">Hardy</token><token pos="NP00V00">–</token><token pos="Fz">Weinberg</token><token pos="NP00O00">equilibrium</token><token pos="NN">in</token><mention concept_ref="c_34"><token pos="IN">controls</token></mention><token pos="NNS">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Importance" head="main">
+				<argument type="Factor" dependent="analyses" /></frame>
+			<frame type="Scrutiny" head="analyses">
+				<argument type="Degree" dependent="main" /></frame>
+			<main_frame type="Categorization" head="considered">
+				<argument type="Cognizer" dependent="we" />
+				<argument type="Item" dependent="unk snps with call rate of  unk % that did not deviate from hardy unk weinberg equilibrium in controls" /></main_frame>
+			<frame type="Request" head="call" />
+			<frame type="Proportion" head="rate">
+				<argument type="Ratio" dependent="from hardy unk weinberg equilibrium in controls" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Comparison of the observed and expected distribution of test statistics showed some evidence for an inflation of the test statistics in both stage 1 ( inflation factor λ=1.03, 95_% confidence interval ( CI ) 1.02 – 1.04 ) and stage 2 ( λ=1.06, 95_% CI 1.04 – 1.12 ), based on the 90_% least significant SNPs ( Fig. 1 ).
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="NN">Comparison</token><token pos="IN">of</token><token pos="DT">the</token><token pos="VBN">observed</token><token pos="CC">and</token><token pos="VBN">expected</token><token pos="NN">distribution</token><token pos="IN">of</token><token pos="NN">test</token><token pos="NNS">statistics</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_2" concept_ref3="c_7" concept_ref4="c_13" concept_ref5="c_12" concept_ref6="c_16" concept_ref7="c_33" concept_ref8="c_31" concept_ref9="c_41" concept_ref10="c_34" concept_ref11="c_46" concept_ref12="c_48" concept_ref13="c_49">
+			<token pos="VBD">showed</token><mention concept_ref="c_7"><token pos="DT">some</token><token pos="NN">evidence</token></mention><token pos="IN">for</token><mention concept_ref="c_13"><token pos="DT">an</token><token pos="NN">inflation</token></mention><token pos="IN">of</token><mention concept_ref="c_12"><token pos="DT">the</token><token pos="NN">test</token><token pos="NNS">statistics</token></mention><token pos="IN">in</token><token pos="DT">both</token><token pos="NN">stage</token><token pos="Z">1</token><token pos="Fpa">(</token><token pos="NN">inflation</token><token pos="NN">factor</token><mention concept_ref="c_49"><token pos="Z">λ=1.03</token></mention><token pos="Fc">,</token><token pos="Zp">95_%</token><token pos="NN">confidence</token><token pos="NN">interval</token><token pos="Fpa">(</token><token pos="NN">CI</token><token pos="Fpt">)</token><token pos="Z">1.02</token><token pos="Fz">–</token><token pos="Z">1.04</token><token pos="Fpt">)</token><token pos="CC">and</token><token pos="NN">stage</token><token pos="Z">2</token><token pos="Fpa">(</token><token pos="Z">λ=1.06</token><token pos="Fc">,</token><token pos="Zp">95_%</token><token pos="JJ">CI</token><token pos="Z">1.04</token><token pos="Fz">–</token><token pos="Z">1.12</token><token pos="Fpt">)</token><token pos="Fc">,</token><token pos="VBN">based</token><token pos="IN">on</token><mention concept_ref="c_34"><token pos="DT">the</token><token pos="Zp">90_%</token></mention><token pos="JJS">least</token><token pos="JJ">significant</token><mention concept_ref="c_3"><token pos="NP00V00">SNPs</token></mention><token pos="Fpa">(</token><mention concept_ref="c_46"><token pos="NN">Fig</token></mention><token pos="Fp">.</token><token pos="Z">1</token><token pos="Fpt">)</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Becoming_aware" head="observed">
+				<argument type="Phenomenon" dependent="distribution of test statistics showed some evidence for an inflation of the test statistics in both stage 1 ( inflation" /></main_frame>
+			<main_frame type="Expectation" head="expected">
+				<argument type="Phenomenon" dependent="distribution of test statistics showed some evidence for an inflation of the test statistics in both stage 1 ( inflation" /></main_frame>
+			<frame type="Dispersal" head="distribution">
+				<argument type="Individuals" dependent="of test statistics" /></frame>
+			<frame type="Operational_testing" head="test" />
+			<main_frame type="Evidence" head="showed">
+				<argument type="Support" dependent="comparison of the observed and expected distribution of test statistics" />
+				<argument type="Proposition" dependent="some evidence for an inflation of the test statistics in both stage 1 ( inflation factor unk , unk % confidence interval ( ci ) 1.02 unk 1.04 ) and stage 2 ( unk , unk % ci 1.04 unk" /></main_frame>
+			<frame type="Evidence" head="evidence">
+				<argument type="Proposition" dependent="for an inflation of the test statistics in both stage" /></frame>
+			<frame type="Certainty" head="confidence" />
+			<frame type="Frequency" head="interval">
+				<argument type="Event" dependent="confidence" /></frame>
+			<frame type="Importance" head="significant">
+				<argument type="Factor" dependent="snps" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Possible explanations for this inflation include population stratification, cryptic relatedness among subjects, and differential genotype calling between cases and controls.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="JJ">Possible</token><token pos="NNS">explanations</token><token pos="IN">for</token><token pos="DT">this</token><token pos="NN">inflation</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_16" concept_ref3="c_26" concept_ref4="c_27" concept_ref5="c_38" concept_ref6="c_31" concept_ref7="c_34">
+			<token pos="VBP">include</token><mention concept_ref="c_38"><token pos="NN">population</token><token pos="NN">stratification</token></mention><token pos="Fc">,</token><token pos="JJ">cryptic</token><token pos="NN">relatedness</token><token pos="IN">among</token><token pos="NNS">subjects</token><token pos="Fc">,</token><token pos="CC">and</token><mention concept_ref="c_27"><token pos="JJ">differential</token><token pos="NN">genotype</token></mention><token pos="VBG">calling</token><token pos="IN">between</token><token pos="NNS">cases</token><token pos="CC">and</token><mention concept_ref="c_34"><token pos="NNS">controls</token></mention><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Inclusion" head="include">
+				<argument type="Total" dependent="this inflation" />
+				<argument type="Part" dependent="population stratification , cryptic relatedness among subjects , and differential genotype calling between cases and controls" /></main_frame>
+			<frame type="Aggregate" head="population" />
+			<frame type="People_by_jurisdiction" head="subjects" />
+			<main_frame type="Referring_by_name" head="calling">
+				<argument type="Entity" dependent="differential genotype" />
+				<argument type="Name" dependent="between cases and controls" /></main_frame>
+			<frame type="Instance" head="cases" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 There was evidence for an excess of low call rate SNPs among the most significant SNPs ( P  0.01 ) in stage 1, but not in stage 2, suggesting that some of this effect is a genotyping artefact ( Supplementary_Table 1 ).
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="EX">There</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_2" concept_ref3="c_16" concept_ref4="c_33" concept_ref5="c_31" concept_ref6="c_32" concept_ref7="c_41" concept_ref8="c_46" concept_ref9="c_47" concept_ref10="c_34">
+			<token pos="VBD">was</token><mention concept_ref="c_41"><token pos="NN">evidence</token></mention><token pos="IN">for</token><token pos="DT">an</token><token pos="NN">excess</token><token pos="IN">of</token><mention concept_ref="c_32"><token pos="JJ">low</token><token pos="NN">call</token><token pos="NN">rate</token></mention><token pos="NP00V00">SNPs</token><token pos="IN">among</token><token pos="DT">the</token><token pos="RB">most</token><token pos="JJ">significant</token><token pos="NP00V00">SNPs</token><token pos="Fpa">(</token><mention concept_ref="c_2"><token pos="RB">P</token></mention><token pos="Fz">0.01</token><token pos="Z">)</token><token pos="Fpt">in</token><token pos="IN">stage</token><token pos="NN">1</token><token pos="Z">,</token><token pos="Fc">but</token><token pos="CC">not</token><token pos="RB">in</token><token pos="IN">stage</token><token pos="NN">2</token><token pos="Z">,</token><token pos="Fc">suggesting</token><mention concept_ref="c_16"><token pos="VBG">that</token></mention><token pos="IN">some</token><token pos="DT">of</token><mention concept_ref="c_34"><token pos="IN">this</token><token pos="DT">effect</token></mention><token pos="NN">is</token><mention concept_ref="c_31"><token pos="VBZ">a</token></mention><token pos="DT">genotyping</token><token pos="NN">artefact</token><token pos="NN">(</token><mention concept_ref="c_46"><token pos="Fpa">Supplementary_Table</token></mention><token pos="NP00O00">1</token><token pos="Z">)</token><token pos="Fpt">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Locative_relation" head="there">
+				<argument type="Ground" dependent="there was evidence" />
+				<argument type="Figure" dependent="for an excess of low call rate snps among the most significant snps ( p  0.01 ) in stage" /></frame>
+			<frame type="Evidence" head="evidence">
+				<argument type="Proposition" dependent="for an excess of low call rate snps among the most significant snps ( p  0.01 ) in stage" /></frame>
+			<frame type="Position_on_a_scale" head="low">
+				<argument type="Item" dependent="call" /></frame>
+			<frame type="Request" head="call">
+				<argument type="Manner" dependent="low" />
+				<argument type="Message" dependent="call rate snps among the most significant snps ( p  0.01 ) in stage 1 , but not in stage" /></frame>
+			<frame type="Proportion" head="rate" />
+			<frame type="Be_subset_of" head="among">
+				<argument type="Part" dependent="the most significant snps ( p  0.01 ) in stage 1 , but not in stage 2 , suggesting" /></frame>
+			<frame type="Importance" head="significant">
+				<argument type="Degree" dependent="most" />
+				<argument type="Factor" dependent="snps ( p  0.01 ) in stage 1 , but not in stage 2" /></frame>
+			<frame type="Interior_profile_relation" head="in">
+				<argument type="Ground" dependent="stage" /></frame>
+			<main_frame type="Statement" head="suggesting">
+				<argument type="Message" dependent="that some of this effect is a genotyping artefact ( unk 1 )" /></main_frame>
+			<frame type="Objective_influence" head="effect">
+				<argument type="Dependent_entity" dependent="a genotyping artefact ( unk 1 )" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 However, the inflation was still present among SNPs with call rate  99_% in both cases and controls, possibly reflecting population sub-structure.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="DT">the</token><token pos="NN">inflation</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_38" concept_ref3="c_31" concept_ref4="c_39" concept_ref5="c_34" concept_ref6="c_47">
+			<token pos="VBD">was</token><token pos="JJ">present</token><token pos="IN">with</token><mention concept_ref="c_47"><token pos="NN">call</token><token pos="NN">rate</token></mention><token pos="Fz">99_%</token><token pos="Zp">in</token><mention concept_ref="c_39"><token pos="IN">both</token><token pos="DT">cases</token></mention><token pos="NNS">and</token><mention concept_ref="c_34"><token pos="CC">controls</token></mention><token pos="NNS">,</token><token pos="Fc">possibly</token><token pos="RB">reflecting</token><mention concept_ref="c_38"><token pos="VBG">population</token><token pos="NN">sub-structure</token></mention><token pos="NN">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Continued_state_of_affairs" head="still">
+				<argument type="State_of_affairs" dependent="the inflation was" />
+				<argument type="State_of_affairs" dependent="present among snps with call rate  unk % in both cases and controls , possibly reflecting population unk" /></frame>
+			<frame type="Presence" head="present">
+				<argument type="Entity" dependent="the inflation" />
+				<argument type="Entity" dependent="among snps with call rate  unk % in both cases and controls" /></frame>
+			<frame type="Be_subset_of" head="among">
+				<argument type="Part" dependent="snps with call rate  unk % in both cases and controls , possibly reflecting population unk" /></frame>
+			<frame type="Request" head="call">
+				<argument type="Message" dependent="rate" /></frame>
+			<frame type="Proportion" head="rate">
+				<argument type="Ratio" dependent="reflecting population unk" /></frame>
+			<frame type="Interior_profile_relation" head="in">
+				<argument type="Figure" dependent="the inflation was still present among snps with call rate  unk %" />
+				<argument type="Ground" dependent="both cases and controls" /></frame>
+			<frame type="Instance" head="cases" />
+			<frame type="Being_in_control" head="controls" />
+			<frame type="Likelihood" head="possibly">
+				<argument type="Hypothetical_event" dependent="reflecting population unk" /></frame>
+			<main_frame type="Cogitation" head="reflecting">
+				<argument type="Topic" dependent="population unk" /></main_frame>
+			<frame type="Aggregate" head="population" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 We computed 1 degree of freedom ( d. f. ) association tests for each SNP, combining stages 1 and 2.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="PRP">We</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_3" concept_ref3="c_28" concept_ref4="c_33" concept_ref5="c_31">
+			<token pos="VBD">computed</token><token pos="Z">1</token><token pos="NN">degree</token><token pos="IN">of</token><token pos="NN">freedom</token><token pos="Fpa">(</token><token pos="NN">d</token><token pos="Fp">.</token><token pos="NN">f</token><token pos="Fp">.</token><token pos="Fpt">)</token><mention concept_ref="c_2"><token pos="NN">association</token></mention><token pos="NNS">tests</token><token pos="IN">for</token><mention concept_ref="c_3"><token pos="DT">each</token><token pos="NP00O00">SNP</token></mention><token pos="Fc">,</token><token pos="VBG">combining</token><mention concept_ref="c_33"><token pos="NNS">stages</token></mention><token pos="Z">1</token><token pos="CC">and</token><token pos="Z">2</token><token pos="Fp">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Operational_testing" head="tests">
+				<argument type="Product" dependent="d. f. ) association" />
+				<argument type="Product" dependent="for each snp" /></frame>
+			<main_frame type="Cause_to_amalgamate" head="combining">
+				<argument type="Part_1" dependent="stages 1" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 After adjustment for this inflation by the genomic control method, we observed more associations than would have been expected by_chance at P  0.05 ( Table 1 ).
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="PRP">we</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_31" concept_ref3="c_46">
+			<token pos="VBD">observed</token><token pos="DT">more</token><token pos="NNS">associations</token><token pos="IN">than</token><token pos="MD">would</token><token pos="VB">have</token><token pos="VBN">been</token><token pos="VBN">expected</token><token pos="RB">by_chance</token><token pos="IN">at</token><token pos="RB">P</token><token pos="Fz">0.05</token><mention concept_ref="c_46"><token pos="Z">(</token><token pos="Fpa">Table</token></mention><token pos="NN">1</token><token pos="Z">)</token><token pos="Fpt">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Relative_time" head="after">
+				<argument type="Landmark_occasion" dependent="adjustment for this inflation by the genomic control method" />
+				<argument type="Focal_occasion" dependent="we observed more associations than would have been expected unk at p  0.05 ( table 1 )" /></frame>
+			<frame type="Being_in_control" head="control">
+				<argument type="Dependent_entity" dependent="genomic" /></frame>
+			<frame type="Means" head="method">
+				<argument type="Purpose" dependent="genomic control" /></frame>
+			<main_frame type="Becoming_aware" head="observed">
+				<argument type="Circumstances" dependent="after adjustment for this inflation by the genomic control method" />
+				<argument type="Cognizer" dependent="we" />
+				<argument type="Phenomenon" dependent="more associations than would have been expected unk at p  0.05 ( table 1 )" /></main_frame>
+			<frame type="Increment" head="more">
+				<argument type="Class" dependent="associations" /></frame>
+			<frame type="Organization" head="associations" />
+			<main_frame type="Expectation" head="expected">
+				<argument type="Phenomenon" dependent="unk at p  0.05" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 One SNP ( dbSNP rs2981582 ) was significant at the P  10 − 7 level that has been proposed as appropriate for genome-wide studies.
+		</str>
+		<theme concept_ref="c_14">
+			<token pos="Z">One</token><token pos="NN">SNP</token><token pos="Fpa">(</token><token pos="NN">dbSNP</token><token pos="Z">rs2981582</token><token pos="Fpt">)</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_6" concept_ref3="c_16" concept_ref4="c_29" concept_ref5="c_31" concept_ref6="c_42" concept_ref7="c_43">
+			<token pos="VBD">was</token><token pos="JJ">significant</token><token pos="IN">at</token><token pos="DT">the</token><mention concept_ref="c_2"><token pos="NN">P</token></mention><token pos="Fz">10</token><token pos="Z">−</token><mention concept_ref="c_42"><token pos="Fz">7</token><token pos="Z">level</token></mention><mention concept_ref="c_16"><token pos="NN">that</token></mention><token pos="WDT">has</token><token pos="VBZ">been</token><token pos="VBN">proposed</token><mention concept_ref="c_29"><token pos="VBN">as</token><token pos="IN">appropriate</token><token pos="JJ">for</token><token pos="IN">genome-wide</token><token pos="JJ">studies</token></mention><token pos="NNS">.</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="one">
+				<argument type="Entity" dependent="snp" /></frame>
+			<frame type="Importance" head="significant">
+				<argument type="Factor" dependent="one snp ( unk unk )" />
+				<argument type="Undertaking" dependent="at the p  10 unk 7 level that has been proposed as appropriate for genome-wide studies" /></frame>
+			<main_frame type="Statement" head="proposed">
+				<argument type="Message" dependent="the p  10 unk 7 level that" />
+				<argument type="Message" dependent="as appropriate for genome-wide studies" /></main_frame>
+			<frame type="Suitability" head="appropriate">
+				<argument type="Purpose" dependent="for genome-wide studies" /></frame>
+			<frame type="Scrutiny" head="studies">
+				<argument type="Ground" dependent="genome-wide" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

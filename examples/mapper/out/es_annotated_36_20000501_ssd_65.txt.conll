@@ -1,0 +1,10 @@
+{   ('Becoming_a_member', 'se'): [('Place', 'sin complejos a la defensa de una sociedad bilingüe')],
+    ('Capability', 'se'): [   ('Entity', 'podremos'),
+                              (   'Event',
+                                  'modificar la actuación de CiU cuando el PSC deje de respaldar los planteamientos de los nacionalistas y se sume sin complejos a la defensa de una sociedad '
+                                  'bilingüe')],
+    ('Cause_change', 'modificar'): [('Entity', 'la actuación de'), ('Duration', 'cuando el PSC deje de respaldar los planteamientos de los nacionalistas')],
+    ('Defending', 'defensa'): [('Victim', 'una sociedad bilingüe')],
+    ('Means', 'se'): [('Purpose', 'nacionalistas')],
+    ('Preventing_or_letting', 'deje'): [('Potential_hindrance', 'el PSC'), ('Event', 'de respaldar los planteamientos de los nacionalistas')],
+    ('Supporting', 'de respaldar'): [('Supporter', 'el PSC'), ('Supported', 'nacionalistas')]}

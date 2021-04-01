@@ -1,0 +1,5 @@
+{   ('Activity_finish', 'de espera'): [('Agent', 'el')],
+    ('Buildings', 'aeropuerto'): [('Name', '( Menorca )')],
+    ('Calendric_unit', 'horas'): [('Count', '14')],
+    ('Locative_relation', 'en'): [('Ground', 'el aeropuerto de Maó (')],
+    ('Waiting', 'espera'): [('Place', 'en el aeropuerto de Maó (')]}

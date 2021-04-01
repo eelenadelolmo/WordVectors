@@ -1,0 +1,16 @@
+{   ('Building', 'construcción'): [('Manner', 'nacional'), ('Created_entity', 'cansaba de')],
+    ('Calendric_unit', 'semanas'): [('Count', 'escasas')],
+    ('Documents', 'documento'): [],
+    ('Leadership', 'Gobierno'): [],
+    ('Military', 'fuerzas'): [('Domain', 'nacionalistas')],
+    ('Organization', 'asociaciones'): [],
+    ('Political_locales', 'nacional'): [],
+    ('Purpose', 'plan'): [],
+    ('Quantified_mass', 'escasas'): [('Individuals', 'semanas')],
+    ('Relative_time', 'precedió'): [   ('Focal_occasion', 'el documento que'),
+                                       ('Focal_occasion', 'todas las fuerzas y asociaciones nacionalistas esbozaron un plan de paz basado en la construcción nacional')],
+    ('Summarizing', 'precedió'): [('Communicator', 'todas las fuerzas y asociaciones nacionalistas'), ('State_of_affairs', 'un plan de paz basado en la construcción nacional de')],
+    ('Time_vector', 'se'): [   ('Distance', 'escasas semanas ,'),
+                               (   'Event',
+                                   ', el Gobierno no se cansaba de exigir a los peneuvistas que enterraran el Pacto de Lizarra , el documento que precedió a la tregua de ETA y en el que todas las '
+                                   'fuerzas y asociaciones nacionalistas esbozaron un plan de paz basado en la construcción nacional de')]}

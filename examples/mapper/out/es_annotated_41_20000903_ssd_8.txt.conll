@@ -1,0 +1,13 @@
+{   ('Age', 'nuevo'): [('Entity', 'derecho')],
+    ('Assistance', 'servir'): [('Benefited_party', 'el nuevo derecho'), ('Goal', 'perseguir la conducta de los productores y los transportistas de la droga')],
+    ('Businesses', 'operaciones'): [('Descriptor', 'tan espectaculares')],
+    ('Cotheme', 'perseguir'): [('Theme', 'el nuevo derecho'), ('Cotheme', 'conducta de los productores y los transportistas de la droga')],
+    ('Desirable_event', 'debe'): [('State_of_affairs', 'el nuevo derecho'), ('State_of_affairs', 'servir para perseguir la conducta de los productores y los transportistas de la droga')],
+    ('Directional_locative_relation', 'debajo'): [('Figure', 'economía que subyace'), ('Ground', 'ese mundo')],
+    ('Economy', 'economía'): [],
+    ('Exchange', 'tráfico'): [('Exchanger_1', 'mundo'), ('Themes', 'drogas')],
+    ('Explaining_the_facts', 'los'): [('Fact', 'estas operaciones tan espectaculares'), ('State_of_affairs', 'sólo suponen el 10 % del tráfico mundial de drogas')],
+    ('Intoxicants', 'drogas'): [],
+    ('Law', 'derecho'): [('Descriptor', 'nuevo')],
+    ('Manufacturing', 'productores'): [('Product', 'productores y los transportistas de la droga')],
+    ('Political_locales', 'mundo'): []}

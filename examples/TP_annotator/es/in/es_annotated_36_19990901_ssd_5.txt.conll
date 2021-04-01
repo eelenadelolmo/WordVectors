@@ -1,0 +1,11 @@
+{   ('Adducing', 'quot'): [('Speaker', 'es'), ('Specified_entity', 'quot ; la situación es notablemente mejor que la de hace un año & quot ; , y')],
+    ('Calendric_unit', 'año'): [],
+    ('Desirability', 'buen'): [('Evaluee', 'económico')],
+    ('Economy', 'económico'): [],
+    ('Locative_relation', 'de'): [('Figure', 'es'), ('Figure', 'atraviesa'), ('Ground', 'Destacó')],
+    ('Perception_experience', 'situación'): [('Phenomenon', 'Euskadi'), ('Phenomenon', 'quot ; un buen momento económico , social y político &')],
+    ('Required_event', 'mejor'): [('Required_situation', 'la situación'), ('Degree', 'notablemente')],
+    ('Sleep', 'atraviesa'): [('Sleeper', 'es')],
+    ('Social_event', 'social'): [],
+    ('Temporal_subregion', 'Destacó'): [],
+    ('Time_vector', 'de'): [('Distance', 'un año'), ('Event', ',')]}

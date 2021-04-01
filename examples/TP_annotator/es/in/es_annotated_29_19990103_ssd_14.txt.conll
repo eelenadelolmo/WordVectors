@@ -1,0 +1,8 @@
+{   ('Body_parts', 'ojos'): [],
+    ('Locative_relation', 'al'): [('Figure', 'gafas de concha'), ('Figure', 'ojos que'), ('Ground', 'al objetivo')],
+    ('Measurable_attributes', 'estrechos'): [('Entity', 'labios')],
+    ('Perception_active', 'miran'): [('Phenomenon', 'ojos'), ('Perceiver_agentive', 'que'), ('State', 'al objetivo')],
+    ('Posture', 'de pie'): [('Agent', 'de')],
+    ('Purpose', 'objetivo'): [],
+    ('Substance', 'gafas de'): [('Descriptor', 'concha')],
+    ('Weapon', 'concha'): []}

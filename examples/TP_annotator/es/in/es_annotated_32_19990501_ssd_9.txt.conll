@@ -1,0 +1,12 @@
+{   ('Calendric_unit', 'día'): [],
+    ('Change_position_on_a_scale', 'aumentan'): [('Attribute', 'régimen')],
+    ('Impression', 'imagen'): [('Figure', 'unidad')],
+    ('Leadership', 'régimen'): [],
+    ('Military', 'Ejército'): [('Descriptor', 'Slobodan Milosevic')],
+    ('Project', 'proyectan'): [   ('Name', 'apoderado'),
+                                  ('Field', 'autoridades'),
+                                  ('Activity', 'imagen de unidad , la OTAN insistió ayer en que la desmoralización se ha apoderado del Ejército de Slobodan Milosevic y que cada')],
+    ('Proportional_quantity', 'en'): [('Individuals', 'del Ejército de Slobodan Milosevic')],
+    ('Statement', 'insistió'): [   ('Speaker', 'autoridades de Belgrado proyectan una imagen de unidad , la'),
+                                   ('Manner', 'ayer'),
+                                   ('Message', 'que la desmoralización se ha apoderado del Ejército de Slobodan Milosevic y que cada día aumentan las fracturas en el seno del régimen')]}

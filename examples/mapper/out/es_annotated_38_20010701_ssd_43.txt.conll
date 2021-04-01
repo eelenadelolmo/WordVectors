@@ -1,0 +1,5 @@
+{   ('Being_located', 'yace'): [('Location', 'En las'), ('Theme', 'uno de los mayores escándalos del mundillo pop')],
+    ('Cardinal_numbers', 'uno'): [('Entity', 'mayores escándalos del mundillo pop')],
+    ('Cognitive_connection', 'relación'): [('Concept_2', 'su')],
+    ('Interior_profile_relation', 'En'): [('Ground', 'del')],
+    ('Political_locales', 'su'): [('Name', 'pop')]}

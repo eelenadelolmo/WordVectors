@@ -1,0 +1,6 @@
+{   ('Make_agreement_on_action', 'aquel acuerdo'): [],
+    ('Request', 'exigió'): [('Speaker', 'PP le'), ('Addressee', 'aquel'), ('Message', 'abdicara también de los principios que inspiraron aquel acuerdo')],
+    ('Statement', 'declarara'): [   ('Time', '15 de agosto'),
+                                    ('Speaker', 'propio Arzalluz'),
+                                    ('Message', 'que la violenta reaparición de ETA había & quot ; invalidado & quot ; el foro de Lizarra : el PP le exigió a continuación que')],
+    ('Subjective_influence', 'inspiraron'): [('Cognizer', 'los principios que'), ('Product', 'aquel acuerdo')]}

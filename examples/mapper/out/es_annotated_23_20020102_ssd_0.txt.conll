@@ -1,0 +1,10 @@
+{   ('Age', 'nueva'): [('Entity', 'moneda')],
+    ('Certainty', 'incertidumbres'): [],
+    ('Collaboration', 'conlleva'): [('Undertaking', 'incertidumbres'), ('Partner_2', 'conlleva la aparición de la nueva moneda , en')],
+    ('Emphasizing', 'conlleva'): [('Agent', 'Los diarios británicos'), ('Time', 'ayer')],
+    ('Locative_relation', 'en'): [   ('Figure', 'diarios británicos hacían hincapié en sus ediciones de ayer en las incertidumbres que conlleva la aparición de la nueva moneda ,'),
+                                     ('Ground', 'un momento')],
+    ('Path_shape', 'aparición'): [('Road', 'de la nueva moneda')],
+    ('Political_locales', 'Reino'): [('Descriptor', 'Unido')],
+    ('Process', 'proceso'): [],
+    ('Text', 'Los diarios'): [('Author', 'británicos')]}

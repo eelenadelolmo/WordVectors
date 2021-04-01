@@ -1,0 +1,4 @@
+{   ('Discussion', 'cambio'): [('Topic', 'A los jubilados')],
+    ('Frequency', 'Nunca'): [('Event', 'pediremos el'), ('Event', 'les pediremos el voto a cambio de una pensión')],
+    ('Questioning', 'pediremos'): [('Speaker', 'los'), ('Addressee', 'les'), ('Message', 'voto a cambio de una pensión')],
+    ('Telling', 'dijo'): [('Speaker', 'el'), ('Addressee', 'los jubilados')]}

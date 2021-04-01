@@ -1,0 +1,8 @@
+{   ('Activity_ongoing', 'se'): [('Activity', 'pese a las protestas')],
+    ('Becoming_aware', 'detectada'): [('Evidence', 'en el país vecino')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'la epidemia de fiebre aftosa detectada en el'), ('Ground', 'el país vecino')],
+    ('Medical_conditions', 'epidemia'): [('Symptom', 'aftosa')],
+    ('People_by_religion', 'musulmana'): [],
+    ('Political_locales', 'país'): [('Descriptor', 'vecino')],
+    ('Prohibiting_or_licensing', 'prohibición'): [('State_of_affairs', 'de traer borregos marroquís para celebrar la Pascua Grande musulmana')],
+    ('Protest', 'protestas'): []}

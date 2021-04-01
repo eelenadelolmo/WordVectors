@@ -1,0 +1,6 @@
+{   ('Aggregate', 'partidos'): [('Aggregate_property', 'vasca')],
+    ('Connecting_architecture', 'levantara'): [('Creator', 'el Gobierno')],
+    ('Inclusion', 'incorpore'): [('Total', 'una mesa vasca de partidos que'), ('Part', 'tanto al PP')],
+    ('Leadership', 'Gobierno'): [],
+    ('Statement', 'propuesta'): [('Speaker', 'el'), ('Manner', 'concreta'), ('Message', 'que el Gobierno levantara el actual veto a una mesa vasca de partidos que incorpore tanto al PP como a')],
+    ('Temporal_collocation', 'el actual'): [('Trajector_entity', 'veto')]}

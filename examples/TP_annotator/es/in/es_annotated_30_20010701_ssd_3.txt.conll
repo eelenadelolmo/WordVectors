@@ -1,0 +1,7 @@
+{   ('Animals', 'animal'): [],
+    ('Attempt', 'tiros'): [],
+    ('Certainty', 'la certeza de'): [('Content', 'su muerte')],
+    ('Death', 'muerte'): [('Protagonist', 'lo')],
+    ('Identicality', 'lo mismo'): [('Type', 'lo')],
+    ('Temporal_collocation', 'Ahora'): [('Trajector_event', 'ocurre lo mismo : mazazos , tiros ... sin tener en cuenta el sufrimiento del animal ni la')],
+    ('Text', 'cuenta'): [('Text', 'el sufrimiento del animal ni la certeza de su muerte')]}

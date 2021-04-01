@@ -1,0 +1,8 @@
+{   ('Aggregate', 'partido'): [],
+    ('Appellations', 'presidente'): [('Type', 'Yasir')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Duration_description', 'poca distancia'): [('Eventuality', 'distancia de Netanya')],
+    ('Participation', 'participaron'): [('Participants', '70.000 personas'), ('Institution', 'ayer'), ('Participant_2', 'en el sepelio de Thabet Thabet')],
+    ('People', 'personas'): [('Descriptor', '70.000')],
+    ('Political_locales', 'localidad'): [('Descriptor', 'de'), ('Name', 'de Tulkarem')],
+    ('Range', 'distancia'): [('Distance', 'poca distancia')]}

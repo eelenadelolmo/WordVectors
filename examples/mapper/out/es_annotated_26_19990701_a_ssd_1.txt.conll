@@ -1,0 +1,3 @@
+{   ('Body_parts', 'ojos'): [('Possessor', 'los')],
+    ('Chatting', 'habla'): [('Interlocutors', 'los')],
+    ('Closure', 'cerrar'): [('Agent', 'los'), ('Container_portal', 'los ojos'), ('Time', 'cuando habla')]}

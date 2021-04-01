@@ -1,0 +1,7 @@
+{   ('Body_parts', 'traseros'): [('Possessor', 'les')],
+    ('Causation', 'porque'): [('Effect', 'subieron en los asientos traseros algo extrañadas'), ('Cause', 'el conductor no les cobraba el')],
+    ('Degree', 'algo'): [('Gradable_attribute', 'extrañadas')],
+    ('Judgment_communication', 'cobraba el'): [('Communicator', 'el conductor'), ('Evaluee', 'les')],
+    ('Ride_vehicle', 'viaje'): [('Vehicle', 'les')],
+    ('Statement', 'declaró'): [   ('Speaker', 'que resultó herida al arrojarse detrás de su compañera Tanja Z. , de 25 años'),
+                                  ('Message', 'que subieron en los asientos traseros algo extrañadas porque el conductor no les cobraba el viaje')]}

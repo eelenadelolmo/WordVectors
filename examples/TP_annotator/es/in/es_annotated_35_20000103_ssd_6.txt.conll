@@ -1,0 +1,15 @@
+{   ('Buildings', 'hospitales'): [],
+    ('Catastrophe', 'sufran'): [('Patient', 'personas'), ('Undesirable_event', 'sufran gripe u otros procesos leves')],
+    ('Discussion', 'consultas'): [('Topic', 'a las áreas de urgencias unas consultas que atiendan de forma inmediata a las personas que sufran gripe u otros procesos leves')],
+    ('Increment', 'otros'): [('Class', 'procesos leves')],
+    ('Locale', 'áreas'): [('Descriptor', 'de urgencias')],
+    ('Medical_conditions', 'gripe'): [],
+    ('People', 'personas'): [],
+    ('Placing', 'atiendan de'): [   ('Agent', 'todos los hospitales'),
+                                    ('Theme', 'áreas de urgencias unas consultas que atiendan de forma inmediata a las personas que sufran gripe u otros procesos leves')],
+    ('Process', 'procesos'): [],
+    ('Questioning', 'pedido'): [   ('Speaker', 'sufran'),
+                                   (   'Message',
+                                       'todos los hospitales que establezcan junto a las áreas de urgencias unas consultas que atiendan de forma inmediata a las personas que sufran gripe u otros '
+                                       'procesos leves')],
+    ('Supply', 'pedido a'): [('Theme', 'inmediata a las personas que sufran gripe u otros procesos leves')]}

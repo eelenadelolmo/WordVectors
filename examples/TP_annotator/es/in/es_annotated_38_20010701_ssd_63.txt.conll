@@ -1,0 +1,3 @@
+{   ('Buildings', 'hostelería'): [],
+    ('Desiring', 'quiso dedicarse'): [('Experiencer', 'la'), ('Event', 'dedicarse a la hostelería')],
+    ('Placing', 'montó'): [('Agent', 'la'), ('Theme', 'Sticky Fingers , un')]}

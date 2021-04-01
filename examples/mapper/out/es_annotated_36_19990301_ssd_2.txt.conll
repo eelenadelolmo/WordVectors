@@ -1,0 +1,5 @@
+{   ('Activity_start', 'inicia'): [('Activity', 'la preinscripción de los alumnos para el curso 1999-2000'), ('Time', 'Hoy se inicia en toda Catalunya')],
+    ('Calendric_unit', 'Hoy'): [('Whole', 'en toda Catalunya')],
+    ('Calendric_unit', 'se'): [('Relative_time', '1999-2000'), ('Salient_event', 'alumnos')],
+    ('Education_teaching', 'alumnos'): [],
+    ('Locative_relation', 'en toda'): [('Time', 'Hoy'), ('Ground', 'Catalunya')]}

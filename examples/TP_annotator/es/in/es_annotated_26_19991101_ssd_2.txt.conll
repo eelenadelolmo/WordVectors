@@ -1,0 +1,7 @@
+{   ('Economy', 'económicas'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'su país'), ('Ground', 'Occidente')],
+    ('Membership', 'partidario'): [('Group', 'país en')],
+    ('Part_orientational', 'Occidente'): [],
+    ('Political_locales', 'país'): [],
+    ('Process_continue', 'continuar'): [('Event', 'reformas económicas')],
+    ('Reforming_a_system', 'reformas'): [('Entity', 'económicas')]}

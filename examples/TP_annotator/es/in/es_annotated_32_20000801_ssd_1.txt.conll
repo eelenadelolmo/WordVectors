@@ -1,0 +1,5 @@
+{   ('Cardinal_numbers', 'se'): [('Entity', 'escritos de condena')],
+    ('Committing_crime', 'crimen'): [],
+    ('Political_locales', 'ayuntamientos'): [('Name', 'Vitoria y Pamplona')],
+    ('Sign_agreement', 'escritos'): [('Agreement', 'escritos de condena por el crimen')],
+    ('Text_creation', 'escritos'): [('Text', 'condena')]}

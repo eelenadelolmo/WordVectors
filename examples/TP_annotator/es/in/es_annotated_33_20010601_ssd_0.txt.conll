@@ -1,0 +1,9 @@
+{   ('Duration_description', 'breve'): [('Eventuality', 'quot')],
+    ('Intentionally_create', 'establecer'): [('Creator', 'se'), ('Created_entity', 'veracidad')],
+    ('Leadership', 'jefe'): [('Governed', 'se ha')],
+    ('Likelihood', 'podido'): [('Hypothetical_event', 'establecer su veracidad')],
+    ('Statement', 'anunció'): [   ('Message', 'Un breve comunicado en una página web habitualmente utilizada por las Autodefensas Unidas de Colombia ('),
+                                  ('Manner', 'ayer la'),
+                                  ('Message', 'renuncia & quot ; de su máximo jefe')],
+    ('Statement', 'quot'): [('Manner', 'breve'), ('Speaker', 'web habitualmente utilizada por las Autodefensas Unidas de Colombia (')],
+    ('Using', 'utilizada'): [('Instrument', 'Un breve comunicado en una página web'), ('Agent', 'de Colombia ( AUC )')]}

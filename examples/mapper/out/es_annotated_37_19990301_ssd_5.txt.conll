@@ -1,0 +1,5 @@
+{   ('Becoming_silent', 'tranquilo'): [],
+    ('Fear', 'temor'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'residentes'), ('Ground', 'este tranquilo')],
+    ('Locale', 'de la'): [('Descriptor', 'tranquilo')],
+    ('Residence', 'viven'): [('Location', 'residentes en este tranquilo paraje de la Costa'), ('Location', 'temor')]}

@@ -1,0 +1,4 @@
+{   ('Desirable_event', 'deberán'): [('State_of_affairs', 'centros'), ('State_of_affairs', 'crear áreas de atención inmediata para casos leves')],
+    ('Instance', 'casos'): [('Type', 'leves')],
+    ('Intentionally_create', 'crear'): [('Creator', 'centros'), ('Created_entity', 'áreas de atención inmediata para casos leves')],
+    ('Locale', 'áreas'): []}

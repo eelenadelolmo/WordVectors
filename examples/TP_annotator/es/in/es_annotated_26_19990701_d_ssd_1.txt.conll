@@ -1,0 +1,12 @@
+{   ('Change_position_on_a_scale', 'aumento'): [('Final_value', 'inseguridad ciudadana')],
+    ('Commerce_pay', 'pago'): [('Goods', 'los')],
+    ('Likelihood', 'posible'): [('Hypothetical_event', 'aumento de la inseguridad ciudadana')],
+    ('Motion', 'se'): [('Theme', 'los'), ('Goal', 'a los aparcamientos')],
+    ('People_by_jurisdiction', 'ciudadana'): [],
+    ('Perception_experience', 'escuchen'): [('Perceiver_passive', 'los'), ('Phenomenon', 'ruidos')],
+    ('Placing', 'aparcamientos'): [('Goal', 'se')],
+    ('Proportional_quantity', 'algún'): [('Individuals', 'caco')],
+    ('Temporal_collocation', 'se'): [   ('Trajector_event', 'a los aparcamientos'),
+                                        ('Landmark_event', 'ser de pago'),
+                                        ('Trajector_event', 'se escuchen ruidos ; y algún caco como símbolo del posible aumento de la inseguridad ciudadana')],
+    ('Vehicle', 'se'): []}

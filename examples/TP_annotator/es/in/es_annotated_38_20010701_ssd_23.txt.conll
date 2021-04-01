@@ -1,0 +1,7 @@
+{   ('Age', 'jóvenes'): [('Descriptor', 'hoy'), ('Entity', 'Los')],
+    ('Calendric_unit', 'hoy'): [],
+    ('Earnings_and_losses', 'ganar'): [('Earnings', 'dinero')],
+    ('Fame', 'famosos'): [],
+    ('Make_noise', 'ser'): [('Sound_source', 'jóvenes de'), ('Sound', 'ganar dinero')],
+    ('Money', 'dinero'): [],
+    ('People', 'Los'): [('Descriptor', 'jóvenes de hoy')]}

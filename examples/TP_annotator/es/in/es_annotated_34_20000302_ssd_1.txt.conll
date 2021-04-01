@@ -1,0 +1,8 @@
+{   ('Be_subset_of', 'en'): [('Part', 'Lasa y José Ignacio Zabala'), ('Total', 'pocas personas que conocían su domicilio')],
+    ('Buildings', 'domicilio'): [('Possessor', 'su')],
+    ('Calendric_unit', 'Ayer'): [],
+    ('Evidence', 'testificó'): [('Proposition', 'Ugarte , viuda del etarra Mikel Goicoetxea , Txapela , asesinado por el GAL en diciembre de 1983')],
+    ('Killing', 'asesinado'): [('Place', 'por el'), ('Time', 'en diciembre de 1983')],
+    ('People', 'personas'): [],
+    ('Quantified_mass', 'pocas'): [('Individuals', 'personas')],
+    ('Statement', 'declaró'): [('Time', 'diciembre de 1983'), ('Speaker', 'personas que'), ('Message', 'Lasa y José Ignacio Zabala eran de las pocas personas que conocían su domicilio')]}

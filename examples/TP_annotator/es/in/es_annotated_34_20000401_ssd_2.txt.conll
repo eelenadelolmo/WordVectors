@@ -1,0 +1,7 @@
+{   ('Appellations', 'presidente'): [('Name', 'uruguayo'), ('Type', 'Batlle')],
+    ('Becoming_aware', 'fue'): [('Phenomenon', 'la nieta de'), ('Phenomenon', 'hija de desaparecidos'), ('Manner', 'en Montevideo')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'hija de desaparecidos , fue hallada en'), ('Ground', 'Montevideo')],
+    ('Kinship', 'hija de'): [],
+    ('People', 'de'): [],
+    ('Success_or_failure', 'desaparecidos'): [],
+    ('Verification', 'confirmó'): [('Inspector', 'El presidente uruguayo , Jorge Batlle'), ('Manner', 'ayer que'), ('Unconfirmed_content', ', hija de desaparecidos , fue hallada en Montevideo')]}

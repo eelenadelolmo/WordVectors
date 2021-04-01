@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="41_20011001_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Los pobres , en adolescencia franquista permanente ,</concept>
+		<concept id="c_1">un general o un teniente general o etcétera</concept>
+		<concept id="c_2">Franco</concept>
+		<concept id="c_3">eso</concept>
+		<concept id="c_4">el hombre que lanzó el simpático grito de quot; Muera la inteligencia quot; ,</concept>
+		<concept id="c_5">Millán Astray</concept>
+		<concept id="c_6">alguien</concept>
+		<concept id="c_7">que</concept>
+		<concept id="c_8">quot; Muera la inteligencia quot;</concept>
+		<concept id="c_9">Agustín Muñoz Grandes y quienes admiran al prohombre que pronunció : no hay duda de que están a la altura de tan gloriosa imbecilidad</concept>
+		<concept id="c_10">cíclicamente una crisis tal de angustia - - la sobredosis de la libertad - - , que necesitan aflojar la bragueta dialéctica</concept>
+		<concept id="c_11">que</concept>
+		<concept id="c_12">la momia</concept>
+		<concept id="c_13">pecho</concept>
+		<concept id="c_14">a pasear</concept>
+		<concept id="c_15">nada</concept>
+		<concept id="c_16">una crisis</concept>
+		<concept id="c_17">el palacio</concept>
+		<concept id="c_18">invierno</concept>
+		<concept id="c_19">el jefe</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Existen militares con urticaria democrática.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Locative_relation" head="Existen">
+				<argument type="Ground" dependent="Existen militares" />
+				<argument type="Figure" dependent="con urticaria democrática" /></frame>
+			<frame type="Member_of_military" head="militares" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los pobres, en adolescencia franquista permanente, sufren cíclicamente una crisis tal de angustia - - la sobredosis de la libertad - -, que necesitan aflojar la bragueta dialéctica.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">Los</token><token pos="nccp000">pobres</token><token pos="fc">,</token><token pos="sps00">en</token><token pos="ncfs000">adolescencia</token><token pos="aq0cs0">franquista</token><token pos="aq0cs0">permanente</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_0" concept_ref3="c_8" concept_ref4="c_10" concept_ref5="c_11" concept_ref6="c_16">
+			<token pos="vmip3p0">sufren</token><mention concept_ref="c_10"><token pos="rg">cíclicamente</token><token pos="di0fs0">una</token><token pos="ncfn000">crisis</token><token pos="pd0cs000">tal</token><token pos="sps00">de</token><token pos="ncfs000">angustia</token><token pos="fg">-</token><token pos="fg">-</token><token pos="da0fs0">la</token><token pos="ncfn000">sobredosis</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">libertad</token><token pos="fg">-</token><token pos="fg">-</token><token pos="fc">,</token><token pos="cs">que</token><token pos="vmip3p0">necesitan</token><token pos="vmn0000">aflojar</token><token pos="da0fs0">la</token><token pos="ncfs000">bragueta</token><token pos="aq0fs0">dialéctica</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Catastrophe" head="crisis">
+				<argument type="Undesirable_event" dependent="sobredosis de la libertad - - , que necesitan aflojar la bragueta dialéctica" /></frame>
+			<main_frame type="Catastrophe" head="sufren">
+				<argument type="Cause" dependent="pobres , en adolescencia franquista permanente" />
+				<argument type="Undesirable_event" dependent="cíclicamente una crisis tal de angustia - - la sobredosis de la libertad - - , que necesitan aflojar la bragueta dialéctica" /></main_frame>
+			<main_frame type="Needing" head="necesitan">
+				<argument type="Cognizer" dependent="que" />
+				<argument type="Requirement" dependent="aflojar la bragueta dialéctica" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y es entonces cuando, en algún acto conmemorativo, un general o un teniente general o etcétera, siempre desde el palacio de invierno de la reserva, saca pecho, mira al horizonte lejano del imperio y, en posición de firmes, levanta la momia de debajo de las piedras.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="di0ms0">un</token><token pos="ncms000">general</token><token pos="cc">o</token><token pos="di0ms0">un</token><token pos="ncms000">teniente</token><token pos="aq0ms0">general</token><token pos="cc">o</token><token pos="fs">etcétera</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_10" concept_ref3="c_12" concept_ref4="c_13" concept_ref5="c_16" concept_ref6="c_17" concept_ref7="c_18" concept_ref8="c_19">
+			<token pos="fc">,</token><token pos="rg">siempre</token><token pos="sps00">desde</token><mention concept_ref="c_17"><token pos="da0ms0">el</token><token pos="ncms000">palacio</token></mention><token pos="sps00">de</token><mention concept_ref="c_18"><token pos="ncms000">invierno</token></mention><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">reserva</token><token pos="fc">,</token><token pos="vmip3s0">saca</token><mention concept_ref="c_13"><token pos="ncms000">pecho</token></mention><token pos="vmm02s0">mira</token><mention concept_ref="c_10"><token pos="spcms">al</token><token pos="ncms000">horizonte</token><token pos="aq0ms0">lejano</token><token pos="spcms">del</token><token pos="ncms000">imperio</token></mention><token pos="fc">,</token><token pos="sps00">en</token><mention concept_ref="c_16"><token pos="ncfs000">posición</token></mention><token pos="sps00">de</token><token pos="aq0cp0">firmes</token><token pos="fc">,</token><token pos="vmip3s0">levanta</token><mention concept_ref="c_12"><token pos="da0fs0">la</token><token pos="ncfs000">momia</token></mention><token pos="sps00">de</token><token pos="rg">debajo</token><token pos="sps00">de</token><mention concept_ref="c_0"><token pos="da0fp0">las</token><token pos="ncfp000">piedras</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_employed" head="posición">
+				<argument type="Task" dependent="de firmes" /></frame>
+			<frame type="Body_parts" head="pecho">
+				<argument type="Descriptor" dependent="saca" /></frame>
+			<frame type="Buildings" head="palacio">
+				<argument type="Descriptor" dependent="invierno" />
+				<argument type="Name" dependent="de la reserva" /></frame>
+			<frame type="Calendric_unit" head="invierno" />
+			<main_frame type="Connecting_architecture" head="levanta">
+				<argument type="Goal" dependent="la momia" /></main_frame>
+			<frame type="Degree" head="lejano">
+				<argument type="Gradable_attribute" dependent="horizonte lejano del imperio" /></frame>
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="general o un teniente general o etcétera" />
+				<argument type="Event" dependent="el palacio de invierno de la reserva , saca pecho , mira al horizonte lejano del imperio y ," /></frame>
+			<frame type="Intentionally_act" head="acto">
+				<argument type="Act" dependent="conmemorativo" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="siempre desde el palacio de invierno de la reserva , saca pecho , mira al horizonte lejano del imperio" />
+				<argument type="Ground" dependent="posición de firmes" />
+				<argument type="Figure" dependent="levanta la momia de debajo de las piedras" /></frame>
+			<frame type="Leadership" head="general">
+				<argument type="Descriptor" dependent="teniente" /></frame>
+			<frame type="Political_locales" head="imperio" />
+			<frame type="Proportional_quantity" head="algún">
+				<argument type="Individuals" dependent="acto conmemorativo" /></frame>
+			<main_frame type="Scrutiny" head="mira">
+				<argument type="Phenomenon" dependent="al horizonte lejano del imperio" /></main_frame>
+			<frame type="Store" head="reserva" />
+			<main_frame type="Taking_time" head="saca">
+				<argument type="Time_length" dependent="pecho" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Franco sale a pasear, de urticaria en urticaria, y así va calmando las indigestiones que provoca el Estado de derecho en determinados estómagos.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="np00000">Franco</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_14" concept_ref3="c_16" concept_ref4="c_19">
+			<token pos="vmip3s0">sale</token><mention concept_ref="c_14"><token pos="sps00">a</token><token pos="vmn0000">pasear</token></mention><token pos="fc">,</token><token pos="sps00">de</token><token pos="ncfs000">urticaria</token><token pos="sps00">en</token><token pos="ncfs000">urticaria</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Causation" head="provoca">
+				<argument type="Effect" dependent="el" /></frame>
+			<frame type="Experiencer_focus" head="calmando">
+				<argument type="Content" dependent="las indigestiones que provoca el Estado de derecho en determinados estómagos" /></frame>
+			<frame type="Idiosyncrasy" head="determinados">
+				<argument type="Entity" dependent="estómagos" /></frame>
+			<frame type="Law" head="de derecho" />
+			<frame type="Leadership" head="el">
+				<argument type="Leader" dependent="de derecho" /></frame>
+			<main_frame type="Motion" head="pasear">
+				<argument type="Theme" dependent="Franco" />
+				<argument type="Goal" dependent="a pasear" /></main_frame>
+			<main_frame type="Self_motion" head="pasear">
+				<argument type="Self_mover" dependent="Franco" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ahora le ha tocado al teniente general Agustín Muñoz Grandes protagonizar esta bella escena de furor uterino-patriótico ( ¿o hay que decir furor prostático? ), y en un momento de iluminada nostalgia, entre elogios a Franco, ha ensalzado con entusiasmo a Millán Astray.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aesthetics" head="bella">
+				<argument type="Attribute" dependent="escena" /></frame>
+			<frame type="Desirable_event" head="hay que">
+				<argument type="State_of_affairs" dependent="decir furor prostático" /></frame>
+			<frame type="Direction" head="tocado al">
+				<argument type="Distance" dependent="le" /></frame>
+			<frame type="Fire_burning" head="furor">
+				<argument type="Fire" dependent="furor prostático" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="tocado al teniente general" />
+				<argument type="Ground" dependent="esta bella escena de furor" /></frame>
+			<frame type="Performers_and_roles" head="le" />
+			<frame type="Statement" head="decir">
+				<argument type="Speaker" dependent="le" />
+				<argument type="Message" dependent="furor prostático" />
+				<argument type="Message" dependent="ensalzado" /></frame>
+			<frame type="Temporal_collocation" head="Ahora">
+				<argument type="Trajector_event" dependent="le ha tocado al teniente general Agustín Muñoz Grandes protagonizar esta bella escena de furor" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Que eso ocurriera ante el jefe del Estado Mayor del Ejército, señor Pardo de Santayana, y una nutrida representación de mandos, no tiene importancia: ¿Qué hay de malo en que los chicos se diviertan?.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="pd0ns000">eso</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_9" concept_ref3="c_16" concept_ref4="c_19">
+			<token pos="vmsi3s0">ocurriera</token><token pos="sps00">ante</token><mention concept_ref="c_19"><token pos="da0ms0">el</token><token pos="ncms000">jefe</token></mention><token pos="spcms">del</token><mention concept_ref="c_0"><token pos="ncms000">Estado</token><token pos="aq0ms0">Mayor</token><token pos="sps00">del</token><token pos="np0000o">Ejército</token></mention><token pos="fc">,</token><mention concept_ref="c_9"><token pos="ncms000">señor</token><token pos="np0000o">Pardo</token><token pos="sps00">de</token><token pos="np0000l">Santayana</token></mention><token pos="fc">,</token><token pos="cc">y</token><mention concept_ref="c_16"><token pos="di0fs0">una</token><token pos="aq0fsp">nutrida</token><token pos="ncfs000">representación</token></mention><token pos="sps00">de</token><token pos="ncmp000">mandos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Correctness" head="malo">
+				<argument type="Information" dependent="Qué" />
+				<argument type="Information" dependent="los chicos se diviertan" /></frame>
+			<frame type="Employing" head="jefe">
+				<argument type="Employer" dependent="del Ejército" /></frame>
+			<main_frame type="Event" head="ocurriera">
+				<argument type="Event" dependent="eso" /></main_frame>
+			<frame type="Leadership" head="jefe del">
+				<argument type="Governed" dependent="del Ejército" /></frame>
+			<frame type="Leadership" head="mandos" />
+			<frame type="Military" head="Ejército" />
+			<frame type="People_by_age" head="chicos" />
+			<frame type="Possession" head="se">
+				<argument type="Owner" dependent="los chicos" />
+				<argument type="Possession" dependent="se" /></frame>
+			<frame type="Size" head="Mayor del">
+				<argument type="Dimension" dependent="representación de mandos" /></frame>
+			<frame type="Time_vector" head="ante">
+				<argument type="Distance" dependent="eso ocurriera" />
+				<argument type="Landmark_event" dependent="Mayor del Ejército , señor Pardo de Santayana , y una nutrida representación de mandos ," /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Personalmente, me ha parecido de una especial significación que el hombre que lanzó el simpático grito de "Muera la inteligencia", sea recordado en momentos tan trágicos justamente para la ilustración y la inteligencia.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0ms0">el</token><token pos="ncms000">hombre</token><token pos="pr0cn000">que</token><token pos="vmis3s0">lanzó</token><token pos="da0ms0">el</token><token pos="aq0ms0">simpático</token><token pos="ncms000">grito</token><token pos="sps00">de</token><token pos="fe">quot;</token><token pos="vmis3s0">Muera</token><token pos="da0ms0">la</token><token pos="ncms000">inteligencia</token><token pos="fe">quot;</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_8" concept_ref3="c_10" concept_ref4="c_16" concept_ref5="c_17" concept_ref6="c_18">
+			<token pos="vssp3s0">sea</token><token pos="vmp00sm">recordado</token><token pos="sps00">en</token><mention concept_ref="c_18"><token pos="ncmp000">momentos</token></mention><token pos="rg">tan</token><token pos="aq0mp0">trágicos</token><token pos="rg">justamente</token><token pos="sps00">para</token><token pos="da0fs0">la</token><token pos="ncfs000">ilustración</token><token pos="cc">y</token><token pos="da0fs0">la</token><token pos="ncfs000">inteligencia</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Give_impression" head="ha parecido">
+				<argument type="Inference" dependent="Personalmente , me ha parecido de una especial significación que el hombre que lanzó el simpático grito de  quot ; Muera la inteligencia" /></frame>
+			<frame type="Importance" head="significación" />
+			<frame type="Information" head="inteligencia" />
+			<frame type="People" head="hombre" />
+			<main_frame type="Remembering_experience" head="recordado">
+				<argument type="Experience" dependent="momentos tan trágicos justamente para la ilustración y la inteligencia" /></main_frame>
+			<main_frame type="Shoot_projectiles" head="lanzó">
+				<argument type="Agent" dependent="el hombre que" />
+				<argument type="Projectile" dependent="el simpático grito de  quot ; Muera la inteligencia" /></main_frame>
+			<frame type="Vocalizations" head="grito">
+				<argument type="Sound_source" dependent="la inteligencia  quot ; , sea recordado en momentos tan trágicos justamente para la ilustración" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Millán Astray es uno de los fascistas más desagradables, malos e iluminados que ha dado la historia de España.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="np0000l">Millán</token><token pos="np0000l">Astray</token>
+		</theme>
+		<rheme concept_ref1="c_16" concept_ref2="c_19">
+			<token pos="vsip3s0">es</token><token pos="pi0ms000">uno</token><token pos="sps00">de</token><mention concept_ref="c_16"><token pos="da0mp0">los</token><token pos="nccp000">fascistas</token></mention><token pos="rg">más</token><token pos="aq0cp0">desagradables</token><token pos="fc">,</token><token pos="aq0mp0">malos</token><token pos="cc">e</token><token pos="aq0mpp">iluminados</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desirability" head="malos">
+				<argument type="Evaluee" dependent="fascistas" /></frame>
+			<frame type="Giving" head="dado la">
+				<argument type="Donor" dependent="los fascistas" />
+				<argument type="Theme" dependent="la historia de" /></frame>
+			<frame type="Individual_history" head="historia">
+				<argument type="Events" dependent="dado" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Que en democracia, y desde un mando militar, alguien le recuerde con honor, nos dice dos cosas importantes: que el huevo de la serpiente del fascismo siempre se está incubando, y que la inteligencia, como la libertad, es una conquista permanente.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="pi0cs000">alguien</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_18" concept_ref3="c_19">
+			<mention concept_ref="c_19"><token pos="pp3csd00">le</token></mention><token pos="vmsp3s0">recuerde</token><token pos="sps00">con</token><token pos="ncms000">honor</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Multiplier" dependent="nos" />
+				<argument type="Entity" dependent="cosas importantes" /></frame>
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="el huevo de la serpiente del fascismo" />
+				<argument type="Event" dependent="incubando" /></frame>
+			<frame type="Importance" head="importantes">
+				<argument type="Factor" dependent="cosas" /></frame>
+			<frame type="Information" head="inteligencia" />
+			<frame type="Leadership" head="mando">
+				<argument type="Governed" dependent="militar" /></frame>
+			<frame type="Military" head="militar" />
+			<frame type="Similarity" head="como">
+				<argument type="Entity_1" dependent="inteligencia" />
+				<argument type="Entity_2" dependent="libertad" /></frame>
+			<frame type="Telling" head="dice">
+				<argument type="Speaker" dependent="Que en democracia , y desde un mando militar , alguien le recuerde con honor" />
+				<argument type="Addressee" dependent="dos cosas importantes" />
+				<argument type="Message" dependent="es una conquista permanente" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Hay militares que no han entendido nada, no han digerido nada y, sobre todo, no han asumido nada, impermeables a una historia que con esfuerzos se ha reescrito a sí misma.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_15">
+			<token pos="rn">no</token><token pos="vaip3p0">han</token><token pos="vmp00sm">entendido</token><mention concept_ref="c_15"><token pos="pi0cs000">nada</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Adopt_selection" head="asumido">
+				<argument type="Attribute" dependent="nada" /></frame>
+			<frame type="Directional_locative_relation" head="sobre">
+				<argument type="Figure" dependent="nada" />
+				<argument type="Ground" dependent="todo" /></frame>
+			<main_frame type="Grasp" head="entendido">
+				<argument type="Cognizer" dependent="militares que" />
+				<argument type="Phenomenon" dependent="nada" /></main_frame>
+			<frame type="Locative_relation" head="Hay">
+				<argument type="Figure" dependent="militares que no han entendido nada , no han digerido nada y , sobre todo , no han asumido" /></frame>
+			<frame type="Member_of_military" head="militares" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Estando en la reserva, y coherentes, sorprende cómo además se empeñan en ser ellos la reserva tronada del franquismo irredento.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="la reserva" /></frame>
+			<frame type="Store" head="reserva">
+				<argument type="Resource" dependent="franquismo irredento" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Muera la inteligencia" es el grito más imbécil de la historia.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="fe">quot;</token><token pos="vmis3s0">Muera</token><token pos="da0ms0">la</token><token pos="ncms000">inteligencia</token><token pos="fe">quot;</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_5" concept_ref3="c_16" concept_ref4="c_18">
+			<token pos="vsip3s0">es</token><token pos="da0ms0">el</token><token pos="ncms000">grito</token><token pos="rg">más</token><token pos="aq0cs0">imbécil</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">historia</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Individual_history" head="historia" />
+			<frame type="Information" head="inteligencia" />
+			<frame type="Make_noise" head="grito">
+				<argument type="Depictive" dependent="imbécil" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Agustín Muñoz Grandes y quienes admiran al prohombre que lo pronunció pueden estar contentos: no hay duda de que están a la altura de tan gloriosa imbecilidad.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="ncfs000">Agustín</token><token pos="ncms000">Muñoz</token><token pos="np00000">Grandes</token><token pos="cc">y</token><token pos="pr0cp000">quienes</token><token pos="vmip3p0">admiran</token><token pos="spcms">al</token><token pos="ncms000">prohombre</token><token pos="pr0cn000">que</token><token pos="vmis3s0">pronunció</token><token pos="fd">:</token><token pos="rn">no</token><token pos="vaip3s0">hay</token><token pos="ncfs000">duda</token><token pos="sps00">de</token><token pos="cs">que</token><token pos="vmip3p0">están</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">altura</token><token pos="sps00">de</token><token pos="rg">tan</token><token pos="aq0fs0">gloriosa</token><token pos="ncfs000">imbecilidad</token>
+		</theme>
+		<rheme concept_ref1="c_10">
+			<token pos="pp3msa00">lo</token><mention concept_ref="c_10"><token pos="vmip3p0">pueden</token><token pos="vmn0000">estar</token><token pos="aq0mp0">contentos</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Certainty" head="duda de">
+				<argument type="Content" dependent="que están a la altura de tan gloriosa imbecilidad" /></frame>
+			<main_frame type="Direction" head="estar">
+				<argument type="Path" dependent="están" />
+				<argument type="Landmark" dependent="de tan gloriosa imbecilidad" /></main_frame>
+			<frame type="Emotion_directed" head="contentos">
+				<argument type="Stimulus" dependent="pronunció" /></frame>
+			<main_frame type="Judgment" head="admiran">
+				<argument type="Cognizer" dependent="quienes" />
+				<argument type="Evaluee" dependent="prohombre que lo pronunció pueden estar contentos" /></main_frame>
+			<main_frame type="Locative_relation" head="hay">
+				<argument type="Ground" dependent="no hay duda de que están a la altura de tan gloriosa imbecilidad" /></main_frame>
+			<main_frame type="Statement" head="pronunció">
+				<argument type="Speaker" dependent="quienes" />
+				<argument type="Message" dependent="pueden estar contentos" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

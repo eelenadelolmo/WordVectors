@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="29_20020402_ssd">
+
+
+	<concepts>
+		<concept id="c_0">los palestinos</concept>
+		<concept id="c_1">quot</concept>
+		<concept id="c_2">guerras</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El escritor israelí Amos Oz, partidario del establecimiento de un Estado palestino independiente, considera que los palestinos "mantienen en paralelo dos guerras, una por su independencia, que toda persona sensata sostiene, y otra para destruir Israel en nombre de un islam fanático".
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">los</token><token pos="ncmp000">palestinos</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_2">
+			<token pos="fe">quot;</token><token pos="vmip3p0">mantienen</token><token pos="sps00">en</token><token pos="aq0msp">paralelo</token><token pos="dn0cp0">dos</token><mention concept_ref="c_2"><token pos="ncfp000">guerras</token></mention><token pos="fc">,</token><token pos="pi0fs000">una</token><token pos="sps00">por</token><token pos="dp3cs0">su</token><token pos="ncfs000">independencia</token><token pos="fc">,</token><token pos="fc">,</token><token pos="cc">y</token><token pos="pi0fs000">otra</token><token pos="sps00">para</token><token pos="vmn0000">destruir</token><token pos="np00000">Israel</token><token pos="sps00">en</token><token pos="ncfs000">nombre</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncmn000">islam</token><token pos="aq0ms0">fanático</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El escritor israelí Amos Oz , partidario del establecimiento de un Estado palestino independiente , " />
+			<frame type="Being_named" head="nombre">
+				<argument type="Entity" dependent="un islam fanático" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="guerras" /></frame>
+			<frame type="Cardinal_numbers" head="un" />
+			<frame type="Certainty" head="considera">
+				<argument type="Cognizer" dependent="escritor israelí Amos Oz , partidario del establecimiento de un Estado palestino independiente , considera" />
+				<argument type="Content" dependent="que los palestinos  quot ; mantienen en paralelo dos guerras" /></frame>
+			<frame type="Change_of_leadership" head="independencia">
+				<argument type="Selector" dependent="los" /></frame>
+			<main_frame type="Destroying" head="destruir">
+				<argument type="Patient" dependent="israelí" /></main_frame>
+			<frame type="Hostile_encounter" head="guerras" />
+			<frame type="Increment" head="otra">
+				<argument type="Class" dependent="para destruir Israel" /></frame>
+			<frame type="Intentionally_create" head="establecimiento">
+				<argument type="Created_entity" dependent="un Estado palestino independiente" /></frame>
+			<frame type="Leadership" head="Estado">
+				<argument type="Governed" dependent="palestino" /></frame>
+			<frame type="People" head="persona" />
+			<frame type="Similarity" head="paralelo">
+				<argument type="Entity_1" dependent="los palestinos" />
+				<argument type="Entity_1" dependent="dos guerras" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Debemos luchar con todas nuestras fuerzas", asegura, contra "esta segunda forma de guerra".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Hostile_encounter" head="guerra" />
+			<frame type="Hostile_encounter" head="luchar">
+				<argument type="Side_1" dependent="nuestras" /></frame>
+			<frame type="Level_of_force_exertion" head="fuerzas">
+				<argument type="Exerter" dependent="nuestras" /></frame>
+			<frame type="Ordinal_numbers" head="segunda">
+				<argument type="Type" dependent="forma" /></frame>
+			<frame type="Required_event" head="Debemos">
+				<argument type="Required_situation" dependent="nuestras" />
+				<argument type="Required_situation" dependent="luchar con todas nuestras fuerzas" /></frame>
+			<frame type="Statement" head="quot">
+				<argument type="Speaker" dependent="de" />
+				<argument type="Message" dependent="contra  quot ; esta segunda forma de guerra" /></frame>
+			<frame type="Taking_sides" head="contra">
+				<argument type="Cognizer" dependent="de" />
+				<argument type="Side" dependent="quot ; esta segunda forma de guerra" /></frame>
+			<frame type="Type" head="forma">
+				<argument type="Category" dependent="de guerra" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

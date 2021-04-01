@@ -1,0 +1,5 @@
+{   ('Locale', 'lugar'): [],
+    ('Possession', 'tiene'): [('Possession', 'prisión'), ('Possession', 'ser & quot ; un lugar de ocio y quizá de vicio')],
+    ('Prison', 'prisión'): [],
+    ('System', 'sistema'): [('Function', 'prisión')],
+    ('Text_creation', 'escribe'): [('Text', 'esto impone una revisión del sistema penitenciario'), ('Text', 'el Papa')]}

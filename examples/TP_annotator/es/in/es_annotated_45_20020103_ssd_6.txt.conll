@@ -1,0 +1,5 @@
+{   ('Locale_by_use', 'la sede'): [('Descriptor', 'parlamentaria')],
+    ('Locative_relation', 'la'): [('Figure', 'terroristas lanzaron varias granadas'), ('Ground', 'la sede parlamentaria')],
+    ('Quantified_mass', 'varias'): [('Individuals', 'granadas')],
+    ('Shoot_projectiles', 'lanzaron'): [('Agent', 'terroristas'), ('Projectile', 'varias granadas'), ('Place', 'la sede parlamentaria')],
+    ('Terrorism', 'terroristas'): []}

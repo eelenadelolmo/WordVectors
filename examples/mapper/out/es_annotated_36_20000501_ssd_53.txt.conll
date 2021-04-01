@@ -1,0 +1,4 @@
+{   ('Assistance', 'ficha'): [('Benefited_party', 'ministros catalanes'), ('Helper', 'que'), ('Benefited_party', 'en el PP catalán')],
+    ('Intentionally_act', 'en'): [('Agent', 'ministros catalanes que'), ('Act', 'no militan en el PP catalán')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'ministros catalanes que no militan'), ('Ground', 'el PP catalán')],
+    ('Text_creation', 'ficha'): [('Text', 'Aznar'), ('Text', 'ministros catalanes que no militan en el PP catalán')]}

@@ -1,0 +1,11 @@
+{   ('Accomplishment', 'logrando'): [('Goal', 'la reconciliación de una sociedad dividida'), ('Goal', 'En Irlanda del Norte')],
+    ('Becoming_aware', 'constató'): [('Cognizer', 'lo'), ('Phenomenon', 'una gran diferencia entre los dos procesos de paz')],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'procesos de paz')],
+    ('Desirability', 'gran'): [('Evaluee', 'diferencia entre los dos procesos de paz')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'se está logrando la reconciliación de una sociedad dividida'), ('Ground', 'Irlanda del Norte')],
+    ('Locative_relation', 'está'): [('Figure', 'el País'), ('Ground', 'un proceso de división , impulsado desde la política , de una sociedad que no lo está')],
+    ('Non-commutative_process', 'división'): [('Calculator', 'una sociedad')],
+    ('Non-commutative_statement', 'diferencia'): [('Term_1', 'entre los dos procesos de paz')],
+    ('Process', 'proceso'): [('Process', 'de una sociedad dividida')],
+    ('Process', 'procesos'): [('Process', 'procesos de paz')],
+    ('Separating', 'dividida'): [('Recipients', 'sociedad')]}

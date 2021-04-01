@@ -1,0 +1,7 @@
+{   ('Communicate_categorization', 'describía'): [('Item', 'asomen'), ('Category', 'esa inquietante característica de la bestia que hace que & quot ; por algún extraño motivo nunca')],
+    ('Distinctiveness', 'característica'): [('Feature', 'inquietante'), ('Entity', 'de la bestia')],
+    ('Locative_relation', 'en'): [('Figure', 'algún extraño motivo'), ('Ground', 'los dientes')],
+    ('Making_faces', 'sonría'): [],
+    ('Manufacturing', 'hace'): [('Producer', 'la bestia que'), ('Product', '; por algún extraño motivo nunca le asomen los dientes')],
+    ('Perception_active', 'los'): [('Phenomenon', 'algún extraño motivo'), ('State', 'le asomen los dientes')],
+    ('Reason', 'motivo'): [('Action', 'le asomen los dientes')]}

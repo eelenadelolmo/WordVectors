@@ -1,0 +1,12 @@
+{   ('Aggregate', 'partidos'): [],
+    ('Arriving', 'visita'): [('Theme', 'su'), ('Goal', 'a Londres')],
+    ('Arriving', 'volver'): [('Theme', 'Pinochet'), ('Goal', 'a los')],
+    ('Capability', 'pueda'): [('Entity', 'Pinochet'), ('Event', 'volver a Chile')],
+    ('Desiring', 'el deseo'): [('Experiencer', 'partidos'), ('Experiencer', 'del Gobierno de Eduardo Frei de que')],
+    ('Explaining_the_facts', 'explicará'): [   ('Fact', 'el ministro de Exteriores'),
+                                               ('State_of_affairs', 'a los representantes de instituciones y partidos el deseo del Gobierno de Eduardo Frei de que')],
+    ('Foreign_or_domestic_country', 'Exteriores'): [],
+    ('Institutions', 'instituciones'): [],
+    ('Leadership', 'Gobierno'): [('Governed', 'Frei de')],
+    ('Leadership', 'ministro'): [('Governed', 'Exteriores chileno')],
+    ('Leadership', 'representantes'): [('Governed', 'de instituciones')]}

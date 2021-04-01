@@ -1,0 +1,7 @@
+{   ('Becoming_aware', 'Localicé'): [('Cognizer', 'y'), ('Phenomenon', 'Sanchís , el creador de')],
+    ('Calendric_unit', 'años'): [('Relative_time', '30')],
+    ('Cause_motion', 'dibujara a'): [('Agent', 'le'), ('Theme', 'me'), ('Goal', 'a un gatito con esa discapacidad')],
+    ('Questioning', 'pedí'): [   ('Message', 'Localicé a José Sanchís , el creador de Pumby , que hacía 30 años que no cogía el lápiz'),
+                                 ('Addressee', 'le'),
+                                 ('Message', 'me dibujara a un gatito con esa discapacidad')],
+    ('Taking_time', 'hacía'): [('Agent', 'que'), ('Time_length', 'el lápiz'), ('Activity', '30 años que')]}

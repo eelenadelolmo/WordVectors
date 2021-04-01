@@ -1,0 +1,10 @@
+{   ('Arriving', 'llegaron'): [('Theme', 'los primeros pobladores de América'), ('Goal', 'por mar'), ('Place', 'desde la Península Ibérica'), ('Time', 'hace 18.000 años')],
+    ('Calendric_unit', 'años'): [('Count', 'casi 5.000')],
+    ('Certainty', 'creía'): [('Content', 'casi 5.000 años antes de')],
+    ('Goal', 'por'): [('Landmark', 'sus investigaciones')],
+    ('Natural_features', 'mar'): [],
+    ('Ordinal_numbers', 'primeros'): [('Type', 'pobladores de América llegaron por mar desde la Península Ibérica hace 18.000 años')],
+    ('Research', 'investigaciones'): [('Researcher', 'sus')],
+    ('Residence', 'pobladores'): [],
+    ('Temporal_subregion', 'antes'): [],
+    ('Time_vector', 'antes'): [('Distance', 'Península Ibérica hace 18.000 años')]}

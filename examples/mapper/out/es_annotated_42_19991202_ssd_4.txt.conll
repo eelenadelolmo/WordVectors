@@ -1,0 +1,7 @@
+{   ('Appellations', 'presidentes'): [],
+    ('Attempt', 'las'): [('Agent', 'del'), ('Goal', 'de la paz')],
+    ('Body_parts', 'jefe'): [('Possessor', 'del Ejecutivo central')],
+    ('Cardinal_numbers', 'un'): [('Entity', 'presidentes')],
+    ('Certainty', 'confianza'): [],
+    ('Increment', 'más'): [('Class', 'diálogo más fluido')],
+    ('Telling', 'garantizó'): [('Speaker', 'jefe del Ejecutivo central'), ('Message', 'al lehendakari que no será beligerante con las gestiones que realice en favor de la paz , concediéndole')]}

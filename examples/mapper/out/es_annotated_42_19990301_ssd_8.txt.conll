@@ -1,0 +1,4 @@
+{   ('Activity_prepare', 'preparación'): [('Activity', 'sus compatriotas cosmonautas en futuros viajes al espacio de más larga duración')],
+    ('Calendric_unit', 'días'): [('Count', 'seis'), ('Relative_time', 'en la estación orbital')],
+    ('Expertise', 'experiencias'): [('Knowledge', 'científicas')],
+    ('Purpose', 'objeto'): [('Goal', 'experiencias científicas'), ('Goal', 'contribuir a la preparación de sus compatriotas cosmonautas en futuros viajes al espacio de más larga duración')]}

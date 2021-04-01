@@ -1,0 +1,10 @@
+{   ('Aggregate', 'colección'): [],
+    ('Buildings', 'sala'): [],
+    ('Experiencer_focus', 'enamorado'): [],
+    ('Giving', 'cedió'): [('Theme', 'que'), ('Theme', 'al museo')],
+    ('Ineffability', 'magia'): [],
+    ('Interior_profile_relation', 'su'): [('Figure', 'el poeta'), ('Ground', 'enamorado')],
+    ('Locale_by_use', 'museo'): [],
+    ('Locative_relation', 'donde'): [('Figure', 'el')],
+    ('Membership', 'miembro'): [('Member', 'su'), ('Group', 'de su patronato')],
+    ('Spatial_contact', 'su'): [('Figure', 'poeta enamorado de la magia hizo'), ('Ground', 'Leopold')]}

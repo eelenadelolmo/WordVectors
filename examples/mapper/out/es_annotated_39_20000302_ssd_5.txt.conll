@@ -1,0 +1,12 @@
+{   ('Age', 'años'): [('Time', '20 años')],
+    ('Age', 'jóvenes'): [('Descriptor', 'principalmente'), ('Entity', 'sus')],
+    ('Calendric_unit', 'años'): [('Count', '20')],
+    ('Containers', 'contenedores'): [('Use', 'incendian contenedores de basura')],
+    ('Cutting', 'cortar'): [('Item', 'carreteras')],
+    ('Fire_burning', 'incendian'): [],
+    ('Interior_profile_relation', 'entre'): [('Figure', 'Los más violentos , principalmente jóvenes')],
+    ('People', 'sus'): [('Descriptor', 'principalmente jóvenes')],
+    ('Proportional_quantity', 'algunos'): [('Mass', 'incluso encapuchados')],
+    ('Roadways', 'carreteras'): [],
+    ('Using', 'utilizan'): [('Agent', 'Los'), ('Time', 'luego'), ('Purpose', 'para sus barricadas')],
+    ('Vehicle', 'coches'): []}

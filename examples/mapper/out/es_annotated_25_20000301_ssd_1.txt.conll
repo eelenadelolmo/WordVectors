@@ -1,0 +1,5 @@
+{   ('Be_in_agreement_on_action', 'de acuerdo'): [('Party_2', 'edificio se inauguró en 1975'), ('Obligation', 'la iniciativa que Miró había tenido cuatro años antes')],
+    ('Buildings', 'edificio'): [],
+    ('Calendric_unit', 'años'): [('Count', 'cuatro')],
+    ('Goal', 'en'): [('Trajector', 'edificio'), ('Landmark', 'la iniciativa que Miró había tenido cuatro años antes')],
+    ('Temporal_subregion', 'antes'): []}

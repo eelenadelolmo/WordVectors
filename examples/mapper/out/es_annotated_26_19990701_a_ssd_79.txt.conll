@@ -1,0 +1,5 @@
+{   ('Coming_up_with', 'inventó'): [('Idea', 'Casablancas'), ('Cognizer', 'que'), ('Idea', 'un sistema de grandes estirajes')],
+    ('Kinship', 'padre'): [('Alter', 'El señor de la fotografía'), ('Ego', 'mi mujer')],
+    ('Personal_relationship', 'mujer'): [('Partner_1', 'mi'), ('Partner_2', 'Casablancas')],
+    ('Subordinates_and_superiors', 'señor'): [('Superior', 'fotografía')],
+    ('System', 'sistema'): [('Function', 'grandes estirajes')]}

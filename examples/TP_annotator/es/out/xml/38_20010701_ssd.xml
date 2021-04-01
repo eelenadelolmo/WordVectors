@@ -1,0 +1,2708 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="38_20010701_ssd">
+
+
+	<concepts>
+		<concept id="c_0">la verdad</concept>
+		<concept id="c_1">El público</concept>
+		<concept id="c_2">The Rhythm Kings</concept>
+		<concept id="c_3">el rock</concept>
+		<concept id="c_4">el negocio</concept>
+		<concept id="c_5">Los jóvenes de hoy</concept>
+		<concept id="c_6">lo que</concept>
+		<concept id="c_7">los chicos</concept>
+		<concept id="c_8">esa postura suya</concept>
+		<concept id="c_9">Mi vida</concept>
+		<concept id="c_10">Su madre</concept>
+		<concept id="c_11">alguien</concept>
+		<concept id="c_12">Cuál</concept>
+		<concept id="c_13">Todo</concept>
+		<concept id="c_14">mucha gente de su generación</concept>
+		<concept id="c_15">también los jóvenes músicos</concept>
+		<concept id="c_16">nuestro pasado</concept>
+		<concept id="c_17">que</concept>
+		<concept id="c_18">esa canción</concept>
+		<concept id="c_19">El rock and roll</concept>
+		<concept id="c_20">los Rolling Stones</concept>
+		<concept id="c_21">la gente</concept>
+		<concept id="c_22">Mucha gente</concept>
+		<concept id="c_23">España</concept>
+		<concept id="c_24">el buen rollo</concept>
+		<concept id="c_25">Todas las generaciones</concept>
+		<concept id="c_26">Toda la fogosidad</concept>
+		<concept id="c_27">uno</concept>
+		<concept id="c_28">Ser un buen padre y disfrutar de la vida , ésas</concept>
+		<concept id="c_29">contra eso</concept>
+		<concept id="c_30">un gran</concept>
+		<concept id="c_31">matar a la música</concept>
+		<concept id="c_32">dinero</concept>
+		<concept id="c_33">eso</concept>
+		<concept id="c_34">me</concept>
+		<concept id="c_35">mucha más felicidad que salir en la tele</concept>
+		<concept id="c_36">en la tele</concept>
+		<concept id="c_37">y</concept>
+		<concept id="c_38">al futuro</concept>
+		<concept id="c_39">trabajo</concept>
+		<concept id="c_40">bibliotecario</concept>
+		<concept id="c_41">trabajo</concept>
+		<concept id="c_42">muchas</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 - - Ahora que tiene su propio grupo, los modestos The Rhythm Kings, ¿echa de menos algo de las grandes giras con los Rolling Stones? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="grupo" />
+			<frame type="Intentionally_act" head="de">
+				<argument type="Agent" dependent="su" />
+				<argument type="Act" dependent="su" /></frame>
+			<frame type="Success_or_failure" head="echa de">
+				<argument type="Agent" dependent="su" />
+				<argument type="Goal" dependent="algo de las grandes giras con los Rolling Stones" /></frame>
+			<frame type="Travel" head="giras">
+				<argument type="Descriptor" dependent="grandes giras" />
+				<argument type="Goal" dependent="Stones" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sí, el dinero.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Money" head="dinero" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Qué pasa, ahora cobra poco? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Judgment_communication" head="pasa">
+				<argument type="Communicator" dependent="¿" />
+				<argument type="Evaluee" dependent="poco ? - -" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pues la verdad es que no ganamos mucho.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">la</token><token pos="ncfs000">verdad</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="cs">que</token><token pos="rn">no</token><token pos="vmip1p0">ganamos</token><token pos="rg">mucho</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Manufacturing" head="la">
+				<argument type="Producer" dependent="ganamos" />
+				<argument type="Product" dependent="mucho" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Somos 14 personas en el escenario, actuamos en sitios pequeños y hay que pagar viajes, hoteles, comida...
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="hoteles" />
+			<frame type="Commerce_pay" head="pagar">
+				<argument type="Buyer" dependent="Somos" />
+				<argument type="Money" dependent="viajes" /></frame>
+			<frame type="Food" head="comida" />
+			<frame type="Intentionally_act" head="actuamos">
+				<argument type="Agent" dependent="Somos" />
+				<argument type="Act" dependent="en sitios pequeños" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="actuamos" />
+				<argument type="Ground" dependent="sitios pequeños" /></frame>
+			<frame type="Locale" head="sitios">
+				<argument type="Descriptor" dependent="pequeños" /></frame>
+			<frame type="People" head="personas">
+				<argument type="Descriptor" dependent="en el escenario" /></frame>
+			<frame type="Size" head="pequeños">
+				<argument type="Entity" dependent="sitios" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="14 personas" />
+				<argument type="Ground" dependent="escenario" /></frame>
+			<frame type="Travel" head="viajes">
+				<argument type="Traveler" dependent="Somos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero lo hacemos por el placer de la música.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Experiencer_focus" head="placer de">
+				<argument type="Content" dependent="música" /></frame>
+			<frame type="Performing_arts" head="música" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Dejé los Stones porque aspiraba a tener motivaciones diferentes al dinero.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="Dejé los Stones" />
+				<argument type="Cause" dependent="aspiraba a tener motivaciones diferentes al dinero" /></frame>
+			<frame type="Money" head="dinero" />
+			<frame type="Reason" head="motivaciones" />
+			<frame type="Similarity" head="diferentes">
+				<argument type="Entities" dependent="motivaciones" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No quería seguir tocando cada noche Jumpin Jack Flash y Honky tonk woman.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_ongoing" head="seguir">
+				<argument type="Agent" dependent="y" />
+				<argument type="Activity" dependent="tocando cada noche Jumpin Jack Flash y Honky tonk woman" /></frame>
+			<frame type="Calendric_unit" head="noche">
+				<argument type="Relative_time" dependent="cada" /></frame>
+			<frame type="Desiring" head="quería">
+				<argument type="Experiencer" dependent="y" />
+				<argument type="Event" dependent="tocando cada noche Jumpin Jack Flash y Honky tonk woman" /></frame>
+			<frame type="People" head="woman">
+				<argument type="Descriptor" dependent="Flash y Honky tonk" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Era aburrido.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Experiencer_obj" head="aburrido">
+				<argument type="Stimulus" dependent="." /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Llevaba 31 años haciendo la misma música, y en mi nuevo grupo toco jazz, blues, gospel, rockabilly, reggae, country, funk, pop...
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevo">
+				<argument type="Entity" dependent="grupo toco jazz" /></frame>
+			<frame type="Aggregate" head="grupo">
+				<argument type="Aggregate_property" dependent="jazz" /></frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Relative_time" dependent="31" /></frame>
+			<frame type="Color" head="blues" />
+			<frame type="Identicality" head="la misma">
+				<argument type="Type" dependent="música" /></frame>
+			<frame type="Intentionally_act" head="haciendo">
+				<argument type="Agent" dependent="y" />
+				<argument type="Act" dependent="la misma música" />
+				<argument type="Time" dependent="31 años" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="y" />
+				<argument type="Ground" dependent="música , y en mi nuevo grupo toco jazz , blues , gospel , rockabilly , reggae , country , funk , pop" /></frame>
+			<frame type="Performing_arts" head="música">
+				<argument type="Type" dependent="la misma" /></frame>
+			<frame type="Political_locales" head="country">
+				<argument type="Descriptor" dependent="gospel , rockabilly , reggae ," /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Es un grupo fantástico.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="grupo">
+				<argument type="Aggregate_property" dependent="fantástico" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y desde luego no tardamos dos años en hacer un disco.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="dos" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Unit" dependent="años" /></frame>
+			<frame type="Likelihood" head="no">
+				<argument type="Hypothetical_event" dependent="en" />
+				<argument type="Hypothetical_event" dependent="no tardamos dos años en hacer un" /></frame>
+			<frame type="Manufacturing" head="hacer">
+				<argument type="Producer" dependent="en" />
+				<argument type="Product" dependent="un disco" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En 8 días grabamos las 22 canciones del nuevo álbum, Double bill.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevo">
+				<argument type="Entity" dependent="álbum" /></frame>
+			<frame type="Calendric_unit" head="días">
+				<argument type="Relative_time" dependent="8" /></frame>
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Ground" dependent="8 días" /></frame>
+			<frame type="Recording" head="grabamos">
+				<argument type="Time" dependent="En 8 días" />
+				<argument type="Agent" dependent="grabamos" />
+				<argument type="Phenomenon" dependent="las 22 canciones del nuevo álbum" /></frame>
+			<frame type="Text" head="canciones">
+				<argument type="Topic" dependent="del nuevo álbum" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Echaba también de menos la cercanía con el público?
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Success_or_failure" head="de">
+				<argument type="Agent" dependent="el" />
+				<argument type="Goal" dependent="la cercanía con el público" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Muchísimo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En los estadios sólo eres un pequeño punto en el horizonte.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="los estadios sólo eres un pequeño punto en el horizonte" /></frame>
+			<frame type="Size" head="pequeño">
+				<argument type="Entity" dependent="punto" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="un pequeño punto" />
+				<argument type="Ground" dependent="el horizonte" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El público apenas ve tu imagen en el vídeo.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">público</token>
+		</theme>
+		<rheme concept_ref1="c_21" concept_ref2="c_34">
+			<token pos="vmip3s0">ve</token><mention concept_ref="c_21"><token pos="dp2css">tu</token><token pos="ncfs000">imagen</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Impression" head="imagen">
+				<argument type="Figure" dependent="tu" /></frame>
+			<main_frame type="Perception_experience" head="apenas ve">
+				<argument type="Perceiver_passive" dependent="El público" />
+				<argument type="Manner" dependent="apenas" />
+				<argument type="Phenomenon" dependent="tu imagen en el vídeo" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 The Rhythm Kings luchamos contra eso.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="ncfs000">The</token><token pos="ncms000">Rhythm</token><token pos="np00000">Kings</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_29" concept_ref3="c_33">
+			<token pos="vmip1p0">luchamos</token><mention concept_ref="c_29"><token pos="sps00">contra</token><token pos="pd0ns000">eso</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Hostile_encounter" head="luchamos">
+				<argument type="Side_1" dependent="The Rhythm Kings" />
+				<argument type="Side_2" dependent="contra eso" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Si hay un fan de Georgie Fame, o de Gary Brooker o de Albert Lee, puede estar a dos metros de él, verle sudar.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="puede">
+				<argument type="Entity" dependent="él" />
+				<argument type="Event" dependent="a dos metros de él" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Unit" dependent="metros" /></frame>
+			<frame type="Excreting" head="sudar">
+				<argument type="Excreter" dependent="él" /></frame>
+			<frame type="Locative_relation" head="hay">
+				<argument type="Ground" dependent="hay un fan de Georgie Fame" /></frame>
+			<frame type="Measure_linear_extent" head="metros">
+				<argument type="Count" dependent="dos" /></frame>
+			<frame type="Perception_active" head="verle">
+				<argument type="Phenomenon" dependent="él" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Hacemos música de raíces en clubs pequeños, donde siempre se tocó esta música.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="tocó esta música" />
+				<argument type="Event" dependent="se tocó" /></frame>
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="esta música" /></frame>
+			<frame type="Make_noise" head="se tocó">
+				<argument type="Sound_source" dependent="esta música" /></frame>
+			<frame type="Manufacturing" head="se">
+				<argument type="Producer" dependent="Hacemos" />
+				<argument type="Product" dependent="música de raíces" /></frame>
+			<frame type="Performing_arts" head="música" />
+			<frame type="Size" head="pequeños">
+				<argument type="Entity" dependent="clubs" /></frame>
+			<frame type="Weapon" head="clubs">
+				<argument type="Descriptor" dependent="pequeños" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Siempre no.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Frequency" head="Siempre" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Hasta que el rock se convirtió en un gran negocio.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0ms0">el</token><token pos="ncms000">rock</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_30" concept_ref3="c_34">
+			<mention concept_ref="c_4"><token pos="p0300000">se</token></mention><token pos="vmis3s0">convirtió</token><mention concept_ref="c_34"><token pos="sps00">en</token></mention><mention concept_ref="c_30"><token pos="di0ms0">un</token><token pos="aq0cs0">gran</token></mention><token pos="ncms000">negocio</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Becoming" head="convirtió">
+				<argument type="Entity" dependent="rock" />
+				<argument type="Final_category" dependent="un gran" /></main_frame>
+			<frame type="Make_agreement_on_action" head="se">
+				<argument type="Descriptor" dependent="gran" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Sí, hasta que el negocio empezó a matar a la música.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0ms0">el</token><token pos="ncms000">negocio</token>
+		</theme>
+		<rheme concept_ref1="c_18" concept_ref2="c_31">
+			<token pos="vmis3s0">empezó</token><token pos="sps00">a</token><mention concept_ref="c_31"><token pos="vmn0000">matar</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">música</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_start" head="empezó">
+				<argument type="Agent" dependent="el negocio" />
+				<argument type="Activity" dependent="matar a la música" /></main_frame>
+			<frame type="Businesses" head="negocio" />
+			<main_frame type="Killing" head="matar">
+				<argument type="Killer" dependent="el negocio" />
+				<argument type="Victim" dependent="la música" /></main_frame>
+			<frame type="Performing_arts" head="música" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los jóvenes de hoy sólo tocan para ganar dinero y ser famosos.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0mp0">Los</token><token pos="nccp000">jóvenes</token><token pos="sps00">de</token><token pos="rg">hoy</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_29" concept_ref3="c_32" concept_ref4="c_37">
+			<token pos="vmip3p0">tocan</token><token pos="sps00">para</token><mention concept_ref="c_29"><token pos="vmn0000">ganar</token><token pos="ncms000">dinero</token></mention><mention concept_ref="c_37"><token pos="cc">y</token></mention><token pos="vsn0000">ser</token><token pos="aq0mp0">famosos</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="jóvenes">
+				<argument type="Descriptor" dependent="hoy" />
+				<argument type="Entity" dependent="Los" /></frame>
+			<frame type="Calendric_unit" head="hoy" />
+			<main_frame type="Earnings_and_losses" head="ganar">
+				<argument type="Earnings" dependent="dinero" /></main_frame>
+			<frame type="Fame" head="famosos" />
+			<main_frame type="Make_noise" head="ser">
+				<argument type="Sound_source" dependent="jóvenes de" />
+				<argument type="Sound" dependent="ganar dinero" /></main_frame>
+			<frame type="Money" head="dinero" />
+			<frame type="People" head="Los">
+				<argument type="Descriptor" dependent="jóvenes de hoy" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Es una actitud errónea, pero funciona.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_employed" head="funciona">
+				<argument type="Employee" dependent="Es" /></frame>
+			<frame type="Correctness" head="errónea">
+				<argument type="Information" dependent="actitud" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por eso es increíble lo que nos está pasando.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0ns0">lo</token><token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_4">
+			<mention concept_ref="c_4"><token pos="pp1cp000">nos</token></mention><token pos="vmip3s0">está</token><token pos="vmg0000">pasando</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Event" head="pasando">
+				<argument type="Event" dependent="que" /></main_frame>
+			<frame type="Experiencer_obj" head="increíble">
+				<argument type="Stimulus" dependent="lo" />
+				<argument type="Stimulus" dependent="lo que nos está pasando" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 The Rhythm Kings no están de moda, no nos pinchan en la radio, no tocamos en estadios, y sin embargo somos número uno en las listas británicas de jazz y blues y en nuestros conciertos la gente nos despide con 15 minutos de aplausos.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="ncfs000">The</token><token pos="ncms000">Rhythm</token><token pos="np00000">Kings</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_34">
+			<token pos="rn">no</token><token pos="vmip3p0">están</token><mention concept_ref="c_34"><token pos="sps00">de</token></mention><mention concept_ref="c_0"><token pos="ncmp000">moda</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="minutos">
+				<argument type="Count" dependent="15" /></frame>
+			<frame type="Cardinal_numbers" head="uno">
+				<argument type="Precision" dependent="número" /></frame>
+			<frame type="Color" head="blues" />
+			<frame type="Contacting" head="radio">
+				<argument type="Communicator" dependent="The Rhythm Kings" /></frame>
+			<frame type="Intentionally_act" head="de">
+				<argument type="Agent" dependent="nos" />
+				<argument type="Act" dependent="tocamos en estadios" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="no tocamos" />
+				<argument type="Ground" dependent="estadios" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="nos" />
+				<argument type="Ground" dependent="nuestros conciertos la gente nos despide con 15 minutos de aplausos" /></frame>
+			<frame type="Make_noise" head="tocamos">
+				<argument type="Sound_source" dependent="nos" />
+				<argument type="Place" dependent="en estadios" /></frame>
+			<frame type="People" head="gente">
+				<argument type="Descriptor" dependent="conciertos" /></frame>
+			<frame type="Quantified_mass" head="número">
+				<argument type="Individuals" dependent="uno en las listas británicas de jazz y blues y en nuestros conciertos la gente nos despide con 15 minutos" /></frame>
+			<frame type="Shoot_projectiles" head="The">
+				<argument type="Depictive" dependent="conciertos" />
+				<argument type="Agent" dependent="gente" />
+				<argument type="Projectile" dependent="nos" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="somos número uno" />
+				<argument type="Ground" dependent="británicas de jazz y blues" /></frame>
+			<frame type="Trendiness" head="moda">
+				<argument type="Evaluee" dependent="The Rhythm Kings" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Creo que notan que ponemos amor a la música.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Experiencer_focus" head="amor">
+				<argument type="Experiencer" dependent="ponemos" />
+				<argument type="Content" dependent="a la música" /></frame>
+			<frame type="Opinion" head="Creo">
+				<argument type="Cognizer" dependent="la" />
+				<argument type="Opinion" dependent="notan que ponemos amor a la música" /></frame>
+			<frame type="Performing_arts" head="música" />
+			<frame type="Placing" head="ponemos">
+				<argument type="Agent" dependent="ponemos" />
+				<argument type="Goal" dependent="amor a la música" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Muchas de las bandas de hoy en día ni siquiera tocan en directo.
+		</str>
+		<theme>
+			<token pos="pi0fp000">Muchas</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncfp000">bandas</token><token pos="sps00">de</token><token pos="ncms000">hoy</token><token pos="sps00">en</token><token pos="ncms000">día</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="bandas">
+				<argument type="Aggregate_property" dependent="de hoy en día" /></frame>
+			<frame type="Calendric_unit" head="hoy" />
+			<frame type="Make_noise" head="tocan en">
+				<argument type="Sound_source" dependent="Muchas de las bandas de hoy" />
+				<argument type="Path" dependent="en" /></frame>
+			<frame type="Quantified_mass" head="Muchas">
+				<argument type="Individuals" dependent="bandas de hoy" /></frame>
+			<frame type="Residence" head="en">
+				<argument type="Location" dependent="Muchas de las bandas de hoy" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ponen cosas pregrabadas y los chicos pagan por ver eso.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0mp0">los</token><token pos="ncmp000">chicos</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_33">
+			<token pos="vmip3p0">pagan</token><token pos="sps00">por</token><token pos="vmn0000">ver</token><token pos="pd0ns000">eso</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Commerce_pay" head="pagan">
+				<argument type="Goods" dependent="los chicos" /></main_frame>
+			<frame type="People_by_age" head="chicos" />
+			<main_frame type="Perception_experience" head="ver">
+				<argument type="Phenomenon" dependent="eso" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No lo entiendo, es un engaño.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Grasp" head="entiendo">
+				<argument type="Cognizer" dependent="es" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Seguro que a muchos jóvenes esa postura suya les parece anticuada.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="dd0fs0">esa</token><token pos="ncfs000">postura</token><token pos="dp3fs0">suya</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_33">
+			<mention concept_ref="c_4"><token pos="pp3cpd00">les</token></mention><token pos="vmip3s0">parece</token><token pos="aq0fsp">anticuada</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="jóvenes">
+				<argument type="Entity" dependent="les" /></frame>
+			<frame type="Becoming_aware" head="esa">
+				<argument type="Cognizer" dependent="muchos jóvenes" />
+				<argument type="Phenomenon" dependent="esa postura" /></frame>
+			<frame type="Being_employed" head="postura">
+				<argument type="Employer" dependent="muchos jóvenes" />
+				<argument type="Employer" dependent="esa" />
+				<argument type="Task" dependent="anticuada" /></frame>
+			<frame type="Certainty" head="Seguro">
+				<argument type="Cognizer" dependent="a" />
+				<argument type="Content" dependent="muchos jóvenes esa postura suya les parece" /></frame>
+			<frame type="Destiny" head="muchos">
+				<argument type="State_of_affairs" dependent="jóvenes" /></frame>
+			<frame type="People" head="les" />
+			<frame type="Stage_of_progress" head="anticuada">
+				<argument type="Degree" dependent="postura" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿Se ha vuelto conservador? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming" head="vuelto">
+				<argument type="Entity" dependent="Se" />
+				<argument type="Final_quality" dependent="conservador" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿Conservador?.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No sé si por ser más normal soy más conservador.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="sé">
+				<argument type="Cognizer" dependent="sé" /></frame>
+			<frame type="Causation" head="por ser">
+				<argument type="Effect" dependent="soy más conservador" />
+				<argument type="Cause" dependent="normal soy más" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="normal" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Mi vida se ha normalizado.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="dp1css">Mi</token><token pos="ncfs000">vida</token>
+		</theme>
+		<rheme concept_ref1="c_4">
+			<mention concept_ref="c_4"><token pos="p0300000">se</token></mention><token pos="vaip3s0">ha</token><token pos="vmp00sm">normalizado</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Después de esta entrevista iré a recoger al colegio a mi hija Jessica, de 5 años.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Direction" head="iré">
+				<argument type="Distance" dependent="de" />
+				<argument type="Distance" dependent="mi hija Jessica , de 5 años" /></frame>
+			<frame type="Kinship" head="hija">
+				<argument type="Ego" dependent="mi" /></frame>
+			<frame type="Locale_by_use" head="colegio" />
+			<frame type="Relative_time" head="Después de">
+				<argument type="Landmark_occasion" dependent="esta entrevista" />
+				<argument type="Focal_occasion" dependent="iré a recoger al colegio a mi hija Jessica , de 5 años" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Su madre está pasando unos días en nuestra casa de Francia con mis otras dos hijas, de 6 y 3 años.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="dp3cs0">Su</token><token pos="ncfs000">madre</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_16">
+			<token pos="vmip3s0">está</token><token pos="vmg0000">pasando</token><mention concept_ref="c_16"><token pos="di0mp0">unos</token><token pos="ncmp000">días</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="años">
+				<argument type="Time" dependent="3 años" /></frame>
+			<frame type="Buildings" head="casa" />
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="3" /></frame>
+			<frame type="Calendric_unit" head="días">
+				<argument type="Relative_time" dependent="unos" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="hijas" /></frame>
+			<frame type="Increment" head="otras">
+				<argument type="Class" dependent="dos hijas" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="nuestra casa" />
+				<argument type="Ground" dependent="Francia" /></frame>
+			<frame type="Kinship" head="hijas" />
+			<frame type="Kinship" head="madre">
+				<argument type="Ego" dependent="Su" /></frame>
+			<frame type="Quantified_mass" head="unos">
+				<argument type="Individuals" dependent="días" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Así que recogeré a mi pequeña, iremos a tomar algo, a charlar o a darle de comer a los patos...
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Chatting" head="charlar" />
+			<frame type="Direction" head="darle">
+				<argument type="Landmark" dependent="mi pequeña" /></frame>
+			<frame type="Food_gathering" head="darle">
+				<argument type="Crop" dependent="o a" />
+				<argument type="Manner" dependent="darle" />
+				<argument type="Source" dependent="mi pequeña" /></frame>
+			<frame type="Motion" head="darle">
+				<argument type="Goal" dependent="tomar algo , a charlar o a darle de comer a los patos" /></frame>
+			<frame type="People" head="mi" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Desde luego, eso me da mucha más felicidad que salir en la tele o tener un disco de oro.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="pd0ns000">eso</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_0" concept_ref3="c_21" concept_ref4="c_7" concept_ref5="c_29" concept_ref6="c_31" concept_ref7="c_33" concept_ref8="c_34" concept_ref9="c_35" concept_ref10="c_36">
+			<mention concept_ref="c_31"><token pos="pp1cs000">me</token><token pos="vmip3s0">da</token><token pos="di0fs0">mucha</token><token pos="rg">más</token><token pos="ncfs000">felicidad</token></mention><token pos="cs">que</token><token pos="vmn0000">salir</token><mention concept_ref="c_36"><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">tele</token></mention><token pos="cc">o</token><token pos="vmn0000">tener</token><mention concept_ref="c_7"><token pos="di0ms0">un</token><token pos="ncms000">disco</token></mention><token pos="sps00">de</token><token pos="ncms000">oro</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Destiny" head="mucha">
+				<argument type="State_of_affairs" dependent="más felicidad" /></frame>
+			<main_frame type="Giving" head="tener">
+				<argument type="Donor" dependent="eso" />
+				<argument type="Recipient" dependent="me" />
+				<argument type="Theme" dependent="mucha más felicidad que salir en la tele" /></main_frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="felicidad" /></frame>
+			<main_frame type="Motion" head="salir">
+				<argument type="Theme" dependent="me da mucha más felicidad" />
+				<argument type="Manner" dependent="en" />
+				<argument type="Source" dependent="en la tele" /></main_frame>
+			<main_frame type="Possession" head="tener">
+				<argument type="Possession" dependent="un disco de oro" /></main_frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="me da mucha más felicidad" />
+				<argument type="Ground" dependent="tele" /></frame>
+			<frame type="Text" head="disco">
+				<argument type="Text" dependent="oro" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Charlie Watts ( el batería de los Stones ) también es así.
+		</str>
+		<theme>
+			<token pos="np00000">Charlie</token><token pos="ncms000">Watts</token><token pos="fpa">(</token><token pos="da0ms0">el</token><token pos="ncms000">batería</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="np00000">Stones</token><token pos="fpt">)</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Similarity" head="así">
+				<argument type="Entity_1" dependent="Watts ( el batería de los Stones )" />
+				<argument type="Entity_2" dependent="es" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Siempre fuimos los más reservados, los menos locos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Frequency" head="Siempre">
+				<argument type="Event" dependent="fuimos" />
+				<argument type="Event" dependent="los más reservados" /></frame>
+			<frame type="Mental_property" head="locos" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Bueno, según se mire.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Perception_experience" head="se mire">
+				<argument type="Perceiver_passive" dependent="se" />
+				<argument type="Phenomenon" dependent="se" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En las hemerotecas yace uno de los mayores escándalos del mundillo pop: su relación con una menor.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_located" head="yace">
+				<argument type="Location" dependent="En las" />
+				<argument type="Theme" dependent="uno de los mayores escándalos del mundillo pop" /></frame>
+			<frame type="Cardinal_numbers" head="uno">
+				<argument type="Entity" dependent="mayores escándalos del mundillo pop" /></frame>
+			<frame type="Cognitive_connection" head="relación">
+				<argument type="Concept_2" dependent="su" /></frame>
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Ground" dependent="del" /></frame>
+			<frame type="Political_locales" head="su">
+				<argument type="Name" dependent="pop" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Ya, el asunto de Mandy Smith.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La verdad es que si pudiera borrar esa etapa de mi vida, lo haría encantado.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="ncfs000">verdad</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_9" concept_ref3="c_4" concept_ref4="c_29" concept_ref5="c_34" concept_ref6="c_33">
+			<token pos="vsip3s0">es</token><token pos="cs">que</token><token pos="cs">si</token><token pos="vmsi3s0">pudiera</token><mention concept_ref="c_29"><token pos="vmn0000">borrar</token><token pos="dd0fs0">esa</token><token pos="ncfs000">etapa</token><token pos="sps00">de</token><token pos="dp1css">mi</token><token pos="ncfs000">vida</token></mention><token pos="fc">,</token><token pos="pp3msa00">lo</token><token pos="vmic3s0">haría</token><token pos="aq0msp">encantado</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Possibility" head="pudiera">
+				<argument type="Possible_event" dependent="de" />
+				<argument type="Possible_event" dependent="borrar esa etapa de mi vida" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Fue un enorme error.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Size" head="enorme">
+				<argument type="Entity" dependent="error" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero ahora tengo una nueva familia, tres hijas preciosas, y todo aquello queda muy atrás.
+		</str>
+		<theme>
+			<token pos="di0ms0">todo</token><token pos="pd0ns000">aquello</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aesthetics" head="preciosas">
+				<argument type="Entity" dependent="hijas" /></frame>
+			<frame type="Age" head="nueva">
+				<argument type="Entity" dependent="familia" /></frame>
+			<frame type="Cardinal_numbers" head="tres">
+				<argument type="Entity" dependent="hijas preciosas" /></frame>
+			<frame type="Kinship" head="familia" />
+			<frame type="Kinship" head="hijas" />
+			<frame type="Temporal_collocation" head="ahora">
+				<argument type="Trajector_event" dependent="tengo una nueva familia , tres hijas preciosas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Atravieso la mejor época de mi vida, llena de amor y de proyectos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Completeness" head="llena de">
+				<argument type="Whole" dependent="amor y de proyectos" /></frame>
+			<frame type="Experiencer_focus" head="amor" />
+			<frame type="Motion" head="de">
+				<argument type="Theme" dependent="y" />
+				<argument type="Goal" dependent="mejor época de mi vida" /></frame>
+			<frame type="Project" head="proyectos" />
+			<frame type="Required_event" head="mejor">
+				<argument type="Required_situation" dependent="época" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Necesito paz y comodidad y no me importa que alguien crea que asumir responsabilidades implica volverse conservador.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="pi0cs000">alguien</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_25" concept_ref3="c_29" concept_ref4="c_34">
+			<token pos="vmsp3s0">crea</token><token pos="vmn0000">asumir</token><mention concept_ref="c_25"><token pos="ncfp000">responsabilidades</token></mention><token pos="vmip3s0">implica</token><token pos="vmn0000">volverse</token><mention concept_ref="c_29"><token pos="aq0ms0">conservador</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Becoming" head="asumir">
+				<argument type="Final_quality" dependent="conservador" /></main_frame>
+			<frame type="Being_obligated" head="responsabilidades" />
+			<main_frame type="Causation" head="implica">
+				<argument type="Effect" dependent="responsabilidades" /></main_frame>
+			<frame type="Experiencer_focus" head="comodidad" />
+			<frame type="Needing" head="Necesito">
+				<argument type="Cognizer" dependent="y" />
+				<argument type="Requirement" dependent="paz y comodidad" /></frame>
+			<main_frame type="Opinion" head="crea que">
+				<argument type="Cognizer" dependent="alguien" />
+				<argument type="Opinion" dependent="que asumir responsabilidades implica volverse conservador" /></main_frame>
+			<main_frame type="Taking_time" head="asumir">
+				<argument type="Activity" dependent="asumir responsabilidades implica volverse conservador" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Cuál es el mejor y el peor recuerdo que tiene de los Stones? - -.
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="pt0cs000">Cuál</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_24" concept_ref3="c_34" concept_ref4="c_37">
+			<token pos="vsip3s0">es</token><token pos="da0ms0">el</token><token pos="aq0cs0">mejor</token><mention concept_ref="c_37"><token pos="cc">y</token></mention><mention concept_ref="c_24"><token pos="da0ms0">el</token><token pos="aq0cs0">peor</token><token pos="ncms000">recuerdo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Memory" head="recuerdo" />
+			<frame type="Required_event" head="mejor">
+				<argument type="Required_situation" dependent="recuerdo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El mejor es el día que los dejé, porque sentí una gran liberación.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="día" />
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="El mejor es el día que los dejé , porque sentí una" />
+				<argument type="Cause" dependent="sentí una gran liberación" /></frame>
+			<frame type="Departing" head="dejé">
+				<argument type="Theme" dependent="el" />
+				<argument type="Path" dependent="los" /></frame>
+			<frame type="Desirability" head="gran">
+				<argument type="Evaluee" dependent="liberación" /></frame>
+			<frame type="Required_event" head="mejor" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y el peor, el trágico concierto de Altamont.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Que quede claro que estoy orgulloso de haber sido un stone, pero la verdad es que no me importaría nacer de nuevo y ser el conservador de un museo, o bibliotecario, o historiador, o investigador.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">la</token><token pos="ncfs000">verdad</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_3" concept_ref3="c_27" concept_ref4="c_7" concept_ref5="c_11" concept_ref6="c_29" concept_ref7="c_34" concept_ref8="c_37" concept_ref9="c_40">
+			<token pos="vsip3s0">es</token><token pos="cs">que</token><token pos="rn">no</token><mention concept_ref="c_34"><token pos="pp1cs000">me</token></mention><token pos="vmic3s0">importaría</token><token pos="vmn0000">nacer</token><token pos="sps00">de</token><token pos="aq0msp">nuevo</token><mention concept_ref="c_37"><token pos="cc">y</token></mention><token pos="vsn0000">ser</token><mention concept_ref="c_3"><token pos="da0ms0">el</token><token pos="ncms000">conservador</token></mention><token pos="sps00">de</token><mention concept_ref="c_27"><token pos="di0ms0">un</token><token pos="ncms000">museo</token></mention><token pos="fc">,</token><token pos="cc">o</token><mention concept_ref="c_40"><token pos="ncms000">bibliotecario</token></mention><token pos="fc">,</token><token pos="cc">o</token><mention concept_ref="c_7"><token pos="ncms000">historiador</token></mention><token pos="fc">,</token><token pos="cc">o</token><mention concept_ref="c_11"><token pos="ncms000">investigador</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Being_born" head="nacer de">
+				<argument type="Child" dependent="y" /></main_frame>
+			<frame type="Cause_harm" head="stone" />
+			<frame type="Locale_by_use" head="museo" />
+			<frame type="Obviousness" head="quede claro">
+				<argument type="Phenomenon" dependent="es" /></frame>
+			<main_frame type="People_by_vocation" head="investigador" />
+			<main_frame type="Possession" head="ser">
+				<argument type="Owner" dependent="y" />
+				<argument type="Possession" dependent="sido un stone" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Quizá habría sido alguien muy aburrido, pero más feliz.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Experiencer_obj" head="aburrido">
+				<argument type="Stimulus" dependent="alguien" />
+				<argument type="Degree" dependent="muy" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿Sabe lo que dijo Einstein cuando le preguntaron qué hubiera querido ser si naciera de nuevo?.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="Sabe lo">
+				<argument type="Cognizer" dependent="lo" />
+				<argument type="Content" dependent="que dijo Einstein cuando le preguntaron qué hubiera querido ser si naciera de nuevo" /></frame>
+			<frame type="Bringing" head="naciera de">
+				<argument type="Theme" dependent="lo" /></frame>
+			<frame type="Desiring" head="querido ser">
+				<argument type="Event" dependent="qué" />
+				<argument type="Experiencer" dependent="lo" />
+				<argument type="Event" dependent="ser si naciera de nuevo" /></frame>
+			<frame type="Questioning" head="preguntaron">
+				<argument type="Speaker" dependent="lo" />
+				<argument type="Addressee" dependent="lo" />
+				<argument type="Message" dependent="qué hubiera querido ser si naciera de nuevo" /></frame>
+			<frame type="Statement" head="dijo">
+				<argument type="Message" dependent="qué" />
+				<argument type="Speaker" dependent="naciera de" />
+				<argument type="Message" dependent="le preguntaron qué hubiera querido ser si naciera de nuevo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Fontanero.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Einstein, fontanero.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Yo fontanero no, pero fotógrafo, por ejemplo, no me hubiera importado.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desiring" head="por" />
+			<frame type="Instance" head="ejemplo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Entonces ¿por qué elige seguir siendo músico ahora que tiene dinero para ser cualquier otra cosa? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Choosing" head="elige">
+				<argument type="Cognizer" dependent="ser" />
+				<argument type="Chosen" dependent="seguir siendo músico ahora que tiene dinero para ser cualquier otra cosa" /></frame>
+			<frame type="Money" head="dinero" />
+			<frame type="People_by_vocation" head="músico" />
+			<frame type="State_continue" head="seguir siendo">
+				<argument type="Entity" dependent="ser" /></frame>
+			<frame type="Temporal_collocation" head="ahora">
+				<argument type="Trajector_event" dependent="elige seguir siendo músico" />
+				<argument type="Trajector_event" dependent="dinero para ser cualquier otra cosa ? - -" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Porque ahora hago música en libertad, sin deberme a nada ni a nadie, como cuando a principios de los años 60 tocaba en un grupo llamado The Cliftons, mucho antes de ser un stone.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="grupo" />
+			<frame type="Causation" head="Porque">
+				<argument type="Effect" dependent="ahora hago música en libertad" />
+				<argument type="Cause" dependent="a nada ni a nadie" /></frame>
+			<frame type="Make_noise" head="tocaba en">
+				<argument type="Sound_source" dependent="en" />
+				<argument type="Path" dependent="en un grupo llamado The" /></frame>
+			<frame type="Manufacturing" head="ser">
+				<argument type="Producer" dependent="en" />
+				<argument type="Time" dependent="ahora" />
+				<argument type="Product" dependent="música en libertad" /></frame>
+			<frame type="Performing_arts" head="música">
+				<argument type="Type" dependent="libertad" /></frame>
+			<frame type="Referring_by_name" head="llamado">
+				<argument type="Speaker" dependent="un grupo" />
+				<argument type="Name" dependent="de" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_1" dependent="a nada ni a nadie" /></frame>
+			<frame type="Temporal_collocation" head="ahora">
+				<argument type="Trajector_event" dependent="en" />
+				<argument type="Trajector_event" dependent="hago música en libertad" /></frame>
+			<frame type="Temporal_subregion" head="antes">
+				<argument type="Time_period" dependent="los años 60" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Distance" dependent="años" />
+				<argument type="Landmark_event" dependent="ser un stone" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Todo era sano, sin pretensiones.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="pi0ms000">Todo</token>
+		</theme>
+		<rheme concept_ref1="c_25" concept_ref2="c_34">
+			<token pos="vsii3s0">era</token><token pos="aq0ms0">sano</token><token pos="fc">,</token><token pos="sps00">sin</token><mention concept_ref="c_25"><token pos="ncfp000">pretensiones</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Medical_conditions" head="sano">
+				<argument type="Patient" dependent="Todo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Lo mismo que intento ahora junto con The Rhythm Kings.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attempt" head="intento">
+				<argument type="Agent" dependent="que" />
+				<argument type="Goal" dependent="ahora junto con The Rhythm Kings" /></frame>
+			<frame type="Identicality" head="Lo mismo">
+				<argument type="Type" dependent="que" /></frame>
+			<frame type="Temporal_collocation" head="ahora">
+				<argument type="Trajector_event" dependent="intento" />
+				<argument type="Trajector_event" dependent="con The Rhythm Kings" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - También quiso dedicarse a la hostelería y montó Sticky Fingers, un restaurante-museo stoniano.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="hostelería" />
+			<frame type="Desiring" head="quiso dedicarse">
+				<argument type="Experiencer" dependent="la" />
+				<argument type="Event" dependent="dedicarse a la hostelería" /></frame>
+			<frame type="Placing" head="montó">
+				<argument type="Agent" dependent="la" />
+				<argument type="Theme" dependent="Sticky Fingers , un" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Ja, ¡ no me lo recuerde!
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Evoking" head="lo recuerde">
+				<argument type="Cognizer" dependent="me" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En realidad no me interesan los restaurantes.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Experiencer_focus" head="interesan">
+				<argument type="Experiencer" dependent="los" />
+				<argument type="Content" dependent="los restaurantes" /></frame>
+			<frame type="Locale_by_use" head="restaurantes" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Monté ese establecimiento y se hizo muy famoso por servir durante tres años la mejor hamburguesa de Londres.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming" head="se hizo">
+				<argument type="Entity" dependent="y" />
+				<argument type="Final_category" dependent="famoso por servir durante tres años la mejor hamburguesa de Londres" /></frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="tres" /></frame>
+			<frame type="Cardinal_numbers" head="tres">
+				<argument type="Unit" dependent="años" /></frame>
+			<frame type="Direction" head="se">
+				<argument type="Landmark" dependent="ese establecimiento" /></frame>
+			<frame type="Fame" head="famoso" />
+			<frame type="Intentionally_create" head="establecimiento" />
+			<frame type="Placing" head="Monté">
+				<argument type="Agent" dependent="y" />
+				<argument type="Goal" dependent="establecimiento y se hizo muy famoso por servir durante tres años la mejor hamburguesa de Londres" /></frame>
+			<frame type="Required_event" head="mejor">
+				<argument type="Required_situation" dependent="hamburguesa" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero para mí fue sólo un buen lugar para poder colgar en la pared todos los recuerdos de los Stones y así tener más espacio en casa.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Architectural_part" head="la pared" />
+			<frame type="Building_subparts" head="espacio" />
+			<frame type="Buildings" head="casa" />
+			<frame type="Capability" head="poder">
+				<argument type="Event" dependent="colgar en la pared todos los recuerdos de los Stones" /></frame>
+			<frame type="Desirability" head="buen">
+				<argument type="Evaluee" dependent="lugar" /></frame>
+			<frame type="Goal" head="para">
+				<argument type="Trajector" dependent="un buen lugar" />
+				<argument type="Landmark" dependent="poder colgar en la pared todos los recuerdos de los Stones y así tener más espacio en casa" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="espacio" /></frame>
+			<frame type="Locale" head="lugar">
+				<argument type="Descriptor" dependent="buen" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="más espacio" />
+				<argument type="Ground" dependent="casa" /></frame>
+			<frame type="Memory" head="recuerdos">
+				<argument type="Content" dependent="Stones" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="sólo un buen lugar para poder colgar en" />
+				<argument type="Ground" dependent="la pared" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Los recuerdos sólo sirven para tenerlos colgados en la pared? - -.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">recuerdos</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_0" concept_ref3="c_29" concept_ref4="c_34" concept_ref5="c_33">
+			<token pos="vmip3p0">sirven</token><mention concept_ref="c_29"><token pos="sps00">para</token><token pos="vmn0000">tenerlos</token><token pos="aq0mpp">colgados</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">pared</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_ongoing" head="tenerlos">
+				<argument type="Activity" dependent="Los" /></main_frame>
+			<frame type="Architectural_part" head="la pared" />
+			<main_frame type="Assistance" head="sirven">
+				<argument type="Goal" dependent="para tenerlos colgados en la pared" /></main_frame>
+			<frame type="Memory" head="recuerdos">
+				<argument type="Content" dependent="sólo sirven para tenerlos colgados en la pared" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Bueno, es un buen sitio.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desirability" head="buen">
+				<argument type="Evaluee" dependent="sitio" /></frame>
+			<frame type="Locale" head="sitio">
+				<argument type="Descriptor" dependent="buen" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Están a la vista y no molestan.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Interior_profile_relation" head="a la">
+				<argument type="Figure" dependent="Están" />
+				<argument type="Ground" dependent="vista" /></frame>
+			<frame type="Range" head="vista">
+				<argument type="Participant" dependent="Están" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Yo prefiero vivir del presente y mirar al futuro.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="pp1csn00">Yo</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_27" concept_ref3="c_34" concept_ref4="c_38">
+			<token pos="vmn0000">vivir</token><token pos="spcms">del</token><token pos="ncms000">presente</token><token pos="vmn0000">mirar</token><mention concept_ref="c_38"><token pos="spcms">al</token><token pos="ncms000">futuro</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Alternatives" head="futuro" />
+			<main_frame type="Residence" head="vivir">
+				<argument type="Resident" dependent="y" /></main_frame>
+			<main_frame type="Scrutiny" head="mirar">
+				<argument type="Cognizer" dependent="y" />
+				<argument type="Phenomenon" dependent="al futuro" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿Usted cree que mucha gente de su generación, incluidos los Stones, se dedica a vivir del pasado? - -.
+		</str>
+		<theme concept_ref="c_14">
+			<token pos="di0fs0">mucha</token><token pos="ncfs000">gente</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncfs000">generación</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_20" concept_ref3="c_23" concept_ref4="c_16" concept_ref5="c_29" concept_ref6="c_34" concept_ref7="c_33" concept_ref8="c_40">
+			<token pos="fc">,</token><token pos="vmm02p0">incluidos</token><token pos="da0mp0">los</token><mention concept_ref="c_29"><token pos="np00000">Stones</token></mention><token pos="fc">,</token><mention concept_ref="c_4"><token pos="p0300000">se</token></mention><token pos="vmip3s0">dedica</token><token pos="sps00">a</token><token pos="vmn0000">vivir</token><token pos="spcms">del</token><mention concept_ref="c_23"><token pos="ncms000">pasado</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Usted " />
+			<main_frame type="Dead_or_alive" head="vivir" />
+			<main_frame type="Inclusion" head="incluidos">
+				<argument type="Total" dependent="mucha gente de su generación" />
+				<argument type="Part" dependent="Stones" /></main_frame>
+			<frame type="Intentionally_create" head="generación">
+				<argument type="Creator" dependent="su" /></frame>
+			<frame type="Opinion" head="cree que">
+				<argument type="Cognizer" dependent="Usted" />
+				<argument type="Opinion" dependent="que mucha gente de su generación" /></frame>
+			<frame type="People" head="gente">
+				<argument type="Persistent_characteristic" dependent="de su generación" /></frame>
+			<frame type="Quantified_mass" head="mucha">
+				<argument type="Individuals" dependent="gente" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sí, pero también los jóvenes músicos se dedican a bucear en el pasado, porque hay una grave crisis de ideas.
+		</str>
+		<theme concept_ref="c_15">
+			<token pos="rg">también</token><token pos="da0mp0">los</token><token pos="aq0cp0">jóvenes</token><token pos="ncmp000">músicos</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_23" concept_ref3="c_16" concept_ref4="c_34">
+			<mention concept_ref="c_4"><token pos="p0300000">se</token></mention><token pos="vmip3p0">dedican</token><token pos="sps00">a</token><token pos="vmn0000">bucear</token><token pos="sps00">en</token><mention concept_ref="c_16"><token pos="da0ms0">el</token><token pos="ncms000">pasado</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="jóvenes">
+				<argument type="Entity" dependent="músicos" /></frame>
+			<frame type="Catastrophe" head="crisis">
+				<argument type="Undesirable_event" dependent="de ideas" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent=", pero también los jóvenes músicos se dedican a bucear en el pasado" />
+				<argument type="Cause" dependent="hay una grave crisis de ideas" /></frame>
+			<frame type="Locative_relation" head="hay">
+				<argument type="Ground" dependent="hay una grave crisis de ideas" /></frame>
+			<frame type="People_by_vocation" head="músicos">
+				<argument type="Descriptor" dependent="jóvenes" /></frame>
+			<frame type="Relative_time" head="pasado" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Musicalmente, nuestro pasado es más rico que su presente.
+		</str>
+		<theme concept_ref="c_16">
+			<token pos="dp1msp">nuestro</token><token pos="ncms000">pasado</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_34">
+			<token pos="vsip3s0">es</token><token pos="rg">más</token><token pos="aq0ms0">rico</token><token pos="cs">que</token><token pos="dp3cs0">su</token><token pos="ncms000">presente</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Relative_time" head="pasado" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Para su último disco requirió los servicios de otro viejo conocido, George Harrison.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="viejo">
+				<argument type="Entity" dependent="conocido , George" /></frame>
+			<frame type="Have_as_requirement" head="requirió">
+				<argument type="Requirement" dependent="servicios de otro viejo conocido , George" /></frame>
+			<frame type="Increment" head="otro">
+				<argument type="Class" dependent="viejo conocido , George" /></frame>
+			<frame type="Public_services" head="servicios">
+				<argument type="Service_action" dependent="de otro viejo conocido , George" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿Cómo era de verdad la relación entre los Beatles y los Stones durante los años 60? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cognitive_connection" head="relación">
+				<argument type="Concept_1" dependent="Cómo" />
+				<argument type="Concept_2" dependent="entre los Beatles y los Stones" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Siempre fuimos amigos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Frequency" head="Siempre">
+				<argument type="Event" dependent="amigos" /></frame>
+			<frame type="Personal_relationship" head="amigos">
+				<argument type="Partner_2" dependent="fuimos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y aún lo somos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Continued_state_of_affairs" head="aún">
+				<argument type="State_of_affairs" dependent="somos" />
+				<argument type="State_of_affairs" dependent="lo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Es la prensa la que se encargaba de azuzar una guerra inexistente.
+		</str>
+		<theme concept_ref="c_17">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_10" concept_ref3="c_34">
+			<mention concept_ref="c_4"><token pos="p0300000">se</token></mention><token pos="vmii3s0">encargaba</token><token pos="sps00">de</token><token pos="vmn0000">azuzar</token><mention concept_ref="c_10"><token pos="di0fs0">una</token><token pos="ncfs000">guerra</token></mention><token pos="aq0cs0">inexistente</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Hostile_encounter" head="guerra" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Conozco a George desde 1963.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="Conozco">
+				<argument type="Cognizer" dependent="a" />
+				<argument type="Content" dependent="George" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A él y a Ringo les he visto muchas veces desde entonces.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Perception_experience" head="visto">
+				<argument type="Perceiver_passive" dependent="y" />
+				<argument type="Phenomenon" dependent="él" /></frame>
+			<frame type="Quantified_mass" head="muchas">
+				<argument type="Individuals" dependent="veces" /></frame>
+			<frame type="Time_vector" head="desde">
+				<argument type="Event" dependent="él y a Ringo les he visto muchas veces" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pensé en la guitarra de Harrison para una canción y lo telefoneé.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Artifact" head="telefoneé">
+				<argument type="Creator" dependent="y" />
+				<argument type="Material" dependent="lo" /></frame>
+			<frame type="Noise_makers" head="guitarra">
+				<argument type="Type" dependent="Harrison" /></frame>
+			<frame type="Opinion" head="Pensé">
+				<argument type="Cognizer" dependent="y" />
+				<argument type="Opinion" dependent="guitarra de Harrison" /></frame>
+			<frame type="Text" head="canción" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Me dijo: ' ¡ Pero si tienes en tu banda a dos de los mejores guitarristas del mundo! '.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="banda">
+				<argument type="Individuals" dependent="dos de los mejores guitarristas del mundo" /></frame>
+			<frame type="Cardinal_numbers" head="dos de los">
+				<argument type="Entity" dependent="los mejores guitarristas del" /></frame>
+			<frame type="Goal" head="en">
+				<argument type="Trajector" dependent="tu" />
+				<argument type="Landmark" dependent="Me" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="dos de los mejores guitarristas del" />
+				<argument type="Ground" dependent="del mundo" /></frame>
+			<frame type="Political_locales" head="mundo" />
+			<frame type="Required_event" head="mejores">
+				<argument type="Required_situation" dependent="guitarristas" />
+				<argument type="Place" dependent="del mundo" /></frame>
+			<frame type="Statement" head="dijo">
+				<argument type="Speaker" dependent="tu" />
+				<argument type="Message" dependent="si tienes en tu banda a dos de los mejores guitarristas del mundo ! '" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Es que es muy tímido, ¿sabes?.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="sabes">
+				<argument type="Cognizer" dependent="es" /></frame>
+			<frame type="Sociability" head="tímido">
+				<argument type="Protagonist" dependent="es" />
+				<argument type="Manner" dependent="muy" />
+				<argument type="Content" dependent="¿ sabes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y yo le dije: ' George, quiero tu sonido '.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="pp1csn00">yo</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_16" concept_ref3="c_32" concept_ref4="c_33" concept_ref5="c_29">
+			<token pos="pp3csd00">le</token><token pos="vmis1s0">dije</token><token pos="fd">:</token><token pos="fz">'</token><token pos="np00000">George</token><token pos="fc">,</token><mention concept_ref="c_32"><token pos="vmip1s0">quiero</token><token pos="dp2css">tu</token><token pos="ncms000">sonido</token><token pos="fz">'</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Desiring" head="quiero">
+				<argument type="Experiencer" dependent="le" />
+				<argument type="Event" dependent="tu sonido '" /></main_frame>
+			<frame type="Sounds" head="sonido" />
+			<main_frame type="Statement" head="dije">
+				<argument type="Speaker" dependent="le" />
+				<argument type="Message" dependent="le" />
+				<argument type="Message" dependent="quiero tu sonido '" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y lo hizo, y fue muy amable, y esa canción tiene una luz que no tienen las demás.
+		</str>
+		<theme concept_ref="c_18">
+			<token pos="dd0fs0">esa</token><token pos="ncfs000">canción</token>
+		</theme>
+		<rheme concept_ref1="c_34">
+			<token pos="vmip3s0">tiene</token><token pos="di0fs0">una</token><token pos="ncfs000">luz</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Social_interaction_evaluation" head="amable">
+				<argument type="Degree" dependent="muy" /></frame>
+			<frame type="Text" head="canción">
+				<argument type="Author" dependent="lo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿No será que se lleva mejor con los Beatles que con los Stones? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Getting" head="se">
+				<argument type="Recipient" dependent="se" />
+				<argument type="Theme" dependent="lleva mejor con los Beatles que con los Stones" /></frame>
+			<frame type="Locative_relation" head="se">
+				<argument type="Figure" dependent="se" />
+				<argument type="Ground" dependent="mejor" /></frame>
+			<frame type="Required_event" head="mejor">
+				<argument type="Required_situation" dependent="con los Stones" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Oh, no.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Me llevo muy bien con todos ellos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Getting" head="llevo">
+				<argument type="Recipient" dependent="Me" />
+				<argument type="Theme" dependent="muy bien con todos ellos" /></frame>
+			<frame type="Locative_relation" head="llevo">
+				<argument type="Figure" dependent="Me" />
+				<argument type="Ground" dependent="muy bien" />
+				<argument type="Ground" dependent="ellos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Veo muy a menudo a Charlie ( Watts ) y a Ronny ( Ron Wood ).
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Frequency" head="a menudo">
+				<argument type="Event" dependent="y" />
+				<argument type="Event" dependent="( Watts ) y a Ronny ( Ron Wood )" /></frame>
+			<frame type="Perception_experience" head="Veo">
+				<argument type="Perceiver_passive" dependent="y" />
+				<argument type="Phenomenon" dependent="( Watts ) y a Ronny ( Ron Wood )" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 A veces incluso tocamos juntos en alguna fiesta privada o en el club de jazz Ronnie Scott.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="fiesta">
+				<argument type="Aggregate_property" dependent="privada" /></frame>
+			<frame type="Collaboration" head="juntos">
+				<argument type="Partner_1" dependent="tocamos" />
+				<argument type="Partner_2" dependent="en alguna fiesta privada" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="el club de jazz Ronnie Scott" /></frame>
+			<frame type="Make_noise" head="tocamos">
+				<argument type="Sound_source" dependent="tocamos" /></frame>
+			<frame type="Weapon" head="club">
+				<argument type="Name" dependent="jazz" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero eso no me animará nunca a unirme de nuevo a los Stones.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="pd0ns000">eso</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_34">
+			<token pos="rn">no</token><token pos="pp1cs000">me</token><token pos="vmif3s0">animará</token><token pos="rg">nunca</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_a_member" head="unirme">
+				<argument type="New_member" dependent="me" />
+				<argument type="Group" dependent="Stones" />
+				<argument type="Depictive" dependent="de nuevo" /></frame>
+			<main_frame type="Subjective_influence" head="animará">
+				<argument type="Behavior" dependent="eso" />
+				<argument type="Cognizer" dependent="me" />
+				<argument type="Action" dependent="a unirme de nuevo a los Stones" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por mucho que me lo pidan.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Questioning" head="lo">
+				<argument type="Message" dependent="mucho que" />
+				<argument type="Speaker" dependent="lo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Yo estoy muy bien tocando cada noche lo que me apetece, improvisando siempre, divirtiéndome, arropado por cinco cantantes maravillosos y sin tener que soportar ningún ego subido de tono.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="pp1csn00">Yo</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_22" concept_ref3="c_18" concept_ref4="c_27" concept_ref5="c_29" concept_ref6="c_34" concept_ref7="c_37" concept_ref8="c_33">
+			<token pos="vmip1s0">estoy</token><token pos="vmg0000">tocando</token><mention concept_ref="c_22"><token pos="di0cs0">cada</token><token pos="ncfs000">noche</token></mention><mention concept_ref="c_33"><token pos="da0ns0">lo</token></mention><token pos="pr0cn000">que</token><token pos="pp1cs000">me</token><token pos="vmip3s0">apetece</token><token pos="fc">,</token><token pos="vmg0000">improvisando</token><token pos="rg">siempre</token><token pos="fc">,</token><token pos="vmg0000">divirtiéndome</token><token pos="fc">,</token><token pos="aq0msp">arropado</token><token pos="sps00">por</token><token pos="dn0cp0">cinco</token><mention concept_ref="c_18"><token pos="nccp000">cantantes</token></mention><token pos="aq0mp0">maravillosos</token><mention concept_ref="c_37"><token pos="cc">y</token></mention><token pos="sps00">sin</token><token pos="vmn0000">tener</token><mention concept_ref="c_29"><token pos="cs">que</token><token pos="vmn0000">soportar</token><token pos="di0ms0">ningún</token><token pos="ncms000">ego</token><token pos="aq0msp">subido</token><token pos="sps00">de</token><token pos="ncms000">tono</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="noche">
+				<argument type="Relative_time" dependent="cada" /></frame>
+			<frame type="Cardinal_numbers" head="cinco">
+				<argument type="Unit" dependent="cantantes maravillosos" /></frame>
+			<frame type="Desirability" head="maravillosos">
+				<argument type="Evaluee" dependent="cantantes" /></frame>
+			<main_frame type="Feeling" head="apetece">
+				<argument type="Experiencer" dependent="y" />
+				<argument type="Emotional_state" dependent="lo" /></main_frame>
+			<frame type="Frequency" head="cada">
+				<argument type="Interval" dependent="noche" /></frame>
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="que" />
+				<argument type="Event" dependent="improvisando" />
+				<argument type="Event" dependent="bien tocando" /></frame>
+			<frame type="Interior_profile_relation" head="por">
+				<argument type="Ground" dependent="por cinco cantantes maravillosos" /></frame>
+			<main_frame type="Make_noise" head="tocando">
+				<argument type="Sound_source" dependent="y" />
+				<argument type="Degree" dependent="muy bien" />
+				<argument type="Sound" dependent="cada noche lo que me apetece , improvisando siempre , divirtiéndome , arropado por cinco cantantes maravillosos y" /></main_frame>
+			<main_frame type="Placing" head="apetece">
+				<argument type="Goal" dependent="bien tocando" />
+				<argument type="Goal" dependent="por cinco cantantes maravillosos" /></main_frame>
+			<main_frame type="Possession" head="tener">
+				<argument type="Possession" dependent="que soportar ningún ego subido de tono" /></main_frame>
+			<frame type="Similarity" head="lo">
+				<argument type="Entities" dependent="que" />
+				<argument type="Entity_1" dependent="y" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El rock and roll empezó a morir cuando los artistas empezaron a sufrir delirios de grandeza.
+		</str>
+		<theme concept_ref="c_19">
+			<token pos="da0ms0">El</token><token pos="ncfp000">rock</token><token pos="aq0fp0">and</token><token pos="ncfp000">roll</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">empezó</token><token pos="sps00">a</token><token pos="vmn0000">morir</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_start" head="empezó">
+				<argument type="Agent" dependent="artistas" />
+				<argument type="Activity" dependent="a sufrir delirios de grandeza" /></main_frame>
+			<frame type="Catastrophe" head="sufrir">
+				<argument type="Patient" dependent="artistas" />
+				<argument type="Undesirable_event" dependent="delirios de grandeza" /></frame>
+			<frame type="Create_physical_artwork" head="artistas" />
+			<frame type="Death" head="los">
+				<argument type="Protagonist" dependent="rock and roll" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y a los Rhythm Kings eso nunca les pasará.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="pd0ns000">eso</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_33">
+			<token pos="rg">nunca</token><mention concept_ref="c_4"><token pos="pp3cpd00">les</token></mention><token pos="vmif3s0">pasará</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Intentionally_act" head="los">
+				<argument type="Agent" dependent="los Rhythm Kings" />
+				<argument type="Act" dependent="eso" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Hablando de grandezas, ¿cree usted que los Rolling Stones volverán a salir de gira otra vez? - -.
+		</str>
+		<theme concept_ref="c_20">
+			<token pos="da0mp0">los</token><token pos="np0000l">Rolling</token><token pos="np0000l">Stones</token>
+		</theme>
+		<rheme concept_ref1="c_11" concept_ref2="c_0" concept_ref3="c_34" concept_ref4="c_40">
+			<token pos="vmif3p0">volverán</token><token pos="sps00">a</token><token pos="vmn0000">salir</token><mention concept_ref="c_34"><token pos="sps00">de</token></mention><token pos="ncfs000">gira</token><mention concept_ref="c_0"><token pos="di0fs0">otra</token><token pos="ncfs000">vez</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="usted " />
+			<frame type="Opinion" head="¿ cree">
+				<argument type="Cognizer" dependent="usted" />
+				<argument type="Opinion" dependent="Stones volverán a salir de gira" /></frame>
+			<frame type="Travel" head="gira">
+				<argument type="Traveler" dependent="Stones" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Se dice que el año que viene.
+		</str>
+		<theme concept_ref="c_17">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="año">
+				<argument type="Relative_time" dependent="viene" /></frame>
+			<frame type="Relative_time" head="viene">
+				<argument type="Focal_occasion" dependent="año" /></frame>
+			<frame type="Statement" head="dice">
+				<argument type="Speaker" dependent="que el" />
+				<argument type="Message" dependent="año que viene" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y si no, será el próximo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sí, seguro, saldrán de gira, no lo pueden evitar y lo respeto.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Assistance" head="lo">
+				<argument type="Helper" dependent="lo" />
+				<argument type="Benefited_party" dependent="lo" /></frame>
+			<frame type="Certainty" head="Sí">
+				<argument type="Content" dependent="saldrán de gira" /></frame>
+			<frame type="Judgment" head="respeto">
+				<argument type="Cognizer" dependent="y" />
+				<argument type="Evaluee" dependent="lo" /></frame>
+			<frame type="Motion" head="lo">
+				<argument type="Theme" dependent="lo" />
+				<argument type="Time" dependent="de gira" /></frame>
+			<frame type="Spatial_contact" head="de">
+				<argument type="Figure" dependent="lo" />
+				<argument type="Ground" dependent="gira" /></frame>
+			<frame type="Travel" head="gira">
+				<argument type="Traveler" dependent="lo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ultimamente todos ellos me dejan mensajes en el contestador: ' ¡ Hey, Bill, si te hace falta trabajo, el año que viene tenemos gira! '
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="di0mp0">todos</token><token pos="pp3mp000">ellos</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_11" concept_ref3="c_24" concept_ref4="c_34" concept_ref5="c_37" concept_ref6="c_39" concept_ref7="c_40" concept_ref8="c_41">
+			<token pos="pp1cs000">me</token><token pos="vmip3p0">dejan</token><token pos="ncmp000">mensajes</token><token pos="fd">:</token><token pos="fz">'</token><token pos="faa">¡</token><token pos="ncms000">Hey</token><token pos="fc">,</token><token pos="ncms000">Bill</token><token pos="fc">,</token><token pos="cs">si</token><token pos="pp2cs000">te</token><token pos="vmip3s0">hace</token><token pos="vmn0000">falta</token><token pos="ncms000">trabajo</token><token pos="fc">,</token><mention concept_ref="c_24"><token pos="da0ms0">el</token><token pos="ncms000">año</token></mention><token pos="vmip1p0">tenemos</token><token pos="ncfs000">gira</token><token pos="fat">!</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="año">
+				<argument type="Relative_time" dependent="Ultimamente" /></frame>
+			<main_frame type="Departing" head="dejan">
+				<argument type="Time" dependent="Ultimamente" />
+				<argument type="Theme" dependent="todos ellos" />
+				<argument type="Path" dependent="me" /></main_frame>
+			<frame type="Gizmo" head="el">
+				<argument type="Descriptor" dependent="contestador" /></frame>
+			<main_frame type="Needing" head="hace falta">
+				<argument type="Cognizer" dependent="te" />
+				<argument type="Requirement" dependent="trabajo" /></main_frame>
+			<frame type="Relative_time" head="Ultimamente">
+				<argument type="Focal_occasion" dependent="año" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="todos ellos me dejan mensajes" />
+				<argument type="Ground" dependent="el contestador : ' ¡ Hey , Bill , si te hace falta trabajo , el" /></frame>
+			<frame type="Travel" head="gira">
+				<argument type="Time" dependent="año que viene" />
+				<argument type="Traveler" dependent="tenemos" /></frame>
+			<frame type="Work" head="trabajo">
+				<argument type="Agent" dependent="te" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Esos tíos son muy pesados.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="dd0mp0">Esos</token><token pos="ncmp000">tíos</token>
+		</theme>
+		<rheme concept_ref1="c_37">
+			<token pos="vsip3p0">son</token><token pos="rg">muy</token><token pos="aq0mp0">pesados</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero yo no volvería por nada del mundo.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="pp1csn00">yo</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vmic3s0">volvería</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="por">
+				<argument type="Theme" dependent="del" />
+				<argument type="Goal" dependent="volvería por nada del mundo" /></frame>
+			<frame type="Interior_profile_relation" head="por">
+				<argument type="Figure" dependent="nada" />
+				<argument type="Ground" dependent="del mundo" /></frame>
+			<frame type="Political_locales" head="mundo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Me basta con 31 años de locura.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Relative_time" dependent="31" />
+				<argument type="Salient_event" dependent="de locura" /></frame>
+			<frame type="Sufficiency" head="basta">
+				<argument type="Item" dependent="31 años de locura" />
+				<argument type="Enabled_situation" dependent="Me" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Durante mi vida en los Stones era un famoso preso de la fama, siempre encerrado en los hoteles.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_in_captivity" head="preso de">
+				<argument type="Theme" dependent="en" />
+				<argument type="Holding_location" dependent="fama" /></frame>
+			<frame type="Buildings" head="hoteles" />
+			<frame type="Direction" head="en">
+				<argument type="Path" dependent="en los hoteles" /></frame>
+			<frame type="Fame" head="famoso" />
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="un famoso preso de la fama" />
+				<argument type="Event" dependent="encerrado en los hoteles" /></frame>
+			<frame type="Hair_configuration" head="encerrado">
+				<argument type="Location" dependent="un famoso preso de la fama" />
+				<argument type="Location" dependent="siempre" />
+				<argument type="Location" dependent="en los hoteles" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="un famoso preso de la fama" />
+				<argument type="Figure" dependent="siempre encerrado" />
+				<argument type="Ground" dependent="hoteles" /></frame>
+			<frame type="Temporal_collocation" head="Durante">
+				<argument type="Landmark_period" dependent="mi vida" />
+				<argument type="Trajector_event" dependent="Durante mi vida en los Stones era un famoso preso de la fama , siempre encerrado en los hoteles" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - Una locura, se supone, de la que es difícil desprenderse.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Difficulty" head="difícil">
+				<argument type="Activity" dependent="locura" />
+				<argument type="Activity" dependent="es" />
+				<argument type="Activity" dependent="desprenderse" /></frame>
+			<frame type="Getting" head="se">
+				<argument type="Theme" dependent="desprenderse" /></frame>
+			<frame type="Mental_property" head="locura" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 ¿Sigue pagando el precio de ser tan famoso? - -.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Commerce_pay" head="pagando">
+				<argument type="Buyer" dependent="el" />
+				<argument type="Goods" dependent="el precio de ser tan famoso ? - -" /></frame>
+			<frame type="Continued_state_of_affairs" head="ser">
+				<argument type="State_of_affairs" dependent="el" />
+				<argument type="State_of_affairs" dependent="pagando el precio de ser tan famoso ? - -" /></frame>
+			<frame type="Fame" head="famoso" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por supuesto.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ahora, cuando vaya a España, no podré ir por ahí como un turista normal.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="podré">
+				<argument type="Entity" dependent="a" />
+				<argument type="Event" dependent="ir por ahí como un turista normal" /></frame>
+			<frame type="Locative_relation" head="ir">
+				<argument type="Ground" dependent="como un turista normal" /></frame>
+			<frame type="Motion" head="ir por">
+				<argument type="Goal" dependent="como un turista normal" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_2" dependent="un turista normal" /></frame>
+			<frame type="Temporal_collocation" head="Ahora" />
+			<frame type="Temporal_collocation" head="cuando">
+				<argument type="Landmark_event" dependent="podré ir" />
+				<argument type="Trajector_event" dependent="no podré ir por ahí como un turista normal" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Si fuera a los sitios de turistas, esos sitios siempre llenos de compatriotas, la gente me asediaría, me pararía, sería imposible.
+		</str>
+		<theme concept_ref="c_21">
+			<token pos="da0fs0">la</token><token pos="ncfs000">gente</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_34">
+			<mention concept_ref="c_34"><token pos="pp1cs000">me</token></mention><token pos="vmic3s0">asediaría</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Besieging" head="a los">
+				<argument type="Assailant" dependent="de" />
+				<argument type="Assailant" dependent="llenos de compatriotas" />
+				<argument type="Assailant" dependent="gente" />
+				<argument type="Victim" dependent="me" />
+				<argument type="Victim" dependent="me pararía" /></frame>
+			<frame type="Completeness" head="llenos de">
+				<argument type="Whole" dependent="de compatriotas" /></frame>
+			<frame type="Difficulty" head="imposible" />
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="esos sitios" />
+				<argument type="Event" dependent="llenos de compatriotas , la gente me asediaría , me pararía" /></frame>
+			<frame type="Goal" head="a los">
+				<argument type="Trajector" dependent="de" />
+				<argument type="Landmark" dependent="sitios de turistas" /></frame>
+			<frame type="Locale" head="los sitios de" />
+			<frame type="Locale_by_use" head="sitios">
+				<argument type="Descriptor" dependent="turistas" /></frame>
+			<frame type="Motion" head="fuera a">
+				<argument type="Theme" dependent="de" />
+				<argument type="Goal" dependent="a los sitios de turistas" /></frame>
+			<frame type="People" head="gente" />
+			<frame type="Preventing_or_letting" head="los">
+				<argument type="Potential_hindrance" dependent="de" />
+				<argument type="Event" dependent="sería imposible" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 He estado en España de visita privada y me interesa mucho su cultura, las ruinas romanas...
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="visita" />
+			<frame type="Destroying" head="ruinas">
+				<argument type="Destroyer" dependent="romanas" /></frame>
+			<frame type="Experiencer_focus" head="interesa">
+				<argument type="Experiencer" dependent="y" />
+				<argument type="Content" dependent="su cultura" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="y" />
+				<argument type="Ground" dependent="su cultura" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Mucha gente se sorprende de que al ex bajista de los Stones le interese la arqueología, pero es así.
+		</str>
+		<theme concept_ref="c_22">
+			<token pos="di0fs0">Mucha</token><token pos="ncfs000">gente</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_20" concept_ref3="c_0" concept_ref4="c_29" concept_ref5="c_33" concept_ref6="c_34" concept_ref7="c_40" concept_ref8="c_41">
+			<mention concept_ref="c_4"><token pos="p0300000">se</token></mention><token pos="vmip3s0">sorprende</token><token pos="sps00">de</token><token pos="cs">que</token><token pos="spcms">al</token><token pos="aq0cn0">ex</token><mention concept_ref="c_41"><token pos="nccs000">bajista</token></mention><token pos="sps00">de</token><token pos="da0mp0">los</token><mention concept_ref="c_29"><token pos="np00000">Stones</token></mention><mention concept_ref="c_33"><token pos="pp3csd00">le</token></mention><token pos="vmsp3s0">interese</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="ncfs000">arqueología</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Emotion_directed" head="interese">
+				<argument type="Experiencer" dependent="ex bajista de los Stones" />
+				<argument type="Stimulus" dependent="arqueología" /></main_frame>
+			<main_frame type="Just_found_out" head="sorprende">
+				<argument type="Experiencer" dependent="Mucha gente" />
+				<argument type="Stimulus" dependent="al ex bajista de los Stones le interese la arqueología" /></main_frame>
+			<frame type="People" head="gente" />
+			<frame type="Quantified_mass" head="Mucha">
+				<argument type="Individuals" dependent="gente" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Para mí España no es sólo un país de castañuelas y toros.
+		</str>
+		<theme concept_ref="c_23">
+			<token pos="np00000">España</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_8" concept_ref3="c_34" concept_ref4="c_37" concept_ref5="c_33">
+			<token pos="rn">no</token><token pos="vsip3s0">es</token><token pos="rg">sólo</token><token pos="di0ms0">un</token><token pos="ncms000">país</token><mention concept_ref="c_34"><token pos="sps00">de</token></mention><mention concept_ref="c_8"><token pos="ncfp000">castañuelas</token></mention><mention concept_ref="c_37"><token pos="cc">y</token></mention><token pos="ncmp000">toros</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Political_locales" head="país">
+				<argument type="Name" dependent="castañuelas y" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero yo estoy condenado a no poder hacer muchas de las cosas que hacen las personas normales.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="pp1csn00">yo</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_29" concept_ref3="c_34" concept_ref4="c_37" concept_ref5="c_40" concept_ref6="c_42">
+			<token pos="vmip1s0">estoy</token><token pos="aq0msp">condenado</token><token pos="sps00">a</token><token pos="rn">no</token><token pos="vmn0000">poder</token><token pos="vmn0000">hacer</token><mention concept_ref="c_42"><token pos="pi0fp000">muchas</token></mention><mention concept_ref="c_34"><token pos="sps00">de</token></mention><token pos="da0fp0">las</token><mention concept_ref="c_29"><token pos="ncfp000">cosas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Capability" head="poder hacer">
+				<argument type="Entity" dependent="de" />
+				<argument type="Event" dependent="hacer muchas de las cosas que hacen las personas normales" /></main_frame>
+			<frame type="Intentionally_act" head="de">
+				<argument type="Agent" dependent="de" />
+				<argument type="Act" dependent="muchas de las cosas que hacen las personas normales" /></frame>
+			<frame type="People" head="personas" />
+			<frame type="Quantified_mass" head="muchas">
+				<argument type="Individuals" dependent="las cosas que hacen las personas normales" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Vendré en coche desde Montreaux y quizá pare por ahí a comer o a ver alguna cosa.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="por">
+				<argument type="Theme" dependent="y" />
+				<argument type="Source" dependent="coche desde Montreaux" /></frame>
+			<frame type="Ingestion" head="comer" />
+			<frame type="Preventing_or_letting" head="pare">
+				<argument type="Potential_hindrance" dependent="y" />
+				<argument type="Event" dependent="por ahí a comer o a" /></frame>
+			<frame type="Vehicle" head="coche" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Cuando los Stones eran conocidos sólo en Gran Bretaña vine mucho a España, porque me encanta, a pesar del calor.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="los">
+				<argument type="Time" dependent="Cuando los Stones eran conocidos sólo en" />
+				<argument type="Theme" dependent="en" />
+				<argument type="Goal" dependent="mucho a" /></frame>
+			<frame type="Awareness" head="conocidos">
+				<argument type="Content" dependent="Stones" />
+				<argument type="Content" dependent="sólo en Gran Bretaña vine mucho a España , porque me" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="Cuando los Stones eran conocidos sólo en Gran Bretaña" />
+				<argument type="Cause" dependent="me encanta , a pesar del calor" /></frame>
+			<frame type="Destiny" head="mucho" />
+			<frame type="Experiencer_focus" head="encanta">
+				<argument type="Experiencer" dependent="en" />
+				<argument type="Content" dependent="del" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="Stones eran conocidos sólo" />
+				<argument type="Ground" dependent="Bretaña" />
+				<argument type="Figure" dependent="porque me encanta , a pesar del calor" /></frame>
+			<frame type="Sole_instance" head="sólo">
+				<argument type="Type" dependent="Stones" />
+				<argument type="Item" dependent="en Gran Bretaña vine mucho a España , porque me" /></frame>
+			<frame type="Temporal_collocation" head="Cuando">
+				<argument type="Landmark_event" dependent="los Stones eran conocidos sólo en Gran Bretaña vine mucho a España , porque me encanta , a pesar" />
+				<argument type="Trajector_event" dependent="del calor" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Era muy amigo de Los Bravos y recuerdo haber ido al estreno de una de sus películas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Distributed_position" head="películas">
+				<argument type="Location" dependent="sus" /></frame>
+			<frame type="Personal_relationship" head="amigo de">
+				<argument type="Partner_2" dependent="sus" />
+				<argument type="Manner" dependent="ido" />
+				<argument type="Partner_2" dependent="Los Bravos" /></frame>
+			<frame type="Remembering_experience" head="recuerdo">
+				<argument type="Cognizer" dependent="y" />
+				<argument type="Experience" dependent="estreno de una de sus películas" /></frame>
+			<frame type="Social_connection" head="ido">
+				<argument type="Individual_1" dependent="sus" />
+				<argument type="Connection" dependent="amigo de" />
+				<argument type="Individual_2" dependent="Los Bravos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Eran buena gente y grandes músicos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desirability" head="buena">
+				<argument type="Evaluee" dependent="músicos" /></frame>
+			<frame type="People" head="gente">
+				<argument type="Descriptor" dependent="buena" /></frame>
+			<frame type="People_by_vocation" head="músicos">
+				<argument type="Descriptor" dependent="buena" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 También fui muchas veces a Ibiza, a retozar como todo buen hippy de la época.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desirability" head="buen">
+				<argument type="Evaluee" dependent="hippy de la época" /></frame>
+			<frame type="Motion" head="fui">
+				<argument type="Theme" dependent="de" />
+				<argument type="Path" dependent="muchas veces" />
+				<argument type="Goal" dependent="a Ibiza" /></frame>
+			<frame type="Quantified_mass" head="muchas">
+				<argument type="Individuals" dependent="veces" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_1" dependent="de" />
+				<argument type="Entity_2" dependent="todo buen hippy de la época" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero el buen rollo ya se acabó.
+		</str>
+		<theme concept_ref="c_24">
+			<token pos="da0ms0">el</token><token pos="aq0ms0">buen</token><token pos="ncms000">rollo</token>
+		</theme>
+		<rheme concept_ref1="c_4">
+			<mention concept_ref="c_4"><token pos="p0300000">se</token></mention><token pos="vmis3s0">acabó</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Desirability" head="buen">
+				<argument type="Evaluee" dependent="se" /></frame>
+			<frame type="Proportional_quantity" head="se">
+				<argument type="Individuals" dependent="el buen" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 - - ¿No se siente frustrado de tener que vivir como un recluso tras haber participado activamente en una revolución que no funcionó? - -
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_employed" head="funcionó" />
+			<frame type="Change_of_leadership" head="revolución">
+				<argument type="Old_leader" dependent="no funcionó" /></frame>
+			<frame type="Feeling" head="siente">
+				<argument type="Experiencer" dependent="se" /></frame>
+			<frame type="Participation" head="participado">
+				<argument type="Event" dependent="en una revolución que no funcionó" /></frame>
+			<frame type="Possession" head="tener">
+				<argument type="Owner" dependent="se" />
+				<argument type="Possession" dependent="vivir como un recluso tras haber participado activamente en una revolución que no funcionó ? -" /></frame>
+			<frame type="Relative_time" head="se">
+				<argument type="Focal_occasion" dependent="siente frustrado de tener que vivir como un recluso" />
+				<argument type="Landmark_occasion" dependent="participado activamente en una revolución que no funcionó" /></frame>
+			<frame type="Residence" head="vivir">
+				<argument type="Resident" dependent="se" />
+				<argument type="Location" dependent="como un recluso" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_1" dependent="se" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Todas las generaciones tienen el deseo de cambiar las cosas, pero luego nunca pasa nada.
+		</str>
+		<theme concept_ref="c_25">
+			<token pos="di0fp0">Todas</token><token pos="da0fp0">las</token><token pos="ncfp000">generaciones</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_29" concept_ref3="c_34" concept_ref4="c_40">
+			<token pos="vmip3p0">tienen</token><token pos="da0ms0">el</token><token pos="ncms000">deseo</token><mention concept_ref="c_34"><token pos="sps00">de</token></mention><token pos="vmn0000">cambiar</token><mention concept_ref="c_40"><token pos="da0fp0">las</token><token pos="ncfp000">cosas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Cause_change" head="cambiar">
+				<argument type="Entity" dependent="cosas" /></main_frame>
+			<frame type="Desiring" head="el deseo">
+				<argument type="Experiencer" dependent="Todas las generaciones" />
+				<argument type="Event" dependent="de cambiar las cosas" /></frame>
+			<frame type="Event" head="pasa">
+				<argument type="Event" dependent="nada" /></frame>
+			<frame type="Intentionally_create" head="generaciones" />
+			<frame type="Quantified_mass" head="Todas">
+				<argument type="Individuals" dependent="generaciones" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Toda la fogosidad acaba diluyéndose.
+		</str>
+		<theme concept_ref="c_26">
+			<token pos="di0fs0">Toda</token><token pos="da0fs0">la</token><token pos="ncfs000">fogosidad</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_29" concept_ref3="c_37">
+			<token pos="vmip3s0">acaba</token><mention concept_ref="c_29"><token pos="vmg0000">diluyéndose</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Direction" head="acaba">
+				<argument type="Distance" dependent="Toda la fogosidad acaba" />
+				<argument type="Path" dependent="diluyéndose" /></main_frame>
+			<frame type="Location_of_light" head="fogosidad" />
+			<main_frame type="Process_end" head="acaba">
+				<argument type="Process" dependent="la fogosidad" />
+				<argument type="Process" dependent="diluyéndose" /></main_frame>
+			<frame type="Quantified_mass" head="Toda">
+				<argument type="Individuals" dependent="la fogosidad" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Con la edad uno llega a la conclusión de que es imposible cambiar las cosas importantes.
+		</str>
+		<theme concept_ref="c_27">
+			<token pos="pi0ms000">uno</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_20" concept_ref3="c_29" concept_ref4="c_33" concept_ref5="c_34" concept_ref6="c_40">
+			<token pos="vmip3s0">llega</token><token pos="sps00">a</token><mention concept_ref="c_20"><token pos="da0fs0">la</token><token pos="ncfs000">conclusión</token></mention><token pos="sps00">de</token><token pos="cs">que</token><token pos="vsip3s0">es</token><token pos="aq0cs0">imposible</token><token pos="vmn0000">cambiar</token><mention concept_ref="c_40"><token pos="da0fp0">las</token><token pos="ncfp000">cosas</token></mention><token pos="aq0cp0">importantes</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="edad" />
+			<frame type="Cardinal_numbers" head="uno" />
+			<main_frame type="Cause_change" head="cambiar">
+				<argument type="Entity" dependent="cosas importantes" /></main_frame>
+			<frame type="Coming_to_believe" head="conclusión">
+				<argument type="Content" dependent="conclusión de que es imposible cambiar las cosas importantes" /></frame>
+			<frame type="Difficulty" head="imposible">
+				<argument type="Activity" dependent="cambiar las cosas importantes" /></frame>
+			<main_frame type="Importance" head="importantes">
+				<argument type="Factor" dependent="cosas" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y es frustrante pasarte la vida preocupado, así que lo mejor es seguir tu vida y hacerlo lo mejor posible.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Emotion_active" head="preocupado">
+				<argument type="Experiencer" dependent="tu vida" /></frame>
+			<frame type="Relative_time" head="seguir">
+				<argument type="Landmark_occasion" dependent="tu vida" /></frame>
+			<frame type="Required_event" head="mejor">
+				<argument type="Required_situation" dependent="tu" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sólo puedes cambiar pequeñas cosas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="puedes">
+				<argument type="Entity" dependent="puedes" />
+				<argument type="Event" dependent="Sólo puedes cambiar pequeñas cosas" /></frame>
+			<frame type="Cause_change" head="cambiar">
+				<argument type="Agent" dependent="puedes" />
+				<argument type="Entity" dependent="pequeñas cosas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por ejemplo, ser con tus hijos lo más bueno que puedas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="puedas">
+				<argument type="Entity" dependent="tus" /></frame>
+			<frame type="Desirability" head="bueno">
+				<argument type="Evaluee" dependent="tus hijos" />
+				<argument type="Depictive" dependent="puedas" /></frame>
+			<frame type="Instance" head="ejemplo" />
+			<frame type="Kinship" head="hijos">
+				<argument type="Ego" dependent="tus" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ser un buen padre y disfrutar de la vida, ésas son las mejores cosas que se pueden hacer para cambiar el mundo.
+		</str>
+		<theme concept_ref="c_28">
+			<token pos="vsn0000">Ser</token><token pos="di0ms0">un</token><token pos="aq0ms0">buen</token><token pos="ncms000">padre</token><token pos="cc">y</token><token pos="vmn0000">disfrutar</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">vida</token><token pos="fc">,</token><token pos="pd0fp000">ésas</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_25" concept_ref3="c_29" concept_ref4="c_34">
+			<token pos="vsip3p0">son</token><mention concept_ref="c_25"><token pos="da0fp0">las</token><token pos="aq0cp0">mejores</token><token pos="ncfp000">cosas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="pueden">
+				<argument type="Entity" dependent="son" />
+				<argument type="Event" dependent="hacer para cambiar el mundo" /></frame>
+			<frame type="Cause_change" head="cambiar">
+				<argument type="Entity" dependent="el mundo" /></frame>
+			<frame type="Desirability" head="buen" />
+			<main_frame type="Experiencer_focus" head="disfrutar">
+				<argument type="Content" dependent="vida" /></main_frame>
+			<frame type="Intentionally_act" head="de">
+				<argument type="Agent" dependent="son" />
+				<argument type="Act" dependent="para cambiar el mundo" /></frame>
+			<frame type="Kinship" head="padre">
+				<argument type="Descriptor" dependent="buen" /></frame>
+			<frame type="Political_locales" head="mundo" />
+			<frame type="Required_event" head="mejores">
+				<argument type="Required_situation" dependent="cosas que se pueden hacer para cambiar el mundo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Poco a poco, sin mucho ruido, sin revoluciones, porque no sirven de nada.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="revoluciones" />
+				<argument type="Cause" dependent="no sirven de" /></frame>
+			<frame type="Change_of_leadership" head="revoluciones" />
+			<frame type="Using" head="sirven" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Yo ahora tengo a mis hijas y no cambiaría eso por nada.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="pp1csn00">Yo</token>
+		</theme>
+		<rheme concept_ref1="c_34" concept_ref2="c_42">
+			<token pos="vmip1s0">tengo</token><token pos="sps00">a</token><mention concept_ref="c_42"><token pos="dp1cps">mis</token><token pos="ncfp000">hijas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Exchange" head="por">
+				<argument type="Exchanger_1" dependent="y" />
+				<argument type="Exchanger_1" dependent="mis hijas" />
+				<argument type="Time" dependent="ahora" />
+				<argument type="Exchanger_1" dependent="y" />
+				<argument type="Theme_1" dependent="eso por nada" /></frame>
+			<frame type="Kinship" head="hijas">
+				<argument type="Ego" dependent="mis" /></frame>
+			<frame type="Temporal_collocation" head="ahora">
+				<argument type="Trajector_event" dependent="mis hijas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Con ellas me siento más vivo que nunca.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Dead_or_alive" head="vivo">
+				<argument type="Protagonist" dependent="que" />
+				<argument type="Degree" dependent="más" /></frame>
+			<frame type="Feeling" head="me siento">
+				<argument type="Experiencer" dependent="que" />
+				<argument type="Emotional_state" dependent="más vivo" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

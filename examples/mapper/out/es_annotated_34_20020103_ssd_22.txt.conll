@@ -1,0 +1,5 @@
+{   ('Change_position_on_a_scale', 'se'): [('Correlated_variable', 'En mi cuento'), ('Item', 'el príncipe'), ('Attribute', 'enamora de Karim , el sirviente musulmán')],
+    ('Experiencer_focus', 'enamora'): [('Experiencer', 'el príncipe'), ('Content', ', el sirviente musulmán')],
+    ('Leadership', 'príncipe'): [],
+    ('People_by_religion', 'musulmán'): [],
+    ('People_by_vocation', 'sirviente'): [('Age', 'musulmán')]}

@@ -1,0 +1,8 @@
+{   ('Causation', 'porque'): [('Cause', 'piensa que con esto se rompió con el equilibrio político y , sobre todo , por la inquietud que hay en el ámbito internacional &')],
+    ('Directional_locative_relation', 'sobre'): [('Figure', 'esto'), ('Ground', 'todo')],
+    ('Emotion_directed', 'preocupado'): [('Expressor', 'internacional')],
+    ('Goal', 'por'): [('Landmark', 'diputado')],
+    ('Opinion', 'piensa'): [('Cognizer', 'el'), ('Opinion', 'que con esto se rompió con el equilibrio político')],
+    ('Political_locales', 'internacional'): [],
+    ('Topic', 'sobre'): [],
+    ('Wealthiness', 'rompió'): []}

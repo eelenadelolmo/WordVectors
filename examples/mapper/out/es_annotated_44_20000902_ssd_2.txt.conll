@@ -1,0 +1,7 @@
+{   ('Being_in_control', 'control'): [('Controlling_entity', 'Muchas personas y muchas naciones'), ('Dependent_entity', 'los ríos y los acuíferos')],
+    ('Hostile_encounter', 'guerras por'): [('Side_1', 'Muchas personas y muchas naciones'), ('Side_2', 'control de los ríos y los acuíferos')],
+    ('Natural_features', 'ríos'): [],
+    ('People', 'personas'): [],
+    ('Political_locales', 'naciones'): [],
+    ('Possession', 'han'): [('Owner', 'Muchas personas y muchas naciones'), ('Possession', 'guerras por el control de los ríos y')],
+    ('Quantified_mass', 'muchas'): [('Individuals', 'naciones')]}

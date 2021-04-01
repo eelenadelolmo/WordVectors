@@ -1,0 +1,10 @@
+{   ('Aggregate', 'partido'): [],
+    ('Businesses', 'firme'): [('Product', 'pulso')],
+    ('Calendric_unit', 'noche'): [('Salient_event', 'tiempos democráticos')],
+    ('Evidence', 'firme'): [('Proposition', 'un acuerdo de gobernabilidad'), ('Support', 'ello'), ('Proposition', 'muy fructífero para las arcas de Euskadi')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'partido que con pulso cada vez menos firme dirige Xabier Arzalluz'), ('Ground', 'dialogado con Herri Batasuna ( HB )')],
+    ('Make_agreement_on_action', 'un acuerdo'): [('Obligation', 'de gobernabilidad')],
+    ('Process_end', 'acabó'): [('Time', 'en 1996'), ('Process', 'un acuerdo de gobernabilidad que'), ('Process', 'resultando muy fructífero para las arcas de Euskadi')],
+    ('Sign_agreement', 'firme'): [('Signatory', 'Aznar'), ('Agreement', 'con él'), ('Time', 'en 1996')],
+    ('Time_vector', 'desde'): [   ('Event', 'partido que con pulso cada vez menos firme dirige Xabier Arzalluz ha dialogado con Herri Batasuna ( HB )'),
+                                  ('Landmark_event', 'noche de los tiempos democráticos')]}

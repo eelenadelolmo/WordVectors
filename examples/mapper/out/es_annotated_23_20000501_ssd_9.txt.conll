@@ -1,0 +1,10 @@
+{   ('Activity_start', 'empiezan'): [   ('Time', 'Conforme se acerca un posible acuerdo que implique la evacuación de los asentamientos judíos'),
+                                        ('Agent', 'los líderes más extremistas de los'),
+                                        ('Activity', 'a mostrar sus afiladas uñas')],
+    ('Arriving', 'acerca'): [('Theme', 'asentamientos judíos')],
+    ('Colonization', 'se'): [],
+    ('Evidence', 'mostrar'): [('Support', 'los líderes más extremistas de los'), ('Proposition', 'sus afiladas uñas')],
+    ('Leadership', 'líderes'): [('Type', 'se')],
+    ('Likelihood', 'posible'): [('Hypothetical_event', 'la evacuación de los asentamientos judíos')],
+    ('Locale_by_use', 'asentamientos'): [('Relative_location', 'judíos')],
+    ('Removing', 'evacuación'): [('Theme', 'asentamientos judíos')]}

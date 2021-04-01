@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="27_20020801_b_ssd">
+
+
+	<concepts>
+		<concept id="c_0">UGT</concept>
+		<concept id="c_1">el paro</concept>
+		<concept id="c_2">El conflicto</concept>
+		<concept id="c_3">Un total de 114 de los 162 trabajadores en plantilla</concept>
+		<concept id="c_4">la empresa</concept>
+		<concept id="c_5">La convocatoria de huelga</concept>
+		<concept id="c_6">los autobuses para turistas</concept>
+		<concept id="c_7">ha</concept>
+		<concept id="c_8">las elecciones</concept>
+		<concept id="c_9">se</concept>
+		<concept id="c_10">quot</concept>
+		<concept id="c_11">servicio</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 PARO EN EL BUS TURÍSTIC.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Locative_relation" head="EN">
+				<argument type="Ground" dependent="BUS TURÍSTIC" /></frame>
+			<frame type="Vehicle" head="BUS">
+				<argument type="Descriptor" dependent="TURÍSTIC" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 UGT ha convocado una huelga indefinida de los guías del Bus Turístic de Barcelona ( los ataviados con chaquetas rojas ), que empezará el próximo día 10.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">UGT</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_6" concept_ref3="c_7">
+			<mention concept_ref="c_7"><token pos="vaip3s0">ha</token></mention><token pos="vmp00sm">convocado</token><mention concept_ref="c_5"><token pos="di0fs0">una</token><token pos="ncfs000">huelga</token></mention><token pos="aq0fs0">indefinida</token><token pos="sps00">de</token><mention concept_ref="c_6"><token pos="da0mp0">los</token><token pos="nccp000">guías</token></mention><token pos="spcms">del</token><token pos="ncfs000">Bus</token><token pos="np00000">Turístic</token><token pos="sps00">de</token><token pos="np00000">Barcelona</token><token pos="fpa">(</token><token pos="da0mp0">los</token><token pos="aq0mpp">ataviados</token><token pos="sps00">con</token><token pos="ncfp000">chaquetas</token><token pos="aq0fp0">rojas</token><token pos="fpt">)</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_start" head="empezará">
+				<argument type="Agent" dependent="que" />
+				<argument type="Time" dependent="próximo día 10" /></frame>
+			<frame type="Attack" head="huelga">
+				<argument type="Assailant" dependent="de los guías del" /></frame>
+			<frame type="Calendric_unit" head="día">
+				<argument type="Relative_time" dependent="próximo" /></frame>
+			<frame type="Color" head="rojas">
+				<argument type="Entity" dependent="chaquetas" /></frame>
+			<frame type="Cotheme" head="los guías">
+				<argument type="Source" dependent="Bus Turístic de Barcelona" /></frame>
+			<main_frame type="Referring_by_name" head="convocado">
+				<argument type="Entity" dependent="ha" /></main_frame>
+			<frame type="Spatial_contact" head="de">
+				<argument type="Figure" dependent="que" />
+				<argument type="Ground" dependent="el próximo día 10" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Turisme de Barcelona anunció ayer que se ha reunido con la empresa para buscar una solución al conflicto de manera que el servicio no se vea afectado.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Turisme de Barcelona " />
+			<frame type="Businesses" head="empresa" />
+			<frame type="Hostile_encounter" head="conflicto">
+				<argument type="Side_2" dependent="de manera que el servicio no se vea afectado" /></frame>
+			<frame type="Objective_influence" head="afectado">
+				<argument type="Influencing_situation" dependent="el servicio" /></frame>
+			<frame type="Public_services" head="servicio" />
+			<frame type="Seeking_to_achieve" head="buscar">
+				<argument type="Agent" dependent="se" />
+				<argument type="State_of_affairs" dependent="solución al conflicto de manera que el servicio no se vea afectado" /></frame>
+			<frame type="Statement" head="anunció">
+				<argument type="Speaker" dependent="de Barcelona" />
+				<argument type="Manner" dependent="ayer que" />
+				<argument type="Message" dependent="que se ha reunido con la empresa para buscar una solución al conflicto de manera que el servicio no se vea afectado" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El portavoz del sindicato, Jaume Collboni, explicó ayer que el paro se ha convocado por las prácticas "antisindicales" de la concesionaria del servicio de guías turísticos del bus, Professional Staff Human Resources, así como por el despido "improcedente" de uno de los trabajadores.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">el</token><token pos="ncms000">paro</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_5" concept_ref3="c_7" concept_ref4="c_9" concept_ref5="c_10" concept_ref6="c_11">
+			<mention concept_ref="c_9"><token pos="p0000000">se</token></mention><mention concept_ref="c_7"><token pos="vaip3s0">ha</token></mention><token pos="vmp00sm">convocado</token><token pos="sps00">por</token><mention concept_ref="c_6"><token pos="da0fp0">las</token><token pos="ncfp000">prácticas</token></mention><token pos="fe">quot;</token><token pos="aq0cp0">antisindicales</token><token pos="fe">quot;</token><token pos="sps00">de</token><mention concept_ref="c_5"><token pos="da0fs0">la</token><token pos="ncfs000">concesionaria</token></mention><token pos="spcms">del</token><mention concept_ref="c_11"><token pos="ncms000">servicio</token></mention><token pos="sps00">de</token><token pos="nccp000">guías</token><token pos="aq0mp0">turísticos</token><token pos="spcms">del</token><token pos="ncms000">bus</token><token pos="fc">,</token><token pos="ncms000">Professional</token><token pos="np0000o">Staff</token><token pos="ncms000">Human</token><token pos="np0000a">Resources</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El portavoz del sindicato , Jaume Collboni , " />
+			<frame type="Attack" head="despido" />
+			<frame type="Cotheme" head="guías" />
+			<frame type="Employing" head="Staff">
+				<argument type="Field" dependent="Professional" />
+				<argument type="Employee" dependent="Staff Human Resources" /></frame>
+			<frame type="Employing" head="trabajadores" />
+			<frame type="Explaining_the_facts" head="explicó">
+				<argument type="Manner" dependent="ayer que" /></frame>
+			<frame type="Organization" head="sindicato" />
+			<frame type="Practice" head="prácticas" />
+			<main_frame type="Referring_by_name" head="convocado">
+				<argument type="Name" dependent="el despido" /></main_frame>
+			<frame type="Representative" head="quot">
+				<argument type="Represented" dependent="sindicato" />
+				<argument type="Representative" dependent="Jaume" /></frame>
+			<frame type="Travel" head="turísticos">
+				<argument type="Mode_of_transportation" dependent="bus" />
+				<argument type="Goal" dependent="Professional Staff Human Resources ," /></frame>
+			<frame type="Vehicle" head="bus" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El conflicto se originó cuando los trabajadores propusieron realizar elecciones sindicales para tener un comité de empresa.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">El</token><token pos="ncms000">conflicto</token>
+		</theme>
+		<rheme concept_ref1="c_9">
+			<mention concept_ref="c_9"><token pos="p0300000">se</token></mention><token pos="vmis3s0">originó</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Businesses" head="empresa" />
+			<frame type="Change_of_leadership" head="elecciones">
+				<argument type="Selector" dependent="sindicales" /></frame>
+			<frame type="Employing" head="trabajadores" />
+			<frame type="Hostile_encounter" head="conflicto" />
+			<frame type="Statement" head="propusieron">
+				<argument type="Speaker" dependent="los trabajadores" />
+				<argument type="Message" dependent="realizar elecciones sindicales para tener un comité de empresa" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Un total de 114 de los 162 trabajadores en plantilla apoyaron las elecciones.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="di0ms0">Un</token><token pos="aq0cs0">total</token><token pos="sps00">de</token><token pos="z">114</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="z">162</token><token pos="ncmp000">trabajadores</token><token pos="sps00">en</token><token pos="ncmp000">plantilla</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_9">
+			<token pos="vmis3p0">apoyaron</token><token pos="da0fp0">las</token><token pos="ncfp000">elecciones</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Amounting_to" head="total">
+				<argument type="Attribute" dependent="de 114 de los 162 trabajadores" /></frame>
+			<frame type="Change_of_leadership" head="elecciones" />
+			<frame type="Employing" head="trabajadores" />
+			<frame type="Membership" head="los" />
+			<main_frame type="Supporting" head="apoyaron">
+				<argument type="Supporter" dependent="los" />
+				<argument type="Supported" dependent="las elecciones" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Días después, la empresa despidió a uno de ellos.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0fs0">la</token><token pos="ncfs000">empresa</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_9" concept_ref3="c_10">
+			<token pos="vmis3s0">despidió</token><token pos="sps00">a</token><mention concept_ref="c_10"><token pos="pi0ms000">uno</token></mention><token pos="sps00">de</token><mention concept_ref="c_9"><token pos="pp3mp000">ellos</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Businesses" head="empresa" />
+			<main_frame type="Shoot_projectiles" head="despidió">
+				<argument type="Time" dependent="Días después" />
+				<argument type="Agent" dependent="la empresa" />
+				<argument type="Projectile" dependent="uno de ellos" /></main_frame>
+			<frame type="Temporal_subregion" head="después">
+				<argument type="Time_period" dependent="Días" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La convocatoria de huelga se produce en plena temporada alta y coincidiendo con el mes en que más turistas se esperan en Barcelona.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0fs0">La</token><token pos="ncfs000">convocatoria</token><token pos="sps00">de</token><token pos="ncfs000">huelga</token>
+		</theme>
+		<rheme concept_ref1="c_9">
+			<mention concept_ref="c_9"><token pos="p0000000">se</token></mention><token pos="vmip3s0">produce</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attack" head="huelga" />
+			<frame type="Calendric_unit" head="el mes" />
+			<frame type="Expectation" head="esperan">
+				<argument type="Phenomenon" dependent="más turistas" />
+				<argument type="Phenomenon" dependent="en Barcelona" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="turistas" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="más turistas" />
+				<argument type="Time" dependent="esperan" />
+				<argument type="Ground" dependent="Barcelona" /></frame>
+			<frame type="Locale" head="se" />
+			<frame type="Part_inner_outer" head="mes">
+				<argument type="Whole" dependent="temporada alta" /></frame>
+			<frame type="Position_on_a_scale" head="alta">
+				<argument type="Item" dependent="temporada" /></frame>
+			<frame type="Request" head="se">
+				<argument type="Message" dependent="de huelga se produce en plena temporada alta" /></frame>
+			<frame type="Simultaneity" head="coincidiendo" />
+			<frame type="Taking_time" head="esperan">
+				<argument type="Activity" dependent="huelga" />
+				<argument type="Time_length" dependent="se" />
+				<argument type="Activity" dependent="en plena temporada alta" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Transportes Metropolitanos de Barcelona, titular de la explotación de la línea y empresa de la que dependen los conductores, garantizó que los autobuses para turistas seguirán funcionando aun sin el servicio de los guías.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0mp0">los</token><token pos="ncmp000">autobuses</token><token pos="sps00">para</token><token pos="nccp000">turistas</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_9" concept_ref3="c_11">
+			<token pos="vmif3p0">seguirán</token><token pos="vmg0000">funcionando</token><token pos="sps00">sin</token><token pos="da0ms0">el</token><mention concept_ref="c_11"><token pos="ncms000">servicio</token></mention><token pos="sps00">de</token><mention concept_ref="c_6"><token pos="da0mp0">los</token><token pos="nccp000">guías</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Transportes Metropolitanos de Barcelona , titular de la explotación de la línea y empresa de la que dependen los conductores , " />
+			<frame type="Businesses" head="empresa" />
+			<main_frame type="Businesses" head="funcionando">
+				<argument type="Product" dependent="de la línea y empresa" /></main_frame>
+			<frame type="Contingency" head="dependen" />
+			<frame type="Cotheme" head="los guías" />
+			<main_frame type="Operating_a_system" head="funcionando">
+				<argument type="Operator" dependent="los autobuses para turistas" />
+				<argument type="System" dependent="aun sin el servicio de los guías" /></main_frame>
+			<frame type="Possession" head="titular de">
+				<argument type="Owner" dependent="Transportes Metropolitanos de Barcelona" />
+				<argument type="Possession" dependent="de la explotación de la línea y empresa de" /></frame>
+			<frame type="Process_continue" head="aun">
+				<argument type="Event" dependent="los autobuses para turistas" />
+				<argument type="Event" dependent="funcionando aun sin el servicio de los guías" /></frame>
+			<frame type="Public_services" head="servicio">
+				<argument type="Service_action" dependent="de los guías" /></frame>
+			<frame type="Vehicle" head="autobuses" />
+		</semantic_roles>
+	</sentence>
+	
+</text>

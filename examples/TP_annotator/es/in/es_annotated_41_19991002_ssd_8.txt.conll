@@ -1,0 +1,16 @@
+{   ('Age', 'nueva'): [('Entity', 'modificación')],
+    ('Being_in_control', 'control'): [('Dependent_entity', 'del Ministerio de')],
+    ('Calendric_unit', 'año'): [],
+    ('Goal', 'para'): [('Trajector', 'una nueva modificación de la'), ('Landmark', 'la ley del suelo')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'los planes parciales'), ('Ground', 'ambas ciudades')],
+    ('Law', 'ley'): [('Type', 'suelo'), ('Required', 'de 1998')],
+    ('Leadership', 'Estado'): [],
+    ('Leadership', 'Gobierno'): [],
+    ('Leadership', 'generales'): [],
+    ('Political_locales', 'ciudades'): [],
+    ('Purpose', 'los planes'): [('Agent', 'en ambas ciudades')],
+    ('Statement', 'añadió'): [   ('Speaker', 'Gobierno'),
+                                 ('Place', 'en la ley'),
+                                 (   'Message',
+                                     'acompañamiento de los Presupuestos Generales del Estado para el año 2000 una nueva modificación de la ley del suelo de 1998 para que no sólo los planes '
+                                     'generales de ordenación urbana , sino tambien los planes parciales en ambas ciudades ,')]}

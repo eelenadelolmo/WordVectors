@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="34_20000401_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Los padres de la joven , que vive en Uruguay ,</concept>
+		<concept id="c_1">el poeta argentino Juan Gelman</concept>
+		<concept id="c_2">la nieta de Gelman , hija de desaparecidos ,</concept>
+		<concept id="c_3">Gelman , que se entrevistó con el presidente uruguayo antes de que éste hiciera pública la noticia ,</concept>
+		<concept id="c_4">el poeta argentino</concept>
+		<concept id="c_5">Gelman</concept>
+		<concept id="c_6">El poeta</concept>
+		<concept id="c_7">su nuera María Claudia García</concept>
+		<concept id="c_8">Su hijo</concept>
+		<concept id="c_9">El hijo de Gelman , Marcelo ,</concept>
+		<concept id="c_10">Su cadáver</concept>
+		<concept id="c_11">Gelman , que inició la búsqueda desesperada de su nieta en 1976</concept>
+		<concept id="c_12">la persona que busco</concept>
+		<concept id="c_13">La búsqueda de Gelman</concept>
+		<concept id="c_14">Sanguinetti</concept>
+		<concept id="c_15">21 uruguayos</concept>
+		<concept id="c_16">La noticia del hallazgo de la nieta de Gelman</concept>
+		<concept id="c_17">a su nieta</concept>
+		<concept id="c_18">su sueño</concept>
+		<concept id="c_19">en Montevideo</concept>
+		<concept id="c_20">el apoyo de más de 160 intelectuales de</concept>
+		<concept id="c_21">su apoyo</concept>
+		<concept id="c_22">y</concept>
+		<concept id="c_23">ningún niño</concept>
+		<concept id="c_24">víctimas</concept>
+		<concept id="c_25">su sueño</concept>
+		<concept id="c_26">1976</concept>
+		<concept id="c_27">principio</concept>
+		<concept id="c_28">general</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Los padres de la joven, que vive en Uruguay, fueron víctimas de Videla.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0mp0">Los</token><token pos="ncmp000">padres</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="nccs000">joven</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vmip3s0">vive</token><token pos="sps00">en</token><token pos="np00000">Uruguay</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_14" concept_ref2="c_24">
+			<token pos="vsis3p0">fueron</token><mention concept_ref="c_24"><token pos="ncfp000">víctimas</token></mention><token pos="sps00">de</token><mention concept_ref="c_14"><token pos="np00000">Videla</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="joven">
+				<argument type="Entity" dependent="la joven" /></frame>
+			<frame type="Catastrophe" head="víctimas">
+				<argument type="Cause" dependent="padres de la joven , que vive en Uruguay ," />
+				<argument type="Undesirable_event" dependent="de Videla" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="que vive" />
+				<argument type="Ground" dependent="Uruguay" /></frame>
+			<frame type="Kinship" head="padres">
+				<argument type="Ego" dependent="la joven" /></frame>
+			<frame type="People" head="la joven">
+				<argument type="Descriptor" dependent="joven" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Después de una larga odisea, el poeta argentino Juan Gelman ha conseguido realizar su sueño: encontrar a su nieta, desaparecida en 1976, al principio de la dictadura militar del general Videla.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">el</token><token pos="ncms000">poeta</token><token pos="aq0ms0">argentino</token><token pos="ncms000">Juan</token><token pos="np00000">Gelman</token>
+		</theme>
+		<rheme concept_ref1="c_14" concept_ref2="c_6" concept_ref3="c_12" concept_ref4="c_17" concept_ref5="c_18" concept_ref6="c_24" concept_ref7="c_25" concept_ref8="c_26" concept_ref9="c_27" concept_ref10="c_28">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">conseguido</token><token pos="vmn0000">realizar</token><token pos="dp3cs0">su</token><token pos="ncms000">sueño</token><token pos="vmn0000">encontrar</token><mention concept_ref="c_17"><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="ncfs000">nieta</token></mention><token pos="fc">,</token><token pos="aq0fsp">desaparecida</token><token pos="sps00">en</token><mention concept_ref="c_26"><token pos="z">1976</token></mention><token pos="fc">,</token><token pos="spcms">al</token><mention concept_ref="c_27"><token pos="ncms000">principio</token></mention><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">dictadura</token><token pos="aq0cs0">militar</token><token pos="spcms">del</token><mention concept_ref="c_28"><token pos="nccs000">general</token></mention><mention concept_ref="c_14"><token pos="np00000">Videla</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Becoming_aware" head="encontrar">
+				<argument type="Phenomenon" dependent="a su nieta" /></main_frame>
+			<main_frame type="Coming_to_believe" head="realizar">
+				<argument type="Time" dependent="Después de una larga odisea" />
+				<argument type="Cognizer" dependent="el poeta argentino Juan Gelman" />
+				<argument type="Content" dependent="su sueño" /></main_frame>
+			<frame type="Departing" head="desaparecida">
+				<argument type="Theme" dependent="a su nieta" />
+				<argument type="Time" dependent="en 1976" /></frame>
+			<frame type="Duration_description" head="larga">
+				<argument type="Period" dependent="odisea" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="su nieta , desaparecida" />
+				<argument type="Ground" dependent="1976" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent=", el poeta argentino Juan Gelman ha conseguido realizar su sueño : encontrar a su nieta , desaparecida en 1976 , al" />
+				<argument type="Ground" dependent="al principio de la dictadura militar del general" /></frame>
+			<frame type="Military" head="militar" />
+			<main_frame type="Operating_a_system" head="conseguido">
+				<argument type="Duration" dependent="Después de una larga odisea" />
+				<argument type="System" dependent="el poeta argentino Juan Gelman" />
+				<argument type="System" dependent="realizar su sueño" /></main_frame>
+			<frame type="Relative_time" head="Después de">
+				<argument type="Landmark_occasion" dependent="larga odisea" />
+				<argument type="Focal_occasion" dependent=", el poeta argentino Juan Gelman ha conseguido realizar su sueño : encontrar a su nieta , desaparecida en 1976 , al principio de la dictadura militar del general Videla ." /></frame>
+			<frame type="Temporal_subregion" head="al principio">
+				<argument type="Time_period" dependent="dictadura militar del general" /></frame>
+			<frame type="Travel" head="odisea">
+				<argument type="Distance" dependent="larga" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El presidente uruguayo, Jorge Batlle, confirmó ayer que la nieta de Gelman, hija de desaparecidos, fue hallada en Montevideo.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">la</token><token pos="ncfs000">nieta</token><token pos="sps00">de</token><token pos="np00000">Gelman</token><token pos="fc">,</token><token pos="ncfs000">hija</token><token pos="sps00">de</token><token pos="ncmp000">desaparecidos</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_19">
+			<token pos="vsis3s0">fue</token><token pos="vmp00sf">hallada</token><mention concept_ref="c_19"><token pos="sps00">en</token><token pos="np00000">Montevideo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El presidente uruguayo , Jorge Batlle , " />
+			<frame type="Appellations" head="presidente">
+				<argument type="Name" dependent="uruguayo" />
+				<argument type="Type" dependent="Batlle" /></frame>
+			<main_frame type="Becoming_aware" head="fue">
+				<argument type="Phenomenon" dependent="la nieta de" />
+				<argument type="Phenomenon" dependent="hija de desaparecidos" />
+				<argument type="Manner" dependent="en Montevideo" /></main_frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="hija de desaparecidos , fue hallada en" />
+				<argument type="Ground" dependent="Montevideo" /></frame>
+			<frame type="Kinship" head="hija de" />
+			<frame type="People" head="de" />
+			<frame type="Success_or_failure" head="desaparecidos" />
+			<frame type="Verification" head="confirmó">
+				<argument type="Inspector" dependent="El presidente uruguayo , Jorge Batlle" />
+				<argument type="Manner" dependent="ayer que" />
+				<argument type="Unconfirmed_content" dependent=", hija de desaparecidos , fue hallada en Montevideo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Gelman, que se entrevistó con el presidente uruguayo antes de que éste hiciera pública la noticia, ha recibido el apoyo de más de 160 intelectuales de 70 países en su intento de seguir las huellas de la joven.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="np00000">Gelman</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="p0300000">se</token><token pos="vmis3s0">entrevistó</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">presidente</token><token pos="aq0ms0">uruguayo</token><token pos="rg">antes</token><token pos="sps00">de</token><token pos="cs">que</token><token pos="pd0ms000">éste</token><token pos="vmsi3s0">hiciera</token><token pos="aq0fs0">pública</token><token pos="da0fs0">la</token><token pos="ncfs000">noticia</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_14" concept_ref3="c_12" concept_ref4="c_5" concept_ref5="c_17" concept_ref6="c_18" concept_ref7="c_20" concept_ref8="c_22" concept_ref9="c_28">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">recibido</token><mention concept_ref="c_6"><token pos="da0ms0">el</token><token pos="ncms000">apoyo</token></mention><token pos="sps00">de</token><token pos="rg">más</token><token pos="sps00">de</token><token pos="z">160</token><mention concept_ref="c_14"><token pos="nccp000">intelectuales</token></mention><token pos="sps00">de</token><token pos="z">70</token><token pos="ncmp000">países</token><token pos="sps00">en</token><mention concept_ref="c_18"><token pos="dp3cs0">su</token></mention><token pos="ncms000">intento</token><token pos="sps00">de</token><token pos="vmn0000">seguir</token><mention concept_ref="c_12"><token pos="da0fp0">las</token><token pos="ncfp000">huellas</token></mention><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="nccs000">joven</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="joven">
+				<argument type="Entity" dependent="la joven" /></frame>
+			<frame type="Appellations" head="presidente">
+				<argument type="Name" dependent="uruguayo" /></frame>
+			<frame type="Attempt" head="intento">
+				<argument type="Goal" dependent="de seguir las huellas de la joven" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="de más de 160 intelectuales de 70 países en" />
+				<argument type="Ground" dependent="su intento de seguir las huellas de la joven" /></frame>
+			<frame type="Manufacturing" head="se">
+				<argument type="Producer" dependent="su" />
+				<argument type="Product" dependent="pública la noticia" /></frame>
+			<frame type="People" head="la joven">
+				<argument type="Descriptor" dependent="joven" /></frame>
+			<frame type="Political_locales" head="países">
+				<argument type="Descriptor" dependent="70" /></frame>
+			<main_frame type="Receiving" head="recibido">
+				<argument type="Recipient" dependent="su" />
+				<argument type="Theme" dependent="el apoyo de más de 160 intelectuales de" />
+				<argument type="Donor" dependent="de 70 países en su" /></main_frame>
+			<main_frame type="Relative_time" head="seguir">
+				<argument type="Focal_occasion" dependent="de más de 160 intelectuales de 70 países en su intento de" />
+				<argument type="Landmark_occasion" dependent="seguir las huellas de la joven" /></main_frame>
+			<frame type="Supporting" head="apoyo de">
+				<argument type="Supported" dependent="de más de 160 intelectuales" />
+				<argument type="Place" dependent="de 70 países en su" />
+				<argument type="Time" dependent="en su intento de seguir las huellas de la joven" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Landmark_event" dependent="pública la noticia , ha recibido el apoyo de más de 160 intelectuales de 70 países en su" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Batlle aseguró que el poeta argentino por fin "ha podido encontrar a la persona, que cree con toda seguridad que es su nieta".
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0ms0">el</token><token pos="ncms000">poeta</token><token pos="aq0ms0">argentino</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_12" concept_ref3="c_17" concept_ref4="c_25">
+			<token pos="fe">quot;</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">podido</token><mention concept_ref="c_17"><token pos="vmn0000">encontrar</token><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">persona</token></mention><token pos="fc">,</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Batlle " />
+			<main_frame type="Becoming_aware" head="encontrar">
+				<argument type="Phenomenon" dependent="la persona" /></main_frame>
+			<main_frame type="Capability" head="podido">
+				<argument type="Event" dependent="encontrar a la persona" /></main_frame>
+			<frame type="Certainty" head="que cree">
+				<argument type="Cognizer" dependent="persona , que" />
+				<argument type="Content" dependent="que es su nieta" /></frame>
+			<frame type="Locative_relation" head="a la">
+				<argument type="Figure" dependent="el poeta argentino" />
+				<argument type="Ground" dependent="fin  quot ; ha podido encontrar a la persona , que cree con toda seguridad que es su nieta" /></frame>
+			<frame type="People" head="persona" />
+			<frame type="Statement" head="quot">
+				<argument type="Speaker" dependent="Batlle" />
+				<argument type="Message" dependent="aseguró que el poeta argentino por fin  quot ; ha podido encontrar a la persona , que cree con toda seguridad que es su nieta" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El presidente uruguayo añadió que se llevarán a cabo exámenes médicos para confirmar que existe una relación de parentesco entre la chica, que en la actualidad tiene 24 años, y el célebre poeta.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El presidente uruguayo " />
+			<frame type="Age" head="años">
+				<argument type="Time" dependent="24 años" /></frame>
+			<frame type="Appellations" head="presidente">
+				<argument type="Name" dependent="uruguayo" /></frame>
+			<frame type="Bringing" head="a cabo">
+				<argument type="Theme" dependent="exámenes médicos" /></frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Relative_time" dependent="actualidad" />
+				<argument type="Count" dependent="24" /></frame>
+			<frame type="Fame" head="célebre">
+				<argument type="Entity" dependent="poeta" /></frame>
+			<frame type="Locative_relation" head="tiene">
+				<argument type="Figure" dependent="que" />
+				<argument type="Ground" dependent="existe una relación de parentesco entre la chica" /></frame>
+			<frame type="People" head="chica" />
+			<frame type="Scrutiny" head="exámenes">
+				<argument type="Ground" dependent="médicos" /></frame>
+			<frame type="Statement" head="añadió">
+				<argument type="Speaker" dependent="presidente uruguayo" />
+				<argument type="Message" dependent="que se llevarán a cabo exámenes médicos para confirmar que existe una relación de parentesco entre la chica ," /></frame>
+			<frame type="Verification" head="confirmar">
+				<argument type="Unconfirmed_content" dependent="que existe una relación de parentesco entre la chica , que en la actualidad tiene 24 años , y el célebre" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Gelman había intentado en vano que el predecesor de Batlle, Julio Maria Sanguinetti, le brindara su colaboración para encontrar a su nieta.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="np00000">Gelman</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_5" concept_ref3="c_14" concept_ref4="c_12" concept_ref5="c_17" concept_ref6="c_18" concept_ref7="c_19" concept_ref8="c_24" concept_ref9="c_28">
+			<token pos="vaii3s0">había</token><token pos="vmp00sm">intentado</token><mention concept_ref="c_19"><token pos="sps00">en</token><token pos="aq0msp">vano</token><token pos="cs">que</token><token pos="da0ms0">el</token><token pos="ncms000">predecesor</token><token pos="sps00">de</token><token pos="np00000">Batlle</token></mention><token pos="fc">,</token><mention concept_ref="c_14"><token pos="ncfs000">Julio</token><token pos="ncms000">Maria</token><token pos="np00000">Sanguinetti</token></mention><token pos="fc">,</token><mention concept_ref="c_28"><token pos="pp3csd00">le</token></mention><token pos="vmsi3s0">brindara</token><mention concept_ref="c_12"><token pos="dp3cs0">su</token><token pos="ncfs000">colaboración</token></mention><token pos="sps00">para</token><token pos="vmn0000">encontrar</token><mention concept_ref="c_17"><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="ncfs000">nieta</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Attempt" head="intentado">
+				<argument type="Agent" dependent="Gelman" />
+				<argument type="Goal" dependent="en vano que el predecesor de Batlle" /></main_frame>
+			<main_frame type="Becoming_aware" head="encontrar">
+				<argument type="Phenomenon" dependent="a su nieta" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El poeta, en una carta abierta, le reclamó su apoyo.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0ms0">El</token><token pos="ncms000">poeta</token>
+		</theme>
+		<rheme concept_ref1="c_12" concept_ref2="c_18" concept_ref3="c_21" concept_ref4="c_22" concept_ref5="c_28">
+			<mention concept_ref="c_28"><token pos="pp3csd00">le</token></mention><token pos="vmis3s0">reclamó</token><mention concept_ref="c_18"><token pos="dp3cs0">su</token></mention><token pos="ncms000">apoyo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Secrecy_status" head="abierta">
+				<argument type="Phenomenon" dependent="carta" /></frame>
+			<main_frame type="Statement" head="reclamó">
+				<argument type="Medium" dependent="una carta abierta" />
+				<argument type="Message" dependent="su apoyo" /></main_frame>
+			<frame type="Text" head="carta" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En aquella misiva, Gelman explicó que su nuera María Claudia García fue detenida en agosto de 1976, cuando estaba embarazada.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="dp3cs0">su</token><token pos="ncfs000">nuera</token><token pos="ncfs000">María</token><token pos="ncms000">Claudia</token><token pos="np00000">García</token>
+		</theme>
+		<rheme concept_ref1="c_17" concept_ref2="c_26">
+			<token pos="vsis3s0">fue</token><token pos="vmp00sf">detenida</token><mention concept_ref="c_17"><token pos="sps00">en</token><token pos="ncfs000">agosto</token><token pos="spcms">de</token><token pos="zp">1976</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Gelman " />
+			<main_frame type="Arrest" head="detenida">
+				<argument type="Suspect" dependent="su nuera María Claudia" />
+				<argument type="Time" dependent="en agosto de 1976" />
+				<argument type="Time" dependent="cuando estaba embarazada" /></main_frame>
+			<frame type="Explaining_the_facts" head="explicó">
+				<argument type="Fact" dependent="Gelman" />
+				<argument type="State_of_affairs" dependent="detenida en agosto de 1976 ," /></frame>
+			<frame type="Text" head="de" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Después fue encarcelada en un centro clandestino de Buenos Aires y trasladada a un hospital de Montevideo.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="hospital">
+				<argument type="Place" dependent="en un" /></frame>
+			<frame type="Imprisonment" head="encarcelada">
+				<argument type="Prisoner" dependent="fue" />
+				<argument type="Time" dependent="y" />
+				<argument type="Offense" dependent="en un centro clandestino de" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="un hospital" />
+				<argument type="Ground" dependent="Montevideo" /></frame>
+			<frame type="Locale_by_use" head="centro">
+				<argument type="Descriptor" dependent="clandestino" />
+				<argument type="Relative_location" dependent="en un" /></frame>
+			<frame type="Secrecy_status" head="clandestino">
+				<argument type="Phenomenon" dependent="centro" />
+				<argument type="Cognizer" dependent="en un" /></frame>
+			<frame type="Taking_time" head="en">
+				<argument type="Activity" dependent="a un hospital de Montevideo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Su hijo también fue asesinado.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="dp3cs0">Su</token><token pos="ncms000">hijo</token>
+		</theme>
+		<rheme concept_ref1="c_28">
+			<token pos="rg">también</token><token pos="vsis3s0">fue</token><token pos="vmp00sm">asesinado</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Killing" head="asesinado">
+				<argument type="Victim" dependent="Su hijo" /></main_frame>
+			<frame type="Kinship" head="Su">
+				<argument type="Ego" dependent="Su" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El hijo de Gelman, Marcelo, también fue detenido durante la dictadura argentina.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="da0ms0">El</token><token pos="ncms000">hijo</token><token pos="sps00">de</token><token pos="np00000">Gelman</token><token pos="fc">,</token><token pos="np00000">Marcelo</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_12" concept_ref2="c_17" concept_ref3="c_24">
+			<token pos="rg">también</token><token pos="vsis3s0">fue</token><token pos="vmp00sm">detenido</token><mention concept_ref="c_17"><token pos="sps00">durante</token><token pos="da0fs0">la</token><token pos="ncfs000">dictadura</token><token pos="aq0fs0">argentina</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Arrest" head="detenido">
+				<argument type="Suspect" dependent="hijo de Gelman" />
+				<argument type="Time" dependent="durante la dictadura argentina" /></main_frame>
+			<frame type="Kinship" head="la">
+				<argument type="Ego" dependent="Gelman" />
+				<argument type="Alter" dependent="Marcelo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Su cadáver no le fue devuelto hasta 1998.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="dp3cs0">Su</token><token pos="ncms000">cadáver</token>
+		</theme>
+		<rheme concept_ref1="c_17" concept_ref2="c_26" concept_ref3="c_28">
+			<token pos="rn">no</token><mention concept_ref="c_28"><token pos="pp3csd00">le</token></mention><token pos="vsis3s0">fue</token><token pos="vmp00sm">devuelto</token><mention concept_ref="c_17"><token pos="sps00">hasta</token></mention><mention concept_ref="c_26"><token pos="z">1998</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Arriving" head="devuelto">
+				<argument type="Theme" dependent="Su cadáver" />
+				<argument type="Goal" dependent="hasta" /></main_frame>
+			<frame type="Body_parts" head="cadáver">
+				<argument type="Possessor" dependent="le" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Gelman, que inició la búsqueda desesperada de su nieta en 1976 intentará reencontrarse con ella en la intimidad.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="np00000">Gelman</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vmis3s0">inició</token><token pos="da0fs0">la</token><token pos="ncfs000">búsqueda</token><token pos="aq0fsp">desesperada</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><token pos="ncfs000">nieta</token><token pos="sps00">en</token><token pos="z">1976</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_16" concept_ref3="c_17" concept_ref4="c_28">
+			<token pos="vmif3s0">intentará</token><token pos="vmn0000">reencontrarse</token><token pos="sps00">con</token><token pos="pp3fs000">ella</token><token pos="sps00">en</token><mention concept_ref="c_16"><token pos="da0fs0">la</token><token pos="ncfs000">intimidad</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_start" head="inició">
+				<argument type="Agent" dependent="Gelman" />
+				<argument type="Agent" dependent="que" />
+				<argument type="Activity" dependent="la búsqueda desesperada de su nieta en 1976" /></main_frame>
+			<main_frame type="Attempt" head="intentará">
+				<argument type="Goal" dependent="reencontrarse con ella en la intimidad" /></main_frame>
+			<main_frame type="Make_acquaintance" head="reencontrarse">
+				<argument type="Individual_1" dependent="que" />
+				<argument type="Individual_2" dependent="ella" />
+				<argument type="Time" dependent="en la intimidad" /></main_frame>
+			<frame type="Scrutiny" head="búsqueda">
+				<argument type="Ground" dependent="de su nieta" />
+				<argument type="Time" dependent="en 1976" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Según el poeta, "la persona que busco nació en Uruguay, vive en Uruguay y es muy querida por sus padres adoptivos".
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="da0fs0">la</token><token pos="ncfs000">persona</token><token pos="pr0cn000">que</token><token pos="vmip1s0">busco</token>
+		</theme>
+		<rheme concept_ref1="c_15" concept_ref2="c_17" concept_ref3="c_22">
+			<token pos="vmis3s0">nació</token><mention concept_ref="c_17"><token pos="sps00">en</token><token pos="np00000">Uruguay</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Bringing" head="nació">
+				<argument type="Agent" dependent="y" />
+				<argument type="Time" dependent="en Uruguay" /></main_frame>
+			<frame type="Goal" head="por">
+				<argument type="Landmark" dependent="el poeta" /></frame>
+			<frame type="Kinship" head="padres" />
+			<frame type="People" head="persona" />
+			<frame type="Residence" head="vive">
+				<argument type="Resident" dependent="y" />
+				<argument type="Location" dependent="en Uruguay" /></frame>
+			<main_frame type="Seeking_to_achieve" head="busco">
+				<argument type="Agent" dependent="y" />
+				<argument type="State_of_affairs" dependent="nació en Uruguay , vive en Uruguay" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La búsqueda de Gelman despertó una amplia solidaridad internacional tras la negativa del ex presidente uruguayo Sanguinetti a aportar datos al poeta sobre el paradero de su nieta.
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="da0fs0">La</token><token pos="ncfs000">búsqueda</token><token pos="sps00">de</token><token pos="np00000">Gelman</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_17">
+			<token pos="vmis3s0">despertó</token><mention concept_ref="c_2"><token pos="di0fs0">una</token><token pos="aq0fs0">amplia</token><token pos="ncfs000">solidaridad</token></mention><token pos="aq0cs0">internacional</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente" />
+			<frame type="Attempt" head="búsqueda">
+				<argument type="Agent" dependent="Gelman" />
+				<argument type="Goal" dependent="amplia solidaridad internacional tras la" /></frame>
+			<main_frame type="Cause_to_start" head="despertó">
+				<argument type="Cause" dependent="Gelman" />
+				<argument type="Manner" dependent="búsqueda" />
+				<argument type="Effect" dependent="amplia solidaridad internacional" /></main_frame>
+			<frame type="Information" head="datos">
+				<argument type="Topic" dependent="sobre el paradero de su nieta" /></frame>
+			<frame type="Political_locales" head="internacional" />
+			<frame type="Supply" head="a aportar">
+				<argument type="Theme" dependent="al poeta" />
+				<argument type="Recipient" dependent="a aportar datos al poeta sobre el paradero de su nieta" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sanguinetti, poco antes del traspaso de poderes, se limitó a decir que "ningún niño ha desaparecido en Uruguay".
+		</str>
+		<theme concept_ref="c_14">
+			<token pos="np00000">Sanguinetti</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_15" concept_ref3="c_17" concept_ref4="c_22" concept_ref5="c_23" concept_ref6="c_25" concept_ref7="c_28">
+			<mention concept_ref="c_28"><token pos="p0300000">se</token></mention><token pos="vmis3s0">limitó</token><token pos="sps00">a</token><token pos="vmn0000">decir</token><token pos="cs">que</token><token pos="fe">quot;</token><mention concept_ref="c_23"><token pos="di0ms0">ningún</token><token pos="ncms000">niño</token></mention><token pos="vaip3s0">ha</token><token pos="vmp00sm">desaparecido</token><mention concept_ref="c_17"><token pos="sps00">en</token><token pos="np00000">Uruguay</token></mention><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Departing" head="desaparecido">
+				<argument type="Theme" dependent="ningún niño" />
+				<argument type="Place" dependent="en Uruguay" /></main_frame>
+			<frame type="Electricity" head="poderes" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="ningún niño ha desaparecido" />
+				<argument type="Ground" dependent="Uruguay" /></frame>
+			<frame type="Kinship" head="niño" />
+			<main_frame type="Statement" head="decir">
+				<argument type="Speaker" dependent="del traspaso de poderes" />
+				<argument type="Message" dependent="quot ; ningún niño ha desaparecido en Uruguay" /></main_frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Event" dependent="Sanguinetti" />
+				<argument type="Distance" dependent="poco" />
+				<argument type="Landmark_event" dependent="del traspaso de poderes" /></frame>
+			<frame type="Transfer" head="traspaso de">
+				<argument type="Theme" dependent="de poderes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Según estimaciones de familiares de las víctimas de la represión militar, 141 uruguayos desaparecieron, entre ellos siete menores, como consecuencia del Plan Cóndor, puesto en práctica por las dictaduras suramericanas para librarse de la oposición.
+		</str>
+		<theme concept_ref="c_15">
+			<token pos="z">21</token><token pos="ncmp000">uruguayos</token>
+		</theme>
+		<rheme concept_ref1="c_12" concept_ref2="c_2" concept_ref3="c_18" concept_ref4="c_27" concept_ref5="c_28">
+			<token pos="vmis3p0">desaparecieron</token><token pos="sps00">entre</token><mention concept_ref="c_28"><token pos="pp3mp000">ellos</token></mention><token pos="dn0cp0">siete</token><token pos="nccp000">menores</token><token pos="cs">como</token><mention concept_ref="c_12"><token pos="ncfs000">consecuencia</token></mention><token pos="spcms">del</token><token pos="ncms000">Plan</token><token pos="np00000">Cóndor</token><token pos="fc">,</token><token pos="ncms000">puesto</token><token pos="spcms">en</token><token pos="ncms000">práctica</token><token pos="sps00">por</token><mention concept_ref="c_2"><token pos="da0fp0">las</token><token pos="ncfp000">dictaduras</token></mention><token pos="aq0fp0">suramericanas</token><token pos="sps00">para</token><token pos="vmn0000">librarse</token><token pos="sps00">de</token><mention concept_ref="c_27"><token pos="da0fs0">la</token><token pos="ncfs000">oposición</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="siete">
+				<argument type="Unit" dependent="menores" /></frame>
+			<frame type="Catastrophe" head="víctimas">
+				<argument type="Undesirable_event" dependent="represión militar" /></frame>
+			<main_frame type="Departing" head="desaparecieron">
+				<argument type="Theme" dependent="141 uruguayos" /></main_frame>
+			<frame type="Estimated_value" head="estimaciones" />
+			<frame type="Execute_plan" head="puesto">
+				<argument type="Medium" dependent=", como consecuencia del Plan Cóndor" />
+				<argument type="Medium" dependent="por las dictaduras suramericanas" />
+				<argument type="Purpose" dependent="para librarse de la oposición" /></frame>
+			<frame type="Goal" head="para">
+				<argument type="Landmark" dependent="estimaciones" /></frame>
+			<frame type="Inclusion" head="en">
+				<argument type="Total" dependent="141 uruguayos" />
+				<argument type="Part" dependent="siete menores" /></frame>
+			<frame type="Kinship" head="familiares">
+				<argument type="Ego" dependent="víctimas de la represión militar" /></frame>
+			<frame type="Military" head="militar" />
+			<frame type="People_by_origin" head="suramericanas" />
+			<frame type="Purpose" head="Plan">
+				<argument type="Agent" dependent="Cóndor" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La noticia del hallazgo de la nieta de Gelman ha provocado una auténtica conmoción en Uruguay, ya que es la primera vez que un presidente asume el problema de los desaparecidos.
+		</str>
+		<theme concept_ref="c_16">
+			<token pos="da0fs0">La</token><token pos="ncfs000">noticia</token><token pos="spcms">del</token><token pos="ncms000">hallazgo</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">nieta</token><token pos="sps00">de</token><token pos="np00000">Gelman</token>
+		</theme>
+		<rheme concept_ref1="c_15" concept_ref2="c_14" concept_ref3="c_2" concept_ref4="c_17" concept_ref5="c_22">
+			<token pos="vaip3s0">ha</token><token pos="vmp00sm">provocado</token><mention concept_ref="c_14"><token pos="di0fs0">una</token><token pos="aq0fs0">auténtica</token><token pos="ncfs000">conmoción</token></mention><mention concept_ref="c_17"><token pos="sps00">en</token><token pos="np00000">Uruguay</token></mention><token pos="rg">ya</token><token pos="pi0ms000">que</token><token pos="vsip3s0">es</token><mention concept_ref="c_2"><token pos="da0fs0">la</token><token pos="ao0fs0">primera</token><token pos="ncfs000">vez</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Adopt_selection" head="en">
+				<argument type="Agent" dependent="un presidente" />
+				<argument type="Attribute" dependent="problema de los desaparecidos" /></frame>
+			<main_frame type="Appellations" head="presidente" />
+			<main_frame type="Becoming_aware" head="hallazgo de">
+				<argument type="Phenomenon" dependent="de la nieta de" /></main_frame>
+			<main_frame type="Causation" head="provocado">
+				<argument type="Cause" dependent="noticia del hallazgo de la nieta de" />
+				<argument type="Effect" dependent="provocado una auténtica conmoción en Uruguay" /></main_frame>
+			<frame type="Ordinal_numbers" head="primera">
+				<argument type="Type" dependent="primera vez" /></frame>
+			<frame type="People" head="los" />
+			<frame type="Predicament" head="problema">
+				<argument type="Experiencer" dependent="los desaparecidos" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

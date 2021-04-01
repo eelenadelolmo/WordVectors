@@ -1,0 +1,12 @@
+{   ('Affirm_or_deny', 'abandonar'): [   ('Speaker', 'ser'),
+                                         ('Manner', 'negó ayer'),
+                                         ('Message', 'que su padre vaya a abandonar la urbanización Los Boldos , en Bucalemu , donde cumple el arresto domiciliario ,')],
+    ('Arrest', 'arresto'): [('Suspect', 'su padre vaya a abandonar'), ('Charges', 'ser trasladado al Hospital Militar de Santiago')],
+    ('Bringing', 'ser'): [('Theme', 'su'), ('Goal', 'domiciliario')],
+    ('Buildings', 'Hospital'): [('Relative_location', 'Militar'), ('Relative_location', 'de Santiago')],
+    ('Containing', 'domiciliario'): [],
+    ('Departing', 'abandonar'): [('Theme', 'su padre'), ('Path', 'la urbanización Los')],
+    ('Kinship', 'padre'): [('Ego', 'su')],
+    ('Locative_relation', 'donde'): [('Figure', 'cumple el')],
+    ('Sleep', 'abandonar'): [('Sleeper', 'su')],
+    ('Transfer', 'trasladado'): [('Recipient', 'al Hospital Militar de Santiago')]}

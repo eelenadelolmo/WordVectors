@@ -1,0 +1,8 @@
+{   ('Age', 'joven'): [('Entity', 'la joven')],
+    ('Communicate_categorization', 'descrita'): [('Item', 'violencia física y psíquica &'), ('Category', 'descrita de forma & quot ; pobre y esquemática & quot ; y con algunas contradicciones')],
+    ('Conduct', 'de forma'): [('Agent', 'pobre y esquemática')],
+    ('Judicial_body', 'tribunal'): [],
+    ('People', 'la joven'): [('Descriptor', 'joven')],
+    ('Statement', 'acusaciones'): [('Message', 'violencia física y psíquica & quot ; fue descrita de forma')],
+    ('Statement', 'de'): [('Medium', 'tribunal')],
+    ('Statement', 'declaración'): [('Speaker', 'la joven')]}

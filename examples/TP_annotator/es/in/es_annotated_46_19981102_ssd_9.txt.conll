@@ -1,0 +1,9 @@
+{   ('Age', 'jóvenes'): [('Entity', 'dos')],
+    ('Calendric_unit', 'semanas'): [('Count', 'pocas')],
+    ('Experience_bodily_harm', 'lesiones'): [],
+    ('Judgment_communication', 'acusados'): [('Reason', 'lesiones y desobediencia a la autoridad')],
+    ('Kinship', 'la'): [],
+    ('Leadership', 'autoridad'): [],
+    ('People', 'dos'): [('Descriptor', 'jóvenes')],
+    ('Quantified_mass', 'pocas'): [('Individuals', 'semanas')],
+    ('Time_vector', 'Hace'): [('Distance', 'pocas semanas'), ('Event', 'juez de Girona Pilar Rovira absolvió a dos jóvenes , Enric Carmen y')]}

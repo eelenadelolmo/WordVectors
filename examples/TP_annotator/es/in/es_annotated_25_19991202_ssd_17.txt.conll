@@ -1,0 +1,10 @@
+{   ('Awareness', 'sabe'): [('Content', 'que'), ('Cognizer', 'lo')],
+    ('Body_movement', 'calla lo'): [('Message', 'calla lo que sabe')],
+    ('Change_position_on_a_scale', 'beneficio'): [('Item', 'económico')],
+    ('Economy', 'económico'): [],
+    ('Frequency', 'menudo'): [('Event', 'gente que se calla lo que sabe')],
+    ('Intentionally_act', 'se'): [('Agent', 'lo'), ('Act', 'lo'), ('Purpose', 'para obtener un beneficio económico')],
+    ('Locative_relation', 'hay'): [('Figure', 'menudo hay gente que se calla lo que sabe , pero no lo hace para obtener un beneficio económico')],
+    ('People', 'gente'): [('Descriptor', 'gente que se calla lo que sabe')],
+    ('Performers_and_roles', 'se'): [('Performance', 'beneficio')],
+    ('Proportional_quantity', 'que'): [('Individuals', 'lo que sabe')]}

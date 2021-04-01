@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="42_20020802_ssd">
+
+
+	<concepts>
+		<concept id="c_0">TVE-1</concept>
+		<concept id="c_1">El problema</concept>
+		<concept id="c_2">que</concept>
+		<concept id="c_3">la poesía lo que</concept>
+		<concept id="c_4">Hierro</concept>
+		<concept id="c_5">su intervención</concept>
+		<concept id="c_6">Dávila</concept>
+		<concept id="c_7">de presentadores simpatiquísimos ( ahora son Guillermo Romero y Patricia Betancort )</concept>
+		<concept id="c_8">musicales</concept>
+		<concept id="c_9">de esta tele</concept>
+		<concept id="c_10">; Soy patriota</concept>
+		<concept id="c_11">lo</concept>
+		<concept id="c_12">lo</concept>
+		<concept id="c_13">un musical</concept>
+		<concept id="c_14">esta tele</concept>
+		<concept id="c_15">una pareja</concept>
+		<concept id="c_16">presentadores</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 En un nuevo alarde de originalidad e inventiva, TVE-1 estrenó el miércoles lo nunca visto: un musical veraniego.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="np00000">TVE-1</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_11" concept_ref3="c_12" concept_ref4="c_13">
+			<token pos="vmis3s0">estrenó</token><mention concept_ref="c_1"><token pos="da0ms0">el</token><token pos="ncms000">miércoles</token></mention><token pos="da0ns0">lo</token><token pos="rg">nunca</token><token pos="aq0msp">visto</token><token pos="fd">:</token><mention concept_ref="c_13"><token pos="di0ms0">un</token><token pos="ncms000">musical</token></mention><token pos="aq0ms0">veraniego</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevo">
+				<argument type="Entity" dependent="alarde de originalidad e inventiva" /></frame>
+			<frame type="Calendric_unit" head="veraniego" />
+			<frame type="Leadership" head="el">
+				<argument type="Leader" dependent="de" /></frame>
+			<frame type="Perception_experience" head="visto">
+				<argument type="Phenomenon" dependent="lo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y le ha colocado el poético título de Suena la noche.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="noche" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El problema es que las noches musicales de esta tele siempre riman igual: una pareja de presentadores simpatiquísimos ( ahora son Guillermo Romero y Patricia Betancort ) que mantienen diálogos surrealistas para dar entrada a actuaciones con la música enlatada.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">problema</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_4" concept_ref3="c_5" concept_ref4="c_7" concept_ref5="c_8" concept_ref6="c_9" concept_ref7="c_11" concept_ref8="c_12" concept_ref9="c_13" concept_ref10="c_14" concept_ref11="c_15" concept_ref12="c_16">
+			<token pos="vsip3s0">es</token><token pos="cs">que</token><mention concept_ref="c_1"><token pos="da0fp0">las</token><token pos="ncfp000">noches</token></mention><mention concept_ref="c_8"><token pos="aq0cp0">musicales</token></mention><mention concept_ref="c_9"><token pos="sps00">de</token><token pos="dd0fs0">esta</token><token pos="ncfs000">tele</token></mention><token pos="rg">siempre</token><token pos="vmip3p0">riman</token><token pos="rg">igual</token><token pos="fd">:</token><mention concept_ref="c_15"><token pos="di0fs0">una</token><token pos="ncfs000">pareja</token></mention><mention concept_ref="c_7"><token pos="sps00">de</token><token pos="ncmp000">presentadores</token><token pos="aq0mp0">simpatiquísimos</token><token pos="fpa">(</token><token pos="rg">ahora</token><token pos="vsip3p0">son</token><token pos="ncms000">Guillermo</token><token pos="np00000">Romero</token><token pos="cc">y</token><token pos="ncms000">Patricia</token><token pos="np00000">Betancort</token><token pos="fpt">)</token></mention><token pos="pr0cn000">que</token><token pos="vmip3p0">mantienen</token><token pos="ncmp000">diálogos</token><token pos="aq0cp0">surrealistas</token><token pos="sps00">para</token><token pos="vmn0000">dar</token><token pos="ncfs000">entrada</token><token pos="sps00">a</token><mention concept_ref="c_5"><token pos="ncfp000">actuaciones</token></mention><token pos="sps00">con</token><mention concept_ref="c_13"><token pos="da0fs0">la</token><token pos="ncfs000">música</token></mention><token pos="aq0fsp">enlatada</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_ongoing" head="mantienen">
+				<argument type="Agent" dependent="de presentadores simpatiquísimos ( ahora son Guillermo Romero y Patricia Betancort )" />
+				<argument type="Activity" dependent="diálogos surrealistas para dar entrada a actuaciones con la música enlatada" /></main_frame>
+			<frame type="Arriving" head="entrada">
+				<argument type="Goal" dependent="a actuaciones con la música" /></frame>
+			<main_frame type="Calendric_unit" head="noches">
+				<argument type="Relative_time" dependent="musicales" />
+				<argument type="Whole" dependent="de esta tele" /></main_frame>
+			<frame type="Cardinal_numbers" head="pareja de">
+				<argument type="Unit" dependent="de presentadores simpatiquísimos" /></frame>
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="las noches musicales de esta tele" />
+				<argument type="Event" dependent="riman igual" /></frame>
+			<main_frame type="Giving" head="dar">
+				<argument type="Theme" dependent="dar entrada a actuaciones con la música enlatada" /></main_frame>
+			<frame type="Identicality" head="igual" />
+			<main_frame type="Performing_arts" head="actuaciones" />
+			<frame type="Performing_arts" head="música">
+				<argument type="Type" dependent="enlatada" /></frame>
+			<frame type="Predicament" head="problema" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Al menos, este show no lo presenta el insumergible Ramón García, que ahora está entretenido con sus vaquillas en Grand Prix ( TVE-1 ).
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_13">
+			<token pos="vmip3s0">está</token><token pos="aq0msp">entretenido</token><token pos="sps00">con</token><mention concept_ref="c_13"><token pos="dp3cp0">sus</token><token pos="ncfp000">vaquillas</token></mention><token pos="sps00">en</token><token pos="np0000l">Grand</token><token pos="np0000l">Prix</token><token pos="fpa">(</token><mention concept_ref="c_0"><token pos="np00000">TVE-1</token></mention><token pos="fpt">)</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Evidence" head="show" />
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="menos" /></frame>
+			<frame type="Temporal_collocation" head="ahora">
+				<argument type="Trajector_event" dependent="que" />
+				<argument type="Trajector_event" dependent="entretenido con sus vaquillas en Grand Prix (" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero el nuevo, Romero, tampoco sobresale del conjunto, especialmente cuando apechuga sin rubor con frases tan profundas como "La música es el susurro de la vida".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="nuevo" />
+			<frame type="Make_noise" head="susurro de">
+				<argument type="Sound_source" dependent="vida" /></frame>
+			<frame type="Posture" head="sobresale">
+				<argument type="Agent" dependent="rubor" />
+				<argument type="Location" dependent="sobresale del" /></frame>
+			<frame type="Ranked_expectation" head="tan">
+				<argument type="Entity" dependent="el nuevo , Romero ," /></frame>
+			<frame type="Sleep" head="sobresale del">
+				<argument type="Sleeper" dependent="el nuevo , Romero ," /></frame>
+			<frame type="Temporal_collocation" head="cuando">
+				<argument type="Landmark_event" dependent="es" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Curioso aforismo para presentar a Los del Río.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Typicality" head="Curioso">
+				<argument type="State_of_affairs" dependent="aforismo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y mientras en TVE-1 Romero y Betancort recitaban sin sonrojarse lo que le dictaba un guión pasado de moda, en La 2, uno de los grandes poetas españoles contemporáneos, José Hierro, confesaba que le da vergüenza leer sus poemas, "por pudor", y que la poesía "es lo que sirve para decir aquello que no se puede decir".
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0fs0">la</token><token pos="ncfs000">poesía</token><token pos="da0ns0">lo</token><token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_3" concept_ref3="c_11" concept_ref4="c_12">
+			<token pos="fe">quot;</token><token pos="vmip3s0">sirve</token><token pos="sps00">para</token><token pos="vmn0000">decir</token><mention concept_ref="c_3"><token pos="pd0ns000">aquello</token></mention><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="uno de los grandes poetas españoles contemporáneos , José Hierro , " />
+			<frame type="Cardinal_numbers" head="uno">
+				<argument type="Entity" dependent="grandes poetas españoles contemporáneos" /></frame>
+			<frame type="Contingency" head="dictaba">
+				<argument type="Determinant" dependent="que" />
+				<argument type="Determinant" dependent="dictaba un guión pasado de moda" /></frame>
+			<frame type="Desirability" head="grandes">
+				<argument type="Evaluee" dependent="poetas españoles contemporáneos" /></frame>
+			<frame type="Reading_activity" head="leer sus">
+				<argument type="Reader" dependent="lo" />
+				<argument type="Text" dependent="sus poemas" /></frame>
+			<frame type="Reveal_secret" head="confesaba">
+				<argument type="Speaker" dependent="2 , uno de los grandes poetas españoles contemporáneos ," />
+				<argument type="Information" dependent="que le da vergüenza leer sus poemas ,  quot ; por pudor  quot ; , y que la poesía  quot ; es lo" /></frame>
+			<frame type="Stage_of_progress" head="pasado de moda">
+				<argument type="Entity" dependent="quot" /></frame>
+			<main_frame type="Statement" head="decir">
+				<argument type="Message" dependent="le" /></main_frame>
+			<frame type="Text" head="poemas">
+				<argument type="Author" dependent="sus" /></frame>
+			<frame type="Text" head="poesía" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Hierro lo tiene crudo frente a shows de canciones del verano, pero es de agradecer que TVE tenga una opción digna para aquellos a los que no les hagan tilín referentes sociales de la categoría de Chenoa y Bisbal.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="np00000">Hierro</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_11" concept_ref3="c_12" concept_ref4="c_13" concept_ref5="c_15">
+			<token pos="pp3msa00">lo</token><token pos="vmip3s0">tiene</token><token pos="aq0ms0">crudo</token><token pos="rg">frente</token><token pos="sps00">a</token><token pos="ncmp000">shows</token><token pos="sps00">de</token><token pos="ncfp000">canciones</token><token pos="spcms">del</token><mention concept_ref="c_15"><token pos="ncms000">verano</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="verano">
+				<argument type="Relative_time" dependent="frente" /></frame>
+			<frame type="Categorization" head="categoría">
+				<argument type="Item" dependent="Chenoa y Bisbal" /></frame>
+			<frame type="Choosing" head="opción">
+				<argument type="Cognizer" dependent="digna" />
+				<argument type="Topic" dependent="a los que no les hagan tilín referentes sociales de la categoría de Chenoa y Bisbal" /></frame>
+			<frame type="Degree_of_processing" head="crudo" />
+			<frame type="Evidence" head="shows">
+				<argument type="Proposition" dependent="tiene crudo frente a shows de canciones del verano" /></frame>
+			<frame type="Judgment" head="agradecer">
+				<argument type="Evaluee" dependent="opción digna para aquellos a los que no les hagan tilín referentes sociales de la categoría de Chenoa y" /></frame>
+			<frame type="Manufacturing" head="hagan">
+				<argument type="Producer" dependent="los que" />
+				<argument type="Product" dependent="referentes sociales de la categoría de Chenoa y Bisbal" /></frame>
+			<frame type="Part_orientational" head="frente">
+				<argument type="Whole" dependent="del verano" /></frame>
+			<frame type="Text" head="canciones">
+				<argument type="Medium" dependent="tiene crudo frente a shows de canciones del verano" />
+				<argument type="Topic" dependent="shows" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y Hierro - - que se siente poeta de segunda y que no entiende que se hayan vendido 11 ediciones de su Cuaderno de Nueva York - -, es una buena alternativa.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="que " />
+			<frame type="Commerce_sell" head="vendido">
+				<argument type="Seller" dependent="Cuaderno" /></frame>
+			<frame type="Desirability" head="buena">
+				<argument type="Evaluee" dependent="alternativa" /></frame>
+			<frame type="Grasp" head="entiende">
+				<argument type="Phenomenon" dependent="que se hayan vendido 11 ediciones de su Cuaderno de Nueva York - - , es una buena alternativa" /></frame>
+			<frame type="Text" head="ediciones">
+				<argument type="Descriptor" dependent="11" />
+				<argument type="Containing_text" dependent="de Nueva York" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Lástima que su intervención fuera en El tercer grado de Carlos Dávila, uno de los más aguerridos representantes del periodismo popular que, fiel a sus principios, dirigió la entrevista a sus trincheras habituales: aseguró que a Hierro "le repatea el poeta social" y que ama a España ( a lo que éste replicó rápido: "Soy patriota, pero no patriotero" ).
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="dp3cs0">su</token><token pos="ncfs000">intervención</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_1" concept_ref3="c_6" concept_ref4="c_4" concept_ref5="c_3" concept_ref6="c_9" concept_ref7="c_10" concept_ref8="c_11" concept_ref9="c_12" concept_ref10="c_14" concept_ref11="c_16" concept_ref12="c_13">
+			<token pos="vssi3s0">fuera</token><token pos="sps00">en</token><token pos="da0fs0">El</token><token pos="ao0fs0">tercer</token><token pos="ncfs000">grado</token><token pos="sps00">de</token><token pos="np0000l">Carlos</token><token pos="np0000l">Dávila</token><token pos="fc">,</token><token pos="pi0ms000">uno</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="rg">más</token><token pos="aq0mp0">aguerridos</token><token pos="nccp000">representantes</token><token pos="spcms">del</token><mention concept_ref="c_4"><token pos="ncms000">periodismo</token></mention><token pos="aq0cs0">popular</token><token pos="fd">:</token><token pos="vmis3s0">aseguró</token><token pos="cs">que</token><token pos="sps00">a</token><token pos="np00000">Hierro</token><token pos="fe">quot;</token><mention concept_ref="c_9"><token pos="pp3csd00">le</token><token pos="vmip3s0">repatea</token></mention><mention concept_ref="c_3"><token pos="da0ms0">el</token><token pos="ncms000">poeta</token></mention><token pos="aq0cs0">social</token><token pos="fe">quot;</token><token pos="cc">y</token><token pos="cs">que</token><token pos="vmip3s0">ama</token><token pos="sps00">a</token><token pos="np00000">España</token><token pos="fpa">(</token><token pos="sps00">a</token><token pos="da0ns0">lo</token><token pos="pr0cn000">que</token><mention concept_ref="c_14"><token pos="pd0ms000">éste</token></mention><token pos="vmis3s0">replicó</token><token pos="rg">rápido</token><token pos="fd">:</token><token pos="fe">quot;</token><token pos="vsip1s0">Soy</token><token pos="aq0cs0">patriota</token><token pos="fc">,</token><token pos="cc">pero</token><token pos="rn">no</token><token pos="aq0ms0">patriotero</token><token pos="fe">quot;</token><token pos="fpt">)</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aiming" head="dirigió">
+				<argument type="Agent" dependent="periodismo popular" />
+				<argument type="Targeted" dependent="que , fiel a sus principios" />
+				<argument type="Instrument" dependent="la entrevista" />
+				<argument type="Targeted" dependent="a sus trincheras habituales" />
+				<argument type="Activity" dependent="; le repatea el poeta social  quot ; y que ama a España ( a lo que éste replicó rápido :  quot ; Soy patriota ," /></frame>
+			<main_frame type="Communication_response" head="replicó">
+				<argument type="Trigger" dependent="; Soy patriota" /></main_frame>
+			<frame type="Desirability" head="popular">
+				<argument type="Evaluee" dependent="periodismo" /></frame>
+			<main_frame type="Experiencer_focus" head="ama">
+				<argument type="Experiencer" dependent="lo" />
+				<argument type="Content" dependent="le repatea" /></main_frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="su intervención" />
+				<argument type="Ground" dependent="tercer grado de Carlos" /></frame>
+			<frame type="Ordinal_numbers" head="tercer">
+				<argument type="Type" dependent="grado de Carlos" /></frame>
+			<frame type="People_by_religion" head="fiel" />
+			<frame type="Telling" head="fiel">
+				<argument type="Speaker" dependent="lo" />
+				<argument type="Message" dependent="; le repatea el poeta social  quot ; y que ama a España ( a lo que éste replicó rápido :" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En fin, Dávila no vibrará con la poesía, pero sí sabe muy bien cómo suena TVE.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="np00000">Dávila</token>
+		</theme>
+		<rheme concept_ref1="c_3">
+			<token pos="rn">no</token><token pos="vmif3s0">vibrará</token><token pos="sps00">con</token><mention concept_ref="c_3"><token pos="da0fs0">la</token><token pos="ncfs000">poesía</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="sabe">
+				<argument type="Cognizer" dependent="la" />
+				<argument type="Content" dependent="muy bien cómo suena" /></frame>
+			<frame type="Make_noise" head="suena">
+				<argument type="Sound_source" dependent="la" /></frame>
+			<frame type="Text" head="poesía" />
+		</semantic_roles>
+	</sentence>
+	
+</text>

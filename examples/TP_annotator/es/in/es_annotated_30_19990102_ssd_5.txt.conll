@@ -1,0 +1,11 @@
+{   ('Appellations', 'presidente'): [('Name', 'yugoslavo'), ('Type', 'Slobodan Milosevic')],
+    ('Becoming_aware', 'encontrar'): [('Phenomenon', 'que ponga fin a & quot ; las dudas del mundo y Europa & quot ; y que implique & quot ; la igualdad para')],
+    ('Catastrophe', 'crisis'): [('Cause', 'Kosovo')],
+    ('Certainty', 'dudas del'): [('Cognizer', 'del mundo y Europa')],
+    ('Desirable_event', 'debe'): [('State_of_affairs', 'una solución política a la crisis de Kosovo'), ('State_of_affairs', 'que ponga fin a & quot ; las dudas del mundo y Europa & quot ; y')],
+    ('Part_whole', 'parte'): [('Whole', 'su')],
+    ('Placing', 'se'): [('Theme', 'que'), ('Theme', 'fin a & quot ; las dudas del mundo y Europa & quot ; y que implique & quot ; la igualdad para todos')],
+    ('Political_locales', 'mundo'): [],
+    ('Process_end', 'fin'): [('Process', 'quot ; las dudas del mundo y Europa & quot ; y que implique & quot ; la igualdad para todos')],
+    ('Statement', 'afirmó'): [   ('Speaker', 'el presidente yugoslavo Slobodan Milosevic'),
+                                 ('Message', 'que ponga fin a & quot ; las dudas del mundo y Europa & quot ; y que implique & quot ; la igualdad para')]}

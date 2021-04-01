@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="44_19991102_ssd">
+
+
+	<concepts>
+		<concept id="c_0">la firma de Augsburgo</concept>
+		<concept id="c_1">los protestantes españoles</concept>
+		<concept id="c_2">La Federación de Entidades Religiosas Evangélicas o Protestantes de España</concept>
+		<concept id="c_3">Los evangélicos españoles , que en el comunicado insisten en las enormes diferencias existentes entre ambas iglesias ,</concept>
+		<concept id="c_4">que</concept>
+		<concept id="c_5">Juan Pablo II</concept>
+		<concept id="c_6">el acuerdo firmado en Augsburgo</concept>
+		<concept id="c_7">el acercamiento</concept>
+		<concept id="c_8">Lutero</concept>
+		<concept id="c_9">lo que</concept>
+		<concept id="c_10">La idea de la gracia divina como única vía para la salvación</concept>
+		<concept id="c_11">la salvación</concept>
+		<concept id="c_12">El presidente de la Conferencia Episcopal Alemana , el obispo Karl Lehman ,</concept>
+		<concept id="c_13">El obispo auxiliar de Hamburgo , Hans-Jochen Jaschke ,</concept>
+		<concept id="c_14">reservas sobre el acercamiento entre el Vaticano y la Iglesia luterana ratificado en Augsburgo el domingo</concept>
+		<concept id="c_15">se</concept>
+		<concept id="c_16">ciudad</concept>
+		<concept id="c_17">el hecho</concept>
+		<concept id="c_18">se</concept>
+		<concept id="c_19">una imagen</concept>
+		<concept id="c_20">catolicismo</concept>
+		<concept id="c_21">un paso</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Los evangélicos españoles aplauden el diálogo con el Vaticano pero rechazan la integración.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Respond_to_proposal" head="rechazan">
+				<argument type="Proposal" dependent="integración" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Juan Pablo II asegura que la firma de Augsburgo es "una piedra miliar" en el camino de la unión Barcelona Roma.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">la</token><token pos="ncfs000">firma</token><token pos="sps00">de</token><token pos="np00000">Augsburgo</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_7" concept_ref3="c_5">
+			<token pos="vsip3s0">es</token><token pos="fe">quot;</token><mention concept_ref="c_7"><token pos="di0fs0">una</token><token pos="ncfs000">piedra</token></mention><token pos="aq0cs0">miliar</token><token pos="fe">quot;</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">camino</token><token pos="sps00">de</token><mention concept_ref="c_5"><token pos="da0fs0">la</token><token pos="ncfs000">unión</token><token pos="np0000l">Barcelona</token><token pos="np0000l">Roma</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Juan Pablo II " />
+			<frame type="Roadways" head="camino">
+				<argument type="Name" dependent="de la unión Barcelona Roma" /></frame>
+			<frame type="Sign_agreement" head="la firma">
+				<argument type="Agreement" dependent="de Augsburgo" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="una piedra miliar" />
+				<argument type="Ground" dependent="el camino de la unión Barcelona Roma" /></frame>
+			<frame type="Telling" head="asegura">
+				<argument type="Speaker" dependent="Juan Pablo" />
+				<argument type="Message" dependent="que la firma de Augsburgo es  quot ; una piedra miliar  quot ; en el camino de la unión Barcelona Roma" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ha levantado la excomunión a Lutero.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cause_to_end" head="levantado">
+				<argument type="Agent" dependent="Ha" />
+				<argument type="State" dependent="excomunión" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero los protestantes españoles manifestaron ayer sus reservas sobre el acercamiento entre el Vaticano y la Iglesia luterana ratificado en Augsburgo el domingo.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0mp0">los</token><token pos="nccp000">protestantes</token><token pos="aq0mp0">españoles</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_7" concept_ref3="c_11" concept_ref4="c_0" concept_ref5="c_6" concept_ref6="c_14" concept_ref7="c_15" concept_ref8="c_18">
+			<token pos="vmis3p0">manifestaron</token><mention concept_ref="c_1"><token pos="dp3cp0">sus</token><token pos="ncfp000">reservas</token></mention><token pos="sps00">sobre</token><mention concept_ref="c_7"><token pos="da0ms0">el</token><token pos="ncms000">acercamiento</token></mention><token pos="sps00">entre</token><token pos="da0ms0">el</token><token pos="np00000">Vaticano</token><token pos="cc">y</token><mention concept_ref="c_11"><token pos="da0fs0">la</token><token pos="np00000">Iglesia</token></mention><token pos="aq0fs0">luterana</token><token pos="aq0msp">ratificado</token><token pos="sps00">en</token><mention concept_ref="c_0"><token pos="np00000">Augsburgo</token></mention><mention concept_ref="c_6"><token pos="da0ms0">el</token><token pos="ncms000">domingo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="ayer" />
+			<main_frame type="Expressing_publicly" head="manifestaron">
+				<argument type="Communicator" dependent="los protestantes españoles" />
+				<argument type="Place" dependent="ayer" />
+				<argument type="Content" dependent="reservas sobre el acercamiento entre el Vaticano y la Iglesia luterana ratificado en Augsburgo el domingo" /></main_frame>
+			<frame type="Ratification" head="ratificado">
+				<argument type="Ratifier" dependent="reservas sobre el acercamiento entre el Vaticano y la Iglesia luterana" />
+				<argument type="Manner" dependent="en Augsburgo el" />
+				<argument type="Time" dependent="el domingo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La Federación de Entidades Religiosas Evangélicas o Protestantes de España emitió una nota en la que mostró su preocupación por el hecho de que "este gesto positivo" se convierta en "una imagen de integración del protestantismo al catolicismo romano".
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">La</token><token pos="np00000">Federación</token><token pos="sps00">de</token><token pos="np00000">Entidades</token><token pos="aq0fp0">Religiosas</token><token pos="np00000">Evangélicas</token><token pos="cc">o</token><token pos="np00000">Protestantes</token><token pos="sps00">de</token><token pos="np00000">España</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_5" concept_ref3="c_7" concept_ref4="c_1" concept_ref5="c_15" concept_ref6="c_17" concept_ref7="c_18" concept_ref8="c_19" concept_ref9="c_20">
+			<token pos="vmis3s0">emitió</token><mention concept_ref="c_5"><token pos="di0fs0">una</token><token pos="ncfs000">nota</token></mention><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="pr0cn000">que</token><token pos="vmis3s0">mostró</token><mention concept_ref="c_7"><token pos="dp3cs0">su</token><token pos="ncfs000">preocupación</token></mention><token pos="sps00">por</token><mention concept_ref="c_17"><token pos="da0ms0">el</token><token pos="ncms000">hecho</token></mention><token pos="sps00">de</token><token pos="cs">que</token><token pos="fe">quot;</token><mention concept_ref="c_1"><token pos="dd0ms0">este</token><token pos="ncms000">gesto</token></mention><token pos="aq0ms0">positivo</token><token pos="fe">quot;</token><token pos="p0300000">se</token><token pos="vmsp3s0">convierta</token><token pos="sps00">en</token><token pos="fe">quot;</token><mention concept_ref="c_19"><token pos="di0fs0">una</token><token pos="ncfs000">imagen</token></mention><token pos="sps00">de</token><token pos="ncfs000">integración</token><token pos="spcms">del</token><token pos="ncms000">protestantismo</token><token pos="spcms">al</token><mention concept_ref="c_20"><token pos="ncms000">catolicismo</token></mention><token pos="aq0ms0">romano</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming" head="se">
+				<argument type="Entity" dependent="este gesto positivo" />
+				<argument type="Final_category" dependent="quot ; una imagen de integración del protestantismo al catolicismo romano " /></frame>
+			<frame type="Emotion_directed" head="preocupación">
+				<argument type="Experiencer" dependent="se" />
+				<argument type="Topic" dependent="; este gesto positivo  quot ; se convierta en  quot ; una imagen de integración del protestantismo al catolicismo romano" /></frame>
+			<main_frame type="Expressing_publicly" head="mostró">
+				<argument type="Content" dependent="Federación de Entidades Religiosas Evangélicas o Protestantes de España emitió una nota en la que" />
+				<argument type="Communicator" dependent="se" />
+				<argument type="Content" dependent="preocupación por el hecho de que  quot ; este gesto positivo  quot ; se convierta en  quot ; una imagen de integración del protestantismo al catolicismo romano" /></main_frame>
+			<frame type="Impression" head="imagen">
+				<argument type="Figure" dependent="de integración del protestantismo al" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los evangélicos españoles, que en el comunicado insisten en las enormes diferencias existentes entre ambas iglesias, califican de incoherente "la postura papal de firmar esta declaración a la vez que se anuncian indulgencias a través de la confesión, la visita a Roma y las limosnas para el año 2000".
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="da0mp0">Los</token><token pos="aq0mp0">evangélicos</token><token pos="ncmp000">españoles</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">comunicado</token><token pos="vmip3p0">insisten</token><token pos="sps00">en</token><token pos="da0fp0">las</token><token pos="aq0cp0">enormes</token><token pos="ncfp000">diferencias</token><token pos="aq0cp0">existentes</token><token pos="sps00">entre</token><token pos="dn0fp0">ambas</token><token pos="ncfp000">iglesias</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_1" concept_ref3="c_11">
+			<token pos="vmip3p0">califican</token><token pos="sps00">de</token><token pos="aq0cs0">incoherente</token><token pos="fe">quot;</token><mention concept_ref="c_1"><token pos="da0fs0">la</token><token pos="ncfs000">postura</token></mention><token pos="aq0cs0">papal</token><token pos="sps00">de</token><token pos="vmn0000">firmar</token><mention concept_ref="c_11"><token pos="dd0fs0">esta</token><token pos="ncfs000">declaración</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="visita">
+				<argument type="Goal" dependent="para el" /></frame>
+			<frame type="Being_employed" head="postura">
+				<argument type="Manner" dependent="papal" />
+				<argument type="Task" dependent="de firmar esta declaración" /></frame>
+			<frame type="Buildings" head="iglesias" />
+			<frame type="Calendric_unit" head="año" />
+			<frame type="Cardinal_numbers" head="ambas">
+				<argument type="Entity" dependent="iglesias" /></frame>
+			<frame type="Communicate_categorization" head="declaración">
+				<argument type="Category" dependent="evangélicos españoles , que en el comunicado insisten en las enormes diferencias existentes entre ambas iglesias ," /></frame>
+			<frame type="Non-commutative_statement" head="diferencias">
+				<argument type="Term_1" dependent="entre ambas iglesias" /></frame>
+			<main_frame type="Sign_agreement" head="firmar">
+				<argument type="Agreement" dependent="esta declaración a" /></main_frame>
+			<frame type="Size" head="enormes">
+				<argument type="Entity" dependent="diferencias existentes entre ambas iglesias" /></frame>
+			<frame type="Statement" head="anuncian">
+				<argument type="Message" dependent="indulgencias a través de la confesión" /></frame>
+			<frame type="Statement" head="declaración" />
+			<main_frame type="Statement" head="insisten">
+				<argument type="Speaker" dependent="que" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sin embargo, aun recelando del Papa, recalcan la necesidad de un mayor diálogo - - "que no unidad" - - que ponga fin a la agria disputa doctrinal que ha durado casi cinco siglos.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_0">
+			<token pos="vmp00sm">ponga</token><token pos="ncfp000">fin</token><token pos="sps00">a</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="aq0fs0">agria</token><token pos="ncfs000">disputa</token></mention><token pos="aq0cs0">doctrinal</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="siglos">
+				<argument type="Count" dependent="cinco" /></frame>
+			<frame type="Cardinal_numbers" head="cinco">
+				<argument type="Unit" dependent="siglos" /></frame>
+			<frame type="Needing" head="necesidad de">
+				<argument type="Requirement" dependent="un mayor diálogo - -  quot ; que no unidad  quot ; - - que ponga fin a la agria disputa doctrinal que" /></frame>
+			<frame type="Process_end" head="fin">
+				<argument type="Process" dependent="disputa doctrinal que ha durado casi cinco siglos" /></frame>
+			<frame type="Quarreling" head="disputa">
+				<argument type="Issue" dependent="doctrinal" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Juan Pablo II, desde el balcón vaticano de la plaza de San Pedro, destacó la importancia del acuerdo: "Pone fin a una de las principales discusiones que contraponían a católicos y luteranos" como es "la doctrina de la fe".
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="ncfs000">Juan</token><token pos="ncms000">Pablo</token><token pos="np00000">II</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_11" concept_ref3="c_6" concept_ref4="c_3" concept_ref5="c_7" concept_ref6="c_20">
+			<token pos="vmis3s0">destacó</token><mention concept_ref="c_11"><token pos="da0fs0">la</token><token pos="ncfs000">importancia</token></mention><token pos="spcms">del</token><mention concept_ref="c_6"><token pos="ncms000">acuerdo</token></mention><token pos="fd">:</token><token pos="fe">quot;</token><token pos="vmp00sm">Pone</token><token pos="ncfp000">fin</token><token pos="sps00">a</token><token pos="pi0fs000">una</token><token pos="sps00">de</token><mention concept_ref="c_3"><token pos="da0fp0">las</token><token pos="aq0cp0">principales</token><token pos="ncfp000">discusiones</token></mention><token pos="fe">quot;</token><token pos="cs">como</token><token pos="vsip3s0">es</token><token pos="fe">quot;</token><token pos="da0fs0">la</token><token pos="ncfs000">doctrina</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">fe</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Discussion" head="discusiones">
+				<argument type="Topic" dependent="que contraponían a católicos y luteranos  quot ; como es  quot ; la doctrina de la fe" /></main_frame>
+			<frame type="Importance" head="importancia">
+				<argument type="Factor" dependent="del acuerdo" /></frame>
+			<main_frame type="Importance" head="principales">
+				<argument type="Factor" dependent="discusiones que contraponían a católicos y luteranos  quot ; como es  quot ; la doctrina de la fe" /></main_frame>
+			<frame type="Locale_by_use" head="plaza">
+				<argument type="Name" dependent="San Pedro" /></frame>
+			<frame type="Make_agreement_on_action" head="del acuerdo" />
+			<frame type="Placing" head="las">
+				<argument type="Agent" dependent="es" />
+				<argument type="Theme" dependent="fin a una de las principales discusiones que contraponían a católicos y luteranos  quot ; como es  quot ; la doctrina" /></frame>
+			<frame type="Process_end" head="fin" />
+			<frame type="Taking_sides" head="contraponían">
+				<argument type="Side" dependent="discusiones" />
+				<argument type="Cognizer" dependent="es" />
+				<argument type="Side" dependent="católicos y luteranos " /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero el Papa, que señaló que aún hay problemas pendientes que dividen a católicos y evangélicos, consideró que el acuerdo firmado en Augsburgo "es una piedra miliar en el no fácil camino de la recomposición de la plena unidad entre los cristianos".
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0ms0">el</token><token pos="ncms000">acuerdo</token><token pos="aq0msp">firmado</token><token pos="sps00">en</token><token pos="np00000">Augsburgo</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_7" concept_ref3="c_11" concept_ref4="c_1" concept_ref5="c_19" concept_ref6="c_20">
+			<token pos="fe">quot;</token><token pos="vsip3s0">es</token><mention concept_ref="c_7"><token pos="di0fs0">una</token><token pos="ncfs000">piedra</token></mention><token pos="aq0cs0">miliar</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="rn">no</token><token pos="aq0cs0">fácil</token><token pos="ncms000">camino</token><token pos="sps00">de</token><mention concept_ref="c_11"><token pos="da0fs0">la</token><token pos="ncfs000">recomposición</token></mention><token pos="sps00">de</token><mention concept_ref="c_19"><token pos="da0fs0">la</token><token pos="aq0fs0">plena</token><token pos="ncfs000">unidad</token></mention><token pos="sps00">entre</token><token pos="da0mp0">los</token><token pos="ncmp000">cristianos</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el Papa , que señaló que aún hay problemas pendientes que dividen a católicos y evangélicos , " />
+			<frame type="Adducing" head="señaló">
+				<argument type="Speaker" dependent="el Papa" />
+				<argument type="Speaker" dependent="que el" />
+				<argument type="Specified_entity" dependent="que aún hay problemas pendientes que dividen a católicos y evangélicos , consideró que el acuerdo firmado en Augsburgo  quot ;" /></frame>
+			<frame type="Categorization" head="consideró">
+				<argument type="Category" dependent="Pero el Papa , que señaló que aún hay problemas pendientes que dividen a católicos y evangélicos ," /></frame>
+			<frame type="Completeness" head="plena">
+				<argument type="Whole" dependent="unidad" /></frame>
+			<frame type="Continued_state_of_affairs" head="aún">
+				<argument type="State_of_affairs" dependent="hay" />
+				<argument type="State_of_affairs" dependent="problemas pendientes que dividen a católicos y evangélicos , consideró que el acuerdo firmado en Augsburgo  quot ; es una piedra miliar" /></frame>
+			<frame type="Desirability" head="plena">
+				<argument type="Evaluee" dependent="problemas" /></frame>
+			<frame type="Difficulty" head="fácil" />
+			<frame type="Locative_relation" head="hay">
+				<argument type="Figure" dependent="el Papa" />
+				<argument type="Figure" dependent="que el" />
+				<argument type="Figure" dependent="es" />
+				<argument type="Ground" dependent="hay" />
+				<argument type="Figure" dependent="aún hay problemas pendientes que dividen a católicos y evangélicos , consideró que el acuerdo firmado en Augsburgo  quot ; es una piedra" /></frame>
+			<frame type="Make_agreement_on_action" head="el acuerdo" />
+			<frame type="Means" head="camino">
+				<argument type="Purpose" dependent="plena unidad entre los cristianos" /></frame>
+			<frame type="Predicament" head="problemas" />
+			<frame type="Separating" head="dividen">
+				<argument type="Cause" dependent="problemas pendientes" />
+				<argument type="Agent" dependent="es" />
+				<argument type="Part_1" dependent="católicos y evangélicos" /></frame>
+			<frame type="Sign_agreement" head="firmado">
+				<argument type="Agreement" dependent="el acuerdo" />
+				<argument type="Place" dependent="en Augsburgo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El Papa subrayó también durante el rezo del Angelus que el acercamiento se haya sellado "en la misma ciudad donde fue escrita una página decisiva de la Reforma luterana".
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0ms0">el</token><token pos="ncms000">acercamiento</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_11" concept_ref3="c_15" concept_ref4="c_16" concept_ref5="c_18" concept_ref6="c_20">
+			<token pos="p0000000">se</token><token pos="vasp3s0">haya</token><token pos="vmp00sm">sellado</token><token pos="fe">quot;</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="di0fs0">misma</token><mention concept_ref="c_16"><token pos="ncfs000">ciudad</token></mention><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="El Papa " />
+			<main_frame type="Closure" head="sellado">
+				<argument type="Containing_object" dependent="ciudad" /></main_frame>
+			<frame type="Identicality" head="la misma">
+				<argument type="Type" dependent="ciudad" /></frame>
+			<frame type="Importance" head="decisiva">
+				<argument type="Factor" dependent="página decisiva de la Reforma" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="el acercamiento" />
+				<argument type="Ground" dependent="la misma ciudad" /></frame>
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="la misma ciudad" />
+				<argument type="Figure" dependent="una página decisiva de la Reforma" /></frame>
+			<frame type="Means" head="acercamiento" />
+			<frame type="Political_locales" head="ciudad" />
+			<frame type="Rite" head="quot">
+				<argument type="Leader" dependent="del Angelus" /></frame>
+			<frame type="Text_creation" head="escrita">
+				<argument type="Text" dependent="una página decisiva de la Reforma" />
+				<argument type="Text" dependent="haya" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Fue en Augsburgo donde Lutero conoció la bula papal que le excomulgó.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="np00000">Lutero</token>
+		</theme>
+		<rheme concept_ref1="c_5">
+			<token pos="vmis3s0">conoció</token><mention concept_ref="c_5"><token pos="da0fs0">la</token><token pos="ncfs000">bula</token></mention><token pos="aq0cs0">papal</token>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En este escenario, 478 años después, se reunieron el cardenal Edward Cassidy y el obispo luterano Christian Krause, en nombre de los protestantes, en un acto ecuménico que sentó que lo que conduce a la salvación eterna es la gracia divina y no los buenos actos.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="da0ns0">lo</token><token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_11" concept_ref2="c_14">
+			<token pos="vmip3s0">conduce</token><mention concept_ref="c_14"><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">salvación</token><token pos="aq0fs0">eterna</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="que " />
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="478" /></frame>
+			<frame type="Desirability" head="buenos">
+				<argument type="Evaluee" dependent="los" /></frame>
+			<frame type="Intentionally_act" head="actos">
+				<argument type="Act" dependent="acto ecuménico" /></frame>
+			<frame type="Intentionally_act" head="los" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="cardenal Edward Cassidy y el obispo luterano Christian Krause , en nombre de los protestantes" />
+				<argument type="Ground" dependent="un acto ecuménico" />
+				<argument type="Figure" dependent="que lo que conduce a la salvación eterna es la gracia divina y no los buenos" /></frame>
+			<main_frame type="Leadership" head="conduce">
+				<argument type="Governed" dependent="a la salvación eterna" /></main_frame>
+			<frame type="Temporal_subregion" head="después">
+				<argument type="Time_period" dependent="478 años" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La idea de la gracia divina como única vía para la salvación es el núcleo central de las 95 tesis que Martín Lutero clavó en la puerta de la iglesia de Wittenberg, el 31 de octubre de 1517, y que provocaron el cisma en el seno del cristianismo.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="da0fs0">La</token><token pos="ncfs000">idea</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">gracia</token><token pos="aq0fs0">divina</token><token pos="cs">como</token><token pos="aq0fs0">única</token><token pos="ncfs000">vía</token><token pos="sps00">para</token><token pos="da0fs0">la</token><token pos="ncfs000">salvación</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_17" concept_ref3="c_18">
+			<token pos="vsip3s0">es</token><token pos="da0ms0">el</token><token pos="ncms000">núcleo</token><token pos="aq0cs0">central</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="z">95</token><mention concept_ref="c_18"><token pos="ncfn000">tesis</token></mention><token pos="cc">y</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Awareness" head="idea">
+				<argument type="Content" dependent="la gracia divina" /></frame>
+			<main_frame type="Buildings" head="iglesia">
+				<argument type="Name" dependent="Wittenberg" /></main_frame>
+			<frame type="Causation" head="provocaron">
+				<argument type="Cause" dependent="que" />
+				<argument type="Effect" dependent="cisma en el seno del cristianismo" /></frame>
+			<frame type="Connecting_architecture" head="puerta">
+				<argument type="Whole" dependent="la iglesia de Wittenberg" /></frame>
+			<frame type="Interior_profile_relation" head="en el">
+				<argument type="Figure" dependent="provocaron el cisma" />
+				<argument type="Ground" dependent="cristianismo" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="Martín Lutero clavó" />
+				<argument type="Ground" dependent="la puerta" /></frame>
+			<frame type="Means" head="vía">
+				<argument type="Descriptor" dependent="única" />
+				<argument type="Purpose" dependent="para la salvación" /></frame>
+			<frame type="Part_inner_outer" head="central" />
+			<frame type="Sole_instance" head="única">
+				<argument type="Item" dependent="vía para la salvación" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="Martín Lutero clavó en la puerta de la iglesia de Wittenberg" />
+				<argument type="Ground" dependent="1517 , y que provocaron el cisma en el seno del cristianismo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Mientras los católicos aseguraban que para llegar al cielo eran necesarias las buenas obras, Lutero afirmó que la salvación se podía lograr mediante la fe y el diálogo con la Divinidad, sin la intervención de intermediarios eclesiásticos.
+		</str>
+		<theme concept_ref="c_11">
+			<token pos="da0fs0">la</token><token pos="ncfs000">salvación</token>
+		</theme>
+		<rheme concept_ref1="c_11" concept_ref2="c_7" concept_ref3="c_14" concept_ref4="c_15" concept_ref5="c_18">
+			<token pos="p0000000">se</token><token pos="vmii3s0">podía</token><token pos="vmn0000">lograr</token><mention concept_ref="c_14"><token pos="sps00">mediante</token><token pos="da0fs0">la</token><token pos="ncfs000">fe</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">diálogo</token><token pos="sps00">con</token><token pos="da0fs0">la</token><token pos="np00000">Divinidad</token><token pos="fc">,</token><token pos="sps00">sin</token><token pos="da0fs0">la</token><token pos="ncfs000">intervención</token><token pos="sps00">de</token><token pos="ncmp000">intermediarios</token><token pos="aq0mp0">eclesiásticos</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Lutero " />
+			<main_frame type="Accomplishment" head="lograr">
+				<argument type="Goal" dependent="salvación" />
+				<argument type="Goal" dependent="mediante la fe y el diálogo con la Divinidad , sin la intervención de intermediarios eclesiásticos" /></main_frame>
+			<frame type="Arriving" head="llegar">
+				<argument type="Goal" dependent="al cielo" /></frame>
+			<frame type="Being_necessary" head="necesarias">
+				<argument type="Requirement" dependent="buenas obras" /></frame>
+			<frame type="Desirability" head="buenas">
+				<argument type="Evaluee" dependent="obras" /></frame>
+			<frame type="Statement" head="afirmó">
+				<argument type="Speaker" dependent="católicos" />
+				<argument type="Message" dependent="llegar al cielo eran necesarias las buenas obras , Lutero afirmó que la salvación se podía lograr mediante la fe y el diálogo con la" /></frame>
+			<frame type="Work" head="obras" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Los católicos, satisfechos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Satisfying" head="satisfechos">
+				<argument type="Entity" dependent="católicos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Mientras los protestantes desconfían, la reacción entre los católicos ha sido positiva.
+		</str>
+		<theme>
+			<token pos="da0mp0">los</token><token pos="nccp000">protestantes</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Response" head="reacción">
+				<argument type="Trigger" dependent="entre los católicos ha sido positiva" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El presidente de la Conferencia Episcopal Alemana, el obispo Karl Lehman, calificó la declaración de "histórica" y, según el teólogo Joachim Track, "marca un paso hacia las relaciones entre ambas comunidades", informa Gonzalo Cáceres.
+		</str>
+		<theme concept_ref="c_12">
+			<token pos="da0ms0">El</token><token pos="ncms000">presidente</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncms000">Conferencia</token><token pos="np0000o">Episcopal</token><token pos="ncms000">Alemana</token><token pos="fc">,</token><token pos="da0ms0">el</token><token pos="ncms000">obispo</token><token pos="np0000l">Karl</token><token pos="np0000l">Lehman</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_11" concept_ref3="c_7" concept_ref4="c_15" concept_ref5="c_17" concept_ref6="c_18" concept_ref7="c_20" concept_ref8="c_21">
+			<token pos="vmis3s0">calificó</token><mention concept_ref="c_11"><token pos="da0fs0">la</token><token pos="ncfs000">declaración</token></mention><token pos="sps00">de</token><token pos="fe">quot;</token><token pos="aq0fs0">histórica</token><token pos="fe">quot;</token><token pos="fc">,</token><token pos="sps00">según</token><mention concept_ref="c_17"><token pos="da0ms0">el</token><token pos="ncms000">teólogo</token></mention><token pos="np0000l">Joachim</token><token pos="np0000l">Track</token><token pos="fc">,</token><token pos="fe">quot;</token><token pos="vmip3s0">marca</token><mention concept_ref="c_21"><token pos="di0ms0">un</token><token pos="ncms000">paso</token></mention><token pos="sps00">hacia</token><token pos="da0fp0">las</token><token pos="ncfp000">relaciones</token><token pos="sps00">entre</token><token pos="dn0fp0">ambas</token><mention concept_ref="c_7"><token pos="ncfp000">comunidades</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el teólogo Joachim Track Gonzalo Cáceres " />
+			<frame type="Aggregate" head="comunidades" />
+			<frame type="Appellations" head="presidente">
+				<argument type="Title" dependent="de la Conferencia Episcopal" /></frame>
+			<frame type="Be_in_agreement_on_action" head="según el">
+				<argument type="Obligation" dependent="El presidente de la Conferencia Episcopal Alemana , el obispo Karl Lehman , calificó la declaración de  quot ; histórica" />
+				<argument type="Obligation" dependent=", según el teólogo Joachim Track ,  quot ; marca un paso hacia las relaciones entre ambas comunidades" /></frame>
+			<frame type="Cardinal_numbers" head="un">
+				<argument type="Entity" dependent="comunidades" /></frame>
+			<frame type="Communicate_categorization" head="declaración">
+				<argument type="Speaker" dependent="El presidente de la Conferencia Episcopal Alemana , el obispo Karl Lehman ," />
+				<argument type="Item" dependent="la declaración de" />
+				<argument type="Category" dependent="; histórica  quot ; y , según el teólogo Joachim Track ,  quot ; marca un paso hacia las relaciones entre" /></frame>
+			<frame type="Discussion" head="la Conferencia">
+				<argument type="Amount_of_discussion" dependent="Alemana" />
+				<argument type="Manner" dependent="Episcopal" /></frame>
+			<frame type="Goal" head="de">
+				<argument type="Trajector" dependent="El presidente de la Conferencia Episcopal Alemana , el obispo Karl Lehman , calificó la declaración de  quot ; histórica" />
+				<argument type="Landmark" dependent="teólogo Joachim Track" /></frame>
+			<frame type="Intentionally_act" head="paso">
+				<argument type="Purpose" dependent="hacia las relaciones entre ambas comunidades  quot" /></frame>
+			<frame type="Relation" head="las relaciones">
+				<argument type="Entities" dependent="entre ambas comunidades" /></frame>
+			<main_frame type="Sign" head="marca">
+				<argument type="Indicated" dependent="un paso hacia las relaciones entre ambas comunidades  quot" /></main_frame>
+			<frame type="Statement" head="declaración" />
+			<frame type="Statement" head="declaración de">
+				<argument type="Message" dependent="calificó" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El obispo auxiliar de Hamburgo, Hans-Jochen Jaschke, admitió que "equivale a un apretón de manos entre el Papa y Lutero".
+		</str>
+		<theme concept_ref="c_13">
+			<token pos="da0ms0">El</token><token pos="ncms000">obispo</token><token pos="aq0cs0">auxiliar</token><token pos="sps00">de</token><token pos="np00000">Hamburgo</token><token pos="fc">,</token><token pos="np0000l">Hans-Jochen</token><token pos="np0000l">Jaschke</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_19" concept_ref3="c_21">
+			<token pos="fe">quot;</token><token pos="vmm02s0">equivale</token><token pos="sps00">a</token><mention concept_ref="c_19"><token pos="di0ms0">un</token><token pos="ncms000">apretón</token></mention><token pos="sps00">de</token><mention concept_ref="c_21"><token pos="ncfp000">manos</token></mention><token pos="sps00">entre</token><token pos="da0ms0">el</token><token pos="np00000">Papa</token><token pos="cc">y</token><token pos="np00000">Lutero</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Reveal_secret" head="admitió">
+				<argument type="Speaker" dependent="obispo auxiliar de Hamburgo ," />
+				<argument type="Information" dependent="; equivale a un apretón de manos entre el Papa y" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

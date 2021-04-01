@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="32_19981202_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El camino hacia un tercer referendo para la independencia de Quebec</concept>
+		<concept id="c_1">las condiciones ganadoras que había estipulado para su celebración el primer ministro separatista , Lucien Bouchard ,</concept>
+		<concept id="c_2">Bouchard</concept>
+		<concept id="c_3">que</concept>
+		<concept id="c_4">el frente económico</concept>
+		<concept id="c_5">Las reticencias centralistas a este pacto</concept>
+		<concept id="c_6">a materializarse</concept>
+		<concept id="c_7">de ellas</concept>
+		<concept id="c_8">otras</concept>
+		<concept id="c_9">ellas</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El camino hacia un tercer referendo para la independencia de Quebec será más complicado que lo previsto por el Partido Quebequés antes de las elecciones del Lunes.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">camino</token><token pos="sps00">hacia</token><token pos="di0ms0">un</token><token pos="ao0ms0">tercer</token><token pos="ncms000">referendo</token><token pos="sps00">para</token><token pos="da0fs0">la</token><token pos="ncfs000">independencia</token><token pos="sps00">de</token><token pos="np00000">Quebec</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_5">
+			<token pos="vsif3s0">será</token><token pos="rg">más</token><token pos="aq0msp">complicado</token><token pos="cs">que</token><token pos="da0ns0">lo</token><token pos="aq0msp">previsto</token><token pos="sps00">por</token><mention concept_ref="c_0"><token pos="da0ms0">el</token><token pos="ncms000">Partido</token><token pos="np00000">Quebequés</token></mention><token pos="rg">antes</token><token pos="sps00">de</token><mention concept_ref="c_5"><token pos="da0fp0">las</token><token pos="ncfp000">elecciones</token></mention><token pos="spcms">del</token><token pos="ncms000">Lunes</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="Lunes" />
+			<frame type="Change_of_leadership" head="elecciones" />
+			<frame type="Change_of_leadership" head="independencia de">
+				<argument type="Selector" dependent="Quebec" /></frame>
+			<frame type="Goal" head="para">
+				<argument type="Trajector" dependent="camino" />
+				<argument type="Landmark" dependent="un tercer referendo" /></frame>
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="complicado" /></frame>
+			<frame type="Ordinal_numbers" head="tercer">
+				<argument type="Type" dependent="elecciones" /></frame>
+			<frame type="Purpose" head="previsto">
+				<argument type="Agent" dependent="por el Partido Quebequés" />
+				<argument type="Time" dependent="antes de las elecciones del Lunes" /></frame>
+			<frame type="Roadways" head="camino" />
+			<frame type="Spatial_contact" head="por">
+				<argument type="Figure" dependent="las elecciones" />
+				<argument type="Ground" dependent="Lunes" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Event" dependent="el Partido Quebequés" />
+				<argument type="Landmark_event" dependent="las elecciones" />
+				<argument type="Direction" dependent="Lunes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 No obstante, las condiciones ganadoras que había estipulado para su celebración el primer ministro separatista, Lucien Bouchard, han comenzado ya a materializarse, pues la primera de ellas era la victoria electoral.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fp0">las</token><token pos="ncfp000">condiciones</token><token pos="aq0fp0">ganadoras</token><token pos="pr0cn000">que</token><token pos="vaii3s0">había</token><token pos="vmp00sm">estipulado</token><token pos="sps00">para</token><token pos="dp3cs0">su</token><token pos="ncfs000">celebración</token><token pos="da0ms0">el</token><token pos="ao0ms0">primer</token><token pos="ncms000">ministro</token><token pos="aq0cs0">separatista</token><token pos="fc">,</token><token pos="np0000l">Lucien</token><token pos="np0000l">Bouchard</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_6" concept_ref3="c_7" concept_ref4="c_9">
+			<token pos="rn">No</token><token pos="aq0cp0">obstante</token><token pos="vaip3p0">han</token><token pos="vmp00sm">comenzado</token><token pos="rg">ya</token><mention concept_ref="c_6"><token pos="sps00">a</token><token pos="vmn0000">materializarse</token></mention><token pos="cs">pues</token><token pos="da0fs0">la</token><token pos="ao0fs0">primera</token><mention concept_ref="c_7"><token pos="sps00">de</token><token pos="pp3fp000">ellas</token></mention><token pos="vsii3s0">era</token><mention concept_ref="c_5"><token pos="da0fs0">la</token><token pos="ncfs000">victoria</token></mention><token pos="aq0cs0">electoral</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_start" head="comenzado">
+				<argument type="Activity" dependent="condiciones ganadoras que había estipulado para su celebración el primer ministro separatista" />
+				<argument type="Activity" dependent="a materializarse" /></main_frame>
+			<main_frame type="Coming_to_be" head="materializarse" />
+			<frame type="Finish_competition" head="la victoria">
+				<argument type="Margin" dependent="electoral" /></frame>
+			<frame type="Leadership" head="ministro">
+				<argument type="Domain" dependent="separatista" />
+				<argument type="Descriptor" dependent="primer" />
+				<argument type="Leader" dependent="Bouchard" /></frame>
+			<main_frame type="Ordinal_numbers" head="primera">
+				<argument type="Type" dependent="de ellas" /></main_frame>
+			<frame type="Social_event" head="celebración">
+				<argument type="Occasion" dependent="pues la" />
+				<argument type="Place" dependent="primer ministro separatista" /></frame>
+			<frame type="State_of_entity" head="las condiciones" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Bouchard no ha revelado cuáles son las otras, pero la lista de los politólogos comienza por la eliminación del déficit público, para reforzar la confianza de los quebequeses, mayoritariamente opuestos a la secesión, en que un estado soberano resultaría viable económicamente.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="np00000">Bouchard</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_9">
+			<token pos="rn">no</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">revelado</token><token pos="pt0cp000">cuáles</token><token pos="vsip3p0">son</token><mention concept_ref="c_9"><token pos="da0fp0">las</token><token pos="pi0fp000">otras</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_start" head="comienza">
+				<argument type="Agent" dependent="lista de los politólogos" />
+				<argument type="Activity" dependent="por la eliminación del déficit público" /></frame>
+			<frame type="Cause_change_of_strength" head="reforzar">
+				<argument type="Patient" dependent="la confianza de los quebequeses" /></frame>
+			<frame type="Certainty" head="confianza">
+				<argument type="Cognizer" dependent="de los quebequeses" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="del déficit público , para reforzar la confianza de los quebequeses , mayoritariamente opuestos a la secesión ," />
+				<argument type="Ground" dependent="que un estado soberano resultaría viable económicamente" /></frame>
+			<frame type="Leadership" head="estado">
+				<argument type="Governed" dependent="soberano" /></frame>
+			<frame type="People_by_vocation" head="los politólogos">
+				<argument type="Employer" dependent="politólogos" /></frame>
+			<frame type="Removing" head="eliminación">
+				<argument type="Theme" dependent="del déficit público" /></frame>
+			<main_frame type="Reveal_secret" head="revelado">
+				<argument type="Speaker" dependent="Bouchard" />
+				<argument type="Information" dependent="otras" /></main_frame>
+			<frame type="Sequence" head="los" />
+			<frame type="Taking_sides" head="opuestos">
+				<argument type="Action" dependent="a la secesión" /></frame>
+			<frame type="Text" head="lista">
+				<argument type="Text" dependent="politólogos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 También sería indispensable continuar reduciendo el desempleo, que por primera vez en ocho años acaba de bajar del 10%, y un acuerdo con los 275.000 funcionarios, que amenazan con un enfrentamiento por temas laborales.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_9">
+			<token pos="sps00">por</token><token pos="ao0fs0">primera</token><token pos="ncfs000">vez</token><token pos="sps00">en</token><token pos="dn0cp0">ocho</token><mention concept_ref="c_9"><token pos="ncmp000">años</token></mention><token pos="vmip3s0">acaba</token><token pos="sps00">de</token><token pos="vmn0000">bajar</token><token pos="spcms">del</token><token pos="zp">10%</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_necessary" head="indispensable">
+				<argument type="Required_entity" dependent="el" />
+				<argument type="Dependent" dependent="continuar reduciendo el desempleo , que por primera vez en ocho años acaba de bajar del 10 % ," /></frame>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="ocho" /></frame>
+			<frame type="Cause_change_of_position_on_a_scale" head="reduciendo">
+				<argument type="Attribute" dependent="desempleo" /></frame>
+			<frame type="Hostile_encounter" head="enfrentamiento">
+				<argument type="Explanation" dependent="por temas laborales" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="primera vez" />
+				<argument type="Ground" dependent="ocho años" /></frame>
+			<frame type="Leadership" head="funcionarios">
+				<argument type="Descriptor" dependent="275.000" /></frame>
+			<frame type="Make_agreement_on_action" head="un acuerdo">
+				<argument type="Party_2" dependent="con los 275.000 funcionarios" /></frame>
+			<frame type="Ordinal_numbers" head="primera">
+				<argument type="Type" dependent="vez" /></frame>
+			<frame type="Possession" head="en">
+				<argument type="Possession" dependent="del 10 % , y un acuerdo con los 275.000 funcionarios , que amenazan con un enfrentamiento por temas laborales" /></frame>
+			<frame type="Process_continue" head="continuar">
+				<argument type="Event" dependent="reduciendo el desempleo , que por primera vez en ocho años acaba de bajar del 10 % ," /></frame>
+			<frame type="Unemployment_rate" head="desempleo" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Una vez anclado el frente económico, habrá que revisar los argumentos en favor de la independencia, para adaptar la oferta de los separatistas a los deseos populares.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0ms0">el</token><token pos="ncms000">frente</token><token pos="aq0ms0">económico</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_9">
+			<token pos="vaif3s0">habrá</token><token pos="cs">que</token><token pos="vmn0000">revisar</token><token pos="da0mp0">los</token><token pos="ncmp000">argumentos</token><token pos="sps00">en</token><token pos="ncfs000">favor</token><token pos="sps00">de</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="ncfs000">independencia</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Change_of_leadership" head="independencia" />
+			<frame type="Desirability" head="populares">
+				<argument type="Evaluee" dependent="los deseos" /></frame>
+			<frame type="Desiring" head="los deseos">
+				<argument type="Manner" dependent="populares" /></frame>
+			<frame type="Economy" head="económico" />
+			<frame type="Part_orientational" head="frente" />
+			<frame type="Quarreling" head="argumentos">
+				<argument type="Issue" dependent="independencia , para" /></frame>
+			<frame type="Sequence" head="oferta">
+				<argument type="Entity_2" dependent="para adaptar la oferta de los separatistas a los deseos populares" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Según los analistas, sería peligroso para Bouchard retrasar mucho el referendo, por el desgaste que sufriría paralelamente su Gobierno.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Catastrophe" head="sufriría">
+				<argument type="Undesirable_event" dependent="su Gobierno" />
+				<argument type="Time" dependent="paralelamente" /></frame>
+			<frame type="Destiny" head="mucho" />
+			<frame type="Goal" head="para">
+				<argument type="Landmark" dependent="analistas" /></frame>
+			<frame type="Hindering" head="retrasar">
+				<argument type="Hindrance" dependent="Bouchard" />
+				<argument type="Action" dependent="mucho el referendo" /></frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Governed" dependent="su" /></frame>
+			<frame type="Removing" head="desgaste que">
+				<argument type="Theme" dependent="su Gobierno" /></frame>
+			<frame type="Risky_situation" head="peligroso">
+				<argument type="Situation" dependent="su" />
+				<argument type="Situation" dependent="para Bouchard" />
+				<argument type="Dangerous_entity" dependent="retrasar mucho el referendo" /></frame>
+			<frame type="Scrutiny" head="analistas" />
+			<frame type="Wearing" head="desgaste">
+				<argument type="Clothing" dependent="su Gobierno" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Por ello se espera que empiece a calentar motores para la consulta inmediatamente, al negociar con Ottawa sobre la unión social, el pacto de las provincias canadienses para restringir los poderes centrales en áreas de jurisdicción provincial.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_start" head="se">
+				<argument type="Agent" dependent="las provincias canadienses" />
+				<argument type="Activity" dependent="a calentar motores para la consulta inmediatamente , al negociar con Ottawa sobre la unión social" /></frame>
+			<frame type="Cause_temperature_change" head="calentar">
+				<argument type="Agent" dependent="las provincias canadienses" />
+				<argument type="Item" dependent="motores" /></frame>
+			<frame type="Deny_or_grant_permission" head="restringir">
+				<argument type="Action" dependent="poderes centrales" /></frame>
+			<frame type="Discussion" head="consulta" />
+			<frame type="Electricity" head="poderes">
+				<argument type="Source" dependent="centrales" /></frame>
+			<frame type="Expectation" head="espera">
+				<argument type="Phenomenon" dependent="a calentar motores para la consulta inmediatamente , al negociar con Ottawa sobre la unión social , el pacto de las provincias canadienses para" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="provincias canadienses para restringir los poderes centrales en" />
+				<argument type="Ground" dependent="áreas de jurisdicción provincial" /></frame>
+			<frame type="Locale" head="áreas" />
+			<frame type="Origin" head="canadienses">
+				<argument type="Entity" dependent="provincial" /></frame>
+			<frame type="Part_inner_outer" head="centrales">
+				<argument type="Whole" dependent="poderes" /></frame>
+			<frame type="Political_locales" head="jurisdicción">
+				<argument type="Name" dependent="provincial" /></frame>
+			<frame type="Political_locales" head="provincias">
+				<argument type="Population" dependent="canadienses" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Las reticencias centralistas a este pacto alentarán la hoguera del independentismo quebequés.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0fp0">Las</token><token pos="ncfp000">reticencias</token><token pos="aq0cp0">centralistas</token><token pos="sps00">a</token><token pos="dd0ms0">este</token><token pos="ncms000">pacto</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_4">
+			<token pos="vmif3p0">alentarán</token><mention concept_ref="c_2"><token pos="da0fs0">la</token><token pos="ncfs000">hoguera</token></mention><token pos="spcms">del</token><mention concept_ref="c_4"><token pos="ncms000">independentismo</token></mention><token pos="aq0ms0">quebequés</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Change_of_leadership" head="independentismo">
+				<argument type="Degree" dependent="quebequés" /></frame>
+			<frame type="Fire_burning" head="hoguera del">
+				<argument type="Depictive" dependent="independentismo quebequés" /></frame>
+			<frame type="Subjective_influence" head="del">
+				<argument type="Entity" dependent="este" />
+				<argument type="Product" dependent="hoguera del independentismo quebequés" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

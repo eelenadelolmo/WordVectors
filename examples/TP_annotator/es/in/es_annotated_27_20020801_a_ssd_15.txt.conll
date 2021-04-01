@@ -1,0 +1,5 @@
+{   ('Duration_description', 'largo'): [('Period', 'de espera')],
+    ('Locative_relation', 'hubo'): [('Ground', 'hubo un largo rato de espera')],
+    ('Money', 'dinero'): [],
+    ('Self_motion', 'rato'): [('Time', 'media mañana el'), ('Self_mover', 'el dinero en'), ('Path', 'se')],
+    ('Sleep', 'se'): [('Manner', 'media mañana el'), ('Sleeper', 'el dinero en')]}

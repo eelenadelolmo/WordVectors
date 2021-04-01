@@ -1,0 +1,5 @@
+{   ('Body_parts', 'de pie'): [('Possessor', 'el')],
+    ('Calendric_unit', 'minutos'): [('Count', 'pocos')],
+    ('Quantified_mass', 'pocos'): [('Individuals', 'minutos')],
+    ('Spatial_contact', 'de'): [('Figure', 'procesado'), ('Ground', 'de pie')],
+    ('State_continue', 'permaneció'): [('Entity', 'procesado'), ('State', 'de pie')]}

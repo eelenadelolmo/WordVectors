@@ -1,0 +1,13 @@
+{   ('Be_in_agreement_on_action', 'según'): [('Party_1', 'etarras'), ('Obligation', 'fuentes oficiales')],
+    ('Detaining', 'detenidos'): [('Charges', 'de')],
+    ('Goal', 'en'): [('Trajector', 'etarras'), ('Landmark', 'fuentes oficiales')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'etarras'), ('Ground', 'este país')],
+    ('Law_enforcement_agency', 'policía'): [('Jurisdiction', 'mexicana')],
+    ('Leadership', 'oficiales'): [('Governed', 'fuentes')],
+    ('Network', 'la red de'): [('Descriptor', 'apoyos'), ('Nodes', 'tiene en este país')],
+    ('Political_locales', 'país'): [],
+    ('Scrutiny', 'investigue'): [('Cognizer', 'la policía mexicana'), ('Ground', 'la red de apoyos que ETA tiene en este país')],
+    ('Source_of_getting', 'fuentes'): [('Descriptor', 'oficiales')],
+    ('Supporting', 'apoyos'): [],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'aspira'), ('Trajector_event', 'que la policía mexicana investigue la red de apoyos que')],
+    ('Traversing', 'según'): [('Theme', 'aspira'), ('Time', 'ahora'), ('Theme', 'que la policía mexicana investigue la red de apoyos que ETA tiene en este país , según informaron fuentes oficiales')]}

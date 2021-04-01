@@ -1,0 +1,4 @@
+{   ('Age', 'viejo'): [('Entity', 'conocido , George')],
+    ('Have_as_requirement', 'requirió'): [('Requirement', 'servicios de otro viejo conocido , George')],
+    ('Increment', 'otro'): [('Class', 'viejo conocido , George')],
+    ('Public_services', 'servicios'): [('Service_action', 'de otro viejo conocido , George')]}

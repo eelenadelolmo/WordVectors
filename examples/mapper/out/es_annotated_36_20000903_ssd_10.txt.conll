@@ -1,0 +1,7 @@
+{   ('Awareness', 'conscientes'): [('Degree', 'más'), ('Content', ', en el actual marco , debería producirse una mayor diferenciación entre el escenario catalán y el español')],
+    ('Desirable_event', 'debería'): [('State_of_affairs', 'en'), ('State_of_affairs', 'mayor diferenciación entre el escenario catalán y el español')],
+    ('Increment', 'más'): [],
+    ('Judgment_communication', 'acusan'): [('Evaluee', 'Aquellos'), ('Communicator', 'Aquellos que'), ('Reason', 'al PP'), ('Reason', 'y el español')],
+    ('Locative_relation', 'en'): [   ('Figure', 'Aquellos que acusan al PP de actuar de forma sucursalista deberían ser más conscientes de que , en el actual marco'),
+                                     ('Ground', ', debería producirse una mayor diferenciación entre el escenario catalán y el español')],
+    ('Temporal_collocation', 'el actual'): [('Trajector_entity', 'marco')]}

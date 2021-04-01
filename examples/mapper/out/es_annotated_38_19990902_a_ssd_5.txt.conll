@@ -1,0 +1,10 @@
+{   ('Appellations', 'president'): [],
+    ('Building_subparts', 'oficina'): [('Whole', 'su'), ('Use', 'campaña')],
+    ('Calendric_unit', 'semanas'): [('Relative_time', 'últimas')],
+    ('Cause_change_of_position_on_a_scale', 'promociona de'): [('Agent', 'su'), ('Item', 'sistemática & quot ; al president y margina al resto de aspirantes a la presidencia de la Generalitat')],
+    ('Increment', 'resto'): [('Class', 'candidato')],
+    ('Information', 'informativa'): [('Cognizer', 'su')],
+    ('Law', 'política'): [('Jurisdiction', 'informativa'), ('Name', 'por considerar')],
+    ('Means', 'través'): [('Purpose', 'al resto de aspirantes a la presidencia de la Generalitat')],
+    ('Referring_by_name', 'quot'): [('Time', 'últimas'), ('Name', 'semanas'), ('Name', 'en las')],
+    ('Resolve_problem', 'en'): [('Problem', 'su política informativa')]}

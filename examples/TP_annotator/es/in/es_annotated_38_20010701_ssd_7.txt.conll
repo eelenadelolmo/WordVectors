@@ -1,0 +1,4 @@
+{   ('Activity_ongoing', 'seguir'): [('Agent', 'y'), ('Activity', 'tocando cada noche Jumpin Jack Flash y Honky tonk woman')],
+    ('Calendric_unit', 'noche'): [('Relative_time', 'cada')],
+    ('Desiring', 'quería'): [('Experiencer', 'y'), ('Event', 'tocando cada noche Jumpin Jack Flash y Honky tonk woman')],
+    ('People', 'woman'): [('Descriptor', 'Flash y Honky tonk')]}

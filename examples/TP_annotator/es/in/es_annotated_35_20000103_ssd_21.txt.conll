@@ -1,0 +1,9 @@
+{   ('Attending', 'de asistencia'): [('Agent', 'su')],
+    ('Calendric_unit', 'fin de semana'): [],
+    ('Capability', 'pudo'): [('Entity', 'servicio del 061 , informó'), ('Event', 'disponer este fin de semana & quot ; del triple & quot ; de personal que en Navidad , cuando batió su récord de')],
+    ('Cause_to_fragment', 'batió'): [('Agent', 'su'), ('Whole_patient', 'su'), ('Manner', 'récord')],
+    ('Employing', 'de personal'): [],
+    ('Locative_relation', 'en'): [('Figure', 'de personal que'), ('Ground', 'Navidad')],
+    ('Public_services', 'servicio'): [('Service_action', 'del 061')],
+    ('Statement', 'informó'): [('Message', 'de')],
+    ('Text', 'récord'): [('Text', 'su')]}

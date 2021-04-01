@@ -1,0 +1,9 @@
+{   ('Activity_start', 'entraron'): [('Agent', 'Asia que'), ('Activity', 'es'), ('Place', 'por Alaska')],
+    ('Calendric_unit', 'años'): [('Relative_time', 'procedentes'), ('Count', '13.500')],
+    ('Cardinal_numbers', 'dos'): [('Entity', 'arqueólogos norteamericanos')],
+    ('Colonization', 'procedentes'): [('Homeland', 'América'), ('New_area', '13.500 años')],
+    ('People_by_origin', 'norteamericanos'): [],
+    ('People_by_vocation', 'arqueólogos'): [('Descriptor', 'norteamericanos')],
+    ('Receiving', 'aceptada'): [('Manner', 'generalmente'), ('Theme', 'América fue poblada hace 13.500 años por nómadas procedentes de Asia que entraron en ella por Alaska')],
+    ('Secrecy_status', 'abierta'): [('Phenomenon', 'contradicción')],
+    ('Time_vector', 'fue'): [('Distance', '13.500 años')]}

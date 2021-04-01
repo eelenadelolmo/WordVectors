@@ -1,0 +1,7 @@
+{   ('Appellations', 'presidente'): [('Type', 'Aznar')],
+    ('Attending', 'se'): [('Agent', 'presidente Aznar')],
+    ('Businesses', 'empresarial'): [],
+    ('Interior_profile_relation', 'en'): [('Ground', 'México'), ('Figure', 'se ha organizado un foro empresarial al que asistirá el presidente Aznar')],
+    ('Level_of_force_exertion', 'fuerte'): [('Exerter', 'inversión')],
+    ('Manufacturing', 'realiza'): [('Producer', 'se'), ('Factory', 'en México')],
+    ('Resolve_problem', 'corregir'): [('Problem', 'este déficit - - que contrasta con la fuerte inversión que España realiza en México - - , se ha organizado un foro empresarial al')]}

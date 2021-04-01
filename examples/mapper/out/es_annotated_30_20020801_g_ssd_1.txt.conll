@@ -1,0 +1,7 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Leadership', 'Gobierno'): [('Governed', 'de')],
+    ('Locale_by_use', 'instalación'): [],
+    ('Operating_a_system', 'gestiona la'): [('Operator', 'que'), ('Time', 'ahora'), ('System', 'la instalación')],
+    ('Political_locales', 'Nacional'): [('Container_possessor', 'España')],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'que'), ('Trajector_event', 'gestiona la')],
+    ('Transfer', 'transfirió'): [('Donor', 'Gobierno de'), ('Manner', 'formalmente'), ('Theme', 'a Radio'), ('Recipient', 'Liberty a Radio Nacional de España'), ('Manner', 'ayer')]}

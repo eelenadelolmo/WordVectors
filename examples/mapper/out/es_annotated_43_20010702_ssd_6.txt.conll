@@ -1,0 +1,6 @@
+{   ('Certainty', 'dudan de que'): [('Cognizer', 'gobiernos mexicano y español'), ('Content', 'coopere con el Ejército Zapatista de Liberación Nacional ( EZLN ) , pese a que')],
+    ('Collaboration', 'coopere con'): [('Partner_1', 'el'), ('Partner_2', 'con el Ejército Zapatista de Liberación Nacional (')],
+    ('Leadership', 'gobiernos'): [('Governed', 'español')],
+    ('Military', 'Ejército'): [('Possessor', 'Zapatista'), ('Possessor', 'de Liberación Nacional (')],
+    ('Political_locales', 'Nacional'): [],
+    ('Statement', 'informe'): []}

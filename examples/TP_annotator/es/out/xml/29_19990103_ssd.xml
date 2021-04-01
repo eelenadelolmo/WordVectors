@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="29_19990103_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El poeta</concept>
+		<concept id="c_1">Joan Brossa</concept>
+		<concept id="c_2">La foto</concept>
+		<concept id="c_3">Cuixart</concept>
+		<concept id="c_4">la cabellera</concept>
+		<concept id="c_5">que</concept>
+		<concept id="c_6">el poeta enamorado de la magia</concept>
+		<concept id="c_7">La inauguración del poema corpóreo</concept>
+		<concept id="c_8">me</concept>
+		<concept id="c_9">al objetivo</concept>
+		<concept id="c_10">la infancia</concept>
+		<concept id="c_11">me</concept>
+		<concept id="c_12">un niño</concept>
+		<concept id="c_13">el número</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El poeta reunía todas las cualidades inherentes a la infancia, esas que están siempre presentes en la obra de los grandes genios.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">poeta</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_10">
+			<token pos="vmii3s0">reunía</token><token pos="di0fp0">todas</token><mention concept_ref="c_1"><token pos="da0fp0">las</token><token pos="ncfp000">cualidades</token></mention><token pos="aq0cp0">inherentes</token><token pos="sps00">a</token><mention concept_ref="c_10"><token pos="da0fs0">la</token><token pos="ncfs000">infancia</token></mention><token pos="fc">,</token><token pos="pd0fp000">esas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Collaboration" head="en">
+				<argument type="Undertaking" dependent="todas las cualidades" />
+				<argument type="Partner_2" dependent="a la infancia" /></frame>
+			<frame type="Coming_to_believe" head="presentes en">
+				<argument type="Content" dependent="El poeta" />
+				<argument type="Content" dependent="todas las cualidades inherentes a la infancia , esas que están siempre presentes en la obra de los grandes genios" /></frame>
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="esas" />
+				<argument type="Event" dependent="presentes en la obra de los grandes genios" /></frame>
+			<frame type="Work" head="obra">
+				<argument type="Salient_entity" dependent="los grandes genios" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Joan Brossa siempre me ha parecido un niño grande, y las diferentes facetas de su obra, las de un creador que, tocado por los dioses, ha tenido la suerte de no perder las ganas de sorprender y de sorprenderse, ni la capacidad de investigar, ni el gusto por la provocación y el juego ; es decir, todas las cualidades inherentes a la infancia que son imprescindibles para la creación y que sólo algunos caracteres geniales - - como Joan Miró o Pere Calders - - conservan toda la vida.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np0000l">Joan</token><token pos="np0000l">Brossa</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_11" concept_ref3="c_12">
+			<token pos="rg">siempre</token><token pos="pp1cs000">me</token><token pos="vaip3s0">ha</token><token pos="vmp00sm">parecido</token><mention concept_ref="c_12"><token pos="di0ms0">un</token><token pos="ncms000">niño</token></mention><token pos="aq0cs0">grande</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Capability" head="capacidad">
+				<argument type="Event" dependent="de investigar" /></frame>
+			<frame type="Desiring" head="ganas de">
+				<argument type="Event" dependent="de sorprenderse" /></frame>
+			<frame type="Earnings_and_losses" head="perder">
+				<argument type="Earnings" dependent="ganas de sorprender y de sorprenderse" /></frame>
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="Joan Miró o" /></frame>
+			<frame type="Give_impression" head="Miró o">
+				<argument type="Phenomenon" dependent="Joan" />
+				<argument type="Inference" dependent="niño grande" /></frame>
+			<frame type="Intentionally_create" head="creación">
+				<argument type="Created_entity" dependent="que sólo algunos caracteres geniales - - como Joan Miró o Pere Calders - - conservan toda la vida" /></frame>
+			<frame type="Just_found_out" head="sorprender" />
+			<frame type="Luck" head="suerte de">
+				<argument type="State_of_affairs" dependent="creador que , tocado por los dioses" />
+				<argument type="State_of_affairs" dependent="no perder las ganas de sorprender y de sorprenderse , ni la capacidad de investigar" /></frame>
+			<frame type="People_by_age" head="niño">
+				<argument type="Age" dependent="grande" /></frame>
+			<frame type="Scrutiny" head="investigar" />
+			<frame type="Sensation" head="gusto" />
+			<frame type="Similarity" head="diferentes">
+				<argument type="Entities" dependent="facetas de su obra" /></frame>
+			<frame type="Spatial_contact" head="tocado">
+				<argument type="Figure" dependent="un creador que" />
+				<argument type="Figure" dependent="por los dioses" /></frame>
+			<frame type="Sufficiency" head="toda">
+				<argument type="Scale" dependent="suerte de" />
+				<argument type="Item" dependent="de no perder las ganas de sorprender" /></frame>
+			<frame type="Work" head="obra">
+				<argument type="Agent" dependent="su" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Brossa fue un poeta singular, un artista puro que tuvo la habilidad y la voluntad de interrelacionar diferentes formas artísticas ; todas, eso sí, al abrigo de la poesía: escrita, visual, escénica, corpórea...
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np00000">Brossa</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_10">
+			<token pos="vsis3s0">fue</token><mention concept_ref="c_0"><token pos="di0ms0">un</token><token pos="ncms000">poeta</token></mention><token pos="aq0cs0">singular</token><token pos="fc">,</token><mention concept_ref="c_1"><token pos="di0ms0">un</token><token pos="nccs000">artista</token></mention><token pos="aq0ms0">puro</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="abrigo">
+				<argument type="Function" dependent="poesía" /></frame>
+			<frame type="Capability" head="habilidad">
+				<argument type="Entity" dependent="que" />
+				<argument type="Event" dependent="de interrelacionar diferentes formas artísticas" /></frame>
+			<frame type="Create_physical_artwork" head="artista">
+				<argument type="Descriptor" dependent="puro" /></frame>
+			<frame type="Fields" head="artísticas">
+				<argument type="Salient_entity" dependent="formas" /></frame>
+			<frame type="Idiosyncrasy" head="singular">
+				<argument type="Entity" dependent="poeta" /></frame>
+			<frame type="Interior_profile_relation" head="al">
+				<argument type="Figure" dependent="; todas , eso sí ," />
+				<argument type="Ground" dependent="abrigo de la poesía" /></frame>
+			<frame type="Similarity" head="diferentes">
+				<argument type="Entities" dependent="formas artísticas" /></frame>
+			<frame type="Text" head="poesía" />
+			<frame type="Text_creation" head="escrita">
+				<argument type="Text" dependent="abrigo de la poesía" />
+				<argument type="Text" dependent="visual , escénica ," /></frame>
+			<frame type="Type" head="formas">
+				<argument type="Type_property" dependent="artísticas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Nunca fue superfluo, al contrario, fue un poeta esencial.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_necessary" head="esencial">
+				<argument type="Requirement" dependent="poeta" /></frame>
+			<frame type="Compliance" head="contrario">
+				<argument type="Protagonist" dependent="fue" />
+				<argument type="Norm" dependent="un poeta esencial" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Las fotografías de Brossa en periódicos o revistas me permiten hoy recordarlo - - o sea admirarlo y dejar que me sorprenda - -, ahora ya con el pesar de hablar de él usando los verbos en pasado.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fp0">Las</token><token pos="ncfp000">fotografías</token><token pos="sps00">de</token><token pos="np00000">Brossa</token><token pos="sps00">en</token><token pos="ncmp000">periódicos</token><token pos="cc">o</token><token pos="ncfp000">revistas</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_11">
+			<token pos="vmn0000">recordarlo</token><token pos="vmn0000">admirarlo</token><token pos="cc">y</token><token pos="vmn0000">dejar</token><token pos="cs">que</token><token pos="pp1cs000">me</token><token pos="vmsp3s0">sorprenda</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="hoy" />
+			<frame type="Chatting" head="hablar">
+				<argument type="Topic" dependent="de hablar de él usando los verbos en pasado" /></frame>
+			<main_frame type="Experiencer_focus" head="dejar" />
+			<main_frame type="Judgment" head="admirarlo">
+				<argument type="Evaluee" dependent="él" /></main_frame>
+			<main_frame type="Just_found_out" head="sorprenda">
+				<argument type="Experiencer" dependent="él" /></main_frame>
+			<frame type="Preventing_or_letting" head="permiten">
+				<argument type="Agent" dependent="Las fotografías de Brossa en periódicos o revistas" />
+				<argument type="Event" dependent="me" /></frame>
+			<main_frame type="Remembering_experience" head="recordarlo">
+				<argument type="Cognizer" dependent="me" />
+				<argument type="Salient_entity" dependent="él" /></main_frame>
+			<frame type="Statement" head="hablar">
+				<argument type="Message" dependent="admirarlo y dejar que me sorprenda - - , ahora ya con el pesar de hablar de él usando los" /></frame>
+			<frame type="Text" head="periódicos" />
+			<frame type="Text" head="revistas" />
+			<frame type="Using" head="usando">
+				<argument type="Agent" dependent="él" />
+				<argument type="Instrument" dependent="los verbos" />
+				<argument type="Time" dependent="en pasado" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En la instantánea más antigua, Brossa es un joven de 30 años.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np00000">Brossa</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_12">
+			<token pos="vsip3s0">es</token><mention concept_ref="c_12"><token pos="di0ms0">un</token><token pos="nccs000">joven</token></mention><token pos="sps00">de</token><token pos="z">30</token><mention concept_ref="c_1"><token pos="ncmp000">años</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Age" head="joven">
+				<argument type="Entity" dependent="30 años" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La foto pertenece a una serie de retratos que hizo el impresor Enric Tormo a Cuixart, Brossa, Ponç y Tàpies, los creadores de la revista vanguardista Dau al set, aquel aire que alegró intelectualmente los grises 40.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0fs0">La</token><token pos="ncfs000">foto</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_11">
+			<token pos="vmip3s0">pertenece</token><token pos="sps00">a</token><mention concept_ref="c_1"><token pos="di0fs0">una</token><token pos="ncfs000">serie</token></mention><token pos="sps00">de</token><mention concept_ref="c_0"><token pos="ncmp000">retratos</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Possession" head="pertenece">
+				<argument type="Possession" dependent="La foto" />
+				<argument type="Possession" dependent="una serie de retratos que hizo el impresor Enric Tormo a Cuixart , Brossa , Ponç y Tàpies , los" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El retrato de los fundadores había de ilustrar el número extra de diciembre del año 49, hace ahora 50 años.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">retrato</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">fundadores</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_8" concept_ref3="c_11" concept_ref4="c_13">
+			<token pos="vaii3s0">había</token><mention concept_ref="c_13"><token pos="da0ms0">el</token><token pos="ncms000">número</token></mention><token pos="aq0cs0">extra</token><token pos="sps00">de</token><token pos="ncms000">diciembre</token><token pos="sps00">del</token><token pos="nccp000">año</token><token pos="zp">49</token><token pos="vmip3s0">hace</token><token pos="rg">ahora</token><token pos="z">50</token><mention concept_ref="c_1"><token pos="ncmp000">años</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="años">
+				<argument type="Count" dependent="50" /></frame>
+			<frame type="Calendric_unit" head="diciembre">
+				<argument type="Relative_time" dependent="extra de diciembre del año 49" /></frame>
+			<frame type="Evidence" head="ilustrar">
+				<argument type="Support" dependent="retrato de los fundadores" />
+				<argument type="Proposition" dependent="el número extra de diciembre del año 49" /></frame>
+			<frame type="Quantified_mass" head="número">
+				<argument type="Q_prop" dependent="extra" /></frame>
+			<frame type="Temporal_collocation" head="ahora">
+				<argument type="Trajector_event" dependent="50 años" /></frame>
+			<frame type="Time_vector" head="del">
+				<argument type="Distance" dependent="50 años" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Encima de las fotografías ampliadas de las cuatro caras, Cuixart dibujó unos grafismos en tinta china que potenciaban el mensaje vanguardista de la publicación.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="np00000">Cuixart</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_10">
+			<token pos="vmis3s0">dibujó</token><mention concept_ref="c_1"><token pos="di0mp0">unos</token><token pos="ncmp000">grafismos</token></mention><token pos="sps00">en</token><mention concept_ref="c_10"><token pos="ncfs000">tinta</token></mention><token pos="aq0fs0">china</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cause_change_of_position_on_a_scale" head="ampliadas">
+				<argument type="Cause" dependent="unos grafismos en tinta china que" />
+				<argument type="Agent" dependent="que" />
+				<argument type="Item" dependent="mensaje vanguardista de la publicación" /></frame>
+			<frame type="Cause_motion" head="tinta">
+				<argument type="Theme" dependent="de" />
+				<argument type="Theme" dependent="unos" />
+				<argument type="Source" dependent="en tinta china" />
+				<argument type="Goal" dependent="potenciaban el mensaje vanguardista de la publicación" /></frame>
+			<frame type="Text" head="publicación" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En esta fotografía retocada, cuesta reconocer a Brossa y parece, a primera vista, Salvador Dalí.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_aware" head="reconocer">
+				<argument type="Phenomenon" dependent="a" /></frame>
+			<frame type="Difficulty" head="cuesta">
+				<argument type="Activity" dependent="esta" />
+				<argument type="Activity" dependent="reconocer a Brossa y parece , a primera vista , Salvador" /></frame>
+			<frame type="Give_impression" head="parece" />
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Ground" dependent="esta fotografía retocada" /></frame>
+			<frame type="Locative_relation" head="En">
+				<argument type="Figure" dependent="En esta fotografía retocada , cuesta reconocer a" />
+				<argument type="Ground" dependent="primera vista" />
+				<argument type="Ground" dependent="Salvador" /></frame>
+			<frame type="Ordinal_numbers" head="primera">
+				<argument type="Type" dependent="vista" /></frame>
+			<frame type="Perception_active" head="vista" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero la cabellera es la misma que lucirá casi toda la vida, y los símbolos que Cuixart le dibujó alrededor de la cabeza - - lunas, flechas, triángulos, montañas... - - eran ya la confirmación de su potencialidad creadora.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0fs0">la</token><token pos="ncfs000">cabellera</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_10">
+			<token pos="vsip3s0">es</token><token pos="da0fs0">la</token><token pos="pi0fs000">misma</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="cabeza">
+				<argument type="Possessor" dependent="su" /></frame>
+			<frame type="Capability" head="potencialidad">
+				<argument type="Entity" dependent="su" />
+				<argument type="Relevant_feature" dependent="creadora" /></frame>
+			<frame type="Cause_motion" head="su">
+				<argument type="Theme" dependent="de" />
+				<argument type="Goal" dependent="dibujó alrededor de la cabeza - - lunas , flechas , triángulos , montañas ... - - eran ya la confirmación de su potencialidad creadora" /></frame>
+			<frame type="Identicality" head="la misma">
+				<argument type="Type" dependent="misma que lucirá casi toda la vida" /></frame>
+			<frame type="Natural_features" head="montañas">
+				<argument type="Descriptor" dependent="alrededor de la cabeza - - lunas , flechas , triángulos ," /></frame>
+			<frame type="Perception_active" head="su">
+				<argument type="Perceiver_agentive" dependent="es" />
+				<argument type="Phenomenon" dependent="casi toda la vida" /></frame>
+			<frame type="Verification" head="confirmación">
+				<argument type="Inspector" dependent="alrededor de la cabeza - - lunas , flechas , triángulos , montañas ... -" />
+				<argument type="Unconfirmed_content" dependent="su potencialidad creadora" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sonetos clásicos, perfectamente formales, o expresiones poéticas de las clases populares, pero experimentando siempre para buscar nuevas formas, logrando con sus malabarismos verbales efectos sorprendentes del lenguaje y dando al lector con su mente de ilusionista imágenes del todo nuevas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Accomplishment" head="logrando">
+				<argument type="Goal" dependent="con sus malabarismos verbales efectos sorprendentes del lenguaje" /></frame>
+			<frame type="Age" head="nuevas" />
+			<frame type="Desirability" head="populares">
+				<argument type="Evaluee" dependent="clases" /></frame>
+			<frame type="Experiencer_obj" head="sorprendentes">
+				<argument type="Stimulus" dependent="sus malabarismos verbales" />
+				<argument type="Stimulus" dependent="efectos sorprendentes del lenguaje" /></frame>
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="experimentando siempre para buscar nuevas formas" /></frame>
+			<frame type="Giving" head="dando">
+				<argument type="Recipient" dependent="lector" />
+				<argument type="Imposed_purpose" dependent="con su mente de ilusionista imágenes del todo nuevas" /></frame>
+			<frame type="Impression" head="imágenes">
+				<argument type="Figure" dependent="ilusionista" />
+				<argument type="Figure" dependent="del todo nuevas" /></frame>
+			<frame type="Objective_influence" head="efectos">
+				<argument type="Dependent_entity" dependent="del lenguaje" /></frame>
+			<frame type="Reading_perception" head="lector" />
+			<frame type="Scrutiny" head="buscar">
+				<argument type="Ground" dependent="nuevas formas" /></frame>
+			<frame type="Type" head="clases">
+				<argument type="Type_property" dependent="populares" /></frame>
+			<frame type="Type" head="formas">
+				<argument type="Type_property" dependent="nuevas" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero siempre traduciendo en palabras sus imágenes visuales ; siempre siendo cotidiano y esencial a la vez.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_necessary" head="esencial">
+				<argument type="Time" dependent="a la vez" /></frame>
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="siendo cotidiano y esencial a" /></frame>
+			<frame type="Identicality" head="siendo">
+				<argument type="Type" dependent="la vez" /></frame>
+			<frame type="Impression" head="imágenes">
+				<argument type="Descriptor" dependent="visuales" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="a la vez" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En la fotografía que miro ahora Brossa es más joven.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np00000">Brossa</token>
+		</theme>
+		<rheme>
+			<token pos="vsip3s0">es</token><token pos="rg">más</token><token pos="aq0cs0">joven</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Perception_active" head="miro">
+				<argument type="Phenomenon" dependent="la fotografía" />
+				<argument type="Perceiver_agentive" dependent="la" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Está de pie: jersey grueso, camisa de cuadros, gafas de concha, ojos que no miran al objetivo, expresión ausente, labios estrechos.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_9">
+			<token pos="rn">no</token><token pos="vmip3p0">miran</token><mention concept_ref="c_9"><token pos="spcms">al</token><token pos="ncms000">objetivo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="ojos" />
+			<frame type="Locative_relation" head="al">
+				<argument type="Figure" dependent="gafas de concha" />
+				<argument type="Figure" dependent="ojos que" />
+				<argument type="Ground" dependent="al objetivo" /></frame>
+			<frame type="Measurable_attributes" head="estrechos">
+				<argument type="Entity" dependent="labios" /></frame>
+			<main_frame type="Perception_active" head="miran">
+				<argument type="Phenomenon" dependent="ojos" />
+				<argument type="Perceiver_agentive" dependent="que" />
+				<argument type="State" dependent="al objetivo" /></main_frame>
+			<frame type="Posture" head="de pie">
+				<argument type="Agent" dependent="de" /></frame>
+			<frame type="Purpose" head="objetivo" />
+			<frame type="Substance" head="gafas de">
+				<argument type="Descriptor" dependent="concha" /></frame>
+			<frame type="Weapon" head="concha" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En la pared, su obra, una i minúscula, negra, tipográfica, que tiene encima un punto y un acento a la vez, aquello que siempre nos habían dicho que no podía ser: es el Brossa de la poesía visual, el más directo y efectivo, el más personal e identificable.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="pr0cn000">que</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_5" concept_ref3="c_12">
+			<token pos="vmip3s0">tiene</token><token pos="rg">encima</token><mention concept_ref="c_12"><token pos="di0ms0">un</token><token pos="ncms000">punto</token></mention><token pos="cc">y</token><mention concept_ref="c_1"><token pos="di0ms0">un</token><token pos="ncms000">acento</token></mention><token pos="sps00">a</token><token pos="da0fs0">la</token><token pos="ncfs000">vez</token><token pos="fc">,</token><mention concept_ref="c_5"><token pos="pd0ns000">aquello</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Architectural_part" head="la pared" />
+			<frame type="Color" head="negra">
+				<argument type="Entity" dependent="una i minúscula" />
+				<argument type="Entity" dependent="tipográfica" /></frame>
+			<frame type="Frequency" head="siempre">
+				<argument type="Event" dependent="aquello que siempre nos habían" />
+				<argument type="Event" dependent="habían dicho que no podía ser : es el Brossa de la poesía visual , el más directo y efectivo , el más" /></frame>
+			<frame type="Identicality" head="ser">
+				<argument type="Type" dependent="la vez" /></frame>
+			<frame type="Locative_relation" head="a la">
+				<argument type="Figure" dependent="un acento" />
+				<argument type="Ground" dependent="a la vez" /></frame>
+			<frame type="Possibility" head="podía">
+				<argument type="Possible_event" dependent="es" />
+				<argument type="Possible_event" dependent="que no" /></frame>
+			<frame type="Size" head="minúscula" />
+			<frame type="Spatial_contact" head="a la">
+				<argument type="Figure" dependent="que" />
+				<argument type="Ground" dependent="es" />
+				<argument type="Figure" dependent="un punto y un acento a la vez , aquello que siempre nos habían dicho que no podía ser" /></frame>
+			<frame type="Text" head="poesía" />
+			<frame type="Usefulness" head="efectivo" />
+			<frame type="Work" head="obra">
+				<argument type="Agent" dependent="su" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La firma del cuadro se ve clara, una firma de niño aplicado, un Brossa con las letras bien trazadas, la B un poco separada, las dos eses juntas, una línea debajo que empieza en la erre y que sigue hasta pasada la a.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="ncfs000">firma</token><token pos="spcms">del</token><token pos="ncms000">cuadro</token><token pos="fc">,</token><token pos="di0fs0">una</token><token pos="ncfs000">firma</token><token pos="sps00">de</token><token pos="ncms000">niño</token><token pos="aq0msp">aplicado</token><token pos="fc">,</token><token pos="di0ms0">un</token><token pos="np00000">Brossa</token><token pos="sps00">con</token><token pos="da0fp0">las</token><token pos="ncfp000">letras</token><token pos="rg">bien</token><token pos="aq0fpp">trazadas</token><token pos="fc">,</token><token pos="da0fs0">la</token><token pos="ncfs000">B</token><token pos="di0mp0">un</token><token pos="rg">poco</token><token pos="aq0fsp">separada</token><token pos="fc">,</token><token pos="da0fp0">las</token><token pos="dn0cp0">dos</token><token pos="ncfp000">eses</token><token pos="aq0fp0">juntas</token><token pos="fc">,</token><token pos="di0fs0">una</token><token pos="ncfs000">línea</token><token pos="rg">debajo</token><token pos="pr0cn000">que</token><token pos="vmip3s0">empieza</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncfs000">erre</token><token pos="cc">y</token><token pos="pr0cn000">que</token><token pos="vmip3s0">sigue</token><token pos="sps00">hasta</token><token pos="aq0fsp">pasada</token><token pos="da0fs0">la</token><token pos="ncfs000">a</token>
+		</theme>
+		<rheme concept_ref1="c_11">
+			<mention concept_ref="c_11"><token pos="p0000000">se</token></mention><token pos="vmip3s0">ve</token><token pos="aq0fs0">clara</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_start" head="empieza">
+				<argument type="Agent" dependent="eses" />
+				<argument type="Activity" dependent="en la" /></main_frame>
+			<frame type="Boundary" head="línea">
+				<argument type="Entities" dependent="debajo que empieza en" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Unit" dependent="eses juntas" /></frame>
+			<frame type="Cause_motion" head="cuadro">
+				<argument type="Theme" dependent="un Brossa con las letras bien" /></frame>
+			<frame type="Collaboration" head="juntas">
+				<argument type="Partner_2" dependent="eses" />
+				<argument type="Partner_2" dependent="una línea debajo que empieza en" /></frame>
+			<frame type="Directional_locative_relation" head="debajo">
+				<argument type="Figure" dependent="una línea" />
+				<argument type="Ground" dependent="que empieza en la" /></frame>
+			<frame type="Kinship" head="niño" />
+			<frame type="Obviousness" head="clara">
+				<argument type="Phenomenon" dependent="La firma del cuadro" /></frame>
+			<main_frame type="Perception_active" head="se ve">
+				<argument type="Phenomenon" dependent="La firma del cuadro" /></main_frame>
+			<frame type="Physical_artworks" head="cuadro" />
+			<frame type="Relative_time" head="hasta pasada">
+				<argument type="Focal_occasion" dependent="una línea debajo que empieza en la erre y que sigue hasta" />
+				<argument type="Landmark_occasion" dependent="la a" /></frame>
+			<frame type="Sign_agreement" head="firma del">
+				<argument type="Signatory" dependent="niño" /></frame>
+			<frame type="Text" head="letras" />
+			<frame type="Using" head="aplicado">
+				<argument type="Agent" dependent="niño" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La última foto que tengo de Brossa es de un periódico, de este diciembre.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="ao0fs0">última</token><token pos="ncfs000">foto</token><token pos="pr0cn000">que</token><token pos="vmip1s0">tengo</token><token pos="sps00">de</token><token pos="np00000">Brossa</token>
+		</theme>
+		<rheme concept_ref1="c_7">
+			<token pos="vsip3s0">es</token><token pos="sps00">de</token><mention concept_ref="c_7"><token pos="di0ms0">un</token><token pos="ncms000">periódico</token></mention><token pos="fc">,</token><token pos="sps00">de</token><token pos="dd0ms0">este</token><token pos="ncms000">diciembre</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="diciembre">
+				<argument type="Count" dependent="este" /></frame>
+			<frame type="Relative_time" head="última">
+				<argument type="Focal_participant" dependent="foto" /></frame>
+			<frame type="Text" head="periódico" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Está en la inauguración del Museu de Joguets de Figueres.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Closure" head="inauguración">
+				<argument type="Containing_object" dependent="del Museu de Joguets de Figueres" /></frame>
+			<frame type="Locale_by_use" head="Museu">
+				<argument type="Formational_cause" dependent="de Figueres" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="Está" />
+				<argument type="Ground" dependent="la inauguración del Museu de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Era miembro de su patronato y tiene una sala, la Brossa-Frégoli, donde está expuesta la colección que el poeta enamorado de la magia hizo sobre el transformista Leopold Frégoli y que cedió al museo.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="da0ms0">el</token><token pos="ncms000">poeta</token><token pos="aq0msp">enamorado</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">magia</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_7">
+			<token pos="vmis3s0">hizo</token><token pos="sps00">sobre</token><mention concept_ref="c_6"><token pos="da0ms0">el</token><token pos="nccs000">transformista</token></mention><mention concept_ref="c_7"><token pos="np0000l">Leopold</token><token pos="np0000l">Frégoli</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Aggregate" head="colección" />
+			<frame type="Buildings" head="sala" />
+			<frame type="Experiencer_focus" head="enamorado" />
+			<frame type="Giving" head="cedió">
+				<argument type="Theme" dependent="que" />
+				<argument type="Theme" dependent="al museo" /></frame>
+			<frame type="Ineffability" head="magia" />
+			<frame type="Interior_profile_relation" head="su">
+				<argument type="Figure" dependent="el poeta" />
+				<argument type="Ground" dependent="enamorado" /></frame>
+			<frame type="Locale_by_use" head="museo" />
+			<frame type="Locative_relation" head="donde">
+				<argument type="Figure" dependent="el" /></frame>
+			<frame type="Membership" head="miembro">
+				<argument type="Member" dependent="su" />
+				<argument type="Group" dependent="de su patronato" /></frame>
+			<frame type="Spatial_contact" head="su">
+				<argument type="Figure" dependent="poeta enamorado de la magia hizo" />
+				<argument type="Ground" dependent="Leopold" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En la foto se le ve relajado hablar con otra gente.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Chatting" head="hablar">
+				<argument type="Topic" dependent="otra gente" /></frame>
+			<frame type="Increment" head="otra">
+				<argument type="Class" dependent="gente" /></frame>
+			<frame type="People" head="gente" />
+			<frame type="Perception_active" head="se le ve">
+				<argument type="Phenomenon" dependent="foto" />
+				<argument type="Perceiver_agentive" dependent="se le" />
+				<argument type="State" dependent="relajado hablar con otra gente" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Estando en Figueres, tan cerca, debía pensar en el encargo que le acababa de hacer el Ayuntamiento de Girona: un poema corpóreo - - Brossa prefería este nombre - - para instalar en el Museu del Cinema.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np00000">Brossa</token>
+		</theme>
+		<rheme concept_ref1="c_13">
+			<token pos="vmii3s0">prefería</token><mention concept_ref="c_13"><token pos="dd0ms0">este</token><token pos="ncms000">nombre</token></mention><token pos="fg">-</token><token pos="fg">-</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Being_named" head="nombre" />
+			<frame type="Installing" head="instalar">
+				<argument type="Place" dependent="en el Museu del Cinema" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Ground" dependent="Figueres" /></frame>
+			<frame type="Locale_by_use" head="Museu">
+				<argument type="Formational_cause" dependent="del Cinema" /></frame>
+			<frame type="Opinion" head="pensar">
+				<argument type="Cognizer" dependent="le" />
+				<argument type="Opinion" dependent="que le acababa de hacer el Ayuntamiento de Girona" /></frame>
+			<frame type="Political_locales" head="Ayuntamiento" />
+			<frame type="Text" head="poema" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La obra consta de una A mayúscula - - esas del poeta robustas, simples e inconfundibles - - que se colocará en la entrada del museo sobre una columna con la leyenda A de cinema.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0fs0">La</token><token pos="ncfs000">obra</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0">
+			<token pos="vmip3s0">consta</token><token pos="sps00">de</token><token pos="di0fs0">una</token><token pos="ncfs000">A</token><token pos="aq0fs0">mayúscula</token><token pos="fg">-</token><token pos="fg">-</token><mention concept_ref="c_1"><token pos="pd0fp000">esas</token></mention><token pos="spcms">del</token><mention concept_ref="c_0"><token pos="ncms000">poeta</token></mention><token pos="aq0fp0">robustas</token><token pos="fc">,</token><token pos="aq0cp0">simples</token><token pos="cc">e</token><token pos="aq0cp0">inconfundibles</token><token pos="fg">-</token><token pos="fg">-</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="entrada" />
+			<frame type="Level_of_force_resistance" head="robustas">
+				<argument type="Resisting_entity" dependent="poeta" /></frame>
+			<frame type="Locale_by_use" head="museo" />
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="se colocará" />
+				<argument type="Ground" dependent="la entrada del museo" /></frame>
+			<main_frame type="Placing" head="consta">
+				<argument type="Theme" dependent="simples e inconfundibles - - que" />
+				<argument type="Goal" dependent="en la entrada del museo sobre una columna con la leyenda A de cinema" /></main_frame>
+			<frame type="Relational_political_locales" head="mayúscula" />
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="la entrada del museo" />
+				<argument type="Ground" dependent="una columna" /></frame>
+			<frame type="Work" head="obra" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 La inauguración del poema corpóreo coincidirá con una exposición de homenaje al artista, que ahora será póstumo.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0fs0">La</token><token pos="ncfs000">inauguración</token><token pos="spcms">del</token><token pos="ncms000">poema</token><token pos="aq0ms0">corpóreo</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_1" concept_ref3="c_8" concept_ref4="c_9" concept_ref5="c_11" concept_ref6="c_13" concept_ref7="c_10">
+			<token pos="vmif3s0">coincidirá</token><mention concept_ref="c_9"><token pos="sps00">con</token><token pos="di0fs0">una</token><token pos="ncfs000">exposición</token><token pos="sps00">de</token><token pos="ncms000">homenaje</token><token pos="spcms">al</token><token pos="nccs000">artista</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Create_physical_artwork" head="artista" />
+			<main_frame type="Simultaneity" head="coincidirá">
+				<argument type="Events" dependent="inauguración del poema" />
+				<argument type="Events" dependent="con una exposición de homenaje al artista" /></main_frame>
+			<frame type="Temporal_collocation" head="ahora">
+				<argument type="Trajector_event" dependent="que" />
+				<argument type="Trajector_event" dependent="póstumo" /></frame>
+			<frame type="Text" head="poema">
+				<argument type="Topic" dependent="del" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Me gustará tener un Brossa en casa.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="casa" />
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="en" />
+				<argument type="Ground" dependent="casa" /></frame>
+			<frame type="Similarity" head="en">
+				<argument type="Entity_1" dependent="en" />
+				<argument type="Entity_2" dependent="tener un Brossa en casa" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Me gustará tenerlo en casa.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Buildings" head="casa" />
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="tenerlo" />
+				<argument type="Ground" dependent="casa" /></frame>
+			<frame type="Similarity" head="en">
+				<argument type="Entity_1" dependent="en" />
+				<argument type="Entity_2" dependent="tenerlo en casa" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

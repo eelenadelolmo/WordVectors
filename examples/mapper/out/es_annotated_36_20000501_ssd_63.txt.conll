@@ -1,0 +1,7 @@
+{   ('Capability', 'puede'): [('Entity', 'Nadie'), ('Event', 'exigirnos que renunciemos a defender nuestro modelo lingüístico , basado en la libertad y la pluralidad')],
+    ('Cardinal_numbers', 'la'): [],
+    ('Defending', 'defender'): [('Assailant', 'nuestro'), ('Victim', 'nuestro modelo')],
+    ('Direction', 'en'): [('Distance', 'nuestro'), ('Landmark', 'defender nuestro modelo')],
+    ('Giving', 'en'): [('Donor', 'nuestro'), ('Theme', 'defender nuestro modelo')],
+    ('Request', 'exigirnos'): [('Speaker', 'Nadie'), ('Message', 'que renunciemos a defender nuestro modelo lingüístico , basado en la libertad y la pluralidad')],
+    ('Spatial_contact', 'en'): [('Figure', 'renunciemos a defender nuestro modelo'), ('Ground', 'libertad y la pluralidad')]}

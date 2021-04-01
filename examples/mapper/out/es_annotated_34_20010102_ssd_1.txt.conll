@@ -1,0 +1,11 @@
+{   ('Being_at_risk', 'de seguridad'): [],
+    ('Boundary', 'zona'): [],
+    ('Calendric_unit', 'día'): [('Relative_time', 'mismo')],
+    ('Cardinal_numbers', 'seis'): [('Entity', 'serbios')],
+    ('Identicality', 'mismo'): [('Type', 'día')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'separatistas albaneses'), ('Ground', 'la zona de seguridad fronteriza con Kosovo')],
+    ('Leadership', 'por'): [('Governed', 'carretera'), ('Governed', 'por')],
+    ('Locale', 'zona'): [('Descriptor', 'de seguridad fronteriza con Kosovo'), ('Relative_location', 'en la carretera que lleva a')],
+    ('Means', 'por'): [('Purpose', 'seis serbios fueron secuestrados'), ('Means', 'separatistas albaneses')],
+    ('Roadways', 'carretera'): [],
+    ('Spatial_contact', 'en'): [('Figure', 'la zona de seguridad fronteriza con Kosovo'), ('Ground', 'carretera que lleva a')]}

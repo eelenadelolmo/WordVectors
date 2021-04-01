@@ -1,0 +1,7 @@
+{   ('Cardinal_numbers', 'Un'): [],
+    ('Filling', 'puesto'): [('Theme', 'puesto'), ('Cause', 'por la condición de mujer')],
+    ('People', 'mujer'): [],
+    ('Residence', 'puesto'): [('Resident', 'quién'), ('Location', 'la secretaría general')],
+    ('Reveal_secret', 'se cubre'): [('Information', 'quién ocupará la secretaría general')],
+    ('Sent_items', 'puesto'): [],
+    ('Time_vector', 'hasta el'): [('Landmark_event', 'congreso no se desvelará quién ocupará la secretaría general')]}

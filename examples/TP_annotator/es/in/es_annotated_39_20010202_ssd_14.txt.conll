@@ -1,0 +1,9 @@
+{   ('Frequency', 'periodo'): [('Event', 'las leyes anteriores')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'las leyes anteriores'), ('Ground', 'son')],
+    ('Law', 'leyes'): [('Descriptor', 'anteriores')],
+    ('Leadership', 'vigentes'): [],
+    ('Locative_relation', 'hay'): [('Figure', 'un capítulo en la Constitución que establece que en el periodo transitorio son vigentes las leyes anteriores')],
+    ('Military', 'son'): [],
+    ('Part_ordered_segments', 'capítulo'): [],
+    ('Performers_and_roles', 'son'): [('Performance', 'capítulo en la Constitución que establece que en el periodo transitorio son vigentes las leyes anteriores')],
+    ('Relative_time', 'anteriores'): [('Focal_occasion', 'leyes')]}

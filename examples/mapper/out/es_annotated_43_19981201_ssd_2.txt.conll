@@ -1,0 +1,6 @@
+{   ('Be_in_agreement_on_action', 'según'): [('Party_2', 'sólo se llevaron cosas de escaso valor'), ('Obligation', 'fuentes de los')],
+    ('Criminal_investigation', 'investigación'): [],
+    ('Goal', 'se'): [('Trajector', 'sólo se llevaron cosas de escaso valor'), ('Landmark', 'fuentes de')],
+    ('Leadership', 'cargo'): [('Leader', 'que'), ('Governed', 'de la investigación')],
+    ('Source_of_getting', 'fuentes de'): [('Descriptor', 'de')],
+    ('Taking_time', 'llevaron'): [('Activity', 'sólo se llevaron cosas de escaso valor'), ('Time_length', 'llevaron')]}

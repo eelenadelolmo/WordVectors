@@ -1,0 +1,7 @@
+{   ('Attempt', 'conseguido'): [('Agent', 'Frutos'), ('Goal', 'le ha tratado de convencer de que IU tendría una cara más moderna si prescindiera de esa barba , y todo')],
+    ('Body_parts', 'una cara'): [('Possessor', 'IU'), ('Descriptor', 'más moderna')],
+    ('Communication_response', 'respuesta'): [('Trigger', 'que por ahora ... nada')],
+    ('Increment', 'más'): [('Class', 'cara más moderna')],
+    ('Suasion', 'convencer'): [('Speaker', 'Frutos'), ('Addressee', 'le ha')],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'nada')],
+    ('Temporal_collocation', 'moderna'): [('Trajector_entity', 'una cara')]}

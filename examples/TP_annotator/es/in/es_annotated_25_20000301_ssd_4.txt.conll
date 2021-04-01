@@ -1,0 +1,13 @@
+{   ('Becoming_aware', 'encuentran'): [('Phenomenon', 'sin')],
+    ('Deciding', 'deciden'): [('Decision', 'los'), ('Cognizer', 'los que'), ('Decision', 'subir a Montjuïc y se lo encuentran')],
+    ('Desiring', 'quieren'): [('Event', 'los'), ('Experiencer', 'los que'), ('Event', 'ver las diversas exposiciones y actos que se realizan allí')],
+    ('Diversity', 'diversas'): [('Group', 'exposiciones')],
+    ('Event', 'actos'): [],
+    ('Experiencer_focus', 'interesados'): [('Experiencer', 'los'), ('Content', 'obra')],
+    ('Interior_profile_relation', 'por'): [('Figure', 'interesados'), ('Ground', 'obra')],
+    ('Locale', 'allí'): [],
+    ('Locative_relation', 'allí'): [('Figure', 'actos que se realizan allí'), ('Ground', 'los que valoran la arquitectura')],
+    ('Motion', 'ver'): [('Theme', 'los que'), ('Path', 'subir'), ('Goal', 'por')],
+    ('Perception_experience', 'ver'): [('Perceiver_passive', 'los que'), ('Phenomenon', 'las diversas exposiciones y actos que se realizan allí')],
+    ('Taking_time', 'se'): [('Time_length', 'allí')],
+    ('Work', 'obra'): [('Descriptor', 'de')]}

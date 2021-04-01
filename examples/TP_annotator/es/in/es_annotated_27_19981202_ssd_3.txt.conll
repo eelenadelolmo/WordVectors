@@ -1,0 +1,8 @@
+{   ('Bringing', 'por'): [('Agent', 'Nuestro'), ('Theme', 'lo')],
+    ('Calendric_unit', 'diciembre'): [('Count', '23')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'Nuestro general'), ('Ground', 'Chile')],
+    ('Military', 'fuerza'): [],
+    ('Reason', 'la razón'): [],
+    ('Required_event', 'deberá'): [('Required_situation', 'Nuestro general'), ('Required_situation', 'estar en Chile')],
+    ('Statement', 'dijo'): [('Message', '; Nuestro general deberá estar en Chile antes del 23 de diciembre , de lo contrario lo traeremos por la razón o por la fuerza'), ('Message', 'el')],
+    ('Time_vector', 'antes'): [('Event', 'Nuestro general deberá estar en Chile'), ('Landmark_event', '23 de diciembre')]}

@@ -1,0 +1,12 @@
+{   ('Arriving', 'venido'): [('Theme', 'mucha gente'), ('Goal', 'pidiéndonos que les devolvamos el importe del billete')],
+    ('Commerce_pay', 'billete'): [('Buyer', 'mucha gente'), ('Buyer', 'nosotros'), ('Goods', 'billete')],
+    ('Employing', 'empleada de'): [('Employee', 'una empleada de Halcón Viajes')],
+    ('People', 'gente'): [],
+    ('Predicament', 'problema'): [],
+    ('Quantified_mass', 'mucha'): [('Individuals', 'gente')],
+    ('Questioning', 'quot'): [('Speaker', 'mucha gente'), ('Addressee', 'nosotros'), ('Message', 'devolvamos el importe del billete'), ('Message', 'Viajes')],
+    ('Required_event', 'debe'): [('Required_situation', 'quien'), ('Required_situation', 'solucionar el problema')],
+    ('Resolve_problem', 'solucionar'): [('Agent', 'quien'), ('Problem', 'el problema')],
+    ('Statement', 'quot'): [   ('Message', '; Ha venido mucha gente pidiéndonos que les devolvamos el importe del billete , pero es'),
+                               ('Speaker', 'el problema , no nosotros'),
+                               ('Message', 'una empleada de Halcón Viajes')]}

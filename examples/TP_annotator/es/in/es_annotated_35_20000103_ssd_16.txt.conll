@@ -1,0 +1,7 @@
+{   ('Arriving', 'visite'): [('Theme', 'hospital')],
+    ('Buildings', 'hospital'): [],
+    ('Calendric_unit', 'horas'): [('Count', 'seis')],
+    ('Medical_conditions', 'gripe'): [],
+    ('People', 'persona'): [],
+    ('Reveal_secret', 'admite'): [('Speaker', 'se')],
+    ('Waiting', 'aguarde'): [('Protagonist', 'gripe'), ('Manner', 'seis horas')]}

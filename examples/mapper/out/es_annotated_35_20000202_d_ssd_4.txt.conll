@@ -1,0 +1,4 @@
+{   ('Affirm_or_deny', 'negado'): [('Message', 'ha negado todas las acusaciones')],
+    ('Bearing_arms', 'Armadas'): [('Protagonist', 'Fuerzas')],
+    ('Defending', 'defendido'): [('Victim', 'su gestión al frente de las Fuerzas')],
+    ('Leadership', 'acusaciones'): [('Governed', 'su contra')]}

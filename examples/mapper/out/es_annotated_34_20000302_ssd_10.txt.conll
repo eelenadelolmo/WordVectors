@@ -1,0 +1,4 @@
+{   ('Experiencer_obj', 'confusas'): [('Stimulus', 'El testigo'), ('Stimulus', 'explicaciones')],
+    ('Statement', 'declarados'): [('Message', 'explicaciones confusas en las que confirmó detalles declarados'), ('Speaker', 'por Felipe Bayo')],
+    ('Supply', 'ofreció'): [('Supplier', 'El testigo'), ('Theme', 'explicaciones confusas en las que confirmó detalles declarados por Felipe Bayo')],
+    ('Verification', 'confirmó'): [('Medium', 'El testigo ofreció explicaciones confusas en'), ('Unconfirmed_content', 'detalles'), ('Manner', 'declarados por Felipe Bayo')]}

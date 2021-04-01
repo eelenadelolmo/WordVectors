@@ -1,0 +1,8 @@
+{   ('Being_employed', 'trabajaba'): [('Employee', 'sus')],
+    ('Businesses', 'empresa'): [],
+    ('Discussion', 'discusión'): [('Domain', 'económica')],
+    ('Economy', 'económica'): [],
+    ('Emotion_directed', 'interesan'): [('Stimulus', 'sus servicios - - , suele haber una discusión económica')],
+    ('Institutions', 'institución'): [],
+    ('Locative_relation', 'ya'): [('Figure', 'sus servicios'), ('Ground', 'discusión económica')],
+    ('Public_services', 'servicios'): []}

@@ -1,0 +1,8 @@
+{   ('Attack', 'ataque'): [('Weapon', 'del')],
+    ('Catastrophe', 'crisis'): [],
+    ('Likelihood', 'eventual'): [('Hypothetical_event', 'ataque de')],
+    ('Political_locales', 'país'): [('Descriptor', 'con armas nucleares')],
+    ('Response', 'responder'): [('Agent', 'Rusia'), ('Trigger', 'eventual ataque de la')],
+    ('Using', 'utilizará'): [('Agent', 'Rusia'), ('Instrument', 'las'), ('Purpose', 'para responder un eventual ataque')],
+    ('Weapon', 'armas'): [('Type', 'nucleares')],
+    ('Weapon', 'nucleares'): []}

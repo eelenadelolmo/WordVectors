@@ -1,0 +1,13 @@
+{   ('Avoiding', 'evitar'): [('Undesirable_situation', 'alarma')],
+    ('Communication_response', 'reconocieron'): [   ('Speaker', 'fuentes municipales de Salou'),
+                                                    (   'Trigger',
+                                                        'que inicialmente no se había dado credibilidad a la extorsión y se quería evitar la alarma por las negativas consecuencias que pudiera tener '
+                                                        'en el sector turístico')],
+    ('Criminal_investigation', 'investigación'): [],
+    ('Desiring', 'quería'): [('Event', 'evitar la alarma por las negativas consecuencias que pudiera tener en el sector turístico')],
+    ('Fields', 'sector'): [('Activity', 'turístico')],
+    ('Giving', 'dado'): [('Donor', 'extorsión'), ('Theme', 'credibilidad')],
+    ('Likelihood', 'pudiera'): [('Hypothetical_event', 'negativas consecuencias que'), ('Hypothetical_event', 'en el sector turístico')],
+    ('Needing', 'necesidades'): [('Dependent', 'la propia investigación')],
+    ('Source_of_getting', 'fuentes'): [('Descriptor', 'municipales'), ('Theme', 'Salou')],
+    ('Touring', 'turístico'): []}

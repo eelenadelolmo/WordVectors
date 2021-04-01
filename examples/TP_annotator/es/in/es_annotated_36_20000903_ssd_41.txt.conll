@@ -1,0 +1,4 @@
+{   ('Discussion', 'conversaciones'): [('Topic', 'con todas las fuerzas es un rechazo a su petición de un pacto estable')],
+    ('Military', 'fuerzas'): [('Goal', 'un rechazo a su petición de un pacto estable')],
+    ('Request', 'petición'): [('Speaker', 'su'), ('Message', 'de un pacto estable')],
+    ('Respond_to_proposal', 'rechazo'): [('Proposal', 'su petición de un pacto estable')]}

@@ -1,0 +1,3 @@
+{   ('Causation', 'obliga'): [('Cause', 'gripe'), ('Affected', 'Vaclav'), ('Effect', 'a hospitalizar de nuevo')],
+    ('Institutionalization', 'hospitalizar'): [('Affliction', 'Vaclav')],
+    ('Medical_conditions', 'gripe'): []}

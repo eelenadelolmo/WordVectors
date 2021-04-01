@@ -1,0 +1,7 @@
+{   ('Awareness', 'conocer'): [('Cognizer', 'empresa vendió billetes'), ('Content', 'los continuos fallos del catamarán')],
+    ('Businesses', 'empresa'): [],
+    ('Commerce_sell', 'vendió'): [('Seller', 'la empresa'), ('Buyer', 'billetes')],
+    ('Legality', 'penal'): [('Action', 'recurrir')],
+    ('Means', 'recurrir'): [('Descriptor', 'penal')],
+    ('Objective_influence', 'afectados'): [],
+    ('Success_or_failure', 'fallos'): [('Goal', 'del catamarán')]}

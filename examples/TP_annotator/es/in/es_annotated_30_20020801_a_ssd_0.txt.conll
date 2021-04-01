@@ -1,0 +1,7 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Closure', 'Fomento'): [   ('Agent', 'ministro de Fomento , Francisco Álvarez-Cascos , el alcalde de Lleida , Antoni Siurana , y el conseller de Política Territorial ,'),
+                                ('Degree', 'ayer'),
+                                ('Agent', 'en Madrid')],
+    ('Leadership', 'alcalde'): [('Governed', 'sellaron')],
+    ('Preventing_or_letting', 'permitirá'): [('Event', 'pacto que'), ('Event', 'integrar urbanísticamente el AVE en la capital')],
+    ('Relational_political_locales', 'capital'): [('Name', 'de')]}

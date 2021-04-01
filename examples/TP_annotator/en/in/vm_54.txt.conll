@@ -1,0 +1,24 @@
+1	virtual	_	UNK	_	NNP	0	_	_	_	_	_	_	_	S-Descriptor
+2	machines	_	machine	_	NNS	0	_	_	_	_	_	machine.n	Gizmo	S-Gizmo
+3	are	_	be	_	VBP	0	_	_	_	_	_	_	_	O
+4	larger	_	larger	_	JJR	0	_	_	_	_	_	_	_	O
+5	and	_	and	_	CC	0	_	_	_	_	_	_	_	O
+6	slower	_	UNK	_	JJR	0	_	_	_	_	_	_	_	O
+7	to	_	to	_	TO	0	_	_	_	_	_	_	_	O
+8	boot	_	UNK	_	VB	0	_	_	_	_	_	_	_	O
+9	than	_	than	_	IN	0	_	_	_	_	_	_	_	O
+10	containers	_	container	_	NNS	0	_	_	_	_	_	_	_	O
+11	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+
+1	virtual	_	UNK	_	NNP	0	_	_	_	_	_	_	_	O
+2	machines	_	machine	_	NNS	0	_	_	_	_	_	_	_	O
+3	are	_	be	_	VBP	0	_	_	_	_	_	_	_	O
+4	larger	_	larger	_	JJR	0	_	_	_	_	_	_	_	O
+5	and	_	and	_	CC	0	_	_	_	_	_	_	_	O
+6	slower	_	UNK	_	JJR	0	_	_	_	_	_	_	_	O
+7	to	_	to	_	TO	0	_	_	_	_	_	_	_	O
+8	boot	_	UNK	_	VB	0	_	_	_	_	_	_	_	O
+9	than	_	than	_	IN	0	_	_	_	_	_	_	_	O
+10	containers	_	container	_	NNS	0	_	_	_	_	_	container.n	Containers	S-Container
+11	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

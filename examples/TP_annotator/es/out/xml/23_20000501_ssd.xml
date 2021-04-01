@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="23_20000501_ssd">
+
+
+	<concepts>
+		<concept id="c_0">La ampliación de un asentamiento judío</concept>
+		<concept id="c_1">Los israelís</concept>
+		<concept id="c_2">ambas partes</concept>
+		<concept id="c_3">Israel</concept>
+		<concept id="c_4">El tema</concept>
+		<concept id="c_5">El primer ministro israelí , Ehud Barak ,</concept>
+		<concept id="c_6">Familias enteras , entre ellas niños ,</concept>
+		<concept id="c_7">Este</concept>
+		<concept id="c_8">Barak</concept>
+		<concept id="c_9">Uno de ellos , Abú Dis , a unos cientos de metros de los lugares más importantes del islamismo en la Ciudad Santa</concept>
+		<concept id="c_10">Este eventual Estado , así como el tema de los asentamientos , los refugiados o el agua</concept>
+		<concept id="c_11">intensificar el diálogo</concept>
+		<concept id="c_12">el inicio</concept>
+		<concept id="c_13">paz</concept>
+		<concept id="c_14">quot</concept>
+		<concept id="c_15">viviendas</concept>
+		<concept id="c_16">colonos</concept>
+		<concept id="c_17">volandas</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 La ampliación de un asentamiento judío ensombrece el inicio de las negociaciones en Eilat.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0fs0">La</token><token pos="ncfs000">ampliación</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">asentamiento</token><token pos="aq0ms0">judío</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_3" concept_ref3="c_12">
+			<token pos="vmip3s0">ensombrece</token><mention concept_ref="c_12"><token pos="da0ms0">el</token><token pos="ncms000">inicio</token></mention><token pos="sps00">de</token><mention concept_ref="c_2"><token pos="da0fp0">las</token><token pos="ncfp000">negociaciones</token></mention><token pos="sps00">en</token><mention concept_ref="c_3"><token pos="np00000">Eilat</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cause_expansion" head="ampliación">
+				<argument type="Item" dependent="de un asentamiento judío" /></frame>
+			<frame type="Discussion" head="negociaciones">
+				<argument type="Interlocutor_2" dependent="en Eilat" /></frame>
+			<frame type="Locale_by_use" head="asentamiento">
+				<argument type="Descriptor" dependent="judío" /></frame>
+			<frame type="Temporal_subregion" head="inicio">
+				<argument type="Time_period" dependent="las negociaciones en" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El anuncio de la ampliación de un asentamiento judío en Cisjordania retrasó ayer el comienzo de las negociaciones de paz entre israelís y palestinos, que finalmente se iniciaron en el puerto de Eilat, a orillas del Mar Rojo.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">anuncio</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">ampliación</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="ncms000">asentamiento</token><token pos="aq0ms0">judío</token><token pos="sps00">en</token><token pos="np00000">Cisjordania</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_1" concept_ref3="c_12" concept_ref4="c_13">
+			<token pos="vmis3s0">retrasó</token><mention concept_ref="c_12"><token pos="da0ms0">el</token><token pos="ncms000">comienzo</token></mention><token pos="sps00">de</token><mention concept_ref="c_2"><token pos="da0fp0">las</token><token pos="ncfp000">negociaciones</token></mention><token pos="sps00">de</token><mention concept_ref="c_13"><token pos="ncfs000">paz</token></mention><token pos="sps00">entre</token><mention concept_ref="c_1"><token pos="nccp000">israelís</token></mention><token pos="cc">y</token><token pos="ncmp000">palestinos</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_start" head="iniciaron">
+				<argument type="Activity" dependent="del Mar" /></frame>
+			<frame type="Businesses" head="orillas">
+				<argument type="Descriptor" dependent="se" /></frame>
+			<frame type="Calendric_unit" head="ayer" />
+			<frame type="Cause_expansion" head="ampliación">
+				<argument type="Item" dependent="de un asentamiento judío" /></frame>
+			<frame type="Discussion" head="negociaciones">
+				<argument type="Interlocutor_2" dependent="entre israelís y palestinos" /></frame>
+			<main_frame type="Hindering" head="retrasó" />
+			<frame type="Locale_by_use" head="asentamiento">
+				<argument type="Descriptor" dependent="judío" /></frame>
+			<frame type="Locale_by_use" head="puerto">
+				<argument type="Use" dependent="Eilat" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="entre israelís y palestinos , que finalmente se iniciaron" />
+				<argument type="Ground" dependent="el puerto de" /></frame>
+			<frame type="Part_orientational" head="se">
+				<argument type="Whole" dependent="orillas" /></frame>
+			<frame type="Relational_natural_features" head="orillas">
+				<argument type="Landmark_feature" dependent="del Mar Rojo" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="el puerto de" />
+				<argument type="Ground" dependent="orillas del Mar Rojo" /></frame>
+			<frame type="Statement" head="anuncio">
+				<argument type="Message" dependent="de la ampliación de un asentamiento judío" />
+				<argument type="Time" dependent="en Cisjordania retrasó" />
+				<argument type="Message" dependent="a orillas del Mar Rojo" /></frame>
+			<frame type="Temporal_subregion" head="comienzo" />
+			<frame type="Time_vector" head="finalmente">
+				<argument type="Event" dependent="entre israelís y palestinos" />
+				<argument type="Event" dependent="que" />
+				<argument type="Event" dependent="iniciaron en el puerto de" />
+				<argument type="Event" dependent="a orillas del Mar Rojo" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Los israelís no están concentrados en este proceso de paz", reaccionó el jefe de los negociadores palestinos, Yaser Abed Rabbo.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0mp0">Los</token><token pos="nccp000">israelís</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_13" concept_ref3="c_14">
+			<token pos="rn">no</token><token pos="vmip3p0">están</token><token pos="aq0mpp">concentrados</token><token pos="sps00">en</token><mention concept_ref="c_7"><token pos="dd0ms0">este</token><token pos="ncms000">proceso</token></mention><token pos="sps00">de</token><mention concept_ref="c_13"><token pos="ncfs000">paz</token></mention><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="el jefe de los negociadores palestinos , Yaser Abed Rabbo " />
+			<frame type="Body_parts" head="jefe">
+				<argument type="Possessor" dependent="negociadores palestinos" /></frame>
+			<frame type="Process" head="proceso">
+				<argument type="Process" dependent="proceso de paz" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Después de dos rondas de negociaciones en la base militar norteamericana de Bolling, en los alrededores de Washington, ambas partes decidieron intensificar el diálogo.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="dn0fp0">ambas</token><token pos="ncfp000">partes</token>
+		</theme>
+		<rheme concept_ref1="c_11">
+			<token pos="vmis3p0">decidieron</token><mention concept_ref="c_11"><token pos="vmn0000">intensificar</token><token pos="da0ms0">el</token><token pos="ncms000">diálogo</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Ammunition" head="rondas">
+				<argument type="Type" dependent="de negociaciones" /></frame>
+			<frame type="Cardinal_numbers" head="dos">
+				<argument type="Entity" dependent="rondas de negociaciones" /></frame>
+			<main_frame type="Deciding" head="decidieron">
+				<argument type="Cognizer" dependent="ambas partes" />
+				<argument type="Decision" dependent="intensificar el diálogo" /></main_frame>
+			<frame type="Discussion" head="negociaciones">
+				<argument type="Interlocutor_2" dependent="en la base militar norteamericana de Bolling , en los alrededores de Washington" /></frame>
+			<frame type="Locale_by_use" head="base">
+				<argument type="Container_possessor" dependent="norteamericana" />
+				<argument type="Use" dependent="militar" /></frame>
+			<frame type="Military" head="militar" />
+			<frame type="Part_orientational" head="partes" />
+			<frame type="People_by_origin" head="norteamericana" />
+			<frame type="Relative_time" head="Después de">
+				<argument type="Landmark_occasion" dependent="dos rondas de negociaciones en la base militar norteamericana de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Esta semana negociarán en Eilat y la próxima semana se trasladarán a la localidad egipcia de Taba.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="semana">
+				<argument type="Relative_time" dependent="próxima" /></frame>
+			<frame type="Discussion" head="negociarán">
+				<argument type="Interlocutor_1" dependent="se" />
+				<argument type="Interlocutor_2" dependent="en Eilat" /></frame>
+			<frame type="Motion" head="trasladarán">
+				<argument type="Theme" dependent="se" />
+				<argument type="Goal" dependent="a la localidad egipcia de Taba" /></frame>
+			<frame type="Origin" head="egipcia">
+				<argument type="Entity" dependent="localidad" /></frame>
+			<frame type="Political_locales" head="localidad">
+				<argument type="Name" dependent="egipcia" />
+				<argument type="Name" dependent="de Taba" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Con una de cal y otra de arena, Israel anunció ayer la próxima construcción de 174 viviendas para colonos en el asentamiento de Maalé Adumim, situado a pocos kilómetros de Jerusalén.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="np00000">Israel</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_4" concept_ref3="c_9" concept_ref4="c_3" concept_ref5="c_7" concept_ref6="c_11" concept_ref7="c_12" concept_ref8="c_15" concept_ref9="c_16">
+			<token pos="vmis3s0">anunció</token><mention concept_ref="c_0"><token pos="da0fs0">la</token><token pos="aq0fs0">próxima</token><token pos="ncfs000">construcción</token></mention><token pos="sps00">de</token><token pos="z">174</token><mention concept_ref="c_15"><token pos="ncfp000">viviendas</token></mention><token pos="sps00">para</token><mention concept_ref="c_16"><token pos="ncmp000">colonos</token></mention><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">asentamiento</token><token pos="sps00">de</token><token pos="np0000l">Maalé</token><token pos="np0000l">Adumim</token><token pos="fc">,</token><token pos="aq0msp">situado</token><token pos="sps00">a</token><mention concept_ref="c_9"><token pos="di0mp0">pocos</token><token pos="ncmp000">kilómetros</token></mention><token pos="sps00">de</token><mention concept_ref="c_3"><token pos="np00000">Jerusalén</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_aware" head="situado">
+				<argument type="Cognizer" dependent="Adumim" />
+				<argument type="Phenomenon" dependent="a pocos kilómetros" />
+				<argument type="Evidence" dependent="de Jerusalén" /></frame>
+			<frame type="Building" head="construcción">
+				<argument type="Created_entity" dependent="de 174 viviendas" /></frame>
+			<frame type="Buildings" head="viviendas">
+				<argument type="Type" dependent="cal" /></frame>
+			<frame type="Calendric_unit" head="ayer la" />
+			<frame type="Cardinal_numbers" head="una">
+				<argument type="Entity" dependent="de arena" /></frame>
+			<frame type="Colonization" head="cal" />
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="la próxima construcción de 174 viviendas" />
+				<argument type="Ground" dependent="el asentamiento de Maalé Adumim" /></frame>
+			<frame type="Locale_by_use" head="asentamiento">
+				<argument type="Use" dependent="Adumim" /></frame>
+			<frame type="Measure_linear_extent" head="kilómetros">
+				<argument type="Count" dependent="pocos" /></frame>
+			<frame type="Quantified_mass" head="pocos">
+				<argument type="Individuals" dependent="kilómetros" /></frame>
+			<main_frame type="Statement" head="anunció">
+				<argument type="Speaker" dependent="Israel" />
+				<argument type="Manner" dependent="ayer la" />
+				<argument type="Message" dependent="próxima construcción de 174 viviendas para colonos en el asentamiento de Maalé Adumim , situado a pocos kilómetros de" /></main_frame>
+			<frame type="Substance" head="de arena">
+				<argument type="Descriptor" dependent="una" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El tema irritó a los palestinos, quienes sólo accedieron a volver a la mesa de negociaciones tras varias horas de diálogo informal previo en Eilat.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="da0ms0">El</token><token pos="ncms000">tema</token>
+		</theme>
+		<rheme concept_ref1="c_1">
+			<token pos="vmis3s0">irritó</token><token pos="sps00">a</token><mention concept_ref="c_1"><token pos="da0mp0">los</token><token pos="ncmp000">palestinos</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="volver">
+				<argument type="Theme" dependent="quienes" />
+				<argument type="Goal" dependent="a la mesa de negociaciones" /></frame>
+			<frame type="Calendric_unit" head="horas">
+				<argument type="Count" dependent="varias" /></frame>
+			<frame type="Make_agreement_on_action" head="en">
+				<argument type="Party_1" dependent="quienes" />
+				<argument type="Manner" dependent="sólo" />
+				<argument type="Obligation" dependent="volver a la mesa de negociaciones tras varias horas de diálogo informal previo en" /></frame>
+			<frame type="Point_of_dispute" head="tema">
+				<argument type="Descriptor" dependent="irritó a los palestinos" /></frame>
+			<frame type="Quantified_mass" head="varias">
+				<argument type="Individuals" dependent="horas" /></frame>
+			<frame type="Relative_time" head="previo">
+				<argument type="Focal_occasion" dependent="de diálogo informal" /></frame>
+			<frame type="Relative_time" head="previo en">
+				<argument type="Focal_occasion" dependent="quienes sólo accedieron a volver a la mesa de negociaciones" />
+				<argument type="Landmark_occasion" dependent="varias horas de diálogo informal previo en" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El primer ministro israelí, Ehud Barak, intentó con esta acción apaciguar a los colonos, aunque paralelamente ordenó la evacuación de decenas de judíos que intentaron ampliar el asentamiento de Tel Rumeida, en la cisjordana Hebrón.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0ms0">El</token><token pos="ao0ms0">primer</token><token pos="ncms000">ministro</token><token pos="aq0cs0">israelí</token><token pos="fc">,</token><token pos="np0000l">Ehud</token><token pos="np0000l">Barak</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_16">
+			<token pos="vmis3s0">intentó</token><token pos="vmn0000">apaciguar</token><token pos="sps00">a</token><token pos="da0mp0">los</token><mention concept_ref="c_16"><token pos="ncmp000">colonos</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Attempt" head="intentó">
+				<argument type="Agent" dependent="que" />
+				<argument type="Goal" dependent="ampliar el asentamiento de Tel Rumeida , en la cisjordana Hebrón" /></main_frame>
+			<frame type="Cause_expansion" head="ampliar">
+				<argument type="Cause" dependent="la evacuación de decenas de judíos" />
+				<argument type="Agent" dependent="que" />
+				<argument type="Item" dependent="el asentamiento de Tel" />
+				<argument type="Result_size" dependent="en la cisjordana Hebrón" /></frame>
+			<frame type="Colonization" head="los colonos" />
+			<frame type="Identicality" head="aunque">
+				<argument type="Type" dependent="los" /></frame>
+			<frame type="Intentionally_act" head="acción" />
+			<frame type="Locale_by_use" head="asentamiento">
+				<argument type="Formational_cause" dependent="de Tel" /></frame>
+			<frame type="Removing" head="evacuación">
+				<argument type="Theme" dependent="de decenas de judíos que intentaron ampliar el asentamiento de Tel" /></frame>
+			<frame type="Request" head="ordenó">
+				<argument type="Speaker" dependent="el" />
+				<argument type="Message" dependent="evacuación de decenas de judíos que intentaron ampliar el asentamiento de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Familias enteras, entre ellas niños, fueron sacadas en volandas por soldados y policías de un contenedor que habían colocado en el lugar.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="ncfp000">Familias</token><token pos="aq0fp0">enteras</token><token pos="fc">,</token><token pos="sps00">entre</token><token pos="pp3fp000">ellas</token><token pos="ncmp000">niños</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_12" concept_ref3="c_16" concept_ref4="c_17">
+			<token pos="vsis3p0">fueron</token><token pos="vmp00pf">sacadas</token><token pos="sps00">en</token><mention concept_ref="c_17"><token pos="np00000">volandas</token></mention><token pos="sps00">por</token><token pos="ncmp000">soldados</token><token pos="cc">y</token><token pos="nccp000">policías</token><token pos="sps00">de</token><mention concept_ref="c_12"><token pos="di0ms0">un</token><token pos="ncms000">contenedor</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Containers" head="contenedor" />
+			<frame type="Inclusion" head="enteras">
+				<argument type="Total" dependent="Familias enteras" />
+				<argument type="Part" dependent="niños" /></frame>
+			<frame type="Kinship" head="Familias" />
+			<frame type="Kinship" head="niños" />
+			<frame type="Locale_by_use" head="lugar" />
+			<frame type="Member_of_military" head="soldados" />
+			<main_frame type="Motion" head="sacadas" />
+			<frame type="Placing" head="colocado">
+				<argument type="Theme" dependent="un contenedor que habían" />
+				<argument type="Goal" dependent="en el lugar" /></frame>
+			<frame type="Spatial_contact" head="en">
+				<argument type="Figure" dependent="contenedor que habían colocado" />
+				<argument type="Ground" dependent="lugar" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Conforme se acerca un posible acuerdo que implique la evacuación de los asentamientos judíos, los líderes más extremistas de los colonos empiezan a mostrar sus afiladas uñas.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Activity_start" head="empiezan">
+				<argument type="Time" dependent="Conforme se acerca un posible acuerdo que implique la evacuación de los asentamientos judíos" />
+				<argument type="Agent" dependent="los líderes más extremistas de los" />
+				<argument type="Activity" dependent="a mostrar sus afiladas uñas" /></frame>
+			<frame type="Arriving" head="acerca">
+				<argument type="Theme" dependent="asentamientos judíos" /></frame>
+			<frame type="Colonization" head="se" />
+			<frame type="Evidence" head="mostrar">
+				<argument type="Support" dependent="los líderes más extremistas de los" />
+				<argument type="Proposition" dependent="sus afiladas uñas" /></frame>
+			<frame type="Leadership" head="líderes">
+				<argument type="Type" dependent="se" /></frame>
+			<frame type="Likelihood" head="posible">
+				<argument type="Hypothetical_event" dependent="la evacuación de los asentamientos judíos" /></frame>
+			<frame type="Locale_by_use" head="asentamientos">
+				<argument type="Relative_location" dependent="judíos" /></frame>
+			<frame type="Removing" head="evacuación">
+				<argument type="Theme" dependent="asentamientos judíos" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Este no fue el único tema que irritó a la extrema derecha israelí.
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="pd0ms000">Este</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_12">
+			<token pos="rn">no</token><token pos="vsis3s0">fue</token><token pos="da0ms0">el</token><token pos="aq0ms0">único</token><token pos="ncms000">tema</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Point_of_dispute" head="tema que" />
+			<frame type="Sole_instance" head="único">
+				<argument type="Item" dependent="tema que" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Las autoridades israelís no desmintieron ayer que Barak traspase tres barrios árabes de los alrededores de Jerusalén al control palestino.
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="np00000">Barak</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_1" concept_ref3="c_7" concept_ref4="c_11" concept_ref5="c_15" concept_ref6="c_16">
+			<token pos="vmsp3s0">traspase</token><token pos="dn0cp0">tres</token><token pos="ncmp000">barrios</token><token pos="aq0cp0">árabes</token><mention concept_ref="c_11"><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">alrededores</token><token pos="sps00">de</token><token pos="np00000">Jerusalén</token><token pos="spcms">al</token><token pos="ncms000">control</token><token pos="aq0ms0">palestino</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="Las autoridades israelís " />
+			<frame type="Affirm_or_deny" head="de">
+				<argument type="Speaker" dependent="autoridades israelís" />
+				<argument type="Message" dependent="Barak traspase tres barrios árabes de los alrededores de Jerusalén al control palestino" /></frame>
+			<frame type="Being_in_control" head="control">
+				<argument type="Controlling_entity" dependent="palestino" /></frame>
+			<frame type="Calendric_unit" head="ayer que" />
+			<main_frame type="Transfer" head="traspase">
+				<argument type="Donor" dependent="Barak" />
+				<argument type="Theme" dependent="tres barrios árabes" />
+				<argument type="Recipient" dependent="de los alrededores de Jerusalén al control palestino" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Uno de ellos, Abú Dis, a unos cientos de metros de los lugares más importantes del islamismo en la Ciudad Santa, podría ser declarado como la capital del futuro Estado palestino.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="pi0ms000">Uno</token><token pos="sps00">de</token><token pos="pp3mp000">ellos</token><token pos="fc">,</token><token pos="np0000l">Abú</token><token pos="np0000l">Dis</token><token pos="fc">,</token><token pos="sps00">a</token><token pos="di0mp0">unos</token><token pos="pn0cp000">cientos</token><token pos="sps00">de</token><token pos="ncmp000">metros</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">lugares</token><token pos="rg">más</token><token pos="aq0cp0">importantes</token><token pos="spcms">del</token><token pos="ncms000">islamismo</token><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="ncms000">Ciudad</token><token pos="aq0ms0">Santa</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_11" concept_ref3="c_13" concept_ref4="c_14" concept_ref5="c_17">
+			<token pos="vsn0000">ser</token><token pos="vmp00sm">declarado</token><token pos="cs">como</token><mention concept_ref="c_13"><token pos="da0fs0">la</token><token pos="ncfs000">capital</token></mention><token pos="spcms">del</token><mention concept_ref="c_14"><token pos="aq0ms0">futuro</token></mention><mention concept_ref="c_17"><token pos="np00000">Estado</token></mention><token pos="aq0ms0">palestino</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="Uno">
+				<argument type="Entity" dependent="de ellos" /></frame>
+			<frame type="Cardinal_numbers" head="cientos">
+				<argument type="Precision" dependent="unos" />
+				<argument type="Unit" dependent="metros" /></frame>
+			<frame type="Importance" head="importantes">
+				<argument type="Degree" dependent="más" />
+				<argument type="Factor" dependent="lugares más importantes del islamismo" />
+				<argument type="Place" dependent="en la Ciudad Santa" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="islamismo" />
+				<argument type="Ground" dependent="la Ciudad Santa" /></frame>
+			<frame type="Leadership" head="Estado">
+				<argument type="Governed" dependent="palestino" /></frame>
+			<frame type="Locale" head="lugares">
+				<argument type="Descriptor" dependent="más importantes" /></frame>
+			<frame type="Measure_linear_extent" head="metros">
+				<argument type="Count" dependent="unos cientos de" /></frame>
+			<frame type="Origin" head="de los">
+				<argument type="Entity" dependent="unos cientos de metros" />
+				<argument type="Origin" dependent="los lugares más importantes del islamismo en la Ciudad Santa" /></frame>
+			<frame type="Political_locales" head="Ciudad">
+				<argument type="Descriptor" dependent="," /></frame>
+			<frame type="Possibility" head="podría">
+				<argument type="Possible_event" dependent="la Ciudad Santa" />
+				<argument type="Possible_event" dependent="declarado como la capital del futuro Estado palestino" /></frame>
+			<frame type="Quantified_mass" head="unos">
+				<argument type="Individuals" dependent="cientos de metros" /></frame>
+			<frame type="Relational_political_locales" head="capital">
+				<argument type="Container_possessor" dependent="del futuro Estado palestino" /></frame>
+			<main_frame type="Statement" head="declarado">
+				<argument type="Message" dependent="capital del futuro Estado palestino" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Este eventual Estado, así como el tema de los asentamientos, los refugiados o el agua se tratarán en Eilat.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="dd0ms0">Este</token><token pos="aq0cs0">eventual</token><token pos="np00000">Estado</token><token pos="fc">,</token><token pos="rg">así</token><token pos="cs">como</token><token pos="da0ms0">el</token><token pos="ncms000">tema</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">asentamientos</token><token pos="fc">,</token><token pos="da0mp0">los</token><token pos="ncmp000">refugiados</token><token pos="cc">o</token><token pos="da0ms0">el</token><token pos="ncfs000">agua</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_7">
+			<mention concept_ref="c_7"><token pos="p0000000">se</token></mention><token pos="vmif3p0">tratarán</token><token pos="sps00">en</token><mention concept_ref="c_3"><token pos="np00000">Eilat</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="Estado" />
+			<frame type="Locale_by_use" head="asentamientos" />
+			<frame type="Point_of_dispute" head="tema de los">
+				<argument type="Question" dependent="asentamientos , los refugiados o el agua" /></frame>
+			<frame type="Resolve_problem" head="se">
+				<argument type="Problem" dependent="Este eventual Estado , así como el tema de los asentamientos" />
+				<argument type="Problem" dependent="refugiados o el agua" />
+				<argument type="Problem" dependent="en Eilat" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

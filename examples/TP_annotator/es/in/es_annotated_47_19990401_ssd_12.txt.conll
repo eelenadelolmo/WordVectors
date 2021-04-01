@@ -1,0 +1,4 @@
+{   ('Buildings', 'edil del'): [('Creator', 'del PP Borja Semper')],
+    ('Communicate_categorization', 'pintadas'): [('Speaker', 'en'), ('Category', 'con amenazas al edil del PP Borja')],
+    ('Give_impression', 'aparecieron'): [('Phenomenon', 'en'), ('Inference', 'pintadas en Irún ( Guipúzcoa ) con amenazas al edil del PP Borja')],
+    ('Risky_situation', 'amenazas'): [('Situation', 'en'), ('Situation', 'al edil del PP Borja Semper')]}

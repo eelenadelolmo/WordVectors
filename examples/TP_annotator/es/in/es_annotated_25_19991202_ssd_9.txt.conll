@@ -1,0 +1,10 @@
+{   ('Awareness', 'imaginar'): [('Content', 'trabajos'), ('Cognizer', 'se')],
+    ('Being_employed', 'trabajos'): [],
+    ('Calendric_unit', 'al mes'): [],
+    ('Capability', 'puedan'): [('Entity', 'se'), ('Event', 'imaginar')],
+    ('Cardinal_numbers', 'Cuatro'): [('Unit', 'millones')],
+    ('Cardinal_numbers', 'millones'): [('Multiplier', 'Cuatro'), ('Unit', 'al mes')],
+    ('Cardinal_numbers', 'uno'): [('Entity', 'los trabajos más cómodos y mejor pagados')],
+    ('Commerce_pay', 'pagados'): [('Manner', 'mejor'), ('Money', 'trabajos')],
+    ('Required_event', 'mejor'): [('Required_situation', 'trabajos')],
+    ('Statement', 'decir'): [('Message', 'nada es uno de los trabajos más cómodos y mejor pagados que se puedan imaginar')]}

@@ -1,0 +1,12 @@
+{   ('Aggregate', 'partido'): [('Aggregate_property', 'de')],
+    ('Appellations', 'presidente'): [('Title', 'de la región autónoma de')],
+    ('Body_parts', 'jefe'): [('Possessor', 'del Estado')],
+    ('Capability', 'capaz'): [('Event', 'sombra al jefe del Estado')],
+    ('Importance', 'principales'): [('Factor', 'favoritos')],
+    ('Leadership', 'Estado'): [],
+    ('Leadership', 'líder'): [('Descriptor', 'único'), ('Activity', 'capaz de hacer sombra al jefe del Estado')],
+    ('Locale', 'región'): [('Name', 'autónoma')],
+    ('Placing', 'situaban'): [('Theme', 'pronósticos'), ('Theme', 'la Unión de Ciudadanos de Georgia , el partido de Shevardnadze , y el bloque Renovación , del actual presidente')],
+    ('Predicting', 'pronósticos'): [('Eventuality', 'la Unión de Ciudadanos de Georgia , el partido de Shevardnadze , y el bloque Renovación , del actual presidente')],
+    ('Sole_instance', 'único'): [('Item', 'líder capaz de hacer sombra al jefe del Estado')],
+    ('Temporal_collocation', 'del actual'): [('Trajector_entity', 'presidente de la región autónoma de')]}

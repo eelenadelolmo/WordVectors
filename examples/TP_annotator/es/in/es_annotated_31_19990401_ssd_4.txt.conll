@@ -1,0 +1,5 @@
+{   ('Attempt_suasion', 'presiones'): [('Speaker', 'de nacionalistas y comunistas')],
+    ('Deciding', 'decidido'): [('Cognizer', 'Moscú'), ('Decision', 'envío de los buques de la flota del Mar Negro')],
+    ('Ordinal_numbers', 'primero'): [('Type', 'de los cuales')],
+    ('Sending', 'flota'): [('Sender', 'Moscú'), ('Theme', 'flota'), ('Recipient', 'de la flota del Mar Negro')],
+    ('Vehicle', 'flota'): [('Use', 'de la flota del Mar Negro')]}

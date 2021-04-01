@@ -1,0 +1,5 @@
+{   ('Cause_motion', 'se'): [('Agent', 'escritor y periodista'), ('Theme', 'paralelismo entre la intervención del líder de EH y el proceso de paz que se ha vivido en Irlanda del Norte ,')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'el proceso de paz que se ha'), ('Ground', 'Irlanda del Norte')],
+    ('Leadership', 'líder'): [('Descriptor', 'Sinn'), ('Leader', 'Gerry')],
+    ('Perception_experience', 'vivido'): [('Phenomenon', 'proceso de paz que'), ('Perceiver_passive', 'en Irlanda del Norte , impulsado , entre otros , por el líder del Sinn')],
+    ('Process', 'proceso'): [('Process', 'que se ha vivido en Irlanda del Norte , impulsado , entre otros , por el líder del Sinn')]}

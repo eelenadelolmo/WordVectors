@@ -1,0 +1,9 @@
+{   ('Assistance', 'sirvan de'): [('Helper', 'estos actos de repulsa a las acciones de'), ('Goal', 'de ejemplo al PNV para que & quot ; se salga del Pacto de')],
+    ('Instance', 'ejemplo'): [],
+    ('Intentionally_act', 'acciones'): [('Agent', 'se')],
+    ('Intentionally_act', 'actos'): [('Act', 'actos de repulsa a las acciones de')],
+    ('Leadership', 'alcaldesa'): [('Descriptor', 'actos'), ('Governed', 'de la capital de')],
+    ('Relational_political_locales', 'capital'): [('Name', 'salga')],
+    ('Statement', 'dijo'): [   ('Speaker', 'alcaldesa en funciones de la capital de'),
+                               ('Message', ', dijo esperar que estos actos de repulsa a las acciones de ETA sirvan de ejemplo al PNV para que & quot ; se salga del Pacto de')],
+    ('Traversing', 'esperar que'): [('Theme', 'la'), ('Theme', 'que estos actos de repulsa a las acciones de ETA sirvan de ejemplo al PNV para que')]}

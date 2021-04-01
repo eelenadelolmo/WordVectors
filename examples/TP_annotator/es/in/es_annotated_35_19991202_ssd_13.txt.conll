@@ -1,0 +1,10 @@
+{   ('Businesses', 'operación'): [('Product', 'militar')],
+    ('Calendric_unit', 'año'): [],
+    ('Defending', 'Defensa'): [],
+    ('Desirability', 'enfrió'): [('Degree', 'ayer')],
+    ('Expectation', 'esperaba'): [('Phenomenon', 'militar rusa'), ('Phenomenon', 'que'), ('Phenomenon', 'finalizar la operación militar en la república rebelde para fin de año')],
+    ('Leadership', 'rebelde'): [('Governed', 'rusa'), ('Type', 'militar')],
+    ('Military', 'militar'): [],
+    ('Origin', 'rusa'): [('Entity', 'militar')],
+    ('Process_end', 'fin de'): [('Process', 'año')],
+    ('Rebellion', 'rebelde'): [('Rebel', 'república rebelde')]}

@@ -1,0 +1,9 @@
+{   ('Buildings', 'bibliotecas'): [('Name', 'públicas')],
+    ('Commerce_buy', 'comprara'): [('Buyer', 'el'), ('Goods', 'el cuento')],
+    ('Goal', 'para'): [('Trajector', 'cualquier otro libro'), ('Landmark', 'a las bibliotecas públicas')],
+    ('Increment', 'otro'): [('Class', 'libro')],
+    ('Motion', 'a las'): [('Theme', 'cualquier otro libro'), ('Goal', 'a las bibliotecas públicas')],
+    ('Quantified_mass', 'cualquier'): [('Individuals', 'otro libro')],
+    ('Secrecy_status', 'públicas'): [('Phenomenon', 'bibliotecas')],
+    ('Similarity', 'como'): [('Entity_1', 'el'), ('Entity_2', 'cualquier otro libro')],
+    ('Text', 'libro'): []}

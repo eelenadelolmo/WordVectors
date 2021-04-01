@@ -1,0 +1,4 @@
+{   ('Capability', 'pueden'): [('Entity', 'un avión de última hora se'), ('Event', 'pagar hasta 249')],
+    ('Commerce_pay', 'pagar'): [('Money', 'un avión de última hora'), ('Buyer', 'se'), ('Money', 'hasta 249 ( 41.430 pesetas )')],
+    ('Expensiveness', 'pagar'): [('Goods', 'promedio 138 euros ( 22.961 pesetas ) , en un avión de última hora se pueden llegar a pagar hasta 249 (')],
+    ('Typicality', 'promedio'): [('State_of_affairs', '138 euros')]}

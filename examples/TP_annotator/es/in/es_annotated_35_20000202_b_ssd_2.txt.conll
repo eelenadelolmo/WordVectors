@@ -1,0 +1,11 @@
+{   ('Assistance', 'ayudado'): [('Goal', 'a huir y de apoyar económicamente a Hans-Joachim Klein')],
+    ('Awareness', 'conocido'): [('Content', 'Cohn-Bendit')],
+    ('Be_in_agreement_on_action', 'según'): [   ('Party_2', 'huir y de apoyar económicamente a Hans-Joachim Klein , un presunto cómplice del terrorista'),
+                                                ('Obligation', 'según indicó un portavoz de la fiscalía')],
+    ('Change_of_leadership', 'revuelta'): [('Body', 'estudiantil')],
+    ('Education_teaching', 'estudiantil'): [],
+    ('Fleeing', 'huir'): [('Goal', 'de apoyar económicamente a Hans-Joachim Klein')],
+    ('Representative', 'de haber'): [('Represented', 'fiscalía')],
+    ('Suspicion', 'sospechoso'): [],
+    ('Terrorism', 'terrorista'): [],
+    ('Unattributed_information', 'presunto'): [('Reported_fact', 'presunto')]}

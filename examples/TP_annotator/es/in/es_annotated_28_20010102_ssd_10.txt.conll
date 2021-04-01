@@ -1,0 +1,9 @@
+{   ('Cardinal_numbers', 'un'): [('Entity', 'negociadores palestinos')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'no será posible lograr un acuerdo de paz'), ('Ground', 'en el futuro cercano')],
+    ('Likelihood', 'posible'): [('Hypothetical_event', 'un acuerdo de paz'), ('Circumstances', 'en el futuro cercano')],
+    ('Locative_relation', 'cercano'): [('Ground', 'en el futuro cercano')],
+    ('Locative_relation', 'en'): [('Ground', 'no se producen cambios en la propuesta de paz de')],
+    ('Make_agreement_on_action', 'un acuerdo'): [],
+    ('Statement', 'declaraciones'): [('Medium', 'con la advertencia')],
+    ('Statement', 'propuesta de'): [('Speaker', 'se'), ('Message', 'paz de')],
+    ('Undergo_change', 'cambios'): [('Final_situation', 'propuesta de paz de')]}

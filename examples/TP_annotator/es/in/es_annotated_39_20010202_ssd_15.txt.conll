@@ -1,0 +1,4 @@
+{   ('Leadership', 'legisladores'): [],
+    ('Questioning', 'pregunta'): [('Message', 'dirigirla a los legisladores')],
+    ('Required_event', 'hay que'): [('Required_situation', 'la pregunta'), ('Required_situation', 'dirigirla a los legisladores')],
+    ('Statement', 'los'): [('Message', 'la pregunta'), ('Message', 'a los legisladores')]}

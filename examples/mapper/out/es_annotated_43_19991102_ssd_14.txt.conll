@@ -1,0 +1,13 @@
+{   ('Age', 'antigüedad'): [('Time', '16.000 años'), ('Attribute', 'detectado')],
+    ('Arriving', 'llegaron'): [('Theme', 'los pobladores de América'), ('Time', 'hace 13.500 años'), ('Place', 'por Alaska')],
+    ('Becoming_aware', 'detectado'): [('Manner', 'años'), ('Phenomenon', 'antigüedad'), ('Topic', 'en Chile , Pensilvania , Virginia y Carolina del Sur')],
+    ('Calendric_unit', 'años'): [('Count', '16.000')],
+    ('Categorization', 'consideran'): [('Cognizer', 'los únicos que'), ('Category', 'creencia de que los pobladores de América llegaron hace 13.500 años por Alaska ,')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'han detectado'), ('Ground', 'Chile , Pensilvania , Virginia y Carolina del Sur')],
+    ('Opinion', 'creencia'): [('Opinion', 'que los pobladores de América llegaron hace 13.500 años por Alaska ,')],
+    ('People_by_vocation', 'arqueólogos'): [],
+    ('Remainder', 'restos'): [],
+    ('Residence', 'los pobladores'): [('Location', 'de América')],
+    ('Sole_instance', 'únicos que'): [('Item', 'los')],
+    ('Taking_time', 'se'): [('Activity', 'teoría de ambos arqueólogos'), ('Time_length', 'años'), ('Activity', 'ser evaluada')],
+    ('Time_vector', 'se'): [('Distance', 'pobladores de América llegaron hace 13.500 años'), ('Landmark_event', 'por Alaska')]}

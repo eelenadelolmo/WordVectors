@@ -1,0 +1,11 @@
+{   ('Attack', 'despido'): [],
+    ('Cotheme', 'guías'): [],
+    ('Employing', 'Staff'): [('Field', 'Professional'), ('Employee', 'Staff Human Resources')],
+    ('Employing', 'trabajadores'): [],
+    ('Explaining_the_facts', 'explicó'): [('Manner', 'ayer que')],
+    ('Organization', 'sindicato'): [],
+    ('Practice', 'prácticas'): [],
+    ('Referring_by_name', 'convocado'): [('Name', 'el despido')],
+    ('Representative', 'quot'): [('Represented', 'sindicato'), ('Representative', 'Jaume')],
+    ('Travel', 'turísticos'): [('Mode_of_transportation', 'bus'), ('Goal', 'Professional Staff Human Resources ,')],
+    ('Vehicle', 'bus'): []}

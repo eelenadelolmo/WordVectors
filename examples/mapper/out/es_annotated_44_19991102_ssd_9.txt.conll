@@ -1,0 +1,9 @@
+{   ('Closure', 'sellado'): [('Containing_object', 'ciudad')],
+    ('Identicality', 'la misma'): [('Type', 'ciudad')],
+    ('Importance', 'decisiva'): [('Factor', 'página decisiva de la Reforma')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'el acercamiento'), ('Ground', 'la misma ciudad')],
+    ('Locative_relation', 'donde'): [('Figure', 'la misma ciudad'), ('Figure', 'una página decisiva de la Reforma')],
+    ('Means', 'acercamiento'): [],
+    ('Political_locales', 'ciudad'): [],
+    ('Rite', 'quot'): [('Leader', 'del Angelus')],
+    ('Text_creation', 'escrita'): [('Text', 'una página decisiva de la Reforma'), ('Text', 'haya')]}

@@ -1,0 +1,5 @@
+{   ('Becoming', 'de'): [('Entity', 'seamos'), ('Final_category', 'una realidad de gobierno'), ('Time', 'dentro de cuatro años')],
+    ('Calendric_unit', 'años'): [('Count', 'cuatro')],
+    ('Interior_profile_relation', 'dentro'): [('Figure', 'una realidad de gobierno'), ('Ground', 'cuatro años')],
+    ('Leadership', 'gobierno'): [],
+    ('Preventing_or_letting', 'permitirá'): [('Event', 'dentro de cuatro años seamos una realidad de gobierno')]}

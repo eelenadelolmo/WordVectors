@@ -1,0 +1,3 @@
+{   ('Make_agreement_on_action', 'convenio'): [],
+    ('Respond_to_proposal', 'rechazan'): [('Speaker', 'Las 4 centrales sindicales'), ('Proposal', 'la firma del convenio')],
+    ('Sign_agreement', 'firma del'): [('Agreement', 'del convenio')]}

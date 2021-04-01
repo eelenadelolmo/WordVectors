@@ -1,0 +1,7 @@
+{   ('Activity_resume', 'se'): [('Activity', 'el bombardeo'), ('Time', 'antes de que él llegara a Alemania')],
+    ('Arriving', 'llegar'): [('Theme', 'él'), ('Goal', 'a Alemania')],
+    ('Attempt', 'esfuerzos'): [('Agent', 'se')],
+    ('Becoming_a_member', 'se'): [('New_member', 'primer ministro'), ('Group', 'la retórica antioccidental'), ('Group', 'al llegar'), ('Place', 'a Moscú')],
+    ('Judgment_communication', 'sabotear'): [   ('Medium', 'primer ministro se sumó a la retórica antioccidental y , al llegar a'),
+                                                ('Reason', 'sabotear sus esfuerzos y de reanudar el bombardeo antes de que él llegara a Alemania')],
+    ('Weapon', 'bombardeo'): [('Name', 'antes de que él llegara a Alemania')]}

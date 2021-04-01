@@ -1,0 +1,8 @@
+{   ('Activity_prepare', 'preparación'): [('Activity', 'de la Cumbre Iberoamericana que se'), ('Time', 'en noviembre')],
+    ('Appellations', 'presidente'): [],
+    ('Be_subset_of', 'Entre'): [('Total', 'los asuntos'), ('Part', 'a tratar por el monarca y el presidente figuraban las elecciones catalanas y las dificultades en la preparación de la')],
+    ('Change_of_leadership', 'elecciones'): [('Degree', 'catalanas')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'en la preparación de la Cumbre Iberoamericana que se'), ('Ground', 'noviembre')],
+    ('Manipulation', 'se'): [('Entity', 'la Cumbre Iberoamericana que'), ('Place', 'en la'), ('Time', 'en noviembre')],
+    ('Point_of_dispute', 'las dificultades'): [],
+    ('Resolve_problem', 'tratar'): [('Problem', 'los asuntos')]}

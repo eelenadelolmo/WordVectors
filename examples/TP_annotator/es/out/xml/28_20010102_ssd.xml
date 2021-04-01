@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="28_20010102_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El presidente palestino , Yasir Arafat ,</concept>
+		<concept id="c_1">El viaje , anunciado por sorpresa tan solo una hora antes de iniciarse ,</concept>
+		<concept id="c_2">el primer ministro israelí , Ehud Barak ,</concept>
+		<concept id="c_3">Reunido con el mando de las Fuerzas Armadas en el cuartel general del Ejército , Barak</concept>
+		<concept id="c_4">Estas advertencias , que coincidieron con una decisión del Gobierno de endurecer el regreso de los refugiados palestinos ,</concept>
+		<concept id="c_5">Nuestro pueblo</concept>
+		<concept id="c_6">Arafat</concept>
+		<concept id="c_7">el ministro egipcio de Asuntos Exteriores , Amr Musa ,</concept>
+		<concept id="c_8">Uno de los negociadores palestinos , Ahmed Karei ,</concept>
+		<concept id="c_9">el representante de la política exterior y de seguridad de la Unión Europea ( UE ) , Javier Solana ,</concept>
+		<concept id="c_10">el consejero jurídico del Gobierno israelí , Eliakim Rubinstein ,</concept>
+		<concept id="c_11">con el presidente estadounidense , Bill</concept>
+		<concept id="c_12">a Washington</concept>
+		<concept id="c_13">anoche</concept>
+		<concept id="c_14">su Ejército</concept>
+		<concept id="c_15">de</concept>
+		<concept id="c_16">carta a</concept>
+		<concept id="c_17">Washington</concept>
+		<concept id="c_18">la intención</concept>
+		<concept id="c_19">sus luchas</concept>
+		<concept id="c_20">quot</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 El presidente palestino, Yasir Arafat, tenía previsto viajar anoche a Washington, con la intención de reunirse hoy con el presidente estadounidense, Bill Clinton, quien probablemente le presente algunas modificaciones en su propuesta de paz.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">presidente</token><token pos="aq0ms0">palestino</token><token pos="fc">,</token><token pos="np0000l">Yasir</token><token pos="np0000l">Arafat</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_10" concept_ref3="c_6" concept_ref4="c_11" concept_ref5="c_12" concept_ref6="c_13" concept_ref7="c_15" concept_ref8="c_17" concept_ref9="c_18">
+			<token pos="vmii3s0">tenía</token><token pos="aq0msp">previsto</token><token pos="vmn0000">viajar</token><mention concept_ref="c_13"><token pos="rg">anoche</token></mention><mention concept_ref="c_12"><token pos="sps00">a</token><token pos="np00000">Washington</token></mention><token pos="fc">,</token><token pos="sps00">con</token><mention concept_ref="c_6"><token pos="da0fs0">la</token></mention><token pos="ncfs000">intención</token><mention concept_ref="c_15"><token pos="sps00">de</token></mention><token pos="vmn0000">reunirse</token><token pos="rg">hoy</token><mention concept_ref="c_11"><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">presidente</token><token pos="aq0cs0">estadounidense</token><token pos="fc">,</token><token pos="ncms000">Bill</token></mention><token pos="np00000">Clinton</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente">
+				<argument type="Type" dependent="Bill" /></frame>
+			<frame type="Calendric_unit" head="anoche">
+				<argument type="Relative_time" dependent="el" /></frame>
+			<frame type="Calendric_unit" head="hoy">
+				<argument type="Whole" dependent="Bill" /></frame>
+			<main_frame type="Discussion" head="reunirse">
+				<argument type="Interlocutor_2" dependent="con el presidente estadounidense , Bill" /></main_frame>
+			<frame type="Likelihood" head="probablemente">
+				<argument type="Hypothetical_event" dependent="quien" />
+				<argument type="Hypothetical_event" dependent="le presente algunas modificaciones en su propuesta de paz" /></frame>
+			<frame type="Manufacturing" head="su">
+				<argument type="Producer" dependent="quien" />
+				<argument type="Product" dependent="algunas modificaciones" /></frame>
+			<frame type="Proportional_quantity" head="algunas">
+				<argument type="Individuals" dependent="modificaciones" /></frame>
+			<frame type="Purpose" head="intención" />
+			<frame type="Statement" head="propuesta de">
+				<argument type="Speaker" dependent="su" />
+				<argument type="Message" dependent="paz" /></frame>
+			<main_frame type="Travel" head="viajar">
+				<argument type="Goal" dependent="a Washington" />
+				<argument type="Time" dependent="anoche" /></main_frame>
+			<frame type="Undergo_change" head="modificaciones">
+				<argument type="Final_situation" dependent="su propuesta de paz" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El viaje, anunciado por sorpresa tan solo una hora antes de iniciarse, alimentó ciertas esperanzas en un día en que cundió el pesimismo.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="da0ms0">El</token><token pos="ncms000">viaje</token><token pos="fc">,</token><token pos="aq0msp">anunciado</token><token pos="sps00">por</token><token pos="ncmp000">sorpresa</token><token pos="rg">tan</token><token pos="aq0cs0">solo</token><token pos="di0fs0">una</token><token pos="ncfs000">hora</token><token pos="rg">antes</token><token pos="sps00">de</token><token pos="vmn0000">iniciarse</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_1">
+			<token pos="vmis3s0">alimentó</token><mention concept_ref="c_1"><token pos="di0fp0">ciertas</token><token pos="ncfp000">esperanzas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_start" head="iniciarse">
+				<argument type="Agent" dependent="el" /></main_frame>
+			<frame type="Calendric_unit" head="día" />
+			<frame type="Calendric_unit" head="hora" />
+			<main_frame type="Change_position_on_a_scale" head="alimentó">
+				<argument type="Item" dependent="pesimismo" /></main_frame>
+			<frame type="Desiring" head="esperanzas" />
+			<frame type="Experiencer_obj" head="sorpresa" />
+			<frame type="Idiosyncrasy" head="ciertas" />
+			<frame type="Statement" head="anunciado">
+				<argument type="Message" dependent="viaje" />
+				<argument type="Message" dependent="por sorpresa tan solo una hora" /></frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Distance" dependent="una hora" />
+				<argument type="Landmark_event" dependent="de iniciarse" /></frame>
+			<frame type="Travel" head="viaje" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Horas antes, el primer ministro israelí, Ehud Barak, llamó a su Ejército a prepararse ante una escalada de violencia importante, que podría extenderse a otros países de la zona, si en un futuro cercano no se logran avances basados en la iniciativa de paz de Clinton.
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="da0ms0">el</token><token pos="ao0ms0">primer</token><token pos="ncms000">ministro</token><token pos="aq0cs0">israelí</token><token pos="fc">,</token><token pos="np0000l">Ehud</token><token pos="np0000l">Barak</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_6" concept_ref3="c_10" concept_ref4="c_11" concept_ref5="c_14" concept_ref6="c_15" concept_ref7="c_18">
+			<token pos="vmis3s0">llamó</token><token pos="sps00">a</token><token pos="dp3cs0">su</token><token pos="np00000">Ejército</token><mention concept_ref="c_11"><token pos="sps00">a</token><token pos="vmn0000">prepararse</token><token pos="sps00">ante</token><token pos="di0fs0">una</token><token pos="ncfs000">escalada</token><token pos="sps00">de</token><token pos="ncfs000">violencia</token><token pos="aq0cs0">importante</token></mention><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Activity_prepare" head="prepararse">
+				<argument type="Agent" dependent="su Ejército" />
+				<argument type="Activity" dependent="ante una escalada de violencia importante" /></main_frame>
+			<frame type="Change_position_on_a_scale" head="escalada de">
+				<argument type="Item" dependent="de violencia" /></frame>
+			<frame type="Expansion" head="extenderse">
+				<argument type="Item" dependent="escalada de violencia importante" />
+				<argument type="Item" dependent="que" />
+				<argument type="Goal" dependent="a otros países de la zona" /></frame>
+			<frame type="Importance" head="importante">
+				<argument type="Factor" dependent="escalada de violencia" /></frame>
+			<frame type="Increment" head="otros">
+				<argument type="Class" dependent="países" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="otros países" />
+				<argument type="Ground" dependent="la zona" /></frame>
+			<frame type="Locale" head="zona" />
+			<frame type="Locative_relation" head="cercano">
+				<argument type="Ground" dependent="futuro" /></frame>
+			<frame type="Military" head="Ejército">
+				<argument type="Possessor" dependent="su" /></frame>
+			<frame type="Political_locales" head="países">
+				<argument type="Relative_location" dependent="de la zona" /></frame>
+			<frame type="Possibility" head="podría">
+				<argument type="Possible_event" dependent="escalada de violencia importante" />
+				<argument type="Possible_event" dependent="que" />
+				<argument type="Possible_event" dependent="extenderse a otros países de la zona" /></frame>
+			<frame type="Progression" head="avances" />
+			<main_frame type="Referring_by_name" head="llamó">
+				<argument type="Entity" dependent="primer ministro israelí , Ehud Barak" />
+				<argument type="Name" dependent="a su Ejército" />
+				<argument type="Descriptor" dependent="a prepararse ante una escalada de violencia importante" /></main_frame>
+			<frame type="Temporal_subregion" head="antes" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Reunido con el mando de las Fuerzas Armadas en el cuartel general del Ejército, Barak dijo: "Preparad a vuestras tropas y limpiad todo el polvo innecesario que pueda molestar a posibles enfrentamientos futuros".
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="aq0msp">Reunido</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">mando</token><token pos="sps00">de</token><token pos="da0fp0">las</token><token pos="ncms000">Fuerzas</token><token pos="aq0ms0">Armadas</token><token pos="sps00">en</token><token pos="da0ms0">el</token><token pos="ncms000">cuartel</token><token pos="aq0cs0">general</token><token pos="spcms">del</token><token pos="np00000">Ejército</token><token pos="fc">,</token><token pos="np00000">Barak</token>
+		</theme>
+		<rheme concept_ref1="c_1">
+			<token pos="vmm02p0">Preparad</token><token pos="sps00">a</token><mention concept_ref="c_1"><token pos="dp2fpp">vuestras</token><token pos="ncfp000">tropas</token></mention><token pos="vmm02p0">limpiad</token><token pos="di0ms0">todo</token><token pos="da0ms0">el</token><token pos="ncms000">polvo</token><token pos="aq0ms0">innecesario</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Bearing_arms" head="tropas">
+				<argument type="Protagonist" dependent="Fuerzas" /></frame>
+			<frame type="Hostile_encounter" head="enfrentamientos" />
+			<frame type="Leadership" head="mando">
+				<argument type="Governed" dependent="del Ejército" /></frame>
+			<frame type="Likelihood" head="posibles">
+				<argument type="Hypothetical_event" dependent="enfrentamientos futuros" /></frame>
+			<frame type="Locale_by_use" head="cuartel">
+				<argument type="Container_possessor" dependent="Ejército" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="del Ejército" />
+				<argument type="Ground" dependent="el cuartel" /></frame>
+			<frame type="Military" head="Ejército" />
+			<frame type="Statement" head="dijo">
+				<argument type="Message" dependent="Reunido con el mando de las Fuerzas Armadas en el cuartel" />
+				<argument type="Message" dependent="Barak" />
+				<argument type="Message" dependent="; Preparad a vuestras tropas y limpiad todo el polvo innecesario que pueda molestar a posibles enfrentamientos futuros" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Estas advertencias, que coincidieron con una decisión del Gobierno de endurecer el regreso de los refugiados palestinos, forman parte de la estrategia israelí de presionar a los palestinos para que acepten la propuesta de Bill Clinton.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="dd0fp0">Estas</token><token pos="ncfp000">advertencias</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="vmis3p0">coincidieron</token><token pos="sps00">con</token><token pos="di0fs0">una</token><token pos="ncfs000">decisión</token><token pos="spcms">del</token><token pos="np00000">Gobierno</token><token pos="sps00">de</token><token pos="vmn0000">endurecer</token><token pos="da0ms0">el</token><token pos="ncms000">regreso</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">refugiados</token><token pos="aq0mp0">palestinos</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_10" concept_ref2="c_6" concept_ref3="c_8" concept_ref4="c_5" concept_ref5="c_11" concept_ref6="c_15" concept_ref7="c_17">
+			<token pos="vmp00sm">forman</token><mention concept_ref="c_6"><token pos="ncfp000">parte</token></mention><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">estrategia</token><token pos="aq0cs0">israelí</token><token pos="sps00">de</token><token pos="vmn0000">presionar</token><token pos="sps00">a</token><mention concept_ref="c_8"><token pos="da0mp0">los</token><token pos="ncmp000">palestinos</token></mention><token pos="sps00">para</token><token pos="cs">que</token><mention concept_ref="c_11"><token pos="vmsp3p0">acepten</token><token pos="da0fs0">la</token><token pos="ncfs000">propuesta</token><token pos="sps00">de</token><token pos="ncms000">Bill</token></mention><token pos="np00000">Clinton</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="regreso">
+				<argument type="Theme" dependent="refugiados palestinos" /></frame>
+			<main_frame type="Attempt_suasion" head="de presionar">
+				<argument type="Addressee" dependent="palestinos" />
+				<argument type="Content" dependent="acepten la propuesta de Bill" /></main_frame>
+			<frame type="Deciding" head="decisión">
+				<argument type="Cognizer" dependent="del Gobierno" />
+				<argument type="Decision" dependent="endurecer el regreso de los refugiados palestinos" /></frame>
+			<frame type="Part_whole" head="parte">
+				<argument type="Whole" dependent="la estrategia israelí de presionar a los palestinos para que acepten la propuesta de" /></frame>
+			<main_frame type="Receiving" head="acepten">
+				<argument type="Recipient" dependent="palestinos" />
+				<argument type="Theme" dependent="propuesta de Bill" /></main_frame>
+			<main_frame type="Simultaneity" head="coincidieron">
+				<argument type="Events" dependent="Estas advertencias" />
+				<argument type="Events" dependent="con una decisión del Gobierno" /></main_frame>
+			<frame type="Statement" head="propuesta de">
+				<argument type="Speaker" dependent="de Bill" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Pero Arafat respondió de inmediato.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="np00000">Arafat</token>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Response" head="respondió">
+				<argument type="Response" dependent="Arafat" />
+				<argument type="Response" dependent="inmediato" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Nuestro pueblo es muy fuerte y continuará sus luchas", sentenció.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="dp1msp">Nuestro</token><token pos="ncms000">pueblo</token>
+		</theme>
+		<rheme concept_ref1="c_11" concept_ref2="c_19">
+			<token pos="vsip3s0">es</token><token pos="rg">muy</token><token pos="aq0cs0">fuerte</token><token pos="vmif3s0">continuará</token><token pos="dp3cp0">sus</token><token pos="ncfp000">luchas</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Hostile_encounter" head="luchas">
+				<argument type="Sides" dependent="sus" /></frame>
+			<frame type="Level_of_force_exertion" head="fuerte">
+				<argument type="Exerter" dependent="Nuestro" />
+				<argument type="Degree" dependent="muy" /></frame>
+			<frame type="People" head="pueblo" />
+			<main_frame type="Process_continue" head="continuará">
+				<argument type="Event" dependent="sus luchas" /></main_frame>
+			<frame type="Statement" head="quot">
+				<argument type="Speaker" dependent="sus" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 PESIMISMO EGIPCIO.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Arafat se reunió ayer con el presidente Hosni Mubarak, en El Cairo.
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="np00000">Arafat</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_1" concept_ref3="c_15" concept_ref4="c_18">
+			<token pos="p0300000">se</token><token pos="vmis3s0">reunió</token><token pos="sps00">con</token><token pos="da0ms0">el</token><token pos="ncms000">presidente</token><mention concept_ref="c_1"><token pos="np0000l">Hosni</token><token pos="np0000l">Mubarak</token></mention><token pos="sps00">en</token><token pos="da0fs0">El</token><token pos="ncfs000">Cairo</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Appellations" head="presidente" />
+			<frame type="Calendric_unit" head="ayer" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Tras el encuentro, el ministro egipcio de Asuntos Exteriores, Amr Musa, declaró que no veía "ninguna señal estimulante que nos permita decir que es posible llegar a un acuerdo en menos de 20 días".
+		</str>
+		<theme concept_ref="c_7">
+			<token pos="da0ms0">el</token><token pos="ncms000">ministro</token><token pos="aq0ms0">egipcio</token><token pos="sps00">de</token><token pos="ncms000">Asuntos</token><token pos="aq0ms0">Exteriores</token><token pos="fc">,</token><token pos="np0000l">Amr</token><token pos="np0000l">Musa</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_6" concept_ref3="c_17" concept_ref4="c_20">
+			<token pos="rn">no</token><token pos="vmii3s0">veía</token><token pos="fe">quot;</token><token pos="di0fs0">ninguna</token><token pos="ncfs000">señal</token><token pos="aq0cs0">estimulante</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="llegar">
+				<argument type="Theme" dependent="es" />
+				<argument type="Goal" dependent="un acuerdo" />
+				<argument type="Time" dependent="en menos de 20 días" /></frame>
+			<frame type="Calendric_unit" head="días">
+				<argument type="Count" dependent="20" /></frame>
+			<frame type="Discussion" head="el encuentro" />
+			<frame type="Likelihood" head="posible">
+				<argument type="Hypothetical_event" dependent="es" />
+				<argument type="Hypothetical_event" dependent="llegar a un acuerdo en menos de 20 días" /></frame>
+			<frame type="Make_agreement_on_action" head="un acuerdo" />
+			<main_frame type="Perception_experience" head="veía">
+				<argument type="Perceiver_passive" dependent="el" />
+				<argument type="Phenomenon" dependent="señal estimulante que nos permita decir que es posible llegar a un acuerdo en menos de 20" /></main_frame>
+			<frame type="Preventing_or_letting" head="permita">
+				<argument type="Event" dependent="señal estimulante" />
+				<argument type="Potential_hindrance" dependent="es" />
+				<argument type="Event" dependent="nos permita decir que es posible llegar a un acuerdo en menos de 20 días" /></frame>
+			<frame type="Relative_time" head="llegar">
+				<argument type="Landmark_occasion" dependent="el encuentro" />
+				<argument type="Landmark_occasion" dependent="ministro egipcio de Asuntos Exteriores" />
+				<argument type="Focal_occasion" dependent=", declaró que no veía  quot ; ninguna señal estimulante que nos permita decir que es posible llegar a un acuerdo en menos de 20 días" /></frame>
+			<frame type="Sign" head="señal">
+				<argument type="Indicated" dependent="nos permita decir que es posible llegar a un acuerdo en menos de 20 días" /></frame>
+			<frame type="Statement" head="decir">
+				<argument type="Speaker" dependent="nos" />
+				<argument type="Message" dependent="que es posible llegar a un acuerdo en menos de 20 días" /></frame>
+			<frame type="Statement" head="declaró">
+				<argument type="Speaker" dependent="el encuentro , el ministro egipcio de Asuntos Exteriores , Amr Musa" />
+				<argument type="Message" dependent=", declaró que no veía  quot ; ninguna señal estimulante que nos permita decir que es posible llegar a un acuerdo en menos de 20 días" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Uno de los negociadores palestinos, Ahmed Karei, acompañaba estas declaraciones con la advertencia de que si no se producen cambios en la propuesta de paz de Clinton, "no será posible lograr un acuerdo de paz en el futuro cercano".
+		</str>
+		<theme concept_ref="c_8">
+			<token pos="pi0ms000">Uno</token><token pos="sps00">de</token><token pos="da0mp0">los</token><token pos="ncmp000">negociadores</token><token pos="aq0mp0">palestinos</token><token pos="fc">,</token><token pos="np0000l">Ahmed</token><token pos="np0000l">Karei</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_7" concept_ref2="c_6" concept_ref3="c_15">
+			<token pos="vmii3s0">acompañaba</token><mention concept_ref="c_7"><token pos="dd0fp0">estas</token><token pos="ncfp000">declaraciones</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="un">
+				<argument type="Entity" dependent="negociadores palestinos" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="no será posible lograr un acuerdo de paz" />
+				<argument type="Ground" dependent="en el futuro cercano" /></frame>
+			<frame type="Likelihood" head="posible">
+				<argument type="Hypothetical_event" dependent="un acuerdo de paz" />
+				<argument type="Circumstances" dependent="en el futuro cercano" /></frame>
+			<frame type="Locative_relation" head="cercano">
+				<argument type="Ground" dependent="en el futuro cercano" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="no se producen cambios en la propuesta de paz de" /></frame>
+			<frame type="Make_agreement_on_action" head="un acuerdo" />
+			<frame type="Statement" head="declaraciones">
+				<argument type="Medium" dependent="con la advertencia" /></frame>
+			<frame type="Statement" head="propuesta de">
+				<argument type="Speaker" dependent="se" />
+				<argument type="Message" dependent="paz de" /></frame>
+			<frame type="Undergo_change" head="cambios">
+				<argument type="Final_situation" dependent="propuesta de paz de" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En un intento mediador, el representante de la política exterior y de seguridad de la Unión Europea ( UE ), Javier Solana, se reunió por separado con Barak y Arafat.
+		</str>
+		<theme concept_ref="c_9">
+			<token pos="da0ms0">el</token><token pos="nccs000">representante</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="ncfs000">política</token><token pos="aq0cs0">exterior</token><token pos="cc">y</token><token pos="sps00">de</token><token pos="ncfs000">seguridad</token><token pos="sps00">de</token><token pos="da0fs0">la</token><token pos="np00000">Unión</token><token pos="aq0ms0">Europea</token><token pos="fpa">(</token><token pos="np00000">UE</token><token pos="fpt">)</token><token pos="fc">,</token><token pos="np00000">Javier</token><token pos="ncms000">Solana</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_6">
+			<token pos="p0300000">se</token><token pos="vmis3s0">reunió</token><token pos="sps00">con</token><mention concept_ref="c_6"><token pos="np00000">Barak</token></mention><token pos="cc">y</token><token pos="np00000">Arafat</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Attempt" head="intento">
+				<argument type="Goal" dependent="mediador" /></frame>
+			<frame type="Being_at_risk" head="de seguridad" />
+			<frame type="Foreign_or_domestic_country" head="exterior" />
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Ground" dependent="intento mediador" /></frame>
+			<frame type="Law" head="política">
+				<argument type="Required" dependent="el representante de la política exterior y de seguridad" />
+				<argument type="Creator" dependent="de la Unión Europea (" /></frame>
+			<frame type="Origin" head="Europea">
+				<argument type="Entity" dependent="Unión" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Espero que Arafat la acepte como punto de partida. No se trata de imponer nada, pues es una iniciativa que tan solo intenta fijar las bases que sirvan de base a las negociaciones futuras", dijo Solana a este diario, advirtiendo de que "se trata de una oportunidad que no se puede desaprovechar, pues el tiempo se agota".
+		</str>
+		<theme concept_ref="c_6">
+			<token pos="np00000">Arafat</token>
+		</theme>
+		<rheme concept_ref1="c_6" concept_ref2="c_15" concept_ref3="c_20">
+			<mention concept_ref="c_6"><token pos="pp3fsa00">la</token></mention><token pos="vmsp3s0">acepte</token><mention concept_ref="c_20"><token pos="ncms000">punto</token></mention><mention concept_ref="c_15"><token pos="sps00">de</token></mention><token pos="ncfs000">partida</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Architectural_part" head="las bases" />
+			<frame type="Capability" head="puede">
+				<argument type="Entity" dependent="es" />
+				<argument type="Event" dependent="no se" /></frame>
+			<frame type="Desiring" head="Espero">
+				<argument type="Experiencer" dependent="de" /></frame>
+			<frame type="Discussion" head="negociaciones" />
+			<frame type="Placing" head="las">
+				<argument type="Theme" dependent="las bases" />
+				<argument type="Goal" dependent="negociaciones futuras  quot ; , dijo Solana a este diario" /></frame>
+			<frame type="Questioning" head="pues">
+				<argument type="Message" dependent="de imponer nada" /></frame>
+			<main_frame type="Receiving" head="acepte">
+				<argument type="Recipient" dependent="de" />
+				<argument type="Recipient" dependent="es" />
+				<argument type="Purpose_of_theme" dependent="como punto de partida . No se trata de imponer nada , pues es una iniciativa" /></main_frame>
+			<frame type="Seeking_to_achieve" head="intenta">
+				<argument type="State_of_affairs" dependent="pues es una iniciativa que" />
+				<argument type="Manner" dependent="tan solo" />
+				<argument type="State_of_affairs" dependent="bases que sirvan de base a las negociaciones futuras  quot ; , dijo Solana a este diario" /></frame>
+			<frame type="Self_motion" head="partida">
+				<argument type="Goal" dependent="desaprovechar , pues" /></frame>
+			<frame type="Sleep" head="se agota">
+				<argument type="Manner" dependent="partida" /></frame>
+			<frame type="Success_or_failure" head="desaprovechar" />
+			<frame type="Telling" head="dijo">
+				<argument type="Speaker" dependent="Solana" />
+				<argument type="Addressee" dependent="este diario" /></frame>
+			<frame type="Temporal_collocation" head="futuras">
+				<argument type="Trajector_event" dependent="negociaciones futuras  quot ; , dijo Solana a este diario , advirtiendo de que  quot ; se trata de una oportunidad que no se puede desaprovechar" /></frame>
+			<frame type="Text" head="diario" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 CAPACIDAD LEGAL.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Para complicar aún más las cosas, el consejero jurídico del Gobierno israelí, Eliakim Rubinstein, ha escrito una carta a Barak en la que pone en entredicho la capacidad legal del primer ministro de llegar a un acuerdo con los palestinos antes de las elecciones del próximo día 6 de febrero.
+		</str>
+		<theme concept_ref="c_10">
+			<token pos="da0ms0">el</token><token pos="ncms000">consejero</token><token pos="aq0ms0">jurídico</token><token pos="spcms">del</token><token pos="np00000">Gobierno</token><token pos="aq0cs0">israelí</token><token pos="fc">,</token><token pos="np0000l">Eliakim</token><token pos="np0000l">Rubinstein</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_8" concept_ref2="c_6" concept_ref3="c_1" concept_ref4="c_10" concept_ref5="c_11" concept_ref6="c_15" concept_ref7="c_16" concept_ref8="c_17" concept_ref9="c_19">
+			<token pos="sps00">Para</token><token pos="vmn0000">complicar</token><token pos="rg">aún</token><token pos="rg">más</token><mention concept_ref="c_19"><token pos="da0fp0">las</token><token pos="ncfp000">cosas</token></mention><token pos="vaip3s0">ha</token><token pos="vmp00sm">escrito</token><token pos="di0fs0">una</token><mention concept_ref="c_16"><token pos="ncfs000">carta</token><token pos="sps00">a</token></mention><mention concept_ref="c_6"><token pos="np00000">Barak</token></mention><token pos="sps00">en</token><token pos="da0fs0">la</token><token pos="pr0cn000">que</token><token pos="vmip3s0">pone</token><token pos="sps00">en</token><token pos="ncmp000">entredicho</token><token pos="da0fs0">la</token><token pos="ncfs000">capacidad</token><token pos="aq0cs0">legal</token><token pos="spcms">del</token><token pos="ao0ms0">primer</token><token pos="ncms000">ministro</token><token pos="sps00">de</token><token pos="vmn0000">llegar</token><token pos="sps00">a</token><mention concept_ref="c_1"><token pos="di0ms0">un</token><token pos="ncms000">acuerdo</token></mention><token pos="sps00">con</token><token pos="da0mp0">los</token><token pos="ncmp000">palestinos</token><token pos="rg">antes</token><token pos="sps00">de</token><mention concept_ref="c_10"><token pos="da0fp0">las</token><token pos="ncfp000">elecciones</token></mention><token pos="spcms">del</token><token pos="aq0ms0">próximo</token><token pos="ncfp000">día</token><token pos="z">6</token><token pos="sps00">de</token><token pos="ncfp000">febrero</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Arriving" head="llegar">
+				<argument type="Goal" dependent="un acuerdo con los palestinos" />
+				<argument type="Time" dependent="antes de las elecciones del próximo día 6 de febrero" /></main_frame>
+			<frame type="Capability" head="capacidad">
+				<argument type="Entity" dependent="legal del primer" />
+				<argument type="Event" dependent="llegar a un acuerdo con los palestinos antes de las elecciones del próximo día 6 de febrero" /></frame>
+			<frame type="Change_of_leadership" head="elecciones" />
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="complicar" /></frame>
+			<frame type="Leadership" head="Gobierno">
+				<argument type="Governed" dependent="israelí" /></frame>
+			<frame type="Legality" head="legal">
+				<argument type="Action" dependent="primer" /></frame>
+			<frame type="Make_agreement_on_action" head="un acuerdo">
+				<argument type="Party_2" dependent="con los palestinos" />
+				<argument type="Time" dependent="antes de las elecciones del próximo día 6 de febrero" /></frame>
+			<frame type="Questioning" head="que">
+				<argument type="Message" dependent="capacidad legal del primer ministro de llegar a un acuerdo con los palestinos antes de las elecciones del próximo día 6 de febrero" /></frame>
+			<frame type="Text" head="carta a" />
+			<main_frame type="Text_creation" head="escrito">
+				<argument type="Author" dependent="el consejero jurídico del Gobierno israelí , Eliakim Rubinstein" />
+				<argument type="Text" dependent="carta a" /></main_frame>
+			<frame type="Time_vector" head="antes">
+				<argument type="Event" dependent="capacidad legal del primer ministro de llegar a un acuerdo con los palestinos" />
+				<argument type="Landmark_event" dependent="las elecciones" />
+				<argument type="Direction" dependent="6 de febrero" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "Cuando la ley se refiere a que un jefe de Gobierno que presentó su dimisión tiene plenos poderes, lo hace para impedir un vacío de poder, no para que el primer ministro llegue en esta época al acuerdo más trascendental de la historia del Estado", escribió Rubinstein en su misiva.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="llegue">
+				<argument type="Goal" dependent="en esta época al acuerdo más trascendental de la historia del Estado  quot ; , escribió Rubinstein en su" /></frame>
+			<frame type="Body_parts" head="jefe">
+				<argument type="Possessor" dependent="de Gobierno" /></frame>
+			<frame type="Completeness" head="plenos">
+				<argument type="Whole" dependent="poderes" /></frame>
+			<frame type="Electricity" head="poder" />
+			<frame type="Electricity" head="poderes" />
+			<frame type="Individual_history" head="historia">
+				<argument type="Events" dependent="del Estado" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="época al acuerdo más" />
+				<argument type="Ground" dependent="la historia del Estado" /></frame>
+			<frame type="Law" head="ley" />
+			<frame type="Leadership" head="Gobierno" />
+			<frame type="Leadership" head="ministro">
+				<argument type="Descriptor" dependent="primer" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Ground" dependent="esta época al" />
+				<argument type="Figure" dependent="en esta época al acuerdo más trascendental de la historia del Estado  quot ; , escribió Rubinstein" /></frame>
+			<frame type="Make_agreement_on_action" head="al acuerdo" />
+			<frame type="Preventing_or_letting" head="impedir">
+				<argument type="Event" dependent="un vacío de poder" /></frame>
+			<frame type="Text" head="quot">
+				<argument type="Author" dependent="su" /></frame>
+			<frame type="Text_creation" head="escribió">
+				<argument type="Text" dependent="Rubinstein" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

@@ -1,0 +1,5 @@
+{   ('Origin', 'Europea'): [('Entity', 'la Unión Europea y la cumbre Europa-América')],
+    ('Quantified_mass', 'ambas'): [],
+    ('Relation', 'las relaciones'): [('Entity_2', 'entre México')],
+    ('Statement', 'de la'): [   ('Speaker', 'Fox y Aznar'),
+                                ('Message', 'las relaciones entre México y los Quince , con el horizonte de la presidencia española de la Unión Europea y la cumbre Europa-América Latina')]}

@@ -1,0 +1,7 @@
+{   ('Frequency', 'siempre'): [('Event', 'tocó esta música'), ('Event', 'se tocó')],
+    ('Locative_relation', 'donde'): [('Figure', 'esta música')],
+    ('Make_noise', 'se tocó'): [('Sound_source', 'esta música')],
+    ('Manufacturing', 'se'): [('Producer', 'Hacemos'), ('Product', 'música de raíces')],
+    ('Performing_arts', 'música'): [],
+    ('Size', 'pequeños'): [('Entity', 'clubs')],
+    ('Weapon', 'clubs'): [('Descriptor', 'pequeños')]}

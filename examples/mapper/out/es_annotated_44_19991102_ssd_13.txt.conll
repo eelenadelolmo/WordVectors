@@ -1,0 +1,7 @@
+{   ('Accomplishment', 'lograr'): [('Goal', 'salvación'), ('Goal', 'mediante la fe y el diálogo con la Divinidad , sin la intervención de intermediarios eclesiásticos')],
+    ('Arriving', 'llegar'): [('Goal', 'al cielo')],
+    ('Being_necessary', 'necesarias'): [('Requirement', 'buenas obras')],
+    ('Desirability', 'buenas'): [('Evaluee', 'obras')],
+    ('Statement', 'afirmó'): [   ('Speaker', 'católicos'),
+                                 ('Message', 'llegar al cielo eran necesarias las buenas obras , Lutero afirmó que la salvación se podía lograr mediante la fe y el diálogo con la')],
+    ('Work', 'obras'): []}

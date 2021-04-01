@@ -1,0 +1,8 @@
+{   ('Attack', 'atentado contra'): [],
+    ('Death', 'muerte'): [],
+    ('Degree', 'se'): [('Gradable_attribute', 'se')],
+    ('Event', 'produjo'): [('Event', 'esta muerte')],
+    ('Goal', 'por'): [('Landmark', 'los palestinos')],
+    ('Interior_profile_relation', 'por'): [('Figure', 'esta muerte se produjo'), ('Ground', 'represalia')],
+    ('Leadership', 'líder'): [('Activity', 'de la')],
+    ('Revenge', 'represalia'): []}

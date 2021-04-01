@@ -1,0 +1,9 @@
+{   ('Activity_start', 'iniciaron'): [('Time', 'Hace dos semanas'), ('Activity', 'obras'), ('Activity', 'iniciaron las obras del tramo que arranca en la carretera de Cardedeu (')],
+    ('Calendric_unit', 'semanas'): [('Count', 'dos')],
+    ('Cardinal_numbers', 'dos'): [('Unit', 'semanas')],
+    ('Part_whole', 'se'): [('Whole', 'que arranca en la carretera de Cardedeu (')],
+    ('Roadways', 'carretera'): [('Characteristic', 'de')],
+    ('Spatial_contact', 'en'): [('Figure', 'se iniciaron'), ('Ground', 'la carretera de')],
+    ('Temporal_subregion', 'iniciaron'): [('Time_period', 'en la carretera de')],
+    ('Time_vector', 'Hace'): [('Distance', 'dos semanas'), ('Event', 'obras')],
+    ('Work', 'obras'): []}

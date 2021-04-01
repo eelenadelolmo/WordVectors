@@ -1,0 +1,5 @@
+{   ('Direction', 'estar'): [('Landmark', 'ese'), ('Landmark', ', corresponde actuar a ese tribunal')],
+    ('Intentionally_act', 'actuar'): [],
+    ('Interior_profile_relation', 'a ese'): [('Figure', 'ambos'), ('Ground', 'corresponde')],
+    ('Judicial_body', 'tribunal'): [],
+    ('Leadership', 'corresponde'): [('Leader', 'ambos')]}

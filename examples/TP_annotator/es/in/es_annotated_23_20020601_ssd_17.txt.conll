@@ -1,0 +1,4 @@
+{   ('Capability', 'poder'): [('Entity', 'el'), ('Event', 'para poder trasladar a internos y , de este modo , esponjar Quatre Camins , Brians y la Modelo')],
+    ('Chatting', 'conversaciones'): [('Interlocutors', 'con el Gobierno central'), ('Topic', 'para poder trasladar a internos y , de este modo , esponjar Quatre Camins , Brians y la Modelo')],
+    ('Leadership', 'Gobierno'): [('Governed', 'central')],
+    ('Transfer', 'trasladar'): [('Theme', 'a internos y , de este modo , esponjar Quatre Camins , Brians y la Modelo')]}

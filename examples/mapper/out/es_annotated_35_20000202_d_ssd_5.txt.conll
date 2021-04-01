@@ -1,0 +1,4 @@
+{   ('Experiencer_focus', 'calma'): [('Experiencer', 'el Ejército')],
+    ('Locative_relation', 'el'): [('Ground', 'momento'), ('Figure', 'el Ejército mantiene la calma')],
+    ('Military', 'Ejército'): [],
+    ('State_continue', 'mantiene'): [('Time', 'De momento'), ('Entity', 'el Ejército'), ('State', 'calma')]}

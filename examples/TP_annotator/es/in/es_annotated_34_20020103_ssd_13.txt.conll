@@ -1,0 +1,7 @@
+{   ('Capability', 'poder'): [('Event', 'casarse con el príncipe')],
+    ('Cardinal_numbers', 'dos'): [('Unit', 'piernas')],
+    ('Commerce_sell', 'vender'): [('Seller', 'que'), ('Buyer', 'su voz - - que')],
+    ('Forming_relationships', 'casarse'): [('Partner_2', 'el príncipe')],
+    ('Leadership', 'manda'): [],
+    ('People', 'humano'): [],
+    ('Subordinates_and_superiors', 'superior'): []}

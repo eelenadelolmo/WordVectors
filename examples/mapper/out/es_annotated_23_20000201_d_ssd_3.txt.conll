@@ -1,0 +1,5 @@
+{   ('Adopt_selection', 'de ser'): [('Agent', 'En el PP')],
+    ('Appointing', 'nombrará'): [('Time', 'hecho que , de ser reelegido'), ('Official', 'al'), ('Time', 'al menos cuatro')],
+    ('Increment', 'más'): [('Increment', 'cuatro')],
+    ('Interior_profile_relation', 'En'): [('Ground', 'PP se da')],
+    ('Locative_relation', 'da'): [('Figure', 'al'), ('Ground', 'menos cuatro , quizá más')]}

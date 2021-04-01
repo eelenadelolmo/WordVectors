@@ -1,0 +1,10 @@
+{   ('Calendric_unit', 'ayer la'): [],
+    ('Discussion', 'conferencia'): [('Manner', 'internacional')],
+    ('Duration_description', 'duradera'): [('Eventuality', 'paz')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'paz duradera'), ('Ground', 'la región')],
+    ('Locale', 'región'): [],
+    ('Political_locales', 'internacional'): [('Population', 'conferencia')],
+    ('Purpose', 'objetivo'): [('Goal', 'cuyo')],
+    ('Statement', 'propuso'): [   ('Speaker', 'ministro alemán de Asuntos Exteriores , Joschka Fischer'),
+                                  ('Time', 'ayer la'),
+                                  ('Message', 'conferencia internacional para los Balcanes , cuyo objetivo sería asegurar una paz duradera en la región')]}

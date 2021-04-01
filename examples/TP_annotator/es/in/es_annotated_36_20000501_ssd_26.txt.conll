@@ -1,0 +1,5 @@
+{   ('Capability', 'capacidad'): [('Event', 'para regularlos')],
+    ('Interior_profile_relation', 'se'): [('Figure', 'no'), ('Ground', 'reivindicar cesión de impuestos')],
+    ('Locative_relation', 'tiene'): [('Ground', 'tiene'), ('Figure', 'No tiene sentido reivindicar cesión de impuestos y capacidad para regularlos si después no se ejerce')],
+    ('Transfer', 'se'): [('Theme', 'de impuestos')],
+    ('Using', 'ejerce'): [('Agent', 'se')]}

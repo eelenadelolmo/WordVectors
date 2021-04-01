@@ -1,0 +1,5 @@
+{   ('Calendric_unit', 'ayer'): [],
+    ('Expressing_publicly', 'manifestaron'): [   ('Communicator', 'los protestantes españoles'),
+                                                 ('Place', 'ayer'),
+                                                 ('Content', 'reservas sobre el acercamiento entre el Vaticano y la Iglesia luterana ratificado en Augsburgo el domingo')],
+    ('Ratification', 'ratificado'): [('Ratifier', 'reservas sobre el acercamiento entre el Vaticano y la Iglesia luterana'), ('Manner', 'en Augsburgo el'), ('Time', 'el domingo')]}

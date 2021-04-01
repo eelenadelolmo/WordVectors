@@ -1,0 +1,12 @@
+{   ('Arriving', 'llevando'): [('Time', 'a América y durante 6.000 años')],
+    ('Biological_area', 'desiertos'): [('Relative_location', 'estadounidenses')],
+    ('Bringing', 'llevando'): [('Carrier', 'la tundra canadiense y Suramérica'), ('Goal', 'con ellos su cultura de la caza')],
+    ('Calendric_unit', 'años'): [('Count', '6.000')],
+    ('Expansion', 'llevando'): [('Result_size', 'llegar a América y durante 6.000 años ,'), ('Item', 'de'), ('Goal', 'hacia los desiertos estadounidenses')],
+    ('Hunting', 'caza'): [],
+    ('Interior_profile_relation', 'se'): [('Time', 'Tras llegar'), ('Ground', 'América')],
+    ('Origin', 'canadiense'): [('Entity', 'tundra')],
+    ('People_by_origin', 'estadounidenses'): [],
+    ('Possession', 'se'): [('Possession', 'habrían'), ('Possession', 'extendido hacia los desiertos estadounidenses , la tundra canadiense y Suramérica , llevando con ellos su cultura de la caza')],
+    ('Relative_time', 'durante'): [   ('Landmark_occasion', 'llevando'),
+                                      ('Focal_occasion', 'habrían extendido hacia los desiertos estadounidenses , la tundra canadiense y Suramérica , llevando con ellos su cultura de la caza')]}

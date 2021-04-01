@@ -1,0 +1,13 @@
+{   ('Adducing', 'punto'): [('Speaker', 'ministro alemán de Defensa'), ('Speaker', 'Scharping'), ('Specified_entity', 'partida')],
+    ('Aggregate', 'parte'): [],
+    ('Cause_change', 'cambiado'): [('Entity', 'la parte que afecta al estatuto')],
+    ('Communication_response', 'reconoció'): [('Speaker', 'su'), ('Trigger', 'que , a la luz de los acontecimientos')],
+    ('Desirability', 'buen'): [('Evaluee', 'punto de partida')],
+    ('Event', 'acontecimientos'): [],
+    ('Interior_profile_relation', 'a la'): [   ('Figure', 'El ministro alemán de Defensa , Rudolf Scharping , señaló , a su vez , que'),
+                                               ('Ground', 'partida'),
+                                               ('Figure', ', que el acuerdo de Rambouillet sigue siendo un buen punto de partida')],
+    ('Location_of_light', 'luz'): [('Figure', 'acontecimientos')],
+    ('Make_agreement_on_action', 'el acuerdo de'): [('Obligation', 'un buen punto de partida')],
+    ('Objective_influence', 'afecta'): [('Degree', 'parte'), ('Dependent_entity', 'estatuto')],
+    ('State_continue', 'sigue'): [('Entity', 'el acuerdo de'), ('State', 'un buen punto de partida')]}

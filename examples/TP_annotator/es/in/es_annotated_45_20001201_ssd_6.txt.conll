@@ -1,0 +1,5 @@
+{   ('Change_of_leadership', 'elegido'): [('Old_leader', 'alcalde')],
+    ('Custom', 'practicada'): [('Society', 'oposición')],
+    ('Leadership', 'alcalde'): [('Descriptor', 'elegido')],
+    ('Predicament', 'aprieto'): [],
+    ('Success_or_failure', 'logrado'): [('Agent', 'CiU'), ('Goal', 'poner al socialista Joan Clos en un aprieto desde')]}

@@ -1,0 +1,4 @@
+{   ('Create_physical_artwork', 'artista'): [],
+    ('Simultaneity', 'coincidirá'): [('Events', 'inauguración del poema'), ('Events', 'con una exposición de homenaje al artista')],
+    ('Temporal_collocation', 'ahora'): [('Trajector_event', 'que'), ('Trajector_event', 'póstumo')],
+    ('Text', 'poema'): [('Topic', 'del')]}

@@ -1,0 +1,10 @@
+{   ('Cardinal_numbers', 'dos'): [('Entity', 'gasolineras')],
+    ('Concessive', 'aunque'): [('Main_assertion', 'precio del carburante en Suecia'), ('Conceded_state_of_affairs', 'la distancia entre dos gasolineras sea de más de 1.000 kilómetros')],
+    ('Identicality', 'el mismo'): [('Type', 'precio del carburante en Suecia')],
+    ('Increment', 'más'): [('Class', 'la distancia entre dos gasolineras'), ('Class', 'de 1.000 kilómetros')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'precio del carburante'), ('Ground', 'Suecia')],
+    ('Interior_profile_relation', 'entre'): [('Figure', 'la distancia'), ('Ground', 'dos gasolineras sea de más de 1.000 kilómetros')],
+    ('Locale_by_use', 'gasolineras'): [('Use', 'gasolineras')],
+    ('Measure_linear_extent', 'kilómetros'): [('Count', '1.000')],
+    ('Range', 'distancia'): [],
+    ('Substance', 'gasolineras'): []}

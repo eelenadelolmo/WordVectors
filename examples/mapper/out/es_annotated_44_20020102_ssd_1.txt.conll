@@ -1,0 +1,8 @@
+{   ('Awareness', 'sé'): [('Cognizer', 'y'), ('Content', 'cómo llamarlo')],
+    ('Capability', 'puede'): [('Entity', 'como'), ('Event', 'algo tan preciado como la presidencia de un país')],
+    ('Direction', 'se'): [('Distance', 'se'), ('Independent_variable', 'algo tan preciado')],
+    ('Giving', 'se'): [('Donor', 'yo'), ('Theme', 'algo tan preciado como la presidencia de un país')],
+    ('Judgment_communication', 'criticó'): [('Communicator', 'Maradona'), ('Evaluee', 'agriamente a Fernando de la Rúa y Adolfo')],
+    ('Just_found_out', 'sorprende'): [('Experiencer', 'y')],
+    ('Political_locales', 'país'): [],
+    ('Referring_by_name', 'llamarlo'): [('Name', 'Esto')]}

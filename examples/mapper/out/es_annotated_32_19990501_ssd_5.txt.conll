@@ -1,0 +1,8 @@
+{   ('Adducing', 'señaló'): [('Speaker', 'general Maroni'), ('Specified_entity', 'en los próximos días se recrudecerán los ataques , y dirigió un mensaje admonitorio a las tropas serbias')],
+    ('Attack', 'ataques'): [],
+    ('Calendric_unit', 'días'): [('Relative_time', 'próximos'), ('Count', 'un')],
+    ('Cause_to_make_progress', 'mejora'): [('Degree', 'tiempo'), ('Project', ',')],
+    ('Event_instance', 'tiempo'): [],
+    ('Member_of_military', 'tropas'): [('Loyal_side', 'serbias')],
+    ('Quantified_mass', 'un'): [('Individuals', 'días')],
+    ('Statement', 'quot'): [('Message', 'un mensaje admonitorio a las tropas serbias')]}

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="23_20000201_d_ssd">
+
+
+	<concepts>
+		<concept id="c_0">Esto</concept>
+		<concept id="c_1">, de ser reelegido , José María Aznar</concept>
+		<concept id="c_2">al</concept>
+		<concept id="c_3">al menos cuatro</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Ser exministro de Trabajo parece un aval para presentarse a las elecciones en Andalucía.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Change_of_leadership" head="elecciones" />
+			<frame type="Give_impression" head="parece">
+				<argument type="Phenomenon" dependent="Ser exministro de Trabajo" />
+				<argument type="Inference" dependent="para presentarse a las elecciones en Andalucía" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="elecciones" />
+				<argument type="Ground" dependent="Andalucía" /></frame>
+			<frame type="Self_motion" head="exministro">
+				<argument type="Goal" dependent="a las elecciones en Andalucía" /></frame>
+			<frame type="Time_vector" head="exministro">
+				<argument type="Event" dependent="exministro de Trabajo parece un aval para presentarse a las elecciones en Andalucía" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ahí está, por el PP, Javier Arenas, número uno por Sevilla en las generales, y más el PSOE, que lleva a Manuel Chaves de candidato a la presidencia de Andalucía ; a José Antonio Griñán de número uno al Congreso por Córdoba e, indirectamente, a Joaquín Almunia como aspirante a la presidencia del Gobierno.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Cardinal_numbers" head="uno" />
+			<frame type="Increment" head="más">
+				<argument type="Class" dependent="el" /></frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="el PP , Javier Arenas , número uno por Sevilla" />
+				<argument type="Ground" dependent="las generales , y más el" /></frame>
+			<frame type="Leadership" head="Gobierno" />
+			<frame type="Leadership" head="generales" />
+			<frame type="Leadership" head="lleva">
+				<argument type="Leader" dependent="más" />
+				<argument type="Governed" dependent="que" />
+				<argument type="Governed" dependent="a Manuel Chaves" /></frame>
+			<frame type="Locative_relation" head="está">
+				<argument type="Ground" dependent="está" />
+				<argument type="Figure" dependent=", por el PP , Javier Arenas , número uno por Sevilla en las generales , y" /></frame>
+			<frame type="Quantified_mass" head="número" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Esto no es Francia, ni aquí se exige una cuota de sexo femenino del 50%, pero ya se buscan ministras, además de ministros.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="pd0ns000">Esto</token>
+		</theme>
+		<rheme>
+			<token pos="rn">no</token><token pos="vsip3s0">es</token><token pos="np00000">Francia</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Have_as_requirement" head="exige">
+				<argument type="Dependent" dependent="cuota de sexo femenino del 50 %" />
+				<argument type="Required_entity" dependent="aquí" /></frame>
+			<frame type="Interior_profile_relation" head="se">
+				<argument type="Figure" dependent="ya se buscan ministras" />
+				<argument type="Ground" dependent="además de ministros" /></frame>
+			<frame type="Locative_relation" head="aquí" />
+			<frame type="Seeking_to_achieve" head="buscan">
+				<argument type="Agent" dependent="ministros" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 En el PP se da por hecho que, de ser reelegido, José María Aznar, nombrará al menos cuatro, quizá más.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="fc">,</token><token pos="sps00">de</token><token pos="vsn0000">ser</token><token pos="vmp00sm">reelegido</token><token pos="fc">,</token><token pos="ncfs000">José</token><token pos="ncms000">María</token><token pos="np00000">Aznar</token>
+		</theme>
+		<rheme concept_ref1="c_2" concept_ref2="c_3">
+			<token pos="fc">,</token><token pos="vmif3s0">nombrará</token><mention concept_ref="c_2"><token pos="sps00">al</token></mention><token pos="rg">menos</token><token pos="pn0cp000">cuatro</token><token pos="fc">,</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Adopt_selection" head="de ser">
+				<argument type="Agent" dependent="En el PP" /></main_frame>
+			<main_frame type="Appointing" head="nombrará">
+				<argument type="Time" dependent="hecho que , de ser reelegido" />
+				<argument type="Official" dependent="al" />
+				<argument type="Time" dependent="al menos cuatro" /></main_frame>
+			<frame type="Increment" head="más">
+				<argument type="Increment" dependent="cuatro" /></frame>
+			<frame type="Interior_profile_relation" head="En">
+				<argument type="Ground" dependent="PP se da" /></frame>
+			<frame type="Locative_relation" head="da">
+				<argument type="Figure" dependent="al" />
+				<argument type="Ground" dependent="menos cuatro , quizá más" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y suenan para ello la directora del Centro de Investigaciones Sociológicas, Pilar Castillo, la eurodiputada Ana Palacio ; la ya exministra Soledad Becerril, y la alcaldesa de Málaga, Celia Villalobos.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Leadership" head="alcaldesa">
+				<argument type="Governed" dependent="Málaga" /></frame>
+			<frame type="Leadership" head="directora">
+				<argument type="Governed" dependent="del Centro de Investigaciones Sociológicas" /></frame>
+			<frame type="Locale_by_use" head="Centro">
+				<argument type="Descriptor" dependent="Sociológicas" />
+				<argument type="Use" dependent="de Investigaciones" /></frame>
+			<frame type="Make_noise" head="suenan">
+				<argument type="Sound_source" dependent="Soledad Becerril , y la alcaldesa de Málaga , Celia Villalobos" />
+				<argument type="Sound_source" dependent="para ello" /></frame>
+			<frame type="Purpose" head="para" />
+			<frame type="Research" head="de Investigaciones">
+				<argument type="Field" dependent="Sociológicas" /></frame>
+			<frame type="Time_vector" head="del">
+				<argument type="Event" dependent="exministra Soledad" /></frame>
+		</semantic_roles>
+	</sentence>
+	
+</text>

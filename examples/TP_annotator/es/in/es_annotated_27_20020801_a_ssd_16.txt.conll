@@ -1,0 +1,8 @@
+{   ('Boundary', 'quot'): [],
+    ('Calendric_unit', 'horas'): [('Count', 'cuatro')],
+    ('Cardinal_numbers', 'cuatro'): [('Unit', 'horas')],
+    ('Destroying', 'estropeado las'): [('Destroyer', 'tienen'), ('Patient', 'las vacaciones')],
+    ('Interior_profile_relation', 'de'): [('Figure', 'hacemos cuatro horas'), ('Ground', 'quot')],
+    ('Money', 'dinero'): [],
+    ('Objective_influence', 'afectada'): [],
+    ('Statement', 'dijo'): [('Speaker', 'de'), ('Message', 'una afectada')]}

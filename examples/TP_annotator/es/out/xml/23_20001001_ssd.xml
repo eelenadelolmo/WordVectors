@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+    <!DOCTYPE text [
+        <!ELEMENT text (concepts, sentence+)>
+            <!ATTLIST text id CDATA #REQUIRED>
+        <!ELEMENT concepts (concept+)>
+            <!ELEMENT concept (#PCDATA)>
+                <!ATTLIST concept id ID #REQUIRED>
+        <!ELEMENT sentence (str, theme, rheme, semantic_roles)>
+            <!ELEMENT str (#PCDATA)>
+            <!ELEMENT theme (token*)>
+                <!ATTLIST theme concept_ref IDREF #IMPLIED>
+            <!ELEMENT rheme (token|mention)*>
+                <!ATTLIST rheme concept_ref1 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref2 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref3 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref4 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref5 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref6 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref7 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref8 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref9 IDREF #IMPLIED>
+                <!ATTLIST rheme concept_ref10 IDREF #IMPLIED>
+            <!ELEMENT token (#PCDATA)>
+                <!ATTLIST token pos CDATA #REQUIRED>
+            <!ELEMENT mention (token+)>
+                <!ATTLIST mention concept_ref CDATA #REQUIRED>
+    		<!ELEMENT semantic_roles (frame|main_frame)*>
+    		<!ELEMENT frame (argument*)>
+                <!ATTLIST frame type CDATA #REQUIRED>
+                <!ATTLIST frame head CDATA #REQUIRED>
+    		<!ELEMENT main_frame (argument*)>
+                <!ATTLIST main_frame type CDATA #REQUIRED>
+                <!ATTLIST main_frame head CDATA #REQUIRED>
+            <!ELEMENT argument EMPTY>
+                <!ATTLIST argument type CDATA #REQUIRED>
+                <!ATTLIST argument dependent CDATA #REQUIRED>
+    ]>
+
+
+    <text id="23_20001001_ssd">
+
+
+	<concepts>
+		<concept id="c_0">El toro salvaje</concept>
+		<concept id="c_1">Robert de Niro</concept>
+		<concept id="c_2">E. Rodríguez Marchante</concept>
+		<concept id="c_3">nadie</concept>
+		<concept id="c_4">Sólo el emocionado Javier Bardem , que le dio la mano y el premio a quien para él es quot; un maestro y una escuela quot; ,</concept>
+		<concept id="c_5">las reses bravas</concept>
+		<concept id="c_6">De Niro</concept>
+		<concept id="c_7">fugaz</concept>
+		<concept id="c_8">se</concept>
+		<concept id="c_9">quot</concept>
+	</concepts>
+
+	<sentence>
+		<str>			
+			 Resopló, más que habló.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Chatting" head="habló">
+				<argument type="Interlocutors" dependent="que" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Mostró su agradecimiento con sonidos que estaban más cerca de los bufidos que de las palabras.
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Evidence" head="los">
+				<argument type="Support" dependent="su" />
+				<argument type="Proposition" dependent="su agradecimiento con sonidos que estaban más cerca de los bufidos que de las palabras" /></frame>
+			<frame type="Sounds" head="sonidos" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 El toro salvaje se asomó al ruedo del festival de cine, levantó una polvareda de expectación, dio un par de embestidas sin levantar la testuz y regresó a su toril en Manhattan antes de que el público se diera cuenta de que había terminado la faena.
+		</str>
+		<theme concept_ref="c_0">
+			<token pos="da0ms0">El</token><token pos="ncms000">toro</token><token pos="aq0cs0">salvaje</token>
+		</theme>
+		<rheme concept_ref1="c_1" concept_ref2="c_0" concept_ref3="c_3" concept_ref4="c_8">
+			<mention concept_ref="c_8"><token pos="p0000000">se</token></mention><token pos="vmis3s0">asomó</token><token pos="spcms">al</token><mention concept_ref="c_1"><token pos="ncms000">ruedo</token></mention><token pos="spcms">del</token><mention concept_ref="c_0"><token pos="ncms000">festival</token></mention><token pos="sps00">de</token><mention concept_ref="c_3"><token pos="ncms000">cine</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Arriving" head="regresó">
+				<argument type="Goal" dependent="su toril en" />
+				<argument type="Place" dependent="en Manhattan" /></frame>
+			<frame type="Attempt" head="se" />
+			<frame type="Cardinal_numbers" head="un par de">
+				<argument type="Unit" dependent="de embestidas" /></frame>
+			<frame type="Causation" head="levantó">
+				<argument type="Cause" dependent="salvaje se asomó al ruedo del festival de cine" />
+				<argument type="Effect" dependent="una polvareda de expectación" /></frame>
+			<frame type="Cause_to_end" head="levantar">
+				<argument type="State" dependent="el" /></frame>
+			<frame type="Coming_to_believe" head="cuenta de que">
+				<argument type="Cognizer" dependent="el público" />
+				<argument type="Content" dependent="que había terminado la" /></frame>
+			<frame type="Distributed_position" head="cine">
+				<argument type="Location" dependent="festival" /></frame>
+			<frame type="Posture" head="levantó">
+				<argument type="Agent" dependent="salvaje" />
+				<argument type="Location" dependent="al ruedo del festival de cine" /></frame>
+			<frame type="Proportional_quantity" head="en">
+				<argument type="Individuals" dependent="el" /></frame>
+			<frame type="Work" head="se" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Robert de Niro pasó trotando por San Sebastián para recibir el premio Donostia.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="np0000o">Robert</token><token pos="sps00">de</token><token pos="np0000l">Niro</token>
+		</theme>
+		<rheme>
+			<token pos="vmis3s0">pasó</token><token pos="vmg0000">trotando</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Receiving" head="recibir">
+				<argument type="Recipient" dependent="Robert de Niro" />
+				<argument type="Theme" dependent="el premio Donostia" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y quienes estuvieron cerca de él creen que masculló: "Siempre es un honor recibir un premio".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Certainty" head="creen">
+				<argument type="Content" dependent="quienes estuvieron cerca de él" />
+				<argument type="Content" dependent="que masculló" /></frame>
+			<frame type="Frequency" head="Siempre">
+				<argument type="Event" dependent="es" />
+				<argument type="Event" dependent="un honor recibir un premio" /></frame>
+			<frame type="Receiving" head="recibir">
+				<argument type="Theme" dependent="un premio" /></frame>
+			<frame type="Social_connection" head="cerca de">
+				<argument type="Connection" dependent="quienes" />
+				<argument type="Individual_2" dependent="quienes" />
+				<argument type="Individual_2" dependent="de él" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 De Niro desplegó ante los periodistas y el público una elocuencia de astado furioso, o a lo sumo de boxeador bravo, como ese Jake LaMotta al que prestó el rostro airado.
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="sps00">De</token><token pos="np00000">Niro</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_1" concept_ref3="c_0" concept_ref4="c_8">
+			<token pos="vmis3s0">desplegó</token><mention concept_ref="c_4"><token pos="di0fs0">una</token><token pos="ncfs000">elocuencia</token></mention><token pos="sps00">de</token><token pos="ncms000">astado</token><token pos="aq0ms0">furioso</token><token pos="fc">,</token><token pos="cc">o</token><token pos="sps00">a</token><token pos="da0fs0">lo</token><token pos="aq0cs0">sumo</token><token pos="sps00">de</token><mention concept_ref="c_1"><token pos="ncms000">boxeador</token></mention><mention concept_ref="c_0"><token pos="aq0ms0">bravo</token></mention><token pos="fc">,</token><token pos="cs">como</token><token pos="dd0ms0">ese</token><token pos="np0000l">Jake</token><token pos="np0000l">LaMotta</token><token pos="spcms">al</token><token pos="pr0cn000">que</token><token pos="vmis3s0">prestó</token><token pos="da0ms0">el</token><token pos="ncms000">rostro</token><token pos="aq0msp">airado</token>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Arranging" head="prestó">
+				<argument type="Theme" dependent="De Niro" />
+				<argument type="Location" dependent="ante los periodistas" /></main_frame>
+			<frame type="Body_parts" head="rostro">
+				<argument type="Descriptor" dependent="furioso" /></frame>
+			<frame type="Fire_burning" head="furioso">
+				<argument type="Depictive" dependent="furioso" /></frame>
+			<frame type="Lending" head="astado">
+				<argument type="Theme" dependent="lo" />
+				<argument type="Theme" dependent="el rostro" /></frame>
+			<frame type="Locative_relation" head="a lo">
+				<argument type="Figure" dependent="Niro desplegó ante los periodistas y el público una elocuencia de astado furioso" />
+				<argument type="Ground" dependent="de boxeador bravo" /></frame>
+			<frame type="Secrecy_status" head="público">
+				<argument type="Phenomenon" dependent="una elocuencia de astado furioso" /></frame>
+			<frame type="Similarity" head="como">
+				<argument type="Entity_2" dependent="furioso , o a lo sumo de boxeador bravo , como ese Jake LaMotta al que prestó el rostro" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 "De Niro no defraudó a nadie... quizá porque apenas dijo nada", observaba en El Mundo Borja Hermoso, quien resumía el sentir de una prensa que dedicó a De Niro adjetivos como "- lacónico", "aburrido", "hermético" y "parco en palabras" y subrayó su "característica cara de pocos amigos", su "gélido entusiasmo" y su "visible desgana".
+		</str>
+		<theme concept_ref="c_1">
+			<token pos="sps00">De</token><token pos="np00000">Niro</token>
+		</theme>
+		<rheme concept_ref1="c_3" concept_ref2="c_9">
+			<token pos="rn">no</token><token pos="vmis3s0">defraudó</token><token pos="sps00">a</token><mention concept_ref="c_3"><token pos="pi0cs000">nadie</token></mention><token pos="fs">...</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Becoming_aware" head="observaba">
+				<argument type="Cognizer" dependent="su" /></frame>
+			<frame type="Body_parts" head="cara de">
+				<argument type="Descriptor" dependent="característica" />
+				<argument type="Possessor" dependent="de pocos amigos" /></frame>
+			<frame type="Causation" head="porque">
+				<argument type="Effect" dependent="nadie ... quizá" />
+				<argument type="Cause" dependent="apenas dijo nada  quot ; , observaba en El Mundo Borja Hermoso , quien resumía el sentir de" />
+				<argument type="Effect" dependent="Niro adjetivos como  quot ; - lacónico  quot ; ,  quot ; aburrido  quot ; ,  quot ; hermético  quot ; y  quot ; parco en palabras  quot ; y subrayó su  quot ; característica cara de pocos amigos" /></frame>
+			<frame type="Distinctiveness" head="característica">
+				<argument type="Feature" dependent="cara de pocos amigos" /></frame>
+			<main_frame type="Emotion_directed" head="defraudó">
+				<argument type="Experiencer" dependent="su" />
+				<argument type="Stimulus" dependent="," /></main_frame>
+			<frame type="Interior_profile_relation" head="en">
+				<argument type="Figure" dependent="observaba en" />
+				<argument type="Ground" dependent="El Mundo Borja" /></frame>
+			<frame type="Obviousness" head="visible">
+				<argument type="Phenomenon" dependent="aburrido" /></frame>
+			<frame type="Personal_relationship" head="amigos" />
+			<frame type="Quantified_mass" head="pocos">
+				<argument type="Individuals" dependent="amigos" /></frame>
+			<frame type="Sensation" head="sentir" />
+			<frame type="Statement" head="dijo">
+				<argument type="Speaker" dependent="su" />
+				<argument type="Message" dependent="observaba en El Mundo Borja Hermoso , quien resumía el sentir de una prensa que dedicó a De Niro adjetivos como  quot ; - lacónico  quot ; ,  quot ; aburrido  quot ; ,  quot ; hermético  quot ; y  quot ; parco en palabras  quot ; y subrayó su  quot ; característica cara de pocos amigos" /></frame>
+			<frame type="Summarizing" head="resumía">
+				<argument type="State_of_affairs" dependent="El Mundo Borja" />
+				<argument type="Communicator" dependent="quien" />
+				<argument type="State_of_affairs" dependent="el sentir de una prensa que dedicó a De Niro adjetivos como  quot ; - lacónico" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Elsa Fernández-Santos describía en El País esa inquietante característica de la bestia que hace que "por algún extraño motivo nunca le asomen los dientes, aunque sonría".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Modality_Reporter" head="que " />
+			<frame type="Communicate_categorization" head="describía">
+				<argument type="Item" dependent="asomen" />
+				<argument type="Category" dependent="esa inquietante característica de la bestia que hace que  quot ; por algún extraño motivo nunca" /></frame>
+			<frame type="Distinctiveness" head="característica">
+				<argument type="Feature" dependent="inquietante" />
+				<argument type="Entity" dependent="de la bestia" /></frame>
+			<frame type="Locative_relation" head="en">
+				<argument type="Figure" dependent="algún extraño motivo" />
+				<argument type="Ground" dependent="los dientes" /></frame>
+			<frame type="Making_faces" head="sonría" />
+			<frame type="Manufacturing" head="hace">
+				<argument type="Producer" dependent="la bestia que" />
+				<argument type="Product" dependent="; por algún extraño motivo nunca le asomen los dientes" /></frame>
+			<frame type="Perception_active" head="los">
+				<argument type="Phenomenon" dependent="algún extraño motivo" />
+				<argument type="State" dependent="le asomen los dientes" /></frame>
+			<frame type="Reason" head="motivo">
+				<argument type="Action" dependent="le asomen los dientes" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Si bien a continuación admitía que "pese a todo, sus ojos negros y muy brillantes y la violencia que transmite su cara le hacen peligrosamente atractivo".
+		</str>
+		<theme>
+		</theme>
+		<rheme>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="cara le">
+				<argument type="Possessor" dependent="sus" /></frame>
+			<frame type="Body_parts" head="ojos">
+				<argument type="Possessor" dependent="sus" /></frame>
+			<frame type="Color" head="negros">
+				<argument type="Entity" dependent="sus ojos" /></frame>
+			<frame type="Location_of_light" head="brillantes" />
+			<frame type="Reveal_secret" head="admitía">
+				<argument type="Speaker" dependent="sus" />
+				<argument type="Time" dependent="y la" />
+				<argument type="Information" dependent="quot ; pese a todo , sus ojos negros y muy brillantes y la violencia que transmite su cara le" /></frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Y en ABC, E. Rodríguez Marchante recurría a imágenes menos turbadoras para disculpar el mutismo de un "alfarero de la interpretación (... ) capaz de moldearse como arcilla por fuera y amoldarse como agua por dentro al personaje más difícil de enjaular en un cuerpo".
+		</str>
+		<theme concept_ref="c_2">
+			<token pos="ncfs000">E.</token><token pos="ncms000">Rodríguez</token><token pos="np00000">Marchante</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_2" concept_ref3="c_1" concept_ref4="c_8" concept_ref5="c_9">
+			<token pos="vmii3s0">recurría</token><token pos="sps00">a</token><token pos="ncfp000">imágenes</token><token pos="rg">menos</token><token pos="aq0fp0">turbadoras</token><token pos="sps00">para</token><token pos="vmn0000">disculpar</token><token pos="da0ms0">el</token><token pos="ncms000">mutismo</token><token pos="sps00">de</token><token pos="di0ms0">un</token><token pos="fe">quot;</token><mention concept_ref="c_0"><token pos="ncms000">alfarero</token></mention><token pos="sps00">de</token><mention concept_ref="c_2"><token pos="da0fs0">la</token><token pos="ncfs000">interpretación</token></mention><token pos="fpa">(</token><token pos="fs">...</token><token pos="fpt">)</token><token pos="aq0cs0">capaz</token><token pos="sps00">de</token><token pos="vmn0000">moldearse</token><token pos="cs">como</token><token pos="ncfs000">arcilla</token><token pos="sps00">por</token><token pos="rg">fuera</token><token pos="cc">y</token><token pos="vmn0000">amoldarse</token><token pos="cs">como</token><token pos="ncfs000">agua</token><token pos="sps00">por</token><token pos="rg">dentro</token><token pos="spcms">al</token><mention concept_ref="c_1"><token pos="ncms000">personaje</token></mention><token pos="rg">más</token><token pos="aq0cs0">difícil</token><token pos="sps00">de</token><token pos="vmn0000">enjaular</token><token pos="sps00">en</token><token pos="di0ms0">un</token><token pos="ncms000">cuerpo</token><token pos="fe">quot;</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="cuerpo" />
+			<frame type="Capability" head="capaz">
+				<argument type="Event" dependent="moldearse" /></frame>
+			<frame type="Difficulty" head="difícil">
+				<argument type="Degree" dependent="más" />
+				<argument type="Activity" dependent="personaje" /></frame>
+			<main_frame type="Forgiveness" head="disculpar">
+				<argument type="Evaluee" dependent="el mutismo de un  quot ; alfarero de la interpretación" /></main_frame>
+			<frame type="Impression" head="imágenes">
+				<argument type="Descriptor" dependent="enjaular" /></frame>
+			<frame type="Part_inner_outer" head="dentro">
+				<argument type="Whole" dependent="personaje más difícil" /></frame>
+			<frame type="Part_inner_outer" head="fuera" />
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Ayer, nadie estaba seguro de que De Niro hubiera hablado o pasado por el festival.
+		</str>
+		<theme concept_ref="c_3">
+			<token pos="pi0cs000">nadie</token>
+		</theme>
+		<rheme concept_ref1="c_0" concept_ref2="c_1" concept_ref3="c_6" concept_ref4="c_8">
+			<token pos="vmii3s0">estaba</token><token pos="aq0ms0">seguro</token><token pos="sps00">de</token><token pos="cs">que</token><mention concept_ref="c_6"><token pos="sps00">De</token><token pos="np00000">Niro</token></mention><token pos="vasi3s0">hubiera</token><token pos="vmp00sm">hablado</token><token pos="cc">o</token><token pos="vmp00sm">pasado</token><token pos="sps00">por</token><token pos="da0ms0">el</token><mention concept_ref="c_0"><token pos="ncms000">festival</token></mention>
+		</rheme>
+		<semantic_roles>
+			<frame type="Calendric_unit" head="Ayer" />
+			<frame type="Certainty" head="seguro de que">
+				<argument type="Cognizer" dependent="nadie" />
+				<argument type="Content" dependent="De Niro hubiera hablado o pasado por el festival" /></frame>
+			<main_frame type="Process_end" head="pasado por">
+				<argument type="Process" dependent="De Niro" />
+				<argument type="Time" dependent="por el festival" /></main_frame>
+			<main_frame type="Statement" head="hablado">
+				<argument type="Speaker" dependent="De Niro" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Sólo el emocionado Javier Bardem, que le dio la mano y el premio a quien para él es "un maestro y una escuela", podía dar fe de su fugaz presencia.
+		</str>
+		<theme concept_ref="c_4">
+			<token pos="rg">Sólo</token><token pos="da0ms0">el</token><token pos="aq0msp">emocionado</token><token pos="np0000l">Javier</token><token pos="np0000l">Bardem</token><token pos="fc">,</token><token pos="pr0cn000">que</token><token pos="pp3csd00">le</token><token pos="vmis3s0">dio</token><token pos="da0fs0">la</token><token pos="ncfs000">mano</token><token pos="cc">y</token><token pos="da0ms0">el</token><token pos="ncms000">premio</token><token pos="sps00">a</token><token pos="pr0cs000">quien</token><token pos="sps00">para</token><token pos="pp3ms000">él</token><token pos="vsip3s0">es</token><token pos="fe">quot;</token><token pos="di0ms0">un</token><token pos="ncms000">maestro</token><token pos="cc">y</token><token pos="di0fs0">una</token><token pos="ncfs000">escuela</token><token pos="fe">quot;</token><token pos="fc">,</token>
+		</theme>
+		<rheme concept_ref1="c_4" concept_ref2="c_6" concept_ref3="c_7" concept_ref4="c_8">
+			<token pos="vmii3s0">podía</token><token pos="vmn0000">dar</token><token pos="ncfs000">fe</token><token pos="sps00">de</token><token pos="dp3cs0">su</token><mention concept_ref="c_7"><token pos="aq0cs0">fugaz</token></mention><token pos="ncfs000">presencia</token>
+		</rheme>
+		<semantic_roles>
+			<frame type="Body_parts" head="mano">
+				<argument type="Possessor" dependent="él" /></frame>
+			<frame type="Cause_to_start" head="emocionado">
+				<argument type="Effect" dependent="Bardem" /></frame>
+			<main_frame type="Education_teaching" head="un maestro" />
+			<main_frame type="Giving" head="dar">
+				<argument type="Donor" dependent="quien" />
+				<argument type="Theme" dependent="la mano y el premio a" />
+				<argument type="Recipient" dependent="a quien" />
+				<argument type="Purpose" dependent="para él es  quot ; un maestro y una escuela  quot ; , podía dar fe de su fugaz presencia" /></main_frame>
+			<main_frame type="Locale_by_use" head="escuela" />
+			<main_frame type="Possibility" head="podía">
+				<argument type="Possible_event" dependent="un maestro y una escuela" />
+				<argument type="Possible_event" dependent="su fugaz presencia" /></main_frame>
+			<main_frame type="Presence" head="presencia">
+				<argument type="Entity" dependent="él" />
+				<argument type="Location" dependent="fugaz" /></main_frame>
+		</semantic_roles>
+	</sentence>
+	<sentence>
+		<str>			
+			 Quizá porque las reses bravas se reconocen entre ellas.
+		</str>
+		<theme concept_ref="c_5">
+			<token pos="da0fp0">las</token><token pos="ncfp000">reses</token><token pos="aq0fp0">bravas</token>
+		</theme>
+		<rheme concept_ref1="c_5" concept_ref2="c_6" concept_ref3="c_8">
+			<mention concept_ref="c_8"><token pos="pp3cn000">se</token></mention><token pos="vmip3p0">reconocen</token><mention concept_ref="c_6"><token pos="sps00">entre</token><token pos="pp3fp000">ellas</token></mention>
+		</rheme>
+		<semantic_roles>
+			<main_frame type="Becoming_aware" head="reconocen">
+				<argument type="Cognizer" dependent="bravas se" />
+				<argument type="Phenomenon" dependent="entre ellas" /></main_frame>
+			<frame type="Causation" head="porque">
+				<argument type="Cause" dependent="bravas se reconocen entre" /></frame>
+			<frame type="Increment" head="se" />
+		</semantic_roles>
+	</sentence>
+	
+</text>

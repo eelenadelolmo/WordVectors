@@ -1,0 +1,9 @@
+{   ('Active_substance', 'agentes'): [],
+    ('Buildings', 'hogares'): [],
+    ('Experiencer_focus', 'temor'): [('Content', 'que afectaran a sus hogares , e incluso a abrirlas parcialmente para que los vehículos pudiesen pasar')],
+    ('Fire_burning', 'fuego'): [('Place', 'de las barricadas')],
+    ('Objective_influence', 'afectaran'): [('Influencing_entity', 'los'), ('Dependent_entity', 'sus hogares')],
+    ('People_by_residence', 'vecinos'): [],
+    ('Possibility', 'lo'): [('Possible_event', 'los vehículos'), ('Possible_event', 'pasar')],
+    ('Process_end', 'pasar'): [('Process', 'los vehículos')],
+    ('Vehicle', 'vehículos'): []}

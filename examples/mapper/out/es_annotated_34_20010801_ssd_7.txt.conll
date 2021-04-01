@@ -1,0 +1,7 @@
+{   ('Deciding', 'decidió'): [('Decision', 'el juez'), ('Decision', 'excluir & quot ; de momento y a pesar de los indicios existentes & quot ; a Alberto Frias y Mario')],
+    ('Existence', 'existentes'): [('Entity', 'declaración')],
+    ('People', 'personas'): [],
+    ('People_by_vocation', 'juez'): [],
+    ('Request', 'solicitó'): [('Message', 'las 33 personas para las que el'), ('Speaker', 'para las que el Ministerio Fiscal')],
+    ('Sign', 'declaración'): [],
+    ('Statement', 'declaración'): [('Speaker', 'les')]}

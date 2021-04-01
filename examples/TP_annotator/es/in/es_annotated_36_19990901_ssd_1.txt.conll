@@ -1,0 +1,3 @@
+{   ('Aggregate', 'banda'): [],
+    ('Receiving', 'aceptar'): [('Recipient', 'de'), ('Theme', 'las críticas de la banda')],
+    ('Statement', 'afirma'): [('Speaker', 'Herri'), ('Message', 'que los peneuvistas deben aceptar con deportividad las críticas de la banda')]}

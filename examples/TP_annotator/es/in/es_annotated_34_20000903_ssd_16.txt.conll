@@ -1,0 +1,7 @@
+{   ('Alliance', 'coalición'): [],
+    ('Attack', 'atentados'): [],
+    ('Chatting', 'hablar'): [('Interlocutors', 'Es'), ('Topic', 'a')],
+    ('Direction', 'los'): [('Distance', 'Es'), ('Path', 'a hablar'), ('Independent_variable', 'a')],
+    ('Giving', 'los'): [('Donor', 'Es'), ('Theme', 'a hablar con HB mientras esta coalición no condene los atentados etarras')],
+    ('Judgment_communication', 'condene los'): [('Evaluee', 'atentados')],
+    ('Statement', 'decir'): [('Speaker', 'que'), ('Message', 'que renunciara a hablar con HB mientras esta coalición no condene los atentados etarras')]}

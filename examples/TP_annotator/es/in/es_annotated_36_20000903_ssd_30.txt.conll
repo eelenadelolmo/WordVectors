@@ -1,0 +1,5 @@
+{   ('Aggregate', 'partido'): [],
+    ('Cardinal_numbers', 'una'): [('Entity', 'de las cuatro ponencias del congreso')],
+    ('Discussion', 'congreso'): [('Interlocutor_2', 'del congreso')],
+    ('Manufacturing', 'elaborado'): [('Product', 'una de las cuatro ponencias del congreso')],
+    ('Similarity', 'diferentes'): [('Entities', 'sensibilidades')]}

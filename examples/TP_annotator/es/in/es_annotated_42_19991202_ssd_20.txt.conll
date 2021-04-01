@@ -1,0 +1,5 @@
+{   ('Bringing', 'lleve'): [('Agent', 'ha'), ('Goal', 'un lema propio')],
+    ('Referring_by_name', 'convocado'): [('Entity', 'Ibarretxe')],
+    ('Spatial_contact', 'por'): [('Ground', 'la concentración'), ('Figure', 'por la paz que Ibarretxe ha convocado para mañana , Aznar le trasladó su & quot ; rotundo apoyo & quot ;')],
+    ('Supporting', 'apoyo'): [('Supporter', 'su')],
+    ('Transfer', 'trasladó'): [('Donor', 'Aznar'), ('Theme', 'quot ; rotundo apoyo & quot ; siempre que sea & quot ; unitaria & quot ; , es decir , que HB')]}

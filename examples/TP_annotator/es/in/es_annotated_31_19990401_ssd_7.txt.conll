@@ -1,0 +1,12 @@
+{   ('Catastrophe', 'sufrido'): [('Undesirable_event', 'colapso'), ('Place', 'por su Ejército')],
+    ('Expressing_publicly', 'expresaba'): [('Communicator', 'Nadie'), ('Content', 'en esos términos desde los tiempos de la guerra fría')],
+    ('Hostile_encounter', 'guerra'): [],
+    ('Military', 'militar'): [('Possessor', 'se')],
+    ('Ordinal_numbers', 'primera'): [],
+    ('Statement', 'declarado'): [('Speaker', 'rusa'), ('Message', 'dispuesta a utilizar el arma nuclear')],
+    ('Undergo_change', 'cambio'): [('Attribute', 'de orientación'), ('Manner', 'en la doctrina militar rusa')],
+    ('Using', 'utilizar'): [('Agent', 'rusa'), ('Instrument', 'el arma nuclear')],
+    ('Weapon', 'arma'): [('Type', 'nuclear')],
+    ('Weapon', 'armamento'): [('Type', 'convencional')],
+    ('Weapon', 'nuclear'): [],
+    ('Willingness', 'se'): [('Cognizer', 'rusa'), ('Cognizer', 'su'), ('Activity', 'a utilizar el arma nuclear')]}

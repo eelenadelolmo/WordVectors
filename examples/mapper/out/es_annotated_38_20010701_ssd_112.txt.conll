@@ -1,0 +1,4 @@
+{   ('Emotion_directed', 'interese'): [('Experiencer', 'ex bajista de los Stones'), ('Stimulus', 'arqueología')],
+    ('Just_found_out', 'sorprende'): [('Experiencer', 'Mucha gente'), ('Stimulus', 'al ex bajista de los Stones le interese la arqueología')],
+    ('People', 'gente'): [],
+    ('Quantified_mass', 'Mucha'): [('Individuals', 'gente')]}

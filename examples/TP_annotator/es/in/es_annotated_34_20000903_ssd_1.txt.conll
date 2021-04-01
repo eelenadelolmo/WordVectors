@@ -1,0 +1,5 @@
+{   ('Means', 'por'): [('Purpose', 'que el PP procura cegar')],
+    ('Possession', 'falta'): [('Possession', 'de apoyo parlamentario'), ('Possession', 'nacionalistas vascos no abjuran del diálogo con HB')],
+    ('Presence', 'presencia'): [('Entity', 'los'), ('Location', 'en el Pacto de')],
+    ('Seeking_to_achieve', 'procura'): [('Agent', 'PP'), ('State_of_affairs', 'abjuran del')],
+    ('Supporting', 'de apoyo'): [('Manner', 'parlamentario')]}

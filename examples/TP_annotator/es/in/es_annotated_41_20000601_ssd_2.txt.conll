@@ -1,0 +1,9 @@
+{   ('Desirability', 'pobre'): [('Evaluee', 'Ulises')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'PP del apoyo indispensable en'), ('Ground', 'el Parlament')],
+    ('Interior_profile_relation', 'entre'): [   ('Figure', 'al pobre Ulises entre Scylla y'),
+                                                ('Ground', 'del Gobierno central y el PP del apoyo indispensable en el Parlament ,'),
+                                                ('Figure', ', como frente nacionalista y apoyo honroso en Catalunya')],
+    ('Leadership', 'Gobierno'): [('Type', 'central')],
+    ('Part_inner_outer', 'central'): [],
+    ('Part_orientational', 'frente'): [],
+    ('Supporting', 'apoyo'): [('Place', 'en Catalunya')]}

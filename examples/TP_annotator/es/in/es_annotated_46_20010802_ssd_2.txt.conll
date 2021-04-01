@@ -1,0 +1,5 @@
+{   ('Awareness', 'sabe'): [('Content', 'que'), ('Cognizer', 'su'), ('Content', 'lo que está metiendo en el depósito de su coche no sea gasolina pura sino gasolina que contiene un 5 % de etanol')],
+    ('Containers', 'depósito'): [('Descriptor', 'coche')],
+    ('Containing', 'contiene'): [('Container', 'gasolina'), ('Contents', '5 % de etanol')],
+    ('Getting', 'metiendo'): [('Recipient', 'su'), ('Theme', 'el depósito de su coche no sea gasolina pura sino gasolina que contiene un 5 % de etanol')],
+    ('Vehicle', 'coche'): [('Possessor', 'su')]}

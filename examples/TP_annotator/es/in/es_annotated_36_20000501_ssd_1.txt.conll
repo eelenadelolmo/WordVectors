@@ -1,0 +1,5 @@
+{   ('Certainty', 'considera'): [('Cognizer', 'el'), ('Content', 'que los populares deben aspirar a crecer compitiendo por el electorado socialista más que captando votantes nacionalistas')],
+    ('Change_position_on_a_scale', 'crecer'): [('Item', 'los populares'), ('Attribute', 'compitiendo por el electorado socialista más que captando votantes nacionalistas')],
+    ('Desirability', 'populares'): [],
+    ('Desirable_event', 'deben'): [('State_of_affairs', 'los populares'), ('State_of_affairs', 'aspirar a crecer compitiendo por el electorado socialista más que captando votantes nacionalistas')],
+    ('Placing', 'los'): [('Theme', 'la estrategia'), ('Theme', 'por Josep')]}

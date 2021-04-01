@@ -1,0 +1,5 @@
+{   ('Activity_finish', 'concluye'): [('Agent', 'este aterrizaje'), ('Activity', 'misión número 26 de la estación Mir , que se encuentra en órbita desde hace 13 años')],
+    ('Architectural_part', 'aterrizaje'): [],
+    ('Calendric_unit', 'años'): [('Count', '13')],
+    ('Path_traveled', 'órbita'): [],
+    ('Quantified_mass', 'número'): [('Individuals', 'misión'), ('Individuals', '26 de la estación')]}

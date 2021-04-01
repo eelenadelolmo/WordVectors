@@ -1,0 +1,10 @@
+{   ('Calendric_unit', 'día'): [],
+    ('Calendric_unit', 'semana'): [],
+    ('Containing', 'en'): [('Contents', 'los 68 alumnos peticionarios')],
+    ('Education_teaching', 'alumnos'): [],
+    ('Give_impression', 'aparecida'): [('Phenomenon', 'una lista provisional'), ('Characterization', 'día'), ('Inference', '35')],
+    ('Locative_relation', 'en'): [('Figure', 'la lista definitiva'), ('Ground', 'sólo estaban 35')],
+    ('Process_end', 'definitiva'): [('Process', 'lista')],
+    ('Spatial_contact', 'en'): [('Figure', 'lista provisional aparecida el día 2 figuraban los 68 alumnos peticionarios , pero una semana después ,'), ('Ground', 'la lista definitiva')],
+    ('Temporal_subregion', 'después'): [('Time_period', 'una semana'), ('Time_period', 'en la lista definitiva')],
+    ('Text', 'lista'): [('Descriptor', 'definitiva')]}

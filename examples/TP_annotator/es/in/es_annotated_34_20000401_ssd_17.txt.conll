@@ -1,0 +1,11 @@
+{   ('Cardinal_numbers', 'siete'): [('Unit', 'menores')],
+    ('Catastrophe', 'víctimas'): [('Undesirable_event', 'represión militar')],
+    ('Departing', 'desaparecieron'): [('Theme', '141 uruguayos')],
+    ('Estimated_value', 'estimaciones'): [],
+    ('Execute_plan', 'puesto'): [('Medium', ', como consecuencia del Plan Cóndor'), ('Medium', 'por las dictaduras suramericanas'), ('Purpose', 'para librarse de la oposición')],
+    ('Goal', 'para'): [('Landmark', 'estimaciones')],
+    ('Inclusion', 'en'): [('Total', '141 uruguayos'), ('Part', 'siete menores')],
+    ('Kinship', 'familiares'): [('Ego', 'víctimas de la represión militar')],
+    ('Military', 'militar'): [],
+    ('People_by_origin', 'suramericanas'): [],
+    ('Purpose', 'Plan'): [('Agent', 'Cóndor')]}

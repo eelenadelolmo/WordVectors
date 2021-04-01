@@ -1,0 +1,9 @@
+{   ('Arriving', 'vuelta a'): [('Theme', 'su'), ('Goal', 'a su país de')],
+    ('Catastrophe', 'víctima'): [('Undesirable_event', 'presentó la denuncia')],
+    ('Certainty', 'creer'): [('Content', 'que la víctima presentó la denuncia & quot ; para evitar la vuelta a su país de origen')],
+    ('Judgment_communication', 'acusado'): [('Communicator', 'un marroquí'), ('Reason', 'de violar')],
+    ('Leadership', 'cargo'): [('Leader', 'que la'), ('Governed', 'a su cargo en')],
+    ('Origin', 'origen'): [('Entity', 'ha')],
+    ('Political_locales', 'país'): [],
+    ('Preventing_or_letting', 'evitar'): [('Event', 'la vuelta a su país de origen')],
+    ('Submitting_documents', 'presentó'): [('Authority', 'la víctima'), ('Documents', 'la denuncia')]}

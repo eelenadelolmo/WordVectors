@@ -1,0 +1,5 @@
+{   ('Catastrophe', 'víctimas'): [('Patient', 'víctimas del Tercer'), ('Undesirable_event', 'que aún viven')],
+    ('Continued_state_of_affairs', 'aún'): [('State_of_affairs', 'las 150.000 víctimas del Tercer'), ('State_of_affairs', 'viven')],
+    ('Money', 'dinero'): [],
+    ('Motion', 'parar a'): [('Theme', 'dinero'), ('Goal', 'a las 150.000 víctimas del Tercer Reich que aún viven')],
+    ('Residence', 'viven'): [('Resident', 'las 150.000 víctimas del Tercer')]}

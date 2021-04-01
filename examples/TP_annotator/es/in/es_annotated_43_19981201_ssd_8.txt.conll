@@ -1,0 +1,6 @@
+{   ('Buildings', 'torre'): [('Descriptor', 'de'), ('Name', 'Dalt')],
+    ('Increment', 'otras'): [('Class', 'residencias')],
+    ('Instance', 'sucede'): [],
+    ('Interior_profile_relation', 'en'): [('Figure', 'otras residencias'), ('Ground', 'escolta')],
+    ('Kinship', 'hijos'): [('Ego', 'sus')],
+    ('Using', 'utiliza'): [('Agent', 'sus hijos'), ('Time', 'actualidad'), ('Instrument', 'la'), ('Purpose', 'como residencia habitual')]}

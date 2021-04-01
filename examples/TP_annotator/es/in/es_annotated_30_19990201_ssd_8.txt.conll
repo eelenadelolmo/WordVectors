@@ -1,0 +1,8 @@
+{   ('Age', 'nuevo'): [('Entity', 'secretario')],
+    ('Be_in_agreement_on_action', 'según el'): [   ('Medium', 'centro'),
+                                                   ('Obligation', ', según el nuevo secretario general , debe notarse no solo en las políticas , sino también en las & quot ; actitudes ,')],
+    ('Becoming_aware', 'notarse'): [('Phenomenon', 'centro , según el nuevo secretario general ,'), ('Phenomenon', 'no solo en las políticas')],
+    ('Desirable_event', 'debe'): [('State_of_affairs', 'centro , según el nuevo secretario general ,'), ('State_of_affairs', 'notarse no solo en las políticas')],
+    ('Goal', 'en'): [('Trajector', 'centro'), ('Landmark', 'el nuevo secretario general , debe notarse no solo en las políticas')],
+    ('Interior_profile_relation', 'en'): [('Ground', 'vida política')],
+    ('Means', 'formas de ser'): [('Purpose', 'ser y estar en la vida política')]}

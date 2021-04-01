@@ -1,0 +1,11 @@
+{   ('Be_in_agreement_on_action', 'según el'): [   ('Obligation', 'la tempestad ha pasado'),
+                                                   ('Obligation', ', según el delegado del Govern en Girona , Xavier Soy , que subraya el respaldo que reciben')],
+    ('Goal', 'por'): [('Landmark', 'el delegado del Govern en Girona')],
+    ('Interior_profile_relation', 'en'): [('Figure', 'del Govern'), ('Ground', 'Girona')],
+    ('Political_locales', 'ayuntamientos'): [('Descriptor', 'con colores políticos distintos al del Govern')],
+    ('Process_end', 'ha pasado'): [('Process', 'la tempestad')],
+    ('Receiving', 'reciben'): [],
+    ('Similarity', 'distintos'): [('Entity_1', 'algunos ayuntamientos con colores políticos'), ('Manner', 'al del Govern')],
+    ('Supporting', 'respaldo que'): [('Supporter', 'que')],
+    ('Temporal_collocation', 'Ahora'): [('Trajector_event', 'la tempestad ha pasado')],
+    ('Weather', 'tempestad'): []}

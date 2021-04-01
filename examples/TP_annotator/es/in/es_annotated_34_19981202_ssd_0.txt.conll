@@ -1,0 +1,10 @@
+{   ('Activity_start', 'entró'): [('Agent', 'investigación del Congreso de EEUU contra el presidente Bill'), ('Activity', 'su etapa final'), ('Time', 'ayer')],
+    ('Appellations', 'presidente'): [('Type', 'Bill')],
+    ('Bringing', 'llevar'): [('Agent', 'republicanos'), ('Theme', 'de la Cámara de Representantes una propuesta de destitución')],
+    ('Buildings', 'los'): [('Function', 'la Cámara de Representantes')],
+    ('Calendric_unit', 'ayer'): [],
+    ('Contingency', 'decididos'): [('Outcome', 'con los republicanos'), ('Determinant', 'a llevar al pleno de la Cámara de Representantes una propuesta de destitución')],
+    ('Criminal_investigation', 'investigación'): [('Investigator', 'del Congreso'), ('Incident', 'contra el presidente Bill')],
+    ('Process_end', 'final'): [('Process', 'etapa')],
+    ('Statement', 'propuesta de'): [('Speaker', 'republicanos'), ('Message', 'a llevar al pleno de la Cámara de Representantes')],
+    ('Taking_sides', 'contra'): [('Cognizer', 'investigación del Congreso'), ('Side', 'presidente Bill')]}

@@ -1,0 +1,8 @@
+1	what	_	What	_	WP	0	_	_	_	_	_	_	_	S-Category
+2	are	_	be	_	VBP	0	_	_	_	_	_	_	_	O
+3	5	_	5	_	CD	0	_	_	_	_	_	_	_	S-Type_property
+4	types	_	type	_	NNS	0	_	_	_	_	_	type.n	Type	S-Subtype
+5	of	_	of	_	IN	0	_	_	_	_	_	_	_	B-Category
+6	virtualization	_	UNK	_	NN	0	_	_	_	_	_	_	_	I-Category
+7	.	_	.	_	.	0	_	_	_	_	_	_	_	O
+

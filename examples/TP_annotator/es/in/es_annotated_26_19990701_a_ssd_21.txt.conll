@@ -1,0 +1,6 @@
+{   ('Commitment', 'voluntaria'): [('Speaker', 'lo')],
+    ('Communication_response', 'respondió'): [('Speaker', 'lo'), ('Trigger', 'que lo había hecho por una cosa que los europeos no sienten :')],
+    ('Feeling', 'sienten'): [('Experiencer', 'lo'), ('Experiencer', 'una cosa que los europeos')],
+    ('Foreign_or_domestic_country', 'patria'): [],
+    ('Intentionally_act', 'hecho'): [('Agent', 'lo'), ('Act', 'lo')],
+    ('Questioning', 'pregunta'): [('Message', 'de por qué se había alistado voluntaria')]}

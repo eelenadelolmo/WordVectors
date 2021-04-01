@@ -1,0 +1,12 @@
+{   ('Businesses', 'en'): [('Service_provider', 'petroleras')],
+    ('Competition', 'competencia'): [],
+    ('Deny_or_grant_permission', 'restringir'): [('Action', 'competencia')],
+    ('Evaluative_comparison', 'contra'): [('Profiled_item', 'situación')],
+    ('Event', 'ocurrido'): [('Event', 'que'), ('Place', 'en otros países europeos')],
+    ('Inclusion', 'incluido'): [('Total', 'otros países europeos'), ('Part', 'ha')],
+    ('Increment', 'otros'): [('Class', 'países europeos')],
+    ('Locative_relation', 'habido'): [('Figure', 'ha'), ('Figure', 'en que'), ('Ground', 'ha habido sanciones contra petroleras por restringir la competencia')],
+    ('Origin', 'europeos'): [('Entity', 'países')],
+    ('Political_locales', 'países'): [('Population', 'europeos')],
+    ('Revenge', 'sanciones'): [('Offender', 'contra petroleras por')],
+    ('Substance', 'petroleras'): []}

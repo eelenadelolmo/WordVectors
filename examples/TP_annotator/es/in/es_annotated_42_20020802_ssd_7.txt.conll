@@ -1,0 +1,9 @@
+{   ('Calendric_unit', 'verano'): [('Relative_time', 'frente')],
+    ('Categorization', 'categoría'): [('Item', 'Chenoa y Bisbal')],
+    ('Choosing', 'opción'): [('Cognizer', 'digna'), ('Topic', 'a los que no les hagan tilín referentes sociales de la categoría de Chenoa y Bisbal')],
+    ('Degree_of_processing', 'crudo'): [],
+    ('Evidence', 'shows'): [('Proposition', 'tiene crudo frente a shows de canciones del verano')],
+    ('Judgment', 'agradecer'): [('Evaluee', 'opción digna para aquellos a los que no les hagan tilín referentes sociales de la categoría de Chenoa y')],
+    ('Manufacturing', 'hagan'): [('Producer', 'los que'), ('Product', 'referentes sociales de la categoría de Chenoa y Bisbal')],
+    ('Part_orientational', 'frente'): [('Whole', 'del verano')],
+    ('Text', 'canciones'): [('Medium', 'tiene crudo frente a shows de canciones del verano'), ('Topic', 'shows')]}
