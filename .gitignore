@@ -1,7 +1,7 @@
 .idea
 venv/bin/*
 venv/lib/*
-venv/lib64/*
+venv/lib64
 venv/main/BETO_model/*
 venv/main/w2vec_models/*
 venv/main/w2vec_models_en/*
@@ -23,3 +23,5 @@ venv/main/out_xml_tmp/*
 venv/main/downloads/*
 venv/main/downloads_mapper/*
 venv/main/uploads/*
+venv/pyvenv.cfg
+venv/include/*
