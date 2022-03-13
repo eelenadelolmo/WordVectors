@@ -1283,6 +1283,12 @@ def TP_annotate():
                             rheme_sr_id.append((r_c, id_c))
                             coreferent_concepts_rheme.append(r_c)
 
+                            # Adding also the original rheme generating the coreference chain due to its semantic role
+                            if r not in coreferent_concepts_rheme:
+                                coreferent_concepts_rheme.append(r)
+
+                            # rheme_sr_id.append((r, id_c))
+
             # print("Rhematic coreference analyzed (main semantic frame arguments)", rheme_sr_id)
 
             # List of (rheme, id) tuples
@@ -1552,6 +1558,8 @@ def TP_annotate():
 
     ## Generating XML with mention annotations
 
+    mentions_rhemes = dict()
+
     for f in os.listdir(output_dir_tmp):
         with open(output_dir_tmp + '/' + f, 'r') as fich_xml:
             xml_ant = fich_xml.read()
@@ -1599,7 +1607,9 @@ def TP_annotate():
             xml_nue += re.search(r'(<text.+?)<sentence>', xml_ant, re.DOTALL).group(1)
             sentences_str = re.findall('<sentence>(.+?)</sentence>', xml_ant, re.DOTALL)
 
+            mentions_rhemes[f] = list()
             for sentence_str in sentences_str:
+                mentions_rheme = list()
                 xml_nue += '<sentence>\n\t\t'
                 xml_nue += '<str>\t\t\t'
                 xml_nue += re.search('<str>(.+?)</str>', sentence_str, re.DOTALL).group(1)
@@ -1621,6 +1631,10 @@ def TP_annotate():
                                len(x) == 3]
 
                 extra_len = 0
+
+                for mencion in to_ann_list:
+                    mentions_rheme.append((mencion[1], int(mencion[2].replace('c_', ''))))
+                mentions_rhemes[f].append(mentions_rheme)
 
                 to_ann_list.sort()
                 lista_rangos = [el[0] for el in to_ann_list]
@@ -1681,6 +1695,12 @@ def TP_annotate():
         # Every row in the dataframe to plot
         data = list()
 
+        # Every row in the dataframe to plot with sentence and concept strings
+        data_complete = list()
+
+        n_tema = 0
+        n_rema = 0
+
         html = """<!DOCTYPE html>
         <html lang="en">
         <head>
@@ -1701,11 +1721,13 @@ def TP_annotate():
 
             texto = xml.read()
             root = ET.fromstring(texto)
+            sentences_list = list()
 
             for sentence in root.iter('sentence'):
                 for child in sentence:
                     if child.tag == 'str':
                         html += child.text + ' '
+                        sentences_list.append(str(child.text).strip())
 
             ids_colors = dict()
             n_concepts = 0
@@ -1714,17 +1736,23 @@ def TP_annotate():
 
             <h1>Conceptos</h1>'''
 
+            representative_concepts_list = list()
+
             for concepts in root.iter('concepts'):
                 for concept in concepts:
                     ids_colors[concept.attrib['id']] = colors[n_concepts % 140]
                     html += '<p style="color:#' + str(colors[n_concepts % 140]) + ';">' + concept.text.strip() + ' (' + \
                             concept.attrib['id'] + ')</p>'
                     n_concepts += 1
+                    representative_concepts_list.append(concept.text.strip())
 
             html += '''
 
             <h1>Oraciones</h1>'''
             n_oraciones = 0
+
+            theme_list = list()
+            rheme_list = list()
 
             for num_sentence, sentence in enumerate(root.iter('sentence')):
                 n_oraciones += 1
@@ -1747,6 +1775,8 @@ def TP_annotate():
                         for token in child:
                             theme += token.text.strip() + ' '
 
+                        theme_list.append(theme)
+
 
 
                     elif child.tag == 'rheme':
@@ -1758,9 +1788,12 @@ def TP_annotate():
                                 rheme_id_str += grandson.attrib['concept_ref'] + ','
                                 rheme_color = ids_colors[grandson.attrib['concept_ref']]
                                 rheme += '<span style="white-space:nowrap;color:#' + str(rheme_color) + ';">' + '['
+                                rheme_str = ""
                                 for grand_grandson in grandson:
                                     rheme += grand_grandson.text.strip() + ' '
+                                    rheme_str += grand_grandson.text.strip() + ' '
                                 rheme = rheme[:-1]
+                                rheme_list.append(rheme_str[:-1])
                                 rheme += ']' + grandson.attrib['concept_ref'] + ' </span>'
                         if len(rheme_id_str) > 1:
                             rheme_id_str = rheme_id_str[:-1]
@@ -1791,27 +1824,64 @@ def TP_annotate():
                 rheme_id_str_list = re.sub("c_", "", rheme_id_str).split(",")
 
                 sent_n_concepts = list(range(n_concepts))
+                sent_n_concepts_complete = list(range(n_concepts))
 
                 for tema in theme_id_str_list:
                     if tema != "":
                         sent_n_concepts[int(tema)] = 'T'
+                        sent_n_concepts_complete[int(tema)] = ('T', theme_list[n_tema])
+
+                    # Fixing athematic sentences bugs in thematic mentions
+                    n_tema += 1
 
                 for rema in rheme_id_str_list:
                     if rema != "":
                         if sent_n_concepts[int(rema)] == 'T':
                             sent_n_concepts[int(rema)] = 'B'
+                            # sent_n_concepts_complete[int(rema)] = ('B', theme_list[n_tema])
+                            # print("sent_n_concepts_complete", sent_n_concepts_complete)
+                            # print("int(rema)", int(rema))
+                            # print("rheme_list", rheme_list)
+                            # print("n_tema", n_tema)
+                            # print("n_rema", n_rema)
+                            sent_n_concepts_complete[int(rema)] = ('B', sent_n_concepts_complete[int(rema)][1] + ' // ' + rheme_list[n_rema])
+
+                            # n_tema += 1
+                            n_rema += 1
+
                         else:
                             sent_n_concepts[int(rema)] = 'R'
+                            sent_n_concepts_complete[int(rema)] = ('R', rheme_list[n_rema])
+                            n_rema += 1
 
                 for pos, sent_n_concept in enumerate(sent_n_concepts):
                     if sent_n_concept not in ['T', 'R', 'B']:
                         sent_n_concepts[pos] = 'N'
 
+                for pos, sent_n_concept in enumerate(sent_n_concepts_complete):
+                    if type(sent_n_concept) == int:
+                        sent_n_concepts_complete[pos] = ('N', '')
+
                 # Appending the sentence id at the beginning
                 sent_n_concepts = [num_sentence] + sent_n_concepts
-                data.append(sent_n_concepts)
+                sent_n_concepts_complete = [(num_sentence, sentences_list[num_sentence])] + sent_n_concepts_complete
 
-        # print(data)
+                data.append(sent_n_concepts)
+                data_complete.append(sent_n_concepts_complete)
+
+        print(data)
+        # print("Lista de temas:", theme_list)
+        # print("Lista de remas:", rheme_list)
+        data_complete = [representative_concepts_list] + data_complete
+
+        # Adding rhematic coreferences not annotated in the XML version due to overlapping
+
+        for n_s, r_mentions in enumerate(mentions_rhemes[file_xml]):
+            for r_mention in r_mentions:
+                if data_complete[n_s + 1][r_mention[1] + 1][0] == 'N':
+                    data_complete[n_s + 1][r_mention[1] + 1] = ('R', r_mention[0])
+
+        print(data_complete)
 
         html += '\t</body>\n</html>'
 
@@ -1826,6 +1896,10 @@ def TP_annotate():
             frases += [dato[0]] * n_concepts
             conceptos += list(range(n_concepts))
             tema_rema += dato[1:]
+
+        print("frases:", frases)
+        print("conceptos:", conceptos)
+        print("tema_rema", tema_rema)
 
         df = pd.DataFrame(dict(n_sentence=frases, n_concept=conceptos, t_r=tema_rema))
         # pd.set_option("display.max_rows", None, "display.max_columns", None)
