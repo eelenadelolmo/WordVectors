@@ -39,7 +39,7 @@ monotonic==1.5
 natsort==7.0.1
 netifaces==0.10.4
 nltk==3.5
-numpy==1.19.1
+numpy==1.22.0
 oauthlib==3.1.0
 olefile==0.46
 packaging==20.4
