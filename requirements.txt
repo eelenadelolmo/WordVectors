@@ -24,7 +24,7 @@ future==0.18.2
 grew==0.3.0
 httplib2==0.14.0
 idna==2.8
-joblib==0.16.0
+joblib==1.2.0
 keyring==18.0.1
 language-selector==0.1
 launchpadlib==1.10.13
