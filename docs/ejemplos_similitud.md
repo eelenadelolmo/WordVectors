@@ -1,6 +1,6 @@
 # Normalización de las distancias y cálculo de los conjuntos referenciales
 
-Código y ejemplos del módulo de identificación de los conjuntos referenciales (apartado 6.5.4 de la tesis), implementado en `venv/main/thematic_progression_annotator.py`.
+Código y ejemplos del módulo de identificación de los conjuntos referenciales (apartado 6.8.4 de la tesis), implementado en `venv/main/thematic_progression_annotator.py`.
 
 ## Normalización de las distancias WMD
 
