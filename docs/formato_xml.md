@@ -1,6 +1,6 @@
-# Formato XML de salida del prototipo
+****# Formato XML de salida del prototipo
 
-DTD y ejemplos de los XML que conformas las salidas del módulo de selección de rasgos (apartado 6.5.3 de la tesis) y del módulo de identificación de los conjuntos referenciales (apartado 6.5.4 de la tesis).
+DTD y ejemplos de los XML que conforma las salidas del módulo de selección de rasgos (apartado 6.8.3 de la tesis) y del módulo de identificación de los conjuntos referenciales (apartado 6.8.4 de la tesis).
 
 ## 1. Salida del módulo de selección de rasgos
 
